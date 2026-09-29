@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e3",
+  "id": "330bb6feda2f",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-privacy-alias-delete.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\330bb6feda2f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:48:15.545309+00:00",
+  "status": "complete",
+  "log": "crud-b04-astra-runtime.log",
+  "pid": 28984,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:48:22.811467+00:00",
+  "elapsedSeconds": 7.26
+}

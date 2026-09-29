@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--disable-warnings",
+    "tests/test_ingestion_transactions.py",
+    "tests/test_mvp.py"
+  ],
+  "exitCode": 0,
+  "seconds": 114.95
+}

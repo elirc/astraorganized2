@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "command": [
+    "node",
+    "--conditions=react-server",
+    "--import",
+    "tsx",
+    "--test",
+    "tests/feature-platform.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:54:02.297104+00:00",
+  "status": "complete",
+  "log": "w24_tests_20260913e.log",
+  "pid": 18364,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T13:54:12.083921+00:00",
+  "elapsedSeconds": 9.78
+}

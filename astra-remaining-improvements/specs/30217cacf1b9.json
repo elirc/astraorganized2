@@ -1,0 +1,33 @@
+{
+  "changedFiles": [
+    "README.md",
+    "packages/data/src/publications.ts",
+    "packages/data/src/publishing.test.ts",
+    "apps/api/src/app.ts",
+    "apps/api/src/app.test.ts",
+    "apps/web/src/useAutosave.tsx",
+    "apps/web/src/useAutosave.test.tsx",
+    "astraupskill/labs/publication-trace.ts"
+  ],
+  "summary": [
+    "Publication slugs cannot be claimed by another workspace or form; API conflicts return HTTP 409 without changing the original.",
+    "Publication versions advance per form across slug changes, with distinct opaque snapshot IDs and isolated submission histories.",
+    "Draft and publication writes reject route/body form identity mismatches before mutation.",
+    "Autosave keeps a newer queued edit visible when an older request completes during the debounce interval.",
+    "Nine detailed course documents and an executable API trace teach the actual code, regression reasoning, CRUD boundaries and progressive integration exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/formforge/results.json",
+    "expectedTests": 82,
+    "environment": "Node 22.16.0; pnpm 9.15.4; frozen lockfile; isolated copy; Fastify injection and jsdom",
+    "command": "Workspace Vitest suites; lint; typecheck; build; sizecheck; seed; executable publication trace"
+  },
+  "limits": [
+    "Browser fixtures and local autosave remain separate from the HTTP API; integration is a documented capstone.",
+    "Repositories remain in memory and are not coordinated across processes.",
+    "Workspace headers are not production authentication or authorization.",
+    "Submission retry handling does not yet compare changed answers for the same snapshot and key.",
+    "No live browser, deployed service, database or production identity provider was verified."
+  ]
+}

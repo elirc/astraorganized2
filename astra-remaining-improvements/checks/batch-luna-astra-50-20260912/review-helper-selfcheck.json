@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "positive": "a92b3a3a2282 with verify-03 and actual frozen source hashes: exit0/no issues",
+  "negative": "Synthetic wrong source hash and missing label: exit1, exactly the two expected issues",
+  "negativeIssues": [
+    {
+      "kind": "executable_hash_mismatch",
+      "file": "src/NetTrello.Api/Domain/Card.cs"
+    },
+    {
+      "kind": "missing_check_record",
+      "label": "nonexistent-synthetic-label"
+    }
+  ],
+  "limit": "Does not replace human source review or validate test assertions."
+}

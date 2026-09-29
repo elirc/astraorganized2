@@ -1,0 +1,242 @@
+[
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5953,
+    "changes": 15
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5722,
+    "changes": 14
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5824,
+    "changes": 18
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5629,
+    "changes": 18
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5680,
+    "changes": 18
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5775,
+    "changes": 18
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5715,
+    "changes": 18
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 6592,
+    "changes": 16
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5677,
+    "changes": 18
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 6596,
+    "changes": 16
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 6621,
+    "changes": 16
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5707,
+    "changes": 18
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 6696,
+    "changes": 16
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 6606,
+    "changes": 16
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8151,
+    "changes": 19
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7306,
+    "changes": 19
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7347,
+    "changes": 19
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7303,
+    "changes": 19
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7301,
+    "changes": 19
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7292,
+    "changes": 19
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8158,
+    "changes": 19
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7311,
+    "changes": 19
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8151,
+    "changes": 19
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8146,
+    "changes": 19
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7287,
+    "changes": 19
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7306,
+    "changes": 19
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8142,
+    "changes": 19
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7347,
+    "changes": 19
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8126,
+    "changes": 19
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8110,
+    "changes": 19
+  }
+]

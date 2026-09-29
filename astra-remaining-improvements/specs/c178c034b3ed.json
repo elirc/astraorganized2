@@ -1,0 +1,51 @@
+{
+  "summary": "Keep completed training enrollments terminal and stable; validate direct assessment scores; condition scoped completion writes and issue one certificate atomically with audit; add an additive certificate uniqueness migration; clamp UTC expiry months; validate assignment commands and preserve progress on replay; cancel active assignments with audit transaction. Repair missing inverse Course relations so Prisma generation succeeds.",
+  "limits": [
+    "Assessment scores remain client-supplied demo inputs; this is not secure exam grading.",
+    "New certificate unique index requires an existing-schema baseline and duplicate-data review before applying to an existing database; no original database was changed.",
+    "Service tests use actual repositories with a cloned transaction fixture and conditional query checks, not a live PostgreSQL concurrency test."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log",
+    "astraupskill/evidence/resume14-generate-02.json",
+    "astraupskill/evidence/resume14-generate-02.log",
+    "astraupskill/evidence/resume14-tests-03.json",
+    "astraupskill/evidence/resume14-tests-03.log",
+    "astraupskill/evidence/resume14-types-02.json",
+    "astraupskill/evidence/resume14-types-02.log",
+    "astraupskill/snapshots/next-env.d.ts.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/snapshots/prisma__schema.prisma.original.txt",
+    "astraupskill/snapshots/src__lib__api__route.ts.original.txt",
+    "astraupskill/snapshots/src__lib__auth__session.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__assignmentSchemas.ts.original.txt",
+    "astraupskill/snapshots/src__repositories__assignmentRepository.ts.original.txt",
+    "astraupskill/snapshots/src__repositories__enrollmentRepository.ts.original.txt",
+    "astraupskill/snapshots/src__services__assignmentService.ts.original.txt",
+    "astraupskill/snapshots/src__services__enrollmentService.ts.original.txt",
+    "astraupskill/snapshots/src__services__serviceHelpers.ts.original.txt",
+    "next-env.d.ts",
+    "package-lock.json",
+    "package.json",
+    "prisma/migrations/202609190001_one_certificate_per_enrollment/migration.sql",
+    "prisma/migrations/migration_lock.toml",
+    "prisma/schema.prisma",
+    "src/lib/api/route.ts",
+    "src/lib/auth/session.ts",
+    "src/lib/validation/assignmentSchemas.ts",
+    "src/repositories/assignmentRepository.ts",
+    "src/repositories/enrollmentRepository.ts",
+    "src/services/assignmentService.ts",
+    "src/services/enrollmentService.ts",
+    "src/services/serviceHelpers.ts",
+    "tests/completion-workflows.test.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c178c034b3ed/resume14-results.json",
+    "expectedTests": 21,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

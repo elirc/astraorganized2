@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "verifiedAt": "2026-09-12T11:39:05.394430+00:00",
+  "pythonDistinctTests": 106,
+  "browserWorkflowChecks": 12,
+  "packagingChecks": 4,
+  "totalChecks": 122,
+  "pythonEvidence": {
+    "fullSuite": 105,
+    "focusedFinalRegressionRun": 18,
+    "note": "The focused run repeats 17 existing cases and adds one trace-alert stream regression. Encoding assertions were added to an existing HTTP case and rerun separately."
+  },
+  "browserChecks": [
+    "Bootstrap through the browser creates an authenticated organization",
+    "Session token is absent from browser storage and cookies",
+    "Browser creates a persisted dashboard",
+    "Real two-tab stale update is rejected and draft retained",
+    "Explicit conflict resolution and independent field merge persist",
+    "Invalid JSON leaves the saved record unchanged",
+    "Pagination reads bounded pages and stored markup renders as text",
+    "Telemetry ingestion and search run through the real browser and SQLite",
+    "Desktop and narrow layouts render without horizontal overflow",
+    "Revision-protected browser delete removes the persisted dashboard",
+    "Logout and reload clear the in-memory browser session",
+    "No unhandled browser JavaScript exceptions"
+  ],
+  "packaging": [
+    "Build distributable wheel with pinned build dependencies",
+    "Wheel contains current application and browser assets without database or environment files",
+    "Install wheel into a separate directory without an editable source checkout",
+    "Installed application imports from wheel, serves assets and persists authenticated CRUD"
+  ],
+  "quality": {
+    "passed": true,
+    "commands": [
+      {
+        "command": [
+          "C:/Users/Owner/AppData/Roaming/Python/Python313/Scripts/ruff.exe",
+          "check",
+          "app",
+          "tests",
+          "scripts"
+        ],
+        "exitCode": 0,
+        "seconds": 0.39
+      },
+      {
+        "command": [
+          "C:/Users/Owner/AppData/Roaming/Python/Python313/Scripts/ruff.exe",
+          "format",
+          "--check",
+          "app",
+          "tests",
+          "scripts"
+        ],
+        "exitCode": 0,
+        "seconds": 0.64
+      },
+      {
+        "command": [
+          "node",
+          "--check",
+          "app/web/app.js"
+        ],
+        "exitCode": 0,
+        "seconds": 3.06
+      }
+    ]
+  },
+  "originalDatabaseOpened": false,
+  "externalNotificationsSent": false,
+  "screenshotsReviewed": [
+    "desktop.png",
+    "mobile.png"
+  ],
+  "limitations": [
+    "Local single-node SQLite application; no public deployment or distributed scheduler.",
+    "Dashboard configuration editor, not a rendered chart engine; OTLP aliases use custom envelopes.",
+    "JSON merges operate per field; CRUD creates have no general operation receipts.",
+    "Webhook tests use fake senders and mocked DNS, with no live provider delivery.",
+    "Migration verified on synthetic historical schemas; legacy naive timestamps are interpreted as UTC.",
+    "Direct dependency versions pinned; no complete operating-system or transitive dependency lock."
+  ]
+}

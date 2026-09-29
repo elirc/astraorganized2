@@ -1,0 +1,31 @@
+{
+  "passed": false,
+  "total": 6,
+  "checks": [
+    {
+      "name": "home has labeled empty login fields and navigation",
+      "passed": true
+    },
+    {
+      "name": "administrator signs in through the interface",
+      "passed": true
+    },
+    {
+      "name": "customer create edit and literal hostile text",
+      "passed": true
+    },
+    {
+      "name": "stale administration edit retains draft and supports explicit review",
+      "passed": true
+    },
+    {
+      "name": "all seven administration forms open with labeled inputs",
+      "passed": true
+    },
+    {
+      "name": "canned reply CRUD through the interface",
+      "passed": false,
+      "error": "Locator expected to have text 'Record deleted.'\nActual value: Saved. The form shows the accepted record. \nCall log:\n  - Expect \"to_have_text\" with timeout 60000ms\n  - waiting for locator(\"#admin-flash\")\n    58 \u00d7 locator resolved to <p class=\"flash\" role=\"status\" id=\"admin-flash\" aria-live=\"polite\">Saved. The form shows the accepted record.</p>\n       - unexpected value \"Saved. The form shows the accepted record.\"\n"
+    }
+  ]
+}

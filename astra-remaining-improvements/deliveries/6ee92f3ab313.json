@@ -1,0 +1,217 @@
+{
+  "project": "netairag",
+  "id": "6ee92f3ab313",
+  "summary": [
+    "Added deterministic runbook retrieval with weighted fields, stable ties, bounded results and explicit no-match handling.",
+    "Persisted actual log and document evidence using JSON serialization, accurate tool counts and timestamps, and explicit zero model usage.",
+    "Added loaded evaluation fixtures, permission and saved-evidence regressions, and nine source-based course chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/6ee92f3ab313/sol15-results.json",
+    "expectedTests": 11,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 11,
+    "passedTests": 11,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "netairag",
+        "id": "6ee92f3ab313",
+        "command": [
+          "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+          "test",
+          "tests/UnitTests/NetAiOps.UnitTests.csproj",
+          "--no-build",
+          "--no-restore",
+          "--logger",
+          "trx",
+          "--verbosity",
+          "minimal"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6ee92f3ab313",
+        "environmentOverrides": {
+          "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+        },
+        "startedAt": "2026-09-19T21:58:39.337694+00:00",
+        "status": "complete",
+        "log": "astra-netairag-tests-r2.log",
+        "pid": 25564,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:00:02.664527+00:00",
+        "elapsedSeconds": 83.32
+      },
+      {
+        "project": "netairag",
+        "id": "6ee92f3ab313",
+        "command": [
+          "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+          "build",
+          "NetAiOps.sln",
+          "--nologo",
+          "--verbosity",
+          "minimal",
+          "/m:1",
+          "/p:RestoreDisableParallel=true"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6ee92f3ab313",
+        "environmentOverrides": {
+          "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+        },
+        "startedAt": "2026-09-19T22:03:46.016647+00:00",
+        "status": "complete",
+        "log": "astra-netairag-build-r3.log",
+        "pid": 15876,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:16:12.869982+00:00",
+        "elapsedSeconds": 746.84
+      }
+    ]
+  },
+  "courseWords": 3352,
+  "courseFiles": 9,
+  "courseLinksChecked": 95,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "040dc793e30801d9a1e11d5bc6c91f7265338cdd52afdd0bbe2c9f6b2c7334eb",
+      "after_sha256": "722b029189bd376e54bb37e1dd1fa7c1776fa64a86ed47a2f3b01dbb60b106bb"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netairag-build-r3.json",
+      "before_sha256": null,
+      "after_sha256": "ebc7886d09ea10c312aa1434efe9099a7f4c6cd8f7d8e4426ff89e6b0dc84ab7"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netairag-build-r3.log",
+      "before_sha256": null,
+      "after_sha256": "88b7e35bbca2c57eb957c1c2b4da5c54b067d095b6508f6160782402402a40a1"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netairag-tests-r2.json",
+      "before_sha256": null,
+      "after_sha256": "f4d3f138c15d9c9856f2d480be2d4c5d3341a44ab94e19125a467b78e864f06f"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netairag-tests-r2.log",
+      "before_sha256": null,
+      "after_sha256": "6f2caa3fa13713cd809413b519b730397c42de838c7c96782e459f369b75ad97"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "be3f542d28b15be0db24323c89cc339bb5bc54ed2c00c2c418f342fef1c362a8"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "040dc793e30801d9a1e11d5bc6c91f7265338cdd52afdd0bbe2c9f6b2c7334eb"
+    },
+    {
+      "file": "astraupskill/snapshots/sample-eval-cases__README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6cb51a07c4bd28fad647caa344229d272cd4f7479616baa1b5e92dcbc701753b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__Infrastructure__Operations__OperationsService.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8458f7fffe6eac6c6af0926d854b763f00cee668199d4a7e3944de8c634ab37c"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__UnitTests__NetAiOps.UnitTests.csproj.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8c54f8b064eeec6cce5ffb231707d87496dce219e2137b5de1ffae8e2229404f"
+    },
+    {
+      "file": "sample-eval-cases/README.md",
+      "before_sha256": "6cb51a07c4bd28fad647caa344229d272cd4f7479616baa1b5e92dcbc701753b",
+      "after_sha256": "c5fb9c5e614bc54148de930f09e81bc3507f68fdc42a5b0f4e34e4e582d2c500"
+    },
+    {
+      "file": "sample-eval-cases/retrieval.json",
+      "before_sha256": null,
+      "after_sha256": "520ce9390a22b35bb43a5a224cc84793f9d5bf5723f72d7a1fcebe8ced2326c3"
+    },
+    {
+      "file": "src/Application/Retrieval/LexicalRetriever.cs",
+      "before_sha256": null,
+      "after_sha256": "dbe67c9c8411c06e437a906941776a1411488293a000dcfe05f0efa6c5e61633"
+    },
+    {
+      "file": "src/Infrastructure/Operations/OperationsService.cs",
+      "before_sha256": "8458f7fffe6eac6c6af0926d854b763f00cee668199d4a7e3944de8c634ab37c",
+      "after_sha256": "44faae12082d2fa129284972998574ade50e632126650e1b0c959fefdef72339"
+    },
+    {
+      "file": "tests/UnitTests/LexicalRetrieverTests.cs",
+      "before_sha256": null,
+      "after_sha256": "135b9e372f9e69a199d2f11dbd99ee8fb56943278a77a694ad4aaca9f4be88d3"
+    },
+    {
+      "file": "tests/UnitTests/NetAiOps.UnitTests.csproj",
+      "before_sha256": "8c54f8b064eeec6cce5ffb231707d87496dce219e2137b5de1ffae8e2229404f",
+      "after_sha256": "561057d2148ce85dc2b257cbe48935dffbd479d4e78b5e0e722f9ddbddfdaf3b"
+    },
+    {
+      "file": "tests/UnitTests/OperationsServiceTests.cs",
+      "before_sha256": null,
+      "after_sha256": "fd6ac7efcc320d074968658c70ad7c611968ea9ee768be7c77479976896f09e2"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6e3ee5cc3ccdeec1ee0ec4e39f2121b1417a3f386417935e5a5f1994f5b17f81"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "87dfdfc0c7266bc36f1092c53760035df855e72004bd02fbb96a12660112c7ed"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "2402556435be44430da07839cc26eabeb83e3eef5365d5dfcf610f2533c6e0ce"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "add7fc0a65d9cf03d6320a103a8aa482e949e8575b4b2967298196e30e7bc40c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f811c90078d823d05ced7a6e7996b2c141b3a0c463e4e271f9fa002e4f39cc5e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a393e2ad6d53e6abf071c4de9a6027423a707f8bfdf28007a5f47d0962f90c61"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e80abd2de9af57c12feee038b31ae920be8d3070f0c180faecb93e76e89ea643"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a1f95cda79c15d83d407a9e66a81a128bde088ced7a497e390a2fddea0b02590"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "aa19542240f22d34b75ae7d71e64cf053932e1881ceff666da81feb0ca0bf758"
+    }
+  ],
+  "limits": [
+    "Service tests use EF InMemory, not PostgreSQL; no relational isolation or deployed end-to-end claim is made.",
+    "Retrieval uses ASCII lexical tokens and materializes the knowledge corpus; model services are not called."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T22:19:12.009703+00:00"
+}

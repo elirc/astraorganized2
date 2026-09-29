@@ -1,0 +1,31 @@
+{
+  "id": "3c142f8c1521",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:58:30.417282+00:00",
+  "sourceReview": "Reviewed production POST, schema, original snapshot and six runtime cases. Accepted rules are copied from parsed input after persistence succeeds; response reuses metadata written to review. Existing separate writes remain explicit.",
+  "teachingReview": "Read all nine chapters; corrected original response behavior, actual lookup order, no-return rules writes and snapshot path. Distinguishes metadata consistency from atomicity with branch traces and exercises.",
+  "testReview": "Six actual POST cases via TypeScript VM with explicit DB/parser/ingestion/NextResponse adapters passed. Includes four optional-rules branches, persistence error identity and early rejection; no native ORM/DB/HTTP or rollback claim.",
+  "specSHA256": "9534b99f5b18965ff2ddfdea1f65745ccd53520d36966b68f39a86e50ce956b9",
+  "fileHashes": {
+    "src/app/api/reviews/route.ts": "bcd5a90e57e89dbdb94301e16c893011ab208b1c9c8725dd5a3861a438f4112a",
+    "astraupskill/snapshots/reviews-route.ts.original.txt": "7442021414d0f7e75d6155e67699b671ae0db33a53134cd37e768c1aa68316ba",
+    "tests/runtime-review-metadata.test.mjs": "2d66a53c740097428d7aa715025feb85d3a4856aaa97792b87485087df840fff",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "449198480e7ec29bd83d8d3b687ba4f58e1dbc81abe7a2754be1368bd938b121",
+    "astraupskill/evidence/results.json": "e5dafeb9bfc589707e8828ccd4c3d585df706cc84f615f43583f5f4a116097f4",
+    "astraupskill/README.md": "6974dc0f65478e87c2665ff410909188d38316536fdbfae4f3e8276fd88d2af1",
+    "astraupskill/01-CODEBASE-MAP.md": "daded9ede8a128dec65c8d72f0699dc7ea3a681a5fdb03175b83ac4eb8b1ae63",
+    "astraupskill/02-CONCEPTS.md": "d2f4fc5a01196b56f2cba06b864b38ac7e4bd21f45f11ec8d11e6732aecf4d92",
+    "astraupskill/03-WORKED-CHANGE.md": "aadf162389a3a1f66ac4c5918dec5b87c71f1446c3ce12a5ac3ee83dee245379",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "774ea2e83b9232c1d2a2d73229c1dbe5916e9cd12d4381df6b6543309516264b",
+    "astraupskill/05-PRACTICE.md": "2da431139a11b7331836c72f07aa9eecd5ca72eb4775aea0da1deb072de47b06",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "b37b9a68d34c3396b0e274a1ae6d04d88d6083de125608a59eaca6d3c69040b9",
+    "astraupskill/07-TRACE-LAB.md": "bcbc33191cfddb6648045601a43582f735306ec64e59c9f0cb0af4764ac70353",
+    "astraupskill/VERIFICATION.md": "8ddb24677754c9a403921e5920238ff68392f4e16f8523b65f5739c977187231"
+  },
+  "evidenceHashes": {
+    "checks/3c142f8c1521/crud-b03-astra-runtime.json": "0b7b4eef92e67254c089620ed6439338057556e8885c13dfe0fb066f77223823",
+    "checks/3c142f8c1521/crud-b03-astra-runtime.log": "449198480e7ec29bd83d8d3b687ba4f58e1dbc81abe7a2754be1368bd938b121",
+    "checks/3c142f8c1521/results-crud-b03.json": "e5dafeb9bfc589707e8828ccd4c3d585df706cc84f615f43583f5f4a116097f4"
+  }
+}

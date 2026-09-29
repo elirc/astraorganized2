@@ -1,0 +1,39 @@
+{
+    "summary":  [
+                    "Make version adapters presence-aware and reject unknown versions.",
+                    "Validate profile ownership and rollout inputs before repository or audit writes.",
+                    "Repair test startup comments and document API-versioning limits."
+                ],
+    "changedFiles":  [
+                         "package.json",
+                         "package-lock.json",
+                         ".eslintrc.json",
+                         "src/lib/http/api-response.ts",
+                         "src/lib/http/route-utils.ts",
+                         "src/lib/server/container.ts",
+                         "src/lib/versioning/customer-profile-contracts.ts",
+                         "src/services/api-version-service.ts",
+                         "src/services/customer-profile-service.ts",
+                         "src/app/api/platform/customer-profiles/route.ts",
+                         "src/repositories/audit-log-repository.ts",
+                         "src/repositories/version-catalog-repository.ts",
+                         "tests/routes/version-rollout-route.test.ts",
+                         "astraupskill/snapshots/src__lib__http__api-response.ts.original",
+                         "astraupskill/snapshots/src__lib__http__route-utils.ts.original",
+                         "astraupskill/snapshots/src__lib__server__container.ts.original",
+                         "astraupskill/snapshots/src__lib__versioning__customer-profile-contracts.ts.original",
+                         "astraupskill/snapshots/src__services__api-version-service.ts.original",
+                         "astraupskill/snapshots/src__services__customer-profile-service.ts.original",
+                         "astraupskill/snapshots/tests__routes__version-rollout-route.test.ts.original",
+                         "tests/services/versioned-profile-service.test.ts"
+                     ],
+    "checks":  {
+                   "format":  "json",
+                   "resultsFile":  "checks/2c7ac2b52738/ww27-test-18.json"
+               },
+    "limits":  [
+                   "Tests use fake repositories and route mocks; no live database or traffic was used.",
+                   "The in-process compensation boundary restores rollout state when audit recording fails; a production adapter should use one database transaction across rollout and audit rows.",
+                   "The demo session and rollout policy are teaching infrastructure, not production identity or deployment controls."
+               ]
+}

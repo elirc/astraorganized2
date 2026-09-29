@@ -1,0 +1,244 @@
+[
+ {
+  "wave": 2,
+  "id": "1c688787ace6",
+  "name": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "rel": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "status": "delivered",
+  "tests": null,
+  "words": 3798,
+  "deliveredAt": "2026-09-13T15:50:19.699043+00:00",
+  "nfiles": 38,
+  "summary": [
+   "Made SLA escalation deadline selection aware of first response completion and bounded escalation to one conditional claim per ticket.",
+   "Added deterministic rule selection, target validation, missing assignment target checks, compare-and-set writes, and a Prisma transaction that atomically claims escalation routing with its audit event.",
+   "Added fail-closed unknown-role behavior at helper and route boundaries, including inherited-key defenses, with twenty focused tests across seven files",
+   "Added nine portable source-grounded upskill chapters with complete transaction rollback and runtime permission examples."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww39",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "ww39",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/1c688787ace6",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/1c688787ace6.json (spec: specs/1c688787ace6.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/ww39/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "41315da7b7f9",
+  "name": "_Organized Desktop/05 Numbered Experiments/ww5",
+  "rel": "_Organized Desktop/05 Numbered Experiments/ww5",
+  "status": "delivered",
+  "tests": null,
+  "words": 4198,
+  "deliveredAt": "2026-09-13T14:26:41.533837+00:00",
+  "nfiles": 26,
+  "summary": [
+   "Prevalidate compensation approval permission, tenant/link identity, submitted state, and assigned approver before writes.",
+   "Serialize approval, compensation, notification, and audit writes with snapshot rollback and expected-state guards.",
+   "Whitelist lifecycle updates, validate compensation inputs, repair the API handler comment syntax, and add regression coverage plus source-grounded learning guides."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww5",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "ww5",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/41315da7b7f9",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/41315da7b7f9.json (spec: specs/41315da7b7f9.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/ww5/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "f27db87d9d3a",
+  "name": "_Organized Desktop/05 Numbered Experiments/z1",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z1",
+  "status": "delivered",
+  "tests": 16,
+  "words": 5252,
+  "deliveredAt": "2026-09-13T00:56:50.229280+00:00",
+  "nfiles": 35,
+  "summary": [
+   "Binds workflow action permission to the current pending step, preserving both delegated and original assignee authority and existing admin/support override.",
+   "Filters internal comments before creating requester comments and timeline DTOs, including requesters with operational roles.",
+   "Distinguishes create from explicit missing/blank update IDs, validates request type/intent/action and resubmission fields, and rejects unsafe reassignment targets.",
+   "Validates workflow SLA, steps and delegation intervals before persistence; adds sixteen actual file-store service tests and nine detailed chapters with complete fixtures."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z1",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "z1",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/f27db87d9d3a",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/f27db87d9d3a.json (spec: specs/f27db87d9d3a.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z1/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "2f14585fed41",
+  "name": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board",
+  "status": "delivered",
+  "tests": 59,
+  "words": 4476,
+  "deliveredAt": "2026-09-09T13:35:12.667844+00:00",
+  "nfiles": 59,
+  "summary": [
+   "Replaced unsigned identity cookies and truncating multi-write JSON persistence with generated local credentials, signed expiring sessions and a validated SQLite transaction boundary that coordinates independent processes.",
+   "Completed owned idea/comment CRUD, captured-version edits, reference-aware deletion, private projections, desired vote/follow state, atomic notifications and audits, guarded duplicate merges and working admin/moderation controls.",
+   "Added preserved form drafts, export/current-value recovery, coordinated pending writes, navigation guards, stable board/roadmap pagination and responsive desktop/narrow layouts.",
+   "Preserved original collection JSON and historical documentation; added explicit non-overwriting fictional setup, 59 passing checks, four reviewed captures and nine detailed project-specific learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z3\\customer-feedback-board",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "z3-customer-feedback-board",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/2f14585fed41",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/2f14585fed41.json (spec: specs/2f14585fed41.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "1c908de00eb7",
+  "name": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+  "status": "delivered",
+  "tests": 5,
+  "words": 4136,
+  "deliveredAt": "2026-09-12T20:26:44.743843+00:00",
+  "nfiles": 25,
+  "summary": [
+   "Applies ownership consistently to representative lead search and dashboard activity, filtering before text matching or the eight-event limit while preserving shared company reads and founder/analyst visibility.",
+   "Validates representative task ownership and existing target ownership before writes, preventing foreign or missing task/note attachments and retaining activity events for permitted writes.",
+   "Serializes lead conversion as one updateCrmDatabase callback that reads current state, checks authorization and retry state, constructs a coherent company/contact/deal/converted-lead/event graph, and commits one replacement value.",
+   "Supports absolute CRM_DB_PATH fixtures, keeps repository updates serialized within one process, and documents the direct JSON write and demo-cookie durability/authentication limits.",
+   "Replaces the unusable next lint command with a finite TypeScript ESLint flat configuration, adds a tsx test command and lockfile, and supplies nine source-grounded learning guides with exact review snapshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z3\\founder-crm-lite",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "z3-founder-crm-lite",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/1c908de00eb7",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/1c908de00eb7.json (spec: specs/1c908de00eb7.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "5137a9c91d26",
+  "name": "_Organized Desktop/05 Numbered Experiments/z6",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z6",
+  "status": "delivered",
+  "tests": null,
+  "words": 4231,
+  "deliveredAt": "2026-09-13T13:50:02.344803+00:00",
+  "nfiles": 17,
+  "summary": [
+   "Filter knowledge-base projections by page visibility before pagination and sanitize nested space pages.",
+   "Reject forged page-space edits and missing explicit page IDs; keep tags inside the save transaction.",
+   "Add source-grounded learning material and preserve the documented demo-auth and concurrency limits."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z6",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "z6",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/5137a9c91d26",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/5137a9c91d26.json (spec: specs/5137a9c91d26.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z6/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "3ecd02656197",
+  "name": "_Organized Desktop/05 Numbered Experiments/z7",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z7",
+  "status": "delivered",
+  "tests": 7,
+  "words": 4549,
+  "deliveredAt": "2026-09-12T22:32:13.125800+00:00",
+  "nfiles": 39,
+  "summary": [
+   "Secure decision DTO projection omits compensation for unauthorized roles.",
+   "Dashboard and interview pages sort raw instants before formatting, with deterministic invalid-date fallback.",
+   "Job rows count active applications only and render an explicit empty highlighted-job state.",
+   "Pure Vitest regressions verify projection, ordering, active filtering, empty state, and snapshot non-mutation."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z7",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "z7",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/3ecd02656197",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/3ecd02656197.json (spec: specs/3ecd02656197.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z7/astraupskill",
+  "batch": "B12"
+ },
+ {
+  "wave": 2,
+  "id": "80b4407b2971",
+  "name": "_Organized Desktop/05 Numbered Experiments/z9",
+  "rel": "_Organized Desktop/05 Numbered Experiments/z9",
+  "status": "delivered",
+  "tests": 15,
+  "words": 4010,
+  "deliveredAt": "2026-09-13T15:50:56.066035+00:00",
+  "nfiles": 27,
+  "summary": [
+   "Use expiring opaque server-side sessions.",
+   "Enforce client membership before dashboard aggregation.",
+   "Keep bearer tokens out of login JSON responses with an actual route regression."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z9",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "z9",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/80b4407b2971",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/80b4407b2971.json (spec: specs/80b4407b2971.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/z9/astraupskill",
+  "batch": "B12"
+ }
+]

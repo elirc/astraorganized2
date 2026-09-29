@@ -1,0 +1,32 @@
+[
+  {
+    "project": "01",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "02",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "03",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "04",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "05",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "06",
+    "check": "browser",
+    "passed": true
+  }
+]

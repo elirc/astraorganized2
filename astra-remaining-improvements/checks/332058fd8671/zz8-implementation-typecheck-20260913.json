@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules\\.bin\\tsc.cmd",
+    "--noEmit",
+    "--pretty",
+    "false"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\332058fd8671",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:34:45.990414+00:00",
+  "status": "complete",
+  "log": "zz8-implementation-typecheck-20260913.log",
+  "pid": 10156,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-13T15:35:43.721811+00:00",
+  "elapsedSeconds": 57.73
+}

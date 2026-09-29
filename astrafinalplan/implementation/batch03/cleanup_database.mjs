@@ -1,0 +1,11 @@
+﻿import pg from 'pg';
+import {writeFile} from 'node:fs/promises';
+const client=new pg.Client({connectionString:'postgres://astra:local-test@127.0.0.1:55439/astra_test_ten'});
+await client.connect();
+const identity=(await client.query('SELECT current_database() AS database, inet_server_port() AS port')).rows[0];
+if(identity.database!=='astra_test_ten'||identity.port!==55439)throw new Error('Unexpected test instance');
+const schemas=(await client.query("SELECT nspname FROM pg_namespace WHERE nspname ~ '^astra_[0-9a-f]{32}$'")).rows.map(x=>x.nspname);
+for(const schema of schemas)await client.query(`DROP SCHEMA "${schema}" CASCADE`);
+await client.end();
+await writeFile(new URL('./database-cleanup.json',import.meta.url),JSON.stringify({instance:identity,removed_owned_test_schemas:schemas},null,2));
+console.log(JSON.stringify({removed_owned_test_schemas:schemas.length}));

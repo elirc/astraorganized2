@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "cmd.exe",
+    "/c",
+    "node_modules\\.bin\\prisma.cmd generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:30:53.694819+00:00",
+  "status": "complete",
+  "log": "ww27-prisma-18.log",
+  "pid": 21396,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:31:03.468952+00:00",
+  "elapsedSeconds": 9.77
+}

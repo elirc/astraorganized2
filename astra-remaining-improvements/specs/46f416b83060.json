@@ -1,0 +1,38 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-aral-derived-tests-r4.json",
+    "astraupskill/evidence/astra-aral-derived-tests-r4.log",
+    "astraupskill/evidence/astra-aral-tests-r2.json",
+    "astraupskill/evidence/astra-aral-tests-r2.log",
+    "astraupskill/evidence/astra-aral-typecheck-r2.json",
+    "astraupskill/evidence/astra-aral-typecheck-r2.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/packages__app__src__db__sync__outbox.ts.original.txt",
+    "astraupskill/snapshots/packages__app__src__state__store.ts.original.txt",
+    "astraupskill/snapshots/packages__shared__src__derived.test.ts.original.txt",
+    "astraupskill/snapshots/packages__shared__src__derived.ts.original.txt",
+    "astraupskill/snapshots/packages__shared__src__events.ts.original.txt",
+    "packages/app/src/db/sync/outbox.ts",
+    "packages/app/src/state/store.test.ts",
+    "packages/app/src/state/store.ts",
+    "packages/shared/src/derived.test.ts",
+    "packages/shared/src/derived.ts",
+    "packages/shared/src/events.ts"
+  ],
+  "summary": [
+    "Deduplicated progress events before ordering with first-arrival payload semantics, preventing retry XP inflation.",
+    "Serialized local records, remote merges, clock corrections and hydration; reconciled live state from persisted events after writes and partial failures.",
+    "Added shared reducer and stateful store regressions, plus nine source-based guide chapters."
+  ],
+  "limits": [
+    "Store tests use a Map-backed DAO fixture, not native device SQLite; native persistence durability and rollback are not established.",
+    "Queue ordering is process-local and preserves the existing DAO replacement semantics."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/46f416b83060/sol15-results.json",
+    "expectedTests": 102,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

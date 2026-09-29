@@ -1,0 +1,258 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "id": "5d5120e98c41",
+  "summary": [
+    "Close public registration privilege escalation by rejecting caller supplied roles at the strict Zod boundary and hardcoding READ_ONLY in the service, including direct callers and unique race handling.",
+    "Repair Express error transport with four argument middleware, safe malformed JSON/AppError/unexpected responses, and normalized access and refresh JWT claim validation.",
+    "Bind refresh records to their token subject, reject wrong owner, revoked, expired, and expiry-equal records, scope logout by user, and preserve active account checks and public response projection.",
+    "Add one actual Supertest/Vitest Prisma-mocked auth harness, exact original snapshots, finite backend/frontend/Prisma evidence, and a source-grounded nine chapter course."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5d5120e98c41/results.json",
+    "expectedTests": 10,
+    "command": "Backend: Prisma validate/generate, typecheck, lint, Vitest/Supertest and TypeScript build; frontend: typecheck, Vitest and Vite build",
+    "environment": "Node/npm workspace install; Prisma 5.22, Express 4, Vitest 2.1.9, Vite 6.4.2; mocked Prisma auth tests and dummy DATABASE_URL for schema checks; temporary Supertest loopback listeners; no database migration or production listener"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 10,
+    "passedTests": 10,
+    "failed": 0,
+    "suites": {
+      "backend": 9,
+      "frontend": 1
+    },
+    "records": [
+      "backend-prisma-validate-01.json",
+      "backend-prisma-generate-01.json",
+      "backend-typecheck-01.json",
+      "backend-lint-01.json",
+      "backend-test-01.json",
+      "backend-build-01.json",
+      "frontend-typecheck-01.json",
+      "frontend-test-01.json",
+      "frontend-build-01.json"
+    ]
+  },
+  "courseWords": 4336,
+  "courseFiles": 9,
+  "courseLinksChecked": 21,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "5afd47533c252e887a80a671876b016c8dd591cbdf987d294f4571360c8b27fd",
+      "after_sha256": "aacf6a0eb8e64053dd537cd06d34f1ad98c30cb86fbb08b93ff721c51fe6a646"
+    },
+    {
+      "file": "backend/src/app.ts",
+      "before_sha256": "62251078374227e9fe31f8f97bd1f331f89203e580aaeda4523f3c2d781e9fd0",
+      "after_sha256": "409c74b77c64b1732df82eceff8aa18836181a2eea31e0a258a714a09ed07210"
+    },
+    {
+      "file": "backend/src/app.test.ts",
+      "before_sha256": "55eef199f62a58e7ffdfe400d9c88dcc61a937b1776ad1a21324e7fb0c9c5adb",
+      "after_sha256": "b94505dbf836bcfdc4d3bfb19790061b75466487c326fe4cd59ac10a68530949"
+    },
+    {
+      "file": "backend/src/modules/auth/auth.schemas.ts",
+      "before_sha256": "d4e02db23a12173363a8855a82c8c8dc988a8bb60dc708e1c21748b70b7e37ea",
+      "after_sha256": "67bfb1e86a984cb5fd56e4f79a1b5e0b191e8475be9b0f735ac8ea3c2817ed19"
+    },
+    {
+      "file": "backend/src/modules/auth/auth.service.ts",
+      "before_sha256": "d32d5d2d2ca784e05385a810278222a7b008ee2487067a60067020f732097270",
+      "after_sha256": "b54dfa50477d5159f8e2f05ffeae8bc3531972c987aebb41513faecb83093cb8"
+    },
+    {
+      "file": "backend/src/shared/utils/jwt.ts",
+      "before_sha256": "66770f7c0d8e4845f331d4a4885862874d2f31c181928fda23a163226699de2d",
+      "after_sha256": "9226cf5b9854bff2dc9255920d681c0871c68668afd1ee89b2df1352b7e20111"
+    },
+    {
+      "file": "astraupskill/snapshots/app-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "62251078374227e9fe31f8f97bd1f331f89203e580aaeda4523f3c2d781e9fd0"
+    },
+    {
+      "file": "astraupskill/snapshots/app-test-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "55eef199f62a58e7ffdfe400d9c88dcc61a937b1776ad1a21324e7fb0c9c5adb"
+    },
+    {
+      "file": "astraupskill/snapshots/auth-routes-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "c64a5196b6b00d6609ae1bf037423360312d02213fd1e63ae2cbe03f45263cdd"
+    },
+    {
+      "file": "astraupskill/snapshots/auth-schemas-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d4e02db23a12173363a8855a82c8c8dc988a8bb60dc708e1c21748b70b7e37ea"
+    },
+    {
+      "file": "astraupskill/snapshots/auth-service-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d32d5d2d2ca784e05385a810278222a7b008ee2487067a60067020f732097270"
+    },
+    {
+      "file": "astraupskill/evidence/backend-prisma-validate-01.json",
+      "before_sha256": null,
+      "after_sha256": "f5e02ee8dda25b79172d6453742292b27b0c3d069f187233a6cd281221c5f15c"
+    },
+    {
+      "file": "astraupskill/evidence/backend-prisma-validate-01.log",
+      "before_sha256": null,
+      "after_sha256": "7cc4c138045e1fbd008a5b9c5a6d554739fcd194f8035b8a11966d556758c43e"
+    },
+    {
+      "file": "astraupskill/evidence/backend-prisma-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "08a651be5bfb3f7b29665918e96b6466fde84e54c90b199972e0f62879154ed8"
+    },
+    {
+      "file": "astraupskill/evidence/backend-prisma-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "51d5bb59c4c250483854e41e61841a5942bf902e4c6d70ab601dd6e56efb3159"
+    },
+    {
+      "file": "astraupskill/evidence/backend-typecheck-01.json",
+      "before_sha256": null,
+      "after_sha256": "060c595e544290e777faf6c0e19a73a8a728eb27d42545941f199e8d98e8b801"
+    },
+    {
+      "file": "astraupskill/evidence/backend-typecheck-01.log",
+      "before_sha256": null,
+      "after_sha256": "9e46e5b6e1cbcdc8f4572aedc5137f5110a1a7e806825c77201621d6d31bf788"
+    },
+    {
+      "file": "astraupskill/evidence/backend-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "5adb666a7632fc5b2729d5f9e29248efbb7b04249415c374f13acf055446fc8a"
+    },
+    {
+      "file": "astraupskill/evidence/backend-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "3d732599743da62b117851e8111f1119efa4067b5a56b244a0b94d3a91ab7717"
+    },
+    {
+      "file": "astraupskill/evidence/backend-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "3f0c2ae44693d1bc332362750600fffb527607ffeba1c165291d5c69eef670bd"
+    },
+    {
+      "file": "astraupskill/evidence/backend-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "bffe12e688a581324ba3920e1a6771eaf801382a2fc74a2da75fe3aa8f2e32da"
+    },
+    {
+      "file": "astraupskill/evidence/backend-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "590809f7e36d77e5a311c844ac5290b44731846e3e983d7ec6727c354a325712"
+    },
+    {
+      "file": "astraupskill/evidence/backend-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "cc294c699b3eb7a5242535d1545982d56fd6bbbb2d592ebf3c38aaaee259846f"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-typecheck-01.json",
+      "before_sha256": null,
+      "after_sha256": "760e88e8327dfd842d24452bcc21cdbc6120562805831154f4cc2e7f25d2ed7f"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-typecheck-01.log",
+      "before_sha256": null,
+      "after_sha256": "49fa35a9273f9da77f027b6f1eaa8a7b25708171fe58f9b9f9af6c1dcde116ae"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "cf504557d12193e94d9bfadf5e5786504278d4d195e6322d1a5e81ad6135d922"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "00b367d0d80fc1f4fcca9aa5fe96ca835f931f6ec967497a5dc42b5243e76b7e"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "35b1526135623fa415a984c790542868f692d3939684edd2e7560343f8551f85"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "d1aefc9bb90301a919206d8e04d33309e3f5f7698cd5ab2159b5f8b7b7d08e08"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "b2f6f59f42e40209a5dadc6d094912f7344d5f0d2302c62cce08f37f34288a5a"
+    },
+    {
+      "file": "astraupskill/evidence/install-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "f45c66e70550aeb91e1bd85ec8c633581574437e4a9b0b6f895984f3ae767372"
+    },
+    {
+      "file": "astraupskill/evidence/install-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "8402f7b102ff5138452c02ae751eca3258c64207b0d05bd1aee997b5b7ce199c"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9b094d4db1c957f900205f299bdfb87424caba3e1a7969f6e0b0bace36f58c73"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "93e6e69b8bd6ad5ef3e64be43deefe8892b1614318b10592459e06adca2b5005"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "69cf74a2a12e9b90b0b9f40c702bdd1aab97624c938dc923ffe3473ebd76c4e6"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1a6d9b2cb519ccbe952afd3e80482ede2722ccbeead82ab6600d38515fd3b554"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b9b8eb98ff5f6b33c7a5cf823216d93eba0819c7d11e8623421b179dbcbda78e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "77d56fe73f012b8efd0f9178445a9ffd3e6487bd440149d0f1a25ba6d51025d9"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "49bb7ffcae87b3dcbdce9e7cfd159ede165393b0483ab838b49f311a852b3de5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "36cd9e31461d949932c1ad498279d2635b6a3225f211a327fcbcba212abd82ed"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4ec8dc199b46805c75b1e029329343b86af863f69631579b2078219e6137b964"
+    }
+  ],
+  "limits": [
+    "Public registration intentionally creates READ_ONLY users; no privileged provisioning route was added, and administrator bootstrap remains an explicit local seed concern.",
+    "The backend suite mocks Prisma, so it proves HTTP validation, service arguments, token/error mapping, and route forwarding but not PostgreSQL durability or multi-process concurrency.",
+    "Refresh storage ownership and expiry checks are exercised with records supplied by the mock; no live database or token revocation list is claimed. Access-token revocation and refresh rotation remain unimplemented.",
+    "The frontend is the existing login shell and app scaffold; build/test success does not prove browser-to-API authentication or a live account.",
+    "The Prisma schema contains future CRM models, while the active app exposes the auth and health seams; no CRUD or tenant-membership architecture was invented.",
+    "The existing database refresh-token expiry remains fixed at seven days while JWT lifetime is configurable; rotation and access-token revocation remain future work."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T20:33:18.791901+00:00"
+}

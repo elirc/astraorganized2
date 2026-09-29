@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+  "id": "4c54d18d7d97",
+  "command": [
+    "node",
+    "--test",
+    "server/tests/cart-validation.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4c54d18d7d97",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:49:22.484323+00:00",
+  "status": "complete",
+  "log": "unit-01.log",
+  "pid": 38032,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:49:34.672725+00:00",
+  "elapsedSeconds": 12.19
+}

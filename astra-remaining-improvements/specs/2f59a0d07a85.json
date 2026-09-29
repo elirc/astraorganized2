@@ -1,0 +1,25 @@
+{
+  "id": "2f59a0d07a85",
+  "project": "_Organized Desktop/05 Numbered Experiments/e17",
+  "summary": [
+    "Validate optional reply parent posts belong to the requested topic before opening the create transaction.",
+    "Reject missing and cross-topic parent ids while preserving top-level and same-topic reply workflows."
+  ],
+  "changedFiles": [
+    "src/lib/forum-core.ts",
+    "tests/reply-parent-boundary.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/forum-core.ts.original.txt",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2f59a0d07a85/results-crud-b04.json"
+  },
+  "limits": [
+    "Five Node runtime cases execute the actual forum module with Prisma, schema, enum, permission and external helper adapters. Same-topic/top-level cases run internal notification and trust orchestration against adapters, not real deliveries or persistence.",
+    "No Next.js, native Prisma, Zod schema, actual permission policy, database isolation or durable rollback was executed. Parent validation is a pre-transaction membership check; concurrent parent changes remain outside this correction.",
+    "Local Next.js guides were absent after dependency cleanup. No Next.js API or route was changed."
+  ]
+}

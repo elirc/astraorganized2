@@ -1,0 +1,28 @@
+{
+  "resources": [
+    {
+      "container": "_Organized Desktop/04 JavaScript Training",
+      "files": [
+        "_Organized Desktop/04 JavaScript Training/JS learning",
+        "_Organized Desktop/04 JavaScript Training/JS1"
+      ],
+      "note": "Loose container-level resources; not separate software projects."
+    },
+    {
+      "container": "_Organized Desktop/08 App And Product Projects",
+      "files": [
+        "_Organized Desktop/08 App And Product Projects/appmaker"
+      ],
+      "note": "Loose container-level resources; not separate software projects."
+    },
+    {
+      "container": "_Organized Desktop/11 Loose Files",
+      "files": [
+        "_Organized Desktop/11 Loose Files/eli_resume_tech_stack_list.md",
+        "_Organized Desktop/11 Loose Files/rename-log.md",
+        "_Organized Desktop/11 Loose Files/test.db"
+      ],
+      "note": "Loose container-level resources; not separate software projects."
+    }
+  ]
+}

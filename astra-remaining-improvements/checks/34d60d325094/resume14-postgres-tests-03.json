@@ -1,0 +1,22 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Shop",
+  "id": "34d60d325094",
+  "command": [
+    "python",
+    "scripts/test-local.py",
+    "--dotnet",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+    "--results",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/34d60d325094/resume14-pg03"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34d60d325094",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T17:41:31.666905+00:00",
+  "status": "complete",
+  "log": "resume14-postgres-tests-03.log",
+  "pid": 24632,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T17:45:48.332284+00:00",
+  "elapsedSeconds": 256.66
+}

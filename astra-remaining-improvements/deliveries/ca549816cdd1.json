@@ -1,0 +1,578 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e14",
+  "id": "ca549816cdd1",
+  "summary": [
+    "Added a responsive browser workspace and complete tenant-scoped CRUD for streams, dashboards, alerts, pipelines and saved queries, with bounded pagination, atomic audits, protected references and explicit revision conflict review.",
+    "Strengthened current-user/token authorization, privilege grant limits, expiring sessions, strict typed and nested configuration validation, finite JSON, raw request limits and local host/origin boundaries.",
+    "Made ingestion deduplication, derived metrics, pipeline history and organization retention transactional; fixed partial pipeline output, selected manual runs, trace cycles and cross-trace log correlation.",
+    "Bounded SQL with an isolated tenant subset, authorizer and timeout; corrected filter-before-limit behavior, UTC grouping, mixed label grouping and alert counts/stream selection. Moved notifications to a default-simulated durable outbox with explicit operator delivery.",
+    "Pinned tested direct dependencies, verified an installed wheel with browser assets, added explicit additive migration and preserved 30 original text files. Added nine detailed junior-to-mid-level CRUD guides with examples, exercises, solutions and reviewed screenshots; verified 106 distinct Python cases, 12 real-browser workflows and four packaging checks, plus lint/format/JavaScript syntax."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e14/results.json",
+    "expectedTests": 122
+  },
+  "testResults": {
+    "passed": true,
+    "verifiedAt": "2026-09-12T11:39:05.394430+00:00",
+    "pythonDistinctTests": 106,
+    "browserWorkflowChecks": 12,
+    "packagingChecks": 4,
+    "totalChecks": 122,
+    "pythonEvidence": {
+      "fullSuite": 105,
+      "focusedFinalRegressionRun": 18,
+      "note": "The focused run repeats 17 existing cases and adds one trace-alert stream regression. Encoding assertions were added to an existing HTTP case and rerun separately."
+    },
+    "browserChecks": [
+      "Bootstrap through the browser creates an authenticated organization",
+      "Session token is absent from browser storage and cookies",
+      "Browser creates a persisted dashboard",
+      "Real two-tab stale update is rejected and draft retained",
+      "Explicit conflict resolution and independent field merge persist",
+      "Invalid JSON leaves the saved record unchanged",
+      "Pagination reads bounded pages and stored markup renders as text",
+      "Telemetry ingestion and search run through the real browser and SQLite",
+      "Desktop and narrow layouts render without horizontal overflow",
+      "Revision-protected browser delete removes the persisted dashboard",
+      "Logout and reload clear the in-memory browser session",
+      "No unhandled browser JavaScript exceptions"
+    ],
+    "packaging": [
+      "Build distributable wheel with pinned build dependencies",
+      "Wheel contains current application and browser assets without database or environment files",
+      "Install wheel into a separate directory without an editable source checkout",
+      "Installed application imports from wheel, serves assets and persists authenticated CRUD"
+    ],
+    "quality": {
+      "passed": true,
+      "commands": [
+        {
+          "command": [
+            "C:/Users/Owner/AppData/Roaming/Python/Python313/Scripts/ruff.exe",
+            "check",
+            "app",
+            "tests",
+            "scripts"
+          ],
+          "exitCode": 0,
+          "seconds": 0.39
+        },
+        {
+          "command": [
+            "C:/Users/Owner/AppData/Roaming/Python/Python313/Scripts/ruff.exe",
+            "format",
+            "--check",
+            "app",
+            "tests",
+            "scripts"
+          ],
+          "exitCode": 0,
+          "seconds": 0.64
+        },
+        {
+          "command": [
+            "node",
+            "--check",
+            "app/web/app.js"
+          ],
+          "exitCode": 0,
+          "seconds": 3.06
+        }
+      ]
+    },
+    "originalDatabaseOpened": false,
+    "externalNotificationsSent": false,
+    "screenshotsReviewed": [
+      "desktop.png",
+      "mobile.png"
+    ],
+    "limitations": [
+      "Local single-node SQLite application; no public deployment or distributed scheduler.",
+      "Dashboard configuration editor, not a rendered chart engine; OTLP aliases use custom envelopes.",
+      "JSON merges operate per field; CRUD creates have no general operation receipts.",
+      "Webhook tests use fake senders and mocked DNS, with no live provider delivery.",
+      "Migration verified on synthetic historical schemas; legacy naive timestamps are interpreted as UTC.",
+      "Direct dependency versions pinned; no complete operating-system or transitive dependency lock."
+    ]
+  },
+  "courseWords": 7555,
+  "courseFiles": 9,
+  "courseLinksChecked": 56,
+  "files": [
+    {
+      "file": ".env.example",
+      "before_sha256": null,
+      "after_sha256": "5759ef9a1cc078963dd503eaef207a76955e225d3a8e8e8b95585e9e95507036"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "0454b28d43d6d520a72bcd3d66b44ba5be1d6ce9d07b5fb8c55e9b7e8366adc3"
+    },
+    {
+      "file": "app/api.py",
+      "before_sha256": "a6ba75590c84504f873e90afaf1f3e8a63c0ffcd63763743c48357d7c0545459",
+      "after_sha256": "9b4da795cca5db40c8fe28f6f1ba13894b0d3ea938296a0fe9b2ce43c492b851"
+    },
+    {
+      "file": "app/config.py",
+      "before_sha256": "6f4cc7d5808b0c31c2a30dd2ebca7482baa3fe26422ee6e7a3c4111977aa1db0",
+      "after_sha256": "3c5b1c4e8e519e3ae4431acafce6e721ea08b65fcdd5a3cadee33fd93890f661"
+    },
+    {
+      "file": "app/contracts.py",
+      "before_sha256": null,
+      "after_sha256": "4cc9077a63828c31a6704bb18a182850ca2e4fff88d4f3ae03ecd0e5cceb05d3"
+    },
+    {
+      "file": "app/crud.py",
+      "before_sha256": null,
+      "after_sha256": "3ca022f1422e4db8f3f2992028fa0e8328915e8f3a429d80729bf6c7981e48c0"
+    },
+    {
+      "file": "app/db.py",
+      "before_sha256": "1bc22fadf9d8ce3716394a240817dfe682f1b456363f6c49852ece4f24a08d80",
+      "after_sha256": "0145cef5de6839fcee0d550888f8ed501ea700910cb81886539b6d5b8fd40dd6"
+    },
+    {
+      "file": "app/deliver.py",
+      "before_sha256": null,
+      "after_sha256": "25a25ef46680bb0475dcc14c020cfa4447f236fda714c80af998b715404d96d8"
+    },
+    {
+      "file": "app/deps.py",
+      "before_sha256": "7b09fdc73738b162e778b6c8e3eeb95ace1badc90fcff785ee484f85bc2105f9",
+      "after_sha256": "07d29b8c42657e66ced34f8126c9a48fd0ae8ef2698c386cbf6cde288b851169"
+    },
+    {
+      "file": "app/errors.py",
+      "before_sha256": null,
+      "after_sha256": "87a649586c866b7cf10e1b6d3e52c54935da79ac51e9abed658f4cd7716ab44c"
+    },
+    {
+      "file": "app/http_boundary.py",
+      "before_sha256": null,
+      "after_sha256": "49ac18e0248d3483525000613855db62e66c3b9f7c80112d5c19f1b63a0d56ef"
+    },
+    {
+      "file": "app/migrate.py",
+      "before_sha256": null,
+      "after_sha256": "f016b50509dc3e39b96fb361cdb0c0ccdb849793ddbed3d4bacba3e63f38af14"
+    },
+    {
+      "file": "app/models.py",
+      "before_sha256": "c5141c7f1d20efc3afae757c6712ce45a664f02f9cd84a29f73ef5ce5e85a23f",
+      "after_sha256": "cca8d5ef6097916065bfa63099a9fbaa530647bd421aab615fa3418a81650882"
+    },
+    {
+      "file": "app/schemas.py",
+      "before_sha256": "4089639b7c51b4e64d2cc4b89f2a440f55575131649f7f0ffdc987a3b555402a",
+      "after_sha256": "43ec1f2b5e70ffd784a0260efd03219c4b2cb853d40c24b2adae67a34f6d0714"
+    },
+    {
+      "file": "app/security.py",
+      "before_sha256": "92cbb652c4d6221fad42c1bfa7cda4fcc16c1c4193e5f4cfa7857957a3e1d681",
+      "after_sha256": "dae9a8566091003e4981782904b2ac310228370949c93e1e07e8fcafb3b02007"
+    },
+    {
+      "file": "app/services/alerts.py",
+      "before_sha256": "eb650b448723d75b2e61accaed661facf1b3f89077128fb71250d4a038c4b5ec",
+      "after_sha256": "c1abe1730c35b3ba345e81075ea14e59fa20ba0c47ac64c698fd64932a91c662"
+    },
+    {
+      "file": "app/services/auth.py",
+      "before_sha256": "cdc84dedcb4429a255805962308b65914b3537ef616531df385ecd4bf661cdd8",
+      "after_sha256": "d5bae6a5a5bcacb05f15d597a37198bbf6ea6eaa463da4f5d74a4df7be11e890"
+    },
+    {
+      "file": "app/services/common.py",
+      "before_sha256": "abbfe1e70fc22bf9fd4c96f8a55e20dd92f604127b2ec245d0aaeb6682bf3587",
+      "after_sha256": "8c39a68be044ae289d79b94b3abe70b14fe57ade8bf8fd244026d54c6c1bfebc"
+    },
+    {
+      "file": "app/services/dashboards.py",
+      "before_sha256": "c9ea9629edd90a1ec0bc382c43ec57ada4370a3ccdf2b506492ebc81510646db",
+      "after_sha256": "8f2c86f9a2348e8dd2e96fb1aed33f589664fe0295d441a3472b94a6c02073fd"
+    },
+    {
+      "file": "app/services/deduplication.py",
+      "before_sha256": null,
+      "after_sha256": "f46b91ba90fe67a50096e7ea58c13ba26d0758d90baa69facd12dcb55fad33cf"
+    },
+    {
+      "file": "app/services/ingestion.py",
+      "before_sha256": "3aae8095b358142be5cc6a9a256606d8b9d995779181fb05ec7d53548faaf89f",
+      "after_sha256": "153075cd3d2f119641e56066646da5f5a4f4e44e0b53ed7566fa8ac13dd5375c"
+    },
+    {
+      "file": "app/services/notification_outbox.py",
+      "before_sha256": null,
+      "after_sha256": "2f917fa358ca2f76f94841bc15bf789170dfb5a8338fba32f1ac6d9c3ed876fa"
+    },
+    {
+      "file": "app/services/pipelines.py",
+      "before_sha256": "1623473a7e2236e47f46c9103550fe2633387fbca659789f92180a93f4ab4a05",
+      "after_sha256": "211a453b3adc917b4d70693c0d61e348d48fcc0ca9f5d675784bdd88a13c379e"
+    },
+    {
+      "file": "app/services/queries.py",
+      "before_sha256": "3676823759bd9b955ae7060ac7959ca6b592cdeb9e18e479b84b4b714e658b2d",
+      "after_sha256": "75ea434de61137281b1ae2a2bd6afc9762e210b96d3d862be7060a169200cde9"
+    },
+    {
+      "file": "app/services/query_safety.py",
+      "before_sha256": null,
+      "after_sha256": "f5b8fa3391606d1ef3f3ae22a47a2da55284c793406f672d4b97ad5a6d1e36c9"
+    },
+    {
+      "file": "app/time_types.py",
+      "before_sha256": null,
+      "after_sha256": "d61023b756dd17d68698f8be99b56214239158bb42825b2ca2e1c47dd87f1e87"
+    },
+    {
+      "file": "app/web/app.js",
+      "before_sha256": null,
+      "after_sha256": "0967e804dcae5187bc4074cd288cf4f6789e82af5bf8f1073b5de6baa78f65f1"
+    },
+    {
+      "file": "app/web/index.html",
+      "before_sha256": null,
+      "after_sha256": "07df7aebca2e51db6de2693a012729fca61f4558df914eb4aadb9643caa58f8f"
+    },
+    {
+      "file": "app/web/styles.css",
+      "before_sha256": null,
+      "after_sha256": "43ef5045c133cdb9dfc47ec26918fd963b873d4f8d4bdf603de9d619cb0cfc6c"
+    },
+    {
+      "file": "astraupskill/evidence.json",
+      "before_sha256": null,
+      "after_sha256": "98a4339d6d8a38291352cfb446dbbd6d68f73bf39bfb18282d1d819f23fc5397"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "b9158bdab586a0cb32aa32f4cb887a450f94984d9dba1c3eb1bc699e4b641779"
+    },
+    {
+      "file": "astraupskill/images/mobile.png",
+      "before_sha256": null,
+      "after_sha256": "ddb493519dc29fd45b9d46e95a3114dfb54ca21366e4bd53863771e9f94e4d76"
+    },
+    {
+      "file": "docs/onboarding/00-codebase-map.md",
+      "before_sha256": "414f42e82f138c318f09588ff898bd113de1eaa6ab725c7741a00234572e3bea",
+      "after_sha256": "f576e5677f40b64f23e2e6a6da69412b44836cff0f1e0b8cc3ff29db750f0643"
+    },
+    {
+      "file": "docs/onboarding/01-reading-order.md",
+      "before_sha256": "320f91c48d7728dc9ef403673dc3432876e3588f4a93b202e1e595333e392fcb",
+      "after_sha256": "b472b882ed2c8e9bd5d4f8983d7c3ef4e22f00a3991536dbe5646b014c3cca91"
+    },
+    {
+      "file": "docs/onboarding/02-review-checklists.md",
+      "before_sha256": "440e8ab2e82ba3303326cbe56373e33321357ba545d5bb32776fdb55e2915663",
+      "after_sha256": "4d9fdf8311a7d6b627fae1ce94ad6375e7610db03cc42ca0418119bd0f862ff7"
+    },
+    {
+      "file": "docs/onboarding/files/app/api.py.md",
+      "before_sha256": "631ae7451d570774b9deb2afff821d9a5efd6d1f9d1798f35d2fc486472f50ab",
+      "after_sha256": "0e8b802473f53b920eafd8f87a4d114ba167a61c11732ba3d33a252e1c672de0"
+    },
+    {
+      "file": "docs/onboarding/files/app/deps.py.md",
+      "before_sha256": "0eb60b874c3daa71d01d5d8b099e71d934dd4a0cd046c5e928714b1357e6e7a7",
+      "after_sha256": "074ea9c2609ae696f5c225435cb4b253d8a167df480cabb74ff29ee38ec2c423"
+    },
+    {
+      "file": "docs/onboarding/files/app/models.py.md",
+      "before_sha256": "78045ee2bac38072ea5f52b821a71bc1fa7ad22496e180956213ef226776aed6",
+      "after_sha256": "2f01c1a89e8b22de208e60dc494c86942d6dd2c3b6cb2b21d2eb1346d5ab6dd5"
+    },
+    {
+      "file": "docs/onboarding/files/app/services/auth.py.md",
+      "before_sha256": "b42f73f3c2d2f2792bed390e4b22f2b1d6679e328fc854e8077df35915c77172",
+      "after_sha256": "fa8a7c794e7f7dc6bcbbbdfad8590f4ef6483cd15c1866f6cd1a1466248ec0fa"
+    },
+    {
+      "file": "docs/onboarding/files/app/services/ingestion.py.md",
+      "before_sha256": "180666b51c593dfe5ceecc17903c58fde851b2a141466c2c3b6ff3ab82e24adf",
+      "after_sha256": "9300d1e2e27ec823145a87e8eefccf47046cf943fdc8e0109f67874ce6f5ae32"
+    },
+    {
+      "file": "docs/onboarding/files/app/services/queries.py.md",
+      "before_sha256": "935fa51e3588e261f26bf80326920698f0289985a6f9bec307550d3945c4c58e",
+      "after_sha256": "d35fc6e5bb9befafa28d147dee4187e241195235b0835298a1fe7802e828e4a7"
+    },
+    {
+      "file": "docs/original/app/__init__.py.txt",
+      "before_sha256": null,
+      "after_sha256": "5f83be4c9efdf3147cf3c546f1e651a113eaf6520aad40a0a5d5bd4c78db91eb"
+    },
+    {
+      "file": "docs/original/app/api.py.txt",
+      "before_sha256": null,
+      "after_sha256": "a6ba75590c84504f873e90afaf1f3e8a63c0ffcd63763743c48357d7c0545459"
+    },
+    {
+      "file": "docs/original/app/config.py.txt",
+      "before_sha256": null,
+      "after_sha256": "6f4cc7d5808b0c31c2a30dd2ebca7482baa3fe26422ee6e7a3c4111977aa1db0"
+    },
+    {
+      "file": "docs/original/app/db.py.txt",
+      "before_sha256": null,
+      "after_sha256": "1bc22fadf9d8ce3716394a240817dfe682f1b456363f6c49852ece4f24a08d80"
+    },
+    {
+      "file": "docs/original/app/deps.py.txt",
+      "before_sha256": null,
+      "after_sha256": "7b09fdc73738b162e778b6c8e3eeb95ace1badc90fcff785ee484f85bc2105f9"
+    },
+    {
+      "file": "docs/original/app/main.py.txt",
+      "before_sha256": null,
+      "after_sha256": "951ac076b5bf8af1903f4173d46aab6d78a72d4dbd70f237bad0cf457c3aed83"
+    },
+    {
+      "file": "docs/original/app/models.py.txt",
+      "before_sha256": null,
+      "after_sha256": "c5141c7f1d20efc3afae757c6712ce45a664f02f9cd84a29f73ef5ce5e85a23f"
+    },
+    {
+      "file": "docs/original/app/permissions.py.txt",
+      "before_sha256": null,
+      "after_sha256": "ff17ebda32eb8a75d6a6dc92ff5d92d44ef9d847e095519ba579817f7cafe31a"
+    },
+    {
+      "file": "docs/original/app/schemas.py.txt",
+      "before_sha256": null,
+      "after_sha256": "4089639b7c51b4e64d2cc4b89f2a440f55575131649f7f0ffdc987a3b555402a"
+    },
+    {
+      "file": "docs/original/app/security.py.txt",
+      "before_sha256": null,
+      "after_sha256": "92cbb652c4d6221fad42c1bfa7cda4fcc16c1c4193e5f4cfa7857957a3e1d681"
+    },
+    {
+      "file": "docs/original/app/services/__init__.py.txt",
+      "before_sha256": null,
+      "after_sha256": "74c42be575f1e226f3efc7fd39aed7e52b691ad5134e701e4113db5ea5f9f910"
+    },
+    {
+      "file": "docs/original/app/services/alerts.py.txt",
+      "before_sha256": null,
+      "after_sha256": "eb650b448723d75b2e61accaed661facf1b3f89077128fb71250d4a038c4b5ec"
+    },
+    {
+      "file": "docs/original/app/services/auth.py.txt",
+      "before_sha256": null,
+      "after_sha256": "cdc84dedcb4429a255805962308b65914b3537ef616531df385ecd4bf661cdd8"
+    },
+    {
+      "file": "docs/original/app/services/common.py.txt",
+      "before_sha256": null,
+      "after_sha256": "abbfe1e70fc22bf9fd4c96f8a55e20dd92f604127b2ec245d0aaeb6682bf3587"
+    },
+    {
+      "file": "docs/original/app/services/dashboards.py.txt",
+      "before_sha256": null,
+      "after_sha256": "c9ea9629edd90a1ec0bc382c43ec57ada4370a3ccdf2b506492ebc81510646db"
+    },
+    {
+      "file": "docs/original/app/services/ingestion.py.txt",
+      "before_sha256": null,
+      "after_sha256": "3aae8095b358142be5cc6a9a256606d8b9d995779181fb05ec7d53548faaf89f"
+    },
+    {
+      "file": "docs/original/app/services/pipelines.py.txt",
+      "before_sha256": null,
+      "after_sha256": "1623473a7e2236e47f46c9103550fe2633387fbca659789f92180a93f4ab4a05"
+    },
+    {
+      "file": "docs/original/app/services/queries.py.txt",
+      "before_sha256": null,
+      "after_sha256": "3676823759bd9b955ae7060ac7959ca6b592cdeb9e18e479b84b4b714e658b2d"
+    },
+    {
+      "file": "docs/original/docs/onboarding/00-codebase-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "414f42e82f138c318f09588ff898bd113de1eaa6ab725c7741a00234572e3bea"
+    },
+    {
+      "file": "docs/original/docs/onboarding/01-reading-order.md.txt",
+      "before_sha256": null,
+      "after_sha256": "320f91c48d7728dc9ef403673dc3432876e3588f4a93b202e1e595333e392fcb"
+    },
+    {
+      "file": "docs/original/docs/onboarding/02-review-checklists.md.txt",
+      "before_sha256": null,
+      "after_sha256": "440e8ab2e82ba3303326cbe56373e33321357ba545d5bb32776fdb55e2915663"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/api.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "631ae7451d570774b9deb2afff821d9a5efd6d1f9d1798f35d2fc486472f50ab"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/deps.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0eb60b874c3daa71d01d5d8b099e71d934dd4a0cd046c5e928714b1357e6e7a7"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/models.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "78045ee2bac38072ea5f52b821a71bc1fa7ad22496e180956213ef226776aed6"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/services/auth.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b42f73f3c2d2f2792bed390e4b22f2b1d6679e328fc854e8077df35915c77172"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/services/ingestion.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "180666b51c593dfe5ceecc17903c58fde851b2a141466c2c3b6ff3ab82e24adf"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/app/services/queries.py.md.txt",
+      "before_sha256": null,
+      "after_sha256": "935fa51e3588e261f26bf80326920698f0289985a6f9bec307550d3945c4c58e"
+    },
+    {
+      "file": "docs/original/pyproject.toml.txt",
+      "before_sha256": null,
+      "after_sha256": "c9ce95fe3d9059cf8afd05bd8e60b05ce1f15e20c07f1a6e9d497f87c2302aba"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b55be865aa64e42b7bf7ab596aeaf9f38b6efd2a33e1fb24dab617e64e336b35"
+    },
+    {
+      "file": "docs/original/tests/test_mvp.py.txt",
+      "before_sha256": null,
+      "after_sha256": "857a896e6c3920a725689b381ffc2a994ee7de9d08409364a8f3c5e6d52eeac8"
+    },
+    {
+      "file": "pyproject.toml",
+      "before_sha256": "c9ce95fe3d9059cf8afd05bd8e60b05ce1f15e20c07f1a6e9d497f87c2302aba",
+      "after_sha256": "fc78f7de443a4da9547b3b1e726c6e6ff396c7e3f680707dfcec9594e90e1b26"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "b55be865aa64e42b7bf7ab596aeaf9f38b6efd2a33e1fb24dab617e64e336b35",
+      "after_sha256": "d78c821f5a2d278cf8e56c1b5f0c578007c81e8bbf7acd76995ad12c9e676992"
+    },
+    {
+      "file": "scripts/check_browser.py",
+      "before_sha256": null,
+      "after_sha256": "a3b50c2ff0fd7706f5e1af28b5c225d45370d322eced9c1b48f7551602a02984"
+    },
+    {
+      "file": "tests/test_contracts_and_auth.py",
+      "before_sha256": null,
+      "after_sha256": "776483994273701e38923ceabb3dec75762c7477d155165c74e0711b01e30c67"
+    },
+    {
+      "file": "tests/test_crud.py",
+      "before_sha256": null,
+      "after_sha256": "c3be340db6b556904ad432cfc8ab18a5db6860d56342424f34ead923d3930310"
+    },
+    {
+      "file": "tests/test_database_foundation.py",
+      "before_sha256": null,
+      "after_sha256": "760143d77a25b4954f15597af70e6651ed272ac8ee4384657e9575c9226362b3"
+    },
+    {
+      "file": "tests/test_http_boundary.py",
+      "before_sha256": null,
+      "after_sha256": "4753bfa720527edce0661bf25a36ebc3cd687459d7e008b2e741ab6fcde9e5be"
+    },
+    {
+      "file": "tests/test_ingestion_transactions.py",
+      "before_sha256": null,
+      "after_sha256": "08f23ec0116dc591424bbeb6a19873d883b8db1da8599b0cc0211b8043440c90"
+    },
+    {
+      "file": "tests/test_mvp.py",
+      "before_sha256": "857a896e6c3920a725689b381ffc2a994ee7de9d08409364a8f3c5e6d52eeac8",
+      "after_sha256": "b45d7ff997a49b8e69ca54c6c7cdaa9b1dd85bf6226cf5d6700dfd06b9c14f31"
+    },
+    {
+      "file": "tests/test_notification_outbox.py",
+      "before_sha256": null,
+      "after_sha256": "6eccc66b87a318fef2506810c8e601f863f9466a8be67147c403d7cc41d997a0"
+    },
+    {
+      "file": "tests/test_query_safety.py",
+      "before_sha256": null,
+      "after_sha256": "c0b3de634c28975e44365a14490fd1713d299bfd1d42ec155a3593a1c87f15bc"
+    },
+    {
+      "file": "tests/test_trace_alert_stream.py",
+      "before_sha256": null,
+      "after_sha256": "6eb74591f8624f1f36f39959c740e5d56a6971e56e823d2df2eadb9a92a70bf5"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "db584e7c8756ce6b45224cb3f2a8214f5142c7fc5a1cc81cc653daf636463f69"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "df27e2a375a17d48b2a1495a31660ef69256d509181b1569fb82a351b8c30df0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "adc3155ff5322abf17b5c6d4ef71a3fa485fe41285eabf25211e1a4af7507e04"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "b000a76166c86aa5e856c19371161b7fa71232d7b147086fc3a6b2ba1e579fe9"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "26126910e7c5c83d47b28af67e94d1ffbc935fcf3029e657a2662925215da848"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "63dd81831d360f43a852fb8ca7c786857b5d8b60b4429c78d95ea48d03bdeffe"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c811a5e570d9eef29725c6035d4e91f37613a86ea049c792a971a0e201d2dd99"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f2a6e41134ee610f4651842a8ccb00180299a6ad08b52ce9a9e6ca16c57aba9c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "301e34532d0177b73c28f317a5ef238ba6bb696fbfe5e8c8ac71b6bca142efc5"
+    }
+  ],
+  "limits": [
+    "Local single-node SQLite application; no public deployment or distributed scheduler.",
+    "Dashboard configuration editor, not a rendered chart engine; OTLP aliases use custom envelopes.",
+    "JSON merges operate per field; CRUD creates have no general operation receipts.",
+    "Webhook tests use fake senders and mocked DNS, with no live provider delivery.",
+    "Migration verified on synthetic historical schemas; legacy naive timestamps are interpreted as UTC.",
+    "Direct dependency versions pinned; no complete operating-system or transitive dependency lock.",
+    "Original user database was not opened, migrated or replaced. Existing data requires explicit backup/migration or a separate fresh learning database.",
+    "User/token management remains API-based; account recovery and general user membership editing are not implemented.",
+    "Uncertain or crashed notification claims require operator investigation and are not automatically retried."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T11:39:45.943061+00:00"
+}

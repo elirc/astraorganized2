@@ -1,0 +1,40 @@
+{
+  "id": "f5bd710b171f",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:28:48.969069+00:00",
+  "sourceReview": "Reviewed updateChannelT, outer Update early-return ordering, production ErrNotFound type and string, PostgreSQL-only driver validation, exact original snapshot and local AGENTS rules. Zero rows now return not-found before public projection; one and multiple-row behavior are preserved.",
+  "teachingReview": "Reviewed all nine chapters and corrected baseline inline-check history, portable versus native commands, source-only outer transaction claims, six-subtest count and PostgreSQL scope. Exercises and separate solutions distinguish missing rows from driver failures.",
+  "testReview": "Reviewed exact-method extraction, explicit model/SQL/error contracts and captured terminal Go output with six distinct passing subtests, zero failures and skips. Cases cover 0/1/2 rows, execution and RowsAffected wrapped error identity, and DeleteAt rejection before SQL. Native Mattermost and database suites are unexecuted.",
+  "specSHA256": "c56517bab8979393a800eb1ffa59dce1d6d03c505c6d4cd561b83d662c0ff80c",
+  "fileHashes": {
+    "mattermost/server/channels/store/sqlstore/channel_store.go": "a9109e8ecbec970621477e75fec5c3465ddc391106be4b8f50ce209d62e0ebf4",
+    "mattermost/server/channels/store/sqlstore/channel_store_update_test.go": "5e1bffaf50e99c455edaf3912a43a6ee9dd567c6cccf31fa64d0735c176f90b5",
+    "mattermost/tests/crud-b02/run_channel_store_harness.py": "6ef4535db7afc8b796df73bb4dbced1af8ecb77222e2bc1901aacc901e012724",
+    "astraupskill/snapshots/channel_store.go.original.txt": "a5c47a75137cbaa8de08d2d8dc4b36f70e3615610df9687958d81e103052accf",
+    "astraupskill/evidence/crud-b02-go-harness-final.log": "8f51d4b2883f7f64d44101ab8b6fe828d9650dedee89e87cef76f5286576f57d",
+    "astraupskill/evidence/results.json": "bf1dba48efd3feb1f0e1805dd9d343ad84f49a898d40724d44891ec685ccf6af",
+    "astraupskill/evidence/toolchain-verification.json": "70792782d48440d54b357a2e02c7aee74dba541229fee945ef1888e46b9864fa",
+    "astraupskill/README.md": "8caa931a3023f581841e1baa85efc87506af2eed0b22a68891bcec8547a67614",
+    "astraupskill/01-CODEBASE-MAP.md": "7cb4458b6a24d2f3196919fae96cfe585cd89ef55a8168a21ed268e1aa600379",
+    "astraupskill/02-CONCEPTS.md": "5e2b7c568ed6f29d26bd458db9c4e062d2162f4f20de4e95d4fa36202f76e1c9",
+    "astraupskill/03-WORKED-CHANGE.md": "6d6ff6360ab70d8574a548f7dc06fd9074cbc7c27ae99949f21938bc77753850",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "94f0a192f45eaec1ec37221dd6692111939faea6cf8ec58b48e7ab09ab43566e",
+    "astraupskill/05-PRACTICE.md": "816d6f77865af55f15ccde4cad1c7576cbb6d98caad33cc758179a6baed666a3",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "b373ac46ce3a6457db4b9caeb5889a97fbff395e7857bf1db397d4571b8d9cda",
+    "astraupskill/07-TRACE-LAB.md": "9454185ffe5401414ff2d4edf9c5b6514606e16c21b9c03dc7f7d006cfa8e216",
+    "astraupskill/VERIFICATION.md": "30dabf91d397795cde8a768eb40e3e7383683f5d47da8fa320cfe78780cd650b"
+  },
+  "evidenceHashes": {
+    "checks/f5bd710b171f/crud-b02-go-harness-final.json": "1fdd4ac0a061237f3ac148a5a66a3647ee4d301c52e3e3114141d33b63e861ef",
+    "checks/f5bd710b171f/crud-b02-go-harness-final.log": "8f51d4b2883f7f64d44101ab8b6fe828d9650dedee89e87cef76f5286576f57d",
+    "checks/f5bd710b171f/crud-b02-go-test.json": "1f7c3481e27077b105627aa275a0637877bac1376603bed7caf8961015310e9d",
+    "checks/f5bd710b171f/crud-b02-go-test.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/f5bd710b171f/crud-b02-harness1.json": "f0e019ae5feb6790fa54e19bd1d57cafbf25df37f49f2afe0de4e7ce4c557c6d",
+    "checks/f5bd710b171f/crud-b02-harness1.log": "db4654acdd15333641f07b3c93012f9d7785b71af742baf2234ba59aa457004a",
+    "checks/f5bd710b171f/crud-b02-harness2.json": "289a2394d75c6386711925c7938e43e235b92c89a831bd8c986cd57bf5778173",
+    "checks/f5bd710b171f/crud-b02-harness2.log": "e18056594fb2f8a2e425cddebfc41bf7f970ec808f57b849d8c5979b2a980c96",
+    "checks/f5bd710b171f/crud-b02-harness3.json": "3925f898fc73a23b7386bd67dd4b9cb926749c8c99f54dbc84b764012147b648",
+    "checks/f5bd710b171f/crud-b02-harness3.log": "398fd2c7a317d00b10c49c445d86e79476e54515b6cb8494a8ee0b97b9e88790",
+    "checks/f5bd710b171f/results-crud-b02.json": "bf1dba48efd3feb1f0e1805dd9d343ad84f49a898d40724d44891ec685ccf6af"
+  }
+}

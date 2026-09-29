@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww45",
+  "id": "5bbaa8521f2b",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/knowledge-entry-service-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5bbaa8521f2b",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:00:24.106605+00:00",
+  "status": "complete",
+  "log": "crud-ww45-runtime-v5.log",
+  "pid": 31292,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:00:31.756934+00:00",
+  "elapsedSeconds": 7.65
+}

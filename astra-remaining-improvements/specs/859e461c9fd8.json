@@ -1,0 +1,20 @@
+{
+  "summary": [
+    "Five actual permission-policy cases cover wildcard, refusal, unknown roles, own-read versus broad-read and exact permission strings.",
+    "Add nine source-grounded teaching chapters with predictions, worked fixtures, separate practice/solutions and evidence limits; no production behavior changed."
+  ],
+  "changedFiles": [
+    "tests/permissions-errors.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/permissions.ts.original.txt",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/859e461c9fd8/runtime-b08.json"
+  },
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ]
+}

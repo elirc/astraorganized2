@@ -1,0 +1,19 @@
+{
+  "reviewedAt": "2026-09-12T15:01:44.942604+00:00",
+  "images": [
+    {
+      "file": "desktop.png",
+      "width": 1440,
+      "height": 1000,
+      "sha256": "5ebc56b37775853351c87c615a8f12791be1e77dc17bf4c47a0628eeb86b4986",
+      "review": "Viewed by the agent. Readable text, clear controls and no horizontal overflow. Narrow layout scrolls vertically; keyboard navigation and editor access also passed in the browser workflow."
+    },
+    {
+      "file": "narrow.png",
+      "width": 390,
+      "height": 844,
+      "sha256": "79b7eec05be70563b4cf23a84746937c7e11ac3060ae0a095a185186af605cc2",
+      "review": "Viewed by the agent. Readable text, clear controls and no horizontal overflow. Narrow layout scrolls vertically; keyboard navigation and editor access also passed in the browser workflow."
+    }
+  ]
+}

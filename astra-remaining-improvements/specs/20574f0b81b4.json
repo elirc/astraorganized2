@@ -1,0 +1,52 @@
+{
+  "summary": [
+    "Adds isolated MemoryStore construction, workspace membership and owner/maintainer guards, recipient-scoped inbox projections, and pre-mutation tracker relation checks.",
+    "Rejects unauthorized issue updates and statuses belonging to another issue type before changing issue/planner state; repaired expected failures map to Fastify 403/404 responses.",
+    "Registers socket handlers through a testable seam, validates payloads/cursors, awaits room joins, derives member identity and broadcasts socket-owned presence cleanup including the final empty list.",
+    "Adds eight finite store, socket and real Fastify injection tests, plus nine source-grounded chapters with complete executed examples and exact original snapshots."
+  ],
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/data/store.ts",
+    "apps/api/src/realtime/socket-server.ts",
+    "apps/api/src/data/store-error.ts",
+    "apps/api/src/realtime/presence-registry.ts",
+    "apps/api/src/realtime/presence-types.ts",
+    "apps/api/tests/security.test.ts",
+    "apps/api/tests/boundaries.test.ts",
+    "astraupskill/snapshots/apps__api__src__app.ts.txt",
+    "astraupskill/snapshots/apps__api__src__data__store.ts.txt",
+    "astraupskill/snapshots/apps__api__src__realtime__socket-server.ts.txt",
+    "astraupskill/snapshots/apps__api__src__routes__chat.ts.txt",
+    "astraupskill/snapshots/apps__api__src__routes__inbox.ts.txt",
+    "astraupskill/snapshots/apps__api__src__routes__tracker.ts.txt",
+    "astraupskill/snapshots/apps__api__src__routes__workspaces.ts.txt",
+    "astraupskill/snapshots/packages__domain__src__types.ts.txt",
+    "astraupskill/evidence/e6-test-01.json",
+    "astraupskill/evidence/e6-test-01.log",
+    "astraupskill/evidence/e6-test-02.json",
+    "astraupskill/evidence/e6-test-02.log",
+    "astraupskill/evidence/e6-test-03.json",
+    "astraupskill/evidence/e6-test-03.log",
+    "astraupskill/evidence/e6-typecheck-01.json",
+    "astraupskill/evidence/e6-typecheck-01.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-api-build-03.json",
+    "astraupskill/evidence/root-api-build-03.log",
+    "astraupskill/evidence/root-build-01.json",
+    "astraupskill/evidence/root-build-01.log",
+    "astraupskill/evidence/root-test-05.json",
+    "astraupskill/evidence/root-test-05.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/20574f0b81b4/results.json",
+    "expectedTests": 8
+  },
+  "limits": [
+    "Fixed demo identity and simulated auth remain; no real authenticated tenant/session boundary was exercised.",
+    "Mutable in-memory state is not durable or transactional; planner side effects and count-derived issue identifiers retain existing limits.",
+    "Socket tests use real registration with a fake transport; no live socket listener, Redis adapter, distributed presence, worker or browser was run.",
+    "Eight tests cover the repaired paths; other endpoints retain existing policies, and explicit null clearing/durable message idempotency remain follow-up work."
+  ]
+}

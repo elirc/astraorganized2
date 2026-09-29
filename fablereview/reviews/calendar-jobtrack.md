@@ -1,0 +1,44 @@
+# calendar+jobtrack (Questboard) — Fable review
+
+- **Path:** `calendar+jobtrack`  ·  **Wave:** 1  ·  **Stack:** React 18/TS, Vite, Zustand + persist (localStorage), Vitest  ·  **Batch:** B08
+- **Astra's change (one line):** Adds `src/lib/backupValidation.ts` (a 137-line pure runtime validator for settings, categories, events, recurrence rules, applications and their history) and calls it from `parseBackup` in `src/lib/backup.ts` so a malformed import is rejected before any of the four localStorage-backed stores is replaced; also narrows the version check from `version > BACKUP_VERSION` to `version !== BACKUP_VERSION`.
+- **Course size:** 7,910 words across 9 files  ·  **Tests claimed:** 92  ·  **Tests found on disk:** 92 total in the pre-existing suite; **Astra's delta is 2 `it()` blocks** appended to `src/lib/backup.test.ts` (9 -> 11 in that file)
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 4 | 3 | 4 | 4 | 3 | 4 | 3 | 3.8 |
+
+**Verdict:** IMPROVE    **Path role:** elective
+
+## What Astra did well
+- The validator is thorough and domain-aware rather than generic. `src/lib/backupValidation.ts` checks real calendar dates (`new Date(v).toISOString().slice(0,10) === v` rejects `2026-02-30`), local datetime format without UTC conversion, `e.end <= e.start`, recurrence `interval` bounds 1..1000, per-collection ID uniqueness via `new Set(rows.map(r => r.id)).size === rows.length`, `dayEndHour <= dayStartHour`, and inverted `salaryMin`/`salaryMax`. Those are the failure modes this app can actually produce.
+- Keeping `parseBackup` pure — `{ok:true,backup}` or `{ok:false,error}` — and validating *before* the multi-store `replaceAll` is the right design and is the explicit lesson of `02-CONCEPTS.md`.
+- The course is honest about what the change does **not** fix. `02-CONCEPTS.md`: *"Actual replacement still spans multiple localStorage-backed stores; validating first prevents malformed input from causing partial replacement, but a quota failure during later writes is a separate atomicity problem."* It also flags that an unknown `categoryId` is still accepted, matching the code (`!text(e.categoryId)` checks type only, not referential integrity).
+- The two new tests are table-driven over six distinct corruption mutations and assert `parseBackup(...).ok === false` for each, plus four nested-nonobject cases — not a single happy path.
+
+## Problems found (evidence required)
+- **[D6]** `astraupskill/VERIFICATION.md` states **"Automated test cases: 92"** and the batch report table lists 92 under "Tests" for this project. 92 is the entire pre-existing Questboard suite (8 files, per `batch04/logs/73-tests.log`: `Test Files 8 passed (8) / Tests 92 passed (92)`), including `App.test.tsx`, `JobsPage`, `TimeGridView` and `recurrence` tests that predate Astra. Astra's contribution is 2 `it()` blocks. Nothing in VERIFICATION.md distinguishes the delta from the inherited suite, which materially overstates the deliverable.
+- **[D2]** The change fights the repository's own code style. Every other file in `src/` uses single quotes and no semicolons (`src/store/settings.ts:1` `import { create } from 'zustand'`), but the two touched files were reformatted to double quotes with semicolons (`src/lib/backup.ts:1` `import { validateBackupRecords } from "./backupValidation";`) and the new `backupValidation.ts` follows the imposed style. There is no Prettier config in the repo to arbitrate, so the codebase is now inconsistent and every future diff on `backup.ts` will be noisy.
+- **[D2]** Undocumented compatibility narrowing: `parseBackup` changed from `candidate.version > BACKUP_VERSION` to `candidate.version !== BACKUP_VERSION`. Backups written by an older `BACKUP_VERSION` are now rejected with the message *"That backup is version N, which this build cannot read."* With `BACKUP_VERSION === 1` nothing is broken today, but the course presents this only as "validates supported version" and never says forward-migration of old backups is now impossible without code changes — which is exactly the design trade-off worth teaching in a versioned-export lesson.
+- **[D3/D8]** Shared-template filler as in the rest of the batch: `07-TRACE-LAB.md` repeats *"Find the relevant call in the source for this project…"* 6 times and `06-SOLUTIONS-AND-REVIEW.md` repeats *"Demonstrate an ordinary case and a case that would break a naive implementation. Explain which existing invariant remains unchanged."* 4 times, once per exercise.
+- **[D6]** `VERIFICATION.md` says *"Node 22.16.0, PostgreSQL 18.1 where applicable"* in a course for an app with no server and no database; `browser-checks.json` correctly records `"api": "none; browser storage"`, so the boilerplate contradicts the real evidence line.
+- **[D4]** The lesson (runtime schema validation at an import boundary) does transfer, but the project has no HTTP layer, no SQL, no authz and no server — a junior targeting Node/Express or ASP.NET CRUD gets only the validation half of the syllabus here.
+
+## Spot-checks performed
+- Course: *"The excerpt below comes from src/lib/backupValidation.ts near line 4"* -> `validateBackupRecords` is declared on line 4 of that file -> **matches**.
+- Course: *"It validates real calendar dates and increasing local event times without converting local appointments into UTC instants"* -> `backupValidation.ts` `local()` regex `^\d{4}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d$` plus lexicographic `e.end <= e.start` on the local strings, no `Date` construction for ordering -> **matches**.
+- Skeptical check on a possible round-trip regression: the validator rejects `end <= start`, so could a user create an event the app can then refuse to re-import? -> `src/features/calendar/EventEditor.tsx:76` saves through `ensureAfter(draft.start, draft.end)` (`src/lib/date.ts:96`), which forces `end > start` (min 15 min). All-day events are stored `T00:00`..`T23:59`. -> **no regression; claim holds**.
+- Skeptical check on defaults: would a freshly-installed app's own export pass the new settings validator? -> `DEFAULT_SETTINGS` (`src/store/settings.ts:5-17`) gives `dayStartHour 7 / dayEndHour 22`, `dailyGoal 3`, `stalePeriodDays 14`, `displayName ''`, all booleans present -> **passes**; `displayName: ''` is allowed because the validator uses `text()` not `nonempty()` for it -> **matches**.
+- Course: *"An unknown category ID remains compatible with the existing display fallback"* -> `backupValidation.ts` only requires `text(e.categoryId)`, i.e. no referential check against `categories` -> **matches** (an honest statement of a real gap rather than an overclaim).
+
+## Improvements needed (ordered, concrete, actionable)
+1. Fix the test count in `astraupskill/VERIFICATION.md`: replace "Automated test cases: 92" with something like "2 new test cases in `src/lib/backup.test.ts`; the full pre-existing suite of 92 was re-run green as a regression gate." Same correction in the batch report table. (effort: S)
+2. Reformat `src/lib/backup.ts` and `src/lib/backupValidation.ts` back to the repository's single-quote, no-semicolon style (or add a `.prettierrc` and say so in the course), so the learner's diff is about behavior. (effort: S)
+3. Add a paragraph to `02-CONCEPTS.md` on the `>` -> `!==` version check: what forward compatibility and backward compatibility each mean for an export format, and what a real migration path (`migrateBackup(v)`) would look like. Add one test for `version: 0`. (effort: S)
+4. Add a `categoryId` referential check exercise to `05-PRACTICE.md` with the trade-off spelled out (reject vs. remap to a default category), since the course already identifies the gap but never makes the learner close it. (effort: M)
+5. Rewrite `07-TRACE-LAB.md` boundaries so each names its own file (`src/screens`/Settings import handler -> `parseBackup` -> `validateBackupRecords` -> the store `replaceAll` calls) instead of repeating one paragraph six times. (effort: S)
+
+## One-paragraph summary for the index
+Questboard's lesson is a good one: JSON that TypeScript has merely *cast* to a type is still untrusted input, so validate every nested record at the import boundary before you replace four separate persisted stores. The validator Astra added is detailed and domain-real — impossible dates, duplicate IDs, zero recurrence intervals, inverted salary ranges — and the course is refreshingly honest that validating first still does not make the multi-store write atomic. Two caveats: the verification page claims 92 automated tests when Astra actually contributed 2 (the other 90 are the app's pre-existing suite), and the touched files were reformatted into a style the rest of the repo does not use. Worth an evening as an *elective* on runtime schema validation; it teaches no HTTP, SQL or authorization.

@@ -1,0 +1,530 @@
+[
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "files": [
+      "app.js",
+      "CODEBASE_GUIDE.md",
+      "index.html",
+      "README.md",
+      "styles.css",
+      "USER_STORIES.md"
+    ]
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "files": [
+      "app.js",
+      "CODEBASE_GUIDE.md",
+      "index.html",
+      "README.md",
+      "styles.css",
+      "USER_STORIES.md"
+    ]
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "files": [
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "USER_STORIES.md",
+      "client/index.html",
+      "client/src/api.js",
+      "client/src/App.jsx",
+      "client/src/styles.css",
+      "server/server.js"
+    ]
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "files": [
+      ".env.example",
+      "CODEBASE_GUIDE.md",
+      "package.json",
+      "README.md",
+      "tsconfig.json",
+      "USER_STORIES.md",
+      "vite.config.ts",
+      "client/index.html",
+      "client/src/api.ts",
+      "client/src/App.tsx",
+      "client/src/main.tsx",
+      "client/src/styles.css",
+      "server/db/schema.sql",
+      "server/src/db.ts",
+      "server/src/index.ts",
+      "shared/types.ts"
+    ]
+  }
+]

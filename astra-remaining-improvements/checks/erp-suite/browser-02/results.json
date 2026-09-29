@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "total": 7,
+  "checks": [
+    {
+      "name": "customer supplier warehouse CRUD and exact item cents",
+      "passed": true
+    },
+    {
+      "name": "project task timesheet relationships and guarded delete",
+      "passed": true
+    },
+    {
+      "name": "two tabs reject stale edits and retain exportable drafts",
+      "passed": true
+    },
+    {
+      "name": "auditor UI and API remain read only",
+      "passed": true
+    },
+    {
+      "name": "lost acknowledgement retains draft and reveals accepted save",
+      "passed": true
+    },
+    {
+      "name": "draft navigation guard and responsive widths",
+      "passed": true
+    },
+    {
+      "name": "pagination clamps after deletion and exports permitted module",
+      "passed": true
+    }
+  ]
+}

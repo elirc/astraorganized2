@@ -1,0 +1,1391 @@
+[
+  {
+    "stage": 21,
+    "title": "Poll Studio: stable options and reliable edits",
+    "focus": "identity in dynamic arrays and commit-before-publish",
+    "before": "Vote preservation depended on option count and position. Removing a row could reset other votes, and a failed write could leave memory ahead of storage.",
+    "after": "Draft options carry stable ids. Surviving options retain their votes; new options start at zero. Blank or duplicate labels are rejected. Save, vote, reset and delete publish state only after storage succeeds.",
+    "model": "A poll has id, question and options. An option has its own id, text and votes. Drafts contain id/text; they become the saved poll only at commit. Data lives under js1-poll-studio in localStorage.",
+    "concept": "An index describes position, not identity. If A, B and C have 4, 7 and 2 votes, deleting A moves B from index 1 to 0. Matching by position can now attach the wrong votes. Matching by id finds the same option wherever it appears. A new option receives a fresh id, so it cannot inherit removed votes. Renaming an existing option preserves its votes; the app treats that as a label correction, not a new election choice.\n\nValidation precedes candidate construction. Trimming labels is normalization; rejecting equal case-folded labels is validation. A storage quota failure leaves the saved poll and current draft available for retry. The candidate does not become authoritative until setItem succeeds. This is a local poll builder, not a secure voting system.",
+    "example": "Remove Mobile app from the starter poll. Public API retains 7 votes and Dark mode retains 2, for 9 total. Duplicate labels API/api are rejected. A failed write preserves both the old poll and the current draft.",
+    "exercises": [
+      "Reorder option rows without detaching their votes.",
+      "Distinguish correcting a label from replacing its meaning.",
+      "Add a confirmation before resetting votes.",
+      "Validate a full imported poll graph."
+    ],
+    "answers": [
+      "Move complete draft objects, including ids; assert votes still match ids after submit.",
+      "Correction keeps the id. Explicit replacement should allocate a new id and start at zero, with clear wording.",
+      "Build the zero-vote candidate only after confirmation. Cancel must not change storage or state.",
+      "Check unique ids, bounded strings, 2-6 options and nonnegative safe-integer votes. Reject malformed imports as a whole."
+    ],
+    "symbol": "handleSubmit",
+    "source": "app.js",
+    "test": "test/polls.test.cjs",
+    "setup": "Install the test dependencies from this project folder:\n\n```powershell\nnpm install\nnpm test\n```\n\nFor the app, serve this folder locally with Python:\n\n```powershell\npython -m http.server 8000 --bind 127.0.0.1\n```\n\nOpen http://127.0.0.1:8000 in a browser. Keep the terminal running; Ctrl+C stops the server. Use the same origin each time: localStorage belongs to an origin, so changing host or port creates a different storage area. The app itself has no backend or build step. `npm test` runs its actual HTML/app.js in jsdom with fresh test storage; it does not use your saved browser records.",
+    "dbguide": "This project uses browser localStorage. In DevTools, inspect Application > Local Storage for the local origin. Refresh after an action and compare the saved JSON with the visible result. The tests create their own DOM and storage fixtures. A Node process with jsdom is useful for controlled write failures, while Chromium verifies native interaction.",
+    "testcmd": "npm test",
+    "flow": [
+      "The browser loads index.html and app.js",
+      "An event handler reads the selected record and current form controls",
+      "Validation checks the intended operation before calculating candidate state",
+      "The shared save/move boundary attempts the localStorage write",
+      "A successful write publishes the candidate and rerenders; a rejected write keeps the promised previous state",
+      "A fresh read after reload reveals the saved result"
+    ]
+  },
+  {
+    "stage": 22,
+    "title": "Kanban Flow: keyboard moves and saved order",
+    "focus": "immutable movement, ordering invariants and keyboard access",
+    "before": "Dragging changed a live card before saving, renumbered only the destination, and made self-drops surprising. Movement required drag events.",
+    "after": "Moves validate targets, ignore self-drops, calculate a candidate and renumber every column before saving. Failed moves preserve state. Column selects and move-up/down buttons support keyboard use and restore focus.",
+    "model": "Each card has id, title, column and order. Column is todo/doing/done; order is a zero-based position within that column. The browser stores the card array under js1-kanban-flow.",
+    "concept": "A move changes both membership and sibling order. Moving A out of [A,B] should leave B at order 0. Inserting A before C elsewhere should yield A=0 and C=1. Cloning first makes the intended result reviewable without mutating the current board.\n\nA re-render replaces DOM elements, so focus can disappear even when a keyboard button works. Restoring focus to the moved card lets the user continue without returning to the top. The select expresses destination; up/down expresses order. Both paths call the same move function so keyboard and drag behavior cannot drift apart. Other legacy CRUD paths are outside the failed-move guarantee.",
+    "example": "Move A from todo [A,B] before C in doing. B becomes order 0; A/C become orders 0/1. A self-drop does nothing. Reject setItem and the previous card array remains identical.",
+    "exercises": [
+      "Disable up/down at column boundaries.",
+      "Add a drag insertion marker.",
+      "Enforce a doing-column work-in-progress limit.",
+      "Replace prompt-based renaming with an inline form."
+    ],
+    "answers": [
+      "Derive boundary state from cardsIn, while retaining handler guards.",
+      "Show the intended beforeId without changing storage until drop.",
+      "Count destination cards excluding the moved id; enforce the rule in moveCard for both input methods.",
+      "Use a candidate title update, persist first and retain the form on failure."
+    ],
+    "symbol": "moveCard",
+    "source": "app.js",
+    "test": "test/movement.test.cjs",
+    "setup": "Install the test dependencies from this project folder:\n\n```powershell\nnpm install\nnpm test\n```\n\nFor the app, serve this folder locally with Python:\n\n```powershell\npython -m http.server 8000 --bind 127.0.0.1\n```\n\nOpen http://127.0.0.1:8000 in a browser. Keep the terminal running; Ctrl+C stops the server. Use the same origin each time: localStorage belongs to an origin, so changing host or port creates a different storage area. The app itself has no backend or build step. `npm test` runs its actual HTML/app.js in jsdom with fresh test storage; it does not use your saved browser records.",
+    "dbguide": "This project uses browser localStorage. In DevTools, inspect Application > Local Storage for the local origin. Refresh after an action and compare the saved JSON with the visible result. The tests create their own DOM and storage fixtures. A Node process with jsdom is useful for controlled write failures, while Chromium verifies native interaction.",
+    "testcmd": "npm test",
+    "flow": [
+      "The browser loads index.html and app.js",
+      "An event handler reads the selected record and current form controls",
+      "Validation checks the intended operation before calculating candidate state",
+      "The shared save/move boundary attempts the localStorage write",
+      "A successful write publishes the candidate and rerenders; a rejected write keeps the promised previous state",
+      "A fresh read after reload reveals the saved result"
+    ]
+  },
+  {
+    "stage": 23,
+    "title": "Course Roster: unique codes and capacity",
+    "focus": "normalization, uniqueness and whole-number invariants",
+    "before": "NaN and fractional counts could evade simple comparisons, and equivalent course codes could be created twice.",
+    "after": "Codes and text are bounded and typed. Capacity/enrollment must be whole counts, enrollment cannot exceed capacity, levels are constrained, and normalized codes are unique across other records. Editing can retain its own code.",
+    "model": "Courses contain id, uppercase code, title, instructor, capacity, enrolled and level. Available seats is capacity minus enrolled. Records are in server memory and reset on restart.",
+    "concept": "Number(\"bad\") yields NaN, whose lower-bound comparisons are false. Check representation and Number.isSafeInteger before applying capacity rules. Only then is enrolled <= capacity meaningful.\n\nUniqueness must use consistent normalization. Trim and uppercase the candidate before comparing codes. Exclude the edited id, or an unchanged code conflicts with itself. The array scan is appropriate for one process; a database version needs a uniqueness constraint because separate processes can otherwise both pass a preflight check. A controlled form assists users, but the API must validate direct requests too.",
+    "example": "Create astra-101 with capacity 4 and enrolled 2: the returned code is ASTRA-101. A second equivalent code returns 409. Editing the original title succeeds. Capacity 1.5, enrollment 5 or null is rejected.",
+    "exercises": [
+      "Add an enroll-one command.",
+      "Show a derived full-course badge.",
+      "Move uniqueness into a database.",
+      "Preview capacity reductions."
+    ],
+    "answers": [
+      "Compute from the current course and validate before publishing; do not accept an arbitrary replacement record.",
+      "Use enrolled === capacity rather than storing a second mutable flag.",
+      "Normalize before saving and enforce a unique normalized code in SQL; test competing inserts.",
+      "Display proposed capacity minus enrollment and reject a negative result rather than deleting enrollments."
+    ],
+    "symbol": "validateCourse",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 24,
+    "title": "Event Admin: real dates and registration limits",
+    "focus": "calendar labels and cross-field validation",
+    "before": "Dates were checked only for presence. NaN and fractional registration counts could pass comparisons.",
+    "after": "Events require bounded text, real YYYY-MM-DD dates and whole capacity/registration counts. Registered cannot exceed capacity. Invalid updates preserve the previous event.",
+    "model": "Event fields are id, name, location, date, capacity, registered and status. A calendar date is not an instant. Availability is derived; records remain in memory.",
+    "concept": "A regular expression recognizes the shape of 2027-02-29 but cannot decide if it exists. Parse a UTC reference date and compare the result with the original label; rollover exposes invalid days. UTC validates the label without assigning a time to the event.\n\nValidate each count before relating them. A full event is valid, so equality must pass; one registration beyond capacity must fail. Missing, null, fractional and nonnumeric values deserve separate fixtures because JavaScript conversions can make them look deceptively similar. Rejection must happen before replacing the original record.",
+    "example": "2028-02-29 with capacity 3 and registered 3 succeeds. 2027-02-29, 2028-04-31, registered 4 and capacity \"bad\" fail without replacing a saved event.",
+    "exercises": [
+      "Add register-one.",
+      "Model a waitlist separately.",
+      "Sort events chronologically.",
+      "Extend the model to timed events."
+    ],
+    "answers": [
+      "Compute and validate a candidate; a database version needs a conditional update or transaction.",
+      "Keep confirmed and waiting counts distinct; promotion changes both together.",
+      "Compare valid YYYY-MM-DD strings, then id for same-day ties.",
+      "Define a timezone and instant representation explicitly rather than appending an arbitrary Z."
+    ],
+    "symbol": "validateEvent",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 25,
+    "title": "Job Pipeline: follow-up dates and ordering",
+    "focus": "optional values and stable chronological sorting",
+    "before": "Follow-up dates were not validated and matching applications followed insertion order.",
+    "after": "Text fields are bounded and typed. Nonempty next-step dates must be real dates. Filtered results sort by date, place undated applications last, and use ids for ties.",
+    "model": "Applications contain id, company, role, stage, contact, nextStepDate and notes. Empty nextStepDate means unscheduled. Stage and search filter an in-memory collection.",
+    "concept": "Empty and invalid are different. Leaving a follow-up unscheduled is intentional; February 30 is malformed. Preserve the empty-string convention while rejecting invalid nonempty labels.\n\nUndated applications should not acquire invented urgency. The comparison places their sentinel after valid dates, then uses id for stable ties. Sorting the filtered copy preserves the underlying collection. This is chronological display ordering, not a reminder service: it sends no notifications and changes no workflow stages automatically. A rejected edit must leave the saved application intact.",
+    "example": "Dates March 10, March 1 and empty display as March 1, March 10, empty. An invalid follow-up edit returns 400 and leaves the original application identical.",
+    "exercises": [
+      "Add an overdue filter with an injected today.",
+      "Record follow-up completion.",
+      "Offer company sorting.",
+      "Test changing a date to empty."
+    ],
+    "answers": [
+      "Compare only valid nonempty labels and supply today explicitly in tests.",
+      "Separate completion history from scheduling the next date; define their atomic boundary.",
+      "Whitelist sort choices and use normalized company plus id.",
+      "Preserve id and verify the application moves after dated matches."
+    ],
+    "symbol": "validateApplication",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 26,
+    "title": "Stock Catalog: stable pages and numeric inputs",
+    "focus": "filter-sort-slice order and numeric boundaries",
+    "before": "Fractional/infinite paging values were insufficiently normalized, sort ties lacked a unique tie-breaker and malformed prices reached unsafe paths.",
+    "after": "Paging normalizes to bounded whole values. Sort ties use ids. Names/categories are bounded text, prices are finite and bounded, and stock is a nonnegative whole count. Existing last-page clamping has regression coverage.",
+    "model": "Products have id, name, category, price and stock. The API returns items and page metadata. The client holds one page; the repository itself remains in memory.",
+    "concept": "Filter, then sort, then slice. Slicing first produces sparse pages and misleading totals. Equal prices still need a unique tie-breaker to make boundaries deterministic.\n\nRequested and returned pages can differ after deletion. The server knows the filtered total and clamps to its last real page; the client should display that metadata. Infinity is not a valid price just because it is >= 0. Checking finite values, whole stock counts and accepted text representations prevents conversions from hiding malformed input. Pagination does not add persistence or concurrency guarantees to an in-memory store.",
+    "example": "Three same-price products at two per page give stable ids on page 1. Page 999 becomes page 2 with one item. Infinite/fractional page inputs use defaults; infinite prices and fractional stock are rejected.",
+    "exercises": [
+      "Add filtered inventory value across all pages.",
+      "Add a secondary sort choice.",
+      "Translate paging into SQL.",
+      "Delete the final row of the final page."
+    ],
+    "answers": [
+      "Aggregate before slicing; visible-page value is a different metric.",
+      "Whitelist both keys and retain id as the final tie-breaker.",
+      "Bind filters and whitelist ORDER BY identifiers; keep count and rows consistent.",
+      "Refetch and verify clamping with the correct total rather than showing an empty phantom page."
+    ],
+    "symbol": "createProductRepository",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 27,
+    "title": "Recipe Studio: nested ingredient validation",
+    "focus": "array element validation and normalization",
+    "before": "NaN cooking values could evade checks, ingredient objects were coerced into text, and repeated labels were duplicated.",
+    "after": "Cooking minutes and servings are bounded whole numbers. Ingredients must be 1-100 nonempty bounded strings. Trimming and case-insensitive deduplication preserve first spelling. Invalid nested payloads are rejected before mutation.",
+    "model": "Recipes have id, name, category, cookTime, servings, ingredients[] and notes. Ingredients are free-form text, not structured quantities. Storage is in memory.",
+    "concept": "Checking Array.isArray is only the first step: an array can hold objects, null or blank strings. Validate each element before building the normalized recipe. String(object) hides malformed input as [object Object].\n\nUse one representation for comparison and another for display. Salt and salt compare equal, while the first trimmed spelling stays visible. Do not infer that \"1 tsp salt\" equals \"salt\"; this app lacks a structured quantity model. Automatic scaling would require that model first. The focused regression suite demonstrates valid normalization and rejected nested values.",
+    "example": "[\" Salt \", \"salt\", \"Water\"] saves as [\"Salt\", \"Water\"]. Servings \"4\" becomes numeric 4 without changing id. Object ingredients, blanks, fractional servings and boolean cooking time fail.",
+    "exercises": [
+      "Introduce quantity/unit/name fields.",
+      "Add a scale preview.",
+      "Explain when deduplication is wrong.",
+      "Add ingredient reordering."
+    ],
+    "answers": [
+      "Define numeric quantities and explicit units, then migrate free-form text deliberately.",
+      "Compute display values from target/base servings without overwriting the base recipe.",
+      "Salt for a sauce and a topping may be separate; model sections before collapsing them.",
+      "Move complete ingredient records if ids are introduced and verify quantities remain attached."
+    ],
+    "symbol": "validateRecipe",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 28,
+    "title": "Org Explorer: keeping a tree acyclic",
+    "focus": "recursive queries, structural invariants and concurrent tree moves",
+    "before": "The ancestor check and move were separate operations. Two simultaneous moves could each see an acceptable old tree and together create a cycle.",
+    "after": "Moves validate UUIDs and parent existence, lock structural changes within a transaction, check the subtree under the lock, then update. A node cannot become its own ancestor.",
+    "model": "Each node has a UUID, name, title and nullable parent_id. A null parent means a root. Children point upward; recursive SQL discovers descendants. A valid forest may have several roots, but every parent chain must terminate.",
+    "concept": "Consider two roots A and B. Request one proposes A under B; request two proposes B under A. Both are valid against the initial tree. Checking first and updating later leaves a time-of-check/time-of-use gap. The transaction takes a SHARE ROW EXCLUSIVE table lock before validating the structure. The second writer waits, then sees the first committed move and rejects the cycle. A transaction alone at the default isolation level would not make two independent read-then-write checks safe.\n\nThe lock is deliberately broad: it serializes structural writers for this small teaching app. It is easy to explain and inspect, but reduces concurrent write throughput. A more scalable design requires a proven locking or serializable-retry strategy, not simply removing the lock. The API policy cannot prevent arbitrary direct SQL from creating a cycle if that SQL bypasses the validation. The recursive query and the lock solve different parts of the problem: reachability and concurrency.",
+    "example": "Create roots A and B. Race A-under-B with B-under-A. Exactly one succeeds; the rejected move leaves a readable acyclic tree. Moving A under its own descendant is rejected even without concurrency.",
+    "exercises": [
+      "Show the full ancestor breadcrumb for a selected node.",
+      "Add a dry-run move endpoint that explains rejection.",
+      "Exercise three concurrent structural moves.",
+      "Design a more concurrent alternative to the table lock."
+    ],
+    "answers": [
+      "Walk parent ids with a visited set and show names from root to leaf; missing parents should produce an explicit diagnostic.",
+      "Reuse validation, but explain that a dry run is advisory because the tree can change before the real move. The actual move must revalidate under its lock.",
+      "Use separate requests/connections and assert the final parent graph terminates from every node, rather than assuming a particular winner.",
+      "Compare serializable transactions with retry against a carefully ordered lock set. Write the conflicting schedule and prove it cannot commit a cycle before implementing."
+    ],
+    "symbol": "SHARE ROW EXCLUSIVE",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts",
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 29,
+    "title": "Mini Blog: parent-scoped comments",
+    "focus": "relationships and validated text boundaries",
+    "before": "Validators called trim on unverified values, producing server errors for object-valued post/comment text.",
+    "after": "Posts and comments require bounded text before repository methods run. Tests verify existing parent-scoped deletion and cascade behavior. The client mount and static labels are repaired.",
+    "model": "Posts and comments are separate arrays. Each comment has postId. Nested routes provide the parent context. Data is in memory; deleting a post removes its comments.",
+    "concept": "/posts/A/comments/C asserts that C belongs to A. Finding C alone ignores that relationship. The repository already checks both ids; the test makes that guarantee explicit.\n\nClient types do not validate incoming JSON. Check strings before trimming and bound body size at the API boundary. Rejecting a malformed child should not change the parent count. Deleting a parent and validating child text are separate responsibilities: one describes relationship policy, the other acceptable input. Learn both by observing stored collections after each request.",
+    "example": "A comment under A cannot be deleted through B. Deleting A removes access to its comments. Object-valued text returns 400 and creates no comment.",
+    "exercises": [
+      "Add comment editing.",
+      "Show the comment character limit.",
+      "Use a relational cascade.",
+      "Page comments while retaining a total."
+    ],
+    "answers": [
+      "Match parent and comment ids before changing allowed fields; do not allow reassignment through an edit body.",
+      "Use the documented maximum in the UI while keeping the API authoritative.",
+      "Choose ON DELETE CASCADE only if that is the intended policy; verify transaction rollback.",
+      "Count all children for the parent, order deterministically, then slice."
+    ],
+    "symbol": "validateComment",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 30,
+    "title": "Pulse Analytics: truthful daily charts",
+    "focus": "calendar buckets, window functions and derived data",
+    "before": "A chart based only on existing event dates omitted quiet days, so a seven-row average could cover more than seven calendar days.",
+    "after": "The series generates every requested calendar day, left-joins daily aggregates, fills missing values with zero and computes the moving average and cumulative total over those rows. Summary uses the same inclusive day window.",
+    "model": "Raw events are timestamped facts with event type, product and purchase amount. Daily aggregates and materialized views are derived data. The chart returns one row per calendar date; a missing event row becomes a zero-valued day rather than disappearing.",
+    "concept": "SQL GROUP BY only produces groups present in the input. If Monday has 10 purchases and Wednesday has 20, Tuesday does not exist in the grouped result. generate_series supplies the calendar spine. LEFT JOIN keeps Tuesday, and COALESCE converts the missing aggregate to zero. Only then does a ROWS window correspond to calendar days. The order of these operations is part of correctness.\n\nThe first moving-average points use the available rows inside the requested window; the first point is a one-day average, not a hidden seven-day warm-up. Cumulative totals also reset at the requested window boundary, and the first delta is null because there is no preceding row in that result. Summary and series share inclusive calendar-day boundaries. The separate top-products query retains a rolling timestamp window. Refreshing a materialized view is an explicit update to a stored derived result; newly inserted raw events can exist before that view reflects them.",
+    "example": "For daily values 10, 0 and 20, the visible moving averages are 10, 5 and 10; cumulative totals are 10, 10 and 30. A seven-day request returns seven rows even if events exist on only two days.",
+    "exercises": [
+      "Add a tooltip that distinguishes zero activity from loading.",
+      "Compare an average with and without zero days.",
+      "Add an explicit materialized-view freshness indicator.",
+      "Offer an optional moving-average warm-up period."
+    ],
+    "answers": [
+      "Use request state for loading and a numeric zero for a completed empty day. Do not use a falsy check that hides zero.",
+      "Compute (10+0+20)/3 versus (10+20)/2 and explain that they answer different questions.",
+      "Store/display the last completed refresh time and leave it unchanged on refresh failure.",
+      "Fetch six preceding days for calculation, compute the window, then trim the displayed range. Document the changed first-point semantics and test them."
+    ],
+    "symbol": "generate_series",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts",
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 31,
+    "title": "Support Tickets: repeat-safe workflow history",
+    "focus": "row locks, atomic updates and meaningful audit events",
+    "before": "Repeated status or assignment requests could append duplicate history even when the requested value already matched the ticket.",
+    "after": "Status and assignment read the current ticket under a row lock, return it unchanged for a repeated value, and record actual changes transactionally. Input and UUID validation reject malformed requests; failed related writes roll back.",
+    "model": "Tickets reference agents and labels. A ticket has current status and optional assigned agent; history explains actual changes. Junction rows connect tickets to labels. These separate rows must remain consistent with the ticket operation that creates them.",
+    "concept": "An audit event should describe a transition, not merely a button click. With status Open, requesting Resolved twice should produce one Open-to-Resolved event. Both requests must compare against the current locked row. Otherwise two concurrent callers can each read Open and both log the same transition. SELECT FOR UPDATE makes the second caller wait and inspect the committed value.\n\nThe same idea applies to assignment, including assigning the same agent twice. The update and corresponding event belong in the same transaction and use the same database client. Throwing after one successful query does not undo that query unless it is inside a transaction that rolls back. Foreign keys protect references, but a malformed UUID should be rejected before it becomes an opaque database error. This is repeat-safe current-state handling, not global request deduplication: if another valid transition happens between two commands, the later command may create a new event.",
+    "example": "Create a ticket, resolve it twice, and read history. There is one status event. Repeat assigning the same agent with the same expectation. Force a late related write to fail and verify that the earlier ticket changes did not commit.",
+    "exercises": [
+      "Disable the currently selected status action.",
+      "Explain assignment and unassignment in history.",
+      "Add a test for two different concurrent status commands.",
+      "Design an explicit allowed-transition graph."
+    ],
+    "answers": [
+      "Improve the control while retaining the server no-op guard; other callers can still submit the same status.",
+      "Represent no agent explicitly as null and resolve labels for display without changing stored identity.",
+      "Assert a valid serialized history and matching final status, not a predetermined scheduling order.",
+      "Define legal edges and user feedback first. Validate while holding the row lock; no role or transition policy is currently inferred from the status names."
+    ],
+    "symbol": "FOR UPDATE",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts",
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 32,
+    "title": "Issue Desk: composed priority filters",
+    "focus": "independent filter dimensions and runtime validation",
+    "before": "Issues had status/search filters but no priority filter, and text validators assumed strings.",
+    "after": "Priority filtering composes with status and search in UI and API. Invalid priorities and malformed text return useful errors; updates preserve issue identity.",
+    "model": "An issue has id, title, status, priority, assignee, description and createdAt. Status is workflow position; priority is urgency. Filtered results derive from in-memory records.",
+    "concept": "A High issue can be Backlog or Done. Filtering High and Backlog requires both predicates, plus the text predicate when supplied. OR would return unrelated records. Keep these dimensions separate rather than encoding one into another.\n\nThe client sends state via URLSearchParams; the API checks the vocabulary. A select helps ordinary users choose but cannot validate direct API requests. Bounded text checks precede trimming in repository methods. Use a small fixture matrix to prove composition rather than relying on a large seed list whose results are hard to predict.",
+    "example": "High/Backlog, Low/Backlog and High/Done issues containing Astra produce one match for Astra + Backlog + High. Unknown priority returns 400; malformed title cannot overwrite a saved issue.",
+    "exercises": [
+      "Add an assignee filter.",
+      "Order by priority rank.",
+      "Distinguish filtered and global counts.",
+      "Ignore older search responses."
+    ],
+    "answers": [
+      "Validate its representation and add another AND predicate with combination tests.",
+      "Map Critical/High/Medium/Low to numeric ranks, then id; alphabetical order is not urgency.",
+      "Label counts as filtered or fetch a separate summary.",
+      "Use a request version or cancellation and protect success, error and loading updates."
+    ],
+    "symbol": "validateIssue",
+    "source": "server/server.js",
+    "test": "test/api.test.js",
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 33,
+    "title": "Forum Search: reliable filtered pages",
+    "focus": "count/page consistency, stable ordering and bounded input",
+    "before": "Counting and fetching rows in separate snapshots could disagree, and an out-of-range page could strand the user on an empty result after deletion.",
+    "after": "Search count and rows share a read-only repeatable-read transaction. Page numbers clamp to the available range, ordering has an id tie-breaker, and thread/tag inputs and author references are validated.",
+    "model": "Threads belong to authors and can carry tags. A filtered result consists of items, total, page and page count; these values describe one database snapshot for that request. They are not independent facts to calculate with unrelated filters.",
+    "concept": "Suppose six matching threads use a five-row page. Page two has one item. Deleting it leaves five matches, so page two no longer exists. Clamp the requested page after counting, then calculate offset from the clamped value. With zero matches, retain a usable first-page representation rather than negative offsets. Stable sorting adds a unique id after the primary sort key so tied values have a deterministic order.\n\nA REPEATABLE READ transaction makes the count and row query see the same snapshot within one request. It does not freeze results across later page requests: another user can insert or delete between clicks. The browser also has a separate responsibility when multiple searches race. This change does not add a stale-response guard; a request sequence counter or AbortController is a useful independent extension. Database consistency and latest-user-intent rendering address different boundaries.",
+    "example": "Create six threads matching a unique search, visit page two, delete its only item, then fetch page two again. The response reports the clamped first page with five rows and total five. Invalid author or malformed tag data is rejected.",
+    "exercises": [
+      "Add a latest-request-wins guard in the React search flow.",
+      "Keep filters in the URL.",
+      "Test equal timestamps across page boundaries.",
+      "Design cursor pagination for a large changing forum."
+    ],
+    "answers": [
+      "Capture an increasing sequence id per request and apply results only if it is still current; test slow-old versus fast-new completion.",
+      "Parse and validate URL parameters, initialize controls and reset page when filters change. Avoid a state/URL update loop.",
+      "Create tied timestamps and assert the unique secondary ordering across repeated requests on unchanged data.",
+      "Use a cursor containing the primary sort value and unique id; explain how inserts and deletes affect traversal, and retain a deterministic ordering contract."
+    ],
+    "symbol": "REPEATABLE READ",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts",
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 34,
+    "title": "Invoice Studio: validate first, commit together",
+    "focus": "decimal input contracts and transactional parent/child writes",
+    "before": "Malformed line values could reach arithmetic or database operations, including fractional quantities, impossible calendar dates and unsupported decimal precision.",
+    "after": "Invoices validate client UUIDs, real issue dates, bounded line arrays, whole positive quantities, two-decimal prices and tax from 0 to 100. Parent and line writes commit together, and a late line failure leaves no partial invoice change.",
+    "model": "An invoice is a parent row referencing a client. Line rows reference that invoice and contain description, quantity and unit price. Totals derive from the submitted lines and tax rate. The current UI creates invoices; API update behavior is exercised separately by regression tests.",
+    "concept": "An input contract must distinguish numbers, numeric strings, empty strings, arrays and objects. JavaScript coercion can turn [] into zero and [2] into two; neither is an acceptable quantity payload. Validate primitive shape and decimal precision before arithmetic. Quantity is a positive whole number, whereas unit price allows at most two decimal places. A date input represents a calendar label, so 2028-02-29 is valid and 2027-02-29 is not.\n\nFor two units at 12.34 and zero tax, the total is 24.68. The implementation rounds the aggregate to two decimal places; it is a teaching calculation, not a complete accounting policy for every currency or tax regime. Parent and child writes use one transaction. Updating the parent and deleting old lines before a failed replacement line must roll back all three steps. The failure test injects a database trigger in a disposable schema so it exercises a late database failure instead of stopping at input validation.",
+    "example": "Create two units at 12.34, zero tax, issued 2028-02-29: total 24.68. Reject quantity [2], a three-decimal price and 2027-02-29. Force a replacement line insert to fail and verify the old invoice and lines remain intact.",
+    "exercises": [
+      "Show the calculated total before submit.",
+      "Add an invoice edit form.",
+      "Test the maximum accepted quantity and price boundaries.",
+      "Design an integer-minor-unit monetary model."
+    ],
+    "answers": [
+      "Share a clearly specified calculation contract and show a preview; the server remains authoritative and must validate independently.",
+      "Load the parent and complete line set, preserve their intended replacement semantics, and show failed-save feedback without discarding the draft.",
+      "Use bounded fixtures and assert both immediately accepted and immediately rejected values; distinguish business maxima from database numeric limits.",
+      "Define currency scale, rounding stage and overflow bounds before converting. Explain how tax fractional cents are rounded; do not merely multiply arbitrary floats by 100."
+    ],
+    "symbol": "parseInvoice",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts",
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 35,
+    "title": "Asset Checkout: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents an equipment checkout and its custodian. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Laptop, Camera, Tooling, Vehicle. Statuses are Available, Checked Out, Maintenance, Retired. The UI gives these shared fields domain-specific labels. Return date is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Camera kit for field interviews\" from Available to Checked Out. The first successful command represents a real transition and adds one status event. Sending Checked Out again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Checked Out can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Available-to-Checked Out label change alone does not implement every real-world rule for an equipment checkout and its custodian.",
+    "example": "Create \"Camera kit for field interviews\" in Laptop with status Available, amount 12.50 and dueDate 2028-02-29. Request Checked Out twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Add a checkout/return history view",
+      "Add a UI confirmation for changing Checked Out back to Available.",
+      "Add a regression for a return date at a leap-year boundary.",
+      "Prevent checking out an already checked-out asset"
+    ],
+    "answers": [
+      "Retain separate checkout and return timestamps; do not infer both from a generic updated timestamp.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Model the borrower and permitted transitions explicitly and validate the current locked asset before changing it."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/assets/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "35",
+      "route": "/api/assets",
+      "statuses": [
+        "Available",
+        "Checked Out",
+        "Maintenance",
+        "Retired"
+      ],
+      "categories": [
+        "Laptop",
+        "Camera",
+        "Tooling",
+        "Vehicle"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for equipment checkouts, custodians, return dates, and audit notes."
+    },
+    "fixture_title": "Camera kit for field interviews",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 36,
+    "title": "Equipment Maintenance: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a maintenance work order and its responsible technician. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are HVAC, Electrical, Network, Safety. Statuses are Open, Scheduled, In Progress, Completed. The UI gives these shared fields domain-specific labels. Maintenance due date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Inspect west-wing ventilation\" from Open to Scheduled. The first successful command represents a real transition and adds one status event. Sending Scheduled again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Scheduled can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Open-to-Scheduled label change alone does not implement every real-world rule for a maintenance work order and its responsible technician.",
+    "example": "Create \"Inspect west-wing ventilation\" in HVAC with status Open, amount 12.50 and dueDate 2028-02-29. Request Scheduled twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Show overdue open work orders",
+      "Add a UI confirmation for changing Scheduled back to Open.",
+      "Add a regression for a maintenance due date at a leap-year boundary.",
+      "Add recurring maintenance"
+    ],
+    "answers": [
+      "Compare calendar dates and exclude Completed; keep an unset due date separate from overdue.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Create a separate recurrence rule and generate uniquely identified occurrences; repeating a status command must not generate extra work orders."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "36",
+      "route": "/api/work-orders",
+      "statuses": [
+        "Open",
+        "Scheduled",
+        "In Progress",
+        "Completed"
+      ],
+      "categories": [
+        "HVAC",
+        "Electrical",
+        "Network",
+        "Safety"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Inspect west-wing ventilation",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 37,
+    "title": "Library Lending: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a library loan and its responsible borrower. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Fiction, Nonfiction, Reference, Children. Statuses are Requested, Checked Out, Overdue, Returned. The UI gives these shared fields domain-specific labels. Return due date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Loan a reference atlas\" from Requested to Checked Out. The first successful command represents a real transition and adds one status event. Sending Checked Out again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Checked Out can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Requested-to-Checked Out label change alone does not implement every real-world rule for a library loan and its responsible borrower.",
+    "example": "Create \"Loan a reference atlas\" in Fiction with status Requested, amount 12.50 and dueDate 2028-02-29. Request Checked Out twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Display days overdue for unreturned loans",
+      "Add a UI confirmation for changing Checked Out back to Requested.",
+      "Add a regression for a return due date at a leap-year boundary.",
+      "Track copies of the same book"
+    ],
+    "answers": [
+      "Use an explicit as-of date in tests and exclude Returned records; do not label a missing due date as late.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Give each copy its own id and availability; a title is not a unique physical item identifier."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "37",
+      "route": "/api/loans",
+      "statuses": [
+        "Requested",
+        "Checked Out",
+        "Overdue",
+        "Returned"
+      ],
+      "categories": [
+        "Fiction",
+        "Nonfiction",
+        "Reference",
+        "Children"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Loan a reference atlas",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 38,
+    "title": "Gym Membership: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a gym membership and its account owner. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Strength, Cardio, Yoga, Personal Training. Statuses are Lead, Active, Paused, Cancelled. The UI gives these shared fields domain-specific labels. Review or renewal date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Beginner strength membership\" from Lead to Active. The first successful command represents a real transition and adds one status event. Sending Active again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Active can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Lead-to-Active label change alone does not implement every real-world rule for a gym membership and its account owner.",
+    "example": "Create \"Beginner strength membership\" in Strength with status Lead, amount 12.50 and dueDate 2028-02-29. Request Active twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Show paused memberships separately",
+      "Add a UI confirmation for changing Active back to Lead.",
+      "Add a regression for a review or renewal date at a leap-year boundary.",
+      "Add a pause interval"
+    ],
+    "answers": [
+      "Derive the view from status and keep its filter consistent with counts and paging.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Store start/end calendar dates, validate ordering and define whether pausing changes billing; the current status alone cannot answer that."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "38",
+      "route": "/api/memberships",
+      "statuses": [
+        "Lead",
+        "Active",
+        "Paused",
+        "Cancelled"
+      ],
+      "categories": [
+        "Strength",
+        "Cardio",
+        "Yoga",
+        "Personal Training"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Beginner strength membership",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 39,
+    "title": "Campaign Planner: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a marketing campaign and its coordinator. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Email, Social, Events, Paid Search. Statuses are Planning, Active, Paused, Complete. The UI gives these shared fields domain-specific labels. Campaign deadline is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Autumn email welcome campaign\" from Planning to Active. The first successful command represents a real transition and adds one status event. Sending Active again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Active can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Planning-to-Active label change alone does not implement every real-world rule for a marketing campaign and its coordinator.",
+    "example": "Create \"Autumn email welcome campaign\" in Email with status Planning, amount 12.50 and dueDate 2028-02-29. Request Active twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Add a budget-versus-actual view",
+      "Add a UI confirmation for changing Active back to Planning.",
+      "Add a regression for a campaign deadline at a leap-year boundary.",
+      "Schedule campaign activation"
+    ],
+    "answers": [
+      "Store actual spend separately from the existing amount field and derive the difference; an edit to budget should not rewrite spend.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Separate scheduled time from current status and make the activation job repeat-safe with an explicit occurrence key."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "39",
+      "route": "/api/campaigns",
+      "statuses": [
+        "Planning",
+        "Active",
+        "Paused",
+        "Complete"
+      ],
+      "categories": [
+        "Email",
+        "Social",
+        "Events",
+        "Paid Search"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Autumn email welcome campaign",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 40,
+    "title": "Volunteer Coordinator: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a volunteer shift and its coordinator. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Food Bank, Tutoring, Cleanup, Fundraising. Statuses are Draft, Open, Filled, Complete. The UI gives these shared fields domain-specific labels. Shift deadline is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Saturday food-bank shift\" from Draft to Open. The first successful command represents a real transition and adds one status event. Sending Open again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Open can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Draft-to-Open label change alone does not implement every real-world rule for a volunteer shift and its coordinator.",
+    "example": "Create \"Saturday food-bank shift\" in Food Bank with status Draft, amount 12.50 and dueDate 2028-02-29. Request Open twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Show unfilled upcoming shifts",
+      "Add a UI confirmation for changing Open back to Draft.",
+      "Add a regression for a shift deadline at a leap-year boundary.",
+      "Add volunteer capacity"
+    ],
+    "answers": [
+      "Filter Open records by an explicit date window; Draft and Complete mean different workflow states.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Model assignments and unique volunteer/shift pairs; check capacity at the same boundary that commits an assignment."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "40",
+      "route": "/api/shifts",
+      "statuses": [
+        "Draft",
+        "Open",
+        "Filled",
+        "Complete"
+      ],
+      "categories": [
+        "Food Bank",
+        "Tutoring",
+        "Cleanup",
+        "Fundraising"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Saturday food-bank shift",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 41,
+    "title": "Learning Paths: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a learning plan and its mentor. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Frontend, Backend, Data, Leadership. Statuses are Planned, In Progress, Blocked, Complete. The UI gives these shared fields domain-specific labels. Learning milestone date is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Backend fundamentals with weekly review\" from Planned to In Progress. The first successful command represents a real transition and adds one status event. Sending In Progress again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting In Progress can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Planned-to-In Progress label change alone does not implement every real-world rule for a learning plan and its mentor.",
+    "example": "Create \"Backend fundamentals with weekly review\" in Frontend with status Planned, amount 12.50 and dueDate 2028-02-29. Request In Progress twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Show completed learning milestones",
+      "Add a UI confirmation for changing In Progress back to Planned.",
+      "Add a regression for a learning milestone date at a leap-year boundary.",
+      "Require evidence before completion"
+    ],
+    "answers": [
+      "Add milestone records with evidence and completion dates rather than treating the plan status as proof of every skill.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Define the evidence contract, check it in the same transaction as the status change and explain the rejected transition in the UI."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/paths/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "41",
+      "route": "/api/paths",
+      "statuses": [
+        "Planned",
+        "In Progress",
+        "Blocked",
+        "Complete"
+      ],
+      "categories": [
+        "Frontend",
+        "Backend",
+        "Data",
+        "Leadership"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for employee learning plans, mentors, budgets, and completion workflow."
+    },
+    "fixture_title": "Backend fundamentals with weekly review",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 42,
+    "title": "Project Risks: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a project risk and its mitigation owner. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Schedule, Budget, Security, Vendor. Statuses are Identified, Mitigating, Accepted, Closed. The UI gives these shared fields domain-specific labels. Mitigation review date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Supplier delay affects launch\" from Identified to Mitigating. The first successful command represents a real transition and adds one status event. Sending Mitigating again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Mitigating can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Identified-to-Mitigating label change alone does not implement every real-world rule for a project risk and its mitigation owner.",
+    "example": "Create \"Supplier delay affects launch\" in Schedule with status Identified, amount 12.50 and dueDate 2028-02-29. Request Mitigating twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Create a probability-impact score",
+      "Add a UI confirmation for changing Mitigating back to Identified.",
+      "Add a regression for a mitigation review date at a leap-year boundary.",
+      "Record formal risk acceptance"
+    ],
+    "answers": [
+      "Define bounded independent scales and derive the score; do not reuse the generic amount field without changing its meaning explicitly.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Add an acceptance decision record with actor and rationale; the Accepted label currently does not enforce approval authority."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "42",
+      "route": "/api/risks",
+      "statuses": [
+        "Identified",
+        "Mitigating",
+        "Accepted",
+        "Closed"
+      ],
+      "categories": [
+        "Schedule",
+        "Budget",
+        "Security",
+        "Vendor"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Supplier delay affects launch",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 43,
+    "title": "Travel Requests: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a travel request and its requester. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Conference, Customer Visit, Training, Internal Offsite. Statuses are Draft, Submitted, Approved, Booked, Rejected. The UI gives these shared fields domain-specific labels. Travel decision deadline is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Training visit to the regional office\" from Draft to Submitted. The first successful command represents a real transition and adds one status event. Sending Submitted again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Submitted can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Draft-to-Submitted label change alone does not implement every real-world rule for a travel request and its requester.",
+    "example": "Create \"Training visit to the regional office\" in Conference with status Draft, amount 12.50 and dueDate 2028-02-29. Request Submitted twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Show requests awaiting a decision",
+      "Add a UI confirmation for changing Submitted back to Draft.",
+      "Add a regression for a travel decision deadline at a leap-year boundary.",
+      "Separate approval from booking"
+    ],
+    "answers": [
+      "Use Submitted as the explicit filter and preserve the same filter in count and rows.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Define which actors and states can approve or book, enforce server-side rules and record the decision atomically; current status names alone do not authorize anything."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/travel/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "43",
+      "route": "/api/travel",
+      "statuses": [
+        "Draft",
+        "Submitted",
+        "Approved",
+        "Booked",
+        "Rejected"
+      ],
+      "categories": [
+        "Conference",
+        "Customer Visit",
+        "Training",
+        "Internal Offsite"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for business travel approvals, destinations, costs, and approval workflow."
+    },
+    "fixture_title": "Training visit to the regional office",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 44,
+    "title": "Vendor Contracts: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a vendor contract and its responsible owner. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are SaaS, Consulting, Facilities, Security. Statuses are Draft, Legal Review, Active, Renewal, Expired. The UI gives these shared fields domain-specific labels. Renewal deadline is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Annual monitoring software agreement\" from Draft to Legal Review. The first successful command represents a real transition and adds one status event. Sending Legal Review again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Legal Review can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Draft-to-Legal Review label change alone does not implement every real-world rule for a vendor contract and its responsible owner.",
+    "example": "Create \"Annual monitoring software agreement\" in SaaS with status Draft, amount 12.50 and dueDate 2028-02-29. Request Legal Review twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Build a renewal-window view",
+      "Add a UI confirmation for changing Legal Review back to Draft.",
+      "Add a regression for a renewal deadline at a leap-year boundary.",
+      "Track contract versions"
+    ],
+    "answers": [
+      "Use calendar dates and include Active/Renewal as defined by the product rule; expired and undated contracts need separate handling.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Keep immutable version records and a current-version pointer; editing a generic notes field is not a version history."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/contracts/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "44",
+      "route": "/api/contracts",
+      "statuses": [
+        "Draft",
+        "Legal Review",
+        "Active",
+        "Renewal",
+        "Expired"
+      ],
+      "categories": [
+        "SaaS",
+        "Consulting",
+        "Facilities",
+        "Security"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for vendor agreements, renewal workflow, owners, values, and notes."
+    },
+    "fixture_title": "Annual monitoring software agreement",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 45,
+    "title": "Procurement Portal: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a procurement request and its requester. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Software, Hardware, Services, Travel. Statuses are Draft, Submitted, Approved, Rejected. The UI gives these shared fields domain-specific labels. Decision deadline is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Developer workstation purchase\" from Draft to Submitted. The first successful command represents a real transition and adds one status event. Sending Submitted again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Submitted can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Draft-to-Submitted label change alone does not implement every real-world rule for a procurement request and its requester.",
+    "example": "Create \"Developer workstation purchase\" in Software with status Draft, amount 12.50 and dueDate 2028-02-29. Request Submitted twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Group pending requests by category",
+      "Add a UI confirmation for changing Submitted back to Draft.",
+      "Add a regression for a decision deadline at a leap-year boundary.",
+      "Add approval thresholds"
+    ],
+    "answers": [
+      "Aggregate the same filtered records as the list and state whether totals cover all matches or only the current page.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Define currency, amount bounds and authorized approvers; a UI-hidden Approved option alone cannot enforce the rule."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "45",
+      "route": "/api/requests",
+      "statuses": [
+        "Draft",
+        "Submitted",
+        "Approved",
+        "Rejected"
+      ],
+      "categories": [
+        "Software",
+        "Hardware",
+        "Services",
+        "Travel"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Developer workstation purchase",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 46,
+    "title": "Property Rentals: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a rental unit and its responsible property owner. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Studio, One Bedroom, Two Bedroom, House. Statuses are Available, Application, Occupied, Maintenance. The UI gives these shared fields domain-specific labels. Follow-up date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"One-bedroom courtyard unit\" from Available to Application. The first successful command represents a real transition and adds one status event. Sending Application again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Application can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Available-to-Application label change alone does not implement every real-world rule for a rental unit and its responsible property owner.",
+    "example": "Create \"One-bedroom courtyard unit\" in Studio with status Available, amount 12.50 and dueDate 2028-02-29. Request Application twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Distinguish available from maintenance units",
+      "Add a UI confirmation for changing Application back to Available.",
+      "Add a regression for a follow-up date at a leap-year boundary.",
+      "Prevent overlapping tenancies"
+    ],
+    "answers": [
+      "Use the actual statuses and show why Maintenance is not an available vacancy even when there is no occupant.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Create tenancy interval records with explicit endpoint semantics and enforce non-overlap when committing; generic unit status is insufficient."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "46",
+      "route": "/api/units",
+      "statuses": [
+        "Available",
+        "Application",
+        "Occupied",
+        "Maintenance"
+      ],
+      "categories": [
+        "Studio",
+        "One Bedroom",
+        "Two Bedroom",
+        "House"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "One-bedroom courtyard unit",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 47,
+    "title": "Quality Audits: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a quality audit and its responsible reviewer. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Process, Security, Manufacturing, Customer Support. Statuses are Planned, In Progress, Needs Remediation, Passed, Failed. The UI gives these shared fields domain-specific labels. Remediation deadline is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Quarterly access-control audit\" from Planned to In Progress. The first successful command represents a real transition and adds one status event. Sending In Progress again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting In Progress can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Planned-to-In Progress label change alone does not implement every real-world rule for a quality audit and its responsible reviewer.",
+    "example": "Create \"Quarterly access-control audit\" in Process with status Planned, amount 12.50 and dueDate 2028-02-29. Request In Progress twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Show audits needing remediation",
+      "Add a UI confirmation for changing In Progress back to Planned.",
+      "Add a regression for a remediation deadline at a leap-year boundary.",
+      "Model findings and evidence"
+    ],
+    "answers": [
+      "Filter Needs Remediation and derive overdue state using calendar labels; Passed is not overdue remediation.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Add child findings with severity and resolution evidence; decide which unresolved findings block Passed and validate within the status transaction."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/audits/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "47",
+      "route": "/api/audits",
+      "statuses": [
+        "Planned",
+        "In Progress",
+        "Needs Remediation",
+        "Passed",
+        "Failed"
+      ],
+      "categories": [
+        "Process",
+        "Security",
+        "Manufacturing",
+        "Customer Support"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for quality audits, owners, severity, remediation dates, and findings."
+    },
+    "fixture_title": "Quarterly access-control audit",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 48,
+    "title": "Patient Intake: reliable workflow and history",
+    "focus": "repeat-safe workflow history and explicit input contracts",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Actual changes update the in-memory record and append one status event. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a fictional intake record and its coordinator. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Primary Care, Dental, Vision, Behavioral Health. Statuses are New, Reviewing, Scheduled, Closed. The UI gives these shared fields domain-specific labels. Follow-up date is represented as a YYYY-MM-DD calendar string, not an instant. A repository array and its activity collection live only in the Node process. Restarting the server restores seeds; this change does not add durable storage.",
+    "concept": "Follow one concrete command: change \"Demo intake for a fictional learner\" from New to Reviewing. The first successful command represents a real transition and adds one status event. Sending Reviewing again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Reviewing can legitimately create a new event.\n\nThe repository owns the live array. Its status method checks existence, compares the current value, then changes the record and appends history synchronously. There is no await between those operations. This makes the repeat-safe behavior easy to trace inside one Node process, but it is not a durable database transaction or a multi-process coordination strategy. A server restart discards new records and history. The API tests use a fresh process fixture and real HTTP, so they check routing and validation as well as repository behavior.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A New-to-Reviewing label change alone does not implement every real-world rule for a fictional intake record and its coordinator.",
+    "example": "Create \"Demo intake for a fictional learner\" in Primary Care with status New, amount 12.50 and dueDate 2028-02-29. Request Reviewing twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item.",
+    "exercises": [
+      "Show reviewing intakes awaiting follow-up",
+      "Add a UI confirmation for changing Reviewing back to New.",
+      "Add a regression for a follow-up date at a leap-year boundary.",
+      "Design restricted record access"
+    ],
+    "answers": [
+      "Use synthetic fixtures and the Reviewing status; derive the date view without inventing clinical urgency from generic priority.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Introduce a real authentication/authorization boundary and test denied reads and writes. This scaffold currently has no role-based access or clinical workflow policy."
+    ],
+    "source": "server/server.js",
+    "symbol": "setStatus",
+    "test": "test/workflow.test.js",
+    "domain": {
+      "stage": "48",
+      "route": "/api/intakes",
+      "statuses": [
+        "New",
+        "Reviewing",
+        "Scheduled",
+        "Closed"
+      ],
+      "categories": [
+        "Primary Care",
+        "Dental",
+        "Vision",
+        "Behavioral Health"
+      ],
+      "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+    },
+    "fixture_title": "Demo intake for a fictional learner",
+    "sql": false,
+    "setup": "From this project folder, install dependencies and start the API plus React client:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local URL printed by Vite. Keep both processes running; Ctrl+C stops them. Run one learning project at a time because scaffolds may reuse ports. `npm run dev:server` and `npm run dev:client` start the two sides separately when you want separate logs.\n\nIn a second terminal, from the same project folder:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe server keeps records in memory. Creating a record changes the running process, but restarting it restores the seed dataset. The tests start a separate app instance on an ephemeral loopback port and close it after the suite. They do not call the manually running development server. The production client build is emitted under client/dist; it still needs an API to perform requests.",
+    "dbguide": "No database service is required. Inspect the repository factory in server/server.js to see seed records, the live collection and methods that mutate it. Use the Network panel to inspect JSON, then restart the server to observe the persistence boundary. HTTP tests verify the actual Express app and repository; they are not database durability tests.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The React event handler reads controlled form or filter state",
+      "client/src/api.js serializes the request to the Express API",
+      "server/server.js validates caller-controlled fields and normalizes accepted values",
+      "The repository method reads or changes its in-memory records",
+      "The route returns JSON or a bounded validation error",
+      "React reloads or renders the response; server restart reconstructs seed state"
+    ]
+  },
+  {
+    "stage": 49,
+    "title": "Grant Manager: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents a grant application and its owner. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Education, Health, Climate, Community. Statuses are Draft, Submitted, Under Review, Awarded, Declined. The UI gives these shared fields domain-specific labels. Submission or review deadline is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Community learning grant proposal\" from Draft to Submitted. The first successful command represents a real transition and adds one status event. Sending Submitted again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Submitted can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Draft-to-Submitted label change alone does not implement every real-world rule for a grant application and its owner.",
+    "example": "Create \"Community learning grant proposal\" in Education with status Draft, amount 12.50 and dueDate 2028-02-29. Request Submitted twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Show submissions awaiting review",
+      "Add a UI confirmation for changing Submitted back to Draft.",
+      "Add a regression for a submission or review deadline at a leap-year boundary.",
+      "Separate requested and awarded amounts"
+    ],
+    "answers": [
+      "Use Submitted/Under Review according to an explicit view rule; keep draft amounts distinct from awards.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Add two named amounts and a decision record; Awarded status alone must not silently reinterpret an existing request amount."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/grants/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "49",
+      "route": "/api/grants",
+      "statuses": [
+        "Draft",
+        "Submitted",
+        "Under Review",
+        "Awarded",
+        "Declined"
+      ],
+      "categories": [
+        "Education",
+        "Health",
+        "Climate",
+        "Community"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for grant applications, review stages, award amounts, and activity notes."
+    },
+    "fixture_title": "Community learning grant proposal",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  },
+  {
+    "stage": 50,
+    "title": "Incident Response: reliable workflow and history",
+    "focus": "atomic status transitions, consistent pages and calendar dates",
+    "before": "Status requests could add redundant history. Validation accepted malformed shapes, and page calculations lacked a consistent clamped result. Separate status and history writes could disagree after a late failure; separate count/page queries could see different snapshots. Seed dueDate values also needed correct JSON-to-SQL field mapping.",
+    "after": "Typed and bounded inputs protect edits, real calendar dates round-trip, page numbers clamp and equal sort values use an id tie-breaker. Repeating the current status creates no extra status history. Status and audit writes use one row-locked transaction; count and rows share a repeatable-read snapshot. Seed dates map to the intended column. The shared toolbar now uses two flexible columns so its search field remains readable beside the form and activity panels.",
+    "model": "This app represents an operational incident and its commander. A record uses generic fields id, title, owner, category, status, priority, amount, dueDate and notes. Categories are Availability, Security, Data, Performance. Statuses are Open, Investigating, Mitigated, Resolved, Postmortem. The UI gives these shared fields domain-specific labels. Response follow-up deadline is represented as a YYYY-MM-DD calendar string, not an instant. PostgreSQL items and activity_entries tables persist records and their child history.",
+    "concept": "Follow one concrete command: change \"Intermittent checkout latency\" from Open to Investigating. The first successful command represents a real transition and adds one status event. Sending Investigating again compares equal to current state, so it returns the record without adding another status event. Created, updated and note entries remain separate kinds; counting every timeline row would give the wrong assertion. This guarantee concerns repeated current values, not global request deduplication. After an intervening transition, requesting Investigating can legitimately create a new event.\n\nThe handler obtains one database client, begins a transaction and reads the record FOR UPDATE. A second writer waits for that row, then compares against its latest committed status. The update and activity insert use the same client, so an audit-insert failure rolls back the status too. The test installs a temporary trigger to force that late failure. Separately, the list transaction counts and fetches under one repeatable-read snapshot. It does not freeze the dataset across later HTTP requests. PostgreSQL DATE values are returned as calendar strings through a type parser, avoiding accidental local-midnight conversion.\n\nValidation belongs at the API boundary even when the React controls constrain input. An object is not a valid title, an unknown priority is not silently accepted, and 2027-02-29 is not a real date. Normalization may trim a valid string, but should not stringify an object into a misleading title. For paging, count matching rows before clamping a request such as page 999. Sort by the selected field and then id so ties are deterministic on an unchanged dataset. The scaffold accepts its named statuses; it does not enforce a domain approval graph or actor permissions. A Open-to-Investigating label change alone does not implement every real-world rule for an operational incident and its commander.",
+    "example": "Create \"Intermittent checkout latency\" in Availability with status Open, amount 12.50 and dueDate 2028-02-29. Request Investigating twice: one status event is added. An edit with dueDate 2027-02-29 returns 400 and preserves the old record. With three matching records and pageSize 2, page 999 clamps to page 2 with one item. A forced activity-insert failure leaves both the record and its prior history unchanged.",
+    "exercises": [
+      "Build an incident status timeline",
+      "Add a UI confirmation for changing Investigating back to Open.",
+      "Add a regression for a response follow-up deadline at a leap-year boundary.",
+      "Track mitigation and resolution durations"
+    ],
+    "answers": [
+      "Display ordered transition events and distinguish notes from actual status changes; duplicate commands must not inflate the timeline.",
+      "Cancellation must preserve state and history. Confirmation calls the existing status endpoint; keep server validation and repeat-safe handling because API callers can bypass the dialog.",
+      "Use 2028-02-29 as valid and 2027-02-29 as invalid. Assert the valid string survives a read and the rejected edit leaves the old record unchanged; do not test only error wording.",
+      "Store explicit occurrence timestamps and define reopening semantics. Do not derive all milestones from one mutable updated timestamp."
+    ],
+    "source": "server/src/index.ts",
+    "symbol": "app.patch(\"/api/incidents/:id/status\"",
+    "test": "test/workflow.test.ts",
+    "domain": {
+      "stage": "50",
+      "route": "/api/incidents",
+      "statuses": [
+        "Open",
+        "Investigating",
+        "Mitigated",
+        "Resolved",
+        "Postmortem"
+      ],
+      "categories": [
+        "Availability",
+        "Security",
+        "Data",
+        "Performance"
+      ],
+      "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for operational incidents, severity, response owners, and timelines."
+    },
+    "fixture_title": "Intermittent checkout latency",
+    "sql": true,
+    "setup": "Use Node, npm and a local PostgreSQL installation with `psql` available. From this project folder:\n\n```powershell\nnpm install\n```\n\nCreate an empty disposable learning database using your local PostgreSQL account. Set the connection string explicitly in the same PowerShell terminal (replace the example credentials with your local ones):\n\n```powershell\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nThe schema script resets this app's tables and seeds sample records; use your dedicated learning database for that reset. The database must already exist. This direct PowerShell command avoids the inherited `db:setup` script's POSIX-style `$DATABASE_URL` expansion. You can instead configure DATABASE_URL in a local .env file for the Node server; `psql` does not automatically load .env, so set its environment value separately. Open the local client URL Vite prints. Run one project at a time to avoid shared development port conflicts.\n\nFor regression tests, use a separate existing database whose name begins `astra_test_`:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe test database account needs permission to create and drop its own schemas. The helper creates a unique schema, loads the app's schema/seed data there, starts the real API on an ephemeral loopback port, and drops that schema on normal completion. A test database with pgcrypto available matches the schema's UUID generation requirements. The helper refuses names without the test prefix. It does not use the manually running development server.",
+    "dbguide": "Read [test/database.ts](../test/database.ts) before experimenting. It assigns DATABASE_URL to a unique search_path before importing the application pool, so the tests exercise isolated tables through real HTTP. SQL failure injection is installed only in that disposable schema. An interrupted process may leave a test schema behind; inspect and remove only the exact schema owned by that run. Reusing a development database name is intentionally rejected. The source uses parameters for values; never concatenate user strings into SQL in a practice extension.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "The React handler collects form or filter state",
+      "client/src/api.ts sends typed client data as untyped JSON over HTTP",
+      "server/src/index.ts validates runtime values at the server boundary",
+      "server/src/db.ts supplies a pool or one transaction client for the relevant SQL",
+      "PostgreSQL constraints and the transaction boundary protect the stored relationships described in this lesson",
+      "The API maps rows to its JSON representation and React renders the observed result"
+    ]
+  }
+]

@@ -1,0 +1,247 @@
+[
+ {
+  "wave": 2,
+  "id": "d84730649bc6",
+  "name": "_Organized Desktop/05 Numbered Experiments/B1",
+  "rel": "_Organized Desktop/05 Numbered Experiments/B1",
+  "status": "delivered",
+  "tests": null,
+  "words": 4074,
+  "deliveredAt": "2026-09-12T19:43:21.903098+00:00",
+  "nfiles": 21,
+  "summary": [
+   "Incident detail responses authorize embedded parent and child records with the same existing policy used for direct incident access.",
+   "The service regression tests hidden relationships and retained admin, matched responder and assignee access, with intercepted store reads and fail-on-write mocks in a unique temporary workspace.",
+   "Nine learning guides explain the request flow, projection authorization, exact before/after code, debugging, runnable practice and solutions; original source and actual check logs accompany the course."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\B1",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "b1",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/d84730649bc6",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/d84730649bc6.json (spec: specs/d84730649bc6.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/B1/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "61d919e84af9",
+  "name": "_Organized Desktop/05 Numbered Experiments/D1",
+  "rel": "_Organized Desktop/05 Numbered Experiments/D1",
+  "status": "delivered",
+  "tests": 4,
+  "words": 4939,
+  "deliveredAt": "2026-09-12T22:53:25.700255+00:00",
+  "nfiles": 60,
+  "summary": [
+   "Authorizes a board snapshot before Socket.IO room and presence mutation, preserves an existing room after a rejected replacement, restricts heartbeat to joined boards, and cleans presence on leave or disconnect.",
+   "Validates card:update with a strict runtime patch schema, preserving omitted nullable fields while carrying explicit null clears and valid ISO dates to the service.",
+   "Scopes move destinations and neighbors to the board, allocates board event versions through the transaction connection with an atomic increment, and builds a presence-aware Drizzle card update argument.",
+   "Adds four finite Node tests through the registered socket handler and updates the custom server to adapt handshake headers into the auth boundary; no live database or dispatcher is exercised.",
+   "Provides nine source-grounded upskilling chapters with matched exercises, runnable solutions, trace coverage, exact original snapshots, and explicit mock/integration limits.",
+   "Repairs the Next/PostCSS/dependency setup, keeps schema migration separate from compilation, and preserves card keyboard focus and activation while delegating handled drag keys."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\D1",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "d1",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/61d919e84af9",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/61d919e84af9.json (spec: specs/61d919e84af9.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/D1/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "7f871ce5e237",
+  "name": "_Organized Desktop/05 Numbered Experiments/e13",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e13",
+  "status": "delivered",
+  "tests": 17,
+  "words": 3366,
+  "deliveredAt": "2026-09-13T13:50:27.086451+00:00",
+  "nfiles": 15,
+  "summary": [
+   "Reject duplicate fulfillment lines, empty or unsafe quantities, invalid states, and wrong order or warehouse allocations before writes.",
+   "Use the remaining captured payment balance once, validate refund keys, and return bound persisted receipts on safe retries.",
+   "Isolate the SQLite fixture on an absolute temporary database and add source-grounded nine chapter learning material."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e13",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "e13",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/7f871ce5e237",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/7f871ce5e237.json (spec: specs/7f871ce5e237.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e13/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "20574f0b81b4",
+  "name": "_Organized Desktop/05 Numbered Experiments/e6",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e6",
+  "status": "delivered",
+  "tests": 8,
+  "words": 4197,
+  "deliveredAt": "2026-09-12T22:52:18.219899+00:00",
+  "nfiles": 40,
+  "summary": [
+   "Adds isolated MemoryStore construction, workspace membership and owner/maintainer guards, recipient-scoped inbox projections, and pre-mutation tracker relation checks.",
+   "Rejects unauthorized issue updates and statuses belonging to another issue type before changing issue/planner state; repaired expected failures map to Fastify 403/404 responses.",
+   "Registers socket handlers through a testable seam, validates payloads/cursors, awaits room joins, derives member identity and broadcasts socket-owned presence cleanup including the final empty list.",
+   "Adds eight finite store, socket and real Fastify injection tests, plus nine source-grounded chapters with complete executed examples and exact original snapshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e6",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "e6",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/20574f0b81b4",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/20574f0b81b4.json (spec: specs/20574f0b81b4.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e6/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "38cbd0ab05af",
+  "name": "_Organized Desktop/05 Numbered Experiments/w24",
+  "rel": "_Organized Desktop/05 Numbered Experiments/w24",
+  "status": "delivered",
+  "tests": null,
+  "words": 3695,
+  "deliveredAt": "2026-09-13T14:37:43.672926+00:00",
+  "nfiles": 32,
+  "summary": [
+   "Enforced service-entry permissions and actor-aware audit projection, including fail-closed unknown roles.",
+   "Added a synchronous cloned mock transaction for publish and rollback, preserving lineage and invalidating cache only after a successful commit.",
+   "Restricted numeric comparisons to finite usageCount values, rejected duplicate rule and condition IDs, and preserved stable evaluator behavior.",
+   "Mapped validation and malformed JSON to safe 400 responses and unexpected errors to a generic 500 envelope without exposing secrets.",
+   "Added Suspense startup boundaries and an actual Node test suite covering the changed behavior, plus nine linked upskill guides and exact original snapshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\w24",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "w24",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/38cbd0ab05af",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/38cbd0ab05af.json (spec: specs/38cbd0ab05af.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/w24/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "4b702f01579b",
+  "name": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "rel": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "status": "delivered",
+  "tests": null,
+  "words": 4156,
+  "deliveredAt": "2026-09-13T16:18:09.361996+00:00",
+  "nfiles": 21,
+  "summary": [
+   "Playbook status updates now use tenant-scoped compare-and-set transactions that commit the audit row with the state change in both adapters.",
+   "Health configuration publication now selects the next version, replaces tenant snapshots, and writes the publication audit in one transaction boundary; service calculations pin the proposed components.",
+   "Renewal context and numeric validation remain fail-closed, with adapter parity regression coverage and nine source-grounded guides."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww17",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "ww17",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/4b702f01579b",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/4b702f01579b.json (spec: specs/4b702f01579b.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/ww17/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "2c7ac2b52738",
+  "name": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "rel": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "status": "delivered",
+  "tests": null,
+  "words": 4100,
+  "deliveredAt": "2026-09-13T14:32:55.550011+00:00",
+  "nfiles": 30,
+  "summary": [
+   "Make version adapters presence-aware and reject unknown versions.",
+   "Validate profile ownership and rollout inputs before repository or audit writes.",
+   "Repair test startup comments and document API-versioning limits."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww27",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "ww27",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/2c7ac2b52738",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/2c7ac2b52738.json (spec: specs/2c7ac2b52738.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/ww27/astraupskill",
+  "batch": "B11"
+ },
+ {
+  "wave": 2,
+  "id": "109a97addd48",
+  "name": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "rel": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "status": "delivered",
+  "tests": 13,
+  "words": 5179,
+  "deliveredAt": "2026-09-12T20:29:28.449544+00:00",
+  "nfiles": 38,
+  "summary": [
+   "Preserves omitted item metadata during PATCH updates, accepts reorder point zero, rejects unsafe direct service inputs, and keeps stock changes on the dedicated adjustment command.",
+   "Adds a repository-owned FIFO mutation boundary with cloned-map rollback, used by item, stock, hold, release, and alert sequences; two service instances sharing one repository cannot oversubscribe stock.",
+   "Adds 13 finite Node tests covering retained auth/schema/visibility behavior, partial updates, safe integers, concurrent totals, hold-versus-adjustment invariants, concurrent release, rollback, queue recovery, singular alerts, and the documented unlocked-read limit.",
+   "Updates the staged Next dynamic route parameter shape, Tailwind 4 PostCSS plugin, local ESLint configuration, and lockfile so the reproducible scripts run without interactive or global downloads.",
+   "Provides nine source-grounded upskilling chapters totaling more than 4,000 words, complete matched exercises and solutions, and exact original source snapshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww37",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "ww37",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/109a97addd48",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/109a97addd48.json (spec: specs/109a97addd48.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/ww37/astraupskill",
+  "batch": "B11"
+ }
+]

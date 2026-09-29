@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww11",
+  "id": "1d0b328c6621",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-protocol-activation.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1d0b328c6621",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:06:39.590323+00:00",
+  "status": "complete",
+  "log": "crud-b05-astra-runtime2.log",
+  "pid": 25412,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:06:50.475670+00:00",
+  "elapsedSeconds": 10.88
+}

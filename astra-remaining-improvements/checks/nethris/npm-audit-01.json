@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm.cmd",
+    "audit",
+    "--json"
+  ],
+  "workingDirectory": "client",
+  "exitCode": 1,
+  "seconds": 232.97
+}

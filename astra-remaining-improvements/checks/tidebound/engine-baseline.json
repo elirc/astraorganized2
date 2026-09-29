@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--reporter=json",
+    "--outputFile=../../checks/tidebound/engine-baseline-results.json"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 1,
+  "seconds": 210.21
+}

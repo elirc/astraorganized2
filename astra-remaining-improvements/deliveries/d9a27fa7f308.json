@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/j5",
+  "id": "d9a27fa7f308",
+  "summary": [
+    "Empty optional notes survive saved-file reload; malformed, invalid-precision and duplicate records reject the whole load without an exit-time overwrite.",
+    "Saving validates and serializes before writing a temporary sibling and atomically replacing the destination, with failed-move cleanup.",
+    "Complete CRUD adds immutable replacement updates and confirmed CLI deletion; failed commands preserve existing state and totals.",
+    "Shared domain precision/category validation, guarded ID allocation, snapshot loading and graceful EOF strengthen the foundational service boundaries.",
+    "A portable Java 17 runner and nine detailed learning documents cover actual source, failure traces, worked changes, regression reasoning and progressive CRUD web API exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j5/results.json",
+    "expectedTests": 28,
+    "command": "run.ps1 -Test; five separate-process CLI scenarios",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files; isolated project copy"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 28,
+    "javaRegressionTests": 23,
+    "separateProcessCliScenarios": 5,
+    "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+    "checks": [
+      "separate process reload preserves empty note",
+      "CLI update persists",
+      "CLI delete confirmation and persistence",
+      "EOF keeps completed changes and discards unfinished command",
+      "startup rejects corruption without overwriting original file"
+    ],
+    "limits": [
+      "No HTTP server or browser UI; no concurrent-writer or power-loss guarantees."
+    ]
+  },
+  "courseWords": 4483,
+  "courseFiles": 9,
+  "courseLinksChecked": 18,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "8b4a8229fa338d45cd503bf727f4262afe90b7116bb070e81d3bb88830e23d0a",
+      "after_sha256": "9f0491b8d32fa873c3a3f0d26eaaae87cf65692b5e97482e1fbb8c5aad87cda1"
+    },
+    {
+      "file": "run.ps1",
+      "before_sha256": null,
+      "after_sha256": "7155209fb355bd23171b9f1a9642cea3c557d1fea678f427363fe848cbc8cff4"
+    },
+    {
+      "file": "src/expensetracker/App.java",
+      "before_sha256": "d113b8a20924e10882b1984c54ade38d1f64a845c10438a40bca674ff53f8f45",
+      "after_sha256": "18228acff91ef72c5ac344fef74200a7df4702c69cd4a4b8a4e02329f4c2844a"
+    },
+    {
+      "file": "src/expensetracker/Expense.java",
+      "before_sha256": "bb16ea2f3627fb190974c1bb8abc368d6316d81c67375028e9605d4f46548b89",
+      "after_sha256": "e42a78278b3d85590731cfc20a955f1ac74279029f6c5fd969733436784a0067"
+    },
+    {
+      "file": "src/expensetracker/ExpenseManager.java",
+      "before_sha256": "4596f458722dec6382dd489e2e09909a9f80bb1411f328e88cba54667ecc00be",
+      "after_sha256": "0aa7ae8da3c8c7fe582d75a0097ad75fc705f032e2d17b4907c0db154257a713"
+    },
+    {
+      "file": "src/expensetracker/ExpenseFileStorage.java",
+      "before_sha256": "d6580693edaf91bc928149d7da92078259291dfb5a338e70068cb6ee754e32a3",
+      "after_sha256": "5c2260b2167f52701c36b0b812e11e62728583488e8b2218f0bc21bf5435b673"
+    },
+    {
+      "file": "test/expensetracker/RegressionTests.java",
+      "before_sha256": null,
+      "after_sha256": "ed82d0bd4b7a76c01276601da67e3886354f0471112838a9c01bc89a621b6973"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "7954b7dc290f56486eeb87d4099e9121ecd0c67f7929a059c40225086577d58f"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "c692da8003fc7dae0ea4603e23ecc5f37eff208e2440ed8a9865456f4fd2dfb9"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e635d9206f32eeb4dde5ff066736784c19299696fef23190495db016db15fa09"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "62df8cd2e2066bf122b1aaf3382326facabdab839c85a01260531364c9438678"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ef9e247be6f469e663e427d476bc6709c53344543e399cfffa14140053810df4"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b7e500e24628b4992235c5190af9156faacfde0d1bc384558668b2b602acb159"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b47e82cbf527f30d2e7d3f5f84e15d807d3f5539b9a0f43dfc29e800aa2874e5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "099ff49da95dcab9d9d0158e863a4b2fa30aab6ad7bac733120e76e14fce0e7a"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "98daad4bc16eda1a7d507179ddccf08de07cd1060c895a25122b8f81a637aeab"
+    }
+  ],
+  "limits": [
+    "CLI only; HTTP, browser UI, database and authenticated owner scoping are proposed exercises.",
+    "Save-on-exit can lose unsaved edits after forced termination; no cross-process coordination or power-loss durability guarantee.",
+    "IDs can be reused after deleting the highest record and restarting; exhaustion does not wrap.",
+    "Atomic replacement is required; unsupported filesystems fail visibly. Strict loading requires manual repair of corrupt copies.",
+    "CLI diagnostics are printed; structured failure exit codes are not yet implemented."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T04:00:06.743990+00:00"
+}

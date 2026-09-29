@@ -1,0 +1,147 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/J1",
+  "id": "9b2478e93c69",
+  "summary": [
+    "Replaced mutable task references and save-on-exit behavior with immutable versioned values, complete edit/reopen/search workflows, explicit deletion confirmation and save-before-memory candidate commits.",
+    "Added strict bounded legacy/versioned decoding, completion invariants, stable ID watermarks, preserved original legacy backups, flushed atomic replacement and cooperative cross-process stale-file protection.",
+    "Stopped malformed startup and incomplete EOF from replacing existing data, and added explicit reload recovery after rejected stale writes.",
+    "Added 43 passing Java/process checks, preserved historical onboarding material and nine detailed learning documents connecting the CLI to future versioned CRUD HTTP and SQL design."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/todo-manager/results.json",
+    "expectedTests": 43,
+    "environment": "JDK 17; Python 3.13; disposable files; independent JVM concurrency",
+    "command": "python scripts/verify.py (35 Java tests, 8 CLI/process checks, UTF-8 compilation)"
+  },
+  "testResults": {
+    "passed": true,
+    "javaTests": 35,
+    "processChecks": 8,
+    "total": 43,
+    "checks": [
+      "create-eof",
+      "restart-list",
+      "cancel-delete",
+      "edit-reopen-search",
+      "incomplete-eof",
+      "confirm-delete",
+      "corrupt-startup",
+      "two-jvm-conflict"
+    ],
+    "environment": "JDK 17; disposable temporary fixture; no personal task files used"
+  },
+  "courseWords": 4375,
+  "courseFiles": 9,
+  "courseLinksChecked": 26,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "6d3883537c66a84bc468dd5b3a293d16368b26a993d1c915076da68e9b050ad5"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "2872e39553d4c4c0bf93ebe4168975f7cc1bfac260c0ed20a510adf60d314246",
+      "after_sha256": "970e92efc66e2278a6bcc64d8eb533161732993b64b2c3961838dbe739f24f1b"
+    },
+    {
+      "file": "docs/HISTORICAL-README.md",
+      "before_sha256": null,
+      "after_sha256": "5da7a5014ea527d3c192ae39317637d706dc46fe0dece13e3aa36d90c4317015"
+    },
+    {
+      "file": "scripts/verify.py",
+      "before_sha256": null,
+      "after_sha256": "75751537ef56c18388a888b5bfd70c98037d315eda508b08223b5e2b3b5addfe"
+    },
+    {
+      "file": "sources.txt",
+      "before_sha256": null,
+      "after_sha256": "8c4a75a303f21baf19b9e50f4a7bdb3d548bcb1574c5de59657154f8a06cdad0"
+    },
+    {
+      "file": "src/todo/App.java",
+      "before_sha256": "48093063db8ea74fac2f25863ee3aeb1039935d67a124a6479a050a2014b7a56",
+      "after_sha256": "c4e372f2e97c4ad985b4b7c4448ded5c461b2859effcfd92b254d3ab3f3cf7ce"
+    },
+    {
+      "file": "src/todo/model/Task.java",
+      "before_sha256": "b20b2a5fd6b03d7bd28cee6b5ea3a0f9510d6fd84247549d1320072f452ebcdd",
+      "after_sha256": "a2403e7eadebb6d3a6c0ad56c3e6d95c1ec4ae32ffbc505f206e834d9a0cd8de"
+    },
+    {
+      "file": "src/todo/repository/TaskRepository.java",
+      "before_sha256": "555d297672a13fb4e971406c5a1ec247f717c8090a4dca8d71312c596b5969ea",
+      "after_sha256": "a18c6fbee35698ffbed8e17e0972eb259d52cd5a10d8c49abd6a4b926344b766"
+    },
+    {
+      "file": "src/todo/repository/TaskSnapshot.java",
+      "before_sha256": null,
+      "after_sha256": "fded82267717734415a044911e5f07e293b6a9f8b5c23d08bb34c3b6b6b76042"
+    },
+    {
+      "file": "src/todo/service/TaskManager.java",
+      "before_sha256": "e2e31ba334144771bb3636dfd4585ffe2c37172aeab99fe8f8e2b31d805989f1",
+      "after_sha256": "276598f5df00aac0deebb3ca3f1bffbee94fc574eded44385d3f33a7e73592e5"
+    },
+    {
+      "file": "test/todo/TaskWorkflowTest.java",
+      "before_sha256": null,
+      "after_sha256": "8ad11e387922c0e3647fbb23ca47954a54eff304bcee1e66da6ad2d47c771771"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "36871f320ee5a61b37f9cf98afdb776e6b42da87999d73261431636bf3ccc857"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d8a4f0277b1ea746bac6bb2a0d2473e3d3d35dbbb1bfb3ec19ace9f038521e40"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "7a18b35b49146f7ca19261f54be4493d0092e4093259473ce003f4a0949d80be"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4e5e40d7813287d6692bc8607282ae19ec60b7c582c7a90a61ca18471d969d56"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "20c5ea3ccceee78edf847b97552dd2f0f5d1c559f2e2267d21bc9af2a79e1fa0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d0971f89f310c7f22e369dc39648061d78d5aee6618c855669b1e9714ee73ddc"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "90b7ca50719c0634ec9a9193dec6f33cd2ab32e0ca85cd0724b9959addba8ad6"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "5e4fb9b9d74b7dd153f62320ef0b62e2c7652315827d432073b0b981110ab4d1"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1bc3b58ebf5bebd6d507b12929f998a4af7f7fef79cc2d2c19e3e247383a5b4a"
+    }
+  ],
+  "limits": [
+    "The project remains a Java CLI; no HTTP/browser app, authentication, ownership, audit history or SQL deployment was added. The course explicitly identifies those extensions.",
+    "File locking is cooperative and atomic replacement depends on filesystem support; no power-loss, directory-flush, network-filesystem or multi-machine certification.",
+    "Rejected terminal input is not retained as a draft or automatically merged. Reload and deliberate re-entry are required after stale-file conflicts.",
+    "Strict legacy conversion preserves original bytes but does not repair arbitrary malformed records; snapshots are bounded to 8 MiB and 10,000 tasks."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T13:51:18.576756+00:00"
+}

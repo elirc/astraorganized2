@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww36",
+  "id": "7a758c622d3c",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-expiry.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7a758c622d3c",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:34:18.738450+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-runtime.log",
+  "pid": 31228,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:34:23.216371+00:00",
+  "elapsedSeconds": 4.47
+}

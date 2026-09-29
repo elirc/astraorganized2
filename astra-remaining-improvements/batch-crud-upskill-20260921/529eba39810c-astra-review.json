@@ -1,0 +1,32 @@
+{
+  "id": "529eba39810c",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:42:15.225626+00:00",
+  "sourceReview": "Reviewed refund service and repository client defaults: both allowance reads now receive transaction client. No isolation or provider guarantees claimed.",
+  "teachingReview": "Reviewed nine chapters; removed repeated padding, corrected read order and added concrete full/partial refund and failure exercises.",
+  "testReview": "Five actual service, state-machine and error-class runtime cases passed. Adapters check every client argument, branches and failure identity; native database not executed.",
+  "specSHA256": "38ef48afb2db8688732ce3ea3db684f422fa48e4daf7c097c0bbb3a218945efb",
+  "fileHashes": {
+    "src/services/refundService.ts": "9661256ecbc0893e05fc9f6b4b2efe75ee5a6e355cf6d443577863ad6e6ea406",
+    "tests/runtime-refund-scope.test.mjs": "47b73fb8e761f468087b0a3196da0a625a51e903232f4551e74c52ca0f0834ab",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src/services/refundService.ts": "b47d3411d1700d953e72331b86b54cf3d9e7b00a0361932dc5330c210a4365f0",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "6fa3c4851e810a429556b7c5b4945d7355a5a64a77401054732122598fe7f155",
+    "astraupskill/evidence/results.json": "c1f6fb1b589cae9e075e47f38ea74b34d33ac677b20d9f3a816b9f61a34741cf",
+    "astraupskill/README.md": "b37e972053e736a458dbe9caa630e456ed001fedf7cdd58df92734a4bfc7f028",
+    "astraupskill/01-CODEBASE-MAP.md": "0df54ffd74401609ad3037c9dd84eec4723edcf516c32595713c0ae1771de54a",
+    "astraupskill/02-CONCEPTS.md": "6fff7a0c544d22b2b6e84e4630f16ef023cf4af480d2c1100c709d5775212714",
+    "astraupskill/03-WORKED-CHANGE.md": "c8e7d3ec78e88b14f9e70959a03b7f7ce81aef0642beca308cbf11abd052fe17",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "4f7d4fa4a803563dfb8e6ed1b0ad3bb05bb5c44b5c6aacce46f0bdabc674f5ef",
+    "astraupskill/05-PRACTICE.md": "5b2616ad4ce7d054a99263b0e7dc01ff36d41d985e30f1b5b5cd8e88e364367c",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "bb2e0f01427d423dc65d0006b266e7d162ca78e5f1a26663cf1aa3a67071956b",
+    "astraupskill/07-TRACE-LAB.md": "9be6569d9951b5d3baa1c34c36d4c8f33a4e7f57dc1948403062547f0e93d651",
+    "astraupskill/VERIFICATION.md": "a7cce48dc39fb76824fb5cb849feae3a67a2b3d06b54aac5e33720e9ecf2daaf"
+  },
+  "evidenceHashes": {
+    "checks/529eba39810c/astra-crud-b04-w22.log": "c82aa89ba9badcdaad40116d7b59f5a70cac20f71c452d83bd583a41b842da6b",
+    "checks/529eba39810c/crud-b04-astra-runtime.json": "30726c5ed662d91c369a0b02277342f7bea7770ba66a077b3cb5ce931ce00c93",
+    "checks/529eba39810c/crud-b04-astra-runtime.log": "6fa3c4851e810a429556b7c5b4945d7355a5a64a77401054732122598fe7f155",
+    "checks/529eba39810c/results-crud-b04.json": "c1f6fb1b589cae9e075e47f38ea74b34d33ac677b20d9f3a816b9f61a34741cf"
+  }
+}

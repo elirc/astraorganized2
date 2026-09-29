@@ -1,0 +1,31 @@
+{
+  "id": "efb20378d966",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:03:46.916149+00:00",
+  "sourceReview": "Reviewed controller, service, role and membership repositories. Set normalization makes previously rejected valid duplicate intent accepted before tenant count validation; same list reaches replacement and audit. Original snapshot restored only after canonical hash matched baseline.",
+  "teachingReview": "Read nine chapters and corrected false claim that duplicate edges reached persistence. Clarified unchanged create path, outside-transaction role validation, cross-realm prototypes and mocked isolation limits.",
+  "testReview": "Four actual service runtime cases passed with distinct-row role lookup, immutable caller input and transaction-handle identity checks; invalid role before transaction, empty replacement and original repository error verified. No Prisma or HTTP integration claimed.",
+  "specSHA256": "e340050dfe4070cf56baad2142eef26627854f4f22d37130f29364687903ec65",
+  "fileHashes": {
+    "server/src/services/userService.js": "a541ecc656687cd2dbfda37977e0fb117a8a4bcc30dd501ee4a805e976f88149",
+    "tests/runtime-role-duplicates.test.mjs": "d231372ee7a850b5a85677e048eade411acc9f6bb39f497d78b61996c58e093a",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/server-src-services-userService.js.before": "5c901c79bacc55b85a711eedcc6ca627be2e7773a75c6ebf6f3d4e763b78622c",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "56d427fbf95809ef5c244f57a3f1c6001f943fd151ca1729c6fa0799b290068c",
+    "astraupskill/evidence/results.json": "71fbe21c7b56a33ee1b825ed5b2292a9651077f1f4a253ffd66ac19b9311246b",
+    "astraupskill/README.md": "730a14b190dcc7ca4ce74a00629f5711b75343517759d118ac30a8f45f54c3a8",
+    "astraupskill/01-CODEBASE-MAP.md": "d368f68bf3199369ca8854a1271eab5554480da49bff92e2d8d67f609895c419",
+    "astraupskill/02-CONCEPTS.md": "2774f8be3da79055e50e2f4c5d8e709e4bcec3721b38dbeb53d8f8a66a55c2a0",
+    "astraupskill/03-WORKED-CHANGE.md": "953b1d875c14932f5f06c531152515b432948330177723712f3631fbb1a6c6e8",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "86ec4f6ca68f27690a2903d3a8496c517ff0704be1bd481d2fcc4010f1c415c7",
+    "astraupskill/05-PRACTICE.md": "f20b6b85d6ebf7c5fe92f9776dd532884f39876353c49a5b0499b49220457d08",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "1202139337cbf3a6f87ab3d669caff1d63ca7458cf8cc6e0f8c2f2390efe35b9",
+    "astraupskill/07-TRACE-LAB.md": "d74c5701ffc61784dbc3f27bdc353461b2a232baafaaa5e6d7b27c8f442a72e0",
+    "astraupskill/VERIFICATION.md": "e7caa2a23ab83296af9c9f096c94febe1d32b67ad6fb1b36c8d53bfc5aec3b27"
+  },
+  "evidenceHashes": {
+    "checks/efb20378d966/crud-b03-astra-runtime.json": "d008e1f17279cd3031bf93f6057d62b5dcaf82ec6b7c82186a120dec7fe19c60",
+    "checks/efb20378d966/crud-b03-astra-runtime.log": "56d427fbf95809ef5c244f57a3f1c6001f943fd151ca1729c6fa0799b290068c",
+    "checks/efb20378d966/results-crud-b03.json": "71fbe21c7b56a33ee1b825ed5b2292a9651077f1f4a253ffd66ac19b9311246b"
+  }
+}

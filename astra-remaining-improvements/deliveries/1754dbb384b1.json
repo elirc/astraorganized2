@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/X1",
+  "id": "1754dbb384b1",
+  "summary": [
+    "Preserved moderator-hidden review state when an author edits existing review content; update SQL no longer resets is_hidden.",
+    "Two actual-data-module runtime cases check content-only UPDATE and visible INSERT with author/shop identity."
+  ],
+  "checks": {
+    "resultsFile": "checks/1754dbb384b1/results-crud-b07.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 2,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/X1",
+        "id": "1754dbb384b1",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-review-moderation.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1754dbb384b1\\bagel-intel-platform",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:26:37.620450+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 26276,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:26:46.942051+00:00",
+        "elapsedSeconds": 9.32
+      }
+    ],
+    "limits": [
+      "Actual data module with SQLite-shaped adapter; no live SQLite or server action.",
+      "No session/admin integration or ranking correctness check.",
+      "New rows remain visible by existing insert behavior; edits preserve current moderation state."
+    ]
+  },
+  "courseWords": 1469,
+  "courseFiles": 9,
+  "courseLinksChecked": 23,
+  "files": [
+    {
+      "file": "bagel-intel-platform/src/lib/data.ts",
+      "before_sha256": "a6e9a0dadcf8be02871ed2bf305acdc8bcb50a370b4b0e66ff4404f19a76fc70",
+      "after_sha256": "bb94d96ff7b693f6baf366e8066180eca3bbcf6fe31f5069ee0e11e4be18a294"
+    },
+    {
+      "file": "bagel-intel-platform/tests/runtime-review-moderation.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "3738ff362b3959d9c7852f975c2f82aff7f83851daba9ba17083096cef74662b"
+    },
+    {
+      "file": "bagel-intel-platform/tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "bagel-intel-platform/astraupskill/snapshots/src-lib-data.ts.before",
+      "before_sha256": null,
+      "after_sha256": "a6e9a0dadcf8be02871ed2bf305acdc8bcb50a370b4b0e66ff4404f19a76fc70"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "281ae145f634f385633ade694f5723f614e66bc77dea5494ae3ac397db1cabf1"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "67cc13bf278a4bcc3c8ce8f56228d47ece942b8fcecb9d7d7417e2ccb57fa83c"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "921495957550939c1434277cf7ddbfe27fa50af4962b5cfe49a69de243a020be"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "a6f2f3aed08a07339518f54ae5da89050da2cc9c15ac61d938eb3b7fb84ce67d"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "cddc73fae053fecf8d6d2f7466d3b1129d9e211dea8df1b8c6309d162c20035a"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6239f84c5b0ddc975b1017270173bda917e1da7f12c7d79516ab82f7f8f0ee5a"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c618fb03ee47e551b52ed434e869370ef150a419a8337699dbee7e9f7c0f8081"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "409519cb808c90445e9ab0f57870d45e09592ab88c78c04caf1f8ad8c38a4400"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c8ad38d3955793bb8c673f5dac33973d58e6ba7d19606d0df1948ab2773d7c19"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a74e603d4476a9008e37604de09c4d2c3d86758a4cb99c7d50f92bc5d767f04e"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8be0b77fbfdac7f826d082a5eb052440ef2fa5d192eeafaa6bb76613b856b8ef"
+    }
+  ],
+  "limits": [
+    "Actual data module with SQLite-shaped adapter; no live SQLite or server action.",
+    "No session/admin integration or ranking correctness check.",
+    "New rows remain visible by existing insert behavior; edits preserve current moderation state."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:33:20.313631+00:00"
+}

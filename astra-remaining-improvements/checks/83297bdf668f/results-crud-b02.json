@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildecom",
+      "id": "83297bdf668f",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-order-status.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\83297bdf668f",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T00:48:29.218555+00:00",
+      "status": "complete",
+      "log": "crud-b02-astra-runtime.log",
+      "pid": 30196,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T00:48:42.121194+00:00",
+      "elapsedSeconds": 12.9
+    }
+  ],
+  "limits": [
+    "Vitest, full typecheck, live Prisma, HTTP, Stripe, outbox, transaction isolation, and deployed schema support for extended unique filters were not run.",
+    "Runtime tests execute real service source with explicit persistence and framework contracts.",
+    "The guard covers updateOrderStatus status freshness only; it does not claim checkout inventory, refund idempotency, or unrelated order mutation safety.",
+    "Status equality does not detect unrelated field or seller-split changes, or a status changing away and back. The transaction double does not prove real rollback; HTTP role/session and Zod validation are outside the executed suite."
+  ]
+}

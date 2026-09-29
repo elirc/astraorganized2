@@ -1,0 +1,114 @@
+[
+  {
+    "stage": "23",
+    "typescript": false
+  },
+  {
+    "stage": "24",
+    "typescript": false
+  },
+  {
+    "stage": "25",
+    "typescript": false
+  },
+  {
+    "stage": "26",
+    "typescript": false
+  },
+  {
+    "stage": "27",
+    "typescript": false
+  },
+  {
+    "stage": "28",
+    "typescript": true
+  },
+  {
+    "stage": "29",
+    "typescript": false
+  },
+  {
+    "stage": "30",
+    "typescript": true
+  },
+  {
+    "stage": "31",
+    "typescript": true
+  },
+  {
+    "stage": "32",
+    "typescript": false
+  },
+  {
+    "stage": "33",
+    "typescript": true
+  },
+  {
+    "stage": "34",
+    "typescript": true
+  },
+  {
+    "stage": "35",
+    "typescript": true
+  },
+  {
+    "stage": "36",
+    "typescript": false
+  },
+  {
+    "stage": "37",
+    "typescript": false
+  },
+  {
+    "stage": "38",
+    "typescript": false
+  },
+  {
+    "stage": "39",
+    "typescript": false
+  },
+  {
+    "stage": "40",
+    "typescript": false
+  },
+  {
+    "stage": "41",
+    "typescript": true
+  },
+  {
+    "stage": "42",
+    "typescript": false
+  },
+  {
+    "stage": "43",
+    "typescript": true
+  },
+  {
+    "stage": "44",
+    "typescript": true
+  },
+  {
+    "stage": "45",
+    "typescript": false
+  },
+  {
+    "stage": "46",
+    "typescript": false
+  },
+  {
+    "stage": "47",
+    "typescript": true
+  },
+  {
+    "stage": "48",
+    "typescript": false
+  },
+  {
+    "stage": "49",
+    "typescript": true
+  },
+  {
+    "stage": "50",
+    "typescript": true
+  }
+]

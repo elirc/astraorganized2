@@ -1,0 +1,38 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-astra5-health-tests-r1.json",
+    "astraupskill/evidence/astra-astra5-health-tests-r1.log",
+    "astraupskill/evidence/astra-astra5-typecheck-r1.json",
+    "astraupskill/evidence/astra-astra5-typecheck-r1.log",
+    "astraupskill/evidence/astra-astra5-ui-tests-r1.json",
+    "astraupskill/evidence/astra-astra5-ui-tests-r1.log",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/scripts__integration.mjs.original.txt",
+    "astraupskill/snapshots/services__Fulfil__Services__ReadApi.cs.original.txt",
+    "astraupskill/snapshots/src__components__Panels.tsx.original.txt",
+    "scripts/integration.mjs",
+    "scripts/test-refund-health.py",
+    "services/Fulfil/Services/ReadApi.cs",
+    "src/components/Panels.tsx",
+    "src/lib/health.ts",
+    "tests/Fulfil.Tests/RefundHealthTests.cs",
+    "tests/health.test.ts"
+  ],
+  "summary": [
+    "Separated pending refunds into retryable and exhausted groups while retaining merchant-scoped totals.",
+    "Displayed distinct operational counts and guidance toward the authorized order recovery action.",
+    "Added a real PostgreSQL merchant/boundary regression, frontend mapping coverage, and nine source-based guide chapters."
+  ],
+  "limits": [
+    "Health counts are separate reads, not an atomic reporting snapshot.",
+    "Database tests call the API function directly; frontend tests cover mapping, not browser interaction or provider refunds."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/37844e1ec56d/sol15-results.json",
+    "expectedTests": 34,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

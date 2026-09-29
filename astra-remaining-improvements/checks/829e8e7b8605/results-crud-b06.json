@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww32",
+      "id": "829e8e7b8605",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/message-post-runtime.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\829e8e7b8605",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:47:09.641783+00:00",
+      "status": "complete",
+      "log": "crud-b06-astra-runtime.log",
+      "pid": 33784,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:47:24.469453+00:00",
+      "elapsedSeconds": 14.72
+    }
+  ],
+  "limits": [
+    "Six actual message-service cases load real role policy and errors, with channel-access, repository, transaction and realtime adapters. No Next, Prisma rollback/isolation or network delivery execution.",
+    "Private notification filtering and attachment query arguments execute in the service; the adapters do not prove repository scoping or live transport confidentiality. Publishing follows the transaction response; persisted event does not prove delivery."
+  ]
+}

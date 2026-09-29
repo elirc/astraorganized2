@@ -1,0 +1,356 @@
+[
+  {
+    "project": "51",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 28.54,
+    "log": "logs/51-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\51\\test\\workflow.test.js"
+    ]
+  },
+  {
+    "project": "51",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 10.39,
+    "log": "logs/51-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "52",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 13.89,
+    "log": "logs/52-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\52\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "52",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.18,
+    "log": "logs/52-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "52",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 19.89,
+    "log": "logs/52-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\52\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "53",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 5.47,
+    "log": "logs/53-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\53\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "53",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.3,
+    "log": "logs/53-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "53",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 17.67,
+    "log": "logs/53-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\53\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "54",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 5.01,
+    "log": "logs/54-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\54\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "54",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.98,
+    "log": "logs/54-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "54",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 18.04,
+    "log": "logs/54-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\54\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 5.75,
+    "log": "logs/58-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\58\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 9.13,
+    "log": "logs/58-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 13.18,
+    "log": "logs/58-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\58\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 14.18,
+    "log": "logs/58-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\58\\server\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 5.18,
+    "log": "logs/59-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\59\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 5.64,
+    "log": "logs/59-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 11.7,
+    "log": "logs/59-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\59\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 11.43,
+    "log": "logs/59-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\59\\server\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 4.11,
+    "log": "logs/60-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\60\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.27,
+    "log": "logs/60-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 12.04,
+    "log": "logs/60-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\60\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 12.88,
+    "log": "logs/60-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\60\\server\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 4.1,
+    "log": "logs/61-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\61\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.54,
+    "log": "logs/61-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 10.73,
+    "log": "logs/61-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\61\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 10.66,
+    "log": "logs/61-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\61\\server\\tsconfig.json"
+    ]
+  }
+]

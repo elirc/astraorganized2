@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "command": [
+    "npm.cmd",
+    "exec",
+    "tsc",
+    "--",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:44:08.636886+00:00",
+  "status": "complete",
+  "log": "w24_typecheck_20260913.log",
+  "pid": 3732,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:44:30.830483+00:00",
+  "elapsedSeconds": 22.19
+}

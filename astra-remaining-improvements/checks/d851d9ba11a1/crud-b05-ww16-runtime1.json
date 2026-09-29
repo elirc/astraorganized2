@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww16",
+  "id": "d851d9ba11a1",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/deal-transition-lab.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\d851d9ba11a1",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:43:09.544902+00:00",
+  "status": "complete",
+  "log": "crud-b05-ww16-runtime1.log",
+  "pid": 34108,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:43:16.298839+00:00",
+  "elapsedSeconds": 6.75
+}

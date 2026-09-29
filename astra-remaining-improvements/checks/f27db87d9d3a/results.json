@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "total": 16,
+  "tests": 16,
+  "failed": 0,
+  "checks": [
+    "root-install-01",
+    "z1-tests-final-03",
+    "root-typecheck-final-02",
+    "root-lint-final-02",
+    "z1-build-final-01"
+  ],
+  "scope": "16 actual service tests using the production JSON store in unique OS temporary directories; full typecheck/lint/Next build pass. No live HTTP, cookie-auth, browser, crash consistency or multiple-process tests."
+}

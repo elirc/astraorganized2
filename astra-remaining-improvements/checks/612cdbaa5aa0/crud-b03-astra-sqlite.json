@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+  "id": "612cdbaa5aa0",
+  "command": [
+    "node",
+    "--test",
+    "tests/user-card-constraint.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\612cdbaa5aa0",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T01:37:23.276855+00:00",
+  "status": "complete",
+  "log": "crud-b03-astra-sqlite.log",
+  "pid": 14928,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T01:37:47.409859+00:00",
+  "elapsedSeconds": 24.13
+}

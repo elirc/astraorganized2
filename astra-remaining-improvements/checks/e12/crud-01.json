@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "verification/run-tests.js"
+  ],
+  "exitCode": 0,
+  "seconds": 22.55
+}

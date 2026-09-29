@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antiinv",
+  "id": "bcde1b4da8c5",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/products-service.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\bcde1b4da8c5",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:17:48.648775+00:00",
+  "status": "complete",
+  "log": "runtime-b084.log",
+  "pid": 15144,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:17:59.672227+00:00",
+  "elapsedSeconds": 11.02
+}

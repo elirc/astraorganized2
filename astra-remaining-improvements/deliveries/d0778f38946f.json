@@ -1,0 +1,153 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/j3",
+  "id": "d0778f38946f",
+  "summary": [
+    "Balances and transaction history now persist in one validated versioned snapshot with atomic replacement, count footer, failure cleanup and explicit legacy migration.",
+    "Service-owned account copies prevent callers from changing balances outside commands; detached snapshots capture both collections under one synchronized service boundary.",
+    "Money precision, account balances, transaction relationships, duplicate identities and missing references are validated on entry and load.",
+    "Transfers construct their history before mutation; competing withdrawals cannot overdraw one shared service instance.",
+    "Holder rename and confirmed deletion of only unused zero-balance accounts teach domain-aware CRUD while preserving used-account history.",
+    "Nine detailed course documents and a Java 17 runner explain actual source, ownership, consistency, migration, tests, traces and progressive database/HTTP/idempotency exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j3/results.json",
+    "expectedTests": 35,
+    "command": "run.ps1 -Test; seven separate-process CLI scenarios",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files; eight-thread withdrawal competition; isolated source"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 35,
+    "javaRegressionTests": 28,
+    "separateProcessCliScenarios": 7,
+    "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+    "checks": [
+      "create and separate process reload",
+      "transfer balance and paired history survive reload",
+      "CLI rejects precision without balance mutation",
+      "CLI rename persists",
+      "CLI delete protects used accounts and confirms unused deletion",
+      "EOF does not create unfinished account",
+      "corrupt startup preserves authoritative snapshot"
+    ],
+    "limits": [
+      "No real funds or external services; no HTTP adapter or database; synchronization is per service instance, not cross-process."
+    ]
+  },
+  "courseWords": 4411,
+  "courseFiles": 9,
+  "courseLinksChecked": 20,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "df9bef3c0e4f2cda4314fc3931d7553b897b30640942a2f3f39cef35f8ac38f7",
+      "after_sha256": "96befe1a8c8b1a2ea18b059d88ddf24ae34c98a712077b0f7820b2d68f569d9a"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "1316d956d836f916cd572b7e9656c0ea27b9d378fae6636ddbfffc06c792d473"
+    },
+    {
+      "file": "run.ps1",
+      "before_sha256": null,
+      "after_sha256": "d672b14fb34a5e95fea2748033ef8e3ef9e3d73a89d699e1870024533ac0087e"
+    },
+    {
+      "file": "src/bankapp/App.java",
+      "before_sha256": "84818248a6161d25dc15a54b68d229f37fc0bbce76efc6f913a1c84a9005282c",
+      "after_sha256": "6837bfa039bc62123f4d5ea3a0058809a31bb089aea579da2c084a2606c6b111"
+    },
+    {
+      "file": "src/bankapp/model/BankAccount.java",
+      "before_sha256": "cf515ca81857cf3c8a64962a00baa3a3e2d779a5461aa2c8a8c3e0809a9ab29e",
+      "after_sha256": "001c400a7f24e37f2b3bee1293ea92d08b8b9ad1f47cd38d7d45ff3118d2a1af"
+    },
+    {
+      "file": "src/bankapp/model/Transaction.java",
+      "before_sha256": "93d38e9f11f5fb46c71aa75d64fb706f8216aa68e6c47f71e286f0f8bb3c4618",
+      "after_sha256": "5b343bac7fc4611b552aa6538d25be6bc0bf8719b7d3ca63c052f855d0250336"
+    },
+    {
+      "file": "src/bankapp/model/Money.java",
+      "before_sha256": null,
+      "after_sha256": "2097c6de552213c7ecb5b821195e5d50bcefb39cad6e7339f48d235b98a9f659"
+    },
+    {
+      "file": "src/bankapp/model/BankSnapshot.java",
+      "before_sha256": null,
+      "after_sha256": "dc147d580d28fd16c49708c70ca34851782e7ca8350bf7f9963bf35898519c3d"
+    },
+    {
+      "file": "src/bankapp/service/BankService.java",
+      "before_sha256": "3ea7cdb5a53677ad54f2564de4410116e9383499a79dab4d4f72504ad6161166",
+      "after_sha256": "885154b1ca852f9ed7277c42423bf10611a55c82e55f391ff01715c9274b8e67"
+    },
+    {
+      "file": "src/bankapp/storage/FileStorage.java",
+      "before_sha256": "394c3a4ae5ec2f1957a21460eff93d78438835abd2e2dbfd7b6bef71b329e617",
+      "after_sha256": "ea7d6f455d88d1c3af57d26dbd2b881b572295de8ee6d5a6c9181d4bf135d598"
+    },
+    {
+      "file": "test/bankapp/RegressionTests.java",
+      "before_sha256": null,
+      "after_sha256": "c55f5a19a487b9d86c00d2960c6246df442e974c3d08dbb8637e688b5554e312"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3696389f296b3ba42337239413c3f26ba949a671457042e89003a67ffaa0b639"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "c2db86abc05848ab44716c947b3757c6a4fee703eda63c714d1bf1de1de3f0f6"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "7ef95400c07f2a20e3bd2ecdb982609e343aaea158e8f25a746252bea323084b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "64d2af85db2f565cbed4e4d97698b019686a8a678e2dc0258381566c5cbd90c4"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "10abfb1af08e1cdc10afdacbec0ccef525946a4ee83a8716ae48fa987b6e3008"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "af56e300f5d74957e219e5ac6d4cb6b2766de1d3e38f5a0a21743c3459a4ad03"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "efc25e36d594600dd13ff9dd16ff64a67509c720034a0fb4a098d15860847004"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "2ebe3f0be7d22823ededf2a8a5c838983990f8117211b6290535f1b35a612702"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "68f6cb4b4d44b396c279b9474bb2221d9ba816e22d6aab4f53e3d0f47dc4cc13"
+    }
+  ],
+  "limits": [
+    "Local simulator only; no HTTP, browser, database, authentication or external financial service.",
+    "Synchronization is per service instance; no cross-process stale-save protection or power-loss guarantee.",
+    "Commands mutate memory before saving; save failure exits CLI without success but the service has no persistence rollback unit of work.",
+    "Snapshot validates fields, references and counts but does not reconcile historical balances or cryptographically verify integrity; no shared transfer ID.",
+    "Legacy files remain unchanged and become stale after migration; old binaries must not be alternated against the same data.",
+    "Atomic replacement is required; CLI failures are text diagnostics without a structured failure exit-code contract."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T04:13:34.346082+00:00"
+}

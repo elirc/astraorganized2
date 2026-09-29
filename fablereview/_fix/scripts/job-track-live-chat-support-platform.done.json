@@ -1,0 +1,1 @@
+["review#1 mark_read range read + receipt writes are one db.transaction; 14th test pins the read-through boundary; 03 documents it as the seventh defect", "review#2 UTF-8 BOM stripped from 9 files; review#3 .nvmrc, engines, POSIX block; review#4 02 glossary (20 terms) and README prerequisite gate; review#5 npm run reset:db and the README note"]

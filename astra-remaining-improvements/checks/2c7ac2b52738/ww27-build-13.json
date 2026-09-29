@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "cmd.exe",
+    "/c",
+    "npm run build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:28:02.013154+00:00",
+  "status": "complete",
+  "log": "ww27-build-13.log",
+  "pid": 17968,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:30:10.847021+00:00",
+  "elapsedSeconds": 128.83
+}

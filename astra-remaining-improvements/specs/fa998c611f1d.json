@@ -1,0 +1,27 @@
+{
+  "id": "fa998c611f1d",
+  "project": "claudeailab",
+  "summary": [
+    "Return 404 for PATCH and DELETE of missing experiments.",
+    "Prevent missing-ID mutations from reporting false CRUD success.",
+    "Preserve existing soft-archive behavior for found experiments.",
+    "Five runtime route cases also cover successful PATCH payload/tag serialization and missing post-write reread."
+  ],
+  "changedFiles": [
+    "src/app/api/experiments/[id]/route.ts",
+    "tests/runtime-experiment-route.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-app-api-experiments-id-route.ts.before",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fa998c611f1d/results-crud-b08.json"
+  },
+  "limits": [
+    "VM route harness uses explicit Next/Drizzle/database doubles; no live server or SQLite.",
+    "No concurrency or full middleware claim.",
+    "DELETE uses a pre-read and does not inspect affected-row count; concurrent disappearance after lookup remains outside this fix."
+  ]
+}

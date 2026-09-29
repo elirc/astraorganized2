@@ -1,0 +1,36 @@
+{
+  "id": "40905c751e8c",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:46:40.186219+00:00",
+  "sourceReview": "Read actual onboarding progress and task service. No production change; actual percentage, empty early return, historical completedAt and explicit client behavior documented.",
+  "teachingReview": "Replaced nine irrelevant error-only onboarding templates with source map, rounded example, history concepts, separate practice/answers and late-write trace. Missing-case and empty-task limitations explicit.",
+  "testReview": "Five passing actual-progress-service cases cover exact queries and67percent payload, empty no-write, completion timestamp creation/preservation, reopen50percent and explicit client late failure. Prisma import is only persistence adapter.",
+  "specSHA256": "7ac9d221473943681c7c0736540bf82cfd5aca1558c89a305379a4e3e284e751",
+  "fileHashes": {
+    "tests/onboarding-progress-runtime.test.mjs": "52ba5d0a3b835a5442a3e91f460e6a15a9d139b88dac3f7225bd9a9953b9c68c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/onboardingProgress.service.ts.original.txt": "3177fc170e767b3c29fe687691d2e0991cfa0051ff9526f984ef89619565834d",
+    "tests/app-error.test.mjs": "9970ac3a3b9799603e1369121b3a8cc1cbe63fb01a56ccd99135a431414b2cfc",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "7225f61d77ea40700402bc288a4eac53f4eb9817d543389281a4c4d6c461b9e6",
+    "astraupskill/evidence/results.json": "61adc9d721384e013c76ed9d3b05db1bdaeb571e4cc857f43b7eb07aa9a81711",
+    "astraupskill/README.md": "09e2591ea688f8c3890a8124bbe6eda767bfac4e885f02239d09972d239ac121",
+    "astraupskill/01-CODEBASE-MAP.md": "c4afa6502577a188c8d72fe3c52d83812517175bd59dfd853833e385b2d36a56",
+    "astraupskill/02-CONCEPTS.md": "7a8716cdb345d0fa6826b3285b1c775e6288ae0afcc7cb1b83468052c416928b",
+    "astraupskill/03-WORKED-CHANGE.md": "03db8256ff605a2779c228e7d7c79ba5ad654a0d72eda3cbd85772a4f1979e0c",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "41bdfc3534346455128e696d949c809553ec60c6d38f8ff59b56ef50067716f8",
+    "astraupskill/05-PRACTICE.md": "02002a7d51509a0c34b7bfd104210371fa16da939f8163cd9f5a9c2fb5133903",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "5bc2fa18681958b6e7d08e634a2d7a469df8b360156212d4016754dab36bf444",
+    "astraupskill/07-TRACE-LAB.md": "cc02a0a9731923419bf4bab4ed06bbd86b7d91895cd7d1d7a4273fc922fd113d",
+    "astraupskill/VERIFICATION.md": "63d6975c7aa45001ffa90bfda0ef79c023f6bcc3275c138268c2c4d16f418154"
+  },
+  "evidenceHashes": {
+    "checks/40905c751e8c/crud-b08-astra-runtime.json": "4c4ebbabb69f35c02894c01e82c3471dc77d6e44410c430d063c461b8381a6a8",
+    "checks/40905c751e8c/crud-b08-astra-runtime.log": "7225f61d77ea40700402bc288a4eac53f4eb9817d543389281a4c4d6c461b9e6",
+    "checks/40905c751e8c/runtime-b08.json": "b3957e5ffe1d499e44eada0c49dc6f11b8527424d5ce04d9193e76559c43f578",
+    "checks/40905c751e8c/runtime-b08.log": "39d92fb7dcc9f1d8b25e482f33db6f77ff55ec1a3d663633195553eec191f559",
+    "checks/40905c751e8c/runtime-b082.json": "51fa756cf5b27b179c77923d1c93be19c919dc37befa874c3936bb91865437fc",
+    "checks/40905c751e8c/runtime-b082.log": "90a638e7a5dccd7f96bb6ce25afd357f2d25e464b2e55eb47975bc95d380a6db",
+    "checks/40905c751e8c/runtime-b083.json": "61adc9d721384e013c76ed9d3b05db1bdaeb571e4cc857f43b7eb07aa9a81711",
+    "checks/40905c751e8c/runtime-b083.log": "fc2855201b6743edb5c58d03a0e2354cdd25c95f914f8060581250bb224ea1fa"
+  }
+}

@@ -1,0 +1,186 @@
+﻿project,scope,path,status,totalGiB,tierAGiB,tierBAdditionalGiB,candidateCount
+AstraOrganized2,Astra workspace,C:\Users\Owner\Desktop\AstraOrganized2,scanned,37.5447,33.6925,2.2999,559
+packages,Shared user cache,C:\Users\Owner\.nuget\packages,scanned,4.562,4.562,0.0,1
+store,Shared user cache,C:\Users\Owner\AppData\Local\pnpm\store,scanned,4.2902,4.2902,0.0,1
+npm-cache,Shared user cache,C:\Users\Owner\AppData\Local\npm-cache,scanned,1.5915,1.5915,0.0,1
+skillforgejs,Modified project,C:\Users\Owner\Desktop\skillforgejs,scanned,1.5211,1.5,0.0159,8
+ms-playwright,Shared user cache,C:\Users\Owner\AppData\Local\ms-playwright,scanned,1.1883,1.1883,0.0,1
+lucasrouter,Modified project,C:\Users\Owner\Desktop\lucasrouter,scanned,0.8934,0.8731,0.0,3
+grokbuildmultitenantproject,Modified project,C:\Users\Owner\Desktop\grokbuildmultitenantproject,scanned,0.3432,0.3424,0.0,2
+astra5,Modified project,C:\Users\Owner\Desktop\astra5,scanned,0.2305,0.1817,0.0478,10
+aiheartbeat,Modified project,C:\Users\Owner\Desktop\aiheartbeat,scanned,0.2183,0.1563,0.0,11
+JSProjectLearn,Modified project,C:\Users\Owner\Desktop\JSProjectLearn,scanned,0.1352,0.0961,0.0122,6
+astra1,Modified project,C:\Users\Owner\Desktop\astra1,scanned,0.0906,0.0855,0.0028,4
+_Organized Desktop\01 Net Workspaces\.nethris,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.nethris,scanned,0.2476,0.0855,0.1612,8
+Cache,Shared user cache,C:\Users\Owner\AppData\Local\pip\Cache,scanned,0.0013,0.0013,0.0,1
+_Organized Desktop\03 Master Projects\master7,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\03 Master Projects\master7,scanned,0.0008,0.0003,0.0001,9
+gitvg\storefront,Modified project,C:\Users\Owner\Desktop\gitvg\storefront,scanned,0.0012,0.0002,0.0,3
+_Organized Desktop\05 Numbered Experiments\D1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\D1,scanned,0.0007,0.0002,0.0,1
+_Organized Desktop\05 Numbered Experiments\e13,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e13,scanned,0.0014,0.0002,0.0,2
+_Organized Desktop\05 Numbered Experiments\ww27,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww27,scanned,0.0006,0.0002,0.0,1
+_Organized Desktop\08 App And Product Projects\appmakertrack,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\08 App And Product Projects\appmakertrack,scanned,0.0008,0.0002,0.0,2
+buildbusinesses,Modified project,C:\Users\Owner\Desktop\buildbusinesses,scanned,0.002,0.0001,0.0,2
+buildevent,Modified project,C:\Users\Owner\Desktop\buildevent,scanned,0.0011,0.0001,0.0,2
+buildsql,Modified project,C:\Users\Owner\Desktop\buildsql,scanned,0.1752,0.0001,0.0596,5
+_Organized Desktop\02 Build Projects\buildagentteachGEM,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildagentteachGEM,scanned,0.0014,0.0001,0.0,3
+_Organized Desktop\03 Master Projects\master 6,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\03 Master Projects\master 6,scanned,0.0005,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\B1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\B1,scanned,0.0008,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\w24,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\w24,scanned,0.0007,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\ww55,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww55,scanned,0.0005,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\z1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z1,scanned,0.0007,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\zz8,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\zz8,scanned,0.0008,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\z3\customer-feedback-board,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z3\customer-feedback-board,scanned,0.0008,0.0001,0.0,1
+_Organized Desktop\05 Numbered Experiments\z3\founder-crm-lite,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z3\founder-crm-lite,scanned,0.0005,0.0001,0.0,1
+aiapplybot,Modified project,C:\Users\Owner\Desktop\aiapplybot,scanned,0.0005,0.0,0.0,1
+aral,Modified project,C:\Users\Owner\Desktop\aral,scanned,0.003,0.0,0.0,2
+astra2,Modified project,C:\Users\Owner\Desktop\astra2,scanned,0.0059,0.0,0.0044,2
+astra4.2,Modified project,C:\Users\Owner\Desktop\astra4.2,scanned,0.0052,0.0,0.0022,2
+buildermentor,Modified project,C:\Users\Owner\Desktop\buildermentor,scanned,0.0011,0.0,0.0,1
+borrowbox,Modified project,C:\Users\Owner\Desktop\borrowbox,scanned,0.2919,0.0,0.2913,13
+buildreviewer,Modified project,C:\Users\Owner\Desktop\buildreviewer,scanned,0.001,0.0,0.0,3
+buildsmallplates,Modified project,C:\Users\Owner\Desktop\buildsmallplates,scanned,0.0017,0.0,0.0,1
+buildwhiteboard,Modified project,C:\Users\Owner\Desktop\buildwhiteboard,scanned,0.0016,0.0,0.0009,3
+calendar+jobtrack,Modified project,C:\Users\Owner\Desktop\calendar+jobtrack,scanned,0.0005,0.0,0.0,0
+devdeck,Modified project,C:\Users\Owner\Desktop\devdeck,scanned,0.0008,0.0,0.0,1
+finance-dashboard,Modified project,C:\Users\Owner\Desktop\finance-dashboard,scanned,0.0008,0.0,0.0,1
+.netarchitectureproject,Modified project,C:\Users\Owner\Desktop\.netarchitectureproject,scanned,0.0203,0.0,0.0,2
+formforge,Modified project,C:\Users\Owner\Desktop\formforge,scanned,0.0011,0.0,0.0,1
+campusops,Modified project,C:\Users\Owner\Desktop\campusops,scanned,0.2927,0.0,0.2921,16
+grokbuildecommerceproject,Modified project,C:\Users\Owner\Desktop\grokbuildecommerceproject,scanned,0.0011,0.0,0.0,1
+globehire,Modified project,C:\Users\Owner\Desktop\globehire,scanned,0.0006,0.0,0.0,1
+grokbuildhrproject,Modified project,C:\Users\Owner\Desktop\grokbuildhrproject,scanned,0.001,0.0,0.0,1
+grokbuildorderproject,Modified project,C:\Users\Owner\Desktop\grokbuildorderproject,scanned,0.0008,0.0,0.0,1
+grokbuildppmproject,Modified project,C:\Users\Owner\Desktop\grokbuildppmproject,scanned,0.0005,0.0,0.0,1
+grokbuildteamproject,Modified project,C:\Users\Owner\Desktop\grokbuildteamproject,scanned,0.001,0.0,0.0,1
+jobtrack,Modified project,C:\Users\Owner\Desktop\jobtrack,scanned,0.0007,0.0,0.0002,1
+gitjira-app,Modified project,C:\Users\Owner\Desktop\gitjira-app,scanned,0.0051,0.0,0.0,1
+mobiletagalog,Modified project,C:\Users\Owner\Desktop\mobiletagalog,scanned,0.0014,0.0,0.0,1
+meterforge,Modified project,C:\Users\Owner\Desktop\meterforge,scanned,0.0442,0.0,0.0437,19
+netdrop,Modified project,C:\Users\Owner\Desktop\netdrop,scanned,0.0005,0.0,0.0,3
+netairag,Modified project,C:\Users\Owner\Desktop\netairag,scanned,0.0008,0.0,0.0,2
+netopen5,Modified project,C:\Users\Owner\Desktop\netopen5,scanned,0.0937,0.0,0.0,2
+missioncontrol,Modified project,C:\Users\Owner\Desktop\missioncontrol,scanned,0.1116,0.0,0.1105,13
+recipeweb,Modified project,C:\Users\Owner\Desktop\recipeweb,scanned,0.0012,0.0,0.0004,2
+geminiorganized\LLM_Generated_Helper,Modified project,C:\Users\Owner\Desktop\geminiorganized\LLM_Generated_Helper,scanned,0.0019,0.0,0.0,0
+recipeview,Modified project,C:\Users\Owner\Desktop\recipeview,scanned,0.0018,0.0,0.0,2
+geminiorganized\OpenSource_Upskilling_.Ramp,Modified project,C:\Users\Owner\Desktop\geminiorganized\OpenSource_Upskilling_.Ramp,scanned,0.0059,0.0,0.0054,4
+geminiorganized\OpenSource_Upskilling_Linear,Modified project,C:\Users\Owner\Desktop\geminiorganized\OpenSource_Upskilling_Linear,scanned,0.0003,0.0,0.0,0
+geminiorganized\OpenSource_Upskilling_Shop,Modified project,C:\Users\Owner\Desktop\geminiorganized\OpenSource_Upskilling_Shop,scanned,0.0004,0.0,0.0,0
+JS1\asset-checkout,Modified project,C:\Users\Owner\Desktop\JS1\asset-checkout,scanned,0.0003,0.0,0.0001,1
+JS1\budget-tracker,Modified project,C:\Users\Owner\Desktop\JS1\budget-tracker,scanned,0.0001,0.0,0.0,0
+JS1\campaign-planner,Modified project,C:\Users\Owner\Desktop\JS1\campaign-planner,scanned,0.0001,0.0,0.0,0
+JS1\contact-book,Modified project,C:\Users\Owner\Desktop\JS1\contact-book,scanned,0.0001,0.0,0.0,0
+JS1\course-roster,Modified project,C:\Users\Owner\Desktop\JS1\course-roster,scanned,0.0003,0.0,0.0001,1
+JS1\equipment-maintenance,Modified project,C:\Users\Owner\Desktop\JS1\equipment-maintenance,scanned,0.0003,0.0,0.0001,1
+JS1\event-admin,Modified project,C:\Users\Owner\Desktop\JS1\event-admin,scanned,0.0003,0.0,0.0001,1
+JS1\field-service,Modified project,C:\Users\Owner\Desktop\JS1\field-service,scanned,0.0001,0.0,0.0,0
+JS1\flashcards,Modified project,C:\Users\Owner\Desktop\JS1\flashcards,scanned,0.0001,0.0,0.0,0
+JS1\focus-timer,Modified project,C:\Users\Owner\Desktop\JS1\focus-timer,scanned,0.0001,0.0,0.0,0
+JS1\forum-search,Modified project,C:\Users\Owner\Desktop\JS1\forum-search,scanned,0.0003,0.0,0.0001,1
+JS1\grant-manager,Modified project,C:\Users\Owner\Desktop\JS1\grant-manager,scanned,0.0001,0.0,0.0,0
+JS1\gym-membership,Modified project,C:\Users\Owner\Desktop\JS1\gym-membership,scanned,0.0001,0.0,0.0,0
+JS1\habit-tracker,Modified project,C:\Users\Owner\Desktop\JS1\habit-tracker,scanned,0.0001,0.0,0.0,0
+JS1\incident-response,Modified project,C:\Users\Owner\Desktop\JS1\incident-response,scanned,0.0001,0.0,0.0,0
+JS1\invoice-studio,Modified project,C:\Users\Owner\Desktop\JS1\invoice-studio,scanned,0.0003,0.0,0.0001,1
+JS1\issue-desk,Modified project,C:\Users\Owner\Desktop\JS1\issue-desk,scanned,0.0003,0.0,0.0001,1
+JS1\job-pipeline,Modified project,C:\Users\Owner\Desktop\JS1\job-pipeline,scanned,0.0003,0.0,0.0001,1
+JS1\kanban-flow,Modified project,C:\Users\Owner\Desktop\JS1\kanban-flow,scanned,0.0001,0.0,0.0,0
+JS1\learning-paths,Modified project,C:\Users\Owner\Desktop\JS1\learning-paths,scanned,0.0003,0.0,0.0001,1
+JS1\legal-case-tracker,Modified project,C:\Users\Owner\Desktop\JS1\legal-case-tracker,scanned,0.0003,0.0,0.0001,1
+JS1\library-lending,Modified project,C:\Users\Owner\Desktop\JS1\library-lending,scanned,0.0001,0.0,0.0,0
+JS1\live-chat,Modified project,C:\Users\Owner\Desktop\JS1\live-chat,scanned,0.0003,0.0,0.0001,1
+JS1\mini-blog,Modified project,C:\Users\Owner\Desktop\JS1\mini-blog,scanned,0.0003,0.0,0.0001,1
+JS1\note-vault,Modified project,C:\Users\Owner\Desktop\JS1\note-vault,scanned,0.0004,0.0,0.0002,1
+JS1\org-explorer,Modified project,C:\Users\Owner\Desktop\JS1\org-explorer,scanned,0.0003,0.0,0.0001,1
+JS1\pantry-inventory,Modified project,C:\Users\Owner\Desktop\JS1\pantry-inventory,scanned,0.0001,0.0,0.0,0
+JS1\patient-intake,Modified project,C:\Users\Owner\Desktop\JS1\patient-intake,scanned,0.0001,0.0,0.0,0
+JS1\poll-studio,Modified project,C:\Users\Owner\Desktop\JS1\poll-studio,scanned,0.0001,0.0,0.0,0
+JS1\procurement-portal,Modified project,C:\Users\Owner\Desktop\JS1\procurement-portal,scanned,0.0001,0.0,0.0,0
+JS1\project-risks,Modified project,C:\Users\Owner\Desktop\JS1\project-risks,scanned,0.0003,0.0,0.0001,1
+JS1\property-rentals,Modified project,C:\Users\Owner\Desktop\JS1\property-rentals,scanned,0.0001,0.0,0.0,0
+JS1\pulse-analytics,Modified project,C:\Users\Owner\Desktop\JS1\pulse-analytics,scanned,0.0003,0.0,0.0001,1
+JS1\quality-audits,Modified project,C:\Users\Owner\Desktop\JS1\quality-audits,scanned,0.0001,0.0,0.0,0
+geminiorganized\OpenSource_Upskilling_.Stripe,Modified project,C:\Users\Owner\Desktop\geminiorganized\OpenSource_Upskilling_.Stripe,scanned,0.0841,0.0,0.0825,4
+JS1\reading-list,Modified project,C:\Users\Owner\Desktop\JS1\reading-list,scanned,0.0001,0.0,0.0,0
+JS1\research-studies,Modified project,C:\Users\Owner\Desktop\JS1\research-studies,scanned,0.0001,0.0,0.0,0
+JS1\room-booking,Modified project,C:\Users\Owner\Desktop\JS1\room-booking,scanned,0.0004,0.0,0.0002,1
+JS1\recipe-studio,Modified project,C:\Users\Owner\Desktop\JS1\recipe-studio,scanned,0.0003,0.0,0.0001,1
+JS1\secure-notes,Modified project,C:\Users\Owner\Desktop\JS1\secure-notes,scanned,0.0003,0.0,0.0001,1
+JS1\snippet-vault,Modified project,C:\Users\Owner\Desktop\JS1\snippet-vault,scanned,0.0001,0.0,0.0,0
+JS1\stock-catalog,Modified project,C:\Users\Owner\Desktop\JS1\stock-catalog,scanned,0.0003,0.0,0.0001,1
+JS1\support-tickets,Modified project,C:\Users\Owner\Desktop\JS1\support-tickets,scanned,0.0003,0.0,0.0001,1
+JS1\task-board,Modified project,C:\Users\Owner\Desktop\JS1\task-board,scanned,0.0001,0.0,0.0,0
+JS1\subscription-billing,Modified project,C:\Users\Owner\Desktop\JS1\subscription-billing,scanned,0.0003,0.0,0.0001,1
+JS1\travel-requests,Modified project,C:\Users\Owner\Desktop\JS1\travel-requests,scanned,0.0001,0.0,0.0,0
+JS1\volunteer-coordinator,Modified project,C:\Users\Owner\Desktop\JS1\volunteer-coordinator,scanned,0.0001,0.0,0.0,0
+JS1\vendor-contracts,Modified project,C:\Users\Owner\Desktop\JS1\vendor-contracts,scanned,0.0001,0.0,0.0,0
+JS1\warehouse-ledger,Modified project,C:\Users\Owner\Desktop\JS1\warehouse-ledger,scanned,0.0003,0.0,0.0001,1
+newcodexJS\02-contact-book,Modified project,C:\Users\Owner\Desktop\newcodexJS\02-contact-book,scanned,0.0003,0.0,0.0,0
+newcodexJS\03-expense-tracker,Modified project,C:\Users\Owner\Desktop\newcodexJS\03-expense-tracker,scanned,0.0003,0.0,0.0,0
+newcodexJS\04-notes-app,Modified project,C:\Users\Owner\Desktop\newcodexJS\04-notes-app,scanned,0.0003,0.0,0.0,0
+newcodexJS\01-task-manager,Modified project,C:\Users\Owner\Desktop\newcodexJS\01-task-manager,scanned,0.0004,0.0,0.0,0
+newcodexJS\05-recipe-manager,Modified project,C:\Users\Owner\Desktop\newcodexJS\05-recipe-manager,scanned,0.0004,0.0,0.0,0
+newcodexJS\07-blog-platform,Modified project,C:\Users\Owner\Desktop\newcodexJS\07-blog-platform,scanned,0.0004,0.0,0.0,1
+newcodexJS\08-kanban-board,Modified project,C:\Users\Owner\Desktop\newcodexJS\08-kanban-board,scanned,0.0003,0.0,0.0,0
+newcodexJS\06-bookmark-manager,Modified project,C:\Users\Owner\Desktop\newcodexJS\06-bookmark-manager,scanned,0.0003,0.0,0.0,1
+newcodexJS\09-job-application-tracker,Modified project,C:\Users\Owner\Desktop\newcodexJS\09-job-application-tracker,scanned,0.0002,0.0,0.0,0
+newcodexJS\11-survey-builder,Modified project,C:\Users\Owner\Desktop\newcodexJS\11-survey-builder,scanned,0.0003,0.0,0.0,0
+newcodexJS\12-chat-polling,Modified project,C:\Users\Owner\Desktop\newcodexJS\12-chat-polling,scanned,0.0003,0.0,0.0,0
+newcodexJS\10-inventory-management,Modified project,C:\Users\Owner\Desktop\newcodexJS\10-inventory-management,scanned,0.0002,0.0,0.0,0
+newcodexJS\13-ecommerce-storefront,Modified project,C:\Users\Owner\Desktop\newcodexJS\13-ecommerce-storefront,scanned,0.0003,0.0,0.0,0
+newcodexJS\15-api-tester,Modified project,C:\Users\Owner\Desktop\newcodexJS\15-api-tester,scanned,0.0003,0.0,0.0,0
+newcodexJS\16-team-project-management,Modified project,C:\Users\Owner\Desktop\newcodexJS\16-team-project-management,scanned,0.0003,0.0,0.0,1
+newcodexJS\17-support-ticket-system,Modified project,C:\Users\Owner\Desktop\newcodexJS\17-support-ticket-system,scanned,0.0001,0.0,0.0,0
+newcodexJS\14-appointment-booking,Modified project,C:\Users\Owner\Desktop\newcodexJS\14-appointment-booking,scanned,0.0003,0.0,0.0,0
+newcodexJS\18-learning-management-system,Modified project,C:\Users\Owner\Desktop\newcodexJS\18-learning-management-system,scanned,0.0001,0.0,0.0,0
+newcodexJS\20-marketplace-platform,Modified project,C:\Users\Owner\Desktop\newcodexJS\20-marketplace-platform,scanned,0.0001,0.0,0.0,0
+newcodexJS\19-realtime-chat-platform,Modified project,C:\Users\Owner\Desktop\newcodexJS\19-realtime-chat-platform,scanned,0.0001,0.0,0.0,0
+_Organized Desktop\01 Net Workspaces\.netgum,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.netgum,scanned,0.0224,0.0,0.0222,9
+_Organized Desktop\01 Net Workspaces\.netpastebin,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.netpastebin,scanned,0.0186,0.0,0.0176,4
+_Organized Desktop\01 Net Workspaces\.nettrello,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.nettrello,scanned,0.0176,0.0,0.0173,4
+_Organized Desktop\01 Net Workspaces\.netvg,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.netvg,scanned,0.007,0.0,0.0065,8
+_Organized Desktop\01 Net Workspaces\.netzen,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\01 Net Workspaces\.netzen,scanned,0.0057,0.0,0.0053,4
+_Organized Desktop\02 Build Projects\buildantigVG,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildantigVG,scanned,0.001,0.0,0.0,0
+_Organized Desktop\02 Build Projects\buildasana,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildasana,scanned,0.034,0.0,0.0336,10
+_Organized Desktop\02 Build Projects\buildCRMPYJS,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildCRMPYJS,scanned,0.0006,0.0,0.0,0
+_Organized Desktop\02 Build Projects\buildgum,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildgum,scanned,0.0032,0.0,0.0,0
+_Organized Desktop\02 Build Projects\buildjira,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildjira,scanned,0.0186,0.0,0.0179,7
+_Organized Desktop\02 Build Projects\buildsubbox,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\02 Build Projects\buildsubbox,scanned,0.0013,0.0,0.0,0
+_Organized Desktop\03 Master Projects\master2,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\03 Master Projects\master2,scanned,0.0004,0.0,0.0,3
+_Organized Desktop\03 Master Projects\master3,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\03 Master Projects\master3,scanned,0.0004,0.0,0.0,0
+_Organized Desktop\03 Master Projects\master4,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\03 Master Projects\master4,scanned,0.0005,0.0,0.0,1
+_Organized Desktop\04 JavaScript Training\jstrain2.3,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\04 JavaScript Training\jstrain2.3,scanned,0.0013,0.0,0.0,0
+_Organized Desktop\04 JavaScript Training\jstrain3.0,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\04 JavaScript Training\jstrain3.0,scanned,0.0004,0.0,0.0,1
+_Organized Desktop\04 JavaScript Training\react,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\04 JavaScript Training\react,scanned,0.0002,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e1,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e12,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e12,scanned,0.002,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e14,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e14,scanned,0.0008,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e15,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e15,scanned,0.0035,0.0,0.0,1
+_Organized Desktop\05 Numbered Experiments\e2,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e2,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e20,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e20,scanned,0.001,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\e6,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\e6,scanned,0.0004,0.0,0.0,1
+_Organized Desktop\05 Numbered Experiments\J1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\J1,scanned,0.0001,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\j2,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\j2,scanned,0.0002,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\j3,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\j3,scanned,0.0001,0.0,0.0,1
+_Organized Desktop\05 Numbered Experiments\j4,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\j4,scanned,0.0001,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\j5,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\j5,scanned,0.0001,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\j7,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\j7,scanned,0.0002,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww14,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww14,scanned,0.0004,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww17,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww17,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww34,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww34,scanned,0.0003,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww35,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww35,scanned,0.0003,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww37,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww37,scanned,0.0003,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww39,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww39,scanned,0.0004,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww49,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww49,scanned,0.0006,0.0,0.0,1
+_Organized Desktop\05 Numbered Experiments\ww5,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww5,scanned,0.0002,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww9,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww9,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\ww50,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\ww50,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\z6,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z6,scanned,0.0006,0.0,0.0,1
+_Organized Desktop\05 Numbered Experiments\z7,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z7,scanned,0.0004,0.0,0.0,0
+_Organized Desktop\05 Numbered Experiments\zz6,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\zz6,scanned,0.0006,0.0,0.0,1
+netopen3,Modified project,C:\Users\Owner\Desktop\netopen3,scanned,0.5395,0.0,0.0001,8
+_Organized Desktop\12 Other Projects\andie,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\12 Other Projects\andie,scanned,0.001,0.0,0.0,0
+_Organized Desktop\12 Other Projects\GlobGame,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\12 Other Projects\GlobGame,scanned,0.0013,0.0,0.0,0
+_Organized Desktop\08 App And Product Projects\job track,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\08 App And Product Projects\job track,scanned,0.0021,0.0,0.0,5
+_Organized Desktop\05 Numbered Experiments\z9,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\05 Numbered Experiments\z9,scanned,0.0005,0.0,0.0,0
+_Organized Desktop\12 Other Projects\jdtrrain2.1,Modified project,C:\Users\Owner\Desktop\_Organized Desktop\12 Other Projects\jdtrrain2.1,scanned,0.0009,0.0,0.0,2

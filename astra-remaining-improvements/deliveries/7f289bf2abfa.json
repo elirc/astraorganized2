@@ -1,0 +1,155 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netslack",
+  "id": "7f289bf2abfa",
+  "summary": [
+    "Map a concurrent persisted workspace slug collision to ConflictException.",
+    "Re-query persisted state after a save failure: occupied slug maps to conflict; absent slug preserves the original save exception.",
+    "Verify the actual staged service and domain with a dependency-free .NET10 source-linked harness."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7f289bf2abfa/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/01 Net Workspaces/.netslack",
+        "id": "7f289bf2abfa",
+        "command": [
+          "dotnet",
+          "run",
+          "--project",
+          "tests/NetSlack.ScopeHarness",
+          "--configuration",
+          "Release",
+          "--no-restore",
+          "-p:",
+          "UseSharedCompilation=false"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f289bf2abfa",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:41:12.600130+00:00",
+        "status": "complete",
+        "log": "crud-b02-astra-harness.log",
+        "pid": 15200,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:43:26.712070+00:00",
+        "elapsedSeconds": 134.09
+      }
+    ],
+    "limits": [
+      "Native .NET8 test project and EF provider were not executed because only .NET10 is installed.",
+      "Harness contracts model persisted winner state but do not prove SQL translation, unique index creation, transaction isolation, or migration behavior.",
+      "No automatic retry or concurrent worker coordination is claimed.",
+      "If the recovery query fails or is cancelled, its failure propagates instead of the original save error.",
+      "Classification is based on observed slug occupancy, not proof of which database constraint caused the save failure; no automatic retry is performed."
+    ]
+  },
+  "courseWords": 2619,
+  "courseFiles": 9,
+  "courseLinksChecked": 38,
+  "files": [
+    {
+      "file": "src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+      "before_sha256": "8d127f3ad4f3588e478a4631cc81858177a534bfe9383c19a80841442d9d4367",
+      "after_sha256": "ccb9f7ff9114708e46880184aea0900e5d9f8bc3ceb9cf06b9b1556f86da341e"
+    },
+    {
+      "file": "tests/NetSlack.Application.Tests/WorkflowTests.cs",
+      "before_sha256": "04c5dfc356b8d18a795ca60e63ead183ca9d4f2e6af596e2ea46d78bb76df735",
+      "after_sha256": "d983d1d6cc93ac8e5d86478954df7ab64f6707851f505f04dc00728aee65b5a6"
+    },
+    {
+      "file": "tests/NetSlack.ScopeHarness/NetSlack.ScopeHarness.csproj",
+      "before_sha256": null,
+      "after_sha256": "81747eb03fe191c252a122ef0a3792313460d0c913186337b8dad5f366d90947"
+    },
+    {
+      "file": "tests/NetSlack.ScopeHarness/Contracts.cs",
+      "before_sha256": null,
+      "after_sha256": "1cadac395e83314a6d5a45cf6bcc505f033488cd1e0dbe6812a140d2c28b6bc4"
+    },
+    {
+      "file": "tests/NetSlack.ScopeHarness/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "b4477ef58ae0ad137b1a50a33b9a00dc5e62c0ee6c4f45c5356670b4e9964eb2"
+    },
+    {
+      "file": "astraupskill/snapshots/src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+      "before_sha256": null,
+      "after_sha256": "8d127f3ad4f3588e478a4631cc81858177a534bfe9383c19a80841442d9d4367"
+    },
+    {
+      "file": "astraupskill/snapshots/tests/NetSlack.Application.Tests/WorkflowTests.cs",
+      "before_sha256": null,
+      "after_sha256": "04c5dfc356b8d18a795ca60e63ead183ca9d4f2e6af596e2ea46d78bb76df735"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-astra-harness.log",
+      "before_sha256": null,
+      "after_sha256": "c6e8a7101a191c4e83b93329c48f06c92e039df0590e58121c9ee97b0be3e2d9"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "1499f062beb3b8b21eba098dc35c962079688c95a1cabe64c3e0fce4027bb6df"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d0f1d4348be4a67349c441378d82c418136c5cc6d3440f5ba548f9ffecce1bb7"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "c4fd2fc361afa48129812d49e34762e08a31e7e8e3b36d54422aba7b982ffcd6"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "7a292a5e85e3bcb2983d9e394b062370c66fd81102d489745512a180ca95aee1"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "cdb66c3127c62bc415b7dde726b6ebf0331760ef824320c1f459e1a4316f4168"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "9915e1b6f7f6f0da2ca159f663c437be01e9c30a0b2d0cce61908196c3d409df"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "40868c95679a5675ea0939b4741f1ffe8c098a2424455e9f347398950760ec5c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "488c9472e76b83ee37cdfb177ca29b61e81b146f22e2a425eb77c031a0179d2a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "62a248652448c1e0b4fc6f01cfb415b7b49264a082c23599eb2ddaa73eef8ec5"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "22e7c91229fc1e75b6a81b83e66bfbb22a2a6c4904f83eb03532546caf221ffc"
+    }
+  ],
+  "limits": [
+    "Native .NET8 test project and EF provider were not executed because only .NET10 is installed.",
+    "Harness contracts model persisted winner state but do not prove SQL translation, unique index creation, transaction isolation, or migration behavior.",
+    "No automatic retry or concurrent worker coordination is claimed.",
+    "If the recovery query fails or is cancelled, its failure propagates instead of the original save error.",
+    "Classification is based on observed slug occupancy, not proof of which database constraint caused the save failure; no automatic retry is performed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:46:41.985054+00:00"
+}

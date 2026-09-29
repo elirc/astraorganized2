@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jep vs code",
+  "id": "a880d6aae28f",
+  "command": [
+    "node",
+    "--test",
+    "tests/runtime-player-state.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a880d6aae28f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T01:36:08.256157+00:00",
+  "status": "complete",
+  "log": "crud-b03-runtime2.log",
+  "pid": 30112,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T01:36:18.795550+00:00",
+  "elapsedSeconds": 10.54
+}

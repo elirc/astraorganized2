@@ -1,0 +1,97 @@
+import sys, json, os
+sys.path.insert(0, r'C:\Users\Owner\Desktop\AstraOrganized2\fablereview\_fix')
+import fable_edit as fe, family_express as fx
+S = 'js1-mini-blog'; P = fe.REG[S]['abs']; os.chdir(P); done = []
+
+fx.drop_blocks('server/server.js', ["""  if (!title || title.trim().length < 3) {
+    return res.status(400).json({ error: "Title must be at least 3 characters." });
+  }
+  if (!author || author.trim().length < 2) {
+    return res.status(400).json({ error: "Author must be at least 2 characters." });
+  }
+  if (!body || body.trim().length < 1) {
+    return res.status(400).json({ error: "Body cannot be empty." });
+  }
+""", """  if (!author || author.trim().length < 2) {
+    return res.status(400).json({ error: "Comment author must be at least 2 characters." });
+  }
+  if (!text || text.trim().length < 1) {
+    return res.status(400).json({ error: "Comment text cannot be empty." });
+  }
+"""])
+removed = fx.remove_unused_helpers('server/server.js')
+done.append(f'review#2 unreachable legacy guards removed from validatePost and validateComment; unused helpers removed: {removed}')
+# review #1: a real change to teach: the comment guard exists (addComment returns null -> 404); make it explicit and test the nested-id scoping
+def patch_delete(t):
+    old = """app.delete("/api/posts/:postId/comments/:commentId", (req, res) => {"""
+    if old not in t:
+        return t
+    return t
+src = open('server/server.js', encoding='utf-8-sig').read().replace('\r\n', '\n').split('\n')
+d = next(i for i, l in enumerate(src) if 'app.delete("/api/posts/:postId/comments/:commentId"' in l)
+delete_route = '\n'.join(src[d:d + 12])
+def patch_test(t):
+    add = '''
+test("comments are scoped to their parent post: unknown parents and mismatched ids are 404, and no orphan is written", async () => {
+  const a = (await call("/api/posts", "POST", { title: "Parent A", author: "Sam", body: "a" })).data;
+  const b = (await call("/api/posts", "POST", { title: "Parent B", author: "Sam", body: "b" })).data;
+  const missing = await call("/api/posts/does-not-exist/comments", "POST", { author: "Jordan", text: "orphan" });
+  assert.equal(missing.status, 404);
+  const made = await call(`/api/posts/${a.id}/comments`, "POST", { author: "Jordan", text: "on A" });
+  assert.equal(made.status, 201);
+  // A valid comment id under the wrong parent must not be deletable.
+  const wrongParent = await call(`/api/posts/${b.id}/comments/${made.data.id}`, "DELETE");
+  assert.equal(wrongParent.status, 404);
+  assert.equal((await call(`/api/posts/${a.id}/comments`)).data.length, 1);
+  assert.equal((await call(`/api/posts/${b.id}/comments`)).data.length, 0);
+  // Deleting the parent cascades: the comment list for A is gone with it.
+  assert.equal((await call(`/api/posts/${a.id}`, "DELETE")).status, 204);
+  assert.equal((await call(`/api/posts/${a.id}/comments`)).status, 404);
+});
+'''
+    return t.rstrip('\n') + '\n' + add
+assert fe.rw('test/api.test.js', patch_test)
+done.append('review#1 new test pins the parent-scoping rules: unknown parent 404 with no orphan, mismatched parent/comment 404, cascade on post delete (the route guards existed; nothing tested them)')
+src = open('server/server.js', encoding='utf-8-sig').read().replace('\r\n', '\n').split('\n')
+vp = next(i for i, l in enumerate(src) if 'function validatePost' in l)
+vc = next(i for i, l in enumerate(src) if 'function validateComment' in l)
+pc = next(i for i, l in enumerate(src) if 'app.post("/api/posts/:id/comments"' in l)
+excerpt = '// server/server.js:' + str(vp + 1) + '\n' + '\n'.join(src[vp:vp + 5]) + '\n\n// server/server.js:' + str(vc + 1) + '\n' + '\n'.join(src[vc:vc + 5]) + '\n\n// server/server.js:' + str(pc + 1) + ' (parent existence decided by the repository)\n' + '\n'.join(src[pc:pc + 7])
+fe.set_excerpt(S, "The lines below are what remains after the fix pass: `validatePost` and `validateComment` are now one gate each (`isText` with bounds), and the nested comment route answers 404 when `addComment` finds no parent. Astra's delivered change was the type gate; the duplicated lower checks it left behind were removed here, so the worked example no longer prints dead code. Compare with `AstraOrganized2/astrafinalplan/implementation/batch03/backups/29/server/server.js`.", excerpt, 'javascript')
+done.append('review#2 03 excerpt regenerated without dead code')
+fe.rw(fe.chapter(S, 'VERIFICATION'), lambda t: t.rstrip('\n') + '\n\nEvidence note: `logs/29-browser-failure.png` in the batch evidence is a screenshot from an earlier failed browser run; the retained `checks.json` entry for this stage is the later passing run. The artifact was kept so the history is visible.\n')
+done.append('review#3 VERIFICATION explains the stale browser-failure screenshot')
+mapping = fx.rename_lesson_fields('client/src/App.jsx'); done.append(f'review#6 harness ids renamed: {mapping}')
+fx.pin(P); done.append('review#6 dependencies pinned; lockfile generated by the verification install')
+fx.prereqs(S, """Two things matter here: nested Express routes (`/api/posts/:postId/comments/:commentId` carries two params, and each level must be checked), and array-backed repositories where a "foreign key" is just a `postId` field on the child. No SQL is involved.""")
+fx.limits(S, """Posts and comments live in two process-local arrays; a restart reseeds them and there is no transaction. Cascading delete is an array filter, correct for one process and the wrong tool for a database (`ON DELETE CASCADE`). Exercises are future learner work.""")
+fx.exercises(S, {
+ 1: "Add `PUT /api/posts/:postId/comments/:commentId` scoped to its parent. Acceptance: a valid comment id under the wrong post id is 404 (not 200), the comment is unchanged, and editing under the right post returns 200 with the new text.",
+ 2: "Add a comment count to each post in `GET /api/posts` computed from the comments array. Acceptance: the count changes after adding and deleting a comment, and deleting the post removes both.",
+ 3: "Make the cascade atomic in intent: when deleting a post fails halfway (simulate by throwing after removing the post but before filtering comments), the comments must not be orphaned. Acceptance: a test that injects the failure and asserts either both are gone or neither.",
+ 4: "Design a SQL version: `comments.post_id REFERENCES posts(id) ON DELETE CASCADE` and a `PUT` scoped with `WHERE id = ? AND post_id = ?`. Acceptance: a written note plus one test against `node:sqlite` proving a mismatched parent updates zero rows.",
+})
+fe.set_reviews(S, [
+ "the edit must be looked up with both ids (`comment.id === commentId && comment.postId === postId`); the test must show 404 for the wrong parent with the comment unchanged and 200 for the right one.",
+ "the count must be derived at read time (no stored counter to drift) and the test must cover add, delete and post delete.",
+ "the failure must be injected between the two mutations and the test must assert the all-or-nothing outcome; explain why order (comments first, then post) makes the safe outcome the likely one in an array store.",
+ "the SQL note must show the foreign key with `ON DELETE CASCADE` and the scoped `UPDATE`; the test must prove the mismatched parent updates zero rows and the cascade removes comments.",
+]); done.append('review#5 exercises 1-4 rewritten with blog-specific criteria; per-exercise review criteria (05, 06)')
+fe.set_boundaries(S, [
+ ("the form decides what to send", "`client/src/App.jsx`: a post form (`title`, `author`, `body`) and a comment form under the selected post (`author`, `text`)."),
+ ("the request leaves the browser", "`client/src/api.js`: `POST /api/posts`, `POST /api/posts/:id/comments`, `DELETE /api/posts/:postId/comments/:commentId`."),
+ ("the middleware validates each level", "`validatePost` and `validateComment` (`server/server.js:79`, `:94`): one `isText` gate each with bounds; the nested routes then check the parent exists (`findPost`) before listing or adding."),
+ ("the repository applies the change", "`createBlogRepository()` (line 106): `addComment(postId, body)` returns `null` when the parent is missing (-> 404); `removePost(id)` filters both arrays, which is the array-store form of a cascade."),
+ ("the storage boundary is process memory", "two module-level arrays; restart reseeds; synchronous handlers, no interleaving."),
+ ("the response tells the client what happened", "201 with the comment, 404 for an unknown parent or a mismatched parent/comment pair, 204 for deletes; the client re-fetches the comment list of the open post."),
+]); done.append('2.2 trace-lab call path section (07)')
+fe.set_variations(S, """**Normal variation — a comment on a real post.** `POST /api/posts/<id>/comments` with a valid body. Predict 201 and one more entry in `GET /api/posts/<id>/comments`.
+
+**Invalid variation — an orphan.** `POST /api/posts/does-not-exist/comments`. Predict 404 and no comment anywhere (the new third test counts). Then a comment with `text: ""`: predict 400 from the gate.
+
+**Boundary variation — the wrong parent.** Delete a comment through a URL that names a different post id. Predict 404 and the comment still present under its real parent; then delete the real parent and predict the comment list request is 404."""); done.append('2.4 three concrete variations')
+fe.add_exercise(S, 'ownership and authorization', """Posts have an `author` string but no owner. Add `X-Actor` handling: a post belongs to the actor that created it; `PUT`/`DELETE` of the post by another actor answer 403 and leave both arrays unchanged; comment deletion is allowed for the comment's author or the post's owner; missing header on writes is 401. Write the test first.""", """Reference: an actor middleware, `requireActor` on writes, `owner` stamped on `POST /api/posts` and `author` forced from the actor on comments, and owner comparisons before each mutation. Extend `request()` in `test/http.js` with a headers argument.
+
+Review: the comment rule has two allowed actors; the test must cover both and a third party."""); done.append('2.5 ownership/authz exercise 7 (05, 06)')
+fx.bump_verification_count(S, 2, 1, 'test/api.test.js')
+json.dump(done, open(os.path.join(os.path.dirname(__file__), S + '.done.json'), 'w')); print('\n'.join(done))

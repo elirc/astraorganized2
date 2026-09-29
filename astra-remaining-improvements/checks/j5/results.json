@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "tests": 28,
+  "javaRegressionTests": 23,
+  "separateProcessCliScenarios": 5,
+  "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+  "checks": [
+    "separate process reload preserves empty note",
+    "CLI update persists",
+    "CLI delete confirmation and persistence",
+    "EOF keeps completed changes and discards unfinished command",
+    "startup rejects corruption without overwriting original file"
+  ],
+  "limits": [
+    "No HTTP server or browser UI; no concurrent-writer or power-loss guarantees."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "id": "2d739127d551",
+  "command": [
+    "node",
+    "--check",
+    "src/app/api/sprints/plan/route.js"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2d739127d551",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:18:23.219438+00:00",
+  "status": "complete",
+  "log": "syntax-03.log",
+  "pid": 8452,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:18:24.154446+00:00",
+  "elapsedSeconds": 0.93
+}

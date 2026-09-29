@@ -1,0 +1,43 @@
+{
+  "name": "ai-call-assistant",
+  "productName": "AI Call Assistant",
+  "version": "1.0.0",
+  "description": "Local CRUD practice journal with a separately launched legacy Electron audio assistant.",
+  "main": "src/main/main.js",
+  "author": "Owner",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "test": "node verification/run-tests.js",
+    "syntax": "node verification/check-syntax.js",
+    "dist": "electron-builder --win",
+    "practice:setup": "node src/practice/setup.js",
+    "practice": "node src/practice/server.js"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.aihelper.callassistant",
+    "productName": "AI Call Assistant",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false
+    }
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

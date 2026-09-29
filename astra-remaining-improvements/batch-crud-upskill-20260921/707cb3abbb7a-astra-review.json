@@ -1,0 +1,34 @@
+{
+  "id": "707cb3abbb7a",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:35:26.478675+00:00",
+  "sourceReview": "Reviewed exact ticket action diff, access helper, Prisma5.22 manifest and timestamp schema. Conditional update uses id+organization+server-read updatedAt, preserves returned row and existing audit order, maps P2025 only and rethrows unrelated failures. No post-write reread introduced.",
+  "teachingReview": "Read all nine chapters and corrected stale-browser-form overclaims, nonexistent reread descriptions and scope of timestamp equality. Course includes source links, conditional-write walkthrough, trace table, graded exercises and answers, with explicit same-timestamp and server-read limits.",
+  "testReview": "Astra corrected invalid fixture enums to actual LOW/MEDIUM/OTHER and made root portable; four captured production-action tests passed. Predicate/payload, no reread, audit from changed returned priority, inaccessible rejection and original error propagation reviewed. Domain helpers and notification-change branches not tested; full database/typecheck not run.",
+  "specSHA256": "5d17bd8b0c072e0940c4bb15d672f81d0005a0cf7c0b44f875894bc5d4d80b88",
+  "fileHashes": {
+    "apps/web/lib/actions.ts": "6ab0ae84b91e5593383b13996adf1580a6b6f029799d5f692bc08d6f0656bbc8",
+    "tests/runtime-ticket-update.test.mjs": "d01840a04a3416eb21643e6de36ca989a8a7148a51b5e35cc9c0b659763e91f8",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/apps-web-lib-actions.ts.before": "a7a6402e261e01b1e3785a3891d58af3d23987b23c42ed7c265bcd908fa0875b",
+    "astraupskill/evidence/runtime-ticket-update.log": "841ed1268062e5b3d2542033d2261732346c7ef899daea08c126cd5b4e6024b3",
+    "astraupskill/evidence/results-crud-b02.json": "c40c21899b830aff190bacc0b02e87f3f7011a65665d6ee81ece063044836925",
+    "astraupskill/evidence/crud-b02-astra-runtime.log": "85e98d25b3a72996e5f71e6f4f3da980b68e538b68347d4a32c8850cfdc7f9fe",
+    "astraupskill/evidence/results.json": "e5943d5a83409d9be99d99798466a5fedd9e657640ab64ec19155624ec67d04b",
+    "astraupskill/README.md": "d692de1b04425dc6314bb54493f8afe079d1b76b16c993c9e63ba50e3a2857cf",
+    "astraupskill/01-CODEBASE-MAP.md": "3aa3a2eeedb6e64cb0ea770514fe9fd1d84f37300ffbc64bebd0f6e07914ee17",
+    "astraupskill/02-CONCEPTS.md": "f3ae2941afa56620241ae498df00b0584dcba4b1c371dfcc4a59a5842fcae06f",
+    "astraupskill/03-WORKED-CHANGE.md": "32d5f58c89f999fd97997397295c2e18b477b1706a4f4421be285a5bf2e4952d",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "30eb6fe9fdae697892943989d3fc2d0ea3346a065143ccbd9aa7676af549b5a0",
+    "astraupskill/05-PRACTICE.md": "cc9e7c3e78893ec447e7922851bb4b95c08546d6c983087078b33e2a659e1133",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "8e674ac52d54feb1d0349d05812befdd78043be945711f402dce2fbd31532a45",
+    "astraupskill/07-TRACE-LAB.md": "a9d3087446234b0d8bc966f59591c858a4996fd5ffcdae0890aae0a6d1cedbb3",
+    "astraupskill/VERIFICATION.md": "35d85319b7ab3ef8b035ac59e15352f21dd2ec64640f87e3bb6b79dfbe2f6126"
+  },
+  "evidenceHashes": {
+    "checks/707cb3abbb7a/crud-b02-astra-runtime.json": "9cfb9aab368bb65af3a44fcd1f6e832e255167601d5eb4d3640db043aba7e795",
+    "checks/707cb3abbb7a/crud-b02-astra-runtime.log": "85e98d25b3a72996e5f71e6f4f3da980b68e538b68347d4a32c8850cfdc7f9fe",
+    "checks/707cb3abbb7a/results-crud-b02.json": "e5943d5a83409d9be99d99798466a5fedd9e657640ab64ec19155624ec67d04b",
+    "checks/707cb3abbb7a/runtime-ticket-update.log": "841ed1268062e5b3d2542033d2261732346c7ef899daea08c126cd5b4e6024b3"
+  }
+}

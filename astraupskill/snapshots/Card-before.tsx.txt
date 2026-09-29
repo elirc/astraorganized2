@@ -1,0 +1,62 @@
+"use client";
+
+import { CSS } from "@dnd-kit/utilities";
+import { useSortable } from "@dnd-kit/sortable";
+import { motion } from "framer-motion";
+import { CalendarClock, UserRound, Paperclip, MessageSquare } from "lucide-react";
+
+export type CardPayload = {
+  id: string;
+  title: string;
+  description?: string | null;
+  dueAt?: string | null | Date;
+  version: number;
+  columnId: string;
+};
+
+export function KanbanCard({
+  card,
+  onOpen
+}: {
+  card: CardPayload;
+  onOpen: () => void;
+}) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id: card.id
+  });
+
+  return (
+    <motion.div
+      role="button"
+      tabIndex={0}
+      onClick={onOpen}
+      className={`rounded-2xl border border-white/15 bg-slate-900/70 px-3 py-3 text-sm shadow-sm transition ${
+        isDragging ? "opacity-40" : ""
+      }`}
+      ref={setNodeRef}
+      style={{ transform: CSS.Transform.toString(transform), transition }}
+      {...attributes}
+      {...listeners}
+    >
+      <h4 className="font-semibold text-slate-100">{card.title}</h4>
+      {card.description ? <p className="mt-2 line-clamp-3 text-xs text-slate-300">{card.description}</p> : null}
+      <div className="mt-3 flex items-center justify-between text-xs text-slate-400">
+        <span className="inline-flex items-center gap-1">
+          <CalendarClock size={12} />{" "}
+          {card.dueAt ? new Date(card.dueAt).toLocaleDateString() : "No due"}
+        </span>
+        <span className="inline-flex items-center gap-1">
+          <UserRound size={12} /> 0
+        </span>
+      </div>
+      <div className="mt-2 flex justify-between text-xs text-slate-400">
+        <span className="inline-flex items-center gap-1">
+          <Paperclip size={12} /> 0
+        </span>
+        <span className="inline-flex items-center gap-1">
+          <MessageSquare size={12} /> 0
+        </span>
+      </div>
+    </motion.div>
+  );
+}

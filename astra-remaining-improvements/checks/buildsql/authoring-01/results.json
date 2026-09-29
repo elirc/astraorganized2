@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "total": 7,
+  "checks": [
+    {
+      "name": "candidate contains consistent packs index catalog and leaves published bytes unchanged",
+      "passed": true
+    },
+    {
+      "name": "existing candidate is refused without replacing its files",
+      "passed": true
+    },
+    {
+      "name": "incomplete mission rejects the whole candidate without publishing",
+      "passed": true
+    },
+    {
+      "name": "duplicate lesson rejects the whole candidate without publishing",
+      "passed": true
+    },
+    {
+      "name": "authoring names reject path traversal before candidate writes",
+      "passed": true
+    },
+    {
+      "name": "assembler creates ten missions and refuses an existing output",
+      "passed": true
+    },
+    {
+      "name": "duplicate authoring section rejects before output creation",
+      "passed": true
+    }
+  ]
+}

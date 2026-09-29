@@ -1,0 +1,16 @@
+[
+  {
+    "file": "desktop-game.png",
+    "sha256": "28fc38125d3b1b5aac51b9048867e31d2ec7ab7178af57317fbc33a3957d0c95",
+    "width": 1440,
+    "height": 1000,
+    "review": "Viewed by the agent. The game scene and responsive controls remain readable. Temporary invalid-import and subsequent successful-import toasts are visible from the tested scenario; these are transient notifications, not a current failed load."
+  },
+  {
+    "file": "mobile-game.png",
+    "sha256": "914f036d62fac636b65528191a1aab287aeb4d437591b8e73f724a485b9b2b7a",
+    "width": 390,
+    "height": 844,
+    "review": "Viewed by the agent. The game scene and responsive controls remain readable. Temporary invalid-import and subsequent successful-import toasts are visible from the tested scenario; these are transient notifications, not a current failed load."
+  }
+]

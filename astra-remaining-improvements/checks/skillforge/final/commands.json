@@ -1,0 +1,17 @@
+[
+  {
+    "name": "model",
+    "exitCode": 0,
+    "seconds": 7.39
+  },
+  {
+    "name": "build",
+    "exitCode": 0,
+    "seconds": 22.21
+  },
+  {
+    "name": "archive",
+    "exitCode": 0,
+    "seconds": 22.89
+  }
+]

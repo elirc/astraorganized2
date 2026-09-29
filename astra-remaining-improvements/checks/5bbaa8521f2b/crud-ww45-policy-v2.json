@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww45",
+  "id": "5bbaa8521f2b",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/knowledge-policy.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5bbaa8521f2b",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:49:27.816289+00:00",
+  "status": "complete",
+  "log": "crud-ww45-policy-v2.log",
+  "pid": 32168,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T03:49:36.220166+00:00",
+  "elapsedSeconds": 8.4
+}

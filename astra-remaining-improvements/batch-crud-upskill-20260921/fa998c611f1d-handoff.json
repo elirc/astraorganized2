@@ -1,0 +1,30 @@
+{
+  "id": "fa998c611f1d",
+  "project": "claudeailab",
+  "files": [
+    "src/app/api/experiments/[id]/route.ts",
+    "tests/runtime-experiment-route.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-app-api-experiments-id-route.ts.before",
+    "astraupskill/evidence/fa998c611f1d-crud-b08-runtime.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "PATCH and DELETE returned success for absent experiment IDs without checking whether a row matched.",
+    "Both routes now guard missing IDs with 404; successful DELETE still soft-archives the found experiment."
+  ],
+  "tests": [
+    "node --experimental-vm-modules --test tests/runtime-experiment-route.test.mjs (3/3 passed)"
+  ],
+  "limitations": [
+    "Dependency-free VM route harness with explicit doubles; live Next, SQLite, and concurrency checks remain unrun."
+  ]
+}

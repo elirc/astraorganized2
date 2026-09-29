@@ -1,0 +1,4 @@
+{
+  "underlyingBuildExitCode": 0,
+  "firstWrapperIssue": "CP1252 console could not print a checkmark after recording the successful build. Build was not rerun; UTF-8 log and output verified."
+}

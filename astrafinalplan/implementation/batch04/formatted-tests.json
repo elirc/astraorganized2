@@ -1,0 +1,301 @@
+[
+  {
+    "project": "51",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 5.31,
+    "log": "logs/51-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\51\\test\\workflow.test.js"
+    ]
+  },
+  {
+    "project": "52",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 7.28,
+    "log": "logs/52-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\52\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "53",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 7.19,
+    "log": "logs/53-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\53\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "54",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 7.45,
+    "log": "logs/54-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\54\\test\\workflow.test.ts"
+    ]
+  },
+  {
+    "project": "55",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 8.85,
+    "log": "logs/55-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\55\\test\\ledger.test.ts"
+    ]
+  },
+  {
+    "project": "56",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 7.33,
+    "log": "logs/56-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\56\\test\\notes.test.js"
+    ]
+  },
+  {
+    "project": "57",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.25,
+    "log": "logs/57-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\57\\test\\chat.test.ts"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.96,
+    "log": "logs/58-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\58\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.71,
+    "log": "logs/59-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\59\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 12.15,
+    "log": "logs/60-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\60\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.11,
+    "log": "logs/61-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\61\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "62",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.47,
+    "log": "logs/62-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\62\\test\\responses.test.ts"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 10.59,
+    "log": "logs/63-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\63\\test\\membership.test.ts"
+    ]
+  },
+  {
+    "project": "64",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 12.11,
+    "log": "logs/64-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\64\\test\\checkout.test.ts"
+    ]
+  },
+  {
+    "project": "65",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 20.05,
+    "log": "logs/65-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\65\\test\\booking.test.ts"
+    ]
+  },
+  {
+    "project": "66",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 15.8,
+    "log": "logs/66-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\66\\test\\environments.test.ts"
+    ]
+  },
+  {
+    "project": "67",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 15.4,
+    "log": "logs/67-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\67\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "68",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 14.58,
+    "log": "logs/68-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\68\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "69",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 15.57,
+    "log": "logs/69-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\69\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "70",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 15.84,
+    "log": "logs/70-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\70\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "71",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 16.85,
+    "log": "logs/71-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\71\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "72",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 12.19,
+    "log": "logs/72-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\72\\test\\recipes.test.ts"
+    ]
+  },
+  {
+    "project": "75",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.95,
+    "log": "logs/75-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\75\\test\\applications.test.js"
+    ]
+  }
+]

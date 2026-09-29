@@ -1,0 +1,31 @@
+{
+  "id": "482e93488b83",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:27:53.854426+00:00",
+  "sourceReview": "Inspected registration service, actual role permissions and AppError. Completeness guard compares selected event rows against unique requested IDs before writes; duplicates intentionally allowed.",
+  "teachingReview": "Read nine chapters and corrected adapter claims and test counts. Concrete set-cardinality examples, prediction exercises, separate solutions and trace distinguish service precondition from capacity races.",
+  "testReview": "Five real-service cases pass: valid, unknown, mixed, duplicate and forbidden role plus late notification failure. Real policy/error; date fixture widened to stable2000-2100. No DB transaction or capacity race claims.",
+  "specSHA256": "d21c749bb7df7210d7e219bfd0d6e6fa89f25c48acdbc4a777ae69c2ef5e9040",
+  "fileHashes": {
+    "src/modules/registrations/registration.service.ts": "1300ce182b958450dc7138ea0e343b11d1d31dbe4f1970e1769379b3bea10d6a",
+    "tests/registration-session-selection.test.mjs": "74000e1e518d4f49b3b64bf57b4b01e28f8713dacfa23ce70cba1f665a05f430",
+    "tests/helpers/load-typescript.mjs": "4065a565d1381446772ef23f676585817a2b819ebc0e5f3e4b577f246d784bd0",
+    "astraupskill/snapshots/src/modules/registrations/registration.service.ts": "36b985c2c181b37c14029ef1f39d3f72fada94c0f7c86e464875bdf0e3e051b9",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "e9126e93f6248fecd4bb9bc7e79064ace10afda59cb9623178cf9e8c358e600e",
+    "astraupskill/evidence/results.json": "92686c4c88d795cc5d0fa851a3f70c6977c3d64e69586162ef625237ef207ccb",
+    "astraupskill/README.md": "c54b1fed435716df02cd6433ae56d08d17ea31bd2fc4fbc86c0e15882dc5471f",
+    "astraupskill/01-CODEBASE-MAP.md": "0f79ab4a1bf4d2896b1c54f9cfda1c166dc2bd7aa3da71bddb240e1a811ba5fa",
+    "astraupskill/02-CONCEPTS.md": "4839ba7f5a097b458c26856ec25dc8663cda2237b1d412ccd25846f719dfc110",
+    "astraupskill/03-WORKED-CHANGE.md": "9d12d143f369b5f4104461095e06b0a9688d7d8fb14ed1cfa9a02c1b97c6da0c",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "4f191714086e4938732ec34e8ce09d8b50017c4de4e8a723ca15310372fed999",
+    "astraupskill/05-PRACTICE.md": "7185458fd89a34a09189951fa35343819d9c7561df93f341b0ae493e3b2c4fdd",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "4fc2a93008ed36dceb86f22908f7134287700ec923388185171c1e36a2769ae5",
+    "astraupskill/07-TRACE-LAB.md": "1f7251b29c14b05864ba7607e54b09cbf633a0d22361599c73ef84ac6bd2825f",
+    "astraupskill/VERIFICATION.md": "8f9df4445a9d721f4858dfbdeb8b79397c5aa988ec70dda8bb45a2f4e9bf5529"
+  },
+  "evidenceHashes": {
+    "checks/482e93488b83/crud-b07-astra-runtime.json": "58280729aba22368f5a986a64d923ad084e38109474911cdcc9b72fc7d684b8d",
+    "checks/482e93488b83/crud-b07-astra-runtime.log": "e9126e93f6248fecd4bb9bc7e79064ace10afda59cb9623178cf9e8c358e600e",
+    "checks/482e93488b83/results-crud-b07.json": "92686c4c88d795cc5d0fa851a3f70c6977c3d64e69586162ef625237ef207ccb"
+  }
+}

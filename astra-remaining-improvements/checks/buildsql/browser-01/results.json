@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "total": 19,
+  "expected": 19,
+  "checks": [
+    {
+      "name": "Opening the application does not invent progress or create an accepted workspace",
+      "passed": true,
+      "seconds": 1.321
+    },
+    {
+      "name": "Explicit initialization and saving distinguish draft input from accepted data",
+      "passed": true,
+      "seconds": 35.221
+    },
+    {
+      "name": "Invalid completion evidence retains the practice form and leaves accepted storage unchanged",
+      "passed": true,
+      "seconds": 3.862
+    },
+    {
+      "name": "A valid practice project is persisted only after the workspace save and survives reload",
+      "passed": true,
+      "seconds": 3.733
+    },
+    {
+      "name": "Project editing increments its version and navigation guards retain an unfinished form",
+      "passed": true,
+      "seconds": 1.09
+    },
+    {
+      "name": "Search and status filtering paginate the actual project set",
+      "passed": true,
+      "seconds": 2.881
+    },
+    {
+      "name": "Confirmed deletion removes only the chosen project after saving the workspace",
+      "passed": true,
+      "seconds": 0.712
+    },
+    {
+      "name": "Archive filtering works while later practice missions remain gated",
+      "passed": true,
+      "seconds": 1.217
+    },
+    {
+      "name": "Written self-review records progress while repeat completion awards no duplicate XP",
+      "passed": true,
+      "seconds": 2.152
+    },
+    {
+      "name": "Two-tab conflict retains and exports the losing draft before explicit current-data recovery",
+      "passed": true,
+      "seconds": 6.757
+    },
+    {
+      "name": "A real transaction abort after put success preserves accepted data and the draft",
+      "passed": true,
+      "seconds": 0.688
+    },
+    {
+      "name": "Malformed imports are rejected without replacing the accepted workspace",
+      "passed": true,
+      "seconds": 0.221
+    },
+    {
+      "name": "Reviewed replacement snapshots accepted data and rejects an obsolete workspace identity",
+      "passed": true,
+      "seconds": 2.13
+    },
+    {
+      "name": "Recovery snapshot download preserves the stored recovery document",
+      "passed": true,
+      "seconds": 0.931
+    },
+    {
+      "name": "Practice forms remain usable at desktop, tablet and phone widths",
+      "passed": true,
+      "seconds": 8.435
+    },
+    {
+      "name": "Reviewed legacy migration preserves exact original text in place and in a snapshot",
+      "passed": true,
+      "seconds": 3.751
+    },
+    {
+      "name": "Malformed legacy data is retained and never auto-reset",
+      "passed": true,
+      "seconds": 4.342
+    },
+    {
+      "name": "Corrupt active data remains exportable and is never replaced by an empty workspace",
+      "passed": true,
+      "seconds": 7.388
+    },
+    {
+      "name": "Final reload preserves accepted projects and no uncaught application errors occurred",
+      "passed": true,
+      "seconds": 5.013
+    }
+  ],
+  "fatal": null,
+  "pageErrors": []
+}

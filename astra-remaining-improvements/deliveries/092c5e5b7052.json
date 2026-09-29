@@ -1,0 +1,172 @@
+{
+  "project": "buildwhiteboard",
+  "id": "092c5e5b7052",
+  "summary": [
+    "Repairs the non-starting ES-module server and implements Yjs synchronization using the installed protocol APIs with testable server lifecycle.",
+    "Adds document metadata CRUD with readable creation Location, validation, optimistic rename/delete versions, persistent tombstones and active-room deletion handling.",
+    "Candidate collaborative state is persisted before live mutation and broadcast; corruption and failed writes preserve authoritative state with tested file cleanup.",
+    "Implements the documented room UI, presence, import/export, formatting, literal search/replace and sanitized preview through one controlled Yjs input path.",
+    "Fixes relayed-presence handling, room/session cleanup and deleted-room state; responsive text actions fit desktop and narrow layouts.",
+    "Nine detailed course documents, two reviewed screenshots and reproducible backend/browser gates teach CRUD, CRDTs, persistence, conflicts, testing and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/whiteboard/results.json",
+    "expectedTests": 25,
+    "command": "npm run test:server; npm run lint; npm run build; eight Playwright Chromium scenarios; build and two layout rechecks",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; Chromium 148.0.7778.96; real HTTP/WebSockets/Yjs/files and child-process startup"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 25,
+    "backendTests": 17,
+    "browserTests": 8,
+    "lint": true,
+    "typecheckAndBuild": true,
+    "environment": "Node 22.16.0; npm 10.9.2; locked dependencies; Chromium 148.0.7778.96; real HTTP/WebSocket/Yjs, temporary files and separate-process startup",
+    "limits": [
+      "No Docker daemon verification, authenticated access, multi-process storage locking, or per-edit disk receipt."
+    ],
+    "layoutRechecks": 2,
+    "buttonLabelsFit": true
+  },
+  "courseWords": 4419,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "6373ba706bb0d3a873b331c0bbe92adca9a39dd35d35709912fd8b5cf6f1cbc7",
+      "after_sha256": "dca4003301904a73e38e4785728e6973ec215920cf9ca3797281d6c5b5d3efbf"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "2723e593a52509021cddee4597384e0b474fdebf4b3c5c376786a062c30076e3",
+      "after_sha256": "74f307f179ef016583fd70697bbf192c9fb497d1bec12f12e78f43f9558cd686"
+    },
+    {
+      "file": "server/package.json",
+      "before_sha256": "6d0031befe5de5904d1f28e9e8fdd0d8a28a41a81569b4709319a47bc9743831",
+      "after_sha256": "9543eacbd6a83e58b457f9515f4337ef9c8cce7443e2c7b6cbc629c913b6270d"
+    },
+    {
+      "file": "server/index.js",
+      "before_sha256": "d6e22b92720aa0ce1f83f96e785e32c66979098fc4af935661a56a7ca6107ac4",
+      "after_sha256": "4575a1521a4afb18b857972bd6f866e56521f39d40530bba31af8b023731b711"
+    },
+    {
+      "file": "server/store.js",
+      "before_sha256": null,
+      "after_sha256": "10cfb931eed092a68fe69c842931cfd86acca2545912192cc32fefa715caeff5"
+    },
+    {
+      "file": "server/test/documents.test.js",
+      "before_sha256": null,
+      "after_sha256": "c42b17874f8e1b0c5f023d0aa6896fa845cb2305d0c38741836a41625ab8e4ee"
+    },
+    {
+      "file": "client/src/App.tsx",
+      "before_sha256": "876f36af10cda7f8507ccd549f4e6212cf298c9af676bc021ac9a410e4410ce0",
+      "after_sha256": "25503d37464508244f998e84868996be6322993187ea1d06f9b98ca43be8f85f"
+    },
+    {
+      "file": "client/src/index.css",
+      "before_sha256": "9857d02a0cf58e5f84118bb6981c983316a654cd5098680f344351d8b7e83497",
+      "after_sha256": "365099121a951011432bed91ea6f325cc0179b66b61ef58c45bd4f1222952c1c"
+    },
+    {
+      "file": "client/README.md",
+      "before_sha256": "8dc9e0ee2281acb3324624fbe6eb7e1377cc626f616ea4dc90e3a90ae094374d",
+      "after_sha256": "9f8e0de1fd20be2fbfacf291c252d90af400775e7102ca87eb3276ed445bacbc"
+    },
+    {
+      "file": "client/.env.example",
+      "before_sha256": null,
+      "after_sha256": "3912c3875349ee7ee6177a0bda692d5f44bcb01930448516cd77d9190cb8729c"
+    },
+    {
+      "file": ".env.example",
+      "before_sha256": "af919a54102b68902a5e8d10d99416769780a7e5cf53f90b3cbf003acc983e89",
+      "after_sha256": "f5a374b14b5200d714be9270fc71a45d304bbc38554127a8ed89abb7459c766d"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": "739bf58843658f2002f0e393b8456a6d8a25d8ed80ebb91e6d74fd88b158cb94",
+      "after_sha256": "a9fc034a1ad09ca1505d8c78f8315e63e89a52f8348a0e783b871d6737b29fc3"
+    },
+    {
+      "file": "playwright.config.ts",
+      "before_sha256": "30666b52ebb5aacc2d01755ee7d4f4248ec29973e46f4dbbba04f87ae30e1bb8",
+      "after_sha256": "269fdb031bb58c4daba64b5d1f090ae9510a66ccd3249a88691c32528c20ad0f"
+    },
+    {
+      "file": "tests/collaboration.spec.ts",
+      "before_sha256": "65a4b1137f92b01536746a9b84b0f81b43d53da6fd2fc1bad184e7325f401ad7",
+      "after_sha256": "e66466a15fb93e3f2b0586a0477666ee7480980d168ed904bbf6d0c155535884"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "210d091c097e479e9e1ed7f770542d518b3f40b01ebbedc9e660bdeab8630e27"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "6aca659020545605b6ae6d84041c18b11d078ea39dbdfef174fac0a56674e61b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0042aa01c71a44a8a43a5e94d2ae4db860caf294bd03985ce5889ae0a499b78e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "eefec18ea07721cc45bd57cfa7c050d32c1d51289104386102a4b3908b80ef04"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "20127ac8eefb69874c5d31d0f8221d3492ff51d15a4fc8c85947b7a8163321f2"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "7f66b4c0db7f6fb4255621b12c343aac19237faa6a5f9558a54f1a2485287b8c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "2233809eee69e2b2de2c879be51aa1c1a7a943abef48bd4e80586c6026c345ed"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "ac8fc476ead9189bbb1440fba66ad76cce736c69e5384b7212e2f4b849269f0d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1cbc4053a7d553801847c0e548e6af3c3d62d713a9793dee62e764c23544ccf1"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "350cc5e85557e0c44d1b428112aa718ce98f7b3b72270c8d9d6f2c00a5f3d855"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "552fa19aa9a9c785c11293a24b8d8a528bfd5d680bc648bdf505dc0762921acd"
+    }
+  ],
+  "limits": [
+    "Shared local lab with no authenticated ownership, membership revocation, database or multi-process storage coordination.",
+    "Live is synchronization status, not a per-edit disk receipt; sender-local edits can remain unaccepted after a failed write.",
+    "Synchronous full-state persistence and retained tombstones need scaling/retention design; no power-loss or network-filesystem guarantee.",
+    "No complete IME/remote-cursor binding or document history UI.",
+    "Docker scaffolding was not executed because the daemon was unavailable."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T04:58:48.932211+00:00"
+}

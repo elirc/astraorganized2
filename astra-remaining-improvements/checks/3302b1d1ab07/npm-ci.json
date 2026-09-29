@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master4",
+  "id": "3302b1d1ab07",
+  "command": [
+    "--cwd",
+    ".",
+    "--env",
+    "DATABASE_URL=file:./prisma/dev.db",
+    "--",
+    "npm",
+    "ci",
+    "--prefer-offline",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T18:24:13.402094+00:00",
+  "status": "launch-failed",
+  "log": "npm-ci.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T18:24:13.490994+00:00",
+  "elapsedSeconds": 0.09
+}

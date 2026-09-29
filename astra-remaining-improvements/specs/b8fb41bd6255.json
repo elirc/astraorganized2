@@ -1,0 +1,29 @@
+{
+  "changedFiles": [
+    "README.md",
+    "Umbraco-CMS/src/Umbraco.Cms.Api.Management/Controllers/ManagementApiControllerBase.cs",
+    "Umbraco-CMS/tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Controllers/Template/Item/SearchTemplateItemControllerTests.cs",
+    "astraupskill/evidence/astra-netopen3-template-tests-r7.json",
+    "astraupskill/evidence/astra-netopen3-template-tests-r7.log",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/snapshots/Umbraco-CMS__src__Umbraco.Cms.Api.Management__Controllers__ManagementApiControllerBase.cs.original.txt",
+    "astraupskill/snapshots/Umbraco-CMS__tests__Umbraco.Tests.UnitTests__Umbraco.Cms.Api.Management__Controllers__Template__Item__SearchTemplateItemControllerTests.cs.original.txt",
+    "scripts/template-order-tests/Directory.Packages.props",
+    "scripts/template-order-tests/TemplateOrder.Tests.csproj"
+  ],
+  "summary": [
+    "Replaced repeated index sorting with first-payload lookup and requested-ID iteration, excluding unrequested and duplicate entities.",
+    "Added template-controller regressions for missing/extra results, duplicate payloads and preserved empty-page metadata.",
+    "Added nine source-based guide chapters with focused verification evidence."
+  ],
+  "limits": [
+    "Controller tests use service and mapper substitutes; they do not certify production search, database or browser authorization behavior.",
+    "Focused unit verification does not imply the complete upstream Umbraco test suite passed."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b8fb41bd6255/sol15-results.json",
+    "expectedTests": 4,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz4",
+  "id": "f1f996eeb9e7",
+  "summary": [
+    "Sort pending stages consistently for both current approval and next-stage advancement.",
+    "Four actual-service runtime cases execute real capability/assignment guards and errors with database/session adapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f1f996eeb9e7/results-crud-b07.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz4",
+        "id": "f1f996eeb9e7",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/approval-stage-order.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f1f996eeb9e7\\zz4",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:25:22.279274+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 22064,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:25:31.194782+00:00",
+        "elapsedSeconds": 8.91
+      }
+    ],
+    "limits": [
+      "No Prisma, Next session, SQL isolation or concurrent approvals executed.",
+      "Duplicate sequence policy unchanged; request read remains before transaction."
+    ]
+  },
+  "courseWords": 1698,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "zz4/src/services/approvalService.ts",
+      "before_sha256": "6edffe9733693127559c62602e1f04c7ad75e8e1169f15dc25d4fa4cb140c205",
+      "after_sha256": "b2c85f463b3017fdf403de6a9391f1aaad3901b2296349ad48230a5e4293986d"
+    },
+    {
+      "file": "zz4/tests/approval-stage-order.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "57c022733694c0b670f494de1d633d96b075813fa69a90d64c6500d5b9a42942"
+    },
+    {
+      "file": "zz4/tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "4065a565d1381446772ef23f676585817a2b819ebc0e5f3e4b577f246d784bd0"
+    },
+    {
+      "file": "zz4/astraupskill/snapshots/src/services/approvalService.ts",
+      "before_sha256": null,
+      "after_sha256": "6edffe9733693127559c62602e1f04c7ad75e8e1169f15dc25d4fa4cb140c205"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "7bfb6660cee8d00f77aca72accf70948c754a897cf4bfeed38755610c3a4e467"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ce4e0af6e18064534e476fc07692c3eba9298aef8d72539a4aabea237471231a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c42ef443d3cc1bc9ea6d77a843201078eea429e8623b8b44891316c42e455a6a"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "442d4732decb4f6b200fb955e099fc52650e8af8d5d3e1f470a10d34a995173c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1e9ac87d32ba2b7925113717ee7611046b369751066e52ff4e2d0c65ddb58f6a"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "83dda70b781c8530b2c5853aaf515cb1728bf1ad03fdbb71a289b7ac00ed5836"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "5b9780f80da41378a5c75b306fbfd21fb53f0c1b306e8280b762a7f01934470b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "97dd7f6a620fff6455312d726dcb38738e942ea557be84ebc0e89cce5c28a502"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ac53d9e1d775437f704c435c3ab44844440d7cadcddbc60dba91a37b211739e9"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e852f8e688e67eb4a6a5f3d02b162c87e36964df8fd7a57bb2520c1b54d3e9bd"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "449ae6a330ea65e48df79f279e8470d4ca8aa03c4db57bfcf1475a7a2f9d7e32"
+    }
+  ],
+  "limits": [
+    "No Prisma, Next session, SQL isolation or concurrent approvals executed.",
+    "Duplicate sequence policy unchanged; request read remains before transaction."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:31:48.375452+00:00"
+}

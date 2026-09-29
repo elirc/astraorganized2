@@ -1,0 +1,12 @@
+{
+  "id": "d9a27fa7f308",
+  "project": "_Organized Desktop/05 Numbered Experiments/j5",
+  "files": {
+    ".gitignore": "a888b9df89402a815bdb15d30c5280b090be11655ab4cc2299ce748d44cd6ed4",
+    "README.md": "8b4a8229fa338d45cd503bf727f4262afe90b7116bb070e81d3bb88830e23d0a",
+    "src/expensetracker/App.java": "d113b8a20924e10882b1984c54ade38d1f64a845c10438a40bca674ff53f8f45",
+    "src/expensetracker/Expense.java": "bb16ea2f3627fb190974c1bb8abc368d6316d81c67375028e9605d4f46548b89",
+    "src/expensetracker/ExpenseFileStorage.java": "d6580693edaf91bc928149d7da92078259291dfb5a338e70068cb6ee754e32a3",
+    "src/expensetracker/ExpenseManager.java": "4596f458722dec6382dd489e2e09909a9f80bb1411f328e88cba54667ecc00be"
+  }
+}

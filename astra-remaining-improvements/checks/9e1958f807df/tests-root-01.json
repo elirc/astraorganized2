@@ -1,0 +1,27 @@
+{
+  "project": "aiheartbeat",
+  "id": "9e1958f807df",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "test",
+    "--workspaces",
+    "--if-present",
+    "--",
+    "--maxWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+  "environmentOverrides": {
+    "PULSE_WORKSPACE_DB": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/9e1958f807df/root-verification.db"
+  },
+  "startedAt": "2026-09-12T18:52:01.781935+00:00",
+  "status": "complete",
+  "log": "tests-root-01.log",
+  "pid": 5040,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T18:56:43.545280+00:00",
+  "elapsedSeconds": 281.75
+}

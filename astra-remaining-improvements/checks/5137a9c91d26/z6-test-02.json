@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z6",
+  "id": "5137a9c91d26",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--pool=forks",
+    "--maxWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5137a9c91d26",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:09:11.138479+00:00",
+  "status": "complete",
+  "log": "z6-test-02.log",
+  "pid": 22668,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:09:53.314473+00:00",
+  "elapsedSeconds": 42.18
+}

@@ -1,0 +1,34 @@
+{
+  "id": "7ba004a89f06",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:47:55.996578+00:00",
+  "sourceReview": "Read FileProjectStore and real fs imports; save replaces JSON, get catches read/parse errors, clear uses force. Source unchanged.",
+  "teachingReview": "Rewrote nine template chapters around physical path, whole-document replacement, absence/corruption, independent byte read, separate exercises/answers and crash limits.",
+  "testReview": "Three passed real filesystem cases: roundtrip/clear, missing/malformed, replacement and separate base directories. Added bounded temporary-directory cleanup with resolved temp-root checks. No schema, concurrency or durability claim.",
+  "specSHA256": "8ba066c9b29171f6f2213638ab175c6b3b07910a3fcf23cf623967745b9969ab",
+  "fileHashes": {
+    "tests/project-store-runtime.test.mjs": "2e5528609426fc45ad2310ce1d90149187dc492cac6eeaa4a50c9e6b4c018c9b",
+    "tests/helpers/load-typescript.mjs": "b031058d45cc3945da372866d61edd626cc25e5d71412638acae27778fad5fd5",
+    "astraupskill/snapshots/projectStore.ts.original.txt": "b92a33e538ef00485a54b5a12a06dfac023a89d800c89af9f66dc44f5561b10f",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "914b6cd737eff06ad147eb93d5d69a6bf761a2e8f85cfa3851b261d56ac9de02",
+    "astraupskill/evidence/results.json": "10d838632b65875bdf97b141c38515bcd182be87d6a2a797dcb93bbfdb2db3ed",
+    "astraupskill/README.md": "294e1933c855f23955782a2906397840b4721b2eae206d6ca46465dca0680233",
+    "astraupskill/01-CODEBASE-MAP.md": "e718035ea7093eb6835a1ac510a101954e9cb479b08aa1ed26cc9ba300325082",
+    "astraupskill/02-CONCEPTS.md": "968246664df30069f3f8e359eeaba4d612a18d393ee73c9eaf78478e7633bc07",
+    "astraupskill/03-WORKED-CHANGE.md": "111ec3f011a230ad7214363c2b9bab4d99c829ee2b7bd3ad986176b82090aa2d",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "86b4928bdf1c3958e313bbbe2ba4a431846b4764937bd4bae3d8c60e80f9a187",
+    "astraupskill/05-PRACTICE.md": "0bd5aa17449abc5f52fcb59a532b9fb3df4372f218ee58f77090b1c6b1da64cb",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "c33c34432ae5d09267b7f85d5c1f882a005427df53e6b3459705ddd591596341",
+    "astraupskill/07-TRACE-LAB.md": "e1febee97042912dcab1f6dca7f509a8a25d653c58745c7880ceb19e901be3c7",
+    "astraupskill/VERIFICATION.md": "033091a2c35b91cc37a687064870409b3646fc4c68a95041a37c55ce35d6a7b3"
+  },
+  "evidenceHashes": {
+    "checks/7ba004a89f06/crud-b08-astra-runtime.json": "8b4a5bfeb6435770fa4657c001145601a341ded8e963548dfe20b93379208eda",
+    "checks/7ba004a89f06/crud-b08-astra-runtime.log": "914b6cd737eff06ad147eb93d5d69a6bf761a2e8f85cfa3851b261d56ac9de02",
+    "checks/7ba004a89f06/crud-codehelper-runtime-v1.json": "62661a1b28f651e9c2e5fda5c8ccbc2b7e9a6c30103c0c0c2097c8e60d5e6eb0",
+    "checks/7ba004a89f06/crud-codehelper-runtime-v1.log": "8b2881deaefa8b07d549e7935da49bddc8598a9ebf0f894f57d6058e6d701495",
+    "checks/7ba004a89f06/crud-codehelper-runtime-v2.json": "d4b1a058866167dd4784f24850016156088e1437379d4581609d23e2079641a9",
+    "checks/7ba004a89f06/crud-codehelper-runtime-v2.log": "2e178622f3b848ea46435ccaeb10e0e9c81276b5ebffc40e05d5489456e4aacb",
+    "checks/7ba004a89f06/results-crud-codehelper-runtime-v2.json": "10d838632b65875bdf97b141c38515bcd182be87d6a2a797dcb93bbfdb2db3ed"
+  }
+}

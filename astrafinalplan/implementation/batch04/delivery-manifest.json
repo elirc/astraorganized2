@@ -1,0 +1,4881 @@
+[
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "package.json",
+    "before_sha256": "f5f500481d0d0b7442f185c2e78fea1138198ac0925de2e5c783a897fff9bf26",
+    "after_sha256": "ab0b68bf295e3e0c584824d856b2145c5be8c844ddae3253195070767ab82972"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "README.md",
+    "before_sha256": "ab6553502035caeaf964031d64d7060341f7415ad5149f25d302e1266e8408a0",
+    "after_sha256": "50927ebdee6a4a7df88dba551a3c2f4c992b49155b2b4ccd93fdd431a4cf2713"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "vite.config.js",
+    "before_sha256": null,
+    "after_sha256": "c9a47e57b8adf99fce43426cbf18c1e68face15e41cf75ebd9afa86ee2c7dc6a"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "5cb05ffba1be6ff1142c3910a3726e1bd24ba431c0b5469ad1f4bd639dc81418"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "74b87f4f3a99227c4c0874179379528962e5d7c4b34512ad152e8dade5cdd61b"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "745b46253a851a2cd41ac08783ae5d178a74379d738c433a078b972c4ca9a4bf"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "c1d1ee9fb175c7aae42218c08fcb22394f35c928f502fcfef57b3dc906764b4c"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "466ed5109edc1505dfb843a30dbc48e7e9398ebaabbcfbb77c5ece33a8f7a9ba"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "4addc191d0f414981ca229623b84138565fffac2a16241c4b4bc1e587675b774"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "149043066fbf27846d72a555e4fd1657235938ba3e34b70dbd75731d3566523b"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "190d082222eb4b8f3c624c4440c32f3bbbfc50074f8b38ab8cab51e5036addd7"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "e073beee47f0b4cd244628335a63c16b92b0f82509eee4f7bb63f46923c0c68e"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/index.html",
+    "before_sha256": "959fe341034d331451bc0b5aafed5dbd6c8c05741cb8cd04986dac88b44edeaa",
+    "after_sha256": "dd06e87ec05bc7a4d57dd0410ad22c37918c51befe52d40fce686a886f72fd53"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/App.jsx",
+    "before_sha256": "b3f136a12c16857ddcbafc7b78ac7d16c89674b9ca0cae622db3140f83e0a5dc",
+    "after_sha256": "fc023ddc2d9da57f8974ef89c33636301d5e03a90e7b0a7aa24dd9e46941cd56"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/main.jsx",
+    "before_sha256": null,
+    "after_sha256": "1c042c402746a2760b67decf9fbfb02949ade4117ca52de9fa6e095311d04ebd"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/styles.css",
+    "before_sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c",
+    "after_sha256": "4e2763195aa800acc81540c1cc22d3e1914e36e6ae40471c461d4b631a19b739"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "server/server.js",
+    "before_sha256": "c0d3690ca6a1f6e951d52abdd13aed920150f408b20a91a403fe8e13fad3ca80",
+    "after_sha256": "f60b601f53c00474eb7c9b6c050361987903b7be90445f1299a288136af6b6df"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "test/http.js",
+    "before_sha256": null,
+    "after_sha256": "9d5504eb2c1d24387571c3414889bef70c2b5613e1eefbd4157e4b292a9ef6bd"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "test/workflow.test.js",
+    "before_sha256": null,
+    "after_sha256": "3f4bd8e090d0ed0009ec05e8ef2e6e103bb1db7cd4d6932ba90056cc10001921"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "package.json",
+    "before_sha256": "e91536f81f3c2e1269116746e0b4fe746f20cf22849e15e13b6f83d3bce0f348",
+    "after_sha256": "811807a766a79320aba7488147f46d6e7e8865e8495d90302bc97c2267c8657e"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "README.md",
+    "before_sha256": "a2909706198a98d366fad28e04089d8d96a51eecb7d4a7cd7381309e70d2be1f",
+    "after_sha256": "03fa0558300aec969b62a02bb54288738df9a405e6c5f686b1c8663910c59763"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "vite.config.ts",
+    "before_sha256": "6fe87840a1f7c6a638b573d8012adf23b8dff4ee1b526d2ea1eb3c286c449b7b",
+    "after_sha256": "4296584765722b89ccce3a4fe5f8e39931efa59d7844e8d15074d489b232d9c3"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "b8a5ee13eabcc011e0465c1679c90376d2d5960ec9caa1715b11387d9828fa50"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "7e508ef33c1097e8d6514fbd54db76525ff8258e69e4113d2b91592149298df2"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "2963e9129962d9bd6676a6e82580c584d43a9b8c1eac95a060642eb6540231e1"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "681b5396356540825b0ffff22d619440720127fe5e5c9544fcf4b468fef0c1b4"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "ab93d00eafc17bde98847f9bad7af634f00e980a686a26f04e80fef6af93f894"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "d42424efb57cb9f794de63f8a16519417f40e5e2d9ef790fdd1ed063f20f0b02"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "c9da87663c8dc3ad6449c6331a87e19784b57aa38b25ebacb20d0696de725515"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "74ab323d10f8d4d2b9ce107e68775203031174098052a4c743a306b1b25d0193"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "5c07e3f506e57e8f9f0768778ad17110f7ac561dfcdcb714ec75db54b16e0243"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/App.tsx",
+    "before_sha256": "83cc908bb4025ddf262bbf6c894e78f69da4f6be61d7025388d85ec203b4b6a6",
+    "after_sha256": "0e4cb44490dd64d385ae5f9d1709e6c286b7c67fce34a78196b4c1c73bce9554"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/styles.css",
+    "before_sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf",
+    "after_sha256": "641b9c333ece6d087cd6e688d2c46117e18528e54c98d919a5f62752ce7e7479"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/db/schema.sql",
+    "before_sha256": "5860dfd9a80e844ed8089c74aee5fcdc6cca5b8816e6027a9240cd76c5b702c8",
+    "after_sha256": "46999818ce6c31368d6e68daae723a3ebf352098198a40a890d19ad9fbce70a5"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/src/db.ts",
+    "before_sha256": "fdb4cc4021ddb3a4ab8a389e31db94dbdddffa03485e7d0102ddfc9b43cff41b",
+    "after_sha256": "c4b71abdf903ce76093078b27a2efd47967bab1494df028828c7a3b5a510b4df"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/src/index.ts",
+    "before_sha256": "160e123a801465b68851426a99e6c641c0d8cf3fd4dc26024d7cc298b6cad7fe",
+    "after_sha256": "4e4d02322cbf78b3294402144f8fb340e9a2f60854d9bb58d3e6248a04e3059c"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "1176ee11d844c7df320bc17fad50e58714c875dff6bd624b2dd5e436edec8142"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "test/workflow.test.ts",
+    "before_sha256": null,
+    "after_sha256": "c384637de00a0d70dc682e80b6e2b04bd3c4a526e4b3042273acc5b6d41fa7d0"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "package.json",
+    "before_sha256": "41c939482c4570a7c8c292deb5208bbf178b4271f85f151f76a3427485e4f61a",
+    "after_sha256": "105d276e9da002dc58fdf786f0d0fa74452a53c4e3543396e3d754535304571a"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "README.md",
+    "before_sha256": "b851c006121ace791a6df38e2c7d8ae8174a68dfe0eb8839abacc6ce7c119da0",
+    "after_sha256": "788b6b4f39489fb38e218d132af414992df5fc712e9a2e0bcfad1e120793da80"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "vite.config.ts",
+    "before_sha256": "26ef845a9e10b4afadb2318104f5026047778eb4b9d643baacea4b1ccacc9d67",
+    "after_sha256": "b5a41d569c4a66a099c0f100e8956f8479d3bd2d4530c2de127a82c2a2a8cca8"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "5eb4b304ccecb7ef9ae45c639069a5ea2f5ffa890927ba2543c048dcfd1019b8"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "eeb60581021f75d66580d5f515ed6c1369d441574e87cf3ec3eb31a27ef87ada"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "eaf0ebacd658021b766605b059e5038212c31c7239de1f06181b5743d0a31056"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "67c138cb7438e42eafeb9bebd4ccecf6fb0d60bff4311ae512467f1fd76e4a1e"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "3b4775630c734fd2d673fad1e4d2f4dfea57546d55f1a42cae3d8f3da33a47f1"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "3f32571f8b2d94ced733abc69f5293ed7a189df9a245c938099d41f58d3647e8"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "b994277f1cc11ac187e975805b487ddb333a9b989ce49d0d53479e21b4eec463"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "47e968235ccf157892909a2ba6480defcce294d2f4bfd3d0c39540943292323a"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "2e048d6e324bfce70d4e59f67fd013a753506c372d22bf2807a8a078fed09e90"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/App.tsx",
+    "before_sha256": "0401b84d732ae0ab662baa9a5d517b13bbd578d545c971bf656726721f0d7fde",
+    "after_sha256": "3ad29cb60259f476280c8fa11fd01890fb9326b4c34b4eabcf4209782ddb30d4"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/styles.css",
+    "before_sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf",
+    "after_sha256": "641b9c333ece6d087cd6e688d2c46117e18528e54c98d919a5f62752ce7e7479"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/db/schema.sql",
+    "before_sha256": "a295bf7b11ebd3047925292c52459c684dfdc50f5e916376a7219a9544d96ef0",
+    "after_sha256": "d6e1b20249c9679b79700048bc65df1469d4bdd1ceb6651d24db7905bc1caafb"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/src/db.ts",
+    "before_sha256": "397d2a82adb8404436900024b41237cb23a219d2236d6efd3f393511dcc43aeb",
+    "after_sha256": "f6ccf08eb011534198e2faa50f4e4f334b3e1c4e0d6380274af8f395a75fcdd9"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/src/index.ts",
+    "before_sha256": "9f522f6e9a6dbd1270082386e5fdc6d6c42475cdaedd7830e2c248c566bb412a",
+    "after_sha256": "6cc5810778b39c4dfc455cf1e5e6912eae18a5028d8738397c35493a5ed569db"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "1176ee11d844c7df320bc17fad50e58714c875dff6bd624b2dd5e436edec8142"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "test/workflow.test.ts",
+    "before_sha256": null,
+    "after_sha256": "cd60897900f793e1fc1f7978f2b30f83740bbed2766656078be47c869e688a5a"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "package.json",
+    "before_sha256": "0260c59bda82bea886e636981c87399d56b09b42e420c48f51449b56d87258c5",
+    "after_sha256": "dab05e467583d2bc2e17e2e73aeb561b98c4d3aa88303bc81308cd3b1ef45a8a"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "README.md",
+    "before_sha256": "f2dc92a9de7525985abe93ead389a08f6421ea90fa6b703539a51eff870e8bfb",
+    "after_sha256": "edb798a7953bfe0aa314721cd2ac52ca21b6c144444b56ca049dee927e025c65"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "vite.config.ts",
+    "before_sha256": "79ff44596bb310221bc31bd9ea64134f9d963892fc6fb7c56f96ab2cd2bccc2d",
+    "after_sha256": "557716a931589eb2e086395eda238f0a28cf3a62cfac0c9de16a69d758d99870"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "f60e9f5f839692a7c67e63a2c8c01b09940db949cce009f3e77d448fca332729"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "8c32c4af7e47495b5f7feb15ce96947fa3a6139a62e4e5b927cc03b436bea5ed"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "58cffe9fd9037ff5ecc1eb9d33bcdad00407af310351ce3015412b799dd4924f"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "83f854d871b305724f5b78f95349007fffb776d8a1dd2258479cb45aac3789fa"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "73519ad7c8a3e4170edf2ff96ff297c9ee4037c1d2da7a29d876a3ecfbf2d05d"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "c285f8476f5916f78e88937513f1187e649da5473db1c8b819b97ba44bdf6081"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "1fb663fad30ec2ab8f86b8003ce134ba037079ffda03da274d8938e853203d80"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "12e369255c73db75b0e87a20e6c6c084431dd68cd19a94f4b12bb8ea014957e8"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "d6a38d6e596d0c717c500e72ecdd525e6c865fd37e8eee846ec44bff5e474333"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/App.tsx",
+    "before_sha256": "97c7bc6dd3b51abe580ad0122312bba1c3cc2a057fc15bc79ae56781205456a8",
+    "after_sha256": "09f128c79fc27bd4e44325ee7fcb9b33050bd8f84f8ed88a46fd01e490614414"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/styles.css",
+    "before_sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf",
+    "after_sha256": "641b9c333ece6d087cd6e688d2c46117e18528e54c98d919a5f62752ce7e7479"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/db/schema.sql",
+    "before_sha256": "0fd62fb9bc22a8fca2daafa8d867be84944ebd0118f59d80152d96172791d40a",
+    "after_sha256": "fce9ab58addbe15330f7f8abde8c88fe7a7898ad2ad57e5d9fb3163474d2b643"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/src/db.ts",
+    "before_sha256": "0516f6dd50deda78e14c67cc9e204e446d7ec43766e37431b072dc22e3bcd75b",
+    "after_sha256": "ead86d59c728e507534468cf07bf710f25dec1ff45fc41140332e112071ab7b9"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/src/index.ts",
+    "before_sha256": "0aaecfa7c5a69c3c018ce7288438280a6a1cc5027f156e52c760f662d0e86694",
+    "after_sha256": "83dcf86be0aff7551894b7caea9d9023550171aa08b8b107a85a885698a06170"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "1176ee11d844c7df320bc17fad50e58714c875dff6bd624b2dd5e436edec8142"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "test/workflow.test.ts",
+    "before_sha256": null,
+    "after_sha256": "6790126aaf581fd9e5fbc408f673b8103ff2c22d6f8e14a370747aff5948a134"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "package.json",
+    "before_sha256": "6ce51946efc5d0d8263266e9f7f7e5205d93bb048adaae540ac150099d906215",
+    "after_sha256": "c80e86caa34112ddec7278f61722c09311e292199aaabe72f6d2b00079d7a271"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "README.md",
+    "before_sha256": "b85655eb710f824a50ad246addc4e1a71eda2a7bfd8b1e1c69dd4dc2cfa8c5df",
+    "after_sha256": "cb2d35c54c76eed7c95e6d0c5d4f1c09cbfbd02bbf931c672c4e35cca956ae43"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "vite.config.ts",
+    "before_sha256": "bde90de251f228dd3c861792b937216f3bdf59d13c6b5dec65fd3423f8aba2ed",
+    "after_sha256": "627381d12470a76f6a7140e41e9eb95b195602b24d3e8272daef6cead8528468"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "a664faede0d40bbc938b4a7e820c8457d0acbc0319ef5a648459e560bd12d4f7"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "8572f7f83f7e876efcb36e5235064f0cf0b779cc2f25da59ffa99474a3a2720d"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "d1661991cde49e71c8c2c0d76c64bdf4d9c62c5d0c2060dcd3b22ee359799c08"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "021514ae850d237164f0b6b5abe6abe4d2431dbd085fc3fb2df466468902643c"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "8cb21745d2dc883a3f9ba66e11943d76e93b746948058caa6a2f15a562005c00"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "64a9b8970cae99db6054f48bd5be53c6e230947969678a5f91a4744c829284f6"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "7d7a2186516918be17df8ebe7c9ccfa1fb703b47fc6e3516624443afaa522b93"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "7dab157c9d58e77f2aa5309c64b34a1a6618867311342be657a3e44433d71e3b"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "af5ccc9457c551c717dc91b07c1fa6029315019b8cfd39c293427b0fe435020d"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/App.tsx",
+    "before_sha256": "70a33c1b54ec44053e63794e9aee18fdf58414937907b1715d8e274ebf028aeb",
+    "after_sha256": "0545bcc00e40ac3f5045fb48215ca862288eac06a01a71a981f9f95563d2422b"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/styles.css",
+    "before_sha256": "643a304e84fe2812b2676c94bac292f2010752b47de5956736c10adf8e2e148a",
+    "after_sha256": "5fd2d3d23ff1f13c3f396933a36bb3ba2ee30c5065f01fce60995c7c0bf09385"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "server/src/index.ts",
+    "before_sha256": "98eeae689937ad4351788453765a853ff8c26b459645300fda84fe939b8716a4",
+    "after_sha256": "2a66d11ccb31fee5cea3b2bfffd0d3c9976f0b1e065a90117fbca9b0cad43c90"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "1176ee11d844c7df320bc17fad50e58714c875dff6bd624b2dd5e436edec8142"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "test/ledger.test.ts",
+    "before_sha256": null,
+    "after_sha256": "b0c823179c8c269a8c0f4ee2baa1c4e92f0181dcb26faef3afa0c5426c88bb8d"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "package.json",
+    "before_sha256": "eb021692352be55654f4cd4609f8181ce48011daeaa84c207453d328e3964ff0",
+    "after_sha256": "eef578efc5742d4d7bf52c0ccec6e4c0eef25ba1abdd32e12a5d055d682cad5c"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "README.md",
+    "before_sha256": "c4d811a11aae8ab937005dbd55bc549809039e78664819eef5c53cb8e2e81f54",
+    "after_sha256": "64e652fbc4739252f494a5dc7c0f0585f12873344ab793d7e2d51654d11c9f34"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "vite.config.js",
+    "before_sha256": null,
+    "after_sha256": "c9a47e57b8adf99fce43426cbf18c1e68face15e41cf75ebd9afa86ee2c7dc6a"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "cc9d9464d433d8d723f9d73444760fcb51cc68fd37a1418a1f3e4bd7eec967fd"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "bd2060964bbed5585e9aa95b3dae6724246b218cfa7cdb71ac60c913ab62dec9"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "3e2b28131b22699bfad75d60278169d27304bd1b35494ace1037cdfca2dbd401"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "19e63d3eb83f9728c7e834f2a75cf1c68bf4b53142575a4621a8ed98ea822d7a"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "bf3ef6c25b20edeb2b3baeccca746288bf3268d1da9d564280920f99fe71ee69"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "46bea8e6f00deea15ac061932f216edbdbe228ae025a6315f5a1d70b39d775fb"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "10d2a82851acd3d29583be6aaf329d6363842a06e36f0a77b84e2734a7255d3f"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "bbad14ff6a1e88bb51c71dc084480678e1558fbd437626f372936dba9e965b8b"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "3f0de13e6b86e58411fe97f5fb2274e04b6d3b10d5bc6784f21495ac36154fac"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/index.html",
+    "before_sha256": "938e557f7aff9a90f4e615f4eec034cd18f8e109ed9bb4c2a6652faf8f17533e",
+    "after_sha256": "aa0bb08b397af92695a0a0af7c38df3164e53a8f6a2a2c4543d9a1adc5242495"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/App.jsx",
+    "before_sha256": "952e5ade0b3c801b6bcdb1ccd28b2fdf38004c8c49a184b85b1d50b90376f648",
+    "after_sha256": "738edd5de88ccfdaef1ee57335b5f36e9123ba74baa4077947de59222a6395fa"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/main.jsx",
+    "before_sha256": null,
+    "after_sha256": "1c042c402746a2760b67decf9fbfb02949ade4117ca52de9fa6e095311d04ebd"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/styles.css",
+    "before_sha256": "edf733369509388df52edcb9ab4bacb0aeed7b5329b961e49d3e585d69e87c02",
+    "after_sha256": "77fab05a42d72066c650426267ed6adf7bea91348c751df03eace22de7e44e7f"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "server/server.js",
+    "before_sha256": "5af7939a7d84afd9328eb4d5fdec0cedd4cdbc1dab9678842b0a688f7d326bfe",
+    "after_sha256": "96085234fdb8a64d993980c5ae7c21d72c76dfdb140a5d3090abaa83f91a70ee"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "test/http.js",
+    "before_sha256": null,
+    "after_sha256": "9d5504eb2c1d24387571c3414889bef70c2b5613e1eefbd4157e4b292a9ef6bd"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "test/notes.test.js",
+    "before_sha256": null,
+    "after_sha256": "5e12a60a9570e35f2e2a7aa0d19af148dcd4fbb62ed7935d020d5d573fb13350"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "package.json",
+    "before_sha256": "3285b44544190e4b2f50d2bc3c44093f2801e284324c40ebee45821d43ce303c",
+    "after_sha256": "bc1c69ad718c01b1a1db879d8d27a2a74b696729ac5a317c0864d643d20f8ad9"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "README.md",
+    "before_sha256": "48f7a13d9c0e43cbed4f5814f19447aaedabcf82eae9495f6581128b2022bb06",
+    "after_sha256": "45830b6e30fb3e853ffadf73d8e7671df9c867b28109717b34519e8ca561c0ce"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "vite.config.ts",
+    "before_sha256": "ebe5700ab535a3bf1219cb8b4f531855d5c9658c90a969534d5a1fd9fa20ba6f",
+    "after_sha256": "6f3999ef36cbc4e7f4bb8f487ab32d58e017c157cd72efd056bdf6f3fea089ab"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "11fd22d0c92d005ae7ff7d3a19927071555a2a3b2be473c01ccd88743ac0e390"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "3ac0a4e3ee7a9c0dfe98ca0a876a996a0cc811349ed83c3e1858ca13d0ff468f"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "faa23cb2fb751eed02704707b2ba75420038ec8a2fdf626cf72aac0bc7b6363b"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "e18c5828b125d98a85f58c88a927da05989f5304881f7b0463203d7b372fa2ee"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "c0aa8f3ce6d8d1f0fcbe884fc0e2c27e18c167bd63a355d4b5e7af5a7605b7ce"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "ae6787c683f6a5044323a742e796798a63da2c17c7e9f054aba962715a7ddde8"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "765dc7b2e28844b6bf2ef527ce94bda2e5a3b64952e68c3903a2523a155e3629"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "25ed7a4c5addd8b831a74df8a8f11e24687283157b42f441bb7067e8a65f8168"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "4e34e0d02b8370f488e17f0b3193f8cc94fa61d9e79490e0f6da98a31ccff342"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "server/src/index.ts",
+    "before_sha256": "340bf99db8c208ae5cf27e10ec22c8d913b9993b5725eb8958fcdb7bd1815de2",
+    "after_sha256": "5e87c3bb932009bb106f269fe80044a592aa4e0b5909d1447e3dad956290a1c3"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "test/chat.test.ts",
+    "before_sha256": null,
+    "after_sha256": "2c7602be01fd0ef2dfb99695f96404700f9da236a73d7d4f79ea7b45e30fda23"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "f05017440a1082f6820a18f1535a72c8f55ea7e9a3127dd7cc5caeea1814c16c"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "18a69f11dd726e03614395f25032a4c5706e9c65de36d82b8854f24808259ebd"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "README.md",
+    "before_sha256": "5f340b2c51dab82f862b7baa86bde50d9ae020f42196bc35bd7105f59578757c",
+    "after_sha256": "a0c81e85ed1537e685c88049bd19fe2d7d7dcd1cb4ad1070d4c14071d87de65b"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "535628765e37a3aab3c27d361a98a2456e69a3c4574de7f113ff85ff6cadf54e"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "3253ff8216898f8b6e2598f67ee94962b4feb48808e098135fc90648bebfb533"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "21f217a12761e68bcc08052f8c3d954a9280e11ad6df4ecdeacc1978c029baaa"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "6aa538a85945540ce3164580f0f7169cc99b861381fb670c5c2d8c9888b8929b"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "c40e25da1708ab0991480b6c1e755fe70e99d0acf70cc3d278de8239a572a679"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "726d2584329cae43fbb48670f5b864a636aff207c858cb8f05788b0da061c02d"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "7f5b09434c6bd60699779e7df0d579bd5ccef2a4ba4efe847f209afad4e90a40"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "ddccd68cf5ba6f7cca4536e28e17332a687830d4dafdb91e0ec82c1de5008db6"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "de215c70eb49122d461136da9da681114ff3224923e0bf3d3136f7a37689aadb"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/package.json",
+    "before_sha256": "1feca7a1ae1343363c2fb6b0f76492e92b996d8170baeeb78c27b4d42d0bdf0a",
+    "after_sha256": "fdeb3fa6e50ecefbb92cb5b1142bc56512234880f2aed4fd34cb26ad4e3cbf29"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/App.tsx",
+    "before_sha256": "ecb01f2a6c363d252ce3b62c69dbf749c41290d70b618c0083a719d1a333e762",
+    "after_sha256": "5c8172e7fffdbf607dcb2000c798d748498b2a92fe46cfdc332edf116730e463"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/types.ts",
+    "before_sha256": null,
+    "after_sha256": "c9f82fa933136cce0a281b4c2fef3e9ea1fbb081bc54b95c97181fb2f49cb52c"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/services/api.ts",
+    "before_sha256": "fc872598499df89a3371b5c5ea43272d7ddbada3ff774e299ece34236aa1786d",
+    "after_sha256": "76561dc79552c75d1cac26d212ec49f2b87aace778fb815a95e792fd0620a1e4"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/package.json",
+    "before_sha256": "2c60bd4d05ecd56ed1fc84faf4af9e5c8a18bd7dca54923ea797eab3216fc461",
+    "after_sha256": "8aa4d78c9dc8da60cededdb965874ae11fd50c174c82e9656ae8881e80603da7"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "d772ffefa2dbe57a39f112be97a3c704c7339083557e723169d07067d07fba34",
+    "after_sha256": "adb52a8d47f41e4cb2c8d6df8a76fea1cbcc3690061ee0a8c33dad9dcb392c2f"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/app.ts",
+    "before_sha256": "1d2e42b693c34303032aeaa4b08e60b11ea9b935d9886c1568c5b0026b35b1f9",
+    "after_sha256": "5981af89438662454ede1b9c8eae36f94e6fbfeb7612ab56df66b676cb61a7b4"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/server.ts",
+    "before_sha256": "270670117f2a6332604fd3ab2bd99bee8b9446a0455933fa4fdb26e3599dad72",
+    "after_sha256": "39d29c5e0bfe4544693dbe6517863261b378dda4fb88ba2c9f43e2b1cc5d4529"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d",
+    "after_sha256": "1a4c1b138d825663857d1cd6d176ce535f8c44c133f281252549aab6dba5b7c6"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "d1b64372cb94efb21400631c24ccfa34dd2b03ca10555e95330c306de1100c04",
+    "after_sha256": "620a8c77d8be3a4196f7ffba7dc9135c2994a2d2201bb1bbf8c2653653ce1e3d"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee",
+    "after_sha256": "f00422bf9dfdec39d5943653d0df0d804874404c4bc986272ca3c8aab1205268"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e",
+    "after_sha256": "b3129ddb40c33507c8aa41f0704f5135ae6f960b4f9152a767229081b9b12594"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "a18e77d77e3eda110a11ffcb44425b9c07d5756dcfe1aa78e246547017141bb4",
+    "after_sha256": "3c45ee23897ef95ccc737bdcb85e60f0592ba310847376a4247337c69200a444"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3",
+    "after_sha256": "13af02ebf3d689ee2f30bb377b3dc79c11e995bab13e68e7cf489f4521e61c07"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "439045544550bb8a72db9f1754d1ad8c7cb3d1b7cf8233a0d90a24dd6bb72049",
+    "after_sha256": "7858b2f34de5a7633635af0d42d4cd295e61d900b620d201b9e6bb1749f1794b"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c",
+    "after_sha256": "b91241cff69a5340db0c5fc6fd0ce99542a62e61e7197d46d384407a57ec0821"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/utils/response.ts",
+    "before_sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0",
+    "after_sha256": "4b8f6b2cb63c8468445788060f6d814672a0dc206e431c0b5ca6d8719aa3c8ca"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "4d9c6593bbaf60326b887363abcd298fbc2b439623ffc385ce227358e4c2b2b0"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "8eae23f905498e294521c144a1cef357d05aa51642eadfb53c81e4c8fee27f83"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "README.md",
+    "before_sha256": "08ee681abc4e5cccbe51ed92dae70bc6498d2492c79eb34551abf5a65619af9d",
+    "after_sha256": "dec83e29a4497b53217ffb66079b77a0efb74e47849564a2c8becfdfd316c46d"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "7b79689b0b87a644401855af68a1d4bb0db981c05111e3189cff3fb4b8ecae48"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "08e3cd20dc34c8ff42fa49c0f8d73263435c3fb56caa253da6f6fc53269b0872"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "e9fe24b28f53d318f590fb431aefaf275a525c29320caa65e7675bf0c77290af"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "03136851da9405c47132ad2695cb361a18df9773926815761c55f8180762deb7"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "212e06b5fb6ae2f9f3f5818068ab53658aaa7c55ad0eddbbd799147d852e5d1b"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "428a313121a7d5c88480d13f48b1980027b36682cabaadc68a2705f427f93bb3"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "1e2261f45cc4cccfd6f86b45fb2a883647ade6f01369199d6ce776a45d0b14ce"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "9c78f8089d6cf13bb37270cab6ec40b4a464d10f34695714aed044d5af525b89"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "22e26d9020383685907f591b09f2c5cacbb952bfbaf70e5793a14349603e0dda"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/package.json",
+    "before_sha256": "870e1c5c12a6e4535e7b79a8f0a5d824f831d9fd54223dc685fc9eed5756c584",
+    "after_sha256": "2a87ad24fd651236fff1a20eea36084c137569e90a58bc8963adceb22d3e4d03"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/App.tsx",
+    "before_sha256": "fd35a0bc32676ff2d3584ade85f9bc6d98df4d3a2353d22cbf5ef3b3daefba35",
+    "after_sha256": "7dff7c344cf0e31c3fc3ede94ee90fa3c87a67ea166172dc40480a09ecbded3a"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/types.ts",
+    "before_sha256": null,
+    "after_sha256": "ef4913eb2918ab634090a0e6cc10d5ffa03cde43bb630011f032f7b677268278"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/services/api.ts",
+    "before_sha256": "0855cc1855a8ab36802d39673854a0114e66189efe92a4593c308d5aa285f38b",
+    "after_sha256": "863f95ab76f6c4b0b004bfb8762f6205125326a98074aa9509d6e34aaa7dd823"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/package.json",
+    "before_sha256": "c04b5b507fe51d9392842ec6e9292194ec71490c3691ca0838fdc59ea6b6b4b6",
+    "after_sha256": "89f435e04ba259a52eac5c44ed7224f48ce7d0dad882610723eaaceb35be5417"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "ffdbc9fad3e0a63d78f81e9e5b25a1af6ad2071c0ed44a1cb46c5cfaf1539d36",
+    "after_sha256": "9257239c52a93ea009825807fe544e997d7d0462d52cfd7b736d159175bb0ac7"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/app.ts",
+    "before_sha256": "4303ac420cb8e1be1c8bef1dffcf90d6347205d812d38a6166212a239a0296af",
+    "after_sha256": "1555adcb13503060bf37f1c56af719bb64d31aa3d2615394f33a70fce5dff073"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/server.ts",
+    "before_sha256": "3f8bd13afda0e58f82ed9f035056f6fd222f40464b0cac5e429a94166539f53d",
+    "after_sha256": "14f1b694e8a985bef7db5aacaa4411cd5e95ec1a24168ee54894c67baa3b9686"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d",
+    "after_sha256": "1a4c1b138d825663857d1cd6d176ce535f8c44c133f281252549aab6dba5b7c6"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "83b63e09fdc49c3040c9ef43e4683ab57f67ce3adde9781e7595dc7ed540c0a9",
+    "after_sha256": "4ef06a903131295bc910b75cdb4225796890b7e24a9be03dc257bd0c680a5fe4"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee",
+    "after_sha256": "f00422bf9dfdec39d5943653d0df0d804874404c4bc986272ca3c8aab1205268"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e",
+    "after_sha256": "b3129ddb40c33507c8aa41f0704f5135ae6f960b4f9152a767229081b9b12594"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "eabc290a77549e0463118b83b376ad82db4d2563719f8addfc791d36fe647ce8",
+    "after_sha256": "eb641cecabdb8e343618fb891a38c964787fbd887f7fba636131e7c53208d2b2"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3",
+    "after_sha256": "13af02ebf3d689ee2f30bb377b3dc79c11e995bab13e68e7cf489f4521e61c07"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "1d623825df2b7a3abf9c37899e6dc746bfb9a31b1100afea1abc59bbc98b509b",
+    "after_sha256": "67cb8fa6a98ca9d6246914a8c460433a4f100ba7bcac3b78a870edf8f1857eb5"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c",
+    "after_sha256": "b91241cff69a5340db0c5fc6fd0ce99542a62e61e7197d46d384407a57ec0821"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/utils/response.ts",
+    "before_sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0",
+    "after_sha256": "4b8f6b2cb63c8468445788060f6d814672a0dc206e431c0b5ca6d8719aa3c8ca"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "79fcce1d15fcbed43b6ca07edf15ad0aeb3e80103b8795f686e8899112a7ed26"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "baaecc833ba45dd7c4e679777ea6412e1966dca8c92b1e4de4eb0b747b413c09"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "README.md",
+    "before_sha256": "53f74568c4aed639a84bc0193d9c039b4f448191fd97a1b440080ba313f9c1a1",
+    "after_sha256": "e29deb33847ed84eca98445013e710caf9c1a9ce60ee43a3012ae3e32c21f94b"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "d96473366b166704bfd71161eb58556309fc4a68f73f88553a24e209493ccbc8"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "5d2e9d19860dc4ebbc7495e0b027a0106b5dce62418902cf051feeb32bb5a0ca"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "6fbd2233bfb749a8eda7ce637c96845c0908f0559d9ddd82b40302c68a3e418e"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "c407c76693e6b7666742b3eee05dc22f7a2c385221d791bf757f85ed1f0f4d17"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "533e2440737ca8e57957acde3f865e228273002b7f3ed23e9d8902b1c6c70b76"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "d41d1e512ff7f8cafe2f1c4af839a2e0d782955e3ecd8bd687767bfb2ff17c34"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "b7b0648d23ffe0c5ee9f4d3d889725689e8ad0691575f307e9e9791b802c53ff"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "cdd819652b208c76916f8de8aa340fcdca7cfc5e937e37bdeecb46c41fa959b1"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "68b6047a5bbd380ef1a9ba21f10128f598da51b90dc01c943e75d56e6b7e2ff1"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/package.json",
+    "before_sha256": "80325ab5f6df200c119ed42a1879ca9f9700db277b11e15cdac75e43c1863703",
+    "after_sha256": "08c31fefb062cece09299de19d3957dc5006c880f4ffc6f0c3bfad79162d7bc3"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/App.tsx",
+    "before_sha256": "f1deb15ed95c6dd6ad3ad241bf37ce00bd7a2d2b4d64e47880e8aaa1083c32ca",
+    "after_sha256": "b688ebb770568ddd752f4ebd93454ae01c97dd0135189e0f8c4cc82506682a16"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/types.ts",
+    "before_sha256": null,
+    "after_sha256": "c14d929465731465439758c7720c3204a3c74a989a563338c601505ada0b14ee"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/services/api.ts",
+    "before_sha256": "56a45c7096899f7cccb23239832a5cbfff6349333900bf565d2484a15a2b9a0c",
+    "after_sha256": "604f0350f2f1073a37b64b8f8133e610256b9ece139ee5999df2ce0d758d1a41"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/package.json",
+    "before_sha256": "ffed6a06ad509b54be6f22839affbc766ce59b3b4c0cae062037cdb57c610025",
+    "after_sha256": "da99a2d3b8a1f828aff592631a3fec9ff868fabdc8eca891c2bcbebbaf9ebfb9"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "5a54cce6fde1d7d987c64c002d97a137dc1f3932ebc28349c4997c4d51d89dc9",
+    "after_sha256": "e53cd2393a53207b5904049f5b11695ff6e8f3577f103fd61f8ae69530189385"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/app.ts",
+    "before_sha256": "47fbbeacee7c470a8c736d38ac7c67393753f4bc092c007257fccb2d757f76cd",
+    "after_sha256": "d2431c1127dddc30aff90747d16ce48194574e784b17a3507d3576fc64fba86d"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/server.ts",
+    "before_sha256": "eda904a3bea9730b5f363e1f49f305279c90affe94fb522a30aaff97dfac4610",
+    "after_sha256": "29d53663ca3ae154ac3f51351b56eea16ce3d6373cb1ec94803baaa470bc1a46"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d",
+    "after_sha256": "1a4c1b138d825663857d1cd6d176ce535f8c44c133f281252549aab6dba5b7c6"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "8f130eed515511708e1c92308380a63db818dc60bbcdc0e036415457c3bb4270",
+    "after_sha256": "d796cb6efe6ee74b66704dad5eb192e2f232bac7516dd8233281899f95c89f53"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee",
+    "after_sha256": "f00422bf9dfdec39d5943653d0df0d804874404c4bc986272ca3c8aab1205268"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e",
+    "after_sha256": "b3129ddb40c33507c8aa41f0704f5135ae6f960b4f9152a767229081b9b12594"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "4b4b6f69d5ec32d9a0a2d4bafbf0b8c2533c2928119bcf7380d8f0cc9b0b6039",
+    "after_sha256": "878d14cde617fdcb44a221e5317d4eb9ace78479e66b5acdbe8feb6cbc05a202"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3",
+    "after_sha256": "13af02ebf3d689ee2f30bb377b3dc79c11e995bab13e68e7cf489f4521e61c07"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "f372dc2fc30368f452f17cd2079d7bec193bcf4a1f28efeafbd1b13840493286",
+    "after_sha256": "a374e496e4ed5d1aca6de77aa5f0339e61cb4da0bf3fb6e2a99d2f5200a208e5"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c",
+    "after_sha256": "b91241cff69a5340db0c5fc6fd0ce99542a62e61e7197d46d384407a57ec0821"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/utils/response.ts",
+    "before_sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0",
+    "after_sha256": "4b8f6b2cb63c8468445788060f6d814672a0dc206e431c0b5ca6d8719aa3c8ca"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "53de864a105af3a3599c860001dd07cc8aae71238cb9669f34afd1a7e9b4b2fa"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "dc919bed2e5bdcdbfaf0ce6af051b3376d19a514c1312b5a3e1d02b5dfb361c9"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "README.md",
+    "before_sha256": "63c610aea7587182e90c39c1a39312fcb77f9ec0e24519e4ba501fad1d2c3aa2",
+    "after_sha256": "a1afcaa68f42053ed8910c5f49385d8aefd945bb095b75d48f67e76f0a4f2a43"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "d9efbce675899a24f5d639a78ec004b4c79651a55c30654231a2351f2fcc1dce"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "100c2fc16fd4bc93a3fb9be099c189448141b14dbd13bebc9327a0a194a10ef4"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "23517eafd99b2dc00069686ffa34f473706f1c0566ae498fde097100af24b44e"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "3b379411c69c34181f7b6157bd8b4d86e647ad0ccd9a8b4999d087f57bb1dba4"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "1ff43a8c2504377b2e64a8234adc30540153f0bd39e8f3779944cf48aed146a1"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "8b742cc817a58764795c4b43f84d5e397c782ab71dca98eedc98aaa2e1270faf"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "c877846ad6e3b727e5b2ce8f3fa0f414898df53d75785884236089be0d5cb81c"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "a01fa866fc1797fd9268bc335f9f27b1fddcd78f0544ba167fb9bbadd746a851"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "414a87d33cb0366da5daa4bd179f61762bc40bde9dd0c3dca481dba74ef13d26"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/package.json",
+    "before_sha256": "4941c39552671d8072895eb0fe097926023993ea30d21f40a3a1c1ff1ebb10e2",
+    "after_sha256": "00a27184738544184d90f5fce7455448dd85911d45e1cf312726f36a8e553a19"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/App.tsx",
+    "before_sha256": "cc4baf89bc7790439da008e1c7071cfe005cc17f020b981c6268150d3de0b09a",
+    "after_sha256": "9c54fc2a770ae511e82a31b217252eb0aea67521a5511950485eb4c7171b2bb7"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/types.ts",
+    "before_sha256": null,
+    "after_sha256": "9819a446e11f24c4fd0b18e649ea772130549e99ae29ac828c7be90704b31243"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/services/api.ts",
+    "before_sha256": "2975adcde197b574a4a078060d56b9b73e7aa7da773a594abdb3bad36716b105",
+    "after_sha256": "893ef81c1bbbd46f9591bc988d89b487a5d6f1f2cfa8a8f20063d7f3ae480012"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/package.json",
+    "before_sha256": "c97d3925e8a709e3699333253b1475cd0cc3df63fb1fbfc1654899bae9ba47e3",
+    "after_sha256": "53da154ed85025f33150283c94b351a3d74df724254cddbb0b250bd0d535864c"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "7f5c21243c09d4b827df1561c91c757fd188e6f4e4699e5087f7f7f5044e47dd",
+    "after_sha256": "1e348dcf943107184763d02195ac1022a38a98db7e6c52cbc4247d21088b4df1"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/app.ts",
+    "before_sha256": "960bb6e02ed513c8852d7d28c7c8561e0ae54f062ce7d931c1d80dd672c52d10",
+    "after_sha256": "74bd2330f434beb45ef6a712f960593f649f168374f84a0ad483b633f93cfd1e"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/server.ts",
+    "before_sha256": "d62eae628417854022508718b3d1a56e5e37531c9405e6a279a8e95624436aea",
+    "after_sha256": "9ea062935b928331fb6fb7a31932613e2c36a8a85f424d4e789196caf72c4c24"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d",
+    "after_sha256": "1a4c1b138d825663857d1cd6d176ce535f8c44c133f281252549aab6dba5b7c6"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "fe4b5159498b8453de4645ee88ad840d146a99c1406af30fb672ea25662a3d96",
+    "after_sha256": "841d925397adee3deabf1f8e286ce305ee1da33f67521c080cea009bcacaf9b3"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee",
+    "after_sha256": "f00422bf9dfdec39d5943653d0df0d804874404c4bc986272ca3c8aab1205268"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e",
+    "after_sha256": "b3129ddb40c33507c8aa41f0704f5135ae6f960b4f9152a767229081b9b12594"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "d221b95d43b86d40216fe66de9a35adeaddd20dc11317e39c10f0df0246a43ed",
+    "after_sha256": "5fc4b43a232fa616c568e69b971f730bdffc363198c210bde7c108415eff70ad"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3",
+    "after_sha256": "13af02ebf3d689ee2f30bb377b3dc79c11e995bab13e68e7cf489f4521e61c07"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "171d83e6ef85fe82464322e4c9c446f6c3d697f96296b3ca045083f8be50908c",
+    "after_sha256": "3385d38779afe00e773138d2310568316648242c41538ef43756a048536d63ff"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c",
+    "after_sha256": "b91241cff69a5340db0c5fc6fd0ce99542a62e61e7197d46d384407a57ec0821"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/utils/response.ts",
+    "before_sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0",
+    "after_sha256": "4b8f6b2cb63c8468445788060f6d814672a0dc206e431c0b5ca6d8719aa3c8ca"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "abda5e98f37010c7dcbb4ae12174a6db2279d6a02819404208fdace734895d52"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "7158439d40e5ed8d41c46995134c17d6d0395340dd6caa2b1435942f741f732e"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "README.md",
+    "before_sha256": "8f88b8df83ba7ed36480bdf9d96f2862b7ac153be3c113fc0162a351c1ed23b2",
+    "after_sha256": "a971f36aa8a152678f29e5d9bbbe72c14329713d32e8c465a722b8f5df36d1bc"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "bfe29f94f72ae32e6287f7a2a161c8b12fb4f1eedb64838e1474ae6f7f2530ce"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "93607cf33c8fcc3cc0c43452213f662c304862700df484298332727d66a268d9"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "7bb4b538901fc62fac2a6b1c624d701dd9227a35c625451595865e0db15c1334"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "47ebbe981619f72f6081092717065290a9b974291c1a5ce84734e6c6fbf84844"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "ef2400137527b606dc4a65a8656658209447bc2dbdbcde7dea505283a8d6d858"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "d88b52fdfaad3e0167b07e1cb7017115dced98c4434ef880bd14686fa7071970"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "4d261267ad999cfd9c76192240c0cf59950b588f1c43832ef1032e8bf54a0b3a"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "6f8145b11f2191ac47aa1780c7feb39d94af3ed7a1c48b6b982ffdc638141076"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "790371d5cb849c8f23aa2e1008a2b69fd3cc9a4995c61e13e6d0a4a2f9886e85"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/package.json",
+    "before_sha256": "0a727e674cfce28a4d373de10bf4f73c9f13cae3be5e79ef44a543b8e18afdff",
+    "after_sha256": "224c1510493b9ebe4371fea118a3a18fe5b4d2da27bd5418d3e0375983bed30e"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/vite.config.ts",
+    "before_sha256": "14115887126fb2520b516caa0e2aebe3d8503bea59260ab664d4f0969dcba7ba",
+    "after_sha256": "cac65d67d755be97c8a05b1b9ab74cfc5ff71f23fed08b017d6d9e15be1bdbb9"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b653e9f7dfa4d9fc76b080e0587bc0ad6af621fc9d5178f6eb6b7739316f94b0",
+    "after_sha256": "914d1aab230917137464b1bf70becf6285a7b1adc0cd7c7f8c299b11c5121571"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/package.json",
+    "before_sha256": "2062eb230c5433bfed077affd03293f69ee09364e79c5a2c501ec93039c177fb",
+    "after_sha256": "1fb437f43f094704598b1a37932b9b8b0595abfdebda12adbf6ec341884f98ee"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/tsconfig.json",
+    "before_sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f",
+    "after_sha256": "d886f0a788d6890d7e658d9451c776d55ee2b5aeefa40bd0038183d87d8fbcdf"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "586059cb73d44ee45393d62ed0ffc952a287ab08e111ebed945519b456d5feb8",
+    "after_sha256": "7371806a88739b1f5e8e8b924fd6ab0211962ba0363bbed49ad5092562880be2"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "7719b11898ee07dbb6ff8c343bc38861102fa69dea4a69b920ea4d77cd8e93fb",
+    "after_sha256": "cacb9dacb0be8f31e586a76c5256e0e15c33dd54c71bd01b20b8bf0278647f12"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/app.ts",
+    "before_sha256": "c7cf0dc1aad7026eb531acee75a163494a2e2e80b2401e16028458b57cec0fa5",
+    "after_sha256": "e489f8e606290dcfac94f616c8915fdd345a43b1bb7b5d5cf46073d6c2801bb7"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/index.ts",
+    "before_sha256": "cc8d32d7a52eeff12c084320212afe81ce5127aa8ab2537c8bae4eb84ccf3c06",
+    "after_sha256": "d9a573ed1c76f512640b9fb014e80c7712c683f2396706653c4ecccb25fc1160"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "e7d7ff3d23875c041b6f586e0ccbac5fc39335c3a9ba4c5f71ea45dd369c362b",
+    "after_sha256": "f144081c1664706cfc42b214e0ad8633b36e5dac448c8050726ed93cede7c610"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "d79b9dc28e737e23d99238de2234bbac745e44c4bda544293a7bd13ad16d0564",
+    "after_sha256": "0aca5f41a32b3f1b5ab67933eb36effce8a08ac96ec0e6ffca3fd2f97a3c3c45"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/controllers/surveyController.ts",
+    "before_sha256": "96f229b9c0a5902767bef8b080414194a16bc82ca22c361b9daed1ee4d86b972",
+    "after_sha256": "449372fda05be3122fbf9b25592ca394913ec66ca7bbe3dcca22db3cf5b0fa0d"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/middleware/errors.ts",
+    "before_sha256": "2146ec77d72e38801ca29e0499c9d3e58f0f7d71542a763dc3c557c6f1181cd4",
+    "after_sha256": "64ab3ad6d8b587fc6cf7c6ef9b819accc648b0d8f1e770065d7c91912e6d1e33"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/middleware/validate.ts",
+    "before_sha256": "ed1d12c3275b872c9d65e4e2f14d3a4341faebe581f63df204d6031f42c80120",
+    "after_sha256": "664a8a68f5bf7566e14f76a0760bfbe30cfbb332d84c242acd9d05576b6e5c91"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/models/surveyModel.ts",
+    "before_sha256": "419d04c134ab9038e8089df9501e423003dfde31de193ab2bd1bb6445f7e3cf7",
+    "after_sha256": "24eb9cb01d5680a6f19d3ed107d05a2cbcbf55b91e02c9380ae08e22d0c7875d"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/routes/surveyRoutes.ts",
+    "before_sha256": "845e0dd96b6ae4585e3b18fcb821ad0ebdd0d2696ef45b3acc0ab16dcb0a789a",
+    "after_sha256": "602ce608aacf2c10e8f9c7e25bbe0d9e8747cf22b6e25d5b06aa772a3a17ff6f"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/services/surveyService.ts",
+    "before_sha256": "442b59ce409a82e3b246346c476238f9d1e2d81b553ef06dbbe56761e7127c22",
+    "after_sha256": "dcbcac095ce1986922a964752a96a93c15f5d4a44dff90b4c8e6c43c1d7befe6"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/utils/http.ts",
+    "before_sha256": "695b53197a156699aa201a9dedfc1a77974508f71b5e4e7d2eaa70b37c878d25",
+    "after_sha256": "28a5094a084545cb66c1b11d9fa03bb6f4e91a058ac79dd0958e11eeb0f39af6"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/validators/surveyValidators.ts",
+    "before_sha256": "a57cf7ef0866a582bec4b25f1de7572a01e39c38b6a97fe44b0e1c06070019bf",
+    "after_sha256": "0a1220f660bac5ece2f3cfc6bd5d2076c889c3137f1d718a3522cc4d496cabe3"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "test/responses.test.ts",
+    "before_sha256": null,
+    "after_sha256": "834c3059d40b358604f2b7360f25f089df38cc98e6baf64a7ee828732cf1aaa1"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "7bcc9eca20e7fe0c60467dfaf009bfdec4b63f6440bc9bdbb3d492244d60fb84"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "README.md",
+    "before_sha256": "eab7ba15adebdacd81e2eb812c76e12e928cddc1406c6fe5c7fb9d9e30586a2a",
+    "after_sha256": "577f04c84d4b67e9c67bf9b5f14068addafecbf1af5deb511d12cf84c4d789ba"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "98716da724115c8c5fc385ac3902d714a76c738183cd93f39cf425c4a7d16ca3"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "66ee6da9307d07688fcb708678ca2e48fb5fab89fe3010a50c6ff8fd1d8995dc"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "bc10b4ec487fba4a963e3ac1a1eace969ff5efafe577e9b04950e5816018fe10"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "0166c0495480c9393ce9366c0b9d3704c50dacac50124473fc132d9991bbf511"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "b659f7dc0afb29d67c73d6c22b0d5e588700647778a1a36ab8fc323bef331835"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "2ed84af78aa4d27b4c1a62b02a5135c6735640855484e7c011aa93ebf05ae5a0"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "fbe48202c0c996387fe8619bb894aa277ffa696ff5f06b2965d12cc8b8cc5ed7"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "a9a0b2311cf407fac20812d70645aec9f8a3e546b83454f808347d62918917a2"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "966b675ba77aaa5db9a793153742875edfd5f7fa4356fc639b38bc2a941678a9"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/package.json",
+    "before_sha256": "73e4bd97bb0b998e9da15809510a36ec45b7b4aacfa59ee6ae9adc7275757c04",
+    "after_sha256": "24f6d5a20cf62f6c1333ca5fdaeb64e6a572c998a4e3379d6a7adc7665a2d4ea"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/vite.config.ts",
+    "before_sha256": "1c4ea159305b48e1373f52e51bd5a758593e3b9e83e892f991a5de70ad9dfb39",
+    "after_sha256": "9067e4cb28ef4f7e936e2536afd268cfbeba8aa4a0454696ec90dfde25c9723a"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/knexfile.ts",
+    "before_sha256": "865d11ba934f069026b5552d6802e8ff8b713c64ce44ca4855a4bf5e94311a7c",
+    "after_sha256": "dcfb9db82fa31e32f8a16d28de9c45f25f600c3da3fe268fa2106d1848893921"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/package.json",
+    "before_sha256": "07c4df6f9720e62eadd00984212c4cdf5a448c99554ef9659852271c2252cbea",
+    "after_sha256": "b4ab2aa4cd3b7eaa262239139b28d477f523f8a89016172422b08903e4608141"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/tsconfig.json",
+    "before_sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f",
+    "after_sha256": "d886f0a788d6890d7e658d9451c776d55ee2b5aeefa40bd0038183d87d8fbcdf"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "8668d1c7323bd46f24e59fd6f92ed1c80e4c372d78748a79517eea7ca6244ddc",
+    "after_sha256": "29508fe261639baedc03808602e993e244f87f86f2a933597a6f7691313bd074"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "3ea3fd2e1fe86c1f0657e29b69293dfbdfa2010702287649621eb5114d911150",
+    "after_sha256": "df7a9a407a0bdfcd5929f572b7f32b3b061658a5deb470909164341ccc272032"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/app.ts",
+    "before_sha256": "80c816ca8d1639a7b1f4d58aa30e699176a19dd37783d234e70e8fcd545cfcef",
+    "after_sha256": "0a804a0ce75ca55e3f88347e2797c425915381b2f3000037df7afcb4c1f8b960"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/index.ts",
+    "before_sha256": "5ced2d83efc3e578f02470d0f52ee0a15ec3875ea852b9ce55f9f6c4c3199e36",
+    "after_sha256": "7c42db54c46145dc9103271bd8a991b6d9f2132753f8d294753704be22e85997"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "c110a260c245e241ad9ddb6d33f5f5c1c7ea8653c96bd56883eae439d02658b3",
+    "after_sha256": "17c9501a77edcb1d927cc50834645b75c75cb38620efe485ac2fd226b291a519"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "9a90d686e37b2b352773d368da60ecc7a5dfa55bca0f08924fb36847c58b5a9a",
+    "after_sha256": "11c2cb6071e60d9424971e18a15ead0d6644f75366bbe03b145f52e6eb92116c"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/controllers/chatController.ts",
+    "before_sha256": "2200f6cb32d30dc58a5904a9223e3aa5cc97018e3a56d17a283347056671a60c",
+    "after_sha256": "d48466a13c4cd5b6f19c974935056ad38cd4d13a82a7d53a167c719a18b00a7a"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/middleware/errors.ts",
+    "before_sha256": "073c8aa933a15ec7bdaa03a5e9ccb950badbdf9d0f4d97a1bb10bcc9a258cae6",
+    "after_sha256": "1eab4c7509f571f33b17e16de7053900f2d75241bac1426cf2c0099488266459"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/middleware/validate.ts",
+    "before_sha256": "d1547c293e967048c387c4ab6f74e39570982a088677d95621e3ea451c328358",
+    "after_sha256": "98b56ff12752db876d469fd31fe30639ef3d62bc395561fe09f386feabce0464"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/models/chatModel.ts",
+    "before_sha256": "d53a4699d0650f0f0ce92ddc3b75de11d45a1d0e0f10c18b675695d8373c75a3",
+    "after_sha256": "13272a8d2022b596defafbdc3cb7c7a00e32dbb587732c1c422e0172c98b0d33"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/routes/chatRoutes.ts",
+    "before_sha256": "7b1fc41617687c7d699ad0e46d88e921ee814ba546c58020d04a354f4c81f15a",
+    "after_sha256": "3a97ecf89dee8081aa672b71463958ac05a07a93158beb883e2853724048001d"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/services/chatService.ts",
+    "before_sha256": "0eee4500b9f2039941218f3a4a4158f60ae6675bfb874fef749251d8cb994111",
+    "after_sha256": "836cbe0c3943ff3fdf3721c8d706013c00b0236fc485776be8be641fe2a4e32f"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/utils/http.ts",
+    "before_sha256": "7c646967e6bc372faa4400e3657c8d95925f3804951dbf9caf18fc2c1dc7bfb6",
+    "after_sha256": "12b2fceb3df96a68a4d90ea71ad14b3f8bfc66fcd74411c294017ef6b85e7b56"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/validators/chatValidators.ts",
+    "before_sha256": "8ce7237ff1c326a2778bda2ca78d442aaa70a2e847d93c0c6fc42f762feabfbb",
+    "after_sha256": "b702820ec1c1e398b3d65a917d90ce4d949cf15faba5acd1489d61018f6a5461"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "test/membership.test.ts",
+    "before_sha256": null,
+    "after_sha256": "319859670c5d52013e4728cea1caf1390537c28c0a28afcca5721daf9285b19a"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "b8e4736af2b01563bdd7cae286fd29f240610e3c80d502ee0429c7ddcc92083c"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "README.md",
+    "before_sha256": "a1c08ac23c92630bb301d4a132809b09d4ccd2f4c179566253d7f6f6cc3609c7",
+    "after_sha256": "83851215b1ca7e98c055e63410054df5ed5adcdb982d1ab8babb644f4590c749"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "2c5dd8829ea984a949b452252f17cad5e0a2e03be4372b9d2f734bbed9f393ab"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "e652cf3f53ec8e6e8a12661ed8714a090a8a684edba6a8d00c0de20769ad95bc"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "493676b7236593f5c9a152181f7cbf29832a81ef8da31c13458520c88bed09f7"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "e52170cb203c491c23d6c0539e7f6fde36687c0d1ad2a077bcb6d6f1eab9956b"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "ab18482827c0099564c142f8139951160a502b99fc516c6905989899bab1ee0e"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "b25563f6ac8f3fa6567cc10f4503a9654384bed3beddad6481ec9e79cec9539a"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "b27920aa96248400a8820cc560fb046045bc0eb975b0e39b721a1ff01dd64516"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "1ec3ef5dc827ea45274024ca215f391b9992ce2ee40f278ab09fa71d84292b13"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "0d5354a101df6a53012aaef8988b59bde2e595f6964470bf6b3d144f892f7b8b"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/package.json",
+    "before_sha256": "64dc7000e8288f9ac764d7514cc3b1ca3cc2bba8a13fd9ed06145144ce44e7c0",
+    "after_sha256": "29f9fe07abd726d2f38c6649c09d728f3159709ce746e342f2239390e5169a5e"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/vite.config.ts",
+    "before_sha256": "07e3ec8e3b69eed875ad77ae97770e227d29ea35d011a3278813e94c958d3762",
+    "after_sha256": "175349005dcb2e29686abd53cead180b098dc14a9f652357a85fafc55e9e85d5"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/App.tsx",
+    "before_sha256": "2529920348ea3ecdd6a26f567e050a0df48223aeddb90e5d0b5a7c4dcd49e04f",
+    "after_sha256": "742346f79d350ab89a022cbda0b25d39bb94dcd368f3586722876af730a2afe2"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/vite-env.d.ts",
+    "before_sha256": null,
+    "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/knexfile.ts",
+    "before_sha256": "8ba798d29a1119a9358c37395fea06c3eb8c578667f61e3ab5b3567e167510c2",
+    "after_sha256": "85d365855dafc38f501d26cd4f208ec8d15797d476b289407e102ac1ffd0ba95"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/package.json",
+    "before_sha256": "e1169fe5f897ebe8e07c60c2442d5145cb24ca6f184bbab4be7a0fc82c2d82e4",
+    "after_sha256": "066bea120664f4fe655d4f48fab5bf3d3303af26ad057a24b5449988f97b8030"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/tsconfig.json",
+    "before_sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f",
+    "after_sha256": "d886f0a788d6890d7e658d9451c776d55ee2b5aeefa40bd0038183d87d8fbcdf"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "1651a37b27080c47acc37ad7223c23651f2b877bbc1cbe5514fb180bf8c9abaf",
+    "after_sha256": "87465cc5d2c26e2369f33c9f58b0f9f3e8ce7f561af8cc1c23d72ce620be228a"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "17176a3a048681126e62321600788468c1695619d6c6c0151288eaa1044e8e4f",
+    "after_sha256": "a2322507d762848bea38d9a87493d3696c936555b8d649ab7e7a87b23673cf23"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/app.ts",
+    "before_sha256": "c92b9e6c9a5997fd22e5438effeaa0687e852e1cc6196ac116a129c8657bc421",
+    "after_sha256": "c42ee589e8a677f375e0165bd62c2760ef0d4bea571bf360d0739f0f1ba5e36a"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/index.ts",
+    "before_sha256": "f1ab9dc0882db57ae52d734cfcbe4f0a6d46e63d057f236800e5d30cb87f0ad0",
+    "after_sha256": "2a05445cfc6fd406be1595b7113973505d12b620e87a1309451f2c1cbdf49dd1"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "c110a260c245e241ad9ddb6d33f5f5c1c7ea8653c96bd56883eae439d02658b3",
+    "after_sha256": "17c9501a77edcb1d927cc50834645b75c75cb38620efe485ac2fd226b291a519"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "21658f3e0c893894ed23db9b9c914208c27d71aed343ba6790f3b9928b1c4a42",
+    "after_sha256": "818e810bc3194abc463b2c719028b05dabab9ab85e1c5742c8fa77e17662f44f"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/controllers/storeController.ts",
+    "before_sha256": "93cef5e951ddbf8455e092057a4c9692ed033ec727febac5d83a3fea7ccc7a6e",
+    "after_sha256": "055d98743dce02cd4142c8bcc549c8cd8f1fb312e7e585a3a403ec20fdea592c"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/middleware/errors.ts",
+    "before_sha256": "e5ccb7106bd0225c33fb79f89a8d410f9e199e30e8f248cc1041acd23171bdf5",
+    "after_sha256": "7dd921d5e07e062049e916dc201b7129de35dc2c53df577f1b0d3a3124723109"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/middleware/validate.ts",
+    "before_sha256": "56c9f1b6d0b7a6613d3daccee3f864ff97917082033fb85d2bda19a04bf1686e",
+    "after_sha256": "a17237bf81ac90cdb13253952118bd0663ef7c250aff3dffd09ecc7c7d61168e"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/models/storeModel.ts",
+    "before_sha256": "d599b6c17e0536a9069c0cfdf544a5cf3df173f17d065212d61e1512cedbaa16",
+    "after_sha256": "9255dbbaa1ba77ab04fa1b62a02cacf6fc17dec207f758781d1abc1b256ad840"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/routes/storeRoutes.ts",
+    "before_sha256": "58a30ad159c96592e04ba2b5f0987002c4df1e2d88b2ce5fa8a28395f4f22287",
+    "after_sha256": "16034f59ee0d49aedb0146420376bdfbe3bdb6f7029cebcc3ef38116c517c91b"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/services/storeService.ts",
+    "before_sha256": "a0f1deec00bec3784c4e1b12fea1d9b79252e2d1a0db038caba79c9f052d78fd",
+    "after_sha256": "927204aea4b29aada77d48eda6bf4961511be04cf3316b3678e726c609c65f04"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/utils/http.ts",
+    "before_sha256": "4b25554f9121daf39a8e7b165ef9a799867848165ef8a2c4e1748e4a6b5786d4",
+    "after_sha256": "692f3593f92a760254e79173597a7f519705c930f9c7b4ad82eaa32ee05a1cc0"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/validators/storeValidators.ts",
+    "before_sha256": "6c70649d616b8f216b9a0fd19b3dcfd36188c454a40eebd9cb65df5a8ef7ffa4",
+    "after_sha256": "8d034f1d6588ef0df032c1f813dc8295c4bec600a0d4b655f2245575d235c3e3"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "test/checkout.test.ts",
+    "before_sha256": null,
+    "after_sha256": "3d97c05807b1bc807764a4e55ebfdb09785cff5a8d59bf1c173101265a18239c"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "3d15e57d73e8ab913e782adba47afbada2f64137ff2704d559f8a9188bb5b1ee"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "README.md",
+    "before_sha256": "ac5cdd65badb72df05dad6499aaae112219cba47f389d24ac6a1293e42cd481f",
+    "after_sha256": "10e9b28788814266231e724e690a37c8559cc82e54fb50804aef8f61b2232be0"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "f06c1e5f197033a2d6c06bc388ddd65502c8794b076999cc7ffd4916497e5575"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "4c00e0be62224997c33ec839f05ed4f11fb83b43efdbb89d9159134d7cbf416a"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "cfa9fa442e3e94fa6d0d00218195f2c70cde413b4f7d6958247a6fa50f2f73c2"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "5eb52b84da7f09d887865266b79c1883b68e9343557bae0248f3eb12c83f568a"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "2745d4407eb040091d0a15a15af63fe05f58e8de7501b99c395fd9b161fa8c7f"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "567b7a91ba5d3b9f3ee1e22ab52d99b7ba6c57fb0b335b2c4e99a747b7f87bd8"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "a70b0dd939fda34a28756b889a67d5c1dc859c701f5406f60c473939e01a479b"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "43469f5f2ad1f8f2d1306c5e3d1eb5ed8af4db44f78e87266f37652eda6d75ca"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "3fa9f21adb21ba1be2b17807b1c1a42b746120fdbf5863b6835483f0213ce968"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/vite.config.ts",
+    "before_sha256": "70c5cc634d4a8a7155463a9d4bc307de46f320f9cf406fb142c271e8a8abc2a1",
+    "after_sha256": "edc33b2888f8b359fcd885d49e884e7faa58d0bd7c7903ea4ba01c6bf88b2ef4"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/knexfile.ts",
+    "before_sha256": "f43d4c1086a6cf82ad7924c6addc3f49a7f40cbb84c3dc5021e99beaca893e50",
+    "after_sha256": "db736f9b9b177525261d8baf43f6dc22591f1b57cd805daf898b11c914738dbe"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/package.json",
+    "before_sha256": "bb15f1a70b7eb6c85b2ed53bee735d108e604842eb40ca063e95c2ed554bc60d",
+    "after_sha256": "e62641d06070e14950898f938acbbe7aea1466f413192b8c272516dc1a0692f8"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/tsconfig.json",
+    "before_sha256": "f5eb74ac9002de2870ee5d82614d84dc3368c155712efd4783f64098f91b7382",
+    "after_sha256": "79edb6f8ef6375c438c6b0a782591827b05fa18451b8edf18d082492b0ba2c90"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/db/migrations/20260703140000_create_appointment_booking.ts",
+    "before_sha256": "3456e9293a82f61dcd9778fd7c364e332ca82b540168125c9fd6c41503f62bfd",
+    "after_sha256": "ca49e238842b1d9b19d52ca5282e0fadff0b6d18b6a3a20779d49d68f3d01224"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/db/seeds/001_appointment_booking_seed.ts",
+    "before_sha256": "8f0ab88e4a1f5eb44fdb1be0ab2abb60629719ff7598830a61d63f1a6bef5311",
+    "after_sha256": "af26a9a2830384f310841a764f0b77ce3493150a2509bfe9fab622004304df73"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "6c9fd1737a74654b7c2d09067211431d2348c8d5c2eda3f6c858866c44a2dd51"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/app.ts",
+    "before_sha256": "eb27476da77c7afa1f9e041a62c171d8f469f5862973d2843a2e9ca7b194e353",
+    "after_sha256": "b4c89be20042ed657c221baae454552589990b9ce63efa5046def83dc3c6452d"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/server.ts",
+    "before_sha256": "8d2fa09cbe1d5873241b36f9948108c8332099e1af4ee5eb49ae683dab5229a0",
+    "after_sha256": "e75428916896a40113a388076c04b29b4f27d53c79d9dcd7984600c1d3e4a068"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "0952fdd514cfc145edc3898fa7f358beeab2e4c17ccfd273c1a4199be8fc2a7b",
+    "after_sha256": "0e3f0a8868d0c4043dea792bffbe257a4099ab4401aaaa1c70db96fa7f516f5d"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "de08c70ea37f4002d18b174134a8bb5a2661814bca2a50bce53b802c5ff31aff",
+    "after_sha256": "3b7eaf8a96b9c8aba830f9683190dac722775a1bf72d4bce123c9434f8e1b583"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/controllers/appointmentController.ts",
+    "before_sha256": "1923d198cc3fc808109c2474f8316ea8d3bc5e8d540cb862ef9655c5a5a950c4",
+    "after_sha256": "9d9207e9c4cb35f1c38d623d33cbcd6f6945e32372c39b8899bcb5898e560bd9"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/controllers/providerController.ts",
+    "before_sha256": "647bfa86139abd27a200bfddc430d85dd306afe0f61f349a399ed44f23c88a77",
+    "after_sha256": "9c595f91c1309e68c1bd27e475fea0b9cc9513764f47fb3d3634ca11cf88a2a2"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "afd9351926f40b4da28bb7707b6d2f96f908c063536c824177cd764c47f927cb",
+    "after_sha256": "cfdb2843b5fef866fe00a45c09879acdece09597ef0f1a924c73ef0b35cfae02"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "3a37e5cca978de91878beca13ec03d543f070ad39d3b9a11ad6f49735d5b75ad",
+    "after_sha256": "c9bea3f5aa7cf932adb569833b435a4ad25ba77f23d5961c24bee252e22cefd7"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/validate.ts",
+    "before_sha256": "994006b9329c8254b28ac46499d16cf0ad94280d5632541cc360239564095110",
+    "after_sha256": "c3c0dfe7609c7c258bf345c993b0dadcd553f7897f2d8a9214fb5e617f907c84"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/appointmentModel.ts",
+    "before_sha256": "7d305046d719b69556f1b32490507f41bbaabc397e950f907559102f769191f1",
+    "after_sha256": "8a9483faa2b5dcbc48cc8845895475dfc3d8f21e5bdd10ffb93c20d84c4e31f0"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/availabilityModel.ts",
+    "before_sha256": "74318229a1c3d3f689a7b7b178c3663316267b577c28d57e21c73f5ae9e1d6ca",
+    "after_sha256": "09d02887d98e916329ebeef269a5873d3bbfa187f18d42618fe0f419845c7ed8"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/notificationModel.ts",
+    "before_sha256": "ddefe7d2a6b539dda19b14900a86d74b6b03c3c25728b64164e8903ceb410d42",
+    "after_sha256": "8853009926af67a42e19b505d40b9ba68dfcc5a4018b8971c76cd38a320819f3"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/providerModel.ts",
+    "before_sha256": "8195a5bee84f72905134b68fae6ac50cd6397d6924412f2f4a31bb6e4bf25dde",
+    "after_sha256": "30ac43eb7fb8c768be49db64aba7c15f692c98a340228397ca070815922ff749"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/serviceModel.ts",
+    "before_sha256": "e050e3e22ec837301d39d83303722f865e84c9c589cdebb88d4b9471ceb764ff",
+    "after_sha256": "2564c7a9cf6067714516b125329621d14fde91eae2bdb3faa536eceb3f2f35f3"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/routes/appointmentRoutes.ts",
+    "before_sha256": "034ea5fd30d53d947196126f0407abcfddfdb5ce51aa7f9fdf626e2293bd5698",
+    "after_sha256": "31ecc50fcfef110c1a0bc6718599791e3ce2a4327433c05f1954f0990f837bf4"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/routes/providerRoutes.ts",
+    "before_sha256": "f24b04214f887f22dc1e98d583da68305c2269b8cfb66df66ddc7597d9c5b704",
+    "after_sha256": "bcce7e415e327ad97ce003f14602e6a86168a6898d2d56ac6f5d02f408b5fbab"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/appointmentService.ts",
+    "before_sha256": "05fffdf8818fdfe262ea6edd66db2b687079d6d06e070910ade7c08f5c1b0714",
+    "after_sha256": "d854b06b4e05bbcd168dc0be05cf44958190d840cb151f9d73b49008eb7d7a7b"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/providerService.ts",
+    "before_sha256": "c858c1064c54fb196e329e4593f6d798c9d8d2a2bd40b56077ab8a0e407bf470",
+    "after_sha256": "31c0dc294e47611306e1d906e5f89c7a95e491ef162763878526247140084e9f"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/slotService.ts",
+    "before_sha256": "cbe7b2a5898197c6fb942bcba9c1f5720a064fb3be69e12fdfb351312e2265fd",
+    "after_sha256": "622afa57b151a5fc25ae55b56e40a89f1f8d208e714ac07d9a97267559c0a393"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/validators/appointmentValidators.ts",
+    "before_sha256": "095bea344204eda17bf07489a77aecba6e36c01665a95057b78c8d75a0687fcd",
+    "after_sha256": "dd1096abc036f37a556022cedc81d5456b83efa94f2c4c1ab5556966d0640da7"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/validators/providerValidators.ts",
+    "before_sha256": "c184e4fcf79a00fbbef94c3bb0e637136347d90cc0ec96565b4a09e3f44df838",
+    "after_sha256": "ac57cb568c8dcbd8156a929ced4a4ef22799d77e3d22fabcb8af74d84d88fa0c"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "test/booking.test.ts",
+    "before_sha256": null,
+    "after_sha256": "4cdf0ea15ee5421f2d98ef094f00fc9f26e56a3e79dc8dfe6ded243171dafc07"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "eda2a822606c92119a01c98b656d856a8dc8ef2be938f2b0e3b75777a405cf92"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "README.md",
+    "before_sha256": "616646fddee6671c611cc7f6084e09ae4eaa740c388ac9065439939e7f302ddc",
+    "after_sha256": "0f62ec87e0f9e1b10279d2ae30e4cc7bb1c3ae8e75c15bef0e11402c1a116658"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "14ea9f5f112ea58dcfdc2d93cefb994a50f4341e6d8cd07ffb3b6e9d46ed0c8f"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "eb4250ada74d31a24f0de1ca62a2134246589a18de1c2bdd595d1f8a013ab17c"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "bccb53c0b3c163bff2b4918bfa12afc6ed949b8efc704552abefddc268ddde6a"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "faf5f7e34dc89d540a9df21eb55a9ddc59f1dbdccfca990dc49854b0f3a4b1a3"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "c3754a38532fcf26d7eddce10eff37c2c9b5c84ca4ccb1c7d1b7ea7c485402ad"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "453063d510a36a86c58920104eabeb762126ee71b26a35e51b9646e10626e8d0"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "dbee94ac8390857eb0c3cbf262f2d5673065d5939110f1648529392d3eeee864"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "605b256075a5d7c3c5a9d29af3afeb6957ff5284db0c77ccaf6759c0472519ad"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "efa77daae33f9272aefb213af46873fb45dbc6598160d9589b81d4722226d061"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/vite.config.ts",
+    "before_sha256": "48b46b4daf85aa296fd8e39d6ab4747075fc4be1d0e4d3da3add53ff61f8cdc6",
+    "after_sha256": "df40a38f029797dba17ff193e9186c70a05d24e5fa7718a5e66479105bfbab62"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/App.module.css",
+    "before_sha256": "6d89e09f78bf73cd783667bbe24e83ac026f23ce332ea4a58b8b0b6317586613",
+    "after_sha256": "20be715453fae993b2ceadd807139f6972cfd8fa2f9caaac0c3ee07da9bf42ed"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/knexfile.ts",
+    "before_sha256": "f43d4c1086a6cf82ad7924c6addc3f49a7f40cbb84c3dc5021e99beaca893e50",
+    "after_sha256": "db736f9b9b177525261d8baf43f6dc22591f1b57cd805daf898b11c914738dbe"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/package.json",
+    "before_sha256": "475aa8fdbe1754b5348f5b56e99d7f6e632bf7ae5fa87931e85562381c260874",
+    "after_sha256": "e8b7aa321bee5e0c448668b449de14fe4274ca0813729bdcdb4ca00b0f818956"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/tsconfig.json",
+    "before_sha256": "f5eb74ac9002de2870ee5d82614d84dc3368c155712efd4783f64098f91b7382",
+    "after_sha256": "79edb6f8ef6375c438c6b0a782591827b05fa18451b8edf18d082492b0ba2c90"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/db/migrations/20260703150000_create_api_tester.ts",
+    "before_sha256": "16f33be82b8fce92f489939ebcf054155ed34ad62eb2f1eb9cc37a1d4697a63e",
+    "after_sha256": "2a8d4a98da4f020f8d1e9a4280fda6d4c299d66629fa978db6ec0d6a82a1d677"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/db/seeds/001_api_tester_seed.ts",
+    "before_sha256": "9f840d8b32a1551b4575506228e561ad0fe435d778984c4fb3bcda2d0cd0509d",
+    "after_sha256": "f245374ee8c42973f84235ad90a95c565b83cdf7d67f99e50bed7dcb34a4969e"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "6c9fd1737a74654b7c2d09067211431d2348c8d5c2eda3f6c858866c44a2dd51"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/app.ts",
+    "before_sha256": "9e0344a4c07bd6f8d8a6fba170845e98637d7d7f6ca0010371522681a393143d",
+    "after_sha256": "f8c33734e1988644e7bb59515a3f095c9caee056ff96dbdbe24eb33e59ebd109"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/server.ts",
+    "before_sha256": "3ddea0694e123ac24ef1d21cfc8ae49c37169900ca558b226f75c7a55eab6833",
+    "after_sha256": "72ab091b3efc083ccaabfe90b5c13e5ef70556b2e999f0d90125eb40270d06f2"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "0952fdd514cfc145edc3898fa7f358beeab2e4c17ccfd273c1a4199be8fc2a7b",
+    "after_sha256": "0e3f0a8868d0c4043dea792bffbe257a4099ab4401aaaa1c70db96fa7f516f5d"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "a789bd265bae66bd2a4f530bb94924d5491e2d93f5dac5adb0ef72f9b703ff7b",
+    "after_sha256": "812d3b26e27457684c5c0986a28dc90526ace9756aa33061ddfc0f44dd36f39c"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/collectionController.ts",
+    "before_sha256": "66c1ba6b4e7a87a4a6fa562d707d2910ace3bb97aa9c29dd2137fbc060b53adb",
+    "after_sha256": "1060d26c6014397f6889582821d83a3218ca54c809389356255c47bcdd7e79da"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/environmentController.ts",
+    "before_sha256": "5abac657ab31c1bddd44e3fc61a899c8acf3f017fc49907e9ab5a994ec8b02a2",
+    "after_sha256": "edf18ad433dc720ff5cbd9b8104a72d3fd584976e96e05bd4313394c37c0aa14"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/historyController.ts",
+    "before_sha256": "53bf6b0a6a2d2843a9677afa3a319987d04cb7d477fbc91a21199158d01b77e6",
+    "after_sha256": "974fdfccc496ad5a3503561e22a9dd8519a8cf6b84d8f5518337380556075673"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/proxyController.ts",
+    "before_sha256": "716190939dbbe8e1e0007e19368261e089b908a01103d8b83271d5e441e8aa84",
+    "after_sha256": "34a0223ef62303cca7505c8b4ad848687c96fffcb24023dd7e34f8d0042b1ff9"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "fb566562fca1d7379e4c44612e4b8dcd105d77d86012f4b46196e2fefca9be23",
+    "after_sha256": "665692e659387d7ee620e391265f18d5492e65765049034c31054387cc2c7f1b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "b6685b70b3b4afec08ace99b284a0fa75a214684830bcc09fee093e2f7bf97ad",
+    "after_sha256": "e626dcc96138c1f59119aed0bdd7b4ff9f12edc1b3591a665ecd6a88032c41ff"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/validate.ts",
+    "before_sha256": "436cc10548a6e872e5bee4324657064269d2dd1a1727115b5e2554ec5b076918",
+    "after_sha256": "66de2818ec2855a11b209b35d82aca78a1fde084ab6b6d4ec12a0c5fdf31f068"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/collectionModel.ts",
+    "before_sha256": "f50d50c30605b5e29f8395f35b02834d9df20982a1950912fb0c60df4b0b2561",
+    "after_sha256": "c52261a8974dfcc2430cb4737d8641260fbf48aeb0aea679c06dc433735c1285"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/environmentModel.ts",
+    "before_sha256": "53f63007e99e1639922e6482ea279e506890c6e8461f332270dda0b8a00e6bd8",
+    "after_sha256": "9ad19829f3e7b0480cd0291454ee67f8ab239ff390d0edfd1f1b7461e01c4de5"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/historyModel.ts",
+    "before_sha256": "5d4e2d58ee816e911f92f43f7e37eed602ebc4f8c1c83910c1ad1f773df5f605",
+    "after_sha256": "c0e2b5723a6a412f6de28ea93fd1092144782a70d507a9e61a6e17b3275cedf0"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/requestModel.ts",
+    "before_sha256": "489062c59c11b33328bc270bb01e54ba4d7b16df6095e16529fe4a117891118b",
+    "after_sha256": "adb845899e1aef572457729e1af5130168e883943acc5f3c90ff28332fcde043"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/routes/index.ts",
+    "before_sha256": "406d42f121d85a2a05a5257a477e6c2237a7e0c7e441ad5d357648f7fb6639be",
+    "after_sha256": "00cac4a0e053fe4916d7b8266d536acb5f3cd6e4bc95a6bd7b252e23be2b3311"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/collectionService.ts",
+    "before_sha256": "aaf2e15bc6b79b9c7d508ff333a91394d255d8c1cffd0a6b16301c171db39b77",
+    "after_sha256": "9c25a002f38d6e5edd764985e0d26e9b357103b5cea55374dc54a844cb5c1db9"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/environmentService.ts",
+    "before_sha256": "18b80ceca2be19d7ad51af6172289702c0f8cf35416e7b5f2520f9a11f8355b4",
+    "after_sha256": "721d26b37eee4f2ac4ba4df880530943faa9d553d57249af5796afc82a5632db"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/historyService.ts",
+    "before_sha256": "92561d28432cef13e5a5f63ff1241c928c71959bda3b1c195d6bfe360fe37f6d",
+    "after_sha256": "ed62cfa57b12f6eb376d7da48b2af23e0e1f63c2580c8d6f8c0a2e1096d20639"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/proxyService.ts",
+    "before_sha256": "097284a4136dd0d0fb3ca849a82b03e30c2517aabc56602710b8214c407544f2",
+    "after_sha256": "ea46e05d5be62dfd279025149a2729b9fd0f5f2557ad9991024e3f4a8b7cfeed"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/utils/interpolate.ts",
+    "before_sha256": "f0a4983a59e74ca4450eed9c22ed8044237115cfbfaa70e64e7c57cff44d9063",
+    "after_sha256": "c0be29fd0b6d3b2c6d93391d64cadc2fb60e41f5aa28bb38da1dff35dd98ba7b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/validators/schemas.ts",
+    "before_sha256": "e5a1ac0b218778afa0eb5c32a0bf006a6fb164a52ddb09c0b922157c485d9405",
+    "after_sha256": "14dce351d46ef21a002149e3a40c8509aee56fd3c521e6d0ac42e7695b15c5bb"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "test/environments.test.ts",
+    "before_sha256": null,
+    "after_sha256": "f31b43d98c78fdf865cc052738d5d31e63845cfca84ea278f1f1a1eeeaa0d7b9"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "3205e0fcf205bc89d82cd94466bb4de81dc54f8846b01bebe6f3d3edb419685e"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "README.md",
+    "before_sha256": "94628d021babcd638cd127b54c4e225961e41f77de7fce151aa481f996956193",
+    "after_sha256": "d7e82626fd5008ec404a995d327727e30f5fe8f9d299dc6d43fa72e633fd9748"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "bc160409bc2ec012d2908850e4b52f575b79740731ac95cf88c5abdf29269e7c"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "12207a76a870353298eb21bca69bdf891caf74f680e21503eaf3eab1892c6b95"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "a17dc2e54adbc2687a52149769565b4bc491509689167ab63499be3cf726d069"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "f20534e8be32ad95947dfcdfc9e3b9fad7aed9a378890890f0c4a4f4e4d3cdf9"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "fec864ef1730cafbf6b8a31e6c289648d34fb6b12992d82801a3c12830ab4965"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "e91f5ac850b7cccb41cedba8316d96d234f4d3b96043c02a06e45d9310d5d4b7"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "f5f49f8488d3fe493939ecba12c03670fb5270f789774b336b3ed10a633ff0cf"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "b7549c0d0d4f55223f99197849a49610250cb8568fef6a0fcef0ea2746cc99ca"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "310d2568d4f4c785c509af51fef0ee09ec01d69804b052df9b56e6cca2fd4c1f"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/package.json",
+    "before_sha256": "35957e8814fe7547f36e186c287fcc90f48245e58cb18816ed571c3d00c83bf8",
+    "after_sha256": "bd89d3502482b779d33c7d22a2efdc3ef2009260d2b8808251a4320fc7386885"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/App.module.css",
+    "before_sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a",
+    "after_sha256": "0b5d3cb49f2efdb8072dacf6423d4b4e29e7a6a2f16808af6518baa2d6486075"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/App.tsx",
+    "before_sha256": "f5212a562417f4b908cbf53fc1cc09895b02d4ea04d1b8d610f91a701ad96139",
+    "after_sha256": "c40394839b2aded8e8f43ab1846d3dc98ad00d2b34e01b4093abc406e23b54d3"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/package.json",
+    "before_sha256": "9210041f66dafcdf1329192a883b689886f1e6e8f90098a1c8bf4f9efe718d75",
+    "after_sha256": "c805aaf68f2149c99608eb11ae83551d5a581b4ac145f3d39db6cf70e0150431"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "d6376ee8891daaf023b226c7ed727e4d473c3aa479a4a911804a0153c9855c6a",
+    "after_sha256": "1f6dff111fcd397f4fea1d5352868fbd52c8ba27b05d8d09d0971dbfec5debd1"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "before_sha256": "522256cfc5727d580edb6eb4efc0d977e44a7d5733727b36a99bc33f634f5a89",
+    "after_sha256": "eaa416844d0a8e729619f6cbb0d4dd6208226329f2fbd55ddc4153fe4b9520ad"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/migrations/003_archive_status.ts",
+    "before_sha256": null,
+    "after_sha256": "0c553164dff210ab1da46df48bc7acad9b8da9f243fd9f6ea0016150dd90f687"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "ec4fbba731af925f01bc2dffda8a4a424db66be6fbcf15b6e1fa41cefc734473",
+    "after_sha256": "231d7e5810f04602c245abcb08bbb99608bd35b1594d3590b32c2622ff5defcb"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/app.ts",
+    "before_sha256": "1eb32e69d4e4827209d4d85c5eb599553a61a7fa1daeea3ccb0ecc8b541a0222",
+    "after_sha256": "0d75eefb913df777cad9c71fcb377a020c99dd9890ab38e2d8ab4aba383cdb90"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/server.ts",
+    "before_sha256": "48d714d867eaec429bb611191057f9f5fd0c9fc8c7d28058995350c841638494",
+    "after_sha256": "b999a814ebb1ce954fe38884129e94787a6f29b237a97ad4ba3acfaf87218363"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee",
+    "after_sha256": "131c9343eacc777c8434ab9861f0533c876c6d1fbb4028e2ec737c36f578f459"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "45cb443d86e61570c698a746cfbb6954de93434dbe73a47c3569c4fe62032d82",
+    "after_sha256": "e44c9876099c1ee7baa5a28e0aab784ebd7da155ee868f787ba3ce2aec12e826"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a",
+    "after_sha256": "98b8d684690582a459ad6b83e53f968a11e451055b62d8c27e8083a0896b5886"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497",
+    "after_sha256": "9e6240e764207d7157ad6b99489a5007eda3ff4c65634657fbb08a8bae0bd356"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f",
+    "after_sha256": "a76fab7d8e15c4f82af3bfd43b134bd751de68ce71514b9f1c7c213ad171be8e"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "0f992ea1b52bdd51926645d763db24181b14a370b882bba465ac39aa091f1ab4",
+    "after_sha256": "0581bfd61eea156aa6c5e543cb31f30e4ed925d558487a127396c17752a3a546"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b",
+    "after_sha256": "37b190549a320f372fe420884184a0bf14a4ba75d195631b6c7e5d3383d4299c"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "2a1fdd5a69dd4634f7d0154255734538f325d6c52f012542c46b8ef0fed711b4",
+    "after_sha256": "df5ff1f53e945e38591b5d520bca93c26e545990fd20eb6da49569edfd3922b6"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff",
+    "after_sha256": "39f73c1f4ab55e7a47dbfabc484d57dd0d5804a91b8a881f39e6f4399f8fc3ea"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "be131e69f2e59222a4bc8b61e1d124d60069f79c91986a991870e1fa6c4a94c7"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "2f3a0218a24c6ca8c037d46d31e63e8614b391d21d6432556a1f3fb306c1aecd"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "README.md",
+    "before_sha256": "120ecbc9c192e129b2ad3fbe38cf510c555fbce210f83641c3fc1527ea6fc710",
+    "after_sha256": "0a312ca657819847b474b688244cecadb995ace541922bf5c3595085161110b2"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "9505c0b1b887f8cab1a535d30d253c084d3ab8bfa7a469f920992f4c735ed1e3"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "a380b4f77a914980371358e9e597ebc88058dfb6bc84fc699bc5223743f8e21a"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "d51d59bc0241b2e16b30722ed64464eafc1b40d963f408515c2c528f1b3da187"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "43b62cd935dc8968af6672249fd720f7626f4e9596931627d7ba38d57997d365"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "8f1b618253f2b5b122ba47d0464914700e15e0e419b57e7acdcaf53b6e972821"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "c2f821972ebae4edf3c7e0b5caf000810ae5910e22414b8824346b8b5dbbd747"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "8c7aa47cb1484030cfb36e6301d03cd2b5b99481e5cee844c6b79da472c7e804"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "54d7629654b9e5e68bda99c1d56a8fc53afcb0a79fc797ada4d053f263a821c8"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "6243afe7c006cf10a2fc4896eb84a3a3bf84c6a552736def4bf79d2372a1194a"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/package.json",
+    "before_sha256": "0681b541d74ade2fb738d1c231c7d4317bc920610cb21a4d11bbc6116550a898",
+    "after_sha256": "420d9a9bd1cc692be94ee1d1851ac635e6753eac6e88d40491f872ee0afa03ca"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/App.module.css",
+    "before_sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a",
+    "after_sha256": "0b5d3cb49f2efdb8072dacf6423d4b4e29e7a6a2f16808af6518baa2d6486075"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/App.tsx",
+    "before_sha256": "ee94e20abfea3d1c0782df306294e1f03b1c0de2b368ee5c8cb8f0185f1f40d8",
+    "after_sha256": "8bcd2f49c96af4eea0b5a5306d56cf9c9b6594567b65edb01757fbad35db7fbc"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/package.json",
+    "before_sha256": "94e0b6aefdf0ac71b334fcdc0d2d08237588f7bbb57a2674e7cef2de171f9a49",
+    "after_sha256": "a3e41d1a9af3b6149ee8a90793e8d1b9ef5107055ebd5e6fc34bc903d79823e5"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "2aa64bad521890d782ce00e37902032af4e546f0adaa34fed3c5b1b59caee6e0",
+    "after_sha256": "600670173db0a3c2075abaaa45c6bf22c6a77d3c80f3306d0a0d7c003e6fc59c"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "before_sha256": "5d67f9bb0e7ed7aaf919a285df46b646b51c8ed1f5d989983c40ea87605fa30b",
+    "after_sha256": "0099645673d83390b86f27fa0df2fef804c9348b1f233237884234d7a237ee4a"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/migrations/003_archive_status.ts",
+    "before_sha256": null,
+    "after_sha256": "9389e77fa9cb608cfc6467731b1cb57fb8cd37b074dcc35117eac297260a7006"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "c06fba5c35d0df3edce25e23dfee27963b3bc07f71da3866ba231bb0abe6c11c",
+    "after_sha256": "55d30d5fe9e4812c616b5c86719486266031ba3dac5d209b3cd506222e0497e4"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/app.ts",
+    "before_sha256": "4a658a8fce409d441e69f7e928b625ff06377527f401f6f69c7cef016ac3b661",
+    "after_sha256": "29adcf55639100feca668ab96f1fe35e0946d046ace412ad7b1c94c96dcabc52"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/server.ts",
+    "before_sha256": "a2ebc9f2860a4cdd03889be3b197415e3813a951c34addfca0ba310d42155a0d",
+    "after_sha256": "7eeba4626aa0d0e2e2051cb00bf6f5a729c14d79e1ebccec71cc5048f54834fa"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee",
+    "after_sha256": "131c9343eacc777c8434ab9861f0533c876c6d1fbb4028e2ec737c36f578f459"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "7e293453aecc4e674c236af5d355865130e94249459df760fb3f176968d332a8",
+    "after_sha256": "64099574b6cfb53502d033bf90e4ac7c689769a4dc98fef5c77f460f15ec4fa7"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a",
+    "after_sha256": "98b8d684690582a459ad6b83e53f968a11e451055b62d8c27e8083a0896b5886"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497",
+    "after_sha256": "9e6240e764207d7157ad6b99489a5007eda3ff4c65634657fbb08a8bae0bd356"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f",
+    "after_sha256": "a76fab7d8e15c4f82af3bfd43b134bd751de68ce71514b9f1c7c213ad171be8e"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "287809ce88a175c86ada70f0007b5324f1a4274b136d4344e4d8d53908c9ba15",
+    "after_sha256": "1b92aaaf584b03e6837378db89b17dc10458e19c98b051ea4342d67d1357c691"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b",
+    "after_sha256": "37b190549a320f372fe420884184a0bf14a4ba75d195631b6c7e5d3383d4299c"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "ebf5e9b6a551dda8a359fb2d1ff9b1001733975920ec7a6ccb74fd2b04108346",
+    "after_sha256": "a93b662fadd3b332fcb3eb32c1436aa3dcab2ed21d6e18d413fd83835aada33f"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff",
+    "after_sha256": "39f73c1f4ab55e7a47dbfabc484d57dd0d5804a91b8a881f39e6f4399f8fc3ea"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "1a80dd0fa8241714cf92f0f94f130e8ac73d11ea2f879a9c9f45670ad2eb635d"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "860d3c040f056323f89bad6ace66ab59e7b04e74c16029de5f42877bb5f4e0ac"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "README.md",
+    "before_sha256": "e3110864ce0768c49128972fbbe3738cf0e9fbbcedbb55ae3a633998319b68c7",
+    "after_sha256": "7ec00fdf0bcdd92ae5efea0036d676fe56b389ce6fda904f329e460f61b2e54b"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "388b0edcd4cfef83060eab10c200ce1b0ee4a227e70fb481b58343352017c4bd"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "9f72f5ac869e4309f878764d18edbba4d622280bad4cd9920ab425eecebc82d5"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "bb6f1917b0f6a3b00e6c8245fad73d8fd20a2eb042958e703ca9da219b1398f6"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "7b658eb7e9fb6737deb382915bc53e8c0a2cfb9cc8cb4f012fc83888a14c30ec"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "f643fd4484c463fcfc3af2a8f580b242bd5f9670d7310d14b9fa624ecb7e135f"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "543c1270630452c25b336f71a8b6b8a3f1bf5a696bb6a35a34f488f00259ddb6"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "515b6133ae1221e98f81a07e51f1ae63551512e1e7f6f9be7c384bbf4587ed72"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "0f5a12ff6c991a02d68ab8a8fd8aae301769f8cad1f5b31b2b526df7fe890e63"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "68af9f6939fd24e525ed7ba48de3a64af8126c2e71f323997a84cc8b186e2f37"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/package.json",
+    "before_sha256": "9a2d9c8ac2c8b19a262bbdc543f31e6d27533d33afa6c3833233957d65eb7d11",
+    "after_sha256": "78c6e3c1a0b55a11a842a070a2532677b25e1acbc6a662ee40c9741d32b5c417"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/App.module.css",
+    "before_sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a",
+    "after_sha256": "0b5d3cb49f2efdb8072dacf6423d4b4e29e7a6a2f16808af6518baa2d6486075"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/App.tsx",
+    "before_sha256": "9a75600c5a010c86d6918ebb8b12f5ba29bcaa3dbeb6f250e3956776b3dfb780",
+    "after_sha256": "5748a8ae64aa3a24919bc2de5dd5831f6a2b173c4450cfff868e0af65a2c28a5"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/package.json",
+    "before_sha256": "3ed5a8da17f19df564d56f5aa765b2abd94aaf9b3da1f8b0782a35150dcb716c",
+    "after_sha256": "aea633c1372c66e4d75e1b50bbd70012277e751e85d9e71558de26c28e6d77ef"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "94947744e3f26f69664f51e1ebb3279c9ca3bc018f666179842b042fe1acc2e8",
+    "after_sha256": "4d5fc9c98d384b12115c5b7df3d1658bd3c5e47841392d0cd0cab579f8c2f7cc"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "before_sha256": "927466c2bd31001936699c6c74a8940c369b39e0229faa0603589feda10fd308",
+    "after_sha256": "ab91db2e2bcc814c1d2e3ef57941cc4138459d975fd1dc0ad856e90368720a80"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/migrations/003_archive_status.ts",
+    "before_sha256": null,
+    "after_sha256": "0787041445e79dc9f358e4485f6e53650d9d27ae4230a0d09a1bc49b5f934416"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "b4c618768dc54850e26dcd7ccd0be0bb1ab8d078893e966e1a5204f4918949e9",
+    "after_sha256": "3b99a771756d0d56472302140d58ba80de74f89f697814a038e69f71c6d9182e"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/app.ts",
+    "before_sha256": "8ce6abe0e802b4a1e47ab6a1a1cd8c5c69df2aa7a64263ac1b5fca8a5ea8257b",
+    "after_sha256": "f83fe0af6f888a8517fec5e22c1c2202014dae52cb2f5795a5dba32dd3153f03"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/server.ts",
+    "before_sha256": "16118f7988c52101a18c41fadd7d593b965dcf9a518bce2f5a6386ebcf1f7b5d",
+    "after_sha256": "6db9caa53622a3fe2437ab79df954ac2cf28ea4cec503e99d01d9d957ad41fd3"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee",
+    "after_sha256": "131c9343eacc777c8434ab9861f0533c876c6d1fbb4028e2ec737c36f578f459"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "becac1bbec470a2b9887534870a50310abecc24cd5d56f72f33e22a5452da523",
+    "after_sha256": "1b17c493e0efc9cc2158852da60366f14b9d2e5e44cbcc96bafcb84702df1c41"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a",
+    "after_sha256": "98b8d684690582a459ad6b83e53f968a11e451055b62d8c27e8083a0896b5886"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497",
+    "after_sha256": "9e6240e764207d7157ad6b99489a5007eda3ff4c65634657fbb08a8bae0bd356"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f",
+    "after_sha256": "a76fab7d8e15c4f82af3bfd43b134bd751de68ce71514b9f1c7c213ad171be8e"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "d96964359e8408bd7a9fc132de0ca04b5f43f40e46432c879c7a5f74cd0a96d7",
+    "after_sha256": "8f9eca31c127a9010b53f643f9d458b0c1f56d545c67a0940a8b093972e39f86"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b",
+    "after_sha256": "37b190549a320f372fe420884184a0bf14a4ba75d195631b6c7e5d3383d4299c"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "f05992f0c0d01a0eac7792002a5c75f3ad10c44d5b66c8de140e922649546f8b",
+    "after_sha256": "343acd1191e5293961bb1063e7c14ff7ac85bac089b798b9d2b9bf0a338c99bf"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff",
+    "after_sha256": "39f73c1f4ab55e7a47dbfabc484d57dd0d5804a91b8a881f39e6f4399f8fc3ea"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "ed2ed3e6191ac76d9be8e70eca2d3257b9ae5639ff6a32344578f6894cc717f9"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "87fafefea86182f72655c0ecf6cd12eb124cc67440220cc7ad4510cb1d042629"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "README.md",
+    "before_sha256": "8d6ea8f3ffd7ae61f654afad3c2b9a2cf1c15344a4b7df649cb9beab050812c6",
+    "after_sha256": "b8026f7ed88aa455659f285e1f5ca5822233317a015d63f3dffae2ec63aa5300"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "0a4fe49eb377d3086d356f4a5184a5c5ac5ac25284b7bb0123a1a93d7dbf7f90"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "0d5defddc9882c18e65947115ab7befe7011c2f82c3625310a052ad6ba78e45e"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "e00e80e0690e452254d76ab9abf96b2d70d7e8d454e72943fc9c1a72d7ffa8d4"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "c26698854aefc43298398ffc3440cfd2261c13d01d24fa0fdaaebcca2e3b1fed"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "5f9b6e45b0d200b85c073d6b01eff1d5d90cd7ed3114d39eeda1d4398752c983"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "a10487f920416258749d0c3c72c3e40dc503a37cce9d0ecb2951ea1eb568cf51"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "f1d6535b53f19f7e89b9ab760ff07279871d19285e4e5717fa1d5c80877f73a5"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "e2d309f5a364198f909b6fc2344ff586d6d02e4991ebddfa6a82e1a92e2d727a"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "f6642645ce03ceb448dc0799dee52097d5da1635be3a554b1b9f5dc61fa6efc5"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/package.json",
+    "before_sha256": "080cdfb15ef4c1e71a3415c8f32248feddd8225856ffa8da6b3580a0041a1896",
+    "after_sha256": "ef5acec2a4f467d40978db99d524a7d3947486a25207c44d23594c8300df881e"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/App.module.css",
+    "before_sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a",
+    "after_sha256": "0b5d3cb49f2efdb8072dacf6423d4b4e29e7a6a2f16808af6518baa2d6486075"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/App.tsx",
+    "before_sha256": "fad4aa007edcc97895eb8a62a69b40105f14b6752da2cf8cefa5ee4bfc1bba42",
+    "after_sha256": "1ef7c103a286a5b9eb1dabd73e4e7f7d35232fa680df0ca8bc60e3c23b413184"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/package.json",
+    "before_sha256": "ba0dc820f0318f6fcc767cf705dd75ddc04def23b56c485e4775a8c774c9c94b",
+    "after_sha256": "73ca8ada9b057f22499ab768e7215adc3a50c3483406674cd7828c01d17bf186"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "714246439a4bd8dba2d86e0939f9080daf0e399a71a6d236cfd25b49c1dcf0ee",
+    "after_sha256": "55c92690163497b6e256e1153183386e9108999768d34d15fc42477e20460bf4"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "before_sha256": "1deed9b8e8f212975995e609b13f18f3ebd661a9acb45878ddb8e99543fc5fcc",
+    "after_sha256": "6d1d69049cb56a400b1273bb04783015e0c03c19eaf96ad78dc5f8d736188526"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/migrations/003_archive_status.ts",
+    "before_sha256": null,
+    "after_sha256": "da0f8a8fa532e0ab54c643fccd63320d2f2bcbb68e993d8ee26852ee4a0dabd2"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "d77a1fe026f11b287f44016c70f499842751a0fe17497ccd1d9203c9d9c292cb",
+    "after_sha256": "4214b8d06e9d455a86d3b81abc652cdac75a0f8a7de3db2c724c028984bc8df6"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/app.ts",
+    "before_sha256": "57f7f9d39d433d0f432eda6c291de7b75d95a1b04dac7b65494cc6a656d7441c",
+    "after_sha256": "69a9545b3791264d3dd93cb5d10d165e336a5c697679f3341a5d888237d5bb54"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/server.ts",
+    "before_sha256": "c25e29ac6b8318872d7bfecc80d77795a8518a6936c43cacb7ad84232c9cdc1b",
+    "after_sha256": "78c48978bf6257c290ecdc9b767d7fc57841cbbcf0e93183c22349fee89d1ee6"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee",
+    "after_sha256": "131c9343eacc777c8434ab9861f0533c876c6d1fbb4028e2ec737c36f578f459"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "134a4b4e9e73151c8282f1f09de1faa63e898e6ec5d80b89d22a0a38a43d531c",
+    "after_sha256": "af347db406b45fb6f0b0703b20c7d6c4830ce23ff40c65fb3096199a4dd2ae67"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a",
+    "after_sha256": "98b8d684690582a459ad6b83e53f968a11e451055b62d8c27e8083a0896b5886"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497",
+    "after_sha256": "9e6240e764207d7157ad6b99489a5007eda3ff4c65634657fbb08a8bae0bd356"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f",
+    "after_sha256": "a76fab7d8e15c4f82af3bfd43b134bd751de68ce71514b9f1c7c213ad171be8e"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "2d46bc995cdd9e0c491ad6666de910b847412efc39896bde0f7b975e857af855",
+    "after_sha256": "be04ab1171ae955f95b4a9c430f4109cf0c4479aa54dc3d7823a0edb5feccfae"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b",
+    "after_sha256": "37b190549a320f372fe420884184a0bf14a4ba75d195631b6c7e5d3383d4299c"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "eec36cb3e7456640d273eeaa678b116ce3669401f1a5a004dc6d8404ae9c6cac",
+    "after_sha256": "44aea572f90cfdf5ffb404fa9f95b98b2845cb552cc83b40c806f981944615f7"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff",
+    "after_sha256": "39f73c1f4ab55e7a47dbfabc484d57dd0d5804a91b8a881f39e6f4399f8fc3ea"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "ee587bd78c48ff29aaf1c852aa5966165ade0c3024f0e1e9a3bf68ae7d116380"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "package.json",
+    "before_sha256": null,
+    "after_sha256": "5bb51fd66832de7f35a66229b631a009326ac667a344e277f2e65c2fac695006"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "README.md",
+    "before_sha256": "54d8f6e1660421b7a2b54b851c1f224f586f1c4c3e3e4e5d991e2219b4370912",
+    "after_sha256": "52e5b41d8bb91415ab24402d6851fe2277b6edfde4bb58433692b64261a5048f"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "ca8459704ecd80f5daf761b29ffb985211d030af5430373fdef337a6e9d4ab94"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "3a989816f9f066cd96dc6853427dda55c44942c72550e1ad4c1f30910e7a712d"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "7168ae1a6632ce0d4642e2844c5d1f98ccafa1b03814f2ee14bbe7b7c2232350"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "c2eb5db1984e4151c4b3a1aa5d8c29efc9e03f6b29392b899f9bb69aab1d18dd"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "b72dc06ddfb504e508fa9c003306002eeb8cf54534cae5171c680bde0a7183de"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "675f8126963fd2fbc4b8e8b74364c04518e0a20f903f136bac8d5e6dbeca0f00"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "b25025cc1a0ff690ece91ddd9a755769e67b2125184545bbd9e936489e0705bf"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "4aec05be47b502555daed0ddc60a08d30fcd43e820fef3c5099634037961e2ca"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "a6299d0783ba1e30e27160fee57320b282b654293657686817462c87e2aae8be"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/package.json",
+    "before_sha256": "3485d11f5bdd92f47d736a76acf11cd1d5238ad7389d91ce39a18bf6863a41ce",
+    "after_sha256": "ef15f6f55834aa894c702649ba624dde8f2e37aa831a5efdcca77afb105fe245"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/vite.config.ts",
+    "before_sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da",
+    "after_sha256": "e5e1b18937dc5996b5a1206aad5ecbd7a0bfe7da2ce14160446adb368a901ac6"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/App.module.css",
+    "before_sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a",
+    "after_sha256": "0b5d3cb49f2efdb8072dacf6423d4b4e29e7a6a2f16808af6518baa2d6486075"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/App.tsx",
+    "before_sha256": "c3ac45a7d51bc6327010400a9b0376a11830431d8d743de3b90a49c10daf8acd",
+    "after_sha256": "c93ea39ab3427d7ff47ab272908950a89372a04f59cbe5993b442f866534872f"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/knexfile.ts",
+    "before_sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806",
+    "after_sha256": "2c22297cd341c3c60606c7c945a21f5e089c07151a57a43aa60d9d85c8f94064"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/package.json",
+    "before_sha256": "d5f2efd55ee78e8ad33407cf7f3c89633ce15cd37514369821482d358fa7d65d",
+    "after_sha256": "7568826446bc2f8ab2390b404198b3a28a1a8dc0e86fe37090a001c197da3897"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/tsconfig.json",
+    "before_sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828",
+    "after_sha256": "c44bea2de85e0a8c608d25fbf522cca44004090afb6ba0b036cb917046d2e17d"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/migrations/001_init.ts",
+    "before_sha256": "5e016b161308246f02944a146c6138774a389641113d9262e5c72d9c3620fec5",
+    "after_sha256": "5711f7eb0f9328b410d830a9355519a1e2ce19cc5149a7001f163659e95a3e18"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "before_sha256": "5eec4847877d1ef48eedaa810909f4ebf0ae0a3936b1ffc6d086e4ed1f5b03ba",
+    "after_sha256": "5b3039c6b10ed43b58ffbe95d83a228754f070f4da1bbd0fc93d9b4f64c707b6"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/migrations/003_archive_status.ts",
+    "before_sha256": null,
+    "after_sha256": "21ec894884762806ff73160891af47da02287f9bd8052266a5ef8dd7f8ac2ce9"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/seeds/001_seed.ts",
+    "before_sha256": "98a9aeeef5a7752908ee0118349b8b741ebfce4f16336c17025365891a7f3bc2",
+    "after_sha256": "e8b0ba6b6f9ff68ad382a8b0adfc0c9bd79b509750a360bb2c7232a146824616"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/scripts/database.ts",
+    "before_sha256": null,
+    "after_sha256": "7d99b08ff67f4d4119f1c7492d23886d102eb1f38e8b8f233df8f9947ff5abbd"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/app.ts",
+    "before_sha256": "e71ef578ba349ca7b1cb3450feef32ebb793961242e31616d11598ce567bbcb6",
+    "after_sha256": "774a28752c019b5e13a92e75dfe6cc0ecf18a148131d545c003867fc53af8462"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/server.ts",
+    "before_sha256": "b0216859f83854ff189a9ec34141db359a2a9436f21fe9dc4e8d7967d3347649",
+    "after_sha256": "703728b0c38c084b21e5063c879cebcbd3d00317687a8c730da6541c227d1368"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/config/db.ts",
+    "before_sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee",
+    "after_sha256": "131c9343eacc777c8434ab9861f0533c876c6d1fbb4028e2ec737c36f578f459"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/config/env.ts",
+    "before_sha256": "74691ccf55d374f6870717c369795a2d6eb5412f5171c676a5787b97dabb05e4",
+    "after_sha256": "2f2b16ef55f90424193e075d434fc1f88f10e34a926e44bf3ebc3205e9d0cd0a"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/controllers/controller.ts",
+    "before_sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a",
+    "after_sha256": "98b8d684690582a459ad6b83e53f968a11e451055b62d8c27e8083a0896b5886"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "before_sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497",
+    "after_sha256": "9e6240e764207d7157ad6b99489a5007eda3ff4c65634657fbb08a8bae0bd356"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/middleware/requestContext.ts",
+    "before_sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f",
+    "after_sha256": "a76fab7d8e15c4f82af3bfd43b134bd751de68ce71514b9f1c7c213ad171be8e"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/models/model.ts",
+    "before_sha256": "c73e347b19e5b4d1a8eed36889e33ed00c788bb07c8c90eb4286cd83974b42cb",
+    "after_sha256": "02b72e42c689c37727e308233745bde8dcb896e79c11d69930947122118a7c50"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/routes/routes.ts",
+    "before_sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b",
+    "after_sha256": "37b190549a320f372fe420884184a0bf14a4ba75d195631b6c7e5d3383d4299c"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/services/service.ts",
+    "before_sha256": "3d083bfb0921b36609b07275abf0738d1992c4d1b9b43d094a0608dba1aa9826",
+    "after_sha256": "a6bf25a089acfaf53aa78a3bf20f52c8858b0593f3770872811624f9d121fcfe"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/utils/errors.ts",
+    "before_sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff",
+    "after_sha256": "39f73c1f4ab55e7a47dbfabc484d57dd0d5804a91b8a881f39e6f4399f8fc3ea"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "test/crud.test.ts",
+    "before_sha256": null,
+    "after_sha256": "f933bd907f136370fc45fdfe6224d487508efa1f2de2747f1a71939e4d84edce"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "test/database.ts",
+    "before_sha256": null,
+    "after_sha256": "3a028557ee8a935a65cffa60e366d2c5954e32a828faaa0d50cf4b379492748c"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "package.json",
+    "before_sha256": "5373e343fa33b8dc5ff7b1ec8f3fc4cbd4c72c661555cb61e7c8a6d9fedbfd69",
+    "after_sha256": "7c2d9902d62bd72ba036ef14f47c29ad829a50f8c9371c8204f70fbadf7235e6"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "README.md",
+    "before_sha256": "ee105caad5d4b54d44f8b79ecf9f090e0b56d3ef62fd2992edcbd097800f6cdf",
+    "after_sha256": "8c5f5d373e2bb65379021431a6498061073429e4fe7987fab0bbc10e7f6311ab"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "vite.config.ts",
+    "before_sha256": "cfe8009636b3dbfa90c96b7ec99acb5d1719d0aa1ac9291e73c1c7087fd305da",
+    "after_sha256": "32977091199069cafeb92c12238d9a6b9657c89f6d6c65daf4e591b74d6a3b04"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "e849d2dd95e23eca48aa1143335ebdf9fc784dba1f643eba72a406671b6b18ca"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "b01f7e96f3666c70032dc6e6c60da00ad8fd4c863f382f3a05cbe4ee54641c72"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "5829582108f66d0d3e72c816616c5d8beba572698a7d511aecfbfb139f27f72b"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "910db85450767adab75df65a3b7d861c173953b8fb5c691076a4c0f1454ebe63"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "d29f61247079e8235357a65b7e93c96b891009ea252fa084daa66b724075d06a"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "ede0b9d9e5b25ba3c71b24e41eb79f5d46b70d63954176f666d52105bd207d66"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "8473132adfbc9077acb46326ce2e7118243365f34ed5b156a4851cfbea302aaf"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "00fbf8e83252b094fca314daa3f541a96972befaeff5f9df526ea6930002dc14"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "a4835f55bca8e04b41f638670baf501d4992dce3f5c1c3258ac08a6134b218c3"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/index.ts",
+    "before_sha256": "600e3c947b6bc035c0d8b15fd88d981ca0768d0818b3b6ea2865afcf0fdbb2da",
+    "after_sha256": "66e57be15ad34f81167d1f29cc807237097ef058374516bb796fcb525cddd2ec"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "test/recipes.test.ts",
+    "before_sha256": null,
+    "after_sha256": "d0aa9b54b78171eec54420b705d45d4b07fa23f578baa1fdd355ef32aef128b8"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "README.md",
+    "before_sha256": "84dfa761f0db288d9e1acd9dd1ff50c526b14bbfa51462910b068cdcb8bbef18",
+    "after_sha256": "517d2706621a0fc87aba919812a5b0decfe562f1e039a87785ecb5ed18b41496"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "9525a96070e8db054c53032ec7a5ada0db4d3d8b86fb87cccf31832f39bd2098"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "7cc8e3ac0c4dfdd3f9f0682b0dfeb72b7974f7338c8db84d60629ec790ac2267"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "a39745a0aaa25edb0c700ffc3835446e9cd1d9892e2ea828291818da757cf245"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "29a4d9904ad456854291b871412e538a8f3c8a89cd6cd4bf9aacbe2c7720e204"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "30c746efb91ae987a4147f92ec8bc03f0d1ff1201b55587d3d0ea69bb36fd331"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "75a0ebd96457b73ce57d47205070160d18b394223c41d58ebbf9529ca80086a6"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "59606ee8db0cb4c43ed4d263f22c8affc73b32c441027787c11e3ebb029cde23"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "c6ca1e396a3c95eaa2041ba1abb815093b14c5b75d5ff09e9b1a5eac6c797da4"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "cde0551a97c953772c5afc2f2cfc9b2cbdf3f857cb64389e24f26e4c83f15d7e"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/backup.test.ts",
+    "before_sha256": "3de72e73c14eec5994bbaf5e17b8411157e79376f67909c52542ab35c66fb9d8",
+    "after_sha256": "8d955f89f2591a5f97f3b673745c6a341b8f2d26ee18a28c295721955ee243e8"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/backup.ts",
+    "before_sha256": "e6436342d8e7787568d6f15a6015fe46ae93fda2a7e436ad87144af2d19af7db",
+    "after_sha256": "59ad7aa3329c4bfb0117546c974b856bdf634b8c425ee1664ef67175b9561306"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/backupValidation.ts",
+    "before_sha256": null,
+    "after_sha256": "e631944b6990a8e72e65655739b9f214dc05518ee2f3f0970a64835d9464bb81"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "README.md",
+    "before_sha256": "ae72e70c7751665ac8faed221d8e906a45ee94908942a889e6bab20af8b7410a",
+    "after_sha256": "598deeb671845ee60776212a3fafe4cdf9d01a7e1f854f6bccf68128d856001e"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "50cb888a8b4fba6ca239ba7923695098995acb6db378555710a1417e0c4fe4fc"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "a21b6883c4f92db8a82005a942edb7f9e0489229f84a6812f78fd423ba0e07fa"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "2dd17d17d45668d9d8cf2e953fa7939d767a789802a80a6ca012ff062828579c"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "2d318571c237a1d779a6c645a259ef99d59b1fb6cb63696547459f2b47de394c"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "dbf3c3ea88e3a2827073f65cd3f7e0bc212db2472b2e1713dfbbdd400935b1e0"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "35ff42a330d66ce106541182d5c4f4d5072dbdc4e7e83cbda240e61f9bd12465"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "cb492b51837196b5bca61fb9250d573435ce1ceb505821bd64188481dbea69bf"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "c5c2df510be29a3393f6956ed296fc7038a1f6d5c6f3bc68d48bbfbd69619448"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "50986b3131168825ebf4f5e8ab422aa0679e4e69b31c73c3c75245a1761dd084"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/db.ts",
+    "before_sha256": "3481152da44fc814814387f197e624b0bf121e6698bd9a01952540c6c8fd3433",
+    "after_sha256": "170df83514d4ea71b326bc20c2452b274e3f3dc563b2e0970f623baec9e185ad"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/importValidation.test.ts",
+    "before_sha256": null,
+    "after_sha256": "b1aa1840c42ba9f97282b6505cea6d66a62ea5233e72eacd99f622c6611e2c84"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/importValidation.ts",
+    "before_sha256": null,
+    "after_sha256": "d5e2a0526a469a193e4ca2021395fa9c461009e13ee1c7f96fdd80259587a70b"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/code-quality.ts",
+    "before_sha256": "6cb2f16410e778d91267128302dda831d8682a372b03f0b364063af41d895179",
+    "after_sha256": "6ebc43d7188a2710cb1e0cdde097f0ee94758e78b98dedac02c26e5042670bfb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "package.json",
+    "before_sha256": "54a426d20724be3cf600c46ba197fc8e9fb837030be33691c2e616d12da89031",
+    "after_sha256": "267eb3f84e61a78b0e56fc0e425aa7525ed6feb1124f90b9044076bec0a978ca"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "README.md",
+    "before_sha256": "7e3c9875d87710d77c8a4ab47cd167fcf8ab027036e85bc038c3ab6c49bce7e3",
+    "after_sha256": "96f035bcc55373954e993cb261ad95ff9acaf348704316b05702441be0dd3967"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/01-CODEBASE-MAP.md",
+    "before_sha256": null,
+    "after_sha256": "0daf3efa1f8911f6f2de3a3aaf4d602dcb7a7aad8cd0b021988328cc04430db6"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/02-CONCEPTS.md",
+    "before_sha256": null,
+    "after_sha256": "fac3e8650217c802be6ba009e6cf5126a00f0c0d72eab44ec5cc3029a312c1d1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/03-WORKED-CHANGE.md",
+    "before_sha256": null,
+    "after_sha256": "fad7a558d182427b38c8f859289b23ad2ebbb371ebce648f7ce22b90998a33d7"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "before_sha256": null,
+    "after_sha256": "c1cfad614c3e2094e90b3c2e3a43f892da8320985f863983aadd54e3fd847dbc"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/05-PRACTICE.md",
+    "before_sha256": null,
+    "after_sha256": "2442cf9792aebc932124538a8b0ebd457338057b2489f6317dbce30c01790a7e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "before_sha256": null,
+    "after_sha256": "1dacce506a4e540c6133b3db89eac114948d451bed4d5516fdf9112f46df835d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/07-TRACE-LAB.md",
+    "before_sha256": null,
+    "after_sha256": "cc94eb9c4721ba339723024911589e0ae06e91c84d5d957ec2f870363ab86f3e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/README.md",
+    "before_sha256": null,
+    "after_sha256": "ac3dc6592a2d4ed1d24496295d8d12bc10a371939fd4050919a8ef14d7bb411e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "astraupskill/VERIFICATION.md",
+    "before_sha256": null,
+    "after_sha256": "8e44674e51b0382ce719ecb94c4798df2539a12a61e1da8b76b5050e3e2775e9"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/vite.config.js",
+    "before_sha256": "8a24aa9ac5bfb05fac98be59b702bed7ad684265217473112b800a63078f34c2",
+    "after_sha256": "a87e15f99a3e53be5361baead7e4813e96f84c090ad42d302f0cad926fe0f1ca"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/components/ProtectedRoute.jsx",
+    "before_sha256": "f7e05fe5d1d76481df7da29918d7484e65a113f3e0311b4aa7662e14cc2996a1",
+    "after_sha256": "b5553f1bd727f291a7be71f4a4289aa40b5c814ef435ac92b80686b3fb10099b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/LoginPage.jsx",
+    "before_sha256": "8fa13e34bed591b0b2b85fa5e7e38011b5d1be082e396e49c888d8573d0db241",
+    "after_sha256": "af477edacc561da0c13455de5d983f720992cec06920d08b3afc3136b59b9f4b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/RegisterPage.jsx",
+    "before_sha256": "7e4691e1659bc6b9dfae544c1108834a39e55d7cd0befb38c661b1e972e3abd7",
+    "after_sha256": "076802e578b5a04a3466dca7041abc432a1a2d146d3aa679ab5eedd48a2a6718"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/package.json",
+    "before_sha256": "6218e20551e72246a12b86f45bf8be93e2b0a0b25fd76a3559022325ca109d62",
+    "after_sha256": "c8edcf170f1fc0c84634a2f951f989dff9de2278d97a16e003f5a8a2256c002e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/db.js",
+    "before_sha256": "d292c76e1f38ddd8b67fb1fac724ee67004607a5e1891120ee77c416c5fad09c",
+    "after_sha256": "7e4a8530fb959941dd37783517e7126237e54bee22a9dae44d16fe4fa60249bf"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/server.js",
+    "before_sha256": "a8be502e6773a2ec4f1f8f989f0b90840b6288469627d4765b8f5fa3a255c0ef",
+    "after_sha256": "84877f5b262f59fb830dff7c26aeaa837f9fa3887d031ee916477fc49581467f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/validation.js",
+    "before_sha256": "36331462da21a9a27e1ef30e9b8d50d9667aaa5ab7aa9a412109f41e789979fe",
+    "after_sha256": "e2d7fe01ddf38a6fdfece77f596f663fcf0a39a725788804034a67d49d876ffa"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/routes/applications.js",
+    "before_sha256": "e9043d4feac779438fd9503f9e00e3c3b0f8ea70fcf84b04041244e3e0418a5d",
+    "after_sha256": "071f15c3dfd925c0edae2b55da0c43364ce6da14f29bb30841b63cfa3a215491"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "test/applications.test.js",
+    "before_sha256": null,
+    "after_sha256": "84e47a95d467b9d46c62df556cea28c1fc817a4a4549b1cf364e7a52999e4eb2"
+  }
+]

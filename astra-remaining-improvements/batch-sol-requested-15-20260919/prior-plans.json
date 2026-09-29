@@ -1,0 +1,282 @@
+[
+  {
+    "id": "p001",
+    "path": ".netarchitectureproject",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Upstream/starter reference; choose a bounded study or contribution task.",
+    "purpose": "Full Modular Monolith .NET application with Domain-Driven Design approach.",
+    "prerequisites": "Domain workflows, persistence, concurrency basics and operational debugging.",
+    "learning_focus": "DDD boundaries, domain events, modular monoliths",
+    "assessment": "Large upstream reference with source and tests. The old catalog's unfinished/authentication caveat misquotes a discussion of OTHER examples. Static review only; not built, tested or run.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": ".netarchitectureproject/modular-monolith-with-ddd/README.md",
+    "tasks": {
+      "learning_content": "Expand the orientation into a 30\u201360 minute walkthrough of the documented workflow and its state boundary: ordered source files, one input-to-state trace, a diagram and one independent change targeting DDD boundaries, domain events, modular monoliths. Label the sampled placeholder chapters; complete only the chapter required by this exercise.",
+      "project_improvement": "First scoped project change: Trace one meeting command across module boundaries and explain its transaction. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct. Keep the change inside one upstream module or starter example and document its conventions.",
+      "acceptance": "Demonstrate the selected behavior with one valid input and one meaningful invalid or failure case; verify the resulting state and explain the exact code path.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p216",
+    "path": "aral",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 7,
+    "disposition": "Optional specialization after the capstone and reliability stage.",
+    "purpose": "React PWA language-learning app with client-side SQLite, a progress-event log, and a thin synchronization backend.",
+    "prerequisites": "Reliable full-stack delivery plus the relevant specialization prerequisites.",
+    "learning_focus": "Offline SQLite, event logs, synchronization, shared schemas",
+    "assessment": "PWA/Capacitor monorepo with source and tests; sync service and mobile behavior unverified. Static review only; not built, tested or run.",
+    "guide_classification": "Plans, workflow, setup or reference only",
+    "guide_entrypoint": "aral/README.md",
+    "tasks": {
+      "learning_content": "Create a small codebase guide from implemented source: setup, ordered file map, one trace of local persistence, replay and conflict resolution, known stubs and one exercise targeting Offline SQLite, event logs, synchronization, shared schemas. Keep proposed architecture separate.",
+      "project_improvement": "First scoped project change: Trace one progress event from device storage to sync and rebuilt state. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Save a change, reload, and replay its sync/import; verify no loss or duplicate state and an explicit conflict outcome.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p217",
+    "path": "astra1",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "A persistent station and enterprise operations simulation for practicing AI-assisted engineering.",
+    "prerequisites": "Domain workflows, persistence, concurrency basics and operational debugging.",
+    "learning_focus": "Operational workflows, telemetry, durable jobs, failure recovery",
+    "assessment": "Broad operations simulation with app and test code; simulated providers remain simulations. Static review only; not built, tested or run.",
+    "guide_classification": "Structured tutorial / exercises",
+    "guide_entrypoint": "astra1/upskilling/README.md",
+    "tasks": {
+      "learning_content": "Add a worked \u2192 partially guided \u2192 independent exercise for the documented workflow and its state boundary; make learners predict state before running it. Teach Operational workflows, telemetry, durable jobs, failure recovery with a separate answer and rubric.",
+      "project_improvement": "First scoped project change: Finish one incident-to-remediation slice and explain failure recovery. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Demonstrate the selected behavior with one valid input and one meaningful invalid or failure case; verify the resulting state and explain the exact code path.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p223",
+    "path": "buildermentor",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 7,
+    "disposition": "Optional specialization after the capstone and reliability stage.",
+    "purpose": "A mastery-tracking study engine for junior software engineers leveling up to mid/senior and preparing for interviews.",
+    "prerequisites": "Reliable full-stack delivery plus the relevant specialization prerequisites.",
+    "learning_focus": "Retrieval pipelines, mastery models, full-stack source ingestion",
+    "assessment": "Substantial Fastify/React/PostgreSQL app; E2E material includes scaffolding and AI integrations require setup. Static review only; not built, tested or run.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": "buildermentor/README.md",
+    "tasks": {
+      "learning_content": "Expand the orientation into a 30\u201360 minute walkthrough of tool or retrieval boundaries and explicit failure behavior: ordered source files, one input-to-state trace, a diagram and one independent change targeting Retrieval pipelines, mastery models, full-stack source ingestion.",
+      "project_improvement": "First scoped project change: Use only after basic study habits work; trace one ingestion and retrieval path. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Use a fixed local fixture and mocked external responses; record expected output, an unavailable-tool case and a scored regression example.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p224",
+    "path": "buildevent",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "TypeScript monorepo for a ticketing platform with a Next.js frontend, Fastify API, Prisma/PostgreSQL data layer, Redis-backed jobs, Stripe checkout hooks, signed QR tickets, and mobile check-in.",
+    "prerequisites": "Domain workflows, persistence, concurrency basics and operational debugging.",
+    "learning_focus": "Ticket inventory, checkout hooks, queues, signed QR check-in",
+    "assessment": "Full-stack source with external service seams; only one cataloged test file, no integration runtime verification. Static review only; not built, tested or run.",
+    "guide_classification": "Codebase walkthrough / study pack",
+    "guide_entrypoint": "buildevent/docs/upskill/01-codebase-cartography/README.md",
+    "tasks": {
+      "learning_content": "Extend the existing walkthrough with a source-linked trace of stock ownership, checkout and order transitions, an expected-state example and a guided-to-independent change exercise. Tie it to Ticket inventory, checkout hooks, queues, signed QR check-in.",
+      "project_improvement": "First scoped project change: Test duplicate checkout and repeat check-in behavior. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Use a tiny stock fixture; verify one successful operation, one invalid transition and a repeated or competing mutation without inconsistent stock.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p225",
+    "path": "buildreviewer",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "A web-based code-review workspace for GitHub pull requests, inspired by ReviewFlow.",
+    "prerequisites": "Domain workflows, persistence, concurrency basics and operational debugging.",
+    "learning_focus": "GitHub APIs, local drafts, transactional publishing, review UX",
+    "assessment": "NestJS/React review workspace with tests; GitHub publication integration unverified. Static review only; not built, tested or run.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": "buildreviewer/README.md",
+    "tasks": {
+      "learning_content": "Expand the orientation into a 30\u201360 minute walkthrough of the documented workflow and its state boundary: ordered source files, one input-to-state trace, a diagram and one independent change targeting GitHub APIs, local drafts, transactional publishing, review UX.",
+      "project_improvement": "First scoped project change: Trace local draft persistence and implement a failed-publish recovery case. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Demonstrate the selected behavior with one valid input and one meaningful invalid or failure case; verify the resulting state and explain the exact code path.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p319",
+    "path": "gitjira-app",
+    "kind": "project/workspace/resource",
+    "section": 3,
+    "original_phase": 4,
+    "disposition": "Primary route candidate; complete this milestone before adding an alternative.",
+    "purpose": "A Jira-style issue tracker, built in public as a teaching codebase \u2014 15 sprints, each landing as one reviewed pull request full of learning artifacts. v1.0.0 .",
+    "prerequisites": "One local client app plus one API with persistence and basic tests.",
+    "learning_focus": "Full-stack issue tracking, auth, relational data, reviewable delivery",
+    "assessment": "Substantial Express/React teaching code and tests; README completion claim is not fresh runtime verification. Static review only; not built, tested or run.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": "gitjira-app/docs/ARCHITECTURE.md",
+    "tasks": {
+      "learning_content": "Extend ARCHITECTURE.md with one issue-transition reading route and a guided exercise followed by an independent variation; link the relevant sprint material from gitjira.",
+      "project_improvement": "Make one issue transition preserve project membership and reject stale writes, using the existing model and version mechanism where present.",
+      "acceptance": "A project member completes the transition, a nonmember is denied, and two stale competing updates cannot silently overwrite each other; the interface explains the rejected change.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p338",
+    "path": "globehire",
+    "kind": "project/workspace/resource",
+    "section": 4,
+    "original_phase": 5,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "GlobeHire is a fifteen-sprint C#/.NET teaching repository for a fictional global workforce and employer-of-record platform.",
+    "prerequisites": "A completed full-stack slice, SQL transactions, authorization and meaningful tests.",
+    "learning_focus": "Versioned rules, lifecycle changes, integration ports, API contracts",
+    "assessment": "Teaching system defaults to volatile in-memory storage and explicitly has no real authentication. Workforce rules are synthetic; curriculum completion does not mean deployable software. Static review only; not built, tested or run.",
+    "guide_classification": "Structured tutorial / exercises",
+    "guide_entrypoint": "globehire/README.md",
+    "tasks": {
+      "learning_content": "Add a worked \u2192 partially guided \u2192 independent exercise for employee lifecycle, approval and tenant scope; make learners predict state before running it. Teach Versioned rules, lifecycle changes, integration ports, API contracts with a separate answer and rubric.",
+      "project_improvement": "First scoped project change: After CampusOps, change one fictional country rule without breaking API contracts. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Use two fictional organizations; reject a cross-tenant or invalid lifecycle action and preserve the valid action\u2019s audit history.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p362",
+    "path": "mobiletagalog",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 7,
+    "disposition": "Optional specialization after the capstone and reliability stage.",
+    "purpose": "A Duolingo-style app teaching Tagalog to English speakers, built with React Native + Expo.",
+    "prerequisites": "Reliable full-stack delivery plus the relevant specialization prerequisites.",
+    "learning_focus": "Expo navigation, device SQLite, offline course content",
+    "assessment": "Standalone port from tagalog; optional backend, no recorded audio clips yet, and no cataloged test files. Static review only; not built, tested or run.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": "mobiletagalog/README.md",
+    "tasks": {
+      "learning_content": "Expand the orientation into a 30\u201360 minute walkthrough of local persistence, replay and conflict resolution: ordered source files, one input-to-state trace, a diagram and one independent change targeting Expo navigation, device SQLite, offline course content.",
+      "project_improvement": "First scoped project change: Test offline progress and one guest-to-account synchronization scenario. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Save a change, reload, and replay its sync/import; verify no loss or duplicate state and an explicit conflict outcome.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p363",
+    "path": "netairag",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 7,
+    "disposition": "Optional specialization after the capstone and reliability stage.",
+    "purpose": "IT-operations learning platform with a .NET/React foundation and planned RAG, agent, mock integration and evaluation extensions.",
+    "prerequisites": "Solid full-stack foundations plus architecture, concurrency, queues and observability basics.",
+    "learning_focus": "Layered .NET, RBAC, operational data, retrieval and evaluation design.",
+    "assessment": "Substantial .NET/React foundation and IT-operations CRUD; README and roadmap still reserve RAG, agents, MCP mocks and evaluation for future phases. Treat AI completion as unverified.",
+    "guide_classification": "Codebase walkthrough / study pack",
+    "guide_entrypoint": "netairag/docs2.0/01-codebase-cartography/README.md",
+    "tasks": {
+      "learning_content": "Extend the existing walkthrough with a source-linked trace of tool or retrieval boundaries and explicit failure behavior, an expected-state example and a guided-to-independent change exercise. Tie it to Layered .NET, RBAC, operational data, retrieval and evaluation design.. Label the sampled placeholder chapters; complete only the chapter required by this exercise.",
+      "project_improvement": "First scoped project change: Trace one ticket request through UI/API/persistence, then implement one documented retrieval slice with a small evaluation set. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Use a fixed local fixture and mocked external responses; record expected output, an unavailable-tool case and a scored regression example.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p367",
+    "path": "netdrop",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "Personal/team cloud storage built with .NET 8 Web API, EF Core, PostgreSQL, React, TypeScript, Vite, and TanStack Query.",
+    "prerequisites": "Completed transactional workflow app; understand auth, tests, deployment and failure handling.",
+    "learning_focus": "File metadata versus blobs, quotas, resumability, checksums, async processing.",
+    "assessment": "Substantial cloud-storage learning app with owner-scoped file service and upload/storage abstractions. README describes resumable chunks, content hashing and queued scans; scanning is explicitly simulated.",
+    "guide_classification": "Codebase walkthrough / study pack",
+    "guide_entrypoint": "netdrop/docs/upskill/01-codebase-cartography/README.md",
+    "tasks": {
+      "learning_content": "Extend the existing walkthrough with a source-linked trace of ownership, upload/finalization state and storage boundaries, an expected-state example and a guided-to-independent change exercise. Tie it to File metadata versus blobs, quotas, resumability, checksums, async processing.. Label the sampled placeholder chapters; complete only the chapter required by this exercise.",
+      "project_improvement": "First scoped project change: Trace an interrupted upload through resume, finalization and quota accounting; add failure/retry tests. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Try an unauthorized or expired operation and an interrupted retry; verify no orphaned committed state or double quota charge.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p372",
+    "path": "netopen3",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 6,
+    "disposition": "Upstream/starter reference; choose a bounded study or contribution task.",
+    "purpose": "Umbraco content management system and its administration interface.",
+    "prerequisites": "Completed transactional workflow app; understand auth, tests, deployment and failure handling.",
+    "learning_focus": "Large-repo navigation, extension architecture, management APIs, content caching and testing.",
+    "assessment": "Substantial upstream Umbraco CMS source with .NET Management API and TypeScript web-component backoffice. Earlier catalog Next.js/unknown label is misleading for the core product.",
+    "guide_classification": "Developer explanation / brief orientation",
+    "guide_entrypoint": "netopen3/Umbraco-CMS/src/Umbraco.Web.UI.Client/docs/architecture.md",
+    "tasks": {
+      "learning_content": "Expand the orientation into a 30\u201360 minute walkthrough of the documented workflow and its state boundary: ordered source files, one input-to-state trace, a diagram and one independent change targeting Large-repo navigation, extension architecture, management APIs, content caching and testing..",
+      "project_improvement": "First scoped project change: Select one management endpoint or backoffice component and trace its tests; scope a small contribution. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct. Keep the change inside one upstream module or starter example and document its conventions.",
+      "acceptance": "Demonstrate the selected behavior with one valid input and one meaningful invalid or failure case; verify the resulting state and explain the exact code path.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p373",
+    "path": "netopen5",
+    "kind": "project/workspace/resource",
+    "section": 5,
+    "original_phase": 7,
+    "disposition": "Upstream/starter reference; choose a bounded study or contribution task.",
+    "purpose": "Jellyfin The Free Software Media System",
+    "prerequisites": "Solid full-stack foundations plus architecture, concurrency, queues and observability basics.",
+    "learning_focus": "Media services, background libraries, API compatibility and large codebase maintenance.",
+    "assessment": "Local upstream Jellyfin server source with C# API controllers, database and media-domain modules. Treat as advanced source-reading/contribution material.",
+    "guide_classification": "Codebase walkthrough / study pack",
+    "guide_entrypoint": "netopen5/jellyfin/fabledocs/README.md",
+    "tasks": {
+      "learning_content": "Extend the existing walkthrough with a source-linked trace of the documented workflow and its state boundary, an expected-state example and a guided-to-independent change exercise. Tie it to Media services, background libraries, API compatibility and large codebase maintenance..",
+      "project_improvement": "First scoped project change: Trace one user/library request into service and storage boundaries, then choose a narrow tested fix. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct. Keep the change inside one upstream module or starter example and document its conventions.",
+      "acceptance": "Demonstrate the selected behavior with one valid input and one meaningful invalid or failure case; verify the resulting state and explain the exact code path.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  },
+  {
+    "id": "p386",
+    "path": "skillforgejs",
+    "kind": "project/workspace/resource",
+    "section": 4,
+    "original_phase": 5,
+    "disposition": "Alternative project; select for a measured skill gap, not as additional mandatory work.",
+    "purpose": "Skillforge is a web-first coding-skills learning platform built with Next.js App Router, TypeScript, Prisma/PostgreSQL, Auth.js, Tailwind, CodeMirror, server-side spaced repetition, and gamification.",
+    "prerequisites": "A working full-stack app with authentication, authorization, relational data and tests.",
+    "learning_focus": "App Router/server boundaries, Prisma, content schema validation, pure scheduling logic and tests.",
+    "assessment": "Substantial Next.js learning platform source with catalog server rendering, auth/data models, spaced-repetition modules, content validation and unit/E2E test configuration. Catalog content and runtime were not executed.",
+    "guide_classification": "Codebase walkthrough / study pack",
+    "guide_entrypoint": "skillforgejs/docs/upskill/01-codebase-cartography/README.md",
+    "tasks": {
+      "learning_content": "Extend the existing walkthrough with a source-linked trace of eligibility, progress and completion transitions, an expected-state example and a guided-to-independent change exercise. Tie it to App Router/server boundaries, Prisma, content schema validation, pure scheduling logic and tests..",
+      "project_improvement": "First scoped project change: Trace lesson completion into review state and add a deterministic scheduler/transaction test. Confirm the present behavior; implement the missing case, or strengthen its regression coverage if already correct.",
+      "acceptance": "Reject an ineligible completion; repeat a valid progress event and verify progress and any certificate/review state remain consistent.",
+      "finish": "After the scoped change works, update the guide with actual commands/results and a short before/after explanation. Reuse the repository\u2019s test tooling; do not migrate stacks just to standardize the collection."
+    }
+  }
+]

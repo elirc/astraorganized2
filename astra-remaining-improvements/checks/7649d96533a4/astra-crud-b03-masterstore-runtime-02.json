@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/MasterStore",
+  "id": "7649d96533a4",
+  "command": [
+    "--cwd",
+    "storefront",
+    "--",
+    "node",
+    "--experimental-strip-types",
+    "--experimental-loader",
+    "./tests/alias-loader.mjs",
+    "--test",
+    "./tests/listing-search-params.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7649d96533a4",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T01:36:56.503260+00:00",
+  "status": "launch-failed",
+  "log": "astra-crud-b03-masterstore-runtime-02.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-22T01:36:56.842407+00:00",
+  "elapsedSeconds": 0.34
+}

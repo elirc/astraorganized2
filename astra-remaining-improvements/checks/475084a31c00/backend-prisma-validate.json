@@ -1,0 +1,18 @@
+{
+  "project": "grokbuildppmproject",
+  "id": "475084a31c00",
+  "command": [
+    "npx",
+    "prisma",
+    "validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\475084a31c00\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:41:45.464733+00:00",
+  "status": "launch-failed",
+  "log": "backend-prisma-validate.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T19:41:45.484736+00:00",
+  "elapsedSeconds": 0.02
+}

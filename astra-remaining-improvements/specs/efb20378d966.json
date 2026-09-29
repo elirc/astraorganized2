@@ -1,0 +1,25 @@
+{
+  "summary": [
+    "Accept duplicate role intent by normalizing before count validation, membership replacement and audit; previously valid duplicate IDs were rejected with status 400.",
+    "Preserve cross-tenant rejection, empty-list clearing, transaction sequencing, and original persistence errors."
+  ],
+  "changedFiles": [
+    "server/src/services/userService.js",
+    "tests/runtime-role-duplicates.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/server-src-services-userService.js.before",
+    "astraupskill/evidence/crud-b03-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/efb20378d966/results-crud-b03.json"
+  },
+  "limits": [
+    "Runtime uses explicit repository, Prisma transaction, role lookup, audit, bcrypt, and pagination doubles through a local VM loader.",
+    "No live Prisma schema, HTTP integration, rollback, isolation, or concurrent request test was executed.",
+    "Only role replacement is normalized; user creation is unchanged. Role validation remains outside the transaction; the test checks shared transaction-handle wiring, not real isolation."
+  ],
+  "id": "efb20378d966",
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain1"
+}

@@ -1,0 +1,255 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master 6",
+  "id": "3e4e08e349a1",
+  "summary": [
+    "Scopes learner writes to authenticated organization membership, actor-owned enrollment and content belonging to the enrolled course version; selects the current published version for enrollment.",
+    "Validates stored completion rules and required lesson/quiz/assignment sets, rejecting missing learner rows while supporting explicitly empty requirements.",
+    "Groups learner mutations with transaction-client events/outbox writes, completion audit/certificate writes and a terminal replay guard; preserves progress timestamp semantics.",
+    "Orders workspace builds, adds13 actual learner-router cases alongside existing tests, and supplies nine detailed chapters with complete fixtures and portable evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3e4e08e349a1/results.json",
+    "expectedTests": 29
+  },
+  "testResults": {
+    "passed": true,
+    "total": 29,
+    "tests": 29,
+    "failed": 0,
+    "checks": [
+      "root-install-01",
+      "root-generate-01",
+      "root-luna-master6-domain-tests-final-02",
+      "root-luna-master6-api-tests-full-final-01",
+      "root-luna-master6-web-tests-final-01",
+      "root-luna-master6-worker-tests-final-01",
+      "root-luna-master6-typecheck-full-final-01",
+      "root-build-final-01"
+    ],
+    "scope": "15 actual domain cases plus14 API cases (13 production learner-router cases with Prisma/auth/event/audit spies, one app construction). Web/worker commands discover zero tests. Workspace typecheck and ordered production build pass; no live database/Redis/browser."
+  },
+  "courseWords": 5533,
+  "courseFiles": 9,
+  "courseLinksChecked": 31,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "3b0e1f58cbe0fd855bcd4b5007ffcbad1f80548db240684868ea01085165a1d5",
+      "after_sha256": "ed1642fefce881622db46fb7ea6ea541b565a96e2819c76718c3c32aeebe4882"
+    },
+    {
+      "file": "apps/api/src/audit.ts",
+      "before_sha256": "0051e835fcb8f76a77c3edc703e75e04d4d645dfeb919a461ba5cdc0f8fa3b47",
+      "after_sha256": "331793b6bc514557eca9a3a1f56e0b639144df799304318a3fe49ff424f625b2"
+    },
+    {
+      "file": "apps/api/src/events.ts",
+      "before_sha256": "96501413831578cb949cbec634f26bf09c19b7a1f68b072998d62d8da15eab9a",
+      "after_sha256": "d29a3a3622281cdd2e0d652af62923adc9ed6738e7bfd1b3e7c0f2f618687076"
+    },
+    {
+      "file": "apps/api/src/routes/learner.routes.ts",
+      "before_sha256": "594fa61e86c4e300a9a33aa9fbf6937c6b9bb3c8615b3fe49aff0d207b1d2dfc",
+      "after_sha256": "69fe970ff1901e7b670f46c59ae6ca3f6ee8db8a77aa35d7ed1d7b25ae04c67b"
+    },
+    {
+      "file": "packages/domain/src/completion.ts",
+      "before_sha256": "fd0c1a490d9f4636838532390f9fea9697efd7add4e09307df5509ffa701a01b",
+      "after_sha256": "faafeee40e39711006c52c4d157ee3be9d94b666498063fc5c823425dacd3fe2"
+    },
+    {
+      "file": "packages/domain/src/domain.test.ts",
+      "before_sha256": "12b7e88bb9b567772df39eab8b9855c02686b8e4e8c751ff0bbdc32b766d1209",
+      "after_sha256": "6dce4557731ca2e01f52c254928b56b7445c3eaeb91b6b1ca8e6e506728b45e3"
+    },
+    {
+      "file": "packages/domain/src/types.ts",
+      "before_sha256": "b455a75b3e6130b9575c8573e8f7f4695f00a3dad8183d38f4766a186232eaa8",
+      "after_sha256": "bcba20f38af8469ead6b105e4b6e85708b2c7ab5c6910d5694aa9c1b38a61035"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "d38d471ecc039fbee6a143543af14b0ebbfcef9d8f5bc0c45bf0e2f329e2eca8"
+    },
+    {
+      "file": "apps/api/src/routes/learner.routes.test.ts",
+      "before_sha256": null,
+      "after_sha256": "326a15863fefb6285dd84c2395005374af1a5a33828d63d151236e35a584e8c5"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__audit.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "0051e835fcb8f76a77c3edc703e75e04d4d645dfeb919a461ba5cdc0f8fa3b47"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__events.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "96501413831578cb949cbec634f26bf09c19b7a1f68b072998d62d8da15eab9a"
+    },
+    {
+      "file": "astraupskill/snapshots/completion-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "fd0c1a490d9f4636838532390f9fea9697efd7add4e09307df5509ffa701a01b"
+    },
+    {
+      "file": "astraupskill/snapshots/domain.test-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "12b7e88bb9b567772df39eab8b9855c02686b8e4e8c751ff0bbdc32b766d1209"
+    },
+    {
+      "file": "astraupskill/snapshots/learner.routes-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "594fa61e86c4e300a9a33aa9fbf6937c6b9bb3c8615b3fe49aff0d207b1d2dfc"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.before.txt",
+      "before_sha256": null,
+      "after_sha256": "3b0e1f58cbe0fd855bcd4b5007ffcbad1f80548db240684868ea01085165a1d5"
+    },
+    {
+      "file": "astraupskill/snapshots/types-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "b455a75b3e6130b9575c8573e8f7f4695f00a3dad8183d38f4766a186232eaa8"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "565b89f2b210e98215a36d959e32f66a1c0e8a3cc256f432033a6b522b2319f2"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "d8a5e89047eac4c7479383e76089d010f548438c695c3d1e04903adfc6a93bee"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "8a8bcd49df1ec0c5f06ef156fffa48a565ad0435876fea9a7fae8f5943ed6e93"
+    },
+    {
+      "file": "astraupskill/evidence/root-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "f66a2782f552526dab6abfb05c4b09444ed72a523b8dbaa7fb29a5e7e79c615d"
+    },
+    {
+      "file": "astraupskill/evidence/root-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "76468cadbf9732dec4426122ed4bb15aaa5e4fe6900ed2756888b73f99f1f320"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-01.json",
+      "before_sha256": null,
+      "after_sha256": "3b54d5deaa876322245a4b4e6341a850997dd656fd6306519400bc2a0882e112"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-01.log",
+      "before_sha256": null,
+      "after_sha256": "706bdf2922fb04e77ce3be3adf101d47047aa380c5044d328ca44269c3f812ff"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-api-tests-full-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "e3f7471779e501a2ca1ffb55b3348088923bfa9481ba995826a643e8ddce7309"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-api-tests-full-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "63d3c5e781aa5f9ef494346dfe019554eca6e12df737e5b97e5f5ebddc01586e"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-domain-tests-final-02.json",
+      "before_sha256": null,
+      "after_sha256": "9454db70e4449a94601d263f0480dd46a8428e9d60c10e0c3da150c769e40afa"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-domain-tests-final-02.log",
+      "before_sha256": null,
+      "after_sha256": "33585dac44139fbb8953eadf738967cfb1bd83cacec3c995717c51c012387a13"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-typecheck-full-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "2dc45697e0a2177ed38ac2a0fdcef7b0d473b4a65e172359852e1559393071a9"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-typecheck-full-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "437c2063691d1dd0efb5e7c1ef856a89de232801e6442013cff7063eaa62c6e8"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-web-tests-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "623cef8a6b13bbdd9334d171f7ea3e0e3b3db29006caf7d059c84d8ba9933893"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-web-tests-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "62a6a54146fa7ee70077f23cb7bc47dd6ba77dcbb9514678743a615d497de11a"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-worker-tests-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "3afd2153855afb911a30c3d59a415bfe2e8398d9053336b6a45c6014109ec4ef"
+    },
+    {
+      "file": "astraupskill/evidence/root-luna-master6-worker-tests-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "11d3ae1a28494d8871cd4980851d965d8be140220812ca1ba4788165591cec3a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "ca023d37edc7028c340efd7f5a0b54d618c577d7314cfc27230c3a451e003e03"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d0e5c7bc8e2037999cfe25ca2bac06e143d9dbd1d5b83a9741023762e077c02b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "024024628e664953b24c3618a898554f64e63584891bbd67b177cbeedae8aa34"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "04e1e0910f1cc12bb04c433468c5c63092506fff12bd5eed8b6b18aa21e1076a"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "acea7f2881b752a5165bb7d1e447528d83e107b473d9edc726053aabac77b11e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "461d21c02b662c5571e647d6aaacfc35d010efe0b8db0a4aa92b221b8803616e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "5ad8f019bea02f3907f15ad71ee9296f27f954db7cf65b8e2c1b59dfc7f3551f"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ec22db3f229f3b9db5033ea6534892ce25583843a90592ca2ebd91bff56b880f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c8bce17ec1e9d4b8427e4b73563ba4ea5dd4b2934be4dd2ddace2715da77e62a"
+    }
+  ],
+  "limits": [
+    "Prisma/auth/event/audit are mocked in route tests; no SQL rollback, database uniqueness race, JWT verification, Redis delivery or browser coverage.",
+    "Terminal guard preserves status/certificate, not byte-identical response shape; concurrent first completion and quiz count-plus-one remain unverified.",
+    "Certificate IDs have existing uniqueness constraints but no suffix-collision retry; artifactUrl does not generate a PDF.",
+    "Work remains editable after completion and completion is not restricted to ACTIVE status; development JWT fallback and unexpected error disclosure remain unchanged."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T00:34:37.951426+00:00"
+}

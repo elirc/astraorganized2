@@ -1,0 +1,28 @@
+{
+  "id": "fb1267045788",
+  "project": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+  "stage": "astra-remaining-improvements/stage/fb1267045788",
+  "finding": "Existing hn_threads rows caused scrape_latest_thread to return before refetching comments, so an interrupted first run could never repair missing listings.",
+  "changedFiles": [
+    "astra-remaining-improvements/stage/fb1267045788/backend/app/services/scraper.py",
+    "astra-remaining-improvements/stage/fb1267045788/supabase/schema.sql",
+    "astra-remaining-improvements/stage/fb1267045788/supabase/migrations/20260921_job_comment_unique.sql",
+    "astra-remaining-improvements/stage/fb1267045788/backend/tests/test_scraper_resume.py",
+    "astra-remaining-improvements/stage/fb1267045788/backend/tests/test_scraper_recovery.py",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/snapshots/backend/app/services/scraper.py",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/snapshots/supabase/schema.sql",
+    "astra-remaining-improvements/snapshots/fb1267045788/backend/app/services/scraper.py",
+    "astra-remaining-improvements/snapshots/fb1267045788/supabase/schema.sql",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/README.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/fb1267045788/astraupskill/VERIFICATION.md"
+  ],
+  "tests": "checks/fb1267045788/results-crud-b01.json",
+  "limits": ["No live external calls; Astra review and delivery remain pending."]
+}

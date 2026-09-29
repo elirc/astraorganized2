@@ -1,0 +1,28 @@
+{
+  "id": "7a758c622d3c",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww36",
+  "summary": [
+    "Prevent completion of active reservations at or after expiresAt",
+    "Keep release available as expired-hold cleanup",
+    "Add service regression coverage and CRUD upskill course"
+  ],
+  "changedFiles": [
+    "src/services/reservationService.ts",
+    "tests/reservation-service-transition.test.ts",
+    "tests/runtime-expiry.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-reservationService.ts.before",
+    "astraupskill/snapshots/tests-reservation-service-transition.test.ts.before",
+    "astraupskill/evidence/astra-crud-b01-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7a758c622d3c/results-crud-b01.json"
+  },
+  "limits": [
+    "Vitest command is unrun because npm registry tooling did not complete",
+    "Portable VM tests use explicit mocked repository/Prisma contracts and do not claim live PostgreSQL concurrency",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+  ]
+}

@@ -1,0 +1,3022 @@
+{
+ "results": {
+  "js1-task-board": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 308
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 37.3
+  },
+  "js1-contact-book": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 5,
+    "04": 1,
+    "06": 5,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 290
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 42.5
+  },
+  "js1-focus-timer": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 5,
+    "04": 1,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 352
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 35.7
+  },
+  "finance-dashboard": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 5,
+    "04": 1,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 356
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 38.3
+  },
+  "recipeweb": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 390
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 35.3
+  },
+  "jobtrack": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 448
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 38.3
+  },
+  "newcodexjs-01-task-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 129
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 47.1
+  },
+  "newcodexjs-02-contact-book": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 116
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 46.3
+  },
+  "newcodexjs-03-expense-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 141
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 46.7
+  },
+  "newcodexjs-05-recipe-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 160
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 45.4
+  },
+  "js1-flashcards": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 395
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 39.0
+  },
+  "js1-habit-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 1,
+    "words": 383
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 39.5
+  },
+  "js1-reading-list": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 409
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 45.1
+  },
+  "js1-note-vault": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 4,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 440
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 31.4
+  },
+  "js1-budget-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 432
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 38.0
+  },
+  "js1-pantry-inventory": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 397
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 38.5
+  },
+  "js1-snippet-vault": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 392
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 39.0
+  },
+  "js1-room-booking": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 2,
+    "06": 7,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 120
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 25.5
+  },
+  "newcodexjs-04-notes-app": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 135
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 34.2
+  },
+  "newcodexjs-06-bookmark-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 121
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 46.5
+  },
+  "js1-poll-studio": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 92
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 55.8
+  },
+  "js1-kanban-flow": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 113
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 56.2
+  },
+  "js1-course-roster": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 104
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 55.5
+  },
+  "js1-event-admin": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 99
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 60.5
+  },
+  "js1-job-pipeline": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 108
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 58.7
+  },
+  "js1-stock-catalog": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 115
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 57.3
+  },
+  "js1-recipe-studio": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 106
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 60.0
+  },
+  "js1-org-explorer": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 101
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 59.0
+  },
+  "js1-mini-blog": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 98
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 57.7
+  },
+  "js1-pulse-analytics": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 115
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 61.5
+  },
+  "js1-support-tickets": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 99
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 59.5
+  },
+  "js1-issue-desk": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 86
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 60.2
+  },
+  "js1-forum-search": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 85
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 60.0
+  },
+  "js1-invoice-studio": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 100
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 59.7
+  },
+  "js1-asset-checkout": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 104
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 71.0
+  },
+  "js1-equipment-maintenance": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 76
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 71.9
+  },
+  "js1-library-lending": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.8
+  },
+  "js1-gym-membership": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.8
+  },
+  "js1-campaign-planner": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.8
+  },
+  "js1-volunteer-coordinator": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 83.5
+  },
+  "js1-learning-paths": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 72
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 76.2
+  },
+  "js1-project-risks": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 61
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 72.9
+  },
+  "js1-travel-requests": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.0
+  },
+  "js1-vendor-contracts": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 81.3
+  },
+  "js1-procurement-portal": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 83.6
+  },
+  "js1-property-rentals": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.8
+  },
+  "js1-quality-audits": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.0
+  },
+  "js1-patient-intake": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.8
+  },
+  "js1-grant-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 82.0
+  },
+  "js1-incident-response": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 81.9
+  },
+  "js1-legal-case-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 185
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 61.1
+  },
+  "js1-subscription-billing": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 171
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 69.3
+  },
+  "js1-field-service": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 84.9
+  },
+  "js1-research-studies": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 84.9
+  },
+  "js1-warehouse-ledger": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 180
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 55.5
+  },
+  "js1-secure-notes": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 164
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 53.4
+  },
+  "js1-live-chat": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 181
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 52.0
+  },
+  "newcodexjs-07-blog-platform": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 151
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 73.6
+  },
+  "newcodexjs-08-kanban-board": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 89.4
+  },
+  "newcodexjs-09-job-application-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 87.2
+  },
+  "newcodexjs-10-inventory-management": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 87.2
+  },
+  "newcodexjs-11-survey-builder": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 155
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 52.7
+  },
+  "newcodexjs-12-chat-polling": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 152
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 51.6
+  },
+  "newcodexjs-13-ecommerce-storefront": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 158
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 53.1
+  },
+  "newcodexjs-14-appointment-booking": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 138
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 53.6
+  },
+  "newcodexjs-15-api-tester": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 156
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 51.6
+  },
+  "newcodexjs-16-team-project-management": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 150
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 67.3
+  },
+  "newcodexjs-17-support-ticket-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 79.3
+  },
+  "newcodexjs-18-learning-management-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 84.3
+  },
+  "newcodexjs-19-realtime-chat-platform": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 83.6
+  },
+  "newcodexjs-20-marketplace-platform": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 3,
+    "words": 114
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 84.3
+  },
+  "recipeview": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 148
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 44.8
+  },
+  "calendar-jobtrack": {
+   "leaked": [
+    "Questboard"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 122
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 43.3
+  },
+  "devdeck": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 134
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 51.1
+  },
+  "job-track": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 0,
+    "words": 124
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 42.7
+  },
+  "grokbuildmultitenantproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "netgum": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "j4": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildbusinesses": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildwhiteboard": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "master3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildjira": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 6,
+    "04": 4,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildsql": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "ww37": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 8,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 1.1
+  },
+  "j7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e15": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "job-track-task-queue-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "j2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "netzen": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "ww39": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 6,
+    "04": 5,
+    "06": 4,
+    "07": 7
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 157
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z3-founder-crm-lite": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "job-track-live-chat-support-platform": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "ww27": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 1.3
+  },
+  "jdtrrain2-1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z3-customer-feedback-board": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "formforge": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "meterforge": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 2,
+    "07": 4
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "master4": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "zz8": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 6,
+    "04": 1,
+    "06": 5,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 161
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "w24": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "master-6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "ww5": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-llm-generated-helper": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "grokbuildppmproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "master2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "ww17": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 1.7
+  },
+  "jstrain3-0": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "grokbuildteamproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "astra2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "lucasrouter": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "borrowbox": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 6,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildantigvg": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "jstrain2-3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildcrmpyjs": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 3,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e20": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 5,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "d1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "grokbuildecommerceproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildsmallplates": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "react": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildsubbox": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "nethris": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 4,
+    "06": 3,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e12": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e13": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "variations": {
+    "items": 3,
+    "words": 101
+   },
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z9": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "campusops": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 3,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "globgame": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 10,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "j1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "aiheartbeat": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 10,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "netvg": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-ramp": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildgum": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "master7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "nettrello": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "jsprojectlearn": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-stripe": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "astra4-2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "appmakertrack": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "grokbuildhrproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "e14": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 3,
+    "06": 2,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "andie": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "j3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "netpastebin": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 6,
+    "06": 6,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "b1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "j5": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "aiapplybot": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "buildasana": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 6,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "job-track-restaurant-kitchen-display-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 1,
+    "07": 3
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "grokbuildorderproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 11,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "missioncontrol": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  },
+  "z1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 5,
+    "04": 4,
+    "06": 7,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": true,
+   "shared_pct": 0.0
+  }
+ },
+ "fails": {
+  "shared>40": [
+   "js1-contact-book",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-reading-list",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "reviewpara": [
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-field-service",
+   "js1-research-studies",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform"
+  ],
+  "tracelab": [
+   "js1-field-service",
+   "js1-research-studies",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform"
+  ],
+  "leaked": [
+   "calendar-jobtrack"
+  ]
+ }
+}

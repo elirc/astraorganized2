@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "checks": [
+    "Published browser assets exactly match the final Vite build",
+    "Published package contains no application database or App_Data files",
+    "Backend, test and frontend dependency lock files exist"
+  ]
+}

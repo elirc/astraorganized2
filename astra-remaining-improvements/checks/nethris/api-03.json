@@ -1,0 +1,15 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Nethris.Tests/Nethris.Tests.csproj",
+    "--no-restore",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/nethris/api-03-results"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 151.05
+}

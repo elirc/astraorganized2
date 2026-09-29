@@ -1,0 +1,40 @@
+{
+  "id": "5bbaa8521f2b",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:19:50.469710+00:00",
+  "sourceReview": "Read knowledgeEntryService, real permissions and errors; source unchanged. Restore restricted to admin, equal statuses still write and audit, read precedes transaction.",
+  "teachingReview": "Rewrote all nine chapters with publishing decision matrix, prediction, late failure trace, separate practice and answers and explicit database limits.",
+  "testReview": "Six passing actual-service cases using real permissions/errors cover mapping, exact successful transaction client and audit payload, foreign/viewer denial, restore matrix, invalid/missing results, same-status write and late audit failure. No database rollback claim.",
+  "specSHA256": "4158bae61bb92ec3bac75ddf97f22a5a410f1bc19ba72a4c6f43d03705d0643a",
+  "fileHashes": {
+    "tests/knowledge-entry-service-runtime.test.mjs": "e9714a69de9d10f04688e35ec9fc2d046f5c29a864d3c9c424e40424fbee1d5c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/knowledgeEntryService.ts.original.txt": "409d0eb67a447fe3e41c5cacc0d0366c1312f95d757ef0145030cdd9cd573a4f",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "3e735f0438eb7aa7db154c23a2af803d37eba8fe317cbcea41dd773a1d8c35aa",
+    "astraupskill/evidence/results.json": "03b416d67b829baa43cdf7acdbf74ada49219b9d3ca644a430772c99eed41f2d",
+    "astraupskill/README.md": "b1b6dacf358fb95f2d2e89c1021c5fe1b61e3662bd65028af19665a584fad647",
+    "astraupskill/01-CODEBASE-MAP.md": "d7623d8bf297aa213ad15c039bc2894864e01aae014a04dc9e6f1556d6e1f10e",
+    "astraupskill/02-CONCEPTS.md": "a18b2620ca282c399fd7028675eafd16c217b58ff625b9cb28562e481a7918ae",
+    "astraupskill/03-WORKED-CHANGE.md": "87f5ffbd95a17c544dd7a205ad6b24f21be7b86f88e4acaef6e64a4898c6cc62",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "8e38d034b7eda8655862bbed708b34e9e96becacb075e72e9a272055fbca6dfa",
+    "astraupskill/05-PRACTICE.md": "2d75007894e4e41d165e461c95546c294d8349078fb4d39f9d582f2cd123e28d",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "868f6db7835d2e45c593ca62dcc4e83b8855d50a046439cff46ff8680bcf393a",
+    "astraupskill/07-TRACE-LAB.md": "d79d2a5d04fabe95cc2c7f06b5aafd83ed388f3656231dda22b00e624ad03e24",
+    "astraupskill/VERIFICATION.md": "4b0bb5fd63b356e73a86da574350ae6235c508535d9baf5d2d125589f89b564b"
+  },
+  "evidenceHashes": {
+    "checks/5bbaa8521f2b/crud-b06-astra-runtime.json": "5b8a72f6aa4bb5075dc178b36b2762bc1319faa184f8b6d52dfa4f476af84be6",
+    "checks/5bbaa8521f2b/crud-b06-astra-runtime.log": "3e735f0438eb7aa7db154c23a2af803d37eba8fe317cbcea41dd773a1d8c35aa",
+    "checks/5bbaa8521f2b/crud-ww45-policy-v2.json": "6b7ea5e79f589b2758a30ecbabe60375f10dd730470d729e8c5d131435067f83",
+    "checks/5bbaa8521f2b/crud-ww45-policy-v2.log": "2d655d8459e274240179d7ec381f1271715e7483e4fba76121084acc040020a4",
+    "checks/5bbaa8521f2b/crud-ww45-policy-v3.json": "8c22a969adfe4b053f8c367b04a459389ca382ecf398deb9e6c7a4547157dc13",
+    "checks/5bbaa8521f2b/crud-ww45-policy-v3.log": "f4f696eb9beb28a86e84ef9c69a1badddb017754701121793f581beba6b7b452",
+    "checks/5bbaa8521f2b/crud-ww45-policy.json": "cd7b415afa4d9baed373ef705eed787c8e4790120a18fb90385ec4d05fda1374",
+    "checks/5bbaa8521f2b/crud-ww45-policy.log": "787158a1fedc0290f7adc8ae6e0293cf2730433569f4f30c00e2c5cc40c47683",
+    "checks/5bbaa8521f2b/crud-ww45-runtime-v4.json": "b9f6e7b70477e489e115f854560edda2f580dc59b3964719e0d8d4f596115b0e",
+    "checks/5bbaa8521f2b/crud-ww45-runtime-v4.log": "92d8cf889244b819f4d172246753527f89ce0a2f9fca676f2cde1b9a6fd7022a",
+    "checks/5bbaa8521f2b/crud-ww45-runtime-v5.json": "83636c73cd12c056ba37e9c2911e383ceb8336f4dd1a336e6aa6b4ec6f15a717",
+    "checks/5bbaa8521f2b/crud-ww45-runtime-v5.log": "03b5eebf203a7b76548a1ec8a89f35ed3ae01285ceecd047599f7fdd28bbb636",
+    "checks/5bbaa8521f2b/results-crud-ww45-runtime-v5.json": "03b416d67b829baa43cdf7acdbf74ada49219b9d3ca644a430772c99eed41f2d"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww26",
+  "id": "971a7c784720",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-lock-coordinator-lab.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\971a7c784720",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:26:47.224028+00:00",
+  "status": "complete",
+  "log": "crud-b06-astra-runtime.log",
+  "pid": 15792,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:26:52.447210+00:00",
+  "elapsedSeconds": 5.22
+}

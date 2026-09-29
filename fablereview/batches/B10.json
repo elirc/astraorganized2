@@ -1,0 +1,242 @@
+[
+ {
+  "wave": 2,
+  "id": "5426644ec395",
+  "name": "borrowbox",
+  "rel": "borrowbox",
+  "status": "delivered",
+  "tests": 29,
+  "words": 4792,
+  "deliveredAt": "2026-09-12T23:01:52.881095+00:00",
+  "nfiles": 32,
+  "summary": [
+   "Reservation and checkout now validate candidate times before mutating equipment.",
+   "Return validates time and equipment state before changing loan state.",
+   "Cancellation and expiry check cooperating equipment state before reservation transitions.",
+   "Deterministic clock regressions preserve state on invalid and mismatched operations while retaining existing concurrency coverage."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\borrowbox",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet"
+  ],
+  "slug": "borrowbox",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/5426644ec395",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/5426644ec395.json (spec: specs/5426644ec395.json)",
+  "course": "borrowbox/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "8228fda84db1",
+  "name": "campusops",
+  "rel": "campusops",
+  "status": "delivered",
+  "tests": 42,
+  "words": 5587,
+  "deliveredAt": "2026-09-09T02:48:17.070606+00:00",
+  "nfiles": 19,
+  "summary": [
+   "Stock reservation and its history commit together through one shared store; concurrent requests cannot oversell or create ordinary partial writes.",
+   "Inventory reads and inserted objects are detached; duplicate IDs, cancelled writes, quantity overflow and missing-work-order reservations are rejected.",
+   "Inventory routes require the existing Operations policy; part Location links are readable and reservation history is exposed.",
+   "Development web proxy now matches the API launch profile on port 5110.",
+   "Nine detailed source-grounded learning documents explain ownership, transactions, contracts, failure tests, debugging, exercises and a request trace."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\campusops",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "campusops",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/8228fda84db1",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/8228fda84db1.json (spec: specs/8228fda84db1.json)",
+  "course": "campusops/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "a0a0ff059e64",
+  "name": "geminiorganized/OpenSource_Upskilling_.Ramp",
+  "rel": "geminiorganized/OpenSource_Upskilling_.Ramp",
+  "status": "delivered",
+  "tests": 10,
+  "words": 4973,
+  "deliveredAt": "2026-09-13T00:13:37.364921+00:00",
+  "nfiles": 52,
+  "summary": [
+   "Validates and normalizes expense candidates and evaluates policy before mutating stored entities; rejected updates, submissions and reasons leave state unchanged.",
+   "Coordinates current-entity lookup, deletion, expense commands and reimbursement completion with a shared per-expense gate.",
+   "Adds nonblocking bounded-queue admission and worker-only transitions; rejected/throwing queues and repeated reimbursement commands avoid false state changes.",
+   "Adds ten actual service/worker/queue regressions, frontend lockfile, passing backend/frontend builds and nine detailed learning guides with complete examples."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\geminiorganized\\OpenSource_Upskilling_.Ramp",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "react-jsx"
+  ],
+  "slug": "geminiorganized-opensource-upskilling-ramp",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/a0a0ff059e64",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/a0a0ff059e64.json (spec: specs/a0a0ff059e64.json)",
+  "course": "geminiorganized/OpenSource_Upskilling_.Ramp/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "af19f6e32dba",
+  "name": "geminiorganized/OpenSource_Upskilling_.Stripe",
+  "rel": "geminiorganized/OpenSource_Upskilling_.Stripe",
+  "status": "delivered",
+  "tests": null,
+  "words": 6818,
+  "deliveredAt": "2026-09-12T12:31:16.629048+00:00",
+  "nfiles": 275,
+  "summary": [
+   "Replaced volatile global state with durable SQLite workspaces, current-role authorization, revocable sessions, Owner/Operator/Viewer membership management, parameterized queries and protected cross-workspace relationships.",
+   "Completed customer/plan/coupon CRUD, archive rules, subscription cancellation and unused-record deletion, pre-invoice usage editing/deletion, invoice inspection/voiding, searchable paginated lists and responsive React forms.",
+   "Added strong ETag preconditions, preserved stale drafts and exact browser retries backed by transactional 24-hour receipts and atomic audit history; verified concurrent same-key requests and a response lost after commit.",
+   "Fixed money bounds and serialization, mixed-currency totals, anchored billing catch-up, atomic invoice/usage/subscription/outbox updates, payment-attempt identity, terminal payment protection and signed event deduplication. All payments and outgoing events remain explicit local simulations.",
+   "Fixed baseline builds, pinned and locked verified .NET/React dependencies, removed the shared default signing secret, added local run/check/package scripts, preserved 125 original text files, labeled 93 historical pages and added nine detailed CRUD learning guides. Verified 66 backend/HTTP tests, 15 real-browser workflows and three packaging checks, with reviewed desktop/narrow images."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\geminiorganized\\OpenSource_Upskilling_.Stripe",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "geminiorganized-opensource-upskilling-stripe",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/af19f6e32dba",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/af19f6e32dba.json (spec: specs/af19f6e32dba.json)",
+  "course": "geminiorganized/OpenSource_Upskilling_.Stripe/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "30ab5e29fedc",
+  "name": "meterforge",
+  "rel": "meterforge",
+  "status": "delivered",
+  "tests": 51,
+  "words": 7414,
+  "deliveredAt": "2026-09-09T02:07:11.417379+00:00",
+  "nfiles": 17,
+  "summary": [
+   "Atomic tenant-scoped usage ingestion returns the stored winner under competing retries.",
+   "Normalized same-payload retries return the original identity; changed-payload retries return HTTP 409 without mutation.",
+   "A tenant-scoped GET route makes POST Location readable.",
+   "Response-start middleware and Problem Details customization preserve matching request correlation identifiers on errors.",
+   "Nine detailed learning documents explain real source, concepts, worked changes, tests, debugging, exercises, solution reasoning and request traces."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\meterforge",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet"
+  ],
+  "slug": "meterforge",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/30ab5e29fedc",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/30ab5e29fedc.json (spec: specs/30ab5e29fedc.json)",
+  "course": "meterforge/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "ee8b0b1a6855",
+  "name": "missioncontrol",
+  "rel": "missioncontrol",
+  "status": "delivered",
+  "tests": 139,
+  "words": 5136,
+  "deliveredAt": "2026-09-12T19:35:52.937140+00:00",
+  "nfiles": 35,
+  "summary": [
+   "Task updates reject blank titles and validate project visibility within the current workspace before mutating tracked task state.",
+   "Task creation and project reassignment allocate project ticket numbers inside an EF-owned serializable SQLite transaction; task/activity writes commit before event publication.",
+   "Prevalidation and metadata serialization prevent rejected updates from contaminating later valid saves in the same scoped service; regression tests cover recovery and mixed concurrent create/move allocation.",
+   "Add a forward EF migration for thirteen existing platform entities omitted from the original model snapshot, allowing the test API host to apply the complete schema without suppressing pending-model checks.",
+   "Isolate the two lifecycle scenarios in disposable test hosts, disable parallel API tests that share process environment, correct the security-scan route, and provide an explicit scheduler opt-out.",
+   "A nine-file learning course explains actual request paths, EF tracking versus database transactions, worked examples, debugging, progressive exercises and their solutions; original source snapshots and verification evidence are included."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\missioncontrol",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet"
+  ],
+  "slug": "missioncontrol",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/ee8b0b1a6855",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/ee8b0b1a6855.json (spec: specs/ee8b0b1a6855.json)",
+  "course": "missioncontrol/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "3e4e08e349a1",
+  "name": "_Organized Desktop/03 Master Projects/master 6",
+  "rel": "_Organized Desktop/03 Master Projects/master 6",
+  "status": "delivered",
+  "tests": 29,
+  "words": 5533,
+  "deliveredAt": "2026-09-13T00:34:37.951426+00:00",
+  "nfiles": 42,
+  "summary": [
+   "Scopes learner writes to authenticated organization membership, actor-owned enrollment and content belonging to the enrolled course version; selects the current published version for enrollment.",
+   "Validates stored completion rules and required lesson/quiz/assignment sets, rejecting missing learner rows while supporting explicitly empty requirements.",
+   "Groups learner mutations with transaction-client events/outbox writes, completion audit/certificate writes and a terminal replay guard; preserves progress timestamp semantics.",
+   "Orders workspace builds, adds13 actual learner-router cases alongside existing tests, and supplies nine detailed chapters with complete fixtures and portable evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master 6",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "master-6",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/3e4e08e349a1",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/3e4e08e349a1.json (spec: specs/3e4e08e349a1.json)",
+  "course": "_Organized Desktop/03 Master Projects/master 6/astraupskill",
+  "batch": "B10"
+ },
+ {
+  "wave": 2,
+  "id": "58c5c289a8ce",
+  "name": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+  "rel": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+  "status": "delivered",
+  "tests": null,
+  "words": 7441,
+  "deliveredAt": "2026-09-12T10:45:14.740567+00:00",
+  "nfiles": 125,
+  "summary": [
+   "Reworked the existing Next/SQLite knowledge workspace with explicit owner setup/adoption, loopback request boundaries, bearer authorization, strict relational JSON validation and atomic revision-checked writes.",
+   "Integrated accepted-state save status, generation-aware autosave, independent retained drafts for each editing session, explicit saved-draft recovery and three-way conflict review; cross-tab notices no longer overwrite drafts.",
+   "Improved page/subtree, block and comment CRUD; typed database records, property cleanup, filters/sorts and usable table/board/calendar/list/gallery views; authenticated exports and fenced-code Markdown import.",
+   "Added paginated snapshot inspection, restore and deletion; restored content preserves current hierarchy and visibility labels. Updated Next and its lint package to 16.3.3 and removed seven unused direct dependencies.",
+   "Added nine detailed junior-to-mid-level CRUD learning guides with worked examples, source traces, failure labs, exercises and review outlines; preserved 46 original text files and marked older learning notes as historical. Verified 97 Node tests and 25 browser/HTTP/setup workflow groups, plus build and lint."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\jstrain2.3",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node"
+  ],
+  "slug": "jstrain2-3",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/58c5c289a8ce",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/58c5c289a8ce.json (spec: specs/58c5c289a8ce.json)",
+  "course": "_Organized Desktop/04 JavaScript Training/jstrain2.3/astraupskill",
+  "batch": "B10"
+ }
+]

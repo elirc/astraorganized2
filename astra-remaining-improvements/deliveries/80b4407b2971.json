@@ -1,0 +1,175 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z9",
+  "id": "80b4407b2971",
+  "summary": [
+    "Use expiring opaque server-side sessions.",
+    "Enforce client membership before dashboard aggregation.",
+    "Keep bearer tokens out of login JSON responses with an actual route regression."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/80b4407b2971/results.json",
+    "expectedSuites": 0,
+    "expectedTests": 15
+  },
+  "testResults": {
+    "passed": true,
+    "total": 15,
+    "passedTests": 15,
+    "failed": 0,
+    "notExecuted": 0,
+    "evidence": [
+      "z9_unit_13.json",
+      "z9_typecheck_6.json",
+      "z9_lint_4.json",
+      "z9_build_3.json"
+    ]
+  },
+  "courseWords": 4010,
+  "courseFiles": 9,
+  "courseLinksChecked": 27,
+  "files": [
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "after_sha256": "5d1f14635c6d8e0e4dd0696f163960799974d207496e04090c0d8e5a9a330586"
+    },
+    {
+      "file": "src/app/api/dashboard/overview/route.ts",
+      "before_sha256": "fae4d0b3abc69ffdf5a0b096b760853e051f0ceedc2e08ab0681dc150223f65d",
+      "after_sha256": "9e7d58686ae1a8e089fcb49bc096111400bdbbf30a4d00b5a2ffbb8eac6894c5"
+    },
+    {
+      "file": "src/lib/auth/permissions.ts",
+      "before_sha256": "9904fd0a63a697d437a5e88591d9fd61bd39148a6fe982314cc36c5a36b445c3",
+      "after_sha256": "cae6932d9e556f4a26ea35f059609cb8e6d7c5cd6b4d8647b312c7e74245227b"
+    },
+    {
+      "file": "src/lib/auth/session.ts",
+      "before_sha256": "1babd044ced7197d620d64c299d88891e40d996377647cd45d92bfcfaecfd2b9",
+      "after_sha256": "8a6bcb5ea6648e53a9f2b400f18a35eb4d707fa142aa03d48daa487a30594ef4"
+    },
+    {
+      "file": "src/modules/auth/service.ts",
+      "before_sha256": "1033433c6b10d3236720175e9b08363431ef7bb5e6de9a3b646e120371b4e58d",
+      "after_sha256": "34f1b23a366df98cd38997731ab12eec8e1ebde5a0f30f220d1aa5f5a591e81b"
+    },
+    {
+      "file": "src/modules/dashboard/service.ts",
+      "before_sha256": "9f06233971f2933b27a4f0e40e46c8d405641e70e0d9948a515dbca1ff67d706",
+      "after_sha256": "49dbb8baa50ba3c4ba6987efaf10f0bf4069e29493d4f42d6c6c63bce7029865"
+    },
+    {
+      "file": "tests/integration/dashboard-overview.test.ts",
+      "before_sha256": "79e87eea34122f6bd789cd2e39dd611711ce11c0dfc948bb0df5e1a8e875d9d6",
+      "after_sha256": "e8e999c1617db354f613c83685e6c12b2a1a331106d72e2a160bd4485d766b17"
+    },
+    {
+      "file": "tests/integration/auth-login-route.test.ts",
+      "before_sha256": null,
+      "after_sha256": "f092db69213ddbb240b7f6987b06dce25bdac5641a1c4ff1b1d49dcf96a47952"
+    },
+    {
+      "file": "tests/integration/dashboard-route.test.ts",
+      "before_sha256": null,
+      "after_sha256": "d7036577d17e7edd45f03a7c4a289c27b03d599e3fcd5af78acb171421a85970"
+    },
+    {
+      "file": "tests/unit/permissions.test.ts",
+      "before_sha256": "172006cb9bf040925d9867c34bb30d6e89c69ff7a399c8700dcee9d9c9945033",
+      "after_sha256": "5dc5de66317de25f8287436c96a1122cc5183fba61541dbfd4b01770fed52146"
+    },
+    {
+      "file": "tests/unit/session.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8c63afd882e878c6ede0c173287af445969577972599d474409e9273f8b783ed"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__auth__session.ts.original",
+      "before_sha256": null,
+      "after_sha256": "1babd044ced7197d620d64c299d88891e40d996377647cd45d92bfcfaecfd2b9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__auth__permissions.ts.original",
+      "before_sha256": null,
+      "after_sha256": "9904fd0a63a697d437a5e88591d9fd61bd39148a6fe982314cc36c5a36b445c3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__modules__dashboard__service.ts.original",
+      "before_sha256": null,
+      "after_sha256": "9f06233971f2933b27a4f0e40e46c8d405641e70e0d9948a515dbca1ff67d706"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__dashboard__overview__route.ts.original",
+      "before_sha256": null,
+      "after_sha256": "fae4d0b3abc69ffdf5a0b096b760853e051f0ceedc2e08ab0681dc150223f65d"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__unit__permissions.test.ts.original",
+      "before_sha256": null,
+      "after_sha256": "172006cb9bf040925d9867c34bb30d6e89c69ff7a399c8700dcee9d9c9945033"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__unit__auth-repository.test.ts.original",
+      "before_sha256": null,
+      "after_sha256": "1c2ba812652263854f8311f7fd7a078908d0294b7f3535d849ac2f8b92e86390"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__integration__dashboard-overview.test.ts.original",
+      "before_sha256": null,
+      "after_sha256": "79e87eea34122f6bd789cd2e39dd611711ce11c0dfc948bb0df5e1a8e875d9d6"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a285b780ef9305e49badf075282995cd2c47a12f98c762bcd6c7a9151cda10d3"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "4a161d8107a643b2204c170318998689479dfb5a2351c160b2fcb5eee358f471"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "43e55a926c7df3e8751d0753fc52da8e6ba87a0058dd9827c76fd797f1c8e847"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "a2ae9095bbc8e94f9b7ec688eed23c55557a9f2949f26aebd5dd0ce0f3831c07"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "fb5354776d50c6d0750487c3b4959b32e2a71a2011ff56a0aba65fe61d40b25c"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "77f5d5f90128cbc4f909c32defee384971c8d561d505abf97958b414f7c91f6e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9c9db53fcabd8c8279860a21ad31ed86a8584322d6be7bff9462bb913cf193e0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "45296cab872ef964830f8353f5f05c2ec399aebc0f1dfdfc5e9b4821972fe739"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "24a2693bc9f94b5b5b6efb9c4855831124caf80cba4452c97f92d723081c4c39"
+    }
+  ],
+  "limits": [
+    "Demo sessions are process-local and are lost on restart; use a shared durable session store for multi-instance production deployment.",
+    "Demo passwords remain plaintext fixtures for learning mode and must be replaced with password hashing in production.",
+    "Client dashboard time totals are explicitly redacted because CLIENT lacks time.read."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T15:50:56.066035+00:00"
+}

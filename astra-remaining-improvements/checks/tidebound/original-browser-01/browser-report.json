@@ -1,0 +1,22 @@
+{
+  "checks": [
+    "New game renders an interactive WebGL world and working initial settlement",
+    "Cottage placement on the 3D island consumes materials and adds residents",
+    "Farm placement, inspection and production pause/resume work",
+    "Research spends knowledge and unlocks a functional sawmill",
+    "NPC market screen buys and sells home-harbor goods with correct accounting",
+    "Two-way cargo route creation and pause/resume work through the interface",
+    "Exploration reveals new land and settlement correctly requires navigation",
+    "Manual saves, automatic reload and audio/motion settings survive reload",
+    "Export and import restore game state; malformed imports leave the active voyage intact",
+    "Keyboard pause/resume and in-game help work",
+    "390px mobile layout fits, and management screens remain usable",
+    "New-voyage confirmation can be cancelled; a new seed preserves the manual save",
+    "Standalone production build journal renders, filters tasks and exposes evidence"
+  ],
+  "errors": [],
+  "performanceLabel": "TIDEBOUND · v1.0\n49 FPS · 7 islands · 11 buildings\nBuild progress",
+  "browser": "152.0.7977.76",
+  "viewport": "1440x1000 desktop / 390x844 mobile",
+  "date": "2026-09-12T15:00:22.839Z"
+}

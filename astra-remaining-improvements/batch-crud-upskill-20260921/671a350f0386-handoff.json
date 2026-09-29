@@ -1,0 +1,30 @@
+﻿{
+    "id":  "671a350f0386",
+    "files":  [
+                  "src/services/workflow-definition-service.ts",
+                  "tests/runtime-workflow-same-status.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src-services-workflow-definition-service.ts.before",
+                  "astraupskill/evidence/671a350f0386-runtime-workflow-same-status.tap.txt",
+                  "astraupskill/README.md",
+                  "astraupskill/01-CODEBASE-MAP.md",
+                  "astraupskill/02-CONCEPTS.md",
+                  "astraupskill/03-WORKED-CHANGE.md",
+                  "astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "astraupskill/05-PRACTICE.md",
+                  "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "astraupskill/07-TRACE-LAB.md",
+                  "astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "Equal workflow statuses were accepted by the state machine but still mutated and audited as status changes.",
+                     "Service now returns authorized equal state before persistence/audit while retaining real transition and invalid-state behavior."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-workflow-same-status.test.mjs: 3 passed"
+              ],
+    "limitations":  [
+                        "Actual service with explicit doubles; no live HTTP, Prisma, scheduler, or concurrency."
+                    ],
+    "project":  "ww7"
+}

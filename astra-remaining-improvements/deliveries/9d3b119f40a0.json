@@ -1,0 +1,238 @@
+{
+  "project": "skillforgejs",
+  "id": "9d3b119f40a0",
+  "summary": [
+    "Made completion, review seeding, XP, quests, achievements and progress one transaction with a unique completion gate.",
+    "Propagated transaction clients and one captured time through nested award helpers, with selective bounded SQLite contention retries.",
+    "Added guarded temporary-SQLite regressions and nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9d3b119f40a0/sol15-results.json",
+    "expectedTests": 28,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 28,
+    "passedTests": 28,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "skillforgejs",
+        "id": "9d3b119f40a0",
+        "command": [
+          "node",
+          "scripts/test-completion-local.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9d3b119f40a0",
+        "environmentOverrides": {
+          "RUST_LOG": "info"
+        },
+        "startedAt": "2026-09-20T21:53:01.060126+00:00",
+        "status": "complete",
+        "log": "astra-skillforge-completion-r4.log",
+        "pid": 18280,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T21:57:02.940541+00:00",
+        "elapsedSeconds": 241.79
+      },
+      {
+        "project": "skillforgejs",
+        "id": "9d3b119f40a0",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/corepack/dist/pnpm.js",
+          "run",
+          "test",
+          "--maxWorkers=1",
+          "--minWorkers=1",
+          "--testTimeout=60000",
+          "--hookTimeout=60000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9d3b119f40a0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T21:57:11.703289+00:00",
+        "status": "complete",
+        "log": "astra-skillforge-tests-r2.log",
+        "pid": 33012,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T21:59:47.323090+00:00",
+        "elapsedSeconds": 155.51
+      },
+      {
+        "project": "skillforgejs",
+        "id": "9d3b119f40a0",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/corepack/dist/pnpm.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9d3b119f40a0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T21:59:49.803610+00:00",
+        "status": "complete",
+        "log": "astra-skillforge-typecheck-r1.log",
+        "pid": 33864,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T22:07:10.358049+00:00",
+        "elapsedSeconds": 440.55
+      }
+    ]
+  },
+  "courseWords": 4425,
+  "courseFiles": 9,
+  "courseLinksChecked": 96,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "dbdbfd96e67939bc6d072184bbacee8d1b9b9d00315ff4099809cd450849b2b2",
+      "after_sha256": "2273824eaf5ad73a19b4feb10b455dd3cfaf37434840687d7302ec6caca54819"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-completion-r4.json",
+      "before_sha256": null,
+      "after_sha256": "54cfd33977998630fb1e1a3fe69bf1aa7a1da0020fee2b899713f9a91da38585"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-completion-r4.log",
+      "before_sha256": null,
+      "after_sha256": "4de4eb5c20b6b3a7e307c70e2a23d3715e7b2d035543210e0b5f47c4c28e2a89"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-tests-r2.json",
+      "before_sha256": null,
+      "after_sha256": "6e7fe49a3867b5755dbf6f2d90515da694a26ad9935aa7a64a496b457d46dbba"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-tests-r2.log",
+      "before_sha256": null,
+      "after_sha256": "a9c79dc9e596cfd6865f581f899c9b8d34d4efd14922a888000d549ea81d80a9"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-typecheck-r1.json",
+      "before_sha256": null,
+      "after_sha256": "ed78d9b288b1643bf5abe39f7ba06e349cf20074335b2522947b8ae82504bc42"
+    },
+    {
+      "file": "astraupskill/evidence/astra-skillforge-typecheck-r1.log",
+      "before_sha256": null,
+      "after_sha256": "ec7127d0d2accaa3d0862ee43cc6c818aab32582a8dfb0996d4ad48f41f4a5d6"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "dbdbfd96e67939bc6d072184bbacee8d1b9b9d00315ff4099809cd450849b2b2"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__actions.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6d13c3992a57fe6782521ec33123290958b9988f1cb70744b4832ef580648609"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__gamification.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "165c000ea0ba1cad9baa0503018b96e5d2433cb4b4265707db2c2523756e02af"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__quests.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "18dc0b5240841ad6573df9af5a5af3027101c658d08dde88a8cdbdc8319a0e8e"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__review.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d9de9faf9e3f34e696d39cfc79da55979884dbfcf2a5580f9b71f5fff6dea255"
+    },
+    {
+      "file": "scripts/test-completion-local.mjs",
+      "before_sha256": null,
+      "after_sha256": "613801c519695b2805d42d1d5d4747c784ada0c938678d0ccb7d01d8831c6c3f"
+    },
+    {
+      "file": "src/server/actions.ts",
+      "before_sha256": "6d13c3992a57fe6782521ec33123290958b9988f1cb70744b4832ef580648609",
+      "after_sha256": "b059d8442de3c1c85fbe75b919ad7fcc1cfd8c5e92d43d58752ac1cc2a3fbf18"
+    },
+    {
+      "file": "src/server/completion.ts",
+      "before_sha256": null,
+      "after_sha256": "e4cface7daed446d08826bd1ac1b97d70267c64a88da33c2017c1ce137846412"
+    },
+    {
+      "file": "src/server/gamification.ts",
+      "before_sha256": "165c000ea0ba1cad9baa0503018b96e5d2433cb4b4265707db2c2523756e02af",
+      "after_sha256": "68542c7223b89314cd6c25b73471000dc9ec8366ddf37028d5332d9df1b072c1"
+    },
+    {
+      "file": "src/server/quests.ts",
+      "before_sha256": "18dc0b5240841ad6573df9af5a5af3027101c658d08dde88a8cdbdc8319a0e8e",
+      "after_sha256": "264963b95786405f4d82c269b2f7e7e56b708a0827ce050d9020196ec29d789e"
+    },
+    {
+      "file": "src/server/review.ts",
+      "before_sha256": "d9de9faf9e3f34e696d39cfc79da55979884dbfcf2a5580f9b71f5fff6dea255",
+      "after_sha256": "355e6383e39dbfec31d683f52528b2b37b6e3daae3bc3aca4d74dbc735781ecf"
+    },
+    {
+      "file": "tests/unit/completion.test.ts",
+      "before_sha256": null,
+      "after_sha256": "e2941a9d05c5ffcfc886ee6c9bfd6f2e02b4fa9c8b03c387b7844420fc2983a9"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "be6f9b4e8bcae681993d74ec231798d7995d03e85b0e0b530f74904161f51665"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "17b5799d54a5239c85bb18075b510d4589d8939c9163f246043e0dadf8651019"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "375921b564e6d4ec01debe275781fd4af72c62a011dfae1bb518455dc8034474"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "de6d18b125d870a6e5a30aafa6218fe6aed20378a9d82713882c9fd6367c08cf"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d44573956591e53a20b1d1bafaf304e740fdc38d4d49fb686357ac0117c66a21"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "16d5f916cbcd06ff22c0ad6b7cdee26836a3ddde822c360554451afc15e9acef"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "30938025ada769b15071c6271bd3224587867fa673792bf46f61dd1e7359152b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "48090755a2abbcf19bab6a6dd0e70342605c33fdf14dfba3ac0fd66267c64bf6"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b52e26727cf4c07304ac956c35cc97d1977f1ad121ad515779bf1cae712e11d2"
+    }
+  ],
+  "limits": [
+    "SQLite tests do not exercise browsers or external code runners.",
+    "Ordinary unit runs skip the destructive completion suite unless the owned-database helper enables it."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T22:14:26.696879+00:00"
+}

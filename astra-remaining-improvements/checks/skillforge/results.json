@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "total": 48,
+  "modelTests": 36,
+  "browserTests": 12,
+  "additionalLayoutRecheck": 1,
+  "build": "passed",
+  "archive": {
+    "worlds": 10,
+    "missions": 334,
+    "gates": 1002,
+    "sourceFiles": 1839,
+    "bytes": 10172345
+  },
+  "screenshotsReviewed": 2,
+  "evidence": [
+    "checks/skillforge/final/model.json",
+    "checks/skillforge/final/commands.json",
+    "checks/skillforge/final/archive.log",
+    "checks/skillforge/browser-final.json",
+    "checks/skillforge/browser-review-layout.json"
+  ],
+  "notes": [
+    "Initial review browser fixture used unsupported dueAt; corrected to canonical due and passed. Eleven other cases passed in the full final run.",
+    "Two final screenshots visually reviewed; narrow viewport overflow also checked at 390x1100."
+  ]
+}

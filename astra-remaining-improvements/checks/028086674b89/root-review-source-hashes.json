@@ -1,0 +1,11 @@
+{
+  "files": {
+    "src/Netgum.Application/Checkout/CheckoutService.cs": "90fb1a03cf65cfaa8ba4b331cc02bd6fa05bd1444f5034893718ab9e767f5f15",
+    "src/Netgum.Domain/Orders/Order.cs": "7f9a79cce19420aa028e4ec1b539e0114648793fc02bc1ed7e082d59df2f271f",
+    "src/Netgum.Domain/Products/Product.cs": "2ec64229a44e80698d7e939648a293283b4e82a51c97080cc708c919a6a6486f",
+    "src/Netgum.Domain/Products/ProductVariant.cs": "56eaee685b4607686a04d30f4e4e11cfede3a4f81c10698b3a9f5a0095ea0906",
+    "src/Netgum.Domain/ValueObjects/EmailAddress.cs": "fd9c9bb15dfefb4eedcfb5e7f63322cc64072498e05cc2f41345b863273c22fd",
+    "tests/Netgum.Tests/Application/CheckoutServiceTests.cs": "73f76c07be1f4811f3156f57f9df1ef9093eadea9cb740995a55f3abf20372ac",
+    "tests/Netgum.Tests/Domain/ProductTests.cs": "58bbcb71f90b31ad7d931d0559e0c71effcc5a07c105b87b17a81b60111d4b77"
+  }
+}

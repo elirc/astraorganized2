@@ -1,0 +1,126 @@
+[
+  {
+    "stage": "35",
+    "route": "/api/assets",
+    "statuses": [
+      "Available",
+      "Checked Out",
+      "Maintenance",
+      "Retired"
+    ],
+    "categories": [
+      "Laptop",
+      "Camera",
+      "Tooling",
+      "Vehicle"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for equipment checkouts, custodians, return dates, and audit notes."
+  },
+  {
+    "stage": "41",
+    "route": "/api/paths",
+    "statuses": [
+      "Planned",
+      "In Progress",
+      "Blocked",
+      "Complete"
+    ],
+    "categories": [
+      "Frontend",
+      "Backend",
+      "Data",
+      "Leadership"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for employee learning plans, mentors, budgets, and completion workflow."
+  },
+  {
+    "stage": "43",
+    "route": "/api/travel",
+    "statuses": [
+      "Draft",
+      "Submitted",
+      "Approved",
+      "Booked",
+      "Rejected"
+    ],
+    "categories": [
+      "Conference",
+      "Customer Visit",
+      "Training",
+      "Internal Offsite"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for business travel approvals, destinations, costs, and approval workflow."
+  },
+  {
+    "stage": "44",
+    "route": "/api/contracts",
+    "statuses": [
+      "Draft",
+      "Legal Review",
+      "Active",
+      "Renewal",
+      "Expired"
+    ],
+    "categories": [
+      "SaaS",
+      "Consulting",
+      "Facilities",
+      "Security"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for vendor agreements, renewal workflow, owners, values, and notes."
+  },
+  {
+    "stage": "47",
+    "route": "/api/audits",
+    "statuses": [
+      "Planned",
+      "In Progress",
+      "Needs Remediation",
+      "Passed",
+      "Failed"
+    ],
+    "categories": [
+      "Process",
+      "Security",
+      "Manufacturing",
+      "Customer Support"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for quality audits, owners, severity, remediation dates, and findings."
+  },
+  {
+    "stage": "49",
+    "route": "/api/grants",
+    "statuses": [
+      "Draft",
+      "Submitted",
+      "Under Review",
+      "Awarded",
+      "Declined"
+    ],
+    "categories": [
+      "Education",
+      "Health",
+      "Climate",
+      "Community"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for grant applications, review stages, award amounts, and activity notes."
+  },
+  {
+    "stage": "50",
+    "route": "/api/incidents",
+    "statuses": [
+      "Open",
+      "Investigating",
+      "Mitigated",
+      "Resolved",
+      "Postmortem"
+    ],
+    "categories": [
+      "Availability",
+      "Security",
+      "Data",
+      "Performance"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for operational incidents, severity, response owners, and timelines."
+  }
+]

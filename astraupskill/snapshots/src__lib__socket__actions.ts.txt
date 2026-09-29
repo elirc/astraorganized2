@@ -1,0 +1,293 @@
+import { Socket } from "socket.io";
+import {
+  archiveCard,
+  createCard,
+  createTemplate,
+  loadBoardSnapshot,
+  moveCard,
+  restoreCard,
+  updateCardDetails,
+  updateRole,
+  applyTemplate
+} from "../services/board-service";
+import { DomainConflictError, listAuditLog } from "../services/board-service";
+import { purgeInactivePresence, touchPresence, removePresence, listPresence } from "../presence/manager";
+import { getSessionUser } from "../services/auth";
+import { SocketEvent } from "../types";
+
+type ClientToServerPayloads = {
+  "board:join": { boardId: string; boardVersion?: number; userName?: string };
+  "board:leave": { boardId: string };
+  "board:move-card": {
+    boardId: string;
+    cardId: string;
+    targetColumnId: string;
+    targetAfterCardId?: string | null;
+    expectedCardVersion?: number;
+    boardVersion?: number;
+  };
+  "card:update": {
+    boardId: string;
+    cardId: string;
+    patch: {
+      title?: string;
+      description?: string | null;
+      dueAt?: string | null;
+    };
+    expectedVersion: number;
+  };
+  "card:archive": { boardId: string; cardId: string; reason?: string | null };
+  "card:restore": { boardId: string; cardId: string; columnId?: string | null };
+  "board:heartbeat": { boardId: string; cursor?: { x: number; y: number } | null; columnId?: string | null; hoveredCardId?: string | null };
+  "board:create-template": {
+    boardId: string;
+    sourceCardId: string;
+    name: string;
+  };
+  "board:apply-template": { boardId: string; templateId: string; targetColumnId: string };
+  "card:create": { boardId: string; columnId: string; title: string; description?: string | null; dueAt?: string | null };
+  "permissions:update": { boardId: string; targetUserId: string; role: "owner" | "editor" | "viewer" };
+};
+
+export async function registerBoardSocket(socket: Socket) {
+  const user = await getSessionUser();
+  let lastKnownBoard = "";
+
+  socket.on("disconnect", () => {
+    if (lastKnownBoard) {
+      removePresence(lastKnownBoard, user.id);
+      socket.to(roomName(lastKnownBoard)).emit("presence:change", listPresence(lastKnownBoard));
+    }
+  });
+
+  socket.on("board:join", async (payload: ClientToServerPayloads["board:join"]) => {
+    if (!payload?.boardId) return;
+    const boardId = payload.boardId;
+    lastKnownBoard = boardId;
+    const room = roomName(boardId);
+    await socket.join(room);
+
+    touchPresence({
+      userId: user.id,
+      boardId,
+      name: payload.userName ?? user.name,
+      avatarUrl: user.avatarUrl,
+      columnId: null,
+      cursor: null,
+      hovering: null
+    });
+
+    const snapshot = await loadBoardSnapshot(boardId, user.id);
+    socket.emit("board:state", snapshot);
+    socket.emit("presence:change", listPresence(boardId));
+
+    if (payload.boardVersion !== undefined && payload.boardVersion < snapshot.version) {
+      const events = await listAuditLog(boardId, user.id, payload.boardVersion);
+      socket.emit("board:events-delta", events);
+    }
+
+    socket.emit("board:joined", { boardId });
+    socket.to(room).emit("presence:change", listPresence(boardId));
+  });
+
+  socket.on("board:leave", (payload: ClientToServerPayloads["board:leave"]) => {
+    if (!payload?.boardId) return;
+    const room = roomName(payload.boardId);
+    socket.leave(room);
+    removePresence(payload.boardId, user.id);
+    socket.to(room).emit("presence:change", listPresence(payload.boardId));
+    if (lastKnownBoard === payload.boardId) {
+      lastKnownBoard = "";
+    }
+  });
+
+  socket.on("board:heartbeat", (payload: ClientToServerPayloads["board:heartbeat"]) => {
+    if (!payload?.boardId) return;
+    touchPresence({
+      userId: user.id,
+      boardId: payload.boardId,
+      name: user.name,
+      avatarUrl: user.avatarUrl,
+      columnId: payload.columnId,
+      cursor: payload.cursor ?? null,
+      hovering: payload.hoveredCardId
+    });
+    socket.to(roomName(payload.boardId)).emit("presence:change", listPresence(payload.boardId));
+  });
+
+  socket.on("board:move-card", async (payload: ClientToServerPayloads["board:move-card"]) => {
+    const snapshot = await loadBoardSnapshot(payload.boardId, user.id);
+    const source = snapshot.columns.find((column) =>
+      column.cards.some((card) => card.id === payload.cardId)
+    );
+    if (!source) {
+      socket.emit("board:error", {
+        boardId: payload.boardId,
+        cardId: payload.cardId,
+        error: "Card not found",
+        serverVersion: snapshot.version,
+        clientVersion: snapshot.version
+      });
+      return;
+    }
+
+    try {
+      const result = await moveCard({
+        boardId: payload.boardId,
+        cardId: payload.cardId,
+        targetColumnId: payload.targetColumnId,
+        targetAfterCardId: payload.targetAfterCardId,
+        actorId: user.id,
+        expectedCardVersion: payload.expectedCardVersion,
+        expectedBoardVersion: payload.boardVersion
+      });
+
+      const event = {
+        type: "card:moved" as const,
+        boardId: payload.boardId,
+        cardId: payload.cardId,
+        fromColumnId: source.id,
+        toColumnId: payload.targetColumnId,
+        fromOrder: "",
+        toOrder: result.orderKey,
+        actorUserId: user.id,
+        version: result.version
+      } as SocketEvent;
+      socket.to(roomName(payload.boardId)).emit("board:event", event);
+      socket.emit("board:event:ack", { cardId: payload.cardId, version: result.version, event });
+    } catch (error) {
+      if (error instanceof DomainConflictError) {
+        socket.emit("board:error", {
+          boardId: payload.boardId,
+          cardId: payload.cardId,
+          error: error.message,
+          serverVersion: error.serverVersion,
+          clientVersion: error.clientVersion
+        });
+      }
+      return;
+    }
+  });
+
+  socket.on("card:update", async (payload: ClientToServerPayloads["card:update"]) => {
+    const patch: any = {
+      ...payload.patch,
+      dueAt: payload.patch.dueAt ? new Date(payload.patch.dueAt) : null
+    };
+    const result = await updateCardDetails({
+      boardId: payload.boardId,
+      cardId: payload.cardId,
+      actorId: user.id,
+      patch,
+      expectedVersion: payload.expectedVersion
+    });
+    const event = {
+      type: "card:updated" as const,
+      boardId: payload.boardId,
+      cardId: payload.cardId,
+      patch,
+      actorUserId: user.id,
+      version: result.version
+    } as SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { cardId: payload.cardId, version: result.version, event });
+  });
+
+  socket.on("card:create", async (payload: ClientToServerPayloads["card:create"]) => {
+    const created = await createCard({
+      boardId: payload.boardId,
+      columnId: payload.columnId,
+      title: payload.title,
+      actorId: user.id,
+      description: payload.description ?? null,
+      dueAt: payload.dueAt ? new Date(payload.dueAt) : null
+    });
+    const event = {
+      type: "card:created" as const,
+      boardId: payload.boardId,
+      cardId: created.created.id,
+      actorUserId: user.id,
+      version: created.version,
+      columnId: payload.columnId
+    } as SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { cardId: created.created.id, version: created.version, event });
+  });
+
+  socket.on("card:archive", async (payload: ClientToServerPayloads["card:archive"]) => {
+    const result = await archiveCard(payload.boardId, payload.cardId, user.id, payload.reason);
+    const event = {
+      type: "card:deleted" as const,
+      boardId: payload.boardId,
+      cardId: payload.cardId,
+      actorUserId: user.id,
+      version: result.version
+    } as SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { cardId: payload.cardId, version: result.version, event });
+  });
+
+  socket.on("card:restore", async (payload: ClientToServerPayloads["card:restore"]) => {
+    const result = await restoreCard(payload.boardId, payload.cardId, user.id, payload.columnId);
+    const event = {
+      type: "card:restored" as const,
+      boardId: payload.boardId,
+      cardId: payload.cardId,
+      actorUserId: user.id,
+      version: result.version,
+      targetColumnId: payload.columnId ?? "",
+      targetOrder: ""
+    } as SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { cardId: payload.cardId, version: result.version, event });
+  });
+
+  socket.on("board:create-template", async (payload: ClientToServerPayloads["board:create-template"]) => {
+    const created = await createTemplate(payload.boardId, user.id, payload.name, payload.sourceCardId);
+    socket.emit("template:created", created);
+  });
+
+  socket.on("board:apply-template", async (payload: ClientToServerPayloads["board:apply-template"]) => {
+    const result = await applyTemplate(payload.boardId, user.id, payload.templateId, payload.targetColumnId);
+    const event = {
+      type: "card:created" as const,
+      boardId: payload.boardId,
+      cardId: result.card.id,
+      actorUserId: user.id,
+      version: result.version,
+      columnId: payload.targetColumnId
+    } as SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { cardId: result.card.id, version: result.version, event });
+  });
+
+  socket.on("permissions:update", async (payload: ClientToServerPayloads["permissions:update"]) => {
+    const updated = await updateRole(payload.boardId, user.id, payload.targetUserId, payload.role);
+    const event = {
+      type: "permission:updated",
+      boardId: payload.boardId,
+      userId: payload.targetUserId,
+      role: payload.role
+    } satisfies SocketEvent;
+    socket.to(roomName(payload.boardId)).emit("board:event", event);
+    socket.emit("board:event:ack", { boardId: payload.boardId, version: updated.version, event });
+  });
+
+  return () => {
+    return;
+  };
+}
+
+export function roomName(boardId: string): string {
+  return `board:${boardId}`;
+}
+
+export function startPresencePurgeLoop(io: Socket["server"]) {
+  const timer = setInterval(() => {
+    const changed = purgeInactivePresence();
+    for (const change of changed) {
+      io.to(roomName(change.boardId)).emit("presence:change", listPresence(change.boardId));
+    }
+  }, 15_000);
+  return () => clearInterval(timer);
+}

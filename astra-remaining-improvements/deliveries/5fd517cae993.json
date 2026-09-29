@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww12",
+  "id": "5fd517cae993",
+  "summary": [
+    "Check updateMany count before auditing a conversation status transition so zero-row persistence cannot report success.",
+    "Preserve tenant-scoped lookup, allowed transitions, and one-row audit behavior."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5fd517cae993/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww12",
+        "id": "5fd517cae993",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-conversation-update-count.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5fd517cae993",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:10:06.757788+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 18976,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:10:15.122374+00:00",
+        "elapsedSeconds": 8.36
+      }
+    ],
+    "limits": [
+      "Five runtime cases execute actual conversation service, permission policy and error helpers with transaction/repository/audit adapters. No native Prisma, HTTP, SQL or rollback execution.",
+      "The new count check detects a non-single-row update; repository write predicates do not compare the old status. It does not prevent stale-state transition races or prove concurrent safety."
+    ]
+  },
+  "courseWords": 1795,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": "src/services/conversationService.ts",
+      "before_sha256": "36f46c8adc774fab04e6e27b728920f1f55d136b8b632e42e8ee6c0e7ddee294",
+      "after_sha256": "c37777884d69ddc4a0bed22ae91b8aff0bdfb336e39780f0455bb8c29b27ce90"
+    },
+    {
+      "file": "tests/runtime-conversation-update-count.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "087ddf9f268b4ee9ddcd9d5f9fac767053ed2557eeb22cfe6a94e5e3ae24815e"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-conversationService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "36f46c8adc774fab04e6e27b728920f1f55d136b8b632e42e8ee6c0e7ddee294"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "09e7cbf0bf85f1dd40f7e3f292048c2a9a9aba32a1a89c93bdae2c09386a3fe8"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "c64ee46ca23d38be7133bdb2e4c36bd8dd8fc32ac05f4a0d13282e40cade9a0a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d01f60062ac123b7318c285661fcdf35fed150c7d81d345236c67bbe987dbad0"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "66089122a6d82a13af0a321022f4be9cb3aeb9a47aa2a1b929857dc137bc9ec0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "c59d0e1e7cdc28c0f9e3d54a12cfe83be84abd03a7ce4e75fcaba43011412b82"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f7985c2ed80232fd4df918e1a7ed6452f6300d00568d99e281dbf8431bde5973"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "78d3581af7a335579aaaa065cc00c1d6d1a01697619ab69aa9a908106993b515"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "39d7b288d9e87a2cfc980596055f5fd642f19c3e2e70d51a12820d3cb7e7d034"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "3f60889c6ba31e18287f9132a97d25a69d08f61abb14e97a2616655a4eaac0f7"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8d44ef32774d1b86ffe6643bd826e2c36ec7b010de396ae11ae4302b7c145f30"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e63b5473de70bf71d1b010f547bf65a12042d7489009de026a0969de71565824"
+    }
+  ],
+  "limits": [
+    "Five runtime cases execute actual conversation service, permission policy and error helpers with transaction/repository/audit adapters. No native Prisma, HTTP, SQL or rollback execution.",
+    "The new count check detects a non-single-row update; repository write predicates do not compare the old status. It does not prevent stale-state transition races or prove concurrent safety."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:20:45.020681+00:00"
+}

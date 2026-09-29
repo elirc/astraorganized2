@@ -1,0 +1,9 @@
+# Astra source plan: ww55
+
+Canonical `_Organized Desktop/05 Numbered Experiments/ww55`. Next/Prisma moderation admin. Existing posting decision is conditional expectedCurrentStatus within transaction; saved-search owner mutations and audit are also transactional. Preserve these foundations. Reviewed posting/moderation/savedSearch services, moderation repository and UoW/fake deps.
+
+ResolveModerationCase reads current state outside transaction and repository updates by ID unconditionally, so competing resolve/dismiss can overwrite terminal decision and emit two audits. Read inside transaction and pass expectedCurrentStatus to conditional update; return null/typed conflict for stale state and avoid audit on failure. Support OPEN/IN_REVIEW to intended terminal states only. Tests two actions from same initial state one winner, no second audit, correct from/to metadata, terminal repeat and missing case. Verify production Prisma query includes expected state, not only fake behavior.
+
+Service inputs are imported TS types only. Parse existing runtime schemas at actual create/decide/resolve and saved-search boundaries, preserving ownerId from session and strict fields/omission/false flags. Direct malformed enums/reasons or caller owner override cannot persist; permission before writes. Add deterministic id tie-break to paged posting/moderation ordering if absent. Existing fake runInTransaction simply calls callback; do not claim real rollback from it. Use transaction-aware fixture or integration test for audit-failure rollback, clearly distinguish SQL claim.
+
+Nine guides with conditional transition race, authorization and source maps, scoped saved-search PATCH examples, complete exercises, snapshots and finite checks. Demo session mechanism remains training-only; no real moderation decisions/accounts. Root apply only.

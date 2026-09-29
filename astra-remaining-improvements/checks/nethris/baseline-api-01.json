@@ -1,0 +1,10 @@
+{
+  "command": [
+    "dotnet",
+    "build",
+    "--nologo"
+  ],
+  "workingDirectory": "server/Nethris.Api",
+  "exitCode": 0,
+  "seconds": 169.49
+}

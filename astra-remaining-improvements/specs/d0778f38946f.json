@@ -1,0 +1,38 @@
+{
+  "changedFiles": [
+    "README.md",
+    ".gitignore",
+    "run.ps1",
+    "src/bankapp/App.java",
+    "src/bankapp/model/BankAccount.java",
+    "src/bankapp/model/Transaction.java",
+    "src/bankapp/model/Money.java",
+    "src/bankapp/model/BankSnapshot.java",
+    "src/bankapp/service/BankService.java",
+    "src/bankapp/storage/FileStorage.java",
+    "test/bankapp/RegressionTests.java"
+  ],
+  "summary": [
+    "Balances and transaction history now persist in one validated versioned snapshot with atomic replacement, count footer, failure cleanup and explicit legacy migration.",
+    "Service-owned account copies prevent callers from changing balances outside commands; detached snapshots capture both collections under one synchronized service boundary.",
+    "Money precision, account balances, transaction relationships, duplicate identities and missing references are validated on entry and load.",
+    "Transfers construct their history before mutation; competing withdrawals cannot overdraw one shared service instance.",
+    "Holder rename and confirmed deletion of only unused zero-balance accounts teach domain-aware CRUD while preserving used-account history.",
+    "Nine detailed course documents and a Java 17 runner explain actual source, ownership, consistency, migration, tests, traces and progressive database/HTTP/idempotency exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j3/results.json",
+    "expectedTests": 35,
+    "command": "run.ps1 -Test; seven separate-process CLI scenarios",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files; eight-thread withdrawal competition; isolated source"
+  },
+  "limits": [
+    "Local simulator only; no HTTP, browser, database, authentication or external financial service.",
+    "Synchronization is per service instance; no cross-process stale-save protection or power-loss guarantee.",
+    "Commands mutate memory before saving; save failure exits CLI without success but the service has no persistence rollback unit of work.",
+    "Snapshot validates fields, references and counts but does not reconcile historical balances or cryptographically verify integrity; no shared transfer ID.",
+    "Legacy files remain unchanged and become stale after migration; old binaries must not be alternated against the same data.",
+    "Atomic replacement is required; CLI failures are text diagnostics without a structured failure exit-code contract."
+  ]
+}

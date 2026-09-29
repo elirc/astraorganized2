@@ -1,0 +1,131 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww6",
+  "id": "79c315026b95",
+  "summary": [
+    "Fix an accidentally terminated block comment in the real HTTP error module so TypeScript can parse it.",
+    "Added a production state-machine lab for legal and invalid run transitions.",
+    "Captured four executed Node VM policy cases with explicit worker limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/79c315026b95/results-crud-b07.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww6",
+        "id": "79c315026b95",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-allocation-state-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\79c315026b95",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:59:27.473580+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime2.log",
+        "pid": 22820,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:59:37.513610+00:00",
+        "elapsedSeconds": 10.03
+      }
+    ],
+    "limits": [
+      "No Prisma worker, claim, aggregation, rollup, audit, failure recovery, or retry execution.",
+      "Provider-backed queue checks remain follow-up work.",
+      "Real ValidationError is loaded. Unexecuted repository/engine exports and queue registration are adapted. Worker catch directly writes FAILED without transition guard; terminal helper refusal does not certify worker immutability."
+    ]
+  },
+  "courseWords": 1738,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "tests/runtime-allocation-state-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "64ec063fc072f9ceacc007d24e5dc9c781a005ee24f271873ea35fb8c812f7ce"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "src/lib/http/errors.ts",
+      "before_sha256": "770e4019a34ccbf1a8205d83fb260895e26e660cc1e384245f69bdeaa822a028",
+      "after_sha256": "7cbc05e9b780ab04e87d2ed8966c4e78638a8263b18b1e3ca40f7470883fb409"
+    },
+    {
+      "file": "astraupskill/snapshots/errors.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "770e4019a34ccbf1a8205d83fb260895e26e660cc1e384245f69bdeaa822a028"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime2.log",
+      "before_sha256": null,
+      "after_sha256": "6c9fd9bf29557e8192feb4c268483583153e865cf6143810370aa8f039b5f25d"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "2bf05617a3775d497af726ca03f22ac337c997e296516a2bfca576084bab1391"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b68e1c94fdd298f79048115e7e473f52398f1a74df15ed61998fdc8b43fb36de"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "af4978ee23372c9d413353dc2d2f3e182943b06943dc8911c5c513ce32a40a06"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e951f92bc0f6c23b87641c52bc0afb93384913acaa5c412b02261bd1790bdcff"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "698248e7d61bf502fe83bd1a4b954b67a95694ac5cb841d07afac5dd2ff9be91"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "dcd73e9ae076ec6af8f58ee38499c9f95409c32e81b6094b4ec1cf044a2af62e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d25a92ae007bf2fd2425ff9b790764932a78566efa19f4574a311f1b877861b6"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "450b292b641b2186566b81e778c08bcf4c0e6ebd35884851667be604163b12c2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e6b0bc75b666bd33741d2ecfb71a08962ebfc41c07a9b78fc8c30d125a8cc9b8"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "baae9efd9a8301877c5940f1c32b4b70fa8ff966112e50f3962db5f718e4c095"
+    }
+  ],
+  "limits": [
+    "No Prisma worker, claim, aggregation, rollup, audit, failure recovery, or retry execution.",
+    "Provider-backed queue checks remain follow-up work.",
+    "Real ValidationError is loaded. Unexecuted repository/engine exports and queue registration are adapted. Worker catch directly writes FAILED without transition guard; terminal helper refusal does not certify worker immutability."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:04:20.649944+00:00"
+}

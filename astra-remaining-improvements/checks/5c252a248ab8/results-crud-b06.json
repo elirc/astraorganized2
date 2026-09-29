@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww3",
+      "id": "5c252a248ab8",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-country-rule-upsert.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5c252a248ab8",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:39:32.730284+00:00",
+      "status": "complete",
+      "log": "crud-b06-astra-runtime.log",
+      "pid": 25396,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:39:37.681968+00:00",
+      "elapsedSeconds": 4.95
+    }
+  ],
+  "limits": [
+    "Actual repository TypeScript executed with explicit Prisma-shaped double; no live database or generated-client typecheck.",
+    "No route, auth, audit, migration, or concurrent transaction test.",
+    "Upsert preserves composite identity and updates mutable fields; audit action semantics remain unchanged."
+  ]
+}

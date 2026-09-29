@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "total": 6,
+  "tests": 6,
+  "failed": 0,
+  "checks": [
+    "install-02",
+    "luna-server-final-check-20260912",
+    "root-client-install-01",
+    "root-client-build-01",
+    "syntax-cart-final-20260912",
+    "syntax-orders-final-20260912",
+    "syntax-checkout-final-20260912",
+    "syntax-validation-final-20260912",
+    "syntax-index-final-20260912"
+  ],
+  "scope": "Real production cart/order/app handlers with disposable SQLite and injected identity; second-line SQL failure rolls back earlier stock writes. Client production build passed. No live HTTP/JWT/payment or multiprocess test."
+}

@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "id": "b7429e8bf71d",
+  "command": [
+    "cmd",
+    "/c",
+    "node",
+    "node_modules\\typescript\\bin\\tsc",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b7429e8bf71d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:34:07.061716+00:00",
+  "status": "complete",
+  "log": "luna-typecheck-final2-20260912.log",
+  "pid": 21924,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T00:35:31.116857+00:00",
+  "elapsedSeconds": 84.05
+}

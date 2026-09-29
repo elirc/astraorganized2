@@ -1,0 +1,136 @@
+{
+  "track": "csharp",
+  "lessons": [
+    {
+      "slug": "fixture",
+      "title": "Fixture",
+      "summary": "Synthetic teaching text",
+      "briefing": "Synthetic teaching text",
+      "explanation": "Synthetic teaching text",
+      "fullReadme": "Synthetic teaching text",
+      "fullReading": "Synthetic teaching text",
+      "exercises": [
+        {
+          "id": "ex1",
+          "title": "Ex1",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex1.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex2",
+          "title": "Ex2",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex2.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex3",
+          "title": "Ex3",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex3.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex4",
+          "title": "Ex4",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex4.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex5",
+          "title": "Ex5",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex5.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex6",
+          "title": "Ex6",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex6.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex7",
+          "title": "Ex7",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex7.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "ex8",
+          "title": "Ex8",
+          "kind": "core",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Ex8.cs": "return 1;"
+          },
+          "xp": 100
+        },
+        {
+          "id": "challenge",
+          "title": "Challenge",
+          "kind": "challenge",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Challenge.cs": "return 1;"
+          },
+          "xp": 250
+        },
+        {
+          "id": "review1",
+          "title": "Review 1",
+          "kind": "review",
+          "prompt": "Task",
+          "hints": "Hint",
+          "importantHints": "Boundary",
+          "references": {
+            "Review1.cs": "return 1;"
+          },
+          "xp": 140
+        }
+      ]
+    }
+  ]
+}

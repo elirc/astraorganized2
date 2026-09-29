@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww26",
+  "id": "971a7c784720",
+  "summary": [
+    "Reviewed lock coordinator behavior and found no production defect warranting a patch.",
+    "Added an actual coordinator lab for ownership, expiry, status rereads, holder cleanup, and stale sweeps.",
+    "Captured five executed Node VM cases with explicit provider limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/971a7c784720/results-crud-b06.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww26",
+        "id": "971a7c784720",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-lock-coordinator-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\971a7c784720",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:26:47.224028+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 15792,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:26:52.447210+00:00",
+        "elapsedSeconds": 5.22
+      }
+    ],
+    "limits": [
+      "No production fix warranted in reviewed path.",
+      "No live provider, FOR UPDATE, route, concurrent worker, or rollback execution.",
+      "Normal project typecheck and provider-backed tests remain follow-up checks.",
+      "Authorization and ApiError execute from actual source; repository/transaction adapters do not establish row locking or isolation."
+    ]
+  },
+  "courseWords": 1686,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "tests/runtime-lock-coordinator-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "8d2785e6dac9e81b2592d353eea8d6c808c1747b655a153106637677a5634d04"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "77887511d85274314320189355d1331dc4149c658e930b54bcffc7894a9d8759"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "7519f2c86950364ac25b756b3638949e261bed2b755a8e1b651030bcd6f476fc"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d2332b5d14238ed458e4fc4594ec30afceb81da315a9eec8c8141246eb1c0e86"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "80031480e6e80021632870e8b29540ce81a3f2781c4c21b9daea80c8693bf75d"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1f0b6bae301984e2056c16a2b73bb537372973ac881a975f4ce072ec38c5d99e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "85b3b28ca48776fb6e10bc2edac7f893394410c5409e6d86b81b8e305c1a02f5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "29c61eced8adfd2eb4915f87f4387507025717253765f7ebf48336d765538cf1"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "c9c3c41d1f008a5737d1d35f10011cf558683b189d89cb7061df51491b421415"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "14cc2f6a93cc98428d31b5f44e29e4c19b883a853302713c35c09dddd2a52bcd"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "bc86b826425a9bb7fb1a81f45c4cf906127c9e8079a486e69e44367fc49af079"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c3b25604f1ee7d417f951589c41f002a10e50ebfb27e5e84a1de24ab1ccd72ef"
+    }
+  ],
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No live provider, FOR UPDATE, route, concurrent worker, or rollback execution.",
+    "Normal project typecheck and provider-backed tests remain follow-up checks.",
+    "Authorization and ApiError execute from actual source; repository/transaction adapters do not establish row locking or isolation."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:27:48.066485+00:00"
+}

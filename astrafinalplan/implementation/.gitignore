@@ -1,0 +1,7 @@
+node_modules/
+npm-cache/
+pg-test/
+stage/
+backups/
+logs/
+postgres.log

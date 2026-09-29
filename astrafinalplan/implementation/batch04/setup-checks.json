@@ -1,0 +1,170 @@
+[
+  {
+    "project": "58",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/58-setup-migrate.log"
+  },
+  {
+    "project": "58",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/58-setup-seed.log"
+  },
+  {
+    "project": "59",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/59-setup-migrate.log"
+  },
+  {
+    "project": "59",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/59-setup-seed.log"
+  },
+  {
+    "project": "60",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/60-setup-migrate.log"
+  },
+  {
+    "project": "60",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/60-setup-seed.log"
+  },
+  {
+    "project": "61",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/61-setup-migrate.log"
+  },
+  {
+    "project": "61",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/61-setup-seed.log"
+  },
+  {
+    "project": "62",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/62-setup-migrate.log"
+  },
+  {
+    "project": "62",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/62-setup-seed.log"
+  },
+  {
+    "project": "63",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/63-setup-migrate.log"
+  },
+  {
+    "project": "63",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/63-setup-seed.log"
+  },
+  {
+    "project": "64",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/64-setup-migrate.log"
+  },
+  {
+    "project": "64",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/64-setup-seed.log"
+  },
+  {
+    "project": "65",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/65-setup-migrate.log"
+  },
+  {
+    "project": "65",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/65-setup-seed.log"
+  },
+  {
+    "project": "66",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/66-setup-migrate.log"
+  },
+  {
+    "project": "66",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/66-setup-seed.log"
+  },
+  {
+    "project": "67",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/67-setup-migrate.log"
+  },
+  {
+    "project": "67",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/67-setup-seed.log"
+  },
+  {
+    "project": "68",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/68-setup-migrate.log"
+  },
+  {
+    "project": "68",
+    "check": "setup-seed",
+    "exit_code": 1,
+    "log": "logs/68-setup-seed.log"
+  },
+  {
+    "project": "69",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/69-setup-migrate.log"
+  },
+  {
+    "project": "69",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/69-setup-seed.log"
+  },
+  {
+    "project": "70",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/70-setup-migrate.log"
+  },
+  {
+    "project": "70",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/70-setup-seed.log"
+  },
+  {
+    "project": "71",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/71-setup-migrate.log"
+  },
+  {
+    "project": "71",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/71-setup-seed.log"
+  }
+]

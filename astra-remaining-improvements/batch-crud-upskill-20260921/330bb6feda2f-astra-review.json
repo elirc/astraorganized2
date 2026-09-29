@@ -1,0 +1,35 @@
+{
+  "id": "330bb6feda2f",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:50:13.899184+00:00",
+  "sourceReview": "Reviewed privacy, ingest identity resolution and Admin delete route. Added canonical identity and independent raw-field matching during review. Scope remains existing partial scrubber, not comprehensive erasure.",
+  "teachingReview": "Corrected false no-person/no-op claims and ineffective alias mutation exercise; added mixed-field trace, concrete rubric, project isolation and retained-data limits across nine chapters.",
+  "testReview": "Four real privacy module cases passed with explicit store/id/clock adapters. Expanded nonempty cases assert contact fields, canonical-only and mapped-only history, mixed raw identifiers, foreign project identity, orphan history and audit metadata.",
+  "specSHA256": "dc7fda2cb6776528b23a395d7cfbf1d3214b3747c40d579b63e61609796680da",
+  "fileHashes": {
+    "lib/server/privacy.ts": "1d51ef8ff40c767857ef46c6b84d7e98473fe57faa6ef62029fafa0e58299e03",
+    "tests/runtime-privacy-alias-delete.test.mjs": "f20172f8c2d55b091515443e01d74b68f30cb1c5dd3024b28118b3383a78e3c2",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/lib-server-privacy.ts.before": "343658ce21db502a8e135f4484a2f9ade957461580fcab10810742b8aa42d8b5",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "29eb59866dd644e329e47e06be5ad18782c6c3ae58662ff77cb5641e2f6bc5f6",
+    "astraupskill/evidence/results.json": "aeffa7c822edd76584496c8f50ff697cbcfa73decf0d160f1bf23bdceafb0ee1",
+    "astraupskill/README.md": "a6dd5d07231a9b7286fcc2d5f11128fa44ef3b64ddcc17f8dbafdb75354b30ec",
+    "astraupskill/01-CODEBASE-MAP.md": "cb9bd7368fc8034bcaa2a6f58534c57f7c7da12bd987e11dcee67376bb23b394",
+    "astraupskill/02-CONCEPTS.md": "9021d7d33a5a28d030fc6845f41f0813f40df6b31181f5b51d2218a34f901f1f",
+    "astraupskill/03-WORKED-CHANGE.md": "cb077d2635714bd89e16a5a765ebefd609c31ae2e3445848833ce168897294f0",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "00647efc82513d8a298fdc2fd348e4a7159ff2d84de1414728f204c2e1e493c4",
+    "astraupskill/05-PRACTICE.md": "51fcdc0fdcc7e64cf79ac8bb8e34456107e6ec3648ef6026abca50de153a8b1b",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "ee4201bfeba84ff685c33483b6967beb9558760536605f305fb69805c81bfaac",
+    "astraupskill/07-TRACE-LAB.md": "94ccc61883ed36649489f7ccb57984382a95d44a11413fa9aa202ab965605b18",
+    "astraupskill/VERIFICATION.md": "b5fb02fa5a91b8da2b9150c8b4a3bae8ff02e88ce026e5559900f0892c599bdc"
+  },
+  "evidenceHashes": {
+    "checks/330bb6feda2f/crud-b04-astra-runtime.json": "31b30a6eb1d5167cb4bf75e4b88eaabba147c1d6d95cffd035550b879b53d2a0",
+    "checks/330bb6feda2f/crud-b04-astra-runtime.log": "29eb59866dd644e329e47e06be5ad18782c6c3ae58662ff77cb5641e2f6bc5f6",
+    "checks/330bb6feda2f/results-crud-b04.json": "aeffa7c822edd76584496c8f50ff697cbcfa73decf0d160f1bf23bdceafb0ee1",
+    "checks/330bb6feda2f/review.txt": "61dcde9b1b0da9e9b4b3cb64798e2904c4e60aa8d1bc9d014d73d660b32479b9",
+    "checks/330bb6feda2f/review2.txt": "e14f370945999d2cd2ca38e3de62b45ecda96d09f5248adef3e7e521a8f6b20d",
+    "checks/330bb6feda2f/review3.txt": "3e7c80e12382f88ab2f7360d8bfba2f60d1c66e976ec84ab17da2d0633ab0e1d",
+    "checks/330bb6feda2f/review4.txt": "be3c20f2a18208f8f39c4aa06d2f03de4bcfa32fddad4d2c0b1d19aeeabe4373"
+  }
+}

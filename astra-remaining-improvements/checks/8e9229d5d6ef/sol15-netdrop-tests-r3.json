@@ -1,0 +1,25 @@
+{
+  "project": "netdrop",
+  "id": "8e9229d5d6ef",
+  "command": [
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+    "test",
+    "tests\\NetDropbox.Tests\\NetDropbox.Tests.csproj",
+    "--disable-build-servers",
+    "-m:1",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8e9229d5d6ef",
+  "environmentOverrides": {
+    "DOTNET_CLI_HOME": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\dotnet-home",
+    "MSBUILDDISABLENODEREUSE": "1"
+  },
+  "startedAt": "2026-09-19T21:26:34.569354+00:00",
+  "status": "complete",
+  "log": "sol15-netdrop-tests-r3.log",
+  "pid": 22436,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T21:29:40.887732+00:00",
+  "elapsedSeconds": 186.18
+}

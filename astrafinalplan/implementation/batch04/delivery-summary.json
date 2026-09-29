@@ -1,0 +1,202 @@
+[
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7892,
+    "changes": 19
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8391,
+    "changes": 20
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8396,
+    "changes": 20
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8383,
+    "changes": 20
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7573,
+    "changes": 18
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7316,
+    "changes": 19
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 7504,
+    "changes": 16
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8107,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8107,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8095,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8086,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7900,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7991,
+    "changes": 34
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7975,
+    "changes": 35
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7609,
+    "changes": 41
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8041,
+    "changes": 43
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8377,
+    "changes": 36
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8425,
+    "changes": 36
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8377,
+    "changes": 36
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8382,
+    "changes": 36
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 8377,
+    "changes": 36
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7690,
+    "changes": 14
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "test_cases": 92,
+    "learning_files": 9,
+    "learning_words": 7910,
+    "changes": 13
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "test_cases": 62,
+    "learning_files": 9,
+    "learning_words": 7465,
+    "changes": 14
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 7892,
+    "changes": 21
+  }
+]

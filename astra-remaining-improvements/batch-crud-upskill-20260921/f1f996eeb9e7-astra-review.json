@@ -1,0 +1,37 @@
+{
+  "id": "f1f996eeb9e7",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:29:58.544843+00:00",
+  "sourceReview": "Read approval service, real guards/permissions/errors; extended fix to both current and next pending stage ordering. Baseline README restored, exact nested source snapshot verified.",
+  "teachingReview": "Read all nine chapters, corrected links and misplaced course files, updated worked change and actual permission behavior, explicit stale-read and duplicate-sequence limits.",
+  "testReview": "Four passed actual-service cases: shuffled3,2,1 selects1 advances2; no pending; capability/assignment refusal; approved history skipped and final pending approval finalizes. Real guards/errors with persistence/session adapters.",
+  "specSHA256": "e5bc98d76dd51dd9d545f7244d6ad326e8ab5a9475ec548c0d46d6a378ea9d0e",
+  "fileHashes": {
+    "zz4/src/services/approvalService.ts": "b2c85f463b3017fdf403de6a9391f1aaad3901b2296349ad48230a5e4293986d",
+    "zz4/tests/approval-stage-order.test.mjs": "57c022733694c0b670f494de1d633d96b075813fa69a90d64c6500d5b9a42942",
+    "zz4/tests/helpers/load-typescript.mjs": "4065a565d1381446772ef23f676585817a2b819ebc0e5f3e4b577f246d784bd0",
+    "zz4/astraupskill/snapshots/src/services/approvalService.ts": "6edffe9733693127559c62602e1f04c7ad75e8e1169f15dc25d4fa4cb140c205",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "7bfb6660cee8d00f77aca72accf70948c754a897cf4bfeed38755610c3a4e467",
+    "astraupskill/evidence/results.json": "ce4e0af6e18064534e476fc07692c3eba9298aef8d72539a4aabea237471231a",
+    "astraupskill/README.md": "c42ef443d3cc1bc9ea6d77a843201078eea429e8623b8b44891316c42e455a6a",
+    "astraupskill/01-CODEBASE-MAP.md": "442d4732decb4f6b200fb955e099fc52650e8af8d5d3e1f470a10d34a995173c",
+    "astraupskill/02-CONCEPTS.md": "1e9ac87d32ba2b7925113717ee7611046b369751066e52ff4e2d0c65ddb58f6a",
+    "astraupskill/03-WORKED-CHANGE.md": "83dda70b781c8530b2c5853aaf515cb1728bf1ad03fdbb71a289b7ac00ed5836",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "5b9780f80da41378a5c75b306fbfd21fb53f0c1b306e8280b762a7f01934470b",
+    "astraupskill/05-PRACTICE.md": "97dd7f6a620fff6455312d726dcb38738e942ea557be84ebc0e89cce5c28a502",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "ac53d9e1d775437f704c435c3ab44844440d7cadcddbc60dba91a37b211739e9",
+    "astraupskill/07-TRACE-LAB.md": "e852f8e688e67eb4a6a5f3d02b162c87e36964df8fd7a57bb2520c1b54d3e9bd",
+    "astraupskill/VERIFICATION.md": "449ae6a330ea65e48df79f279e8470d4ca8aa03c4db57bfcf1475a7a2f9d7e32"
+  },
+  "evidenceHashes": {
+    "checks/f1f996eeb9e7/crud-b07-astra-runtime.json": "e16ef9c85492f41bceabf56fe3250d180d4109e38cc8b44ce05dc979ee1adbc2",
+    "checks/f1f996eeb9e7/crud-b07-astra-runtime.log": "7bfb6660cee8d00f77aca72accf70948c754a897cf4bfeed38755610c3a4e467",
+    "checks/f1f996eeb9e7/results-crud-b07.json": "ce4e0af6e18064534e476fc07692c3eba9298aef8d72539a4aabea237471231a",
+    "checks/f1f996eeb9e7/runtime-b07.json": "beacaba0e712987c07ad035ea51e26784a14128bb687023d6149a4c381b7cfcf",
+    "checks/f1f996eeb9e7/runtime-b07.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/f1f996eeb9e7/runtime-b072.json": "24936f4b6628283c8959faf010a4c03cd50e34e29d4038055264fecb6b9c663e",
+    "checks/f1f996eeb9e7/runtime-b072.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "checks/f1f996eeb9e7/runtime-b073.json": "a7cd40101c52c0efb479d55569dd259ce3ac8016eaa6f0a6abbf6429c7bbfebb",
+    "checks/f1f996eeb9e7/runtime-b073.log": "a27da53b9a5fe9504d25701ed1900256618464c49be047c278f6e0affff12327"
+  }
+}

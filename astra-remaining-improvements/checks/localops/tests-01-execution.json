@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "node_modules/tsx/dist/cli.mjs",
+    "--test",
+    "--test-reporter=tap",
+    "--test-concurrency=1",
+    "tests/domain.test.ts",
+    "tests/storage.test.ts"
+  ],
+  "exitCode": 0
+}

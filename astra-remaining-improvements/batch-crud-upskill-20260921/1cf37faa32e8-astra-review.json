@@ -1,0 +1,38 @@
+{
+  "id": "1cf37faa32e8",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:54:20.957169+00:00",
+  "sourceReview": "Reviewed newsletter branches, actual dedupe helper, queue helper and sole admin caller. Development guard now matches draft-only database rule; queued-before-await recovery remains documented.",
+  "teachingReview": "Reviewed nine chapters; removed repeated filler, corrected unsupported worker caller claim and added failure-state trace, independent fixture design and graded recovery exercise.",
+  "testReview": "Four cases passed with actual service and dedupe helper: exact successful jobs/audit and retry, non-draft matrix, missing id, original queue failure and retained queued state. No native Redis or DB claim.",
+  "specSHA256": "b516b7fced5df3ad94e164b6092e34b5f7623b9a5cdea354b189a17d70cb9896",
+  "fileHashes": {
+    "src/server/newsletters/service.ts": "2728b7ac8110b9e92ff28f5508a3fe9a5ff88536d34c60ca3ce9078790908cb0",
+    "tests/runtime-newsletter-state.test.mjs": "856a152746b1cfc100842a10afd0af9152246051141374e7558077da82e46e53",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-server-newsletters-service.ts.before": "09c72e8017447da656014752e26da0ffb1550024463122ebb5813c43a61a613d",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "33af04cf3d06350fc57c6dc4e8b0305ef0b8e4ee00b48d417280ab2db2ff48b3",
+    "astraupskill/evidence/results.json": "cd7ff17961a9f896cf1f6c9997bd6e1b6c5f44a89a1298d4c2811408d1b3150d",
+    "astraupskill/README.md": "161c6c1c3ad1fc41eb0a874cd7e9f00b21a497723f52f686a25cd68a2ce56dca",
+    "astraupskill/01-CODEBASE-MAP.md": "b838af1c5d326c69607217a6ea849f955b120a7322ef5fb4ca119293934a549d",
+    "astraupskill/02-CONCEPTS.md": "9475c95fb55a2f4fe0534913c6224623dd9953e641a0e8de2fb87cf9f9d8a78f",
+    "astraupskill/03-WORKED-CHANGE.md": "34c6005bac71badec6c849abb8580171e4a84f53e5fbfe3f125a6e44ddf21d7f",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "ddaf2525ab1282796f550c1d370873687bccff1978962394ed0050409ef62e44",
+    "astraupskill/05-PRACTICE.md": "c945368dcaa7de5b463798d5d49fc0182111e20af3a5d81afb99a8f33fb885f8",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "69d33bb2cb30eea0c32c42b7fe0ecf871e77b45c33dcf7a2a00d3622341b936d",
+    "astraupskill/07-TRACE-LAB.md": "f6e304be5d95d98118fa52701c2da6c66bbbaae88e20efa0259a103b3549249e",
+    "astraupskill/VERIFICATION.md": "78a77516825cce9472aa754839cfd652475cdec7df00d3997fc7973f9bcfd3a6"
+  },
+  "evidenceHashes": {
+    "checks/1cf37faa32e8/crud-b04-astra-runtime.json": "46ca88741c236b5c901740a55451fddda470bfa186a8e75cf0c61f39a6e74a1b",
+    "checks/1cf37faa32e8/crud-b04-astra-runtime.log": "33af04cf3d06350fc57c6dc4e8b0305ef0b8e4ee00b48d417280ab2db2ff48b3",
+    "checks/1cf37faa32e8/results-crud-b04.json": "cd7ff17961a9f896cf1f6c9997bd6e1b6c5f44a89a1298d4c2811408d1b3150d",
+    "checks/1cf37faa32e8/review.txt": "c61bae8af4a21a7867e59c689292eefb710798eb2478c96553744584b38a6035",
+    "checks/1cf37faa32e8/review2.txt": "9bdd32cfc1afc27c187871346b815f6b622a0405d65600e85529b915ad3807df",
+    "checks/1cf37faa32e8/review3.txt": "6d033e3b3fc56b8622f9dddb6a308d68ef84aac54f755d0461ce1b363a6c18ac",
+    "checks/1cf37faa32e8/review4.txt": "44cdc6c7133b510a7c3bd0e659487441e9bf6322352a8777a91ef0ee0f37596e",
+    "checks/1cf37faa32e8/review5.txt": "94d43d3eb57108d6b1e8ff056129072e96f812240eab67f54e5aab170a1134c4",
+    "checks/1cf37faa32e8/review6.txt": "90c544df04e36a6bdc0c33cc8414a2d9b21b497513ae8c73dbe0e3d3eaff03e3",
+    "checks/1cf37faa32e8/review7.txt": "5c98d2a90d892597bafe69f7a53e8ca11672aaacb2251459725d6111ccdde981"
+  }
+}

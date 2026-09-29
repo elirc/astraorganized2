@@ -1,0 +1,27 @@
+{
+  "project": "netopen3",
+  "id": "b8fb41bd6255",
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Umbraco.Tests.UnitTests/Umbraco.Tests.UnitTests.csproj",
+    "--filter",
+    "FullyQualifiedName~SearchTemplateItemControllerTests",
+    "--nologo",
+    "--verbosity",
+    "minimal",
+    "/m:1",
+    "--logger",
+    "trx"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b8fb41bd6255\\Umbraco-CMS",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T20:12:00.771281+00:00",
+  "status": "complete",
+  "log": "astra-netopen3-template-tests-r1.log",
+  "pid": 33200,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-20T20:17:35.447520+00:00",
+  "elapsedSeconds": 334.67
+}

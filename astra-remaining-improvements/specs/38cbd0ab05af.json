@@ -1,0 +1,48 @@
+{
+  "changedFiles": [
+    "src/app/layout.tsx",
+    "src/lib/data/mock-db.ts",
+    "src/lib/http/api-response.ts",
+    "src/lib/runtime/evaluator.ts",
+    "src/lib/validation/feature-config-schemas.ts",
+    "src/services/feature-config-service.ts",
+    "tests/feature-platform.test.ts",
+    "src/app/api/feature-configs/[featureConfigId]/route.ts",
+    "src/services/evaluation-service.ts",
+    "src/lib/auth/permissions.ts",
+    "src/lib/auth/security-boundary.test.ts",
+    "tsconfig.json",
+    "astraupskill/original/tsconfig.json.txt",
+    "astraupskill/original/src__app__api__feature-configs__[featureConfigId]__route.ts.txt",
+    "astraupskill/original/src__services__evaluation-service.ts.txt",
+    "astraupskill/original/src__lib__auth__permissions.ts.txt",
+    "astraupskill/original/src/app/layout.tsx",
+    "astraupskill/original/src/lib/data/mock-db.ts",
+    "astraupskill/original/src/lib/http/api-response.ts",
+    "astraupskill/original/src/lib/runtime/evaluator.ts",
+    "astraupskill/original/src/lib/validation/feature-config-schemas.ts",
+    "astraupskill/original/src/services/feature-config-service.ts",
+    "astraupskill/original/tests/feature-platform.test.ts"
+  ],
+  "summary": [
+    "Enforced service-entry permissions and actor-aware audit projection, including fail-closed unknown roles.",
+    "Added a synchronous cloned mock transaction for publish and rollback, preserving lineage and invalidating cache only after a successful commit.",
+    "Restricted numeric comparisons to finite usageCount values, rejected duplicate rule and condition IDs, and preserved stable evaluator behavior.",
+    "Mapped validation and malformed JSON to safe 400 responses and unexpected errors to a generic 500 envelope without exposing secrets.",
+    "Added Suspense startup boundaries and an actual Node test suite covering the changed behavior, plus nine linked upskill guides and exact original snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/38cbd0ab05af/w24_tests_final_20260913.json",
+    "expectedTests": 11,
+    "environment": "Node 22.16.0; Next 16.2.3; React 19.2.4; TypeScript 5; Node test runner",
+    "command": "node --conditions=react-server --import tsx --test tests/feature-platform.test.ts src/lib/auth/security-boundary.test.ts",
+    "resultsDirectory": "38cbd0ab05af"
+  },
+  "limits": [
+    "The transaction and cache checks use the real in-process mock database and do not establish SQL durability, multi-process isolation, or distributed cache coherence.",
+    "The synchronous transaction rejects thenables; identifier counters may have gaps after failed attempts, and rollout bucketing includes version ID under the existing contract.",
+    "The authenticated actor is represented by the project fixture; production identity provenance, browser interaction, accessibility, and deployment are outside these checks.",
+    "The delivery excludes node_modules, .next build output, databases, private environment files, and other generated artifacts."
+  ]
+}

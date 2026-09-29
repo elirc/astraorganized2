@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z8",
+  "id": "482e93488b83",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/registration-session-selection.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\482e93488b83",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:21:44.357326+00:00",
+  "status": "complete",
+  "log": "crud-b07-astra-runtime.log",
+  "pid": 30920,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:21:57.316748+00:00",
+  "elapsedSeconds": 12.96
+}

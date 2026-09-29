@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "total": 5,
+  "passedTests": 5,
+  "failed": 0,
+  "records": [
+    "verify-01.json"
+  ]
+}

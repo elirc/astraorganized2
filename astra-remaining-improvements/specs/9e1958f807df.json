@@ -1,0 +1,41 @@
+{
+  "id": "9e1958f807df",
+  "project": "aiheartbeat",
+  "changedFiles": [
+    "packages/dashboard/app/api/workspace/route.ts",
+    "packages/dashboard/lib/workspace-store.ts",
+    "packages/dashboard/lib/workspace-store.test.ts",
+    "astraupskill/snapshots/workspace-route.ts.txt",
+    "astraupskill/snapshots/workspace-store.ts.txt",
+    "astraupskill/snapshots/workspace-store.test.ts.txt",
+    "README.md",
+    "astraupskill/evidence/root-final-source-hashes.json",
+    "astraupskill/evidence/install-03.json",
+    "astraupskill/evidence/2026-09-12T18_22_48_316Z-debug-0.log",
+    "astraupskill/evidence/tests-root-01.json",
+    "astraupskill/evidence/tests-root-01.log",
+    "astraupskill/evidence/typecheck-root-01.json",
+    "astraupskill/evidence/typecheck-root-01.log",
+    "astraupskill/evidence/build-root-01.json",
+    "astraupskill/evidence/build-root-01.log"
+  ],
+  "summary": [
+    "Guard direct workspace store callers with own-property collection allowlisting and positive safe-integer IDs before SQLite saves or deletes, preserving existing HTTP/Zod validation.",
+    "Add seeded rejection regressions and verify all three workspaces:505 tests, type checking and the Next webpack dashboard build pass.",
+    "Add nine source-grounded learning guides with complete practice examples, an import/export design exercise, exact original snapshots and captured verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9e1958f807df/results.json",
+    "expectedTests": 505,
+    "command": "npm run test --workspaces --if-present -- --maxWorkers=1 --testTimeout=30000; npm run typecheck; npm run dashboard:build",
+    "environment": "Node22.16; npm10.9.2; three Vitest4 workspaces; Next16.3.1 webpack; disposable absolute PULSE_WORKSPACE_DB"
+  },
+  "limits": [
+    "This is a local personal workspace without account authentication or multi-user authorization; existing same-origin checks are a separate HTTP boundary.",
+    "The new guards protect direct store callers. No exploitable SQL injection through the existing validated endpoint was demonstrated.",
+    "The course proposes an import contract; no new import implementation, optimistic concurrency or distributed conflict resolution was added.",
+    "Tests use synthetic data, temporary SQLite and mocks. No real daemon, Claude CLI, GitHub automation, external webhook, canonical database or browser workflow was exercised.",
+    "Normal npm ci completed with lifecycle scripts enabled, but npm emitted invalid/damaged lockfile warnings. Actual npm exit0 and subsequent tests/typecheck/build are retained; no broad dependency upgrade was performed."
+  ]
+}

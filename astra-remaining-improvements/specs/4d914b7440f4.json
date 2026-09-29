@@ -1,0 +1,22 @@
+{
+  "id": "4d914b7440f4",
+  "changedFiles": [
+    "tests/runtime-job-claim-contract.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/4d914b7440f4/results-crud-b07.json",
+    "format": "json"
+  },
+  "limits": [
+    "Actual documentRepository function with Prisma-shaped double; no production source mutation.",
+    "No worker, extractor, Prisma SQL lock, transaction, audit, or concurrent process test."
+  ],
+  "summary": [
+    "Verify actual extraction-job claim predicate, attempt increment, result forwarding and database error propagation without claiming a concurrent worker execution.",
+    "Added actual repository runtime learning-lab coverage without changing already-correct production logic."
+  ],
+  "project": "ww8"
+}

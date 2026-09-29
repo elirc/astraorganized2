@@ -1,0 +1,34 @@
+{
+  "id": "7b18281f562f",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:19:29.211427+00:00",
+  "sourceReview": "Reviewed exact baseline snapshot, AppError codes, bulk and per-student authorization, transaction scope and logging binding. Only expected non-INTERNAL_ERROR AppErrors become row results; unknown and internal failures propagate. Earlier student transactions remain committed.",
+  "teachingReview": "Reviewed and corrected all nine chapters, worked snippet, pre-loop authorization trace, logging limits, real-class VM bridge, partial-progress semantics, exercises and answers. Removed stale two-test and rollback claims.",
+  "testReview": "Independently executed six production-source tests using the real AppError class. Asserted four expected codes, mixed success/refusal/success, identity and call counts for first and middle unexpected failures, INTERNAL_ERROR stop, and empty no-work. Transaction callback, real Prisma, logger and HTTP are not executed.",
+  "specSHA256": "ab947c2197ecb3dfeeee7b3013bbff0ab8589b3657b2728fc7cd2d45aa24fe66",
+  "fileHashes": {
+    "packages/application/src/services/enrollment-service.ts": "972a47798035712d0dd87cb31977c6e30c4754b981737bf63de76e85a0ed4cb4",
+    "tests/runtime-bulk-enroll.test.mjs": "2f5c3f0e87071845b6f6f20f4e5f08917dc817eb373d39ded59fd40921f386a6",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/packages/application/src/services/enrollment-service.ts": "dcaaf4aa618fe607beebf4b5341fd310f308012cce9b423792e57643f66ecb5a",
+    "tests/bulk-enroll-entry.ts": "da32a7ca45fc8c18cea3f1f3153897c1344a56475f3919ffc60532e515070593",
+    "astraupskill/evidence/crud-b02-astra-runtime.log": "dab2c9384daa3623e5b8e36f476a72c5a4c2ca92cae2b698486b1f32afeb746e",
+    "astraupskill/evidence/results.json": "0b9c2530928c34a5f1c21ab506645cd6ba667b25feb1841e14d740b01870c6af",
+    "astraupskill/README.md": "a18c86fa7634fee6404fd897b9c86d5e0fbe90551b8aa785012fc4f1ef73ce90",
+    "astraupskill/01-CODEBASE-MAP.md": "e853b44cb344b9f54c780addf88a84db92598893515ea15be699143032ba55ff",
+    "astraupskill/02-CONCEPTS.md": "5986b5e1da5f30d528f0b693838eb734fadcf1ddee915e92adfa8dc5cbb8d5c5",
+    "astraupskill/03-WORKED-CHANGE.md": "6b70f62bafb008ab3fe9c408f13443fe698ff1f4d9a8fb26e4dc16e1ef149143",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "d9af518492051fbdaef19417a4615ef3f36872274203454e6bd5b9e94b8f8194",
+    "astraupskill/05-PRACTICE.md": "301b6bebb1230a732857b8ae969e1e6ab1678a47832d1d4450c88015368a0a49",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "1b0d8af74e98ff9d1d91fefb58d8648cae4d3c0b5d135e318d94c01bfb1e354b",
+    "astraupskill/07-TRACE-LAB.md": "087ac6276249697a5ca4f3422224707d1b1db2c15dc80dc04689cb10cbfd53f8",
+    "astraupskill/VERIFICATION.md": "933481c0a834d3177c798bb49634483612598f5febcfd1540042a9a91e910f40"
+  },
+  "evidenceHashes": {
+    "checks/7b18281f562f/crud-b02-astra-runtime.json": "1e15b8764d7cbb3aa20d173fb23ba439c89cb97adaa61b4416767c10ccf6b2df",
+    "checks/7b18281f562f/crud-b02-astra-runtime.log": "dab2c9384daa3623e5b8e36f476a72c5a4c2ca92cae2b698486b1f32afeb746e",
+    "checks/7b18281f562f/results-crud-b02.json": "0b9c2530928c34a5f1c21ab506645cd6ba667b25feb1841e14d740b01870c6af",
+    "checks/7b18281f562f/review.log": "57708b927ebdc897ccf8d0365addcc18132dbf8510170fdb68ea5e026946ecc6",
+    "checks/7b18281f562f/runtime-b02.log": "57cb8e5ddb089ac052717e83245675b48b507f7af0118bdac1e0207305d1306c"
+  }
+}

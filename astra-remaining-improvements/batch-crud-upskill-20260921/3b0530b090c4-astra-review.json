@@ -1,0 +1,39 @@
+{
+  "id": "3b0530b090c4",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:33:45.364812+00:00",
+  "sourceReview": "Reviewed full JSON store and Express share caller/reader. Parent guard strengthened to own-property plus valid entry so inherited constructor/__proto__ names cannot create shares. Token generation remains after guard, actual route error mapping unchanged.",
+  "teachingReview": "Read nine chapters, removed repeated padding, corrected object-map identity, initialization/no-write scope, concurrency and HTTP status claims. Added explicit trace table, original snapshot and failure exercises.",
+  "testReview": "Four actual store cases passed with real Node path and fs/nanoid/scene adapters: missing/inherited parent no token or share writes, valid persistence and readback preserving unrelated rows, read error and write error identities. No native disk/Express/JWT/concurrency claim.",
+  "specSHA256": "946ae5c727451ab197f229d23e5f461edbb35c92d6f21ae1cf868a442021fde5",
+  "fileHashes": {
+    "server/store.ts": "3b9cdd8bce3dea2253e6784d5d321e54fbbb9ae031690a6a5d1cf46560bbad2a",
+    "tests/share-room-integrity.test.mjs": "b9f72ac48399f5fa2f2704f74620ba6326b0d419695fca0bf8f70f514760292e",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/store.ts.original.txt": "0b3d928e3687c8660fd682450b38ece575b13d124d4e6e16af605a962820688b",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "685615a6b29a1bffdf4c65e898d4cbbe8ea7fd02d008f2d45a3a408b075c556f",
+    "astraupskill/evidence/results.json": "8d55a9d395de560fcb70f1d6c57421474b51f3786ea191fc4c93f7b89730e475",
+    "astraupskill/README.md": "c0a1a1b8a076bacb0a7d4f7770eda85ea3fdf457ed05f4c16998a41aa57b9705",
+    "astraupskill/01-CODEBASE-MAP.md": "71dc4e8b51ba975fe74a4bc07c2b430c5f23af9b6505da564c8c3c24d63b7e2f",
+    "astraupskill/02-CONCEPTS.md": "0eb7f357811bca83cb5f16547bf97034407593a808eace8dc21d102ee252eead",
+    "astraupskill/03-WORKED-CHANGE.md": "92ab479f44f38b5439b427d0c4f34559d523135dc9c168bee5b2e82bc9d33a55",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "e721999227e5286210cbd822308d301cfaf11160a2607693154b94f3b4ae002f",
+    "astraupskill/05-PRACTICE.md": "bd046504cbfe06adaead479fdd6c93e309cde955813b56a26c28a1ca86e33b29",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "210558516a581d5fbac34f8330c34fc28497ad08183de1a2c906cdf91566effa",
+    "astraupskill/07-TRACE-LAB.md": "0439958f4843233277941994bf2fe7d72d6dedb54056d2f34f6ef26fd3381546",
+    "astraupskill/VERIFICATION.md": "287975b000b38dc6a88e53baab6b830736f2c85d9300a67ce629d9fd481b39fe"
+  },
+  "evidenceHashes": {
+    "checks/3b0530b090c4/crud-b04-astra-runtime.json": "2bf081613ad1316b37217fcf266946a515a7aa075e391e1dee1a352cf16e7e68",
+    "checks/3b0530b090c4/crud-b04-astra-runtime.log": "685615a6b29a1bffdf4c65e898d4cbbe8ea7fd02d008f2d45a3a408b075c556f",
+    "checks/3b0530b090c4/crud-b04-e11-runtime1.json": "c1dab1ab17ba8267a08780c2bc7e1bc3bc5e2b3a8bbb74602c5a5e8cbe402d0d",
+    "checks/3b0530b090c4/crud-b04-e11-runtime1.log": "b2bce84769b197aec3649745daeede28e7ecfb82647a44ca7ef5d36f12dc9c03",
+    "checks/3b0530b090c4/crud-b04-e11-runtime2.json": "1f1211946bbe2e1c2e7faba833b37311628aa4cb337f855b05884b36835e7778",
+    "checks/3b0530b090c4/crud-b04-e11-runtime2.log": "adc070fb4fcbbbd9d36339b0c5d1bce1e34c88cbccfc31d8375c161f08c79bfb",
+    "checks/3b0530b090c4/crud-b04-e11-runtime3.json": "928b4bb2db6e4c98058904b5e622cae843a1d5bb78cb68b20bd4cbfb2a243545",
+    "checks/3b0530b090c4/crud-b04-e11-runtime3.log": "18c6979d70eca3017bfffcc72fbfb765e7ca22b98a3e3e61066b5c87d7f8b678",
+    "checks/3b0530b090c4/crud-b04-e11-runtime4.json": "9ca9bbd3be82273a088a3e8568fb32ef7bd0b314677b615bd13391c66630cc81",
+    "checks/3b0530b090c4/crud-b04-e11-runtime4.log": "3d6c4dcde90264853945a1319fe658c4e8aa433413b197cf595827611bcbccea",
+    "checks/3b0530b090c4/results-crud-b04.json": "8d55a9d395de560fcb70f1d6c57421474b51f3786ea191fc4c93f7b89730e475"
+  }
+}

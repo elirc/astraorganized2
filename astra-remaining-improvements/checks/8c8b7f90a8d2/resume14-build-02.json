@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+  "id": "8c8b7f90a8d2",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8c8b7f90a8d2",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused",
+    "SESSION_SECRET": "astra-build-only-synthetic-secret-20260919"
+  },
+  "startedAt": "2026-09-19T17:47:11.439482+00:00",
+  "status": "complete",
+  "log": "resume14-build-02.log",
+  "pid": 21224,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T17:59:14.460321+00:00",
+  "elapsedSeconds": 723.0
+}

@@ -1,0 +1,344 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D1",
+  "id": "61d919e84af9",
+  "summary": [
+    "Authorizes a board snapshot before Socket.IO room and presence mutation, preserves an existing room after a rejected replacement, restricts heartbeat to joined boards, and cleans presence on leave or disconnect.",
+    "Validates card:update with a strict runtime patch schema, preserving omitted nullable fields while carrying explicit null clears and valid ISO dates to the service.",
+    "Scopes move destinations and neighbors to the board, allocates board event versions through the transaction connection with an atomic increment, and builds a presence-aware Drizzle card update argument.",
+    "Adds four finite Node tests through the registered socket handler and updates the custom server to adapt handshake headers into the auth boundary; no live database or dispatcher is exercised.",
+    "Provides nine source-grounded upskilling chapters with matched exercises, runnable solutions, trace coverage, exact original snapshots, and explicit mock/integration limits.",
+    "Repairs the Next/PostCSS/dependency setup, keeps schema migration separate from compilation, and preserves card keyboard focus and activation while delegating handled drag keys."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/61d919e84af9/results.json",
+    "expectedTests": 4
+  },
+  "testResults": {
+    "passed": true,
+    "total": 4,
+    "tests": 4,
+    "failed": 0,
+    "checks": [
+      "root-test-01",
+      "root-lint-02",
+      "root-build-05"
+    ],
+    "scope": "Four FakeSocket/update-argument tests, final ESLint and full Next production build with type validation. Custom accent/shadow CSS present. Keyboard card activation source-reviewed; no browser, database, Redis, socket listener or dispatcher."
+  },
+  "courseWords": 4939,
+  "courseFiles": 9,
+  "courseLinksChecked": 14,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "263cc195d180a06dc98c5892563c55ae9337f59aa994e13674ba4185e8dbc588",
+      "after_sha256": "5de30b376b984d7e13b2c1205841bcd7c43499e8851740c306279f9bb65abe17"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "a5918bf15d846d0cb438513b04d51e3d978c37b9deaab73b3cdece3f9e541a06"
+    },
+    {
+      "file": "next.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "e3fec2020361067e967776284e2a5cc1dd10e39c672481cedb76a3e291ecb009"
+    },
+    {
+      "file": "postcss.config.mjs",
+      "before_sha256": "082f9a07aae22ae329bfc652d405ba5a704cba1ee86f4b78c7c70f98d628a610",
+      "after_sha256": "94272d93e2ca59375e97fc22ded48886a351eb43f206a38c703cf2c3ace2f4eb"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "60d4b5a90846dbb30608740df735a82f92d327f581185373c6c5d511a0625a70"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "9720ea9c266d199dadf07fe4f16dfb87eeac1c8ff4d63c6e9277039a5c1b9c04",
+      "after_sha256": "13efbb0a56819d8424e2b58932c959ed89fd5e293a2322a1edf6b2d91d20c0f5"
+    },
+    {
+      "file": "server.ts",
+      "before_sha256": "c27b8e6d3b03b7d35689eacfe8af58e15170073464606f69a53aae2deae50651",
+      "after_sha256": "2eaa67a0cf88ca1c402483aff88a75f173c8489424b6b42ce99f106f6dff053a"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "65c0deeb0bbe095eea8cba8ad74ce0e71a6e0bc33ded3bdcfc63e3be9c8f2386",
+      "after_sha256": "c10db3ed1863ff218dfb84f72df07dc7d992c38f5506aa3c0798c4809206314e"
+    },
+    {
+      "file": "src/app/api/boards/route.ts",
+      "before_sha256": "6b5179d4cf1cf1fa9fc712ca80ab4fd31eb683fb0917233dee9394b7693fa393",
+      "after_sha256": "796d48264e4fe15a797452c4b70c828f563f9f68e8399bacf31da06f76a93067"
+    },
+    {
+      "file": "src/components/board/BoardSurface.tsx",
+      "before_sha256": "7791f68422ad87e7179970a7803d9dc16b31bc3af6656008bae0c75f0a0ac70d",
+      "after_sha256": "c14e85097d1de3c01ab513bd6c4baf2ce931adb1e9357a39470f7889a931c656"
+    },
+    {
+      "file": "src/components/board/Column.tsx",
+      "before_sha256": "5ac870f3e8d571a8a35d3ee64ea355b0ba5e8246f7ead7cac16d48e8e1886dd1",
+      "after_sha256": "eabb6ae3cf091c0477140fdec9f56b23ea792e4ef8d71fd4114a175a35cd1dae"
+    },
+    {
+      "file": "src/components/board/Card.tsx",
+      "before_sha256": "0afe493c55e391090f35076457c2dce53bd7aeb10b0b18e3a8ca46c347c9a0e6",
+      "after_sha256": "c8c5060f9a5ca7e47c18f77b9f6214f407dea2916f5b500fb6fb57481921354e"
+    },
+    {
+      "file": "src/hooks/useBoardSocket.ts",
+      "before_sha256": "cb36ee62cca32bbca9265353c4a824a9b2acf7e7a59a0fdf87b53b3eb323ec32",
+      "after_sha256": "b61d77870edce783413a2a19d330c92e0ec7daa34df2270340171f2678724cb0"
+    },
+    {
+      "file": "src/lib/filter.ts",
+      "before_sha256": "a9cef73a98020c26686375d5ae059ccd04fa1be353ba77c17dde9c8248fdf0c9",
+      "after_sha256": "ef6d9098b21726d4c8aa25f4515f658497db25601dbb11a252e1c6100b942f30"
+    },
+    {
+      "file": "src/lib/lexorank/index.ts",
+      "before_sha256": "2e6367c4d98df193cb51a1ee17e28761cb7bc9471af6ba02d28a4b5045c2e923",
+      "after_sha256": "9a14f46e3bb3ee4625a9c6800a66c6a1be2869c84a088dff39cfc5ba17274c01"
+    },
+    {
+      "file": "src/lib/services/auth.ts",
+      "before_sha256": "95de4890f1a3bf53050118cfcdc402719f2d3855d28cda59661a91acf91ecebc",
+      "after_sha256": "43ac1393cc19f7c39ee83588c4d5d6090443f235c1dd0d1dbf2130d7ea619de6"
+    },
+    {
+      "file": "src/lib/services/board-service.ts",
+      "before_sha256": "fcc46b505ec388daea3245ebd4a25b654cc83a72b645f13d502aec69659bcd10",
+      "after_sha256": "3cdc616dd16c1beb6290c1f240435b834fe23293a90c8d49ec1c0a3922e5d71b"
+    },
+    {
+      "file": "src/lib/services/card-update-set.ts",
+      "before_sha256": null,
+      "after_sha256": "d8338fc52dd105b13158bbbc08920f30375af4211badd645bf79eba1330ad6fc"
+    },
+    {
+      "file": "src/lib/socket/actions.ts",
+      "before_sha256": "f780829a37ee5d1b25f3a822d986eaccd9144c3578edb4f68f5194f62ee67159",
+      "after_sha256": "a92738d37944e39ec15c51336b2fbae9bf25dcf68b8127b7b7e373fd8f98598c"
+    },
+    {
+      "file": "tests/socket-actions.test.ts",
+      "before_sha256": null,
+      "after_sha256": "b09b7b35e5d8e3743d9b2719ef5a313651ea8ee08a736c902f2305d9a41b90ce"
+    },
+    {
+      "file": "astraupskill/snapshots/actions-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "f780829a37ee5d1b25f3a822d986eaccd9144c3578edb4f68f5194f62ee67159"
+    },
+    {
+      "file": "astraupskill/snapshots/services-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "fcc46b505ec388daea3245ebd4a25b654cc83a72b645f13d502aec69659bcd10"
+    },
+    {
+      "file": "astraupskill/snapshots/auth-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "95de4890f1a3bf53050118cfcdc402719f2d3855d28cda59661a91acf91ecebc"
+    },
+    {
+      "file": "astraupskill/snapshots/server-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "c27b8e6d3b03b7d35689eacfe8af58e15170073464606f69a53aae2deae50651"
+    },
+    {
+      "file": "astraupskill/snapshots/filter-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "a9cef73a98020c26686375d5ae059ccd04fa1be353ba77c17dde9c8248fdf0c9"
+    },
+    {
+      "file": "astraupskill/snapshots/BoardSurface-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "7791f68422ad87e7179970a7803d9dc16b31bc3af6656008bae0c75f0a0ac70d"
+    },
+    {
+      "file": "astraupskill/snapshots/Column-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "5ac870f3e8d571a8a35d3ee64ea355b0ba5e8246f7ead7cac16d48e8e1886dd1"
+    },
+    {
+      "file": "astraupskill/snapshots/Card-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "0afe493c55e391090f35076457c2dce53bd7aeb10b0b18e3a8ca46c347c9a0e6"
+    },
+    {
+      "file": "astraupskill/snapshots/globals-before.css.txt",
+      "before_sha256": null,
+      "after_sha256": "65c0deeb0bbe095eea8cba8ad74ce0e71a6e0bc33ded3bdcfc63e3be9c8f2386"
+    },
+    {
+      "file": "astraupskill/snapshots/postcss-before.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "082f9a07aae22ae329bfc652d405ba5a704cba1ee86f4b78c7c70f98d628a610"
+    },
+    {
+      "file": "astraupskill/snapshots/next-config-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "96dbddab7305e697c93d6560062a01b40a9c41f0d2dd5138a093620db68c8873"
+    },
+    {
+      "file": "astraupskill/snapshots/package-before.json.txt",
+      "before_sha256": null,
+      "after_sha256": "263cc195d180a06dc98c5892563c55ae9337f59aa994e13674ba4185e8dbc588"
+    },
+    {
+      "file": "astraupskill/snapshots/tsconfig-before.json.txt",
+      "before_sha256": null,
+      "after_sha256": "9720ea9c266d199dadf07fe4f16dfb87eeac1c8ff4d63c6e9277039a5c1b9c04"
+    },
+    {
+      "file": "astraupskill/evidence/test-10.json",
+      "before_sha256": null,
+      "after_sha256": "e3234d0f92cee3afaf9a3a69cfbd30234070609eb50948de53f292979a9942d3"
+    },
+    {
+      "file": "astraupskill/evidence/test-10.log",
+      "before_sha256": null,
+      "after_sha256": "dbd02f8375597621b3163e01bb93b8fc337474771e505f935db5f4f521bb11f3"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-06.json",
+      "before_sha256": null,
+      "after_sha256": "c825b5cf0d70b7e23e989ea1ca3cc6812c7b31f27606c3a044225edff96e1c31"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-06.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/lint-03.json",
+      "before_sha256": null,
+      "after_sha256": "4266deec36b6ed1feb8c0d268b7635a5b394355ff974260f1832f27952606e90"
+    },
+    {
+      "file": "astraupskill/evidence/lint-03.log",
+      "before_sha256": null,
+      "after_sha256": "59361733571a007a58a25efe8893e1c0629cce2045540abcb0ba7810fd76266f"
+    },
+    {
+      "file": "astraupskill/evidence/build-04.json",
+      "before_sha256": null,
+      "after_sha256": "62c05e8e35c33c1d7fa5e8971e191fded51f11d815192be2e5db5bf5580f3db9"
+    },
+    {
+      "file": "astraupskill/evidence/build-04.log",
+      "before_sha256": null,
+      "after_sha256": "db5d42bd5fb4087da38da4b49bca1e7bab177551b240d6a4dc554163d6b29b16"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "1f6072d62ec5df867b77256a7e1e3338cc41db4cdb258abe35e1dcc11881b627"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "746caa07ec9df9dfc2c2e3720edf462a7fdd2452cc11b64754046fb5b22c600f",
+      "after_sha256": "9dd9d642cdb87d4d5b3173217e0c45429b3e47a6f5cf5fb0ead6c644ec5fed01"
+    },
+    {
+      "file": "astraupskill/evidence/css-inspection.json",
+      "before_sha256": null,
+      "after_sha256": "51e6ca7dcf2534a55fa6280847a522aa105bb9c995d0392b1d4094d43da5ac33"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "a7ab913796a17426a4cde0922d6401ce06ff02a6c15d9593d94ea9c36839b968"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-05.json",
+      "before_sha256": null,
+      "after_sha256": "10283e956d864b7f6f3e19e0b74df6a70f84da978e8362249317a51314f8beac"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-05.log",
+      "before_sha256": null,
+      "after_sha256": "2268e2a6046d704801c5fc1cbecd8ec55ae426a681ac5f6130724c54bfd0b74a"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-02.json",
+      "before_sha256": null,
+      "after_sha256": "6386618ca24d2663f6a00d0071acb01cfa323966c4432adf0b0d1b3a32b1f4a1"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-02.log",
+      "before_sha256": null,
+      "after_sha256": "59361733571a007a58a25efe8893e1c0629cce2045540abcb0ba7810fd76266f"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "eb1f9144bfbbc427d2edd4a41fb87c391ea16cd6387800f3a49ab17a33158fff"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "1c6df3540a255ae88c3c36ca9de35fcfaaa03192c81431a8a34d5d0602b5e464"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8e1a8081f956918a755f3a943d22a8424ecbbac841b80bc30d685d4f9463b2b2"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "af76e9cd7af3ba86ce981942c583ac5938b09fe6b501da19c0c6c942077563f2"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e7ae590b891c6629edb83e35668e2a8fc0845f8bee09e9f936ac04a8504c5a2e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "5d9736153a30c47ab2556a3fc3a9e1c93ac84f0ebc1612905ba7c3c6765532db"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "86441c6f50153fef99fd27b66a899461ba799b2435068a7e3792940a476ec1f5"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9f577b20a2eb5708b95671ec8429ed8ba720552c839ab5b69bd459224bbe7973"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "bf8892ed97a11fbbbf6f96e52a15fb3ffc119d66ce6088e12c2ab36021cf55a6"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8f5e8f28fa836de060aa5109420a3ac9008cc2783e98c513c5b0eae08d2fd395"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e342b3e512db92f40e595bdd9dd52d071cc92393ebee5cd03e137ca0bc50d734"
+    }
+  ],
+  "limits": [
+    "The finite tests use a FakeSocket, injected service dependencies, a pure update-set helper, and a synthetic DATABASE_URL; no live PostgreSQL, Redis, Socket.IO server, outbox dispatcher, browser, or migration is run.",
+    "The update-set regression proves the exact Drizzle .set argument and not a committed row; a disposable PostgreSQL test is still needed for rollback and concurrent transaction behavior.",
+    "Atomic board versioning is implemented on appendBoardEvent's transaction path. Original archive, restore, template, and role paths call the typed helper with the database executor outside an enclosing transaction and are not claimed as fully atomic.",
+    "getSessionUserFromHeaders enables custom server handshake adaptation, but real Next cookie/session infrastructure and production authentication are not exercised.",
+    "The copied original snapshots preserve canonical bytes and may contain Windows-1252 punctuation; Markdown course chapters are UTF-8.",
+    "Empty patches, optimistic drag ordering, non-text filter behavior, concurrent joins and membership revocation after joins remain follow-up work. Card keyboard behavior was source-reviewed and compiled, not browser-tested."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T22:53:25.700255+00:00"
+}

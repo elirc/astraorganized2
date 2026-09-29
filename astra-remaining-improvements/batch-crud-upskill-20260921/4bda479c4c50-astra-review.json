@@ -1,0 +1,31 @@
+{
+  "id": "4bda479c4c50",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:26:55.698786+00:00",
+  "sourceReview": "Reviewed actual JSON store and exact snapshot. The early return uses the existing normalized field diff before timestamp and file write; tenant and missing behavior remain intact. Other CRUD methods and existing queue limitations are unchanged.",
+  "teachingReview": "Reviewed all nine source-linked chapters and corrected the baseline event claim: no-op previously changed timestamp and file but emitted no event. Added same-process read-modify-write race and tag-order extension answers. Commands are project-local.",
+  "testReview": "Five independently executed production-store tests use real isolated temporary files, real filesystem operations with a counting write wrapper and fixed clock. Verified untouched bytes and timestamps, normalized equivalent fields, exact changed event payload, wrong tenant and missing id. No HTTP or concurrency claim.",
+  "specSHA256": "53d3a60969c14ef4b98adfe7d542597db3204f61e283a9cf1c3d6211d44643db",
+  "fileHashes": {
+    "deskpilot-clean/src/lib/store.ts": "97bd1ca36ffe0a9cc179c6d6a4a65b0e12363ed9c1e758a63bdce4855bdf0fab",
+    "astraupskill/snapshots/store.ts.original.txt": "be7d86052dc8dada4c354a8b31e06c83bfa3600f2b7c4a1698bdc73e74607234",
+    "tests/runtime-ticket-noop.test.mjs": "58a3f867b533d78585515d6dd7493bd3e990ad9aaca0508c976b796d7530b657",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "169a09bb83b32c3db152f5be2549d1c0ee29acae7ee5ec1df2ae27f2e97b47f1",
+    "astraupskill/evidence/results.json": "89d8faacee40b6544e9cf6cb67469c59a0cddb75b8ce6e074ee443fd9bb92951",
+    "astraupskill/README.md": "b79d2699f22ea7de605602b0f0fc9cc736dd4c9caba32cc07d885d55ce47831c",
+    "astraupskill/01-CODEBASE-MAP.md": "96e065e687eead68e0b964f4ce0bf9959f5873184b6fd46d831ee494b3a9574c",
+    "astraupskill/02-CONCEPTS.md": "31d89ff573cae2bb41a6f3e0855ccbbee27c844f7209b4a8ea6b1581d0d04b9e",
+    "astraupskill/03-WORKED-CHANGE.md": "4d27479b08df26a3af49b3456a079a37eaf15f80ab47bb3df1ea71e8ba74d25b",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "c904eb89a2ec6abfe033353da195d5fa9d92702757fa5c918e74dbf1e09edeff",
+    "astraupskill/05-PRACTICE.md": "a93bf5d197edb7bc304ea7d9054d4df24b67fe7431b0ee76ff232914558c5797",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "dcf3553d1874eec5de04d4a1bf73891785046594672b5b21aacb4025fc19182e",
+    "astraupskill/07-TRACE-LAB.md": "b28bfa3069981a2e942f3b4179cce8f2b49f8d31deeee21a1a294b3e72edf9f2",
+    "astraupskill/VERIFICATION.md": "bd3db9f76c713b15e00da7316d96818839889194ec570ceedf7582653b3c20de"
+  },
+  "evidenceHashes": {
+    "checks/4bda479c4c50/crud-b03-astra-runtime.json": "272644a16c1b72d4ea5b59fb48a6850a53f0de69f0125b7dc4976d8348060c30",
+    "checks/4bda479c4c50/crud-b03-astra-runtime.log": "169a09bb83b32c3db152f5be2549d1c0ee29acae7ee5ec1df2ae27f2e97b47f1",
+    "checks/4bda479c4c50/results-crud-b03.json": "89d8faacee40b6544e9cf6cb67469c59a0cddb75b8ce6e074ee443fd9bb92951"
+  }
+}

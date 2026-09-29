@@ -1,0 +1,29 @@
+{
+  "id": "4d914b7440f4",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:09:18.769953+00:00",
+  "sourceReview": "Read actual markJobRunning and service zero-count branch. Predicate requires id+QUEUED, atomically requests attempts increment; production unchanged.",
+  "teachingReview": "Read nine chapters, removed stray quotes and clarified adapter count forwarding versus live competing worker evidence. Explicit repository/service/provider boundaries.",
+  "testReview": "Three isolated actual-repository cases pass for exact claim args, zero-count forwarding and preserved database error identity. No SQL, worker or concurrent race execution.",
+  "specSHA256": "da96378e58a58ec84ed0985574e6df9734e47931e799ccfa626227c1d211c2c8",
+  "fileHashes": {
+    "tests/runtime-job-claim-contract.test.mjs": "7104bd845270ee5344f934d057e2c67703d7cd6b820474330ba72163df31346c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "a2d3cc8164d0587c24f8ac0bd39641b2a4605cb6f2ee820eebbe3c32304815fc",
+    "astraupskill/evidence/results.json": "16c6a8b41641d7a40e5398ecd3a029a3f4515daaac849d7e411865f300b417ba",
+    "astraupskill/README.md": "a4431a78d3e260b2c47a881f1c3cc01976575ee9b13f70763ac0db990014e6d4",
+    "astraupskill/01-CODEBASE-MAP.md": "c3b8f3b1c0e8a78b2ac6fedce076296cd46d43a73bbfd42bd5e55b08d177d97e",
+    "astraupskill/02-CONCEPTS.md": "431d8dc1654df4b88803c2cf2446c848884c430d89b93d4be43fa31ab7471524",
+    "astraupskill/03-WORKED-CHANGE.md": "accc8f6c429c066a1c98d56d7e8eee9d69ab4dfe7450e5e1ff6c4db0bd4c4cd1",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "ec56189399d6d3907b9692d9685da959473f3af3287e5d812cd15d3e7c7e43fd",
+    "astraupskill/05-PRACTICE.md": "b72b146810a9ac332602cc90df1ff183dd02105120deca90768a689cdfc7ce94",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "eabb5a991c513ca4d78586cfae9401e730902ce5f83cb59de4ddd56dc03cd64c",
+    "astraupskill/07-TRACE-LAB.md": "8f9ca6ca37e010fb77dfea317b1b6aa6eb307a26202c43ad140374dc40e18313",
+    "astraupskill/VERIFICATION.md": "13b62fcf09aae251ccdc7145f5d89b37903f019c40fc0384d62855518fa0fe18"
+  },
+  "evidenceHashes": {
+    "checks/4d914b7440f4/crud-b07-astra-runtime.json": "6b34bc8f23eff2d2b503ce6d65c3d0727ac5b0756e04a09215f3a75969346f78",
+    "checks/4d914b7440f4/crud-b07-astra-runtime.log": "a2d3cc8164d0587c24f8ac0bd39641b2a4605cb6f2ee820eebbe3c32304815fc",
+    "checks/4d914b7440f4/results-crud-b07.json": "16c6a8b41641d7a40e5398ecd3a029a3f4515daaac849d7e411865f300b417ba"
+  }
+}

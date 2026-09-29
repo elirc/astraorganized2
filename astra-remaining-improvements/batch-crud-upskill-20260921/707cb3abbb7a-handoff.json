@@ -1,0 +1,28 @@
+{
+    "id":  "707cb3abbb7a",
+    "project":  "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+    "stage":  "astra-remaining-improvements/stage/707cb3abbb7a",
+    "finding":  "updateTicketAction read a ticket with organization scope but wrote by id alone, allowing a stale form to overwrite a later edit and then emit normal audit or notification side effects.",
+    "changedFiles":  [
+                         "astra-remaining-improvements/stage/707cb3abbb7a/apps/web/lib/actions.ts",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/tests/runtime-ticket-update.test.mjs",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/tests/helpers/load-typescript.mjs",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/snapshots/apps-web-lib-actions.ts.before",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/README.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/01-CODEBASE-MAP.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/02-CONCEPTS.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/03-WORKED-CHANGE.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/04-TESTING-AND-DEBUGGING.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/05-PRACTICE.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/07-TRACE-LAB.md",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/VERIFICATION.md",
+                         "astra-remaining-improvements/checks/707cb3abbb7a/results-crud-b02.json",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/evidence/runtime-ticket-update.log",
+                         "astra-remaining-improvements/stage/707cb3abbb7a/astraupskill/evidence/results-crud-b02.json"
+                     ],
+    "tests":  "checks/707cb3abbb7a/results-crud-b02.json (4 passing Node VM tests)",
+    "limitations":  [
+                        "Four actual production-action Node VM tests passed with explicit doubles: stale P2025, success DTO/audit, inaccessible ticket, and unrelated persistence error. Vitest, live DB, HTTP, full typecheck, transaction isolation, and deployed timestamp precision remain outside this evidence."
+                    ]
+}

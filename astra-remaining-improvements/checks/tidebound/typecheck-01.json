@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm.cmd",
+    "run",
+    "check"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 2,
+  "seconds": 265.14
+}

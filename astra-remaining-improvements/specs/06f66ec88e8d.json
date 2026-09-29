@@ -1,0 +1,25 @@
+{
+  "id": "06f66ec88e8d",
+  "project": "_Organized Desktop/05 Numbered Experiments/w21",
+  "summary": [
+    "Map Prisma P2025 concurrent deletion to the existing route not-found contract.",
+    "Preserve unrelated persistence error identity.",
+    "Execute the actual transition service through a dependency-free VM harness."
+  ],
+  "changedFiles": [
+    "src/services/admin/gateway-route-service.ts",
+    "tests/runtime-route-status.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/admin/gateway-route-service.ts",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/06f66ec88e8d/results-crud-b04.json"
+  },
+  "limits": [
+    "Five runtime cases execute actual transition service, AppError and role policy with repository and Prisma transaction adapters. Native Vitest, Prisma/PostgreSQL and Next HTTP middleware were not run.",
+    "P2025 is simulated after a successful pre-read; no real concurrent delete or transaction rollback was executed. Status and policy preconditions remain separate reads and are not made atomic by this error translation."
+  ]
+}

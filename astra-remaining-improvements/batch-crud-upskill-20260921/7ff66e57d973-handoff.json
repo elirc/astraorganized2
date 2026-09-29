@@ -1,0 +1,33 @@
+{
+  "id": "7ff66e57d973",
+  "status": "ready_for_review",
+  "summary": [
+    "Project status transitions now fail closed when the tenant-scoped update affects zero rows.",
+    "Successful transitions still reread the row and audit once."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/7ff66e57d973/src/services/project-service.ts",
+    "astra-remaining-improvements/stage/7ff66e57d973/tests/runtime-project-status-race.test.mjs",
+    "astra-remaining-improvements/stage/7ff66e57d973/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/snapshots/src/services/project-service.ts",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/evidence/astra-crud-b07-ww46.log",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/evidence/results-crud-b07.json",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/README.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/7ff66e57d973/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-project-status-race.test.mjs",
+    "passed": 4,
+    "resultsFile": "checks/7ff66e57d973/results-crud-b07.json"
+  },
+  "limits": [
+    "Actual project service and policy executed with explicit transaction doubles; provider-backed race test remains follow-up."
+  ]
+}

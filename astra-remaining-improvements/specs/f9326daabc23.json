@@ -1,0 +1,50 @@
+{
+  "summary": [
+    "Category counts and product lists share the buyable-variant predicate.",
+    "Catalog pages return complete card DTOs with batched relation fields, eliminating two follow-up reads per card in the real listing page.",
+    "Displayed prices use actual variants when stored sort summaries are absent or stale; positive-stock checks and cloned plain-object detail attributes preserve response correctness.",
+    "Pagination accepts only complete positive safe integers and canonicalizes generated links through the same parser.",
+    "Added repository and service regressions and nine source-based guides while preserving the existing architectural lint rules and indexed sort tie-break."
+  ],
+  "limits": [
+    "Unit tests inspect production query arguments through spies; no live PostgreSQL catalog benchmark was executed.",
+    "Price sorting still uses denormalized summaries that future writers must maintain; separate count/page reads are not one concurrent snapshot.",
+    "The existing no-database static-parameter fallback remains; a production build does not validate live catalog queries.",
+    "Future cart, checkout and administration curriculum features remain outside this read-path change."
+  ],
+  "changedFiles": [
+    "README.md",
+    "app/(storefront)/products/page.tsx",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log",
+    "astraupskill/evidence/resume14-generate-01.json",
+    "astraupskill/evidence/resume14-generate-01.log",
+    "astraupskill/evidence/resume14-lint-01.json",
+    "astraupskill/evidence/resume14-lint-01.log",
+    "astraupskill/evidence/resume14-tests-02.json",
+    "astraupskill/evidence/resume14-tests-02.log",
+    "astraupskill/evidence/resume14-types-02.json",
+    "astraupskill/evidence/resume14-types-02.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/app__(storefront)__products__page.tsx.original.txt",
+    "astraupskill/snapshots/lib__catalog-params.test.ts.original.txt",
+    "astraupskill/snapshots/lib__catalog-params.ts.original.txt",
+    "astraupskill/snapshots/server__data__categories.ts.original.txt",
+    "astraupskill/snapshots/server__data__products.ts.original.txt",
+    "astraupskill/snapshots/server__services__catalog.test.ts.original.txt",
+    "astraupskill/snapshots/server__services__catalog.ts.original.txt",
+    "lib/catalog-params.test.ts",
+    "lib/catalog-params.ts",
+    "server/data/catalog-boundaries.test.ts",
+    "server/data/categories.ts",
+    "server/data/products.ts",
+    "server/services/catalog.test.ts",
+    "server/services/catalog.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f9326daabc23/resume14-results.json",
+    "expectedTests": 83,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

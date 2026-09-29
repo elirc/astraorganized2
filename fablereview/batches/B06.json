@@ -1,0 +1,212 @@
+[
+ {
+  "wave": 1,
+  "stage": "51",
+  "name": "JS1/legal-case-tracker",
+  "rel": "JS1/legal-case-tracker",
+  "tests": 3,
+  "words": 7892,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\legal-case-tracker",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-legal-case-tracker",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/51",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/legal-case-tracker/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "52",
+  "name": "JS1/subscription-billing",
+  "rel": "JS1/subscription-billing",
+  "tests": 4,
+  "words": 8391,
+  "changes": 20,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\subscription-billing",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-subscription-billing",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/52",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/subscription-billing/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "53",
+  "name": "JS1/field-service",
+  "rel": "JS1/field-service",
+  "tests": 4,
+  "words": 8396,
+  "changes": 20,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\field-service",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-field-service",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/53",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/field-service/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "54",
+  "name": "JS1/research-studies",
+  "rel": "JS1/research-studies",
+  "tests": 4,
+  "words": 8383,
+  "changes": 20,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\research-studies",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-research-studies",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/54",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/research-studies/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "55",
+  "name": "JS1/warehouse-ledger",
+  "rel": "JS1/warehouse-ledger",
+  "tests": 3,
+  "words": 7573,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\warehouse-ledger",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-warehouse-ledger",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/55",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/warehouse-ledger/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "56",
+  "name": "JS1/secure-notes",
+  "rel": "JS1/secure-notes",
+  "tests": 3,
+  "words": 7316,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\secure-notes",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-secure-notes",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/56",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/secure-notes/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "57",
+  "name": "JS1/live-chat",
+  "rel": "JS1/live-chat",
+  "tests": 2,
+  "words": 7504,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\live-chat",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-live-chat",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/57",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "JS1/live-chat/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "58",
+  "name": "newcodexJS/07-blog-platform",
+  "rel": "newcodexJS/07-blog-platform",
+  "tests": 4,
+  "words": 8107,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\07-blog-platform",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-07-blog-platform",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/58",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/07-blog-platform/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "59",
+  "name": "newcodexJS/08-kanban-board",
+  "rel": "newcodexJS/08-kanban-board",
+  "tests": 4,
+  "words": 8107,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\08-kanban-board",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-08-kanban-board",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/59",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/08-kanban-board/astraupskill",
+  "batch": "B06"
+ },
+ {
+  "wave": 1,
+  "stage": "60",
+  "name": "newcodexJS/09-job-application-tracker",
+  "rel": "newcodexJS/09-job-application-tracker",
+  "tests": 4,
+  "words": 8095,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\09-job-application-tracker",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-09-job-application-tracker",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/60",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/09-job-application-tracker/astraupskill",
+  "batch": "B06"
+ }
+]

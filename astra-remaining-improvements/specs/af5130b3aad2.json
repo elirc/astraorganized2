@@ -1,0 +1,36 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/routes/checkin.routes.ts",
+    "apps/api/src/services/checkin.service.ts",
+    "apps/api/src/services/order.service.ts",
+    "apps/api/tests/order-checkin.test.ts",
+    "astraupskill/evidence/astra-buildevent-api-tests-r3.json",
+    "astraupskill/evidence/astra-buildevent-api-tests-r3.log",
+    "astraupskill/evidence/astra-buildevent-lint-r2.json",
+    "astraupskill/evidence/astra-buildevent-lint-r2.log",
+    "astraupskill/evidence/astra-buildevent-package-build-r1.json",
+    "astraupskill/evidence/astra-buildevent-package-build-r1.log",
+    "astraupskill/evidence/astra-buildevent-typecheck-r2.json",
+    "astraupskill/evidence/astra-buildevent-typecheck-r2.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/apps__api__src__routes__checkin.routes.ts.original.txt",
+    "astraupskill/snapshots/apps__api__src__services__checkin.service.ts.original.txt",
+    "astraupskill/snapshots/apps__api__src__services__order.service.ts.original.txt"
+  ],
+  "summary": [
+    "Used stable checkout provider keys, guarded amount validation and conditional payment-intent persistence.",
+    "Made inventory/ticket completion and event-bound check-in choose one winner, and rejected falsely successful cancelled free checkout.",
+    "Added stateful provider/persistence regressions and nine source-based guide chapters."
+  ],
+  "limits": [
+    "Tests simulate Prisma, Stripe and QR verification; they do not establish real database isolation, cryptographic verification or provider exactly-once delivery.",
+    "QR generation remains post-commit; remote provider effects and QR recovery are separate operational boundaries."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/af5130b3aad2/sol15-results.json",
+    "expectedTests": 11,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

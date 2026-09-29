@@ -1,0 +1,14 @@
+{
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--cache",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+  "startedAt": "2026-09-12T17:34:11.432781+00:00",
+  "status": "running",
+  "log": "install-02.log",
+  "pid": 35444
+}

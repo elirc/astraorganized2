@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\332058fd8671",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:01:53.330455+00:00",
+  "status": "complete",
+  "log": "setup-install-repaired.log",
+  "pid": 24164,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:14:58.251498+00:00",
+  "elapsedSeconds": 784.92
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/e17",
+      "id": "2f59a0d07a85",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/reply-parent-boundary.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f59a0d07a85",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:44:22.968318+00:00",
+      "status": "complete",
+      "log": "crud-b04-astra-runtime.log",
+      "pid": 33620,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:44:28.401190+00:00",
+      "elapsedSeconds": 5.26
+    }
+  ],
+  "limits": [
+    "Five Node runtime cases execute the actual forum module with Prisma, schema, enum, permission and external helper adapters. Same-topic/top-level cases run internal notification and trust orchestration against adapters, not real deliveries or persistence.",
+    "No Next.js, native Prisma, Zod schema, actual permission policy, database isolation or durable rollback was executed. Parent validation is a pre-transaction membership check; concurrent parent changes remain outside this correction.",
+    "Local Next.js guides were absent after dependency cleanup. No Next.js API or route was changed."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "a1d53294d3b0",
+  "project": "_Organized Desktop/03 Master Projects/master7",
+  "title": "Tenant-scoped dashboard audit logs",
+  "summary": [
+    "Scope dashboard audit records to the actor organization before taking 25 entries; preserve platform administrator visibility and the learner empty-list contract.",
+    "Add synthetic two-organization audit fixtures and a real local HTTP regression covering staff, platform administrators and learners; nineteen tests, type checking and the workspace build pass.",
+    "Add a source-linked CRUD course with exact original snapshots, worked examples, practice solutions and recorded verification evidence."
+  ],
+  "changedFiles": [
+    "apps/api/src/services.ts",
+    "apps/api/src/store.ts",
+    "apps/api/src/api.test.ts",
+    "docs/features/07-audit-log-viewer.md",
+    "README.md",
+    "astraupskill/snapshots/services-before.ts.txt",
+    "astraupskill/snapshots/store-before.ts.txt",
+    "astraupskill/snapshots/api-tests-before.ts.txt",
+    "astraupskill/snapshots/audit-feature-before.md.txt",
+    "astraupskill/evidence/root-final-source-hashes.json",
+    "astraupskill/evidence/install-01.json",
+    "astraupskill/evidence/tests-root-01.json",
+    "astraupskill/evidence/tests-root-01.log",
+    "astraupskill/evidence/typecheck-root-01.json",
+    "astraupskill/evidence/typecheck-root-01.log",
+    "astraupskill/evidence/build-root-01.json",
+    "astraupskill/evidence/build-root-01.log"
+  ],
+  "limits": [
+    "The store remains an in-memory teaching implementation with synthetic records.",
+    "No authentication, persistence, notification, or external integration redesign was attempted."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a1d53294d3b0/results.json",
+    "expectedTests": 19,
+    "command": "npm test -- --pool=threads --poolOptions.threads.singleThread=true --testTimeout=30000; npm run typecheck; npm run build",
+    "environment": "Node 22.16; npm 10.9.2; Vitest 2; actual local HTTP API with synthetic in-memory fixtures; no PostgreSQL connection"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "project": "globehire",
+  "id": "509c3537abdd",
+  "summary": [
+    "Added application-level regressions proving client-scoped hire-case completion and submission cannot mutate another client's aggregate.",
+    "Verified valid owner completion records the injected UTC audit time and increments the optimistic version once.",
+    "Verified a stale owner version preserves the untouched checklist item and reports the stable concurrency business error.",
+    "Added nine source-grounded learning chapters that trace route identity, repository keys, aggregate transitions, testing, and operational limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/509c3537abdd/sol15-results.json",
+    "expectedTests": 8,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 8,
+    "passedTests": 8,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "globehire",
+        "id": "509c3537abdd",
+        "command": [
+          "dotnet",
+          "test",
+          "tests\\GlobeHire.Application.Tests\\GlobeHire.Application.Tests.csproj",
+          "--disable-build-servers",
+          "-m:1"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\509c3537abdd",
+        "environmentOverrides": {
+          "DOTNET_CLI_HOME": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\dotnet-home",
+          "MSBUILDDISABLENODEREUSE": "1"
+        },
+        "startedAt": "2026-09-19T21:07:25.427398+00:00",
+        "status": "complete",
+        "log": "sol15-globehire-app-tests-r1.log",
+        "pid": 26768,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T21:12:44.853319+00:00",
+        "elapsedSeconds": 319.42
+      }
+    ]
+  },
+  "courseWords": 3718,
+  "courseFiles": 9,
+  "courseLinksChecked": 92,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "ab8b9839dfb64b509412e785e69ae2f01c1469cfebeae90065a8dbb4a8f05f4c",
+      "after_sha256": "eac059c3eb7a83075c8a4a9006849ee64a4e5554c4622b48bc4f8fb9a1765a35"
+    },
+    {
+      "file": "astraupskill/evidence/sol15-globehire-app-tests-r1.json",
+      "before_sha256": null,
+      "after_sha256": "78cb0e21acf97e6f9cfb73ef5ae43a895af19556a516d9e650b23e609bd864a9"
+    },
+    {
+      "file": "astraupskill/evidence/sol15-globehire-app-tests-r1.log",
+      "before_sha256": null,
+      "after_sha256": "99e3f425d7cc1c11e16d2b2e957fffc4cf382aee07e0b9926fdab1a07036dcfa"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ab8b9839dfb64b509412e785e69ae2f01c1469cfebeae90065a8dbb4a8f05f4c"
+    },
+    {
+      "file": "tests/GlobeHire.Application.Tests/HireCases/HireCaseTenantIsolationTests.cs",
+      "before_sha256": null,
+      "after_sha256": "931d6c7a3a0d4ff337664fa2df37d2830d0ed06961ed700af5e20c27ea30a86b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0dc24828ef93eda65499d35d46fac6c18cd65379a738be77f9776506a8dfb3cc"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "59a1befa09462ac0702b53b436ec40d9fa233678fa709bd2edda26047062d340"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e3c3851f97d14d60bd2093202dcab70b8a78cc8c3887f42b6ab71eeaaa2b943f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "0fb4f2f5b9257171e5cc28b51e38ddf2ab6025a36fa659e0f65270f90d6f4006"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e1a359c116d5d52eb100f40699033575b4c6f81032da85cb6548f6e9839d4565"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9c9f51945e756c4b1f7366141e9f0fc490867cff3b0ece67e2e133ee4f252b9a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d3b728523dd97422444b5f267e97a4b25d54948b9a79ddf81b664a31c92cf622"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1b95ed18e4359b962bae1d73c3309e1b3f1623d15268958d23db5591e80b8c98"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "282affc28dda14e083c837727f5605c4ca783f8503a04c6b1c5aa56ff0d6359d"
+    }
+  ],
+  "limits": [
+    "The project uses singleton in-memory repositories and does not prove durable or distributed transaction behavior.",
+    "ClientId is supplied by the teaching API route; authentication and organization membership are outside this change.",
+    "The targeted application test project was run; no external providers, databases, or broad solution checks were used."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T21:35:31.134440+00:00"
+}

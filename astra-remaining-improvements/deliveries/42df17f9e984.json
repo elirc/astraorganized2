@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz7",
+  "id": "42df17f9e984",
+  "summary": [
+    "Accumulate prior and incoming receipt quantities exactly once, rejecting duplicate-entry overage before writes.",
+    "Permit additional valid partial receipts while aggregate status remains PARTIALLY_RECEIVED.",
+    "Six real-service cases with actual errors, serializer and transition function cover partial, full, prior, duplicate and refusal paths."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/42df17f9e984/results-crud-b08.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz7",
+        "id": "42df17f9e984",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-purchase-receiving.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\42df17f9e984",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:32:56.074401+00:00",
+        "status": "complete",
+        "log": "crud-b08-astra-runtime.log",
+        "pid": 36592,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:33:11.482151+00:00",
+        "elapsedSeconds": 15.41
+      }
+    ],
+    "limits": [
+      "Repository and transaction adapters; inert Zod schema builders for module loading only, no schema parsing, SQL rollback or concurrent receipt protection tested.",
+      "Service assumes validated finite nonnegative quantities; current source reads receipt totals before transaction."
+    ]
+  },
+  "courseWords": 1944,
+  "courseFiles": 9,
+  "courseLinksChecked": 17,
+  "files": [
+    {
+      "file": "src/services/purchaseOrderService.ts",
+      "before_sha256": "fe600ec726edb35c6568eceb2001e3ac08516fff6875a2e28b3199e73475584c",
+      "after_sha256": "091d306a616764e6fad3605ea6eb60564cb9fee8d3d1a5855eac6efa424cdeab"
+    },
+    {
+      "file": "tests/runtime-purchase-receiving.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "bbabef2521ac7e279d23348fb5a7466b5a0246cb8bf8f12404973c9d922305e6"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-purchaseOrderService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "fe600ec726edb35c6568eceb2001e3ac08516fff6875a2e28b3199e73475584c"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b08-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "f77cfd8df6bf7775b732e2f1058d3f29f1813a742db6ef3cbfc67b73031e02ae"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "80573edccfc9d0b3392dbbf6f0364abee1a9449c0280341eca438debde99cd1a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "08d5f98e4445fce4350611b18abe63721baa485cb4b2d08838e93b44e3cc76d1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "587d0318ded6e6ca973295bfe12d7277db667288dd0dce1888d58652a1a0af37"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6f0503568e6aa4cc5d5f61f5954aba4660b7d76cf5c669d793ad6ed41ef24068"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9bdee8b2489c684b702897e5c02ea8edf06e6742aa976c5b104ea4ff769a5bc5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "90937f958ebd1414f6d3080be9f7483b60bcd4f8f314d632776b8e989f6b2c15"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3ca99857f3f1d4b642954784efbc1cc8112e3fa63a961989d168eade8eddd449"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b07187ee67796b279d77202b0ba8d2bbb24b52cb8f9b25602acac4ef32a24f55"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "3017b4528a0a7055de993f4e5d571e599b0d47a79a94b0c8d97eaa4e3136e4f2"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "faf9dc09a266cbc41e63173ad931ddf0d7e130aa9cdede71c9dcf410ea7686ee"
+    }
+  ],
+  "limits": [
+    "Repository and transaction adapters; inert Zod schema builders for module loading only, no schema parsing, SQL rollback or concurrent receipt protection tested.",
+    "Service assumes validated finite nonnegative quantities; current source reads receipt totals before transaction."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:41:16.328640+00:00"
+}

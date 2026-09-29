@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+  "id": "4c54d18d7d97",
+  "command": [
+    "node",
+    "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "ci",
+    "--prefix",
+    "server",
+    "--prefer-offline"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4c54d18d7d97",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:44:25.901302+00:00",
+  "status": "complete",
+  "log": "install-02.log",
+  "pid": 36284,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:48:53.210612+00:00",
+  "elapsedSeconds": 267.3
+}

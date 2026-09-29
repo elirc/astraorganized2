@@ -1,0 +1,322 @@
+[
+  {
+    "title": "Task Board: persistent undo",
+    "focus": "identity, immutable updates and atomic local persistence",
+    "source": "app.js",
+    "test": "test/undo.test.cjs",
+    "symbol": "commitBoard",
+    "flow": [
+      "Delete button passes the task id",
+      "deleteTask finds the record and its original index",
+      "commitBoard writes tasks and the deleted record together",
+      "render updates the cards and undo availability",
+      "loadBoard restores the saved recovery record after reload",
+      "undoDelete reinserts the same identity and consumes recovery once"
+    ],
+    "model": "The v2 document is {version: 2, tasks: [...], deleted: {task, index} | null}. A legacy array becomes a document with deleted: null. The task id is stable across delete and restore; its array position is not its identity.",
+    "before": "Deletion previously filtered the task out and saved the smaller array. The information needed to reverse deletion was lost.",
+    "after": "One localStorage value now holds both the visible tasks and the most recent deleted task. Delete and undo persist before publishing their new in-memory state. Undo clears old filters so the restored task is visible.",
+    "example": "Start with task ids [a, b, c]. Delete b: visible ids become [a, c] and recovery stores b at index 1. Reload. Undo: ids become [a, b, c], and recovery becomes null. A second undo changes nothing.",
+    "concept": "An inverse operation needs enough information to reconstruct the prior intent. Saving just an id would not restore the title, date or notes. Saving the entire old array would be equally troublesome: undo could erase a task added after deletion. Keeping one deleted record and its insertion position preserves unrelated work. This is a small command-history design, not a full event log. The product policy is deliberately one-level undo: deleting c after deleting a replaces the recovery record for a. A stack of multiple deletions is a separate exercise. localStorage writes one string atomically; two separate keys would allow a task list and an undo record to disagree if the second write failed. Publishing the UI only after a successful write makes the failure behavior easy to reason about.",
+    "exercises": [
+      "Add an accessible announcement that names the restored task.",
+      "Add a two-level undo history while preserving unrelated edits.",
+      "Handle malformed saved JSON without silently overwriting the original value.",
+      "Design a multi-tab conflict policy for two tabs deleting different tasks."
+    ],
+    "answers": [
+      "Use the existing role=status element and the saved task title; assign textContent rather than interpolate user text into HTML.",
+      "Store a bounded array of {task,index} entries in the same document; push on deletion and pop only after a successful restore write. Test two deletions, two restores and an intervening edit.",
+      "Catch parsing separately from writing, show a recovery message, and offer export/reset choices. Keep the corrupt raw value until the user chooses recovery.",
+      "The current app has last-writer-wins localStorage. A storage event can detect changes, but a read-then-write is not a compare-and-swap transaction. Describe conflict detection before claiming true multi-tab safety."
+    ]
+  },
+  {
+    "title": "Contact Book: duplicate-email validation",
+    "focus": "normalization, validation and edit identity",
+    "source": "app.js",
+    "test": "test/duplicates.test.cjs",
+    "symbol": "saveContact",
+    "flow": [
+      "The form submits a contact payload",
+      "saveContact trims required fields",
+      "A normalized email is compared with other records",
+      "The edited record is excluded by id",
+      "A duplicate focuses the email field and stops before mutation",
+      "A valid create/update is saved and rendered"
+    ],
+    "model": "A contact has id, name, email, phone, company and relationship. Email comparison uses trim().toLowerCase(), but the displayed email retains the user\u2019s spelling. The unique key for editing remains id, not email.",
+    "before": "The form checked required fields but allowed two contacts with the same email. A naive uniqueness check would also reject an unchanged email while editing its owner.",
+    "after": "Creates and edits reject case-insensitive, whitespace-normalized duplicates in another record. The message identifies the existing contact, marks the email invalid for assistive technology, focuses it, and leaves stored data unchanged.",
+    "example": "Ada owns Ada@Example.com. Creating Other with \" ada@example.COM \" fails. Editing Ada\u2019s phone while keeping Ada@Example.com succeeds. Changing Bob\u2019s email to ADA@example.com fails.",
+    "concept": "Normalization and validation answer different questions. Normalization chooses a comparison form; validation decides whether a candidate obeys a rule. Lowercasing here is a documented address-book policy, not a claim that every email provider treats all addresses identically. Do not add provider-specific dot removal or plus-address stripping: those transformations would merge potentially distinct addresses. The self-exclusion rule is the central edit insight: an existing contact is not a duplicate of itself. Comparing ids makes that distinction reliable even if the user changes the name or email. A useful validation error protects data and helps the person recover; a red outline alone is insufficient. The current array scan is linear in contact count, which is appropriate for this small local directory. A server-backed version would also require a database uniqueness strategy because two concurrent requests can both pass an application-only check.",
+    "exercises": [
+      "Clear the duplicate message when the user corrects the address, without hiding unrelated errors.",
+      "Add a case-insensitive company filter without mutating stored company names.",
+      "Implement a duplicate-review screen for legacy contacts already sharing an email.",
+      "Design the corresponding server-side uniqueness constraint."
+    ],
+    "answers": [
+      "Track the error\u2019s field/type rather than clearing every message on every keystroke; keep aria-invalid synchronized with that error.",
+      "Normalize the search query and a temporary comparison string. Store the original company for display and editing.",
+      "Group contacts by the same comparison policy, show the records, and let the user choose a merge. Never silently delete a record because its email collides.",
+      "Use a normalized email column or expression index with a documented collation/policy. Catch the uniqueness violation and translate it into a helpful conflict response."
+    ]
+  },
+  {
+    "title": "Focus Timer: elapsed time and state machines",
+    "focus": "deadlines, delayed callbacks and one-time completion",
+    "source": "app.js",
+    "test": "test/timer.test.cjs",
+    "symbol": "tick",
+    "flow": [
+      "Start records a deadline and schedules one interval",
+      "Each callback reads deadline minus Date.now()",
+      "The UI rounds remaining seconds upward for display",
+      "Pause captures the exact fractional remainder",
+      "Resume builds a new deadline from that remainder",
+      "Completion clears scheduling and moves out of running before logging"
+    ],
+    "model": "The timer has mode (idle/running/paused), remaining seconds, deadline milliseconds, duration seconds and intervalId. Session records are separate persisted history. A running timer is in-memory; page reload does not resume an active run.",
+    "before": "Each interval callback subtracted one second, so a throttled background tab could show a large amount of time remaining even after the session\u2019s real duration had elapsed.",
+    "after": "The interval is a wake-up mechanism. The deadline determines remaining time. Delayed callbacks catch up, pausing preserves fractions of a second, repeated starts do not stack intervals, and late callbacks cannot log the same completion twice.",
+    "example": "A 60-second session starts at t=0. The browser delays callbacks until t=45: one tick must display 00:15, not 00:59. At t=75 the next tick completes once. If paused at 1.25 seconds, 58.75 seconds remain; a two-minute pause does not consume them.",
+    "concept": "Scheduled callbacks are opportunities to run code, not a guarantee about elapsed time. Tabs can be throttled and the event loop can be busy. The equation remaining = max(0, (deadline - now) / 1000) separates measurement from scheduling. Keep fractional seconds internally and round only at the display boundary; rounding the stored remainder on every pause would let repeated pauses add time. The mode guard is an idempotency mechanism: after the first completion leaves running, another queued callback becomes harmless. Date.now is a wall clock and can jump if the system clock changes; this implementation fixes delayed-callback drift, not every possible clock-adjustment problem. A monotonic performance clock or a persisted wall-clock deadline each has different tradeoffs. The lesson is to state the clock assumption and test the failure mode you actually promised to fix.",
+    "exercises": [
+      "Add a five-minute break phase with exactly one transition from focus.",
+      "Persist a running timer across reload and specify how downtime counts.",
+      "Replace the clock with an injectable monotonic clock for an in-tab-only timer.",
+      "Add a test that repeatedly pauses at fractional-second boundaries."
+    ],
+    "answers": [
+      "Extend the mode/state model explicitly; do not start a new interval from render. Record which phase completes before scheduling the next phase.",
+      "Store phase, deadline and original duration. On load compare the deadline with now and choose resume or completion according to a documented product policy. Test an expired deadline.",
+      "Pass a now function into the timer logic. performance.now values are meaningful only within the page\u2019s time origin, so they cannot be blindly persisted across reload.",
+      "Advance a fake clock by noninteger seconds and verify elapsed active time, not the number of callbacks or pauses, determines completion."
+    ]
+  },
+  {
+    "title": "Finance Dashboard: validated expense editing",
+    "focus": "form modes, stable identities and derived totals",
+    "source": "app.js",
+    "test": "test/expense-edit.test.cjs",
+    "symbol": "editExpense",
+    "flow": [
+      "The ledger Edit button passes an expense id",
+      "editExpense pre-fills the existing modal and fixes its type to expense",
+      "handleEntrySubmit constructs and validates a candidate",
+      "A new state replaces only the matching expense while retaining its id",
+      "Storage succeeds before state is published",
+      "render derives totals and charts from the updated state"
+    ],
+    "model": "The saved document contains expenses, incomes, budgets, bills, goals and investments. An expense has id, owner, date, category, description and amount. Editing changes its fields, not its id or the number of expenses.",
+    "before": "Expenses could be added and deleted, but there was no edit action. The shared submit handler also accepted some malformed amounts without useful feedback.",
+    "after": "The existing modal supports an expense-edit mode with prefilled values, positive finite two-decimal amounts, real calendar dates and nonblank descriptions. Failed validation or storage keeps the original expense and the editor open. Totals continue to be derived from state.",
+    "example": "The fixture contains one $10.00 expense and no paid bills. Edit it to $12.50. There must still be exactly one expense with the same id, monthly spending must be $12.50, and reload must retain $12.50. Trying -1 or 1.001 must leave $10.00 unchanged in a fresh fixture.",
+    "concept": "Create and edit look similar in the UI but have different identity semantics. Reusing a form is reasonable only when its mode is explicit. A new id on edit would turn an update into an accidental duplicate; replacing the entire expense array with a one-record array would erase unrelated data. The map operation expresses a precise replacement. Deriving totals avoids a second state variable that can become stale after editing. Persistence-before-publish is used on the new edit path so storage failure does not pretend success. Existing add and other dashboard workflows have their own behavior and are not a general transactional storage engine. Amounts remain JavaScript numbers in this educational app; validation limits decimal places, but robust financial systems commonly use integer minor units or decimal arithmetic. This exercise is about software state and validation, not financial advice.",
+    "exercises": [
+      "Display an explicit saved confirmation after an edit.",
+      "Add a category-change regression that checks both category and overall totals.",
+      "Refactor create and edit to share a storage-first commit helper.",
+      "Migrate expense amounts to integer cents with a versioned saved-data migration."
+    ],
+    "answers": [
+      "Use a persistent role=status message outside the modal; announce the expense description and avoid relying on the closed dialog.",
+      "Move a fixture from Food to Travel and assert Food decreases, Travel increases and total spending stays the same.",
+      "Construct a complete candidate state for each operation and centralize the write-before-publish step; keep form-specific validation near the form boundary.",
+      "Define a storage version, convert existing decimal amounts once with explicit rounding, and test 0.10 + 0.20 = 30 cents. Preserve a backup before migrating real data."
+    ]
+  },
+  {
+    "title": "Recipeweb: editable shopping quantities",
+    "focus": "React state ownership, storage validation and accessible controls",
+    "source": "src/store/shoppingState.ts",
+    "test": "test/shopping-state.test.ts",
+    "symbol": "normalizeShoppingState",
+    "flow": [
+      "ShoppingListPage reads shared shopping-list context",
+      "Each ingredient has a stable slug:index key",
+      "A labeled text input sends a quantity override to setQuantity",
+      "Normalization retains only known recipe/ingredient keys",
+      "The provider saves the state to localStorage",
+      "Display and clipboard both use ingredientsWithQuantities"
+    ],
+    "model": "Shopping state contains recipeSlugs, checked and quantities. Quantity overrides are strings keyed by slug:index. An absent override uses the source recipe quantity; an explicit empty string means the shopper intentionally removed the quantity text.",
+    "before": "The shopping list persisted recipe selection and checkmarks, but quantities came only from recipe data and could not be adjusted. Storage checking was shallow.",
+    "after": "Shoppers can edit quantities using labeled keyboard-accessible controls. Overrides persist, removal cleans up stale keys, and copied text uses the same effective quantities as the screen. Old saved selections/checkmarks are retained and malformed keys are removed.",
+    "example": "The source ingredient says \"1 cup\". Change it to \"2 1/2 cups\" in the shopping list. Reload and copy the list: both still say \"2 1/2 cups\". The source recipe continues to say \"1 cup\". Remove the recipe and its override disappears.",
+    "concept": "The cookbook is reference data; the shopping list is user state. Mutating the recipe\u2019s ingredient array would mix those responsibilities and could change the recipe-detail screen unintentionally. A keyed override is smaller and preserves the source. Quantity strings are intentionally not automatically parsed or scaled because values can contain fractions, ranges, package sizes and phrases such as \"to taste\". The nullish-coalescing operator matters: override ?? original respects an empty string, while override || original would silently restore text the user cleared. TypeScript checks source code at compile time, but JSON from localStorage is unknown runtime data, so normalization is still required. A pure normalization function is easy to test without mounting React; interaction and keyboard checks then verify the wiring around it. Storage failure is disclosed rather than hidden behind a claim that progress was saved.",
+    "exercises": [
+      "Add a reset-to-recipe-quantity button beside each override.",
+      "Add a recipe-level servings multiplier only for an explicitly supported numeric format.",
+      "Test removal and re-adding a recipe without resurrecting its old checkmarks.",
+      "Add cross-tab synchronization with a stated conflict policy."
+    ],
+    "answers": [
+      "Delete the override key rather than assign an empty string. Empty is a valid explicit override; absence means fallback.",
+      "Introduce a structured quantity model for the supported subset and leave unparseable quantities unchanged with clear feedback. Never multiply arbitrary strings by guessing.",
+      "Remove the slug and every slug:index entry from both checked and quantities, then add the recipe again and assert source quantities and unchecked state.",
+      "Listen to storage events, normalize incoming data, and define whether a local in-progress edit wins. Synchronization alone does not solve concurrent-edit conflicts."
+    ]
+  },
+  {
+    "title": "Daybook: validated application backups",
+    "focus": "runtime schemas, atomic imports and asynchronous write ordering",
+    "source": "src/jobBackup.js",
+    "test": "test/jobBackup.test.js",
+    "symbol": "parseJobBackup",
+    "flow": [
+      "Export serializes the displayed applications with a versioned envelope",
+      "Import reads a bounded JSON file",
+      "parseJobBackup validates every application and rejects duplicate ids",
+      "The operation joins the existing write queue",
+      "commitJobBackup writes one complete application-array value",
+      "Only a successful write replaces React state; calendar data is separate"
+    ],
+    "model": "The exchange format is {format: \"daybook.jobs\", version: 1, applications: [...]}. The stored application key remains jobtracker:data and contains an array. Calendar events use timetrack:events and are not part of this applications-only backup.",
+    "before": "The local app persisted edits but had no validated application backup flow. A naive importer could replace good data before discovering that a later record was invalid.",
+    "after": "The application section exports a versioned JSON backup and imports it as an explicitly labeled replacement. It validates field types, bounded lengths, ids, status, dates and URLs before writing. A failed parse or rejected host write leaves the displayed applications unchanged.",
+    "example": "A backup with a valid Acme application followed by another record with the same id is rejected as a whole. The storage set function must not be called. A valid two-record backup is written once; importing it again still yields two records with their original ids.",
+    "concept": "A file is an input boundary, even when the user exported it from their own computer. JSON.parse proves syntax, not meaning: an array of numbers is valid JSON but is not an application list. The envelope distinguishes this format from calendar data and gives future migrations a version to branch on. Validation completes before persistence, so invalid row 500 cannot leave the first 499 rows saved. Atomicity here is one key-value write: the browser shim uses localStorage.setItem. A custom host must honor that operation\u2019s contract; a host that writes and then falsely rejects cannot be repaired by client-side promise handling alone. The existing write queue prevents an earlier asynchronous edit from finishing after import and overwriting it. The import UI is disabled while the replacement is in progress. Import is replacement rather than merge, which is explicitly stated beside the file input.",
+    "exercises": [
+      "Add a preview showing imported count before replacement.",
+      "Support merging backups with an explicit duplicate-id conflict rule.",
+      "Add a separate calendar-backup format and validator.",
+      "Test an old queued edit followed by a successful import using deferred promises."
+    ],
+    "answers": [
+      "Parse into a temporary preview value and commit that exact validated value only after the user chooses replacement; keep the existing list until then.",
+      "Define whether identical ids are skipped, replaced or reviewed. Preserve ids and make replay deterministic; generating new ids during import causes duplicates.",
+      "Use a different format identifier and validate event-specific fields such as title, date, start/end and done. Do not call an applications backup a full Daybook backup.",
+      "Control when each fake storage promise resolves. Assert import is scheduled after the old write and final UI/storage contain the imported records."
+    ]
+  },
+  {
+    "title": "Task Manager API: a complete CRUD boundary",
+    "focus": "HTTP contracts, service validation and real SQL persistence",
+    "source": "server/src/services/taskService.js",
+    "test": "server/test/tasks.test.cjs",
+    "symbol": "buildUpdatePayload",
+    "flow": [
+      "React submits a task payload through its API service",
+      "Express routes select the controller",
+      "The controller delegates to taskService",
+      "Validation normalizes supported fields and rejects invalid input",
+      "taskModel writes with Knex and returns the stored row",
+      "The client refreshes tasks and stats from API responses"
+    ],
+    "model": "A SQL task includes id, title, description, priority, status, due_date and completion timestamps. The database id is a positive integer. A partial update distinguishes an omitted field from a supplied null or value.",
+    "before": "The project already had CRUD routes and validation. It lacked executable regression coverage for the complete path, allowed unsafe integer ids and overlong titles to reach deeper layers, and could reject editing an overdue task when its unchanged date was resubmitted.",
+    "after": "The API rejects unsafe ids and titles longer than the database column. An unchanged existing due date remains editable; new or changed due dates still follow the future-date rule. Tests call real HTTP routes and inspect PostgreSQL rows, including completion timestamps and deletion.",
+    "example": "Create a high-priority task due 2099-01-01, filter for high priority, mark it done, reopen it and delete it. Separately seed a task due 2020-01-01: editing its title with that same due date succeeds, but changing it to another past date fails.",
+    "concept": "Each layer has a specific responsibility. A route chooses which operation handles a URL; a controller adapts HTTP input/output; a service enforces rules; a model issues SQL. Following one request is easier than reading every file alphabetically. The database is still the final authority for constraints, but expected bad input should produce a useful client error before a database exception. Number.isSafeInteger rejects values JavaScript cannot represent precisely; Number.isInteger alone is insufficient. Updates require context: the rule for setting a new due date should not prevent maintaining an already-overdue task. The unchanged-date exception is therefore narrow and compares against the stored date. The date column is a calendar date, so normalize it to YYYY-MM-DD instead of comparing display-formatted strings. Real HTTP-plus-database tests prove more than a mocked service test, but they still do not prove that every browser interaction is correct.",
+    "exercises": [
+      "Add a task title search filter with bound SQL parameters.",
+      "Test clearing an optional due date without changing the title.",
+      "Add optimistic concurrency for two users editing the same task.",
+      "Trace a server validation message into the client form and improve its wording."
+    ],
+    "answers": [
+      "Validate a bounded search string in the service and use Knex where/whereILike binding rather than interpolating raw SQL. Test a quote and a percent sign according to the search policy.",
+      "Submit due_date:null and assert the stored column becomes null while omitted fields retain their values.",
+      "Add a version field, update only where id and expected version match, and return a conflict when no row matches. Test two updates based on the same version.",
+      "Follow apiClient \u2192 useTasks \u2192 form/page error rendering. Preserve a useful domain message and avoid exposing database internals."
+    ]
+  },
+  {
+    "title": "Contact Book API: atomic CSV import",
+    "focus": "parsing state machines, batch validation and transactions",
+    "source": "server/src/utils/csv.js",
+    "test": "server/test/import.test.cjs",
+    "symbol": "csvToContacts",
+    "flow": [
+      "The import endpoint receives CSV text",
+      "csvToContacts tokenizes quoted fields and validates headers/row widths",
+      "The service validates every contact and tag name",
+      "importContactBatch opens one transaction",
+      "Contacts, tags and junction rows are written through that transaction",
+      "A failure rolls everything back; success returns the created batch"
+    ],
+    "model": "Contacts and tags have a many-to-many relationship through contact_tags. CSV headers are a supported allowlist; first_name and last_name are required. The tags field uses pipe-separated names. Email uniqueness also exists in PostgreSQL.",
+    "before": "The old parser split lines and commas directly, corrupting quoted commas and multiline fields. Import inserted one contact at a time, skipped some invalid rows and did not make the whole batch atomic.",
+    "after": "The parser supports quoted commas, doubled quotes, multiline text, CRLF and a BOM. It rejects malformed quoting, duplicate/unsupported headers and inconsistent field counts. The complete batch is validated before a single transaction writes contacts and tags. A late uniqueness failure rolls back earlier rows.",
+    "example": "Import a company \"Labs, Inc.\" and notes containing a newline and the words She said \"hello\". The stored strings must be intact. In another batch, insert a new email and TemporaryTag, then repeat that email in row two: no contact or TemporaryTag from that batch may remain.",
+    "concept": "CSV looks like a string-splitting problem until a delimiter appears inside a value. Quoting changes how the next character must be interpreted, which makes a small state machine a good fit. Inside quotes, a newline belongs to the field; outside quotes, it ends a record. Two quotes inside a quoted field represent one literal quote. Parsing and domain validation are separate: a record can be syntactically correct CSV and still lack a required surname. Database constraints are a third boundary because a concurrent writer or existing email can invalidate an otherwise valid batch. All writes must use the transaction object; accidentally calling the global db for tag creation would let a tag survive rollback. Import is atomic, not globally idempotent: reimporting an existing non-null email fails as a whole, while contacts without unique emails can still be duplicated. Pagination also needs a stable id tie-breaker when many contacts share a surname.",
+    "exercises": [
+      "Return a preview of row errors without writing any data.",
+      "Define a duplicate-email import policy that supports deliberate updates.",
+      "Add a quoted carriage-return round-trip fixture.",
+      "Investigate CSV spreadsheet-formula handling for a separate export policy."
+    ],
+    "answers": [
+      "Keep parsing and validation pure, collect bounded row-numbered errors, and reserve the transaction for a separately confirmed valid batch.",
+      "Choose skip/update/reject explicitly. An upsert must specify which fields may change and what happens to tags; do not silently reinterpret an import as destructive replacement.",
+      "Include a quoted field containing a carriage return and verify export quotes it and import preserves its content.",
+      "A spreadsheet may evaluate a leading =, +, - or @ even when CSV quoting is correct. Define whether this app exports raw data or spreadsheet-safe text and test that policy independently from CSV syntax."
+    ]
+  },
+  {
+    "title": "Expense Tracker API: trustworthy reports",
+    "focus": "aggregation, calendar boundaries and deterministic fixtures",
+    "source": "server/src/models/expenseModel.js",
+    "test": "server/test/reports.test.cjs",
+    "symbol": "byCategory",
+    "flow": [
+      "Stats routes receive a month or date range",
+      "The service validates month/date/filter input",
+      "The model selects only grouped fields and aggregates",
+      "PostgreSQL computes sums and counts over the selected window",
+      "The controller returns the success envelope",
+      "The client renders totals and chart series"
+    ],
+    "model": "Each expense belongs to one category and has a date and decimal amount. Monthly windows are half-open: first day inclusive, next month\u2019s first day exclusive. Category range filters currently include both supplied start_date and end_date.",
+    "before": "The category report reused a base query that selected expenses.* and then added GROUP BY categories.id. PostgreSQL cannot choose an arbitrary expense row for each category, so that report could fail. Date filters and amount edge cases also needed validation.",
+    "after": "The category query clears the base projection before selecting category fields, SUM and COUNT. Report inputs reject malformed months, impossible dates and reversed ranges. The test fixture proves monthly, daily and category results agree at leap-day and month boundaries.",
+    "example": "For February 2024 use Food 10.10 on Feb 1, Food 20.20 on Feb 29 and Travel 4.70 on Feb 15. Put 99 on Jan 31 and 777 on Mar 1. February total is 35.00 across three expenses; Food is 30.30 and Travel is 4.70. Adjacent-month rows must not leak in.",
+    "concept": "A grouped query changes the meaning of a row. Before grouping, a row represents an expense. After grouping by category, it represents a category summary. Raw expense fields no longer have one well-defined value, which is why clearing the inherited SELECT list is necessary. A hand-calculated fixture is a stronger oracle than comparing two functions that share the same bug. The leap-day case makes the time boundary concrete; using a fixed 30-day month would be wrong. Half-open ranges compose cleanly because a boundary date belongs to exactly one month. PostgreSQL decimal columns preserve decimal arithmetic during aggregation, while the API currently casts results to floating-point numbers; tests compare currency totals carefully, and a future money-model exercise can return integer cents or decimal strings. Empty datasets must produce stable zero totals rather than null values that confuse the UI.",
+    "exercises": [
+      "Add a year-to-date summary with an explicit end boundary.",
+      "Make an empty category appear with zero spending using a LEFT JOIN.",
+      "Test a week that crosses December into January.",
+      "Return report amounts as integer cents without changing displayed values."
+    ],
+    "answers": [
+      "Define inclusive/exclusive semantics first, then seed rows just before, inside and at the excluded boundary. Use SQL date operations rather than a fixed day count.",
+      "Start from categories and place expense date predicates in the join condition; a WHERE filter on the optional expense row can accidentally turn the left join into an inner join.",
+      "Use fixed dates spanning the year boundary and assert exactly seven calendar dates are eligible under the half-open interval.",
+      "Convert at a clearly documented boundary, avoid repeatedly rounding intermediate values, and update API types and chart formatting together."
+    ]
+  },
+  {
+    "title": "Recipe Manager: ownership and transactional graphs",
+    "focus": "authentication versus authorization, runtime validation and rollback",
+    "source": "server/src/services/recipeService.ts",
+    "test": "server/test/ownership.test.ts",
+    "symbol": "updateRecipeForUser",
+    "flow": [
+      "The auth middleware verifies the access token and supplies a user id",
+      "The service opens a transaction for replacement",
+      "The recipe row is locked and its owner is checked",
+      "parseRecipeInput validates every ingredient and step",
+      "saveRecipeGraph replaces parent and child rows through the transaction",
+      "Commit publishes the graph; a later failure restores the original graph"
+    ],
+    "model": "A recipe belongs to a user and has ingredients, steps and category links. Authentication identifies the caller. Authorization compares that caller with the stored owner. A graph replacement must commit the recipe and every dependent row together.",
+    "before": "Ownership checks and transactions already existed, but the update ownership read happened outside the replacement transaction. Input parsing filtered some invalid child records instead of rejecting them and could throw ordinary TypeErrors for malformed values.",
+    "after": "The update locks and checks ownership within the transaction. Nested input is validated without silently dropping invalid children. The model update also scopes by owner. Real HTTP tests deny a signed-in nonowner, and real foreign-key failures prove both create and replacement rollback.",
+    "example": "Alice creates a private Soup recipe with Water and a Boil step. Bob sends a valid token and a body claiming Alice\u2019s user_id: the update must still fail with 403. Alice then attempts a replacement with a nonexistent category id; after failure, the original title, ingredient ids and steps must still exist unchanged.",
+    "concept": "Being logged in is not permission to edit every record. The trusted caller identity comes from the verified token, while the ownership fact comes from the stored recipe; neither should come from a body field supplied by the caller. A row lock keeps the authorization read and replacement coordinated with competing writes. It does not provide an automatic user-facing merge strategy: two authorized sequential updates can still replace one another unless a version policy is added. Runtime validation is required even with TypeScript because an HTTP body is untyped external data. Silently removing blank ingredients can turn an apparently complete request into an empty recipe, so each nested element is rejected with a domain error instead. The rollback test intentionally fails late, after parent/child writes have begun, using a foreign-key constraint. An early validation-only test would not prove transaction atomicity.",
+    "exercises": [
+      "Add version-based conflict detection for concurrent owner edits.",
+      "Return field-path validation errors such as ingredients[2].name.",
+      "Add an ownership regression for private favorites.",
+      "Test rollback when replacing both steps and categories fails late."
+    ],
+    "answers": [
+      "Accept an expected version and condition the update on it inside the transaction; increment on success and return a conflict for a stale version. A row lock alone does not tell the client that its edit was stale.",
+      "Carry the array index into validation helpers and collect a structured path/message; keep errors free of SQL or secret data.",
+      "Create a private recipe, authenticate a different user and call favorite; assert denial and no favorites row.",
+      "Snapshot all child tables, force a late FK/constraint failure through a valid-shaped payload, and compare the complete graph after rollback, including original ids."
+    ]
+  }
+]

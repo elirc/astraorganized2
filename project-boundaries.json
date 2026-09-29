@@ -1,0 +1,6369 @@
+{
+  "created_at": "2026-09-06T18:21:45.120009+00:00",
+  "workspaces": [
+    ".netarchitectureproject",
+    ".nethris",
+    ".netopen2",
+    ".netramp",
+    ".netstripe",
+    ".nettodo",
+    "_Organized Desktop/01 Net Workspaces/.netcalendy",
+    "_Organized Desktop/01 Net Workspaces/.netgum",
+    "_Organized Desktop/01 Net Workspaces/.nethris",
+    "_Organized Desktop/01 Net Workspaces/.netpastebin",
+    "_Organized Desktop/01 Net Workspaces/.netslack",
+    "_Organized Desktop/01 Net Workspaces/.nettrello",
+    "_Organized Desktop/01 Net Workspaces/.netvg",
+    "_Organized Desktop/01 Net Workspaces/.netzen",
+    "_Organized Desktop/01 Net Workspaces/csbootcamp",
+    "_Organized Desktop/02 Build Projects/aff-wt-be06",
+    "_Organized Desktop/02 Build Projects/buildaffiliate",
+    "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+    "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+    "_Organized Desktop/02 Build Projects/buildagentteaching",
+    "_Organized Desktop/02 Build Projects/buildanalytics",
+    "_Organized Desktop/02 Build Projects/buildantigVG",
+    "_Organized Desktop/02 Build Projects/buildasana",
+    "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+    "_Organized Desktop/02 Build Projects/buildecom",
+    "_Organized Desktop/02 Build Projects/buildgum",
+    "_Organized Desktop/02 Build Projects/buildjira",
+    "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+    "_Organized Desktop/02 Build Projects/buildsubbox",
+    "_Organized Desktop/03 Master Projects/master",
+    "_Organized Desktop/03 Master Projects/master 5",
+    "_Organized Desktop/03 Master Projects/master 6",
+    "_Organized Desktop/03 Master Projects/master1",
+    "_Organized Desktop/03 Master Projects/master2",
+    "_Organized Desktop/03 Master Projects/master3",
+    "_Organized Desktop/03 Master Projects/master4",
+    "_Organized Desktop/03 Master Projects/master555",
+    "_Organized Desktop/03 Master Projects/master7",
+    "_Organized Desktop/03 Master Projects/mastercal",
+    "_Organized Desktop/03 Master Projects/masterdidy",
+    "_Organized Desktop/03 Master Projects/masterdub",
+    "_Organized Desktop/03 Master Projects/masterfinisc",
+    "_Organized Desktop/03 Master Projects/masterflag",
+    "_Organized Desktop/03 Master Projects/masterform",
+    "_Organized Desktop/03 Master Projects/masterhop",
+    "_Organized Desktop/03 Master Projects/masteridur",
+    "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+    "_Organized Desktop/03 Master Projects/masterlink",
+    "_Organized Desktop/03 Master Projects/mastermatter",
+    "_Organized Desktop/03 Master Projects/mastermayan",
+    "_Organized Desktop/03 Master Projects/mastermorphic",
+    "_Organized Desktop/03 Master Projects/masternext",
+    "_Organized Desktop/03 Master Projects/masternovu",
+    "_Organized Desktop/03 Master Projects/masteropen",
+    "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+    "_Organized Desktop/03 Master Projects/masterpaper",
+    "_Organized Desktop/03 Master Projects/masterplane",
+    "_Organized Desktop/03 Master Projects/masterpload",
+    "_Organized Desktop/03 Master Projects/masterpostiz",
+    "_Organized Desktop/03 Master Projects/masterpre",
+    "_Organized Desktop/03 Master Projects/masterrnative",
+    "_Organized Desktop/03 Master Projects/mastersaleorPY",
+    "_Organized Desktop/03 Master Projects/mastershadcn",
+    "_Organized Desktop/03 Master Projects/MasterStore",
+    "_Organized Desktop/03 Master Projects/mastersupa",
+    "_Organized Desktop/03 Master Projects/mastertea",
+    "_Organized Desktop/03 Master Projects/mastertool",
+    "_Organized Desktop/03 Master Projects/mastertwenty",
+    "_Organized Desktop/03 Master Projects/mastertypebot",
+    "_Organized Desktop/03 Master Projects/masterumami",
+    "_Organized Desktop/03 Master Projects/masterzulipPY",
+    "_Organized Desktop/04 JavaScript Training/jep vs code",
+    "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+    "_Organized Desktop/04 JavaScript Training/jsdrillapp",
+    "_Organized Desktop/04 JavaScript Training/jsinterview",
+    "_Organized Desktop/04 JavaScript Training/jstrain1",
+    "_Organized Desktop/04 JavaScript Training/jstrain2",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+    "_Organized Desktop/04 JavaScript Training/jstrain3",
+    "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+    "_Organized Desktop/04 JavaScript Training/jstrain5",
+    "_Organized Desktop/04 JavaScript Training/jstran2.0",
+    "_Organized Desktop/04 JavaScript Training/react",
+    "_Organized Desktop/04 JavaScript Training/reactbullet",
+    "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+    "_Organized Desktop/04 JavaScript Training/rewritepy2jsodoo",
+    "_Organized Desktop/04 JavaScript Training/trainjs",
+    "_Organized Desktop/04 JavaScript Training",
+    "_Organized Desktop/05 Numbered Experiments/B1",
+    "_Organized Desktop/05 Numbered Experiments/D1",
+    "_Organized Desktop/05 Numbered Experiments/D2",
+    "_Organized Desktop/05 Numbered Experiments/D3",
+    "_Organized Desktop/05 Numbered Experiments/e1",
+    "_Organized Desktop/05 Numbered Experiments/e11",
+    "_Organized Desktop/05 Numbered Experiments/e12",
+    "_Organized Desktop/05 Numbered Experiments/e13",
+    "_Organized Desktop/05 Numbered Experiments/e14",
+    "_Organized Desktop/05 Numbered Experiments/e15",
+    "_Organized Desktop/05 Numbered Experiments/e17",
+    "_Organized Desktop/05 Numbered Experiments/e2",
+    "_Organized Desktop/05 Numbered Experiments/e20",
+    "_Organized Desktop/05 Numbered Experiments/e3",
+    "_Organized Desktop/05 Numbered Experiments/e4",
+    "_Organized Desktop/05 Numbered Experiments/e6",
+    "_Organized Desktop/05 Numbered Experiments/f1",
+    "_Organized Desktop/05 Numbered Experiments/g1",
+    "_Organized Desktop/05 Numbered Experiments/J1",
+    "_Organized Desktop/05 Numbered Experiments/j2",
+    "_Organized Desktop/05 Numbered Experiments/j3",
+    "_Organized Desktop/05 Numbered Experiments/j4",
+    "_Organized Desktop/05 Numbered Experiments/j5",
+    "_Organized Desktop/05 Numbered Experiments/j6",
+    "_Organized Desktop/05 Numbered Experiments/j7",
+    "_Organized Desktop/05 Numbered Experiments/rn1",
+    "_Organized Desktop/05 Numbered Experiments/w21",
+    "_Organized Desktop/05 Numbered Experiments/w22",
+    "_Organized Desktop/05 Numbered Experiments/w23",
+    "_Organized Desktop/05 Numbered Experiments/w24",
+    "_Organized Desktop/05 Numbered Experiments/w25",
+    "_Organized Desktop/05 Numbered Experiments/ww1",
+    "_Organized Desktop/05 Numbered Experiments/ww10",
+    "_Organized Desktop/05 Numbered Experiments/ww11",
+    "_Organized Desktop/05 Numbered Experiments/ww12",
+    "_Organized Desktop/05 Numbered Experiments/ww13",
+    "_Organized Desktop/05 Numbered Experiments/ww14",
+    "_Organized Desktop/05 Numbered Experiments/ww15",
+    "_Organized Desktop/05 Numbered Experiments/ww16",
+    "_Organized Desktop/05 Numbered Experiments/ww17",
+    "_Organized Desktop/05 Numbered Experiments/ww18",
+    "_Organized Desktop/05 Numbered Experiments/ww19",
+    "_Organized Desktop/05 Numbered Experiments/ww26",
+    "_Organized Desktop/05 Numbered Experiments/ww27",
+    "_Organized Desktop/05 Numbered Experiments/ww28",
+    "_Organized Desktop/05 Numbered Experiments/ww29",
+    "_Organized Desktop/05 Numbered Experiments/ww3",
+    "_Organized Desktop/05 Numbered Experiments/ww30",
+    "_Organized Desktop/05 Numbered Experiments/ww31",
+    "_Organized Desktop/05 Numbered Experiments/ww32",
+    "_Organized Desktop/05 Numbered Experiments/ww34",
+    "_Organized Desktop/05 Numbered Experiments/ww35",
+    "_Organized Desktop/05 Numbered Experiments/ww36",
+    "_Organized Desktop/05 Numbered Experiments/ww37",
+    "_Organized Desktop/05 Numbered Experiments/ww39",
+    "_Organized Desktop/05 Numbered Experiments/ww4",
+    "_Organized Desktop/05 Numbered Experiments/ww40",
+    "_Organized Desktop/05 Numbered Experiments/ww43",
+    "_Organized Desktop/05 Numbered Experiments/ww45",
+    "_Organized Desktop/05 Numbered Experiments/ww46",
+    "_Organized Desktop/05 Numbered Experiments/ww47",
+    "_Organized Desktop/05 Numbered Experiments/ww48",
+    "_Organized Desktop/05 Numbered Experiments/ww49",
+    "_Organized Desktop/05 Numbered Experiments/ww5",
+    "_Organized Desktop/05 Numbered Experiments/ww50",
+    "_Organized Desktop/05 Numbered Experiments/ww55",
+    "_Organized Desktop/05 Numbered Experiments/ww6",
+    "_Organized Desktop/05 Numbered Experiments/ww7",
+    "_Organized Desktop/05 Numbered Experiments/ww8",
+    "_Organized Desktop/05 Numbered Experiments/ww9",
+    "_Organized Desktop/05 Numbered Experiments/X1",
+    "_Organized Desktop/05 Numbered Experiments/z1",
+    "_Organized Desktop/05 Numbered Experiments/z3",
+    "_Organized Desktop/05 Numbered Experiments/z6",
+    "_Organized Desktop/05 Numbered Experiments/z7",
+    "_Organized Desktop/05 Numbered Experiments/z8",
+    "_Organized Desktop/05 Numbered Experiments/z9",
+    "_Organized Desktop/05 Numbered Experiments/zz1",
+    "_Organized Desktop/05 Numbered Experiments/zz2",
+    "_Organized Desktop/05 Numbered Experiments/zz3",
+    "_Organized Desktop/05 Numbered Experiments/zz4",
+    "_Organized Desktop/05 Numbered Experiments/zz55",
+    "_Organized Desktop/05 Numbered Experiments/zz6",
+    "_Organized Desktop/05 Numbered Experiments/zz7",
+    "_Organized Desktop/05 Numbered Experiments/zz8",
+    "_Organized Desktop/05 Numbered Experiments/zz9",
+    "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+    "_Organized Desktop/06 AI And Learning/aiapplybot",
+    "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+    "_Organized Desktop/06 AI And Learning/ailearningpath",
+    "_Organized Desktop/06 AI And Learning/booklearn",
+    "_Organized Desktop/06 AI And Learning/claudeailab",
+    "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+    "_Organized Desktop/06 AI And Learning/claudelearnpath",
+    "_Organized Desktop/06 AI And Learning/codehelper",
+    "_Organized Desktop/06 AI And Learning/learnpathclaude",
+    "_Organized Desktop/06 AI And Learning/think",
+    "_Organized Desktop/07 Anti Projects/antiemponb",
+    "_Organized Desktop/07 Anti Projects/antihelpdesk",
+    "_Organized Desktop/07 Anti Projects/antiinv",
+    "_Organized Desktop/07 Anti Projects/antitestbuild",
+    "_Organized Desktop/08 App And Product Projects/appmakertrack",
+    "_Organized Desktop/08 App And Product Projects/eliapplybot",
+    "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+    "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+    "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+    "_Organized Desktop/08 App And Product Projects/hnrandom",
+    "_Organized Desktop/08 App And Product Projects/job track",
+    "_Organized Desktop/08 App And Product Projects/recipegen",
+    "_Organized Desktop/08 App And Product Projects/recipegen-app",
+    "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+    "_Organized Desktop/08 App And Product Projects",
+    "_Organized Desktop/09 Grav And VG Projects/grav1pretalx",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+    "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+    "_Organized Desktop/09 Grav And VG Projects/vg",
+    "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+    "_Organized Desktop/10 New Folders/New folder",
+    "_Organized Desktop/10 New Folders/New folder (10)",
+    "_Organized Desktop/10 New Folders/New folder (11)",
+    "_Organized Desktop/10 New Folders/New folder (12)",
+    "_Organized Desktop/10 New Folders/New folder (13)",
+    "_Organized Desktop/10 New Folders/New folder (2)",
+    "_Organized Desktop/10 New Folders/New folder (3)",
+    "_Organized Desktop/10 New Folders/New folder (4)",
+    "_Organized Desktop/10 New Folders/New folder (5)",
+    "_Organized Desktop/10 New Folders/New folder (6)",
+    "_Organized Desktop/10 New Folders/New folder (7)",
+    "_Organized Desktop/10 New Folders/New folder (8)",
+    "_Organized Desktop/11 Loose Files",
+    "_Organized Desktop/12 Other Projects/3buildhyper",
+    "_Organized Desktop/12 Other Projects/aaa1",
+    "_Organized Desktop/12 Other Projects/andie",
+    "_Organized Desktop/12 Other Projects/appmaketrck",
+    "_Organized Desktop/12 Other Projects/cc",
+    "_Organized Desktop/12 Other Projects/curse",
+    "_Organized Desktop/12 Other Projects/FinalJep",
+    "_Organized Desktop/12 Other Projects/finaljepgame",
+    "_Organized Desktop/12 Other Projects/GlobGame",
+    "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+    "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+    "_Organized Desktop/12 Other Projects/Obsidian",
+    "_Organized Desktop/12 Other Projects/pp8",
+    "_Organized Desktop/12 Other Projects/pyhealth",
+    "aiapplybot",
+    "aicallhelper",
+    "aicallhelper2",
+    "aiheartbeat",
+    "aihelper",
+    "AlanAndEliSoccer",
+    "Amasterplan",
+    "ankijs",
+    "antigravupskill",
+    "aral",
+    "astra1",
+    "astra2",
+    "astraspacegameweb",
+    "borrowbox",
+    "buildbusinesses",
+    "buildermentor",
+    "buildevent",
+    "buildreviewer",
+    "buildsmallplates",
+    "buildsql",
+    "buildwhiteboard",
+    "c#interview",
+    "calendar+jobtrack",
+    "campusops",
+    "claude docs",
+    "codexlearnp1",
+    "csharptut",
+    "devdeck",
+    "fableaihelperv2",
+    "fableaihelperv3",
+    "finalcallhelp",
+    "finance-dashboard",
+    "formforge",
+    "geminiorganized/FableDocs_Projects_Hermes",
+    "geminiorganized/General_.Architectureproject",
+    "geminiorganized/General_.Hris",
+    "geminiorganized/General_.Open2",
+    "geminiorganized/General_.Todo",
+    "geminiorganized/General_Alanandelisoccer",
+    "geminiorganized/General_Amasterplan",
+    "geminiorganized/General_Ankijs",
+    "geminiorganized/General_Aral",
+    "geminiorganized/General_Borrowbox",
+    "geminiorganized/General_C#Interview",
+    "geminiorganized/General_Campusops",
+    "geminiorganized/General_Cleanarch",
+    "geminiorganized/General_Csharptut",
+    "geminiorganized/General_Devdeck",
+    "geminiorganized/General_Finance-Dashboard",
+    "geminiorganized/General_Formforge",
+    "geminiorganized/General_Gitjira",
+    "geminiorganized/General_Gitjira-App",
+    "geminiorganized/General_Gitvg",
+    "geminiorganized/General_Globehire",
+    "geminiorganized/General_Jsharness",
+    "geminiorganized/General_Jstut",
+    "geminiorganized/General_Masternocu",
+    "geminiorganized/General_Masteroutline",
+    "geminiorganized/General_MasterPlan",
+    "geminiorganized/General_Meterforge",
+    "geminiorganized/General_Missioncontrol",
+    "geminiorganized/General_Mobiletagalog",
+    "geminiorganized/General_Newcodecjs2",
+    "geminiorganized/General_Newcodex3",
+    "geminiorganized/General_Newcodexjs",
+    "geminiorganized/General_Nopsolutions",
+    "geminiorganized/General_Open1",
+    "geminiorganized/General_Open3",
+    "geminiorganized/General_Open5",
+    "geminiorganized/General_Perch",
+    "geminiorganized/General_Readme",
+    "geminiorganized/General_Recipeview",
+    "geminiorganized/General_Recipeweb",
+    "geminiorganized/General_Resume",
+    "geminiorganized/General_Skillforgejs",
+    "geminiorganized/General_Spacegame",
+    "geminiorganized/General_Tagalog",
+    "geminiorganized/LLM_Generated_Applybot",
+    "geminiorganized/LLM_Generated_Buildbusinesses",
+    "geminiorganized/LLM_Generated_Buildermentor",
+    "geminiorganized/LLM_Generated_Buildevent",
+    "geminiorganized/LLM_Generated_Buildreviewer",
+    "geminiorganized/LLM_Generated_Buildsmallplates",
+    "geminiorganized/LLM_Generated_Buildsql",
+    "geminiorganized/LLM_Generated_Buildwhiteboard",
+    "geminiorganized/LLM_Generated_ClaudeDocs",
+    "geminiorganized/LLM_Generated_Ecommerceproject",
+    "geminiorganized/LLM_Generated_Fablehelperv2",
+    "geminiorganized/LLM_Generated_Fablehelperv3",
+    "geminiorganized/LLM_Generated_Gptdocs",
+    "geminiorganized/LLM_Generated_Grokjs",
+    "geminiorganized/LLM_Generated_Groktuts",
+    "geminiorganized/LLM_Generated_Helper",
+    "geminiorganized/LLM_Generated_Hrproject",
+    "geminiorganized/LLM_Generated_Js1",
+    "geminiorganized/LLM_Generated_Jsprojectlearn",
+    "geminiorganized/LLM_Generated_Multitenantproject",
+    "geminiorganized/LLM_Generated_Orderproject",
+    "geminiorganized/LLM_Generated_Ppmproject",
+    "geminiorganized/LLM_Generated_Rag",
+    "geminiorganized/LLM_Generated_Supportproject",
+    "geminiorganized/LLM_Generated_Teamproject",
+    "geminiorganized/OpenSource_Upskilling_.Ramp",
+    "geminiorganized/OpenSource_Upskilling_.Stripe",
+    "geminiorganized/OpenSource_Upskilling_Auth",
+    "geminiorganized/OpenSource_Upskilling_Docu",
+    "geminiorganized/OpenSource_Upskilling_Drop",
+    "geminiorganized/OpenSource_Upskilling_Intercom",
+    "geminiorganized/OpenSource_Upskilling_Linear",
+    "geminiorganized/OpenSource_Upskilling_Notion",
+    "geminiorganized/OpenSource_Upskilling_Shop",
+    "geminiorganized/OpenSource_Upskilling_Snapshot",
+    "geminiorganized/OpenSource_Upskilling_Snapshot1",
+    "gitjira",
+    "gitjira-app",
+    "gitvg",
+    "globehire",
+    "GPTDocs",
+    "grokbuildecommerceproject",
+    "grokbuildhrproject",
+    "grokbuildmultitenantproject",
+    "grokbuildorderproject",
+    "grokbuildppmproject",
+    "grokbuildsupportproject",
+    "grokbuildteamproject",
+    "grokjs",
+    "groktuts",
+    "hermes",
+    "jobtrack",
+    "JS1",
+    "jsharness",
+    "JSProjectLearn",
+    "JSTut",
+    "lucasrouter",
+    "master plan",
+    "masternocu",
+    "masteroutline",
+    "meterforge",
+    "missioncontrol",
+    "mobiletagalog",
+    "netairag",
+    "netauth",
+    "netcleanarch",
+    "netdocu",
+    "netdrop",
+    "netintercom",
+    "netlinear",
+    "netnotion",
+    "netopen1",
+    "netopen3",
+    "netopen5",
+    "netshop",
+    "netsnapshot",
+    "netsnapshot1",
+    "New folder",
+    "newcodecjs2",
+    "newcodex3",
+    "newcodexJS",
+    "nopsolutionsnet",
+    "perch",
+    "readme",
+    "recipeview",
+    "recipeweb",
+    "resume",
+    "skillforgejs",
+    "spacegame",
+    "spacegamev2",
+    "tagalog"
+  ],
+  "projects": [
+    {
+      "path": ".netarchitectureproject",
+      "workspace": ".netarchitectureproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1153,
+        "document_files": 33,
+        "files": 1310,
+        "git_roots": 1
+      },
+      "git_roots": [
+        ".netarchitectureproject/modular-monolith-with-ddd"
+      ]
+    },
+    {
+      "path": ".netopen2",
+      "workspace": ".netopen2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 8006,
+        "document_files": 314,
+        "files": 9399,
+        "git_roots": 1
+      },
+      "git_roots": [
+        ".netopen2/OrchardCore"
+      ]
+    },
+    {
+      "path": ".netramp",
+      "workspace": ".netramp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 43,
+        "document_files": 48,
+        "files": 96,
+        "git_roots": 1
+      },
+      "git_roots": [
+        ".netramp"
+      ]
+    },
+    {
+      "path": ".netstripe",
+      "workspace": ".netstripe",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 20,
+        "document_files": 97,
+        "files": 125,
+        "git_roots": 1
+      },
+      "git_roots": [
+        ".netstripe"
+      ]
+    },
+    {
+      "path": ".nettodo",
+      "workspace": ".nettodo",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 362,
+        "document_files": 57,
+        "files": 523,
+        "git_roots": 1
+      },
+      "git_roots": [
+        ".nettodo/eShopOnWeb"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 125,
+        "document_files": 43,
+        "files": 186,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netgum",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netgum",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 43,
+        "document_files": 3,
+        "files": 60,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.nethris",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.nethris",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 22,
+        "document_files": 48,
+        "files": 75,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 14,
+        "document_files": 49,
+        "files": 66,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netslack",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netslack",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 60,
+        "document_files": 50,
+        "files": 127,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.nettrello",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.nettrello",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 49,
+        "files": 97,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netvg",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netvg",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 37,
+        "document_files": 57,
+        "files": 113,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netzen",
+      "workspace": "_Organized Desktop/01 Net Workspaces/.netzen",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 39,
+        "document_files": 49,
+        "files": 92,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+      "workspace": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 65,
+        "document_files": 17,
+        "files": 84,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/01 Net Workspaces/csbootcamp"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate",
+      "workspace": "_Organized Desktop/02 Build Projects/buildaffiliate",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 266,
+        "document_files": 10,
+        "files": 304,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/02 Build Projects/buildaffiliate"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+      "workspace": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 94,
+        "document_files": 92,
+        "files": 205,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "workspace": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 64,
+        "document_files": 23,
+        "files": 94,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching",
+      "workspace": "_Organized Desktop/02 Build Projects/buildagentteaching",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 159,
+        "document_files": 18,
+        "files": 246,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/02 Build Projects/buildagentteaching"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildanalytics",
+      "workspace": "_Organized Desktop/02 Build Projects/buildanalytics",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 220,
+        "document_files": 76,
+        "files": 419,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildantigVG",
+      "workspace": "_Organized Desktop/02 Build Projects/buildantigVG",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 12,
+        "document_files": 12,
+        "files": 45,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildasana",
+      "workspace": "_Organized Desktop/02 Build Projects/buildasana",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 34,
+        "document_files": 4,
+        "files": 53,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+      "workspace": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 34,
+        "document_files": 48,
+        "files": 94,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildecom",
+      "workspace": "_Organized Desktop/02 Build Projects/buildecom",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 70,
+        "document_files": 50,
+        "files": 124,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildgum",
+      "workspace": "_Organized Desktop/02 Build Projects/buildgum",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6,
+        "document_files": 48,
+        "files": 63,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildjira",
+      "workspace": "_Organized Desktop/02 Build Projects/buildjira",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 52,
+        "files": 97,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+      "workspace": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 156,
+        "document_files": 11,
+        "files": 183,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildsubbox",
+      "workspace": "_Organized Desktop/02 Build Projects/buildsubbox",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6,
+        "document_files": 47,
+        "files": 57,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master",
+      "workspace": "_Organized Desktop/03 Master Projects/master",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 83,
+        "document_files": 31,
+        "files": 128,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master 6",
+      "workspace": "_Organized Desktop/03 Master Projects/master 6",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 45,
+        "document_files": 26,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master1",
+      "workspace": "_Organized Desktop/03 Master Projects/master1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 162,
+        "document_files": 73,
+        "files": 266,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master2",
+      "workspace": "_Organized Desktop/03 Master Projects/master2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 19,
+        "files": 73,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master3",
+      "workspace": "_Organized Desktop/03 Master Projects/master3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 24,
+        "document_files": 11,
+        "files": 43,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master4",
+      "workspace": "_Organized Desktop/03 Master Projects/master4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 26,
+        "document_files": 10,
+        "files": 51,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master7",
+      "workspace": "_Organized Desktop/03 Master Projects/master7",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 24,
+        "document_files": 24,
+        "files": 80,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal",
+      "workspace": "_Organized Desktop/03 Master Projects/mastercal",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 5695,
+        "document_files": 460,
+        "files": 7503,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy",
+      "workspace": "_Organized Desktop/03 Master Projects/masterdidy",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 9403,
+        "document_files": 234,
+        "files": 11655,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdub",
+      "workspace": "_Organized Desktop/03 Master Projects/masterdub",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3847,
+        "document_files": 98,
+        "files": 4103,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterfinisc",
+      "workspace": "_Organized Desktop/03 Master Projects/masterfinisc",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6820,
+        "document_files": 2070,
+        "files": 11677,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterflag",
+      "workspace": "_Organized Desktop/03 Master Projects/masterflag",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2610,
+        "document_files": 250,
+        "files": 3222,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform",
+      "workspace": "_Organized Desktop/03 Master Projects/masterform",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2460,
+        "document_files": 703,
+        "files": 3919,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterhop",
+      "workspace": "_Organized Desktop/03 Master Projects/masterhop",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1598,
+        "document_files": 111,
+        "files": 2384,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteridur",
+      "workspace": "_Organized Desktop/03 Master Projects/masteridur",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 344,
+        "document_files": 125,
+        "files": 525,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+      "workspace": "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2943,
+        "document_files": 954,
+        "files": 3659,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterlink",
+      "workspace": "_Organized Desktop/03 Master Projects/masterlink",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 540,
+        "document_files": 82,
+        "files": 699,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter",
+      "workspace": "_Organized Desktop/03 Master Projects/mastermatter",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 8265,
+        "document_files": 408,
+        "files": 13168,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermayan",
+      "workspace": "_Organized Desktop/03 Master Projects/mastermayan",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2321,
+        "document_files": 563,
+        "files": 5665,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermorphic",
+      "workspace": "_Organized Desktop/03 Master Projects/mastermorphic",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 291,
+        "document_files": 85,
+        "files": 419,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternext",
+      "workspace": "_Organized Desktop/03 Master Projects/masternext",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1237,
+        "document_files": 181,
+        "files": 1468,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu",
+      "workspace": "_Organized Desktop/03 Master Projects/masternovu",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6581,
+        "document_files": 106,
+        "files": 7409,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteropen",
+      "workspace": "_Organized Desktop/03 Master Projects/masteropen",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1912,
+        "document_files": 479,
+        "files": 3291,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+      "workspace": "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6623,
+        "document_files": 1168,
+        "files": 8997,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpaper",
+      "workspace": "_Organized Desktop/03 Master Projects/masterpaper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 941,
+        "document_files": 347,
+        "files": 1542,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterplane",
+      "workspace": "_Organized Desktop/03 Master Projects/masterplane",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4375,
+        "document_files": 127,
+        "files": 5154,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload",
+      "workspace": "_Organized Desktop/03 Master Projects/masterpload",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6915,
+        "document_files": 376,
+        "files": 8137,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpostiz",
+      "workspace": "_Organized Desktop/03 Master Projects/masterpostiz",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 703,
+        "document_files": 81,
+        "files": 971,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpre",
+      "workspace": "_Organized Desktop/03 Master Projects/masterpre",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1540,
+        "document_files": 452,
+        "files": 2399,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterrnative",
+      "workspace": "_Organized Desktop/03 Master Projects/masterrnative",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 73,
+        "document_files": 17,
+        "files": 109,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersaleorPY",
+      "workspace": "_Organized Desktop/03 Master Projects/mastersaleorPY",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4278,
+        "document_files": 78,
+        "files": 4618,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastershadcn",
+      "workspace": "_Organized Desktop/03 Master Projects/mastershadcn",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3644,
+        "document_files": 329,
+        "files": 8732,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/MasterStore",
+      "workspace": "_Organized Desktop/03 Master Projects/MasterStore",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 200,
+        "document_files": 18,
+        "files": 245,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa",
+      "workspace": "_Organized Desktop/03 Master Projects/mastersupa",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7195,
+        "document_files": 1824,
+        "files": 15478,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea",
+      "workspace": "_Organized Desktop/03 Master Projects/mastertea",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6073,
+        "document_files": 149,
+        "files": 6957,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool",
+      "workspace": "_Organized Desktop/03 Master Projects/mastertool",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4935,
+        "document_files": 1994,
+        "files": 12308,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty",
+      "workspace": "_Organized Desktop/03 Master Projects/mastertwenty",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 17289,
+        "document_files": 2921,
+        "files": 21804,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot",
+      "workspace": "_Organized Desktop/03 Master Projects/mastertypebot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2159,
+        "document_files": 326,
+        "files": 4077,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterumami",
+      "workspace": "_Organized Desktop/03 Master Projects/masterumami",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 875,
+        "document_files": 74,
+        "files": 1506,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY",
+      "workspace": "_Organized Desktop/03 Master Projects/masterzulipPY",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2997,
+        "document_files": 1221,
+        "files": 9080,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training",
+      "workspace": "_Organized Desktop/04 JavaScript Training",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3671,
+        "document_files": 1163,
+        "files": 5079,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/04 JavaScript Training/jstrain2.2"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jep vs code",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jep vs code",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 219,
+        "document_files": 11,
+        "files": 251,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 48,
+        "document_files": 37,
+        "files": 117,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jsdrillapp",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jsdrillapp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 49,
+        "document_files": 38,
+        "files": 122,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain1",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 72,
+        "document_files": 2,
+        "files": 83,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 106,
+        "document_files": 105,
+        "files": 228,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2300,
+        "document_files": 671,
+        "files": 2951,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/04 JavaScript Training/jstrain2.2"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 19,
+        "document_files": 22,
+        "files": 51,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 46,
+        "document_files": 32,
+        "files": 91,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain3",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 71,
+        "document_files": 56,
+        "files": 162,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 47,
+        "document_files": 1,
+        "files": 53,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain5",
+      "workspace": "_Organized Desktop/04 JavaScript Training/jstrain5",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 162,
+        "document_files": 78,
+        "files": 250,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/react",
+      "workspace": "_Organized Desktop/04 JavaScript Training/react",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6,
+        "document_files": 1,
+        "files": 6,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/reactbullet",
+      "workspace": "_Organized Desktop/04 JavaScript Training/reactbullet",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 452,
+        "document_files": 51,
+        "files": 558,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+      "workspace": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 74,
+        "document_files": 29,
+        "files": 125,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/trainjs",
+      "workspace": "_Organized Desktop/04 JavaScript Training/trainjs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 29,
+        "files": 29,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/B1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/B1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 29,
+        "document_files": 2,
+        "files": 51,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/D1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/D1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 32,
+        "document_files": 15,
+        "files": 50,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/D2",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/D2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 34,
+        "document_files": 12,
+        "files": 50,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/D3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/D3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 66,
+        "document_files": 20,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 59,
+        "document_files": 24,
+        "files": 96,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e11",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e11",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 11,
+        "files": 51,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e12",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e12",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 17,
+        "document_files": 12,
+        "files": 31,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e13",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e13",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 41,
+        "document_files": 20,
+        "files": 75,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e14",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e14",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 19,
+        "document_files": 14,
+        "files": 35,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e15",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e15",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16,
+        "document_files": 19,
+        "files": 33,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e17",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e17",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 109,
+        "document_files": 23,
+        "files": 146,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e2",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 47,
+        "document_files": 22,
+        "files": 82,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e20",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e20",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6,
+        "document_files": 8,
+        "files": 18,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 71,
+        "document_files": 25,
+        "files": 102,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e4",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 78,
+        "document_files": 32,
+        "files": 132,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/e6",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/e6",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 17,
+        "files": 67,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/g1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/g1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 42,
+        "document_files": 4,
+        "files": 66,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/J1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/J1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4,
+        "document_files": 8,
+        "files": 12,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j2",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/j2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 5,
+        "document_files": 9,
+        "files": 14,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/j3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 6,
+        "document_files": 3,
+        "files": 15,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j4",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/j4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7,
+        "document_files": 2,
+        "files": 10,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j5",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/j5",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4,
+        "document_files": 1,
+        "files": 6,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j7",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/j7",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 12,
+        "document_files": 1,
+        "files": 13,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/rn1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/rn1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1751,
+        "document_files": 66,
+        "files": 2691,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/w21",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/w21",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 10,
+        "files": 95,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/w22",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/w22",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 74,
+        "document_files": 10,
+        "files": 88,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/w23",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/w23",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 63,
+        "document_files": 10,
+        "files": 75,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/w24",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/w24",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 42,
+        "document_files": 13,
+        "files": 67,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/w25",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/w25",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 44,
+        "document_files": 10,
+        "files": 57,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 54,
+        "document_files": 10,
+        "files": 68,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww10",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww10",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 54,
+        "document_files": 13,
+        "files": 80,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww11",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww11",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 58,
+        "document_files": 10,
+        "files": 71,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww12",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww12",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 64,
+        "document_files": 11,
+        "files": 88,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww13",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww13",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 70,
+        "document_files": 11,
+        "files": 91,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww14",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww14",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 63,
+        "document_files": 10,
+        "files": 76,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww15",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww15",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 68,
+        "document_files": 10,
+        "files": 82,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww16",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww16",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 70,
+        "document_files": 10,
+        "files": 83,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww17",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww17",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 64,
+        "document_files": 11,
+        "files": 88,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww18",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww18",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 74,
+        "document_files": 10,
+        "files": 87,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww19",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww19",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 76,
+        "document_files": 10,
+        "files": 95,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww26",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww26",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 47,
+        "document_files": 10,
+        "files": 61,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww27",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww27",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 41,
+        "document_files": 12,
+        "files": 56,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww28",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww28",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 46,
+        "document_files": 10,
+        "files": 59,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww29",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww29",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 11,
+        "files": 80,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 84,
+        "document_files": 10,
+        "files": 97,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww30",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww30",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 53,
+        "document_files": 10,
+        "files": 66,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww31",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww31",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 74,
+        "document_files": 10,
+        "files": 88,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww32",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww32",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 84,
+        "document_files": 10,
+        "files": 98,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 63,
+        "document_files": 10,
+        "files": 78,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww35",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww35",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 60,
+        "document_files": 10,
+        "files": 73,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww36",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww36",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 70,
+        "document_files": 10,
+        "files": 83,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww37",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww37",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 31,
+        "document_files": 10,
+        "files": 43,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww39",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww39",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 10,
+        "files": 76,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww4",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 65,
+        "document_files": 11,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww40",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww40",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 68,
+        "document_files": 10,
+        "files": 83,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww43",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww43",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 67,
+        "document_files": 11,
+        "files": 90,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww45",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww45",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 67,
+        "document_files": 33,
+        "files": 113,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww46",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww46",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 64,
+        "document_files": 11,
+        "files": 90,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww47",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww47",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 78,
+        "document_files": 26,
+        "files": 116,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww48",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww48",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 66,
+        "document_files": 11,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww49",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww49",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 26,
+        "files": 98,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww5",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww5",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 64,
+        "document_files": 10,
+        "files": 78,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww50",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww50",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 58,
+        "document_files": 26,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww55",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww55",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 55,
+        "document_files": 11,
+        "files": 73,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww6",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww6",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 59,
+        "document_files": 11,
+        "files": 75,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww7",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww7",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 67,
+        "document_files": 11,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww8",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww8",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 11,
+        "files": 86,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/ww9",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/ww9",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 60,
+        "document_files": 13,
+        "files": 85,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/X1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/X1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 28,
+        "document_files": 24,
+        "files": 69,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 53,
+        "document_files": 30,
+        "files": 95,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 58,
+        "document_files": 58,
+        "files": 126,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z6",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z6",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 38,
+        "document_files": 28,
+        "files": 75,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z7",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z7",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 36,
+        "document_files": 35,
+        "files": 81,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z8",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z8",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 66,
+        "document_files": 25,
+        "files": 104,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z9",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/z9",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 49,
+        "document_files": 28,
+        "files": 90,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz1",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 102,
+        "document_files": 10,
+        "files": 119,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz2",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 72,
+        "document_files": 27,
+        "files": 113,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz3",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 83,
+        "document_files": 12,
+        "files": 109,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz4",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz4",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 75,
+        "document_files": 11,
+        "files": 98,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz55",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz55",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 11,
+        "files": 84,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 60,
+        "document_files": 11,
+        "files": 83,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz7",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz7",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 85,
+        "document_files": 12,
+        "files": 110,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz8",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz8",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 63,
+        "document_files": 14,
+        "files": 91,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/zz9",
+      "workspace": "_Organized Desktop/05 Numbered Experiments/zz9",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 75,
+        "document_files": 10,
+        "files": 91,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+      "workspace": "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 207,
+        "document_files": 12,
+        "files": 245,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/aiapplybot",
+      "workspace": "_Organized Desktop/06 AI And Learning/aiapplybot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 40,
+        "document_files": 88,
+        "files": 138,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+      "workspace": "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 44,
+        "document_files": 20,
+        "files": 73,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/claudeailab",
+      "workspace": "_Organized Desktop/06 AI And Learning/claudeailab",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 47,
+        "document_files": 1,
+        "files": 61,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+      "workspace": "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7,
+        "document_files": 1,
+        "files": 18,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/codehelper",
+      "workspace": "_Organized Desktop/06 AI And Learning/codehelper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 116,
+        "document_files": 63,
+        "files": 209,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/learnpathclaude",
+      "workspace": "_Organized Desktop/06 AI And Learning/learnpathclaude",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 1,
+        "files": 1,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/think",
+      "workspace": "_Organized Desktop/06 AI And Learning/think",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 41,
+        "document_files": 3,
+        "files": 63,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/07 Anti Projects/antiemponb",
+      "workspace": "_Organized Desktop/07 Anti Projects/antiemponb",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 81,
+        "document_files": 50,
+        "files": 144,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/07 Anti Projects/antihelpdesk",
+      "workspace": "_Organized Desktop/07 Anti Projects/antihelpdesk",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 65,
+        "document_files": 50,
+        "files": 132,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/07 Anti Projects/antiinv",
+      "workspace": "_Organized Desktop/07 Anti Projects/antiinv",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 40,
+        "document_files": 2,
+        "files": 61,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/07 Anti Projects/antitestbuild",
+      "workspace": "_Organized Desktop/07 Anti Projects/antitestbuild",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 72,
+        "document_files": 11,
+        "files": 99,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects",
+      "workspace": "_Organized Desktop/08 App And Product Projects",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 547,
+        "document_files": 102,
+        "files": 872,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/08 App And Product Projects/eliapplybot"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+      "workspace": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 44,
+        "document_files": 1,
+        "files": 52,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot",
+      "workspace": "_Organized Desktop/08 App And Product Projects/eliapplybot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 66,
+        "document_files": 30,
+        "files": 114,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "_Organized Desktop/08 App And Product Projects/eliapplybot"
+      ]
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+      "workspace": "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 4,
+        "files": 86,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+      "workspace": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 141,
+        "document_files": 45,
+        "files": 202,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+      "workspace": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 48,
+        "document_files": 2,
+        "files": 56,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/hnrandom",
+      "workspace": "_Organized Desktop/08 App And Product Projects/hnrandom",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 90,
+        "document_files": 4,
+        "files": 117,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/job track",
+      "workspace": "_Organized Desktop/08 App And Product Projects/job track",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 98,
+        "document_files": 14,
+        "files": 186,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+      "workspace": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 26,
+        "document_files": 1,
+        "files": 40,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+      "workspace": "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7,
+        "document_files": 1,
+        "files": 18,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/grav1pretalx",
+      "workspace": "_Organized Desktop/09 Grav And VG Projects/grav1pretalx",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1540,
+        "document_files": 350,
+        "files": 2297,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+      "workspace": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 4509,
+        "document_files": 662,
+        "files": 5543,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+      "workspace": "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1789,
+        "document_files": 869,
+        "files": 3597,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/vg",
+      "workspace": "_Organized Desktop/09 Grav And VG Projects/vg",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 105,
+        "document_files": 130,
+        "files": 250,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+      "workspace": "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 105,
+        "document_files": 59,
+        "files": 188,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/11 Loose Files",
+      "workspace": "_Organized Desktop/11 Loose Files",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 2,
+        "files": 3,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/3buildhyper",
+      "workspace": "_Organized Desktop/12 Other Projects/3buildhyper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 451,
+        "document_files": 15,
+        "files": 702,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/aaa1",
+      "workspace": "_Organized Desktop/12 Other Projects/aaa1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 216,
+        "document_files": 21,
+        "files": 247,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/andie",
+      "workspace": "_Organized Desktop/12 Other Projects/andie",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3,
+        "document_files": 0,
+        "files": 24,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/appmaketrck",
+      "workspace": "_Organized Desktop/12 Other Projects/appmaketrck",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 171,
+        "document_files": 32,
+        "files": 243,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/cc",
+      "workspace": "_Organized Desktop/12 Other Projects/cc",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 127,
+        "document_files": 0,
+        "files": 134,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/curse",
+      "workspace": "_Organized Desktop/12 Other Projects/curse",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 98,
+        "document_files": 9,
+        "files": 117,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/FinalJep",
+      "workspace": "_Organized Desktop/12 Other Projects/FinalJep",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 42,
+        "document_files": 4,
+        "files": 66,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/finaljepgame",
+      "workspace": "_Organized Desktop/12 Other Projects/finaljepgame",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 60,
+        "files": 151,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/GlobGame",
+      "workspace": "_Organized Desktop/12 Other Projects/GlobGame",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16,
+        "document_files": 2,
+        "files": 31,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+      "workspace": "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 415,
+        "document_files": 12,
+        "files": 662,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+      "workspace": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 36,
+        "document_files": 1,
+        "files": 52,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/Obsidian",
+      "workspace": "_Organized Desktop/12 Other Projects/Obsidian",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 2,
+        "files": 7,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/pp8",
+      "workspace": "_Organized Desktop/12 Other Projects/pp8",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 74,
+        "document_files": 12,
+        "files": 94,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/pyhealth",
+      "workspace": "_Organized Desktop/12 Other Projects/pyhealth",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 936,
+        "document_files": 273,
+        "files": 1285,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "aiapplybot",
+      "workspace": "aiapplybot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 8,
+        "document_files": 2,
+        "files": 13,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aiapplybot"
+      ]
+    },
+    {
+      "path": "aicallhelper",
+      "workspace": "aicallhelper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 71,
+        "document_files": 34,
+        "files": 132,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aicallhelper"
+      ]
+    },
+    {
+      "path": "aicallhelper2",
+      "workspace": "aicallhelper2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 76,
+        "document_files": 19,
+        "files": 102,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aicallhelper2"
+      ]
+    },
+    {
+      "path": "aiheartbeat",
+      "workspace": "aiheartbeat",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 81,
+        "document_files": 9,
+        "files": 105,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aiheartbeat"
+      ]
+    },
+    {
+      "path": "aihelper",
+      "workspace": "aihelper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 18,
+        "document_files": 9,
+        "files": 29,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aihelper"
+      ]
+    },
+    {
+      "path": "AlanAndEliSoccer",
+      "workspace": "AlanAndEliSoccer",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 45,
+        "document_files": 2,
+        "files": 61,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "AlanAndEliSoccer"
+      ]
+    },
+    {
+      "path": "ankijs",
+      "workspace": "ankijs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 97,
+        "document_files": 55,
+        "files": 180,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "ankijs"
+      ]
+    },
+    {
+      "path": "antigravupskill",
+      "workspace": "antigravupskill",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7,
+        "document_files": 62,
+        "files": 70,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "antigravupskill"
+      ]
+    },
+    {
+      "path": "aral",
+      "workspace": "aral",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 78,
+        "document_files": 5,
+        "files": 163,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "aral"
+      ]
+    },
+    {
+      "path": "astra1",
+      "workspace": "astra1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 105,
+        "document_files": 65,
+        "files": 186,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "astra1"
+      ]
+    },
+    {
+      "path": "astra2",
+      "workspace": "astra2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 22,
+        "document_files": 12,
+        "files": 43,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "astraspacegameweb",
+      "workspace": "astraspacegameweb",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 114,
+        "document_files": 19,
+        "files": 236,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "borrowbox",
+      "workspace": "borrowbox",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 38,
+        "document_files": 30,
+        "files": 89,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "borrowbox"
+      ]
+    },
+    {
+      "path": "buildbusinesses",
+      "workspace": "buildbusinesses",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 9,
+        "document_files": 49,
+        "files": 68,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildbusinesses"
+      ]
+    },
+    {
+      "path": "buildermentor",
+      "workspace": "buildermentor",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 5,
+        "files": 136,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildermentor"
+      ]
+    },
+    {
+      "path": "buildevent",
+      "workspace": "buildevent",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 68,
+        "document_files": 47,
+        "files": 136,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildevent"
+      ]
+    },
+    {
+      "path": "buildreviewer",
+      "workspace": "buildreviewer",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 77,
+        "document_files": 2,
+        "files": 96,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildreviewer"
+      ]
+    },
+    {
+      "path": "buildsmallplates",
+      "workspace": "buildsmallplates",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 52,
+        "document_files": 3,
+        "files": 67,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildsmallplates"
+      ]
+    },
+    {
+      "path": "buildsql",
+      "workspace": "buildsql",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 15,
+        "document_files": 81,
+        "files": 145,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildsql"
+      ]
+    },
+    {
+      "path": "buildwhiteboard",
+      "workspace": "buildwhiteboard",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 10,
+        "document_files": 3,
+        "files": 34,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "buildwhiteboard"
+      ]
+    },
+    {
+      "path": "c#interview",
+      "workspace": "c#interview",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 43,
+        "files": 43,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "c#interview"
+      ]
+    },
+    {
+      "path": "calendar+jobtrack",
+      "workspace": "calendar+jobtrack",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 2,
+        "files": 68,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "campusops",
+      "workspace": "campusops",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 31,
+        "files": 148,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "campusops"
+      ]
+    },
+    {
+      "path": "claude docs",
+      "workspace": "claude docs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 5,
+        "files": 6,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "claude docs"
+      ]
+    },
+    {
+      "path": "csharptut",
+      "workspace": "csharptut",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 225,
+        "files": 226,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "csharptut"
+      ]
+    },
+    {
+      "path": "devdeck",
+      "workspace": "devdeck",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 4,
+        "files": 51,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "devdeck"
+      ]
+    },
+    {
+      "path": "fableaihelperv2",
+      "workspace": "fableaihelperv2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 82,
+        "document_files": 12,
+        "files": 103,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "fableaihelperv2"
+      ]
+    },
+    {
+      "path": "fableaihelperv3",
+      "workspace": "fableaihelperv3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 2,
+        "files": 34,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "fableaihelperv3"
+      ]
+    },
+    {
+      "path": "finalcallhelp",
+      "workspace": "finalcallhelp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 105,
+        "document_files": 17,
+        "files": 132,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "finalcallhelp"
+      ]
+    },
+    {
+      "path": "finance-dashboard",
+      "workspace": "finance-dashboard",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3,
+        "document_files": 2,
+        "files": 7,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "finance-dashboard"
+      ]
+    },
+    {
+      "path": "formforge",
+      "workspace": "formforge",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 86,
+        "files": 167,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "formforge"
+      ]
+    },
+    {
+      "path": "geminiorganized/FableDocs_Projects_Hermes",
+      "workspace": "geminiorganized/FableDocs_Projects_Hermes",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 28,
+        "files": 29,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_.Architectureproject",
+      "workspace": "geminiorganized/General_.Architectureproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1153,
+        "document_files": 33,
+        "files": 1310,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_.Open2",
+      "workspace": "geminiorganized/General_.Open2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 8006,
+        "document_files": 314,
+        "files": 9399,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_.Todo",
+      "workspace": "geminiorganized/General_.Todo",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 362,
+        "document_files": 57,
+        "files": 523,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Alanandelisoccer",
+      "workspace": "geminiorganized/General_Alanandelisoccer",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 45,
+        "document_files": 2,
+        "files": 61,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Ankijs",
+      "workspace": "geminiorganized/General_Ankijs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 52,
+        "files": 127,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Aral",
+      "workspace": "geminiorganized/General_Aral",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 78,
+        "document_files": 5,
+        "files": 163,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Borrowbox",
+      "workspace": "geminiorganized/General_Borrowbox",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 38,
+        "document_files": 30,
+        "files": 89,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_C#Interview",
+      "workspace": "geminiorganized/General_C#Interview",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 43,
+        "files": 43,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Campusops",
+      "workspace": "geminiorganized/General_Campusops",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 31,
+        "files": 148,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Cleanarch",
+      "workspace": "geminiorganized/General_Cleanarch",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 169,
+        "document_files": 113,
+        "files": 343,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Csharptut",
+      "workspace": "geminiorganized/General_Csharptut",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 225,
+        "files": 226,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Devdeck",
+      "workspace": "geminiorganized/General_Devdeck",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 4,
+        "files": 51,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Finance-Dashboard",
+      "workspace": "geminiorganized/General_Finance-Dashboard",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 3,
+        "document_files": 2,
+        "files": 7,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Formforge",
+      "workspace": "geminiorganized/General_Formforge",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 86,
+        "files": 167,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Gitjira",
+      "workspace": "geminiorganized/General_Gitjira",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 19,
+        "files": 20,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Gitjira-App",
+      "workspace": "geminiorganized/General_Gitjira-App",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 179,
+        "document_files": 99,
+        "files": 332,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Gitvg",
+      "workspace": "geminiorganized/General_Gitvg",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2942,
+        "document_files": 988,
+        "files": 4387,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Globehire",
+      "workspace": "geminiorganized/General_Globehire",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 75,
+        "document_files": 49,
+        "files": 156,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Jsharness",
+      "workspace": "geminiorganized/General_Jsharness",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2291,
+        "document_files": 328,
+        "files": 3018,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Jstut",
+      "workspace": "geminiorganized/General_Jstut",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 46,
+        "files": 47,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Masternocu",
+      "workspace": "geminiorganized/General_Masternocu",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 10671,
+        "document_files": 11266,
+        "files": 25202,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Masteroutline",
+      "workspace": "geminiorganized/General_Masteroutline",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2334,
+        "document_files": 108,
+        "files": 2632,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_MasterPlan",
+      "workspace": "geminiorganized/General_MasterPlan",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 4,
+        "files": 5,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Meterforge",
+      "workspace": "geminiorganized/General_Meterforge",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 69,
+        "document_files": 30,
+        "files": 127,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Missioncontrol",
+      "workspace": "geminiorganized/General_Missioncontrol",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 73,
+        "document_files": 1,
+        "files": 86,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Mobiletagalog",
+      "workspace": "geminiorganized/General_Mobiletagalog",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 1,
+        "files": 42,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Newcodecjs2",
+      "workspace": "geminiorganized/General_Newcodecjs2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 87,
+        "document_files": 75,
+        "files": 173,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Newcodex3",
+      "workspace": "geminiorganized/General_Newcodex3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 400,
+        "document_files": 152,
+        "files": 707,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Newcodexjs",
+      "workspace": "geminiorganized/General_Newcodexjs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 592,
+        "document_files": 547,
+        "files": 1222,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Nopsolutions",
+      "workspace": "geminiorganized/General_Nopsolutions",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 5148,
+        "document_files": 131,
+        "files": 6711,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Open1",
+      "workspace": "geminiorganized/General_Open1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 627,
+        "document_files": 62,
+        "files": 1113,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Open3",
+      "workspace": "geminiorganized/General_Open3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16690,
+        "document_files": 117,
+        "files": 17801,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Open5",
+      "workspace": "geminiorganized/General_Open5",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2116,
+        "document_files": 30,
+        "files": 2498,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Perch",
+      "workspace": "geminiorganized/General_Perch",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 114,
+        "document_files": 166,
+        "files": 303,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Readme",
+      "workspace": "geminiorganized/General_Readme",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 1,
+        "files": 2,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Recipeview",
+      "workspace": "geminiorganized/General_Recipeview",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 2,
+        "files": 36,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Recipeweb",
+      "workspace": "geminiorganized/General_Recipeweb",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 15,
+        "document_files": 18,
+        "files": 48,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Resume",
+      "workspace": "geminiorganized/General_Resume",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 32,
+        "files": 33,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Skillforgejs",
+      "workspace": "geminiorganized/General_Skillforgejs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1348,
+        "document_files": 48,
+        "files": 1895,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Spacegame",
+      "workspace": "geminiorganized/General_Spacegame",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 85,
+        "document_files": 1,
+        "files": 105,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/General_Tagalog",
+      "workspace": "geminiorganized/General_Tagalog",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 58,
+        "files": 185,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Applybot",
+      "workspace": "geminiorganized/LLM_Generated_Applybot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 8,
+        "document_files": 2,
+        "files": 13,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildbusinesses",
+      "workspace": "geminiorganized/LLM_Generated_Buildbusinesses",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 9,
+        "document_files": 49,
+        "files": 68,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildermentor",
+      "workspace": "geminiorganized/LLM_Generated_Buildermentor",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 5,
+        "files": 136,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildevent",
+      "workspace": "geminiorganized/LLM_Generated_Buildevent",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 68,
+        "document_files": 47,
+        "files": 136,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildreviewer",
+      "workspace": "geminiorganized/LLM_Generated_Buildreviewer",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 77,
+        "document_files": 2,
+        "files": 96,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildsmallplates",
+      "workspace": "geminiorganized/LLM_Generated_Buildsmallplates",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 52,
+        "document_files": 3,
+        "files": 67,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildsql",
+      "workspace": "geminiorganized/LLM_Generated_Buildsql",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 592,
+        "document_files": 216,
+        "files": 818,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildwhiteboard",
+      "workspace": "geminiorganized/LLM_Generated_Buildwhiteboard",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 10,
+        "document_files": 3,
+        "files": 34,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_ClaudeDocs",
+      "workspace": "geminiorganized/LLM_Generated_ClaudeDocs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 5,
+        "files": 6,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Ecommerceproject",
+      "workspace": "geminiorganized/LLM_Generated_Ecommerceproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 25,
+        "document_files": 4,
+        "files": 33,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Fablehelperv2",
+      "workspace": "geminiorganized/LLM_Generated_Fablehelperv2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 82,
+        "document_files": 12,
+        "files": 103,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Fablehelperv3",
+      "workspace": "geminiorganized/LLM_Generated_Fablehelperv3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 2,
+        "files": 34,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Gptdocs",
+      "workspace": "geminiorganized/LLM_Generated_Gptdocs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 2,
+        "files": 3,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Grokjs",
+      "workspace": "geminiorganized/LLM_Generated_Grokjs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2064,
+        "document_files": 48,
+        "files": 2122,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Groktuts",
+      "workspace": "geminiorganized/LLM_Generated_Groktuts",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 214,
+        "document_files": 179,
+        "files": 401,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Helper",
+      "workspace": "geminiorganized/LLM_Generated_Helper",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 18,
+        "document_files": 9,
+        "files": 29,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Hrproject",
+      "workspace": "geminiorganized/LLM_Generated_Hrproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 22,
+        "document_files": 4,
+        "files": 30,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Js1",
+      "workspace": "geminiorganized/LLM_Generated_Js1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 474,
+        "document_files": 309,
+        "files": 935,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Jsprojectlearn",
+      "workspace": "geminiorganized/LLM_Generated_Jsprojectlearn",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 437,
+        "document_files": 307,
+        "files": 610,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Multitenantproject",
+      "workspace": "geminiorganized/LLM_Generated_Multitenantproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 21,
+        "document_files": 4,
+        "files": 29,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Orderproject",
+      "workspace": "geminiorganized/LLM_Generated_Orderproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 21,
+        "document_files": 4,
+        "files": 29,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Ppmproject",
+      "workspace": "geminiorganized/LLM_Generated_Ppmproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 26,
+        "document_files": 4,
+        "files": 39,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Rag",
+      "workspace": "geminiorganized/LLM_Generated_Rag",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 86,
+        "document_files": 124,
+        "files": 240,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Supportproject",
+      "workspace": "geminiorganized/LLM_Generated_Supportproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 3,
+        "files": 4,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Teamproject",
+      "workspace": "geminiorganized/LLM_Generated_Teamproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 23,
+        "document_files": 4,
+        "files": 36,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_.Ramp",
+      "workspace": "geminiorganized/OpenSource_Upskilling_.Ramp",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 43,
+        "document_files": 48,
+        "files": 96,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_.Stripe",
+      "workspace": "geminiorganized/OpenSource_Upskilling_.Stripe",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 20,
+        "document_files": 97,
+        "files": 125,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Auth",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Auth",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 42,
+        "document_files": 63,
+        "files": 123,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Docu",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Docu",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 81,
+        "document_files": 50,
+        "files": 153,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Drop",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Drop",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 49,
+        "files": 128,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Intercom",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Intercom",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 51,
+        "files": 147,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Linear",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Linear",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 49,
+        "files": 123,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Notion",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Notion",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 97,
+        "document_files": 58,
+        "files": 171,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Shop",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Shop",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 48,
+        "document_files": 49,
+        "files": 110,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Snapshot",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Snapshot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 698,
+        "document_files": 57,
+        "files": 851,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_Snapshot1",
+      "workspace": "geminiorganized/OpenSource_Upskilling_Snapshot1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 602,
+        "document_files": 70,
+        "files": 768,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "gitjira",
+      "workspace": "gitjira",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 19,
+        "files": 20,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitjira"
+      ]
+    },
+    {
+      "path": "gitjira-app",
+      "workspace": "gitjira-app",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 179,
+        "document_files": 99,
+        "files": 332,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitjira-app"
+      ]
+    },
+    {
+      "path": "gitvg/agora",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 264,
+        "document_files": 40,
+        "files": 333,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/agora"
+      ]
+    },
+    {
+      "path": "gitvg/agora-net",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 152,
+        "document_files": 18,
+        "files": 186,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/agora-net"
+      ]
+    },
+    {
+      "path": "gitvg/atlas",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 508,
+        "document_files": 74,
+        "files": 619,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/atlas"
+      ]
+    },
+    {
+      "path": "gitvg/atlas-net",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 93,
+        "document_files": 17,
+        "files": 119,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/atlas-net"
+      ]
+    },
+    {
+      "path": "gitvg/bazaar",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 211,
+        "document_files": 211,
+        "files": 509,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/bazaar"
+      ]
+    },
+    {
+      "path": "gitvg/bazaar-app",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 217,
+        "document_files": 53,
+        "files": 289,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/bazaar-app"
+      ]
+    },
+    {
+      "path": "gitvg/folio",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 124,
+        "document_files": 70,
+        "files": 224,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/folio"
+      ]
+    },
+    {
+      "path": "gitvg/folio-app",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 159,
+        "document_files": 52,
+        "files": 227,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/folio-app"
+      ]
+    },
+    {
+      "path": "gitvg/harbor",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 122,
+        "document_files": 66,
+        "files": 225,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/harbor"
+      ]
+    },
+    {
+      "path": "gitvg/harbor-net",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 143,
+        "document_files": 20,
+        "files": 174,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/harbor-net"
+      ]
+    },
+    {
+      "path": "gitvg/pulse",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 220,
+        "document_files": 67,
+        "files": 332,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/pulse"
+      ]
+    },
+    {
+      "path": "gitvg/pulse-net",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 102,
+        "document_files": 27,
+        "files": 138,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/pulse-net"
+      ]
+    },
+    {
+      "path": "gitvg/relay",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 129,
+        "document_files": 75,
+        "files": 240,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/relay"
+      ]
+    },
+    {
+      "path": "gitvg/relay-app",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 200,
+        "document_files": 54,
+        "files": 274,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/relay-app"
+      ]
+    },
+    {
+      "path": "gitvg/storefront",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 54,
+        "document_files": 30,
+        "files": 105,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/storefront"
+      ]
+    },
+    {
+      "path": "gitvg/tracer",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 85,
+        "document_files": 70,
+        "files": 180,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/tracer"
+      ]
+    },
+    {
+      "path": "gitvg/tracer-net",
+      "workspace": "gitvg",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 158,
+        "document_files": 22,
+        "files": 190,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "gitvg/tracer-net"
+      ]
+    },
+    {
+      "path": "globehire",
+      "workspace": "globehire",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 75,
+        "document_files": 49,
+        "files": 156,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "globehire"
+      ]
+    },
+    {
+      "path": "GPTDocs",
+      "workspace": "GPTDocs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 2,
+        "files": 3,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "GPTDocs"
+      ]
+    },
+    {
+      "path": "grokbuildecommerceproject",
+      "workspace": "grokbuildecommerceproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 25,
+        "document_files": 4,
+        "files": 33,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildecommerceproject"
+      ]
+    },
+    {
+      "path": "grokbuildhrproject",
+      "workspace": "grokbuildhrproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 22,
+        "document_files": 4,
+        "files": 30,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildhrproject"
+      ]
+    },
+    {
+      "path": "grokbuildmultitenantproject",
+      "workspace": "grokbuildmultitenantproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 21,
+        "document_files": 4,
+        "files": 29,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildmultitenantproject"
+      ]
+    },
+    {
+      "path": "grokbuildorderproject",
+      "workspace": "grokbuildorderproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 21,
+        "document_files": 4,
+        "files": 29,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildorderproject"
+      ]
+    },
+    {
+      "path": "grokbuildppmproject",
+      "workspace": "grokbuildppmproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 26,
+        "document_files": 4,
+        "files": 39,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildppmproject"
+      ]
+    },
+    {
+      "path": "grokbuildsupportproject",
+      "workspace": "grokbuildsupportproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 3,
+        "files": 4,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildsupportproject"
+      ]
+    },
+    {
+      "path": "grokbuildteamproject",
+      "workspace": "grokbuildteamproject",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 23,
+        "document_files": 4,
+        "files": 36,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokbuildteamproject"
+      ]
+    },
+    {
+      "path": "grokjs",
+      "workspace": "grokjs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2064,
+        "document_files": 48,
+        "files": 2122,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "grokjs"
+      ]
+    },
+    {
+      "path": "groktuts",
+      "workspace": "groktuts",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 214,
+        "document_files": 179,
+        "files": 401,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "groktuts"
+      ]
+    },
+    {
+      "path": "hermes",
+      "workspace": "hermes",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 7,
+        "document_files": 31,
+        "files": 39,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "hermes"
+      ]
+    },
+    {
+      "path": "jobtrack",
+      "workspace": "jobtrack",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16,
+        "document_files": 56,
+        "files": 74,
+        "git_roots": 0
+      },
+      "git_roots": []
+    },
+    {
+      "path": "JS1",
+      "workspace": "JS1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 474,
+        "document_files": 309,
+        "files": 935,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "JS1"
+      ]
+    },
+    {
+      "path": "jsharness/ctvodejs",
+      "workspace": "jsharness",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 118,
+        "document_files": 19,
+        "files": 185,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "jsharness/ctvodejs"
+      ]
+    },
+    {
+      "path": "jsharness/VTCode",
+      "workspace": "jsharness",
+      "boundary": "independent-nested-git-root",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2173,
+        "document_files": 309,
+        "files": 2833,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "jsharness/VTCode"
+      ]
+    },
+    {
+      "path": "JSProjectLearn",
+      "workspace": "JSProjectLearn",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16,
+        "document_files": 14,
+        "files": 374,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "JSProjectLearn"
+      ]
+    },
+    {
+      "path": "JSTut",
+      "workspace": "JSTut",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 46,
+        "files": 47,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "JSTut"
+      ]
+    },
+    {
+      "path": "lucasrouter",
+      "workspace": "lucasrouter",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 114,
+        "document_files": 6,
+        "files": 180,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "lucasrouter"
+      ]
+    },
+    {
+      "path": "master plan",
+      "workspace": "master plan",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 4,
+        "files": 5,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "master plan"
+      ]
+    },
+    {
+      "path": "masternocu",
+      "workspace": "masternocu",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 10671,
+        "document_files": 11266,
+        "files": 25202,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "masternocu"
+      ]
+    },
+    {
+      "path": "masteroutline",
+      "workspace": "masteroutline",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2334,
+        "document_files": 108,
+        "files": 2632,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "masteroutline"
+      ]
+    },
+    {
+      "path": "meterforge",
+      "workspace": "meterforge",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 69,
+        "document_files": 30,
+        "files": 127,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "meterforge"
+      ]
+    },
+    {
+      "path": "missioncontrol",
+      "workspace": "missioncontrol",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 73,
+        "document_files": 1,
+        "files": 86,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "missioncontrol"
+      ]
+    },
+    {
+      "path": "mobiletagalog",
+      "workspace": "mobiletagalog",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 35,
+        "document_files": 1,
+        "files": 42,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "mobiletagalog"
+      ]
+    },
+    {
+      "path": "netairag",
+      "workspace": "netairag",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 86,
+        "document_files": 124,
+        "files": 240,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netairag"
+      ]
+    },
+    {
+      "path": "netauth",
+      "workspace": "netauth",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 42,
+        "document_files": 63,
+        "files": 123,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netauth"
+      ]
+    },
+    {
+      "path": "netcleanarch",
+      "workspace": "netcleanarch",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 169,
+        "document_files": 113,
+        "files": 343,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netcleanarch/CleanArchitecture"
+      ]
+    },
+    {
+      "path": "netdocu",
+      "workspace": "netdocu",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 81,
+        "document_files": 50,
+        "files": 153,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netdocu"
+      ]
+    },
+    {
+      "path": "netdrop",
+      "workspace": "netdrop",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 62,
+        "document_files": 49,
+        "files": 128,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netdrop"
+      ]
+    },
+    {
+      "path": "netintercom",
+      "workspace": "netintercom",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 80,
+        "document_files": 51,
+        "files": 147,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netintercom"
+      ]
+    },
+    {
+      "path": "netlinear",
+      "workspace": "netlinear",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 61,
+        "document_files": 49,
+        "files": 123,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netlinear"
+      ]
+    },
+    {
+      "path": "netnotion",
+      "workspace": "netnotion",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 97,
+        "document_files": 58,
+        "files": 171,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netnotion"
+      ]
+    },
+    {
+      "path": "netopen1",
+      "workspace": "netopen1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 640,
+        "document_files": 168,
+        "files": 1236,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netopen1/eShop"
+      ]
+    },
+    {
+      "path": "netopen3",
+      "workspace": "netopen3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 16690,
+        "document_files": 117,
+        "files": 17801,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netopen3/Umbraco-CMS"
+      ]
+    },
+    {
+      "path": "netopen5",
+      "workspace": "netopen5",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 2116,
+        "document_files": 30,
+        "files": 2498,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netopen5/jellyfin"
+      ]
+    },
+    {
+      "path": "netshop",
+      "workspace": "netshop",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 48,
+        "document_files": 49,
+        "files": 110,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netshop"
+      ]
+    },
+    {
+      "path": "netsnapshot",
+      "workspace": "netsnapshot",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 698,
+        "document_files": 57,
+        "files": 851,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netsnapshot"
+      ]
+    },
+    {
+      "path": "netsnapshot1",
+      "workspace": "netsnapshot1",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 602,
+        "document_files": 70,
+        "files": 768,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "netsnapshot1"
+      ]
+    },
+    {
+      "path": "newcodecjs2",
+      "workspace": "newcodecjs2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 87,
+        "document_files": 75,
+        "files": 173,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "newcodecjs2"
+      ]
+    },
+    {
+      "path": "newcodex3",
+      "workspace": "newcodex3",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 400,
+        "document_files": 152,
+        "files": 707,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "newcodex3"
+      ]
+    },
+    {
+      "path": "newcodexJS",
+      "workspace": "newcodexJS",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 592,
+        "document_files": 547,
+        "files": 1222,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "newcodexJS"
+      ]
+    },
+    {
+      "path": "nopsolutionsnet",
+      "workspace": "nopsolutionsnet",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 5148,
+        "document_files": 131,
+        "files": 6711,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "nopsolutionsnet/nopCommerce"
+      ]
+    },
+    {
+      "path": "perch",
+      "workspace": "perch",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 114,
+        "document_files": 166,
+        "files": 303,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "perch"
+      ]
+    },
+    {
+      "path": "readme",
+      "workspace": "readme",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 1,
+        "files": 2,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "readme"
+      ]
+    },
+    {
+      "path": "recipeview",
+      "workspace": "recipeview",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 27,
+        "document_files": 2,
+        "files": 36,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "recipeview"
+      ]
+    },
+    {
+      "path": "recipeweb",
+      "workspace": "recipeweb",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 15,
+        "document_files": 18,
+        "files": 48,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "recipeweb"
+      ]
+    },
+    {
+      "path": "resume",
+      "workspace": "resume",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 0,
+        "document_files": 32,
+        "files": 33,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "resume"
+      ]
+    },
+    {
+      "path": "skillforgejs",
+      "workspace": "skillforgejs",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 1348,
+        "document_files": 48,
+        "files": 1895,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "skillforgejs"
+      ]
+    },
+    {
+      "path": "spacegame",
+      "workspace": "spacegame",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 85,
+        "document_files": 1,
+        "files": 105,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "spacegame"
+      ]
+    },
+    {
+      "path": "spacegamev2",
+      "workspace": "spacegamev2",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 134,
+        "document_files": 36,
+        "files": 244,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "spacegamev2/spacegamev2"
+      ]
+    },
+    {
+      "path": "tagalog",
+      "workspace": "tagalog",
+      "boundary": "workspace-with-components",
+      "parent_path": null,
+      "counts": {
+        "source_files": 84,
+        "document_files": 59,
+        "files": 5124,
+        "git_roots": 1
+      },
+      "git_roots": [
+        "tagalog"
+      ]
+    }
+  ],
+  "omitted_workspaces": [
+    {
+      "path": ".nethris",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/aff-wt-be06",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master 5",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master555",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jsinterview",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstran2.0",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/rewritepy2jsodoo",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/f1",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/j6",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/booklearn",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/claudelearnpath",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (10)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (11)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (12)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (13)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (2)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (3)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (4)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (5)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (6)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (7)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "_Organized Desktop/10 New Folders/New folder (8)",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "Amasterplan",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "codexlearnp1",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "geminiorganized/General_.Hris",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "geminiorganized/General_Amasterplan",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    },
+    {
+      "path": "New folder",
+      "reason": "No source code, project manifests, or readable/document resources found",
+      "counts": {
+        "source_files": 0,
+        "document_files": 0,
+        "files": 0,
+        "git_roots": 0
+      }
+    }
+  ],
+  "container_only_records_removed": [],
+  "final_project_paths": [
+    ".netarchitectureproject",
+    ".netopen2",
+    ".netramp",
+    ".netstripe",
+    ".nettodo",
+    "_Organized Desktop/01 Net Workspaces/.netcalendy",
+    "_Organized Desktop/01 Net Workspaces/.netgum",
+    "_Organized Desktop/01 Net Workspaces/.nethris",
+    "_Organized Desktop/01 Net Workspaces/.netpastebin",
+    "_Organized Desktop/01 Net Workspaces/.netslack",
+    "_Organized Desktop/01 Net Workspaces/.nettrello",
+    "_Organized Desktop/01 Net Workspaces/.netvg",
+    "_Organized Desktop/01 Net Workspaces/.netzen",
+    "_Organized Desktop/01 Net Workspaces/csbootcamp",
+    "_Organized Desktop/02 Build Projects/buildaffiliate",
+    "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+    "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+    "_Organized Desktop/02 Build Projects/buildagentteaching",
+    "_Organized Desktop/02 Build Projects/buildanalytics",
+    "_Organized Desktop/02 Build Projects/buildantigVG",
+    "_Organized Desktop/02 Build Projects/buildasana",
+    "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+    "_Organized Desktop/02 Build Projects/buildecom",
+    "_Organized Desktop/02 Build Projects/buildgum",
+    "_Organized Desktop/02 Build Projects/buildjira",
+    "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+    "_Organized Desktop/02 Build Projects/buildsubbox",
+    "_Organized Desktop/03 Master Projects/master",
+    "_Organized Desktop/03 Master Projects/master 6",
+    "_Organized Desktop/03 Master Projects/master1",
+    "_Organized Desktop/03 Master Projects/master2",
+    "_Organized Desktop/03 Master Projects/master3",
+    "_Organized Desktop/03 Master Projects/master4",
+    "_Organized Desktop/03 Master Projects/master7",
+    "_Organized Desktop/03 Master Projects/mastercal",
+    "_Organized Desktop/03 Master Projects/masterdidy",
+    "_Organized Desktop/03 Master Projects/masterdub",
+    "_Organized Desktop/03 Master Projects/masterfinisc",
+    "_Organized Desktop/03 Master Projects/masterflag",
+    "_Organized Desktop/03 Master Projects/masterform",
+    "_Organized Desktop/03 Master Projects/masterhop",
+    "_Organized Desktop/03 Master Projects/masteridur",
+    "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+    "_Organized Desktop/03 Master Projects/masterlink",
+    "_Organized Desktop/03 Master Projects/mastermatter",
+    "_Organized Desktop/03 Master Projects/mastermayan",
+    "_Organized Desktop/03 Master Projects/mastermorphic",
+    "_Organized Desktop/03 Master Projects/masternext",
+    "_Organized Desktop/03 Master Projects/masternovu",
+    "_Organized Desktop/03 Master Projects/masteropen",
+    "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+    "_Organized Desktop/03 Master Projects/masterpaper",
+    "_Organized Desktop/03 Master Projects/masterplane",
+    "_Organized Desktop/03 Master Projects/masterpload",
+    "_Organized Desktop/03 Master Projects/masterpostiz",
+    "_Organized Desktop/03 Master Projects/masterpre",
+    "_Organized Desktop/03 Master Projects/masterrnative",
+    "_Organized Desktop/03 Master Projects/mastersaleorPY",
+    "_Organized Desktop/03 Master Projects/mastershadcn",
+    "_Organized Desktop/03 Master Projects/MasterStore",
+    "_Organized Desktop/03 Master Projects/mastersupa",
+    "_Organized Desktop/03 Master Projects/mastertea",
+    "_Organized Desktop/03 Master Projects/mastertool",
+    "_Organized Desktop/03 Master Projects/mastertwenty",
+    "_Organized Desktop/03 Master Projects/mastertypebot",
+    "_Organized Desktop/03 Master Projects/masterumami",
+    "_Organized Desktop/03 Master Projects/masterzulipPY",
+    "_Organized Desktop/04 JavaScript Training/jep vs code",
+    "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+    "_Organized Desktop/04 JavaScript Training/jsdrillapp",
+    "_Organized Desktop/04 JavaScript Training/jstrain1",
+    "_Organized Desktop/04 JavaScript Training/jstrain2",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+    "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+    "_Organized Desktop/04 JavaScript Training/jstrain3",
+    "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+    "_Organized Desktop/04 JavaScript Training/jstrain5",
+    "_Organized Desktop/04 JavaScript Training/react",
+    "_Organized Desktop/04 JavaScript Training/reactbullet",
+    "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+    "_Organized Desktop/04 JavaScript Training/trainjs",
+    "_Organized Desktop/05 Numbered Experiments/B1",
+    "_Organized Desktop/05 Numbered Experiments/D1",
+    "_Organized Desktop/05 Numbered Experiments/D2",
+    "_Organized Desktop/05 Numbered Experiments/D3",
+    "_Organized Desktop/05 Numbered Experiments/e1",
+    "_Organized Desktop/05 Numbered Experiments/e11",
+    "_Organized Desktop/05 Numbered Experiments/e12",
+    "_Organized Desktop/05 Numbered Experiments/e13",
+    "_Organized Desktop/05 Numbered Experiments/e14",
+    "_Organized Desktop/05 Numbered Experiments/e15",
+    "_Organized Desktop/05 Numbered Experiments/e17",
+    "_Organized Desktop/05 Numbered Experiments/e2",
+    "_Organized Desktop/05 Numbered Experiments/e20",
+    "_Organized Desktop/05 Numbered Experiments/e3",
+    "_Organized Desktop/05 Numbered Experiments/e4",
+    "_Organized Desktop/05 Numbered Experiments/e6",
+    "_Organized Desktop/05 Numbered Experiments/g1",
+    "_Organized Desktop/05 Numbered Experiments/J1",
+    "_Organized Desktop/05 Numbered Experiments/j2",
+    "_Organized Desktop/05 Numbered Experiments/j3",
+    "_Organized Desktop/05 Numbered Experiments/j4",
+    "_Organized Desktop/05 Numbered Experiments/j5",
+    "_Organized Desktop/05 Numbered Experiments/j7",
+    "_Organized Desktop/05 Numbered Experiments/rn1",
+    "_Organized Desktop/05 Numbered Experiments/w21",
+    "_Organized Desktop/05 Numbered Experiments/w22",
+    "_Organized Desktop/05 Numbered Experiments/w23",
+    "_Organized Desktop/05 Numbered Experiments/w24",
+    "_Organized Desktop/05 Numbered Experiments/w25",
+    "_Organized Desktop/05 Numbered Experiments/ww1",
+    "_Organized Desktop/05 Numbered Experiments/ww10",
+    "_Organized Desktop/05 Numbered Experiments/ww11",
+    "_Organized Desktop/05 Numbered Experiments/ww12",
+    "_Organized Desktop/05 Numbered Experiments/ww13",
+    "_Organized Desktop/05 Numbered Experiments/ww14",
+    "_Organized Desktop/05 Numbered Experiments/ww15",
+    "_Organized Desktop/05 Numbered Experiments/ww16",
+    "_Organized Desktop/05 Numbered Experiments/ww17",
+    "_Organized Desktop/05 Numbered Experiments/ww18",
+    "_Organized Desktop/05 Numbered Experiments/ww19",
+    "_Organized Desktop/05 Numbered Experiments/ww26",
+    "_Organized Desktop/05 Numbered Experiments/ww27",
+    "_Organized Desktop/05 Numbered Experiments/ww28",
+    "_Organized Desktop/05 Numbered Experiments/ww29",
+    "_Organized Desktop/05 Numbered Experiments/ww3",
+    "_Organized Desktop/05 Numbered Experiments/ww30",
+    "_Organized Desktop/05 Numbered Experiments/ww31",
+    "_Organized Desktop/05 Numbered Experiments/ww32",
+    "_Organized Desktop/05 Numbered Experiments/ww34",
+    "_Organized Desktop/05 Numbered Experiments/ww35",
+    "_Organized Desktop/05 Numbered Experiments/ww36",
+    "_Organized Desktop/05 Numbered Experiments/ww37",
+    "_Organized Desktop/05 Numbered Experiments/ww39",
+    "_Organized Desktop/05 Numbered Experiments/ww4",
+    "_Organized Desktop/05 Numbered Experiments/ww40",
+    "_Organized Desktop/05 Numbered Experiments/ww43",
+    "_Organized Desktop/05 Numbered Experiments/ww45",
+    "_Organized Desktop/05 Numbered Experiments/ww46",
+    "_Organized Desktop/05 Numbered Experiments/ww47",
+    "_Organized Desktop/05 Numbered Experiments/ww48",
+    "_Organized Desktop/05 Numbered Experiments/ww49",
+    "_Organized Desktop/05 Numbered Experiments/ww5",
+    "_Organized Desktop/05 Numbered Experiments/ww50",
+    "_Organized Desktop/05 Numbered Experiments/ww55",
+    "_Organized Desktop/05 Numbered Experiments/ww6",
+    "_Organized Desktop/05 Numbered Experiments/ww7",
+    "_Organized Desktop/05 Numbered Experiments/ww8",
+    "_Organized Desktop/05 Numbered Experiments/ww9",
+    "_Organized Desktop/05 Numbered Experiments/X1",
+    "_Organized Desktop/05 Numbered Experiments/z1",
+    "_Organized Desktop/05 Numbered Experiments/z3",
+    "_Organized Desktop/05 Numbered Experiments/z6",
+    "_Organized Desktop/05 Numbered Experiments/z7",
+    "_Organized Desktop/05 Numbered Experiments/z8",
+    "_Organized Desktop/05 Numbered Experiments/z9",
+    "_Organized Desktop/05 Numbered Experiments/zz1",
+    "_Organized Desktop/05 Numbered Experiments/zz2",
+    "_Organized Desktop/05 Numbered Experiments/zz3",
+    "_Organized Desktop/05 Numbered Experiments/zz4",
+    "_Organized Desktop/05 Numbered Experiments/zz55",
+    "_Organized Desktop/05 Numbered Experiments/zz6",
+    "_Organized Desktop/05 Numbered Experiments/zz7",
+    "_Organized Desktop/05 Numbered Experiments/zz8",
+    "_Organized Desktop/05 Numbered Experiments/zz9",
+    "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+    "_Organized Desktop/06 AI And Learning/aiapplybot",
+    "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+    "_Organized Desktop/06 AI And Learning/ailearningpath",
+    "_Organized Desktop/06 AI And Learning/claudeailab",
+    "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+    "_Organized Desktop/06 AI And Learning/codehelper",
+    "_Organized Desktop/06 AI And Learning/learnpathclaude",
+    "_Organized Desktop/06 AI And Learning/think",
+    "_Organized Desktop/07 Anti Projects/antiemponb",
+    "_Organized Desktop/07 Anti Projects/antihelpdesk",
+    "_Organized Desktop/07 Anti Projects/antiinv",
+    "_Organized Desktop/07 Anti Projects/antitestbuild",
+    "_Organized Desktop/08 App And Product Projects/appmakertrack",
+    "_Organized Desktop/08 App And Product Projects/eliapplybot",
+    "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+    "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+    "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+    "_Organized Desktop/08 App And Product Projects/hnrandom",
+    "_Organized Desktop/08 App And Product Projects/job track",
+    "_Organized Desktop/08 App And Product Projects/recipegen-app",
+    "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+    "_Organized Desktop/09 Grav And VG Projects/grav1pretalx",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+    "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+    "_Organized Desktop/09 Grav And VG Projects/vg",
+    "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+    "_Organized Desktop/12 Other Projects/3buildhyper",
+    "_Organized Desktop/12 Other Projects/aaa1",
+    "_Organized Desktop/12 Other Projects/andie",
+    "_Organized Desktop/12 Other Projects/appmaketrck",
+    "_Organized Desktop/12 Other Projects/cc",
+    "_Organized Desktop/12 Other Projects/curse",
+    "_Organized Desktop/12 Other Projects/FinalJep",
+    "_Organized Desktop/12 Other Projects/finaljepgame",
+    "_Organized Desktop/12 Other Projects/GlobGame",
+    "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+    "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+    "_Organized Desktop/12 Other Projects/Obsidian",
+    "_Organized Desktop/12 Other Projects/pp8",
+    "_Organized Desktop/12 Other Projects/pyhealth",
+    "aiapplybot",
+    "aicallhelper",
+    "aicallhelper2",
+    "aiheartbeat",
+    "aihelper",
+    "AlanAndEliSoccer",
+    "ankijs",
+    "antigravupskill",
+    "aral",
+    "astra1",
+    "astra2",
+    "astraspacegameweb",
+    "borrowbox",
+    "buildbusinesses",
+    "buildermentor",
+    "buildevent",
+    "buildreviewer",
+    "buildsmallplates",
+    "buildsql",
+    "buildwhiteboard",
+    "c#interview",
+    "calendar+jobtrack",
+    "campusops",
+    "claude docs",
+    "csharptut",
+    "devdeck",
+    "fableaihelperv2",
+    "fableaihelperv3",
+    "finalcallhelp",
+    "finance-dashboard",
+    "formforge",
+    "geminiorganized/FableDocs_Projects_Hermes",
+    "geminiorganized/General_.Architectureproject",
+    "geminiorganized/General_.Open2",
+    "geminiorganized/General_.Todo",
+    "geminiorganized/General_Alanandelisoccer",
+    "geminiorganized/General_Ankijs",
+    "geminiorganized/General_Aral",
+    "geminiorganized/General_Borrowbox",
+    "geminiorganized/General_C#Interview",
+    "geminiorganized/General_Campusops",
+    "geminiorganized/General_Cleanarch",
+    "geminiorganized/General_Csharptut",
+    "geminiorganized/General_Devdeck",
+    "geminiorganized/General_Finance-Dashboard",
+    "geminiorganized/General_Formforge",
+    "geminiorganized/General_Gitjira",
+    "geminiorganized/General_Gitjira-App",
+    "geminiorganized/General_Gitvg",
+    "geminiorganized/General_Globehire",
+    "geminiorganized/General_Jsharness",
+    "geminiorganized/General_Jstut",
+    "geminiorganized/General_Masternocu",
+    "geminiorganized/General_Masteroutline",
+    "geminiorganized/General_MasterPlan",
+    "geminiorganized/General_Meterforge",
+    "geminiorganized/General_Missioncontrol",
+    "geminiorganized/General_Mobiletagalog",
+    "geminiorganized/General_Newcodecjs2",
+    "geminiorganized/General_Newcodex3",
+    "geminiorganized/General_Newcodexjs",
+    "geminiorganized/General_Nopsolutions",
+    "geminiorganized/General_Open1",
+    "geminiorganized/General_Open3",
+    "geminiorganized/General_Open5",
+    "geminiorganized/General_Perch",
+    "geminiorganized/General_Readme",
+    "geminiorganized/General_Recipeview",
+    "geminiorganized/General_Recipeweb",
+    "geminiorganized/General_Resume",
+    "geminiorganized/General_Skillforgejs",
+    "geminiorganized/General_Spacegame",
+    "geminiorganized/General_Tagalog",
+    "geminiorganized/LLM_Generated_Applybot",
+    "geminiorganized/LLM_Generated_Buildbusinesses",
+    "geminiorganized/LLM_Generated_Buildermentor",
+    "geminiorganized/LLM_Generated_Buildevent",
+    "geminiorganized/LLM_Generated_Buildreviewer",
+    "geminiorganized/LLM_Generated_Buildsmallplates",
+    "geminiorganized/LLM_Generated_Buildsql",
+    "geminiorganized/LLM_Generated_Buildwhiteboard",
+    "geminiorganized/LLM_Generated_ClaudeDocs",
+    "geminiorganized/LLM_Generated_Ecommerceproject",
+    "geminiorganized/LLM_Generated_Fablehelperv2",
+    "geminiorganized/LLM_Generated_Fablehelperv3",
+    "geminiorganized/LLM_Generated_Gptdocs",
+    "geminiorganized/LLM_Generated_Grokjs",
+    "geminiorganized/LLM_Generated_Groktuts",
+    "geminiorganized/LLM_Generated_Helper",
+    "geminiorganized/LLM_Generated_Hrproject",
+    "geminiorganized/LLM_Generated_Js1",
+    "geminiorganized/LLM_Generated_Jsprojectlearn",
+    "geminiorganized/LLM_Generated_Multitenantproject",
+    "geminiorganized/LLM_Generated_Orderproject",
+    "geminiorganized/LLM_Generated_Ppmproject",
+    "geminiorganized/LLM_Generated_Rag",
+    "geminiorganized/LLM_Generated_Supportproject",
+    "geminiorganized/LLM_Generated_Teamproject",
+    "geminiorganized/OpenSource_Upskilling_.Ramp",
+    "geminiorganized/OpenSource_Upskilling_.Stripe",
+    "geminiorganized/OpenSource_Upskilling_Auth",
+    "geminiorganized/OpenSource_Upskilling_Docu",
+    "geminiorganized/OpenSource_Upskilling_Drop",
+    "geminiorganized/OpenSource_Upskilling_Intercom",
+    "geminiorganized/OpenSource_Upskilling_Linear",
+    "geminiorganized/OpenSource_Upskilling_Notion",
+    "geminiorganized/OpenSource_Upskilling_Shop",
+    "geminiorganized/OpenSource_Upskilling_Snapshot",
+    "geminiorganized/OpenSource_Upskilling_Snapshot1",
+    "gitjira",
+    "gitjira-app",
+    "gitvg/agora",
+    "gitvg/agora-net",
+    "gitvg/astra",
+    "gitvg/atlas",
+    "gitvg/atlas-net",
+    "gitvg/bazaar",
+    "gitvg/bazaar-app",
+    "gitvg/folio",
+    "gitvg/folio-app",
+    "gitvg/harbor",
+    "gitvg/harbor-net",
+    "gitvg/pulse",
+    "gitvg/pulse-net",
+    "gitvg/relay",
+    "gitvg/relay-app",
+    "gitvg/storefront",
+    "gitvg/tracer",
+    "gitvg/tracer-net",
+    "globehire",
+    "GPTDocs",
+    "grokbuildecommerceproject",
+    "grokbuildhrproject",
+    "grokbuildmultitenantproject",
+    "grokbuildorderproject",
+    "grokbuildppmproject",
+    "grokbuildsupportproject",
+    "grokbuildteamproject",
+    "grokjs",
+    "groktuts",
+    "hermes",
+    "jobtrack",
+    "JS1",
+    "jsharness/ctvodejs",
+    "jsharness/VTCode",
+    "JSProjectLearn",
+    "JSTut",
+    "lucasrouter",
+    "master plan",
+    "masternocu",
+    "masteroutline",
+    "meterforge",
+    "missioncontrol",
+    "mobiletagalog",
+    "netairag",
+    "netauth",
+    "netcleanarch",
+    "netdocu",
+    "netdrop",
+    "netintercom",
+    "netlinear",
+    "netnotion",
+    "netopen1",
+    "netopen3",
+    "netopen5",
+    "netshop",
+    "netsnapshot",
+    "netsnapshot1",
+    "newcodecjs2",
+    "newcodex3",
+    "newcodexJS",
+    "nopsolutionsnet",
+    "perch",
+    "readme",
+    "recipeview",
+    "recipeweb",
+    "resume",
+    "skillforgejs",
+    "spacegame",
+    "spacegamev2",
+    "tagalog"
+  ]
+}

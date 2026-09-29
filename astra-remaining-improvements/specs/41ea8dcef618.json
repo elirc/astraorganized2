@@ -1,0 +1,25 @@
+{
+  "id": "41ea8dcef618",
+  "changedFiles": [
+    "src/lib/cache/queryCache.ts",
+    "tests/runtime-cache-expiry.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-lib-cache-queryCache.ts.before",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/41ea8dcef618/results-crud-b06.json",
+    "format": "json"
+  },
+  "limits": [
+    "Actual cache TypeScript executed with explicit type-export stubs and deterministic Date; no full service or live DB.",
+    "No HTTP, auth, query execution, distributed cache, or concurrency check.",
+    "Fix covers TTL exact-boundary semantics; maxEntries and row-level cache authorization remain separate concerns."
+  ],
+  "summary": [
+    "Changed cache expiry comparison from strict greater-than to greater-than-or-equal so entries expire at the declared TTL boundary.",
+    "Added actual QueryResultCache runtime coverage with deterministic before, exact, and after expiry cases."
+  ],
+  "project": "ww30"
+}

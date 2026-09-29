@@ -1,0 +1,22 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Linear",
+  "id": "b2f277b889f9",
+  "command": [
+    "python",
+    "scripts/test-local.py",
+    "--dotnet",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+    "--results",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\b2f277b889f9\\resume14-pg02"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T16:46:17.446366+00:00",
+  "status": "complete",
+  "log": "resume14-postgres-tests-02.log",
+  "pid": 22284,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T16:50:58.076285+00:00",
+  "elapsedSeconds": 280.62
+}

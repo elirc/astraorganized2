@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e4",
+  "id": "1cf37faa32e8",
+  "summary": [
+    "Align development newsletter queue state transitions with the database path by rejecting re-queue attempts from queued state.",
+    "Preserve first-queue recipient scheduling and audit behavior while preventing duplicate retry side effects."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1cf37faa32e8/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e4",
+        "id": "1cf37faa32e8",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-newsletter-state.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1cf37faa32e8",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:51:47.124013+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 37136,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:51:57.365222+00:00",
+        "elapsedSeconds": 10.24
+      }
+    ],
+    "limits": [
+      "Four actual-service runtime cases load the real dedupe-key helper with explicit dev store, queue, audit, database and environment adapters. No native Prisma, Redis, HTTP or worker execution.",
+      "The development branch changes status before awaiting queued jobs. A queue failure leaves queued state and prevents retry through this function; recovery/outbox redesign is not included. No durable delivery, atomicity or concurrency guarantee is claimed."
+    ]
+  },
+  "courseWords": 1859,
+  "courseFiles": 9,
+  "courseLinksChecked": 28,
+  "files": [
+    {
+      "file": "src/server/newsletters/service.ts",
+      "before_sha256": "09c72e8017447da656014752e26da0ffb1550024463122ebb5813c43a61a613d",
+      "after_sha256": "2728b7ac8110b9e92ff28f5508a3fe9a5ff88536d34c60ca3ce9078790908cb0"
+    },
+    {
+      "file": "tests/runtime-newsletter-state.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "856a152746b1cfc100842a10afd0af9152246051141374e7558077da82e46e53"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-server-newsletters-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "09c72e8017447da656014752e26da0ffb1550024463122ebb5813c43a61a613d"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "33af04cf3d06350fc57c6dc4e8b0305ef0b8e4ee00b48d417280ab2db2ff48b3"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "cd7ff17961a9f896cf1f6c9997bd6e1b6c5f44a89a1298d4c2811408d1b3150d"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "161c6c1c3ad1fc41eb0a874cd7e9f00b21a497723f52f686a25cd68a2ce56dca"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b838af1c5d326c69607217a6ea849f955b120a7322ef5fb4ca119293934a549d"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9475c95fb55a2f4fe0534913c6224623dd9953e641a0e8de2fb87cf9f9d8a78f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "34c6005bac71badec6c849abb8580171e4a84f53e5fbfe3f125a6e44ddf21d7f"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ddaf2525ab1282796f550c1d370873687bccff1978962394ed0050409ef62e44"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "c945368dcaa7de5b463798d5d49fc0182111e20af3a5d81afb99a8f33fb885f8"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "69d33bb2cb30eea0c32c42b7fe0ecf871e77b45c33dcf7a2a00d3622341b936d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f6e304be5d95d98118fa52701c2da6c66bbbaae88e20efa0259a103b3549249e"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "78a77516825cce9472aa754839cfd652475cdec7df00d3997fc7973f9bcfd3a6"
+    }
+  ],
+  "limits": [
+    "Four actual-service runtime cases load the real dedupe-key helper with explicit dev store, queue, audit, database and environment adapters. No native Prisma, Redis, HTTP or worker execution.",
+    "The development branch changes status before awaiting queued jobs. A queue failure leaves queued state and prevents retry through this function; recovery/outbox redesign is not included. No durable delivery, atomicity or concurrency guarantee is claimed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:55:06.026017+00:00"
+}

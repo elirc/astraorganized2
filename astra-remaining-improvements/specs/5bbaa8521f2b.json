@@ -1,0 +1,23 @@
+{
+  "id": "5bbaa8521f2b",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww45",
+  "summary": [
+    "Add six actual-service runtime cases using real knowledge publishing permissions and domain errors.",
+    "Add source-grounded decision tables, call tracing, failure injection and review exercises."
+  ],
+  "changedFiles": [
+    "tests/knowledge-entry-service-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/knowledgeEntryService.ts.original.txt",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5bbaa8521f2b/results-crud-ww45-runtime-v5.json"
+  },
+  "limits": [
+    "Database repositories and transaction are adapters; no Next authentication, SQL filtering, rollback or isolation execution.",
+    "Production source unchanged. Equal-status writes and audit behavior documented, not changed."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "--maxWorkers=1",
+    "--no-file-parallelism",
+    "--hookTimeout=60000",
+    "--testTimeout=90000",
+    "--reporter=verbose",
+    "--reporter=json",
+    "--outputFile=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\erp-suite\\unit-final.json"
+  ],
+  "exitCode": 0
+}

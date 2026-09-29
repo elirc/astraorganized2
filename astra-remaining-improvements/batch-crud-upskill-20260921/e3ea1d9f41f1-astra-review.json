@@ -1,0 +1,30 @@
+{
+  "id": "e3ea1d9f41f1",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:04:17.208812+00:00",
+  "sourceReview": "Read actual pure reconciliation, existing Vitest example and command aggregate/reconcile/disbursement call sites. Production unchanged; command precheck/transaction correctness not certified.",
+  "teachingReview": "Reviewed nine chapters and corrected pending routing versus fallback, stage regression versus database rollback, eight-case count and evidence links.",
+  "testReview": "Eight cases execute actual pure source without dependency doubles. Added missing funded-only/intake/failed-verification/referred coverage and changed pending fixture to demonstrate explicit decisioning. No Prisma or command execution claim.",
+  "specSHA256": "62b97c1ef7380aba40cc3efaf32b57ead57483bdb6459874e33a012a3a76150d",
+  "fileHashes": {
+    "tests/runtime-workflow-reconciliation-lab.test.mjs": "3322b13de71b5ecacd43ec03515b022e1e50f28c029920d97579ccb4f70153b0",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "7dc44a7670ab3cbc4557104da32898b53fcb8acc88a803a37023296caf618235",
+    "astraupskill/evidence/results.json": "b81ebb6cf5f9e00ed038a0e1203ea6c608dccd0fa2b9c7b28df1911a5dbbe87b",
+    "astraupskill/README.md": "1ca82234bad2863c5df3eecc8649b101c735d8ab1f3d7ff47100120ccd737daf",
+    "astraupskill/01-CODEBASE-MAP.md": "b2c7d29586e2ee2d9385985ca047e0d11e1d4e058b55b673fe02ef1349d76ebf",
+    "astraupskill/02-CONCEPTS.md": "70755b190e7aecb0044820075c024b746a8f0cc7f77f0ac4561b6b44dcfc522e",
+    "astraupskill/03-WORKED-CHANGE.md": "fafa3b9038ecde95efdcc4a92f88f375c0ccb5aae88ba699937560279fe53362",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "6ca2a4358210c6b09852db8d994ec41ba9467ca45718f594e22eb9d1091d1942",
+    "astraupskill/05-PRACTICE.md": "6cf0bd6774538522c730f917b7a7ef5e8e20a4d2d495f090a8a3417806739e6f",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "179e312942578947b7b4f47b9e34d8726dfd63324047b0f4ae6bfba1fa8db731",
+    "astraupskill/07-TRACE-LAB.md": "604568bf3da1ee5c96819da200e87200c7f714fc61a171e917128faefbe36e9c",
+    "astraupskill/VERIFICATION.md": "1a28890e24d43af68539898c495c9760ddcd75e8b14b6d990d9055e706564f16"
+  },
+  "evidenceHashes": {
+    "checks/e3ea1d9f41f1/astra-crud-b05-ww10.log": "912ccb46031e9024013eb75f1d3c487cd14f44e3f512c8498d962b0f74fb4867",
+    "checks/e3ea1d9f41f1/crud-b05-astra-runtime.json": "33787bb4a9717b2651eb2a41c45c33a03b633921f17c29b8e2e11b26fff322cd",
+    "checks/e3ea1d9f41f1/crud-b05-astra-runtime.log": "7dc44a7670ab3cbc4557104da32898b53fcb8acc88a803a37023296caf618235",
+    "checks/e3ea1d9f41f1/results-crud-b05.json": "b81ebb6cf5f9e00ed038a0e1203ea6c608dccd0fa2b9c7b28df1911a5dbbe87b"
+  }
+}

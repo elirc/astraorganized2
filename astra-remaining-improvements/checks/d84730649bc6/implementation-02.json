@@ -1,0 +1,21 @@
+{
+  "id": "d84730649bc6",
+  "project": "_Organized Desktop/05 Numbered Experiments/B1",
+  "changedFiles": [
+    "src/lib/platform.ts",
+    "checks/incident-detail-regression.mjs",
+    "checks/incident-detail-regression.tsconfig.json"
+  ],
+  "sourceChange": "getIncidentDetail filters parent and child candidates with canViewIncident(actor, candidate) before embedding them.",
+  "checks": {
+    "serviceRegression": "checks/d84730649bc6/service-regression-06.json",
+    "typecheck": "checks/d84730649bc6/typecheck-01.json",
+    "lint": "checks/d84730649bc6/lint-03.json",
+    "build": "checks/d84730649bc6/build-01.json"
+  },
+  "passed": true,
+  "limits": [
+    "Read-only service regression uses a mocked complete StoreData fixture and no due escalation deadlines.",
+    "No claim is made about production authentication, database isolation, or unrelated metadata."
+  ]
+}

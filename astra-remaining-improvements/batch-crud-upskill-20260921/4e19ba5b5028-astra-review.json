@@ -1,0 +1,30 @@
+{
+  "id": "4e19ba5b5028",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:32:54.913684+00:00",
+  "sourceReview": "Read notification service, repository aggregate helpers, real permissions and error class. No production patch; open has no encompassing transaction.",
+  "teachingReview": "Reviewed all nine chapters, fixed encoding and expanded actual aggregate/failure evidence. Explained partial writes and excluded provider/worker claims.",
+  "testReview": "Six actual-service tests passed including ownership, SENT eligibility, admin path, mixed aggregate states and injected update failure. Replaced copied aggregate/error behavior with actual source.",
+  "specSHA256": "28eebd0fb918c7e8cc3f498fe82c0911814ff4254ac63631aa434ec4e7b9ec20",
+  "fileHashes": {
+    "tests/runtime-notification-open-lab.test.mjs": "02f2c6d2ca72976cd654906d36f69ae44258d4203db0857725d00aa8fbbabd5c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "04e23316875e2493cc28aa908308adb4a16e17b7cc4e6fef9e3bb21938c5611f",
+    "astraupskill/evidence/results.json": "7c9923bd44b8b4c254e96e73c9a22c1df95834cd2ae89e23fa5d58851ae8dfde",
+    "astraupskill/README.md": "72429aa9c539de4bc464431a82fb0e580084a9a24904ac35a1ac68919dd9e861",
+    "astraupskill/01-CODEBASE-MAP.md": "1f18e9e1bcb76c16a024f3db7167cd722c1699a0e6578d144770bb0017441f0d",
+    "astraupskill/02-CONCEPTS.md": "431de1f4293bc2ebfba7d3a6b23a1c90a5a78cc1719977a5351db7d462596d3b",
+    "astraupskill/03-WORKED-CHANGE.md": "b7a900da83a83739889cbd0b44504ad0e164134bcdc11e3f5ae3f50eb7a49ddf",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "80d6ab8f1163b3a1d6af8746a3054510384f443d9b810b42629603dd4bfd810b",
+    "astraupskill/05-PRACTICE.md": "537144e37212fa715aaf09881a497331e77ad990227731a491dbffb57a9be86e",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "e3ff2fd01a12f41d0a3fc7c7e5b94f792d7760c7a38d5ba2d1ce11c0d722599e",
+    "astraupskill/07-TRACE-LAB.md": "a8f191aea4b6862cadc63591bbc1021ef2d51b09be5f1d5c2f19027f7ee78e17",
+    "astraupskill/VERIFICATION.md": "d732f99643c53a8e4369765e78a1b56c1dee151d2f38461e55d5e2fa0982240c"
+  },
+  "evidenceHashes": {
+    "checks/4e19ba5b5028/astra-crud-b06-ww29.log": "04733574de3eaf08f79e2338b24d1e591818279d5c87c1b060a4dd874a1ac3fb",
+    "checks/4e19ba5b5028/crud-b06-astra-runtime.json": "f548ef9b4bab6530ec00531d56172a60514d6fe0845b5cd57f1972e747bae12b",
+    "checks/4e19ba5b5028/crud-b06-astra-runtime.log": "04e23316875e2493cc28aa908308adb4a16e17b7cc4e6fef9e3bb21938c5611f",
+    "checks/4e19ba5b5028/results-crud-b06.json": "7c9923bd44b8b4c254e96e73c9a22c1df95834cd2ae89e23fa5d58851ae8dfde"
+  }
+}

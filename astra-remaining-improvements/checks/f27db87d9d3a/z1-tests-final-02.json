@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z1",
+  "id": "f27db87d9d3a",
+  "command": [
+    "npm.cmd",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f27db87d9d3a",
+  "environmentOverrides": {
+    "NODE_OPTIONS": "--enable-source-maps"
+  },
+  "startedAt": "2026-09-13T00:40:58.262949+00:00",
+  "status": "complete",
+  "log": "z1-tests-final-02.log",
+  "pid": 8748,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T00:42:30.219597+00:00",
+  "elapsedSeconds": 91.95
+}

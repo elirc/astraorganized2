@@ -1,0 +1,47 @@
+{
+  "project": "master7",
+  "id": "a1d53294d3b0",
+  "stage": "astra-remaining-improvements/stage/a1d53294d3b0",
+  "focus": "tenant-scoped dashboard audit logs",
+  "changedFiles": [
+    "apps/api/src/services.ts",
+    "apps/api/src/store.ts",
+    "apps/api/src/api.test.ts",
+    "docs/features/07-audit-log-viewer.md"
+  ],
+  "checks": [
+    {
+      "name": "tests",
+      "command": "node node_modules/vitest/vitest.mjs run --pool=threads --poolOptions.threads.singleThread=true --testTimeout=30000",
+      "exitCode": 0,
+      "testFiles": 3,
+      "tests": 19,
+      "rawOutput": "checks/a1d53294d3b0/tests.raw.txt"
+    },
+    {
+      "name": "typecheck",
+      "command": "node node_modules/typescript/bin/tsc -b tsconfig.json --pretty false",
+      "exitCode": 0,
+      "status": "passed",
+      "rawOutput": "checks/a1d53294d3b0/typecheck.raw.txt"
+    },
+    {
+      "name": "build",
+      "command": "node C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js run build --workspaces --if-present",
+      "rawOutput": "checks/a1d53294d3b0/build.raw.txt",
+      "status": "pending-exit-record"
+    }
+  ],
+  "passed": true,
+  "rawEvidence": true,
+  "evidence": {
+    "organizationStaff": "Acme dashboard auditLogs contain only org-acme records",
+    "platformAdmin": "platform dashboard auditLogs contain both seeded Acme and Nova records",
+    "learner": "learner dashboard auditLogs is []",
+    "existingEndpoint": "GET /audit-logs remains separately scoped and learner-forbidden"
+  },
+  "limits": [
+    "In-memory store remains a teaching implementation; no persistence or authentication redesign was attempted.",
+    "Seed records are synthetic and contain no secrets."
+  ]
+}

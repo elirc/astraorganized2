@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww4",
+  "id": "7dde79c7a4c0",
+  "summary": [
+    "Provide a runnable source lab for issue creation orchestration and project-member refusal.",
+    "Verify transaction ordering with issue, activity, and automation adapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7dde79c7a4c0/results-crud-ww4-runtime-v5.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww4",
+        "id": "7dde79c7a4c0",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/issue-service-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7dde79c7a4c0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:07:59.691969+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 8400,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:08:25.348524+00:00",
+        "elapsedSeconds": 25.65
+      }
+    ],
+    "limits": [
+      "Five cases execute actual issue creation, permission mapping, workflow helpers, custom-field validator and errors. Repository, transaction and automation persistence are adapted; no Prisma rollback, sequence concurrency, route or automation delivery execution.",
+      "Same-client checks establish argument discipline, not commit durability. Project setup/member reads precede the transaction; visibility or membership races are not addressed. No production source change."
+    ]
+  },
+  "courseWords": 1058,
+  "courseFiles": 9,
+  "courseLinksChecked": 5,
+  "files": [
+    {
+      "file": "tests/issue-service-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "fa036167e61b3ceab8a6118153f31120632e5223b1d6f738094fa98ab90e3bd1"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/issueService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "311318f7cafc6be82070f6b17d482d356523efa126a009514e4d2fa7955c56c5"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "2355a410d48304c3cc62efd1333cd82ae0930de2bfbcf0a0d231167b935f744e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "b49a6cec863dcc6ed65601ffe3f4a22d028b654c290d59494da4673b2d216d24"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "170e50e09ae0f3f3374caa3741f56d3201c965255d15cf7815e078a4d9eac6ea"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "73ef6952c33164d0656d3296518fd9610e2ac89c64b883d78fa2cd3bafdc254e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "51eaf2756f9700c71a8f90b3ae398760019ceccb459933d6828668be114fdda1"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9ea584bb7b8da02ff0e34fd0ab1240b665ef827f9eeb2595614f2971db802d34"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ebcc40d038f0db2732bd3f4032244b075a6c68af69a594a79467149de76b13d3"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3d0c82273cf47bf89f27a4fc13393d84746eda9333e09cf3ffc3fe0509a9337d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d710717cab64d943e376f2f0a1710932fd20179ca5679a3936096d52b480ed7a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "735c2651281905b16b5c754403e5e64a1908fc47ae6e9d7f4d69aa176a677f21"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "89873069ad73550181624c1dac14e51c99bf381716b16f3b6f87840152b16398"
+    }
+  ],
+  "limits": [
+    "Five cases execute actual issue creation, permission mapping, workflow helpers, custom-field validator and errors. Repository, transaction and automation persistence are adapted; no Prisma rollback, sequence concurrency, route or automation delivery execution.",
+    "Same-client checks establish argument discipline, not commit durability. Project setup/member reads precede the transaction; visibility or membership races are not addressed. No production source change."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:13:41.918327+00:00"
+}

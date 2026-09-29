@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "total": 6,
+  "passedTests": 6,
+  "failed": 0,
+  "notExecuted": 0,
+  "evidence": ["ww55_unit_4.json", "ww55_typecheck_5.json", "ww55_build_1.json"]
+}

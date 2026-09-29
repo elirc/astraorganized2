@@ -1,0 +1,138 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz2",
+  "id": "fdad4e87a703",
+  "summary": [
+    "Make ticket references collision-resistant for concurrent creates while preserving the SUP- display prefix.",
+    "Add a production TicketService regression for consecutive creates and nine source-grounded CRUD chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fdad4e87a703/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 2,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz2",
+        "id": "fdad4e87a703",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/ticket-reference.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fdad4e87a703",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:41:30.698137+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-identifiers.log",
+        "pid": 36020,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:41:35.708993+00:00",
+        "elapsedSeconds": 5.01
+      }
+    ],
+    "limits": [
+      "Focused Vitest was blocked by an uncached dependency; no database or HTTP integration was run.",
+      "UUID uniqueness still relies on the database unique constraint for final enforcement."
+    ]
+  },
+  "courseWords": 2730,
+  "courseFiles": 9,
+  "courseLinksChecked": 14,
+  "files": [
+    {
+      "file": "src/server/modules/tickets/service.ts",
+      "before_sha256": "d7fedf54cfebd67f10c1465d7c8ad8ab3f7a298433e9c143531d3f1bb7ac2ea3",
+      "after_sha256": "6e58d20d9900f37d057023a21f3ae5cd19be141d1149bb9186c326088d2f67ed"
+    },
+    {
+      "file": "src/server/modules/tickets/service.test.ts",
+      "before_sha256": "2ccdfea24862796fab1ab600a9a04cfba6d10741d8344aeb510c3e65930c6e14",
+      "after_sha256": "0774fd182936e30c520c1d6e99ee521e61245f6b6b0d8e6edbbea7ff8ae6beca"
+    },
+    {
+      "file": "tests/ticket-reference.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "5114d7c1a03a2ebee6bfc63b1296c5f76bf93e0b8456611e4eaa88dab492be98"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__modules__tickets__service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d7fedf54cfebd67f10c1465d7c8ad8ab3f7a298433e9c143531d3f1bb7ac2ea3"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-identifiers.log",
+      "before_sha256": null,
+      "after_sha256": "5f8ef8cd849653f5a626efc021738cab92445f33f87614d604dfc8d16f18a396"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "3ce9370aef2c552da0f32a8ff87fa8bcaca1951a66197095fcf5c2c312c4f013"
+    },
+    {
+      "file": "astraupskill/snapshots/src__server__modules__tickets__service.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2ccdfea24862796fab1ab600a9a04cfba6d10741d8344aeb510c3e65930c6e14"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "79a4f85d18cde0459e3175eaa82678cbb0de1389862a323924fe57e94224d6d8"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0a694358e19a18574b6d3a64ef59a2954229fc58dfccbb3e1d4cb746dc663a44"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8408d8f86e3aef9ed9f4b29b0157e03369e875708586a88dcc070a0adc4c56be"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "67c1b18060d857d487d9e0c064e442786fbe46b41ec7efbf9cfb12a8db4f919f"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d7dc71942affa7498ac5c074120dbd5aef141e3e022d2b7155d8e7eed28caee4"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7da1e338e187201a25ca851031a02d26595866cadfc2fd16e10de7f7d62ffcfa"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a97d6e79be9f58488bf22afd7ac28dd35ec40acc5cbabe3152937fbddaf69294"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "c1164c643ce7375bcc9440d0d4d5d983bf2038df3c4354364fccacc4e515d7dd"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "dec95dd0901ce26de25ea7b7cca2a501ad73d8fc86d39c55018d3967fa15489f"
+    }
+  ],
+  "limits": [
+    "Focused Vitest was blocked by an uncached dependency; no database or HTTP integration was run.",
+    "UUID uniqueness still relies on the database unique constraint for final enforcement."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:53:55.718455+00:00"
+}

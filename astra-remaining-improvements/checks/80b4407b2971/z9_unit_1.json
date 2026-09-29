@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z9",
+  "id": "80b4407b2971",
+  "command": [
+    "npm",
+    "test",
+    "--",
+    "--run"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\80b4407b2971",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:55:23.857938+00:00",
+  "status": "launch-failed",
+  "log": "z9_unit_1.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T14:55:23.894767+00:00",
+  "elapsedSeconds": 0.04
+}

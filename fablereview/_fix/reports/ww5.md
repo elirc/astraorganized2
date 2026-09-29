@@ -1,0 +1,35 @@
+# ww5 (enterprise people-ops / compensation approvals) — fix report (B12)
+
+## Done
+- [review #1] Deleted the duplicated `## Reviewer extension` section from **eight** of the nine files (all but `06-SOLUTIONS-AND-REVIEW.md`). Word count went from 4,198 to 2,966 before my additions, i.e. the 135-word paragraph × 9 was ~29% of the course. The surviving copy in 06 was rewritten to drop the "must return the persisted receipt … idempotency" sentence (this project has no receipts or idempotency keys) and the "record the absolute stage path" instruction. — files: all `astraupskill/*.md`
+- [review #2] Made the trace lab runnable. `07-TRACE-LAB.md` now opens with "Step 0: build the fixture, because the seed has none", which states that `src/lib/db/mockData.ts:167` is `mockApprovals = []` and that `cc_acme_1` is seeded `DRAFT` (line 147), then gives the exact `createCompensationDraft` + `submitCompensationChange` snippet from `src/tests/state-transition.test.ts:79-84`. The invented `apr_acme_1` id is gone (`grep -rn apr_acme_1 astraupskill` → no hits); the trace now names `draft.approval.id`.
+- [review #3] Deleted the ".NET or database test reports zero tests" sentence from `04-TESTING-AND-DEBUGGING.md` and replaced it with a stack-correct version ("a zero-test pass is a failed command"), plus a real reference to the concurrency test at `state-transition.test.ts:101-112`.
+- [review #4] Added a section to `01-CODEBASE-MAP.md`: "The second persistence layer you will find, and should ignore for now" — `prisma/schema.prisma` and `src/lib/db/prisma.ts` exist, `@prisma/client` is a dependency, and **nothing on the request path imports either**. Verified before writing it: `grep -rn "lib/db/prisma" src` returns nothing. `07-TRACE-LAB.md`'s "if you later replace the mock store with Prisma" was rephrased to "the schema is already here; wiring it up is exercise 8".
+- [review #5] Added a "`withStoreTransaction` is not reentrant" subsection to `02-CONCEPTS.md`: it awaits `previous` (the promise tail) before running the callback, so a transactional command calling another transactional command deadlocks silently — no error, no timeout, just a hung test. Names all three current call sites (`approvalService.ts:50`, `compensationService.ts:62`, `:96`) as top-level, warns that exercise 8 is where a learner would break this, and points at savepoints as what a real database gives instead.
+- [review #6] Rewrote `VERIFICATION.md` as a learner checklist: Node 22.16.0, `npm ci`, a table of expected results (`4 files / 11 tests passed`, `tsc` exit 0, `Compiled successfully`), the per-file test breakdown, the worker-timeout workaround, and the limits list. All handoff language ("verify listed source hashes", "before handoff", "frozen source", "stage") is gone.
+- [review #7 / backlog 3.1] Added code blocks. Was 2 (`03` + a command block); now `02` has the `Partial` → `Pick` signature diff, `04` has the `JSON.stringify(store)` snapshot pattern and the `vi.spyOn(auditService,"log").mockRejectedValueOnce` pattern, `03` gained the real BEFORE excerpt from `snapshots/src__services__approvalService.ts.txt:23-46` showing the write happening before the link check, `06` has six answer blocks, `05` and `07` have command/fixture blocks.
+- [backlog 3.11] Rewrote `06-SOLUTIONS-AND-REVIEW.md` with one section per exercise **1-8** (it previously skipped 4 and 8 and gave heuristics for 5-7). Exercise 6 now shows the actual identity-overwrite call that used to compile; exercise 7 names which of the two guards (serialization vs `expectedStatus`) does what; exercise 8 gives a concrete three-part answer (`$transaction` with `tx`-scoped repositories, optimistic conditional update vs `SELECT FOR UPDATE`, outbox row in the same transaction).
+- [backlog 3.4] Added a red-first drill to `06` and pointed `05` at it: restore `snapshots/src__services__approvalService.ts.txt`, run the suite, record the failures, restore. Includes the observation that restoring the repository snapshot fails *nothing* — the `Partial<T>` defect is only visible as a type, which is itself the lesson.
+- [backlog 3.5] Added prerequisites, a reading-order table with per-chapter times, a setup block (Node 22.16.0, no database needed) and a 14-term glossary to `astraupskill/README.md`; each chapter now carries a `*Time: …*` line.
+- [backlog 3.15] All commands are now POSIX-portable (`npm ci`, `npx vitest run …`); the slow-machine fallback is given explicitly.
+
+## Skipped
+- No source changes were made. Every review item for ww5 was editorial; the one code observation (review's "[D2, minor]" non-reentrant `withStoreTransaction`) the review itself asked to be **documented**, not fixed, and changing the helper to be reentrant would invalidate the snapshot/rollback lesson the whole course is built on.
+- `src/tests/state-transition.test.ts` starts with a UTF-8 BOM (backlog 2.8 pattern). Left alone: 2.8 is a wave-1 sweep item, the file is not otherwise being edited, and the BOM is harmless to Vitest here. Noted for Fable.
+- backlog 3.3 (evidence folder): nothing was cited that exists on disk to copy; the references were removed instead and replaced with commands the learner runs.
+
+## Verification
+- `npx vitest run` (project root, after `robocopy` of `stage/41315da7b7f9/node_modules`) → `Test Files  4 passed (4)` / `Tests  11 passed (11)` / exit code 0. Matches the numbers now printed in VERIFICATION.md.
+- `npx vitest run src/tests/state-transition.test.ts` → `Test Files  1 passed (1)` / `Tests  8 passed (8)`, exit 0.
+- A first cold run (`--pool=forks`, single fork) failed with `Test Files 3 passed (4)` + `Error: [vitest-worker]: Timeout calling "fetch" with "/@vite/env"` — Vitest's RPC timeout is hard-coded at 60s and the cold transform of `state-transition.test.ts` exceeded it on this machine. Running the one file first warmed Vite's cache; the full suite then completed in 11.7s. Environment, not product; the workaround is documented in VERIFICATION.md.
+- `grep -rin "\.NET|apr_acme_1|frozen source|before handoff|stage path|source hashes" astraupskill/*.md` → no matches.
+- `grep -c "A complete implementation review follows" astraupskill/*.md` → 1 file (06), was 9.
+- `grep -rn "lib/db/prisma" src` → no matches (basis for the new 01 paragraph).
+
+## Course/code consistency check
+- `src/services/approvalService.ts:20-60` re-read against 03 and 06 (preflight order, transaction body, error messages quoted verbatim).
+- `snapshots/src__services__approvalService.ts.txt:17-46` re-read for the new BEFORE block in 03.
+- `src/repositories/compensationRepository.ts:54-68` re-read against the `Pick` block in 02 and exercise 6 in 06.
+- `src/lib/db/mockStore.ts:49-90` re-read against the reentrancy warning in 02 and the rollback excerpt in 06 (`snapshotStore` clones ten collections; the catch reassigns each).
+- `src/lib/db/mockData.ts:145-167` re-read for the trace-lab fixture claim (`mockApprovals = []`, `cc_acme_1` is `DRAFT`).
+- `src/tests/state-transition.test.ts:77-123` re-read for every test excerpt quoted in 04 and 06, and `src/tests/*.ts` counted (8/1/1/1 = 11) against the VERIFICATION table.

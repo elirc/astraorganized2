@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "tests": 82,
+  "suites": {
+    "core": 34,
+    "data": 11,
+    "api": 9,
+    "web": 28
+  },
+  "checks": [
+    {
+      "command": [
+        "pnpm.cmd",
+        "-r",
+        "--workspace-concurrency=1",
+        "exec",
+        "vitest",
+        "run",
+        "--maxWorkers=2",
+        "--reporter=json",
+        "--outputFile=astra-verification.json"
+      ],
+      "exitCode": 0,
+      "log": "checks/formforge/check-1.log"
+    },
+    {
+      "command": [
+        "pnpm.cmd",
+        "exec",
+        "turbo",
+        "run",
+        "lint",
+        "typecheck",
+        "build",
+        "--concurrency=2"
+      ],
+      "exitCode": 0,
+      "log": "checks/formforge/check-2.log"
+    },
+    {
+      "command": [
+        "pnpm.cmd",
+        "sizecheck"
+      ],
+      "exitCode": 0,
+      "log": "checks/formforge/check-3.log"
+    },
+    {
+      "command": [
+        "pnpm.cmd",
+        "seed"
+      ],
+      "exitCode": 0,
+      "log": "checks/formforge/check-4.log"
+    }
+  ],
+  "scope": "Isolated dependency install, real code tests, jsdom UI tests, lint, typecheck, builds, bundle budget and seed. No live browser or deployed service claimed."
+}

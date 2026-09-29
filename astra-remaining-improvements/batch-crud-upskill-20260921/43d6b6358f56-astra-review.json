@@ -1,0 +1,43 @@
+{
+  "id": "43d6b6358f56",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:26:54.044690+00:00",
+  "sourceReview": "Reviewed verifier, schema lifecycle fields, list/revoke and HTTP create/list callers plus cleanup. Exact two nonempty key parts and deletedAt predicate are correct. Source search found no production verifier caller, so no exposed endpoint repair claim.",
+  "teachingReview": "Replaced repetitive draft with nine distinct source-grounded chapters, real before/after and trace table, graded exercises and solutions. Separates soft deletion, organization scope and sequential read/write limits.",
+  "testReview": "Four actual service runtime cases passed with real Node SHA-256 and explicit predicate/database adapters: malformed shapes, active return/timestamp, deleted/revoked/foreign/mismatched/missing rows with zero writes, and original persistence errors. No SQL/Next/concurrency claim.",
+  "specSHA256": "b2a974276d9703d095c04629e670d92ec8a3e8458100345f7a43499e6779ab0f",
+  "fileHashes": {
+    "lib/services/apiKeys.ts": "d683ac7822c8da0d6f639312e1e626904fce7be2665704ac8a88e6171fbf565b",
+    "tests/api-key-verify-boundary.test.mjs": "6585e9991482a6e6659478c03f0a8978e86523777bc9f5c4a3620219b2a10f9c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/apiKeys.ts.original.txt": "570345c4140c234005a70014c2c6030f11eb5d2aa7de83640e7a32723392a191",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "27178714c08999d83c3d20c73e4078087d2de178a33c74caff32632e6a7bf114",
+    "astraupskill/evidence/results.json": "bf6dc3a84c7f93837fc461e5a1c62888d560c5c3f233ac00c3134c38d496c84f",
+    "astraupskill/README.md": "3756abdc75121ff8666ba1b0992c46a44cb99c592e5e4051659043f004799e83",
+    "astraupskill/01-CODEBASE-MAP.md": "0d5efcd51d943b9ce5667dd159e8302f1d2b9fedaee0fdadb5ef4591aeeea020",
+    "astraupskill/02-CONCEPTS.md": "64bb0529b0ec305e789dc27cc1d8ecd0310e6add84e007af92d3b19f103d811d",
+    "astraupskill/03-WORKED-CHANGE.md": "29fa19a9f5da6ad2bf9e249089a320c4b26347334807d51276431d9495b59353",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "40a5a0b453164060be0026fb114ac596a0845cac3123c26333f26d052c229445",
+    "astraupskill/05-PRACTICE.md": "9afcfccbd124a9226a222c76037d4697721b208d82511cd3769d0ce98ec53bb3",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "2c6997f7bf466268c980273833a60bfe88421e713528237afc5df50569be07ae",
+    "astraupskill/07-TRACE-LAB.md": "90dfadf1bbffca56aeb263e78dda99153e4b64abc7cfd07402490cc312934a59",
+    "astraupskill/VERIFICATION.md": "03087e8f7ae2e2d04ff660db379713ed5ea922e893d6cd48919daf565e56d4ce"
+  },
+  "evidenceHashes": {
+    "checks/43d6b6358f56/crud-b04-astra-runtime.json": "a5c3e86ced097be3e15639a9a236e6d3962ad24014ab58c987f73e13b1ab3773",
+    "checks/43d6b6358f56/crud-b04-astra-runtime.log": "27178714c08999d83c3d20c73e4078087d2de178a33c74caff32632e6a7bf114",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final.json": "b8324af220e30a2b9b2259952390bc237a70ca7ac2156d493e2c75a963b9a513",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final.log": "b0be8c54b6072a48c431e1efb0d46905e8cbfb2b1a71d1239cfb0bedc78bb2e2",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final2.json": "dd93eb86392c3c88aaa1993dc1c7a47c0660c5a6b9b401be9d9e9694c6ffcefe",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final2.log": "96258e42e71bb65393ee0b3f47c92aaa78217b2c7735a657690c908f5ca59a9e",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final3.json": "3981058504e4987d39c60c50c5a0715d9a15bd1cda8027d006081ed62f056c66",
+    "checks/43d6b6358f56/crud-b04-d3-apikey-final3.log": "c52cac855dd72ef0a983aedb586b63cdaed74e08664d07d1796af61ed2bd8d16",
+    "checks/43d6b6358f56/crud-b04-d3-runtime1.json": "be32014cba476a778afdce9df62f66aa7b24cf84fbc8535d8cb0306cfd87f386",
+    "checks/43d6b6358f56/crud-b04-d3-runtime1.log": "2a1c9904b730c60a93a1e7c2a3ecfe6624e867f20c9dfa277376c301d57e6851",
+    "checks/43d6b6358f56/crud-b04-d3-runtime2.json": "21e574631295eb3dabc810c7d7128aba1e8a5b919b7f05c30d2469031ef1327b",
+    "checks/43d6b6358f56/crud-b04-d3-runtime2.log": "98210855de01249d0e73de38714147598dbf98f37f4501650c771432336887b2",
+    "checks/43d6b6358f56/crud-b04-d3-runtime3.json": "4170b5ca4d1e91b821d160b3ec3acb41a843c84dbf668e2975e0cf05457bab48",
+    "checks/43d6b6358f56/crud-b04-d3-runtime3.log": "5721f1927a026f0e64637e2adb0d303266065b52a72dd640fdaa18a395a80bb3",
+    "checks/43d6b6358f56/results-crud-b04.json": "bf6dc3a84c7f93837fc461e5a1c62888d560c5c3f233ac00c3134c38d496c84f"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "command": [
+    "dotnet",
+    "verification/BackendChecks/bin/Debug/net10.0/BackendChecks.dll",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\pastebin\\backend-02"
+  ],
+  "exitCode": 0,
+  "seconds": 25.48
+}

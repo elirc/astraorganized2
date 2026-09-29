@@ -1,0 +1,11 @@
+{
+  "files": {
+    "apps/api/src/data/store.ts": "103245e5752b123f52d0dc0c8046ce283f843a438a855885593d86767429703f",
+    "apps/api/src/realtime/socket-server.ts": "47d7ad965923b2ef16e2b3dd4bf559fbd98616a905dd37ac3b8f8ff2d220122d",
+    "apps/api/src/data/store-error.ts": "4db6805d71ed97df9f8cd75fab9a7108abbd3718c2e03aa79f96642aaeca2721",
+    "apps/api/src/realtime/presence-registry.ts": "9820c9ad195c611a2a848b2a4c346248696a7811c62b7ded0329ffd8542c0cb9",
+    "apps/api/src/realtime/presence-types.ts": "7ca270711ff3b6f167cf704f53d4ba1d8f6b6eee24015aad222532bd41fe2a7f",
+    "apps/api/tests/security.test.ts": "42808eaf757a145a8e7b22841fba683aef22c67487f8f3f79b337f3490ece510",
+    "apps/api/tests/boundaries.test.ts": "0e441dd61a23ce6958a06a777e1bc8249ef0a639be6972c6540e8ea5d842b559"
+  }
+}

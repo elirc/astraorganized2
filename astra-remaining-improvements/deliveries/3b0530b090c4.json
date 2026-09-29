@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e11",
+  "id": "3b0530b090c4",
+  "summary": [
+    "Require an own room-map entry before share token generation or persistence, rejecting missing and inherited object-property names.",
+    "Preserve existing share shape and JSON persistence for valid room references."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3b0530b090c4/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e11",
+        "id": "3b0530b090c4",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/share-room-integrity.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b0530b090c4",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:30:55.268175+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 37540,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:31:01.518323+00:00",
+        "elapsedSeconds": 6.25
+      }
+    ],
+    "limits": [
+      "Four runtime cases execute actual store source with real Node path and explicit filesystem/nanoid/scene adapters; no Express, auth signing or real filesystem persistence was executed.",
+      "No-share-write assertions assume an initialized store; readDb may create initial directories/database when absent. File read-modify-write remains non-atomic and existing orphan shares are not migrated.",
+      "The existing route has no new explicit mapping of the service error to HTTP404; this fix establishes a store rejection, not a newly verified HTTP error contract."
+    ]
+  },
+  "courseWords": 1923,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "server/store.ts",
+      "before_sha256": "0b3d928e3687c8660fd682450b38ece575b13d124d4e6e16af605a962820688b",
+      "after_sha256": "3b9cdd8bce3dea2253e6784d5d321e54fbbb9ae031690a6a5d1cf46560bbad2a"
+    },
+    {
+      "file": "tests/share-room-integrity.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "b9f72ac48399f5fa2f2704f74620ba6326b0d419695fca0bf8f70f514760292e"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/store.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0b3d928e3687c8660fd682450b38ece575b13d124d4e6e16af605a962820688b"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "685615a6b29a1bffdf4c65e898d4cbbe8ea7fd02d008f2d45a3a408b075c556f"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "8d55a9d395de560fcb70f1d6c57421474b51f3786ea191fc4c93f7b89730e475"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c0a1a1b8a076bacb0a7d4f7770eda85ea3fdf457ed05f4c16998a41aa57b9705"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "71dc4e8b51ba975fe74a4bc07c2b430c5f23af9b6505da564c8c3c24d63b7e2f"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0eb7f357811bca83cb5f16547bf97034407593a808eace8dc21d102ee252eead"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "92ab479f44f38b5439b427d0c4f34559d523135dc9c168bee5b2e82bc9d33a55"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e721999227e5286210cbd822308d301cfaf11160a2607693154b94f3b4ae002f"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "bd046504cbfe06adaead479fdd6c93e309cde955813b56a26c28a1ca86e33b29"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "210558516a581d5fbac34f8330c34fc28497ad08183de1a2c906cdf91566effa"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "0439958f4843233277941994bf2fe7d72d6dedb54056d2f34f6ef26fd3381546"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "287975b000b38dc6a88e53baab6b830736f2c85d9300a67ce629d9fd481b39fe"
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual store source with real Node path and explicit filesystem/nanoid/scene adapters; no Express, auth signing or real filesystem persistence was executed.",
+    "No-share-write assertions assume an initialized store; readDb may create initial directories/database when absent. File read-modify-write remains non-atomic and existing orphan shares are not migrated.",
+    "The existing route has no new explicit mapping of the service error to HTTP404; this fix establishes a store rejection, not a newly verified HTTP error contract."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:34:04.027672+00:00"
+}

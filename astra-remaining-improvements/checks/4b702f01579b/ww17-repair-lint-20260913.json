@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/eslint/bin/eslint.js",
+    "."
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {
+    "DATA_SOURCE": "mock",
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww17_build_only"
+  },
+  "startedAt": "2026-09-13T16:02:07.102578+00:00",
+  "status": "complete",
+  "log": "ww17-repair-lint-20260913.log",
+  "pid": 23372,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T16:06:06.919563+00:00",
+  "elapsedSeconds": 239.82
+}

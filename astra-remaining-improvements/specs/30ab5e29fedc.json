@@ -1,0 +1,33 @@
+{
+  "changedFiles": [
+    "README.md",
+    "src/MeterForge.Application/Usage/UsageIngestionService.cs",
+    "src/MeterForge.Infrastructure/Usage/InMemoryUsageEventStore.cs",
+    "src/MeterForge.Api/Usage/UsageEndpoints.cs",
+    "src/MeterForge.Api/Errors/BusinessRuleExceptionHandler.cs",
+    "src/MeterForge.Api/Program.cs",
+    "tests/MeterForge.Application.Tests/Usage/UsageIngestionTests.cs",
+    "tests/MeterForge.Api.Tests/Usage/UsageApiTests.cs"
+  ],
+  "summary": [
+    "Atomic tenant-scoped usage ingestion returns the stored winner under competing retries.",
+    "Normalized same-payload retries return the original identity; changed-payload retries return HTTP 409 without mutation.",
+    "A tenant-scoped GET route makes POST Location readable.",
+    "Response-start middleware and Problem Details customization preserve matching request correlation identifiers on errors.",
+    "Nine detailed learning documents explain real source, concepts, worked changes, tests, debugging, exercises, solution reasoning and request traces."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/meterforge-verified",
+    "expectedSuites": 4,
+    "expectedTests": 51,
+    "command": "dotnet test MeterForge.slnx --no-restore --configuration Release --logger trx",
+    "environment": ".NET SDK 10.0.302; isolated copy; locked restore; local memory adapters and ASP.NET test host"
+  },
+  "limits": [
+    "Default usage storage remains in memory and is not coordinated across processes.",
+    "Route tenancy is not production authentication/authorization.",
+    "Subscription existence/ownership is a documented extension, not implemented in this use case.",
+    "No live database, browser, provider or deployed environment verified."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D1",
+  "id": "61d919e84af9",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "install",
+    "--save-dev",
+    "@types/pg@^8.11.0",
+    "--legacy-peer-deps",
+    "--no-audit",
+    "--no-fund",
+    "--prefer-offline",
+    "--cache",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\61d919e84af9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:52:58.653432+00:00",
+  "status": "complete",
+  "log": "install-05.log",
+  "pid": 25000,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:53:17.425896+00:00",
+  "elapsedSeconds": 18.77
+}

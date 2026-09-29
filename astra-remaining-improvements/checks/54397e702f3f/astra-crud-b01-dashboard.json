@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildanalytics",
+  "id": "54397e702f3f",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/dashboard-default.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\54397e702f3f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:32:51.713109+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-dashboard.log",
+  "pid": 5132,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:32:55.801923+00:00",
+  "elapsedSeconds": 4.08
+}

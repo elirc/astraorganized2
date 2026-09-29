@@ -1,0 +1,22 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "db:generate",
+    "-w",
+    "@gitjira/api"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T22:08:45.913430+00:00",
+  "status": "complete",
+  "log": "astra-gitjira-generate-r1.log",
+  "pid": 23584,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T22:15:23.143720+00:00",
+  "elapsedSeconds": 397.22
+}

@@ -1,0 +1,23 @@
+{
+  "id": "1c688787ace6",
+  "files": {
+    "next-env.d.ts": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6",
+    "prisma/schema.prisma": "df456311c71a706f667e5fec68b8078e9f2430231250ad5bf39b2323c44d0bf6",
+    "prisma/seed.ts": "c25bda0b543b0df7e92364b19825facf2c653c210c1e98bd6fd5090765e23122",
+    "src/app/api/tickets/[ticketId]/assign/route.ts": "9b7042b2230502d0e53aae9059ef9158da2fa3d4236b6882d18aa45e74b3d37e",
+    "src/app/api/tickets/[ticketId]/comments/route.ts": "0aa010c2c6e995a6843a6039adcf6ed99adb2b0b7d1b7f82ea2c37324c723f40",
+    "src/app/api/tickets/[ticketId]/route.ts": "a47a42856080c18204f354c32fb797a62d7fd0b266842a77f566c0d93a132b51",
+    "src/lib/auth/permissions.ts": "8eff919254a175ddd9062f6d867b495508862c309c730278bf9b36f90667e462",
+    "src/lib/middleware/withAuth.ts": "ffc4e04daf13898a61f966fa3307df267464af0aec0704a60d37768b992ce4f5",
+    "src/lib/middleware/withRole.ts": "e98d27368a696fe4c52bbc39324faa8b263c311ff64a80fc215918e169a8895c",
+    "src/repositories/contracts.ts": "45016fa36db67893f1b563391fe147efcdd8b09e3eaac69cd80d22ceef6e01f4",
+    "src/repositories/ticketRepository.ts": "1b46ff8e7bc3c854beba2a365caeef9084f95d722be246048fa88d7bbfd4f541",
+    "src/services/escalationService.ts": "e93102326bcad9017780d755fe578993ce8d7495f32e12e4c3ece2eef1336cdf",
+    "src/services/ticketService.ts": "498ec2035c08d61f6bb182bbb9c166ca16a05c9e064a8475e5728d9f0a3a7ffd",
+    "src/tests/assignment-service.test.ts": "a6c87bbedccb4e3cbf56bd7bf4818955a8702b8fb4f2d66bcb07b4864a4a3e30",
+    "src/tests/escalation-service.test.ts": "26575a65c7f718d2489d6a0387b464f8eff22a4a4aaa2bf860e07e4d73788691",
+    "src/tests/permissions.test.ts": "8b4e7d41aeb8c4673fbdf7243cc7a1b6fc2ded0c187f5f69afcfc05c9e7f228f",
+    "tsconfig.json": "003ff410560b1d2fb8c78466b8007a698c358b8df1735bd0719149143cf157a8",
+    "vitest.config.ts": "1232d1146dc597b4847d50f446f02cfa42c8c6fe7b787d77303703578f5e83d0"
+  }
+}

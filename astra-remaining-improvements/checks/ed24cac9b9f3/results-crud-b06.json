@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww31",
+      "id": "ed24cac9b9f3",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-cache-capacity.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ed24cac9b9f3",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:44:08.455965+00:00",
+      "status": "complete",
+      "log": "crud-b06-astra-runtime.log",
+      "pid": 31248,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:44:16.108477+00:00",
+      "elapsedSeconds": 7.64
+    }
+  ],
+  "limits": [
+    "Actual cache class with local VM helper; no flag evaluator, route, database, distributed process, memory profiler, or concurrency run.",
+    "Capacity bound is per process and does not address TTL freshness or authorization key design."
+  ]
+}

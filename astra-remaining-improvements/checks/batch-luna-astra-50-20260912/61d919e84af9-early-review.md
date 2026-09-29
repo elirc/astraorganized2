@@ -1,0 +1,5 @@
+# Astra early review: D1
+
+Pending final freeze. Socket join now loads authorized snapshot before room subscription; heartbeat requires joined board; async handlers catch failures. Existing tests inject service dependencies, so null-clear test only proves socket-to-service arguments.
+
+Required before delivery: actual updateCardDetails uses description/dueAt ??undefined, dropping explicit null while socket event advertises clear. Preserve null in actual Drizzle set and assert persistence arguments through actual service. Reject empty patch. appendBoardEvent currently weak tx:any, reads board version on global db then fixed increment: derive Drizzle tx type and atomic tx update(version+1).returning for unique board versions and same transaction connection. Add corresponding query assertions. Scope target columns/neighbors existing changes inspected. Don't claim livePG rollback/concurrency from mocks. Socket getSessionUser depends on Next cookies and long-lived join/revocation/multi-tab presence remain setup limits unless actually repaired. Finite lint/build not complete at review.

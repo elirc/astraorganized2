@@ -1,0 +1,323 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e1",
+  "id": "0bfafff7d45f",
+  "summary": "Retain booking and attendee state in a cloned process-local repository; enforce guest tokens, strict command fields, organizer-wide offered availability and atomic rescheduling with fresh token/attendee linkage; wire all reads and routes to current state with typed failures. Add source-based course and regression tests.",
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0bfafff7d45f/resume14-results.json",
+    "expectedTests": 18,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 18,
+    "passedTests": 18,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e1",
+        "id": "0bfafff7d45f",
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0bfafff7d45f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:46:13.207985+00:00",
+        "status": "complete",
+        "log": "resume14-tests-02.log",
+        "pid": 17288,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:46:38.046306+00:00",
+        "elapsedSeconds": 24.83
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e1",
+        "id": "0bfafff7d45f",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0bfafff7d45f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:45:30.367100+00:00",
+        "status": "complete",
+        "log": "resume14-types-01.log",
+        "pid": 12792,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:46:52.476069+00:00",
+        "elapsedSeconds": 82.1
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e1",
+        "id": "0bfafff7d45f",
+        "command": [
+          "npm.cmd",
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0bfafff7d45f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:46:25.875527+00:00",
+        "status": "complete",
+        "log": "resume14-lint-01.log",
+        "pid": 4056,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:55:16.030412+00:00",
+        "elapsedSeconds": 530.14
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e1",
+        "id": "0bfafff7d45f",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build",
+          "--",
+          "--webpack"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0bfafff7d45f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:47:27.810542+00:00",
+        "status": "complete",
+        "log": "resume14-build-01.log",
+        "pid": 16168,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:08:48.321736+00:00",
+        "elapsedSeconds": 1280.49
+      }
+    ]
+  },
+  "courseWords": 3578,
+  "courseFiles": 9,
+  "courseLinksChecked": 96,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "6285703b435552294e8617002f37ec87a7fa0469fa82a65f440229abd62aa6b9",
+      "after_sha256": "2c2ca3936c0b2fe65782bc1e89bad7d2c1ebc7b485297bea4d9bf6d64afea408"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "7fa41f4bfe19bef86d32cdb76c764b9be9d61af3e71aaf2d5484843990269faa"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "6fa6a77c918d0ad1cab3a0d23dbb5b4e4b372840e2d45f40c67fc879305f21ba"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "8721271a0ddaaae6bd6db086fe5d42d6d42603560895cc49ca4504ae0157aea2"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "2cbe29adbd400380de582e0c36762c4ea8b8d6a6083d282a1451a1a4e0b98855"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.json",
+      "before_sha256": null,
+      "after_sha256": "e17b48e73c461f24dabf714aa720a560e28693f5b803b844e2b182b9a0529154"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.log",
+      "before_sha256": null,
+      "after_sha256": "ae7ab15f8bd27ebef79177d5c41635d777ed5ba7d6bbc34bbbad7d683206cd12"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "59a0d5314fe3caaf106981c384315f5bc4058a2a0387d989b9fab68e40e3d6d3"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "43bff399d5201e002077af7459536372f24d4fe799c6ae0588069eaa9649c87b"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6285703b435552294e8617002f37ec87a7fa0469fa82a65f440229abd62aa6b9"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9507d62fd56a39b9bc9df8186bb5b747ee1eaa0fe14250318291ab596ce1f4bc"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__bookings__[bookingId]__cancel__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "64129435867e4a9408b30d6ad7b0a8037236c231fcfcc349b27ba16f0e9a7ad8"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__bookings__[bookingId]__confirm__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "dd83959de91da9eb3a630ae7695de27221ed781fb67a60a2ef7ce1ee2ff7c3d3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__bookings__[bookingId]__reschedule__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "183622f1c518e8b3c30d41a3022c6e83059a7f1ebcb0df0ec849d44959738181"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__bookings__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "94e8aad4610428774b6a02fbc9d23f6127ae7e2b7b87e1ac57f20e9ce091fba1"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__layout.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f77524df5b3213b47a624bbc6074212d689d7f7164af7498e37b78019f7f18f8"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__availability.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "fc57486bef9ed4b3b4f30a503f41466e5b725123d17e91febceb7b2516057958"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__booking-state.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8d7eac6f1fc1b8bfdc1737b60e7d86e6de5fc5f7d59cf798072622f77fc2e0a3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__demo-data.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c142431bfbedb17928c1baa33cee4dc2fcfe4c70c448ddaab78a65c44918cefe"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__mock-services.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "040c7874cefeebb21a68b475039f4700983c485d508d397075d7426ce08844e9"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "9507d62fd56a39b9bc9df8186bb5b747ee1eaa0fe14250318291ab596ce1f4bc",
+      "after_sha256": "62dd95493cebd499bab1d5ceb4d3061f944a1d90bb8fc63737aa9f037de8b16a"
+    },
+    {
+      "file": "scripts/alias-loader.mjs",
+      "before_sha256": null,
+      "after_sha256": "a235968a1d01380058759eff77f38799420d7890d43f1b4122f2299c3fb37dd1"
+    },
+    {
+      "file": "src/app/api/bookings/[bookingId]/cancel/route.ts",
+      "before_sha256": "64129435867e4a9408b30d6ad7b0a8037236c231fcfcc349b27ba16f0e9a7ad8",
+      "after_sha256": "bae72ee1357323406c14bb27efa685a0b8067a22481c08b46599173e10e5b240"
+    },
+    {
+      "file": "src/app/api/bookings/[bookingId]/confirm/route.ts",
+      "before_sha256": "dd83959de91da9eb3a630ae7695de27221ed781fb67a60a2ef7ce1ee2ff7c3d3",
+      "after_sha256": "a339b31ec5a3cdcdbe4c3b7310e61059e0236bd55ad6c2121af9ac134206b12a"
+    },
+    {
+      "file": "src/app/api/bookings/[bookingId]/reschedule/route.ts",
+      "before_sha256": "183622f1c518e8b3c30d41a3022c6e83059a7f1ebcb0df0ec849d44959738181",
+      "after_sha256": "6ab8f571c7ba9a62160ccc7c18021a9a60c0bd144f6e9109081c19d591c99ba7"
+    },
+    {
+      "file": "src/app/api/bookings/route.ts",
+      "before_sha256": "94e8aad4610428774b6a02fbc9d23f6127ae7e2b7b87e1ac57f20e9ce091fba1",
+      "after_sha256": "671c83b2ebbbc094b90afd2305a95c88bca739f69f981631edfb5ef8b40c7550"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "before_sha256": "f77524df5b3213b47a624bbc6074212d689d7f7164af7498e37b78019f7f18f8",
+      "after_sha256": "83d76d8dc8ac887cdfc21ffb5c1d94d7fffe5a9a5403c0af11fe6b8160fbe6cf"
+    },
+    {
+      "file": "src/lib/availability.ts",
+      "before_sha256": "fc57486bef9ed4b3b4f30a503f41466e5b725123d17e91febceb7b2516057958",
+      "after_sha256": "8b2c6d4f687dced3c5b8f8fb9614b02df18c91c56cdbfeaf520baa68436adc23"
+    },
+    {
+      "file": "src/lib/booking-repository.ts",
+      "before_sha256": null,
+      "after_sha256": "98b869255e9b5637a27fd5a84b3adcf9d0aa8ed58662744fa5733123c2458d5f"
+    },
+    {
+      "file": "src/lib/booking-service.ts",
+      "before_sha256": null,
+      "after_sha256": "11a0cd67e04a668d384a8b47e1f7b6850ead645ca52654c890a01a182bbc59c5"
+    },
+    {
+      "file": "src/lib/booking-state.ts",
+      "before_sha256": "8d7eac6f1fc1b8bfdc1737b60e7d86e6de5fc5f7d59cf798072622f77fc2e0a3",
+      "after_sha256": "97f53be884c5557ecaeca5b16593751dfc283d614abe6768cb271deef31248e5"
+    },
+    {
+      "file": "src/lib/demo-data.ts",
+      "before_sha256": "c142431bfbedb17928c1baa33cee4dc2fcfe4c70c448ddaab78a65c44918cefe",
+      "after_sha256": "ded8662fc58316919dd0c33ed1901f3ee70e9e5b8e3680cbaa9af6d4199e473f"
+    },
+    {
+      "file": "src/lib/mock-services.ts",
+      "before_sha256": "040c7874cefeebb21a68b475039f4700983c485d508d397075d7426ce08844e9",
+      "after_sha256": "68fd8012785ff813baedf7088411eaf8e7a263b0cb996e76f7e46d14bac77108"
+    },
+    {
+      "file": "src/tests/booking-flow.test.ts",
+      "before_sha256": null,
+      "after_sha256": "881ec8245870776c6b0139a72e2a7be8a80006d7de8904ede3948ab133e66a05"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "240eb4108a349b56a33eec8824ec24a447e2cce96ca6495e99c81144085284a0"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f820d10e7c869ea27d331c5e0b726e2d716ea2dec6e330461a9a07d926c8e594"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d2e6fe31e0a0a8435620fd41b468717b50ed420345f06f2869a0a3ba7c070233"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6cb614fbccfe56f57b1f24fba87ddb9e0abb4232146092920a10e1e6d90684d2"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f3408741e2ec25205201f20473108e99aa236bfdd86e3d3646974a4dcf075cbc"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "408c20e2b3fa730514b155222ff07b1f984dc206faed038d027b6c4dc2a85655"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9b8f477f6cde19b6dda6a411ef10b49446ce899b10e0726b1d1aebae6a8edfe2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "6ea48cdb8984612dead79d1f169b1615b8e1ec76a15e3f666772aea7343642d6"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "9d25fa431225eff756a9c6a8db9190b0c81fbd27d23ccba9e3bde3698ac6f529"
+    }
+  ],
+  "limits": [
+    "Demo state is process-local and resets on restart; no multi-worker durability.",
+    "Owner authentication, event/team editing and calendar integrations remain simulations. Existing seed tokens are illustrative.",
+    "UTC regression coverage does not certify all DST gaps, folds or overnight scheduling behavior."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T18:13:20.677142+00:00"
+}

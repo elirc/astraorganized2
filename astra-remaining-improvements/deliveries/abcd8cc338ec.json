@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain2",
+  "id": "abcd8cc338ec",
+  "summary": [
+    "Update workflow metadata, increment version and replace steps within one Drizzle transaction.",
+    "Teach aggregate boundaries, omitted-versus-empty child lists, and error propagation before response conversion."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/abcd8cc338ec/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 7,
+    "checks": [
+      {
+        "project": "_Organized Desktop/04 JavaScript Training/jstrain2",
+        "id": "abcd8cc338ec",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-workflow-transaction.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\abcd8cc338ec",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:23:43.487126+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 31916,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:23:54.994580+00:00",
+        "elapsedSeconds": 11.5
+      }
+    ],
+    "limits": [
+      "Tests execute the actual PUT route and API response/error helpers with explicit Drizzle, auth, schema and validation doubles.",
+      "The transaction double asserts call scope, order and rejection; it does not prove PostgreSQL rollback, isolation, SQL compilation or real Zod validation.",
+      "Native Next.js, database and browser suites were not run. Existing step-id references and authorization policy are unchanged."
+    ]
+  },
+  "courseWords": 3028,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": "src/app/api/workflows/[id]/route.ts",
+      "before_sha256": "96fcdf068be7e4f5be211dab39f675d6d346c1d77ca1e2fd699b3a2c0d815f5c",
+      "after_sha256": "4356fe0bccc612b72751415f0c51bd6fe9bdc4cd2159a66f9d7c9dab6c52ebf7"
+    },
+    {
+      "file": "astraupskill/snapshots/workflow-route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "96fcdf068be7e4f5be211dab39f675d6d346c1d77ca1e2fd699b3a2c0d815f5c"
+    },
+    {
+      "file": "tests/runtime-workflow-transaction.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "75d2fd32712a728d2e5d47ee6488cd677cba74a05abf354bb99fbc52d8ae1c47"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "69a611f1246b4e65268842a71a05116c87a7682ef12418b6ead2a97a944d5db2"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "30d428957b4de7bcfe046953c805f88e2cfedeb677d330fe3571a1e25255959e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e5cb910787044bcaa6b4635f0cf0214b1a67fca7492c9e65c31530a6bcbc43d3"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f067be5920146eca26d81a864b3afea0109091f71a86ba3806ed2579c141d804"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b54bed22d659d5ede5894717185d86e10ceec44a97a0925a5ec982b2f8d107aa"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "b98ab1a705598134722a74ed0a436302d2e8f0323a031fed76b8a4cf9b74f8e7"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c2d5ee5f7a6585c97452e75361737f460f5eaad481454d74e512b7cba62b1a92"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3253b5d25cb58cbd88596f4f5d040743bcf54c2aef7fb1fd01c8bc24b0f949ac"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "09d7b1bc8d8a3f4f3732bae1ff81fae87975dbc123b2d01af1691625e90fb4dc"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4fb627e2e2313f451b479c200bcc62bdd779982b43ce146eaf0efe522320419d"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "575d07fab3c62651664e9f1ad71c2704f96d5ea252e628818bdbf749da7d1bba"
+    }
+  ],
+  "limits": [
+    "Tests execute the actual PUT route and API response/error helpers with explicit Drizzle, auth, schema and validation doubles.",
+    "The transaction double asserts call scope, order and rejection; it does not prove PostgreSQL rollback, isolation, SQL compilation or real Zod validation.",
+    "Native Next.js, database and browser suites were not run. Existing step-id references and authorization policy are unchanged."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:33:46.633666+00:00"
+}

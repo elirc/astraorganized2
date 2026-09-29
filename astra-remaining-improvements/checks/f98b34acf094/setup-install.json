@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e2",
+  "id": "f98b34acf094",
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f98b34acf094",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:41:01.414379+00:00",
+  "status": "complete",
+  "log": "setup-install.log",
+  "pid": 1360,
+  "exitCode": 4294963214,
+  "passed": false,
+  "finishedAt": "2026-09-13T14:41:23.860232+00:00",
+  "elapsedSeconds": 22.44
+}

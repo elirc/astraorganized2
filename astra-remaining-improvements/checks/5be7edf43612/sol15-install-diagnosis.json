@@ -1,0 +1,31 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "command": [
+    "C:/Program",
+    "Files/nodejs/node.exe",
+    "C:/Program",
+    "Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "ci",
+    "--prefer-offline",
+    "--no-audit",
+    "--no-fund",
+    "--fetch-retries=1",
+    "--fetch-timeout=20000",
+    "--maxsockets=2",
+    "--loglevel=verbose"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+  "environmentOverrides": {
+    "HUSKY": "0",
+    "npm_config_cache": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/npm-cache"
+  },
+  "startedAt": "2026-09-19T21:18:14.781367+00:00",
+  "status": "complete",
+  "log": "sol15-install-diagnosis.log",
+  "pid": 10400,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T21:18:16.916241+00:00",
+  "elapsedSeconds": 2.13
+}

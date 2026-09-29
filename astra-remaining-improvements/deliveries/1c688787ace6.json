@@ -1,0 +1,278 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "id": "1c688787ace6",
+  "summary": [
+    "Made SLA escalation deadline selection aware of first response completion and bounded escalation to one conditional claim per ticket.",
+    "Added deterministic rule selection, target validation, missing assignment target checks, compare-and-set writes, and a Prisma transaction that atomically claims escalation routing with its audit event.",
+    "Added fail-closed unknown-role behavior at helper and route boundaries, including inherited-key defenses, with twenty focused tests across seven files",
+    "Added nine portable source-grounded upskill chapters with complete transaction rollback and runtime permission examples."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1c688787ace6/results.json",
+    "expectedTests": 20,
+    "testRecord": "checks/1c688787ace6/ww39-own-property-tests-20260913.json",
+    "typecheckRecord": "checks/1c688787ace6/ww39-own-property-typecheck-20260913.json",
+    "buildRecord": "checks/1c688787ace6/orchestration-build-role-final-20260913.json"
+  },
+  "testResults": {
+    "passed": true,
+    "expectedTests": 20,
+    "executedTests": 20,
+    "testFiles": 7,
+    "command": "node_modules/.bin/vitest.cmd run src/tests/escalation-service.test.ts src/tests/route-unknown-role.test.ts src/tests/assignment-service.test.ts src/tests/dataIsolation.test.ts src/tests/permissions.test.ts src/tests/status-transition.test.ts src/tests/validation.test.ts --maxWorkers=1 --minWorkers=1",
+    "log": "ww39-own-property-tests-20260913.log",
+    "typecheck": {
+      "passed": true,
+      "log": "ww39-own-property-typecheck-20260913.log"
+    },
+    "environment": "stage-local npm ci; Prisma Client generated from stage prisma/schema.prisma; no live database",
+    "build": {
+      "passed": true,
+      "log": "orchestration-build-role-final-20260913.log",
+      "record": "checks/1c688787ace6/orchestration-build-role-final-20260913.json"
+    }
+  },
+  "courseWords": 3798,
+  "courseFiles": 9,
+  "courseLinksChecked": 11,
+  "files": [
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e267fc0cc70cbb1e20496418791698f7f51d36bb35d233465e337a91be4135fc"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8838b279d061bae9d423debf4eb70fba027a1f6258cae365ffcc8fa07a48a7e0"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "fb9ca1a86e41b99303f6aa0658c0623115b29964550bbb6ecefcdcb06ccf7a6d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c4a2b165b4b4ecd00acadbf6c05d521c0e8c75f89488c836f586c50ef8062383"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b9952f9d2a3c39ed12a5d685b52b552d7d0de3afd3e8a778d706045c746c278f"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "79d34927323aec4187cd26a3c6006631b04c0f7e15291ce6a8970ec0ed09ec3b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "22b03d44df93925220d16a324c6fb56eb030668f107cbabeec294d0ce3d3a8f8"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "cdbdd8d56f0eb2b597e4c80933a7d66465d70216fa1565d9c793045b74b42a1f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e70fd8a0090d577e64433eeb2ab7f0121d6714c2cd935f59a494ebadb7a66d69"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "64d27e61eafb2b2183d16c7b986361b60d1f9ac68db24e4c2f75154fc90dcb66",
+      "after_sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "38dcd532461cd941eb807911ad18758cfd3f5aaea2dec86a46fbf09dfeb64614"
+    },
+    {
+      "file": "prisma/schema.prisma",
+      "before_sha256": "00468a11d2e5d79fd67f44bbf3f581f9c55faa07c63f1e586991bf7578028015",
+      "after_sha256": "df456311c71a706f667e5fec68b8078e9f2430231250ad5bf39b2323c44d0bf6"
+    },
+    {
+      "file": "prisma/seed.ts",
+      "before_sha256": "b3bd379ba726f213f742c001c6aad1fb22499b2cfdf0ea1277bcafe31f3d92af",
+      "after_sha256": "c25bda0b543b0df7e92364b19825facf2c653c210c1e98bd6fd5090765e23122"
+    },
+    {
+      "file": "src/app/api/auth/me/route.ts",
+      "before_sha256": "b8be7af6fdf28498fd99ad1c407b86c6c731b75fc7e994b6ee4a24a9042961cc",
+      "after_sha256": "61351d03ec1de2f3e136a8c6ec2231f2bfe27c7f70a9726857d453c5f27f8e5e"
+    },
+    {
+      "file": "src/app/api/rules/assignment/route.ts",
+      "before_sha256": "98d0dc2ca3f149cb861e9f6ef50b6c1018a0567235ffcf41bd2af8894dda98c8",
+      "after_sha256": "153bc7706dc5d48a3697f326e8af44c4c55cdbed1daf8557404b4c43d534abc7"
+    },
+    {
+      "file": "src/app/api/rules/escalation/route.ts",
+      "before_sha256": "02b9bee805a69744db28a7e3ccb68ae74847ddc00a0a0c07391b3725ec598f20",
+      "after_sha256": "bd32ebf335a432c2e6f03607241117d1724ea1fe01a908bd03e8822bc7a98200"
+    },
+    {
+      "file": "src/app/api/slas/route.ts",
+      "before_sha256": "9025ce96b25f6d2ca0f3eb0e4f81a698a3aa558df3899be925f7c1387e615bc7",
+      "after_sha256": "88e5aa2fa72669c037facc7e4e2ff6fa4598572b9ed238e7108057b8cecaba4d"
+    },
+    {
+      "file": "src/app/api/tickets/[ticketId]/assign/route.ts",
+      "before_sha256": "fc86dee7fb72e5b41e46f7f70fc16112b336c9c67d953a3c0796c52b4c455682",
+      "after_sha256": "12b3c48d9b9cc53e25f5118d864932fbb227d6f6259c254d4072af2477f4e768"
+    },
+    {
+      "file": "src/app/api/tickets/[ticketId]/comments/route.ts",
+      "before_sha256": "af711f1de5a6b70de265066ace0009397c872e00b90b0d2a9f15efc996968367",
+      "after_sha256": "48ab572e7d2bab289def6f6b9977fe2a8bd8f2f4f0367adae12e8abdf737761f"
+    },
+    {
+      "file": "src/app/api/tickets/[ticketId]/route.ts",
+      "before_sha256": "8ea5fec8f3cbe16fd561927ab23510e916cca3df7694481c1bc44fc48f04fda4",
+      "after_sha256": "2aecdf0a1215d4cadcae727deced9888d943c642ada52ffad5b75de93c37ea60"
+    },
+    {
+      "file": "src/app/api/tickets/route.ts",
+      "before_sha256": "a442d8f78d89ecadf07a4fbec7d3fd324ac9ddb88e4addbb17d7105393ef99d6",
+      "after_sha256": "ad679b4844d8c672fca7242002f5937af195e6b4bad586f64f19eaa11a74f2c0"
+    },
+    {
+      "file": "src/lib/auth/permissions.ts",
+      "before_sha256": "38a0a1ce8d43e8f43130b794c7870c9cce120a965a598340f4fec3483a01ce38",
+      "after_sha256": "6e213b866cae2607fa724f5ab98cd82369440e4dd905aca006a5f5db970ae23c"
+    },
+    {
+      "file": "src/lib/middleware/withAuth.ts",
+      "before_sha256": "5e1283ad718b9b164b7ab017519d9b62ee0c3f3f2cef4690c8d1c50078ac3e66",
+      "after_sha256": "ffc4e04daf13898a61f966fa3307df267464af0aec0704a60d37768b992ce4f5"
+    },
+    {
+      "file": "src/lib/middleware/withRole.ts",
+      "before_sha256": "c156848a1da9300cf92d58d1ab1b9d28ba411a315bd9cc6e5919035ebce2a0ab",
+      "after_sha256": "e98d27368a696fe4c52bbc39324faa8b263c311ff64a80fc215918e169a8895c"
+    },
+    {
+      "file": "src/repositories/contracts.ts",
+      "before_sha256": "4feef9e39915afb253c98d36ebc5ef6464e073c1195dabb0c49c59e1e7fb002c",
+      "after_sha256": "45016fa36db67893f1b563391fe147efcdd8b09e3eaac69cd80d22ceef6e01f4"
+    },
+    {
+      "file": "src/repositories/ticketRepository.ts",
+      "before_sha256": "1adf147426572ee8065b1fde6c7ffe66e70c3fc24ef6f8e1f1e6ef7820c97b80",
+      "after_sha256": "1b46ff8e7bc3c854beba2a365caeef9084f95d722be246048fa88d7bbfd4f541"
+    },
+    {
+      "file": "src/services/escalationService.ts",
+      "before_sha256": "bbeeba73c732e3205dcf23b26880c6bc71bfe4542bcdfc2955152ec8cea2d74c",
+      "after_sha256": "e93102326bcad9017780d755fe578993ce8d7495f32e12e4c3ece2eef1336cdf"
+    },
+    {
+      "file": "src/services/ticketService.ts",
+      "before_sha256": "b91284ae2aa9f717b103ea26f8222aa97b75d98b6f8c8a743deea0565d966011",
+      "after_sha256": "498ec2035c08d61f6bb182bbb9c166ca16a05c9e064a8475e5728d9f0a3a7ffd"
+    },
+    {
+      "file": "src/tests/assignment-service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "a6c87bbedccb4e3cbf56bd7bf4818955a8702b8fb4f2d66bcb07b4864a4a3e30"
+    },
+    {
+      "file": "src/tests/escalation-service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "b2804ad7279c5c7b6ac5e78fc730b4c9c1e08101ad6ec850b19269645c48a6b6"
+    },
+    {
+      "file": "src/tests/permissions.test.ts",
+      "before_sha256": "5ca757a02c5e18e8fff2a41e49ac49a85e9dc218faac718c5a5e292f56663096",
+      "after_sha256": "2f0b427412b6aaba5204d848e34bb087dac9601f4d923fb83f84580aea621c96"
+    },
+    {
+      "file": "src/tests/route-unknown-role.test.ts",
+      "before_sha256": null,
+      "after_sha256": "223a2fec62d739d46555bd063675fd80a52658d8b3ef3709b9d35a59ce6dbc8f"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "0b0b08d357bce4514640d4282412343b045e7b659bba806d016ae4a6b3dcc318",
+      "after_sha256": "003ff410560b1d2fb8c78466b8007a698c358b8df1735bd0719149143cf157a8"
+    },
+    {
+      "file": "vitest.config.ts",
+      "before_sha256": null,
+      "after_sha256": "1232d1146dc597b4847d50f446f02cfa42c8c6fe7b787d77303703578f5e83d0"
+    },
+    {
+      "file": "astraupskill/snapshots/escalationService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "bbeeba73c732e3205dcf23b26880c6bc71bfe4542bcdfc2955152ec8cea2d74c"
+    },
+    {
+      "file": "astraupskill/snapshots/ticketService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "b91284ae2aa9f717b103ea26f8222aa97b75d98b6f8c8a743deea0565d966011"
+    },
+    {
+      "file": "astraupskill/snapshots/ticketRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "1adf147426572ee8065b1fde6c7ffe66e70c3fc24ef6f8e1f1e6ef7820c97b80"
+    },
+    {
+      "file": "astraupskill/snapshots/permissions.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "38a0a1ce8d43e8f43130b794c7870c9cce120a965a598340f4fec3483a01ce38"
+    }
+  ],
+  "limits": [
+    "Unit tests use repository fakes and do not prove PostgreSQL transaction isolation, crash durability, or cross-process locking.",
+    "The schema stores one escalatedAt timestamp, so escalation is intentionally bounded to one claim per ticket.",
+    "No live cron route or user database is used by the checks."
+  ],
+  "status": "delivered",
+  "changedFiles": [
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/README.md",
+    "astraupskill/VERIFICATION.md",
+    "astraupskill/snapshots/escalationService.ts.original.txt",
+    "astraupskill/snapshots/permissions.ts.original.txt",
+    "astraupskill/snapshots/ticketRepository.ts.original.txt",
+    "astraupskill/snapshots/ticketService.ts.original.txt",
+    "next-env.d.ts",
+    "package-lock.json",
+    "prisma/schema.prisma",
+    "prisma/seed.ts",
+    "src/app/api/auth/me/route.ts",
+    "src/app/api/rules/assignment/route.ts",
+    "src/app/api/rules/escalation/route.ts",
+    "src/app/api/slas/route.ts",
+    "src/app/api/tickets/[ticketId]/assign/route.ts",
+    "src/app/api/tickets/[ticketId]/comments/route.ts",
+    "src/app/api/tickets/[ticketId]/route.ts",
+    "src/app/api/tickets/route.ts",
+    "src/lib/auth/permissions.ts",
+    "src/lib/middleware/withAuth.ts",
+    "src/lib/middleware/withRole.ts",
+    "src/repositories/contracts.ts",
+    "src/repositories/ticketRepository.ts",
+    "src/services/escalationService.ts",
+    "src/services/ticketService.ts",
+    "src/tests/assignment-service.test.ts",
+    "src/tests/escalation-service.test.ts",
+    "src/tests/permissions.test.ts",
+    "src/tests/route-unknown-role.test.ts",
+    "tsconfig.json",
+    "vitest.config.ts"
+  ],
+  "deliveredAt": "2026-09-13T15:50:19.699043+00:00"
+}

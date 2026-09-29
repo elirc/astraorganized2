@@ -1,0 +1,32 @@
+{
+  "id": "1d0b328c6621",
+  "project": "ww11",
+  "files": [
+    "src/lib/domain/protocolRules.ts",
+    "tests/runtime-protocol-activation.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-lib-domain-protocolRules.ts.before",
+    "astraupskill/evidence/1d0b328c6621/runtime-protocol-activation.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "Protocol activation rejected retired versions but allowed ACTIVE versions, causing redundant mutation/audit.",
+    "The rule now permits only DRAFT activation inputs."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-protocol-activation.test.mjs",
+    "executedTests": 2,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked repository/audit; no live concurrency."
+  ]
+}

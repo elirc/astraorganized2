@@ -1,0 +1,212 @@
+[
+ {
+  "wave": 1,
+  "stage": "31",
+  "name": "JS1/support-tickets",
+  "rel": "JS1/support-tickets",
+  "tests": 3,
+  "words": 6621,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\support-tickets",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-support-tickets",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/31",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/support-tickets/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "32",
+  "name": "JS1/issue-desk",
+  "rel": "JS1/issue-desk",
+  "tests": 2,
+  "words": 5707,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\issue-desk",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-issue-desk",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/32",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/issue-desk/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "33",
+  "name": "JS1/forum-search",
+  "rel": "JS1/forum-search",
+  "tests": 2,
+  "words": 6696,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\forum-search",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-forum-search",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/33",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/forum-search/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "34",
+  "name": "JS1/invoice-studio",
+  "rel": "JS1/invoice-studio",
+  "tests": 3,
+  "words": 6606,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\invoice-studio",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-invoice-studio",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/34",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/invoice-studio/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "35",
+  "name": "JS1/asset-checkout",
+  "rel": "JS1/asset-checkout",
+  "tests": 4,
+  "words": 8151,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\asset-checkout",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-asset-checkout",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/35",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/asset-checkout/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "36",
+  "name": "JS1/equipment-maintenance",
+  "rel": "JS1/equipment-maintenance",
+  "tests": 3,
+  "words": 7306,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\equipment-maintenance",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-equipment-maintenance",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/36",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/equipment-maintenance/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "37",
+  "name": "JS1/library-lending",
+  "rel": "JS1/library-lending",
+  "tests": 3,
+  "words": 7347,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\library-lending",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-library-lending",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/37",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/library-lending/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "38",
+  "name": "JS1/gym-membership",
+  "rel": "JS1/gym-membership",
+  "tests": 3,
+  "words": 7303,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\gym-membership",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-gym-membership",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/38",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/gym-membership/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "39",
+  "name": "JS1/campaign-planner",
+  "rel": "JS1/campaign-planner",
+  "tests": 3,
+  "words": 7301,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\campaign-planner",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-campaign-planner",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/39",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/campaign-planner/astraupskill",
+  "batch": "B04"
+ },
+ {
+  "wave": 1,
+  "stage": "40",
+  "name": "JS1/volunteer-coordinator",
+  "rel": "JS1/volunteer-coordinator",
+  "tests": 3,
+  "words": 7292,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\volunteer-coordinator",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-volunteer-coordinator",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/40",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/volunteer-coordinator/astraupskill",
+  "batch": "B04"
+ }
+]

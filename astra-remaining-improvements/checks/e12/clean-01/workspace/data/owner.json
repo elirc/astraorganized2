@@ -1,0 +1,362 @@
+{
+  "meta": {
+    "version": 1,
+    "createdAt": "2026-09-10T01:22:47.177Z",
+    "updatedAt": "2026-09-10T01:22:47.177Z",
+    "schemaVersion": 1
+  },
+  "users": [
+    {
+      "id": "usr_2f5b82ea065f",
+      "name": "Clean verification owner",
+      "email": "owner@example.invalid",
+      "roles": [
+        "instance_admin"
+      ],
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "role_a3bf8a015a09",
+      "name": "instance_admin",
+      "scopes": [
+        "read",
+        "write",
+        "admin",
+        "evaluate"
+      ]
+    },
+    {
+      "id": "role_2591be280ac7",
+      "name": "viewer",
+      "scopes": [
+        "read"
+      ]
+    },
+    {
+      "id": "role_310834d425b4",
+      "name": "project_owner",
+      "scopes": [
+        "read",
+        "write",
+        "evaluate"
+      ]
+    },
+    {
+      "id": "role_6c4d01c4342e",
+      "name": "project_member",
+      "scopes": [
+        "read",
+        "write",
+        "evaluate"
+      ]
+    }
+  ],
+  "permissions": [
+    {
+      "id": "perm_c3e3aecef328",
+      "role": "instance_admin",
+      "scopes": [
+        "read",
+        "write",
+        "admin",
+        "evaluate"
+      ]
+    },
+    {
+      "id": "perm_f114ccf369ae",
+      "role": "viewer",
+      "scopes": [
+        "read"
+      ]
+    },
+    {
+      "id": "perm_7939ac16dca7",
+      "role": "project_owner",
+      "scopes": [
+        "read",
+        "write",
+        "evaluate"
+      ]
+    },
+    {
+      "id": "perm_3735937bfe82",
+      "role": "project_member",
+      "scopes": [
+        "read",
+        "write",
+        "evaluate"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj_583d286b9070",
+      "key": "checkout",
+      "name": "Checkout",
+      "description": "Demo project for learning the rollout model.",
+      "ownerUserId": "usr_2f5b82ea065f",
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "projectMembers": [
+    {
+      "id": "mem_76fd0caacb5d",
+      "projectId": "prj_583d286b9070",
+      "userId": "usr_2f5b82ea065f",
+      "role": "project_owner",
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "environments": [
+    {
+      "id": "env_176a66d24018",
+      "key": "development",
+      "name": "Development",
+      "type": "development",
+      "protectChanges": false,
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "env_bf60c0819e49",
+      "key": "test",
+      "name": "Test",
+      "type": "test",
+      "protectChanges": false,
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "env_873254690e2e",
+      "key": "pre-production",
+      "name": "Pre-Production",
+      "type": "pre-production",
+      "protectChanges": true,
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "env_b7fc62e7751f",
+      "key": "production",
+      "name": "Production",
+      "type": "production",
+      "protectChanges": true,
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "projectEnvironments": [
+    {
+      "id": "pe_f7b95179ec3d",
+      "projectId": "prj_583d286b9070",
+      "environmentId": "env_176a66d24018",
+      "defaultStrategy": {
+        "type": "enabled_for_all",
+        "name": "Dev default",
+        "parameters": {},
+        "constraints": []
+      },
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "pe_2fb5a8267c40",
+      "projectId": "prj_583d286b9070",
+      "environmentId": "env_b7fc62e7751f",
+      "defaultStrategy": {
+        "type": "disabled",
+        "name": "Prod default",
+        "parameters": {},
+        "constraints": []
+      },
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "featureFlags": [
+    {
+      "id": "flag_f588b31ffaf4",
+      "projectId": "prj_583d286b9070",
+      "key": "checkout_redesign",
+      "name": "Checkout Redesign",
+      "type": "release",
+      "description": "Gradually roll out a new checkout UI.",
+      "stale": false,
+      "archived": false,
+      "impressionData": true,
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z",
+      "lastSeenAt": null
+    },
+    {
+      "id": "flag_8715a28d4186",
+      "projectId": "prj_583d286b9070",
+      "key": "payments_kill_switch",
+      "name": "Payments Kill Switch",
+      "type": "kill_switch",
+      "description": "Emergency off switch for payments.",
+      "stale": false,
+      "archived": false,
+      "impressionData": true,
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z",
+      "lastSeenAt": null
+    }
+  ],
+  "featureFlagEnvironments": [
+    {
+      "id": "ffe_aec81a5b8707",
+      "flagId": "flag_f588b31ffaf4",
+      "environmentId": "env_176a66d24018",
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "ffe_c40b20880409",
+      "flagId": "flag_f588b31ffaf4",
+      "environmentId": "env_b7fc62e7751f",
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "ffe_3596ee0c586f",
+      "flagId": "flag_8715a28d4186",
+      "environmentId": "env_176a66d24018",
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "ffe_cc4b6a02a489",
+      "flagId": "flag_8715a28d4186",
+      "environmentId": "env_b7fc62e7751f",
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "strategies": [
+    {
+      "id": "str_6fc24680e751",
+      "flagId": "flag_f588b31ffaf4",
+      "environmentId": "env_176a66d24018",
+      "name": "Dev always on",
+      "type": "enabled_for_all",
+      "parameters": {},
+      "constraints": [],
+      "segmentIds": [],
+      "sortOrder": 1,
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "str_35d494a74748",
+      "flagId": "flag_f588b31ffaf4",
+      "environmentId": "env_b7fc62e7751f",
+      "name": "Beta gradual rollout",
+      "type": "gradual_rollout",
+      "parameters": {
+        "rollout": 25,
+        "stickiness": "userId",
+        "groupId": "checkout_redesign"
+      },
+      "constraints": [],
+      "segmentIds": [
+        "seg_b231646b5a7e"
+      ],
+      "sortOrder": 1,
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "str_9e83218af5cc",
+      "flagId": "flag_8715a28d4186",
+      "environmentId": "env_b7fc62e7751f",
+      "name": "Emergency shutdown",
+      "type": "disabled",
+      "parameters": {},
+      "constraints": [],
+      "segmentIds": [],
+      "sortOrder": 1,
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "strategyConstraints": [],
+  "segments": [
+    {
+      "id": "seg_b231646b5a7e",
+      "name": "Beta users",
+      "description": "Users in the beta cohort.",
+      "projectId": "prj_583d286b9070",
+      "constraints": [
+        {
+          "field": "plan",
+          "operator": "in",
+          "values": [
+            "pro",
+            "enterprise"
+          ],
+          "inversion": false,
+          "caseSensitive": false
+        }
+      ],
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "updatedAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "segmentConstraints": [],
+  "variants": [
+    {
+      "id": "var_5f6bab3d8f08",
+      "strategyId": "str_35d494a74748",
+      "name": "control",
+      "weight": 50,
+      "stickiness": "userId",
+      "payloadType": "json",
+      "payload": {
+        "theme": "classic"
+      },
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    },
+    {
+      "id": "var_48ebbc751417",
+      "strategyId": "str_35d494a74748",
+      "name": "treatment",
+      "weight": 50,
+      "stickiness": "userId",
+      "payloadType": "json",
+      "payload": {
+        "theme": "bold"
+      },
+      "createdAt": "2026-09-10T01:22:47.177Z"
+    }
+  ],
+  "apiTokens": [
+    {
+      "id": "tok_5b0c33dceba4",
+      "name": "Initial owner token",
+      "type": "personal",
+      "hash": "ebbfad3dd28976adb627dc8cd12320ec386a04cd4096026b16e5a3e8837b9d48",
+      "scopes": [
+        "read",
+        "write",
+        "admin",
+        "evaluate"
+      ],
+      "userId": "usr_2f5b82ea065f",
+      "projectIds": [],
+      "environmentIds": [],
+      "createdAt": "2026-09-10T01:22:47.177Z",
+      "revokedAt": null,
+      "lastUsedAt": null
+    }
+  ],
+  "auditLogs": [],
+  "flagDependencies": [],
+  "metricsImpressions": [],
+  "sdkClients": [],
+  "resourceLimits": {
+    "maxProjects": 25,
+    "maxEnvironments": 8,
+    "maxFlagsPerProject": 200,
+    "maxStrategiesPerFlagEnvironment": 10,
+    "maxConstraintsPerStrategy": 20,
+    "maxSegments": 100,
+    "maxTokens": 200,
+    "staleFlagAgeDays": 90,
+    "evaluationRequestsPerMinute": 5000,
+    "tokenCreationsPerHour": 50
+  }
+}

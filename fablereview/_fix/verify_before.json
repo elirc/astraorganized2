@@ -1,0 +1,3914 @@
+{
+ "results": {
+  "js1-task-board": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 60.6
+  },
+  "js1-contact-book": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 61.3
+  },
+  "js1-focus-timer": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 60.0
+  },
+  "finance-dashboard": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 60.6
+  },
+  "recipeweb": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 55.7
+  },
+  "jobtrack": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 55.1
+  },
+  "newcodexjs-01-task-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 59.6
+  },
+  "newcodexjs-02-contact-book": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 59.0
+  },
+  "newcodexjs-03-expense-tracker": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 58.4
+  },
+  "newcodexjs-05-recipe-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 58.6
+  },
+  "js1-flashcards": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 65.6
+  },
+  "js1-habit-tracker": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 66.3
+  },
+  "js1-reading-list": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 67.8
+  },
+  "js1-note-vault": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 58.5
+  },
+  "js1-budget-tracker": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 65.6
+  },
+  "js1-pantry-inventory": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 65.6
+  },
+  "js1-snippet-vault": {
+   "leaked": [
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 60.7
+  },
+  "js1-room-booking": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 61.7
+  },
+  "newcodexjs-04-notes-app": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 60.6
+  },
+  "newcodexjs-06-bookmark-manager": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 57.7
+  },
+  "js1-poll-studio": {
+   "leaked": [
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 66.3
+  },
+  "js1-kanban-flow": {
+   "leaked": [
+    "Poll Studio",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 66.3
+  },
+  "js1-course-roster": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 70.4
+  },
+  "js1-event-admin": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 72.0
+  },
+  "js1-job-pipeline": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.0
+  },
+  "js1-stock-catalog": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.0
+  },
+  "js1-recipe-studio": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 72.0
+  },
+  "js1-org-explorer": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 68.7
+  },
+  "js1-mini-blog": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.0
+  },
+  "js1-pulse-analytics": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 69.3
+  },
+  "js1-support-tickets": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.2
+  },
+  "js1-issue-desk": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.7
+  },
+  "js1-forum-search": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 68.7
+  },
+  "js1-invoice-studio": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 70.2
+  },
+  "js1-asset-checkout": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 81.0
+  },
+  "js1-equipment-maintenance": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-library-lending": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-gym-membership": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-campaign-planner": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-volunteer-coordinator": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 83.2
+  },
+  "js1-learning-paths": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 80.5
+  },
+  "js1-project-risks": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-travel-requests": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 81.1
+  },
+  "js1-vendor-contracts": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 80.3
+  },
+  "js1-procurement-portal": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 83.3
+  },
+  "js1-property-rentals": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-quality-audits": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 81.1
+  },
+  "js1-patient-intake": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [
+    "server\\server.js"
+   ],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 82.5
+  },
+  "js1-grant-manager": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 81.1
+  },
+  "js1-incident-response": {
+   "leaked": [
+    "Poll Studio",
+    "Kanban Flow"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 81.0
+  },
+  "js1-legal-case-tracker": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 71.5
+  },
+  "js1-subscription-billing": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 87.8
+  },
+  "js1-field-service": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 87.8
+  },
+  "js1-research-studies": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 87.0
+  },
+  "js1-warehouse-ledger": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 63.8
+  },
+  "js1-secure-notes": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 63.3
+  },
+  "js1-live-chat": {
+   "leaked": [
+    "Questboard",
+    "DevDeck"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 62.8
+  },
+  "newcodexjs-07-blog-platform": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 90.2
+  },
+  "newcodexjs-08-kanban-board": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 90.2
+  },
+  "newcodexjs-09-job-application-tracker": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 88.0
+  },
+  "newcodexjs-10-inventory-management": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 88.0
+  },
+  "newcodexjs-11-survey-builder": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 62.6
+  },
+  "newcodexjs-12-chat-polling": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 62.1
+  },
+  "newcodexjs-13-ecommerce-storefront": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 62.1
+  },
+  "newcodexjs-14-appointment-booking": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 64.1
+  },
+  "newcodexjs-15-api-tester": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 61.7
+  },
+  "newcodexjs-16-team-project-management": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 84.1
+  },
+  "newcodexjs-17-support-ticket-system": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 79.5
+  },
+  "newcodexjs-18-learning-management-system": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 84.8
+  },
+  "newcodexjs-19-realtime-chat-platform": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 84.1
+  },
+  "newcodexjs-20-marketplace-platform": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 84.8
+  },
+  "recipeview": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 54.3
+  },
+  "calendar-jobtrack": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 55.1
+  },
+  "devdeck": {
+   "leaked": [
+    "Questboard",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 58.5
+  },
+  "job-track": {
+   "leaked": [
+    "Questboard",
+    "DevDeck",
+    "Live Chat",
+    "PostgreSQL claim without Postgres"
+   ],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 6,
+   "reviewpara": 4,
+   "variations": {
+    "items": 0,
+    "words": 111
+   },
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 50.7
+  },
+  "grokbuildmultitenantproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "netgum": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j4": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildbusinesses": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildwhiteboard": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "master3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 2,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildjira": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildsql": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "ww37": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 8,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e15": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "job-track-task-queue-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "netzen": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "ww39": {
+   "leaked": [],
+   "agentlang": [
+    "frozen manifest",
+    "root agent"
+   ],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z3-founder-crm-lite": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 2,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "job-track-live-chat-support-platform": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "ww27": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "jdtrrain2-1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z3-customer-feedback-board": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "formforge": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "meterforge": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 2,
+    "07": 4
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "master4": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 5,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "zz8": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "w24": {
+   "leaked": [],
+   "agentlang": [
+    "root agent"
+   ],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "master-6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 4,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 0,
+    "06": 5,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "ww5": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-llm-generated-helper": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "grokbuildppmproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 4,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "master2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 0,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "ww17": {
+   "leaked": [],
+   "agentlang": [
+    "frozen manifest",
+    "root agent"
+   ],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "jstrain3-0": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "grokbuildteamproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "astra2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z6": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "lucasrouter": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "borrowbox": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 3,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": true,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildantigvg": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "jstrain2-3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildcrmpyjs": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 2,
+    "06": 4,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e20": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 4,
+    "06": 1,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "d1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 3,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "grokbuildecommerceproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildsmallplates": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 0,
+    "06": 5,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "react": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildsubbox": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 2,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "nethris": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e12": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e13": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z9": {
+   "leaked": [],
+   "agentlang": [
+    "changed-file manifest",
+    "delivery preflight"
+   ],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [
+    "01: body opens with next chapter topic",
+    "02: body opens with next chapter topic",
+    "03: body opens with next chapter topic",
+    "04: body opens with next chapter topic",
+    "05: body opens with next chapter topic",
+    "06: body opens with next chapter topic"
+   ],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "campusops": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "globgame": {
+   "leaked": [],
+   "agentlang": [
+    "changed-file manifest"
+   ],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "aiheartbeat": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 5,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "netvg": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-ramp": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 2,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildgum": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 2,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "master7": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "nettrello": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "jsprojectlearn": {
+   "leaked": [],
+   "agentlang": [
+    "changed-file manifest"
+   ],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-stripe": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "astra4-2": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "appmakertrack": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "grokbuildhrproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "e14": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 3,
+    "06": 2,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "andie": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j3": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "netpastebin": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 3,
+    "06": 2,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "b1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 0,
+    "06": 2,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "j5": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 2,
+    "06": 1,
+    "07": 2
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "aiapplybot": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "buildasana": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 6,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "job-track-restaurant-kitchen-display-system": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 0,
+    "04": 1,
+    "06": 0,
+    "07": 3
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "grokbuildorderproject": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 1,
+    "04": 0,
+    "06": 0,
+    "07": 1
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 0,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "missioncontrol": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 2,
+    "04": 0,
+    "06": 2,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  },
+  "z1": {
+   "leaked": [],
+   "agentlang": [],
+   "codeblocks": {
+    "03": 3,
+    "04": 1,
+    "06": 1,
+    "07": 0
+   },
+   "chapters": [],
+   "tracelab": 1,
+   "reviewpara": 1,
+   "bom": [],
+   "glossary": false,
+   "report": false,
+   "shared_pct": 0.0
+  }
+ },
+ "fails": {
+  "leaked": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "codeblocks": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-room-booking",
+   "newcodexjs-04-notes-app",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track",
+   "grokbuildmultitenantproject",
+   "netgum",
+   "j4",
+   "buildbusinesses",
+   "buildwhiteboard",
+   "master3",
+   "buildsql",
+   "ww37",
+   "j7",
+   "e15",
+   "job-track-task-queue-system",
+   "j2",
+   "netzen",
+   "ww39",
+   "z3-founder-crm-lite",
+   "e6",
+   "job-track-live-chat-support-platform",
+   "ww27",
+   "z3-customer-feedback-board",
+   "formforge",
+   "master4",
+   "zz8",
+   "w24",
+   "master-6",
+   "z7",
+   "ww5",
+   "geminiorganized-llm-generated-helper",
+   "grokbuildppmproject",
+   "master2",
+   "ww17",
+   "jstrain3-0",
+   "grokbuildteamproject",
+   "astra2",
+   "z6",
+   "lucasrouter",
+   "borrowbox",
+   "buildantigvg",
+   "jstrain2-3",
+   "d1",
+   "grokbuildecommerceproject",
+   "buildsmallplates",
+   "react",
+   "buildsubbox",
+   "nethris",
+   "e12",
+   "e13",
+   "z9",
+   "campusops",
+   "globgame",
+   "j1",
+   "aiheartbeat",
+   "netvg",
+   "geminiorganized-opensource-upskilling-ramp",
+   "buildgum",
+   "master7",
+   "nettrello",
+   "jsprojectlearn",
+   "geminiorganized-opensource-upskilling-stripe",
+   "astra4-2",
+   "appmakertrack",
+   "grokbuildhrproject",
+   "andie",
+   "j3",
+   "b1",
+   "aiapplybot",
+   "buildasana",
+   "job-track-restaurant-kitchen-display-system",
+   "grokbuildorderproject",
+   "missioncontrol",
+   "z1"
+  ],
+  "reviewpara": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-room-booking",
+   "newcodexjs-04-notes-app",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "variations": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-room-booking",
+   "newcodexjs-04-notes-app",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "report": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-room-booking",
+   "newcodexjs-04-notes-app",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track",
+   "grokbuildmultitenantproject",
+   "netgum",
+   "j4",
+   "buildbusinesses",
+   "buildwhiteboard",
+   "master3",
+   "buildjira",
+   "buildsql",
+   "ww37",
+   "j7",
+   "e15",
+   "job-track-task-queue-system",
+   "j2",
+   "netzen",
+   "ww39",
+   "z3-founder-crm-lite",
+   "e6",
+   "job-track-live-chat-support-platform",
+   "ww27",
+   "jdtrrain2-1",
+   "z3-customer-feedback-board",
+   "formforge",
+   "meterforge",
+   "master4",
+   "zz8",
+   "w24",
+   "master-6",
+   "z7",
+   "ww5",
+   "geminiorganized-llm-generated-helper",
+   "grokbuildppmproject",
+   "master2",
+   "ww17",
+   "jstrain3-0",
+   "grokbuildteamproject",
+   "astra2",
+   "z6",
+   "lucasrouter",
+   "borrowbox",
+   "buildantigvg",
+   "jstrain2-3",
+   "buildcrmpyjs",
+   "e20",
+   "d1",
+   "grokbuildecommerceproject",
+   "buildsmallplates",
+   "react",
+   "buildsubbox",
+   "nethris",
+   "e12",
+   "e13",
+   "z9",
+   "campusops",
+   "globgame",
+   "j1",
+   "aiheartbeat",
+   "netvg",
+   "geminiorganized-opensource-upskilling-ramp",
+   "buildgum",
+   "master7",
+   "nettrello",
+   "jsprojectlearn",
+   "geminiorganized-opensource-upskilling-stripe",
+   "astra4-2",
+   "appmakertrack",
+   "grokbuildhrproject",
+   "e14",
+   "andie",
+   "j3",
+   "netpastebin",
+   "b1",
+   "j5",
+   "aiapplybot",
+   "buildasana",
+   "job-track-restaurant-kitchen-display-system",
+   "grokbuildorderproject",
+   "missioncontrol",
+   "z1"
+  ],
+  "shared>40": [
+   "js1-task-board",
+   "js1-contact-book",
+   "js1-focus-timer",
+   "finance-dashboard",
+   "recipeweb",
+   "jobtrack",
+   "newcodexjs-01-task-manager",
+   "newcodexjs-02-contact-book",
+   "newcodexjs-03-expense-tracker",
+   "newcodexjs-05-recipe-manager",
+   "js1-flashcards",
+   "js1-habit-tracker",
+   "js1-reading-list",
+   "js1-note-vault",
+   "js1-budget-tracker",
+   "js1-pantry-inventory",
+   "js1-snippet-vault",
+   "js1-room-booking",
+   "newcodexjs-04-notes-app",
+   "newcodexjs-06-bookmark-manager",
+   "js1-poll-studio",
+   "js1-kanban-flow",
+   "js1-course-roster",
+   "js1-event-admin",
+   "js1-job-pipeline",
+   "js1-stock-catalog",
+   "js1-recipe-studio",
+   "js1-org-explorer",
+   "js1-mini-blog",
+   "js1-pulse-analytics",
+   "js1-support-tickets",
+   "js1-issue-desk",
+   "js1-forum-search",
+   "js1-invoice-studio",
+   "js1-asset-checkout",
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-learning-paths",
+   "js1-project-risks",
+   "js1-travel-requests",
+   "js1-vendor-contracts",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-quality-audits",
+   "js1-patient-intake",
+   "js1-grant-manager",
+   "js1-incident-response",
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "bom": [
+   "js1-equipment-maintenance",
+   "js1-library-lending",
+   "js1-gym-membership",
+   "js1-campaign-planner",
+   "js1-volunteer-coordinator",
+   "js1-project-risks",
+   "js1-procurement-portal",
+   "js1-property-rentals",
+   "js1-patient-intake"
+  ],
+  "tracelab": [
+   "js1-legal-case-tracker",
+   "js1-subscription-billing",
+   "js1-field-service",
+   "js1-research-studies",
+   "js1-warehouse-ledger",
+   "js1-secure-notes",
+   "js1-live-chat",
+   "newcodexjs-07-blog-platform",
+   "newcodexjs-08-kanban-board",
+   "newcodexjs-09-job-application-tracker",
+   "newcodexjs-10-inventory-management",
+   "newcodexjs-11-survey-builder",
+   "newcodexjs-12-chat-polling",
+   "newcodexjs-13-ecommerce-storefront",
+   "newcodexjs-14-appointment-booking",
+   "newcodexjs-15-api-tester",
+   "newcodexjs-16-team-project-management",
+   "newcodexjs-17-support-ticket-system",
+   "newcodexjs-18-learning-management-system",
+   "newcodexjs-19-realtime-chat-platform",
+   "newcodexjs-20-marketplace-platform",
+   "recipeview",
+   "calendar-jobtrack",
+   "devdeck",
+   "job-track"
+  ],
+  "glossary": [
+   "grokbuildmultitenantproject",
+   "netgum",
+   "j4",
+   "buildbusinesses",
+   "buildwhiteboard",
+   "master3",
+   "buildjira",
+   "buildsql",
+   "ww37",
+   "j7",
+   "e15",
+   "job-track-task-queue-system",
+   "j2",
+   "netzen",
+   "ww39",
+   "z3-founder-crm-lite",
+   "e6",
+   "job-track-live-chat-support-platform",
+   "ww27",
+   "jdtrrain2-1",
+   "z3-customer-feedback-board",
+   "formforge",
+   "meterforge",
+   "master4",
+   "zz8",
+   "w24",
+   "master-6",
+   "z7",
+   "ww5",
+   "geminiorganized-llm-generated-helper",
+   "grokbuildppmproject",
+   "master2",
+   "ww17",
+   "jstrain3-0",
+   "grokbuildteamproject",
+   "astra2",
+   "z6",
+   "lucasrouter",
+   "buildantigvg",
+   "jstrain2-3",
+   "buildcrmpyjs",
+   "e20",
+   "d1",
+   "grokbuildecommerceproject",
+   "buildsmallplates",
+   "react",
+   "buildsubbox",
+   "nethris",
+   "e12",
+   "e13",
+   "z9",
+   "campusops",
+   "globgame",
+   "j1",
+   "aiheartbeat",
+   "netvg",
+   "geminiorganized-opensource-upskilling-ramp",
+   "buildgum",
+   "master7",
+   "nettrello",
+   "jsprojectlearn",
+   "geminiorganized-opensource-upskilling-stripe",
+   "astra4-2",
+   "appmakertrack",
+   "grokbuildhrproject",
+   "e14",
+   "andie",
+   "j3",
+   "netpastebin",
+   "b1",
+   "j5",
+   "aiapplybot",
+   "buildasana",
+   "job-track-restaurant-kitchen-display-system",
+   "grokbuildorderproject",
+   "missioncontrol",
+   "z1"
+  ],
+  "agentlang": [
+   "ww39",
+   "w24",
+   "ww17",
+   "z9",
+   "globgame",
+   "jsprojectlearn"
+  ],
+  "chapters": [
+   "z9"
+  ]
+ }
+}

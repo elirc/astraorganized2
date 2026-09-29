@@ -1,0 +1,157 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/j4",
+  "id": "06325f8ab263",
+  "summary": [
+    "Adds question create, list, update and confirmed delete with stable identity and durable saves before in-memory publication.",
+    "Uses candidate snapshots, cooperating file locks, stale-byte comparisons and atomic replacement; a versioned UTF-8/Base64 format supports special text and valid empty banks while preserving legacy read compatibility.",
+    "Strengthens domain immutability, duplicate-ID and answer validation, whole-file corruption handling and the supported A-Z choice range.",
+    "Handles EOF during forms and quizzes without partial mutation or crashes; partial results distinguish answered and unanswered questions.",
+    "Adds a JDK 17 test runner, 28 regression cases, nine separate-process checks including competing JVM saves, and nine detailed CRUD upskilling documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j4/results.json",
+    "expectedTests": 37,
+    "command": "run.ps1 -Test; nine process scenarios via verify_j4.py, including two gated JVM writers and persisted CLI reloads",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files and separate JVM processes"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 37,
+    "javaRegressionTests": 28,
+    "separateProcessScenarios": 9,
+    "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+    "checks": [
+      "created question survives separate-process reload with empty explanation",
+      "full update persists under the same question id",
+      "cancelled deletion preserves exact bank bytes",
+      "confirmed deletion persists across processes",
+      "EOF during form discards the incomplete command",
+      "EOF during quiz reports partial scoring without a crash",
+      "empty bank reloads and quiz offers create guidance",
+      "corrupt startup preserves the authoritative file",
+      "two gated JVM editors produce one saved winner and one rejected stale or locked command"
+    ],
+    "limits": [
+      "Local CLI and file storage; no HTTP, browser, database or power-loss testing. Non-cooperating editors do not honor advisory locks."
+    ]
+  },
+  "courseWords": 4003,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "a888b9df89402a815bdb15d30c5280b090be11655ab4cc2299ce748d44cd6ed4",
+      "after_sha256": "06e2b4db1e0786a0f5e73e3852bcedb48c0d8b5ee833481ab86dc2860b5d608e"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "d8f40823b7e598a425a9d7c788d8d4419fbd745371380bab2f638ff064994858",
+      "after_sha256": "b3ed1607a45cb37691e3888026991921065e364279091a1c6ab34bbef16e9515"
+    },
+    {
+      "file": "run.ps1",
+      "before_sha256": null,
+      "after_sha256": "c1108a85f6f899b916e8ff3e7a02ad1f83053707ad7248ac029cf657a02cb66b"
+    },
+    {
+      "file": "src/quiz/App.java",
+      "before_sha256": "a82c20cdb4584b9c43a1fb36dd1f281e3453ff5b74a99c69b86b93ccb4867ede",
+      "after_sha256": "2f88b6e43a10f8fc83e6b244bc20efab62fa4956f9b5bde71c958042c302acb5"
+    },
+    {
+      "file": "src/quiz/Question.java",
+      "before_sha256": "23c6066fe7b0e2bbdd8a886fdb4a0935fc7048bd6c79022293e6eff60ffd9970",
+      "after_sha256": "aff75036a08237dd3a42bc105ebfb92442d9548c98ad63229478686b08452e29"
+    },
+    {
+      "file": "src/quiz/QuestionAttempt.java",
+      "before_sha256": "5e0cdb7e91766d122882efc6fa61d6e4820bfa6b99ce059d30d72dca4d993708",
+      "after_sha256": "e4b17d509946100b0bc7def48fbad59ba7a8a7a83e6ddb1608a7d25e5f46689c"
+    },
+    {
+      "file": "src/quiz/QuestionBank.java",
+      "before_sha256": null,
+      "after_sha256": "7006a1deb1235724f78f2431595916746f934465d1f3f5b2df4095328d2a4a37"
+    },
+    {
+      "file": "src/quiz/QuestionFileException.java",
+      "before_sha256": "4aab30169a24e8e8079e0ea319c467244b7217dfa988f3e44c1024a8c461670e",
+      "after_sha256": "702233fe22eade9bf75eb09aea8aea8340e5618b7725ba066e88bda99fb4f2a5"
+    },
+    {
+      "file": "src/quiz/QuestionLoader.java",
+      "before_sha256": "b4ed12cfba9e34b5b8cd152453532f31ff7046b025bb1fc79ce15ed5222f9ef9",
+      "after_sha256": "555d24c4ee88e67e37ddd4d422c5dffddd595fd1ede995db59aa3e3f199d1055"
+    },
+    {
+      "file": "src/quiz/QuizEngine.java",
+      "before_sha256": "11c8e6e6a39fab6c96147651b50922227b1ae2be477119b52df9ead1011fa1d5",
+      "after_sha256": "a42ac39c772bf7ec702ae07137dad639214ce96bc827984208a528e051da5072"
+    },
+    {
+      "file": "src/quiz/QuizResult.java",
+      "before_sha256": "e4aa4a0c85dff29df5edc6d15188637a501b859cb4ad6f9530ccd4e805750445",
+      "after_sha256": "dd26792214fd5a5485b7ff1d8b5c34ac08a80a5015f81ddd0806339042d7fae2"
+    },
+    {
+      "file": "test/quiz/QuestionBankTest.java",
+      "before_sha256": null,
+      "after_sha256": "8831b9be2cc4184666b983d267278ba42c3d7f7977902b61c1f0e3bc351bb5fc"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d681fb84090450a95a9d11ac7c498a1147cd9f036431b3eae3cba1611bf39f48"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9417ac49c1cd3cd090910e72deebf2f05621338870594e249a7d0a62c96e691c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "603df08350ab76bf646238a86bf7d181333b9aa114a87ffb0e604bac406c7439"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c0f453fcd701cc55db31d8da667dc13ce543d5cad1eeea7ff59f1a326eae3033"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1e4a1c46044ae91484fcc823ede47f64f6d81d2736ddc17fb6bbbd1713ae49f6"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "48c5917dce7c45aa7ce45e4ee665a85c2dc255cc0c747daad894d4d957850e79"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "267f3d8a48fa8f3ff77710a9fe96d1c06bb91e0c8545de32a8e8b8defe841a80"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a6841fe1cc13f7a2885e7d6dc6a547fae4e51fdaf1b145271f5e3d9e46990653"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c193515f38c0c8b1a7b4b1597119a447663aeb3d1ca5f461749ada54137872ba"
+    }
+  ],
+  "limits": [
+    "Local CLI and file storage; no HTTP, browser, SQL database, authentication or persisted quiz-attempt history.",
+    "Sidecar locks coordinate cooperating writers; non-cooperating external editors, network filesystems and power-loss durability are outside verification.",
+    "First accepted edit converts legacy data to the versioned format; older binaries cannot read it. Original example data was not modified.",
+    "Startup failures are reported in text without a distinct nonzero application exit status."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T05:47:05.103634+00:00"
+}

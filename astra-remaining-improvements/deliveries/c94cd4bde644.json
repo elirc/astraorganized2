@@ -1,0 +1,140 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz3",
+  "id": "c94cd4bde644",
+  "summary": [
+    "Reject duplicate tag identities in ticket create and metadata update commands.",
+    "Preserve valid empty and omitted tag semantics while failing before relation writes."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c94cd4bde644/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 7,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz3",
+        "id": "c94cd4bde644",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-schema.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c94cd4bde644",
+        "environmentOverrides": {
+          "CRUD_ZOD_PATH": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/e0e5886e8464/node_modules/zod"
+        },
+        "startedAt": "2026-09-21T23:29:27.603160+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-schema.log",
+        "pid": 30516,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:30:15.039635+00:00",
+        "elapsedSeconds": 47.43
+      }
+    ],
+    "limits": [
+      "Runtime schema tests used real Zod 4.3.6 through an explicit shared-install override; normal runner resolves project-local zod.",
+      "Vitest, full typecheck/build, HTTP, authorization and Prisma/database integration were not executed."
+    ]
+  },
+  "courseWords": 2853,
+  "courseFiles": 9,
+  "courseLinksChecked": 29,
+  "files": [
+    {
+      "file": "src/lib/validation/ticket-schemas.ts",
+      "before_sha256": "d0d74b4f726c93abcc71a98af1b77b274e4f7da782222fa7a6653dbb2256f4a4",
+      "after_sha256": "77b60727748791337b5283ea0f75eb98fbb348eefd32fa819ba859d7b3fcf0eb"
+    },
+    {
+      "file": "src/tests/unit/ticket-schemas.test.ts",
+      "before_sha256": "3bd8ded8c4dfd2f255ba00d0206f73859f62663fc579af7e5c0ac454330a203b",
+      "after_sha256": "18943b62decfed9cef0f612839a2694be127d12425d76c5ea52ca540b1addc01"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "tests/runtime-schema.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f6b3c8f8fd5ecde8e375971ce6e7a7129410f74a24da379bdcb59ff6a4211989"
+    },
+    {
+      "file": "astraupskill/snapshots/src/lib/validation/ticket-schemas.ts",
+      "before_sha256": null,
+      "after_sha256": "d0d74b4f726c93abcc71a98af1b77b274e4f7da782222fa7a6653dbb2256f4a4"
+    },
+    {
+      "file": "astraupskill/snapshots/src/tests/unit/ticket-schemas.test.ts",
+      "before_sha256": null,
+      "after_sha256": "3bd8ded8c4dfd2f255ba00d0206f73859f62663fc579af7e5c0ac454330a203b"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-schema.log",
+      "before_sha256": null,
+      "after_sha256": "4736956643a6ded2f950d4fad47bf9416e103c02c4d7a3e7001232924c91e6cb"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "8a26a7681da2dbecb26c374759594cec44f9aa9d17cf1c4e2cb655c7936a76ad"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "1f275fe008293275b66ef6242c6bf2ccb91346a0f56dbf0affff0529e59a4e6c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "731371ec5a2d63599c670a53ea497ba1a5bb2a1cfeebf1ba08bcf1d8f284fa07"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a1f1d129bd34c949338bc15de57e6162aac27e1466440928bc22035d0dab1b76"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "90c5f77f4222a720781951fa015edaf0db97e19873311507abd55eae53f1f644"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "95d7fe34f8cb6b9fe9da4c7d3ff0e63f4b01e1fd1be8749ad367d5387e72a05d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "dd4940180f69874ad8d1030ae30e4a863a70e1b868bb1038ab9b38dbbe6aa62e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8a293d8f1fc0b4cdc422ecff058a76136306fef3aba43cd1af6e5e8f5197158c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "2974fda3da6a45be2a073506862e34999c9992cae9fa1801d513a342bec144c0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "51b3666d95cb2734c24dd75343a318afa16ed256c488fe5ff5deac416447222a"
+    }
+  ],
+  "limits": [
+    "Runtime schema tests used real Zod 4.3.6 through an explicit shared-install override; normal runner resolves project-local zod.",
+    "Vitest, full typecheck/build, HTTP, authorization and Prisma/database integration were not executed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:32:14.757396+00:00"
+}

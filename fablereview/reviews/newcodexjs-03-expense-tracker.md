@@ -1,0 +1,49 @@
+# newcodexJS/03-expense-tracker — Fable review
+
+- **Path:** `newcodexJS/03-expense-tracker`  ·  **Wave:** 1  ·  **Stack:** Node + Express + Knex + PostgreSQL (server), Vite client  ·  **Batch:** B01
+- **Astra's change (one line):** Fixed the broken category-report query by adding `.clearSelect()` before `groupBy`/`SUM`/`COUNT` (the inherited row projection made the grouped query invalid), and added real input validation to the service layer — `validDate`, `validMonth` and `validFilters` (reversed ranges and non-integer `category_id` rejected before SQL), plus a money check that rejects non-finite amounts, values over 99,999,999.99 and anything with more than two decimal places — then proved monthly/daily/category totals reconcile across a leap-day fixture.
+- **Course size:** 5,567 words across 9 files  ·  **Tests claimed:** 3  ·  **Tests found on disk:** 3 (`server/test/reports.test.cjs`, plus harness `server/test/database.cjs`)
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 5 | 4 | 5 | 4 | 5 | 4 | 3 | 4.4 |
+
+**Verdict:** KEEP    **Path role:** core
+
+## What Astra did well
+- The `.clearSelect()` fix is a real bug fix, not a cosmetic edit, and the course explains *why* from first principles rather than as a Knex trick: "A grouped query changes the meaning of a row. Before grouping, a row represents an expense. After grouping by category, it represents a category summary. Raw expense fields no longer have one well-defined value, which is why clearing the inherited SELECT list is necessary." That is the SQL concept a junior actually needs.
+- The fixture is hand-calculated and hostile in the right way. Five rows spanning 2024-01-31, 2024-02-01, 2024-02-15, 2024-02-29 and 2024-03-01 mean a naive "30-day month" or an off-by-one boundary fails immediately. The test asserts February totals 35.00 over 3 expenses, Food 30.30, Travel 4.70, and that the 99 and 777 adjacent-month rows never leak in.
+- Test 2 cross-validates three independent code paths against each other — `byCategory`, `monthlySummary` and `dailyTrend` — and does the reconciliation in integer cents (`daily.reduce((sum, x) => sum + Math.round(x.total * 100), 0) === 3500`) rather than comparing floats. The course explicitly justifies this: "A hand-calculated fixture is a stronger oracle than comparing two functions that share the same bug."
+- Validation is deliberately synchronous so it can be asserted without promise plumbing: the export at `expenseService.js:202` is `monthlySummary: (month) => model.monthlySummary(validMonth(month))`, which is why `assert.throws(() => service.monthlySummary('2024-13'))` works. That is a thoughtful design decision, not an accident.
+- `02-CONCEPTS.md` documents a genuine inconsistency honestly instead of hiding it: "Monthly windows are half-open… Category range filters currently include both supplied start_date and end_date." The tests match that description.
+- `VERIFICATION.md` lists only `tests` and `build` and correctly omits any browser-check row, matching `implementation/browser-checks.json` (projects 01–06 only). Claimed 3 test cases and 5,567 words both match disk.
+
+## Problems found (evidence required)
+- **[D2]** The money validator reuses one error message for three different rejections. `expenseService.js:14` throws `"Amount must be greater than zero"` for a non-finite amount, for a value above 99,999,999.99, and for `1.001` — none of which is "not greater than zero". A junior debugging a rejected `1.001` gets an actively misleading message, and the course, which spends a paragraph on precise error feedback, never notices.
+- **[D2]** The half-open/inclusive inconsistency the concepts chapter admits is left in the code. `monthlySummary` uses a half-open month window while `byCategory` treats `end_date` as inclusive, so the same calendar month expressed two ways can return two different answers. Documenting a known correctness wart is better than hiding it, but it should be Exercise 1, not a footnote.
+- **[D2]** `db.raw("SUM(expenses.amount)::float as total")` casts a Postgres `numeric` column to floating point at the boundary. The course flags this ("the API currently casts results to floating-point numbers") but the change ships it anyway and the test works around it with `Math.round(x.total * 100)`. The correct fix — return `::text` or integer cents — is left entirely to the learner.
+- **[D8]** Batch-wide template. `02-CONCEPTS.md` differs from `JS1/task-board/astraupskill/02-CONCEPTS.md` in exactly 4 lines out of 41; `05-PRACTICE.md` shares 42 of 47 with the other courses; `06-SOLUTIONS-AND-REVIEW.md` repeats the same "Review: Demonstrate an ordinary case and a case that would break a naive implementation…" line under all four exercises in all ten projects.
+- **[D8/D1]** `04-TESTING-AND-DEBUGGING.md:37` carries the browser-project paragraph — "For the plain browser projects, jsdom runs the actual app.js against its HTML… and a controllable timer clock" — in a project with no jsdom and no `app.js`. Line 7 re-prints the README setup paragraph including its circular "see chapter 4" pointer, inside chapter 4.
+- **[D3]** `03-WORKED-CHANGE.md`'s "Three variations to work through" names no actual variations, despite a fixture that is begging for them.
+- **[D5]** Requires a local PostgreSQL and a hand-created `astra_test_*` database with `CREATE SCHEMA` rights; no container fallback offered.
+
+## Spot-checks performed
+- Course claim (`03-WORKED-CHANGE.md`): excerpt of `byCategory` from `server/src/models/expenseModel.js` "near line 166". -> `grep -n "async function byCategory" server/src/models/expenseModel.js` returns `166`, and the body matches including `.clearSelect()` and both `db.raw` casts. -> **matches.**
+- Change claim: `.clearSelect()` is the actual diff. -> `diff` of `implementation/backups/09/server/src/models/expenseModel.js` against the current file shows a single added line, `+    .clearSelect()`, at that location. -> **matches** (and confirms this was a genuine pre-existing defect, not an invented one).
+- Course claim (`VERIFICATION.md`): "February total is 35.00 across three expenses; Food is 30.30 and Travel is 4.70. Adjacent-month rows must not leak in." -> `server/test/reports.test.cjs` seeds exactly those five rows and asserts `summary.total_spent === 35`, `summary.expense_count === 3`, Food `30.3`, Travel `4.7`. -> **matches.**
+- Course claim (`README.md` Scope): "Report inputs reject malformed months, impossible dates and reversed ranges." -> `expenseService.js:170-186` (`validDate` rejects `2024-02-30` via the `toISOString().slice(0,10) !== value` round-trip; `validMonth` rejects `2024-13` via `(0[1-9]|1[0-2])`; `validFilters` rejects `start_date > end_date`); test 3 asserts all three throw. -> **matches.**
+- Honesty check: is `assert.throws` (synchronous) correct against an async service? -> `expenseService.js:202` wraps the model call so `validMonth` throws synchronously before any promise is created. The test is sound, not accidentally passing. -> **matches.**
+- Delivery claim: 3 test cases, 5,567 words. -> 3 `test(` blocks; `wc -w astraupskill/*` totals 5,567. -> **matches.**
+
+## Improvements needed (ordered, concrete, actionable)
+1. Split the overloaded error at `server/src/services/expenseService.js:14` into three messages — "Amount must be a finite number", "Amount must be greater than zero", "Amount may have at most two decimal places", "Amount must not exceed 99,999,999.99" — and assert each string in test 3. The course preaches precise feedback while shipping the opposite. Effort: S.
+2. Promote the half-open vs inclusive inconsistency from a `02-CONCEPTS.md` footnote to Exercise 1 in `05-PRACTICE.md`, with an acceptance test: the same February expressed as `monthlySummary('2024-02')` and `byCategory({start_date:'2024-02-01', end_date:'2024-03-01'})` must not double-count March 1. Effort: S.
+3. Add the money-representation exercise the course gestures at: change `SUM(expenses.amount)::float` to `::text` (or integer cents) in `expenseModel.js:170`, update the serializer, and remove the `Math.round(x.total * 100)` workaround from the test. Effort: M.
+4. Fix `04-TESTING-AND-DEBUGGING.md`: delete the jsdom/`app.js`/timer paragraph at line 37 and the duplicated setup paragraph at line 7 with its circular "see chapter 4" pointer. Effort: S.
+5. Replace "Three variations to work through" with three concrete fixtures: a 2023-02-29 date (non-leap year), an expense at exactly 2024-03-01T00:00, and an empty category so `byCategory` must return a stable zero rather than `null`. Effort: S.
+6. Add a Docker fallback for the test database to chapter 4 and state the `CREATE SCHEMA` privilege requirement. Effort: S.
+
+## One-paragraph summary for the index
+A tight, genuinely useful SQL lesson: a grouped reporting query was inheriting the row-level `SELECT` list and producing wrong results, and the fix — one `.clearSelect()` call — is used to teach why grouping changes what a row *means*, not as a Knex incantation. The validation work alongside it is solid (real calendar dates, valid months, reversed ranges and bad `category_id` all rejected before any SQL runs), and the leap-day fixture is hand-calculated so that monthly, daily and category totals must reconcile to 3,500 cents across a February that a naive 30-day assumption would get wrong. The course is honest about what it did not fix — the inclusive-versus-half-open mismatch between two report endpoints, and the `::float` cast on a decimal money column — but leaves both in the code, and one error message covers three unrelated rejection reasons. Take it after the contact-book course; budget three to four hours and a running PostgreSQL.

@@ -1,0 +1,22 @@
+{
+  "id": "5df5911fc343",
+  "project": "_Organized Desktop/05 Numbered Experiments/w23",
+  "summary": [
+    "Preserve the reviewed ticket status production path and add a runnable six-case fault-injection teaching lab.",
+    "Exercise actual transition policy and error classes, scoped repository arguments, transaction-handle propagation, successful side-effect order and refusal/failure boundaries."
+  ],
+  "changedFiles": [
+    "tests/runtime-ticket-boundary-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5df5911fc343/results-crud-b04.json"
+  },
+  "limits": [
+    "No production source was changed. The lab executes actual ticket service, status policy and error classes with explicit permission, validation, document-builder, repository and transaction adapters.",
+    "Six runtime cases do not execute native Drizzle/PostgreSQL, HTTP, real authorization policy, indexing worker or transaction rollback. An empty update result is simulated, not proof of concurrent mutation safety."
+  ]
+}

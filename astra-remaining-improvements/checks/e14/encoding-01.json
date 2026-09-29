@@ -1,0 +1,12 @@
+{
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--disable-warnings",
+    "tests/test_http_boundary.py"
+  ],
+  "exitCode": 0,
+  "seconds": 71.1
+}

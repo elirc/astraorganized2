@@ -1,0 +1,122 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww55",
+  "id": "a80284ee08de",
+  "summary": [
+    "Guard moderation resolution with an expected current status.",
+    "Prevent stale concurrent actions from creating a second terminal audit.",
+    "Document transaction and demo fixture limits with runnable service tests."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a80284ee08de/results.json",
+    "expectedSuites": 0,
+    "expectedTests": 6
+  },
+  "testResults": {
+    "passed": true,
+    "total": 6,
+    "passedTests": 6,
+    "failed": 0,
+    "notExecuted": 0,
+    "evidence": [
+      "ww55_unit_4.json",
+      "ww55_typecheck_5.json",
+      "ww55_build_1.json"
+    ]
+  },
+  "courseWords": 5743,
+  "courseFiles": 9,
+  "courseLinksChecked": 0,
+  "files": [
+    {
+      "file": "src/repositories/moderationCaseRepository.ts",
+      "before_sha256": "a0f01aa11e2de338665298f638b996c7efffd15c3892f9c3ed6c1c304e798aa3",
+      "after_sha256": "360036b6ac3d7323c68a8cf208a9d191e662ccbd295f9eda41bfd26c471e191e"
+    },
+    {
+      "file": "src/services/moderationService.ts",
+      "before_sha256": "ac8610dd49505c08eb29f16c60878c0caabd1c8b2c0867a3a1ae7b4442178886",
+      "after_sha256": "caf7923d47b9f9308e92c5c45a338b5ff8744e87d711cd67dfa7345e0b736d44"
+    },
+    {
+      "file": "tests/unit/moderationService.test.ts",
+      "before_sha256": null,
+      "after_sha256": "bda1ac2b0124a9b6e980fcd4c2db99ef391e2a83e01e8f942cb89d39c8fd26b5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__moderationService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ac8610dd49505c08eb29f16c60878c0caabd1c8b2c0867a3a1ae7b4442178886"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__moderationCaseRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a0f01aa11e2de338665298f638b996c7efffd15c3892f9c3ed6c1c304e798aa3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__moderationSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "38d8004c78a6a5a413927912f9e827299000148056e4d16f6095aa788e5d9d32"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__savedSearchService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ae2a7710315796f15b58daccc056d8ce1720939379118bee00302dccc29abc7a"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__postingService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0454acff1a99a6f648c40c1d65b9967028900b08bd5278496774fe15663fd526"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "44bcfbafa5c68f8cc74e24fa882ae9f9de01f2fe60fa0eb8ba92a054e6032526"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "230888ece1b6ab2c190eb7fb9c01817589077a772a83813cb559e81d55493831"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0af901c817fac8fa124b7b14ac7c1e7e1fda97b42e3a98412ff7ab7e5c078f43"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "d14860effe5b39fb50c1cc6e4557f70e48768fe18deae17e7a71f3688b09b965"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "60af3abf4bb4a631db1e7d45589dffce756f7f11bbc87d6bd48497bf9749274b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "afdc4cd9a72769a067166810285d9a7554803f9e75f61df66d792efd3b64c01e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ca5a4595e748aadf736a23071bec87c38de784812113c71917d7246b44747918"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4c4357b6eb07ca6a1c4743582cb525fe0c4263af1f6cf23f171fffa842b2f963"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2aeeeee9910decb6bf501054d0b39d9fbc2030933c525a4f438e1c7fc971b817"
+    }
+  ],
+  "limits": [
+    "The fake transaction helper does not prove database rollback.",
+    "The demo session mechanism and fixtures are training-only."
+  ],
+  "status": "prepared"
+}

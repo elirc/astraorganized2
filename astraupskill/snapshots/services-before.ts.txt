@@ -1,0 +1,690 @@
+import { and, desc, eq, gt, isNull } from "drizzle-orm";
+import { db } from "../db";
+import {
+  boardEvents,
+  boardMembers,
+  boardTemplates,
+  boards,
+  cards,
+  columns,
+  outbox,
+  webhookSubscriptions
+} from "../db/schema";
+import { getInitialRank, rankAfter, rankBetween } from "../lexorank";
+import { canEditBoard, canMoveCards } from "./permissions";
+import { BoardRole } from "../types";
+import { getBoardRole } from "./membership";
+
+type NewBoardEvent = typeof boardEvents.$inferInsert;
+type BoardAggregateCard = {
+  id: string;
+  title: string;
+  description: string | null;
+  dueAt: Date | null;
+  orderKey: string;
+  version: number;
+  columnId: string;
+  createdAt: Date;
+  updatedAt: Date;
+};
+type BoardAggregateColumn = {
+  id: string;
+  title: string;
+  orderKey: string;
+  wipLimit: number | null;
+  cards: BoardAggregateCard[];
+};
+type BoardAggregate = {
+  id: string;
+  title: string;
+  description: string | null;
+  version: number;
+  isArchived: boolean;
+  columns: BoardAggregateColumn[];
+};
+
+export class DomainConflictError extends Error {
+  constructor(
+    message: string,
+    public serverVersion: number,
+    public clientVersion: number
+  ) {
+    super(message);
+    this.name = "DomainConflictError";
+  }
+}
+
+export function toCardPayload(value: unknown) {
+  return value as Record<string, unknown>;
+}
+
+async function getBoardRoleForUser(boardId: string, actorId: string): Promise<BoardRole> {
+  const role = await getBoardRole(boardId, actorId);
+  if (!role) throw new Error("Board access denied");
+  return role;
+}
+
+function assertCanView(role: BoardRole | null): role is BoardRole {
+  return role !== null;
+}
+
+function assertCanEdit(role: BoardRole): void {
+  if (!canEditBoard(role)) throw new Error("Permission denied");
+}
+
+function assertCanMove(role: BoardRole): void {
+  if (!canMoveCards(role)) throw new Error("Permission denied");
+}
+
+async function appendBoardEvent(
+  tx: typeof db,
+  params: Omit<NewBoardEvent, "version"> & { actorId: string }
+): Promise<number> {
+  const [board] = await db
+    .select({ version: boards.version })
+    .from(boards)
+    .where(eq(boards.id, params.boardId))
+    .limit(1);
+  if (!board) {
+    throw new Error("Board not found");
+  }
+
+  const nextVersion = board.version + 1;
+
+  await tx.update(boards).set({ version: nextVersion, updatedAt: new Date() }).where(eq(boards.id, params.boardId));
+
+  const [event] = await tx
+    .insert(boardEvents)
+    .values({
+      boardId: params.boardId,
+      cardId: params.cardId,
+      actorId: params.actorId,
+      type: params.type,
+      version: nextVersion,
+      payload: toCardPayload(params.payload)
+    })
+    .returning({ id: boardEvents.id });
+
+  const subscriptions = await tx
+    .select({ targetUrl: webhookSubscriptions.targetUrl })
+    .from(webhookSubscriptions)
+    .where(eq(webhookSubscriptions.boardId, params.boardId));
+
+  if (subscriptions.length > 0) {
+    await tx.insert(outbox).values(
+      subscriptions.map((sub) => ({
+        boardEventId: event.id,
+        targetUrl: sub.targetUrl,
+        payload: {
+          eventId: event.id,
+          boardId: params.boardId,
+          cardId: params.cardId ?? null,
+          actorId: params.actorId,
+          type: params.type,
+          payload: params.payload,
+          version: nextVersion
+        },
+        nextAttemptAt: new Date()
+      }))
+    );
+  }
+
+  return nextVersion;
+}
+
+export async function createBoard(params: {
+  title: string;
+  description?: string | null;
+  actor: { id: string; name: string; email: string };
+}) {
+  return db.transaction(async (tx) => {
+    const [board] = await tx
+      .insert(boards)
+      .values({
+        title: params.title,
+        description: params.description ?? null
+      })
+      .returning({ id: boards.id, title: boards.title, description: boards.description, version: boards.version, isArchived: boards.isArchived });
+
+    await tx.insert(boardMembers).values({
+      boardId: board.id,
+      userId: params.actor.id,
+      role: "owner"
+    });
+
+    const seedColumns = ["Backlog", "In Progress", "Done"];
+    let previous: string | undefined;
+    for (const columnTitle of seedColumns) {
+      const orderKey = previous ? rankAfter(previous) : getInitialRank();
+      previous = orderKey;
+      await tx.insert(columns).values({
+        boardId: board.id,
+        title: columnTitle,
+        orderKey,
+        wipLimit: null
+      });
+    }
+
+    return board;
+  });
+}
+
+export async function loadBoardSnapshot(boardId: string, actorId: string): Promise<BoardAggregate> {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  if (!assertCanView(role)) throw new Error("Permission denied");
+
+  const [board] = await db
+    .select({
+      id: boards.id,
+      title: boards.title,
+      description: boards.description,
+      version: boards.version,
+      isArchived: boards.isArchived
+    })
+    .from(boards)
+    .where(eq(boards.id, boardId))
+    .limit(1);
+
+  if (!board) throw new Error("Board not found");
+
+  const boardColumns = await db
+    .select()
+    .from(columns)
+    .where(and(eq(columns.boardId, boardId), isNull(columns.archivedAt)))
+    .orderBy(columns.orderKey);
+
+  const boardCards = await db
+    .select({
+      id: cards.id,
+      title: cards.title,
+      description: cards.description,
+      dueAt: cards.dueAt,
+      orderKey: cards.orderKey,
+      version: cards.version,
+      columnId: cards.columnId,
+      createdAt: cards.createdAt,
+      updatedAt: cards.updatedAt
+    })
+    .from(cards)
+    .where(and(eq(cards.boardId, boardId), eq(cards.isArchived, false)))
+    .orderBy(cards.orderKey);
+
+  const byColumn = new Map<string, BoardAggregateCard[]>();
+  for (const card of boardCards) {
+    const list = byColumn.get(card.columnId) ?? [];
+    list.push(card);
+    byColumn.set(card.columnId, list);
+  }
+
+  return {
+    id: board.id,
+    title: board.title,
+    description: board.description,
+    version: board.version,
+    isArchived: board.isArchived,
+    columns: boardColumns.map((column) => ({
+      id: column.id,
+      title: column.title,
+      orderKey: column.orderKey,
+      wipLimit: column.wipLimit,
+      cards: byColumn.get(column.id) ?? []
+    }))
+  };
+}
+
+export async function listAuditLog(boardId: string, actorId: string, afterVersion?: number) {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  if (!assertCanView(role)) throw new Error("Permission denied");
+
+  return db
+    .select({
+      id: boardEvents.id,
+      type: boardEvents.type,
+      cardId: boardEvents.cardId,
+      actorId: boardEvents.actorId,
+      payload: boardEvents.payload,
+      version: boardEvents.version,
+      createdAt: boardEvents.createdAt
+    })
+    .from(boardEvents)
+    .where(
+      afterVersion
+        ? and(eq(boardEvents.boardId, boardId), gt(boardEvents.version, afterVersion))
+        : eq(boardEvents.boardId, boardId)
+    )
+    .orderBy(desc(boardEvents.version));
+}
+
+export async function createCard(params: {
+  boardId: string;
+  columnId: string;
+  title: string;
+  actorId: string;
+  description?: string | null;
+  dueAt?: Date | null;
+}) {
+  const role = await getBoardRoleForUser(params.boardId, params.actorId);
+  assertCanEdit(role);
+
+  const [column] = await db
+    .select({ id: columns.id })
+    .from(columns)
+    .where(and(eq(columns.id, params.columnId), eq(columns.boardId, params.boardId)))
+    .limit(1);
+  if (!column) throw new Error("Column does not belong to board");
+
+  const [lastCard] = await db
+    .select({ orderKey: cards.orderKey })
+    .from(cards)
+    .where(and(eq(cards.boardId, params.boardId), eq(cards.columnId, params.columnId)))
+    .orderBy(desc(cards.orderKey))
+    .limit(1);
+
+  const orderKey = lastCard ? rankAfter(lastCard.orderKey) : getInitialRank();
+
+  return db.transaction(async (tx) => {
+    const [created] = await tx
+      .insert(cards)
+      .values({
+        boardId: params.boardId,
+        columnId: params.columnId,
+        title: params.title,
+        description: params.description ?? null,
+        dueAt: params.dueAt ?? null,
+        orderKey,
+        createdBy: params.actorId
+      })
+      .returning({
+        id: cards.id,
+        columnId: cards.columnId,
+        title: cards.title,
+        description: cards.description,
+        orderKey: cards.orderKey,
+        version: cards.version
+      });
+
+    const version = await appendBoardEvent(tx, {
+      boardId: params.boardId,
+      actorId: params.actorId,
+      cardId: created.id,
+      type: "card_created",
+      payload: {
+        title: params.title,
+        orderKey: created.orderKey,
+        columnId: params.columnId
+      }
+    });
+
+    return { created, version };
+  });
+}
+
+export async function moveCard(params: {
+  boardId: string;
+  cardId: string;
+  targetColumnId: string;
+  targetAfterCardId?: string | null;
+  actorId: string;
+  expectedCardVersion?: number;
+  expectedBoardVersion?: number;
+}) {
+  const role = await getBoardRoleForUser(params.boardId, params.actorId);
+  assertCanMove(role);
+
+  const [card] = await db
+    .select({
+      id: cards.id,
+      columnId: cards.columnId,
+      orderKey: cards.orderKey,
+      version: cards.version,
+      boardId: cards.boardId
+    })
+    .from(cards)
+    .where(and(eq(cards.id, params.cardId), eq(cards.boardId, params.boardId)))
+    .limit(1);
+  if (!card) throw new Error("Card not found");
+
+  if (
+    params.expectedBoardVersion !== undefined &&
+    params.expectedBoardVersion < card.version
+  ) {
+    const [board] = await db
+      .select({ version: boards.version })
+      .from(boards)
+      .where(eq(boards.id, params.boardId))
+      .limit(1);
+    throw new DomainConflictError(
+      "Board version stale",
+      board?.version ?? 0,
+      params.expectedBoardVersion
+    );
+  }
+
+  if (
+    params.expectedCardVersion !== undefined &&
+    params.expectedCardVersion !== card.version
+  ) {
+    throw new DomainConflictError(
+      "Card version stale",
+      card.version,
+      params.expectedCardVersion
+    );
+  }
+
+  const neighbors = await db
+    .select({ id: cards.id, orderKey: cards.orderKey })
+    .from(cards)
+    .where(
+      and(
+        eq(cards.boardId, params.boardId),
+        eq(cards.columnId, params.targetColumnId),
+        eq(cards.isArchived, false)
+      )
+    )
+    .orderBy(cards.orderKey);
+
+  let left: string | undefined;
+  let right: string | undefined;
+  if (params.targetAfterCardId) {
+    const targetIndex = neighbors.findIndex((c) => c.id === params.targetAfterCardId);
+    if (targetIndex >= 0) {
+      left = neighbors[targetIndex]?.orderKey;
+      right = neighbors[targetIndex + 1]?.orderKey;
+    }
+  } else {
+    left = neighbors.at(-1)?.orderKey;
+  }
+  const nextOrder = rankBetween(left, right);
+
+  return db.transaction(async (tx) => {
+    const [updated] = await tx
+      .update(cards)
+      .set({
+        columnId: params.targetColumnId,
+        orderKey: nextOrder,
+        version: card.version + 1,
+        updatedAt: new Date()
+      })
+      .where(and(eq(cards.id, params.cardId), eq(cards.version, card.version)))
+      .returning({
+        id: cards.id,
+        columnId: cards.columnId,
+        orderKey: cards.orderKey,
+        version: cards.version
+      });
+
+    if (!updated) {
+      throw new DomainConflictError(
+        "Card moved by someone else",
+        card.version,
+        params.expectedCardVersion ?? card.version
+      );
+    }
+
+    const version = await appendBoardEvent(tx, {
+      boardId: params.boardId,
+      actorId: params.actorId,
+      cardId: params.cardId,
+      type: "card_moved",
+      payload: {
+        fromColumnId: card.columnId,
+        toColumnId: params.targetColumnId,
+        fromOrder: card.orderKey,
+        toOrder: nextOrder
+      }
+    });
+
+    return { updated, version, orderKey: nextOrder };
+  });
+}
+
+export async function updateCardDetails(params: {
+  boardId: string;
+  cardId: string;
+  actorId: string;
+  patch: Partial<{
+    title: string;
+    description: string | null;
+    dueAt: Date | null;
+    isArchived: boolean;
+  }>;
+  expectedVersion?: number;
+}) {
+  const role = await getBoardRoleForUser(params.boardId, params.actorId);
+  assertCanEdit(role);
+  if (params.expectedVersion === undefined) throw new Error("expectedVersion required");
+
+  const [current] = await db
+    .select({ version: cards.version })
+    .from(cards)
+    .where(and(eq(cards.id, params.cardId), eq(cards.boardId, params.boardId)))
+    .limit(1);
+  if (!current) throw new Error("Card not found");
+  if (current.version !== params.expectedVersion) {
+    throw new DomainConflictError(
+      "Concurrent edit detected",
+      current.version,
+      params.expectedVersion
+    );
+  }
+
+  return db.transaction(async (tx) => {
+    const [updated] = await tx
+      .update(cards)
+      .set({
+        title: params.patch.title ?? undefined,
+        description: params.patch.description ?? undefined,
+        dueAt: params.patch.dueAt ?? undefined,
+        isArchived: params.patch.isArchived ?? undefined,
+        updatedAt: new Date(),
+        version: current.version + 1
+      })
+      .where(and(eq(cards.id, params.cardId), eq(cards.version, current.version))
+      )
+      .returning({ id: cards.id, version: cards.version });
+
+    if (!updated) {
+      throw new DomainConflictError("Conflict while updating", current.version, params.expectedVersion);
+    }
+
+    const version = await appendBoardEvent(tx, {
+      boardId: params.boardId,
+      actorId: params.actorId,
+      cardId: params.cardId,
+      type: "card_updated",
+      payload: params.patch
+    });
+
+    return { updated, version };
+  });
+}
+
+export async function archiveCard(boardId: string, cardId: string, actorId: string, reason?: string | null) {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  assertCanEdit(role);
+
+  const [archivedCard] = await db
+    .select({ columnId: cards.columnId, orderKey: cards.orderKey })
+    .from(cards)
+    .where(and(eq(cards.id, cardId), eq(cards.boardId, boardId)))
+    .limit(1);
+  if (!archivedCard) throw new Error("Card not found");
+
+  const [result] = await db
+    .update(cards)
+    .set({
+      isArchived: true,
+      archivedFromColumnId: archivedCard.columnId,
+      archivedFromOrderKey: archivedCard.orderKey,
+      updatedAt: new Date()
+    })
+    .where(eq(cards.id, cardId))
+    .returning({ id: cards.id });
+
+  const version = await appendBoardEvent(db, {
+    boardId,
+    actorId,
+    cardId,
+    type: "card_deleted",
+    payload: { reason: reason ?? null }
+  });
+
+  return { result, version };
+}
+
+export async function restoreCard(boardId: string, cardId: string, actorId: string, overrideColumnId?: string | null) {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  assertCanEdit(role);
+
+  const [archivedCard] = await db
+    .select({
+      archivedFromColumnId: cards.archivedFromColumnId,
+      archivedFromOrderKey: cards.archivedFromOrderKey
+    })
+    .from(cards)
+    .where(and(eq(cards.id, cardId), eq(cards.boardId, boardId)))
+    .limit(1);
+  if (!archivedCard) throw new Error("Card not found");
+
+  const targetColumnId =
+    overrideColumnId ??
+    archivedCard.archivedFromColumnId ??
+    (await db
+      .select({ id: columns.id })
+      .from(columns)
+      .where(and(eq(columns.boardId, boardId), isNull(columns.archivedAt)))
+      .orderBy(columns.orderKey)
+      .limit(1))[0]?.id;
+  if (!targetColumnId) throw new Error("Board has no columns");
+
+  const targetOrder = archivedCard.archivedFromOrderKey ?? getInitialRank();
+
+  const [result] = await db
+    .update(cards)
+    .set({
+      isArchived: false,
+      columnId: targetColumnId,
+      orderKey: targetOrder,
+      archivedFromColumnId: null,
+      archivedFromOrderKey: null,
+      updatedAt: new Date()
+    })
+    .where(eq(cards.id, cardId))
+    .returning({ id: cards.id });
+
+  const version = await appendBoardEvent(db, {
+    boardId,
+    actorId,
+    cardId,
+    type: "card_restored",
+    payload: {
+      targetColumnId,
+      targetOrder
+    }
+  });
+
+  return { version, result };
+}
+
+export async function createTemplate(boardId: string, actorId: string, name: string, sourceCardId: string) {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  assertCanEdit(role);
+
+  const [sourceCard] = await db
+    .select({
+      title: cards.title,
+      description: cards.description,
+      dueAt: cards.dueAt
+    })
+    .from(cards)
+    .where(and(eq(cards.id, sourceCardId), eq(cards.boardId, boardId)))
+    .limit(1);
+  if (!sourceCard) throw new Error("Card not found");
+
+  const [template] = await db
+    .insert(boardTemplates)
+    .values({
+      boardId,
+      name,
+      payload: {
+        title: sourceCard.title,
+        description: sourceCard.description,
+        dueAt: sourceCard.dueAt
+      },
+      createdBy: actorId
+    })
+    .returning({ id: boardTemplates.id, name: boardTemplates.name });
+
+  const version = await appendBoardEvent(db, {
+    boardId,
+    actorId,
+    type: "template_created",
+    payload: { templateId: template.id, sourceCardId }
+  });
+
+  return { template, version };
+}
+
+export async function applyTemplate(boardId: string, actorId: string, templateId: string, targetColumnId: string) {
+  const role = await getBoardRoleForUser(boardId, actorId);
+  assertCanEdit(role);
+
+  const [template] = await db
+    .select({ payload: boardTemplates.payload })
+    .from(boardTemplates)
+    .where(and(eq(boardTemplates.id, templateId), eq(boardTemplates.boardId, boardId)))
+    .limit(1);
+  if (!template) throw new Error("Template not found");
+
+  const payload = template.payload as { title?: string; description?: string; dueAt?: string | null };
+  const created = await createCard({
+    boardId,
+    columnId: targetColumnId,
+    title: payload.title ?? "Untitled",
+    actorId,
+    description: payload.description ?? null,
+    dueAt: payload.dueAt ? new Date(payload.dueAt) : null
+  });
+
+  const version = await appendBoardEvent(db, {
+    boardId,
+    actorId,
+    cardId: created.created.id,
+    type: "template_applied",
+    payload: { templateId }
+  });
+
+  return { version, card: created.created };
+}
+
+export async function updateRole(
+  boardId: string,
+  actorId: string,
+  targetUserId: string,
+  role: "owner" | "editor" | "viewer"
+) {
+  const actorRole = await getBoardRoleForUser(boardId, actorId);
+  if (actorRole !== "owner") throw new Error("Only owner can change roles");
+
+  const [existing] = await db
+    .select({ userId: boardMembers.userId })
+    .from(boardMembers)
+    .where(and(eq(boardMembers.boardId, boardId), eq(boardMembers.userId, targetUserId)))
+    .limit(1);
+
+  if (existing) {
+    await db.update(boardMembers).set({ role }).where(and(eq(boardMembers.boardId, boardId), eq(boardMembers.userId, targetUserId)));
+  } else {
+    await db.insert(boardMembers).values({ boardId, userId: targetUserId, role });
+  }
+
+  const nextVersion = await appendBoardEvent(db, {
+    boardId,
+    actorId,
+    cardId: null,
+    type: "permission_changed",
+    payload: { targetUserId, role }
+  });
+
+  return { version: nextVersion };
+}

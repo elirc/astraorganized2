@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npm.cmd",
+    "install",
+    "--save-dev",
+    "--save-exact",
+    "vitest@4.1.11",
+    "fake-indexeddb@6.2.5",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 1,
+  "seconds": 217.81
+}

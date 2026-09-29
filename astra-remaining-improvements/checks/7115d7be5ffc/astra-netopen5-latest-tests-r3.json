@@ -1,0 +1,28 @@
+{
+  "project": "netopen5",
+  "id": "7115d7be5ffc",
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Jellyfin.Api.Tests/Jellyfin.Api.Tests.csproj",
+    "--no-restore",
+    "--filter",
+    "FullyQualifiedName~UserLibraryLatestMediaTests",
+    "--nologo",
+    "--verbosity",
+    "minimal",
+    "/m:1",
+    "--logger",
+    "trx"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7115d7be5ffc\\jellyfin",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T20:26:24.544191+00:00",
+  "status": "complete",
+  "log": "astra-netopen5-latest-tests-r3.log",
+  "pid": 33040,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T20:27:56.651636+00:00",
+  "elapsedSeconds": 92.11
+}

@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww47",
+  "id": "ec28c8c40e53",
+  "summary": [
+    "Reviewed aggregation worker and state policy; no production fix was warranted in the bounded path.",
+    "Added a production state-machine lab for all legal and representative invalid job transitions.",
+    "Captured four executed Node VM cases with explicit worker and provider limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/ec28c8c40e53/results-crud-b07.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww47",
+        "id": "ec28c8c40e53",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-aggregation-state-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ec28c8c40e53",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:55:00.632839+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 31884,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:55:05.969722+00:00",
+        "elapsedSeconds": 5.33
+      }
+    ],
+    "limits": [
+      "No production fix warranted in reviewed path.",
+      "No Prisma worker, rollup, audit persistence, concurrent claim, or retry execution.",
+      "Provider-backed queue checks remain follow-up work.",
+      "State guard and real AppError execute without behavior doubles. Worker claim and completion transactions were inspected, not executed."
+    ]
+  },
+  "courseWords": 1616,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "tests/runtime-aggregation-state-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "155488e2c2001d79b958f4f8d51c37f5be3e5a57a70e74c1e3f6dabb081bbc03"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "425337669eaf2fc709eab217a82bd849f3b5b6f01cb49446ab2e422523584300"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "5d9f40d2dfc687d2fa60d433a8bfe5f0827f2e546eb09703c73ce1af89fe3b9b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f664399ab85be8f1fcc5a73dc55470a6a64e8a952c7550cdc87c04fdc66fcfb3"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "63d01c22d0482f935219e3f9771a68c528538d63301c14ec5e56abcd24f778da"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bf8ac39bc7d639efc6ac00b9e2c219b4f7b1d0d2ff1609501e8da10cc2c40789"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ce6c02a6e8e93241d8ed8fa4bba20e8511656beff6efb5127e4f6207bfecc1ce"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6f878e324a96659e1f1d51941751b959bb04df8b08f47cececd46b766f866669"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "c64e4db328bc5e8e1179b110ca63c4cb3bf92138b9f59cb57d2f13f18e43087a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "5b0dfcfab817dce20156734f47bc6312bf8abf8b6fd017bafab661264e68373b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "511a59b6c8b7f2c9be9e17b9acc3970c7e63c053bfb9255d4ecf54bcf3797da7"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a324aabb82ff4e9cb6228d51a592837fb6b65afa7bf72625473c1a5a98cc2ff6"
+    }
+  ],
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No Prisma worker, rollup, audit persistence, concurrent claim, or retry execution.",
+    "Provider-backed queue checks remain follow-up work.",
+    "State guard and real AppError execute without behavior doubles. Worker claim and completion transactions were inspected, not executed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:59:22.183259+00:00"
+}

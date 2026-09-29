@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "checks": [
+    "Create a named checkpoint and render markup-like learning notes as literal text",
+    "Edit metadata with stable identity and an incremented revision",
+    "Reject a duplicate normalized title and retain the editor draft",
+    "Search notes and show an explicit empty result",
+    "Export the exact saved world after a metadata edit",
+    "Retain the library after a full page reload"
+  ],
+  "error": "TimeoutError: locator.evaluate: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.voyage-library')\u001b[22m\n\u001b[2m    - locator resolved to visible <dialog open=\"\" class=\"voyage-library\" aria-labelledby=\"voyage-heading\">…</dialog>\u001b[22m\n",
+  "errors": [],
+  "url": "http://127.0.0.1:55787/"
+}

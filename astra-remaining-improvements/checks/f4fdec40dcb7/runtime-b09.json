@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antitestbuild",
+  "id": "f4fdec40dcb7",
+  "command": [
+    "npm",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f4fdec40dcb7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:26:12.877373+00:00",
+  "status": "launch-failed",
+  "log": "runtime-b09.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-22T04:26:12.900352+00:00",
+  "elapsedSeconds": 0.01
+}

@@ -1,0 +1,143 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/rn1",
+  "id": "195e77d61335",
+  "summary": [
+    "Invalidate the blocked-accounts query after successful unblock so the deletion is reflected in the cached list, matching the existing block path.",
+    "Preserve remote deletion, signed-out rejection and profile feed reset behavior; add a portable Yarn learning test script."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/195e77d61335/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/rn1",
+        "id": "195e77d61335",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/corepack/dist/yarn.js",
+          "--ignore-engines",
+          "run",
+          "test:crud-upskill"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\195e77d61335\\social-app",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:20:53.598728+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime3.log",
+        "pid": 5132,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:21:12.769062+00:00",
+        "elapsedSeconds": 19.17
+      }
+    ],
+    "limits": [
+      "Four focused cases execute the exact extracted production unblock hook and actual blocked-query key, using session/agent/query-client/AtUri doubles and an explicitly modeled mutation lifecycle.",
+      "No mounted React, TanStack cache engine, real AT Protocol server, native Jest, lint, typecheck, Expo or mobile/browser rendering was executed.",
+      "Invalidation schedules query refresh; this does not prove immediate removal from every list, successful refetch, rollback, request idempotency or session-switch safety.",
+      "Application requires Node >=24.15.0; the focused Yarn script passed on device Node22.16 with explicit --ignore-engines, not a full native application compatibility check."
+    ]
+  },
+  "courseWords": 1907,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "social-app/src/state/queries/profile.ts",
+      "before_sha256": "634e82bf59d5cf303671fbbc3c59c5e86631cb36c512d28ce37d01914f839f81",
+      "after_sha256": "f0c15d0d2acf1fafc4c8c99756da567619ee8a64e4317d7041ae45d6e9ad80fd"
+    },
+    {
+      "file": "social-app/package.json",
+      "before_sha256": "9a27890703fc11b46387fe73907a07e9c29ae34a410be8582f590a8e99eba1fa",
+      "after_sha256": "d55b06b046aa1f2605ba5abbe1722c9fbd55762628266ffcd6b9ab707fe27833"
+    },
+    {
+      "file": "social-app/tests/crud-upskill/profile-unblock.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "c50482be41bb339974f98d824996cac2f4badb58ea2704ece6d08490da8fe2c9"
+    },
+    {
+      "file": "social-app/tests/crud-upskill/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/profile.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "634e82bf59d5cf303671fbbc3c59c5e86631cb36c512d28ce37d01914f839f81"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9a27890703fc11b46387fe73907a07e9c29ae34a410be8582f590a8e99eba1fa"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime3.log",
+      "before_sha256": null,
+      "after_sha256": "54594990cd71930c68372eb83335b51b0fba8ab49711906e918e7e5c56e2a548"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "4ffdf5413a7ae78b4e88d906be3b684122c51a4263237c412ab483cb38587612"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0e2da4c9334a0644233e02dfbf8a8ad1c68a8721ea6409bfc7b7664cc01b7f34"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e9358b4229078a366d61bfae8231386cdfa59395d876c1c5d2e31f4c35e3adc3"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a9c9057c7f2d39f40caa4039ee40c1a79a3f99736d6a6bcae3731dcedd589ab3"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "863054f59ccfb0a92d6b66e133819019e44803dddd934c3694cb70741af895a0"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f6f811764e821a68a7e05c67165a831f78b0c14bc63ce10c03f2caca6b3d113a"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "6bd55195844c86149a6841f04b0d4c0f13969b5df7700d1aed2ab0955441c955"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c512c16c9677a6c98b94bda32dbfd33fee52937afe061080ebacc5e45ff2913c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f4eae3267f1f4dd5f22c8c2b3ea6a9299bb2b434b0b5a08bea93fbd767b3ef30"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2ad4d540c0226cb9660dc8ad9ad6f036e293fd088f857d00ab966ec988f03086"
+    }
+  ],
+  "limits": [
+    "Four focused cases execute the exact extracted production unblock hook and actual blocked-query key, using session/agent/query-client/AtUri doubles and an explicitly modeled mutation lifecycle.",
+    "No mounted React, TanStack cache engine, real AT Protocol server, native Jest, lint, typecheck, Expo or mobile/browser rendering was executed.",
+    "Invalidation schedules query refresh; this does not prove immediate removal from every list, successful refetch, rollback, request idempotency or session-switch safety.",
+    "Application requires Node >=24.15.0; the focused Yarn script passed on device Node22.16 with explicit --ignore-engines, not a full native application compatibility check."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:25:08.441508+00:00"
+}

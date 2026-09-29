@@ -1,0 +1,32 @@
+{
+  "id": "2906d0b177f3",
+  "project": "jstrain2.4",
+  "files": [
+    "app/api/deployments/route.js",
+    "tests/runtime-deployment-ownership.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/app-api-deployments-route.js.before",
+    "astraupskill/evidence/2906d0b177f3/runtime-deployment-ownership.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "The POST deployment route looked up an environment by ID only, allowing submitted applicationId and environmentId to describe different applications.",
+    "The route now queries by both IDs and exits 404 before authorization or creation when the relationship is absent."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-deployment-ownership.test.mjs",
+    "executedTests": 3,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked route dependencies; no live database or HTTP integration."
+  ]
+}

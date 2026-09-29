@@ -1,0 +1,111 @@
+{
+  "verifiedAt": "2026-09-19T19:54:56.252598+00:00",
+  "projects": 14,
+  "deliveredFileHashesVerified": 624,
+  "passingTestCases": 513,
+  "acceptedChecks": 57,
+  "remainingFamilies": 147,
+  "projectsEvidence": [
+    {
+      "id": "f98b34acf094",
+      "path": "_Organized Desktop/05 Numbered Experiments/e2",
+      "files": 35,
+      "tests": 34,
+      "deliveredAt": "2026-09-19T16:35:12.072070+00:00"
+    },
+    {
+      "id": "34d60d325094",
+      "path": "geminiorganized/OpenSource_Upskilling_Shop",
+      "files": 45,
+      "tests": 20,
+      "deliveredAt": "2026-09-19T17:50:10.681012+00:00"
+    },
+    {
+      "id": "8c8b7f90a8d2",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww50",
+      "files": 38,
+      "tests": 23,
+      "deliveredAt": "2026-09-19T18:01:38.850514+00:00"
+    },
+    {
+      "id": "f9326daabc23",
+      "path": "gitvg/storefront",
+      "files": 36,
+      "tests": 83,
+      "deliveredAt": "2026-09-19T17:46:08.731866+00:00"
+    },
+    {
+      "id": "0bfafff7d45f",
+      "path": "_Organized Desktop/05 Numbered Experiments/e1",
+      "files": 43,
+      "tests": 18,
+      "deliveredAt": "2026-09-19T18:13:20.677142+00:00"
+    },
+    {
+      "id": "a80284ee08de",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww55",
+      "files": 32,
+      "tests": 20,
+      "deliveredAt": "2026-09-19T16:35:49.016348+00:00"
+    },
+    {
+      "id": "2f29156b71ed",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "files": 40,
+      "tests": 24,
+      "deliveredAt": "2026-09-19T19:29:31.580901+00:00"
+    },
+    {
+      "id": "27a8a1400c49",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww9",
+      "files": 51,
+      "tests": 26,
+      "deliveredAt": "2026-09-19T19:18:40.354427+00:00"
+    },
+    {
+      "id": "32d4e2fef457",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww35",
+      "files": 57,
+      "tests": 33,
+      "deliveredAt": "2026-09-19T18:51:56.720192+00:00"
+    },
+    {
+      "id": "e7862246212d",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww49",
+      "files": 44,
+      "tests": 22,
+      "deliveredAt": "2026-09-19T19:53:40.231359+00:00"
+    },
+    {
+      "id": "b2f277b889f9",
+      "path": "geminiorganized/OpenSource_Upskilling_Linear",
+      "files": 45,
+      "tests": 14,
+      "deliveredAt": "2026-09-19T17:02:10.000287+00:00"
+    },
+    {
+      "id": "e5fa6d1a40be",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "files": 55,
+      "tests": 31,
+      "deliveredAt": "2026-09-19T19:43:41.512392+00:00"
+    },
+    {
+      "id": "c178c034b3ed",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww14",
+      "files": 44,
+      "tests": 21,
+      "deliveredAt": "2026-09-19T19:47:07.485237+00:00"
+    },
+    {
+      "id": "26e6d2bd6c54",
+      "path": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "files": 59,
+      "tests": 144,
+      "deliveredAt": "2026-09-19T19:33:30.656023+00:00"
+    }
+  ],
+  "completionReportLinksChecked": 58,
+  "completionReportProjectSections": 14,
+  "remainingQueueCheckboxesVerified": 147
+}

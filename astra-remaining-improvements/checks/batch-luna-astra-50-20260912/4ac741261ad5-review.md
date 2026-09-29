@@ -1,0 +1,3 @@
+# Astra final review: Master2
+
+Approved and delivered. Reviewed payment-service transaction/tenant/replay branches, shared domain and HTTP error mapping, actual route/service fixtures, all changed source and nine guides. Added missing-invoice, retry-bound, strict-body, invoice-transition and domain-error cases; corrected incomplete examples and portable verification. Final source hashes match the reviewed files. Prisma schema validation/client generation and full workspace verification passed: 30 tests, typechecks and builds. Mocked Prisma is not PostgreSQL rollback/concurrency evidence. Guarded apply verified original hashes.

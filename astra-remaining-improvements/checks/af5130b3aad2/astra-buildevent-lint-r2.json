@@ -1,0 +1,22 @@
+{
+  "project": "buildevent",
+  "id": "af5130b3aad2",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "lint",
+    "--",
+    "--concurrency=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T20:59:57.056982+00:00",
+  "status": "complete",
+  "log": "astra-buildevent-lint-r2.log",
+  "pid": 15660,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T21:02:26.456636+00:00",
+  "elapsedSeconds": 149.38
+}

@@ -1,0 +1,23 @@
+{
+  "id": "829e8e7b8605",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww32",
+  "summary": [
+    "Provide a runnable source lab for workspace-scoped message posting and guest refusal.",
+    "Verify successful transaction orchestration with created message and sync event adapters."
+  ],
+  "changedFiles": [
+    "tests/message-post-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/messageService.ts.original.txt",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/829e8e7b8605/results-crud-b06.json"
+  },
+  "limits": [
+    "Six actual message-service cases load real role policy and errors, with channel-access, repository, transaction and realtime adapters. No Next, Prisma rollback/isolation or network delivery execution.",
+    "Private notification filtering and attachment query arguments execute in the service; the adapters do not prove repository scoping or live transport confidentiality. Publishing follows the transaction response; persisted event does not prove delivery."
+  ]
+}

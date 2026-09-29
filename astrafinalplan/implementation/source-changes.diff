@@ -1,0 +1,1199 @@
+--- JS1/task-board/app.js (before)
++++ JS1/task-board/app.js (after)
+@@ -19,8 +19,10 @@
+   }
+ ];
+ 
++const savedBoard = loadBoard();
+ const state = {
+-  tasks: loadTasks(),
++  tasks: savedBoard.tasks,
++  deleted: savedBoard.deleted,
+   query: "",
+   status: "All",
+   editingId: null
+@@ -41,6 +43,8 @@
+ const taskList = document.querySelector("#task-list");
+ const taskCount = document.querySelector("#task-count");
+ const emptyState = document.querySelector("#empty-state");
++const undoButton = document.querySelector("#undo-delete");
++undoButton.addEventListener("click", undoDelete);
+ 
+ form.addEventListener("submit", handleSubmit);
+ cancelButton.addEventListener("click", resetForm);
+@@ -55,13 +59,17 @@
+ 
+ render();
+ 
+-function loadTasks() {
++function loadBoard() {
+   const saved = localStorage.getItem(STORAGE_KEY);
+-  return saved ? JSON.parse(saved) : starterTasks;
++  if (!saved) return { tasks: starterTasks, deleted: null };
++  const parsed = JSON.parse(saved);
++  // Existing installations stored only an array. Upgrade without discarding it.
++  if (Array.isArray(parsed)) return { tasks: parsed, deleted: null };
++  return { tasks: parsed.tasks, deleted: parsed.deleted ?? null };
+ }
+ 
+ function saveTasks() {
+-  localStorage.setItem(STORAGE_KEY, JSON.stringify(state.tasks));
++  localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, tasks: state.tasks, deleted: state.deleted }));
+ }
+ 
+ function handleSubmit(event) {
+@@ -110,11 +118,43 @@
+   titleInput.focus();
+ }
+ 
++function commitBoard(tasks, deleted) {
++  try {
++    // Persist first. A quota/security error must not consume an undo or hide a task.
++    localStorage.setItem(STORAGE_KEY, JSON.stringify({ version: 2, tasks, deleted }));
++  } catch {
++    showMessage("Could not save this change. Your task and undo history are unchanged.");
++    return false;
++  }
++  state.tasks = tasks;
++  state.deleted = deleted;
++  return true;
++}
++
+ function deleteTask(id) {
+-  state.tasks = state.tasks.filter((task) => task.id !== id);
+-  saveTasks();
++  const index = state.tasks.findIndex((task) => task.id === id);
++  if (index < 0) return;
++  const deleted = { task: state.tasks[index], index };
++  if (!commitBoard(state.tasks.filter((task) => task.id !== id), deleted)) return;
+   resetForm();
+-  showMessage("Task deleted.");
++  showMessage("Task deleted. You can undo the most recent deletion, even after reload.");
++  render();
++}
++
++function undoDelete() {
++  if (!state.deleted) return;
++  const { task, index } = state.deleted;
++  if (state.tasks.some((item) => item.id === task.id)) {
++    showMessage("That task already exists; undo would create a duplicate.");
++    return;
++  }
++  const tasks = [...state.tasks];
++  tasks.splice(Math.min(index, tasks.length), 0, task);
++  if (!commitBoard(tasks, null)) return;
++  // Reveal the restored task even if an old filter would hide it.
++  state.query = ""; state.status = "All";
++  searchInput.value = ""; statusFilter.value = "All";
++  showMessage("Task restored.");
+   render();
+ }
+ 
+@@ -135,6 +175,7 @@
+ }
+ 
+ function render() {
++  undoButton.disabled = !state.deleted;
+   const tasks = getVisibleTasks();
+   taskList.innerHTML = "";
+   taskCount.textContent = tasks.length;
+--- JS1/task-board/index.html (before)
++++ JS1/task-board/index.html (after)
+@@ -61,6 +61,7 @@
+         <p class="counter"><span id="task-count">0</span> shown</p>
+       </div>
+ 
++      <button type="button" id="undo-delete" class="secondary" disabled>Undo last deletion</button>
+       <div class="toolbar">
+         <input id="search-input" type="search" placeholder="Search tasks">
+         <select id="status-filter" aria-label="Filter by status">
+--- JS1/contact-book/app.js (before)
++++ JS1/contact-book/app.js (after)
+@@ -45,6 +45,7 @@
+   renderContacts();
+ });
+ 
++emailInput.addEventListener("input", () => emailInput.removeAttribute("aria-invalid"));
+ renderContacts();
+ 
+ function loadContacts() {
+@@ -72,6 +73,17 @@
+     setMessage("Name, email, and phone are required.");
+     return;
+   }
++
++  const duplicate = contacts.find((item) =>
++    item.id !== editingId && item.email.trim().toLowerCase() === contact.email.toLowerCase()
++  );
++  if (duplicate) {
++    setMessage(`A contact with this email already exists: ${duplicate.name}.`);
++    emailInput.setAttribute("aria-invalid", "true");
++    emailInput.focus();
++    return;
++  }
++  emailInput.removeAttribute("aria-invalid");
+ 
+   if (editingId) {
+     contacts = contacts.map((item) => item.id === editingId ? contact : item);
+@@ -111,6 +123,7 @@
+ }
+ 
+ function resetForm() {
++  emailInput.removeAttribute("aria-invalid");
+   form.reset();
+   idInput.value = "";
+   editingId = null;
+--- JS1/contact-book/index.html (before)
++++ JS1/contact-book/index.html (after)
+@@ -25,7 +25,7 @@
+           <input id="name" type="text" maxlength="70" placeholder="Ada Lovelace" required>
+ 
+           <label for="email">Email</label>
+-          <input id="email" type="email" placeholder="ada@example.com" required>
++          <input id="email" aria-describedby="message" type="email" placeholder="ada@example.com" required>
+ 
+           <label for="phone">Phone</label>
+           <input id="phone" type="tel" maxlength="20" placeholder="555-0123" required>
+--- JS1/focus-timer/app.js (before)
++++ JS1/focus-timer/app.js (after)
+@@ -7,6 +7,8 @@
+ const timer = {
+   mode: "idle",
+   remaining: 25 * 60, // seconds
++  deadline: null,
++  duration: 25 * 60,
+   intervalId: null
+ };
+ 
+@@ -36,6 +38,9 @@
+   }
+ });
+ 
++document.addEventListener("visibilitychange", () => {
++  if (!document.hidden) tick();
++});
+ renderTimer();
+ renderSessions();
+ 
+@@ -62,9 +67,13 @@
+ }
+ 
+ function startTimer() {
++  if (timer.mode === "running") return;
++  clearInterval(timer.intervalId);
+   if (timer.mode === "idle") {
+     timer.remaining = configuredSeconds();
+-  }
++    timer.duration = timer.remaining;
++  }
++  timer.deadline = Date.now() + timer.remaining * 1000;
+   timer.mode = "running";
+   minutesInput.disabled = true;
+   timer.intervalId = setInterval(tick, 1000);
+@@ -73,6 +82,10 @@
+ }
+ 
+ function pauseTimer() {
++  if (timer.mode !== "running") return;
++  timer.remaining = Math.max(0, (timer.deadline - Date.now()) / 1000);
++  if (timer.remaining === 0) { completeSession(); return; }
++  timer.deadline = null;
+   clearInterval(timer.intervalId);
+   timer.intervalId = null;
+   timer.mode = "paused";
+@@ -80,6 +93,7 @@
+ }
+ 
+ function resetTimer() {
++  timer.deadline = null;
+   clearInterval(timer.intervalId);
+   timer.intervalId = null;
+   timer.mode = "idle";
+@@ -90,7 +104,8 @@
+ }
+ 
+ function tick() {
+-  timer.remaining -= 1;
++  if (timer.mode !== "running") return;
++  timer.remaining = Math.max(0, (timer.deadline - Date.now()) / 1000);
+   if (timer.remaining <= 0) {
+     completeSession();
+     return;
+@@ -99,10 +114,13 @@
+ }
+ 
+ function completeSession() {
++  if (timer.mode !== "running") return;
++  timer.mode = "idle";
++  timer.deadline = null;
+   clearInterval(timer.intervalId);
+   timer.intervalId = null;
+ 
+-  const minutes = Math.round(configuredSeconds() / 60);
++  const minutes = Math.round(timer.duration / 60);
+   state.sessions.unshift({
+     id: crypto.randomUUID(),
+     label: labelInput.value.trim() || "Focus session",
+@@ -141,7 +159,7 @@
+ }
+ 
+ function renderTimer() {
+-  display.textContent = formatClock(timer.remaining);
++  display.textContent = formatClock(Math.ceil(timer.remaining));
+   const labels = { idle: "Ready", running: "Focusing…", paused: "Paused" };
+   statusText.textContent = labels[timer.mode];
+   startButton.textContent = timer.mode === "running" ? "Pause" : timer.mode === "paused" ? "Resume" : "Start";
+--- finance-dashboard/app.js (before)
++++ finance-dashboard/app.js (after)
+@@ -87,6 +87,7 @@
+ 
+ let state = loadState();
+ let charts = {};
++let editingExpenseId = null;
+ 
+ const els = {};
+ 
+@@ -153,6 +154,10 @@
+   });
+ 
+   els.openAddModal.addEventListener("click", () => {
++    editingExpenseId = null;
++    els.entryType.disabled = false;
++    document.querySelector("#entryModal h3").textContent = "Add money movement";
++    document.querySelector("#entryError").textContent = "";
+     updateCategoryOptions();
+     els.entryModal.showModal();
+   });
+@@ -193,7 +198,25 @@
+     description: els.entryDescription.value.trim()
+   };
+ 
+-  if (!entry.amount || entry.amount < 0) return;
++  const error = validateEntry(entry);
++  const errorNode = document.querySelector("#entryError");
++  if (error) { errorNode.textContent = error; return; }
++  errorNode.textContent = "";
++  if (editingExpenseId) {
++    const existing = state.expenses.find((item) => item.id === editingExpenseId);
++    if (!existing) { errorNode.textContent = "This expense no longer exists."; return; }
++    const updated = { ...existing, ...entry, id: existing.id, category: els.entryCategory.value };
++    const next = { ...state, expenses: state.expenses.map((item) => item.id === existing.id ? updated : item) };
++    try { localStorage.setItem(storageKey, JSON.stringify(next)); }
++    catch { errorNode.textContent = "Could not save. The original expense is unchanged."; return; }
++    state = next;
++    editingExpenseId = null;
++    els.entryType.disabled = false;
++    els.entryForm.reset();
++    els.entryModal.close();
++    render();
++    return;
++  }
+ 
+   if (type === "expense") {
+     state.expenses.push({ ...entry, category: els.entryCategory.value });
+@@ -536,7 +559,8 @@
+         <td><span class="owner-chip">${escapeHtml(expense.owner)}</span></td>
+         <td class="numeric"><strong>${money(expense.amount)}</strong></td>
+         <td class="numeric">
+-          <button class="danger-button" type="button" data-delete-expense="${expense.id}" title="Delete expense" aria-label="Delete expense">
++          <button type="button" class="icon-button" data-edit-expense="${expense.id}" aria-label="Edit ${escapeHtml(expense.description)}">Edit</button>
++            <button class="danger-button" type="button" data-delete-expense="${expense.id}" title="Delete expense" aria-label="Delete expense">
+             <i data-lucide="trash-2"></i>
+           </button>
+         </td>
+@@ -544,6 +568,9 @@
+     `).join("");
+ 
+   els.expenseRows.innerHTML = rows || `<tr><td colspan="6"><div class="empty-state">No expenses for this month and view.</div></td></tr>`;
++  els.expenseRows.querySelectorAll("[data-edit-expense]").forEach((button) => {
++    button.addEventListener("click", () => editExpense(button.dataset.editExpense));
++  });
+   els.expenseRows.querySelectorAll("[data-delete-expense]").forEach((button) => {
+     button.addEventListener("click", () => {
+       state.expenses = state.expenses.filter((expense) => expense.id !== button.dataset.deleteExpense);
+@@ -747,3 +774,34 @@
+   });
+   return output;
+ }
++
++function validateEntry(entry) {
++  if (!Number.isFinite(entry.amount) || entry.amount <= 0 || entry.amount > 999999999.99)
++    return "Enter an amount greater than zero and no more than 999,999,999.99.";
++  if (Math.abs(entry.amount * 100 - Math.round(entry.amount * 100)) > 0.00001)
++    return "Use no more than two decimal places.";
++  if (!entry.description) return "Enter a description.";
++  if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.date)) return "Enter a valid date.";
++  const date = new Date(`${entry.date}T00:00:00Z`);
++  if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== entry.date)
++    return "Enter a real calendar date.";
++  return "";
++}
++
++function editExpense(id) {
++  const expense = state.expenses.find((item) => item.id === id);
++  if (!expense) return;
++  editingExpenseId = id;
++  els.entryType.value = "expense";
++  els.entryType.disabled = true;
++  updateCategoryOptions();
++  els.entryOwner.value = expense.owner;
++  els.entryDate.value = expense.date;
++  els.entryAmount.value = expense.amount;
++  els.entryCategory.value = expense.category;
++  els.entryDescription.value = expense.description;
++  document.querySelector("#entryModal h3").textContent = "Edit expense";
++  document.querySelector("#entryError").textContent = "";
++  els.entryModal.showModal();
++  els.entryDescription.focus();
++}
+--- finance-dashboard/index.html (before)
++++ finance-dashboard/index.html (after)
+@@ -272,6 +272,7 @@
+           </label>
+         </div>
+ 
++        <p id="entryError" role="alert"></p>
+         <div class="modal-actions">
+           <button class="secondary-button" type="button" id="cancelEntry">Cancel</button>
+           <button class="primary-button" type="submit">
+--- recipeweb/src/index.css (before)
++++ recipeweb/src/index.css (after)
+@@ -728,3 +728,7 @@
+     transform: translate(-50%, 0);
+   }
+ }
++
++.quantity-control { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin: .25rem 0 1rem 2rem; font-size: .85rem; }
++.quantity-control input { max-width: 14rem; padding: .45rem; border: 1px solid currentColor; border-radius: .3rem; font: inherit; }
++.quantity-control input:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+--- recipeweb/src/components/IngredientChecklist.tsx (before)
++++ recipeweb/src/components/IngredientChecklist.tsx (after)
+@@ -5,13 +5,14 @@
+   ingredients: Ingredient[];
+   checked: Record<string, boolean>;
+   onToggle: (key: string) => void;
++  onQuantityChange?: (key: string, value: string) => void;
+ }
+ 
+ /**
+  * Renders a checkable ingredient list, preserving the source recipe's
+  * ingredient groups (e.g. "Marinade", "Nuoc cham").
+  */
+-export default function IngredientChecklist({ slug, ingredients, checked, onToggle }: Props) {
++export default function IngredientChecklist({ slug, ingredients, checked, onToggle, onQuantityChange }: Props) {
+   // Preserve original order while grouping consecutive items.
+   const sections: { group: string | null; items: { ing: Ingredient; index: number }[] }[] = [];
+   ingredients.forEach((ing, index) => {
+@@ -48,6 +49,13 @@
+                       {ing.item}
+                     </span>
+                   </button>
++                  {onQuantityChange && (
++                    <label className="quantity-control">
++                      <span>Quantity for {ing.item}</span>
++                      <input type="text" maxLength={100} value={ing.quantity}
++                        onChange={(event) => onQuantityChange(key, event.target.value)} />
++                    </label>
++                  )}
+                 </li>
+               );
+             })}
+--- recipeweb/src/pages/ShoppingListPage.tsx (before)
++++ recipeweb/src/pages/ShoppingListPage.tsx (after)
+@@ -1,15 +1,16 @@
++import { ingredientsWithQuantities } from '../store/shoppingState';
+ import { Link } from 'react-router-dom';
+ import { useShoppingList } from '../store/ShoppingListContext';
+ import IngredientChecklist, { ingredientsToText } from '../components/IngredientChecklist';
+ import { useCopy } from '../hooks/useCopy';
+ 
+ export default function ShoppingListPage() {
+-  const { recipes, checked, toggleChecked, removeRecipe, clearChecked, clearAll } =
++  const { recipes, checked, quantities, setQuantity, storageError, toggleChecked, removeRecipe, clearChecked, clearAll } =
+     useShoppingList();
+   const [copied, copy] = useCopy();
+ 
+   const fullListText = () =>
+-    recipes.map((r) => ingredientsToText(r.name, r.ingredients)).join('\n\n');
++    recipes.map((r) => ingredientsToText(r.name, ingredientsWithQuantities(r, quantities))).join('\n\n');
+ 
+   if (recipes.length === 0) {
+     return (
+@@ -41,6 +42,7 @@
+           items off as you go — your progress is saved on this device.
+         </p>
+ 
++        {storageError && <p role="alert">Changes are available in this tab but could not be saved on this device.</p>}
+         <div className="shopping-toolbar">
+           <button className="btn btn-primary" onClick={() => copy(fullListText())}>
+             {copied ? 'Copied!' : 'Copy entire list'}
+@@ -73,7 +75,7 @@
+                       </a>
+                     </p>
+                   </div>
+-                  <button className="remove-btn" onClick={() => removeRecipe(recipe.slug)}>
++                  <button className="remove-btn" aria-label={`Remove ${recipe.name} from shopping list`} onClick={() => removeRecipe(recipe.slug)}>
+                     Remove
+                   </button>
+                 </div>
+@@ -84,7 +86,8 @@
+                 )}
+                 <IngredientChecklist
+                   slug={recipe.slug}
+-                  ingredients={recipe.ingredients}
++                  ingredients={ingredientsWithQuantities(recipe, quantities)}
++                  onQuantityChange={setQuantity}
+                   checked={checked}
+                   onToggle={toggleChecked}
+                 />
+--- recipeweb/src/store/ShoppingListContext.tsx (before)
++++ recipeweb/src/store/ShoppingListContext.tsx (after)
+@@ -10,17 +10,15 @@
+ import { RECIPES } from '../data/recipes';
+ import type { Recipe } from '../types';
+ 
+-interface ShoppingListState {
+-  /** slugs of recipes added to the shopping list */
+-  recipeSlugs: string[];
+-  /** keys of checked-off ingredients: `${slug}:${index}` */
+-  checked: Record<string, boolean>;
+-}
++import { normalizeShoppingState, type ShoppingListState } from './shoppingState';
+ 
+ interface ShoppingListContextValue {
+   recipes: Recipe[];
+   recipeSlugs: string[];
+   checked: Record<string, boolean>;
++  quantities: Record<string, string>;
++  setQuantity: (key: string, value: string) => void;
++  storageError: boolean;
+   isInList: (slug: string) => boolean;
+   addRecipe: (slug: string) => void;
+   removeRecipe: (slug: string) => void;
+@@ -35,34 +33,22 @@
+ 
+ function loadState(): ShoppingListState {
+   try {
+-    const raw = window.localStorage.getItem(STORAGE_KEY);
+-    if (raw) {
+-      const parsed = JSON.parse(raw) as ShoppingListState;
+-      if (Array.isArray(parsed.recipeSlugs) && typeof parsed.checked === 'object') {
+-        return {
+-          recipeSlugs: parsed.recipeSlugs.filter((s) =>
+-            RECIPES.some((r) => r.slug === s),
+-          ),
+-          checked: parsed.checked ?? {},
+-        };
+-      }
+-    }
+-  } catch {
+-    // ignore corrupted storage
+-  }
+-  return { recipeSlugs: [], checked: {} };
++    return normalizeShoppingState(JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? 'null'), RECIPES);
++  } catch { return normalizeShoppingState(null, RECIPES); }
+ }
+ 
+ const ShoppingListContext = createContext<ShoppingListContextValue | null>(null);
+ 
+ export function ShoppingListProvider({ children }: { children: ReactNode }) {
+   const [state, setState] = useState<ShoppingListState>(loadState);
++  const [storageError, setStorageError] = useState(false);
+ 
+   useEffect(() => {
+     try {
+       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
++      setStorageError(false);
+     } catch {
+-      // storage unavailable (private mode etc.) — keep in memory only
++      setStorageError(true); // Keep the current session usable; disclose persistence failure.
+     }
+   }, [state]);
+ 
+@@ -76,6 +62,7 @@
+ 
+   const removeRecipe = useCallback((slug: string) => {
+     setState((s) => ({
++      quantities: Object.fromEntries(Object.entries(s.quantities).filter(([key]) => !key.startsWith(`${slug}:`))),
+       recipeSlugs: s.recipeSlugs.filter((x) => x !== slug),
+       checked: Object.fromEntries(
+         Object.entries(s.checked).filter(([k]) => !k.startsWith(`${slug}:`)),
+@@ -88,6 +75,7 @@
+       setState((s) =>
+         s.recipeSlugs.includes(slug)
+           ? {
++              quantities: Object.fromEntries(Object.entries(s.quantities).filter(([key]) => !key.startsWith(`${slug}:`))),
+               recipeSlugs: s.recipeSlugs.filter((x) => x !== slug),
+               checked: Object.fromEntries(
+                 Object.entries(s.checked).filter(
+@@ -108,12 +96,17 @@
+     }));
+   }, []);
+ 
++  const setQuantity = useCallback((key: string, value: string) => {
++    if (value.length > 100) return;
++    setState((s) => normalizeShoppingState({ ...s, quantities: { ...s.quantities, [key]: value } }, RECIPES));
++  }, []);
++
+   const clearChecked = useCallback(() => {
+     setState((s) => ({ ...s, checked: {} }));
+   }, []);
+ 
+   const clearAll = useCallback(() => {
+-    setState({ recipeSlugs: [], checked: {} });
++    setState({ recipeSlugs: [], checked: {}, quantities: {} });
+   }, []);
+ 
+   const value = useMemo<ShoppingListContextValue>(() => {
+@@ -124,6 +117,9 @@
+       recipes,
+       recipeSlugs: state.recipeSlugs,
+       checked: state.checked,
++      quantities: state.quantities,
++      setQuantity,
++      storageError,
+       isInList: (slug: string) => state.recipeSlugs.includes(slug),
+       addRecipe,
+       removeRecipe,
+@@ -133,7 +129,7 @@
+       clearAll,
+       count: state.recipeSlugs.length,
+     };
+-  }, [state, addRecipe, removeRecipe, toggleRecipe, toggleChecked, clearChecked, clearAll]);
++  }, [state, setQuantity, storageError, addRecipe, removeRecipe, toggleRecipe, toggleChecked, clearChecked, clearAll]);
+ 
+   return (
+     <ShoppingListContext.Provider value={value}>
+--- recipeweb/src/store/shoppingState.ts (before)
++++ recipeweb/src/store/shoppingState.ts (after)
+@@ -0,0 +1,31 @@
++import type { Recipe } from '../types';
++export interface ShoppingListState {
++    recipeSlugs: string[];
++    checked: Record<string, boolean>;
++    quantities: Record<string, string>;
++}
++/** Treat browser storage as untrusted input, while retaining valid v1 data. */
++export function normalizeShoppingState(value: unknown, recipes: Recipe[]): ShoppingListState {
++    const empty: ShoppingListState = { recipeSlugs: [], checked: {}, quantities: {} };
++    if (!value || typeof value !== 'object' || Array.isArray(value))
++        return empty;
++    const input = value as Record<string, unknown>;
++    const recipeSlugs = Array.isArray(input.recipeSlugs)
++        ? [...new Set(input.recipeSlugs.filter((slug): slug is string => typeof slug === 'string' && recipes.some((recipe) => recipe.slug === slug)))] : [];
++    const validKeys = new Set(recipeSlugs.flatMap((slug) => recipes.find((recipe) => recipe.slug === slug)!.ingredients.map((_, i) => `${slug}:${i}`)));
++    const entries = (field: unknown): [
++        string,
++        unknown
++    ][] => field && typeof field === 'object' && !Array.isArray(field) ? Object.entries(field) : [];
++    return {
++        recipeSlugs,
++        checked: Object.fromEntries(entries(input.checked).filter(([key, v]) => validKeys.has(key) && typeof v === 'boolean')) as Record<string, boolean>,
++        quantities: Object.fromEntries(entries(input.quantities).filter(([key, v]) => validKeys.has(key) && typeof v === 'string' && v.length <= 100)) as Record<string, string>,
++    };
++}
++/** Use the same effective quantities for the screen and clipboard. */
++export function ingredientsWithQuantities(recipe: Recipe, quantities: Record<string, string>) {
++    return recipe.ingredients.map((ingredient, index) => ({
++        ...ingredient, quantity: quantities[`${recipe.slug}:${index}`] ?? ingredient.quantity,
++    }));
++}
+--- jobtrack/src/jobBackup.js (before)
++++ jobtrack/src/jobBackup.js (after)
+@@ -0,0 +1,64 @@
++const FORMAT = 'daybook.jobs';
++const STATUSES = new Set(['applied', 'screening', 'interview', 'offer', 'closed']);
++export const MAX_BACKUP_BYTES = 2 * 1024 * 1024;
++/** Validate the entire payload before a single storage mutation is scheduled. */
++export function parseJobBackup(text) {
++    if (typeof text !== 'string' || new TextEncoder().encode(text).length > MAX_BACKUP_BYTES)
++        throw new Error('Choose a JSON backup no larger than 2 MB.');
++    let backup;
++    try {
++        backup = JSON.parse(text);
++    }
++    catch {
++        throw new Error('The file is not valid JSON.');
++    }
++    if (!backup || backup.format !== FORMAT || backup.version !== 1 || !Array.isArray(backup.applications))
++        throw new Error('Expected a Daybook applications backup, version 1.');
++    if (backup.applications.length > 10000)
++        throw new Error('A backup may contain at most 10,000 applications.');
++    const ids = new Set();
++    return backup.applications.map((record, index) => {
++        const fail = (reason) => { throw new Error(`Application ${index + 1}: ${reason}`); };
++        if (!record || typeof record !== 'object' || Array.isArray(record))
++            fail('expected an object.');
++        const value = {};
++        for (const field of ['id', 'company', 'role', 'location', 'url', 'status', 'stack', 'date', 'notes']) {
++            const item = record[field] ?? '';
++            if (typeof item !== 'string' || item.length > (field === 'notes' ? 100000 : 5000))
++                fail(`${field} must be bounded text.`);
++            value[field] = item;
++        }
++        if (!value.id.trim() || ids.has(value.id))
++            fail('id is missing or duplicated.');
++        ids.add(value.id);
++        if (!value.company.trim())
++            fail('company is required.');
++        if (!STATUSES.has(value.status))
++            fail('unknown status.');
++        if (value.date) {
++            const date = new Date(`${value.date}T00:00:00Z`);
++            if (!/^\d{4}-\d{2}-\d{2}$/.test(value.date) || !Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== value.date)
++                fail('date must be a real YYYY-MM-DD date or empty.');
++        }
++        if (value.url) {
++            try {
++                if (!['http:', 'https:'].includes(new URL(value.url).protocol))
++                    fail('URL must use http or https.');
++            }
++            catch {
++                fail('URL must be an absolute http or https URL.');
++            }
++        }
++        return value;
++    });
++}
++export function exportJobBackup(applications) {
++    const text = JSON.stringify({ format: FORMAT, version: 1, applications }, null, 2);
++    parseJobBackup(text); // Never generate a backup the importer cannot restore.
++    return text;
++}
++export async function commitJobBackup(storage, text) {
++    const applications = parseJobBackup(text);
++    await storage.set('jobtracker:data', JSON.stringify(applications));
++    return applications;
++}
+--- jobtrack/src/JobTracker.jsx (before)
++++ jobtrack/src/JobTracker.jsx (after)
+@@ -1,3 +1,4 @@
++import { commitJobBackup, exportJobBackup, MAX_BACKUP_BYTES } from './jobBackup.js';
+ import React, { useEffect, useRef, useState } from "react";
+ import { formatDate, relativeLabel, todayISO } from "./dates.js";
+ import { C, BODY, DISPLAY, MONO } from "./theme.js";
+@@ -430,6 +431,8 @@
+ 
+ export default function JobTracker() {
+   const [apps, setApps] = useState([]);
++  const [importing, setImporting] = useState(false);
++  const [backupMessage, setBackupMessage] = useState("");
+   const [loaded, setLoaded] = useState(false);
+   const [saveError, setSaveError] = useState(false);
+ 
+@@ -476,6 +479,38 @@
+     catch { setSaveError(true); }
+   };
+ 
++  const exportApplications = () => {
++    try {
++      const text = exportJobBackup(apps);
++      const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
++      const anchor = document.createElement('a');
++      anchor.href = url; anchor.download = 'daybook-applications.json';
++      document.body.append(anchor); anchor.click(); anchor.remove();
++      setTimeout(() => URL.revokeObjectURL(url), 1000);
++      setBackupMessage('Application backup exported. Calendar events are separate.');
++    } catch (error) { setBackupMessage(error.message); }
++  };
++
++  const importApplications = async (event) => {
++    const file = event.target.files?.[0];
++    event.target.value = '';
++    if (!file) return;
++    setImporting(true);
++    try {
++      if (file.size > MAX_BACKUP_BYTES) throw new Error('Choose a JSON backup no larger than 2 MB.');
++      const text = await file.text();
++      // Join the existing write queue so an older edit cannot overwrite import.
++      const operation = writeQueue.current.catch(() => {}).then(() => commitJobBackup(window.storage, text));
++      writeQueue.current = operation;
++      const next = await operation;
++      setApps(next);
++      closeForm(); setExpandedId(null); setSaveError(false);
++      setBackupMessage(`Imported ${next.length} applications. Calendar events were not changed.`);
++    } catch (error) {
++      setBackupMessage(`Import failed: ${error.message} Existing applications are unchanged.`);
++    } finally { setImporting(false); }
++  };
++
+   /* form ------------------------------------------------------------------ */
+   const setField = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }));
+ 
+@@ -562,7 +597,14 @@
+ 
+   /* render ---------------------------------------------------------------- */
+   return (
+-    <div style={S.column}>
++    <fieldset disabled={importing} style={{ ...S.column, border: 0, padding: 0, minWidth: 0 }}>
++      <div aria-label="Application backups" style={{ ...S.row, marginBottom: 20 }}>
++        <button type="button" className="jt-ghost" style={{ ...S.ghost, marginRight: 12 }} disabled={!loaded} onClick={exportApplications}>Export applications</button>{' '}
++        <label>Import applications (replaces current list)
++          <input type="file" accept=".json,application/json" disabled={!loaded} onChange={importApplications} />
++        </label>
++        <p role="status" style={{ ...S.hint, marginBottom: 0 }}>{importing ? 'Validating and saving backup…' : backupMessage}</p>
++      </div>
+       <p style={S.eyebrow}>Application log</p>
+       <div className="jt-header" style={S.header}>
+         <div>
+@@ -783,6 +825,6 @@
+           )}
+         </div>
+       )}
+-    </div>
++    </fieldset>
+   );
+ }
+--- newcodexJS/01-task-manager/server/src/services/taskService.js (before)
++++ newcodexJS/01-task-manager/server/src/services/taskService.js (after)
+@@ -38,7 +38,7 @@
+ function parseTaskId(value) {
+   const id = Number(value);
+ 
+-  if (!Number.isInteger(id) || id < 1) {
++  if (!Number.isSafeInteger(id) || id < 1 || id > 2147483647) {
+     throw new ValidationError('Task id must be a positive integer.');
+   }
+ 
+@@ -111,6 +111,8 @@
+   }
+ 
+   const title = sanitizeString(value);
++
++  if (title.length > 255) throw new ValidationError('Title must be 255 characters or fewer.');
+ 
+   if (title.length === 0) {
+     throw new ValidationError('Title is required.');
+@@ -264,7 +266,9 @@
+   }
+ 
+   if (hasOwn(payload, 'due_date')) {
+-    updates.due_date = normalizeDueDate(payload.due_date);
++    // An overdue task must remain editable when its existing date is submitted.
++    const existingDate = existingTask.due_date ? toDateOnly(new Date(existingTask.due_date)) : null;
++    updates.due_date = payload.due_date === existingDate ? existingDate : normalizeDueDate(payload.due_date);
+   }
+ 
+   if (Object.keys(updates).length === 0) {
+--- newcodexJS/02-contact-book/server/src/models/contactModel.js (before)
++++ newcodexJS/02-contact-book/server/src/models/contactModel.js (after)
+@@ -56,6 +56,7 @@
+   const rows = await baseContactQuery(options)
+     .distinct("contacts.*")
+     .orderBy(`contacts.${sort}`, order)
++    .orderBy("contacts.id", "asc")
+     .limit(limit)
+     .offset((page - 1) * limit);
+   return { rows, total: Number(countRow.count) };
+@@ -155,7 +156,27 @@
+   }, new Map());
+ }
+ 
++/** One transaction covers contacts, tag creation and junction rows. */
++async function importContactBatch(batch) {
++  return db.transaction(async (trx) => {
++    const contacts = [];
++    for (const { contact, tags } of batch) {
++      const [created] = await trx('contacts').insert(contact).returning('*');
++      const attached = [];
++      for (const name of tags) {
++        await trx('tags').insert({ name }).onConflict('name').ignore();
++        const tag = await trx('tags').where({ name }).first();
++        await trx('contact_tags').insert({ contact_id: created.id, tag_id: tag.id });
++        attached.push(tag);
++      }
++      contacts.push({ ...created, tags: attached });
++    }
++    return contacts;
++  });
++}
++
+ module.exports = {
++  importContactBatch,
+   listContacts,
+   findContactById,
+   findAllContacts,
+--- newcodexJS/02-contact-book/server/src/services/contactService.js (before)
++++ newcodexJS/02-contact-book/server/src/services/contactService.js (after)
+@@ -8,23 +8,19 @@
+  * @returns {{contact: object, tagIds: number[]}}
+  */
+ function parseContactPayload(payload) {
+-  if (!payload.first_name?.trim() || !payload.last_name?.trim()) {
+-    throw new ValidationError("First name and last name are required");
++  if (!payload || typeof payload !== 'object' || Array.isArray(payload)) throw new ValidationError('Contact must be an object');
++  const limits = { first_name:100, last_name:100, email:255, phone:30, company:255, street_address:255, city:100, state:100, zip_code:20, country:100, notes:100000 };
++  const contact = {};
++  for (const [key, limit] of Object.entries(limits)) {
++    const value = payload[key];
++    if (value != null && typeof value !== 'string') throw new ValidationError(`${key} must be text`);
++    if (value && value.trim().length > limit) throw new ValidationError(`${key} exceeds ${limit} characters`);
++    contact[key] = value?.trim() || null;
+   }
+-  const tagIds = Array.isArray(payload.tagIds) ? payload.tagIds.map(Number).filter(Boolean) : [];
+-  const contact = {
+-    first_name: payload.first_name.trim(),
+-    last_name: payload.last_name.trim(),
+-    email: payload.email?.trim() || null,
+-    phone: payload.phone?.trim() || null,
+-    company: payload.company?.trim() || null,
+-    street_address: payload.street_address?.trim() || null,
+-    city: payload.city?.trim() || null,
+-    state: payload.state?.trim() || null,
+-    zip_code: payload.zip_code?.trim() || null,
+-    country: payload.country?.trim() || null,
+-    notes: payload.notes?.trim() || null
+-  };
++  if (!contact.first_name || !contact.last_name) throw new ValidationError('First name and last name are required');
++  if (contact.email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact.email)) throw new ValidationError('Email must be valid');
++  const tagIds = [...new Set(Array.isArray(payload.tagIds) ? payload.tagIds.map(Number) : [])];
++  if (tagIds.some((id) => !Number.isSafeInteger(id) || id < 1)) throw new ValidationError('Tag ids must be positive integers');
+   return { contact, tagIds };
+ }
+ 
+@@ -44,8 +40,10 @@
+  * @returns {Promise<object>}
+  */
+ async function listContacts(query) {
+-  const page = Math.max(Number(query.page || 1), 1);
+-  const limit = Math.min(Math.max(Number(query.limit || 20), 1), 100);
++  const page = Number(query.page ?? 1);
++  const limit = Number(query.limit ?? 20);
++  if (!Number.isSafeInteger(page) || page < 1 || !Number.isInteger(limit) || limit < 1 || limit > 100 || !Number.isSafeInteger((page - 1) * limit))
++    throw new ValidationError('page must be a positive integer and limit must be from 1 to 100');
+   const { rows, total } = await contactModel.listContacts({ ...query, page, limit });
+   return { contacts: await withTags(rows), pagination: { page, limit, total, pages: Math.ceil(total / limit) } };
+ }
+@@ -124,15 +122,23 @@
+  * @returns {Promise<object>}
+  */
+ async function importContacts(csv) {
+-  if (!csv?.trim()) throw new ValidationError("CSV text is required");
+   const rows = csvToContacts(csv);
+-  const created = [];
+-  for (const row of rows) {
+-    if (row.first_name && row.last_name) {
+-      created.push(await contactModel.createContact(parseContactPayload(row).contact));
+-    }
++  // Parse every row before opening a transaction: invalid row 20 saves no rows.
++  const batch = rows.map((row, index) => {
++    try {
++      const { contact } = parseContactPayload(row);
++      const tags = [...new Set((row.tags || '').split('|').map((tag) => tag.trim()).filter(Boolean))];
++      if (tags.some((tag) => tag.length > 50)) throw new ValidationError('Tag names must be 50 characters or fewer');
++      return { contact, tags };
++    } catch (error) { throw new ValidationError(`CSV record ${index + 2}: ${error.message}`); }
++  });
++  try {
++    const created = await contactModel.importContactBatch(batch);
++    return { imported: created.length, contacts: created };
++  } catch (error) {
++    if (error.code === '23505') throw new ValidationError('An email already exists or is repeated in the CSV; no contacts were imported');
++    throw error;
+   }
+-  return { imported: created.length, contacts: created };
+ }
+ 
+ module.exports = { listContacts, getContact, createContact, updateContact, deleteContact, bulkDelete, exportContacts, importContacts };
+--- newcodexJS/02-contact-book/server/src/utils/csv.js (before)
++++ newcodexJS/02-contact-book/server/src/utils/csv.js (after)
+@@ -1,41 +1,76 @@
+-/**
+- * Escapes a single CSV field according to RFC-style quoting.
+- * @param {unknown} value Raw value.
+- * @returns {string} CSV-safe value.
+- */
++const { ValidationError } = require('../middleware/errors');
++const HEADERS = ['first_name', 'last_name', 'email', 'phone', 'company', 'street_address', 'city', 'state', 'zip_code', 'country', 'notes', 'tags'];
+ function escapeCsv(value) {
+-  const text = value === null || value === undefined ? "" : String(value);
+-  return /[",\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
++    const text = value == null ? '' : String(value);
++    return /[",\r\n]/.test(text) ? `"${text.replace(/"/g, '""')}"` : text;
+ }
+-
+-/**
+- * Converts contacts into a CSV string for downloads.
+- * @param {Array<object>} contacts Contacts with optional tags.
+- * @returns {string} CSV document.
+- */
+ function contactsToCsv(contacts) {
+-  const headers = ["first_name", "last_name", "email", "phone", "company", "street_address", "city", "state", "zip_code", "country", "notes", "tags"];
+-  const rows = contacts.map((contact) =>
+-    headers.map((key) => escapeCsv(key === "tags" ? (contact.tags || []).map((tag) => tag.name).join("|") : contact[key])).join(",")
+-  );
+-  return [headers.join(","), ...rows].join("\n");
++    return [HEADERS.join(','), ...contacts.map((contact) => HEADERS.map((key) => escapeCsv(key === 'tags' ? (contact.tags || []).map((tag) => tag.name).join('|') : contact[key])).join(','))].join('\n');
+ }
+-
+-/**
+- * Parses simple CSV text into contact records for educational imports.
+- * @param {string} csv CSV text with a header row.
+- * @returns {Array<object>} Parsed contacts.
+- */
++/** A small state machine: delimiters only split fields outside quoted text. */
+ function csvToContacts(csv) {
+-  const [headerLine, ...lines] = csv.trim().split(/\r?\n/).filter(Boolean);
+-  const headers = headerLine.split(",").map((header) => header.trim());
+-  return lines.map((line) => {
+-    const values = line.split(",").map((value) => value.trim());
+-    return headers.reduce((record, header, index) => {
+-      record[header] = values[index] || null;
+-      return record;
+-    }, {});
+-  });
++    if (typeof csv !== 'string' || !csv.trim())
++        throw new ValidationError('CSV text is required');
++    const text = csv.replace(/^\uFEFF/, '');
++    const rows = [];
++    let row = [];
++    let field = '';
++    let quoted = false;
++    let closed = false;
++    function endField() { row.push(field); field = ''; closed = false; }
++    function endRow() {
++        endField();
++        if (row.some((value) => value.trim()))
++            rows.push(row);
++        row = [];
++    }
++    for (let i = 0; i < text.length; i++) {
++        const char = text[i];
++        if (quoted) {
++            if (char === '"' && text[i + 1] === '"') {
++                field += '"';
++                i++;
++            }
++            else if (char === '"') {
++                quoted = false;
++                closed = true;
++            }
++            else
++                field += char;
++        }
++        else if (char === ',')
++            endField();
++        else if (char === '\n' || char === '\r') {
++            if (char === '\r' && text[i + 1] === '\n')
++                i++;
++            endRow();
++        }
++        else if (closed) {
++            throw new ValidationError('Unexpected text after a closing CSV quote');
++        }
++        else if (char === '"') {
++            if (field.length)
++                throw new ValidationError('A quoted CSV field must start with a quote');
++            quoted = true;
++        }
++        else
++            field += char;
++    }
++    if (quoted)
++        throw new ValidationError('Unclosed CSV quote');
++    if (field.length || row.length || closed)
++        endRow();
++    const headers = (rows.shift() || []).map((value) => value.trim());
++    if (!headers.includes('first_name') || !headers.includes('last_name'))
++        throw new ValidationError('CSV headers must include first_name and last_name');
++    if (new Set(headers).size !== headers.length || headers.some((key) => !HEADERS.includes(key)))
++        throw new ValidationError('CSV has duplicate or unsupported headers');
++    if (!rows.length || rows.length > 1000)
++        throw new ValidationError('Import between 1 and 1000 contacts at a time');
++    return rows.map((values, index) => {
++        if (values.length !== headers.length)
++            throw new ValidationError(`CSV record ${index + 2} has the wrong number of fields`);
++        return Object.fromEntries(headers.map((key, i) => [key, values[i]]));
++    });
+ }
+-
+ module.exports = { contactsToCsv, csvToContacts };
+--- newcodexJS/03-expense-tracker/server/src/models/expenseModel.js (before)
++++ newcodexJS/03-expense-tracker/server/src/models/expenseModel.js (after)
+@@ -165,6 +165,7 @@
+  */
+ async function byCategory(filters) {
+   return expenseQuery(filters)
++    .clearSelect()
+     .groupBy("categories.id")
+     .select("categories.name", "categories.color", db.raw("SUM(expenses.amount)::float as total"), db.raw("COUNT(*)::int as count"))
+     .orderBy("total", "desc");
+--- newcodexJS/03-expense-tracker/server/src/services/expenseService.js (before)
++++ newcodexJS/03-expense-tracker/server/src/services/expenseService.js (after)
+@@ -11,10 +11,10 @@
+  */
+ function parseExpense(payload) {
+   const amount = Number(payload.amount);
+-  if (!amount || amount <= 0) throw new ValidationError("Amount must be greater than zero");
++  if (!Number.isFinite(amount) || amount <= 0 || amount > 99999999.99 || Math.abs(amount * 100 - Math.round(amount * 100)) > 0.00001) throw new ValidationError("Amount must be greater than zero");
+   if (!payload.description?.trim()) throw new ValidationError("Description is required");
+   if (!payload.category_id) throw new ValidationError("Category is required");
+-  if (!payload.expense_date) throw new ValidationError("Expense date is required");
++  validDate(payload.expense_date);
+   const recurringInterval = payload.is_recurring ? payload.recurring_interval : null;
+   if (recurringInterval && !["weekly", "monthly"].includes(recurringInterval)) throw new ValidationError("Recurring interval must be weekly or monthly");
+   return {
+@@ -35,7 +35,7 @@
+  * @returns {Promise<Array<object>>}
+  */
+ async function listExpenses(query) {
+-  return model.listExpenses(query);
++  return model.listExpenses(validFilters(query));
+ }
+ 
+ /**
+@@ -87,7 +87,7 @@
+  * @returns {Promise<string>}
+  */
+ async function exportExpenses(query) {
+-  return expensesToCsv(await model.listExpenses(query));
++  return expensesToCsv(await model.listExpenses(validFilters(query)));
+ }
+ 
+ /**
+@@ -165,6 +165,24 @@
+   const deleted = await model.deleteBudget(id);
+   if (!deleted) throw new NotFoundError("Budget not found");
+   return { id };
++}
++
++function validDate(value) {
++  if (typeof value !== 'string' || value.startsWith('0000-') || !/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new ValidationError('Use a YYYY-MM-DD date');
++  const date = new Date(`${value}T00:00:00Z`);
++  if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0,10) !== value) throw new ValidationError('Use a real calendar date');
++  return value;
++}
++function validMonth(value) {
++  if (typeof value !== 'string' || value.startsWith('0000-') || !/^\d{4}-(0[1-9]|1[0-2])$/.test(value)) throw new ValidationError('Use a YYYY-MM month');
++  return value;
++}
++function validFilters(query = {}) {
++  if (query.start_date) validDate(query.start_date);
++  if (query.end_date) validDate(query.end_date);
++  if (query.start_date && query.end_date && query.start_date > query.end_date) throw new ValidationError('start_date must not follow end_date');
++  if (query.category_id && (!Number.isSafeInteger(Number(query.category_id)) || Number(query.category_id) < 1)) throw new ValidationError('category_id must be a positive integer');
++  return query;
+ }
+ 
+ module.exports = {
+@@ -181,8 +199,8 @@
+   listBudgets,
+   upsertBudget,
+   deleteBudget,
+-  monthlySummary: model.monthlySummary,
+-  byCategory: model.byCategory,
+-  dailyTrend: model.dailyTrend,
+-  weeklyTrend: model.weeklyTrend
++  monthlySummary: (month) => model.monthlySummary(validMonth(month)),
++  byCategory: (filters) => model.byCategory(validFilters(filters)),
++  dailyTrend: (month) => model.dailyTrend(validMonth(month)),
++  weeklyTrend: (start) => model.weeklyTrend(validDate(start))
+ };
+--- newcodexJS/05-recipe-manager/client/src/vite-env.d.ts (before)
++++ newcodexJS/05-recipe-manager/client/src/vite-env.d.ts (after)
+@@ -0,0 +1 @@
++/// <reference types="vite/client" />
+--- newcodexJS/05-recipe-manager/server/src/models/recipeModel.ts (before)
++++ newcodexJS/05-recipe-manager/server/src/models/recipeModel.ts (after)
+@@ -85,7 +85,7 @@
+     updated_at: trx.fn.now()
+   };
+   const id = recipeId
+-    ? Number((await trx('recipes').where({ id: recipeId }).update(row).returning('id'))[0].id)
++    ? Number((await trx('recipes').where({ id: recipeId, user_id: userId }).update(row).returning('id'))[0].id)
+     : Number((await trx('recipes').insert(row).returning('id'))[0].id);
+ 
+   await trx('ingredients').where({ recipe_id: id }).delete();
+--- newcodexJS/05-recipe-manager/server/src/services/recipeService.ts (before)
++++ newcodexJS/05-recipe-manager/server/src/services/recipeService.ts (after)
+@@ -14,24 +14,53 @@
+ import { ForbiddenError, NotFoundError, ValidationError } from '../utils/errors.js';
+ 
+ /** Normalizes a nested recipe payload into the shape expected by the model layer. */
+-function parseRecipeInput(body: Record<string, unknown>): RecipeInput {
+-  const ingredients = Array.isArray(body.ingredients) ? body.ingredients : [];
+-  const steps = Array.isArray(body.steps) ? body.steps : [];
+-  if (!body.title || typeof body.title !== 'string') throw new ValidationError('Title is required');
+-  if (!ingredients.length) throw new ValidationError('At least one ingredient is required');
+-  if (!steps.length) throw new ValidationError('At least one step is required');
++export function parseRecipeInput(body: Record<string, unknown>): RecipeInput {
++  if (!body || typeof body !== 'object' || Array.isArray(body)) throw new ValidationError('Recipe must be an object');
++  function text(value: unknown, field: string, limit: number, required = false): string | undefined {
++    if (value == null && !required) return undefined;
++    if (typeof value !== 'string' || value.trim().length > limit || (required && !value.trim()))
++      throw new ValidationError(`${field} must be ${required ? 'non-empty ' : ''}text, at most ${limit} characters`);
++    return value.trim();
++  }
++  function positive(value: unknown, field: string): number | undefined {
++    if (value == null || value === '') return undefined;
++    if ((typeof value !== 'number' && typeof value !== 'string') || !Number.isSafeInteger(Number(value)) || Number(value) < 1 || Number(value) > 2147483647)
++      throw new ValidationError(`${field} must be a positive integer`);
++    return Number(value);
++  }
++  function object(value: unknown): Record<string, unknown> {
++    if (!value || typeof value !== 'object' || Array.isArray(value)) throw new ValidationError('Ingredients and steps must be objects');
++    return value as Record<string, unknown>;
++  }
++  if (!Array.isArray(body.ingredients) || body.ingredients.length < 1 || body.ingredients.length > 100)
++    throw new ValidationError('Provide 1 to 100 ingredients');
++  if (!Array.isArray(body.steps) || body.steps.length < 1 || body.steps.length > 200)
++    throw new ValidationError('Provide 1 to 200 steps');
++  const difficulty = body.difficulty ?? 'medium';
++  if (typeof difficulty !== 'string' || !['easy','medium','hard'].includes(difficulty)) throw new ValidationError('Difficulty must be easy, medium or hard');
++  if (body.isPublic !== undefined && typeof body.isPublic !== 'boolean') throw new ValidationError('isPublic must be a boolean');
++  if (body.categoryIds !== undefined && !Array.isArray(body.categoryIds)) throw new ValidationError('categoryIds must be an array');
++  const categoryIds = [...new Set((body.categoryIds as unknown[] ?? []).map((id) => {
++    const value = positive(id, 'Category id');
++    if (!value) throw new ValidationError('Category ids must be positive integers');
++    return value;
++  }))];
+   return {
+-    title: body.title,
+-    description: typeof body.description === 'string' ? body.description : undefined,
+-    imageUrl: typeof body.imageUrl === 'string' ? body.imageUrl : undefined,
+-    prepTimeMinutes: body.prepTimeMinutes ? Number(body.prepTimeMinutes) : undefined,
+-    cookTimeMinutes: body.cookTimeMinutes ? Number(body.cookTimeMinutes) : undefined,
+-    servings: body.servings ? Number(body.servings) : undefined,
+-    difficulty: (body.difficulty as RecipeInput['difficulty']) ?? 'medium',
+-    isPublic: body.isPublic !== false,
+-    ingredients: ingredients.map((item) => item as RecipeInput['ingredients'][number]).filter((item) => item.name),
+-    steps: steps.map((item) => item as RecipeInput['steps'][number]).filter((item) => item.instruction),
+-    categoryIds: Array.isArray(body.categoryIds) ? body.categoryIds.map(Number).filter(Boolean) : []
++    title: text(body.title, 'Title', 255, true)!,
++    description: text(body.description, 'Description', 100000),
++    imageUrl: text(body.imageUrl, 'Image URL', 500),
++    prepTimeMinutes: positive(body.prepTimeMinutes, 'Prep time'),
++    cookTimeMinutes: positive(body.cookTimeMinutes, 'Cook time'),
++    servings: positive(body.servings, 'Servings'),
++    difficulty: difficulty as RecipeInput['difficulty'], isPublic: body.isPublic !== false,
++    ingredients: body.ingredients.map((value) => {
++      const item = object(value);
++      return { name: text(item.name,'Ingredient name',200,true)!, quantity: text(item.quantity,'Quantity',50), unit: text(item.unit,'Unit',30) };
++    }),
++    steps: body.steps.map((value) => {
++      const item = object(value);
++      return { instruction: text(item.instruction,'Step instruction',100000,true)!, imageUrl: text(item.imageUrl,'Step image URL',500) };
++    }), categoryIds,
+   };
+ }
+ 
+@@ -57,11 +86,14 @@
+ 
+ /** Updates a recipe after confirming the authenticated user owns it. */
+ export async function updateRecipeForUser(userId: number, recipeId: number, body: Record<string, unknown>) {
+-  const owner = await findRecipeOwner(recipeId);
+-  if (!owner) throw new NotFoundError('Recipe not found');
+-  if (owner.user_id !== userId) throw new ForbiddenError('Only the owner can edit this recipe');
+-  const input = parseRecipeInput(body);
+-  await db.transaction((trx) => saveRecipeGraph(trx, userId, input, recipeId));
++  await db.transaction(async (trx) => {
++    // Lock and authorize inside the same transaction as the nested replacement.
++    const owner = await trx('recipes').where({ id: recipeId }).forUpdate().first();
++    if (!owner) throw new NotFoundError('Recipe not found');
++    if (owner.user_id !== userId) throw new ForbiddenError('Only the owner can edit this recipe');
++    const input = parseRecipeInput(body);
++    await saveRecipeGraph(trx, userId, input, recipeId);
++  });
+   return getRecipe(recipeId, userId);
+ }
+ 

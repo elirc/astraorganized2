@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w21",
+  "id": "06f66ec88e8d",
+  "summary": [
+    "Map Prisma P2025 concurrent deletion to the existing route not-found contract.",
+    "Preserve unrelated persistence error identity.",
+    "Execute the actual transition service through a dependency-free VM harness."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/06f66ec88e8d/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/w21",
+        "id": "06f66ec88e8d",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-route-status.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\06f66ec88e8d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:25:40.066086+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 24972,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:25:45.355706+00:00",
+        "elapsedSeconds": 5.29
+      }
+    ],
+    "limits": [
+      "Five runtime cases execute actual transition service, AppError and role policy with repository and Prisma transaction adapters. Native Vitest, Prisma/PostgreSQL and Next HTTP middleware were not run.",
+      "P2025 is simulated after a successful pre-read; no real concurrent delete or transaction rollback was executed. Status and policy preconditions remain separate reads and are not made atomic by this error translation."
+    ]
+  },
+  "courseWords": 1670,
+  "courseFiles": 9,
+  "courseLinksChecked": 5,
+  "files": [
+    {
+      "file": "src/services/admin/gateway-route-service.ts",
+      "before_sha256": "89c06e29701ede19cf4400a86ec18d78e119d077ba62cf985f70a9896bb8c64c",
+      "after_sha256": "d6856bf8e7ed6b6c4075d0b75ebc62e62b492fc7fe92cbc2490e06f96860d8b8"
+    },
+    {
+      "file": "tests/runtime-route-status.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "2d6439b491d7fca17d2849c3a691e6103d641099f28a5b24af84fe4cc76d6e28"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src/services/admin/gateway-route-service.ts",
+      "before_sha256": null,
+      "after_sha256": "89c06e29701ede19cf4400a86ec18d78e119d077ba62cf985f70a9896bb8c64c"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "f9f71ee9ed819028b67565aaffd0b76b56a1c2ca425d4f8617291a6ea75c1f6e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "b62e20d8cfea8be813f3edb2d3da0691c589b8c7538c8475254e40279ed8a765"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "88a136e5a0e1bc216f33c0292c7d6ba0700ce48f1e4d9f418f57b10ca948b021"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d0eb65602f58f9bb440b9b51b04e72e5c68c0438bcb186ac6988ae93ab64e98f"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1be26233c898c99dde5a244f490f2fd07ee74b04f4f307d44b72add4d4274f9f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "285f9a407b8fdf40c436e2c7d7fe53ac4850395b9746c284449adc3be2b5bcaa"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "2bf45d347fc0d26374a5dead0724b3b0239be85e0ab3f577f3ea27f6af70cb85"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7031ad6cdc8199215550b5e5a58a81653934920b02ff5a4580a1d5fc553d80d4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "54c3660471cfe0d430eca0eca9a9706a4f834c4ca34987fee9f6877137435b71"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1e30725fa8159fcc9640e14b214ba52de1663fcb9e3d3769f5608e2d47bf57a3"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "034eb2edb18c2e1e0b3b0eaf765189e1c7e40df3bd15109e45d966caa0779234"
+    }
+  ],
+  "limits": [
+    "Five runtime cases execute actual transition service, AppError and role policy with repository and Prisma transaction adapters. Native Vitest, Prisma/PostgreSQL and Next HTTP middleware were not run.",
+    "P2025 is simulated after a successful pre-read; no real concurrent delete or transaction rollback was executed. Status and policy preconditions remain separate reads and are not made atomic by this error translation."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:31:53.867955+00:00"
+}

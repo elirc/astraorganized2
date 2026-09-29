@@ -1,0 +1,31 @@
+﻿{
+    "id":  "482e93488b83",
+    "project":  "z8",
+    "files":  [
+                  "src/modules/registrations/registration.service.ts",
+                  "tests/registration-session-selection.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src/modules/registrations/registration.service.ts",
+                  "astraupskill/evidence/registration-session-selection.log",
+                  "astraupskill/evidence/results-crud-b07.json",
+                  "README.md",
+                  "01-CODEBASE-MAP.md",
+                  "02-CONCEPTS.md",
+                  "03-WORKED-CHANGE.md",
+                  "04-TESTING-AND-DEBUGGING.md",
+                  "05-PRACTICE.md",
+                  "06-SOLUTIONS-AND-REVIEW.md",
+                  "07-TRACE-LAB.md",
+                  "VERIFICATION.md"
+              ],
+    "finding":  "The service silently discarded unknown requested session IDs; it now rejects incomplete selections before registration side effects.",
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/registration-session-selection.test.mjs (3 passed)"
+              ],
+    "limits":  [
+                   "No Prisma or Next runtime; repository, audit, permission, and DB singleton are explicit harness doubles.",
+                   "No concurrency or notification delivery guarantee.",
+                   "Duplicate input IDs are deduplicated by Set and remain allowed."
+               ],
+    "spec":  "astra-remaining-improvements/specs/482e93488b83.json"
+}

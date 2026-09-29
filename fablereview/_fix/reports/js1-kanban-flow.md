@@ -1,0 +1,26 @@
+# JS1/kanban-flow — fix report (B03)
+
+Fable, 2026-09-18.
+
+## Done
+- review#1 .move-column styled (width, margin, font, focus ring) consistent with .link-button
+- review#4 no-op drops report "Card is already there." and skip the write; 02 explains feedback for no-op operations
+- review#5 fourth test shows the cross-tab last-writer-wins conflict; fifth test proves a no-op drop writes nothing
+- review#2 README prerequisites and VERIFICATION limits state the real limits (single tab, no storage event, prompt rename)
+- review#3 exercises 1-4 with board-specific acceptance; distinct review paragraphs (05, 06)
+- 2.2 trace-lab call path section (07)
+- 2.4 three concrete variations
+- dependencies pinned (dev tooling only)
+
+## Skipped
+- (none)
+
+## Verification
+- npm install (pinned) -> ok
+- cmd /c npm test -> # tests 5 / # pass 5 / # fail 0 (3 delivered + cross-tab conflict + no-op drop)
+- build -> no build script
+- node_modules and dist removed; package-lock.json kept
+
+## Course/code consistency check
+- 07 call-path section cites the current app.js/server.js line numbers
+- 05/06 exercise criteria checked against function names

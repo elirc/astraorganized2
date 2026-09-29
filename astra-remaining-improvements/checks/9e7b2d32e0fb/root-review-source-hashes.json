@@ -1,0 +1,12 @@
+{
+  "files": {
+    "Directory.Packages.props": "380fde4e9751a182ffa975715ac46cd6945f94a9e9e81841aaaa2ecf7562ba99",
+    "src/PeblClone.Api/PeblClone.Api.csproj": "87daa6a5f424ba306c70c160767cbca2a5833a2d48975b43040c13a9fe99d887",
+    "src/PeblClone.Application/Workforce/HiringQuoteCalculator.cs": "3d9cc66f9e9fec5b94c6e57394355963f561ed8c11374dab1575694a01aa5942",
+    "src/PeblClone.Web/src/features/QuoteBuilder.tsx": "be92b14f6f263f3cb50d5417d9efcebbcb9aa87a838a5d28fec080a7f0b722a5",
+    "src/PeblClone.Web/src/services/workforceApi.ts": "f42af33773bae46d9686610da86068a80bfa6a3fa3465f05dd57193feb9c5149",
+    "tests/PeblClone.Application.Tests/HiringQuoteCalculatorTests.cs": "fd41910ca5733f13e78ae545e3fc2d74e3dafc58da2d447885541e347c0ffcca",
+    "src/PeblClone.Web/src/services/requestGate.ts": "600e109ff5862b744f8ea816c19fe4340029a735065b121c044f963fef8afcf1",
+    "src/PeblClone.Web/tests/request-gate.test.mjs": "175d1a32eb16306cb215dbc3c27f22b500004183d93477591fb130cbb9a2d477"
+  }
+}

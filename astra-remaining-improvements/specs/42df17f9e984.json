@@ -1,0 +1,25 @@
+{
+  "id": "42df17f9e984",
+  "project": "zz7",
+  "summary": [
+    "Accumulate prior and incoming receipt quantities exactly once, rejecting duplicate-entry overage before writes.",
+    "Permit additional valid partial receipts while aggregate status remains PARTIALLY_RECEIVED.",
+    "Six real-service cases with actual errors, serializer and transition function cover partial, full, prior, duplicate and refusal paths."
+  ],
+  "changedFiles": [
+    "src/services/purchaseOrderService.ts",
+    "tests/runtime-purchase-receiving.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-purchaseOrderService.ts.before",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/42df17f9e984/results-crud-b08.json"
+  },
+  "limits": [
+    "Repository and transaction adapters; inert Zod schema builders for module loading only, no schema parsing, SQL rollback or concurrent receipt protection tested.",
+    "Service assumes validated finite nonnegative quantities; current source reads receipt totals before transaction."
+  ]
+}

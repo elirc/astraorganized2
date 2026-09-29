@@ -1,0 +1,24 @@
+{
+  "id": "6130d1be1f04",
+  "project": "_Organized Desktop/05 Numbered Experiments/e20",
+  "files": {
+    ".gitignore": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+    "package-lock.json": "975bfdae91a405344db506b94a7318759da98615773970fe0a94a4bc43e99a30",
+    "package.json": "f42af5942e4452dd0bfc532831564335c788e6f379cfc16886862b4f76fdd44e",
+    "README.md": "30e65b7a355a55713e1fa4a85ea58cccc8d2db258f48dce003852d19c927e1fb",
+    "tsconfig.json": "7e3f0eabb70e4d3a9141696f479b866b8c084d1196368bfe6f0a7aea77d46f37",
+    "docs/onboarding/00-codebase-map.md": "3b4cf4a9033c13aec52191d0158b46f0e5d22c598e10336acbc3e81f48418b29",
+    "docs/onboarding/01-reading-order.md": "6bd81ed52b3a6d80426c28056fac58aca9edd3687ea9f2fe68c041065832da62",
+    "docs/onboarding/02-review-checklists.md": "4e2a552f20c5fc2c5c28c53a7310c01fc4dc738a6158d2b292689d0f4fa1801e",
+    "docs/onboarding/files/src/app.ts.md": "ae44a7df063a2f04034183175c8e8f57b51de80e9f2bf915c3ab80d720ae45ac",
+    "docs/onboarding/files/src/domain/erp-service.ts.md": "af3f72c1b9117f9bd786c2b0fcf87c721209a8ec1906b2ca1eaf985d52040d49",
+    "docs/onboarding/files/src/domain/models.ts.md": "423a9e9b0f0c00d122f8afe883f30b7696248da86d52e037c9d0000813e3a1ab",
+    "docs/onboarding/files/src/domain/store.ts.md": "7069d2c0111988a5747173829097b0d6aa865b12a60f6a9d875655b19d578cb0",
+    "src/app.ts": "aaaa0c0822823789389f4ac4ba13bcb93e0cda07625bdafb3331abf33ba15e3b",
+    "src/server.ts": "8d2977b5b76756e3d4837c54e801b22fdc3550433dbd6d16c92b5e1c264f4007",
+    "src/domain/erp-service.ts": "2e7fa39bf3e35e13f7eec2ae8d5d52133ddade6bdb5d38097d5e192c0a639491",
+    "src/domain/models.ts": "f987fb3633b1cc7395a5952f0603a7e26d0d2525c44980f3c8b198abf3c0c255",
+    "src/domain/store.ts": "5a00ee424751437a0d5276931613167a866835c3a11af278a23e0e6c56ae1f2e",
+    "tests/erp.test.ts": "64defc7403f83fcd42bfea93720cd59bceb18702c3b8fa174214247e3e829020"
+  }
+}

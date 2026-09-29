@@ -1,0 +1,130 @@
+TAP version 13
+# Subtest: missing storage produces detached example banks without writes
+ok 1 - missing storage produces detached example banks without writes
+  ---
+  duration_ms: 6.3138
+  type: 'test'
+  ...
+# Subtest: legacy data migrates deterministically without changing the source
+ok 2 - legacy data migrates deterministically without changing the source
+  ---
+  duration_ms: 4.3243
+  type: 'test'
+  ...
+# Subtest: invalid JSON and unsupported versions reject without falling back
+ok 3 - invalid JSON and unsupported versions reject without falling back
+  ---
+  duration_ms: 4.9468
+  type: 'test'
+  ...
+# Subtest: record identities must be unique across categories and questions
+ok 4 - record identities must be unique across categories and questions
+  ---
+  duration_ms: 0.6783
+  type: 'test'
+  ...
+# Subtest: unknown fields and empty required text are rejected
+ok 5 - unknown fields and empty required text are rejected
+  ---
+  duration_ms: 0.873
+  type: 'test'
+  ...
+# Subtest: points and maximum collection sizes are bounded
+ok 6 - points and maximum collection sizes are bounded
+  ---
+  duration_ms: 0.7589
+  type: 'test'
+  ...
+# Subtest: used clues must be unique existing questions
+ok 7 - used clues must be unique existing questions
+  ---
+  duration_ms: 1.0333
+  type: 'test'
+  ...
+# Subtest: save commits normalized state with a new revision and reloads
+ok 8 - save commits normalized state with a new revision and reloads
+  ---
+  duration_ms: 1.815
+  type: 'test'
+  ...
+# Subtest: caller-supplied revisions do not control the next committed revision
+ok 9 - caller-supplied revisions do not control the next committed revision
+  ---
+  duration_ms: 1.951
+  type: 'test'
+  ...
+# Subtest: two concurrent cooperating saves from one baseline have one winner
+ok 10 - two concurrent cooperating saves from one baseline have one winner
+  ---
+  duration_ms: 3.7522
+  type: 'test'
+  ...
+# Subtest: stale snapshots cannot overwrite later round progress
+ok 11 - stale snapshots cannot overwrite later round progress
+  ---
+  duration_ms: 4.2371
+  type: 'test'
+  ...
+# Subtest: quota failure preserves exact storage and caller draft
+ok 12 - quota failure preserves exact storage and caller draft
+  ---
+  duration_ms: 1.9843
+  type: 'test'
+  ...
+# Subtest: missing Web Locks refuses unsafe saves
+ok 13 - missing Web Locks refuses unsafe saves
+  ---
+  duration_ms: 0.6574
+  type: 'test'
+  ...
+# Subtest: corrupt data requires explicit replacement with matching saved text
+ok 14 - corrupt data requires explicit replacement with matching saved text
+  ---
+  duration_ms: 1.7797
+  type: 'test'
+  ...
+# Subtest: deleting a question removes its used marker without changing input
+ok 15 - deleting a question removes its used marker without changing input
+  ---
+  duration_ms: 0.8918
+  type: 'test'
+  ...
+# Subtest: deleting a category cleans its used markers while retaining others
+ok 16 - deleting a category cleans its used markers while retaining others
+  ---
+  duration_ms: 0.843
+  type: 'test'
+  ...
+# Subtest: empty bank is valid and can be persisted
+ok 17 - empty bank is valid and can be persisted
+  ---
+  duration_ms: 0.5955
+  type: 'test'
+  ...
+# Subtest: oversized imports and exhausted revisions are rejected
+ok 18 - oversized imports and exhausted revisions are rejected
+  ---
+  duration_ms: 5.8715
+  type: 'test'
+  ...
+# Subtest: unavailable storage reports an error instead of overwriting defaults
+ok 19 - unavailable storage reports an error instead of overwriting defaults
+  ---
+  duration_ms: 0.679
+  type: 'test'
+  ...
+# Subtest: normalization detaches nested input and keeps literal markup as text
+ok 20 - normalization detaches nested input and keeps literal markup as text
+  ---
+  duration_ms: 0.8939
+  type: 'test'
+  ...
+1..20
+# tests 20
+# suites 0
+# pass 20
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 551.3924

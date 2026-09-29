@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "node_modules/eslint/bin/eslint.js",
+    "src",
+    "scripts",
+    "test"
+  ],
+  "exitCode": 0,
+  "seconds": 129.38
+}

@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+  "id": "2f29156b71ed",
+  "command": [
+    "npm.cmd",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:42:33.170522+00:00",
+  "status": "complete",
+  "log": "resume14-lint-01.log",
+  "pid": 19336,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:53:56.872986+00:00",
+  "elapsedSeconds": 683.7
+}

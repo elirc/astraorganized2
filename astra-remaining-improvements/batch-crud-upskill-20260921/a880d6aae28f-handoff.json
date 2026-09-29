@@ -1,0 +1,35 @@
+{
+  "id": "a880d6aae28f",
+  "project": "_Organized Desktop/04 JavaScript Training/jep vs code",
+  "finding": "GameSetupPage.handleAddPlayer appended later successful responses with setPlayers([...players, playerResponse.data]), which closes over the render's players array. The production code now uses setPlayers((currentPlayers) => [...currentPlayers, playerResponse.data]), so each deferred response is applied to the latest state while preserving the returned server player.",
+  "changedFiles": [
+    "Jeopardy-Game/frontend/src/pages/GameSetupPage.jsx",
+    "tests/runtime-player-state.test.mjs",
+    "astraupskill/snapshots/GameSetupPage.jsx.original.txt"
+  ],
+  "tests": [
+    "python -X utf8 astra-remaining-improvements/run_project_check.py a880d6aae28f crud-b03-runtime3 -- node --test tests/runtime-player-state.test.mjs",
+    "3 tests passed against the exact updater expression extracted from the staged production JSX."
+  ],
+  "courseFiles": [
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "limitations": [
+    "No React component mount was claimed because React dependencies are absent; the runtime check executes the source updater expression and compares it with the exact original snapshot.",
+    "Network persistence, backend ordering, browser scheduling, and React rendering remain outside scope."
+  ],
+  "sourceMap": {
+    "component": "Jeopardy-Game/frontend/src/pages/GameSetupPage.jsx handleAddPlayer",
+    "api": "sessionApi.addPlayer returns playerResponse.data",
+    "state": "setPlayers functional updater appends to currentPlayers after an existing session",
+    "reconciliation": "handleRemovePlayer still filters by id; this change preserves unrelated entries while fixing add races"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "project": "grokbuildppmproject",
+  "id": "475084a31c00",
+  "command": [
+    "npx.cmd",
+    "prisma",
+    "validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\475084a31c00\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:41:54.471153+00:00",
+  "status": "complete",
+  "log": "backend-prisma-validate-02.log",
+  "pid": 23964,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T19:43:02.329326+00:00",
+  "elapsedSeconds": 67.85
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mode": "backend",
+  "database": "PostgreSQL 18; fresh helper-owned loopback cluster",
+  "modelTests": 33,
+  "databaseTests": 10
+}

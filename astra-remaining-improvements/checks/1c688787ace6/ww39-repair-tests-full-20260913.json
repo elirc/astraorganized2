@@ -1,0 +1,29 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "id": "1c688787ace6",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules\\.bin\\vitest.cmd",
+    "run",
+    "src/tests/escalation-service.test.ts",
+    "src/tests/assignment-service.test.ts",
+    "src/tests/dataIsolation.test.ts",
+    "src/tests/permissions.test.ts",
+    "src/tests/status-transition.test.ts",
+    "src/tests/validation.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1c688787ace6",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:29:22.153063+00:00",
+  "status": "complete",
+  "log": "ww39-repair-tests-full-20260913.log",
+  "pid": 23116,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:29:31.714822+00:00",
+  "elapsedSeconds": 9.56
+}

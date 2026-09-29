@@ -1,0 +1,21 @@
+{
+  "summary": [
+    "Five actual progress-service cases cover percentage rounding, empty tasks, completion, reopen, transaction selection and late write failure.",
+    "Add nine source-grounded teaching chapters with predictions, worked fixtures, separate practice/solutions and evidence limits; no production behavior changed."
+  ],
+  "changedFiles": [
+    "tests/onboarding-progress-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/onboardingProgress.service.ts.original.txt",
+    "tests/app-error.test.mjs",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/40905c751e8c/runtime-b083.json"
+  },
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ]
+}

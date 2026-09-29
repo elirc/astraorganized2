@@ -1,0 +1,44 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "astraupskill/images/dashboard-desktop.png",
+    "astraupskill/images/dashboard-narrow.png",
+    "astraupskill/images/messages-desktop.png",
+    "astraupskill/images/messages-narrow.png",
+    "extension/app.js",
+    "extension/background.js",
+    "extension/model.js",
+    "extension/styles.css",
+    "interlude-extension.zip",
+    "package-lock.json",
+    "package.json",
+    "playwright.config.js",
+    "server.js",
+    "src/app.js",
+    "tests/browser-check.mjs",
+    "tests/browser/interlude.spec.js",
+    "tests/model.test.js",
+    "tests/worker-reliability.test.js"
+  ],
+  "summary": [
+    "Adds shared strict snapshot/settings/command validation, legacy defaults and saved reminder CRUD with independent active messages.",
+    "Checks editor revisions, submits partial settings patches, preserves rejected drafts and serializes cooperating preview saves with Web Locks.",
+    "Persists accepted worker data before reconciling alarms/windows, reports post-save effect warnings and repairs missing effects on later reads.",
+    "Preserves corrupt preview data for raw export and requires a confirmed, baseline-checked reset; retains local artwork upload and timer behavior.",
+    "Adds 39 Node cases, ten Chromium scenarios including a real unpacked extension, four reviewed layouts, a verified matching extension archive and nine detailed CRUD learning lessons."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/interlude/results.json",
+    "expectedTests": 49,
+    "command": "npm run build; npm test; Playwright ten scenarios; one affected layout recheck; archive member equality",
+    "environment": "Node 22.16.0; Playwright 1.60.0; Chromium 148; isolated profiles"
+  },
+  "limits": [
+    "Local preview/extension only; no HTTP data service, SQL database, authentication, remote sharing or durable distributed outbox.",
+    "Preview Web Locks and worker serialization coordinate participating local operations; direct storage writers and cross-device concurrency are outside the protocol.",
+    "Alarms can be delayed, including by sleep. Reconciliation is best effort; simultaneous cleanup and ID-persistence failure can leave an orphan window.",
+    "Raw export has no implemented general import. Preview and extension storage are separate. No personal profile, sleep/crash/power-loss durability or full accessibility certification was tested."
+  ]
+}

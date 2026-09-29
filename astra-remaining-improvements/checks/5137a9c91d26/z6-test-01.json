@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z6",
+  "id": "5137a9c91d26",
+  "command": [
+    "npm",
+    "test",
+    "--",
+    "--pool=forks",
+    "--maxWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5137a9c91d26",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:09:06.768934+00:00",
+  "status": "launch-failed",
+  "log": "z6-test-01.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T13:09:06.794030+00:00",
+  "elapsedSeconds": 0.02
+}

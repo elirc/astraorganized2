@@ -1,0 +1,16 @@
+[
+  {
+    "project": "64",
+    "check": "server-typecheck",
+    "exit_code": 0,
+    "seconds": 20.15,
+    "log": "logs/64-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\64\\server\\tsconfig.json"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D1",
+  "id": "61d919e84af9",
+  "command": [
+    "--env",
+    "DATABASE_URL=postgres://test:test@localhost:5432/test",
+    "--",
+    "node",
+    "--import",
+    "tsx",
+    "--test",
+    "tests/socket-actions.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\61d919e84af9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:54:13.861593+00:00",
+  "status": "launch-failed",
+  "log": "socket-test-01.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T20:54:13.896944+00:00",
+  "elapsedSeconds": 0.03
+}

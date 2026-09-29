@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules\\.bin\\vitest.cmd",
+    "run",
+    "src/tests/platform-behavior.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:26:24.981273+00:00",
+  "status": "complete",
+  "log": "ww17-tests-01.log",
+  "pid": 11592,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T15:26:59.023054+00:00",
+  "elapsedSeconds": 34.04
+}

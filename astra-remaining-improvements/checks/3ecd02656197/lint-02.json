@@ -1,0 +1,15 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z7",
+  "id": "3ecd02656197",
+  "command": [
+    "npm.cmd",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3ecd02656197",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:02:32.920666+00:00",
+  "status": "running",
+  "log": "lint-02.log",
+  "pid": 25916
+}

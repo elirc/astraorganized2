@@ -1,0 +1,210 @@
+[
+ {
+  "wave": 1,
+  "stage": "21",
+  "name": "JS1/poll-studio",
+  "rel": "JS1/poll-studio",
+  "tests": 3,
+  "words": 5953,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\poll-studio",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-poll-studio",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/21",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/poll-studio/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "22",
+  "name": "JS1/kanban-flow",
+  "rel": "JS1/kanban-flow",
+  "tests": 3,
+  "words": 5722,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\kanban-flow",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-kanban-flow",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/22",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/kanban-flow/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "23",
+  "name": "JS1/course-roster",
+  "rel": "JS1/course-roster",
+  "tests": 2,
+  "words": 5824,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\course-roster",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-course-roster",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/23",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/course-roster/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "24",
+  "name": "JS1/event-admin",
+  "rel": "JS1/event-admin",
+  "tests": 2,
+  "words": 5629,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\event-admin",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-event-admin",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/24",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/event-admin/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "25",
+  "name": "JS1/job-pipeline",
+  "rel": "JS1/job-pipeline",
+  "tests": 2,
+  "words": 5680,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\job-pipeline",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-job-pipeline",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/25",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/job-pipeline/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "26",
+  "name": "JS1/stock-catalog",
+  "rel": "JS1/stock-catalog",
+  "tests": 2,
+  "words": 5775,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\stock-catalog",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-stock-catalog",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/26",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/stock-catalog/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "27",
+  "name": "JS1/recipe-studio",
+  "rel": "JS1/recipe-studio",
+  "tests": 2,
+  "words": 5715,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\recipe-studio",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-recipe-studio",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/27",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/recipe-studio/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "28",
+  "name": "JS1/org-explorer",
+  "rel": "JS1/org-explorer",
+  "tests": 3,
+  "words": 6592,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\org-explorer",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-org-explorer",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/28",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/org-explorer/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "29",
+  "name": "JS1/mini-blog",
+  "rel": "JS1/mini-blog",
+  "tests": 2,
+  "words": 5677,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\mini-blog",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-mini-blog",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/29",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/mini-blog/astraupskill",
+  "batch": "B03"
+ },
+ {
+  "wave": 1,
+  "stage": "30",
+  "name": "JS1/pulse-analytics",
+  "rel": "JS1/pulse-analytics",
+  "tests": 3,
+  "words": 6596,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\pulse-analytics",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-pulse-analytics",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/30",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/pulse-analytics/astraupskill",
+  "batch": "B03"
+ }
+]

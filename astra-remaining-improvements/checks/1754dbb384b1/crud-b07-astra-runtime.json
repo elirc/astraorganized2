@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/X1",
+  "id": "1754dbb384b1",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-review-moderation.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1754dbb384b1\\bagel-intel-platform",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:26:37.620450+00:00",
+  "status": "complete",
+  "log": "crud-b07-astra-runtime.log",
+  "pid": 26276,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:26:46.942051+00:00",
+  "elapsedSeconds": 9.32
+}

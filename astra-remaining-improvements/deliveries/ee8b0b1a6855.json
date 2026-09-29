@@ -1,0 +1,216 @@
+{
+  "project": "missioncontrol",
+  "id": "ee8b0b1a6855",
+  "summary": [
+    "Task updates reject blank titles and validate project visibility within the current workspace before mutating tracked task state.",
+    "Task creation and project reassignment allocate project ticket numbers inside an EF-owned serializable SQLite transaction; task/activity writes commit before event publication.",
+    "Prevalidation and metadata serialization prevent rejected updates from contaminating later valid saves in the same scoped service; regression tests cover recovery and mixed concurrent create/move allocation.",
+    "Add a forward EF migration for thirteen existing platform entities omitted from the original model snapshot, allowing the test API host to apply the complete schema without suppressing pending-model checks.",
+    "Isolate the two lifecycle scenarios in disposable test hosts, disable parallel API tests that share process environment, correct the security-scan route, and provide an explicit scheduler opt-out.",
+    "A nine-file learning course explains actual request paths, EF tracking versus database transactions, worked examples, debugging, progressive exercises and their solutions; original source snapshots and verification evidence are included."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/missioncontrol/tests-07",
+    "expectedSuites": 2,
+    "expectedTests": 139,
+    "command": "dotnet test FleetCommand.slnx --no-restore --configuration Release --logger trx --results-directory C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\missioncontrol\\tests-07",
+    "environment": ".NET SDK 10.0.302; Release; generated lockfiles and successful locked restore; ASP.NET test host with fake LLM and disposable SQLite"
+  },
+  "testResults": {
+    "total": 139,
+    "passed": 139,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "courseWords": 5136,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": "src/FleetCommand.Host/Services/TaskService.cs",
+      "before_sha256": "914c6733b01b2e98fa55b9a3349913466700e6ebb89f59c46db25d8fe17a9951",
+      "after_sha256": "ccedf31b0876625fee91db21af55f4a0436afef1390a3f51dfbe48628829e9cf"
+    },
+    {
+      "file": "src/FleetCommand.Host/Program.cs",
+      "before_sha256": "147adb5a29f5e9aafdee1100ee3019396e00ea8f6b65b7e303aa73decfeb2b4f",
+      "after_sha256": "9d419e01b9a870f872cbf8b29f7c7cd995dfa090a4bc8920fc4edf615a565ea9"
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/ApiTests.cs",
+      "before_sha256": "09c251bf9e65e5aaa078b3787963e46a551cbe4705d958007d4706908e4f0473",
+      "after_sha256": "35791a510a8f79ed8bcdf3750470f3a6ffc480c58a9693e619693aaf8f4fa234"
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/TestApp.cs",
+      "before_sha256": "13d3937df5a469d39c25621b2ac7d2d669787c840408abb43de67794c5546ebf",
+      "after_sha256": "f15d8ddfccbc7b03a4fa071675d98c605c4bfa7be223eda33b9ac826ef798651"
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/AssemblyInfo.cs",
+      "before_sha256": null,
+      "after_sha256": "3f7edd72eac91614fcf49f709dd4e560c74ebef8da68a53a02947e5611cd1869"
+    },
+    {
+      "file": "astraupskill/snapshots/TaskService-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "914c6733b01b2e98fa55b9a3349913466700e6ebb89f59c46db25d8fe17a9951"
+    },
+    {
+      "file": "astraupskill/snapshots/ApiTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "09c251bf9e65e5aaa078b3787963e46a551cbe4705d958007d4706908e4f0473"
+    },
+    {
+      "file": "astraupskill/snapshots/TestApp-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "13d3937df5a469d39c25621b2ac7d2d669787c840408abb43de67794c5546ebf"
+    },
+    {
+      "file": "src/FleetCommand.Contracts/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "2241481b7e74dcdcd600303146b730ecc12cbd8e49aa55755ef95ee499fe229a"
+    },
+    {
+      "file": "src/FleetCommand.Domain/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "6cdc2f2fea551f1223c21db6135d8fdef1b688ed7d1d32613d394f3633c2088a"
+    },
+    {
+      "file": "src/FleetCommand.Host/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "146ccf073b5060a2557b005ff6a5328dbe6dc90256e724e90dcef6b2e8d6779f"
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "b3cc9ff99d1a9b51668f8165b489d8074e1b06fa202c859c9543eefd71498c68"
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.cs",
+      "before_sha256": null,
+      "after_sha256": "aab2ecdfd5c946afd169b5a5fe4f2862689ee2d533ef328a6e56d72690f18bce"
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.Designer.cs",
+      "before_sha256": null,
+      "after_sha256": "e1591876aafec8acdeb9f84dec9dbb0d554dc54b8edea5bc77df66e399a9c926"
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/FleetDbContextModelSnapshot.cs",
+      "before_sha256": "1906f80ba017b46047118c32a6715e52ffdc84275834a811fe3156892874d16d",
+      "after_sha256": "0a2d8214656a515b0804999cc9db1ca0822ab902c4e1f382ed8a21b6c3a449ae"
+    },
+    {
+      "file": "astraupskill/snapshots/FleetDbContextModelSnapshot-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "1906f80ba017b46047118c32a6715e52ffdc84275834a811fe3156892874d16d"
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "bc6e0aa0978ca354ca125afdd92ca18eb0ec6905a809f6b3c4f5a1e4ba8ddc3a"
+    },
+    {
+      "file": "tests/FleetCommand.UnitTests/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "16518d5d7fd256f4af231af4586fe5ed791e35ad3e4cd6c623b1b397807a2d40"
+    },
+    {
+      "file": "astraupskill/snapshots/Program-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "147adb5a29f5e9aafdee1100ee3019396e00ea8f6b65b7e303aa73decfeb2b4f"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "eea954ff6164a6214368bd8324e12dbc4941d9af260490c18552f0364db8a24d",
+      "after_sha256": "0ad2060ba07eb1a6cceb707cfa71fdc9198c54a304b0a97cec1ed8cd1a4b62c7"
+    },
+    {
+      "file": "astraupskill/evidence/tests-07.json",
+      "before_sha256": null,
+      "after_sha256": "4416cf289fccc140a0f8fab984ff632a183d02e82791795d2d7ee1229d0446b1"
+    },
+    {
+      "file": "astraupskill/evidence/tests-07.log",
+      "before_sha256": null,
+      "after_sha256": "0384c87dbb4fce94af28f7749ab1a23a526a35e8dd787e87e3783c27d6e1c588"
+    },
+    {
+      "file": "astraupskill/evidence/tests-07-source-hashes.json",
+      "before_sha256": null,
+      "after_sha256": "9d6a3e10e0084d4f91d000137e08b8356a04a0ce97f84164e9496b3da04a215c"
+    },
+    {
+      "file": "astraupskill/evidence/restore-locked-01.json",
+      "before_sha256": null,
+      "after_sha256": "e492c5872101c8a29ffb205620377f70cf4899b6e5f2091a2d4bb12624aefd0a"
+    },
+    {
+      "file": "astraupskill/evidence/Owner_DESKTOP-T0PFEUT_2026-09-12_12_31_32_net10.0.trx",
+      "before_sha256": null,
+      "after_sha256": "556a155ed1cfbc99ad437afac5f74448935476df3c87a38f98abeb4b3a43306d"
+    },
+    {
+      "file": "astraupskill/evidence/Owner_DESKTOP-T0PFEUT_2026-09-12_12_32_00_net10.0.trx",
+      "before_sha256": null,
+      "after_sha256": "9480df9526907911377f5bd14d79d1bb5892877f00592735f8bd0d4b52e33749"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "4020c8ec2e02767a478a87ada2bbb6186123c2479f129403d7d07496661adc4c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "587a7ded5df42947d1fca49dfd70be726c09ac48872174569bd2f7a13bb22acf"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "174f7bd82e5fccd1f526ac0abf18184c53e2b80169d628a92c8951ba3c3b830e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "337241264f8a273e17f6edf1466485af4675771ded029d522bab74f8f64e43ac"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e8df6bc2417590f2bdc2f1a8ee9c16b10b73bfdb3b3ec073b45d99145fb65f32"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "29321dc79c49b36b52826129097356aa768b2762d5a9a33405a28ac2f23e8bac"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "dc7ec9bf76965bbcaabc9d07aaefdb8e1ad405fb64111dd7b514e26204836a00"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "7f906de4fdbc5d66d762984d3737f5a4253b04d45fb566e2d26644e041a0f2b2"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "261bd32458f4013b942e6fae8f1b07aa156a6752f8f8e64c0ed70cdf03857bad"
+    }
+  ],
+  "limits": [
+    "ProjectId remains nullable without presence tracking: omitted and explicit null both preserve the assignment; clearing a project is not implemented.",
+    "Concurrency evidence covers request-scoped operations. A long-lived EF context can retain stale tracked entities after an external writer; this is not universal cross-context cache concurrency protection.",
+    "A failed database save requires appropriate context disposal/recovery. Rolling back a SQL transaction does not restore EF tracked objects; the tested validation and serialization failures are prevented before mutation.",
+    "Event publication follows commit but is not a durable outbox, and no cross-request optimistic concurrency token was added.",
+    "The forward migration is exercised against disposable test databases; migration of an existing production dataset was not performed.",
+    "No live LLM, webhook destination, production database, deployed service or visual browser workflow was used."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:35:52.937140+00:00"
+}

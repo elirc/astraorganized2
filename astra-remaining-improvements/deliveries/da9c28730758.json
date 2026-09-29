@@ -1,0 +1,206 @@
+{
+  "project": "aiapplybot",
+  "id": "da9c28730758",
+  "summary": [
+    "Added a standard-library loopback dashboard and real SQLite application CRUD with stable IDs, bounded validation, literal search, pagination, captured versions and transactional retained audit.",
+    "Preserved failed and conflicting drafts, added explicit current-record loading, confirmed deletion/locking, draft export, and independently reported save/list-refresh outcomes.",
+    "Added all-or-nothing legacy JSONL import with retained occurrence receipts, non-resurrecting repeat imports, visible unimported CLI history, database identity checks and non-overwriting SQLite backups.",
+    "Hardened bounded profile validation and relative document paths; neutralized the example profile; offline planning preserves unknown answers and leaves consent for manual review; logging and launch failures close browser resources.",
+    "Added nine detailed source-grounded learning documents, repeatable verification commands, 43 Python and eight Chromium checks, and two reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/applybot/results.json",
+    "expectedTests": 51,
+    "environment": "Python 3.13; PyYAML 6.0.3; pydantic 2.13.4; Python Playwright 1.59.0 with Chromium 148; Node 22.16.0",
+    "command": "python scripts/verify.py; python scripts/verify_browser.py; node --check applybot/web/app.js"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 51,
+    "modelTests": 43,
+    "browserTests": 8,
+    "javascriptSyntaxExitCode": 0,
+    "screenshotsReviewed": [
+      "desktop.png",
+      "narrow.png"
+    ],
+    "realSQLite": true,
+    "realLoopbackHttp": true,
+    "liveProviderCalls": false,
+    "personalProfilesUsed": false
+  },
+  "courseWords": 4029,
+  "courseFiles": 9,
+  "courseLinksChecked": 30,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "4c733352ca5c2233f16296d30e43b2f1022aa970b114a6a9c4432bfebe4f3667",
+      "after_sha256": "43d6030215b3ab04aff72dbde76a61a4a025bd97d8cb375863571245658b3dd7"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "0b65a2392d2944b8233be04424aeaac37bd2210ce48d0169eb57b9eb2c93d6ca",
+      "after_sha256": "757fc8f63e52ecba69d7379e9c37f95a87bf7b99d853123f329d5833fb9d6cf9"
+    },
+    {
+      "file": "applybot/application_store.py",
+      "before_sha256": null,
+      "after_sha256": "1ff88e8f183f59ebcbbd87efe08d23aa8fdd4547ded9b3de5ddf7de2da52fddb"
+    },
+    {
+      "file": "applybot/browser.py",
+      "before_sha256": "53939668d6f16490212abd707916bea5d14727907bd9ab514aae020432e6b102",
+      "after_sha256": "75c61ee38cebcf85bcbf8cbad4d8fd9cd44f92568269c6dfb34258fc86bdef65"
+    },
+    {
+      "file": "applybot/cli.py",
+      "before_sha256": "88afb93630cb5a395f1dffd1461e6cc6e49d4d623ab7817bc8112f2edb60bea1",
+      "after_sha256": "2ce08af6989bb12dac52ce2628dfe32e2fc1150afa163df71d7ffb42db9e418a"
+    },
+    {
+      "file": "applybot/dashboard.py",
+      "before_sha256": null,
+      "after_sha256": "7eef1b6c1f065805027546706d70a58bf6676625af7fe5d61c7351aa7ab43875"
+    },
+    {
+      "file": "applybot/legacy_history.py",
+      "before_sha256": null,
+      "after_sha256": "2a9558cc19fc435fae214300211094d87d8aebdbb7714e5d5cd4309526409d70"
+    },
+    {
+      "file": "applybot/llm.py",
+      "before_sha256": "c7599a62025fdee2c775ff7377f74bd9e8c9346e33459f200e9ac99fe511e62b",
+      "after_sha256": "335c57a619657c3f53df35ea7b26840bc85281612f4efb1829b5a1b41b2ecca8"
+    },
+    {
+      "file": "applybot/profile.py",
+      "before_sha256": "95300d680ae6750c8ac5266fcf46eb915b7a39a02aa1bc75bbd0a1bd15b193b8",
+      "after_sha256": "b3e3fd3e2bedf998421fc0de15dc0dc9e977f2ba030da82cdc4067ccb710bcbd"
+    },
+    {
+      "file": "applybot/tracker.py",
+      "before_sha256": "348c098490ed654cb9114dfaa091f6b444df505ae2def788db4f76076e9e3c07",
+      "after_sha256": "79ed91db9c09650573b941116e5642d47964ea7678061b8e13474cb734f7f67b"
+    },
+    {
+      "file": "applybot/web/app.js",
+      "before_sha256": null,
+      "after_sha256": "f79f0b789a1727ac18de7ca4863669bfcdb94cb926b2fb0b7bec91328aad3101"
+    },
+    {
+      "file": "applybot/web/index.html",
+      "before_sha256": null,
+      "after_sha256": "0b0cef0e040fb2cbb98040561251d9f992ed169a4158fd2eb09d8d7174970c6d"
+    },
+    {
+      "file": "applybot/web/styles.css",
+      "before_sha256": null,
+      "after_sha256": "0008f22c50740cdebe5e13a15d853e388b58bbc5d859e69ed9737165ffc73e8c"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "d77ffce09a9b58176025ccf64a2900bee5983c4c1740c663e5161b818a3807ab"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "afce18a4dfac113ffd854eceba5905fa4c64ad911e84c99f93d999b3d9ee0a32"
+    },
+    {
+      "file": "profile.example.yaml",
+      "before_sha256": "97133fa39fd3470599159dad81ad1fef58bc64a734d86a35579d7ff7ba7ea4df",
+      "after_sha256": "10ea8d7a76cc203cc45ebf3a875455be8ae5cdc6c5071172413b65575dad26e4"
+    },
+    {
+      "file": "requirements-dev.txt",
+      "before_sha256": null,
+      "after_sha256": "bc168d809111fd21abb2966f1d66809a3b7f64055cc80f36033b9519ac0a64c3"
+    },
+    {
+      "file": "scripts/verify.py",
+      "before_sha256": null,
+      "after_sha256": "3e0ee7f1ff45eb8a9895fa8d15735693664dc172de8c8d7572cb476fd5c480f9"
+    },
+    {
+      "file": "scripts/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "8a7deb7a85146ee5e55467175e5faa4690d743ddb957053f1dcb0b412b57cb97"
+    },
+    {
+      "file": "tests/test_http.py",
+      "before_sha256": null,
+      "after_sha256": "4e0d15f2dfaacd2d8bb09ea4c2bd08b00536f6fd6a3f8de0a66bf6b63e1fb7d7"
+    },
+    {
+      "file": "tests/test_legacy.py",
+      "before_sha256": null,
+      "after_sha256": "5ba193586025e573db4adf1dc56f2a193e0f1ef1d0d42f209a7918f0d67e503d"
+    },
+    {
+      "file": "tests/test_profile_and_cli.py",
+      "before_sha256": null,
+      "after_sha256": "9e440de63726e76a7569ced92d14a5a03686f5dce92840ab960c8e28dccf6a4b"
+    },
+    {
+      "file": "tests/test_store.py",
+      "before_sha256": null,
+      "after_sha256": "3793bf2469e56d04230d1cc093e485021e582b79377dd06f65df771a27e20dc3"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b292e3e2f91b11cabc21d960fefad413acfcdf2a7194047eedf90a4d62ce281d"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "422f5a9905c67697b05856211bdd8c6a977fdff765258ea2fdd0a9865a9578ae"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bd6dc467b654becd1448c4e34c9869ab920a537c27dfe83a85536ebcc0a80d42"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "504752b65ae93a154dc6de89c9674f60e8437751bebeca9460b40fb86287717d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "21eae8755f620129034da4ff1e62b766af71794397675541b9375bd434da3cf0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d1aeb859f0dd82a3f378a3a9a9386e44362701d84a79a5b30acac60f4144a3f8"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ca61c98003ff18ef8170c73bcd0fcbce7245dba72ad77c4770debee7145302be"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ed5ce9f33f0f83046f1c643177b0ee34ca17dc68dbc591bf8d4ee7851c24f022"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "11bfa43a8453d7c63be7cb02fb691fb5e149510bec64faea8c948ec6a72e1309"
+    }
+  ],
+  "limits": [
+    "Local personal tracker only: one loopback token, no accounts, tenant ownership, distributed limits or production hosting.",
+    "New HTTP creates have no durable idempotency receipt; uncertain timeouts require inspection before retry. Audit stores minimal metadata rather than full prior values.",
+    "Original paid provider adapters, model availability, career-site automation and real submissions were not exercised. Personal profile and browser session were not loaded or changed.",
+    "No power-loss certification, full accessibility audit, automatic draft merge or graphical import wizard."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T10:09:52.563386+00:00"
+}

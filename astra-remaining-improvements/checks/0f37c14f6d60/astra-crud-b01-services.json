@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+  "id": "0f37c14f6d60",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-permissions.test.mjs",
+    "tests/runtime-ticket-service.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0f37c14f6d60",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:37:52.509596+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-services.log",
+  "pid": 17316,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:37:58.534761+00:00",
+  "elapsedSeconds": 6.02
+}

@@ -1,0 +1,29 @@
+{
+  "id": "5df5911fc343",
+  "status": "ready-for-review",
+  "project": "_Organized Desktop/05 Numbered Experiments/w23",
+  "finding": "No production fix warranted: existing service already scopes, validates, checks no-op, and groups side effects. Added actual-service fault-injection lab.",
+  "changedFiles": [
+    "tests/runtime-ticket-boundary-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/results-crud-b04.json",
+    "astraupskill/evidence/astra-crud-b04-w23.log",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "executed": 4,
+    "passed": true,
+    "command": "node --experimental-vm-modules --test tests/runtime-ticket-boundary-lab.test.mjs"
+  },
+  "limits": [
+    "No production fix warranted; native Drizzle/PostgreSQL/HTTP rollback unexecuted."
+  ]
+}

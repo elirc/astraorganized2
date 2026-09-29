@@ -1,0 +1,33 @@
+{
+  "id": "c10fc180fa35",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:28:21.869334+00:00",
+  "sourceReview": "Reviewed new minimal HTTP API and immutable in-memory store. Title validation precedes writes; lock covers lookup, version comparison and mutation; read/list return immutable snapshots. PUT/DELETE require supported version tags. Original exercise modules remain intact; README link snapshot verified.",
+  "teachingReview": "Nine original chapters connect language exercises to real HTTP CRUD, lost-update walkthrough, trace matrix, mutation experiments, client conflict recovery and database follow-up design. Clearly identifies additive teaching lab and no authentication/durability/full ETag grammar.",
+  "testReview": "Compiled .NET10 Web SDK project with warnings as errors; thirteen real loopback HTTP cases passed covering CRUD, validation and unchanged-state rejection, headers, version advancement, conditional deletion and two same-version writers. No third-party packages; original exercise suite not claimed. Mechanical preflight passed.",
+  "specSHA256": "a82611d5f828ff17b69236b16f1c07a615bffa7966e55073c55654f0cbfbf702",
+  "fileHashes": {
+    "README.md": "20ce7f5b0338642468dff82430288f00aa54cafe5182d4766b06075aa0abb035",
+    "guides/crud-web-lab/CrudWebLab.csproj": "25e9385fa7053264d6b20be455942ad1548a587fc006e017350d193d6a1a36b4",
+    "guides/crud-web-lab/Program.cs": "84a79c05daccbae2b7152548a4361cb1ccd3cfa52defa32fc3bf0de75b75c54b",
+    "guides/crud-web-lab/TaskStore.cs": "294aff4bee0597a7b7b941fa656d99570568146837d89626ad40d2fef499553a",
+    "guides/crud-web-lab/HttpChecks.cs": "5f369dfd590bbcf0c7eab513a2d4febee8432338f2445f52fc29bea05e7fcbd7",
+    "astraupskill/snapshots/README.md.original.txt": "9697bdb7b5798bec62152abf2d8800084e2e0318bbf83b278355c7ee53d6d700",
+    "astraupskill/evidence/crud-b02-http-lab.log": "fcfac778ec1b5ae961588a76361cdd96943c8c5099b3e29895c5ad2be2304df3",
+    "astraupskill/evidence/results.json": "8e0d276babbd98c09950bdc6a2e94fb475a7fafccdab8d60bb40ceadfa01beac",
+    "astraupskill/README.md": "77859af72f82093bb32bbbbea6e8fa1be285b8d5ea6c4dbec98f5d8ff4c1a053",
+    "astraupskill/01-CODEBASE-MAP.md": "7aed65ea083ab069871f87d08df077a43e87af74bda2788942b1c4f3a3ef7de0",
+    "astraupskill/02-CONCEPTS.md": "5dce3b172956b9cc2cf3af551f03c7acc68c8e2190e4fb85cade5fcd554743ee",
+    "astraupskill/03-WORKED-CHANGE.md": "c3e6b45fb94b9d097a4a6306f543e50fb63ade785067bfc505f6ae02e0679f69",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "2976aa6c70714f1d89b699b9a544ffb513804abb8dd81065fd246263ef2a679d",
+    "astraupskill/05-PRACTICE.md": "3966cf0eafb77204da8554dadea4147e839ef870c7c4f841d23291ec2287e2b7",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "8b0846feb9c2de758f54d8bac4f1d71fc30a1007df06a1b688b600728e7b52af",
+    "astraupskill/07-TRACE-LAB.md": "33ffee9e6901f77b05c32c3af651c3a63c791a4f0d3d7a22da2991d3ca023717",
+    "astraupskill/VERIFICATION.md": "c15247cff831295160bdfd41e7bebf09d0cb0ea9670c5ce4cafbe2d94db7635d"
+  },
+  "evidenceHashes": {
+    "checks/c10fc180fa35/crud-b02-http-lab.json": "87628f738c90898416264f4d367d0fdefcac4bfe9abc144627e189b84ae1ef07",
+    "checks/c10fc180fa35/crud-b02-http-lab.log": "fcfac778ec1b5ae961588a76361cdd96943c8c5099b3e29895c5ad2be2304df3",
+    "checks/c10fc180fa35/results-crud-b02.json": "8e0d276babbd98c09950bdc6a2e94fb475a7fafccdab8d60bb40ceadfa01beac"
+  }
+}

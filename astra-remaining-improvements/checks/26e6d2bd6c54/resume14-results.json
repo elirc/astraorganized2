@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "total": 144,
+  "passedTests": 144,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "id": "26e6d2bd6c54",
+      "command": [
+        "npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+      "environmentOverrides": {
+        "RUST_BACKTRACE": "1"
+      },
+      "startedAt": "2026-09-19T19:00:40.570864+00:00",
+      "status": "complete",
+      "log": "resume14-tests-02.log",
+      "pid": 20564,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:04:03.431378+00:00",
+      "elapsedSeconds": 202.82
+    },
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "id": "26e6d2bd6c54",
+      "command": [
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T19:03:02.369942+00:00",
+      "status": "complete",
+      "log": "resume14-types-02.log",
+      "pid": 27408,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:06:32.207043+00:00",
+      "elapsedSeconds": 209.83
+    },
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "id": "26e6d2bd6c54",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+      "environmentOverrides": {
+        "CIRCLE_NODE_TOTAL": "2",
+        "DATABASE_URL": "file:./verification-build.db"
+      },
+      "startedAt": "2026-09-19T19:14:08.182850+00:00",
+      "status": "complete",
+      "log": "resume14-build-01.log",
+      "pid": 26320,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:31:31.393699+00:00",
+      "elapsedSeconds": 1043.2
+    },
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "id": "26e6d2bd6c54",
+      "command": [
+        "node",
+        "node_modules/prisma/build/index.js",
+        "generate"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./verification-unused.db"
+      },
+      "startedAt": "2026-09-19T18:53:01.305270+00:00",
+      "status": "complete",
+      "log": "resume14-generate-01.log",
+      "pid": 21648,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T18:55:09.389419+00:00",
+      "elapsedSeconds": 128.08
+    }
+  ]
+}

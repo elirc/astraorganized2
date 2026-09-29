@@ -1,0 +1,22 @@
+{
+  "summary": [
+    "Sort pending stages consistently for both current approval and next-stage advancement.",
+    "Four actual-service runtime cases execute real capability/assignment guards and errors with database/session adapters."
+  ],
+  "changedFiles": [
+    "zz4/src/services/approvalService.ts",
+    "zz4/tests/approval-stage-order.test.mjs",
+    "zz4/tests/helpers/load-typescript.mjs",
+    "zz4/astraupskill/snapshots/src/services/approvalService.ts",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f1f996eeb9e7/results-crud-b07.json"
+  },
+  "limits": [
+    "No Prisma, Next session, SQL isolation or concurrent approvals executed.",
+    "Duplicate sequence policy unchanged; request read remains before transaction."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "9ed676593954",
+  "passed": true,
+  "executedTests": 1,
+  "checks": [
+    {
+      "name": "crud-b08-isolated-go-runtime",
+      "command": "$env:GOROOT='.../toolchains/go1.27.1/go'; .../go.exe test ./storage -run TestUpdateWidgetRejectsWidgetFromAnotherDashboard -count=1 (from checks/9ed676593954/isolated)",
+      "passed": true,
+      "details": "Actual production dashboard_store.go method ran through a temporary module with a faithful database/sql driver adapter; cross-dashboard update was rejected and owner widget remained unchanged. Output: ok github.com/tobilg/ai-observer/storage 5.930s."
+    }
+  ],
+  "limitations": [
+    "Temporary isolated module uses a faithful in-memory database/sql adapter and a local UUID stub to avoid the incompatible DuckDB native bindings.",
+    "The real application DuckDB package was not executed; no API or concurrency claim."
+  ]
+}

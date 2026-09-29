@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:33:05.767510+00:00",
+  "status": "complete",
+  "log": "w24-build-final-01.log",
+  "pid": 24096,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:34:51.576716+00:00",
+  "elapsedSeconds": 105.81
+}

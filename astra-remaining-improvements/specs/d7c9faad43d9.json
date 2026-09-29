@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Validate parent city existence before creating a shop so the catalog cannot contain orphan city references.",
+    "Preserve valid shop normalization while rejecting unknown city IDs before any serialized store write."
+  ],
+  "changedFiles": [
+    "src/lib/store.ts",
+    "tests/runtime-shop-city.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-lib-store.ts.before",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/d7c9faad43d9/results-crud-b04.json"
+  },
+  "limits": [
+    "Four runtime cases execute actual store and utility source with filesystem, path, slugify, clsx, scoring and schema adapters. Real nullable-text and array normalization execute; third-party slug behavior is not established.",
+    "No native filesystem, SQL, HTTP auth, cascade, locking or concurrent write behavior executed. readStore may call mkdir before rejecting an unknown city; zero writes means zero writeFile calls, not zero filesystem activity.",
+    "The write-failure adapter throws before storing bytes; this does not prove native writeFile is atomic or preserves a file on partial failure. Local Next.js guides absent after cleanup; no framework API was changed."
+  ]
+}

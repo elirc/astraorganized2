@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e6",
+  "id": "20574f0b81b4",
+  "command": [
+    "node",
+    "node_modules/tsx/dist/cli.mjs",
+    "--test",
+    "apps/api/tests/security.test.ts",
+    "apps/api/tests/boundaries.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\20574f0b81b4",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:45:05.557277+00:00",
+  "status": "complete",
+  "log": "root-test-05.log",
+  "pid": 37644,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:48:14.553805+00:00",
+  "elapsedSeconds": 188.99
+}

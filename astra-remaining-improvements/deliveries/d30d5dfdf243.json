@@ -1,0 +1,634 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+  "id": "d30d5dfdf243",
+  "summary": [
+    "Reworked the .NET and React paste workspace with explicit command contracts, capability headers, generated edit-key receipts, versioned updates/deletes and durable creation request receipts.",
+    "Replaced truncating aggregate writes with bounded validation, cooperating-process file leases, flushed same-directory replacement, readonly reads and explicit legacy migration with exact source backups.",
+    "Added retained and exportable drafts, explicit conflict review, exact creation retries after lost acknowledgements, public-only literal search and pagination, content copy and exact text downloads, forks and responsive forms.",
+    "Added nine detailed project-specific learning guides, historical markers on earlier documentation, pinned setup and meaningful client, backend, HTTP and browser verification."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/pastebin/results.json",
+    "expectedTests": 76,
+    "environment": "Windows, .NET SDK 10.0.302 and net10.0, Node 22.16.0, React 19.2.6, Vite 8.0.14, Chromium 148 disposable profiles",
+    "command": "npm test; npm run build; dotnet build verification/BackendChecks/BackendChecks.csproj; dotnet verification/BackendChecks/bin/Debug/net10.0/BackendChecks.dll <fresh-output>; python verification/verify_http.py; python verification/verify_browser.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 76,
+    "expected": 76,
+    "suites": [
+      {
+        "suite": "client",
+        "total": 15,
+        "passed": true,
+        "results": "client-tests-01.log"
+      },
+      {
+        "suite": "backend-02",
+        "total": 30,
+        "passed": true,
+        "results": "backend-02/results.json"
+      },
+      {
+        "suite": "http-01",
+        "total": 17,
+        "passed": true,
+        "results": "http-01/results.json"
+      },
+      {
+        "suite": "browser-04",
+        "total": 14,
+        "passed": true,
+        "results": "browser-04/results.json"
+      }
+    ],
+    "executions": {
+      "client-tests-01": {
+        "command": [
+          "node",
+          "--test",
+          "--test-concurrency=1",
+          "tests/client.test.js"
+        ],
+        "exitCode": 0,
+        "seconds": 7.8
+      },
+      "backend-build-04": {
+        "command": [
+          "dotnet",
+          "build",
+          "verification/BackendChecks/BackendChecks.csproj",
+          "--no-restore",
+          "--disable-build-servers",
+          "-m:1",
+          "-p:UseSharedCompilation=false"
+        ],
+        "exitCode": 0,
+        "seconds": 178.19
+      },
+      "backend-tests-02": {
+        "command": [
+          "dotnet",
+          "verification/BackendChecks/bin/Debug/net10.0/BackendChecks.dll",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\pastebin\\backend-02"
+        ],
+        "exitCode": 0,
+        "seconds": 25.48
+      },
+      "http-01": {
+        "command": [
+          "python",
+          "verification/verify_http.py"
+        ],
+        "exitCode": 0,
+        "seconds": 74.81
+      },
+      "frontend-build-03": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/vite/bin/vite.js",
+          "build"
+        ],
+        "exitCode": 0,
+        "seconds": 37.63
+      },
+      "browser-04": {
+        "command": [
+          "python",
+          "verification/verify_browser.py"
+        ],
+        "exitCode": 0,
+        "seconds": 274.32
+      },
+      "frontend-install-01": {
+        "command": [
+          "npm.cmd",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "--cache",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+        ],
+        "exitCode": 0,
+        "seconds": 177.2
+      },
+      "frontend-lock-01": {
+        "command": [
+          "npm.cmd",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "--cache",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+        ],
+        "exitCode": 0,
+        "seconds": 438.63
+      }
+    },
+    "reviewedScreenshots": [
+      "01-empty-workspace.png",
+      "02-created-paste.png",
+      "03-rejected-edit.png",
+      "04-version-conflict.png",
+      "05-retained-creation.png",
+      "06-search-pagination.png",
+      "07-form-1440.png",
+      "07-form-390.png",
+      "07-form-800.png"
+    ],
+    "visualReview": "Nine final browser-04 images inspected: readable notices, retained drafts, pagination and 1440/800/390 pixel forms; no clipping or action overlap observed.",
+    "verificationDate": "2026-09-09",
+    "priorRuns": "Earlier failures and corrections are retained in logs and explained in astraupskill/VERIFICATION.md; repeated checks are not counted again."
+  },
+  "courseWords": 5845,
+  "courseFiles": 9,
+  "courseLinksChecked": 37,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "b3643a66c4f560de3ffb1414d71a20dd56e2ee161358e7e8b3c736b6faf471f8",
+      "after_sha256": "57d9e911d06700fd288604cf270d321bd2896c99be9fde0141f73edf388092b3"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "8c274eb03786f93ea85952a1b3eb5715f4f7ca3ba42f4aa06b151686c6f7ee2a",
+      "after_sha256": "9ada68db67721954357302679114922c915618bb57a709fcea6b28386bc54468"
+    },
+    {
+      "file": "astraupskill/images/01-empty-workspace.png",
+      "before_sha256": null,
+      "after_sha256": "73edb03a2620f1609eed7d465ea3027eca2331fe51bb208765a115e6717b504f"
+    },
+    {
+      "file": "astraupskill/images/02-created-paste.png",
+      "before_sha256": null,
+      "after_sha256": "deecb0f7450b2b523f42bffec1b0b9db7f9ea8e78dd2dc55b2bb5e43ce15501f"
+    },
+    {
+      "file": "astraupskill/images/03-rejected-edit.png",
+      "before_sha256": null,
+      "after_sha256": "2547ee51ed38581d5922c2318b49009339fb37998f7575cb8a292d65c57e111f"
+    },
+    {
+      "file": "astraupskill/images/04-version-conflict.png",
+      "before_sha256": null,
+      "after_sha256": "6e0571385dc29edd258597a0d232cbd8c8d51efef1fff0a0c5359283d4e415da"
+    },
+    {
+      "file": "astraupskill/images/05-retained-creation.png",
+      "before_sha256": null,
+      "after_sha256": "5a363ca222a1a2c3b2606f7aaec657c24a4d45794866295e8f227f205ced1251"
+    },
+    {
+      "file": "astraupskill/images/06-search-pagination.png",
+      "before_sha256": null,
+      "after_sha256": "6b6375f04ffc644c0fbcf2ba82a7c17e9a01b9403031fd763002a32d5be5dccb"
+    },
+    {
+      "file": "astraupskill/images/07-form-1440.png",
+      "before_sha256": null,
+      "after_sha256": "3012693cc3c211791f7c4d76949304f667062a0dd8968ba23c6c7605901f35ed"
+    },
+    {
+      "file": "astraupskill/images/07-form-390.png",
+      "before_sha256": null,
+      "after_sha256": "61bc0d360a38ad2ad97afe70c80fbb3eef222062c45f72df976f374f6e003196"
+    },
+    {
+      "file": "astraupskill/images/07-form-800.png",
+      "before_sha256": null,
+      "after_sha256": "a65d65241117bc786a8cc87323321b08e32f5ccc51d19bdccbd12d455921fc8c"
+    },
+    {
+      "file": "backend/Api/AppHost.cs",
+      "before_sha256": null,
+      "after_sha256": "f57e96516f921261e8c3ce0e80db8f5a87e474191daed52eb11e06fcab9b341d"
+    },
+    {
+      "file": "backend/Data/PasteStore.cs",
+      "before_sha256": "c5e0eb9a5208229bdd36739c28f9f0188aaec76369eea9f8d3257782eb460e5f",
+      "after_sha256": "7f62e1a5c64b55d34df49a31768ba03227125dad8c2410f83875a3a66e721fb1"
+    },
+    {
+      "file": "backend/Domain/LegacyMigration.cs",
+      "before_sha256": null,
+      "after_sha256": "385cf0e00090447f328ff992bed169cb4bd0f233ad5c74b4fdbfc95f72a641f7"
+    },
+    {
+      "file": "backend/Domain/PasteCommands.cs",
+      "before_sha256": null,
+      "after_sha256": "0a8a4a65cad000de756445bb03fb4b40cd1eaba721e7fa2264377a3cb365a9a5"
+    },
+    {
+      "file": "backend/Domain/WorkspaceDocument.cs",
+      "before_sha256": null,
+      "after_sha256": "0ed5e59b13c3e7336a1c217b5a9ed43e03d7a5edeb3fe3659a4eae2be938d9ee"
+    },
+    {
+      "file": "backend/PastebinClone.Api.csproj",
+      "before_sha256": "b3a7c7279cbf69b276b22b3e22d3f0d492b416156ae60f735ce1762c599c7d9f",
+      "after_sha256": "a5a397e99a007e5f05189466ce5559a2ec67979fbb30c1436790b49ee532ed33"
+    },
+    {
+      "file": "backend/Program.cs",
+      "before_sha256": "5b8f16127dea96dffeb620934bbe420a515e63bf028e9fe5ea7815d4e42fd51e",
+      "after_sha256": "878f95ecd9922d5325ee0d9abd5bf8d242ebd52f0f871b624b7b2a60e488d8d2"
+    },
+    {
+      "file": "backend/Properties/launchSettings.json",
+      "before_sha256": "02c6f970bf8a6ba331221471a4d45e778d6102014721b8d628c4b239ab327c60",
+      "after_sha256": "c8049810507b6b3a15d4a4fbc096b1d2483eb3c61e8afb61c5ddf0fccbbf4399"
+    },
+    {
+      "file": "docs/original/PasteStore.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "c5e0eb9a5208229bdd36739c28f9f0188aaec76369eea9f8d3257782eb460e5f"
+    },
+    {
+      "file": "docs/original/Program.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "5b8f16127dea96dffeb620934bbe420a515e63bf028e9fe5ea7815d4e42fd51e"
+    },
+    {
+      "file": "docs/original/README.md",
+      "before_sha256": null,
+      "after_sha256": "a01047778f647cc082998db7b961678e69ce7e9bcac17aa268dbea66c2253b8a"
+    },
+    {
+      "file": "docs/original/main.jsx.txt",
+      "before_sha256": null,
+      "after_sha256": "7f412ece5f40d00fc6e45ee1cc8506fa63c2912fa1678184b532d1f3dbe250f8"
+    },
+    {
+      "file": "docs/upskill/00-fast-track.md",
+      "before_sha256": "365f9a6fb0e7a7943235a769fe6d559c214b7e9cee6ae6c9d252e32136e246ee",
+      "after_sha256": "b41bcfa4da3afbfa081d973285e3c6b98d436ea6b763a7fe79532e094a375a47"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/01-system-map.md",
+      "before_sha256": "c027e5c244dd305a717c0eb9247b72ec33a84c3615401f3f962348a621489426",
+      "after_sha256": "46840c2e39302b6d028cfc41a6aad9fda728649210f61edb573b3632168bd3b2"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/02-file-reading-order.md",
+      "before_sha256": "de24967168d955ab8ce445b8399e9d52f0f919e06217ddc7b9b4a655b0a973f8",
+      "after_sha256": "a7d84b302ab9da83511e91de6efc6bd6421e0ccb36370199de8bc762f5a44d41"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/03-domain-glossary.md",
+      "before_sha256": "7c87e18e2853b0f0abf022ad8f53158dd4ae94b6b459739e8df3d9dafe800b28",
+      "after_sha256": "5f231a320b7ae010db9056e9cdd88113feedc10d8714fd09fb3fc99410ab4afc"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md",
+      "before_sha256": "5cbca37a5991aae400867dbde368979cabac34e38d22677c09773dfae12b6e51",
+      "after_sha256": "b3cf2096e44cecdd6c10f38d5d780dc37df85e53848ba68d69ae9784b9e5a134"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/05-key-flows.md",
+      "before_sha256": "1a02e7af5ce85913c15cfa71f7859d3b65992c6a3094fdcc24a855ecf3bb19ee",
+      "after_sha256": "97d8422cd4f60c9a681bf8b8fdd07147ef6386e94a496b7c72d6a122c29e941b"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/README.md",
+      "before_sha256": "e74becda597fbec9d7d2326dd14c2bca8269b2c49af7a915fba73e58ba61f4ba",
+      "after_sha256": "12a6e07ac831e269d47b0417cf9a6244f6df02d83379f540e6ad663687b4014c"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/01-dotnet-runtime-model.md",
+      "before_sha256": "41f2efa969519b348d5b0b457589aaefd430ca3c975c6d3e5920398366c16005",
+      "after_sha256": "65436d9d8c0e4d9973f9f4fa67356d4afe99a04b3d7877fd5c1c9f8b824a260c"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md",
+      "before_sha256": "ae16ee3bcef1efe854b2ccfe82565b2d08c137961848d03b505919f2fe4e7669",
+      "after_sha256": "cf92671ac4bf1d4796fa1dd932c7d2f997f40b600b50527d5324df7305388374"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md",
+      "before_sha256": "ac33bd30f6f10646ce00d9a2e0b29298b1308368e738da30b123b8cbdd668095",
+      "after_sha256": "4ce9c1a575ebd19f6dde21d0cef85c2f96331c0b7cfa25aa82146f1caff795d6"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md",
+      "before_sha256": "4656f807e2e94889626ceba6df7453c8ba8ac8d062912f2243ef5346eb339db7",
+      "after_sha256": "1356674357c55be1fd0e727f3478db7e50439b15b6375a83f6bc0def744051fd"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/README.md",
+      "before_sha256": "3fcfcce1b8b286269a2aa634ff450fc816cc6ec273fa0d4ada59a78c481a91a3",
+      "after_sha256": "db67b073af8f92b9891eb607a3eaa3e3ff0d13f1ca157aa828726316f78f763e"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md",
+      "before_sha256": "d84ce3803572f2492cc048ee18a35e673f660b6ddd225d1afbbec50025025d61",
+      "after_sha256": "b003f259899afed1119941eb00f58df0d8c1f72ef6c5a241f7b795b19db6dc54"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md",
+      "before_sha256": "122289dd3184179b77ae5adcad3b23946fb4b8770928236c00d5862f51c92f8d",
+      "after_sha256": "53c6b22ac74bc27ac20d2318c83c9624f5be7922283feb43bb7f76e4fb935f5b"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md",
+      "before_sha256": "1170b7293fe0c7e51fe596b37a696c69ecff01e988902b685d497d28bb2e0011",
+      "after_sha256": "654a8c19a2f53ccc91d6b8919ace2996992aba4c4736cf42574a038c8e64a9aa"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md",
+      "before_sha256": "fee86d8d1db6eaabd8f5d089aca12afb131b690986b110175c15e4523d7d22b6",
+      "after_sha256": "1ac5a730e1d845c4934362daddaa6949ec57e78937ba224f852335baf9d6c57a"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md",
+      "before_sha256": "3d83e9dc71f0a06b9a5c8dd8bad9588f9042756940b396bbd50f51c4266e33ed",
+      "after_sha256": "24377dfd9a302a86b859ab7698aeae2d7f6ef7f25a9d4ce7d0cfbce619c272fe"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/06-architecture-critique.md",
+      "before_sha256": "2d479931004c7c79b16a6fd564763315f194972b8586c624df69eab3ec4398a6",
+      "after_sha256": "a04e2d8cb42941a7a7af5838beb2a20b9696c0c2fba9ae89bcb017a1a1099ea0"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/README.md",
+      "before_sha256": "66b600d0d49f452c8cd5fbfbc71e7e8f6198ba879e1aca97e7a8125541c20f90",
+      "after_sha256": "8782dec409a6dbc08d3d5210c154f4c22554b6395515e3fb51503d1c7cd02ea4"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/01-annotation-drills.md",
+      "before_sha256": "5278e79b4bb6184041e71e7bf94c5b07831b3173db25f6d36133efec9977ec03",
+      "after_sha256": "2df64cfb39dc6fe3bce04c565a1fc51e4e57d52a3ff4d0f543f61e3f97063ef7"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/02-trace-tables.md",
+      "before_sha256": "dfa62375bc01ed27e8ee4f54914d05bd19af985baf59d1dd50014e98b5342c9e",
+      "after_sha256": "373ce11e1fb652348f581800d55efdc47e103a71becba1449fbda415a9df4cd4"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md",
+      "before_sha256": "ae4d5900b9f6cfaf90faa86256f8998085f809668b2ea451819b62fde017fc75",
+      "after_sha256": "bcd1b7688acff57dc376b11346f4878c42842ef1ac88188329d6772bf07e13b1"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/04-review-katas.md",
+      "before_sha256": "acd5e8ec98b4aaae7eef031ff55d3f97192e1f566de650488f72a2c288c10552",
+      "after_sha256": "a5f894d1f9f8b66a6a9929d30550b7d0b774a925b1b8eebcf255bfc41923db34"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/README.md",
+      "before_sha256": "e7be8dc2e32950ce27b7410e7b1b2e7ff2f2b3968e285d54e67327ddfb641ce5",
+      "after_sha256": "a61a74f472ba77b2dce0c8c5519c380c99c2e842a0d4e3c2050a2c28a4c2b921"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/01-testing-strategy.md",
+      "before_sha256": "e085c992d9e5f4da4a674165ccc7754f9e7114d83f5a5b218e29660eac2d2671",
+      "after_sha256": "a9e9d1d4bd0a6f146a5b8226559d7bddd1208eeeb6cb613e9282688ee56ebb83"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/02-writing-tests-here.md",
+      "before_sha256": "d4f5135224897bdab929b32835615cbc71efa1122aae0a4abf71914b513a789c",
+      "after_sha256": "8d5b6fda78530a1aaca1e31335e324f47c9d80ddd38124510842d674f2c13349"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/03-systematic-debugging.md",
+      "before_sha256": "c97f68e05a3c5f1e41d94c550cccfdc79b793334cecd1a35fb16ad6e380ea476",
+      "after_sha256": "871c91e16958beec589e4768cea3a443c9333e91ddb8f8cb0f8abad5dbf32a2b"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/04-performance-thinking.md",
+      "before_sha256": "1e463948c22b3fb99e85a28201205b6892403406f38d69bfdcca27f4133abcc6",
+      "after_sha256": "f142bda3ce96affd6d4877aa2f66b1d8236854cb4f08a9e4fa216aa502132584"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/05-security-checklist.md",
+      "before_sha256": "9e9eb2d175ddb600254d492c846d15374bbcffe04d13f402e9545ee1a58fbaf6",
+      "after_sha256": "7a2d3344579d6f4d9e6b342414a95f11b7dfc68704b084ab251120db62f144c3"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/06-observability-and-operations.md",
+      "before_sha256": "bb9b0530d249d23609175b11b2ed892bb34698f934bdbe8c2b1bef81a5201c56",
+      "after_sha256": "9413e1074b39171e2a0042b6786d604d5271cc406511511b98515c0860feafe2"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/README.md",
+      "before_sha256": "ba1de3690f9ffe95320c57d50c8025cfb320eafcf8bd459648cec5b569a20067",
+      "after_sha256": "2da0b51ec89567ba22c956a48f91008f9f04514af799c8d6db20d6b3dd7c9f5d"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/01-good-first-tickets.md",
+      "before_sha256": "00dc392f61de4356e53575f1ad502b3e0bcebf2c1416e8b77435f2bed5aefb8e",
+      "after_sha256": "b191332f120dbe0d88b95dccb6294985a2abc9c22d86a00b492893ee4dfaa4af"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md",
+      "before_sha256": "00878c74fc5a8cd37423379c0e768fa9cf2ac0dba7d51e2a6bf53940a69ca331",
+      "after_sha256": "07f4e89145bf2abc8cc9efba2b543eb9b81d4defe27c122660236e55dafdd639"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/03-senior-build-projects.md",
+      "before_sha256": "a4cc8240fa78b234ce51438ceb4f1f220fcd89431fdd0bf5e844e91d1f762391",
+      "after_sha256": "42b3b6ae97cc8f0bed6b2f43888ef050a174ba775513972b0952976df82e4cef"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md",
+      "before_sha256": "f7e6c699c645d0a5f57bbda5d60a2a0af051c8ca6bec2c902759bc197de2eb23",
+      "after_sha256": "9d4d14b3bdb11c6f42568b76819dd8de50b34fcd77e3087f2b107dc5f6ac2787"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/README.md",
+      "before_sha256": "ab65efb5cdc760be4f2902d41c618b08b34b71dba02fe6d033fee1eeb2dc9a0c",
+      "after_sha256": "58d41acdc85be9f2b04fe5c6226b4d18bfd8c29fc20f1c141261ab42d78c9b17"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/01-code-review-mindset.md",
+      "before_sha256": "b38de3c112b6ca8588a4356d80c2548a7c6cce81ff589a1fe0cd86941f5c2a4d",
+      "after_sha256": "467f1d8f5163741dfec321a2ebcbed4cdefc3ad35e3ab3742d9ea8e2ee0ed5ef"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md",
+      "before_sha256": "c4ce6e4a0fdbd6491bb8b4e6bf8eb003eb288b61967da1ef7579436fe63743db",
+      "after_sha256": "028f865d86b355171520d9c038f671a10eef4a3946cdfcdc81923208599bc805"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/03-maintainer-communication.md",
+      "before_sha256": "5a3e81ac9751a1243e94cd8259c9f19a6d97aa7059f61fa3c87c9deb8e99dd08",
+      "after_sha256": "ac0ffc091c443e2025ad433663a1af8474bccf129f2a6191c958f0c159c9d738"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md",
+      "before_sha256": "9b6eb6263dde8f8a1733102fb6bff6ec563741652e01cd96806e5986386b5313",
+      "after_sha256": "1112b2e115f818d52508749644ef86d60daaa26c4eb2eb6eb56891fc7c9df8fb"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/README.md",
+      "before_sha256": "b7cae965169c15a648ac8256d43cdee06add604ca5db5689a1c9cf71a6ddd3ee",
+      "after_sha256": "bb4552c2fc63e69567ece8da59ee21e038b4f3e0087261efb5e830b9fd96e90e"
+    },
+    {
+      "file": "docs/upskill/08-reference/command-cheatsheet.md",
+      "before_sha256": "015d85153b7bc984962534bfdc48d57a9b64fb87c44f9398741b90a0fd991357",
+      "after_sha256": "28b81438e7459651e9aad352795fbe08f709624fdb01195407f21530cbeedb4c"
+    },
+    {
+      "file": "docs/upskill/08-reference/learning-rubrics.md",
+      "before_sha256": "8cb28f6d586e8cf70ceaebc19b0850cf4c501a84b9f26d1244edb9cade9f0b1d",
+      "after_sha256": "e2052095eccfcb83135ca4c4ee7d533ab1f50a01313d243ec2ec82cda2c3e884"
+    },
+    {
+      "file": "docs/upskill/08-reference/risk-register.md",
+      "before_sha256": "01084f34652a13397807f277ea78f9c7eec00be73fdcccce422cb30dea761dd7",
+      "after_sha256": "9e0a69b28d57d0bdd90f0651feff94ea51689a3a05c237ddbc7695ab4ad28fd3"
+    },
+    {
+      "file": "docs/upskill/08-reference/verification-log.md",
+      "before_sha256": "9e1db90d670b6438255d1ecac67b74b17e2fa79c2ed9d89c86f6f8a6a26b3785",
+      "after_sha256": "32367c46940b3cb9ad34d3ba6d2a03797f4edf1d7e626768b0c7b10a5d72216f"
+    },
+    {
+      "file": "docs/upskill/README.md",
+      "before_sha256": "635ba7a45f1bf534f880c725ad64e2ac6fb250ef404b44740695640f3abffea7",
+      "after_sha256": "0a7b88e44a76b17b01ff7da24872a4c16257455b9b0f2b4a8b73fd25ea8e21cf"
+    },
+    {
+      "file": "docs/user-stories.md",
+      "before_sha256": "bd51c7be445418b1014975494d3cc3caf7aefcada9d0481b68351a2a56162d10",
+      "after_sha256": "80dba4912e9fa9222f78cf8211ff37c5a595529383efead266cb03e5fbcb4776"
+    },
+    {
+      "file": "frontend/index.html",
+      "before_sha256": "685b87efbb9a037ae91fcf884f22d855c030c3707610c72ce0fede0748b1aed8",
+      "after_sha256": "de83900be46cae05327f42e5c84dafc1e9c4827bb78a3a0c12a1ad9ba97cdf26"
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "bb0f22f91df51bb2a78721c703f8e00970d6767ef38a999c0d1463443e0cf55a"
+    },
+    {
+      "file": "frontend/package.json",
+      "before_sha256": "62305b27261cb6896944fa2741a18a35c10974a09d7fcff6acb36a877a1e8794",
+      "after_sha256": "07e65217adefd4f66ea52a24d3c105c7ab5400f5738091cb3a384bcc29a98870"
+    },
+    {
+      "file": "frontend/src/PasteWorkspace.jsx",
+      "before_sha256": null,
+      "after_sha256": "daad697376a5c247f0d4ab904d788ada7e1398e50536299916ff479d152def61"
+    },
+    {
+      "file": "frontend/src/main.jsx",
+      "before_sha256": "7f412ece5f40d00fc6e45ee1cc8506fa63c2912fa1678184b532d1f3dbe250f8",
+      "after_sha256": "e2d76682105a50e22fc75f249283024d52e6b8937539409afa32df01de679839"
+    },
+    {
+      "file": "frontend/src/paste-client.js",
+      "before_sha256": null,
+      "after_sha256": "46a5d9ed446064de0681e8bb33a5b170879ce832885fd61a0b68a9fc5740f277"
+    },
+    {
+      "file": "frontend/src/styles.css",
+      "before_sha256": "f2aa3ddac096a91e86514f7d0b6874ace0017088e05b3a65df3925b4797d32c6",
+      "after_sha256": "b63c45a1c51208d28c35073f144e6e5c02e5ad8ad5c202860891f05df7a96d95"
+    },
+    {
+      "file": "frontend/tests/client.test.js",
+      "before_sha256": null,
+      "after_sha256": "2aad7f882e9b4bdbd579d6d8608d86c870ee8cc3b385fd6c59dec7fd37365fd8"
+    },
+    {
+      "file": "frontend/vite.config.js",
+      "before_sha256": "4bb9d0ae0bf5bf5ef6a4fd58c87de1c895d3b562a259efaf5a72b84d491837e3",
+      "after_sha256": "7a59539e3e73522d2759dd9ce0db54bd5e867bb517ea3ab6864c52cc886d1d9a"
+    },
+    {
+      "file": "global.json",
+      "before_sha256": null,
+      "after_sha256": "5877e3f8808a45bc90ecafacbe988149f2c8a07f8758226b0b02f90a1f61cc2d"
+    },
+    {
+      "file": "verification/BackendChecks/BackendChecks.csproj",
+      "before_sha256": null,
+      "after_sha256": "33aa92fee4596c5db7cb95ea0e8463565c32e2d835971362011e005108c3148e"
+    },
+    {
+      "file": "verification/BackendChecks/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "cdeebf3bab290839c308f40a7c22125345566f2c032bd20d6e90e0708af4a7e1"
+    },
+    {
+      "file": "verification/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "verification/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "82ae165786e11080905718497269b41f24c58eeb7cbdf296609450ffc96c8f76"
+    },
+    {
+      "file": "verification/verify_http.py",
+      "before_sha256": null,
+      "after_sha256": "f335bf452239017d8caf9577f892c40f37554234b71e347ae4035f5529b147d4"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9de3f109fe3828f61f1aec5c87413387c1cd6731341b2346cc4128bf7e6f0b56"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "68e8feb1764dfd2fa87493a61213ba4309e102da53b43abbb2775eb0fda84ae8"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0c6c3c4ce26a221b1711c3ad240a63739811cb9f99f85336dc8d7763cfc7be1f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6716baac9a5e41c44febeec4f38806de454b673bf3794e619035bcc751badd28"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e61e4380d557bdbafee64be54a5594ad29d0be8234815ef3fb50fcf0169734ea"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a8823b019f08d170a272b062e25951e0da4474ba2f0754697f57d8d9f4c68508"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e8ac670cfd0294729a51b972acf38729d582bca9553e605fc97839bb53f5b807"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "2fe3f366907fba2b838c19737eedeae1a337a1199cec88c723ab1941bc2ffb55"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "555ac239dfedaecad55ca790cbb397b148de8bb6cb7dcdc98f3d67026c7722d2"
+    }
+  ],
+  "limits": [
+    "Loopback local learning application; no account/session system, public deployment or HTTPS termination. Unlisted pastes are directly link-readable. New random capabilities differ from migrated user-selected keys, whose original strength is retained.",
+    "Whole-workspace JSON persistence: maximum 20 MiB, 2000 stored pastes, 10000 creation receipts and 10000 activity entries. Expired records and creation history are not automatically purged or archived. Capacity rejects further changes.",
+    "File-lease coordination assumes cooperating processes on one local filesystem. Same-directory replacement and Windows sharing-failure tests do not establish all-filesystem atomicity, network-share support or arbitrary power-loss survival.",
+    "No key-rotation flow, account recovery, administrative audit UI, durable update/delete idempotency or automatic merge. Lost update acknowledgements require reviewing current data; creation retries use durable request receipts.",
+    "Migration supports the known legacy array only, preserves source bytes and refuses an existing workspace. Unsupported or inconsistent records require review in a copy; historical view metadata is preserved but new reads do not count views. Legacy key entry supports 6 through 256 characters; longer historical keys require review using the preserved earlier application/data, because a hash alone cannot reveal the original key length.",
+    "Draft and receipt exports are local manual-recovery artifacts. Browser evidence does not establish full accessibility conformance, all-browser compatibility, production scalability or operational backup certification. System clipboard line endings can follow the platform; raw responses and text downloads retain exact stored bytes."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T21:11:47.954555+00:00"
+}

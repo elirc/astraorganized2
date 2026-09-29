@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w22",
+  "id": "529eba39810c",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-refund-scope.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\529eba39810c",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:35:42.083464+00:00",
+  "status": "complete",
+  "log": "crud-b04-astra-runtime.log",
+  "pid": 36268,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:35:51.711194+00:00",
+  "elapsedSeconds": 9.63
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test\\api.test.mjs",
+    "test\\client.test.mjs",
+    "test\\database.test.mjs",
+    "test\\markdown.test.mjs",
+    "test\\merge.test.mjs",
+    "test\\mutations.test.mjs",
+    "test\\repository.test.mjs",
+    "test\\schema.test.mjs",
+    "test\\session.test.mjs",
+    "test\\store.test.mjs"
+  ],
+  "exitCode": 1,
+  "seconds": 11.11
+}

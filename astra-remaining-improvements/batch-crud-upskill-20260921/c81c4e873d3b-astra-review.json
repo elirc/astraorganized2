@@ -1,0 +1,37 @@
+{
+  "id": "c81c4e873d3b",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:08:54.737262+00:00",
+  "sourceReview": "Reviewed repository, route, only delete call site and Prisma Comment.article/Article.slug schema. Route carries slug into guarded lookup before authorship and delete. Read/write race remains explicit; no unrelated Python scaffold edited.",
+  "teachingReview": "Read all nine chapters, corrected static assertion claim and unsupported unique-selector statement, clarified sequential guard versus atomic authorization, updated evidence command and identifier terminology.",
+  "testReview": "Four passing runtime cases load production repository and actual registered DELETE callback with explicit adapters. Verified query, zero writes for missing/forbidden, 204/404/403 mapping and original delete error forwarding. First expanded harness run failed on type-only stub exports; adapter fixed and new terminal run passed.",
+  "specSHA256": "59363638456c6bd27bc58ed4b7203b67035a9332a639a71dd3a44f41fe78acc5",
+  "fileHashes": {
+    "fastapi-realworld-example-app/src/repositories/CommentRepository.ts": "e7690a4868e74de31b3c3e02cc5e996ca898e4cfe010537e5d96db1cf288e6bf",
+    "fastapi-realworld-example-app/src/routes/articles.ts": "9edc71b4f51426b0aad6279c1fd357feb0130c1627402ffab5442e22801b71f2",
+    "tests/comment-delete-boundary.test.mjs": "c1dddc3b0365e1d9bc5406934de7f19ccf01e2e91c17f7439fa215b5afaa15d3",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/CommentRepository.ts.original.txt": "5bd338d7f13e47ee0960a541262f90420af895f97020c9b4e7a9f66013ec3388",
+    "astraupskill/snapshots/articles.ts.original.txt": "6f76aa2af476c77cada5bb33567f2d9f5153b69fd33d3dd7258269feb2269635",
+    "astraupskill/evidence/crud-b03-astra-runtime2.log": "66b08aa583269dd86771c564aebd03ad7d5e309e0ed47e5b961ee434ffe2ceb7",
+    "astraupskill/evidence/results.json": "1769610445bf884d6f6d119d18b03e995fb8d0739af530e8ede906a292b50c7f",
+    "astraupskill/README.md": "a82d2b0feab371f83277fe39c667abef06d01a31d22171ec877807e3bea80f14",
+    "astraupskill/01-CODEBASE-MAP.md": "1061dc73fee801aa545764d968db8c55416c56323a9d4daf6023fcdd0e163a1b",
+    "astraupskill/02-CONCEPTS.md": "d11b16ca99fe2745f44cc1396edad3d248e38c3e798b2b3126f2ff40e15d0827",
+    "astraupskill/03-WORKED-CHANGE.md": "d4e152f28b16f0539b61ec3c1ffe740439bf33b424843f890f4ed1d5bcc365af",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "a548e40dc65ff98dfcd5e7f1c5a8e3ff3a7123f7c0c68a8a62ff9e12be0276ee",
+    "astraupskill/05-PRACTICE.md": "20f5c42a143535d1ef0223e9a1c4a45fe56a8047f71acedab7088d7f138b8c84",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "65a1e27ce493a5abc9255620d83f66611bf6a09ab29c1a34b2b93dd6cf36900f",
+    "astraupskill/07-TRACE-LAB.md": "bd2cd5938933844d0a7bd12f7ab035d7ee04eb6a8e436a38444dee1cad05cd82",
+    "astraupskill/VERIFICATION.md": "2b12d1febaae966ce0317792ff74aea7db92fa885c404e08a67651e55a68c178"
+  },
+  "evidenceHashes": {
+    "checks/c81c4e873d3b/crud-b03-astra-runtime.json": "2fb4167b7c822eaf5d12a336fcdb5843d7ab72495b7a8d5482519318a0bd7950",
+    "checks/c81c4e873d3b/crud-b03-astra-runtime.log": "313c12382c888f25f58631a32a2aab4ef244c31b99d12177e864e10c37cfb28d",
+    "checks/c81c4e873d3b/crud-b03-astra-runtime2.json": "6c8afea8af76141ae4e4a2fa9e69ceb72be2b4de6a579cb7419109b80ac274a8",
+    "checks/c81c4e873d3b/crud-b03-astra-runtime2.log": "66b08aa583269dd86771c564aebd03ad7d5e309e0ed47e5b961ee434ffe2ceb7",
+    "checks/c81c4e873d3b/crud-b03-rewritepy2js-runtime1.json": "b592d03735151e6f04af4df260e94dd5d2750da679ba7b2dfd883bca3aa540f9",
+    "checks/c81c4e873d3b/crud-b03-rewritepy2js-runtime1.log": "e5b7449bb7e3217322e69b63a28c132cc2915bc4ccdd8e7832d12795a21ae8f5",
+    "checks/c81c4e873d3b/results-crud-b03.json": "1769610445bf884d6f6d119d18b03e995fb8d0739af530e8ede906a292b50c7f"
+  }
+}

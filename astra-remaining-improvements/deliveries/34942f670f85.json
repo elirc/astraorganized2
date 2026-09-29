@@ -1,0 +1,125 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww19",
+  "id": "34942f670f85",
+  "summary": [
+    "Provide a runnable service lab for user-scoped workflow-run idempotency and execution seeding.",
+    "Verify replay zero writes and independent users receive separate idempotency scopes."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/34942f670f85/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww19",
+        "id": "34942f670f85",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/workflow-run-idempotency.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34942f670f85",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:21:46.428566+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 34952,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:21:54.337185+00:00",
+        "elapsedSeconds": 7.91
+      }
+    ],
+    "limits": [
+      "Five cases execute actual start-run service and ApiError, with repository, transaction, schema and engine adapters plus unused Next/auth export stubs. No native Prisma, HTTP, real schema validation, worker or concurrency run.",
+      "The fixture models per-user stored keys, not database uniqueness. Create callback completes before seeding; replay after seed failure returns the existing row without reseeding. Recovery is separate and not added.",
+      "Same user and key return the existing run even if requested payload or definition differs. No payload-binding guarantee or production behavior change is claimed."
+    ]
+  },
+  "courseWords": 1529,
+  "courseFiles": 9,
+  "courseLinksChecked": 10,
+  "files": [
+    {
+      "file": "tests/workflow-run-idempotency.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "eb794d1ebb80341bc8e5ebc95f79e1718ead861e651c65b7610674940855ff10"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/workflow-run-service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "db34bba08d825b4329951302018389e04192fcb6f20c7fff7f96605561aa3d73"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "4f7398c3d59c3badc16340060e1e350c023ecb0c01662afbafb1bb8d3ff04296"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "2d300d1f2ab2985d4056af9a0b3c2c79f56310af42734af326481507d31ec711"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c1926b87eff323f618b2267c6849107b1701951fa3d0e1695450200077bdf9f5"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "77f7280359267cdc16c00d36b369fc64ee90a47fce3231f84bcad130ea68a9d0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "53548545bdbc8d04bf12d50e0eb5968eef91076be67cade8b6d4051972b0e0c2"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "0a85fcaf72cc1b931aeed97de4caff302644f2a12ac69c6e30c785ce967c9b31"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f2d79581c030acefc1fb06ec1967824f00bdef595a39a8f9155b165799c29ff8"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "43fcbcf8b9b069893533b2a1b6f5b232365753d3dad8a3505b0fe89f49a1cf8f"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "46767a5a70a65012481b8b677ae5306dd6d4ac5fbc6d19601efae0a6a4ced6dc"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1486544229a8ea231de00ab5ce4ab6a633d3f6cfcd8dc3ecec4c283730037304"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "26286391bedaa3f3b2238793bef5dbdb65114e080e67415f7244256aa215f564"
+    }
+  ],
+  "limits": [
+    "Five cases execute actual start-run service and ApiError, with repository, transaction, schema and engine adapters plus unused Next/auth export stubs. No native Prisma, HTTP, real schema validation, worker or concurrency run.",
+    "The fixture models per-user stored keys, not database uniqueness. Create callback completes before seeding; replay after seed failure returns the existing row without reseeding. Recovery is separate and not added.",
+    "Same user and key return the existing run even if requested payload or definition differs. No payload-binding guarantee or production behavior change is claimed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:26:02.189247+00:00"
+}

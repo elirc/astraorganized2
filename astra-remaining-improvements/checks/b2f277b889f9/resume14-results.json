@@ -1,0 +1,68 @@
+{
+  "passed": true,
+  "total": 14,
+  "passedTests": 14,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "geminiorganized/OpenSource_Upskilling_Linear",
+      "id": "b2f277b889f9",
+      "command": [
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+        "restore",
+        "NetLinear.sln"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T16:38:41.878391+00:00",
+      "status": "complete",
+      "log": "resume14-restore-01.log",
+      "pid": 23496,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T16:39:16.842682+00:00",
+      "elapsedSeconds": 34.96
+    },
+    {
+      "project": "geminiorganized/OpenSource_Upskilling_Linear",
+      "id": "b2f277b889f9",
+      "command": [
+        "python",
+        "scripts/test-local.py",
+        "--dotnet",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+        "--results",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\b2f277b889f9\\resume14-pg04"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T16:55:26.180100+00:00",
+      "status": "complete",
+      "log": "resume14-postgres-tests-04.log",
+      "pid": 3424,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T16:59:54.442746+00:00",
+      "elapsedSeconds": 268.25
+    },
+    {
+      "project": "geminiorganized/OpenSource_Upskilling_Linear",
+      "id": "b2f277b889f9",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9\\web",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T16:54:41.324373+00:00",
+      "status": "complete",
+      "log": "resume14-web-build-01.log",
+      "pid": 16676,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T16:58:05.436252+00:00",
+      "elapsedSeconds": 204.09
+    }
+  ]
+}

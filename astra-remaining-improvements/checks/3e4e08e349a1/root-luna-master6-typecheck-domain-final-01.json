@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master 6",
+  "id": "3e4e08e349a1",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "npm",
+    "run",
+    "typecheck",
+    "--workspace",
+    "@lms/domain"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3e4e08e349a1",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T23:51:52.386315+00:00",
+  "status": "complete",
+  "log": "root-luna-master6-typecheck-domain-final-01.log",
+  "pid": 9164,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T23:52:40.006466+00:00",
+  "elapsedSeconds": 47.62
+}

@@ -1,0 +1,555 @@
+{
+  "date": "2026-09-13T00:47:01.886813+00:00",
+  "projects": 67,
+  "files": 3173,
+  "matchingProjects": 66,
+  "results": [
+    {
+      "id": "30217cacf1b9",
+      "project": "formforge",
+      "files": 17,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "30ab5e29fedc",
+      "project": "meterforge",
+      "files": 17,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "8228fda84db1",
+      "project": "campusops",
+      "files": 19,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "676bcb38df2b",
+      "project": "buildsmallplates",
+      "files": 19,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "52d78d4a92a2",
+      "project": "lucasrouter",
+      "files": 20,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "ee8b0b1a6855",
+      "project": "missioncontrol",
+      "files": 35,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "9e1958f807df",
+      "project": "aiheartbeat",
+      "files": 25,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "cf8875344b43",
+      "project": "_Organized Desktop/12 Other Projects/andie",
+      "files": 19,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "d9a27fa7f308",
+      "project": "_Organized Desktop/05 Numbered Experiments/j5",
+      "files": 16,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "6844a7b03c83",
+      "project": "_Organized Desktop/04 JavaScript Training/react",
+      "files": 26,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "d0778f38946f",
+      "project": "_Organized Desktop/05 Numbered Experiments/j3",
+      "files": 20,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "a9672affc47e",
+      "project": "JSProjectLearn",
+      "files": 29,
+      "missing": [],
+      "differentFromDelivery": [
+        "README.md",
+        "astraupskill/images/desktop.png",
+        "astraupskill/images/narrow.png",
+        "package.json",
+        "playwright.config.ts",
+        "src/App.tsx",
+        "src/styles.css",
+        "src/types.ts",
+        "tests/learning.spec.ts"
+      ],
+      "matchesDelivery": false
+    },
+    {
+      "id": "06325f8ab263",
+      "project": "_Organized Desktop/05 Numbered Experiments/j4",
+      "files": 21,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "da9c28730758",
+      "project": "aiapplybot",
+      "files": 32,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "092c5e5b7052",
+      "project": "buildwhiteboard",
+      "files": 25,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "b415b13a50ee",
+      "project": "astra4.2",
+      "files": 29,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "56044dcd81ce",
+      "project": "_Organized Desktop/02 Build Projects/buildantigVG",
+      "files": 54,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "14690be423dc",
+      "project": "_Organized Desktop/05 Numbered Experiments/j7",
+      "files": 25,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "e2d8f836b7f9",
+      "project": "_Organized Desktop/08 App And Product Projects/job track/restaurant-kitchen-display-system",
+      "files": 22,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "22be3051241f",
+      "project": "_Organized Desktop/08 App And Product Projects/job track/live-chat-support-platform",
+      "files": 19,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "993e7c3b44d7",
+      "project": "_Organized Desktop/12 Other Projects/GlobGame",
+      "files": 47,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "19856a4178bf",
+      "project": "_Organized Desktop/08 App And Product Projects/job track/task-queue-system",
+      "files": 28,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "01e135926859",
+      "project": "grokbuildmultitenantproject",
+      "files": 59,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "e502bf8af566",
+      "project": "grokbuildorderproject",
+      "files": 50,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "4de416cd300b",
+      "project": "astra2",
+      "files": 76,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "baf8258948be",
+      "project": "grokbuildhrproject",
+      "files": 67,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "a1d53294d3b0",
+      "project": "_Organized Desktop/03 Master Projects/master7",
+      "files": 26,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "4c93b4cf7530",
+      "project": "grokbuildteamproject",
+      "files": 73,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "0b729fe76e93",
+      "project": "_Organized Desktop/03 Master Projects/master3",
+      "files": 21,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "65f5f5c94a48",
+      "project": "grokbuildecommerceproject",
+      "files": 71,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "3302b1d1ab07",
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "files": 29,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "2f14585fed41",
+      "project": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board",
+      "files": 59,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "475084a31c00",
+      "project": "grokbuildppmproject",
+      "files": 49,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "d84730649bc6",
+      "project": "_Organized Desktop/05 Numbered Experiments/B1",
+      "files": 21,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "109a97addd48",
+      "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+      "files": 38,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "1c908de00eb7",
+      "project": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+      "files": 25,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "4ac741261ad5",
+      "project": "_Organized Desktop/03 Master Projects/master2",
+      "files": 40,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "e09d7ae4ffff",
+      "project": "_Organized Desktop/02 Build Projects/buildasana",
+      "files": 42,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "3ecd02656197",
+      "project": "_Organized Desktop/05 Numbered Experiments/z7",
+      "files": 39,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "2d739127d551",
+      "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+      "files": 46,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "5426644ec395",
+      "project": "borrowbox",
+      "files": 32,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "028086674b89",
+      "project": "_Organized Desktop/01 Net Workspaces/.netgum",
+      "files": 32,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "3e4e08e349a1",
+      "project": "_Organized Desktop/03 Master Projects/master 6",
+      "files": 42,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "4c54d18d7d97",
+      "project": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+      "files": 43,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "9b2478e93c69",
+      "project": "_Organized Desktop/05 Numbered Experiments/J1",
+      "files": 20,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "1a8f0f6b63c8",
+      "project": "_Organized Desktop/05 Numbered Experiments/j2",
+      "files": 23,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "6130d1be1f04",
+      "project": "_Organized Desktop/05 Numbered Experiments/e20",
+      "files": 39,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "6e0808cd55b2",
+      "project": "_Organized Desktop/02 Build Projects/buildsubbox",
+      "files": 31,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "a1752d846946",
+      "project": "_Organized Desktop/02 Build Projects/buildgum",
+      "files": 30,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "077627a58eae",
+      "project": "buildbusinesses",
+      "files": 85,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "d30d5dfdf243",
+      "project": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+      "files": 94,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "0f3292fc93dc",
+      "project": "buildsql",
+      "files": 55,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "19110bf39fcf",
+      "project": "_Organized Desktop/05 Numbered Experiments/e15",
+      "files": 90,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "767d610cb528",
+      "project": "_Organized Desktop/05 Numbered Experiments/e12",
+      "files": 85,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "44013f102ff1",
+      "project": "geminiorganized/LLM_Generated_Helper",
+      "files": 93,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "ca549816cdd1",
+      "project": "_Organized Desktop/05 Numbered Experiments/e14",
+      "files": 92,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "58c5c289a8ce",
+      "project": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+      "files": 125,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "af19f6e32dba",
+      "project": "geminiorganized/OpenSource_Upskilling_.Stripe",
+      "files": 275,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "71e7b036865c",
+      "project": "_Organized Desktop/01 Net Workspaces/.nethris",
+      "files": 180,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "0e78f57d70d1",
+      "project": "_Organized Desktop/02 Build Projects/buildjira",
+      "files": 19,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "61d919e84af9",
+      "project": "_Organized Desktop/05 Numbered Experiments/D1",
+      "files": 60,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "5d5120e98c41",
+      "project": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+      "files": 41,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "20574f0b81b4",
+      "project": "_Organized Desktop/05 Numbered Experiments/e6",
+      "files": 40,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "a92b3a3a2282",
+      "project": "_Organized Desktop/01 Net Workspaces/.nettrello",
+      "files": 29,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "9e7b2d32e0fb",
+      "project": "_Organized Desktop/01 Net Workspaces/.netvg",
+      "files": 36,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "1bb35a95be79",
+      "project": "_Organized Desktop/01 Net Workspaces/.netzen",
+      "files": 35,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    },
+    {
+      "id": "a0a0ff059e64",
+      "project": "geminiorganized/OpenSource_Upskilling_.Ramp",
+      "files": 52,
+      "missing": [],
+      "differentFromDelivery": [],
+      "matchesDelivery": true
+    }
+  ],
+  "note": "Read-only file-hash reconciliation. Differences may be later user edits; this audit never overwrites them and does not rerun historical tests."
+}

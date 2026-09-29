@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master1",
+  "id": "39fabfbc58f5",
+  "summary": [
+    "Preserve an existing completedAt timestamp when a DONE task is updated to DONE again.",
+    "Stamp completion only when entering DONE, clear it when reopening, and leave it untouched when status is omitted."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/39fabfbc58f5/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/03 Master Projects/master1",
+        "id": "39fabfbc58f5",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/tasks-service-completion.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\39fabfbc58f5",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:29:36.270291+00:00",
+        "status": "complete",
+        "log": "crud-b02-runtime2.log",
+        "pid": 8576,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:29:44.264135+00:00",
+        "elapsedSeconds": 7.99
+      }
+    ],
+    "limits": [
+      "The regression invokes the real TasksService with explicit Prisma and audit doubles; it does not connect to a live database.",
+      "The local loader removes standalone Nest decorator syntax because Node's dependency-free TypeScript stripper cannot parse it; service method logic remains actual source.",
+      "This checks completion timestamp behavior only; concurrent task updates and database transaction behavior are outside scope."
+    ]
+  },
+  "courseWords": 3061,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "apps/api/src/modules/tasks/tasks.service.ts",
+      "before_sha256": "0247c4946a7c0ff74df2f3a5df84a4397a321ce04d85f6b62b3a5acb55070794",
+      "after_sha256": "8ec56d390f570d52a109c08bd2d5c1db546eb89702327a07daea9aad03ee603f"
+    },
+    {
+      "file": "tests/tasks-service-completion.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "2b27394df200e7573930ec0d6ba9bdb8febcb35c5ead78009ae4e370d0853b42"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "827f2603cae2f88306d64df72edb262136623f924697a7c23ea822ed5441abff"
+    },
+    {
+      "file": "astraupskill/snapshots/tasks.service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0247c4946a7c0ff74df2f3a5df84a4397a321ce04d85f6b62b3a5acb55070794"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-runtime2.log",
+      "before_sha256": null,
+      "after_sha256": "2dbc5e7f53ea8b1cd0c87b30d70cc43ef6aae400c78af85501ce26474894b98a"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ef90f5418cac3eca9bcebaea262c5e836fc5868cb1c385dd1b9017d36adeb1c6"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "128f4734d013eabfb90bbf68630a232fa2c691c4af61d8e61c544999a1a3f50f"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "ff31f095ca035575d3b90447c73bab8863b660c049b3b5efa9018f36dafc733d"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e1efce0220c8cf6c3167deeb0be60d96f1d08d22881177eabd2241cbe1cf46da"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9446cb8fd9487bc8e7f146cb97d49a77849546a9edc676fa192f9add72132b0c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1c17766902554aee31485f0efeed69e5c194d937632cdb674cd5880877f062fe"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "6e12504f2ed80dac37f3b8acd5f5cc27d9f3f41ab0fce3aa157b62da5efe0201"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "824842ce378c1412b2b37384494e51ad343318b7ca204a8975c97c55fc570762"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f9624c24a57feb6111b5ad646c744d7780c24cdaaef40aaa32a630b8f1a4cc14"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "fcf9167c6c76c5d0099d84f51702615f698a6866048601e185a1e373e9807ab5"
+    }
+  ],
+  "limits": [
+    "The regression invokes the real TasksService with explicit Prisma and audit doubles; it does not connect to a live database.",
+    "The local loader removes standalone Nest decorator syntax because Node's dependency-free TypeScript stripper cannot parse it; service method logic remains actual source.",
+    "This checks completion timestamp behavior only; concurrent task updates and database transaction behavior are outside scope."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:39:03.276577+00:00"
+}

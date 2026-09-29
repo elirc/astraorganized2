@@ -1,0 +1,23 @@
+{
+  "id": "7ba004a89f06",
+  "project": "_Organized Desktop/06 AI And Learning/codehelper",
+  "summary": [
+    "Exercise FileProjectStore CRUD with a temporary filesystem adapter.",
+    "Verify save, read, clear, and missing-file behavior against actual source.",
+    "Expanded to 3 actual-source runtime cases during Astra review; production source unchanged."
+  ],
+  "changedFiles": [
+    "tests/project-store-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/projectStore.ts.original.txt",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7ba004a89f06/results-crud-codehelper-runtime-v2.json"
+  },
+  "limits": [
+    "Focused actual-source runtime only; see course verification for adapter and integration boundaries. No full application stack or concurrent persistence proof."
+  ]
+}

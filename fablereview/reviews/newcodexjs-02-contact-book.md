@@ -1,0 +1,47 @@
+# newcodexJS/02-contact-book — Fable review
+
+- **Path:** `newcodexJS/02-contact-book`  ·  **Wave:** 1  ·  **Stack:** Node + Express + Knex + PostgreSQL (server), Vite client  ·  **Batch:** B01
+- **Astra's change (one line):** Replaced naive `split(',')` CSV handling with a real character-by-character state machine (`server/src/utils/csv.js`) that supports quoted commas, doubled quotes, embedded newlines, CRLF and a BOM and rejects malformed quoting/duplicate headers/wrong field counts; moved import to parse-and-validate-the-whole-batch-first then write inside one `db.transaction` (`contactModel.importContactBatch`) covering contacts, tag upserts and junction rows; and added a deterministic tiebreaker `orderBy("contacts.id","asc")` so paginated lists cannot repeat or drop rows.
+- **Course size:** 5,823 words across 9 files  ·  **Tests claimed:** 4  ·  **Tests found on disk:** 4 (`server/test/import.test.cjs`, plus harness `server/test/database.cjs`)
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 5 | 4 | 5 | 4 | 5 | 4 | 3 | 4.4 |
+
+**Verdict:** KEEP    **Path role:** core
+
+## What Astra did well
+- Densest and most transferable CRUD content in B01. In one project a junior meets four distinct professional skills: parsing a real format correctly, all-or-nothing batch writes, transactional rollback across three tables, and deterministic pagination.
+- The parser is an honest state machine, not a regex hack, and the comment says so: `/** A small state machine: delimiters only split fields outside quoted text. */` (`server/src/utils/csv.js:10`). It handles `""` escaping, CRLF as one row terminator, a leading BOM, and — importantly — *rejects* rather than silently accepts the two ambiguous cases (`'Unexpected text after a closing CSV quote'`, `'A quoted CSV field must start with a quote'`).
+- Validation is correctly ordered relative to the transaction, and the comment states the invariant: `// Parse every row before opening a transaction: invalid row 20 saves no rows.` (`server/src/services/contactService.js:126`). Errors are 1-indexed to the CSV line including the header (`CSV record ${index + 2}`), which is what a user actually needs.
+- Test 3 is the one that earns the course its place: it forces a *late* database failure (duplicate email on row two) and then asserts rollback across all three tables — no `contacts` row, and no `TemporaryTag`/`OtherTag` in `tags`. Proving that the orphan tag created during row one also disappears is the difference between "I wrapped it in a transaction" and "I understand transactions".
+- Test 4 covers a bug juniors ship constantly: three contacts with identical sort keys, paged 2 at a time, asserted via `new Set([...a.contacts, ...b.contacts].map(x => x.id)).size === 3`. Without the `orderBy("contacts.id","asc")` tiebreaker added at `contactModel.js:59`, page 2 can repeat a row from page 1.
+- `VERIFICATION.md` lists only `tests` and `build` and correctly omits any browser-check row, matching `implementation/browser-checks.json` (projects 01–06 only). The claimed 4 test cases and 5,823 words both match what is on disk.
+
+## Problems found (evidence required)
+- **[D2]** `importContactBatch` (`contactModel.js:160-176`) inserts row-by-row inside the transaction with a nested loop doing `insert … onConflict('name').ignore()` then a `select` then a junction insert per tag. For a 1,000-contact import that is thousands of round trips. The course never raises this, and "batch" in the function name invites a junior to assume it is a bulk insert. A one-paragraph note (correctness first, then batching as an explicit next step) would turn a silent weakness into a lesson.
+- **[D2]** Tests call the service layer directly (`service.importContacts(csv)`), unlike the sibling `newcodexJS/01-task-manager` suite which drives real HTTP through the Express app. So the controller, route wiring and error-to-status mapping for import are unverified — a 500-vs-400 regression would pass this suite.
+- **[D8]** Batch-wide template. `02-CONCEPTS.md` shares 37 of 41 lines with the other nine B01 courses (only the heading, the domain paragraph, the invariant quote and the data-model sentence are substituted). `05-PRACTICE.md` shares 42 of 47; `06-SOLUTIONS-AND-REVIEW.md` repeats "Review: Demonstrate an ordinary case and a case that would break a naive implementation…" verbatim under all four exercises.
+- **[D8/D1]** `04-TESTING-AND-DEBUGGING.md` carries the browser-project paragraph — "For the plain browser projects, jsdom runs the actual app.js against its HTML… and a controllable timer clock" — in a project with no jsdom, no `app.js` and no timers. It also re-prints the README's setup paragraph with its circular "see chapter 4" pointer inside chapter 4.
+- **[D3]** `03-WORKED-CHANGE.md`'s "Three variations to work through" names no actual variations, which is a waste for a parser with this many rejection branches.
+- **[D5]** Same as the other API courses: requires a local PostgreSQL and a hand-created `astra_test_*` database; no container fallback is offered.
+
+## Spot-checks performed
+- Course claim (`03-WORKED-CHANGE.md`): excerpt from `server/src/utils/csv.js` "near line 11". -> `csvToContacts` begins at line 11 (the JSDoc state-machine comment is line 10) and the quoted body matches. -> **matches.**
+- Course claim (`VERIFICATION.md`): "Import a company \"Labs, Inc.\" and notes containing a newline and the words She said \"hello\". The stored strings must be intact." -> test 1 feeds `'…,"Labs, Inc.","Line one\nShe said ""hello""",Friend|Colleague'` and asserts `contact.company === 'Labs, Inc.'` and `contact.notes === 'Line one\nShe said "hello"'`, then round-trips through `contactsToCsv`. -> **matches.**
+- Course claim (`README.md` Scope): "The complete batch is validated before a single transaction writes contacts and tags." -> `contactService.js:125-136`: `csvToContacts` then `rows.map(...)` parsing every record, *then* `contactModel.importContactBatch(batch)`. -> **matches.**
+- Course claim (`README.md` Scope): "A late uniqueness failure rolls back earlier rows." -> `importContactBatch` wraps the whole loop in `db.transaction`; `contactService.js:139` maps Postgres `23505` to "…no contacts were imported"; test 3 asserts zero rows in both `contacts` and `tags`. -> **matches.**
+- Course claim (`README.md` Scope): "It rejects malformed quoting, duplicate/unsupported headers and inconsistent field counts." -> `csv.js:60-72` (`'Unclosed CSV quote'`, `'CSV has duplicate or unsupported headers'`, `` `CSV record ${index + 2} has the wrong number of fields` ``); test 2 loops all four malformed inputs and asserts the contact count is unchanged. -> **matches.**
+- Delivery claim: 4 test cases, 5,823 words. -> 4 `test(` blocks (several looping over multiple fixtures inside); `wc -w astraupskill/*` totals 5,823. -> **matches.**
+
+## Improvements needed (ordered, concrete, actionable)
+1. Add an HTTP-level test to `server/test/import.test.cjs` (use `harness.listen(app)` exactly as `newcodexJS/01-task-manager/server/test/tasks.test.cjs` does) covering `POST /api/contacts/import` with one good and one malformed CSV, asserting 200/400 rather than a thrown service error. Right now the controller and status mapping for the headline feature are untested. Effort: S.
+2. Add a "performance is a separate concern from correctness" note to `03-WORKED-CHANGE.md` naming `contactModel.js:160-176`: explain the per-row round trips, then set the batched version (`insert(rows).returning('*')`, one `tags` upsert for the distinct set, one junction insert) as Exercise 2 with the same rollback test as its acceptance criterion. Effort: S (docs) / M (code).
+3. Fix `04-TESTING-AND-DEBUGGING.md`: delete the jsdom/`app.js`/timer-clock paragraph and the duplicated "Run the checks" block with its circular "see chapter 4" reference. Effort: S.
+4. Replace "Three variations to work through" with three concrete CSV strings and expected outcomes: a field containing only `""`, a row ending in a bare `\r`, and a header row with `notes,notes`. Effort: S.
+5. Add a Docker fallback for the test database to chapter 4 (`docker run --rm -e POSTGRES_PASSWORD=… -p 5432:5432 postgres:18` + `createdb astra_test_learning`) and state the `CREATE SCHEMA` privilege requirement. Effort: S.
+
+## One-paragraph summary for the index
+The single best CRUD lesson in this batch. One project teaches you to parse a real file format with a proper state machine instead of `split(',')`, to validate an entire batch before opening a transaction so record 20 being bad cannot leave records 1–19 saved, to prove rollback across three tables by forcing a *late* duplicate-email failure and checking that even the orphan tag created midway disappears, and to add the `id` tiebreaker that stops paginated lists repeating rows when the sort key ties. Every claim in the course matches the code, the verification file honestly omits the browser check it never ran, and all four tests run against a real PostgreSQL schema created and dropped per run. Two gaps to be aware of: the tests bypass HTTP and hit the service directly, so the route and status mapping are unverified, and the import writes row-by-row inside the transaction, which the course never mentions. Budget four to six hours, and get PostgreSQL running first.

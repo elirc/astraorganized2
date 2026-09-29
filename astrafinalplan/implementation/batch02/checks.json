@@ -1,0 +1,217 @@
+[
+  {
+    "project": "11",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 268.39,
+    "log": "logs/11-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\11\\test\\study.test.cjs"
+    ]
+  },
+  {
+    "project": "12",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 267.86,
+    "log": "logs/12-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\12\\test\\streaks.test.cjs"
+    ]
+  },
+  {
+    "project": "13",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 264.86,
+    "log": "logs/13-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\13\\test\\filters.test.cjs"
+    ]
+  },
+  {
+    "project": "15",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 74.29,
+    "log": "logs/15-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\15\\test\\money.test.cjs"
+    ]
+  },
+  {
+    "project": "16",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 75.22,
+    "log": "logs/16-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\16\\test\\expiration.test.cjs"
+    ]
+  },
+  {
+    "project": "17",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 11.6,
+    "log": "logs/17-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\17\\test\\store.test.js"
+    ]
+  },
+  {
+    "project": "18",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 125.1,
+    "log": "logs/18-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\18\\test\\booking.test.ts"
+    ]
+  },
+  {
+    "project": "19",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 181.92,
+    "log": "logs/19-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\19\\server\\test\\search.test.cjs"
+    ]
+  },
+  {
+    "project": "19",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 96.59,
+    "log": "logs/19-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "14",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 51.02,
+    "log": "logs/14-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\14\\test\\persistence.test.js"
+    ]
+  },
+  {
+    "project": "20",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 93.17,
+    "log": "logs/20-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\20\\server\\test\\bookmarks.test.ts",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch02\\stage\\20\\server\\test\\metadata.test.ts"
+    ]
+  },
+  {
+    "project": "20",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 44.15,
+    "log": "logs/20-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "18",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 131.66,
+    "log": "logs/18-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "20",
+    "check": "typecheck-client",
+    "exit_code": 0,
+    "seconds": 135.34,
+    "log": "logs/20-typecheck-client.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "14",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 41.86,
+    "log": "logs/14-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "18",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 25.97,
+    "log": "logs/18-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "20",
+    "check": "migration-setup",
+    "exit_code": 0,
+    "seconds": 82.935,
+    "log": "logs/20-migration-setup.log",
+    "command": "Knex CLI with tsx loader: migrate:latest and seed:run; disposable schema, original migration/seed configuration"
+  },
+  {
+    "project": "20",
+    "check": "typecheck-server",
+    "exit_code": 0,
+    "seconds": 99.9,
+    "log": "logs/20-typecheck-server.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  }
+]

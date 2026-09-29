@@ -1,0 +1,34 @@
+{
+  "id": "7a758c622d3c",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:47:41.906577+00:00",
+  "sourceReview": "Reviewed expiry guard inside existing transaction after visibility/status checks and before inventory mutation; expired release remains available; generated install lockfile preserved outside delivery.",
+  "teachingReview": "Reviewed expiry boundary explanation, lifecycle exercises and separate solutions; corrected executed-test record to frozen-clock nonempty-line fixtures and named DB serialization limits.",
+  "testReview": "Astra ran four actual reservation service cases: past/equal expiry zero side effects, future completion and expired release. Explicit database/repository doubles, no live stock or transaction proof. Preflight passed.",
+  "specSHA256": "1f9701c0b695273fff2ff591f4c50d6b51e896fdbc83f7543051d27db4c66261",
+  "fileHashes": {
+    "src/services/reservationService.ts": "04df8f91312b0c30bd004390035c7b1575f7a85275128fbf3dd82a6abeae922f",
+    "tests/reservation-service-transition.test.ts": "2eec8ed479e909ae6c1799b248d5dfb475945d37093e53e096fc890f0cf0cff8",
+    "tests/runtime-expiry.test.mjs": "16b7ab32e82890843292773653e450c7de23806d3deda847bd449c5cd68dd368",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-services-reservationService.ts.before": "6dba9752b7b653f73cb26305a8d44d8e71af8241abd090d9a2a6eabab7b49bbf",
+    "astraupskill/snapshots/tests-reservation-service-transition.test.ts.before": "77dc06c118870dd0476f8e9eba4318580a7fa6d98824a443854351652c8a8e31",
+    "astraupskill/evidence/astra-crud-b01-runtime.log": "3cc12bf00776203b06cbcbd0ad0850c71b288d543b815b0bae664069dbb7362a",
+    "astraupskill/evidence/results.json": "9cc829bbf60d22a6c49b05475e0c3b5f4a234fb2452262c262165452e2d971c1",
+    "astraupskill/README.md": "e2724890f0edddceaa19bc6388c6fedc4f35d59ca807f9fd4c0835be1dff6162",
+    "astraupskill/01-CODEBASE-MAP.md": "8402208365ca5e4a85d37da597debece95a537effb804ebbe183fdeaba89ff00",
+    "astraupskill/02-CONCEPTS.md": "5f49009d170e33c089927ab46e5fc5781cbf075868b4683ed757ddbaec0b91eb",
+    "astraupskill/03-WORKED-CHANGE.md": "61d73769d30b7281607f2eecf468c4c2847de1d9fa3126867b8ce3935b809ce5",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "efa31d0c26a4ace55ce6736c3c94d344e1e4dcaed54f819f3946077c05e8e47a",
+    "astraupskill/05-PRACTICE.md": "abdac8e2e2bdb1dc384729e21cc53759331ab0c89c2adc9f812d79f810b80a78",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "c20ac8208371aef7c7d9bc1ea4bf7b8fc2621d2e1c4421777249182947a96ac2",
+    "astraupskill/07-TRACE-LAB.md": "8bb7c6a00e58a9fab25397d806fdab69086c351ad6ed09e5d77eac152f5494f4",
+    "astraupskill/VERIFICATION.md": "c16afbd516b51744d91a8e89d469fd04b171f9d24e0827569138a5cbe6b50260"
+  },
+  "evidenceHashes": {
+    "checks/7a758c622d3c/astra-crud-b01-runtime.json": "a9b25d41620402da76b97cde564c7e43540a6dca79a353fd7376f86b0ae0a001",
+    "checks/7a758c622d3c/astra-crud-b01-runtime.log": "3cc12bf00776203b06cbcbd0ad0850c71b288d543b815b0bae664069dbb7362a",
+    "checks/7a758c622d3c/npm-generated-package-lock.json": "7c24288008f8768957b5c3cb3d15ba363424e1683ab19c1d1a54fd680b668696",
+    "checks/7a758c622d3c/results-crud-b01.json": "9cc829bbf60d22a6c49b05475e0c3b5f4a234fb2452262c262165452e2d971c1"
+  }
+}

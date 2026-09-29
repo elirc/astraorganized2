@@ -1,0 +1,94 @@
+{
+  "passed": true,
+  "total": 31,
+  "passedTests": 31,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "id": "e5fa6d1a40be",
+      "command": [
+        "npm.cmd",
+        "test",
+        "--",
+        "--pool",
+        "threads",
+        "--poolOptions.threads.singleThread",
+        "--testTimeout",
+        "30000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e5fa6d1a40be",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T19:10:55.967166+00:00",
+      "status": "complete",
+      "log": "resume14-tests-03.log",
+      "pid": 15672,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:12:30.660239+00:00",
+      "elapsedSeconds": 94.69
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "id": "e5fa6d1a40be",
+      "command": [
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e5fa6d1a40be",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T19:14:46.957173+00:00",
+      "status": "complete",
+      "log": "resume14-types-02.log",
+      "pid": 25576,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:17:08.416448+00:00",
+      "elapsedSeconds": 141.46
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "id": "e5fa6d1a40be",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e5fa6d1a40be",
+      "environmentOverrides": {
+        "CIRCLE_NODE_TOTAL": "2",
+        "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check"
+      },
+      "startedAt": "2026-09-19T19:25:41.041726+00:00",
+      "status": "complete",
+      "log": "resume14-build-01.log",
+      "pid": 22212,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:41:30.833456+00:00",
+      "elapsedSeconds": 949.79
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "id": "e5fa6d1a40be",
+      "command": [
+        "node",
+        "node_modules/prisma/build/index.js",
+        "generate"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e5fa6d1a40be",
+      "environmentOverrides": {
+        "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check"
+      },
+      "startedAt": "2026-09-19T19:00:23.997319+00:00",
+      "status": "complete",
+      "log": "resume14-generate-01.log",
+      "pid": 26260,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:04:54.138588+00:00",
+      "elapsedSeconds": 270.14
+    }
+  ]
+}

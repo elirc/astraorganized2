@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+  "id": "e0e5886e8464",
+  "command": [
+    "node",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit",
+    "--incremental",
+    "false"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:33:26.286266+00:00",
+  "status": "complete",
+  "log": "crud-b01-typecheck-installed.log",
+  "pid": 33520,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:35:40.210548+00:00",
+  "elapsedSeconds": 133.92
+}

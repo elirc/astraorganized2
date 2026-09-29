@@ -1,0 +1,776 @@
+{
+  "createdAt": "2026-09-21T22:50:07.769996+00:00",
+  "instruction": "Exclude every applybot/applyboy variant and all explicitly protected project families. Luna implementation; Astra review/delivery. Batches of ten; final batch may be shorter. Preserve existing learning material and completed Fable/Astra work.",
+  "protectedNameParts": [
+    "aicallhelper",
+    "aicallhelper2",
+    "alanandelisoccer",
+    "ankijs",
+    "astraspacegameweb",
+    "fableaihelperv2",
+    "fableaihelperv3",
+    "finalcallhelp",
+    "spacegame",
+    "tagalog"
+  ],
+  "protectedSubstrings": [
+    "applybot",
+    "applyboy"
+  ],
+  "excludedPendingProjects": [
+    "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+    "fableaihelperv3",
+    "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+    "AlanAndEliSoccer",
+    "fableaihelperv2",
+    "spacegame",
+    "finalcallhelp",
+    "astraspacegameweb",
+    "_Organized Desktop/06 AI And Learning/aiapplybot",
+    "_Organized Desktop/08 App And Product Projects/eliapplybot",
+    "aicallhelper2",
+    "aicallhelper",
+    "tagalog",
+    "ankijs"
+  ],
+  "eligibleCount": 118,
+  "batches": [
+    {
+      "batch": 1,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "e0e5886e8464",
+          "path": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:52:38.482337+00:00"
+        },
+        {
+          "id": "fb1267045788",
+          "path": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:45:58.673352+00:00"
+        },
+        {
+          "id": "0f37c14f6d60",
+          "path": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:46:42.934555+00:00"
+        },
+        {
+          "id": "7a758c622d3c",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww36",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:49:34.291813+00:00"
+        },
+        {
+          "id": "200c3e641a36",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww43",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:47:39.851172+00:00"
+        },
+        {
+          "id": "6e522cf7fdc9",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww48",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:48:41.220711+00:00"
+        },
+        {
+          "id": "fdad4e87a703",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz2",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:53:55.950812+00:00"
+        },
+        {
+          "id": "c94cd4bde644",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz3",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:32:16.208575+00:00"
+        },
+        {
+          "id": "74faaa8b7040",
+          "path": "_Organized Desktop/02 Build Projects/buildaffiliate",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:54:28.984356+00:00"
+        },
+        {
+          "id": "54397e702f3f",
+          "path": "_Organized Desktop/02 Build Projects/buildanalytics",
+          "status": "complete",
+          "completedAt": "2026-09-21T23:39:35.779954+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 2,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "ef1449fa0c77",
+          "path": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:08:48.271556+00:00"
+        },
+        {
+          "id": "7f289bf2abfa",
+          "path": "_Organized Desktop/01 Net Workspaces/.netslack",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:46:42.597859+00:00"
+        },
+        {
+          "id": "c10fc180fa35",
+          "path": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:29:42.058864+00:00"
+        },
+        {
+          "id": "707cb3abbb7a",
+          "path": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:36:25.718920+00:00"
+        },
+        {
+          "id": "7b18281f562f",
+          "path": "_Organized Desktop/02 Build Projects/buildagentteaching",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:20:03.545170+00:00"
+        },
+        {
+          "id": "83297bdf668f",
+          "path": "_Organized Desktop/02 Build Projects/buildecom",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:53:46.594253+00:00"
+        },
+        {
+          "id": "cb18aae6d81d",
+          "path": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:56:14.305399+00:00"
+        },
+        {
+          "id": "785c7da790a8",
+          "path": "_Organized Desktop/03 Master Projects/master",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:18:32.617946+00:00"
+        },
+        {
+          "id": "39fabfbc58f5",
+          "path": "_Organized Desktop/03 Master Projects/master1",
+          "status": "complete",
+          "completedAt": "2026-09-22T00:39:03.855600+00:00"
+        },
+        {
+          "id": "f5bd710b171f",
+          "path": "_Organized Desktop/03 Master Projects/mastermatter",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:29:48.839961+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 3,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "2cdf30cead55",
+          "path": "_Organized Desktop/03 Master Projects/masterrnative",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:47:28.195167+00:00"
+        },
+        {
+          "id": "7649d96533a4",
+          "path": "_Organized Desktop/03 Master Projects/MasterStore",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:49:18.187568+00:00"
+        },
+        {
+          "id": "a880d6aae28f",
+          "path": "_Organized Desktop/04 JavaScript Training/jep vs code",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:07:12.076319+00:00"
+        },
+        {
+          "id": "612cdbaa5aa0",
+          "path": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:57:40.845347+00:00"
+        },
+        {
+          "id": "efb20378d966",
+          "path": "_Organized Desktop/04 JavaScript Training/jstrain1",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:04:50.426032+00:00"
+        },
+        {
+          "id": "abcd8cc338ec",
+          "path": "_Organized Desktop/04 JavaScript Training/jstrain2",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:33:47.250173+00:00"
+        },
+        {
+          "id": "2906d0b177f3",
+          "path": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:30:26.091747+00:00"
+        },
+        {
+          "id": "4bda479c4c50",
+          "path": "_Organized Desktop/04 JavaScript Training/jstrain3",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:31:18.006234+00:00"
+        },
+        {
+          "id": "c81c4e873d3b",
+          "path": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:09:49.061900+00:00"
+        },
+        {
+          "id": "3c142f8c1521",
+          "path": "_Organized Desktop/05 Numbered Experiments/D2",
+          "status": "complete",
+          "completedAt": "2026-09-22T01:59:21.852850+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "43d6b6358f56",
+          "path": "_Organized Desktop/05 Numbered Experiments/D3",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:27:17.286065+00:00"
+        },
+        {
+          "id": "3b0530b090c4",
+          "path": "_Organized Desktop/05 Numbered Experiments/e11",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:34:04.457184+00:00"
+        },
+        {
+          "id": "2f59a0d07a85",
+          "path": "_Organized Desktop/05 Numbered Experiments/e17",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:47:33.570922+00:00"
+        },
+        {
+          "id": "330bb6feda2f",
+          "path": "_Organized Desktop/05 Numbered Experiments/e3",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:51:09.211901+00:00"
+        },
+        {
+          "id": "1cf37faa32e8",
+          "path": "_Organized Desktop/05 Numbered Experiments/e4",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:55:06.361870+00:00"
+        },
+        {
+          "id": "d7c9faad43d9",
+          "path": "_Organized Desktop/05 Numbered Experiments/g1",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:57:35.302595+00:00"
+        },
+        {
+          "id": "195e77d61335",
+          "path": "_Organized Desktop/05 Numbered Experiments/rn1",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:25:08.865055+00:00"
+        },
+        {
+          "id": "06f66ec88e8d",
+          "path": "_Organized Desktop/05 Numbered Experiments/w21",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:31:54.346071+00:00"
+        },
+        {
+          "id": "529eba39810c",
+          "path": "_Organized Desktop/05 Numbered Experiments/w22",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:42:49.100708+00:00"
+        },
+        {
+          "id": "5df5911fc343",
+          "path": "_Organized Desktop/05 Numbered Experiments/w23",
+          "status": "complete",
+          "completedAt": "2026-09-22T02:43:58.619279+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 5,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "13ccdfb915ff",
+          "path": "_Organized Desktop/05 Numbered Experiments/w25",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:09:00.476412+00:00"
+        },
+        {
+          "id": "5007ac6ecdec",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww1",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:03:12.365856+00:00"
+        },
+        {
+          "id": "e3ea1d9f41f1",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww10",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:05:12.182723+00:00"
+        },
+        {
+          "id": "1d0b328c6621",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww11",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:10:50.583463+00:00"
+        },
+        {
+          "id": "5fd517cae993",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww12",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:20:45.610251+00:00"
+        },
+        {
+          "id": "2e356b8f3d9f",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww13",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:15:33.202485+00:00"
+        },
+        {
+          "id": "678b11ff9b03",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww15",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:17:49.458629+00:00"
+        },
+        {
+          "id": "d851d9ba11a1",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww16",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:35:12.941537+00:00"
+        },
+        {
+          "id": "b17f4c546008",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww18",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:38:09.676766+00:00"
+        },
+        {
+          "id": "34942f670f85",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww19",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:26:02.559009+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 6,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "971a7c784720",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww26",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:27:48.472732+00:00"
+        },
+        {
+          "id": "5528ac452b91",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww28",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:30:17.587439+00:00"
+        },
+        {
+          "id": "4e19ba5b5028",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww29",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:33:16.947312+00:00"
+        },
+        {
+          "id": "5c252a248ab8",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww3",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:42:37.235221+00:00"
+        },
+        {
+          "id": "41ea8dcef618",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww30",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:44:51.529367+00:00"
+        },
+        {
+          "id": "ed24cac9b9f3",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww31",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:47:48.636491+00:00"
+        },
+        {
+          "id": "829e8e7b8605",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww32",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:51:47.909924+00:00"
+        },
+        {
+          "id": "7dde79c7a4c0",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww4",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:13:42.360018+00:00"
+        },
+        {
+          "id": "7a06d436fe48",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww40",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:20:09.925206+00:00"
+        },
+        {
+          "id": "5bbaa8521f2b",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww45",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:21:46.294369+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 7,
+      "status": "complete",
+      "projects": [
+        {
+          "id": "7ff66e57d973",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww46",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:54:51.870088+00:00"
+        },
+        {
+          "id": "ec28c8c40e53",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww47",
+          "status": "complete",
+          "completedAt": "2026-09-22T03:59:23.031450+00:00"
+        },
+        {
+          "id": "79c315026b95",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww6",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:04:21.559484+00:00"
+        },
+        {
+          "id": "671a350f0386",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww7",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:05:29.711419+00:00"
+        },
+        {
+          "id": "4d914b7440f4",
+          "path": "_Organized Desktop/05 Numbered Experiments/ww8",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:10:57.070880+00:00"
+        },
+        {
+          "id": "1754dbb384b1",
+          "path": "_Organized Desktop/05 Numbered Experiments/X1",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:33:20.829591+00:00"
+        },
+        {
+          "id": "482e93488b83",
+          "path": "_Organized Desktop/05 Numbered Experiments/z8",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:29:10.951116+00:00"
+        },
+        {
+          "id": "5f8d9a364788",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz1",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:28:20.020585+00:00"
+        },
+        {
+          "id": "f1f996eeb9e7",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz4",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:31:48.978311+00:00"
+        },
+        {
+          "id": "cd5a8a522511",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz55",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:30:22.137510+00:00"
+        }
+      ]
+    },
+    {
+      "batch": 8,
+      "status": "in_progress",
+      "projects": [
+        {
+          "id": "42df17f9e984",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz7",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:41:17.417089+00:00"
+        },
+        {
+          "id": "3ee259e51792",
+          "path": "_Organized Desktop/05 Numbered Experiments/zz9",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:43:00.841779+00:00"
+        },
+        {
+          "id": "9ed676593954",
+          "path": "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+          "status": "pending"
+        },
+        {
+          "id": "fa998c611f1d",
+          "path": "_Organized Desktop/06 AI And Learning/claudeailab",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:45:45.311715+00:00"
+        },
+        {
+          "id": "7ba004a89f06",
+          "path": "_Organized Desktop/06 AI And Learning/codehelper",
+          "status": "pending"
+        },
+        {
+          "id": "6712d23cf34a",
+          "path": "_Organized Desktop/06 AI And Learning/codehelper/ww20",
+          "status": "pending"
+        },
+        {
+          "id": "c558dc8dae3b",
+          "path": "_Organized Desktop/06 AI And Learning/think",
+          "status": "pending"
+        },
+        {
+          "id": "40905c751e8c",
+          "path": "_Organized Desktop/07 Anti Projects/antiemponb",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:48:21.224033+00:00"
+        },
+        {
+          "id": "859e461c9fd8",
+          "path": "_Organized Desktop/07 Anti Projects/antihelpdesk",
+          "status": "complete",
+          "completedAt": "2026-09-22T04:47:16.884127+00:00"
+        },
+        {
+          "id": "bcde1b4da8c5",
+          "path": "_Organized Desktop/07 Anti Projects/antiinv",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "batch": 9,
+      "status": "pending",
+      "projects": [
+        {
+          "id": "f4fdec40dcb7",
+          "path": "_Organized Desktop/07 Anti Projects/antitestbuild",
+          "status": "pending"
+        },
+        {
+          "id": "724e8382bde0",
+          "path": "_Organized Desktop/08 App And Product Projects/hnrandom",
+          "status": "pending"
+        },
+        {
+          "id": "efdc3ecbb10a",
+          "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+          "status": "pending"
+        },
+        {
+          "id": "1e9e6b85dfe6",
+          "path": "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+          "status": "pending"
+        },
+        {
+          "id": "49d315dbedf7",
+          "path": "_Organized Desktop/09 Grav And VG Projects/vg",
+          "status": "pending"
+        },
+        {
+          "id": "ede77fa54380",
+          "path": "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+          "status": "pending"
+        },
+        {
+          "id": "fbbd9753caa7",
+          "path": "_Organized Desktop/12 Other Projects/3buildhyper",
+          "status": "pending"
+        },
+        {
+          "id": "68bef57c0ef8",
+          "path": "_Organized Desktop/12 Other Projects/aaa1",
+          "status": "pending"
+        },
+        {
+          "id": "abf19e96d4fa",
+          "path": "_Organized Desktop/12 Other Projects/appmaketrck",
+          "status": "pending"
+        },
+        {
+          "id": "e71fb46f56d6",
+          "path": "_Organized Desktop/12 Other Projects/cc",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "batch": 10,
+      "status": "pending",
+      "projects": [
+        {
+          "id": "75afa0d3b9df",
+          "path": "_Organized Desktop/12 Other Projects/curse",
+          "status": "pending"
+        },
+        {
+          "id": "ac016c32ea58",
+          "path": "_Organized Desktop/12 Other Projects/FinalJep",
+          "status": "pending"
+        },
+        {
+          "id": "4f96abf42aaa",
+          "path": "_Organized Desktop/12 Other Projects/finaljepgame",
+          "status": "pending"
+        },
+        {
+          "id": "8a8e8bd08a4d",
+          "path": "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+          "status": "pending"
+        },
+        {
+          "id": "9a596237c278",
+          "path": "_Organized Desktop/12 Other Projects/pp8",
+          "status": "pending"
+        },
+        {
+          "id": "2a5952aac25b",
+          "path": "_Organized Desktop/12 Other Projects/pyhealth",
+          "status": "pending"
+        },
+        {
+          "id": "bffb5e18d274",
+          "path": "geminiorganized/General_Newcodecjs2",
+          "status": "pending"
+        },
+        {
+          "id": "b9f70bebe112",
+          "path": "geminiorganized/General_Newcodex3",
+          "status": "pending"
+        },
+        {
+          "id": "420e3223f23b",
+          "path": "geminiorganized/LLM_Generated_Buildsql",
+          "status": "pending"
+        },
+        {
+          "id": "bb83f605b144",
+          "path": "geminiorganized/LLM_Generated_Grokjs",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "batch": 11,
+      "status": "pending",
+      "projects": [
+        {
+          "id": "d005ca164ca2",
+          "path": "geminiorganized/LLM_Generated_Groktuts",
+          "status": "pending"
+        },
+        {
+          "id": "dfc38e95524a",
+          "path": "geminiorganized/LLM_Generated_Jsprojectlearn",
+          "status": "pending"
+        },
+        {
+          "id": "dbdf9eb3258b",
+          "path": "geminiorganized/OpenSource_Upskilling_Auth",
+          "status": "pending"
+        },
+        {
+          "id": "ea22ada12610",
+          "path": "geminiorganized/OpenSource_Upskilling_Docu",
+          "status": "pending"
+        },
+        {
+          "id": "c8732bedda1a",
+          "path": "geminiorganized/OpenSource_Upskilling_Intercom",
+          "status": "pending"
+        },
+        {
+          "id": "971c961e054e",
+          "path": "geminiorganized/OpenSource_Upskilling_Notion",
+          "status": "pending"
+        },
+        {
+          "id": "233670fb208d",
+          "path": "geminiorganized/OpenSource_Upskilling_Snapshot",
+          "status": "pending"
+        },
+        {
+          "id": "76a2db4ea750",
+          "path": "geminiorganized/OpenSource_Upskilling_Snapshot1",
+          "status": "pending"
+        },
+        {
+          "id": "a3463719f607",
+          "path": "gitvg/agora-net",
+          "status": "pending"
+        },
+        {
+          "id": "5aab21ec7025",
+          "path": "gitvg/atlas-net",
+          "status": "pending"
+        }
+      ]
+    },
+    {
+      "batch": 12,
+      "status": "pending",
+      "projects": [
+        {
+          "id": "5b4368cbbd6f",
+          "path": "gitvg/bazaar-app",
+          "status": "pending"
+        },
+        {
+          "id": "59e7e6bf39d8",
+          "path": "gitvg/folio-app",
+          "status": "pending"
+        },
+        {
+          "id": "b81d133fa2cc",
+          "path": "gitvg/harbor-net",
+          "status": "pending"
+        },
+        {
+          "id": "d2741be086a4",
+          "path": "gitvg/pulse-net",
+          "status": "pending"
+        },
+        {
+          "id": "0326a4d49414",
+          "path": "gitvg/relay-app",
+          "status": "pending"
+        },
+        {
+          "id": "df519f4c798a",
+          "path": "gitvg/tracer-net",
+          "status": "pending"
+        },
+        {
+          "id": "5006f4bf408b",
+          "path": "jsharness/ctvodejs",
+          "status": "pending"
+        },
+        {
+          "id": "4d41fa5d4914",
+          "path": "jsharness/VTCode",
+          "status": "pending"
+        }
+      ]
+    }
+  ]
+}

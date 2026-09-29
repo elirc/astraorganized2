@@ -1,0 +1,23 @@
+{
+  "id": "7a06d436fe48",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww40",
+  "summary": [
+    "Provide a runnable source lab for job submission, approval, rejection, and audit sequencing.",
+    "Verify review-state guards through injected repository and audit adapters."
+  ],
+  "changedFiles": [
+    "tests/job-posting-service-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/jobPostingService.ts.original.txt",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7a06d436fe48/results-crud-ww40-runtime-v5.json"
+  },
+  "limits": [
+    "Five actual service cases use real ApiError and repository/audit adapters. No route authentication, generated Prisma, SQL scoping or concurrency run.",
+    "Service review reads state before separate update and audit calls; no enclosing transaction or expected-status predicate is proved. The service does not itself assert reviewer role. No production code changed."
+  ]
+}

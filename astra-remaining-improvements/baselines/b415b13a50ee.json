@@ -1,0 +1,32 @@
+{
+  "id": "b415b13a50ee",
+  "project": "astra4.2",
+  "files": {
+    ".gitignore": "295aa1f18923880afebb2e08aa70a8c4f285cc52baea238b8d2864d10e45d825",
+    "interlude-extension.zip": "990cec6860c4589917f73deaf1f6d6fc095909a8aebe50a46ff08ca0049317eb",
+    "package-lock.json": "3fa850e33b766c61895ab29efc469528602d4016852ce16691ddbd039f663b2c",
+    "package.json": "f385d2d27243a48562c9230c98e6316f210b2a684f5129b9a6858aa709f81312",
+    "README.md": "e3bdc02116da6aa507d97b7223730d689542c9193505b3b948ae115b5c49ce50",
+    "server.js": "9116af05badab951af580219e84b5b783455dd27b5b7469b960c897d40844efb",
+    "artifacts/break-desktop.png": "7eb580e65156d7ccf173e361176e098c196f4f4a2eb484f6c63490760a483266",
+    "artifacts/break-mobile.png": "7db5375288f22e223a70dedcc67139b094f99adf6a39ce636901b1f658b4cce3",
+    "artifacts/dashboard-390.png": "5c6541980913408c45bcfce40f146d159350dea661c9a5b364ffc944ee07eeb8",
+    "artifacts/dashboard-768.png": "8f0d14973c12f0290be5d110ce5b664bca80e078d1b764e09ad31a69873f0008",
+    "artifacts/dashboard-desktop.png": "deaced2a6ca5f9da40334d3da141c91a054aae095fd5cd59046c3c5a56ae469d",
+    "extension/app.js": "fe909307afa9e8cca5bdf171056f17481684ad38e9f293ebf5b68e5d5bf6fd71",
+    "extension/background.js": "0c96031b41cf82da43d9daf92975d6e1272975dd6ec9c6130608c2ec4f7fac67",
+    "extension/index.html": "6dc9c4e40fa66955c7631ada24695cd32ccefec6b94ed61c4fd38b75f83e5220",
+    "extension/LUCIDE-LICENSE": "1e7290b35280a048667bbf0ebabac1c7fd52a75300e8b2946ac165715997f2bc",
+    "extension/manifest.json": "0ca13375fdd97f15e6dc1469c7968891b34c3fbcd1256243a58d24331739687c",
+    "extension/state.js": "5a6d5cfa0e15662a4ee881d6bf9363d31069deb9d4c0e2d85a23681c37bd9134",
+    "extension/styles.css": "50f308b68ab5836eb8af9c9196079d9f4d27249dbea0c1932ddc3f79971400b3",
+    "extension/assets/garden.jpg": "ab989ce864619f09c3cc92cc9b0cbbb25fb00654853372fedf368a886236176a",
+    "extension/assets/lilies.jpg": "06367197ac8d6745537dcfe6722ff4b8ef2cb33e044168d8c471782b55f7dd39",
+    "extension/assets/river.jpg": "db6a98a034bdc5bdf63c4762c1fe5a9edc1d647f48742954f10d00740a987f99",
+    "src/app.js": "e9842d40857e85931dba2033f257e743841230f2244381b4d3e5ad66befef1dd",
+    "src/layout.js": "3efc2d497d062360c1ae94572ed149f39b41e768c649a96ce212ce4efabf5dc7",
+    "tests/background.test.js": "e06ead8415438879dae96552dc70b19dd98206984e6ff5a41579e8023633f806",
+    "tests/browser-check.mjs": "e85da676b2be4c4c4b9cc1340e9d72c9ed0a381a1d466341f898a177ed9c779a",
+    "tests/timer.test.js": "115a2ce28cbd1f1781b77888ab2cf6b2e4f487ff451a6bbba436a846c2f2df64"
+  }
+}

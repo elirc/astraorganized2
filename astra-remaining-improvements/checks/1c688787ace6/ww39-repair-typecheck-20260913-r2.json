@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "id": "1c688787ace6",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules\\.bin\\tsc.cmd",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1c688787ace6",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:29:03.381577+00:00",
+  "status": "complete",
+  "log": "ww39-repair-typecheck-20260913-r2.log",
+  "pid": 19180,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:29:18.341189+00:00",
+  "elapsedSeconds": 14.96
+}

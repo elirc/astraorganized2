@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/3buildhyper",
+  "id": "fbbd9753caa7",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/ai-text-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fbbd9753caa7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:40:55.509431+00:00",
+  "status": "complete",
+  "log": "crud-hyper-runtime-v1.log",
+  "pid": 6824,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:41:06.346536+00:00",
+  "elapsedSeconds": 10.73
+}

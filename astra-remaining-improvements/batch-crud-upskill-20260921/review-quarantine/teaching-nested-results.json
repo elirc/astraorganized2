@@ -1,0 +1,17 @@
+{
+  "id": "7b18281f562f",
+  "label": "astra-crud-b02-buildagentteaching-bulk-enrollment",
+  "passed": true,
+  "executedTests": 2,
+  "command": "node --experimental-vm-modules --test astra-remaining-improvements/stage/7b18281f562f/tests/runtime-bulk-enroll.test.mjs",
+  "result": "2/2 passed",
+  "details": [
+    "expected AppError becomes a per-student failure result",
+    "unexpected persistence Error is rethrown with identity preserved"
+  ],
+  "logFile": "checks/7b18281f562f/runtime-b02.log",
+  "limits": [
+    "Source-linked loader uses explicit Prisma/domain/audit/logging doubles.",
+    "Native Vitest, Prisma database rollback, capacity races, and browser actions were not executed."
+  ]
+}

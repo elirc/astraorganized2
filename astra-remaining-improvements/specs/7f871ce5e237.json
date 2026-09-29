@@ -1,0 +1,26 @@
+{
+  "summary": [
+    "Reject duplicate fulfillment lines, empty or unsafe quantities, invalid states, and wrong order or warehouse allocations before writes.",
+    "Use the remaining captured payment balance once, validate refund keys, and return bound persisted receipts on safe retries.",
+    "Isolate the SQLite fixture on an absolute temporary database and add source-grounded nine chapter learning material."
+  ],
+  "changedFiles": [
+    "src/lib/commerce/commerce.test.ts",
+    "src/lib/commerce/orders.ts",
+    "src/lib/commerce/webhooks.ts",
+    "astraupskill/original/src/lib/commerce/orders.ts",
+    "astraupskill/original/src/lib/commerce/webhooks.ts",
+    "astraupskill/original/src/lib/commerce/commerce.test.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7f871ce5e237/results.json",
+    "expectedTests": 17,
+    "command": "npm run test -- --run src/lib/commerce/commerce.test.ts --reporter=dot",
+    "environment": "Node 22; Vitest 4; Prisma SQLite; isolated absolute temporary database"
+  },
+  "limits": [
+    "Focused tests use real SQLite service flows but no live payment provider, browser, live HTTP server, crash consistency, or concurrent first-use key claims.",
+    "GraphQL listOrders channel filtering and checkout provider concurrency remain outside this increment."
+  ]
+}

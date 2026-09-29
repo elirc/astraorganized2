@@ -1,0 +1,4 @@
+{
+  "underlyingBuildExitCode": 0,
+  "firstWrapperIssue": "Successful build result recorded before CP1252 console printing failed on a Unicode symbol. UTF-8 log and BUILD_ID verified without rerunning build."
+}

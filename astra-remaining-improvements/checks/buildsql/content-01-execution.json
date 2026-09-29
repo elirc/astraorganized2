@@ -1,0 +1,9 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "scripts/validate-content.mjs"
+  ],
+  "exitCode": 0,
+  "seconds": 17.84
+}

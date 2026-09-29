@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "cmd.exe",
+    "/c",
+    "set DATABASE_URL=postgresql://localhost:5432/stage_check&& npx.cmd prisma validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:12:56.084057+00:00",
+  "status": "complete",
+  "log": "ww27-prisma-16.log",
+  "pid": 20860,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:13:13.036905+00:00",
+  "elapsedSeconds": 16.95
+}

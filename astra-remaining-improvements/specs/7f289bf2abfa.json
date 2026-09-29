@@ -1,0 +1,31 @@
+{
+  "id": "7f289bf2abfa",
+  "project": "_Organized Desktop/01 Net Workspaces/.netslack",
+  "summary": [
+    "Map a concurrent persisted workspace slug collision to ConflictException.",
+    "Re-query persisted state after a save failure: occupied slug maps to conflict; absent slug preserves the original save exception.",
+    "Verify the actual staged service and domain with a dependency-free .NET10 source-linked harness."
+  ],
+  "changedFiles": [
+    "src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+    "tests/NetSlack.Application.Tests/WorkflowTests.cs",
+    "tests/NetSlack.ScopeHarness/NetSlack.ScopeHarness.csproj",
+    "tests/NetSlack.ScopeHarness/Contracts.cs",
+    "tests/NetSlack.ScopeHarness/Program.cs",
+    "astraupskill/snapshots/src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+    "astraupskill/snapshots/tests/NetSlack.Application.Tests/WorkflowTests.cs",
+    "astraupskill/evidence/crud-b02-astra-harness.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7f289bf2abfa/results-crud-b02.json"
+  },
+  "limits": [
+    "Native .NET8 test project and EF provider were not executed because only .NET10 is installed.",
+    "Harness contracts model persisted winner state but do not prove SQL translation, unique index creation, transaction isolation, or migration behavior.",
+    "No automatic retry or concurrent worker coordination is claimed.",
+    "If the recovery query fails or is cancelled, its failure propagates instead of the original save error.",
+    "Classification is based on observed slug occupancy, not proof of which database constraint caused the save failure; no automatic retry is performed."
+  ]
+}

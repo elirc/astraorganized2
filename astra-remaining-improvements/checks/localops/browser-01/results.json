@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "total": 8,
+  "checks": [
+    {
+      "name": "explicit empty initialization and read-only preview",
+      "passed": true
+    },
+    {
+      "name": "contact create edit and accepted version",
+      "passed": true
+    },
+    {
+      "name": "exact payment cash and retained overpayment draft",
+      "passed": true
+    },
+    {
+      "name": "fractional stock movement and atomic overdraw rejection",
+      "passed": true
+    },
+    {
+      "name": "reference-protected and ordinary delete paths",
+      "passed": true
+    },
+    {
+      "name": "asset log and budget forms retain valid relationships",
+      "passed": true
+    },
+    {
+      "name": "calendar recurrence creates one linked occurrence",
+      "passed": true
+    },
+    {
+      "name": "two tabs reject stale edits and export retained drafts",
+      "passed": false,
+      "error": "Locator.click: Timeout 60000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"region\", name=\"Record editor\").get_by_role(\"button\", name=\"Save record\", exact=True)\n    - locator resolved to <button type=\"submit\" class=\"primary\">Save record</button>\n  - attempting click action\n    - waiting for element to be visible, enabled and stable\n    - element is visible, enabled and stable\n    - scrolling into view if needed\n    - done scrolling\n    - performing click action\n"
+    }
+  ]
+}

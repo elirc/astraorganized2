@@ -1,0 +1,1033 @@
+import { randomUUID } from "node:crypto";
+
+import { buildEvidenceEntry, persistStoreWithEvidence, readStore, writeStore } from "@/lib/store";
+import {
+  ActionExecution,
+  Alert,
+  AlertSource,
+  BlastRadiusView,
+  DashboardMetrics,
+  DashboardSnapshot,
+  EscalationPolicy,
+  Incident,
+  IncidentDetailView,
+  IncidentState,
+  NotificationChannel,
+  NotificationEvent,
+  Postmortem,
+  Role,
+  Runbook,
+  Service,
+  StoreData,
+  TimelineEvent,
+  User,
+} from "@/lib/types";
+
+const ALLOWED_TRANSITIONS: Record<IncidentState, IncidentState[]> = {
+  open: ["acknowledged"],
+  acknowledged: ["investigating"],
+  investigating: ["mitigating", "resolved"],
+  mitigating: ["resolved"],
+  resolved: ["reviewed"],
+  reviewed: [],
+};
+
+const ACTIVE_STATES: IncidentState[] = ["open", "acknowledged", "investigating", "mitigating"];
+
+interface EvidenceBufferEvent {
+  action: string;
+  entityType: "alert" | "incident" | "notification" | "runbook" | "postmortem" | "escalation";
+  entityId: string;
+  actorUserId: string | null;
+  details: Record<string, string>;
+}
+
+export interface IngestAlertInput {
+  source: AlertSource;
+  serviceId: string;
+  message: string;
+  severity: Incident["severity"];
+  metadata?: Record<string, string>;
+  externalId?: string;
+  idempotencyKey?: string;
+  confidential?: boolean;
+}
+
+export interface TransitionInput {
+  incidentId: string;
+  actorUserId: string;
+  toState: IncidentState;
+  note?: string;
+}
+
+export interface EscalateInput {
+  incidentId: string;
+  actorUserId: string;
+  reason?: string;
+  idempotencyKey?: string;
+}
+
+export interface RunbookActionInput {
+  incidentId: string;
+  actorUserId: string;
+  runbookId: string;
+  actionId: string;
+  idempotencyKey?: string;
+}
+
+export interface PostmortemInput {
+  incidentId: string;
+  actorUserId: string;
+  summary: string;
+  rootCause: string;
+  actionItems: string[];
+}
+
+function nowIso(): string {
+  return new Date().toISOString();
+}
+
+function plusMinutes(iso: string, minutes: number): string {
+  const value = new Date(iso).getTime() + minutes * 60_000;
+  return new Date(value).toISOString();
+}
+
+function severityWeight(severity: Incident["severity"]): number {
+  switch (severity) {
+    case "sev1":
+      return 4;
+    case "sev2":
+      return 3;
+    case "sev3":
+      return 2;
+    case "sev4":
+      return 1;
+    default:
+      return 0;
+  }
+}
+
+function dedupeFingerprint(serviceId: string, message: string): string {
+  const normalized = message
+    .toLowerCase()
+    .replace(/[0-9]/g, "")
+    .replace(/[^a-z\s]/g, "")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 6)
+    .join("-");
+  return `${serviceId}:${normalized || "generic-alert"}`;
+}
+
+function ensureUniquePush(target: string[], value: string): void {
+  if (!target.includes(value)) {
+    target.push(value);
+  }
+}
+
+function getUserOrThrow(store: StoreData, userId: string): User {
+  const user = store.users.find((candidate) => candidate.id === userId);
+  if (!user) {
+    throw new Error(`Unknown user '${userId}'.`);
+  }
+  return user;
+}
+
+function getIncidentOrThrow(store: StoreData, incidentId: string): Incident {
+  const incident = store.incidents.find((candidate) => candidate.id === incidentId);
+  if (!incident) {
+    throw new Error(`Incident '${incidentId}' not found.`);
+  }
+  return incident;
+}
+
+function getServiceOrThrow(store: StoreData, serviceId: string): Service {
+  const service = store.services.find((candidate) => candidate.id === serviceId);
+  if (!service) {
+    throw new Error(`Service '${serviceId}' not found.`);
+  }
+  return service;
+}
+
+function canEscalate(role: Role): boolean {
+  return role === "admin" || role === "responder";
+}
+
+function canTransition(role: Role): boolean {
+  return role === "admin" || role === "responder";
+}
+
+function canViewIncident(user: User, incident: Incident): boolean {
+  if (user.role === "admin") {
+    return true;
+  }
+  if (!incident.confidential) {
+    return true;
+  }
+  if (incident.assigneeUserId === user.id) {
+    return true;
+  }
+  if (user.role === "responder") {
+    return incident.serviceIds.some((serviceId) => user.serviceIds.includes(serviceId));
+  }
+  return false;
+}
+
+function getPolicyForIncident(store: StoreData, incident: Incident): EscalationPolicy | null {
+  if (incident.escalation.policyId) {
+    return store.escalationPolicies.find((policy) => policy.id === incident.escalation.policyId) ?? null;
+  }
+  for (const serviceId of incident.serviceIds) {
+    const policy = store.escalationPolicies.find((candidate) => candidate.serviceId === serviceId);
+    if (policy) {
+      return policy;
+    }
+  }
+  return null;
+}
+
+function getCurrentOnCallUser(store: StoreData, serviceId: string, at: string): string | null {
+  const targetTime = new Date(at).getTime();
+  const eligible = store.onCallShifts
+    .filter((shift) => shift.serviceId === serviceId)
+    .filter((shift) => {
+      const start = new Date(shift.startAt).getTime();
+      const end = new Date(shift.endAt).getTime();
+      return targetTime >= start && targetTime < end;
+    })
+    .sort((left, right) => new Date(right.startAt).getTime() - new Date(left.startAt).getTime());
+  if (eligible.length > 0) {
+    return eligible[0].userId;
+  }
+  const service = store.services.find((candidate) => candidate.id === serviceId);
+  return service?.owners[0] ?? null;
+}
+
+function createTimelineEvent(
+  store: StoreData,
+  incidentId: string,
+  actorUserId: string | null,
+  type: TimelineEvent["type"],
+  message: string,
+  metadata: Record<string, string>,
+): TimelineEvent {
+  const event: TimelineEvent = {
+    id: randomUUID(),
+    incidentId,
+    actorUserId,
+    timestamp: nowIso(),
+    type,
+    message,
+    metadata,
+  };
+  store.timelineEvents.push(event);
+  return event;
+}
+
+function trackExecution(
+  store: StoreData,
+  idempotencyKey: string,
+  type: ActionExecution["type"],
+  incidentId: string | null,
+): boolean {
+  if (store.actionExecutions.some((execution) => execution.idempotencyKey === idempotencyKey)) {
+    return false;
+  }
+  store.actionExecutions.push({
+    idempotencyKey,
+    type,
+    incidentId,
+    createdAt: nowIso(),
+  });
+  return true;
+}
+
+function queueNotification(
+  store: StoreData,
+  incident: Incident,
+  channel: NotificationChannel,
+  recipient: string,
+  idempotencyKey: string,
+): NotificationEvent | null {
+  if (!trackExecution(store, idempotencyKey, "notification", incident.id)) {
+    return null;
+  }
+  const notification: NotificationEvent = {
+    id: randomUUID(),
+    incidentId: incident.id,
+    channel,
+    recipient,
+    provider: "placeholder",
+    status: "queued",
+    idempotencyKey,
+    createdAt: nowIso(),
+  };
+  store.notifications.push(notification);
+  createTimelineEvent(
+    store,
+    incident.id,
+    null,
+    "notification_queued",
+    `${channel.toUpperCase()} notification queued for ${recipient}.`,
+    { channel, recipient },
+  );
+  return notification;
+}
+
+function notifyUserForEscalation(
+  store: StoreData,
+  incident: Incident,
+  userId: string,
+  channels: NotificationChannel[],
+  reason: string,
+  evidenceBuffer: EvidenceBufferEvent[],
+): void {
+  const user = store.users.find((candidate) => candidate.id === userId);
+  if (!user) {
+    return;
+  }
+  for (const channel of channels) {
+    const recipient =
+      channel === "email"
+        ? user.email
+        : channel === "sms"
+          ? user.phone
+          : "https://placeholder.local/notify";
+    const key = `notify:${incident.id}:${channel}:${user.id}:${incident.escalation.version}:${reason}`;
+    const notification = queueNotification(store, incident, channel, recipient, key);
+    if (notification) {
+      evidenceBuffer.push({
+        action: "notification_queued",
+        entityType: "notification",
+        entityId: notification.id,
+        actorUserId: null,
+        details: {
+          incidentId: incident.id,
+          channel: notification.channel,
+          recipient: notification.recipient,
+        },
+      });
+    }
+  }
+}
+
+function assignIncidentStep(
+  store: StoreData,
+  incident: Incident,
+  stepIndex: number,
+  reason: string,
+  actorUserId: string | null,
+  evidenceBuffer: EvidenceBufferEvent[],
+): void {
+  const policy = getPolicyForIncident(store, incident);
+  if (!policy || policy.steps.length === 0) {
+    return;
+  }
+  const boundedStep = Math.min(Math.max(stepIndex, 0), policy.steps.length - 1);
+  const step = policy.steps[boundedStep];
+  const referenceServiceId = incident.serviceIds[0] ?? policy.serviceId;
+  const assigneeUserId =
+    step.kind === "user"
+      ? step.userId ?? null
+      : getCurrentOnCallUser(store, referenceServiceId, nowIso());
+
+  incident.escalation.policyId = policy.id;
+  incident.escalation.currentStep = boundedStep;
+  incident.escalation.version += 1;
+  incident.escalation.nextEscalationAt = plusMinutes(nowIso(), step.timeoutMinutes);
+  incident.assigneeUserId = assigneeUserId;
+  incident.updatedAt = nowIso();
+
+  createTimelineEvent(
+    store,
+    incident.id,
+    actorUserId,
+    "escalated",
+    `Escalation ${reason}: step ${boundedStep + 1}/${policy.steps.length}.`,
+    {
+      policyId: policy.id,
+      stepId: step.id,
+      assigneeUserId: assigneeUserId ?? "unassigned",
+      reason,
+    },
+  );
+
+  evidenceBuffer.push({
+    action: "escalation_applied",
+    entityType: "escalation",
+    entityId: incident.id,
+    actorUserId,
+    details: {
+      reason,
+      policyId: policy.id,
+      stepId: step.id,
+      assigneeUserId: assigneeUserId ?? "unassigned",
+    },
+  });
+
+  if (assigneeUserId) {
+    notifyUserForEscalation(store, incident, assigneeUserId, step.notifyChannels, reason, evidenceBuffer);
+  }
+}
+
+function validateTransition(from: IncidentState, to: IncidentState): void {
+  if (!ALLOWED_TRANSITIONS[from].includes(to)) {
+    throw new Error(`Invalid transition '${from}' -> '${to}'.`);
+  }
+}
+
+function activeIncident(incident: Incident): boolean {
+  return ACTIVE_STATES.includes(incident.state);
+}
+
+function graphNeighbors(services: Service[]): Map<string, Set<string>> {
+  const map = new Map<string, Set<string>>();
+  for (const service of services) {
+    map.set(service.id, new Set(service.dependencies));
+  }
+  return map;
+}
+
+function reverseGraphNeighbors(services: Service[]): Map<string, Set<string>> {
+  const map = new Map<string, Set<string>>();
+  for (const service of services) {
+    if (!map.has(service.id)) {
+      map.set(service.id, new Set());
+    }
+    for (const dependency of service.dependencies) {
+      if (!map.has(dependency)) {
+        map.set(dependency, new Set());
+      }
+      map.get(dependency)?.add(service.id);
+    }
+  }
+  return map;
+}
+
+function walkGraph(start: string[], adjacency: Map<string, Set<string>>): Set<string> {
+  const visited = new Set<string>();
+  const queue = [...start];
+  while (queue.length > 0) {
+    const current = queue.shift();
+    if (!current || visited.has(current)) {
+      continue;
+    }
+    visited.add(current);
+    for (const next of adjacency.get(current) ?? []) {
+      if (!visited.has(next)) {
+        queue.push(next);
+      }
+    }
+  }
+  return visited;
+}
+
+function buildBlastRadius(serviceIds: string[], services: Service[]): BlastRadiusView {
+  const ids = new Set(serviceIds);
+  const upstreamIds = walkGraph(serviceIds, graphNeighbors(services));
+  const downstreamIds = walkGraph(serviceIds, reverseGraphNeighbors(services));
+  for (const serviceId of ids) {
+    upstreamIds.delete(serviceId);
+    downstreamIds.delete(serviceId);
+  }
+  const impactedIds = new Set<string>([...ids, ...upstreamIds, ...downstreamIds]);
+
+  const sortByName = (left: Service, right: Service) => left.name.localeCompare(right.name);
+
+  return {
+    upstream: services.filter((service) => upstreamIds.has(service.id)).sort(sortByName),
+    downstream: services.filter((service) => downstreamIds.has(service.id)).sort(sortByName),
+    impacted: services.filter((service) => impactedIds.has(service.id)).sort(sortByName),
+  };
+}
+
+function computeMetrics(incidents: Incident[]): DashboardMetrics {
+  const resolved = incidents.filter((incident) => incident.resolvedAt);
+  const acked = incidents.filter((incident) => incident.escalation.ackedAt);
+
+  const mttrMinutes =
+    resolved.length === 0
+      ? 0
+      : Math.round(
+          resolved.reduce((sum, incident) => {
+            return sum + (new Date(incident.resolvedAt ?? incident.createdAt).getTime() - new Date(incident.createdAt).getTime()) / 60_000;
+          }, 0) / resolved.length,
+        );
+
+  const averageAckMinutes =
+    acked.length === 0
+      ? 0
+      : Math.round(
+          acked.reduce((sum, incident) => {
+            return sum + (new Date(incident.escalation.ackedAt ?? incident.createdAt).getTime() - new Date(incident.createdAt).getTime()) / 60_000;
+          }, 0) / acked.length,
+        );
+
+  return {
+    activeIncidentCount: incidents.filter((incident) => activeIncident(incident)).length,
+    mttrMinutes,
+    averageAckMinutes,
+  };
+}
+
+async function flushStore(store: StoreData, evidenceEvents: EvidenceBufferEvent[]): Promise<void> {
+  if (evidenceEvents.length === 0) {
+    await writeStore(store);
+    return;
+  }
+  const evidenceEntries = evidenceEvents.map((event) =>
+    buildEvidenceEntry(store, {
+      action: event.action,
+      entityType: event.entityType,
+      entityId: event.entityId,
+      actorUserId: event.actorUserId,
+      details: event.details,
+    }),
+  );
+  await persistStoreWithEvidence(store, evidenceEntries);
+}
+
+function runEscalationSweep(store: StoreData, evidenceEvents: EvidenceBufferEvent[]): boolean {
+  const now = new Date();
+  let changed = false;
+
+  for (const incident of store.incidents) {
+    if (!activeIncident(incident)) {
+      continue;
+    }
+    if (incident.state !== "open") {
+      continue;
+    }
+    if (!incident.escalation.nextEscalationAt || incident.escalation.ackedAt) {
+      continue;
+    }
+    const dueAt = new Date(incident.escalation.nextEscalationAt);
+    if (dueAt > now) {
+      continue;
+    }
+
+    const key = `escalation:auto:${incident.id}:${incident.escalation.version}`;
+    if (!trackExecution(store, key, "escalation", incident.id)) {
+      continue;
+    }
+
+    const policy = getPolicyForIncident(store, incident);
+    if (!policy || policy.steps.length === 0) {
+      continue;
+    }
+
+    const atLastStep = incident.escalation.currentStep >= policy.steps.length - 1;
+    const nextStep = atLastStep ? incident.escalation.currentStep : incident.escalation.currentStep + 1;
+    assignIncidentStep(store, incident, nextStep, "automatic-timeout", null, evidenceEvents);
+    changed = true;
+  }
+
+  return changed;
+}
+
+function getCandidateCorrelationSet(store: StoreData, serviceId: string): Set<string> {
+  const radius = buildBlastRadius([serviceId], store.services);
+  return new Set(radius.impacted.map((service) => service.id));
+}
+
+function visibleIncidents(store: StoreData, actor: User): Incident[] {
+  return store.incidents
+    .filter((incident) => canViewIncident(actor, incident))
+    .sort((left, right) => {
+      const severityDelta = severityWeight(right.severity) - severityWeight(left.severity);
+      if (severityDelta !== 0) {
+        return severityDelta;
+      }
+      return new Date(right.createdAt).getTime() - new Date(left.createdAt).getTime();
+    });
+}
+
+function getRunbooksForIncident(store: StoreData, incident: Incident): Runbook[] {
+  return store.runbooks.filter((runbook) => incident.serviceIds.includes(runbook.serviceId));
+}
+
+export async function getDashboardSnapshot(actorUserId: string): Promise<DashboardSnapshot> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  const changed = runEscalationSweep(store, evidenceEvents);
+  if (changed) {
+    await flushStore(store, evidenceEvents);
+  }
+
+  const actor = getUserOrThrow(store, actorUserId);
+  const incidents = visibleIncidents(store, actor);
+  return {
+    generatedAt: nowIso(),
+    actor,
+    incidents,
+    metrics: computeMetrics(incidents),
+    services: store.services,
+    users: store.users,
+  };
+}
+
+export async function getIncidentDetail(incidentId: string, actorUserId: string): Promise<IncidentDetailView> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  const changed = runEscalationSweep(store, evidenceEvents);
+  if (changed) {
+    await flushStore(store, evidenceEvents);
+  }
+
+  const actor = getUserOrThrow(store, actorUserId);
+  const incident = getIncidentOrThrow(store, incidentId);
+  if (!canViewIncident(actor, incident)) {
+    throw new Error("You do not have visibility for this incident.");
+  }
+
+  const timeline = store.timelineEvents
+    .filter((event) => event.incidentId === incident.id)
+    .sort((left, right) => new Date(right.timestamp).getTime() - new Date(left.timestamp).getTime());
+  const alerts = store.alerts.filter((alert) => alert.linkedIncidentId === incident.id);
+  const postmortem = store.postmortems.find((entry) => entry.incidentId === incident.id) ?? null;
+  const parentIncident = incident.parentIncidentId
+    ? store.incidents.find((candidate) => candidate.id === incident.parentIncidentId) ?? null
+    : null;
+  const childIncidents = store.incidents.filter((candidate) => incident.childIncidentIds.includes(candidate.id));
+
+  return {
+    incident,
+    timeline,
+    alerts,
+    runbooks: getRunbooksForIncident(store, incident),
+    blastRadius: buildBlastRadius(incident.serviceIds, store.services),
+    postmortem,
+    parentIncident,
+    childIncidents,
+  };
+}
+
+export async function ingestAlert(input: IngestAlertInput): Promise<Incident> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  runEscalationSweep(store, evidenceEvents);
+
+  const service = getServiceOrThrow(store, input.serviceId);
+  const message = input.message.trim();
+  if (!message) {
+    throw new Error("Alert message is required.");
+  }
+  const dedupeKey =
+    input.idempotencyKey ??
+    `${input.source}:${input.externalId ?? message.slice(0, 32)}:${input.serviceId}`;
+  const existingAlert = store.alerts.find((alert) => alert.idempotencyKey === dedupeKey);
+  if (existingAlert?.linkedIncidentId) {
+    const existingIncident = getIncidentOrThrow(store, existingAlert.linkedIncidentId);
+    if (!existingIncident.alertIds.includes(existingAlert.id)) {
+      existingIncident.alertIds.push(existingAlert.id);
+    }
+    await flushStore(store, evidenceEvents);
+    return existingIncident;
+  }
+  if (!trackExecution(store, dedupeKey, "alert_ingest", null)) {
+    const fallback = store.incidents.find((candidate) => activeIncident(candidate));
+    if (!fallback) {
+      throw new Error("Idempotency conflict without active incident.");
+    }
+    await flushStore(store, evidenceEvents);
+    return fallback;
+  }
+
+  const alert: Alert = {
+    id: randomUUID(),
+    source: input.source,
+    externalId: input.externalId ?? randomUUID(),
+    idempotencyKey: dedupeKey,
+    serviceId: input.serviceId,
+    message,
+    fingerprint: dedupeFingerprint(input.serviceId, message),
+    severity: input.severity,
+    metadata: input.metadata ?? {},
+    createdAt: nowIso(),
+    linkedIncidentId: null,
+  };
+  store.alerts.push(alert);
+
+  const dedupedIncident = store.incidents.find(
+    (incident) =>
+      activeIncident(incident) &&
+      incident.correlationFingerprints.includes(alert.fingerprint),
+  );
+
+  if (dedupedIncident) {
+    ensureUniquePush(dedupedIncident.alertIds, alert.id);
+    ensureUniquePush(dedupedIncident.serviceIds, alert.serviceId);
+    dedupedIncident.updatedAt = nowIso();
+    alert.linkedIncidentId = dedupedIncident.id;
+
+    createTimelineEvent(
+      store,
+      dedupedIncident.id,
+      null,
+      "alert_linked",
+      "Recurring alert deduplicated into existing incident.",
+      { alertId: alert.id, fingerprint: alert.fingerprint },
+    );
+    evidenceEvents.push({
+      action: "alert_deduped",
+      entityType: "alert",
+      entityId: alert.id,
+      actorUserId: null,
+      details: {
+        incidentId: dedupedIncident.id,
+        fingerprint: alert.fingerprint,
+      },
+    });
+    await flushStore(store, evidenceEvents);
+    return dedupedIncident;
+  }
+
+  const incident: Incident = {
+    id: randomUUID(),
+    title: `${service.name}: ${message.slice(0, 100)}`,
+    description: `Created from ${input.source} alert ingestion.`,
+    state: "open",
+    severity: input.severity,
+    confidential: input.confidential ?? input.severity === "sev1",
+    serviceIds: [input.serviceId],
+    alertIds: [alert.id],
+    correlationFingerprints: [alert.fingerprint],
+    parentIncidentId: null,
+    childIncidentIds: [],
+    assigneeUserId: null,
+    escalation: {
+      policyId: null,
+      currentStep: 0,
+      nextEscalationAt: null,
+      version: 0,
+      ackedAt: null,
+    },
+    createdAt: nowIso(),
+    updatedAt: nowIso(),
+    resolvedAt: null,
+    reviewedAt: null,
+  };
+  store.incidents.push(incident);
+  alert.linkedIncidentId = incident.id;
+
+  createTimelineEvent(
+    store,
+    incident.id,
+    null,
+    "incident_created",
+    `Incident created from ${input.source} alert.`,
+    {
+      alertId: alert.id,
+      source: input.source,
+      severity: input.severity,
+    },
+  );
+
+  const candidateScope = getCandidateCorrelationSet(store, input.serviceId);
+  const correlationCandidate = store.incidents.find(
+    (candidate) =>
+      candidate.id !== incident.id &&
+      activeIncident(candidate) &&
+      candidate.serviceIds.some((serviceId) => candidateScope.has(serviceId)),
+  );
+
+  if (correlationCandidate) {
+    const parentId = correlationCandidate.parentIncidentId ?? correlationCandidate.id;
+    incident.parentIncidentId = parentId;
+    const parent = getIncidentOrThrow(store, parentId);
+    ensureUniquePush(parent.childIncidentIds, incident.id);
+    createTimelineEvent(
+      store,
+      incident.id,
+      null,
+      "note",
+      "Correlated as child incident for broader outage context.",
+      { parentIncidentId: parentId },
+    );
+    evidenceEvents.push({
+      action: "incident_correlated",
+      entityType: "incident",
+      entityId: incident.id,
+      actorUserId: null,
+      details: {
+        parentIncidentId: parentId,
+      },
+    });
+  }
+
+  assignIncidentStep(store, incident, 0, "initial-routing", null, evidenceEvents);
+
+  evidenceEvents.push({
+    action: "alert_ingested",
+    entityType: "alert",
+    entityId: alert.id,
+    actorUserId: null,
+    details: {
+      incidentId: incident.id,
+      source: alert.source,
+      fingerprint: alert.fingerprint,
+    },
+  });
+  evidenceEvents.push({
+    action: "incident_created",
+    entityType: "incident",
+    entityId: incident.id,
+    actorUserId: null,
+    details: {
+      severity: incident.severity,
+      serviceId: input.serviceId,
+    },
+  });
+
+  await flushStore(store, evidenceEvents);
+  return incident;
+}
+
+export async function transitionIncident(input: TransitionInput): Promise<Incident> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  runEscalationSweep(store, evidenceEvents);
+
+  const actor = getUserOrThrow(store, input.actorUserId);
+  const incident = getIncidentOrThrow(store, input.incidentId);
+
+  if (!canViewIncident(actor, incident)) {
+    throw new Error("You do not have visibility for this incident.");
+  }
+  if (!canTransition(actor.role)) {
+    throw new Error("You do not have permission to transition incidents.");
+  }
+
+  validateTransition(incident.state, input.toState);
+  const previous = incident.state;
+  incident.state = input.toState;
+  incident.updatedAt = nowIso();
+
+  if (input.toState === "acknowledged") {
+    incident.escalation.ackedAt = nowIso();
+    incident.escalation.nextEscalationAt = null;
+  }
+  if (input.toState === "resolved") {
+    incident.resolvedAt = nowIso();
+    incident.escalation.nextEscalationAt = null;
+  }
+  if (input.toState === "reviewed") {
+    incident.reviewedAt = nowIso();
+  }
+
+  createTimelineEvent(
+    store,
+    incident.id,
+    actor.id,
+    "state_changed",
+    `State changed from ${previous} to ${input.toState}.`,
+    {
+      from: previous,
+      to: input.toState,
+      note: input.note ?? "",
+    },
+  );
+  evidenceEvents.push({
+    action: "state_changed",
+    entityType: "incident",
+    entityId: incident.id,
+    actorUserId: actor.id,
+    details: {
+      from: previous,
+      to: input.toState,
+    },
+  });
+
+  await flushStore(store, evidenceEvents);
+  return incident;
+}
+
+export async function escalateIncident(input: EscalateInput): Promise<Incident> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  runEscalationSweep(store, evidenceEvents);
+
+  const actor = getUserOrThrow(store, input.actorUserId);
+  const incident = getIncidentOrThrow(store, input.incidentId);
+
+  if (!canViewIncident(actor, incident)) {
+    throw new Error("You do not have visibility for this incident.");
+  }
+  if (!canEscalate(actor.role)) {
+    throw new Error("You do not have escalation rights.");
+  }
+  if (!activeIncident(incident)) {
+    throw new Error("Incident is not active.");
+  }
+
+  const key = input.idempotencyKey ?? `escalation:manual:${incident.id}:${incident.escalation.version}`;
+  if (!trackExecution(store, key, "escalation", incident.id)) {
+    await flushStore(store, evidenceEvents);
+    return incident;
+  }
+
+  const policy = getPolicyForIncident(store, incident);
+  if (!policy || policy.steps.length === 0) {
+    throw new Error("No escalation policy configured.");
+  }
+  const atLastStep = incident.escalation.currentStep >= policy.steps.length - 1;
+  const nextStep = atLastStep ? incident.escalation.currentStep : incident.escalation.currentStep + 1;
+
+  assignIncidentStep(
+    store,
+    incident,
+    nextStep,
+    input.reason ?? "manual-escalation",
+    actor.id,
+    evidenceEvents,
+  );
+
+  await flushStore(store, evidenceEvents);
+  return incident;
+}
+
+export async function executeRunbookAction(input: RunbookActionInput): Promise<Incident> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  runEscalationSweep(store, evidenceEvents);
+
+  const actor = getUserOrThrow(store, input.actorUserId);
+  const incident = getIncidentOrThrow(store, input.incidentId);
+  if (!canViewIncident(actor, incident)) {
+    throw new Error("You do not have visibility for this incident.");
+  }
+  if (!canEscalate(actor.role)) {
+    throw new Error("You do not have runbook execution rights.");
+  }
+
+  const runbook = store.runbooks.find(
+    (candidate) =>
+      candidate.id === input.runbookId && incident.serviceIds.includes(candidate.serviceId),
+  );
+  if (!runbook) {
+    throw new Error("Runbook not found for this incident.");
+  }
+  const action = runbook.actions.find((candidate) => candidate.id === input.actionId);
+  if (!action) {
+    throw new Error("Runbook action not found.");
+  }
+
+  const key = input.idempotencyKey ?? `runbook:${incident.id}:${runbook.id}:${action.id}`;
+  if (!trackExecution(store, key, "runbook_action", incident.id)) {
+    await flushStore(store, evidenceEvents);
+    return incident;
+  }
+
+  createTimelineEvent(
+    store,
+    incident.id,
+    actor.id,
+    "runbook_executed",
+    `Runbook action executed: ${action.name}.`,
+    {
+      runbookId: runbook.id,
+      actionId: action.id,
+      hookType: action.hookType,
+      target: action.target,
+    },
+  );
+  evidenceEvents.push({
+    action: "runbook_action_executed",
+    entityType: "runbook",
+    entityId: action.id,
+    actorUserId: actor.id,
+    details: {
+      incidentId: incident.id,
+      runbookId: runbook.id,
+      hookType: action.hookType,
+    },
+  });
+
+  await flushStore(store, evidenceEvents);
+  return incident;
+}
+
+export async function capturePostmortem(input: PostmortemInput): Promise<Postmortem> {
+  const store = await readStore();
+  const evidenceEvents: EvidenceBufferEvent[] = [];
+  runEscalationSweep(store, evidenceEvents);
+
+  const actor = getUserOrThrow(store, input.actorUserId);
+  const incident = getIncidentOrThrow(store, input.incidentId);
+  if (!canViewIncident(actor, incident)) {
+    throw new Error("You do not have visibility for this incident.");
+  }
+  if (!canEscalate(actor.role)) {
+    throw new Error("You do not have permission to capture postmortems.");
+  }
+  if (!(incident.state === "resolved" || incident.state === "reviewed")) {
+    throw new Error("Postmortems can only be captured for resolved incidents.");
+  }
+
+  const postmortem: Postmortem = {
+    id: randomUUID(),
+    incidentId: incident.id,
+    summary: input.summary.trim(),
+    rootCause: input.rootCause.trim(),
+    actionItems: input.actionItems.map((item) => item.trim()).filter(Boolean),
+    authorUserId: actor.id,
+    createdAt: nowIso(),
+  };
+  store.postmortems = store.postmortems.filter((entry) => entry.incidentId !== incident.id);
+  store.postmortems.push(postmortem);
+
+  createTimelineEvent(
+    store,
+    incident.id,
+    actor.id,
+    "postmortem_added",
+    "Postmortem captured.",
+    { postmortemId: postmortem.id },
+  );
+  evidenceEvents.push({
+    action: "postmortem_captured",
+    entityType: "postmortem",
+    entityId: postmortem.id,
+    actorUserId: actor.id,
+    details: {
+      incidentId: incident.id,
+    },
+  });
+
+  await flushStore(store, evidenceEvents);
+  return postmortem;
+}
+
+export async function pollMockIntegrations(): Promise<Incident[]> {
+  const mockPayloads: IngestAlertInput[] = [
+    {
+      source: "poller",
+      serviceId: "svc-db",
+      message: "DB CPU saturation above 90%",
+      severity: "sev2",
+      metadata: { monitor: "db-cpu", source: "poller-a" },
+    },
+    {
+      source: "poller",
+      serviceId: "svc-auth",
+      message: "Token issuance error rate > 5%",
+      severity: "sev1",
+      metadata: { monitor: "auth-errors", source: "poller-b" },
+    },
+  ];
+
+  const minuteSlot = Math.floor(Date.now() / 60_000);
+  const incidents: Incident[] = [];
+  for (let index = 0; index < mockPayloads.length; index += 1) {
+    const payload = mockPayloads[index];
+    const incident = await ingestAlert({
+      ...payload,
+      externalId: `poll-${minuteSlot}-${index}`,
+      idempotencyKey: `poll-${minuteSlot}-${index}`,
+      confidential: payload.severity === "sev1",
+    });
+    incidents.push(incident);
+  }
+  return incidents;
+}
+

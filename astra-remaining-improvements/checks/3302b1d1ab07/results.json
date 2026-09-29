@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "tests": 12,
+  "testFiles": 2,
+  "domainTests": 9,
+  "apiReadTests": 3,
+  "typecheck": "passed",
+  "build": "passed",
+  "sourceHashes": {
+    "src/shared/inventoryRules.ts": "bce8e7fd3d5ccf886241fb6347451c2580ebfdd4f2fa4ddebef3f57b611b2e7a",
+    "tests/inventoryRules.test.ts": "be8cad44448297e63dca3f114583d21d4faf151c0eb5790933ebf22867b19870"
+  },
+  "records": {
+    "npm-ci-3": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "ci",
+        "--prefer-offline",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:24:32.523907+00:00",
+      "status": "complete",
+      "log": "npm-ci-3.log",
+      "pid": 30420,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:31:18.492031+00:00",
+      "elapsedSeconds": 405.95
+    },
+    "prisma-generate": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "run",
+        "db:generate"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:33:37.364727+00:00",
+      "status": "complete",
+      "log": "prisma-generate.log",
+      "pid": 32432,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:34:07.304091+00:00",
+      "elapsedSeconds": 29.94
+    },
+    "db-push": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "run",
+        "db:push"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:35:47.390150+00:00",
+      "status": "complete",
+      "log": "db-push.log",
+      "pid": 17960,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:35:58.802397+00:00",
+      "elapsedSeconds": 11.41
+    },
+    "db-seed-absolute": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "run",
+        "db:seed"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/3302b1d1ab07/prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:36:56.455775+00:00",
+      "status": "complete",
+      "log": "db-seed-absolute.log",
+      "pid": 992,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:37:01.141726+00:00",
+      "elapsedSeconds": 4.68
+    },
+    "inventory-rules": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "test",
+        "--",
+        "--run",
+        "tests/inventoryRules.test.ts"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:31:25.667617+00:00",
+      "status": "complete",
+      "log": "inventory-rules.log",
+      "pid": 38536,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:31:59.861262+00:00",
+      "elapsedSeconds": 34.18
+    },
+    "typecheck-2": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:34:14.364941+00:00",
+      "status": "complete",
+      "log": "typecheck-2.log",
+      "pid": 14380,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:34:43.269757+00:00",
+      "elapsedSeconds": 28.9
+    },
+    "build-2": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:./prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:34:46.195396+00:00",
+      "status": "complete",
+      "log": "build-2.log",
+      "pid": 12164,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:35:16.378380+00:00",
+      "elapsedSeconds": 30.18
+    },
+    "full-test-absolute": {
+      "project": "_Organized Desktop/03 Master Projects/master4",
+      "id": "3302b1d1ab07",
+      "command": [
+        "npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+      "environmentOverrides": {
+        "DATABASE_URL": "file:C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/3302b1d1ab07/prisma/dev.db"
+      },
+      "startedAt": "2026-09-12T18:37:06.443193+00:00",
+      "status": "complete",
+      "log": "full-test-absolute.log",
+      "pid": 12908,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:37:15.838442+00:00",
+      "elapsedSeconds": 9.38
+    }
+  }
+}

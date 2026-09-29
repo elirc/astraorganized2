@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-12T15:01:43.229Z",
+  "browser": "152.0.7977.76",
+  "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+  "logicalCores": 8,
+  "viewport": "1440x1000; device pixel ratio 1; headless Chrome",
+  "graphics": {
+    "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+    "renderer": "ANGLE (Intel, Intel(R) UHD Graphics 620 (0x00003EA0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "vendor": "Google Inc. (Intel)"
+  },
+  "initial": {
+    "frames": 270,
+    "durationMs": 5016,
+    "averageFps": 53.8,
+    "medianFrameMs": 16.7,
+    "p95FrameMs": 33.3
+  },
+  "lateGame": {
+    "playerBuildings": 101,
+    "ships": 6,
+    "shadows": true,
+    "frames": 140,
+    "durationMs": 5016,
+    "averageFps": 27.9,
+    "medianFrameMs": 33.3,
+    "p95FrameMs": 66.6
+  },
+  "lateGameNoShadows": {
+    "frames": 144,
+    "durationMs": 5033,
+    "averageFps": 28.6,
+    "medianFrameMs": 33.3,
+    "p95FrameMs": 50.1
+  },
+  "errors": [],
+  "notes": "Frame callbacks measured over five seconds per scenario. Late-game state was earned through public game actions. Results are machine-specific and not a guarantee for all graphics hardware."
+}

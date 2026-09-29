@@ -1,0 +1,27 @@
+{
+  "project": "buildevent",
+  "id": "af5130b3aad2",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "test",
+    "-w",
+    "@ticketing/api",
+    "--",
+    "--maxWorkers=1",
+    "--minWorkers=1",
+    "--testTimeout=60000",
+    "--hookTimeout=60000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T20:36:19.052784+00:00",
+  "status": "complete",
+  "log": "astra-buildevent-api-tests-r2.log",
+  "pid": 33532,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T20:37:43.840655+00:00",
+  "elapsedSeconds": 84.75
+}

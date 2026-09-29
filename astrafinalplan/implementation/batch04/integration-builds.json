@@ -1,0 +1,291 @@
+[
+  {
+    "project": "51",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.59,
+    "log": "logs/51-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "52",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.24,
+    "log": "logs/52-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "53",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.53,
+    "log": "logs/53-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "54",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.49,
+    "log": "logs/54-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "55",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.57,
+    "log": "logs/55-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "56",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.87,
+    "log": "logs/56-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "57",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.31,
+    "log": "logs/57-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "58",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 5.54,
+    "log": "logs/58-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "59",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.28,
+    "log": "logs/59-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "60",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.85,
+    "log": "logs/60-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "61",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.11,
+    "log": "logs/61-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "62",
+    "check": "server-build",
+    "exit_code": 2,
+    "seconds": 19.91,
+    "log": "logs/62-server-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "-p",
+      "tsconfig.json"
+    ]
+  },
+  {
+    "project": "62",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.87,
+    "log": "logs/62-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 4.67,
+    "log": "logs/63-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "64",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.87,
+    "log": "logs/64-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "65",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 6.53,
+    "log": "logs/65-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "66",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 5.74,
+    "log": "logs/66-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "67",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 5.45,
+    "log": "logs/67-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "68",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.4,
+    "log": "logs/68-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "69",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.43,
+    "log": "logs/69-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "70",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.27,
+    "log": "logs/70-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "71",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 2.66,
+    "log": "logs/71-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "72",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 2.87,
+    "log": "logs/72-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "75",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 3.0,
+    "log": "logs/75-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "project": "67",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.7,
+    "log": "logs/67-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\67\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "68",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.45,
+    "log": "logs/68-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\68\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "69",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.58,
+    "log": "logs/69-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\69\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "70",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 10.07,
+    "log": "logs/70-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\70\\test\\crud.test.ts"
+    ]
+  },
+  {
+    "project": "71",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 10.06,
+    "log": "logs/71-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\71\\test\\crud.test.ts"
+    ]
+  }
+]

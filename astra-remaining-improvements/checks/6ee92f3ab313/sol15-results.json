@@ -1,0 +1,61 @@
+{
+  "passed": true,
+  "total": 11,
+  "passedTests": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "netairag",
+      "id": "6ee92f3ab313",
+      "command": [
+        "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+        "test",
+        "tests/UnitTests/NetAiOps.UnitTests.csproj",
+        "--no-build",
+        "--no-restore",
+        "--logger",
+        "trx",
+        "--verbosity",
+        "minimal"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6ee92f3ab313",
+      "environmentOverrides": {
+        "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+      },
+      "startedAt": "2026-09-19T21:58:39.337694+00:00",
+      "status": "complete",
+      "log": "astra-netairag-tests-r2.log",
+      "pid": 25564,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T22:00:02.664527+00:00",
+      "elapsedSeconds": 83.32
+    },
+    {
+      "project": "netairag",
+      "id": "6ee92f3ab313",
+      "command": [
+        "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+        "build",
+        "NetAiOps.sln",
+        "--nologo",
+        "--verbosity",
+        "minimal",
+        "/m:1",
+        "/p:RestoreDisableParallel=true"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6ee92f3ab313",
+      "environmentOverrides": {
+        "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+      },
+      "startedAt": "2026-09-19T22:03:46.016647+00:00",
+      "status": "complete",
+      "log": "astra-netairag-build-r3.log",
+      "pid": 15876,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T22:16:12.869982+00:00",
+      "elapsedSeconds": 746.84
+    }
+  ]
+}

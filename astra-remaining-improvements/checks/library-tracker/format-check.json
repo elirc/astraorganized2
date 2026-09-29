@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "formattedJavaFiles": 9,
+  "compiledAfterFormatting": true,
+  "formatter": "google-java-format 1.28.0; SHA-256 verified Maven artifact"
+}

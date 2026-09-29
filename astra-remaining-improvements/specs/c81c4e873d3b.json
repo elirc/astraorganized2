@@ -1,0 +1,27 @@
+{
+  "id": "c81c4e873d3b",
+  "project": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+  "summary": [
+    "Bind nested comment deletion to both the URL article slug and comment id before checking authorship or writing.",
+    "Pass the route slug through the live TypeScript Express handler and preserve existing 404, 403, and 204 behavior."
+  ],
+  "changedFiles": [
+    "fastapi-realworld-example-app/src/repositories/CommentRepository.ts",
+    "fastapi-realworld-example-app/src/routes/articles.ts",
+    "tests/comment-delete-boundary.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/CommentRepository.ts.original.txt",
+    "astraupskill/snapshots/articles.ts.original.txt",
+    "astraupskill/evidence/crud-b03-astra-runtime2.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c81c4e873d3b/results-crud-b03.json"
+  },
+  "limits": [
+    "Four runtime cases execute the actual repository and, in the fourth case, the actual registered DELETE handler with explicit Prisma and Express router/response doubles. No Express server is mounted.",
+    "The check does not execute Prisma SQL, PostgreSQL, authentication middleware, native package tests, or transaction/concurrency behavior.",
+    "The inspected Python candidate is commented scaffold; the bounded fix targets the active TypeScript Express implementation and does not claim tenant isolation or malformed-id validation."
+  ]
+}

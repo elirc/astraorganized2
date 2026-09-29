@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/B1",
+  "id": "d84730649bc6",
+  "command": [
+    "node",
+    "checks/incident-detail-regression.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\d84730649bc6",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:26:39.308126+00:00",
+  "status": "complete",
+  "log": "service-regression-04.log",
+  "pid": 16168,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T19:26:40.614697+00:00",
+  "elapsedSeconds": 1.3
+}

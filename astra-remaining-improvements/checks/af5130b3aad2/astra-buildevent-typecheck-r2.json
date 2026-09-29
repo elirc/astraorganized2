@@ -1,0 +1,22 @@
+{
+  "project": "buildevent",
+  "id": "af5130b3aad2",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "typecheck",
+    "--",
+    "--concurrency=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T20:36:30.409158+00:00",
+  "status": "complete",
+  "log": "astra-buildevent-typecheck-r2.log",
+  "pid": 32048,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T20:47:17.238419+00:00",
+  "elapsedSeconds": 646.83
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "gitvg/tools/publish-organized-projects.ps1",
+    "bytes": 27666,
+    "source": true,
+    "marker": false
+  },
+  {
+    "path": "gitvg/tools",
+    "markers": [],
+    "git": false,
+    "direct_sources": 1
+  }
+]

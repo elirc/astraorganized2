@@ -1,0 +1,32 @@
+{
+  "id": "d851d9ba11a1",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:34:57.327613+00:00",
+  "sourceReview": "Read actual transition service, domain/role rules and deal repository. No production change; pre-read outside transaction and update predicate only id, not expected status.",
+  "teachingReview": "Replaced repeated filler with nine concrete chapters covering payload walkthrough, exercises, solutions, debugging and concurrency limits. Correct role field session.role and five-case accounting.",
+  "testReview": "Five passing actual-source cases cover sales/channel approvals, refusal matrix, update failure and audit failure. Assert exact history/job fields and shared client; no database rollback or worker claim.",
+  "specSHA256": "7a8ad5d874ebbb64c4a76e8a7292c93cb5954d81e3f15b91e473fefd65a8079e",
+  "fileHashes": {
+    "tests/deal-transition-lab.test.mjs": "875c6142df7911c7e39cedb3a41fc6f4ef60e77842fa4e3349665d9cad14c2cf",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/dealRegistrationService.ts.original.txt": "fb9c9a60913ffc4742c7426a48613f28c3375dcb74f1c8013e6dcc31a9b43eb2",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "5149ab70a4488ec19aea4275fc0e19741a6cdf71e0f5449f44b6687ed371a2fb",
+    "astraupskill/evidence/results.json": "ff7764a34119fa802eb2021160d2a515e9157aed24ebafccd47a13ec509ebaa3",
+    "astraupskill/README.md": "9a32275a65056ff48b9dc40b01c881e91d041336e0cb52fb2f88b6f94960f6b4",
+    "astraupskill/01-CODEBASE-MAP.md": "e6d75ccb700bdf4802b556a7760058b5e9df7ca5dc701cba961553d63065e8d2",
+    "astraupskill/02-CONCEPTS.md": "482ab54974e0a72c3f8573dff1ebc272f414143ddada1eb44cbc249eae217c73",
+    "astraupskill/03-WORKED-CHANGE.md": "6a3329d5381c3aa7e9cf21588c4fcc9d399e2d979bf45468a7b40bc3cb0c28ee",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "19952d06192c82e7394df69e604686c2cbca06ca34eb0b212c58bb40766ab6ec",
+    "astraupskill/05-PRACTICE.md": "7af312fa4fd210fa6ce120809affbb5b8596478f6b8c0da965bd9c9274ba1c59",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "41a17b4433142d945bea9cce42abcefcc5fe75e6ac9172d1b3ac4c22772876c5",
+    "astraupskill/07-TRACE-LAB.md": "5bc52fb4349ca08e62e40233d4183b61740d77965fd19415101fd4326766c6df",
+    "astraupskill/VERIFICATION.md": "8e0442ca9d96ce52f1ac40d2bfb23d3ff7971133f5fd8b523581f81734496690"
+  },
+  "evidenceHashes": {
+    "checks/d851d9ba11a1/crud-b05-astra-runtime.json": "c7dd50e3fbf5b4cef16b115833fb815a5e5fb6193807ab23b1644d75a5a4448a",
+    "checks/d851d9ba11a1/crud-b05-astra-runtime.log": "5149ab70a4488ec19aea4275fc0e19741a6cdf71e0f5449f44b6687ed371a2fb",
+    "checks/d851d9ba11a1/crud-b05-ww16-runtime1.json": "87c9936cff3f8c17201050d05c74d6798e2aca95ec0bf6d608eb1ef9e36947c1",
+    "checks/d851d9ba11a1/crud-b05-ww16-runtime1.log": "d2f5659ab12c0d0a81fd80a7053186adde4c6e4d1804d653f70fc3f55a9fd14e",
+    "checks/d851d9ba11a1/results-crud-b05.json": "ff7764a34119fa802eb2021160d2a515e9157aed24ebafccd47a13ec509ebaa3"
+  }
+}

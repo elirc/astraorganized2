@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "expectedTests": 12,
+  "executedTests": 12,
+  "testFiles": 1,
+  "command": "C:\\Program Files\\nodejs\\node.exe node_modules/vitest/vitest.mjs run src/tests/platform-behavior.test.ts --maxWorkers=1 --minWorkers=1",
+  "log": "ww17-freeze-tests-20260913.log",
+  "typecheck": {
+    "passed": true,
+    "log": "ww17-freeze-typecheck-20260913.log"
+  },
+  "environment": "stage-local declared dependencies; Prisma Client generated from stage prisma/schema.prisma; mock and Prisma transaction code paths; no customer database",
+  "lint": {
+    "passed": true,
+    "log": "ww17-freeze-lint-20260913.log"
+  },
+  "build": {
+    "passed": true,
+    "log": "orchestration-build-final-20260913.log",
+    "record": "orchestration-build-final-20260913.json"
+  }
+}

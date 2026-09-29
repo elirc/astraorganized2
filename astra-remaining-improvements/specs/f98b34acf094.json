@@ -1,0 +1,48 @@
+{
+  "summary": [
+    "Public CMS list/detail reads hide drafts, archived entries and deleted records unless the established actor has the appropriate preview permission; deleted content remains hidden from all readers.",
+    "Content writes validate object shape, known fields, locale, typed values and explicit null/default semantics before entry, revision or audit mutation; public nested query DTOs are detached.",
+    "Publication revalidates the current schema, blocks terminal-state resurrection and preserves history on repeated accepted publication.",
+    "Expanded the regression suite to 34 cases covering actual HTTP handlers, authenticated sessions and tokens, malformed inputs, rejection-state preservation, numeric ordering and nested object ownership.",
+    "Replaced mismatched staged learning chapters with nine source-grounded guides, exercises/solutions, actual code excerpts and explicit process-memory and webhook limitations."
+  ],
+  "changedFiles": [
+    "package.json",
+    "package-lock.json",
+    "vitest.config.ts",
+    "tests/cms-boundaries.test.ts",
+    "src/app/api/[uid]/route.ts",
+    "src/app/api/[uid]/[id]/route.ts",
+    "src/lib/cms/query.ts",
+    "src/lib/cms/store.ts",
+    "src/lib/config/env.ts",
+    "src/lib/server/cms-api.ts",
+    "astraupskill/snapshots/src__app__api__[uid]__route.ts.original",
+    "astraupskill/snapshots/src__app__api__[uid]__[id]__route.ts.original",
+    "astraupskill/snapshots/src__lib__cms__query.ts.original",
+    "astraupskill/snapshots/src__lib__cms__store.ts.original",
+    "astraupskill/snapshots/src__lib__config__env.ts.original",
+    "astraupskill/snapshots/src__lib__server__cms-api.ts.original",
+    "src/lib/cms/entry-validation.ts",
+    "README.md",
+    "astraupskill/evidence/resume14-tests-02.json",
+    "astraupskill/evidence/resume14-tests-02.log",
+    "astraupskill/evidence/resume14-types-01.json",
+    "astraupskill/evidence/resume14-types-01.log",
+    "astraupskill/evidence/resume14-lint-01.json",
+    "astraupskill/evidence/resume14-lint-01.log",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f98b34acf094/resume14-results.json",
+    "expectedTests": 34,
+    "command": "Full Vitest suite and recorded TypeScript/build checks; ESLint"
+  },
+  "limits": [
+    "The CMS store remains process-local demo state and does not establish database durability.",
+    "Webhook delivery behavior remains documented as a demo limitation.",
+    "Demo role authentication is available only with explicit non-production opt-in."
+  ]
+}

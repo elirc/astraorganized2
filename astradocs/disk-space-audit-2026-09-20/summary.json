@@ -1,0 +1,19 @@
+{
+  "modifiedProjects": 182,
+  "scanRoots": 179,
+  "candidateCount": 861,
+  "tierACount": 286,
+  "tierBCount": 285,
+  "tierCCount": 290,
+  "projectAndCampaignTierABytes": 39745133400,
+  "sharedCacheTierABytes": 12491314743,
+  "allTierABytes": 52236448143,
+  "tierBAdditionalBytesAfterA": 3819432653,
+  "tierAAndBUnionBytes": 56055880796,
+  "scanErrors": 0,
+  "missingOrUnscannedRoots": [],
+  "skippedLinks": 8649,
+  "freeBytesAtScan": 6063992832,
+  "unit": "Logical file bytes; not guaranteed disk space reclaimed",
+  "deleted": false
+}

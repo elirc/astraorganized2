@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "command": [
+    "node",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\109a97addd48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:57:28.936285+00:00",
+  "status": "complete",
+  "log": "typecheck-02.log",
+  "pid": 6676,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-12T19:57:55.259764+00:00",
+  "elapsedSeconds": 26.32
+}

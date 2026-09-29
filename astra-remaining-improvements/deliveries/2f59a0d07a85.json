@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e17",
+  "id": "2f59a0d07a85",
+  "summary": [
+    "Validate optional reply parent posts belong to the requested topic before opening the create transaction.",
+    "Reject missing and cross-topic parent ids while preserving top-level and same-topic reply workflows."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2f59a0d07a85/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e17",
+        "id": "2f59a0d07a85",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/reply-parent-boundary.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f59a0d07a85",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:44:22.968318+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 33620,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:44:28.401190+00:00",
+        "elapsedSeconds": 5.26
+      }
+    ],
+    "limits": [
+      "Five Node runtime cases execute the actual forum module with Prisma, schema, enum, permission and external helper adapters. Same-topic/top-level cases run internal notification and trust orchestration against adapters, not real deliveries or persistence.",
+      "No Next.js, native Prisma, Zod schema, actual permission policy, database isolation or durable rollback was executed. Parent validation is a pre-transaction membership check; concurrent parent changes remain outside this correction.",
+      "Local Next.js guides were absent after dependency cleanup. No Next.js API or route was changed."
+    ]
+  },
+  "courseWords": 1678,
+  "courseFiles": 9,
+  "courseLinksChecked": 9,
+  "files": [
+    {
+      "file": "src/lib/forum-core.ts",
+      "before_sha256": "eef9af8a1fd2d1d6aeb035c3c5b47c44a8a3bf7d3cfbaa7a879e5a057d0483a9",
+      "after_sha256": "9c4fa763e893e9cf65ba0b833330d7e1ecddd8ad33fadcb218471d7fb21c2fc5"
+    },
+    {
+      "file": "tests/reply-parent-boundary.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "e4eecb3c006c0a8a4e138e20a9094e264c15041ecf0a79b1a0c4a8f037763c77"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/forum-core.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "eef9af8a1fd2d1d6aeb035c3c5b47c44a8a3bf7d3cfbaa7a879e5a057d0483a9"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "b0968b832c28007a4a0c6918f378eda9f2ee576d3c0841bd48f3c9a9993dc138"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "3f7f486f0777f576f02e842fb87a8816566e03f268e591857fe74b457f618df2"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8489b56041e23f54727691edcaef5ca8ae3bc3970ca108b46f42368c1d459771"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "de5263a9d97d59f950f2dbb27d7e3ba1a07aced4ac555bbe1dad60291539db70"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1829cc062b7f8c47141136ca5d8da77581660a08a7d03be26dbac490e9fc91cb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "3b5c5a6807ad4b1a86e3f7d4fbea8e60350680c0bab897e4b44a9dad39b71b02"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "2aa67a153427f2ef58375c5c500e53770199d6ab3f383cb0f81b3f92cfd3f005"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b6ddbe94f97103a75c710a8753ee59960cb42c8a4c5b823517636d4140ecdf75"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1e3ec0fdb0f3289fc652538c668bc72d6a0af87ba689c54d846a1f20964ba686"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9f32f0747c50e8e8acff9027eb56a46cbbb7063c5c0d90bfb6a53ddb4a4e15c9"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c86f2218a134b24120e36161afca32bb743e21e82a5fb04b65799192072c1380"
+    }
+  ],
+  "limits": [
+    "Five Node runtime cases execute the actual forum module with Prisma, schema, enum, permission and external helper adapters. Same-topic/top-level cases run internal notification and trust orchestration against adapters, not real deliveries or persistence.",
+    "No Next.js, native Prisma, Zod schema, actual permission policy, database isolation or durable rollback was executed. Parent validation is a pre-transaction membership check; concurrent parent changes remain outside this correction.",
+    "Local Next.js guides were absent after dependency cleanup. No Next.js API or route was changed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:47:32.462356+00:00"
+}

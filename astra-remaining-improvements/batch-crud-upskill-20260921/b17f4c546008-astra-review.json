@@ -1,0 +1,34 @@
+{
+  "id": "b17f4c546008",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:37:26.652253+00:00",
+  "sourceReview": "Read quote policy, real money/error helpers and service caller. Production unchanged; pure thresholds use strict greater-than, floor equality allowed, lifecycle graph explicit.",
+  "teachingReview": "Read all nine chapters, removed stray literal quotes, separated exercises from answers, corrected executed quantity-boundary overclaim and added exact command.",
+  "testReview": "Five passing pure actual-source cases without doubles: valid/invalid lifecycle, exact10/20percent boundaries, integer totals, combined reasons, missing product and floor boundary. No service/DB/tenant validation execution.",
+  "specSHA256": "ccdf6cb7c6f0abd0c4d0167006e68adaa51dc9b6cef7993eaa452dc2c98f0059",
+  "fileHashes": {
+    "tests/quote-transition-policy.test.mjs": "2702b1fc7e2116a7baee19ca692273cbc84ddc3ec8da66e28cab3b8ac6f29103",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/quote-policy.ts.original.txt": "968770082c2753cf63b78c1c86b9889d425d6c9628cd59092637955a2ba9d961",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "82f4ecf84c6854ff88f3e4a4143611c5aabb97b37ece08a5a5d4e4a4dcee902c",
+    "astraupskill/evidence/results.json": "ad693e8c968cee6bf2dca19c25b31a5acde221a764f02dcbef817aa989855490",
+    "astraupskill/README.md": "6a7dbcc1a9f9576ec4c240d9cc97dc63c3a18d713590d9969800aec3a7d5d814",
+    "astraupskill/01-CODEBASE-MAP.md": "f8364e91fe583d8c9e25d34ff4cf4581b72afb7471b1f72a158e90c968982592",
+    "astraupskill/02-CONCEPTS.md": "6e7022a212104eb0bd6bf2637f7bae8328f279a15d78e2c3a7006b56efed06b0",
+    "astraupskill/03-WORKED-CHANGE.md": "569621786ffa677ec4aa754a0e8cdf09c97187d7a65ffd955d10564b780cf89f",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "6f8023b8d9bcc8e6d1ef7a84531891ac8f70f748fc6c144ad7a62dfc7cfc8425",
+    "astraupskill/05-PRACTICE.md": "a59e9e0947c5abefd409163530fbfabe9414b0496ee1a864c52e2ecf45062962",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "3b775b2b00bf23583344415e38a788f2c395256f3a9347a15c7a8bdf5c460774",
+    "astraupskill/07-TRACE-LAB.md": "abaeb7c86f443ea6bf3a19917d80190d40794bc2f88b04d4d34cbb6ceb7f7d38",
+    "astraupskill/VERIFICATION.md": "d52d6eb0ee30bc1d4b3454bc0abe1cb714bee6ee0590b3b2cfd67d13b13611cc"
+  },
+  "evidenceHashes": {
+    "checks/b17f4c546008/crud-b05-astra-runtime.json": "3353acd2b01ba55de84eef29b13f2f0bb0caeae958b8cf6698c62d60c6e41596",
+    "checks/b17f4c546008/crud-b05-astra-runtime.log": "82f4ecf84c6854ff88f3e4a4143611c5aabb97b37ece08a5a5d4e4a4dcee902c",
+    "checks/b17f4c546008/crud-b05-ww18-runtime1.json": "9e889669f4971a5e10dbac7cd3d77f259a1d7d16b8959b5ba1cfe60fd4c1dfbb",
+    "checks/b17f4c546008/crud-b05-ww18-runtime1.log": "04dd2e806f9a279010d959af7f18952acb73aff05ea18aa440ee2d106ddda779",
+    "checks/b17f4c546008/crud-b05-ww18-runtime2.json": "1ce2978d497fe43ec7c7e2e72919bb0f96cf0f98caec3c1f4331b8385591a56b",
+    "checks/b17f4c546008/crud-b05-ww18-runtime2.log": "0f67807f61eb0f55db78d9f8b27b17222653567858f3e863a0e119b43981c031",
+    "checks/b17f4c546008/results-crud-b05.json": "ad693e8c968cee6bf2dca19c25b31a5acde221a764f02dcbef817aa989855490"
+  }
+}

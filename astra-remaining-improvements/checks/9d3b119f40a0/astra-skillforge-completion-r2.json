@@ -1,0 +1,18 @@
+{
+  "project": "skillforgejs",
+  "id": "9d3b119f40a0",
+  "command": [
+    "node",
+    "scripts/test-completion-local.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9d3b119f40a0",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T21:38:58.911687+00:00",
+  "status": "complete",
+  "log": "astra-skillforge-completion-r2.log",
+  "pid": 29452,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-20T21:44:37.787575+00:00",
+  "elapsedSeconds": 338.87
+}

@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+  "id": "e7862246212d",
+  "command": [
+    "npm.cmd",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:22:20.257749+00:00",
+  "status": "complete",
+  "log": "resume14-tests-01.log",
+  "pid": 27200,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:23:20.194765+00:00",
+  "elapsedSeconds": 59.9
+}

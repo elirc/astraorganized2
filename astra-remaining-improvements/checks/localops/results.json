@@ -1,0 +1,138 @@
+{
+  "passed": true,
+  "total": 67,
+  "expected": 67,
+  "suites": [
+    {
+      "suite": "domain-storage",
+      "total": 52,
+      "passed": true,
+      "results": "tests-01.log"
+    },
+    {
+      "suite": "browser",
+      "total": 15,
+      "passed": true,
+      "results": "browser-04/results.json"
+    }
+  ],
+  "executions": {
+    "tests-01": {
+      "command": [
+        "node",
+        "node_modules/tsx/dist/cli.mjs",
+        "--test",
+        "--test-reporter=tap",
+        "--test-concurrency=1",
+        "tests/domain.test.ts",
+        "tests/storage.test.ts"
+      ],
+      "exitCode": 0
+    },
+    "typecheck-01": {
+      "command": [
+        "node",
+        "--max-old-space-size=512",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "exitCode": 0,
+      "seconds": 165.75
+    },
+    "lint-02": {
+      "command": [
+        "node",
+        "--max-old-space-size=512",
+        "node_modules/eslint/bin/eslint.js",
+        "."
+      ],
+      "exitCode": 0,
+      "seconds": 1026.05
+    },
+    "lint-03": {
+      "command": [
+        "node",
+        "--max-old-space-size=512",
+        "node_modules/eslint/bin/eslint.js",
+        "src/components/LocalOperationsApp.tsx"
+      ],
+      "exitCode": 0,
+      "seconds": 1204.19
+    },
+    "build-02": {
+      "command": [
+        "node",
+        "node_modules/next/dist/bin/next",
+        "build",
+        "--webpack"
+      ],
+      "exitCode": 0,
+      "seconds": 2321.75
+    },
+    "browser-04": {
+      "command": [
+        "python",
+        "scripts/verify_browser.py"
+      ],
+      "exitCode": 0,
+      "seconds": 221.99
+    }
+  },
+  "layoutRechecks": {
+    "passed": true,
+    "checks": [
+      {
+        "width": 1440,
+        "passed": true
+      },
+      {
+        "width": 800,
+        "passed": true
+      },
+      {
+        "width": 390,
+        "passed": true
+      }
+    ]
+  },
+  "reviewedScreenshots": [
+    {
+      "name": "01-payment-rejection.png",
+      "source": "browser-04/01-payment-rejection.png"
+    },
+    {
+      "name": "02-inventory.png",
+      "source": "browser-04/02-inventory.png"
+    },
+    {
+      "name": "03-reminders.png",
+      "source": "browser-04/03-reminders.png"
+    },
+    {
+      "name": "04-conflict-draft.png",
+      "source": "browser-04/04-conflict-draft.png"
+    },
+    {
+      "name": "05-overview.png",
+      "source": "browser-04/05-overview.png"
+    },
+    {
+      "name": "06-form-1440.png",
+      "source": "layout-02/06-form-1440.png"
+    },
+    {
+      "name": "06-form-390.png",
+      "source": "layout-02/06-form-390.png"
+    },
+    {
+      "name": "06-form-800.png",
+      "source": "layout-02/06-form-800.png"
+    },
+    {
+      "name": "07-migrated-overview.png",
+      "source": "browser-04/07-migrated-overview.png"
+    }
+  ],
+  "visualReview": "Nine delivered screenshots inspected: readable forms, retained failures, cash and commitments, recurrence and migration; three width rechecks show all fields without clipping or action overlap.",
+  "verificationDate": "2026-09-09"
+}

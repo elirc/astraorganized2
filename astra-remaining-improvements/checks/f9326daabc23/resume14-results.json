@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "total": 83,
+  "passedTests": 83,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "gitvg/storefront",
+      "id": "f9326daabc23",
+      "command": [
+        "pnpm.cmd",
+        "exec",
+        "vitest",
+        "run",
+        "--maxWorkers",
+        "2",
+        "--minWorkers",
+        "1"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T17:01:14.916335+00:00",
+      "status": "complete",
+      "log": "resume14-tests-02.log",
+      "pid": 18068,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T17:08:47.274939+00:00",
+      "elapsedSeconds": 452.34
+    },
+    {
+      "project": "gitvg/storefront",
+      "id": "f9326daabc23",
+      "command": [
+        "pnpm.cmd",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T17:04:26.445201+00:00",
+      "status": "complete",
+      "log": "resume14-types-02.log",
+      "pid": 25896,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T17:05:52.860425+00:00",
+      "elapsedSeconds": 86.41
+    },
+    {
+      "project": "gitvg/storefront",
+      "id": "f9326daabc23",
+      "command": [
+        "pnpm.cmd",
+        "lint"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T17:04:21.585522+00:00",
+      "status": "complete",
+      "log": "resume14-lint-01.log",
+      "pid": 23164,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T17:13:43.578701+00:00",
+      "elapsedSeconds": 561.97
+    },
+    {
+      "project": "gitvg/storefront",
+      "id": "f9326daabc23",
+      "command": [
+        "pnpm.cmd",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+      "environmentOverrides": {
+        "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+      },
+      "startedAt": "2026-09-19T17:06:50.139787+00:00",
+      "status": "complete",
+      "log": "resume14-build-01.log",
+      "pid": 25356,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T17:42:50.524811+00:00",
+      "elapsedSeconds": 2160.33
+    },
+    {
+      "project": "gitvg/storefront",
+      "id": "f9326daabc23",
+      "command": [
+        "pnpm.cmd",
+        "db:generate"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+      "environmentOverrides": {
+        "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+      },
+      "startedAt": "2026-09-19T17:01:50.473187+00:00",
+      "status": "complete",
+      "log": "resume14-generate-01.log",
+      "pid": 16416,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T17:03:26.745123+00:00",
+      "elapsedSeconds": 96.22
+    }
+  ]
+}

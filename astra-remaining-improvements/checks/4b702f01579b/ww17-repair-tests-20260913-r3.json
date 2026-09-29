@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules/.bin/vitest.cmd",
+    "run",
+    "src/tests/platform-behavior.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {
+    "DATA_SOURCE": "mock",
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww17_build_only"
+  },
+  "startedAt": "2026-09-13T15:55:50.565845+00:00",
+  "status": "complete",
+  "log": "ww17-repair-tests-20260913-r3.log",
+  "pid": 24292,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T15:55:50.681151+00:00",
+  "elapsedSeconds": 0.11
+}

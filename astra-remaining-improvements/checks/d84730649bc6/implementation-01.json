@@ -1,0 +1,28 @@
+{
+  "id": "d84730649bc6",
+  "project": "_Organized Desktop/05 Numbered Experiments/B1",
+  "focus": "authorize parent and child incident records embedded in detail responses",
+  "stage": "stage/d84730649bc6",
+  "changedFiles": [
+    "src/lib/platform.ts",
+    "checks/incident-detail-regression.mjs",
+    "checks/incident-detail-regression.tsconfig.json"
+  ],
+  "change": "getIncidentDetail now applies the existing canViewIncident predicate to each related parent and child before embedding it. Hidden parents become null and hidden children are omitted; selected-incident authorization and other detail fields remain unchanged.",
+  "checks": [
+    {
+      "name": "service-regression",
+      "command": "node checks/incident-detail-regression.mjs",
+      "exitCode": 0,
+      "rawOutput": "checks/d84730649bc6/incident-detail-regression.raw.txt",
+      "evidence": "viewer hidden parent and confidential child; admin and service-matched responder retained access; disposable fixture unchanged"
+    }
+  ],
+  "snapshots": {
+    "originalPlatform": "checks/d84730649bc6/snapshots/platform-before.ts.txt"
+  },
+  "limits": [
+    "The regression compiles staged lib sources and exercises the exported getIncidentDetail with a disposable JSON store; it does not use the canonical data directory.",
+    "This slice protects embedded Incident object contents. It does not redesign demo ?as= actor selection, authentication, relationship identifiers in raw fields, escalation behavior, or persistence."
+  ]
+}

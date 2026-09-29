@@ -1,0 +1,32 @@
+{
+  "id": "200c3e641a36",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww43",
+  "summary": [
+    "Protect note status transitions with an atomic expected-status predicate",
+    "Return a stable STATUS_CONFLICT before audit on stale writes",
+    "Add project-specific CRUD upskill course"
+  ],
+  "changedFiles": [
+    "src/repositories/note-repository.ts",
+    "src/services/note-service.ts",
+    "tests/services/note-service.test.ts",
+    "tests/runtime-status.test.mjs",
+    "tests/runtime-note-service.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-repositories-note-repository.ts.before",
+    "astraupskill/snapshots/src-services-note-service.ts.before",
+    "astraupskill/snapshots/tests-services-note-service.test.ts.before",
+    "astraupskill/evidence/astra-crud-b01-services.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/200c3e641a36/results-crud-b01.json"
+  },
+  "limits": [
+    "Vitest command is unrun because isolated dependency installation was unavailable",
+    "Portable VM tests use explicit repository/database contracts; live PostgreSQL race coverage remains for review",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed.",
+    "Status comparison does not detect ACTIVE-to-ARCHIVED-to-ACTIVE changes, body edits or permission changes between read and write."
+  ]
+}

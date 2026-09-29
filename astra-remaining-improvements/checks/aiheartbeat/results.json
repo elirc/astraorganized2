@@ -1,0 +1,55 @@
+{
+  "project": "aiheartbeat",
+  "id": "9e1958f807df",
+  "source": {
+    "stage": "astra-remaining-improvements/stage/9e1958f807df",
+    "frozenAt": "2026-09-12T18:20:00Z",
+    "canonicalDatabaseTouched": false,
+    "snapshotsMatchBaseline": true
+  },
+  "environment": {
+    "node": "22.16.0",
+    "npm": "10.9.2",
+    "workspaceDb": "astra-remaining-improvements/checks/aiheartbeat/disposable-checks.db",
+    "realClaudeGhDaemon": false
+  },
+  "checks": [
+    {
+      "name": "tests",
+      "command": "node C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js test -- --maxWorkers=1 --testTimeout=30000",
+      "status": "passed",
+      "exitCode": 0,
+      "testFiles": 26,
+      "tests": 505,
+      "durationSeconds": 97.48,
+      "sqliteWarning": "ExperimentalWarning only"
+    },
+    {
+      "name": "typecheck",
+      "command": "node C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run typecheck",
+      "status": "passed",
+      "exitCode": 0,
+      "workspaces": ["@pulse/core", "@pulse/dashboard", "@pulse/shared"]
+    },
+    {
+      "name": "dashboard-build",
+      "command": "node C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run dashboard:build",
+      "status": "passed",
+      "exitCode": 0,
+      "framework": "Next.js 16.3.1 webpack",
+      "routesGenerated": 13
+    }
+  ],
+  "install": {
+    "record": "checks/aiheartbeat/install-03.json",
+    "actualNpmExitCode": 0,
+    "debugLog": "npm-cache/_logs/2026-09-12T18_22_48_316Z-debug-0.log",
+    "lifecycleScripts": true,
+    "packagesAdded": 93,
+    "warnings": ["npm reported repeated invalid or damaged lockfile warnings during reification; npm debug log ends with exit 0 and info ok"]
+  },
+  "limits": [
+    "No real Pulse daemon, Claude CLI, gh CLI, remote webhook, or server was started.",
+    "The disposable workspace database was used for checks; canonical workspace.db and sidecars were left untouched."
+  ]
+}

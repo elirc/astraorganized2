@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww15",
+      "id": "678b11ff9b03",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/transaction-offer-policy.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\678b11ff9b03",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:14:22.375349+00:00",
+      "status": "complete",
+      "log": "crud-b05-astra-runtime.log",
+      "pid": 27708,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:14:26.165770+00:00",
+      "elapsedSeconds": 3.78
+    }
+  ],
+  "limits": [
+    "Four actual-service cases load real viewer/offer guards, policy and error classes with only repository port adapters. No Next, native persistence, external provider or rollback execution.",
+    "createOffer is a repository operation, not an external provider call in this lab. Status/audit failure can follow earlier attempted writes; there is no service transaction wrapper. submitOffer does not call the workflow-transition validator used by updateStatus."
+  ]
+}

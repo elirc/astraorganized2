@@ -1,0 +1,4 @@
+{
+  "pid": 37984,
+  "reason": "Stopped our overlapping lint run while dependency installation remained incomplete; restart after installation to reduce contention. This run is not a code validation result."
+}

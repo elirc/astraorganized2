@@ -1,0 +1,242 @@
+{
+  "project": "astra5",
+  "id": "37844e1ec56d",
+  "summary": [
+    "Separated pending refunds into retryable and exhausted groups while retaining merchant-scoped totals.",
+    "Displayed distinct operational counts and guidance toward the authorized order recovery action.",
+    "Added a real PostgreSQL merchant/boundary regression, frontend mapping coverage, and nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/37844e1ec56d/sol15-results.json",
+    "expectedTests": 34,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 34,
+    "passedTests": 34,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "astra5",
+        "id": "37844e1ec56d",
+        "command": [
+          "python",
+          "scripts/test-refund-health.py"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\37844e1ec56d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:50:05.702550+00:00",
+        "status": "complete",
+        "log": "astra-astra5-health-tests-r1.log",
+        "pid": 7488,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T23:02:56.143709+00:00",
+        "elapsedSeconds": 770.43
+      },
+      {
+        "project": "astra5",
+        "id": "37844e1ec56d",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "--",
+          "--maxWorkers=1",
+          "--minWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\37844e1ec56d",
+        "environmentOverrides": {
+          "PYTHONIOENCODING": "utf-8",
+          "NEXT_TELEMETRY_DISABLED": "1"
+        },
+        "startedAt": "2026-09-19T23:39:11.060256+00:00",
+        "status": "complete",
+        "log": "astra-astra5-ui-tests-r1.log",
+        "pid": 19092,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T23:41:59.807499+00:00",
+        "elapsedSeconds": 168.51
+      },
+      {
+        "project": "astra5",
+        "id": "37844e1ec56d",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\37844e1ec56d",
+        "environmentOverrides": {
+          "PYTHONIOENCODING": "utf-8",
+          "NEXT_TELEMETRY_DISABLED": "1"
+        },
+        "startedAt": "2026-09-19T23:42:07.181874+00:00",
+        "status": "complete",
+        "log": "astra-astra5-typecheck-r1.log",
+        "pid": 24176,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T23:45:26.451334+00:00",
+        "elapsedSeconds": 199.21
+      }
+    ]
+  },
+  "courseWords": 4408,
+  "courseFiles": 9,
+  "courseLinksChecked": 97,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "05db6cf4bfb3566b04b31917731cc65ff09640c691650c76d3a71264a8c284b0",
+      "after_sha256": "82432c5d13add9bcac458024988c01bdeb3e27c44f2c00e5ff7ed86b00814a3c"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-health-tests-r1.json",
+      "before_sha256": null,
+      "after_sha256": "fc562575655a003babd21a9d6e8c4c603404ca32ef06ca42004ac65c5994a555"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-health-tests-r1.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-typecheck-r1.json",
+      "before_sha256": null,
+      "after_sha256": "ec4cb3600bb95ceda048479ddece5944f6a8e55eb407b5420a4dc21fbf0c0040"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-typecheck-r1.log",
+      "before_sha256": null,
+      "after_sha256": "b0586a5b3f84d9e1f2ad064c24108d589f78f0aba488ac660c77a1047c4727a1"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-ui-tests-r1.json",
+      "before_sha256": null,
+      "after_sha256": "4fe76a0ff7b99e05d1e2d3d93a1ba9ed2a30e7af813507dc08e2440538d95508"
+    },
+    {
+      "file": "astraupskill/evidence/astra-astra5-ui-tests-r1.log",
+      "before_sha256": null,
+      "after_sha256": "e92eb4b8a2a2ac9084b1fbac14d19ac13e45a09a3a610bb629a9cf6e4809ace2"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "788f7f21883c45d0ad6c381e65dd0c4994c33e595912bacbbbf6b692177acb94"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "05db6cf4bfb3566b04b31917731cc65ff09640c691650c76d3a71264a8c284b0"
+    },
+    {
+      "file": "astraupskill/snapshots/scripts__integration.mjs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "eaa18c886cdce4fa2d315c8b8470db7a1179beb691cdd052b8917f2b8468cc86"
+    },
+    {
+      "file": "astraupskill/snapshots/services__Fulfil__Services__ReadApi.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "32a999c1e76418d93021bb94efd8b246f250d6b2de67ab4421c3e71a75ab2315"
+    },
+    {
+      "file": "astraupskill/snapshots/src__components__Panels.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ac5dfe2e40973b7864c0b156a1e40201f32cae0c179260ffca9b5c4c44ad9efb"
+    },
+    {
+      "file": "scripts/integration.mjs",
+      "before_sha256": "eaa18c886cdce4fa2d315c8b8470db7a1179beb691cdd052b8917f2b8468cc86",
+      "after_sha256": "3f679a513bfee36be4b03a783386f580a9086fe8f66e295af7a4152a36c5f5b8"
+    },
+    {
+      "file": "scripts/test-refund-health.py",
+      "before_sha256": null,
+      "after_sha256": "a20cdff8a5abbe296b32e9072f09d471b934308d02dcaa6cd2b73ed709790ad1"
+    },
+    {
+      "file": "services/Fulfil/Services/ReadApi.cs",
+      "before_sha256": "32a999c1e76418d93021bb94efd8b246f250d6b2de67ab4421c3e71a75ab2315",
+      "after_sha256": "9c27965f1ad1eefea7f9141345e234b480f14fd2845910562e540fe3d46d8512"
+    },
+    {
+      "file": "src/components/Panels.tsx",
+      "before_sha256": "ac5dfe2e40973b7864c0b156a1e40201f32cae0c179260ffca9b5c4c44ad9efb",
+      "after_sha256": "e63ed02d8dd3a58dd2723bab0eddc986ebc2df3839d1e0aa167b7a47d7efed89"
+    },
+    {
+      "file": "src/lib/health.ts",
+      "before_sha256": null,
+      "after_sha256": "3f67800d4ac67c7439bf679c437e777338d3e5cef2bc9c1d6aa27aaf3d44dfce"
+    },
+    {
+      "file": "tests/Fulfil.Tests/RefundHealthTests.cs",
+      "before_sha256": null,
+      "after_sha256": "da1fd65b472c30b1246d78086bd5199ba030ef37cec4bb0a7804cb506c3ca00f"
+    },
+    {
+      "file": "tests/health.test.ts",
+      "before_sha256": null,
+      "after_sha256": "c0dab60080a2683d5653377b3d1fa4eead9387908c5e1758b78a39124e5c804e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a66c8bdcd4c1a275095475bbae47c055b9643c88fd5732d4e94f42d69eaf1253"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "1a08f766e63c57eea7e885885c158f69f11769b1383fe2dd400074e29316b97a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "94ec4b66723a252e7efba2d61f134184c1731de739c6b21e70cd708dbf7375a9"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c843a3eb46a4877b05f55b92497695dc206a859ef5daf1778a78d859b81a28d5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b7bb5517d6b59efedb5827f7ce090feec886bf00e529a6a632f77fb1059df85d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "f0fa0f7962cdea08a9fc252c156b0262fa24d966ce5ff6dd5dbb1c71b0114058"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "bf7940a88d21f45686683ac1bed2d98f6c1a6a43d725c13cf9f085ac2dd42db0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "07f8fc0d37e22c0aed3196ee6bb7181c7edf6a4647881b60f3f34a306b12d2a9"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4a8b4a20dfce593b3b98fdf591d130b80ce287c29279d0ff4b3507570dd168ed"
+    }
+  ],
+  "limits": [
+    "Health counts are separate reads, not an atomic reporting snapshot.",
+    "Database tests call the API function directly; frontend tests cover mapping, not browser interaction or provider refunds."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T20:06:26.933412+00:00"
+}

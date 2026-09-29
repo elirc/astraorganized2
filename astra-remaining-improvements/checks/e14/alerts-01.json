@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--disable-warnings",
+    "tests/test_notification_outbox.py",
+    "tests/test_mvp.py"
+  ],
+  "exitCode": 0,
+  "seconds": 132.6
+}

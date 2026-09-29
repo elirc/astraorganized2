@@ -1,0 +1,161 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/job track/live-chat-support-platform",
+  "id": "22be3051241f",
+  "summary": [
+    "Presence counts unique users across all their socket references; repeat joins no longer trigger duplicate presence updates.",
+    "Room events validate payloads and require the established connection identity and joined room; agent subscription checks the existing demo session role.",
+    "Message insertion, room activity and sender receipt commit together before broadcast or successful acknowledgement.",
+    "Read-through and history ordering distinguish messages sharing a timestamp.",
+    "Client subscriptions use stable room IDs and reconnect state; user switching disconnects old identity, and read/send operations wait for room join completion.",
+    "Nine detailed learning documents plus an updated architecture guide teach the actual code, real connection tests, failure cases, examples and mid-level extensions."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/chat/results.json",
+    "expectedTests": 13,
+    "command": "npm test -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; real Socket.IO clients/server over websocket transport and SQLite memory database"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 13,
+    "checks": [
+      {
+        "name": "socket",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--test-reporter=tap"
+        ],
+        "exitCode": 0,
+        "log": "checks/chat/socket.log"
+      },
+      {
+        "name": "web-build",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "log": "checks/chat/web-build.log"
+      }
+    ],
+    "initialRegressionRun": {
+      "tests": 6,
+      "failed": 6,
+      "note": "After adding isolated database option, before business fixes"
+    },
+    "scope": "Real Socket.IO server/client connections and SQLite memory database; React production build; no live browser, upload or REST endpoint verification"
+  },
+  "courseWords": 5764,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "e2a18903954bbfa45019e16c34b140cf4ea4931cbe8d8247a6188f820b3056b7",
+      "after_sha256": "84d2cdf0ea7e7a60737a9d1f260fcbca07ac629fde8fe46def6913b61df77a82"
+    },
+    {
+      "file": "ARCHITECTURE_DEEP_DIVE.md",
+      "before_sha256": "537217ec3526276f91e67584bd9ea75fe3896070cf917d82b0a699411337ac2d",
+      "after_sha256": "0a355c402566f4c6c430cc4bc4ce2612f8f1e3f2f5ace19782f949e9498d338d"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "6d794047a52ff59bfe8150e3016fee03a306a6fcea7326cc26f044995e069a85",
+      "after_sha256": "b8d2c0a115488064ed3e862d91eab1f42077d4b55e188f49f1d45fe2dd998b1b"
+    },
+    {
+      "file": "server/.env.example",
+      "before_sha256": "28bbf3352008c53c2bb0da0ddd4a547afa72a577026d9132bbbb42c13c378996",
+      "after_sha256": "5d065f79ccd76dcb6e5624579e5d12bdb70be2427f291a31e701d630a0049c33"
+    },
+    {
+      "file": "server/src/db/database.js",
+      "before_sha256": "c08a752ce861328ff5474802f109d0ec45ff0bd4986d13266c7f255be87d6d3f",
+      "after_sha256": "9c005323315e1d1d8027282b9e9a1a1e8c775f4a57fa963aa44934e9964db553"
+    },
+    {
+      "file": "server/src/socket.js",
+      "before_sha256": "6e938b83125653207d9ab24a7cdb20bb467af7a48b050b5d9cb8b076e3664d26",
+      "after_sha256": "6571e038f2a68b5f54d7a869e7be2b370c514a1eef3aad852e6359df3e2c13d7"
+    },
+    {
+      "file": "server/src/lib/validation.js",
+      "before_sha256": "bb3e053089c3dc9be4db1320bcff8a29db337df46a5c952c12d5f488ce1cefd1",
+      "after_sha256": "e57f647f385a8a20943a960eac1b4df25c0fcbeae85eda8e9ee40a9abe0953aa"
+    },
+    {
+      "file": "server/src/lib/chatService.js",
+      "before_sha256": "64223bc6f53d8c4039b5fbaed6823af49a2663bb1b2c9d090f88edb0cdd9077c",
+      "after_sha256": "5ebe779e8dd1d91fad73afebd61f20a89707a918b357f01fb6cf0201a016ece3"
+    },
+    {
+      "file": "client/src/App.jsx",
+      "before_sha256": "3e95721dbf0ebb2c039507c7e441e8031b56704744b9718cc464621b98114f72",
+      "after_sha256": "29a2cde5de5cc90e7b6029ea0ed39e410273fe938d2799a85c015787799a638b"
+    },
+    {
+      "file": "test/socket.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "abb21b8a3f9d9d0efb8f6e5c22db092ba9f0bdf33a8ba29f3f878fa3c0894665"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9fa1051ddf7a6bd9213ca41433f7e4f4a91108e0b7e6e5601c45cc6399b1db72"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "dd4eca0295bb43c2520699f3aca47cbc7e0ef096436c97ef289ff31f04eb7881"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0cc4ef50af0473a26d7efb3ee5544fcbe5cfa757e759a06ccf74a9c8821cc15d"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "8ecf297c0b535386e5b05a7642ab26b30cfd4545200050443b198c5feba38c42"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "38eb294a5200158b5b8dd14c46c09de7dbb075a05b9ec8a36e7779bd28a8f4c0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "cb092912454eac3e814ceca41d2c5c762b917d3fb7cf7a2896407e9ee646c2c6"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e1219b74e5d3490be7dace18ca3c0d89ebcece05fe17766ee55490979c2f5534"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "86a4ea5b41819ba3642769841b474c2da33c5b1575251e5d2d80b080ec3e7253"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1d19af38dc1d92caefab16588edb6669e78aac2d34b2752e441e6c4c815313bc"
+    }
+  ],
+  "limits": [
+    "No live browser or component interaction tests; React changes were source-reviewed and built.",
+    "REST endpoints, production entrypoint, physical uploads and persistent-file restart were not verified.",
+    "Demo identity is caller-controlled; private-room and REST authorization remain unimplemented.",
+    "Attachment metadata validation does not prove file ownership, existence or safety.",
+    "No message idempotency key, complete timestamp-tie pagination cursor, or cross-process presence coordination."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T03:19:55.058660+00:00"
+}

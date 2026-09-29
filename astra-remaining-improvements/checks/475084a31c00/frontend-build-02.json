@@ -1,0 +1,19 @@
+{
+  "project": "grokbuildppmproject",
+  "id": "475084a31c00",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\475084a31c00\\frontend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:02:05.342801+00:00",
+  "status": "complete",
+  "log": "frontend-build-02.log",
+  "pid": 6280,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-12T20:03:16.440655+00:00",
+  "elapsedSeconds": 71.09
+}

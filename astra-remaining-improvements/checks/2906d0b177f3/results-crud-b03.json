@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 3,
+  "checks": [
+    {
+      "project": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+      "id": "2906d0b177f3",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-deployment-ownership.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2906d0b177f3",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:05:03.609655+00:00",
+      "status": "complete",
+      "log": "crud-b03-astra-runtime.log",
+      "pid": 19124,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:05:15.537352+00:00",
+      "elapsedSeconds": 11.92
+    }
+  ],
+  "limits": [
+    "Route is executed with explicit NextResponse, Zod, Prisma, session, RBAC, and platform-service doubles through a local VM loader.",
+    "No live Next, Prisma SQL, database foreign key, authentication middleware, audit persistence, or concurrency test was run.",
+    "Other deployment creation callers and GET behavior are unchanged; the guard validates the relationship at lookup time and does not make later writes atomic."
+  ]
+}

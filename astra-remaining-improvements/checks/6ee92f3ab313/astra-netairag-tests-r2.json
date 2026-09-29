@@ -1,0 +1,27 @@
+{
+  "project": "netairag",
+  "id": "6ee92f3ab313",
+  "command": [
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+    "test",
+    "tests/UnitTests/NetAiOps.UnitTests.csproj",
+    "--no-build",
+    "--no-restore",
+    "--logger",
+    "trx",
+    "--verbosity",
+    "minimal"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6ee92f3ab313",
+  "environmentOverrides": {
+    "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+  },
+  "startedAt": "2026-09-19T21:58:39.337694+00:00",
+  "status": "complete",
+  "log": "astra-netairag-tests-r2.log",
+  "pid": 25564,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T22:00:02.664527+00:00",
+  "elapsedSeconds": 83.32
+}

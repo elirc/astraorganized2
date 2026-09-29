@@ -1,0 +1,90 @@
+from __future__ import annotations
+
+from pathlib import Path
+
+from sqlalchemy import create_engine, event, inspect
+from sqlalchemy.engine import make_url
+from sqlalchemy.orm import sessionmaker
+
+from app.config import Settings, settings
+from app.models import Base
+
+VERSION_TABLES = ("streams", "dashboards", "saved_queries", "alerts", "pipelines")
+
+
+def build_engine(app_settings: Settings | None = None):
+    cfg = app_settings or settings
+    url = make_url(cfg.database_url)
+    if url.get_backend_name() != "sqlite":
+        raise ValueError("SQLite is required")
+    if url.database and url.database != ":memory:":
+        Path(url.database).resolve().parent.mkdir(parents=True, exist_ok=True)
+    engine = create_engine(
+        cfg.database_url, connect_args={"check_same_thread": False, "timeout": 5}, future=True
+    )
+
+    @event.listens_for(engine, "connect")
+    def configure(connection, _record):
+        cursor = connection.cursor()
+        cursor.execute("PRAGMA foreign_keys=ON")
+        cursor.execute("PRAGMA busy_timeout=5000")
+        cursor.close()
+
+    return engine
+
+
+def build_sessionmaker(db_engine):
+    return sessionmaker(bind=db_engine, autoflush=False, expire_on_commit=False, future=True)
+
+
+def init_db(db_engine):
+    # Opening an existing database never silently alters its historical schema.
+    inspector = inspect(db_engine)
+    tables = set(inspector.get_table_names())
+    legacy = [
+        table
+        for table in VERSION_TABLES
+        if table in tables
+        and "version" not in {column["name"] for column in inspector.get_columns(table)}
+    ]
+    if legacy:
+        raise RuntimeError(
+            "Existing database needs explicit migration after a private backup: python -m app.migrate --apply"
+        )
+    if tables:
+        expected = set(Base.metadata.tables)
+        if not expected <= tables:
+            raise RuntimeError(
+                "Incomplete existing E14 schema; restore or investigate before startup"
+            )
+        with db_engine.connect() as connection:
+            indexes = {
+                row[0]
+                for row in connection.exec_driver_sql(
+                    "SELECT name FROM sqlite_master WHERE type='index'"
+                )
+            }
+            if not set(INDEXES) <= indexes:
+                raise RuntimeError(
+                    "Existing database needs explicit migration after a private backup: python -m app.migrate --apply"
+                )
+            if connection.exec_driver_sql("PRAGMA foreign_key_check").first():
+                raise RuntimeError(
+                    "Existing foreign-key inconsistencies require investigation; database was not reset"
+                )
+        return
+    Base.metadata.create_all(db_engine)
+    with db_engine.begin() as connection:
+        if connection.exec_driver_sql("PRAGMA foreign_key_check").first():
+            raise RuntimeError(
+                "Existing foreign-key inconsistencies require investigation; database was not reset"
+            )
+        for name, sql in INDEXES.items():
+            connection.exec_driver_sql(sql)
+
+
+INDEXES = {
+    "uq_users_email_lower": "CREATE UNIQUE INDEX IF NOT EXISTS uq_users_email_lower ON users(lower(email))",
+    "uq_logs_org_dedupe": "CREATE UNIQUE INDEX IF NOT EXISTS uq_logs_org_dedupe ON log_events(organization_id,dedupe_key)",
+    "uq_metrics_org_dedupe": "CREATE UNIQUE INDEX IF NOT EXISTS uq_metrics_org_dedupe ON metric_points(organization_id,dedupe_key)",
+}

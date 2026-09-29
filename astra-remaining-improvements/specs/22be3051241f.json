@@ -1,0 +1,36 @@
+{
+  "changedFiles": [
+    "README.md",
+    "ARCHITECTURE_DEEP_DIVE.md",
+    "package.json",
+    "server/.env.example",
+    "server/src/db/database.js",
+    "server/src/socket.js",
+    "server/src/lib/validation.js",
+    "server/src/lib/chatService.js",
+    "client/src/App.jsx",
+    "test/socket.test.cjs"
+  ],
+  "summary": [
+    "Presence counts unique users across all their socket references; repeat joins no longer trigger duplicate presence updates.",
+    "Room events validate payloads and require the established connection identity and joined room; agent subscription checks the existing demo session role.",
+    "Message insertion, room activity and sender receipt commit together before broadcast or successful acknowledgement.",
+    "Read-through and history ordering distinguish messages sharing a timestamp.",
+    "Client subscriptions use stable room IDs and reconnect state; user switching disconnects old identity, and read/send operations wait for room join completion.",
+    "Nine detailed learning documents plus an updated architecture guide teach the actual code, real connection tests, failure cases, examples and mid-level extensions."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/chat/results.json",
+    "expectedTests": 13,
+    "command": "npm test -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; real Socket.IO clients/server over websocket transport and SQLite memory database"
+  },
+  "limits": [
+    "No live browser or component interaction tests; React changes were source-reviewed and built.",
+    "REST endpoints, production entrypoint, physical uploads and persistent-file restart were not verified.",
+    "Demo identity is caller-controlled; private-room and REST authorization remain unimplemented.",
+    "Attachment metadata validation does not prove file ownership, existence or safety.",
+    "No message idempotency key, complete timestamp-tie pagination cursor, or cross-process presence coordination."
+  ]
+}

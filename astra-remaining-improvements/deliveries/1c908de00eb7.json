@@ -1,0 +1,174 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+  "id": "1c908de00eb7",
+  "summary": [
+    "Applies ownership consistently to representative lead search and dashboard activity, filtering before text matching or the eight-event limit while preserving shared company reads and founder/analyst visibility.",
+    "Validates representative task ownership and existing target ownership before writes, preventing foreign or missing task/note attachments and retaining activity events for permitted writes.",
+    "Serializes lead conversion as one updateCrmDatabase callback that reads current state, checks authorization and retry state, constructs a coherent company/contact/deal/converted-lead/event graph, and commits one replacement value.",
+    "Supports absolute CRM_DB_PATH fixtures, keeps repository updates serialized within one process, and documents the direct JSON write and demo-cookie durability/authentication limits.",
+    "Replaces the unusable next lint command with a finite TypeScript ESLint flat configuration, adds a tsx test command and lockfile, and supplies nine source-grounded learning guides with exact review snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1c908de00eb7/results.json",
+    "logFile": "checks/1c908de00eb7/verify-01.log",
+    "sourceHashesFile": "checks/1c908de00eb7/verify-01-source-hashes.json",
+    "expectedTests": 5,
+    "command": "cmd /c npm.cmd run typecheck && npm.cmd test && npm.cmd run lint && npm.cmd run build",
+    "environment": "Node.js 22; Next.js 15.5.14; TypeScript 5.8.3; ESLint 9 direct TypeScript flat config; synthetic temporary JSON fixture; no external services",
+    "notes": [
+      "Build warning: Next ESLint plugin is not detected because the finite config enables direct TypeScript rules; build and type validation pass.",
+      "Test command exercises actual service functions against an isolated absolute temporary file.",
+      "No production database, user data, private keys, or external service is used."
+    ]
+  },
+  "testResults": {
+    "passed": true,
+    "total": 5,
+    "passedTests": 5,
+    "failed": 0,
+    "records": [
+      "verify-01.json"
+    ]
+  },
+  "courseWords": 4136,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "0c2b52ba440ab28993a787842d83130394a2b6a5e12e6442f2cc042d425dc839",
+      "after_sha256": "7be688b45941fc065cff9f2fd4826a5057fa551839619197df9ded7aac5a8e8b"
+    },
+    {
+      "file": "src/modules/crm/service.ts",
+      "before_sha256": "44978d35e91b4704114bb1ec25b01479662d43e2738bd32a6b93374cb0f58b9f",
+      "after_sha256": "743608247ad1d6407c9be5857f40030d290feee46443662039b3da371ded8e67"
+    },
+    {
+      "file": "src/modules/crm/repository.ts",
+      "before_sha256": "2dea575eb45509dd24bc89a6ea184caa095e9981e87c4df01a026e1474614b85",
+      "after_sha256": "69940da74d811b58bb1d026f8e5424017fb1ff3eee0e64f4c20d91824adc59b1"
+    },
+    {
+      "file": "src/server/json-store.ts",
+      "before_sha256": "e633ac597af491675b477958caee7305a2f874f8d405e8ae69a22ec2e230cd73",
+      "after_sha256": "19512735b556cf3493e03b66648aedd1296e00bfcb3c45737f3f90ddb886ce6b"
+    },
+    {
+      "file": "src/modules/auth/session.ts",
+      "before_sha256": "ba13e4bfc7ef6baecb22b23880eeded1d0a332ba6393b275df1956ba956a1b9c",
+      "after_sha256": "85743e43dedf83dc8a62d6f59da5700f74ca06888eccc36d4539015b16e959bc"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "85fa8882a8ea9e0b2e170f0000cc802f5e83c996bf54e58ec757c5da67d53103",
+      "after_sha256": "0a8daabadd363c481e8b091760dc40041fce2bd1f54b6bb5c995fc2e419081df"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "295526ec4df70cb50df4868d5d3e0fc99337eac060c099efe0be89b1c7163cc7",
+      "after_sha256": "c5407f239a4b2c8c88c0eba68dfb320792fbb7bc3fabe16ce71040f90258d477"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "05d189e64ca3a78c7282f54e33c322f30471eea4e987ea8a320e452fa9779dfa"
+    },
+    {
+      "file": "tests/crm.test.ts",
+      "before_sha256": null,
+      "after_sha256": "3b111a3b29335eaaf13c24bc8a1c5360ba07c5876868a03efb243a8861d42a96"
+    },
+    {
+      "file": "snapshots/service-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "44978d35e91b4704114bb1ec25b01479662d43e2738bd32a6b93374cb0f58b9f"
+    },
+    {
+      "file": "snapshots/repository-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "2dea575eb45509dd24bc89a6ea184caa095e9981e87c4df01a026e1474614b85"
+    },
+    {
+      "file": "snapshots/json-store-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "e633ac597af491675b477958caee7305a2f874f8d405e8ae69a22ec2e230cd73"
+    },
+    {
+      "file": "snapshots/session-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "ba13e4bfc7ef6baecb22b23880eeded1d0a332ba6393b275df1956ba956a1b9c"
+    },
+    {
+      "file": "snapshots/package-before.json",
+      "before_sha256": null,
+      "after_sha256": "85fa8882a8ea9e0b2e170f0000cc802f5e83c996bf54e58ec757c5da67d53103"
+    },
+    {
+      "file": "astraupskill/evidence/verify-01.json",
+      "before_sha256": null,
+      "after_sha256": "0087616f516aa7244f2daf733395cf801f0fb6934e6b4c2fa892ab487769ddc6"
+    },
+    {
+      "file": "astraupskill/evidence/verify-01.log",
+      "before_sha256": null,
+      "after_sha256": "a4b15856a35141948869159cfd6b2ec6a55ab7587694afa8a49c50342b95d0f7"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9a563dd165f01450e8b06349b357b300a71bcc8cb3e7794ea9e2f510da82f001"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7712406791a0d0a4af8e5e2db01d914935f6eae833ce32b2237ac71a84c79ef9"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d51e96c044ea31cbd0b60b7fb4e202bffa07eeb631714540ceca0f1ebccabfae"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "e2b0f1a1021a60c90684f58a1101c9434368ef7f847a4ea6924abe8b6639af14"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "a6e562736387b22688e3ed9153517956f2a911b467d5e13bf00aa19bfe6acea0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "435b205742f9316ff833f4efe8f1e93d884f9a91086921db2de565d0b44df8fa"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a871891a631470a3cdc38404e736e855a339c9989321fc80b800df375f025478"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a96db4e91ee0a39faf82ee4274f94162b6b32db115df74c5b544c180006d09cc"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "9b5f4b8d403579a90c73cdbc5c862ce4403e2f0011778321167ca71ddc9f7aa4"
+    }
+  ],
+  "limits": [
+    "The promise queue serializes update callbacks only within one Node process; a second process can race on the JSON file.",
+    "Direct fs.writeFile is not crash-safe; database transactions, constraints and idempotency are future production work.",
+    "Task/note target authorization reads occur outside the write queue, so this is request-time policy coverage rather than cross-process race protection.",
+    "The demo cookie selects local users and is not production authentication, revocation, MFA or durable session security.",
+    "The finite ESLint setup runs TypeScript rules for explicit source/config paths; Next plugin recommended lint rules are not enabled, as recorded by the build warning.",
+    "Company listings remain intentionally shared under the existing product contract; no external database, browser automation or delivery worker is covered."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T20:26:44.743843+00:00"
+}

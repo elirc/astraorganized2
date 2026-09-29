@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "total": 17,
+  "tests": 17,
+  "failed": 0,
+  "skipped": 0,
+  "terminalLabel": "session-53108",
+  "command": "npm run test -- --run src/lib/commerce/commerce.test.ts --reporter=dot",
+  "checks": {
+    "test": {"label": "e13_tests_verified_20260913", "record": "checks/7f871ce5e237/e13_tests_verified_20260913.json", "passed": true, "tests": 17},
+    "lint": {"label": "e13_lint_final3", "record": "checks/7f871ce5e237/e13_lint_final3.json", "passed": true},
+    "typecheck": {"label": "e13_typecheck_final2", "record": "checks/7f871ce5e237/e13_typecheck_final2.json", "passed": true},
+    "build": {"label": "e13_build_final1", "record": "checks/7f871ce5e237/e13_build_final1.json", "passed": true}
+  },
+  "scope": "Production commerce Vitest flows use isolated SQLite; lint, TypeScript noEmit, and Next production build completed in separate terminal records. No live provider, browser, HTTP server, crash consistency, or cross-process concurrency coverage."
+}

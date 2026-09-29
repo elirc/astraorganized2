@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e6",
+  "id": "20574f0b81b4",
+  "command": [
+    "node",
+    "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "run",
+    "typecheck",
+    "--workspace",
+    "@workspace/api"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\20574f0b81b4",
+  "environmentOverrides": {
+    "DATABASE_URL": "file:./e6-check.db"
+  },
+  "startedAt": "2026-09-12T22:12:04.348883+00:00",
+  "status": "complete",
+  "log": "e6-typecheck-01.log",
+  "pid": 4244,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:13:14.973239+00:00",
+  "elapsedSeconds": 70.62
+}

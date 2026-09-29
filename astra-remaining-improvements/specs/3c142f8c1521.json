@@ -1,0 +1,25 @@
+{
+  "id": "3c142f8c1521",
+  "project": "_Organized Desktop/05 Numbered Experiments/D2",
+  "summary": [
+    "Snapshot newly accepted project rules in review metadata instead of stale pre-update rules.",
+    "Return the same finalized metadata written to the review, including its template and effective rules."
+  ],
+  "changedFiles": [
+    "src/app/api/reviews/route.ts",
+    "astraupskill/snapshots/reviews-route.ts.original.txt",
+    "tests/runtime-review-metadata.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b03-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3c142f8c1521/results-crud-b03.json"
+  },
+  "limits": [
+    "Tests execute the actual POST route using explicit ORM, Zod parser, ingestion and NextResponse adapter doubles.",
+    "No PostgreSQL, GitHub ingestion, native Next.js or real Zod validation was executed.",
+    "The existing review creation and rules writes are separate operations; this bounded metadata correction does not add atomic transactions or prevent an incomplete pending review on a later failure."
+  ]
+}

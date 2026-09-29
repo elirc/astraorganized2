@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "saved credentials are represented by presence with blank write-only fields",
+      "passed": true
+    },
+    {
+      "name": "settings PATCH preserves omitted key and sends explicit clear and false values",
+      "passed": true
+    },
+    {
+      "name": "failed settings save retains draft and requires explicit accepted-state reload",
+      "passed": true
+    },
+    {
+      "name": "expanded settings controls remain reachable in minimum-size window",
+      "passed": true
+    },
+    {
+      "name": "cancel control invokes dedicated bridge operation for in-flight work",
+      "passed": true
+    },
+    {
+      "name": "startup storage errors are displayed instead of silently treated as ready",
+      "passed": true
+    }
+  ],
+  "evidence": "Chromium with mocked preload; no native Electron, OS encryption, capture or providers"
+}

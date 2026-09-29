@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildjira",
+  "id": "0e78f57d70d1",
+  "command": [
+    "dotnet",
+    "build",
+    "apps/dotnet/BuildJira.Api/BuildJira.Api.csproj",
+    "-c",
+    "Release",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:16:35.610561+00:00",
+  "status": "complete",
+  "log": "build-release-02.log",
+  "pid": 2040,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T19:16:43.464559+00:00",
+  "elapsedSeconds": 7.85
+}

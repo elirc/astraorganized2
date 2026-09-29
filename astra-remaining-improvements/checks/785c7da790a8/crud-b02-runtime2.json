@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master",
+  "id": "785c7da790a8",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/task-project-isolation.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\785c7da790a8",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:59:04.967539+00:00",
+  "status": "complete",
+  "log": "crud-b02-runtime2.log",
+  "pid": 34908,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-21T23:59:11.370218+00:00",
+  "elapsedSeconds": 6.4
+}

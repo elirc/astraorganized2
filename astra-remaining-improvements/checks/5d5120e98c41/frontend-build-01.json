@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "id": "5d5120e98c41",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5d5120e98c41\\frontend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:27:35.917674+00:00",
+  "status": "complete",
+  "log": "frontend-build-01.log",
+  "pid": 28352,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:28:23.022634+00:00",
+  "elapsedSeconds": 47.1
+}

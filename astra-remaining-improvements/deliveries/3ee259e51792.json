@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz9",
+  "id": "3ee259e51792",
+  "summary": [
+    "Preserve tri-state PATCH semantics for nullable requesterEmail and sourceSystem fields.",
+    "Convert present empty values to null while retaining omitted values as undefined.",
+    "Keep scoped lookup and transaction ordering unchanged.",
+    "Five actual-service cases execute real permissions, team scope, note filtering and domain errors."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3ee259e51792/results-crud-b08.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz9",
+        "id": "3ee259e51792",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-case-clearable-fields.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3ee259e51792",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:32:53.542179+00:00",
+        "status": "complete",
+        "log": "crud-b08-astra-runtime.log",
+        "pid": 33760,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:33:11.734963+00:00",
+        "elapsedSeconds": 18.19
+      }
+    ],
+    "limits": [
+      "VM test uses explicit dependency doubles and does not execute Prisma SQL, routes, or middleware.",
+      "No concurrent update or full schema integration claim."
+    ]
+  },
+  "courseWords": 1691,
+  "courseFiles": 9,
+  "courseLinksChecked": 6,
+  "files": [
+    {
+      "file": "src/services/caseService.ts",
+      "before_sha256": "ac4cd863254407ce4639565997aedf714f6e00f3afc7295c873e4b99e77a2e5e",
+      "after_sha256": "e73136546f8223e7b8ea8a14a3b763ffb6885d0a9ac381fac4a92bdad437610e"
+    },
+    {
+      "file": "tests/runtime-case-clearable-fields.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "594773d2985fb049ded1900a0cbe5d1918d90efd5d718af10b134686487962ef"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-caseService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "ac4cd863254407ce4639565997aedf714f6e00f3afc7295c873e4b99e77a2e5e"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b08-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "e3b503e3211a36a832233d700f0fdb468f134584b9f2679e88a7802028aeeb58"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "a41c03054e1476ea2f5e88aa51e563235feeb0447f421076e5c7cdcd1fc3feab"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "89b58c5dc76e119cbf286df4bcec6639569d46b4c15a45aec449201554c06b84"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "8b399ae3f5d15842898c57bf51bbe235b27bcc1344d2d174e094930edaca6577"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "4898f9a454d2d62f6e285ba625b4c4104b26211938929d157b5bb882ef4b1098"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1126ef776856a4f50b0ce5b4a17ada74069587056ad17ddf973bd3dcfdca8b0a"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "3f0d25a6cc12b5c81d2f98ce18724ab3d40374698064cd8305b2001d59a7f30f"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3c67c7cdd86964f761bcd9d88a8312157e53c742a3c08fa6b2694e4b0c9d17d5"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "732d06f905485e83e2c42dceda0039320cea6e4e747bc2abf192a5178e2259fa"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "60489c82afb155fdd351aa045a64fd50572db068900fd09ac9eea84b8805cdc4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2cad3efba8645bc2f267762bfd10f143fa702c3a59ae249cbaef031b146fffc6"
+    }
+  ],
+  "limits": [
+    "VM test uses explicit dependency doubles and does not execute Prisma SQL, routes, or middleware.",
+    "No concurrent update or full schema integration claim."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:43:00.391362+00:00"
+}

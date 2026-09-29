@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "browserRun": "browser-02",
+  "images": ["desktop.png", "narrow.png"],
+  "viewports": ["1440 x 1050", "390 x 844"],
+  "observations": [
+    "Desktop navigation, metrics, simulator controls and paginated record rows are aligned and readable.",
+    "Narrow layout stacks metrics and controls, wraps navigation into three columns and keeps record actions visible without horizontal overflow.",
+    "Visible text is correctly encoded; status and action labels are legible with no overlapping controls.",
+    "Screenshots show fictional data from the final passing packaged-browser run."
+  ]
+}

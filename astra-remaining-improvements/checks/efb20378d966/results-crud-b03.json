@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/04 JavaScript Training/jstrain1",
+      "id": "efb20378d966",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-role-duplicates.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\efb20378d966",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T01:59:40.639806+00:00",
+      "status": "complete",
+      "log": "crud-b03-astra-runtime.log",
+      "pid": 26712,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T01:59:50.173502+00:00",
+      "elapsedSeconds": 9.53
+    }
+  ],
+  "limits": [
+    "Runtime uses explicit repository, Prisma transaction, role lookup, audit, bcrypt, and pagination doubles through a local VM loader.",
+    "No live Prisma schema, HTTP integration, rollback, isolation, or concurrent request test was executed.",
+    "Only role replacement is normalized; user creation is unchanged. Role validation remains outside the transaction; the test checks shared transaction-handle wiring, not real isolation."
+  ]
+}

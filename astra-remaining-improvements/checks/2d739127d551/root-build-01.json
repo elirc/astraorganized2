@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "id": "2d739127d551",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2d739127d551",
+  "environmentOverrides": {
+    "DATABASE_URL": "file:./astra-validation-placeholder.db"
+  },
+  "startedAt": "2026-09-12T23:32:03.913238+00:00",
+  "status": "complete",
+  "log": "root-build-01.log",
+  "pid": 3288,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T23:36:56.092738+00:00",
+  "elapsedSeconds": 292.17
+}

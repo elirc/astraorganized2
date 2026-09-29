@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww40",
+  "id": "7a06d436fe48",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/job-posting-service-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7a06d436fe48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:00:01.424556+00:00",
+  "status": "complete",
+  "log": "crud-ww40-runtime-v5.log",
+  "pid": 32704,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:00:09.213438+00:00",
+  "elapsedSeconds": 7.79
+}

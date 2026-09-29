@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "directory": "browser-02",
+  "review": "All five images opened: readable desktop forms, literal hostile text, retained-draft comparison, variant JSON, viewer restrictions, and stacked mobile layout. Subsequent CSS only adds long-heading wrapping and full-width metadata.",
+  "files": [
+    {
+      "name": "01-desktop.png",
+      "sha256": "244de110982333688c3cacaf2c8bdb065fda9c1c20e85f3626f0f30bf5900d65"
+    },
+    {
+      "name": "02-conflict-review.png",
+      "sha256": "c36125c0c4634fe2752d6f358ebd5dc40bb469372719f13fd03c5684eb1858d3"
+    },
+    {
+      "name": "03-variant-editor.png",
+      "sha256": "fc23831bac8893f1735fba83f2b2aac49f35dce57a2c00a05c8bb612c9cb4fdd"
+    },
+    {
+      "name": "04-viewer.png",
+      "sha256": "753778badca5b71465665094d9477cfea005a99444a8573e99367b28da9fa9e8"
+    },
+    {
+      "name": "05-mobile.png",
+      "sha256": "e9b1ce8d34ff3b52f7a4101344847e6f6de68f8a27e05ced30fbbaa9034a194f"
+    }
+  ]
+}

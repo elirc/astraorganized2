@@ -1,0 +1,79 @@
+{
+  "passed": false,
+  "total": 18,
+  "checks": [
+    {
+      "name": "initial catalog does not eagerly persist or invent shipment history",
+      "passed": true
+    },
+    {
+      "name": "inventory CRUD preserves cents versions and reload state",
+      "passed": true
+    },
+    {
+      "name": "plan CRUD and unused deletion work",
+      "passed": true
+    },
+    {
+      "name": "subscriber CRUD normalizes email and persists ratings and status",
+      "passed": false,
+      "error": "Locator.select_option: Timeout 60000ms exceeded.\nCall log:\n  - waiting for get_by_label(\"Subscription status\", exact=True)\n"
+    },
+    {
+      "name": "duplicate email rejection preserves the draft",
+      "passed": true
+    },
+    {
+      "name": "excluded tags and archived inventory cannot enter new boxes",
+      "passed": true
+    },
+    {
+      "name": "reservation atomically persists exact box and available stock",
+      "passed": true
+    },
+    {
+      "name": "a second request key cannot duplicate a subscriber month",
+      "passed": true
+    },
+    {
+      "name": "cancellation restores once and history protects referenced records",
+      "passed": true
+    },
+    {
+      "name": "pack ship deliver requires tracking and keeps terminal history",
+      "passed": true
+    },
+    {
+      "name": "accepted contents and costs survive later inventory edits",
+      "passed": true
+    },
+    {
+      "name": "stale tab retains and exports its editor draft",
+      "passed": true
+    },
+    {
+      "name": "lost acknowledgement retry returns the same reservation without stock loss",
+      "passed": true
+    },
+    {
+      "name": "failed storage write retains draft without successful acceptance",
+      "passed": true
+    },
+    {
+      "name": "corrupt bytes export reviewed restore and invalid import rejection",
+      "passed": true
+    },
+    {
+      "name": "cancelled navigation preserves the unsaved editor",
+      "passed": true
+    },
+    {
+      "name": "pagination clamps after deletion and search treats punctuation literally",
+      "passed": true
+    },
+    {
+      "name": "desktop tablet and phone layouts keep controls readable",
+      "passed": true
+    }
+  ]
+}

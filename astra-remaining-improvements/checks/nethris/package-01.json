@@ -1,0 +1,13 @@
+{
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "scripts/package.ps1"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 967.84
+}

@@ -1,0 +1,135 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "summary": [
+    "Reject duplicate fulfillment lines, empty or unsafe quantities, invalid states, and wrong order or warehouse allocations before writes.",
+    "Use the remaining captured payment balance once, validate refund keys, and return bound persisted receipts on safe retries.",
+    "Isolate the SQLite fixture on an absolute temporary database and add source-grounded nine chapter learning material."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7f871ce5e237/results.json",
+    "expectedTests": 17,
+    "command": "npm run test -- --run src/lib/commerce/commerce.test.ts --reporter=dot",
+    "environment": "Node 22; Vitest 4; Prisma SQLite; isolated absolute temporary database"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 17,
+    "tests": 17,
+    "failed": 0,
+    "skipped": 0,
+    "terminalLabel": "session-53108",
+    "command": "npm run test -- --run src/lib/commerce/commerce.test.ts --reporter=dot",
+    "checks": {
+      "test": {
+        "label": "e13_tests_verified_20260913",
+        "record": "checks/7f871ce5e237/e13_tests_verified_20260913.json",
+        "passed": true,
+        "tests": 17
+      },
+      "lint": {
+        "label": "e13_lint_final3",
+        "record": "checks/7f871ce5e237/e13_lint_final3.json",
+        "passed": true
+      },
+      "typecheck": {
+        "label": "e13_typecheck_final2",
+        "record": "checks/7f871ce5e237/e13_typecheck_final2.json",
+        "passed": true
+      },
+      "build": {
+        "label": "e13_build_final1",
+        "record": "checks/7f871ce5e237/e13_build_final1.json",
+        "passed": true
+      }
+    },
+    "scope": "Production commerce Vitest flows use isolated SQLite; lint, TypeScript noEmit, and Next production build completed in separate terminal records. No live provider, browser, HTTP server, crash consistency, or cross-process concurrency coverage."
+  },
+  "courseWords": 3366,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "src/lib/commerce/commerce.test.ts",
+      "before_sha256": "f359a1f61ca0d16f1d32f45dba009dae628f507c547f786e3e3a573224a0a098",
+      "after_sha256": "1bb128929125a6624564c7d23b5fc08d2488d622d597e3597bc595eff0815896"
+    },
+    {
+      "file": "src/lib/commerce/orders.ts",
+      "before_sha256": "4e9c0035c7945543ed71d2f3b710acea2ac1cbaf266f073c263e47d228d5e5cd",
+      "after_sha256": "9a27ade1998061ecd2a353a2b0f52dc6e62d7b21e531ac37bb0c1be0bc8435bc"
+    },
+    {
+      "file": "src/lib/commerce/webhooks.ts",
+      "before_sha256": "68053af1988f83fef3ed9f7e8c3bb4d3f556a0b745d87b2fb2d5de685c6a3b37",
+      "after_sha256": "a4017806d01d247bfc900bccb0b20e980eb7cf9b9b52b184e7eed411f86a7325"
+    },
+    {
+      "file": "astraupskill/original/src/lib/commerce/orders.ts",
+      "before_sha256": null,
+      "after_sha256": "4e9c0035c7945543ed71d2f3b710acea2ac1cbaf266f073c263e47d228d5e5cd"
+    },
+    {
+      "file": "astraupskill/original/src/lib/commerce/webhooks.ts",
+      "before_sha256": null,
+      "after_sha256": "68053af1988f83fef3ed9f7e8c3bb4d3f556a0b745d87b2fb2d5de685c6a3b37"
+    },
+    {
+      "file": "astraupskill/original/src/lib/commerce/commerce.test.ts",
+      "before_sha256": null,
+      "after_sha256": "f359a1f61ca0d16f1d32f45dba009dae628f507c547f786e3e3a573224a0a098"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "2fdd6fee1fa23249efcaea7f24c77ff6f8c888c37e800e68a250f70de339eb63"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d059dfce91089116550f595565a4488518fc35a01110e918acd5858c8aec7ea1"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5043a7d5c11b09ad7b25ade779d63b99a3e9c53ffe45ab232880b6eab43a88a8"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4258aac013f67066592cfab1dbd8ff3e424ed06315c3f078e9a95851357fee95"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b4b2c7343234bec7f036fdde20dad6f4a430ffaea516d0f0f65d507b3938912d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "4c79fc89c84fc6f9fbde73b0ede2f759833f67596337bd816df3dfed86a44923"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "46676bde708eb9f99ec06f33ed1c6992aa8457a0dde0383945f4d59650c83204"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "fc25c8d2749f87721e7e91dae3e74579c8b4d505c007c7eaaeba32088a1cdbf0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "398f8d9dc20c18f5af506af5140d35102027c75e558c8a9411bd0dc785dfe0ac"
+    }
+  ],
+  "limits": [
+    "Focused tests use real SQLite service flows but no live payment provider, browser, live HTTP server, crash consistency, or concurrent first-use key claims.",
+    "GraphQL listOrders channel filtering and checkout provider concurrency remain outside this increment."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T13:50:27.086451+00:00"
+}

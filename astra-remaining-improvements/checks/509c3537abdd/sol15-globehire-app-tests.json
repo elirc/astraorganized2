@@ -1,0 +1,28 @@
+{
+  "project": "globehire",
+  "id": "509c3537abdd",
+  "command": [
+    "--cwd",
+    ".",
+    "--env",
+    "DOTNET_CLI_HOME=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\dotnet-home",
+    "--env",
+    "MSBUILDDISABLENODEREUSE=1",
+    "--",
+    "dotnet",
+    "test",
+    "tests\\GlobeHire.Application.Tests\\GlobeHire.Application.Tests.csproj",
+    "--disable-build-servers",
+    "-m:1",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\509c3537abdd",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T21:07:04.356303+00:00",
+  "status": "launch-failed",
+  "log": "sol15-globehire-app-tests.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-19T21:07:04.885935+00:00",
+  "elapsedSeconds": 0.51
+}

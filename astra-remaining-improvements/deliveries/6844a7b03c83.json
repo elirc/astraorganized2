@@ -1,0 +1,179 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/react",
+  "id": "6844a7b03c83",
+  "summary": [
+    "Repairs broken asset paths and duplicate startup scripts with explicit browser modules and a loopback static server.",
+    "Adds category/question CRUD with stable IDs, isolated drafts, confirmed deletion, validated import/export and legacy saved-data migration.",
+    "Publishes accepted state only after storage succeeds; Web Locks plus exact baseline comparison reject competing stale saves and preserve failed drafts.",
+    "Preserves corrupt data until explicit replacement, provides raw recovery export, and cleans used-clue references when questions or categories are deleted.",
+    "Implements accessible clue reveal, explicit used markers, persisted round progress, keyboard dialogs and responsive layouts with literal text rendering.",
+    "Adds 20 store tests, eleven real Chromium workflows, six syntax gates, two reviewed screenshots and nine detailed CRUD learning documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/quiz-board/final/results.json",
+    "expectedTests": 31,
+    "command": "npm test; eleven Playwright Chromium scenarios; six node --check gates; desktop/narrow screenshot review",
+    "environment": "Node 22.16.0; Playwright 1.60.0; Chromium; fresh browser contexts, real localStorage/Web Locks and loopback HTTP"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 31,
+    "storeTests": 20,
+    "chromiumScenarios": 11,
+    "syntaxChecks": 6,
+    "environment": "Node 22.16.0; Playwright 1.60.0; Chromium; isolated browser contexts and loopback static server",
+    "checks": [
+      "CRUD and persisted reload",
+      "Actual two-tab Web Locks and stale editor conflicts",
+      "Quota failure and corrupt-data recovery",
+      "Literal text rendering and import/export",
+      "Round progress and keyboard dialog behavior",
+      "Desktop/narrow screenshots and overflow checks",
+      "Static asset allowlist and response headers"
+    ]
+  },
+  "courseWords": 3921,
+  "courseFiles": 9,
+  "courseLinksChecked": 28,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "63efac973ded3e09921e703f02e44877208f9fc00fdb9aff163babd4d2772d75"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "4b82ae170463224773903d0a21ddba3dc865c34642f9bd6693fc369d5ddc427d"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "8138c4c5492d43145d185852d0e55d8ebe3e26ea7a93bed1ed66b0f95b2606b1"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "690b3e88f4a72e84575796be7514d9593e33eaca4a7cd15e171c6de183c30cdf"
+    },
+    {
+      "file": "board.js",
+      "before_sha256": "6add2bd321bcb6917ec25f521bed48d104b31ead9d30599b1f537df97bb3bfda",
+      "after_sha256": "89765a8ce8bd5d04e676cddeae7ca3ae1970d5966eccc9a616e70da602e43f0e"
+    },
+    {
+      "file": "data.js",
+      "before_sha256": "abbb517d3ef7fc552782722b8e401ca8117c2e7b9c88686d5f8653564f54bab1",
+      "after_sha256": "51e1152c223a918ff6d23b2c3119a2f4daa90e543ddb5c89059e79869333ca4c"
+    },
+    {
+      "file": "e2e/board.spec.js",
+      "before_sha256": null,
+      "after_sha256": "c237d63abfad7f2c1dc65a319440725126d0ad9d7491985dcfcae14386fd878d"
+    },
+    {
+      "file": "edit.js",
+      "before_sha256": "b740a26a4e68bfa6f16b960220214ac8bbf6073d219016b57d4eaf31acf81541",
+      "after_sha256": "240b167eddf0cb1e12587b5b256e920e174c732c49442df7984ccf819e7ecda0"
+    },
+    {
+      "file": "index.html",
+      "before_sha256": "e1e942233f93b2da3db400091e7069c7f9fa05819040b1231bab34a000d3cc88",
+      "after_sha256": "c4dc210d288c1770f1e2c5cfa1a177f468ed7696ef861f1e057d0d2c93c45da2"
+    },
+    {
+      "file": "main.js",
+      "before_sha256": "ef6ad824ce044c8a69ec4bfe5d5e23a7740efbaed23609ae5a5ddac932ed9bb7",
+      "after_sha256": "732e5e21666376027f718f3614578fded1dfba2c1d7f02bdb1c8f5055e566c18"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "feed47787511b15715ed17a42b7745750d6d761b157b6d0d49e2ad977ef9a363"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": null,
+      "after_sha256": "ec28bd30f7bdd540eb897958df957182038016a9f157c949e53629b04c38f532"
+    },
+    {
+      "file": "playwright.config.js",
+      "before_sha256": null,
+      "after_sha256": "37044f05cc045ec33a59ad261811e395796dad1a0e0a74f25d0a25af1e28fd52"
+    },
+    {
+      "file": "server.js",
+      "before_sha256": null,
+      "after_sha256": "96d5a8206298124d40178aa13c6e872b5ead718e4c2f61d08b664fc72f248f5e"
+    },
+    {
+      "file": "store.js",
+      "before_sha256": null,
+      "after_sha256": "5fd1032a4b30b816406f6dca9ff2ef831c036a581d0ebfb84d20a83187306916"
+    },
+    {
+      "file": "styles.css",
+      "before_sha256": "f6b4c9b060b688069b8a5cdf71834a5f3fe0ae5638c9930ad661bddc422b35b9",
+      "after_sha256": "d7b6d4a90b5f2b736d03b7b6aa1fd771fd6c162e380075d64b32bdbc4da2278c"
+    },
+    {
+      "file": "test/store.test.js",
+      "before_sha256": null,
+      "after_sha256": "5a43f3dc163dba966068656c6732e8898a3a4c9be6de38b007c84dcc0ec9ea78"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "ba54833536a492fcde290340a437ff922b07c72149033e60b9c4e7aacbdf476f"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "8a5aad6ff5fda0f9449f06ce1d9da181a749b82170749ae483c86d0aefbe7d57"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "02f1be9d1975d21ea2768c7554b508cbb2870e66176fca60224236d6e3e4b68e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ff88a13106abd145658b3fffcd5aba5d736c95eb773b1ea073faaf010ce4b2a1"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c1e55cfb8a7d340cbe731261a7c09f5f99c5048171cf778d465c0d0b07f3dbf5"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9a15060aa105d0e54597b3725ace331e9d2802007e31ac6bbf3cca1aa25d80b7"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1fca1f772a81118a33ca03ca36a9a68a9765d8bef92e0e23d4f54bf4d2143ce1"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "6f279e95112174347b8b6ff5db3f07b5ecaad7eb2b9d6f42060d9736840daa73"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a8e50a81ea99ef00c4112778369ba7e376162162b0aef6f86b9f9a48bca89373"
+    }
+  ],
+  "limits": [
+    "Vanilla JavaScript despite the historical react folder name; no server data API, SQL database, authentication or remote sharing.",
+    "No player score ledger or server-side answer secrecy; point values label clues and browser modules contain the answer bank.",
+    "Web Locks coordinate cooperating same-origin tabs; direct storage writers, cleared browser data, different origins and power-loss durability remain outside guarantees.",
+    "No full accessibility certification or production deployment; original sample content was retained."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T06:17:22.586817+00:00"
+}

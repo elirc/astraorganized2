@@ -1,0 +1,386 @@
+from __future__ import annotations
+
+import json
+import math
+from datetime import datetime
+from typing import Annotated, Any, Literal
+
+from pydantic import (
+    AfterValidator,
+    AwareDatetime,
+    BaseModel,
+    ConfigDict,
+    EmailStr,
+    Field,
+    StringConstraints,
+    field_validator,
+    model_validator,
+)
+
+from app.time_types import as_utc
+
+Name = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=120)]
+StreamName = Annotated[
+    str, StringConstraints(strip_whitespace=True, pattern=r"^[A-Za-z0-9][A-Za-z0-9_.-]{0,63}$")
+]
+Identifier = Annotated[str, StringConstraints(pattern=r"^[A-Za-z0-9_.:-]{1,64}$")]
+Role = Literal["org_admin", "org_member", "viewer", "pipeline_admin", "service_account"]
+Module = Literal["logs", "metrics", "traces"]
+Timestamp = Annotated[AwareDatetime, AfterValidator(as_utc)]
+PositiveLimit = Annotated[int, Field(strict=True, ge=1, le=1000)]
+Password = Annotated[str, Field(min_length=8, max_length=1024)]
+
+
+def bounded_json(value, max_bytes=16384):
+    def visit(item, depth=0):
+        if depth > 8:
+            raise ValueError("JSON nesting exceeds 8 levels")
+        if isinstance(item, dict):
+            if len(item) > 128:
+                raise ValueError("JSON object exceeds 128 fields")
+            for key, child in item.items():
+                if not isinstance(key, str) or not 1 <= len(key) <= 128:
+                    raise ValueError("JSON keys must contain 1 to 128 characters")
+                visit(child, depth + 1)
+        elif isinstance(item, list):
+            if len(item) > 128:
+                raise ValueError("JSON array exceeds 128 items")
+            for child in item:
+                visit(child, depth + 1)
+        elif item is None or isinstance(item, (str, bool, int)):
+            pass
+        elif isinstance(item, float):
+            if not math.isfinite(item):
+                raise ValueError("JSON numbers must be finite")
+        else:
+            raise ValueError("Only JSON values are supported")
+
+    visit(value)
+    if len(json.dumps(value, ensure_ascii=False, allow_nan=False).encode("utf-8")) > max_bytes:
+        raise ValueError(f"JSON value exceeds {max_bytes} bytes")
+    return value
+
+
+class RequestModel(BaseModel):
+    model_config = ConfigDict(extra="forbid", allow_inf_nan=False, validate_default=True)
+
+    @field_validator(
+        "attributes",
+        "labels",
+        "params",
+        "filters",
+        "layout",
+        "indexing_options",
+        "position",
+        "query",
+        "visualization",
+        mode="after",
+        check_fields=False,
+    )
+    @classmethod
+    def json_fields(cls, value):
+        return bounded_json(value)
+
+
+class ORMModel(RequestModel):
+    model_config = ConfigDict(from_attributes=True, extra="forbid", allow_inf_nan=False)
+
+
+class BootstrapRequest(RequestModel):
+    org_name: Name
+    org_slug: Annotated[
+        str, StringConstraints(strip_whitespace=True, pattern=r"^[a-z0-9][a-z0-9-]{0,63}$")
+    ]
+    email: EmailStr
+    password: Password
+    display_name: Name
+
+
+class LoginRequest(RequestModel):
+    email: EmailStr
+    password: Annotated[str, Field(min_length=1, max_length=1024)]
+    org_slug: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=64)]
+
+
+class OrgCreateRequest(RequestModel):
+    org_name: Name
+    org_slug: Annotated[
+        str, StringConstraints(strip_whitespace=True, pattern=r"^[a-z0-9][a-z0-9-]{0,63}$")
+    ]
+    admin_email: EmailStr
+    admin_password: Password
+    admin_display_name: Name
+
+
+class TokenCreateRequest(RequestModel):
+    name: Name
+    token_type: Literal["user", "ingest", "service"] = "service"
+    role: Role = "viewer"
+    scopes: list[Annotated[str, Field(max_length=40)]] = Field(default_factory=list, max_length=20)
+    expires_in_days: Annotated[int, Field(strict=True, ge=1, le=365)] | None = 30
+
+    @field_validator("scopes")
+    @classmethod
+    def valid_scopes(cls, value):
+        from app.permissions import ROLE_PERMISSIONS
+
+        known = set().union(*ROLE_PERMISSIONS.values())
+        if len(value) != len(set(value)) or not set(value) <= known:
+            raise ValueError("Scopes must be unique known permissions")
+        return value
+
+    @model_validator(mode="after")
+    def ingest_scope(self):
+        if self.token_type == "ingest" and (
+            self.role != "service_account"
+            or not self.scopes
+            or not set(self.scopes) <= {"logs:write", "metrics:write", "traces:write"}
+        ):
+            raise ValueError(
+                "Ingest tokens require service_account role and explicit telemetry write scopes only"
+            )
+        return self
+
+
+class TokenResponse(ORMModel):
+    id: int
+    name: str
+    token_prefix: str
+    token_type: str
+    role: str
+    scopes: list[str]
+    created_at: datetime
+    plain_token: str | None = None
+
+
+class UserCreateRequest(RequestModel):
+    email: EmailStr
+    password: Password
+    display_name: Name
+    role: Role
+
+
+class UserUpdateRequest(RequestModel):
+    display_name: Name
+    role: Role
+    is_active: bool = True
+
+
+class TimeWindow(RequestModel):
+    start_time: Timestamp
+    end_time: Timestamp
+
+    @model_validator(mode="after")
+    def ordered(self):
+        if self.end_time <= self.start_time:
+            raise ValueError("end_time must follow start_time")
+        if (self.end_time - self.start_time).total_seconds() > 31 * 86400:
+            raise ValueError("Choose a time range of at most 31 days")
+        return self
+
+
+class SearchRequest(TimeWindow):
+    stream: StreamName | None = None
+    text: Annotated[str, Field(max_length=1000)] | None = None
+    filters: dict[str, Any] = Field(default_factory=dict)
+    limit: PositiveLimit = 100
+
+
+class SQLQueryRequest(TimeWindow):
+    query: Annotated[str, Field(min_length=1, max_length=10000)]
+    limit: PositiveLimit = 100
+
+
+class MetricsQueryRequest(TimeWindow):
+    metric_name: Annotated[str, StringConstraints(pattern=r"^[a-zA-Z_:][a-zA-Z0-9_:]{0,127}$")]
+    filters: dict[str, Any] = Field(default_factory=dict)
+    aggregate: Literal["sum", "avg", "min", "max", "count"] = "avg"
+    group_by: list[Annotated[str, Field(min_length=1, max_length=128)]] = Field(
+        default_factory=list, max_length=8
+    )
+    step_seconds: Annotated[int, Field(strict=True, ge=1, le=86400)] = 60
+    limit: PositiveLimit = 500
+
+    @field_validator("group_by")
+    @classmethod
+    def unique_groups(cls, value):
+        if len(value) != len(set(value)):
+            raise ValueError("Grouping keys must be unique")
+        return value
+
+
+class PromQLRequest(TimeWindow):
+    query: Annotated[str, Field(min_length=1, max_length=10000)]
+    step_seconds: Annotated[int, Field(strict=True, ge=1, le=86400)] = 60
+
+
+class TraceSearchRequest(TimeWindow):
+    stream: StreamName | None = None
+    service_name: Name | None = None
+    operation_name: Name | None = None
+    status: Annotated[str, Field(max_length=32)] | None = None
+    min_duration_ms: Annotated[float, Field(ge=0)] | None = None
+    max_duration_ms: Annotated[float, Field(ge=0)] | None = None
+    filters: dict[str, Any] = Field(default_factory=dict)
+    limit: PositiveLimit = 100
+
+    @model_validator(mode="after")
+    def duration_order(self):
+        if (
+            self.min_duration_ms is not None
+            and self.max_duration_ms is not None
+            and self.max_duration_ms < self.min_duration_ms
+        ):
+            raise ValueError("Maximum duration must not be below minimum")
+        return self
+
+
+class StreamCreateRequest(RequestModel):
+    name: StreamName
+    type: Module
+    retention_days: Annotated[int, Field(strict=True, ge=1, le=3650)] = 14
+    indexing_options: dict[str, Any] = Field(default_factory=dict)
+    max_payload_bytes: Annotated[int, Field(strict=True, ge=1024, le=1_048_576)] = 1_048_576
+
+
+class PanelRequest(RequestModel):
+    title: Name
+    panel_type: Literal["table", "line", "bar", "stat", "text", "logs", "metric", "trace"] = "table"
+    position: dict[str, Any] = Field(default_factory=dict)
+    query: dict[str, Any] = Field(default_factory=dict)
+    visualization: dict[str, Any] = Field(default_factory=dict)
+
+
+class DashboardRequest(RequestModel):
+    name: Name
+    description: Annotated[str, Field(max_length=4000)] | None = None
+    layout: dict[str, Any] = Field(default_factory=dict)
+    panels: list[PanelRequest] = Field(default_factory=list, max_length=24)
+
+
+class NotificationRequest(RequestModel):
+    type: Literal["email", "webhook", "slack", "local"] = "local"
+    target: Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=255)]
+
+    @model_validator(mode="after")
+    def target_valid(self):
+        from urllib.parse import urlsplit
+
+        if self.type in {"webhook", "slack"}:
+            url = urlsplit(self.target)
+            if (
+                url.scheme != "https"
+                or not url.hostname
+                or url.username
+                or url.password
+                or url.fragment
+                or url.port not in (None, 443)
+            ):
+                raise ValueError(
+                    "Webhook targets require HTTPS without credentials, fragments or custom ports"
+                )
+        return self
+
+
+class AlertRequest(RequestModel):
+    name: Name
+    module: Module
+    condition: dict[str, Any]
+    notifications: list[NotificationRequest] = Field(default_factory=list, max_length=5)
+    enabled: bool = True
+    dedupe_window_seconds: Annotated[int, Field(strict=True, ge=1, le=86400)] = 300
+
+    @model_validator(mode="after")
+    def validate_condition(self):
+        from app.contracts import validate_alert_condition
+
+        self.condition = validate_alert_condition(self.module, self.condition)
+        return self
+
+
+class PipelineRequest(RequestModel):
+    name: Name
+    source_type: Module
+    schedule: Annotated[str, Field(max_length=120)] | None = None
+    definition: dict[str, Any]
+    enabled: bool = True
+
+    @model_validator(mode="after")
+    def validate_steps(self):
+        from app.contracts import validate_pipeline_definition
+
+        self.definition = validate_pipeline_definition(self.source_type, self.definition)
+        return self
+
+
+class SavedQueryRequest(RequestModel):
+    module: Module
+    name: Name
+    query_text: Annotated[str, Field(min_length=1, max_length=10000)]
+    params: dict[str, Any] = Field(default_factory=dict)
+
+
+class LogEventIn(RequestModel):
+    timestamp: Timestamp
+    message: Annotated[str, Field(min_length=1, max_length=16384)]
+    level: Annotated[str, Field(max_length=32)] | None = None
+    service: Name | None = None
+    trace_id: Identifier | None = None
+    span_id: Identifier | None = None
+    dedupe_key: Annotated[str, Field(min_length=1, max_length=128)] | None = None
+    attributes: dict[str, Any] = Field(default_factory=dict)
+
+
+class LogsIngestRequest(RequestModel):
+    stream: StreamName
+    events: list[LogEventIn] = Field(min_length=1, max_length=1000)
+
+
+class MetricPointIn(RequestModel):
+    timestamp: Timestamp
+    metric_name: Annotated[str, StringConstraints(pattern=r"^[a-zA-Z_:][a-zA-Z0-9_:]{0,127}$")]
+    value: float
+    unit: Annotated[str, Field(max_length=32)] | None = None
+    dedupe_key: Annotated[str, Field(min_length=1, max_length=128)] | None = None
+    labels: dict[str, Any] = Field(default_factory=dict)
+
+    @field_validator("labels")
+    @classmethod
+    def scalar_labels(cls, value):
+        if any(
+            item is not None and type(item) not in (str, int, float, bool)
+            for item in value.values()
+        ):
+            raise ValueError("Metric labels must be scalar JSON values")
+        return value
+
+
+class MetricsIngestRequest(RequestModel):
+    stream: StreamName
+    points: list[MetricPointIn] = Field(min_length=1, max_length=1000)
+
+
+class TraceSpanIn(RequestModel):
+    trace_id: Identifier
+    span_id: Identifier
+    parent_span_id: Identifier | None = None
+    service_name: Name
+    operation_name: Name
+    status: Annotated[str, Field(min_length=1, max_length=32)] = "ok"
+    start_ts: Timestamp
+    end_ts: Timestamp
+    dedupe_key: Annotated[str, Field(min_length=1, max_length=128)] | None = None
+    attributes: dict[str, Any] = Field(default_factory=dict)
+
+    @model_validator(mode="after")
+    def ordered_span(self):
+        if self.end_ts < self.start_ts:
+            raise ValueError("Span end must not precede its start")
+        if self.parent_span_id == self.span_id:
+            raise ValueError("A span cannot be its own parent")
+        return self
+
+
+class TracesIngestRequest(RequestModel):
+    stream: StreamName
+    spans: list[TraceSpanIn] = Field(min_length=1, max_length=1000)

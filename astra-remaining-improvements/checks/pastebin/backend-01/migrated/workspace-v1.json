@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "revision": 2,
+  "pastes": [
+    {
+      "slug": "Abcd1234",
+      "title": "Edited",
+      "content": "legacy edited",
+      "language": "plaintext",
+      "visibility": "unlisted",
+      "createdAt": "2026-09-06T12:00:00+00:00",
+      "updatedAt": "2026-09-09T12:00:00+00:00",
+      "expiresAt": null,
+      "editKeyHash": "47AFF130C1F7A22C25AB46F5D9E11103ABA6ED07008A1F8561C7480193731AE0",
+      "legacyKey": true,
+      "legacySlug": true,
+      "version": 2,
+      "historicalViews": 17,
+      "historicalLastViewedAt": "2026-09-08T12:00:00+00:00"
+    }
+  ],
+  "requests": [],
+  "changes": [
+    {
+      "id": "ab1b954e-786b-42c8-86b7-7e87c6cc0cdc",
+      "revision": 1,
+      "action": "migrate",
+      "slug": "Abcd1234",
+      "at": "2026-09-09T12:00:00+00:00"
+    },
+    {
+      "id": "fedf1f99-d1c6-4dec-baca-a4198bedd3bd",
+      "revision": 2,
+      "action": "update",
+      "slug": "Abcd1234",
+      "at": "2026-09-09T12:00:00+00:00"
+    }
+  ]
+}

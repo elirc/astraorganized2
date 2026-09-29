@@ -1,0 +1,17 @@
+{
+  "command": [
+    "node",
+    "node_modules/eslint/bin/eslint.js",
+    ".",
+    "--max-warnings=0"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+  "startedAt": "2026-09-12T17:01:23.935101+00:00",
+  "status": "complete",
+  "log": "lint-final-01.log",
+  "pid": 24640,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T17:02:56.425488+00:00",
+  "elapsedSeconds": 92.49
+}

@@ -1,0 +1,27 @@
+{
+  "passed": false,
+  "total": 5,
+  "checks": [
+    {
+      "name": "home has labeled empty login fields and navigation",
+      "passed": true
+    },
+    {
+      "name": "administrator signs in through the interface",
+      "passed": true
+    },
+    {
+      "name": "customer create edit and literal hostile text",
+      "passed": true
+    },
+    {
+      "name": "stale administration edit retains draft and supports explicit review",
+      "passed": true
+    },
+    {
+      "name": "all seven administration forms open with labeled inputs",
+      "passed": false,
+      "error": "Locator.select_option: Timeout 60000ms exceeded.\nCall log:\n  - waiting for get_by_label(\"Manage\", exact=True)\n"
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/job track/restaurant-kitchen-display-system",
+  "id": "e2d8f836b7f9",
+  "summary": [
+    "Explicit false query values now preserve ordinary order lists; unknown boolean spellings are rejected.",
+    "Partly ready or eighty-sixed orders remain in progress until all child items are terminal.",
+    "Priority, item status, manual 86 and global availability mutations commit state, audit and parent summaries together; notifications follow commit.",
+    "An application factory, isolated database option, JSON error handler and built-in Node test scripts make the real API repeatably testable.",
+    "Browser Cancel now cancels 86 actions, and socket effect cleanup clears the pending refresh timer.",
+    "Nine detailed learning documents explain actual source, transactions, failure injection, lifecycle rules, request traces and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/kds/results.json",
+    "expectedTests": 12,
+    "command": "npm test --prefix server -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0, npm 10.9.2, locked dependencies, real local HTTP and SQLite memory database; actual server startup and Socket.IO polling handshake"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 12,
+    "checks": [
+      {
+        "name": "api",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--test-reporter=tap"
+        ],
+        "exitCode": 0,
+        "log": "checks/kds/api.log"
+      },
+      {
+        "name": "web-build",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "log": "checks/kds/web-build.log"
+      }
+    ],
+    "initialRegressionRun": {
+      "tests": 11,
+      "passed": 3,
+      "failed": 8,
+      "note": "After adding isolated database and app factory, before business fixes"
+    },
+    "scope": "Real HTTP and in-memory SQLite; actual server startup and Socket.IO polling handshake; React production build; no live browser or persistent-file restart test"
+  },
+  "courseWords": 5614,
+  "courseFiles": 9,
+  "courseLinksChecked": 28,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "7628039692e05955d139bfc35632d6e8596621f3c39cf49a8e61a2defa3dc444",
+      "after_sha256": "7fb0cd054e6d87fe78ee8b9f467b00e52fb0254ceeedefc3c3ce1524c1955df6"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "e2d350a5eca0ab46477576bf493c4b580bbd21db41b300c186b2db19c1b6f1e5",
+      "after_sha256": "7606d4a3eb4600627d050229b0dba7da59fcb83b7ac9c423442e7bd6334ebf65"
+    },
+    {
+      "file": "server/package.json",
+      "before_sha256": "38ea5b90e13afb05e8a490ac059ff69ba92240b43a369813d710d261a910ed7c",
+      "after_sha256": "35c32a75f312d0c5f7a55c088d05b255e79d20239e8734993dec6d0a2044b71f"
+    },
+    {
+      "file": "server/.env.example",
+      "before_sha256": "fbcef76092db199f281aba744fd04d4d612393a155672ccb9b349c44cbe6dd63",
+      "after_sha256": "2627e0fb1866e0f459f3ce51565bf97c8f372eaebe5f2507f0a46625194be357"
+    },
+    {
+      "file": "server/src/db/database.js",
+      "before_sha256": "91a698e9301f46865a3826e2c0fd3175a2e5fdcf0c2b16a738d8d36aea690fe1",
+      "after_sha256": "ee86aa3a4b346efb66e1d8bcd30666ccaab5554ce2a5acf107069ee5667c06c1"
+    },
+    {
+      "file": "server/src/app.js",
+      "before_sha256": null,
+      "after_sha256": "7fb1ae653038a8e8edd6f6959170b5539236fbba7c1e2aaa75817b8b88df3c12"
+    },
+    {
+      "file": "server/src/server.js",
+      "before_sha256": "000323272e961c83b78db2483526863bca42cc979dafafff0dddfd233e057fe3",
+      "after_sha256": "af5deaa3ac2730c004ccca02cc48a6f32abc0f43a7c47a4e17764be9cea0f09a"
+    },
+    {
+      "file": "server/src/routes/api.js",
+      "before_sha256": "770668a7d1ea4454b05e4512cfe17b8c655306c21418594220456ebf6424b220",
+      "after_sha256": "c0015aab9a35f490ecae937594145c29052bf64cf581f7e22ff8894b5e8d01ff"
+    },
+    {
+      "file": "server/src/lib/validation.js",
+      "before_sha256": "4207e92e7a5aeab806df6e63baad383fad99926789d2cd07a8965fcf422d6ada",
+      "after_sha256": "9f117060660fced03b30fbc52cf8efb03b9b401fc508e5e58fa55ee10455505e"
+    },
+    {
+      "file": "server/src/lib/kdsService.js",
+      "before_sha256": "93e27fb18d58afc4cf745e4a3f7470edcce67c84d92e6cff4aa7c8be83a5279e",
+      "after_sha256": "98642a6b755de034a3aff4f9f070d4411290329beace599ed36288056a28d9e6"
+    },
+    {
+      "file": "client/src/App.jsx",
+      "before_sha256": "61dd2d71f690c59be45d494acf49f07caf54be5dfe8aaf4fd57f8a4090f40ced",
+      "after_sha256": "60d77e97837459d0c368c4613d1ac446378888af7aa9a030fba87efd1bd38592"
+    },
+    {
+      "file": "server/test/kds.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "ca58ca05f97563ff7c2eef00b8d46d78eb883201f618776de932a32ddb5db23a"
+    },
+    {
+      "file": "server/test/startup.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "a4203e59ca46db62a1a1c3cf0605348c53d5533d82355930b5fa93a9022cd7cb"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "122d0c5af9eaa6b6fd68844d7412c44069f083cca2fee3fcc8d3f260c7bbc785"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "6337cd8ef91ec9916a90d871626e93447364b55766baeb700e66085b40a9b167"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "ccfe1d8f3626bd1ac4da0ca14ab9446a59121d3705a1c56dce2c3a6dff6a9b5e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "00c467ffb55b32399ba781786c3baebd535ca0d837a562e5971c209186af2ffe"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e53d0dfe60bfa7f27196cf6237c4ec9da473d51222a81be8729674ad8df530d5"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "92dcdc2e7580746a87b65f6943e45ec8538b1395154e0d51cc51dccd1e3062d1"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ba81b4343ffeff1924a8b8b9902478ae183a645cac933b299ee3593164f81938"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "02d536d6ef27888d33ece6072455a21dfa2a10ae166ba20967d8a785470520ed"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "933861abfacbc07dbcfe246b0e7eaed34cf5883bbd724a4bb8327c52dccebb10"
+    }
+  ],
+  "limits": [
+    "No live browser interaction verified; prompt changes were source-reviewed and built.",
+    "No persistent-file restart test or migration on an existing user database.",
+    "No authenticated restaurant ownership, intake idempotency, durable outbox or paginated order history.",
+    "Existing-state checks do not establish multi-process optimistic concurrency; notification delivery remains best effort."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T03:02:26.109595+00:00"
+}

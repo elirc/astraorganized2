@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww13",
+  "id": "2e356b8f3d9f",
+  "summary": [
+    "Validate reporting-period existence before submission insertion and before approval changes the child report.",
+    "Add actual repository/error-class tests for both orphan paths and successful parent/child transitions."
+  ],
+  "checks": {
+    "resultsFile": "checks/2e356b8f3d9f/results-crud-b05.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww13",
+        "id": "2e356b8f3d9f",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-report-submit-atomicity.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2e356b8f3d9f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:12:40.893388+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 17108,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:12:44.805246+00:00",
+        "elapsedSeconds": 3.87
+      }
+    ],
+    "limits": [
+      "Five runtime cases execute actual repository and error classes with mutable-store and ID adapters. No live Next, authentication, persistence transaction, concurrency or full typecheck.",
+      "This prevents the known missing-parent partial mutations in submit and approve. It does not add idempotency, service authorization, rollback for arbitrary later failures or atomic audit persistence. IDs and submission timestamps are still allocated before parent lookup."
+    ]
+  },
+  "courseWords": 2121,
+  "courseFiles": 9,
+  "courseLinksChecked": 32,
+  "files": [
+    {
+      "file": "src/repositories/reportingRepository.ts",
+      "before_sha256": "503322785ef9e8026aa33c9e0e4bc4f986093e6a579cc09174798a89559cab2f",
+      "after_sha256": "76782874017ac9050aed2e751e5e16a1e73feb0de17f7f4bca5ef67dd2ba22ca"
+    },
+    {
+      "file": "tests/runtime-report-submit-atomicity.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "96e28b09633f5105817e31c21d844e9581b12c128b53d7244761bd98d6a8b0b3"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-repositories-reportingRepository.ts.before",
+      "before_sha256": null,
+      "after_sha256": "503322785ef9e8026aa33c9e0e4bc4f986093e6a579cc09174798a89559cab2f"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "548b9cbb1a067f88ab0e952b7b53e6bf01d9e43a810b986075053625a2e6e786"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "5a5fe6c687309de99a9d49b7d7b6c116e2df8e245442c6859ef1b55edd280eb1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "2e9c4a4cd46863343b4317ed2a0b3afb7cd7a4f465477f7b38a9ac30b05a7235"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "2ad6744fceaad1f71e0674386cef618dd1e32cb47f418b00cd9246df412a6b2b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bcddbecc0a5c7a96d4125c3a50ef3b74655eaeb13d20a9428712cf887def1785"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "83d3de2a774c4dc17d1a0182a4c9a35a1c26ad27909cb8a64d694dc180b51f4f"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b17a4ef8a31c0050b2d85a63b0ccde72cc2640744a459b54bb36f9a72e490892"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3673fa57676aea40d18618e7a320e1d3d11761d02910a30b5bbfd722db26b118"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "44f07517450f5f07765401b721560abb9ca6efaa335338d112e7dbbbe6998389"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "cda91bfcc85f005f9ec42c1e0adae5b26809e8db43acfa0bb4fb513f27ae9e52"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ababb939e62545893d0f7f618b35f892aa523e92ba7cc2d19e48ad0420519074"
+    }
+  ],
+  "limits": [
+    "Five runtime cases execute actual repository and error classes with mutable-store and ID adapters. No live Next, authentication, persistence transaction, concurrency or full typecheck.",
+    "This prevents the known missing-parent partial mutations in submit and approve. It does not add idempotency, service authorization, rollback for arbitrary later failures or atomic audit persistence. IDs and submission timestamps are still allocated before parent lookup."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:15:32.949861+00:00"
+}

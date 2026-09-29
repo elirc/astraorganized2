@@ -1,0 +1,220 @@
+{
+  "passed": true,
+  "date": "2026-09-12T09:31:16.406302+00:00",
+  "project": "geminiorganized/LLM_Generated_Helper",
+  "distinctChecks": 140,
+  "nodeTests": 120,
+  "browserChecks": 14,
+  "mockedRendererChecks": 6,
+  "baselineNodeTests": 73,
+  "regressionsFailedBefore": 8,
+  "regressionsPassedAfter": 8,
+  "nodeRun": {
+    "command": [
+      "node",
+      "--require",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\llm_generated_helper\\guard-fixtures.cjs",
+      "--test",
+      "test\\audio.test.js",
+      "test\\ipc.test.js",
+      "test\\json-file.test.js",
+      "test\\llm.test.js",
+      "test\\practice-http.test.js",
+      "test\\practice.test.js",
+      "test\\prompt.test.js",
+      "test\\settings-safety.test.js",
+      "test\\sse.test.js",
+      "test\\store.test.js",
+      "test\\stt.test.js"
+    ],
+    "exitCode": 0,
+    "seconds": 53.35
+  },
+  "browser": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "explicit sign-in with token held only in tab memory",
+        "passed": true
+      },
+      {
+        "name": "server pagination across 23 seeded profiles",
+        "passed": true
+      },
+      {
+        "name": "create profile and reload accepted representation",
+        "passed": true
+      },
+      {
+        "name": "stale write retains draft and rebases only edited fields after explicit review",
+        "passed": true
+      },
+      {
+        "name": "create profile-specific question with user text rendered as text",
+        "passed": true
+      },
+      {
+        "name": "create planned session and explicitly start it",
+        "passed": true
+      },
+      {
+        "name": "create scored attempt with immutable question snapshot and valid zero score",
+        "passed": true
+      },
+      {
+        "name": "accepted write with lost response requires review and avoids duplicate submission",
+        "passed": true
+      },
+      {
+        "name": "completed session protects attempts and failed save preserves draft",
+        "passed": true
+      },
+      {
+        "name": "explicit reopening enables another review cycle",
+        "passed": true
+      },
+      {
+        "name": "referenced profile deletion rejected without removing the editor",
+        "passed": true
+      },
+      {
+        "name": "authenticated export includes records without credential or audit internals",
+        "passed": true
+      },
+      {
+        "name": "delete attempt session question and profile in explicit dependency order",
+        "passed": true
+      },
+      {
+        "name": "mobile layout and sign-out without uncaught page errors",
+        "passed": true
+      }
+    ],
+    "screenshots": [
+      "01-conflict-review.png",
+      "02-attempt.png",
+      "03-profile.png",
+      "04-mobile.png"
+    ],
+    "seconds": 54.36
+  },
+  "mockedRenderer": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "saved credentials are represented by presence with blank write-only fields",
+        "passed": true
+      },
+      {
+        "name": "settings PATCH preserves omitted key and sends explicit clear and false values",
+        "passed": true
+      },
+      {
+        "name": "failed settings save retains draft and requires explicit accepted-state reload",
+        "passed": true
+      },
+      {
+        "name": "expanded settings controls remain reachable in minimum-size window",
+        "passed": true
+      },
+      {
+        "name": "cancel control invokes dedicated bridge operation for in-flight work",
+        "passed": true
+      },
+      {
+        "name": "startup storage errors are displayed instead of silently treated as ready",
+        "passed": true
+      }
+    ],
+    "evidence": "Chromium with mocked preload; no native Electron, OS encryption, capture or providers"
+  },
+  "freshSetup": {
+    "passed": true,
+    "checks": [
+      {
+        "name": "fresh source copy repeats all 120 Node tests without npm install",
+        "passed": true
+      },
+      {
+        "name": "all current source test and verification JavaScript parses in fresh copy",
+        "passed": true
+      },
+      {
+        "name": "real setup initializes once stores only token hash and refuses overwrite byte-for-byte",
+        "passed": true
+      },
+      {
+        "name": "real server CLI starts with clean owner state and serves three exact UI assets",
+        "passed": true
+      }
+    ],
+    "repeatedNodeTests": 120,
+    "dependencyInstall": false
+  },
+  "countsNote": "140 = 120 Node + 14 real journal browser + 6 mocked desktop renderer checks. Four fresh-copy/setup groups are supplemental; the repeated 120 tests are not added again.",
+  "finalRendererChanges": "After the clean-copy check, prevented textarea flex shrink and cleared stale saved status before a new save. renderer-02 passed all six checks including these assertions; final renderer syntax passed.",
+  "failedBrowserRuns": "browser-01 and browser-02 stopped on assertions expecting different words than the correct rejection messages. Assertions were corrected; browser-03 passed all 14 workflows.",
+  "screenshots": [
+    {
+      "file": "images/01-conflict-review.png",
+      "sha256": "2b3b2297e57cc75e1da9da7e20e13bfae9e59248522e474d902e8e58898f16e1",
+      "sourceRun": "browser-03",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "images/02-attempt.png",
+      "sha256": "c49381bb45b5b931a84eb8d8cec6de3791fec70531daa0a041610c4c2317e1ed",
+      "sourceRun": "browser-03",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "images/03-profile.png",
+      "sha256": "29cdd3f0e08eca19e35d4db747b9350e70b21e88a2808054b56a4f9ebc4c5f68",
+      "sourceRun": "browser-03",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "images/04-mobile.png",
+      "sha256": "cf0bb5d84b5f6384612092d757f9d92188d17c126a6e5548c607933205b1991f",
+      "sourceRun": "browser-03",
+      "visuallyReviewed": true
+    },
+    {
+      "file": "images/05-settings-draft.png",
+      "sha256": "2dc9979bb1008a0c3313de19914adc800d2dfaeb07515d9d8a3fde022f707296",
+      "sourceRun": "renderer-02",
+      "visuallyReviewed": true
+    }
+  ],
+  "limits": [
+    "Single-owner loopback JSON application; no distributed database, power-loss guarantee, import, token recovery or durable creation receipts.",
+    "Global revision, bounded collections/file and rolling 1000-entry activity; stale writer leases require explicit investigation.",
+    "Persisted structure/reference checks are not exhaustive history validation; standard JSON duplicate-key behavior remains.",
+    "Desktop renderer uses a mocked preload bridge; native Electron, OS encryption, capture, live providers and Windows installer were not run.",
+    "Existing Electron dependencies retained; no claim they are current. Provider streaming/body-limit behavior was not fully hardened.",
+    "Browser checks cover Chromium desktop/mobile workflows, not all browsers or assistive technologies."
+  ],
+  "sourceHashes": {
+    "src/preload.js": "15b64010496aa34992a5f9aea381e9db5ee7856b079d9598d3dd0b364aee8aa0",
+    "src/main/ipc-controller.js": "4d434ccc0148006e5ceca05bd3e179262d11f30873df3b8f680afc995f1ff8e3",
+    "src/main/ipc.js": "0ed84363437a83c820fff9339523b43eebc585114326b73316cea42b87610619",
+    "src/main/llm.js": "5dd8d705397d2d46b1ca1698497d35da285403ff739927df2e9299abd682c55c",
+    "src/main/main.js": "64a394cd5f35afc37ce285720895016f557fb7fc710ee516faa12ce3bcec8de0",
+    "src/main/prompt.js": "6f157df053f716f47272d489cddd5610408110da6059719406e3d3c53f5fca09",
+    "src/main/settings-store.js": "c121c781f865af0f241e6b44af20f74e6d74c8a2a1d6ff8239d5d0d5fcd5c170",
+    "src/main/sse.js": "dab77e2a2f758308eac9dab1693532b08b865910e2ddc219f2143c4c0b4c9ff7",
+    "src/main/store.js": "198ac765e47f6ac2d297f772698c321f0ad52ab31de7e90fe34d402e945c6eda",
+    "src/main/stt.js": "f50a5600a56ff1ce724b0ccd296af3a1bfea5fd0de5667cc0d00d09d83dbd710",
+    "src/practice/domain.js": "eabb7ac04a3dedf1fb859afe39a18fe6cdc9204d7851c5b201bf449b9c02d486",
+    "src/practice/server.js": "3d5167e5640f85b8b67eb7fc3dd8d0445dcf00d44dcb6b321b90147f54237b2d",
+    "src/practice/setup.js": "717c4f6dc91c41a6c69ae2ea8e8addc0faae5fb43fbd8a73dc55c1c781629d16",
+    "src/renderer/app.js": "dda8aaa53fa2c225739e8dfc8dcce9589300d8a7a3519523732896a488a3065d",
+    "src/renderer/audio.js": "269cbc40db123209086d647af8291d40876be5e85936e0167e46900ce096ed19",
+    "src/renderer/index.html": "90b6e9c9a3d16e84b4bb6d92f5fd5b7bb05d34d814addd4b5746b776da2a94ad",
+    "src/renderer/styles.css": "0ed7ec0aa6f2d230db1204fedf6fbb722db5c0c4641a2a0ce0c877070287dd82",
+    "src/shared/json-file.js": "a4152790220ef266783d4ac0627e197d488e2f9fc7371e12eaf956a2902a0987",
+    "src/practice/ui/app.js": "7d12ab4e0a0ce8290ac7745a4f927763aad95c5f60cdc413ae83e1c362b5ab3f",
+    "src/practice/ui/index.html": "e5af185b92f36b63250968ba18d327e495ad3e53879df6480179579376a2fa0f",
+    "src/practice/ui/styles.css": "9fcf634649e6cc7360999a73688f19abfae0868cae706f00a11a1a192447618b"
+  }
+}

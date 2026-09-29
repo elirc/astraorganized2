@@ -1,0 +1,30 @@
+﻿{
+    "id":  "1754dbb384b1",
+    "files":  [
+                  "bagel-intel-platform/src/lib/data.ts",
+                  "bagel-intel-platform/tests/runtime-review-moderation.test.mjs",
+                  "bagel-intel-platform/tests/helpers/load-typescript.mjs",
+                  "bagel-intel-platform/astraupskill/snapshots/src-lib-data.ts.before",
+                  "bagel-intel-platform/astraupskill/evidence/1754dbb384b1-runtime-review-moderation.tap.txt",
+                  "bagel-intel-platform/astraupskill/README.md",
+                  "bagel-intel-platform/astraupskill/01-CODEBASE-MAP.md",
+                  "bagel-intel-platform/astraupskill/02-CONCEPTS.md",
+                  "bagel-intel-platform/astraupskill/03-WORKED-CHANGE.md",
+                  "bagel-intel-platform/astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "bagel-intel-platform/astraupskill/05-PRACTICE.md",
+                  "bagel-intel-platform/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "bagel-intel-platform/astraupskill/07-TRACE-LAB.md",
+                  "bagel-intel-platform/astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "Author review edits previously set is_hidden=0, allowing a moderated review to self-unhide.",
+                     "Existing-row update now preserves is_hidden; insert still initializes visible state."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-review-moderation.test.mjs: 1 passed"
+              ],
+    "limitations":  [
+                        "Actual data module with explicit DB-shaped adapter; no live SQLite, auth, admin, HTTP, or ranking integration."
+                    ],
+    "project":  "X1"
+}

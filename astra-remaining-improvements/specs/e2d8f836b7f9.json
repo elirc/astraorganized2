@@ -1,0 +1,38 @@
+{
+  "changedFiles": [
+    "README.md",
+    "package.json",
+    "server/package.json",
+    "server/.env.example",
+    "server/src/db/database.js",
+    "server/src/app.js",
+    "server/src/server.js",
+    "server/src/routes/api.js",
+    "server/src/lib/validation.js",
+    "server/src/lib/kdsService.js",
+    "client/src/App.jsx",
+    "server/test/kds.test.cjs",
+    "server/test/startup.test.cjs"
+  ],
+  "summary": [
+    "Explicit false query values now preserve ordinary order lists; unknown boolean spellings are rejected.",
+    "Partly ready or eighty-sixed orders remain in progress until all child items are terminal.",
+    "Priority, item status, manual 86 and global availability mutations commit state, audit and parent summaries together; notifications follow commit.",
+    "An application factory, isolated database option, JSON error handler and built-in Node test scripts make the real API repeatably testable.",
+    "Browser Cancel now cancels 86 actions, and socket effect cleanup clears the pending refresh timer.",
+    "Nine detailed learning documents explain actual source, transactions, failure injection, lifecycle rules, request traces and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/kds/results.json",
+    "expectedTests": 12,
+    "command": "npm test --prefix server -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0, npm 10.9.2, locked dependencies, real local HTTP and SQLite memory database; actual server startup and Socket.IO polling handshake"
+  },
+  "limits": [
+    "No live browser interaction verified; prompt changes were source-reviewed and built.",
+    "No persistent-file restart test or migration on an existing user database.",
+    "No authenticated restaurant ownership, intake idempotency, durable outbox or paginated order history.",
+    "Existing-state checks do not establish multi-process optimistic concurrency; notification delivery remains best effort."
+  ]
+}

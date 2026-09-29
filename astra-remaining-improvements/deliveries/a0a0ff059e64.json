@@ -1,0 +1,301 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_.Ramp",
+  "id": "a0a0ff059e64",
+  "summary": [
+    "Validates and normalizes expense candidates and evaluates policy before mutating stored entities; rejected updates, submissions and reasons leave state unchanged.",
+    "Coordinates current-entity lookup, deletion, expense commands and reimbursement completion with a shared per-expense gate.",
+    "Adds nonblocking bounded-queue admission and worker-only transitions; rejected/throwing queues and repeated reimbursement commands avoid false state changes.",
+    "Adds ten actual service/worker/queue regressions, frontend lockfile, passing backend/frontend builds and nine detailed learning guides with complete examples."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a0a0ff059e64/results.json",
+    "expectedTests": 10
+  },
+  "testResults": {
+    "passed": true,
+    "total": 10,
+    "tests": 10,
+    "failed": 0,
+    "checks": [
+      "restore-tests-4",
+      "backend-tests-6",
+      "root-backend-build-01",
+      "root-frontend-install-01",
+      "root-frontend-build-01"
+    ],
+    "scope": "Actual in-memory expense service, reimbursement delegate and capacity-one queue; ten xUnit facts, backend Release and frontend production builds. No HTTP/receipt/payment/database or controlled thread interleaving test."
+  },
+  "courseWords": 4973,
+  "courseFiles": 9,
+  "courseLinksChecked": 17,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "bd3f378b9e9e680abddd72c5480ec81967fca83935507f8fccb8014b4ea9ad72",
+      "after_sha256": "cd0b58db61c771cbd6b5037cadafb3b78d2956ad8ee583000ff5376c2900e018"
+    },
+    {
+      "file": "backend/ExpenseManagement.Api.csproj",
+      "before_sha256": "9dfdfd5201b35f9b0daf048ced2638bc89e5fa4f37800db52dbc6b3b7ba40082",
+      "after_sha256": "81a5e68881f2f866d16662d06797c9e408eff13110a008636996178ea03df2ca"
+    },
+    {
+      "file": "backend/Background/BackgroundJobs.cs",
+      "before_sha256": "442af589c01268a56dc1cab55401dd85507cf7f753486b14b848ae50d81a64f6",
+      "after_sha256": "b406510de066547d411665d936fae72640f139c6e605708152f924fbe403729e"
+    },
+    {
+      "file": "backend/Background/BackgroundTaskQueue.cs",
+      "before_sha256": "fa511a54f01fd49d46cb4048d3497acacd91ca74ad60db4f47179605b83cb529",
+      "after_sha256": "563abb8e6fa9ab95408708f152f1a0fb9e47b8990e8063d99b20d44d4bd006bf"
+    },
+    {
+      "file": "backend/Domain/ExpenseStateMachine.cs",
+      "before_sha256": "02c9b919ac5dee70667581d764b79cd7ca23265613943858e0e86dd020146d80",
+      "after_sha256": "5d753d081e214c1c9dc388144e7aa05d94b2a19b4be517f28b578f2fac920701"
+    },
+    {
+      "file": "backend/Services/ExpenseService.cs",
+      "before_sha256": "0bc0675ce84812b563ee8b067696d7ddf772de7a229f1fc5cdbac48190cb6376",
+      "after_sha256": "42471a8ed68580bf57ccf1fb02c364fd0b5013ad8f775543c9ffa651065e8f9d"
+    },
+    {
+      "file": "backend/Storage/DataStore.cs",
+      "before_sha256": "15e41df30b5b86a6e4ebb572bbcad6db4562d076dc1cd19a7ea493f7bc684038",
+      "after_sha256": "851a892a809a386e55922e93bfc027bb6211a64949a13371f5e2ac654cc97369"
+    },
+    {
+      "file": "backend/ExpenseManagement.Api.Tests/ExpenseManagement.Api.Tests.csproj",
+      "before_sha256": null,
+      "after_sha256": "73a9e4a9df093813b14bb017bdba0b67b94cb7ae38c8fedc7080b5771fefe410"
+    },
+    {
+      "file": "backend/ExpenseManagement.Api.Tests/ExpenseWorkflowTests.cs",
+      "before_sha256": null,
+      "after_sha256": "5741cea79d49476d6f0a9b8c75eede7fbe0013e94d5b78c89c81a11629d5cd38"
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "7d5608fca322c2db68a4330204152e5ac86c243e0e5e85bc95d07966277cafdf"
+    },
+    {
+      "file": "astraupskill/snapshots/BackgroundJobs-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "442af589c01268a56dc1cab55401dd85507cf7f753486b14b848ae50d81a64f6"
+    },
+    {
+      "file": "astraupskill/snapshots/BackgroundTaskQueue-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "fa511a54f01fd49d46cb4048d3497acacd91ca74ad60db4f47179605b83cb529"
+    },
+    {
+      "file": "astraupskill/snapshots/DataStore-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "15e41df30b5b86a6e4ebb572bbcad6db4562d076dc1cd19a7ea493f7bc684038"
+    },
+    {
+      "file": "astraupskill/snapshots/ExpenseManagement.Api-before.csproj.txt",
+      "before_sha256": null,
+      "after_sha256": "9dfdfd5201b35f9b0daf048ced2638bc89e5fa4f37800db52dbc6b3b7ba40082"
+    },
+    {
+      "file": "astraupskill/snapshots/ExpenseService-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "0bc0675ce84812b563ee8b067696d7ddf772de7a229f1fc5cdbac48190cb6376"
+    },
+    {
+      "file": "astraupskill/snapshots/ExpenseStateMachine-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "02c9b919ac5dee70667581d764b79cd7ca23265613943858e0e86dd020146d80"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-2.json",
+      "before_sha256": null,
+      "after_sha256": "92ca45fa0389350ba2cad81e84f8e56c092fbad978589fc4b3681552e326121b"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-2.log",
+      "before_sha256": null,
+      "after_sha256": "7987a40ce16626a4f8855033c8908ac1116b78de6a018a1963c0e9a09c70a994"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-2.trx",
+      "before_sha256": null,
+      "after_sha256": "33b0a5a2f2531527d3d4240c812b07a559cbc8ff4b115675582527a3e90f3aa6"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-3.json",
+      "before_sha256": null,
+      "after_sha256": "fe1b4c78197a4c21791b25b23e3b48565c3b7998662d069f47161be55c017889"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-3.log",
+      "before_sha256": null,
+      "after_sha256": "043b87272a38086a87665338124fa33f216987ead6ce994a66a18c3584f2fd13"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-3.trx",
+      "before_sha256": null,
+      "after_sha256": "3cec6197176d030bd48207f10f18b073aaa635479891906895059ce4adfa9b05"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-4.json",
+      "before_sha256": null,
+      "after_sha256": "c00d13a9302f228e45818579dae8bf2d18c90179708aa7926af7298ce7fcf9b8"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-4.log",
+      "before_sha256": null,
+      "after_sha256": "720b6a32c67a08c20ac2b5a496e1a1c9715a5707b0505b82f7b64934e9c2910c"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-4.trx",
+      "before_sha256": null,
+      "after_sha256": "b0f36b7ca2d1f2fa63a2e330b46b9fa6c111955bc5715dce7cb87cf39029cd2e"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-5.json",
+      "before_sha256": null,
+      "after_sha256": "c3d187c2556be79591d890955a05b892a0ef27ed7a973ba4c919fb9ebcd2ceab"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-5.log",
+      "before_sha256": null,
+      "after_sha256": "a3e50e9601a178acd7c2e90f729c017abb0f64bf6962ba59852a1288a02ce9df"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-6.json",
+      "before_sha256": null,
+      "after_sha256": "ba19f3b24f6e9c252bf1eb269ce6ba94d81a9e61b86e8971cdec03f449681b5d"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-6.log",
+      "before_sha256": null,
+      "after_sha256": "e72321df8c76626af5ab56782572d789388af601622a35b504b4d8fe5732eb3b"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests-6.trx",
+      "before_sha256": null,
+      "after_sha256": "796e28f0e69025a7b97a1b7c2a3e5648bf9ff76287e50cd799fe5e6e325e89a6"
+    },
+    {
+      "file": "astraupskill/evidence/backend-tests.log",
+      "before_sha256": null,
+      "after_sha256": "6118d37031d89ed680fa7c4912e9b3c5bfded1f02f43b84cc6d3a807d9d93760"
+    },
+    {
+      "file": "astraupskill/evidence/expense-tests.trx",
+      "before_sha256": null,
+      "after_sha256": "796e28f0e69025a7b97a1b7c2a3e5648bf9ff76287e50cd799fe5e6e325e89a6"
+    },
+    {
+      "file": "astraupskill/evidence/restore-tests-2.json",
+      "before_sha256": null,
+      "after_sha256": "bf98d96c223001f7804ba6312ec8b2845f0ac6b8276d17fc5798d0494107eb09"
+    },
+    {
+      "file": "astraupskill/evidence/restore-tests-2.log",
+      "before_sha256": null,
+      "after_sha256": "2ad9967f2280d0195ad457a92fe6a353a8492625846632386df6dfc446efe4bc"
+    },
+    {
+      "file": "astraupskill/evidence/restore-tests-4.json",
+      "before_sha256": null,
+      "after_sha256": "8acd99fd258b43594c882a8950003a7bfc0576fed95063cd39b200cd9412bf73"
+    },
+    {
+      "file": "astraupskill/evidence/restore-tests-4.log",
+      "before_sha256": null,
+      "after_sha256": "2ad9967f2280d0195ad457a92fe6a353a8492625846632386df6dfc446efe4bc"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ea511c742d42caf87fef8a30b4187e732903f7cfcf52a8c348473b8a52bec431"
+    },
+    {
+      "file": "astraupskill/evidence/root-backend-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "868fc7116abdeecbeb3b134192b6ebcb85a686a1ad441468f57f1cbf08d25e46"
+    },
+    {
+      "file": "astraupskill/evidence/root-backend-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "dbf6ad4c847571196817c8393df4ddca24f836eec9c825727ae0d20a0e92dc64"
+    },
+    {
+      "file": "astraupskill/evidence/root-frontend-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "46364dc4ad4686020bd72058da0606fa0b6c588036887b9b7f5a516d079fc87e"
+    },
+    {
+      "file": "astraupskill/evidence/root-frontend-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "6c58138aa2497a4cb8e6d0d517af546a5715578d29344618d1eb6d9997cefb12"
+    },
+    {
+      "file": "astraupskill/evidence/root-frontend-install-01.json",
+      "before_sha256": null,
+      "after_sha256": "cad9d9e5fd2247a28ada3d355a6200dccc695401dd3641758d29ae0e1c842af8"
+    },
+    {
+      "file": "astraupskill/evidence/root-frontend-install-01.log",
+      "before_sha256": null,
+      "after_sha256": "54fa3becef45b3b0204dfb40348d61e59403e4086f057caf9260a5d0d97cadd7"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "56cb7069788a466b5e52ad61b6c6ab440be2d98a59586e790de1241d77a60e29"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "707d705478cc276eccef9a2488da398f94c0535295e4d038504fbb92977e913a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "424087a7c4284c6d7ad5e635b291c85628ac27743a6bbeef6f0f72d16ecc68b0"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f8b814b635bac8917b1e44251fe2fa898187af5d2b000ea69438d2edd4776a32"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "be275d23d926cd961ca9149c7936088e2fc90d9d00669f07a509e0fb7362c6c9"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "1842ff5face6e63b4eb1d7c57632669d629886059e83faee8f7e1cc3d75f532c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "32e242ddf685d8865b290ad9637b25f68553a7829b0f2b93521df61dffe11d44"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e52b027759d303f083f3aa99475a7d8208e425413d051f463f91c746daafd6b9"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ee91d278203db5bdff911a14b729320b5e47c5255fee97b380d65b7f0a5c9ef6"
+    }
+  ],
+  "limits": [
+    "Data and queue are in-memory and process-local; no durable outbox, real payment rail, database or cross-process guarantee.",
+    "Receipt upload, policy refresh and mutable readers retain races; lock entries remain for the store lifetime.",
+    "Tests call actual services/delegates with injected users, not HTTP/auth/hosted-worker/browser layers; duplicate jobs do not force simultaneous threads."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T00:13:37.364921+00:00"
+}

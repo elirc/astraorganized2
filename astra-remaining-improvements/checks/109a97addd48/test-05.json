@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "command": [
+    "node",
+    "--experimental-strip-types",
+    "--experimental-loader",
+    "./tests/register-alias.mjs",
+    "--test",
+    "./tests/inventory.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\109a97addd48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:08:54.842943+00:00",
+  "status": "complete",
+  "log": "test-05.log",
+  "pid": 13560,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:08:58.793056+00:00",
+  "elapsedSeconds": 3.95
+}

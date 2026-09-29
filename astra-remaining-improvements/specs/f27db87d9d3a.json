@@ -1,0 +1,47 @@
+{
+  "summary": [
+    "Binds workflow action permission to the current pending step, preserving both delegated and original assignee authority and existing admin/support override.",
+    "Filters internal comments before creating requester comments and timeline DTOs, including requesters with operational roles.",
+    "Distinguishes create from explicit missing/blank update IDs, validates request type/intent/action and resubmission fields, and rejects unsafe reassignment targets.",
+    "Validates workflow SLA, steps and delegation intervals before persistence; adds sixteen actual file-store service tests and nine detailed chapters with complete fixtures."
+  ],
+  "changedFiles": [
+    "README.md",
+    "src/lib/auth/policy.ts",
+    "src/lib/services/admin-service.ts",
+    "src/lib/services/request-service.ts",
+    "src/lib/services/workflow-service.ts",
+    "tests/service-layer.test.ts",
+    "astraupskill/snapshots/src__lib__auth__policy.ts.before",
+    "astraupskill/snapshots/src__lib__services__admin-service.ts.before",
+    "astraupskill/snapshots/src__lib__services__request-service.ts.before",
+    "astraupskill/snapshots/src__lib__services__workflow-service.ts.before",
+    "astraupskill/snapshots/tests__service-layer.test.ts.before",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-install-01.json",
+    "astraupskill/evidence/root-install-01.log",
+    "astraupskill/evidence/root-lint-final-02.json",
+    "astraupskill/evidence/root-lint-final-02.log",
+    "astraupskill/evidence/root-typecheck-final-02.json",
+    "astraupskill/evidence/root-typecheck-final-02.log",
+    "astraupskill/evidence/z1-build-final-01.json",
+    "astraupskill/evidence/z1-build-final-01.log",
+    "astraupskill/evidence/z1-lint-final-01.json",
+    "astraupskill/evidence/z1-lint-final-01.log",
+    "astraupskill/evidence/z1-tests-final-03.json",
+    "astraupskill/evidence/z1-tests-final-03.log",
+    "astraupskill/evidence/z1-typecheck-final-01.json",
+    "astraupskill/evidence/z1-typecheck-final-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f27db87d9d3a/results.json",
+    "expectedTests": 16
+  },
+  "limits": [
+    "Single-process JSON clone-before-write and serialized-value assertions do not establish crash consistency or cross-process locking.",
+    "No HTTP server, cookie authentication or browser coverage; service Error does not itself establish a particular HTTP status.",
+    "Requester exclusion also applies to operational/admin requesters; existing permission to create an internal note is separate from read filtering.",
+    "Demo identity and existing file-store architecture remain; this increment does not introduce durable database transactions."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "files": {
+    "package.json": "ed1642fefce881622db46fb7ea6ea541b565a96e2819c76718c3c32aeebe4882",
+    "apps/api/src/audit.ts": "331793b6bc514557eca9a3a1f56e0b639144df799304318a3fe49ff424f625b2",
+    "apps/api/src/events.ts": "d29a3a3622281cdd2e0d652af62923adc9ed6738e7bfd1b3e7c0f2f618687076",
+    "apps/api/src/routes/learner.routes.ts": "69fe970ff1901e7b670f46c59ae6ca3f6ee8db8a77aa35d7ed1d7b25ae04c67b",
+    "packages/domain/src/completion.ts": "faafeee40e39711006c52c4d157ee3be9d94b666498063fc5c823425dacd3fe2",
+    "packages/domain/src/domain.test.ts": "6dce4557731ca2e01f52c254928b56b7445c3eaeb91b6b1ca8e6e506728b45e3",
+    "packages/domain/src/types.ts": "bcba20f38af8469ead6b105e4b6e85708b2c7ab5c6910d5694aa9c1b38a61035",
+    "apps/api/src/routes/learner.routes.test.ts": "326a15863fefb6285dd84c2395005374af1a5a33828d63d151236e35a584e8c5"
+  }
+}

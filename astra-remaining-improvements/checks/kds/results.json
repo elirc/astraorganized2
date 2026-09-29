@@ -1,0 +1,34 @@
+{
+  "passed": true,
+  "tests": 12,
+  "checks": [
+    {
+      "name": "api",
+      "command": [
+        "npm.cmd",
+        "test",
+        "--",
+        "--test-reporter=tap"
+      ],
+      "exitCode": 0,
+      "log": "checks/kds/api.log"
+    },
+    {
+      "name": "web-build",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "log": "checks/kds/web-build.log"
+    }
+  ],
+  "initialRegressionRun": {
+    "tests": 11,
+    "passed": 3,
+    "failed": 8,
+    "note": "After adding isolated database and app factory, before business fixes"
+  },
+  "scope": "Real HTTP and in-memory SQLite; actual server startup and Socket.IO polling handshake; React production build; no live browser or persistent-file restart test"
+}

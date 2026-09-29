@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z6",
+  "id": "5137a9c91d26",
+  "command": [
+    "npm.cmd",
+    "exec",
+    "tsc",
+    "--",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5137a9c91d26",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:29:00.953640+00:00",
+  "status": "running",
+  "log": "z6-typecheck-01.log",
+  "pid": 5748
+}

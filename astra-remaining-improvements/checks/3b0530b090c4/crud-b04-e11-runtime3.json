@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e11",
+  "id": "3b0530b090c4",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/share-room-integrity.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b0530b090c4",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:21:46.467510+00:00",
+  "status": "complete",
+  "log": "crud-b04-e11-runtime3.log",
+  "pid": 8868,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T02:21:52.107165+00:00",
+  "elapsedSeconds": 5.64
+}

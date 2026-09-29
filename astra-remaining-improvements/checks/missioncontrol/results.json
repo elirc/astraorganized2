@@ -1,0 +1,10 @@
+{
+  "passed": 139,
+  "total": 139,
+  "failed": 0,
+  "notExecuted": 0,
+  "suites": 2,
+  "commandRecord": "tests-07.json",
+  "sourceHashesUnchanged": true,
+  "lockedRestorePassed": true
+}

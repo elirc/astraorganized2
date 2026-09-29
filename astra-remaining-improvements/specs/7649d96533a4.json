@@ -1,0 +1,24 @@
+{
+  "id": "7649d96533a4",
+  "project": "_Organized Desktop/03 Master Projects/MasterStore",
+  "summary": [
+    "Reject malformed price bounds, including trailing line terminators and unsafe integer overflow.",
+    "Preserve valid non-negative digit bounds, server first-value semantics and URL serialization behavior.",
+    "Execute five focused tests against the real listing parser, serializer and key builder."
+  ],
+  "changedFiles": [
+    "storefront/src/lib/utils/listing-search-params.ts",
+    "storefront/tests/listing-search-params.test.mjs",
+    "storefront/tests/alias-loader.mjs",
+    "astraupskill/snapshots/src/lib/utils/listing-search-params.ts",
+    "astraupskill/evidence/crud-b03-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7649d96533a4/results-crud-b03.json"
+  },
+  "limits": [
+    "No claim about Next rendering, provider requests, catalog persistence, authorization, cache behavior, or durable webhook idempotency."
+  ]
+}

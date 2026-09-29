@@ -1,0 +1,215 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "summary": [
+    "Enforced service-entry permissions and actor-aware audit projection, including fail-closed unknown roles.",
+    "Added a synchronous cloned mock transaction for publish and rollback, preserving lineage and invalidating cache only after a successful commit.",
+    "Restricted numeric comparisons to finite usageCount values, rejected duplicate rule and condition IDs, and preserved stable evaluator behavior.",
+    "Mapped validation and malformed JSON to safe 400 responses and unexpected errors to a generic 500 envelope without exposing secrets.",
+    "Added Suspense startup boundaries and an actual Node test suite covering the changed behavior, plus nine linked upskill guides and exact original snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/38cbd0ab05af/w24_tests_final_20260913.json",
+    "expectedTests": 11,
+    "environment": "Node 22.16.0; Next 16.2.3; React 19.2.4; TypeScript 5; Node test runner",
+    "command": "node --conditions=react-server --import tsx --test tests/feature-platform.test.ts src/lib/auth/security-boundary.test.ts",
+    "resultsDirectory": "38cbd0ab05af"
+  },
+  "testResults": {
+    "project": "_Organized Desktop/05 Numbered Experiments/w24",
+    "id": "38cbd0ab05af",
+    "command": [
+      "node.exe",
+      "--conditions=react-server",
+      "--import",
+      "tsx",
+      "--test",
+      "tests/feature-platform.test.ts",
+      "src/lib/auth/security-boundary.test.ts"
+    ],
+    "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+    "environmentOverrides": {},
+    "startedAt": "2026-09-13T14:27:46.254250+00:00",
+    "status": "complete",
+    "log": "w24_tests_final_20260913.log",
+    "pid": 23648,
+    "exitCode": 0,
+    "passed": true,
+    "finishedAt": "2026-09-13T14:27:49.865992+00:00",
+    "elapsedSeconds": 3.61
+  },
+  "courseWords": 3695,
+  "courseFiles": 9,
+  "courseLinksChecked": 35,
+  "files": [
+    {
+      "file": "src/app/layout.tsx",
+      "before_sha256": "775cb3b22197ca07f51f978867c3861c677f9a39ec890f31f66ec46aa692da96",
+      "after_sha256": "1f386f4a3b8884554f616e4b97e2149e15e4cf8d79c764177fbfca2b32084f5f"
+    },
+    {
+      "file": "src/lib/data/mock-db.ts",
+      "before_sha256": "de5d0992a748b4ff9f9ae289f1da93b282964ab07a4182e53bb77fc0be07c39e",
+      "after_sha256": "d9c035f7df0ac9919c5ef7e0c1d3f8514f4a939527ead7175d7462d4990a20ed"
+    },
+    {
+      "file": "src/lib/http/api-response.ts",
+      "before_sha256": "c02e78f1abaf0fbe60e1143522095a0645f435c1c73fcccd619e517ced0949a5",
+      "after_sha256": "a089e3a4d31b5708516a35fe53fdf645f46c42a3ddf644f81f3b789e4af05296"
+    },
+    {
+      "file": "src/lib/runtime/evaluator.ts",
+      "before_sha256": "85ed497bbdb7aefba47711b4b31ceb7cac60a51c50ff25b950fa259a2d195256",
+      "after_sha256": "1eb5253873e57e24e4ddaeee22dd5fc2084c863d4e0733ae2b179844ac74c667"
+    },
+    {
+      "file": "src/lib/validation/feature-config-schemas.ts",
+      "before_sha256": "f72bf076d131cb5c078c1e1d3396c1b237feaea64e10bdec32f30c1697f300ce",
+      "after_sha256": "35d6fbacbd309cad2cbffdc1cb75e61fc6e68e44722b561675c1eae831b6988b"
+    },
+    {
+      "file": "src/services/feature-config-service.ts",
+      "before_sha256": "8f12d11e2723e25face709c91a5a65d9f50caaf6f3d986b9e41d484511ebbfcd",
+      "after_sha256": "f9ce82267b366bbec3fbcab549979006af628853afa4bde419dd5d3ba76618b2"
+    },
+    {
+      "file": "tests/feature-platform.test.ts",
+      "before_sha256": "d2f74607a09fb4970c54d03479d0c1d0acff86fcd9c6f3762792d7a8df40475b",
+      "after_sha256": "094c443cd7952a30bea4307a32197b3fa346ea26cfbe004251f6466d9105908e"
+    },
+    {
+      "file": "src/app/api/feature-configs/[featureConfigId]/route.ts",
+      "before_sha256": "dc136724792a0f28244d5703e774d74c32280f8d80f07a89644bdc0c69641104",
+      "after_sha256": "85326cd1df01ea72e02f7455aeda8983bccc9b936330afd69edf4f62e54ab9b1"
+    },
+    {
+      "file": "src/services/evaluation-service.ts",
+      "before_sha256": "d0f704f8be70bf98478c2387852e24427e05f9e89986ef07360ff59b4b562235",
+      "after_sha256": "00fbefcf54af733c50976acefbcb1aa163c8231a11dbe56a9e5a736480cff836"
+    },
+    {
+      "file": "src/lib/auth/permissions.ts",
+      "before_sha256": "fbcbe3bd4d0c0d303643a0256728ec89f6ba78c240b32d6d4e0b9f40c26b7f48",
+      "after_sha256": "96b36130459a8a869185c5801ffb37d7f2d3e4a81132995b3a3334acf4b930cf"
+    },
+    {
+      "file": "src/lib/auth/security-boundary.test.ts",
+      "before_sha256": null,
+      "after_sha256": "3001d09cb585d79d412b0be2596fc7aceb3fcd899d71e84b502ab1290670bd14"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "after_sha256": "e8b9727516f34f433258f3cdbbeaeba21083d1eca77b33a6aab517a3b4c529da"
+    },
+    {
+      "file": "astraupskill/original/tsconfig.json.txt",
+      "before_sha256": null,
+      "after_sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c"
+    },
+    {
+      "file": "astraupskill/original/src__app__api__feature-configs__[featureConfigId]__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "dc136724792a0f28244d5703e774d74c32280f8d80f07a89644bdc0c69641104"
+    },
+    {
+      "file": "astraupskill/original/src__services__evaluation-service.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d0f704f8be70bf98478c2387852e24427e05f9e89986ef07360ff59b4b562235"
+    },
+    {
+      "file": "astraupskill/original/src__lib__auth__permissions.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "fbcbe3bd4d0c0d303643a0256728ec89f6ba78c240b32d6d4e0b9f40c26b7f48"
+    },
+    {
+      "file": "astraupskill/original/src/app/layout.tsx",
+      "before_sha256": null,
+      "after_sha256": "775cb3b22197ca07f51f978867c3861c677f9a39ec890f31f66ec46aa692da96"
+    },
+    {
+      "file": "astraupskill/original/src/lib/data/mock-db.ts",
+      "before_sha256": null,
+      "after_sha256": "de5d0992a748b4ff9f9ae289f1da93b282964ab07a4182e53bb77fc0be07c39e"
+    },
+    {
+      "file": "astraupskill/original/src/lib/http/api-response.ts",
+      "before_sha256": null,
+      "after_sha256": "c02e78f1abaf0fbe60e1143522095a0645f435c1c73fcccd619e517ced0949a5"
+    },
+    {
+      "file": "astraupskill/original/src/lib/runtime/evaluator.ts",
+      "before_sha256": null,
+      "after_sha256": "85ed497bbdb7aefba47711b4b31ceb7cac60a51c50ff25b950fa259a2d195256"
+    },
+    {
+      "file": "astraupskill/original/src/lib/validation/feature-config-schemas.ts",
+      "before_sha256": null,
+      "after_sha256": "f72bf076d131cb5c078c1e1d3396c1b237feaea64e10bdec32f30c1697f300ce"
+    },
+    {
+      "file": "astraupskill/original/src/services/feature-config-service.ts",
+      "before_sha256": null,
+      "after_sha256": "8f12d11e2723e25face709c91a5a65d9f50caaf6f3d986b9e41d484511ebbfcd"
+    },
+    {
+      "file": "astraupskill/original/tests/feature-platform.test.ts",
+      "before_sha256": null,
+      "after_sha256": "d2f74607a09fb4970c54d03479d0c1d0acff86fcd9c6f3762792d7a8df40475b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b8baa40bb11f9245bde5f6efd314ab2205a38535fc1600b718f2f321e33d3030"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d30a72e9e43ab1c204243fe2b966c2dc03764097fb09e7cac70198e90a2ad811"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "c2956478603eb779a28221e4cde65752f5b558de5f1e721c859bd0b867719700"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f6a6e1e3e12d0a7a68c9c9b2201f997d225c33e8278182d5621606a8bbb6709d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6a9015ae6704a416ad6712607186a5eabe34368a1e173d77992a58af3c1a9c40"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "671252035c8154a7c3da5dc012b295f792bca29663a219993c23b9d5c26aa257"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b579de94bff49ca0d09e1805d64d1b2a58a5f499c646bd4a3119ba4027cf1e32"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "50131c0d0c729c64fe0e590b8517e5be6f71c5e001f26959cb947576a1e4e159"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "364970703d286e7c8d87a8d27fdf13b6328fd438c87ed2e1512ececea6d7d1fa"
+    }
+  ],
+  "limits": [
+    "The transaction and cache checks use the real in-process mock database and do not establish SQL durability, multi-process isolation, or distributed cache coherence.",
+    "The synchronous transaction rejects thenables; identifier counters may have gaps after failed attempts, and rollout bucketing includes version ID under the existing contract.",
+    "The authenticated actor is represented by the project fixture; production identity provenance, browser interaction, accessibility, and deployment are outside these checks.",
+    "The delivery excludes node_modules, .next build output, databases, private environment files, and other generated artifacts."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T14:37:43.672926+00:00"
+}

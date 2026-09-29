@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D3",
+  "id": "43d6b6358f56",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/api-key-verify-boundary.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\43d6b6358f56",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:14:26.513067+00:00",
+  "status": "complete",
+  "log": "crud-b04-d3-apikey-final2.log",
+  "pid": 35544,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T02:14:36.932738+00:00",
+  "elapsedSeconds": 10.32
+}

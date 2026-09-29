@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "tests": 31,
+  "storeTests": 20,
+  "chromiumScenarios": 11,
+  "syntaxChecks": 6,
+  "environment": "Node 22.16.0; Playwright 1.60.0; Chromium; isolated browser contexts and loopback static server",
+  "checks": [
+    "CRUD and persisted reload",
+    "Actual two-tab Web Locks and stale editor conflicts",
+    "Quota failure and corrupt-data recovery",
+    "Literal text rendering and import/export",
+    "Round progress and keyboard dialog behavior",
+    "Desktop/narrow screenshots and overflow checks",
+    "Static asset allowlist and response headers"
+  ]
+}

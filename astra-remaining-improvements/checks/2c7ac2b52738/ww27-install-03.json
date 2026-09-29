@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "npm.cmd",
+    "install",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:17:33.504626+00:00",
+  "status": "complete",
+  "log": "ww27-install-03.log",
+  "pid": 22448,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T13:22:18.215771+00:00",
+  "elapsedSeconds": 284.72
+}

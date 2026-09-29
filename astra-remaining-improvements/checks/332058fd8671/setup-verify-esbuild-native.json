@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "-e",
+    "const e=require('esbuild'); console.log(JSON.stringify({esbuild:e.version,platform:process.platform,arch:process.arch,out:e.transformSync('const x: number = 1',{loader:'ts'}).code})); console.log(process.version);"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\332058fd8671",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:17:56.903390+00:00",
+  "status": "complete",
+  "log": "setup-verify-esbuild-native.log",
+  "pid": 24136,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:17:57.715035+00:00",
+  "elapsedSeconds": 0.81
+}

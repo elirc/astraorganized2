@@ -1,0 +1,33 @@
+{
+  "id": "d84730649bc6",
+  "project": "_Organized Desktop/05 Numbered Experiments/B1",
+  "summary": [
+    "Incident detail responses authorize embedded parent and child records with the same existing policy used for direct incident access.",
+    "The service regression tests hidden relationships and retained admin, matched responder and assignee access, with intercepted store reads and fail-on-write mocks in a unique temporary workspace.",
+    "Nine learning guides explain the request flow, projection authorization, exact before/after code, debugging, runnable practice and solutions; original source and actual check logs accompany the course."
+  ],
+  "changedFiles": [
+    "src/lib/platform.ts",
+    "checks/incident-detail-regression.mjs",
+    "astraupskill/snapshots/platform-before.ts.txt",
+    "README.md",
+    "astraupskill/evidence/service-regression-07.json",
+    "astraupskill/evidence/service-regression-07.log",
+    "astraupskill/evidence/lint-04.json",
+    "astraupskill/evidence/lint-04.log",
+    "astraupskill/evidence/typecheck-01.json",
+    "astraupskill/evidence/typecheck-01.log",
+    "astraupskill/evidence/build-01.json",
+    "astraupskill/evidence/build-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/d84730649bc6/results.json",
+    "command": "node checks/incident-detail-regression.mjs",
+    "environment": "Node 22.16.0, npm 10.9.2, Next 16.1.6; mocked store and unique OS temporary compilation"
+  },
+  "limits": [
+    "The regression uses a complete mocked StoreData fixture and disposable compilation; it does not touch the canonical project data directory.",
+    "This protects embedded Incident object contents only. It does not redesign demo actor selection, authentication, raw relationship identifiers, escalation semantics, persistence transactions, or external integrations."
+  ]
+}

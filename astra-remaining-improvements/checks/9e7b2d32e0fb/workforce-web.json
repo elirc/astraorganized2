@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netvg",
+  "id": "9e7b2d32e0fb",
+  "command": [
+    "npm",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e7b2d32e0fb\\src\\PeblClone.Web",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:10:49.724475+00:00",
+  "status": "launch-failed",
+  "log": "workforce-web.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T22:10:49.805620+00:00",
+  "elapsedSeconds": 0.04
+}

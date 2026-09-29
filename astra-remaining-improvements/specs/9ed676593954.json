@@ -1,0 +1,32 @@
+{
+  "id": "9ed676593954",
+  "project": "ai-observer-reference",
+  "summary": [
+    "Scope UpdateWidget response read-back by the same dashboard parent as its UPDATE.",
+    "Prevent wrong-dashboard requests from returning another dashboard's widget.",
+    "Preserve actual DuckDB storage behavior and report native toolchain limits honestly."
+  ],
+  "changedFiles": [
+    "backend/internal/storage/dashboard_store.go",
+    "backend/internal/storage/dashboard_store_scope_test.go",
+    "checks/9ed676593954/isolated/storage/dashboard_store.go",
+    "checks/9ed676593954/isolated/storage/dashboard_store_scope_test.go",
+    "checks/9ed676593954/isolated/storage/duckdb_adapter.go",
+    "checks/9ed676593954/isolated/internal/api/dashboard_models.go",
+    "checks/9ed676593954/isolated/go.mod",
+    "checks/9ed676593954/isolated/go.sum",
+    "checks/9ed676593954/isolated/uuidstub/go.mod",
+    "checks/9ed676593954/isolated/uuidstub/uuid.go",
+    "astraupskill/snapshots/backend-internal-storage-dashboard_store.go.before",
+    "astraupskill/evidence/9ed676593954-crud-b08-runtime.tap.txt",
+    "astraupskill/evidence/9ed676593954-crud-b08-native-go.txt"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9ed676593954/results-crud-b08.json"
+  },
+  "limits": [
+    "Temporary isolated module uses a faithful in-memory database/sql adapter and a local UUID stub to avoid the incompatible DuckDB native bindings.",
+    "The real application DuckDB package was not executed; no API or concurrency claim."
+  ]
+}

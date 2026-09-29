@@ -1,0 +1,23 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "FleetCommand.slnx",
+    "--no-restore",
+    "--configuration",
+    "Release",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/missioncontrol/tests-02"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ee8b0b1a6855",
+  "startedAt": "2026-09-12T17:37:14.102862+00:00",
+  "status": "complete",
+  "log": "tests-02.log",
+  "pid": 13560,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T17:41:11.212086+00:00",
+  "elapsedSeconds": 237.1
+}

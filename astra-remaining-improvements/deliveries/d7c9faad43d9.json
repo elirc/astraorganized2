@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/g1",
+  "id": "d7c9faad43d9",
+  "summary": [
+    "Validate parent city existence before creating a shop so the catalog cannot contain orphan city references.",
+    "Preserve valid shop normalization while rejecting unknown city IDs before any serialized store write."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/d7c9faad43d9/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/g1",
+        "id": "d7c9faad43d9",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-shop-city.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\d7c9faad43d9",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:54:37.400591+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 11228,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:54:46.461327+00:00",
+        "elapsedSeconds": 9.05
+      }
+    ],
+    "limits": [
+      "Four runtime cases execute actual store and utility source with filesystem, path, slugify, clsx, scoring and schema adapters. Real nullable-text and array normalization execute; third-party slug behavior is not established.",
+      "No native filesystem, SQL, HTTP auth, cascade, locking or concurrent write behavior executed. readStore may call mkdir before rejecting an unknown city; zero writes means zero writeFile calls, not zero filesystem activity.",
+      "The write-failure adapter throws before storing bytes; this does not prove native writeFile is atomic or preserves a file on partial failure. Local Next.js guides absent after cleanup; no framework API was changed."
+    ]
+  },
+  "courseWords": 1631,
+  "courseFiles": 9,
+  "courseLinksChecked": 30,
+  "files": [
+    {
+      "file": "src/lib/store.ts",
+      "before_sha256": "7463f7e3daaf0a7e8e498bb2124d56cd985442de7966ea670d148a03abb08568",
+      "after_sha256": "feb3c82ec318d76736a137f7b946ca0a43ac1e4814638ba5cae1c0a5834ec746"
+    },
+    {
+      "file": "tests/runtime-shop-city.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "42e40b253498162b6a29535d047f84d16774257fbf9dd89cec787e414ab2c1c6"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-lib-store.ts.before",
+      "before_sha256": null,
+      "after_sha256": "7463f7e3daaf0a7e8e498bb2124d56cd985442de7966ea670d148a03abb08568"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "00d4b3849cf4ab606db00476cd45bb897332a070748fa607e69bb67e3d06775a"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "6ad43183e0ff65049768b30165f10d2df33f578ce14400543e591b24e65ece43"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "33c1830107dbd9e735b24c9e0704e67f5ce6f0e7a97bfc6ec2ca59fd9a581a50"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "65fedafeaaafa76cab6d88d26ea3b6fd663f9a314887bf1cf5ce7524c4e30432"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "13cdf3ed8343d80e9707c69f968375093a653eb0e7d3ec0cdf6ee8338f452fa3"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "8efd30bb832caacc9eaac4f9f3244765e029173b46523280fa8a08fc34baf115"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "70e3939fe68770870b08cc857c53b0b98d134e2be1852b6a79536e3cf765a8d2"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a32997e397cf2c7a0cac25930680a923a6c5f4ff965b4db981c3b9d6e435a1c3"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "48ce5925df6cef95da10a75c2798b73e3cac53354ef05d9df11dc4c148bda993"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9e2d70238db83f80e4be03d71bccd4cd1bb6505f9cabb00b91c65048a191bf70"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "0068be55d15c897e7dc4fa0e3d1889fd0cb4ef92105e4ea580c50113e4401915"
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual store and utility source with filesystem, path, slugify, clsx, scoring and schema adapters. Real nullable-text and array normalization execute; third-party slug behavior is not established.",
+    "No native filesystem, SQL, HTTP auth, cascade, locking or concurrent write behavior executed. readStore may call mkdir before rejecting an unknown city; zero writes means zero writeFile calls, not zero filesystem activity.",
+    "The write-failure adapter throws before storing bytes; this does not prove native writeFile is atomic or preserves a file on partial failure. Local Next.js guides absent after cleanup; no framework API was changed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:57:34.995179+00:00"
+}

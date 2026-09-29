@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "--test"
+  ],
+  "exitCode": 0,
+  "seconds": 37.21
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm.cmd",
+    "ls",
+    "--all",
+    "--json"
+  ],
+  "workingDirectory": "client",
+  "exitCode": 0,
+  "seconds": 39.29
+}

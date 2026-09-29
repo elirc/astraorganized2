@@ -1,0 +1,9 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test/http.test.js"
+  ],
+  "exitCode": 0,
+  "seconds": 16.56
+}

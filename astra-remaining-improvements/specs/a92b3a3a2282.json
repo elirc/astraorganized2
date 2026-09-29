@@ -1,0 +1,54 @@
+{
+  "changedFiles": [
+    "README.md",
+    "NetTrello.sln",
+    "src/NetTrello.Api/Application/BoardService.cs",
+    "src/NetTrello.Api/Contracts/BoardDtos.cs",
+    "src/NetTrello.Api/Domain/Board.cs",
+    "src/NetTrello.Api/Domain/BoardColumn.cs",
+    "src/NetTrello.Api/Domain/Card.cs",
+    "tests/NetTrello.Checks/NetTrello.Checks.csproj",
+    "tests/NetTrello.Checks/Program.cs",
+    "tests/http-regression.ps1",
+    "snapshots/Board-before.cs.txt",
+    "snapshots/BoardColumn-before.cs.txt",
+    "snapshots/BoardDtos-before.cs.txt",
+    "snapshots/BoardService-before.cs.txt",
+    "snapshots/Card-before.cs.txt",
+    "snapshots/NetTrello.sln-before.txt",
+    "snapshots/README-before.md.txt",
+    "astraupskill/evidence/verify-03.json",
+    "astraupskill/evidence/verify-03.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "summary": [
+    "Implements presence-aware PATCH card updates with JsonElement Undefined versus explicit Null semantics, preservation of omitted fields, explicit clears for nullable values, empty-patch rejection, strict unknown-property handling, and known enum/date validation.",
+    "Prevalidates Card.Update title/description/priority/labels before assignment and repairs Board move ordering so missing targets, negative positions, and full destinations fail before source removal; same-column reorder works at capacity.",
+    "Preserves the existing in-process clone-on-write repository and optimistic version check, while adding real domain/service checks for clone isolation, stale versions, competing writes, linked ordering, and unchanged rejected aggregates.",
+    "Adds an executable HTTP regression that checks actual status and serialized problem codes for title-only, invalid-priority, and empty PATCH requests against a local seeded API.",
+    "Adds nine source-grounded astraupskill guides and exact canonical source snapshots for the bounded change."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "stage/a92b3a3a2282/astraupskill/evidence/results.json",
+    "logFile": "stage/a92b3a3a2282/astraupskill/evidence/verify-03.log",
+    "sourceHashesFile": "checks/a92b3a3a2282/verify-03-source-hashes.json",
+    "expectedTests": 1,
+    "command": "cmd /c dotnet restore NetTrello.sln --ignore-failed-sources && dotnet build NetTrello.sln --no-restore && dotnet run --project tests/NetTrello.Checks/NetTrello.Checks.csproj --no-build && powershell -NoProfile -ExecutionPolicy Bypass -File tests/http-regression.ps1",
+    "environment": "ASP.NET Core net8 API; .NET SDK 10.0.302 with documented major roll-forward for local HTTP process; no database, credentials or external service",
+    "notes": [
+      "verify-03 terminal exit 0; restore and solution build have zero warnings/errors.",
+      "Domain/service harness reports JSON presence, invalid shape/enum, aggregate prevalidation, version conflicts and clone isolation passed.",
+      "HTTP harness reports serialized title-only PATCH, invalid enum problem and empty patch problem passed.",
+      "verify-01 had malformed nested guards and verify-02 is superseded by verify-03 after final deserialization coverage."
+    ]
+  },
+  "limits": [
+    "InMemoryBoardRepository serializes callbacks only within one process and has no durable database or cross-process lock.",
+    "Clone-on-write preserves stored state after callback failure; direct domain methods still require their own prevalidation, which this patch adds.",
+    "PATCH presence handling is covered by DTO deserialization and local HTTP checks, but no browser or production authentication test is included.",
+    "The HTTP script rolls the net8 API forward to the installed .NET 10 runtime; it does not prove behavior on a deployed .NET 8 host.",
+    "No crash-safe persistence, database uniqueness constraint, distributed optimistic concurrency, or power-loss recovery is claimed.",
+    "Client callers were traced but no client build or browser check ran; the console failed-move snapshot omits board Version and UpdatedAt."
+  ]
+}

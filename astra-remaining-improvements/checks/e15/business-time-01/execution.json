@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/test_business_time.py",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\business-time-01\\pytest-temp",
+    "--junitxml",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\business-time-01\\results.xml"
+  ],
+  "exitCode": 0,
+  "seconds": 45.43
+}

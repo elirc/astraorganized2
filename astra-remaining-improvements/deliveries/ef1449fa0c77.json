@@ -1,0 +1,148 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+  "id": "ef1449fa0c77",
+  "summary": [
+    "Require selected event types to match the resolved tenant and requested host before booking or availability work.",
+    "Reject inactive event types consistently in availability while preserving valid booking, existing conflict and empty-schedule behavior.",
+    "Add eleven executable production-source C# cases and nine linked teaching chapters on resource relationships, early rejection and evidence boundaries."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/ef1449fa0c77/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 11,
+    "checks": [
+      {
+        "project": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+        "id": "ef1449fa0c77",
+        "command": [
+          "dotnet",
+          "run",
+          "--project",
+          "tests/NetCalendy.ScopeHarness",
+          "--configuration",
+          "Release"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ef1449fa0c77",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:58:52.209664+00:00",
+        "status": "complete",
+        "log": "crud-b02-scope-harness.log",
+        "pid": 33336,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:02:29.961167+00:00",
+        "elapsedSeconds": 217.72
+      }
+    ],
+    "limits": [
+      "Eleven handler cases compiled and executed actual linked production source on .NET10 with explicit repository and minimal MediatR contract doubles.",
+      "Original .NET9 solution/xUnit suites, ASP.NET/MediatR pipelines, EF Core, PostgreSQL and browser integration were not executed.",
+      "This relationship/state guard does not establish booking availability membership, timezone correctness, atomic double-booking prevention or tenant middleware behavior."
+    ]
+  },
+  "courseWords": 2838,
+  "courseFiles": 9,
+  "courseLinksChecked": 13,
+  "files": [
+    {
+      "file": "src/NetCalendy.Application/Bookings/Commands/CreateBooking/CreateBookingHandler.cs",
+      "before_sha256": "3d62969003f14a136c73f13bbffdaaa96e024626bdc912d6980481a17802f750",
+      "after_sha256": "c0022361b3c1815b5f0d4e4c194bd0594af1ff87dc8040df50cb7d3a80aeff41"
+    },
+    {
+      "file": "src/NetCalendy.Application/Schedules/Queries/GetAvailableSlots/GetAvailableSlotsHandler.cs",
+      "before_sha256": "0ab9b4e36384b68f34182a465aadb55a6cbbec71f4feee54b0488f2f1e49f71b",
+      "after_sha256": "7c0d1d93023f438f577c4a6c9644fa5cbc10093cf0ece4947d26fc2eba454ecb"
+    },
+    {
+      "file": "tests/NetCalendy.ScopeHarness/NetCalendy.ScopeHarness.csproj",
+      "before_sha256": null,
+      "after_sha256": "10dc65063cfc554941ad8bc8fdcd5296902e072e00e6ea067f63b3abd7772212"
+    },
+    {
+      "file": "tests/NetCalendy.ScopeHarness/MediatorContracts.cs",
+      "before_sha256": null,
+      "after_sha256": "dd8e3cee48649fd8380d50ad2bbb227ad9dbf702099dceb5c53a11d1e8b8e33f"
+    },
+    {
+      "file": "tests/NetCalendy.ScopeHarness/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "95aaff3674ae68705b58dd327ccd306d6da1dc83aeed4453f54c4c2fff072daa"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetCalendy.Application__Bookings__Commands__CreateBooking__CreateBookingHandler.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3d62969003f14a136c73f13bbffdaaa96e024626bdc912d6980481a17802f750"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetCalendy.Application__Schedules__Queries__GetAvailableSlots__GetAvailableSlotsHandler.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0ab9b4e36384b68f34182a465aadb55a6cbbec71f4feee54b0488f2f1e49f71b"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-scope-harness.log",
+      "before_sha256": null,
+      "after_sha256": "9c2a2a8883cf30dbf5da9d9b209d0af234888cff0815e7507669e6bb70bc610e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "f3f0082242136fe34b97e5a18341832ba887f2eb1e0bf1841c6c52b21215ebc1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "40afe04a8ed36d17d47f3977e62f2b2d4c2adf7e5ab7dffa0b198ff6b720f00d"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "5e71a6419bc32c09d31636f1226eadd92159f2926bde79722fe01d97e709ff47"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a4f19f351362ccfc4df8a02cfa240adbf4da1eef2125bcade2165bf9c68fabac"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "2e0cff74b0374d78598e94f317523bd756e3a1aee4184983a4c7d278222c9127"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "5c992f80054b2c783e7878f8b07568f97185197a8c11fdfc5886aa875c2830bd"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "05d2b08de2c9c7cbd706a11dc6ee3348ff79b22926f3455665fa8202df78eb97"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "4b768774e64920f2ee3e8dcaf0245b585302b874ddcd5e240a662020dec71ed0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "52a98b9c87eddd997488facf22ad8f127472815009726ce48d2f897dcbdc1f94"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2489504a4d600fa0e2f0d816993eedbb3bf80acbaa779c861ca8b04b3b8c846f"
+    }
+  ],
+  "limits": [
+    "Eleven handler cases compiled and executed actual linked production source on .NET10 with explicit repository and minimal MediatR contract doubles.",
+    "Original .NET9 solution/xUnit suites, ASP.NET/MediatR pipelines, EF Core, PostgreSQL and browser integration were not executed.",
+    "This relationship/state guard does not establish booking availability membership, timezone correctness, atomic double-booking prevention or tenant middleware behavior."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:08:47.392624+00:00"
+}

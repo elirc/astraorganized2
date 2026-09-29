@@ -1,0 +1,32 @@
+{
+  "id": "5528ac452b91",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:29:58.814493+00:00",
+  "sourceReview": "Read actual upload service, guards, permissions, errors and decoder. Lower bound joins existing upper bound before chunk mutations; no completion or atomic storage guarantee.",
+  "teachingReview": "Reviewed nine chapters, corrected completion assembly and zero repository call overclaims, updated actual helper execution and retry evidence; documented integer assumption and delete-before-write risk.",
+  "testReview": "Five passing cases execute real service/helpers with constructor adapters; invalid 0,-1,3, valid part1 and upper-bound retry retaining chunk id. No real storage, database or route validation run.",
+  "specSHA256": "4cdb9eae03297b2f89d2eb3a90184dbebbfdb7bc25c487682979ea16d1ae87ec",
+  "fileHashes": {
+    "src/services/uploadService.ts": "030add54b5dff46b2bccd1955aff6c1fc0c497db119ddadc701b55714ed48b9d",
+    "tests/runtime-upload-bounds.test.mjs": "eff591d999011a093f3c3f977d010ec9a849faa97f27bd8ce5ad7c637b70392b",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src/services/uploadService.ts": "258dd32cd21533e13ef6bdbfad8f40052ce255193da603419dc85b884043614d",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "deea7f55569f146d48f3f1edb4a746beecd2070bf9269a46e4ccd50199d2fa24",
+    "astraupskill/evidence/results.json": "eef58d62a294f1d5d638f9aa4106b5b4de3c81646ddca71ae390cd15b6bd384d",
+    "astraupskill/README.md": "a5cd27e1b914877db081d2ebff12458d9c30e409cd430a6a97e66c63e6b5562e",
+    "astraupskill/01-CODEBASE-MAP.md": "43e397cc81019f1d50f0342d3aabd8327eff19bdcb8addfdf6f67451cb0feb14",
+    "astraupskill/02-CONCEPTS.md": "d7d211625dca1d6258f3a2f9447f0a6203eeb6d6a0ae61cc11ba6959cdc75252",
+    "astraupskill/03-WORKED-CHANGE.md": "39a4a171bd0f352c9ecedb6309707dee29028320d308b621c38c81d484dd9e5e",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "aca7893fb31a776e91fd98d6a7f2458dee35dd52fdac28d12326fc2c96505f89",
+    "astraupskill/05-PRACTICE.md": "86d21a9d9a8bd19d30295bef0b9b126e71417f840b9c64345655932e816746e6",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "c6db4d038955403d91ad77092eb6cea29f7585d699083f921dd1968babd22586",
+    "astraupskill/07-TRACE-LAB.md": "f884db39dd91621b65b2edf8c866a0b847be5a66cc6a9aeccd7c95c88a247b69",
+    "astraupskill/VERIFICATION.md": "e6f060a1cc23737652f72ce309472095da69ee3d94831ea9be2e2d2516145b6c"
+  },
+  "evidenceHashes": {
+    "checks/5528ac452b91/astra-crud-b06-ww28.log": "7cb9d16f30363f6d3f10efabfcae7e92330ded66b5d8303e683c4d4efd7b17c9",
+    "checks/5528ac452b91/crud-b06-astra-runtime.json": "db056e0569e9a4f6e1e22f22a8f97bd8bd054f5984df20164909b7893236fd1c",
+    "checks/5528ac452b91/crud-b06-astra-runtime.log": "deea7f55569f146d48f3f1edb4a746beecd2070bf9269a46e4ccd50199d2fa24",
+    "checks/5528ac452b91/results-crud-b06.json": "eef58d62a294f1d5d638f9aa4106b5b4de3c81646ddca71ae390cd15b6bd384d"
+  }
+}

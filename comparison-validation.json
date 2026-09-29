@@ -1,0 +1,10 @@
+{
+  "validated_at": "2026-09-06T21:00:48.565883+00:00",
+  "valid": true,
+  "baseline_hashes_unchanged": true,
+  "all_old_only_paths_explained": true,
+  "all_new_only_paths_explained": true,
+  "exact_path_matches": 289,
+  "old_only": 52,
+  "new_only": 99
+}

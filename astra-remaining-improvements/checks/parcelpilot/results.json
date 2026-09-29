@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "total": 54,
+  "unitTests": 36,
+  "browserScenarios": 18,
+  "productionBuildPassed": true,
+  "packageLockMatchesPinnedManifest": true,
+  "screenshotsReviewed": 7,
+  "browserResults": "browser-verified/results.json"
+}

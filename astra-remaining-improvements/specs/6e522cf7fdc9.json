@@ -1,0 +1,32 @@
+{
+  "id": "6e522cf7fdc9",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww48",
+  "summary": [
+    "Protect pending follow-up status changes with compare-and-set persistence",
+    "Avoid parent-summary and activity writes after stale update conflicts",
+    "Add project-specific CRUD upskill course"
+  ],
+  "changedFiles": [
+    "src/repositories/followUpRepository.ts",
+    "src/services/followUpService.ts",
+    "src/tests/follow-up-status-conflict.test.ts",
+    "src/tests/runtime-followup.test.mjs",
+    "src/tests/runtime-followup-service.test.mjs",
+    "src/tests/helpers/load-typescript.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-repositories-followUpRepository.ts.before",
+    "astraupskill/snapshots/src-services-followUpService.ts.before",
+    "astraupskill/snapshots/src-tests-lead-stage-transition.test.ts.before",
+    "astraupskill/evidence/astra-crud-b01-services.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/6e522cf7fdc9/results-crud-b01.json"
+  },
+  "limits": [
+    "Vitest command is unrun because isolated dependency installation was unavailable",
+    "Portable VM tests use explicit repository/database contracts and do not prove two live PostgreSQL transactions race correctly",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+  ]
+}

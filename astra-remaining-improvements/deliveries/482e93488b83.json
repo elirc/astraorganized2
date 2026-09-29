@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z8",
+  "id": "482e93488b83",
+  "summary": [
+    "Rejects registration requests containing session IDs that are not owned by the selected event.",
+    "Executes five actual-service cases with real permission and AppError code.",
+    "Preserves an exact snapshot and teaches the service-side data boundary and verification limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/482e93488b83/results-crud-b07.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/z8",
+        "id": "482e93488b83",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/registration-session-selection.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\482e93488b83",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:21:44.357326+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 30920,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:21:57.316748+00:00",
+        "elapsedSeconds": 12.96
+      }
+    ],
+    "limits": [
+      "Persistence, audit and DB singleton adapted; NextResponse and zod exports unused by tested path are stubs.",
+      "No database concurrency or notification delivery proof. Duplicate IDs allowed and deduplicated. Notification failure can follow persistence."
+    ]
+  },
+  "courseWords": 1979,
+  "courseFiles": 9,
+  "courseLinksChecked": 12,
+  "files": [
+    {
+      "file": "src/modules/registrations/registration.service.ts",
+      "before_sha256": "36b985c2c181b37c14029ef1f39d3f72fada94c0f7c86e464875bdf0e3e051b9",
+      "after_sha256": "1300ce182b958450dc7138ea0e343b11d1d31dbe4f1970e1769379b3bea10d6a"
+    },
+    {
+      "file": "tests/registration-session-selection.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "74000e1e518d4f49b3b64bf57b4b01e28f8713dacfa23ce70cba1f665a05f430"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "4065a565d1381446772ef23f676585817a2b819ebc0e5f3e4b577f246d784bd0"
+    },
+    {
+      "file": "astraupskill/snapshots/src/modules/registrations/registration.service.ts",
+      "before_sha256": null,
+      "after_sha256": "36b985c2c181b37c14029ef1f39d3f72fada94c0f7c86e464875bdf0e3e051b9"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "e9126e93f6248fecd4bb9bc7e79064ace10afda59cb9623178cf9e8c358e600e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "92686c4c88d795cc5d0fa851a3f70c6977c3d64e69586162ef625237ef207ccb"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c54b1fed435716df02cd6433ae56d08d17ea31bd2fc4fbc86c0e15882dc5471f"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0f79ab4a1bf4d2896b1c54f9cfda1c166dc2bd7aa3da71bddb240e1a811ba5fa"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "4839ba7f5a097b458c26856ec25dc8663cda2237b1d412ccd25846f719dfc110"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9d12d143f369b5f4104461095e06b0a9688d7d8fb14ed1cfa9a02c1b97c6da0c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4f191714086e4938732ec34e8ce09d8b50017c4de4e8a723ca15310372fed999"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7185458fd89a34a09189951fa35343819d9c7561df93f341b0ae493e3b2c4fdd"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "4fc2a93008ed36dceb86f22908f7134287700ec923388185171c1e36a2769ae5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1f7251b29c14b05864ba7607e54b09cbf633a0d22361599c73ef84ac6bd2825f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8f9df4445a9d721f4858dfbdeb8b79397c5aa988ec70dda8bb45a2f4e9bf5529"
+    }
+  ],
+  "limits": [
+    "Persistence, audit and DB singleton adapted; NextResponse and zod exports unused by tested path are stubs.",
+    "No database concurrency or notification delivery proof. Duplicate IDs allowed and deduplicated. Notification failure can follow persistence."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:29:10.232265+00:00"
+}

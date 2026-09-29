@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "expectedTests": 20,
+  "executedTests": 20,
+  "testFiles": 7,
+  "command": "node_modules/.bin/vitest.cmd run src/tests/escalation-service.test.ts src/tests/route-unknown-role.test.ts src/tests/assignment-service.test.ts src/tests/dataIsolation.test.ts src/tests/permissions.test.ts src/tests/status-transition.test.ts src/tests/validation.test.ts --maxWorkers=1 --minWorkers=1",
+  "log": "ww39-own-property-tests-20260913.log",
+  "focusedRepairLog": "ww39-repair-tests-focused-20260913-r4.log",
+  "typecheck": {
+    "passed": true,
+    "log": "ww39-own-property-typecheck-20260913.log"
+  },
+  "environment": "stage-local npm ci; Prisma Client generated from stage prisma/schema.prisma; no live database",
+  "build": {
+    "passed": true,
+    "log": "orchestration-build-role-final-20260913.log",
+    "record": "orchestration-build-role-final-20260913.json"
+  }
+}

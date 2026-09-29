@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Employee task completion now requires both profile ownership and an EMPLOYEE task assignment before mutation.",
+    "Five actual-service cases execute real permission, transition and error modules, including no-write refusals, stage advance and audit failure.",
+    "The course documents the source map, ownership concepts, worked change, debugging, exercises, answers, trace, and verification limits."
+  ],
+  "changedFiles": [
+    "src/services/onboardingService.ts",
+    "tests/onboarding-task-ownership.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/onboardingService.ts.before",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/cd5a8a522511/runtime-b072.json"
+  },
+  "limits": [
+    "Persistence, audit and job adapters; no Next, Prisma, database isolation or rollback execution.",
+    "Employee ownerRole restriction only; HR/IT broader existing capability behavior unchanged. No enclosing service transaction."
+  ]
+}

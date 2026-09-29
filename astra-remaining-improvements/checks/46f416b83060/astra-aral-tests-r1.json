@@ -1,0 +1,19 @@
+{
+  "project": "aral",
+  "id": "46f416b83060",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\46f416b83060",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T22:21:08.502764+00:00",
+  "status": "complete",
+  "log": "astra-aral-tests-r1.log",
+  "pid": 23204,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T22:26:04.077083+00:00",
+  "elapsedSeconds": 295.57
+}

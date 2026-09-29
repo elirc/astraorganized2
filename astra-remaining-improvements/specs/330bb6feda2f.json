@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Resolve the full project-scoped identifier set before privacy deletion so aliases and canonical IDs are scrubbed together.",
+    "Remove associated alias mappings while preserving unrelated records and unknown-ID audit behavior."
+  ],
+  "changedFiles": [
+    "lib/server/privacy.ts",
+    "tests/runtime-privacy-alias-delete.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/lib-server-privacy.ts.before",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/330bb6feda2f/results-crud-b04.json"
+  },
+  "limits": [
+    "Four actual privacy-service runtime cases use explicit store, id and clock adapters; no Next route, real authorization, filesystem durability or concurrent mutation executed.",
+    "This bounded change expands identifier matching and alias cleanup in the existing scrubber. It is not complete erasure: other properties, userProperties, sessions, derived tables and audit metadata are not comprehensively scrubbed.",
+    "No-person deletion still scrubs exact matching event/raw history and aliases; only a completely unmatched id changes audit alone. Export behavior is unchanged."
+  ]
+}

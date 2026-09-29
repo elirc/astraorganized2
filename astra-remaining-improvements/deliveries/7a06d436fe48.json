@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww40",
+  "id": "7a06d436fe48",
+  "summary": [
+    "Provide a runnable source lab for job submission, approval, rejection, and audit sequencing.",
+    "Verify review-state guards through injected repository and audit adapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7a06d436fe48/results-crud-ww40-runtime-v5.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww40",
+        "id": "7a06d436fe48",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/job-posting-service-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7a06d436fe48",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:15:44.978762+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 2636,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:15:54.621466+00:00",
+        "elapsedSeconds": 9.64
+      }
+    ],
+    "limits": [
+      "Five actual service cases use real ApiError and repository/audit adapters. No route authentication, generated Prisma, SQL scoping or concurrency run.",
+      "Service review reads state before separate update and audit calls; no enclosing transaction or expected-status predicate is proved. The service does not itself assert reviewer role. No production code changed."
+    ]
+  },
+  "courseWords": 1027,
+  "courseFiles": 9,
+  "courseLinksChecked": 6,
+  "files": [
+    {
+      "file": "tests/job-posting-service-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "e78ca0cfb4afdd4aed23f7fe91fa93cc0f796560ede8332e3ce9cb1183a8742c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/jobPostingService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "563b237ef157a2895ac80c5f051245d9f2739c55de306bc30956721d7f287154"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "80dd9d1e19e7f43c73590eff587507ac14be5a3e9240c6622dc4c559212e8370"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "6bec0ba46c9acbc9e7cb213ecbb615efd9c37500b9511030594c730880e95b0e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8241e82361bc0c536c50df869b6ca49bae1c6fd8d1052bfa8a5083168b29112e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "2269d4682fedaf54e15dc9cec7a326b1a0f6c4a5f5adce568488f54125fb60ee"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8047b0366287c4a6ca95ba8ccf165809f800747b0cd0c906b73fc9cfe0edf347"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1b3e7c324c9bf51c2f15939ec8e28d4c81b9d8c2541244539d49af5860368f00"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "43bd637a6e05d6349299b0edd518480e33ba5c0a1b1c42a582ab6b8370bc1ba2"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "4698f29da00460f5a7b46fe564890f2452a4e89c61ff3b3a3cdc33751b5c2786"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "86f5b7306caa3b5e32b65075173d8e6cfef8baafe6aea110ae2628acbdeebc39"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9a62934d4effd4b333feee64719b20cca7d398376f3c53ea7c39c14f33bc9bef"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c44ec6cde403ef54c15bd160d7e35777da1e3ed8b941ef891db71c88717911af"
+    }
+  ],
+  "limits": [
+    "Five actual service cases use real ApiError and repository/audit adapters. No route authentication, generated Prisma, SQL scoping or concurrency run.",
+    "Service review reads state before separate update and audit calls; no enclosing transaction or expected-status predicate is proved. The service does not itself assert reviewer role. No production code changed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:20:09.258111+00:00"
+}

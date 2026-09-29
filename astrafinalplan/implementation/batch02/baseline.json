@@ -1,0 +1,728 @@
+[
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "app.js",
+    "sha256": "44fd681958367d36e50198e424e08c9586306c11a88cfc2091fe69061b8caf62"
+  },
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a653fdecdfe4bf9fb5eff288b07379b9c7e5f51ef3e2d598b837a8b6d27772de"
+  },
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "index.html",
+    "sha256": "5bf7d2114670eda465413ea3d66059bdae791bfb13076e40857ac8ccfb906eeb"
+  },
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "README.md",
+    "sha256": "b0d083e06fed8d7fd50cdba65faedf72fa87516c498bbbc6d122251120a98034"
+  },
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "styles.css",
+    "sha256": "263a2279eb993e7937dd677c88ab91df9b9e468628a0d8cb9a66f530cda2eb28"
+  },
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "file": "USER_STORIES.md",
+    "sha256": "4789e3e72c49f3465e891d0e1bf24ef2422115d082a6e368c81ae3312b524a97"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "app.js",
+    "sha256": "076d0e43b157084fce4cf3ea395720c95521caa749bdffbb4e32d49fe6e12c02"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "5015a9889672bcd8fc5ad5c867921ab82499c882f98537d93334f26c77e02771"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "index.html",
+    "sha256": "ed630f2df86e5609610b9f995b084f0c654369ae4dc4c10f6fc44d026246bad6"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "README.md",
+    "sha256": "b20d567d3ac1242011ba4002f4d6bd1f4e7fa19ce7573b97f804d76facf2a241"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "styles.css",
+    "sha256": "827e28c07150051e1f2d62fd935886c876ded6ed5307f62e52fa916a1ff188c5"
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "file": "USER_STORIES.md",
+    "sha256": "012558973a6b1f3fb8d7bdac78694df28b1daf78d9f4612bf983fd0304123f1d"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "app.js",
+    "sha256": "d32f070ad21c5a6720d5d279c025f1462ff53835b045a9c2713fb978b1208ada"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "226d584cc79a781b2b7454501505562bbba26c3a99091e172fa8c97922925e81"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "index.html",
+    "sha256": "f27babfffdd84fd12cee5fb4f895394416058aef39cc8acd386eda3a0a8080f2"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "README.md",
+    "sha256": "48d7ad7c71d84980dad339860e8d1fd5e0b0e46f560e2e3360e16b85eb27c554"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "styles.css",
+    "sha256": "4392dcb3a74322be0106d96968062afe74119dde15a843ff26a29bbe77bcf982"
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "file": "USER_STORIES.md",
+    "sha256": "863f72c20ae00c92ba085e4b6bc9f9c043e9177900c47b3f1a9bcefd6b19ee0f"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "028c35fca668044c417390beae2654f34b1b8bf65e53c5b9af3489eb6119ee4f"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "package.json",
+    "sha256": "50d6832ef07c2057c949b44a005eeb069a132aa025ab0c483f1f81b44057f37a"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "README.md",
+    "sha256": "03cb498eb82b7f76d54dbfe20944a84996fc05d08b81ef8bc314f327746d7512"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "USER_STORIES.md",
+    "sha256": "549342fc2f8e17874091b2fea90ac7b0e1a0b44bd30934c6e27b04ff8cda0335"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "client/index.html",
+    "sha256": "d56eda98c4a181a60d2ec3b00243a2650f090ebf16b41fc46285a0e98cdd0558"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "client/src/api.js",
+    "sha256": "9dbb1351a5e4058969541ebb08c0ef38649fe7e03ae609db8784af6baaa3ad25"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "client/src/App.jsx",
+    "sha256": "d716106ef985399639688360cf95f922814c5cb097112686de3a6550c2ad88fb"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "client/src/styles.css",
+    "sha256": "06fbc1bc0318b739400fd7cdba663d9c3c05cb303209384bc4ca24ff0c3ae93a"
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "file": "server/server.js",
+    "sha256": "be77c1c0d918d8c61a0cd146e442d498c8ebd89a77a61d79cd23a3192418a505"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "app.js",
+    "sha256": "d52a87e1fe80fb9f82a52a1201806cba3dd27d5e6ef4b3383754a3220a06140d"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "08c439385a1f421504c73b4e7ae5fe8e9233655bb513ad5a69bb166a48898f60"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "index.html",
+    "sha256": "dbc80a1731e79599da75f9f9550320918fa374e505683b66f9d03dd19863cce3"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "README.md",
+    "sha256": "a31f0374a2bf7a0ab68ed4ecafc2346ffd23792aa4d10689de74ee0da1e138d6"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "styles.css",
+    "sha256": "12f64e86fd2f57ec1619edabfe6a5eb5a56879557df8ab640a3c1c7af487ba2d"
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "file": "USER_STORIES.md",
+    "sha256": "05f153cd0a56ff4037d72d05a9030ebded41aa513856902804064bea1b4a003f"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "app.js",
+    "sha256": "6075dc130c36063e3d9e744356a78eddb57cbb6b928ce685583ca6206cf9d993"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a5e4525d086c9f9eddceefe5dd7114e282004a2f040e6fa6623909e31d55e7e3"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "index.html",
+    "sha256": "ae013adb3683c5db13cc2872b22579e22b771a9576cb50f107e2031a4f842a31"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "README.md",
+    "sha256": "1859eaa2ad87fc96f02291413e7151c1cd2f1c5e191314d3902edc896a6fd919"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "styles.css",
+    "sha256": "220db956e446e488eca19b557cb483b63da4763198a3d850578f446756c79c68"
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "file": "USER_STORIES.md",
+    "sha256": "9396d835b8bcb6b40e66dcea54de3bbdf77dc8bdf34c35431df95ef643a5ea58"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a1121360f7254aceffed0cbb794d5ba01758dd9964a13ccdb7a5cd1ab08482a3"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "index.html",
+    "sha256": "b6575e150fe433ae0a2cae49f3bbfd18f413d355c5156d1d39c65884f5ba9270"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "README.md",
+    "sha256": "91918bba0ff3ee3d84a3eae7498bdc025240203d58ae44ee05a6d726c12b4de1"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "styles.css",
+    "sha256": "f9b67a8203e7ddf27bc9a310f578327fe84a3eee612dbfac7ee0d0bfe9bcd310"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "USER_STORIES.md",
+    "sha256": "55a920e1c3f0a38bcc55cefa9eafca0505074d43850c32d13dac1b85434e4012"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "src/dom.js",
+    "sha256": "40f9a091c1976e682f32582c95af5443cb1cad621124b4a268b21e6264bb2017"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "src/main.js",
+    "sha256": "711bbb13b82d7c800f6a2da80caf5f9c71d0c19c444e865625dffc88219e7187"
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "file": "src/store.js",
+    "sha256": "1ebfccd611dd7158945105fac4adf37be0aeb603f30db39486a5bc2f10660207"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": ".env.example",
+    "sha256": "66c7a661544eaef8f9591f3972fb70f3f38afc54bec88efa9dcdaf8e558123e0"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "7dda27cb7712f83e40c4fa3f0a1fc075e8838c02307b93751846589726e118f6"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "package.json",
+    "sha256": "92d019ee4df8479e4a9ee7cb2ad982f40e28299cfcf4140cefe6281aded9cd3a"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "README.md",
+    "sha256": "430c007b1e78bf73eec7e19c07a40ba72d62f0d5e6ef93ed3626c39b3a827464"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "USER_STORIES.md",
+    "sha256": "a2b892537b7a27fdd872a365f72e5e42f70a56417dd5f29fcaf5f2c34c77f019"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "vite.config.ts",
+    "sha256": "f51285984072a0a5a330414b0892d86fda5376b96862a9dfbcd05839e7e5bb36"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "client/index.html",
+    "sha256": "ee4989c8caf864a9f92742a0f1f33a5b4b5decdfa53e554d193db13773d016c4"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "client/src/api.ts",
+    "sha256": "9754ee0620ab69a5a60aeb28368b2b4392a82d28b075ab373dd0e1de15e17088"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "client/src/App.tsx",
+    "sha256": "2e12192c6aed2a3e9ca7d91e70d00b61a6b7ed8432fc07fdc36bd65b60109abc"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "client/src/styles.css",
+    "sha256": "86f975ab94fa8ca14aa98e3cc7ba6e0bff84177e4cdf8a96c5ae7281aa45c9e4"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "server/db/schema.sql",
+    "sha256": "33605a541b7db1e63bc9cb1f9eaaab5c2f0120d3e4c6f4b22065e15cb201ee64"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "server/src/db.ts",
+    "sha256": "f8199c91a446d1f6d5484fe7b5432a42e4ecb98c90115884ae8d400f74e10aca"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "server/src/index.ts",
+    "sha256": "a88b2c16cfc0cf193cc9f9e1df378866d40d262731ca786b831293ac49331d98"
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "file": "shared/types.ts",
+    "sha256": "4f83ed231baff89fd57b59425cc46a45a9749ce47660af4804481314c8456ce4"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": ".env.example",
+    "sha256": "646425d69e7a3a25e2e376d5b412a20d483f1057a8c37d88f0762a3e37c6f136"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "README.md",
+    "sha256": "8121b6eb0458673dc9c628da1457c749b363ad5faa4e521ab40f2adf380d0612"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/index.html",
+    "sha256": "a19d4555fa9f363fb6d9c7a86877653059be5d0661653a61bb82926a1d1a4066"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/package.json",
+    "sha256": "5721dc901913e0ef9b8d4edbae86ae0ab72c592569206f05e2e058a372d13b55"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/vite.config.js",
+    "sha256": "ddd2dd5af2f1f12f7f93bfcc857e3b3d61b3e353264e243acaa0dbdf5532aff7"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/src/App.jsx",
+    "sha256": "a658697b6334c337950f260de59d54ef9cc5682bd1dd66df8ced81d7459a69ab"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/src/main.jsx",
+    "sha256": "d392549cda0d781102b1b9adef1943bd44c225ae4e7647199f216cf334022aac"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "client/src/services/api.js",
+    "sha256": "da464c7511262c6de6f56bd867172b84d866eb3b7c7e1674df337b26ff03cf27"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/knexfile.js",
+    "sha256": "d2a847a13cf209d7c407ef3836de06e13284f6fc36f775c8177fb34c6e78e343"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/package.json",
+    "sha256": "2c31158b078f58dcb3b7b5452c67e2754ca4b2684d6e3a12f07077ed297fd8e5"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/db/migrations/001_init.js",
+    "sha256": "55766178caa36f9640ce99e2d8b409f6ee90d25b0dcb37093fda5600c2867cef"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/db/seeds/001_seed.js",
+    "sha256": "2129849cc69138ededc9ce4205b31dec00c87df29fea57b22f3f7d57079e9269"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/app.js",
+    "sha256": "3d813e86d3b8449bc61108dc4c9a7e9319560627dd010e0e607317657fbf2a1f"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/server.js",
+    "sha256": "b37572c82e9c237c7823576a7a251ca204fb6df7fe7cab168e14dfd08291c2c6"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/config/db.js",
+    "sha256": "3e6d46835e9189acc540c31c995543215088d1bf8841ad4c5a41101827c583bb"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/config/env.js",
+    "sha256": "2ece31863b1d6c9ceda3b45d862dca7dbf617b866a5a4b7469eef2655d8d41f3"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/controllers/controller.js",
+    "sha256": "2a49b3dcd5eebb959420ab6edd17bda081e65909523a5b1a7a5aeb69c4602011"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/middleware/errorMiddleware.js",
+    "sha256": "7ac4d73083c00f78bd739cf740ff2fe65c4111cabfacc29e1d5b7219e4516bb5"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/models/model.js",
+    "sha256": "bce87e04e8561301e6e41189391b5df2c6894c4bbbadea4199eeaa6f23acad0d"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/routes/routes.js",
+    "sha256": "03d4b2128b73fccfad5f3766bc3bedfdf5ef3190ea23e5b473f15b86fc35e9e5"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/services/service.js",
+    "sha256": "f37860c3af019836356e076840c492b19699241128bab87261ccb3aa823dc15d"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/utils/errors.js",
+    "sha256": "bb285def099935b5c2aff30c2126ad052a4a42d8df45c42f3c071b5fd46ea658"
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "file": "server/src/utils/response.js",
+    "sha256": "117ad8895702ae64d42ef029dcd3b7b939b711830f4b93de61b573c9b0334cb4"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": ".env.example",
+    "sha256": "b0a442ecf1618804142f513e9b0543aed6348e088cec48b0e21a1284b88898d5"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "README.md",
+    "sha256": "fc402d71a22ae892bd67aec766ec53783c77dca162d5e0f6e1961ad2d1e07528"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/package-lock.json",
+    "sha256": "ba6efc741495fe87701b3e494dacdf244474d99ef0555ace1936771cf33bae37"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/package.json",
+    "sha256": "a8cbff07f792592b0877d3e911c7e5fca276ee9dc37c3505b921fa923e2c336e"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/tsconfig.json",
+    "sha256": "398b398766a6434885cdbd30d3f7bedbe490e8d34a460dd9658a4e9d60c63e56"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/App.tsx",
+    "sha256": "6369ee623d32b67e5b9afe1e7d59828229813b11cd6d400207ca3b885bde1524"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "client/src/services/api.ts",
+    "sha256": "7145edce8f2ff8ccc43de770864f9dc1a45381ab9e2b9ddd7c716b8270a574ae"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/knexfile.js",
+    "sha256": "f34b24bfd5f66251ca58b5c3d2a82978f1718d75359b651bac7bbce3047ab2cb"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/package-lock.json",
+    "sha256": "b264f5572b8c33043c1a3b7f929aeb7ccab4072475454397ca4036c61315a5ea"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/package.json",
+    "sha256": "82610ceef81a4f438223b017eafece1d632f7f84c0633c8dd4488142395df272"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/db/migrations/001_init.js",
+    "sha256": "59f964b58718079bcc2b010c76b446dc73a02bd31430393e65c460a19495fbde"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "5891a5c50e078a7ad8b5e130c1c809a0338d404474db4a206009d40ca5fe759f"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/db/seeds/001_seed.js",
+    "sha256": "8b52d70b276d921ebbaf4bfdea0fd266f177922cf17bfb7c2142c9c81c7c165b"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "9a720841cedc19b599a06ab559c04cf771f801fbe822ed74105d9e04bac7bd22"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/app.ts",
+    "sha256": "a11b902ad764f469af7ad3525e887bfcc92d1bbbc90f3641a85a7d88e8050ad6"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/server.ts",
+    "sha256": "3fb6b8c9fd3f591b05a60032166b9c4d62547d9bf5df76adf08ba50681424cda"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/config/db.ts",
+    "sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/config/env.ts",
+    "sha256": "fc488e7bde7dd07645ae3affa8db10d9599728d9c64c11014394a7a0bff7e409"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/models/model.ts",
+    "sha256": "e71e980dde1fc24831330b334affef2bc7aa1f1e0e9b672364689b43f7a17542"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/services/service.ts",
+    "sha256": "2637fa71c780d210c671ef2bba449d44d8513b452db4ba2382f5156c2ef00097"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c"
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "file": "server/src/utils/response.ts",
+    "sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0"
+  }
+]

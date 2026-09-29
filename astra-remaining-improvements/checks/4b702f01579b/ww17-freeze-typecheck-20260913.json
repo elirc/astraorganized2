@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/typescript/bin/tsc",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {
+    "DATA_SOURCE": "mock",
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww17_build_only"
+  },
+  "startedAt": "2026-09-13T16:10:40.438446+00:00",
+  "status": "complete",
+  "log": "ww17-freeze-typecheck-20260913.log",
+  "pid": 15032,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T16:11:20.569092+00:00",
+  "elapsedSeconds": 40.13
+}

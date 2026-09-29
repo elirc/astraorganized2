@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "command": [
+    "node",
+    "node_modules/prisma/build/index.js",
+    "generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f871ce5e237",
+  "environmentOverrides": {
+    "DATABASE_URL": "file:./astra-validation-placeholder.db"
+  },
+  "startedAt": "2026-09-12T23:55:39.204255+00:00",
+  "status": "complete",
+  "log": "root-generate-01.log",
+  "pid": 14616,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T23:58:30.241586+00:00",
+  "elapsedSeconds": 171.03
+}

@@ -1,0 +1,27 @@
+{
+  "summary": [
+    "Require selected event types to match the resolved tenant and requested host before booking or availability work.",
+    "Reject inactive event types consistently in availability while preserving valid booking, existing conflict and empty-schedule behavior.",
+    "Add eleven executable production-source C# cases and nine linked teaching chapters on resource relationships, early rejection and evidence boundaries."
+  ],
+  "changedFiles": [
+    "src/NetCalendy.Application/Bookings/Commands/CreateBooking/CreateBookingHandler.cs",
+    "src/NetCalendy.Application/Schedules/Queries/GetAvailableSlots/GetAvailableSlotsHandler.cs",
+    "tests/NetCalendy.ScopeHarness/NetCalendy.ScopeHarness.csproj",
+    "tests/NetCalendy.ScopeHarness/MediatorContracts.cs",
+    "tests/NetCalendy.ScopeHarness/Program.cs",
+    "astraupskill/snapshots/src__NetCalendy.Application__Bookings__Commands__CreateBooking__CreateBookingHandler.cs.original.txt",
+    "astraupskill/snapshots/src__NetCalendy.Application__Schedules__Queries__GetAvailableSlots__GetAvailableSlotsHandler.cs.original.txt",
+    "astraupskill/evidence/crud-b02-scope-harness.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/ef1449fa0c77/results-crud-b02.json"
+  },
+  "limits": [
+    "Eleven handler cases compiled and executed actual linked production source on .NET10 with explicit repository and minimal MediatR contract doubles.",
+    "Original .NET9 solution/xUnit suites, ASP.NET/MediatR pipelines, EF Core, PostgreSQL and browser integration were not executed.",
+    "This relationship/state guard does not establish booking availability membership, timezone correctness, atomic double-booking prevention or tenant middleware behavior."
+  ]
+}

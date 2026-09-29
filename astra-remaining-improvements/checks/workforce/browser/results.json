@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "database": "PostgreSQL; fresh helper-owned loopback cluster; migrations applied",
+  "mode": "browser",
+  "browserTests": 8,
+  "backendBuild": true,
+  "frontendBuild": true
+}

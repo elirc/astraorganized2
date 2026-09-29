@@ -1,0 +1,36 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-netairag-build-r3.json",
+    "astraupskill/evidence/astra-netairag-build-r3.log",
+    "astraupskill/evidence/astra-netairag-tests-r2.json",
+    "astraupskill/evidence/astra-netairag-tests-r2.log",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/sample-eval-cases__README.md.original.txt",
+    "astraupskill/snapshots/src__Infrastructure__Operations__OperationsService.cs.original.txt",
+    "astraupskill/snapshots/tests__UnitTests__NetAiOps.UnitTests.csproj.original.txt",
+    "sample-eval-cases/README.md",
+    "sample-eval-cases/retrieval.json",
+    "src/Application/Retrieval/LexicalRetriever.cs",
+    "src/Infrastructure/Operations/OperationsService.cs",
+    "tests/UnitTests/LexicalRetrieverTests.cs",
+    "tests/UnitTests/NetAiOps.UnitTests.csproj",
+    "tests/UnitTests/OperationsServiceTests.cs"
+  ],
+  "summary": [
+    "Added deterministic runbook retrieval with weighted fields, stable ties, bounded results and explicit no-match handling.",
+    "Persisted actual log and document evidence using JSON serialization, accurate tool counts and timestamps, and explicit zero model usage.",
+    "Added loaded evaluation fixtures, permission and saved-evidence regressions, and nine source-based course chapters."
+  ],
+  "limits": [
+    "Service tests use EF InMemory, not PostgreSQL; no relational isolation or deployed end-to-end claim is made.",
+    "Retrieval uses ASCII lexical tokens and materializes the knowledge corpus; model services are not called."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/6ee92f3ab313/sol15-results.json",
+    "expectedTests": 11,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

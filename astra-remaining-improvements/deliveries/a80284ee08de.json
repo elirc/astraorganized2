@@ -1,0 +1,201 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww55",
+  "id": "a80284ee08de",
+  "summary": [
+    "Moderation resolution reads through transaction-scoped repositories and conditionally updates the observed OPEN/IN_REVIEW state; stale writes return typed HTTP 409 and cannot create a second terminal audit.",
+    "Strict runtime schemas guard posting creation/decisions, moderation inputs and saved-search create/update, with parsed values used for writes and server-owned identity preserved.",
+    "Posting and moderation pagination now include a deterministic ID tie-break; the Next generated type import matches production build output.",
+    "Expanded the complete suite to 20 passing tests, including synchronized competing reads, rollback-fixture orchestration and actual Prisma predicate/HTTP mapping assertions.",
+    "Replaced mismatched course chapters with nine source-based guides and a new root README, with complete exercises/solutions and explicit database-test limitations."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a80284ee08de/resume14-results.json",
+    "expectedTests": 20,
+    "command": "Full Vitest suite and recorded TypeScript/build checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 20,
+    "passedTests": 20,
+    "failed": 0,
+    "notExecuted": 0,
+    "evidence": [
+      "resume14-tests-01",
+      "resume14-types-01",
+      "resume14-build-01"
+    ],
+    "scope": "Full Vitest suite plus listed type/build/lint checks; no live database or external provider run."
+  },
+  "courseWords": 3389,
+  "courseFiles": 9,
+  "courseLinksChecked": 92,
+  "files": [
+    {
+      "file": "src/repositories/moderationCaseRepository.ts",
+      "before_sha256": "a0f01aa11e2de338665298f638b996c7efffd15c3892f9c3ed6c1c304e798aa3",
+      "after_sha256": "d655b2da4ffdcc5c1f45a55093e2fdf4ca3864328d0ea9d92345a8659fc02831"
+    },
+    {
+      "file": "src/services/moderationService.ts",
+      "before_sha256": "ac8610dd49505c08eb29f16c60878c0caabd1c8b2c0867a3a1ae7b4442178886",
+      "after_sha256": "599a4defbe702d6c823a13951a39434333aecef6bb487f795b07526be535e405"
+    },
+    {
+      "file": "tests/unit/moderationService.test.ts",
+      "before_sha256": null,
+      "after_sha256": "bda1ac2b0124a9b6e980fcd4c2db99ef391e2a83e01e8f942cb89d39c8fd26b5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__moderationService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ac8610dd49505c08eb29f16c60878c0caabd1c8b2c0867a3a1ae7b4442178886"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__moderationCaseRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a0f01aa11e2de338665298f638b996c7efffd15c3892f9c3ed6c1c304e798aa3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__moderationSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "38d8004c78a6a5a413927912f9e827299000148056e4d16f6095aa788e5d9d32"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__savedSearchService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ae2a7710315796f15b58daccc056d8ce1720939379118bee00302dccc29abc7a"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__postingService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0454acff1a99a6f648c40c1d65b9967028900b08bd5278496774fe15663fd526"
+    },
+    {
+      "file": "src/repositories/postingRepository.ts",
+      "before_sha256": "83d8c32eb35e639b0c01fa7272708513ada97b49c2450486d3e53dc24c056cc2",
+      "after_sha256": "8610aae7dd553cdc631eb3e836f4a96881b9b83e425a32826f442c0ff47b37ea"
+    },
+    {
+      "file": "src/services/postingService.ts",
+      "before_sha256": "0454acff1a99a6f648c40c1d65b9967028900b08bd5278496774fe15663fd526",
+      "after_sha256": "82ef905ce13a91f2f24ad1442240abe656c3e8c94187ed145539433898a335fb"
+    },
+    {
+      "file": "src/services/savedSearchService.ts",
+      "before_sha256": "ae2a7710315796f15b58daccc056d8ce1720939379118bee00302dccc29abc7a",
+      "after_sha256": "5db0ce34e7dbd4178d17592e8b44535ef2b062aa7f6323002889b7936fcda1b7"
+    },
+    {
+      "file": "src/lib/validation/moderationSchemas.ts",
+      "before_sha256": "38d8004c78a6a5a413927912f9e827299000148056e4d16f6095aa788e5d9d32",
+      "after_sha256": "90ce34468c62b2f9a21abca1def5b5e4eba4c4e8de5e7864be1415dc4b6ff68f"
+    },
+    {
+      "file": "src/lib/validation/postingSchemas.ts",
+      "before_sha256": "a5b1b39e426d3ff175be9922e69ce1cdac67a644326ea0300b094f88dbde5dac",
+      "after_sha256": "047bb1f831e8f0f88c26f3a815975757a73e3c29f9bed57f989c7328654630b2"
+    },
+    {
+      "file": "src/lib/validation/savedSearchSchemas.ts",
+      "before_sha256": "baee9154f128a05c7064f43fa6c24a7832f657b158fbbeabb1f12a95f4985896",
+      "after_sha256": "a7488d7d071c6a5bac5489198d95ba9fd3cb190e1e2fbe4f281034ff6c8cf8df"
+    },
+    {
+      "file": "tests/unit/boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "0095ad52831eb70fcc7c3d028304b238492b5e9c1475e103ca9fe9c495f077c4"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "7ad303e40d4fddf44f156129e397511953a71481c5cfd86b1862649aaaf240cc",
+      "after_sha256": "7b550dda9686c16f36a17bf9051d5dbf31e98555b30d114ac49fc49a1e712651"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "b8c4023e89d75897b7b719f71afca641e505274e1596e55de429b5d524b75153"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-01.json",
+      "before_sha256": null,
+      "after_sha256": "d2de0f1af441d0f8d0e7a8d10fa14d63e949e9e4de9302c44242f491053316a5"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-01.log",
+      "before_sha256": null,
+      "after_sha256": "b896c39b9603682306a4948c0c6ab9e0371e8e0b5a9d3be47b9b4bbadcfa2d97"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "74f4a77d87e4f6b3f411c58515de54f5107a604a084494a8c6dc4bf82359df2f"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "6189963c5718236b733fe1334b0062bce35a8dbb5b447b5f384c2f15be3688d6"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "75a2364abebf4998bab3b2cc091b0badb617dd4613af56a261e0247e5c7dc765"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "1e92ab83e846f88488395eb75005587b1acebb328227794d57d77bf8f818b9fc"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "cd603983b7b83be2b1d98eb0f1bb77f2c4e59557c6f4c642d50a1cb21e5915fe"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0fad6c82a847fd90c0c67baf871a969a9a09b43d0fe40f241f1e24e3e683c026"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1f30bc058161eda3ea85515831cc8dc12206c47453bd05879b345e78cac506f0"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4c0f3b1f68424219b1cf9d332af15d34e9d7732a93beb17ccef501c8a0600306"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "cb305ff360ee3c8a381cfe6b474f04a2a05c4e14ae536f962bb6ecfe8083acf7"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "e00e17a2c389c5b4031465d8113c8d75d0feca5ba71b1b911b35eb37ae35f913"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "89d9a41f7f6e9b04fea75aebc151014484b020ae95096abff9a3df59e3bc980c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "40cc52d930f1fd257ee4968d5f851641430fc1d7232829245566876072aecdc6"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "79b9220d5adfb268320d5dd1c28315a39c71eaff777975033d5ff927afa959e9"
+    }
+  ],
+  "limits": [
+    "The fake transaction helper does not prove database rollback.",
+    "The demo session mechanism and fixtures are training-only."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T16:35:49.016348+00:00"
+}

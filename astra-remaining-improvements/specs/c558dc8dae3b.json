@@ -1,0 +1,23 @@
+{
+  "id": "c558dc8dae3b",
+  "project": "_Organized Desktop/06 AI And Learning/think",
+  "summary": [
+    "Exercise TraceVaultService adapter filtering and project/session mapping.",
+    "Verify fallback search and usage aggregation with deterministic session data.",
+    "Expanded to 5 actual-source runtime cases during Astra review; production source unchanged."
+  ],
+  "changedFiles": [
+    "tests/trace-vault-service-runtime.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/service.ts.original.txt",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c558dc8dae3b/results-crud-think-runtime-v1.json"
+  },
+  "limits": [
+    "Focused actual-source runtime only; see course verification for adapter and integration boundaries. No full application stack or concurrent persistence proof."
+  ]
+}

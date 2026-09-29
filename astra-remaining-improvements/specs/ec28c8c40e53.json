@@ -1,0 +1,24 @@
+{
+  "id": "ec28c8c40e53",
+  "summary": [
+    "Reviewed aggregation worker and state policy; no production fix was warranted in the bounded path.",
+    "Added a production state-machine lab for all legal and representative invalid job transitions.",
+    "Captured four executed Node VM cases with explicit worker and provider limits."
+  ],
+  "changedFiles": [
+    "tests/runtime-aggregation-state-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/ec28c8c40e53/results-crud-b07.json"
+  },
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No Prisma worker, rollup, audit persistence, concurrent claim, or retry execution.",
+    "Provider-backed queue checks remain follow-up work.",
+    "State guard and real AppError execute without behavior doubles. Worker claim and completion transactions were inspected, not executed."
+  ]
+}

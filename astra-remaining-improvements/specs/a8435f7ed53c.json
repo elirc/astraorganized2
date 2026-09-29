@@ -1,0 +1,46 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-astra1-owned-api-r1.json",
+    "astraupskill/evidence/astra-astra1-owned-api-r1.log",
+    "astraupskill/evidence/astra-astra1-owned-browser-r1.json",
+    "astraupskill/evidence/astra-astra1-owned-browser-r1.log",
+    "astraupskill/evidence/astra-astra1-owned-check-r2.json",
+    "astraupskill/evidence/astra-astra1-owned-check-r2.log",
+    "astraupskill/evidence/cargo-delay.png",
+    "astraupskill/evidence/intelligence-trace.png",
+    "astraupskill/evidence/operations-overview.png",
+    "astraupskill/evidence/repair-complete.png",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/docs__project__current-state.md.original.txt",
+    "astraupskill/snapshots/tests__integration__repair.test.ts.original.txt",
+    "docs/exec-plans/003-repair-rollback-regression.md",
+    "docs/project/current-state.md",
+    "scripts/test-owned-postgres.py",
+    "tests/integration/repair.test.ts",
+    "upskilling/repair-rollback/01-CODEBASE-MAP.md",
+    "upskilling/repair-rollback/02-CONCEPTS.md",
+    "upskilling/repair-rollback/03-WORKED-CHANGE.md",
+    "upskilling/repair-rollback/04-TESTING-AND-DEBUGGING.md",
+    "upskilling/repair-rollback/05-PRACTICE.md",
+    "upskilling/repair-rollback/06-SOLUTIONS-AND-REVIEW.md",
+    "upskilling/repair-rollback/07-TRACE-LAB.md",
+    "upskilling/repair-rollback/README.md",
+    "upskilling/repair-rollback/VERIFICATION.md"
+  ],
+  "summary": [
+    "Added a real PostgreSQL late-postmortem failure regression proving repair effects and command receipt roll back together.",
+    "Verified same-command recovery and replay without rewriting the existing repair implementation.",
+    "Added an owned PostgreSQL/API/browser verification helper and source-based guides, including the repository upskilling location."
+  ],
+  "limits": [
+    "Local fixture workflows do not certify real physical systems, external model providers or public deployment.",
+    "Human learning remains unassessed; prior completed program evidence is preserved separately."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a8435f7ed53c/sol15-results.json",
+    "expectedTests": 49,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

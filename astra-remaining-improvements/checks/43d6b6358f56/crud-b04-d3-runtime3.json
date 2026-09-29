@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D3",
+  "id": "43d6b6358f56",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/member-remove-active-org.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\43d6b6358f56",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:07:33.135195+00:00",
+  "status": "complete",
+  "log": "crud-b04-d3-runtime3.log",
+  "pid": 30132,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:07:45.407325+00:00",
+  "elapsedSeconds": 12.27
+}

@@ -1,0 +1,38 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-skillforge-completion-r4.json",
+    "astraupskill/evidence/astra-skillforge-completion-r4.log",
+    "astraupskill/evidence/astra-skillforge-tests-r2.json",
+    "astraupskill/evidence/astra-skillforge-tests-r2.log",
+    "astraupskill/evidence/astra-skillforge-typecheck-r1.json",
+    "astraupskill/evidence/astra-skillforge-typecheck-r1.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/src__server__actions.ts.original.txt",
+    "astraupskill/snapshots/src__server__gamification.ts.original.txt",
+    "astraupskill/snapshots/src__server__quests.ts.original.txt",
+    "astraupskill/snapshots/src__server__review.ts.original.txt",
+    "scripts/test-completion-local.mjs",
+    "src/server/actions.ts",
+    "src/server/completion.ts",
+    "src/server/gamification.ts",
+    "src/server/quests.ts",
+    "src/server/review.ts",
+    "tests/unit/completion.test.ts"
+  ],
+  "summary": [
+    "Made completion, review seeding, XP, quests, achievements and progress one transaction with a unique completion gate.",
+    "Propagated transaction clients and one captured time through nested award helpers, with selective bounded SQLite contention retries.",
+    "Added guarded temporary-SQLite regressions and nine source-based guide chapters."
+  ],
+  "limits": [
+    "SQLite tests do not exercise browsers or external code runners.",
+    "Ordinary unit runs skip the destructive completion suite unless the owned-database helper enables it."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9d3b119f40a0/sol15-results.json",
+    "expectedTests": 28,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

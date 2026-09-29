@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "harnesses": 1,
+  "scenarioGroups": 6,
+  "malformedInputCases": 9,
+  "build": "passed",
+  "records": {
+    "regression-05": {
+      "project": "_Organized Desktop/02 Build Projects/buildjira",
+      "id": "0e78f57d70d1",
+      "command": [
+        "dotnet",
+        "run",
+        "--project",
+        "BuildJira.Api.Regression.csproj",
+        "-c",
+        "Release",
+        "--no-build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1\\tests\\BuildJira.Api.Regression",
+      "environmentOverrides": {
+        "DOTNET_ROLL_FORWARD": "Major"
+      },
+      "startedAt": "2026-09-12T19:17:11.195899+00:00",
+      "status": "complete",
+      "log": "regression-05.log",
+      "pid": 20236,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T19:17:35.412667+00:00",
+      "elapsedSeconds": 24.21
+    },
+    "build-release-02": {
+      "project": "_Organized Desktop/02 Build Projects/buildjira",
+      "id": "0e78f57d70d1",
+      "command": [
+        "dotnet",
+        "build",
+        "apps/dotnet/BuildJira.Api/BuildJira.Api.csproj",
+        "-c",
+        "Release",
+        "--no-restore"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-12T19:16:35.610561+00:00",
+      "status": "complete",
+      "log": "build-release-02.log",
+      "pid": 2040,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T19:16:43.464559+00:00",
+      "elapsedSeconds": 7.85
+    }
+  }
+}

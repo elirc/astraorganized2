@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz55",
+  "id": "cd5a8a522511",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/onboarding-task-ownership.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\cd5a8a522511",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:57:39.765053+00:00",
+  "status": "complete",
+  "log": "runtime-b07.log",
+  "pid": 29372,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T03:57:45.603872+00:00",
+  "elapsedSeconds": 5.84
+}

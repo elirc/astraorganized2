@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "node_modules/next/dist/bin/next",
+    "build",
+    "--webpack"
+  ],
+  "exitCode": 0,
+  "seconds": 2321.75
+}

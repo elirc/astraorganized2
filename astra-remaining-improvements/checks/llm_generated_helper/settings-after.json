@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "--require",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\llm_generated_helper\\guard-fixtures.cjs",
+    "--test",
+    "test/settings-safety.test.js"
+  ],
+  "exitCode": 0,
+  "seconds": 13.57
+}

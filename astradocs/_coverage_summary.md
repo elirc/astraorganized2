@@ -1,0 +1,1 @@
+**Final coverage check - September 7, 2026:** `_Organized Desktop` contributes **202 included project/resource records**, including 40 Master Projects and 84 Numbered Experiments. A fresh Desktop-wide scan found no additional project requiring a report entry. See the [dated coverage review](FINAL_REVIEW.md) for the full folder breakdown and exclusions.

@@ -1,0 +1,63 @@
+{
+  "summary": [
+    "Validates and normalizes expense candidates and evaluates policy before mutating stored entities; rejected updates, submissions and reasons leave state unchanged.",
+    "Coordinates current-entity lookup, deletion, expense commands and reimbursement completion with a shared per-expense gate.",
+    "Adds nonblocking bounded-queue admission and worker-only transitions; rejected/throwing queues and repeated reimbursement commands avoid false state changes.",
+    "Adds ten actual service/worker/queue regressions, frontend lockfile, passing backend/frontend builds and nine detailed learning guides with complete examples."
+  ],
+  "changedFiles": [
+    "README.md",
+    "backend/ExpenseManagement.Api.csproj",
+    "backend/Background/BackgroundJobs.cs",
+    "backend/Background/BackgroundTaskQueue.cs",
+    "backend/Domain/ExpenseStateMachine.cs",
+    "backend/Services/ExpenseService.cs",
+    "backend/Storage/DataStore.cs",
+    "backend/ExpenseManagement.Api.Tests/ExpenseManagement.Api.Tests.csproj",
+    "backend/ExpenseManagement.Api.Tests/ExpenseWorkflowTests.cs",
+    "frontend/package-lock.json",
+    "astraupskill/snapshots/BackgroundJobs-before.cs.txt",
+    "astraupskill/snapshots/BackgroundTaskQueue-before.cs.txt",
+    "astraupskill/snapshots/DataStore-before.cs.txt",
+    "astraupskill/snapshots/ExpenseManagement.Api-before.csproj.txt",
+    "astraupskill/snapshots/ExpenseService-before.cs.txt",
+    "astraupskill/snapshots/ExpenseStateMachine-before.cs.txt",
+    "astraupskill/evidence/backend-tests-2.json",
+    "astraupskill/evidence/backend-tests-2.log",
+    "astraupskill/evidence/backend-tests-2.trx",
+    "astraupskill/evidence/backend-tests-3.json",
+    "astraupskill/evidence/backend-tests-3.log",
+    "astraupskill/evidence/backend-tests-3.trx",
+    "astraupskill/evidence/backend-tests-4.json",
+    "astraupskill/evidence/backend-tests-4.log",
+    "astraupskill/evidence/backend-tests-4.trx",
+    "astraupskill/evidence/backend-tests-5.json",
+    "astraupskill/evidence/backend-tests-5.log",
+    "astraupskill/evidence/backend-tests-6.json",
+    "astraupskill/evidence/backend-tests-6.log",
+    "astraupskill/evidence/backend-tests-6.trx",
+    "astraupskill/evidence/backend-tests.log",
+    "astraupskill/evidence/expense-tests.trx",
+    "astraupskill/evidence/restore-tests-2.json",
+    "astraupskill/evidence/restore-tests-2.log",
+    "astraupskill/evidence/restore-tests-4.json",
+    "astraupskill/evidence/restore-tests-4.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-backend-build-01.json",
+    "astraupskill/evidence/root-backend-build-01.log",
+    "astraupskill/evidence/root-frontend-build-01.json",
+    "astraupskill/evidence/root-frontend-build-01.log",
+    "astraupskill/evidence/root-frontend-install-01.json",
+    "astraupskill/evidence/root-frontend-install-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a0a0ff059e64/results.json",
+    "expectedTests": 10
+  },
+  "limits": [
+    "Data and queue are in-memory and process-local; no durable outbox, real payment rail, database or cross-process guarantee.",
+    "Receipt upload, policy refresh and mutable readers retain races; lock entries remain for the store lifetime.",
+    "Tests call actual services/delegates with injected users, not HTTP/auth/hosted-worker/browser layers; duplicate jobs do not force simultaneous threads."
+  ]
+}

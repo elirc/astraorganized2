@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "id": "5d5120e98c41",
+  "command": [
+    "npm.cmd",
+    "run",
+    "typecheck"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5d5120e98c41\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:24:41.113408+00:00",
+  "status": "complete",
+  "log": "backend-typecheck-01.log",
+  "pid": 12108,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:24:57.547249+00:00",
+  "elapsedSeconds": 16.43
+}

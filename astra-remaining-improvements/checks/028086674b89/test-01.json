@@ -1,0 +1,26 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netgum",
+  "id": "028086674b89",
+  "command": [
+    "dotnet",
+    "test",
+    "Netgum.sln",
+    "--configuration",
+    "Release",
+    "--no-restore",
+    "--logger",
+    "trx;LogFileName=netgum-test-01.trx"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\028086674b89",
+  "environmentOverrides": {
+    "DOTNET_ROLL_FORWARD": "Major"
+  },
+  "startedAt": "2026-09-12T22:31:33.646325+00:00",
+  "status": "complete",
+  "log": "test-01.log",
+  "pid": 5272,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:32:01.592038+00:00",
+  "elapsedSeconds": 27.94
+}

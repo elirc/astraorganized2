@@ -1,0 +1,250 @@
+{
+  "project": "lucasrouter",
+  "id": "52d78d4a92a2",
+  "summary": [
+    "Delivery actions sanitize runtime proof inputs, bound names and notes, validate structured image data URLs and retain the existing photo-storage budget.",
+    "Unknown failure reasons reject before mutation; valid failures store the same bounded note in the stop proof and activity event, preserving state/report consistency.",
+    "Tailwind scans application source explicitly, fixing the observed Windows dependency-path build error and avoiding unrelated snapshot/artifact class candidates; the default production build now passes.",
+    "Nine learning guides include real store/action traces, before-and-after code, executable exercise solutions, an exact original store snapshot and two reviewed production-browser screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/lucasrouter/results.json",
+    "expectedTests": 222,
+    "environment": "Windows; Node 22.16.0; Next 16.3.1; React 19.2.8; TypeScript 5.9.3; Vitest 4.1.10; Tailwind 4.3.3; installed local browser selected by the original Puppeteer smoke script",
+    "command": "Installed Vitest full suite --maxWorkers=1 --testTimeout=30000; tsc --noEmit; eslint . --max-warnings=0; default next build; original smoke-e2e.mjs against an owned local production server"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 222,
+    "passedTests": 222,
+    "failed": 0,
+    "notExecuted": 0,
+    "counting": "166 unit/store tests plus 56 original browser smoke assertions; typecheck, lint and build are additional gates, not added to the case count.",
+    "testRun": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--maxWorkers=1",
+        "--testTimeout=30000",
+        "--reporter=json",
+        "--outputFile=C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/lucasrouter/test-final-01-results.json"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+      "startedAt": "2026-09-12T17:03:40.783578+00:00",
+      "status": "complete",
+      "log": "test-final-01.log",
+      "pid": 3256,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T17:04:16.095675+00:00",
+      "elapsedSeconds": 35.31
+    },
+    "typecheckRun": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+      "startedAt": "2026-09-12T17:01:23.536518+00:00",
+      "status": "complete",
+      "log": "typecheck-final-01.log",
+      "pid": 18376,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T17:02:38.533497+00:00",
+      "elapsedSeconds": 75.0
+    },
+    "lintRun": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        ".",
+        "--max-warnings=0"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+      "startedAt": "2026-09-12T17:03:40.691145+00:00",
+      "status": "complete",
+      "log": "lint-final-02.log",
+      "pid": 7372,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T17:04:55.643876+00:00",
+      "elapsedSeconds": 74.95
+    },
+    "buildRun": {
+      "command": [
+        "node",
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+      "startedAt": "2026-09-12T17:05:13.400147+00:00",
+      "status": "complete",
+      "log": "build-scoped-01.log",
+      "pid": 16120,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T17:07:13.999397+00:00",
+      "elapsedSeconds": 120.6
+    },
+    "browserRun": {
+      "startedAt": "2026-09-12T17:07:47.065387+00:00",
+      "baseUrl": "http://127.0.0.1:50637",
+      "passed": true,
+      "serverPid": 32872,
+      "command": [
+        "node",
+        "scripts/smoke-e2e.mjs",
+        "http://127.0.0.1:50637"
+      ],
+      "exitCode": 0,
+      "passedChecks": 56,
+      "failedChecks": 0,
+      "stopExitCode": 0,
+      "ownedServerStopped": true,
+      "elapsedSeconds": 66.03
+    },
+    "rawTests": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\lucasrouter\\test-final-01-results.json",
+    "images": [
+      {
+        "file": "images/dispatch-desktop.png",
+        "source": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2\\e2e-screens\\09-dispatch-desktop.png",
+        "sha256": "4f9de13eee484b3b84453dd40a29626ce9fd11c7faa2dc7fca50b08cbece847c",
+        "viewport": "1366x850, DPR 1",
+        "reviewed": true,
+        "review": "Viewed desktop map/routes and mobile driver controls; layout and typography readable, expected scrolling, no missing style presentation."
+      },
+      {
+        "file": "images/driver-mobile.png",
+        "source": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2\\e2e-screens\\07-driver-D2-mobile.png",
+        "sha256": "c5f583693cc060e1dc997fbed264291c7df8c6445ff70417c147e1624566f66d",
+        "viewport": "375x812, DPR 2",
+        "reviewed": true,
+        "review": "Viewed desktop map/routes and mobile driver controls; layout and typography readable, expected scrolling, no missing style presentation."
+      }
+    ],
+    "environment": "Windows; Node 22.16.0; Next 16.3.1; React 19.2.8; TypeScript 5.9.3; Vitest 4.1.10; Tailwind 4.3.3; installed local browser selected by the original Puppeteer smoke script",
+    "limits": [
+      "This remains a browser-local demonstration with no authentication, tenant authorization or transactional server database.",
+      "Photo validation checks data URL structure and existing storage budget; it does not decode image pixels or validate MIME contents.",
+      "The final successful build uses the default Turbopack command after scoping Tailwind to src. Earlier unscoped Turbopack and Webpack attempts failed and remain recorded.",
+      "The final checks used the installed staged dependency tree. Root independently captured tests, typecheck, lint, production build and browser smoke, but did not recapture a clean pnpm installation."
+    ]
+  },
+  "courseWords": 4783,
+  "courseFiles": 9,
+  "courseLinksChecked": 13,
+  "files": [
+    {
+      "file": "src/lib/deliveryValidation.ts",
+      "before_sha256": null,
+      "after_sha256": "c80cc62dc4ea5854798756d36baf0f43fd80358c99697e821c5aedf3488e5154"
+    },
+    {
+      "file": "src/store/useAppStore.ts",
+      "before_sha256": "a29eb137dc43b2d45d92f22ab677001ab5f9f790dc4c4d83fb8f0e6c55541e9c",
+      "after_sha256": "9ae5d845a178607ecff6febb436830453c2b69d1d53502cf23623c21b40ca551"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "702e99a2e44df8fd021ae4ba235e7cdde76a81b8841834bffa1ebd8e3d296941",
+      "after_sha256": "6fd214de2b28d24138c69d6528c0f30f5363d44d26400fdd3e0c4db89d96f7e4"
+    },
+    {
+      "file": "tests/delivery-validation.test.ts",
+      "before_sha256": null,
+      "after_sha256": "c0e5fcd2ede2e98552e848779942a2c5603e3daaf345bdf9b2a06fc01247a778"
+    },
+    {
+      "file": "tests/store.test.ts",
+      "before_sha256": "bce857355f35ee1de67864fa63289dc02bdb2b529917d2ce95ad37224492e466",
+      "after_sha256": "c5ca7ffdd6b4b4c27330331692bd5f2e0e73700a94bfde38d7e8af3684a7a15e"
+    },
+    {
+      "file": "astraupskill/snapshots/useAppStore.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "a29eb137dc43b2d45d92f22ab677001ab5f9f790dc4c4d83fb8f0e6c55541e9c"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "877a4903758ce46042317d30d8a726cb6b79aca7e06bd08325f1109e265f14c4",
+      "after_sha256": "039869bbe5236b93edf99463787d950e132c2ec38e1fd6f1cea24b6dbb7cce1f"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "573285d4e5cc8f320f96f725786b0106c8587b1658e33c6b37e42d3f94263b30",
+      "after_sha256": "2575d271e87e71190ff3a1cb22b6cbb370eb296de586d6ceeb86e4f69c8e4388"
+    },
+    {
+      "file": "astraupskill/evidence.json",
+      "before_sha256": null,
+      "after_sha256": "6c245fbf74bdc96152a4ad993017dbeb2e698c3a45754bf06b7c8337c767732a"
+    },
+    {
+      "file": "astraupskill/images/dispatch-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "4f9de13eee484b3b84453dd40a29626ce9fd11c7faa2dc7fca50b08cbece847c"
+    },
+    {
+      "file": "astraupskill/images/driver-mobile.png",
+      "before_sha256": null,
+      "after_sha256": "c5f583693cc060e1dc997fbed264291c7df8c6445ff70417c147e1624566f66d"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "101740081561a5770b92ce51396d4261c9350c540537c98c9069dd612346c0dc"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "90e4d5007ee8b74635894bbcd8df596dc7b9f8aa3690bd8ebd39e5dbf98a129e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d88100f8acc20902e933a59cecfe4e2153077040a807dc6b08b4c014b44d1890"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4faf48ac11451c478fc2e19c541101db90e1d2986a38e15b850072e84316fc69"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c880931e69566459f95d999e39235ddf84295541a65ce7224a0998c25d354c28"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d19f14d3c7de13c1ce04385ea679387cec451d84eadbda6278699b1faee4ed6a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8631e6e964d814334da8eb53eec7e5fe94d54ba25164931a0839ba36f9f6a10d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "04a829855f7e7e8dcee35a79b9e756454f126dba4230d9aabcde20b991fe4a31"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "7b91b19ac6d3e170faf1ad6691003649911a340c3356e07bdca76c6d17dbedc0"
+    }
+  ],
+  "limits": [
+    "This remains a browser-local demonstration with no authentication, tenant authorization or transactional server database.",
+    "Photo validation checks data URL structure and existing storage budget; it does not decode image pixels or validate MIME contents.",
+    "The final successful build uses the default Turbopack command after scoping Tailwind to src. Earlier unscoped Turbopack and Webpack attempts failed and remain recorded.",
+    "The final checks used the installed staged dependency tree. Root independently captured tests, typecheck, lint, production build and browser smoke, but did not recapture a clean pnpm installation."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T17:13:08.415229+00:00"
+}

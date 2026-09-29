@@ -1,0 +1,30 @@
+{
+  "id": "971a7c784720",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:27:23.822574+00:00",
+  "sourceReview": "Read full coordinator, permission and ApiError modules. No production change. Replaced copied permission/error doubles with actual source.",
+  "teachingReview": "Read all nine chapters; corrected encoding and explained actual permission loading. Course separates pre-read, locked reread, holder cleanup and unverified provider guarantees.",
+  "testReview": "Five cases pass for owner release, denied viewer, expired renewal, changed release status and stale sweep skip. Actual coordinator/policy/error execute with repository and transaction adapters.",
+  "specSHA256": "51a53b0a2f4f8ca68ee81ba63c26f4246b7ac02c244aa2d955cf5d2d24f9a4ac",
+  "fileHashes": {
+    "tests/runtime-lock-coordinator-lab.test.mjs": "8d2785e6dac9e81b2592d353eea8d6c808c1747b655a153106637677a5634d04",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "77887511d85274314320189355d1331dc4149c658e930b54bcffc7894a9d8759",
+    "astraupskill/evidence/results.json": "7519f2c86950364ac25b756b3638949e261bed2b755a8e1b651030bcd6f476fc",
+    "astraupskill/README.md": "d2332b5d14238ed458e4fc4594ec30afceb81da315a9eec8c8141246eb1c0e86",
+    "astraupskill/01-CODEBASE-MAP.md": "80031480e6e80021632870e8b29540ce81a3f2781c4c21b9daea80c8693bf75d",
+    "astraupskill/02-CONCEPTS.md": "1f0b6bae301984e2056c16a2b73bb537372973ac881a975f4ce072ec38c5d99e",
+    "astraupskill/03-WORKED-CHANGE.md": "85b3b28ca48776fb6e10bc2edac7f893394410c5409e6d86b81b8e305c1a02f5",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "29c61eced8adfd2eb4915f87f4387507025717253765f7ebf48336d765538cf1",
+    "astraupskill/05-PRACTICE.md": "c9c3c41d1f008a5737d1d35f10011cf558683b189d89cb7061df51491b421415",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "14cc2f6a93cc98428d31b5f44e29e4c19b883a853302713c35c09dddd2a52bcd",
+    "astraupskill/07-TRACE-LAB.md": "bc86b826425a9bb7fb1a81f45c4cf906127c9e8079a486e69e44367fc49af079",
+    "astraupskill/VERIFICATION.md": "c3b25604f1ee7d417f951589c41f002a10e50ebfb27e5e84a1de24ab1ccd72ef"
+  },
+  "evidenceHashes": {
+    "checks/971a7c784720/astra-crud-b06-ww26.log": "5391f2f734174e29d784a0ddb4bc16db084210977009b994879641200e47d3f8",
+    "checks/971a7c784720/crud-b06-astra-runtime.json": "8c798e07821d1f2e087da23b7a3272485f872ac46efbee696f5f22c2e9de8f2d",
+    "checks/971a7c784720/crud-b06-astra-runtime.log": "77887511d85274314320189355d1331dc4149c658e930b54bcffc7894a9d8759",
+    "checks/971a7c784720/results-crud-b06.json": "7519f2c86950364ac25b756b3638949e261bed2b755a8e1b651030bcd6f476fc"
+  }
+}

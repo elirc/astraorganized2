@@ -1,0 +1,30 @@
+﻿{
+    "id":  "5c252a248ab8",
+    "files":  [
+                  "src/repositories/prisma/complianceRepository.ts",
+                  "tests/runtime-country-rule-upsert.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src-repositories-prisma-complianceRepository.ts.before",
+                  "astraupskill/evidence/5c252a248ab8-runtime-country-rule-upsert.tap.txt",
+                  "astraupskill/README.md",
+                  "astraupskill/01-CODEBASE-MAP.md",
+                  "astraupskill/02-CONCEPTS.md",
+                  "astraupskill/03-WORKED-CHANGE.md",
+                  "astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "astraupskill/05-PRACTICE.md",
+                  "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "astraupskill/07-TRACE-LAB.md",
+                  "astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "upsertRule used create despite composite unique schema, so repeated same-version policy writes failed instead of updating.",
+                     "Repository now uses composite-key upsert with identity-preserving mutable update fields."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-country-rule-upsert.test.mjs: 2 passed"
+              ],
+    "limitations":  [
+                        "Prisma-shaped double and actual repository only; no live DB/client typecheck, route, auth, audit, or concurrency."
+                    ],
+    "project":  "ww3"
+}

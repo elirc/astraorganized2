@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm.cmd",
+    "install",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "workingDirectory": ".dependency-refresh",
+  "exitCode": 1,
+  "seconds": 149.91
+}

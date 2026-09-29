@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "count": 17,
+  "checks": [
+    "workshop bootstrap through labeled forms creates a real directory",
+    "rejected API login stays rejected without demo fallback",
+    "stale edit shows current values and preserves the draft for explicit review",
+    "department deletion uses an explicit confirmation and refreshes saved records",
+    "lost response after commit recovers through an exact browser retry without duplication",
+    "job-role forms create, edit and delete exact salary bands",
+    "employee editor performs real create, edit and unreferenced delete",
+    "Admin account editor changes and restores a real account role",
+    "self password reset returns to sign-in after the server revokes the session",
+    "organization view renders saved reporting relationships",
+    "employee UI hides management controls and private colleague values",
+    "employee edit, manager review and HR finalization update real history and balance",
+    "requester cancellation is visible and preserves the request record",
+    "desktop and narrow layouts fit the viewport and show real records",
+    "browser sign-out waits for server revocation",
+    "a delayed refresh cannot restore a signed-out session or cached private views",
+    "acceptance workflows produce no uncaught browser errors"
+  ],
+  "error": null
+}

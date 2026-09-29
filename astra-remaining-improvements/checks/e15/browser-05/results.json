@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "total": 15,
+  "checks": [
+    {
+      "name": "home has labeled empty login fields and navigation",
+      "passed": true
+    },
+    {
+      "name": "administrator signs in through the interface",
+      "passed": true
+    },
+    {
+      "name": "customer create edit and literal hostile text",
+      "passed": true
+    },
+    {
+      "name": "stale administration edit retains draft and supports explicit review",
+      "passed": true
+    },
+    {
+      "name": "all seven administration forms open with labeled inputs",
+      "passed": true
+    },
+    {
+      "name": "canned reply CRUD through the interface",
+      "passed": true
+    },
+    {
+      "name": "staff creates a ticket for a selected customer",
+      "passed": true
+    },
+    {
+      "name": "staff edits subject and status then sends a public reply",
+      "passed": true
+    },
+    {
+      "name": "staff uploads a private attachment and downloads exact bytes",
+      "passed": true
+    },
+    {
+      "name": "stale ticket edit preserves draft until latest-version review",
+      "passed": true
+    },
+    {
+      "name": "staff and administration layouts fit a narrow viewport",
+      "passed": true
+    },
+    {
+      "name": "anonymous portal submission survives an accepted response that is lost",
+      "passed": true
+    },
+    {
+      "name": "customer sign-in sees public history and can reply",
+      "passed": true
+    },
+    {
+      "name": "ticket deletion keeps its history out of active queues",
+      "passed": true
+    },
+    {
+      "name": "no uncaught browser script errors",
+      "passed": true
+    }
+  ]
+}

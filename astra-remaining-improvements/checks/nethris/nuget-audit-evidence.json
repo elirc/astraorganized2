@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "parameters": "--vulnerable --include-transitive",
+  "sources": [
+    "https://api.nuget.org/v3/index.json"
+  ],
+  "projects": [
+    {
+      "path": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/71e7b036865c/server/Nethris.Api/Nethris.Api.csproj"
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master",
+  "id": "785c7da790a8",
+  "summary": [
+    "Validate destination project ownership before task creation or PATCH reassignment; preserve title-only edits and existing task ownership filtering.",
+    "Return 404 and perform zero task writes when the destination project is outside the user's scope."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/785c7da790a8/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 7,
+    "checks": [
+      {
+        "project": "_Organized Desktop/03 Master Projects/master",
+        "id": "785c7da790a8",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/task-project-isolation.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\785c7da790a8",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:13:44.329926+00:00",
+        "status": "complete",
+        "log": "crud-b02-runtime7.log",
+        "pid": 23144,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:14:02.893259+00:00",
+        "elapsedSeconds": 18.56
+      }
+    ],
+    "limits": [
+      "The regression uses explicit Prisma and auth doubles; it does not connect to a live database.",
+      "The route's authentication wrapper is stubbed, so middleware and session construction are outside this check.",
+      "The ownership read and task update/create are separate calls; concurrent project deletion or reassignment is outside this bounded fix.",
+      "Schema parsing is stubbed: real Zod validation and Next HTTP handling were not exercised."
+    ]
+  },
+  "courseWords": 3147,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "src/app/api/tasks/[id]/route.ts",
+      "before_sha256": "a8d59392e1a1f8073e0a0c6c325eb6e8536ee4dd9153734d237768d0548d6339",
+      "after_sha256": "d6efc11c2ab2e54df7a3cf9606642e322c2e41a375c88e5dd5bcb8ae00f9564f"
+    },
+    {
+      "file": "src/app/api/tasks/route.ts",
+      "before_sha256": "2ad08a29e39d65c8e45edc2fe4ac6481d6f81ee08090f08c1276de911edd8624",
+      "after_sha256": "c9c99ed399178c26cb85c745631fce8ecb3cc5dff9a3002186664052b77548e3"
+    },
+    {
+      "file": "tests/task-project-isolation.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "bd2adbea28e7bbf360ffa4edfbf17ac59fd822dabd738a6f55b14aa009e77751"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/tasks-[id]-route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a8d59392e1a1f8073e0a0c6c325eb6e8536ee4dd9153734d237768d0548d6339"
+    },
+    {
+      "file": "astraupskill/snapshots/tasks-route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2ad08a29e39d65c8e45edc2fe4ac6481d6f81ee08090f08c1276de911edd8624"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-runtime7.log",
+      "before_sha256": null,
+      "after_sha256": "3a5f50246707dea4ce36f36ba2bcc8dd055ac3a6b4c6258eece2c4647e80fb76"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "6f3a83769aa2697fbcae9499f9e97c89e165b5c77021b35309b0fe917972e38d"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8615737a79adba04d0765eb5b22f8364e5794aea915261297421133536dda0f5"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d48ded234b78a2466ad0d9ae5b7b3f17a61054fec10c6f9e6291d9f3949f0be4"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "18d15ad337b03d3fceb3971e3379fa228baaf93aaaf1cfcda814292700846f41"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "95f56e26d4b62ce6072c620e18c2c720e2c993db7f113d1a3d017e179de4e181"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "511efd2d72625e06a3570009b983171c2c6b792fc2799aa305fc9185eca5470f"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "8b06e2072de8f82203bb25f217991a2a5bbbd6d2f4eb6f8f2d96ff5194f9873c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1b3f2c899270ffdb4a904f24cd8f2d08e6ef946ba717f94853375409164efa79"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "6943ef62bc356e4a0127a1ad6a858c73e33ab52cec3125c8e5650535109fb4c4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "251bcbbec7be39c09320689a30ba389efb2bc9edc19313892ff66150a61bffb5"
+    }
+  ],
+  "limits": [
+    "The regression uses explicit Prisma and auth doubles; it does not connect to a live database.",
+    "The route's authentication wrapper is stubbed, so middleware and session construction are outside this check.",
+    "The ownership read and task update/create are separate calls; concurrent project deletion or reassignment is outside this bounded fix.",
+    "Schema parsing is stubbed: real Zod validation and Next HTTP handling were not exercised."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:18:31.971490+00:00"
+}

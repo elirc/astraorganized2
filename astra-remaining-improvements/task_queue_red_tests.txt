@@ -1,0 +1,37 @@
+﻿const { test, before, after, beforeEach } = require('node:test');
+const assert = require('node:assert/strict');
+const { once } = require('node:events');
+const express = require('express');
+process.env.TASK_QUEUE_DB_PATH = ':memory:';
+const db = require('../src/db/database');
+const { createCampaignRouter } = require('../src/routes/campaigns');
+const { validateOrRespond, campaignSchema } = require('../src/lib/validation');
+let server, base;
+let queueCalls = 0;
+const fakeQueue = { async addBulk() { queueCalls++; throw new Error('Redis unavailable in controlled test'); } };
+const input = { campaignName: 'Learning campaign', subject: 'Hello team', body: 'A simulated email only', recipients: ['person@example.test'] };
+before(async () => {
+  assert.equal(db.name, ':memory:');
+  const app = express(); app.use(express.json()); app.use('/campaigns', createCampaignRouter(fakeQueue));
+  app.use((error, _req, res, _next) => { if (!res.headersSent) res.status(500).json({ message: 'Internal server error' }); });
+  server = app.listen(0, '127.0.0.1'); await once(server, 'listening'); base = `http://127.0.0.1:${server.address().port}`;
+});
+beforeEach(() => { queueCalls = 0; db.exec('DELETE FROM queue_outbox; DELETE FROM campaign_jobs; DELETE FROM campaigns;'); });
+after(async () => { await new Promise(resolve => server.close(resolve)); db.close(); });
+
+test('validation failure returns null after writing the error response', () => {
+  let status;
+  const response = { status(value) { status = value; return this; }, json() { return this; } };
+  assert.equal(validateOrRespond(campaignSchema, {}, response), null);
+  assert.equal(status, 400);
+});
+
+test('campaign acceptance persists dispatch intent without waiting for Redis', async () => {
+  const response = await fetch(base + '/campaigns', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(input) });
+  assert.equal(response.status, 201);
+  const result = await response.json();
+  assert.equal(queueCalls, 0);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM campaigns').get().n, 1);
+  assert.equal(db.prepare('SELECT status FROM campaign_jobs WHERE campaign_id = ?').get(result.campaign.id).status, 'pending');
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM queue_outbox WHERE dispatched_at IS NULL').get().n, 1);
+});

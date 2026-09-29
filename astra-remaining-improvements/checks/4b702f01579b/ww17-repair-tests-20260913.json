@@ -1,0 +1,29 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "--env",
+    "DATA_SOURCE=mock",
+    "--env",
+    "DATABASE_URL=postgresql://verification:verification@127.0.0.1:1/ww17_build_only",
+    "--cwd",
+    ".",
+    "--",
+    "npm.cmd",
+    "exec",
+    "vitest.cmd",
+    "run",
+    "src/tests/platform-behavior.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:54:20.178704+00:00",
+  "status": "launch-failed",
+  "log": "ww17-repair-tests-20260913.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T15:54:20.300342+00:00",
+  "elapsedSeconds": 0.12
+}

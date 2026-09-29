@@ -1,0 +1,41 @@
+"use client";
+
+import { SortableContext, verticalListSortingStrategy } from "@dnd-kit/sortable";
+import { useDroppable } from "@dnd-kit/sortable";
+import { KanbanCard, CardPayload } from "./Card";
+
+type ColumnProps = {
+  id: string;
+  title: string;
+  cards: CardPayload[];
+  wipLimit: number | null;
+  onCardOpen: (cardId: string) => void;
+};
+
+export function BoardColumn({ id, title, cards, wipLimit, onCardOpen }: ColumnProps) {
+  const { setNodeRef } = useDroppable({ id: `column:${id}` });
+  const hasLimit = typeof wipLimit === "number";
+  const limitReached = hasLimit ? cards.length > (wipLimit ?? 0) : false;
+
+  return (
+    <section className="w-[320px] shrink-0 space-y-3 rounded-2xl border border-white/10 bg-slate-900/55 p-4">
+      <header className={`rounded-xl px-3 py-2 ${limitReached ? "bg-red-500/15" : "bg-white/5"}`}>
+        <div className="flex items-center justify-between text-sm">
+          <h2 className="font-semibold">{title}</h2>
+          <span className={limitReached ? "text-red-300" : "text-slate-300"}>
+            {cards.length}
+            {hasLimit ? ` / ${wipLimit}` : null}
+          </span>
+        </div>
+      </header>
+
+      <div ref={setNodeRef} className={`space-y-2 rounded-xl p-1 ${limitReached ? "ring-1 ring-red-400/60" : ""}`}>
+        <SortableContext items={cards.map((card) => card.id)} strategy={verticalListSortingStrategy}>
+          {cards.map((card) => (
+            <KanbanCard key={card.id} card={card} onOpen={() => onCardOpen(card.id)} />
+          ))}
+        </SortableContext>
+      </div>
+    </section>
+  );
+}

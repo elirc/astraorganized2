@@ -1,0 +1,33 @@
+{
+  "id": "39fabfbc58f5",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:37:51.663921+00:00",
+  "sourceReview": "Reviewed TasksService, controller platform roles and update DTO. Repeat DONE preserves before.completedAt, first DONE stamps, reopen clears, omitted status contributes no completion fields. Original outer status condition preserved to avoid unrelated runtime null behavior change; existing audit/return flow intact.",
+  "teachingReview": "Root authored nine distinct source-linked chapters on event time versus state, repeat-save stability, trace matrix, graded exercises and answers. Explicitly distinguishes timestamp stability from whole-request idempotency, legacy-null repair and read/write concurrency.",
+  "testReview": "Three captured production-service tests passed after source and fixture edits, with fixed clock and exact historical timestamp preservation, transition/reopen values and omitted-field keys. Prisma/audit/DTO doubles and decorator stripping explicitly disclosed. Original Nest pipeline and database not executed; mechanical preflight passed.",
+  "specSHA256": "875f377000284a28bfcfb37721d80aebf208c8ce2b46e1d390b3c2b11c8c0711",
+  "fileHashes": {
+    "apps/api/src/modules/tasks/tasks.service.ts": "8ec56d390f570d52a109c08bd2d5c1db546eb89702327a07daea9aad03ee603f",
+    "tests/tasks-service-completion.test.mjs": "2b27394df200e7573930ec0d6ba9bdb8febcb35c5ead78009ae4e370d0853b42",
+    "tests/helpers/load-typescript.mjs": "827f2603cae2f88306d64df72edb262136623f924697a7c23ea822ed5441abff",
+    "astraupskill/snapshots/tasks.service.ts.original.txt": "0247c4946a7c0ff74df2f3a5df84a4397a321ce04d85f6b62b3a5acb55070794",
+    "astraupskill/evidence/crud-b02-runtime2.log": "2dbc5e7f53ea8b1cd0c87b30d70cc43ef6aae400c78af85501ce26474894b98a",
+    "astraupskill/evidence/results.json": "ef90f5418cac3eca9bcebaea262c5e836fc5868cb1c385dd1b9017d36adeb1c6",
+    "astraupskill/README.md": "128f4734d013eabfb90bbf68630a232fa2c691c4af61d8e61c544999a1a3f50f",
+    "astraupskill/01-CODEBASE-MAP.md": "ff31f095ca035575d3b90447c73bab8863b660c049b3b5efa9018f36dafc733d",
+    "astraupskill/02-CONCEPTS.md": "e1efce0220c8cf6c3167deeb0be60d96f1d08d22881177eabd2241cbe1cf46da",
+    "astraupskill/03-WORKED-CHANGE.md": "9446cb8fd9487bc8e7f146cb97d49a77849546a9edc676fa192f9add72132b0c",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "1c17766902554aee31485f0efeed69e5c194d937632cdb674cd5880877f062fe",
+    "astraupskill/05-PRACTICE.md": "6e12504f2ed80dac37f3b8acd5f5cc27d9f3f41ab0fce3aa157b62da5efe0201",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "824842ce378c1412b2b37384494e51ad343318b7ca204a8975c97c55fc570762",
+    "astraupskill/07-TRACE-LAB.md": "f9624c24a57feb6111b5ad646c744d7780c24cdaaef40aaa32a630b8f1a4cc14",
+    "astraupskill/VERIFICATION.md": "fcf9167c6c76c5d0099d84f51702615f698a6866048601e185a1e373e9807ab5"
+  },
+  "evidenceHashes": {
+    "checks/39fabfbc58f5/crud-b02-runtime1.json": "78de82fdfca2d9e89a128bf8494ebb1d53d1352d92e305d7d36911c9095ea881",
+    "checks/39fabfbc58f5/crud-b02-runtime1.log": "5227c3cb461a40aa25d49573de5343514933743513acb7bd0352ac423805219d",
+    "checks/39fabfbc58f5/crud-b02-runtime2.json": "bc85aa62304762ae5aa2a89ffccf5a4d7213d4d6bd494c04ff6f14a70997631c",
+    "checks/39fabfbc58f5/crud-b02-runtime2.log": "2dbc5e7f53ea8b1cd0c87b30d70cc43ef6aae400c78af85501ce26474894b98a",
+    "checks/39fabfbc58f5/results-crud-b02.json": "ef90f5418cac3eca9bcebaea262c5e836fc5868cb1c385dd1b9017d36adeb1c6"
+  }
+}

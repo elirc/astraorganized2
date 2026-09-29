@@ -1,0 +1,32 @@
+{
+  "id": "5fd517cae993",
+  "project": "ww12",
+  "files": [
+    "src/services/conversationService.ts",
+    "tests/runtime-conversation-update-count.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-conversationService.ts.before",
+    "astraupskill/evidence/5fd517cae993/runtime-conversation-update-count.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "Status transition ignored updateMany count and could audit success after zero-row persistence.",
+    "The service now requires exactly one updated row before audit and success."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-conversation-update-count.test.mjs",
+    "executedTests": 2,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked repository and transaction; no live concurrency."
+  ]
+}

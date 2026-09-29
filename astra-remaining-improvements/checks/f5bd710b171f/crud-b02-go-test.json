@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/mastermatter",
+  "id": "f5bd710b171f",
+  "command": [
+    "go",
+    "test",
+    "./server/channels/store/sqlstore",
+    "-run",
+    "TestValidateChannelUpdateCount",
+    "-count=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f5bd710b171f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T00:50:47.465973+00:00",
+  "status": "launch-failed",
+  "log": "crud-b02-go-test.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-22T00:50:47.516508+00:00",
+  "elapsedSeconds": 0.05
+}

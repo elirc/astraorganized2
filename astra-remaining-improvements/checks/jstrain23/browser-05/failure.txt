@@ -1,0 +1,166 @@
+dirty: Unsaved draft.
+
+Save
+Review latest
+Download local draft
+Discard draft
+Export accepted JSON
+Export legacy drafts
+Sign out
+Knowledge Workspace
+Quick Find
+New Page
+Import Markdown
+TEMPLATES
+Meeting NotesProject Brief
+FAVORITES
+Browser CRUD course
+RECENT
+Browser CRUD course
+PAGES
+🏠
+Browser CRUD course
+🧠
+Engineering Notes
+📝
+Meeting Notes
+Trash (0)
+Browser CRUD course
+Accepted MD
+Accepted HTML
+Snapshot
+Versions
+Top level
+Engineering Notes
+Meeting Notes
+Private
+Workspace label
+Public label
+::
+H1
+paragraph
+heading1
+heading2
+heading3
+bullet
+number
+callout
+code
+divider
+database
++ block
+::
+!
+paragraph
+heading1
+heading2
+heading3
+bullet
+number
+callout
+code
+divider
+database
++ block
+::
+DB
+paragraph
+heading1
+heading2
+heading3
+bullet
+number
+callout
+code
+divider
+database
++ block
+Table
+Board
+List
+Calendar
+Gallery
+Add record
+Properties, views and filters
+New property name
+New property type
+text
+number
+checkbox
+date
+select
+person
+Add property
+Name (text) RenameDelete property
+Visible
+Status (select) RenameDelete property
+Visible
+Due (date) RenameDelete property
+Visible
+Assignee (person) RenameDelete property
+Visible
+Quantity (number) RenameDelete property
+Visible
+Inspected (checkbox) RenameDelete property
+Visible
+View type
+table
+board
+list
+calendar
+gallery
+Add viewRename viewDelete view
+Sort field
+Original order
+Name
+Status
+Due
+Assignee
+Quantity
+Inspected
+Sort direction
+Ascending
+Descending
+Filter field
+Choose property
+Name
+Status
+Due
+Assignee
+Quantity
+Inspected
+Comparison
+contains
+eq
+ne
+gt
+lt
+empty
+Filter value
+Add filter
+Add record from Bug report
+
+2 of 2 records shown. Blank numbers differ from zero; unchecked boxes store false.
+
+Name	Status	Due	Assignee	Quantity	Inspected	Actions
+	
+Unassigned
+Todo
+Doing
+Done
+					Delete record
+	
+Unassigned
+Todo
+Doing
+Done
+					Delete record
++ Add block
+Local tab presence
+
+You are viewing this page as Browser Learner.
+
+No other local tabs on this page.
+Comments
+No comments yet.
+Version History

@@ -1,0 +1,9 @@
+{
+  "files": {
+    "src/lib/auth/policy.ts": "662d27cc852f7f8a7b172743d4a5d4e6eda9accd26ba409cc2c6b7f08c67e02b",
+    "src/lib/services/admin-service.ts": "1906893f642b54f188a7ad6849d7f4fe26e1a9e65b0000b456dca40de610b867",
+    "src/lib/services/request-service.ts": "960d5d95f361c29cb0070df78a961cfa60d1d20cc4b60b18f230b4ff21b3b1f7",
+    "src/lib/services/workflow-service.ts": "db7611f47169f217d4044d16998ea54b5c93db3afbbf9f8b596b51c20be22699",
+    "tests/service-layer.test.ts": "4b1ea60a0f4e3f03de5db06439e0ab5fdc53ac26b22aa52a58bd155a886e6f5f"
+  }
+}

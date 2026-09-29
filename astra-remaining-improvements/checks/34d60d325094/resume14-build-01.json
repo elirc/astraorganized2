@@ -1,0 +1,23 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Shop",
+  "id": "34d60d325094",
+  "command": [
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+    "build",
+    "NetShopifyLite.sln",
+    "--no-restore",
+    "-m:1",
+    "-nodeReuse:false",
+    "-p:UseSharedCompilation=false"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34d60d325094",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T17:26:08.944491+00:00",
+  "status": "complete",
+  "log": "resume14-build-01.log",
+  "pid": 25972,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T17:30:17.266773+00:00",
+  "elapsedSeconds": 248.31
+}

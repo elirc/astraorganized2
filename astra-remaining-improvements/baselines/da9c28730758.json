@@ -1,0 +1,20 @@
+{
+  "id": "da9c28730758",
+  "project": "aiapplybot",
+  "files": {
+    ".gitignore": "4c733352ca5c2233f16296d30e43b2f1022aa970b114a6a9c4432bfebe4f3667",
+    "profile.example.yaml": "97133fa39fd3470599159dad81ad1fef58bc64a734d86a35579d7ff7ba7ea4df",
+    "profile.yaml": "97133fa39fd3470599159dad81ad1fef58bc64a734d86a35579d7ff7ba7ea4df",
+    "README.md": "0b65a2392d2944b8233be04424aeaac37bd2210ce48d0169eb57b9eb2c93d6ca",
+    "requirements.txt": "59fa1b46b2e495860158fe0917996daa57f3abf7ecc3ad5d069eeddc1a0a7648",
+    ".claude/settings.local.json": "1e240a98387011744907ae57efe0f4931e51992af13c74e79774a96e57f4b48c",
+    "applybot/ats.py": "56a4ced105a4ee4ae41b647a2edb52653c8a569aab288148933183c2d8588fd0",
+    "applybot/browser.py": "53939668d6f16490212abd707916bea5d14727907bd9ab514aae020432e6b102",
+    "applybot/cli.py": "88afb93630cb5a395f1dffd1461e6cc6e49d4d623ab7817bc8112f2edb60bea1",
+    "applybot/llm.py": "c7599a62025fdee2c775ff7377f74bd9e8c9346e33459f200e9ac99fe511e62b",
+    "applybot/profile.py": "95300d680ae6750c8ac5266fcf46eb915b7a39a02aa1bc75bbd0a1bd15b193b8",
+    "applybot/tracker.py": "348c098490ed654cb9114dfaa091f6b444df505ae2def788db4f76076e9e3c07",
+    "applybot/__init__.py": "a247b3e139115c1a9166343dcffd2cc833a98718428eb993902574b878839e16",
+    "applybot/__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+  }
+}

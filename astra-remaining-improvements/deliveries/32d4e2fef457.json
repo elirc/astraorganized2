@@ -1,0 +1,400 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww35",
+  "id": "32d4e2fef457",
+  "summary": "Validate calendar windows and local-day/midnight boundaries; condition actor-scoped cancellation on BOOKED status; parse direct commands and discriminate only the known Prisma exclusion error; fix asynchronous route params and schema-error mapping; add boundary tests and source course.",
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/32d4e2fef457/resume14-results.json",
+    "expectedTests": 33,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 33,
+    "passedTests": 33,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww35",
+        "id": "32d4e2fef457",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--pool",
+          "threads",
+          "--poolOptions.threads.singleThread",
+          "--testTimeout",
+          "30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\32d4e2fef457",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:30:30.900021+00:00",
+        "status": "complete",
+        "log": "resume14-tests-03.log",
+        "pid": 6372,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:31:20.579025+00:00",
+        "elapsedSeconds": 49.68
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww35",
+        "id": "32d4e2fef457",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\32d4e2fef457",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:42:46.574126+00:00",
+        "status": "complete",
+        "log": "resume14-types-03.log",
+        "pid": 21648,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:46:01.395594+00:00",
+        "elapsedSeconds": 194.82
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww35",
+        "id": "32d4e2fef457",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\32d4e2fef457",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check"
+        },
+        "startedAt": "2026-09-19T18:32:17.731812+00:00",
+        "status": "complete",
+        "log": "resume14-build-02.log",
+        "pid": 16376,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:48:49.110200+00:00",
+        "elapsedSeconds": 991.36
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww35",
+        "id": "32d4e2fef457",
+        "command": [
+          "node",
+          "node_modules/prisma/build/index.js",
+          "generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\32d4e2fef457",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+        },
+        "startedAt": "2026-09-19T17:59:59.240360+00:00",
+        "status": "complete",
+        "log": "resume14-generate-01.log",
+        "pid": 25720,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:04:18.487951+00:00",
+        "elapsedSeconds": 259.24
+      }
+    ]
+  },
+  "courseWords": 3442,
+  "courseFiles": 9,
+  "courseLinksChecked": 95,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "6f0181486b44945ee1175b782614b4626421f3621fec6adcbbb8cea9d8a056c1"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-02.json",
+      "before_sha256": null,
+      "after_sha256": "ca0c894ac98a3b778b5e7ccb47d58e0c6b20e599c4489a60c6e6464002f23ef2"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-02.log",
+      "before_sha256": null,
+      "after_sha256": "5c39b5c502fd46713234237f2ab7081bde586540d8c6f695a927b5c81b848d9a"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "9b7e7e2a00da132d130a33631c784adcac6f0fdf338cebe26b8336fc9e827559"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "c75051c358382604a58bdcb3d48e371fe0a8fac1a8d4e068ef8c746823df4f85"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.json",
+      "before_sha256": null,
+      "after_sha256": "4c8e041dda901672ff4c077a890b7e657b2e999f7376621228298c1ddab9c6b9"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.log",
+      "before_sha256": null,
+      "after_sha256": "0faa82ab9261484dea33f58f6cf18c8e27c4ac456f6364b72f259e5324c0bdcf"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-03.json",
+      "before_sha256": null,
+      "after_sha256": "65c01873a96f6065bcc33ffaa5928cded70779fbcf366ee1c3a16275a6c97f19"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-03.log",
+      "before_sha256": null,
+      "after_sha256": "260da3d70aed865b17ec616169bc21c47cd37fb4b370e04905bf7def1deca06d"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8943450db93fe6e5451ffbac97b32c138ab1a287f7a926749d6dd58eb19603f9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__appointments__[appointmentId]__cancel__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "882e20c2d1688cab325133782ea50a4436e515588feb56808902575f097cdd11"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__staff__[staffProfileId]__availability__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "70d0224b415e59b29d3630c97321795edc7eb1801b771a0b2eb53a60825f7d18"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__globals.css.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6881777d32016d1cf1b752fd2a1973353d3dd460f1d2f66962c3f52397c0de9e"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__layout.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d281410a4c04820713df3f9baea0ee41571b902943ae9f56ccf1873a30075c81"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__auth__with-auth.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "727159b51b82b7545425b35052b4c333cfeb867bc6717d8f987a15989e553d0f"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__availability__schedule.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3506c36b5fa450635726af80812bdecb9bec023307e82989663cf59fc4567b22"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__errors.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "7fbbb4d13de6929983cca0b03dbf08ed638bea518c3863d1d690e52025cbe3a6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__http__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "bb6bd9f3a40e50dcfe1b8eb69fbb5c90898f51158244bcbc9c3ea821258e6a04"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__appointmentSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2883982d214b8d1f7563ad8cf3fe63699be8bcb8f0b29a5c9de02988b9ecdf02"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__appointmentRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "1d6f3402fbf84f19e7d9a5c8d492ff9b18d26f7140c83a76e8efc256888493b6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__appointmentService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f5be203598d3ee554cec7daec57775264c3453b626122e404af3d1eb8b4d1353"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__availabilityService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d2f140cfc38124663fa675aac8b90caacbfaba9f7d3a9c7ed1cec8446b8cdf70"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__appointment-transition.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e655c976f4802adede1321821b576d577a8d4d468b913b9e56164745987744ff"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__auth-permissions.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4f168f4698b684ccbf89a95c94f189d0eec83048cf8d5885f546564952ef0049"
+    },
+    {
+      "file": "astraupskill/snapshots/tsconfig.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "baff75a3a077f9c52462cdae1a38624365090125afcc127edfbc9e03d340a515"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": null,
+      "after_sha256": "f4e8976c19fc926644d72610bf1058bd6bf52add97e46a02bc0b912a751625c0"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "fc75acc01c934882d7cd9fdb9e85b9eba837f43684a64e7a9e7691be6fe80ec9"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "8943450db93fe6e5451ffbac97b32c138ab1a287f7a926749d6dd58eb19603f9",
+      "after_sha256": "8053b7ea0f45e088c1cb3c5c7db4beb9d11f21cf5326e255e1ab720d19f3e63c"
+    },
+    {
+      "file": "src/app/api/appointments/[appointmentId]/cancel/route.ts",
+      "before_sha256": "882e20c2d1688cab325133782ea50a4436e515588feb56808902575f097cdd11",
+      "after_sha256": "9e9c5b7af08b256bc4afac388868783ddad723882b0203e18349ad8c8b0f5026"
+    },
+    {
+      "file": "src/app/api/staff/[staffProfileId]/availability/route.ts",
+      "before_sha256": "70d0224b415e59b29d3630c97321795edc7eb1801b771a0b2eb53a60825f7d18",
+      "after_sha256": "e86781fe0dde532ac10ec0df9ee43c92e495c601e18706b230cedf612f375eb2"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "6881777d32016d1cf1b752fd2a1973353d3dd460f1d2f66962c3f52397c0de9e",
+      "after_sha256": "3cf4a035ca2709ef648555df6e0f42190c16bb46a283c881f309737f48973a9a"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "before_sha256": "d281410a4c04820713df3f9baea0ee41571b902943ae9f56ccf1873a30075c81",
+      "after_sha256": "f8716e53794b6296b65d9d596f0ac3b3b7eb0d32ef18105569ebcedb5ace359b"
+    },
+    {
+      "file": "src/lib/auth/with-auth.ts",
+      "before_sha256": "727159b51b82b7545425b35052b4c333cfeb867bc6717d8f987a15989e553d0f",
+      "after_sha256": "67d0cbaf86e70798e0d8e08bc7070fde79c4591dd69f6339b476e182915a9eb1"
+    },
+    {
+      "file": "src/lib/availability/schedule.ts",
+      "before_sha256": "3506c36b5fa450635726af80812bdecb9bec023307e82989663cf59fc4567b22",
+      "after_sha256": "f5f989d1a9529c92767d578bdc84fbec09753e1be8c9658bcb79acc279c636cd"
+    },
+    {
+      "file": "src/lib/data/appointmentErrors.ts",
+      "before_sha256": null,
+      "after_sha256": "ba4d8d2ad168b48570dbe291a934fb1e08772621bf78e1d800a9430e2871893b"
+    },
+    {
+      "file": "src/lib/errors.ts",
+      "before_sha256": "7fbbb4d13de6929983cca0b03dbf08ed638bea518c3863d1d690e52025cbe3a6",
+      "after_sha256": "020938490a8525e0c50e42628cd32b09fcd390989229bd6330651d4c699368d5"
+    },
+    {
+      "file": "src/lib/http/route.ts",
+      "before_sha256": "bb6bd9f3a40e50dcfe1b8eb69fbb5c90898f51158244bcbc9c3ea821258e6a04",
+      "after_sha256": "971174b4adbeb85a7c085c93872ddf5a1563f82b13e52719d9f59d399ecf0e26"
+    },
+    {
+      "file": "src/lib/validation/appointmentSchemas.ts",
+      "before_sha256": "2883982d214b8d1f7563ad8cf3fe63699be8bcb8f0b29a5c9de02988b9ecdf02",
+      "after_sha256": "305e6e36403d5e324bf04e54ed85fafe41422d7b82395fb431bae1e307e1d92d"
+    },
+    {
+      "file": "src/repositories/appointmentRepository.ts",
+      "before_sha256": "1d6f3402fbf84f19e7d9a5c8d492ff9b18d26f7140c83a76e8efc256888493b6",
+      "after_sha256": "4951ffea15bf857ccca621251a7ea8e62e3cf53244f0be4568e71e62c4aee5f4"
+    },
+    {
+      "file": "src/services/appointmentService.ts",
+      "before_sha256": "f5be203598d3ee554cec7daec57775264c3453b626122e404af3d1eb8b4d1353",
+      "after_sha256": "afe3d494d02a72fc891436989f207ceee4fe30fee28d228c161d1d96130e50a4"
+    },
+    {
+      "file": "src/services/availabilityService.ts",
+      "before_sha256": "d2f140cfc38124663fa675aac8b90caacbfaba9f7d3a9c7ed1cec8446b8cdf70",
+      "after_sha256": "706af09c10fee8f955fff6781176c7c59cc736622ce0ba6229eb6983c29230b9"
+    },
+    {
+      "file": "tests/appointment-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "cd37ae6b65d5824c57fd05fc3751b67ce0394753c436680e0b422a40c62fceb9"
+    },
+    {
+      "file": "tests/appointment-repository.test.ts",
+      "before_sha256": null,
+      "after_sha256": "ce6c7aea7eadf42cc6fe4dcd75767905be17a083582f09f00f2a5767ba90ed96"
+    },
+    {
+      "file": "tests/appointment-transition.test.ts",
+      "before_sha256": "e655c976f4802adede1321821b576d577a8d4d468b913b9e56164745987744ff",
+      "after_sha256": "19ebe677ca7a193ba4afa0ddd852cce01dc2dc9b0b90bfacd46c7ece5ade018e"
+    },
+    {
+      "file": "tests/auth-permissions.test.ts",
+      "before_sha256": "4f168f4698b684ccbf89a95c94f189d0eec83048cf8d5885f546564952ef0049",
+      "after_sha256": "a3fa47cb4a853f2250751999f4ff2742bc0a142f0dc6398ba4ac3b938f0bba36"
+    },
+    {
+      "file": "tests/calendar-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8eb9a6012ef0681ba1cd6d12544afd0bef42db0d1e38d77b2529b599c104d9dc"
+    },
+    {
+      "file": "tests/route-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8a794905a87bbb816ac511ff33f442513f654fafb34261b7a59df3d2d35654a5"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "baff75a3a077f9c52462cdae1a38624365090125afcc127edfbc9e03d340a515",
+      "after_sha256": "3b6e14c16bdf730a6aa330d85518ac7ea9be4f9d5a7f322146dbbe8ed6bcee7a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "bed8bea5be159e2e9ee5de85dd465a9bcc2648c4567c8d37537ce483dc066ccb"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "bf75880ea58a4cf6513569463e348c17d02d96feb33f857b258f9eb680797c9e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "851bf20c385be661427aa89168947ed26352eb6fb953275ef79a69b4198df290"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "d79630b70d73e6ba87aeb5638f4795f6b2f3f01ee68752ca5d8bb750907cdc76"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6669157faa7d9ef08c4f9d116963e0f6fa32fcdc725f9c593e028d4a1bb6e5b4"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5c16e846ef56da246b4e04c41b98e30a6952c59006ca4580200f8d2d28d2642c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f7bf23b2524b62c8a1bb2b2873ff9cceda4c805943e7bbc1a3da22974b018d0d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "febff0dd606d1d67dd0f4b72944220d0e2040040be740beb9c44851804842df4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "d81a6af1a9f0b1fdb3b4a3f0c97afbfae212cac6978dbc5e95caa3820d49cf6a"
+    }
+  ],
+  "limits": [
+    "Existing PostgreSQL exclusion migration is preserved; mocked query tests do not establish live database concurrency or migration deployment.",
+    "Single-local-day rules allow exact ending midnight only; selected DST cases tested, not universal timezone certification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T18:51:56.720192+00:00"
+}

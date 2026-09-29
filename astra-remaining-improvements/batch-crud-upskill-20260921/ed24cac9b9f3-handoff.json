@@ -1,0 +1,30 @@
+﻿{
+    "id":  "ed24cac9b9f3",
+    "files":  [
+                  "src/lib/cache/inMemoryCache.ts",
+                  "tests/runtime-cache-capacity.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src-lib-cache-inMemoryCache.ts.before",
+                  "astraupskill/evidence/ed24cac9b9f3-runtime-cache-capacity.tap.txt",
+                  "astraupskill/README.md",
+                  "astraupskill/01-CODEBASE-MAP.md",
+                  "astraupskill/02-CONCEPTS.md",
+                  "astraupskill/03-WORKED-CHANGE.md",
+                  "astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "astraupskill/05-PRACTICE.md",
+                  "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "astraupskill/07-TRACE-LAB.md",
+                  "astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "InMemoryCache had TTL and invalidation but no max-entry capacity, allowing unbounded in-process growth.",
+                     "Cache now has a default capacity, disabled zero-capacity semantics, and oldest-key eviction."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-cache-capacity.test.mjs: 3 passed"
+              ],
+    "limitations":  [
+                        "Actual cache class only; no evaluator, route, DB, distributed process, profiler, or concurrency."
+                    ],
+    "project":  "ww31"
+}

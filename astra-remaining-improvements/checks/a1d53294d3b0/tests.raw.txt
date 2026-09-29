@@ -1,0 +1,97 @@
+
+ RUN  v2.1.9 C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/a1d53294d3b0
+
+stdout | apps/api/src/api.test.ts > api > logs in seeded learner and returns dashboard
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:42.755Z","requestId":"req-1789238982715-88iiqh","method":"POST","path":"/auth/login","statusCode":200,"durationMs":39}
+
+stdout | apps/api/src/api.test.ts > api > logs in seeded learner and returns dashboard
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:42.871Z","requestId":"req-1789238982853-7aocg7","method":"GET","path":"/me/dashboard","statusCode":200,"durationMs":18}
+
+stdout | apps/api/src/api.test.ts > api > scopes organization admin dashboard records to their tenant
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:42.910Z","requestId":"req-1789238982902-e170gm","method":"POST","path":"/auth/login","statusCode":200,"durationMs":8}
+
+stdout | apps/api/src/api.test.ts > api > scopes organization admin dashboard records to their tenant
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:42.943Z","requestId":"req-1789238982936-kbmf84","method":"GET","path":"/me/dashboard","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:42.991Z","requestId":"req-1789238982983-ok5hjw","method":"POST","path":"/auth/login","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.019Z","requestId":"req-1789238983012-0svogo","method":"GET","path":"/me/dashboard","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.055Z","requestId":"req-1789238983047-m2dpt9","method":"POST","path":"/auth/login","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.090Z","requestId":"req-1789238983083-erhgh4","method":"GET","path":"/me/dashboard","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.145Z","requestId":"req-1789238983131-28gu0o","method":"POST","path":"/auth/login","statusCode":200,"durationMs":14}
+
+stdout | apps/api/src/api.test.ts > api > scopes dashboard audit logs by organization while platform admins see both tenants
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.188Z","requestId":"req-1789238983180-ejoc9t","method":"GET","path":"/me/dashboard","statusCode":200,"durationMs":8}
+
+stdout | apps/api/src/api.test.ts > api > returns structured health with request id header
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.221Z","requestId":"test-request-id","method":"GET","path":"/health","statusCode":200,"durationMs":3}
+
+stdout | apps/api/src/api.test.ts > api > verifies a public certificate without authentication
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.243Z","requestId":"req-1789238983240-73tnzs","method":"GET","path":"/certificates/verify/verify-security-lena","statusCode":200,"durationMs":3}
+
+stdout | apps/api/src/api.test.ts > api > filters catalog within actor visibility
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.276Z","requestId":"req-1789238983270-q2mguz","method":"POST","path":"/auth/login","statusCode":200,"durationMs":6}
+
+stdout | apps/api/src/api.test.ts > api > filters catalog within actor visibility
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.318Z","requestId":"req-1789238983303-7wm8w5","method":"GET","path":"/catalog","statusCode":200,"durationMs":15}
+
+stdout | apps/api/src/api.test.ts > api > returns learner transcript for the owning learner
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.348Z","requestId":"req-1789238983341-g8ly0h","method":"POST","path":"/auth/login","statusCode":200,"durationMs":7}
+
+stdout | apps/api/src/api.test.ts > api > returns learner transcript for the owning learner
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.378Z","requestId":"req-1789238983369-sll5ve","method":"GET","path":"/learners/user-learner/transcript","statusCode":200,"durationMs":9}
+
+stdout | apps/api/src/api.test.ts > api > rejects lesson progress for lessons outside the enrolled version
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.409Z","requestId":"req-1789238983403-vf4t0u","method":"POST","path":"/auth/login","statusCode":200,"durationMs":6}
+
+stderr | apps/api/src/api.test.ts > api > rejects lesson progress for lessons outside the enrolled version
+{"level":"warn","message":"api.request_failed","timestamp":"2026-09-12T18:49:43.444Z","method":"POST","path":"/enrollments/enroll-security-lena/progress","statusCode":403,"code":"FORBIDDEN","error":"Lesson does not belong to this enrollment version"}
+
+stdout | apps/api/src/api.test.ts > api > rejects lesson progress for lessons outside the enrolled version
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.447Z","requestId":"req-1789238983434-wt8slv","method":"POST","path":"/enrollments/enroll-security-lena/progress","statusCode":403,"durationMs":13}
+
+stdout | apps/api/src/api.test.ts > api > requires quiz attempts to belong to the learner enrollment
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.478Z","requestId":"req-1789238983470-l8lr0n","method":"POST","path":"/auth/login","statusCode":200,"durationMs":8}
+
+stderr | apps/api/src/api.test.ts > api > requires quiz attempts to belong to the learner enrollment
+{"level":"warn","message":"api.request_failed","timestamp":"2026-09-12T18:49:43.505Z","method":"POST","path":"/quiz-attempts","statusCode":403,"code":"FORBIDDEN","error":"Only the enrolled learner can submit learning work"}
+
+stdout | apps/api/src/api.test.ts > api > requires quiz attempts to belong to the learner enrollment
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.507Z","requestId":"req-1789238983495-xd9vt2","method":"POST","path":"/quiz-attempts","statusCode":403,"durationMs":12}
+
+stdout | apps/api/src/api.test.ts > api > creates enrollment-scoped quiz attempts and assignment submissions
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.535Z","requestId":"req-1789238983526-fwpsm6","method":"POST","path":"/auth/login","statusCode":200,"durationMs":9}
+
+stdout | apps/api/src/api.test.ts > api > creates enrollment-scoped quiz attempts and assignment submissions
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.566Z","requestId":"req-1789238983556-cs1jzk","method":"POST","path":"/quiz-attempts","statusCode":201,"durationMs":10}
+
+stdout | apps/api/src/api.test.ts > api > creates enrollment-scoped quiz attempts and assignment submissions
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.598Z","requestId":"req-1789238983590-38jcsl","method":"POST","path":"/assignment-submissions","statusCode":201,"durationMs":8}
+
+stdout | apps/api/src/api.test.ts > api > blocks learners from browsing audit logs
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.624Z","requestId":"req-1789238983618-gqrtvg","method":"POST","path":"/auth/login","statusCode":200,"durationMs":6}
+
+stderr | apps/api/src/api.test.ts > api > blocks learners from browsing audit logs
+{"level":"warn","message":"api.request_failed","timestamp":"2026-09-12T18:49:43.648Z","method":"GET","path":"/audit-logs","statusCode":403,"code":"FORBIDDEN","error":"Forbidden"}
+
+stdout | apps/api/src/api.test.ts > api > blocks learners from browsing audit logs
+{"level":"info","message":"api.request_completed","timestamp":"2026-09-12T18:49:43.650Z","requestId":"req-1789238983639-rcix8a","method":"GET","path":"/audit-logs","statusCode":403,"durationMs":11}
+
+ ✓ apps/api/src/api.test.ts (11 tests) 1197ms
+   ✓ api > logs in seeded learner and returns dashboard 414ms
+ ✓ apps/api/src/policies.test.ts (4 tests) 12ms
+ ✓ packages/domain/src/domain.test.ts (4 tests) 8ms
+
+ Test Files  3 passed (3)
+      Tests  19 passed (19)
+   Start at  11:49:35
+   Duration  8.31s (transform 3.08s, setup 0ms, collect 4.83s, tests 1.22s, environment 1ms, prepare 886ms)
+

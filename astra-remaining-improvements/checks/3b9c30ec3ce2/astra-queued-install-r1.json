@@ -1,0 +1,29 @@
+{
+  "project": "buildreviewer",
+  "id": "3b9c30ec3ce2",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "ci",
+    "--prefer-offline",
+    "--no-audit",
+    "--no-fund",
+    "--fetch-retries=1",
+    "--fetch-timeout=20000",
+    "--maxsockets=2",
+    "--loglevel=verbose"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+  "environmentOverrides": {
+    "HUSKY": "0",
+    "npm_config_cache": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+  },
+  "startedAt": "2026-09-20T20:30:19.199123+00:00",
+  "status": "complete",
+  "log": "astra-queued-install-r1.log",
+  "pid": 26672,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T20:53:35.009926+00:00",
+  "elapsedSeconds": 1395.81
+}

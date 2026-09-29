@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netvg",
+  "id": "9e7b2d32e0fb",
+  "command": [
+    "node",
+    "--experimental-strip-types",
+    "src/PeblClone.Web/src/services/requestGate.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e7b2d32e0fb",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:27:08.659882+00:00",
+  "status": "complete",
+  "log": "request-gate-final.log",
+  "pid": 33256,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:27:09.754324+00:00",
+  "elapsedSeconds": 1.08
+}

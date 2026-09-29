@@ -1,0 +1,24 @@
+{
+  "id": "2e356b8f3d9f",
+  "changedFiles": [
+    "src/repositories/reportingRepository.ts",
+    "tests/runtime-report-submit-atomicity.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-repositories-reportingRepository.ts.before",
+    "astraupskill/evidence/crud-b05-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/2e356b8f3d9f/results-crud-b05.json",
+    "format": "json"
+  },
+  "limits": [
+    "Five runtime cases execute actual repository and error classes with mutable-store and ID adapters. No live Next, authentication, persistence transaction, concurrency or full typecheck.",
+    "This prevents the known missing-parent partial mutations in submit and approve. It does not add idempotency, service authorization, rollback for arbitrary later failures or atomic audit persistence. IDs and submission timestamps are still allocated before parent lookup."
+  ],
+  "summary": [
+    "Validate reporting-period existence before submission insertion and before approval changes the child report.",
+    "Add actual repository/error-class tests for both orphan paths and successful parent/child transitions."
+  ],
+  "project": "_Organized Desktop/05 Numbered Experiments/ww13"
+}

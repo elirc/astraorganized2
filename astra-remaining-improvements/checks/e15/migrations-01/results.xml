@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="9" time="49.680" timestamp="2026-09-09T15:44:06.990056-07:00" hostname="DESKTOP-T0PFEUT"><testcase classname="tests.test_migrations" name="test_additive_upgrade_preserves_records_and_original_schema_in_consistent_backup" time="1.540"><failure message="OSError: [Errno 9] Bad file descriptor">tmp_path = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_additive_upgrade_preserve0')
+
+    def test_additive_upgrade_preserves_records_and_original_schema_in_consistent_backup(tmp_path):
+        path,engine=legacy(tmp_path)
+&gt;       result=migrate_database(engine,tmp_path/'backups')
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_migrations.py:29: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\migrations.py:91: in migrate_database
+    backup = _backup(database, Path(backup_dir).resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+database = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_additive_upgrade_preserve0/legacy.sqlite3')
+destination = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_additive_upgrade_preserve0/backups')
+
+    def _backup(database: Path, destination: Path) -&gt; Path:
+        destination.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        final = destination / f'helpdesk-before-v1-{stamp}-{uuid.uuid4().hex}.sqlite3'
+        partial = final.with_suffix('.partial.sqlite3')
+        fd = os.open(partial, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        os.close(fd)
+        started = time.monotonic()
+    
+        def progress(_status, _remaining, _total):
+            if time.monotonic() - started &gt; 60:
+                raise MigrationError('Backup exceeded 60 seconds; the database was not migrated. Review the partial backup separately.')
+    
+        # A separate read connection can back up the accepted database while the writer
+        # holds BEGIN IMMEDIATE. Backing up the writer itself can wait on its own lock.
+        with sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=5) as reader:
+            with sqlite3.connect(partial) as target:
+                reader.backup(target, pages=128, progress=progress, sleep=0.01)
+                if target.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+                    raise MigrationError('Backup integrity check failed; migration was not started.')
+        with partial.open('rb') as saved:
+&gt;           os.fsync(saved.fileno())
+E           OSError: [Errno 9] Bad file descriptor
+
+app\migrations.py:41: OSError</failure></testcase><testcase classname="tests.test_migrations" name="test_repeated_startup_does_not_reset_records_or_create_another_backup" time="0.466"><failure message="OSError: [Errno 9] Bad file descriptor">tmp_path = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_repeated_startup_does_not0')
+
+    def test_repeated_startup_does_not_reset_records_or_create_another_backup(tmp_path):
+        path,engine=legacy(tmp_path)
+&gt;       migrate_database(engine,tmp_path/'backups')
+
+tests\test_migrations.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\migrations.py:91: in migrate_database
+    backup = _backup(database, Path(backup_dir).resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+database = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_repeated_startup_does_not0/legacy.sqlite3')
+destination = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_repeated_startup_does_not0/backups')
+
+    def _backup(database: Path, destination: Path) -&gt; Path:
+        destination.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        final = destination / f'helpdesk-before-v1-{stamp}-{uuid.uuid4().hex}.sqlite3'
+        partial = final.with_suffix('.partial.sqlite3')
+        fd = os.open(partial, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        os.close(fd)
+        started = time.monotonic()
+    
+        def progress(_status, _remaining, _total):
+            if time.monotonic() - started &gt; 60:
+                raise MigrationError('Backup exceeded 60 seconds; the database was not migrated. Review the partial backup separately.')
+    
+        # A separate read connection can back up the accepted database while the writer
+        # holds BEGIN IMMEDIATE. Backing up the writer itself can wait on its own lock.
+        with sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=5) as reader:
+            with sqlite3.connect(partial) as target:
+                reader.backup(target, pages=128, progress=progress, sleep=0.01)
+                if target.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+                    raise MigrationError('Backup integrity check failed; migration was not started.')
+        with partial.open('rb') as saved:
+&gt;           os.fsync(saved.fileno())
+E           OSError: [Errno 9] Bad file descriptor
+
+app\migrations.py:41: OSError</failure></testcase><testcase classname="tests.test_migrations" name="test_two_startups_perform_one_migration" time="2.443"><failure message="OSError: [Errno 9] Bad file descriptor">tmp_path = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_two_startups_perform_one_0')
+
+    def test_two_startups_perform_one_migration(tmp_path):
+        path,engine=legacy(tmp_path)
+        with ThreadPoolExecutor(max_workers=2) as pool:
+&gt;           results=list(pool.map(lambda _:migrate_database(engine,tmp_path/'backups'),range(2)))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_migrations.py:59: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+C:\Python313\Lib\concurrent\futures\_base.py:619: in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\concurrent\futures\_base.py:317: in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\concurrent\futures\_base.py:456: in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+C:\Python313\Lib\concurrent\futures\_base.py:401: in __get_result
+    raise self._exception
+C:\Python313\Lib\concurrent\futures\thread.py:59: in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_migrations.py:59: in &lt;lambda&gt;
+    results=list(pool.map(lambda _:migrate_database(engine,tmp_path/'backups'),range(2)))
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+app\migrations.py:91: in migrate_database
+    backup = _backup(database, Path(backup_dir).resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+database = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_two_startups_perform_one_0/legacy.sqlite3')
+destination = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_two_startups_perform_one_0/backups')
+
+    def _backup(database: Path, destination: Path) -&gt; Path:
+        destination.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        final = destination / f'helpdesk-before-v1-{stamp}-{uuid.uuid4().hex}.sqlite3'
+        partial = final.with_suffix('.partial.sqlite3')
+        fd = os.open(partial, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        os.close(fd)
+        started = time.monotonic()
+    
+        def progress(_status, _remaining, _total):
+            if time.monotonic() - started &gt; 60:
+                raise MigrationError('Backup exceeded 60 seconds; the database was not migrated. Review the partial backup separately.')
+    
+        # A separate read connection can back up the accepted database while the writer
+        # holds BEGIN IMMEDIATE. Backing up the writer itself can wait on its own lock.
+        with sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=5) as reader:
+            with sqlite3.connect(partial) as target:
+                reader.backup(target, pages=128, progress=progress, sleep=0.01)
+                if target.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+                    raise MigrationError('Backup integrity check failed; migration was not started.')
+        with partial.open('rb') as saved:
+&gt;           os.fsync(saved.fileno())
+E           OSError: [Errno 9] Bad file descriptor
+
+app\migrations.py:41: OSError</failure></testcase><testcase classname="tests.test_migrations" name="test_orm_compare_and_swap_rejects_a_stale_customer_write" time="1.881"><failure message="OSError: [Errno 9] Bad file descriptor">tmp_path = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_orm_compare_and_swap_reje0')
+
+    def test_orm_compare_and_swap_rejects_a_stale_customer_write(tmp_path):
+        path,engine=legacy(tmp_path)
+&gt;       migrate_database(engine,tmp_path/'backups')
+
+tests\test_migrations.py:67: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\migrations.py:91: in migrate_database
+    backup = _backup(database, Path(backup_dir).resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+database = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_orm_compare_and_swap_reje0/legacy.sqlite3')
+destination = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_orm_compare_and_swap_reje0/backups')
+
+    def _backup(database: Path, destination: Path) -&gt; Path:
+        destination.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        final = destination / f'helpdesk-before-v1-{stamp}-{uuid.uuid4().hex}.sqlite3'
+        partial = final.with_suffix('.partial.sqlite3')
+        fd = os.open(partial, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        os.close(fd)
+        started = time.monotonic()
+    
+        def progress(_status, _remaining, _total):
+            if time.monotonic() - started &gt; 60:
+                raise MigrationError('Backup exceeded 60 seconds; the database was not migrated. Review the partial backup separately.')
+    
+        # A separate read connection can back up the accepted database while the writer
+        # holds BEGIN IMMEDIATE. Backing up the writer itself can wait on its own lock.
+        with sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=5) as reader:
+            with sqlite3.connect(partial) as target:
+                reader.backup(target, pages=128, progress=progress, sleep=0.01)
+                if target.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+                    raise MigrationError('Backup integrity check failed; migration was not started.')
+        with partial.open('rb') as saved:
+&gt;           os.fsync(saved.fileno())
+E           OSError: [Errno 9] Bad file descriptor
+
+app\migrations.py:41: OSError</failure></testcase><testcase classname="tests.test_migrations" name="test_future_schema_is_refused_without_backup_or_reset" time="1.752" /><testcase classname="tests.test_migrations" name="test_unknown_layout_is_refused_without_removing_a_column" time="0.938" /><testcase classname="tests.test_migrations" name="test_mid_migration_failure_rolls_back_schema_and_keeps_backup" time="0.991"><failure message="OSError: [Errno 9] Bad file descriptor">tmp_path = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_mid_migration_failure_rol0')
+
+    def test_mid_migration_failure_rolls_back_schema_and_keeps_backup(tmp_path):
+        path,engine=legacy(tmp_path)
+        def fail(_conn,_cursor,statement,_params,_context,_many):
+            if statement.startswith('ALTER TABLE "teams"'):raise RuntimeError('Injected DDL failure')
+        event.listen(engine,'before_cursor_execute',fail)
+&gt;       with pytest.raises(RuntimeError,match='Injected'):migrate_database(engine,tmp_path/'backups')
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests\test_migrations.py:104: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\migrations.py:91: in migrate_database
+    backup = _backup(database, Path(backup_dir).resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+database = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_mid_migration_failure_rol0/legacy.sqlite3')
+destination = WindowsPath('C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/e15/migrations-01/pytest-temp/test_mid_migration_failure_rol0/backups')
+
+    def _backup(database: Path, destination: Path) -&gt; Path:
+        destination.mkdir(parents=True, exist_ok=True)
+        stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+        final = destination / f'helpdesk-before-v1-{stamp}-{uuid.uuid4().hex}.sqlite3'
+        partial = final.with_suffix('.partial.sqlite3')
+        fd = os.open(partial, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o600)
+        os.close(fd)
+        started = time.monotonic()
+    
+        def progress(_status, _remaining, _total):
+            if time.monotonic() - started &gt; 60:
+                raise MigrationError('Backup exceeded 60 seconds; the database was not migrated. Review the partial backup separately.')
+    
+        # A separate read connection can back up the accepted database while the writer
+        # holds BEGIN IMMEDIATE. Backing up the writer itself can wait on its own lock.
+        with sqlite3.connect(database.as_uri() + '?mode=ro', uri=True, timeout=5) as reader:
+            with sqlite3.connect(partial) as target:
+                reader.backup(target, pages=128, progress=progress, sleep=0.01)
+                if target.execute('PRAGMA integrity_check').fetchone()[0] != 'ok':
+                    raise MigrationError('Backup integrity check failed; migration was not started.')
+        with partial.open('rb') as saved:
+&gt;           os.fsync(saved.fileno())
+E           OSError: [Errno 9] Bad file descriptor
+
+app\migrations.py:41: OSError</failure></testcase><testcase classname="tests.test_migrations" name="test_existing_orphan_reference_is_preserved_for_review" time="1.477" /><testcase classname="tests.test_migrations" name="test_new_database_creates_current_schema_without_a_migration_backup" time="3.810" /></testsuite></testsuites>

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "dotnet",
+    "restore",
+    "tests/Billing.Tests/Billing.Tests.csproj",
+    "--nologo"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 15.27
+}

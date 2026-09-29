@@ -1,0 +1,47 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "applybot/application_store.py",
+    "applybot/browser.py",
+    "applybot/cli.py",
+    "applybot/dashboard.py",
+    "applybot/legacy_history.py",
+    "applybot/llm.py",
+    "applybot/profile.py",
+    "applybot/tracker.py",
+    "applybot/web/app.js",
+    "applybot/web/index.html",
+    "applybot/web/styles.css",
+    "astraupskill/images/desktop.png",
+    "astraupskill/images/narrow.png",
+    "profile.example.yaml",
+    "requirements-dev.txt",
+    "scripts/verify.py",
+    "scripts/verify_browser.py",
+    "tests/test_http.py",
+    "tests/test_legacy.py",
+    "tests/test_profile_and_cli.py",
+    "tests/test_store.py"
+  ],
+  "summary": [
+    "Added a standard-library loopback dashboard and real SQLite application CRUD with stable IDs, bounded validation, literal search, pagination, captured versions and transactional retained audit.",
+    "Preserved failed and conflicting drafts, added explicit current-record loading, confirmed deletion/locking, draft export, and independently reported save/list-refresh outcomes.",
+    "Added all-or-nothing legacy JSONL import with retained occurrence receipts, non-resurrecting repeat imports, visible unimported CLI history, database identity checks and non-overwriting SQLite backups.",
+    "Hardened bounded profile validation and relative document paths; neutralized the example profile; offline planning preserves unknown answers and leaves consent for manual review; logging and launch failures close browser resources.",
+    "Added nine detailed source-grounded learning documents, repeatable verification commands, 43 Python and eight Chromium checks, and two reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/applybot/results.json",
+    "expectedTests": 51,
+    "environment": "Python 3.13; PyYAML 6.0.3; pydantic 2.13.4; Python Playwright 1.59.0 with Chromium 148; Node 22.16.0",
+    "command": "python scripts/verify.py; python scripts/verify_browser.py; node --check applybot/web/app.js"
+  },
+  "limits": [
+    "Local personal tracker only: one loopback token, no accounts, tenant ownership, distributed limits or production hosting.",
+    "New HTTP creates have no durable idempotency receipt; uncertain timeouts require inspection before retry. Audit stores minimal metadata rather than full prior values.",
+    "Original paid provider adapters, model availability, career-site automation and real submissions were not exercised. Personal profile and browser session were not loaded or changed.",
+    "No power-loss certification, full accessibility audit, automatic draft merge or graphical import wizard."
+  ]
+}

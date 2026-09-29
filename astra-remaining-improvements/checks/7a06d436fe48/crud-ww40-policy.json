@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww40",
+  "id": "7a06d436fe48",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/moderation-policy.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7a06d436fe48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:47:23.276597+00:00",
+  "status": "complete",
+  "log": "crud-ww40-policy.log",
+  "pid": 28376,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T03:47:31.382730+00:00",
+  "elapsedSeconds": 8.1
+}

@@ -1,0 +1,42 @@
+{
+  "changedFiles": [
+    "README.md",
+    "package.json",
+    "server/package.json",
+    "server/index.js",
+    "server/store.js",
+    "server/test/documents.test.js",
+    "client/src/App.tsx",
+    "client/src/index.css",
+    "client/README.md",
+    "client/.env.example",
+    ".env.example",
+    ".gitignore",
+    "playwright.config.ts",
+    "tests/collaboration.spec.ts",
+    "astraupskill/images/desktop.png",
+    "astraupskill/images/narrow.png"
+  ],
+  "summary": [
+    "Repairs the non-starting ES-module server and implements Yjs synchronization using the installed protocol APIs with testable server lifecycle.",
+    "Adds document metadata CRUD with readable creation Location, validation, optimistic rename/delete versions, persistent tombstones and active-room deletion handling.",
+    "Candidate collaborative state is persisted before live mutation and broadcast; corruption and failed writes preserve authoritative state with tested file cleanup.",
+    "Implements the documented room UI, presence, import/export, formatting, literal search/replace and sanitized preview through one controlled Yjs input path.",
+    "Fixes relayed-presence handling, room/session cleanup and deleted-room state; responsive text actions fit desktop and narrow layouts.",
+    "Nine detailed course documents, two reviewed screenshots and reproducible backend/browser gates teach CRUD, CRDTs, persistence, conflicts, testing and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/whiteboard/results.json",
+    "expectedTests": 25,
+    "command": "npm run test:server; npm run lint; npm run build; eight Playwright Chromium scenarios; build and two layout rechecks",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; Chromium 148.0.7778.96; real HTTP/WebSockets/Yjs/files and child-process startup"
+  },
+  "limits": [
+    "Shared local lab with no authenticated ownership, membership revocation, database or multi-process storage coordination.",
+    "Live is synchronization status, not a per-edit disk receipt; sender-local edits can remain unaccepted after a failed write.",
+    "Synchronous full-state persistence and retained tombstones need scaling/retention design; no power-loss or network-filesystem guarantee.",
+    "No complete IME/remote-cursor binding or document history UI.",
+    "Docker scaffolding was not executed because the daemon was unavailable."
+  ]
+}

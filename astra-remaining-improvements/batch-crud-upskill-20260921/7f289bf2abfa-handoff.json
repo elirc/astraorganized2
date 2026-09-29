@@ -1,0 +1,43 @@
+{
+  "id": "7f289bf2abfa",
+  "project": ".netslack",
+  "status": "ready-for-review",
+  "finding": "Workspace create used a precheck but had no provider-neutral classification for a concurrent unique slug winner. The staged service now re-queries persisted normalized slug state after save failure, maps only an observed winner to ConflictException, and rethrows unrelated failures.",
+  "files": [
+    "src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+    "tests/NetSlack.Application.Tests/WorkflowTests.cs",
+    "tests/NetSlack.ScopeHarness/NetSlack.ScopeHarness.csproj",
+    "tests/NetSlack.ScopeHarness/Contracts.cs",
+    "tests/NetSlack.ScopeHarness/Program.cs",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/08-INDEPENDENT-PRACTICE.md",
+    "astraupskill/VERIFICATION.md",
+    "astraupskill/snapshots/src/NetSlack.Application/Workspaces/WorkspaceService.cs",
+    "astraupskill/snapshots/tests/NetSlack.Application.Tests/WorkflowTests.cs",
+    "checks/7f289bf2abfa/results-crud-b02.json",
+    "checks/7f289bf2abfa/harness-b02.log",
+    "specs/7f289bf2abfa.json"
+    ,"astra-remaining-improvements/snapshots/7f289bf2abfa/src/NetSlack.Application/Workspaces/WorkspaceService.cs"
+    ,"astra-remaining-improvements/snapshots/7f289bf2abfa/tests/NetSlack.Application.Tests/WorkflowTests.cs"
+    ,"astra-remaining-improvements/stage/7f289bf2abfa/astraupskill/snapshots/src/NetSlack.Application/Workspaces/WorkspaceService.cs"
+    ,"astra-remaining-improvements/stage/7f289bf2abfa/astraupskill/snapshots/tests/NetSlack.Application.Tests/WorkflowTests.cs"
+    ,"checks/7f289bf2abfa/harness-b02.log"
+    ,"checks/7f289bf2abfa/build-b02.log"
+    ,"checks/7f289bf2abfa/results-crud-b02.json"
+    ,"astra-remaining-improvements/checks/7f289bf2abfa/results-crud-b02.json"
+    ,"astra-remaining-improvements/checks/7f289bf2abfa/harness-b02.log"
+    ,"astra-remaining-improvements/checks/7f289bf2abfa/build-b02.log"
+  ],
+  "tests": {"executed": 4, "passed": 4, "results": "checks/7f289bf2abfa/results-crud-b02.json"},
+  "limits": [
+    "Native .NET8 restore/test was unavailable; source-linked .NET10 harness is the executed fallback.",
+    "No live EF provider, SQL, migration, isolation, or deployment verification."
+  ]
+}

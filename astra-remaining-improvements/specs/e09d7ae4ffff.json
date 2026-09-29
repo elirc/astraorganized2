@@ -1,0 +1,62 @@
+{
+  "summary": [
+    "Prevalidates task priority/status/tags and materializes fallible tag input before mutating WorkTask; missing goal owners and automation projects fail before save/audit.",
+    "Validates automation enums and status action values, rejects unimplemented actions for new rules, and emits execution audit only after a supported branch runs.",
+    "Repairs frontend JSX, Lucide icon types, Vite TypeScript resolution and Node declarations; adds a lockfile and six regression tests including a real HTTP400 boundary check.",
+    "Adds a nine-chapter course with original snapshots, worked examples, matched practice/solutions, source traces and portable verification evidence."
+  ],
+  "changedFiles": [
+    "README.md",
+    "backend/src/BuildAsana.Api/Program.cs",
+    "backend/src/BuildAsana.Application/Work/WorkManagementService.cs",
+    "backend/src/BuildAsana.Domain/Work/AutomationRule.cs",
+    "backend/src/BuildAsana.Domain/Work/WorkTask.cs",
+    "backend/tests/BuildAsana.Application.Tests/WorkManagementServiceTests.cs",
+    "frontend/package.json",
+    "frontend/tsconfig.json",
+    "frontend/tsconfig.node.json",
+    "frontend/src/App.tsx",
+    "frontend/src/features/dashboard/DashboardView.tsx",
+    "frontend/package-lock.json",
+    "frontend/src/vite-env.d.ts",
+    "astraupskill/snapshots/AutomationRule-before.cs.txt",
+    "astraupskill/snapshots/frontend-App-before.tsx.txt",
+    "astraupskill/snapshots/frontend-tsconfig-before.json.txt",
+    "astraupskill/snapshots/HttpExtensions-before.cs.txt",
+    "astraupskill/snapshots/Program-before.cs.txt",
+    "astraupskill/snapshots/WorkManagementService-before.cs.txt",
+    "astraupskill/snapshots/WorkManagementServiceTests-before.cs.txt",
+    "astraupskill/snapshots/WorkTask-before.cs.txt",
+    "astraupskill/evidence/backend-build-release-06.json",
+    "astraupskill/evidence/backend-build-release-06.log",
+    "astraupskill/evidence/backend-restore-01.json",
+    "astraupskill/evidence/backend-restore-01.log",
+    "astraupskill/evidence/backend-test-release-05.json",
+    "astraupskill/evidence/backend-test-release-05.log",
+    "astraupskill/evidence/buildasana-release-05.trx",
+    "astraupskill/evidence/frontend-build-01.json",
+    "astraupskill/evidence/frontend-build-01.log",
+    "astraupskill/evidence/frontend-lint-01.json",
+    "astraupskill/evidence/frontend-lint-01.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "stage/e09d7ae4ffff/astraupskill/evidence/results.json",
+    "sourceHashesFile": "checks/e09d7ae4ffff/review-source-hashes.json",
+    "expectedTests": 9,
+    "command": "Release dotnet build/test with DOTNET_ROLL_FORWARD=Major; frontend npm run build and npm run lint",
+    "notes": [
+      "Final backend build06/test05 and frontend build01/lint01 passed;9xUnit tests.",
+      "No executable changes during final docs/spec review; generated Vite outputs are excluded."
+    ]
+  },
+  "limits": [
+    "In-memory shared references and dictionary locks do not supply durable transactions, aggregate rollback, or cross-request isolation; save/audit/automation sequences can still partially complete on infrastructure failure.",
+    "Demo actor/role headers are not authentication or tenant membership enforcement.",
+    "Nine tests cover domain/service guards and one real loopback HTTP invalid-status request; no live database, browser, external webhook or native .NET 8 runtime was tested.",
+    "Legacy unsupported automation audit skipping was source-reviewed but not directly injected in the suite; positive automation asserts DTO state and audit presence, not exact audit cardinality or reloaded persistence.",
+    "Frontend retains API-unavailable mock fallback and local-only board changes; build repairs do not add persistent frontend CRUD.",
+    "The HTTP test uses fixed local port51937, a Release prebuild and major roll-forward on this machine; its40 readiness attempts can be slow. Other existing input-constructor errors and concurrency gaps remain."
+  ]
+}

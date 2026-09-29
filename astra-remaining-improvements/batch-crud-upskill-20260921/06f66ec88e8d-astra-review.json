@@ -1,0 +1,32 @@
+{
+  "id": "06f66ec88e8d",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:31:37.450506+00:00",
+  "sourceReview": "Reviewed service, repository throwing update semantics, real permission/AppError modules and HTTP admin wrapper. Transaction rejection P2025 maps to existing404; all other thrown values preserve identity. Pre-read status/policy is not made atomic.",
+  "teachingReview": "Read all nine chapters and replaced repeated draft paragraphs, corrected forensic deletion claims and native-test snapshot claims, documented five cases and source versus runtime scope. Graded lifecycle exercises and trace table included.",
+  "testReview": "Five actual service runtime cases passed with real role policy and AppError plus transaction/repository adapters: P2025 mapping, unrelated object/primitive identity, success result and transaction handle, analyst refusal, missing/illegal/no-policy zero-write matrix. Restored original native test unchanged.",
+  "specSHA256": "3d351f2925f65e00c1fedbc40923327a815668993aaec6db07a288d3ecee19b5",
+  "fileHashes": {
+    "src/services/admin/gateway-route-service.ts": "d6856bf8e7ed6b6c4075d0b75ebc62e62b492fc7fe92cbc2490e06f96860d8b8",
+    "tests/runtime-route-status.test.mjs": "2d6439b491d7fca17d2849c3a691e6103d641099f28a5b24af84fe4cc76d6e28",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src/services/admin/gateway-route-service.ts": "89c06e29701ede19cf4400a86ec18d78e119d077ba62cf985f70a9896bb8c64c",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "f9f71ee9ed819028b67565aaffd0b76b56a1c2ca425d4f8617291a6ea75c1f6e",
+    "astraupskill/evidence/results.json": "b62e20d8cfea8be813f3edb2d3da0691c589b8c7538c8475254e40279ed8a765",
+    "astraupskill/README.md": "88a136e5a0e1bc216f33c0292c7d6ba0700ce48f1e4d9f418f57b10ca948b021",
+    "astraupskill/01-CODEBASE-MAP.md": "d0eb65602f58f9bb440b9b51b04e72e5c68c0438bcb186ac6988ae93ab64e98f",
+    "astraupskill/02-CONCEPTS.md": "1be26233c898c99dde5a244f490f2fd07ee74b04f4f307d44b72add4d4274f9f",
+    "astraupskill/03-WORKED-CHANGE.md": "285f9a407b8fdf40c436e2c7d7fe53ac4850395b9746c284449adc3be2b5bcaa",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "2bf45d347fc0d26374a5dead0724b3b0239be85e0ab3f577f3ea27f6af70cb85",
+    "astraupskill/05-PRACTICE.md": "7031ad6cdc8199215550b5e5a58a81653934920b02ff5a4580a1d5fc553d80d4",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "54c3660471cfe0d430eca0eca9a9706a4f834c4ca34987fee9f6877137435b71",
+    "astraupskill/07-TRACE-LAB.md": "1e30725fa8159fcc9640e14b214ba52de1663fcb9e3d3769f5608e2d47bf57a3",
+    "astraupskill/VERIFICATION.md": "034eb2edb18c2e1e0b3b0eaf765189e1c7e40df3bd15109e45d966caa0779234"
+  },
+  "evidenceHashes": {
+    "checks/06f66ec88e8d/astra-crud-b04-w21.log": "35de56349b8efca3a3a2d485c446a93dfc90680d36626926ad62202e32f98a71",
+    "checks/06f66ec88e8d/crud-b04-astra-runtime.json": "000041f940e8f9ba4d8bf33abd77441339d0df6a16ed17108e5dd90160e56f4b",
+    "checks/06f66ec88e8d/crud-b04-astra-runtime.log": "f9f71ee9ed819028b67565aaffd0b76b56a1c2ca425d4f8617291a6ea75c1f6e",
+    "checks/06f66ec88e8d/results-crud-b04.json": "b62e20d8cfea8be813f3edb2d3da0691c589b8c7538c8475254e40279ed8a765"
+  }
+}

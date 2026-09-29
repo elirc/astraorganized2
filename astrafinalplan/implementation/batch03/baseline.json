@@ -1,0 +1,2090 @@
+[
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "app.js",
+    "sha256": "fab50119fa1cbb2b114b478587c5221ecd5dd050c4ab630474c81195555758c4"
+  },
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "d300691a899c43206c798d8b0fcc0baed68c419fc5f2d457601441a357de0f0a"
+  },
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "index.html",
+    "sha256": "2a97af681dd985f8ffe70ab25fed3a9ace13baf744cd77d49002ac1b6fed1a43"
+  },
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "README.md",
+    "sha256": "45e3c71f3de1a7a556096ed87e0c1a174a3c073182ee9c9be839c5700173c2f8"
+  },
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "styles.css",
+    "sha256": "63be5933d54a44d58db8af8845babddbd65004e627a5189e692020592f08f1b7"
+  },
+  {
+    "project": "JS1/poll-studio",
+    "stage": "21",
+    "file": "USER_STORIES.md",
+    "sha256": "8e60f0470f646b02bff36043bc244f74155e2a7a753a342d4b1cbc5ab70c31c5"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "app.js",
+    "sha256": "9243515aa4b919ad898f15a967308b9c24cbfc2c4051d804d49008fdb1c00ea2"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "c1dcb03a885c637c022a17ea394562822ab9781118d02593ab33ce6ea73ae3c0"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "index.html",
+    "sha256": "85d3bc803c52782868f4168e1d555b087f3302908aac1dfb255689d69f516bfb"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "README.md",
+    "sha256": "26d03968383a14580091f4fff6ab93524f77d45c412072fb265e4725eb6b0655"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "styles.css",
+    "sha256": "2e15b390887272f66d58de71d562c629b69fdfee7a5275bb17d65dcc99ec4555"
+  },
+  {
+    "project": "JS1/kanban-flow",
+    "stage": "22",
+    "file": "USER_STORIES.md",
+    "sha256": "ada55432d923c34b00426c4b55647265f8da542cc4fa02cd431597cd6296ccd9"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "130483b6ec4be2356900e4dbe3cc8bdbb86b4daa9254a3b15d6a5a5341a0b3b5"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "package.json",
+    "sha256": "f5a654804c6ad22444f9540f6f92b1ca3f7e24140c186de9f62450c0e43fb7dc"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "README.md",
+    "sha256": "f14eb394cdb5f74d3f4e1b49a23a3a0e917cb82c5aa03b13520d016734ede351"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "USER_STORIES.md",
+    "sha256": "9578e21abfce829c4b8e12f37b2b8133601323d9277fa569bb59e693615c3860"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "client/index.html",
+    "sha256": "b50304e86e838cb041e99342c4be1f516c16632e785cc1bc5031d6e20420c895"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "client/src/api.js",
+    "sha256": "3cef7b85dd17baa061e46b14a1cc0b49de48ba73481b158ba74d266b33ec0ab0"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "client/src/App.jsx",
+    "sha256": "38f9646f26fce23726a30afcf6e444f56d425d07082d9a689013d419ebc5ae7d"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "client/src/styles.css",
+    "sha256": "be4a78c254f37e6c56d905ffb4c7702ff775b1ed6367c44d6b2a15bef6e25098"
+  },
+  {
+    "project": "JS1/course-roster",
+    "stage": "23",
+    "file": "server/server.js",
+    "sha256": "e05e3e993f02b4b3d5a7038094e49a5559c78bba33a274c13873cec77d864c5a"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "2103406a7dd8f8ec9af6a250bd1411d611226fefceb2b875dbd4431179d84e39"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "package.json",
+    "sha256": "9f9cd5a57a7268afc3267819c53bb260fb96b1380beef769ba878426b83307a1"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "README.md",
+    "sha256": "6c3030734b54dd1a11ba26d944a2a7dde6d36d28985597b3eb81b959bdff5a6f"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "USER_STORIES.md",
+    "sha256": "60acbf6a28b4c5c7bb0cdc5161005173c6237ab4b06146b4ca5dd9254c8f8e2b"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "client/index.html",
+    "sha256": "f5caf90a7ca8ec204e5418b1dbe950a2b7940889c27fbb77855add1e7f9dfdc9"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "client/src/api.js",
+    "sha256": "23a2509d7d91e6a99f5b2a32639f292a2756eb8ba26b054c81b4e78768f33146"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "client/src/App.jsx",
+    "sha256": "c1dd8dfadbf55c5ee45dd6e1b404394371cee6d0bea99a1208386f22bd796a15"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "client/src/styles.css",
+    "sha256": "b982c1a303799af842149dac2a0951b21dc85e2562a19545213419490396249a"
+  },
+  {
+    "project": "JS1/event-admin",
+    "stage": "24",
+    "file": "server/server.js",
+    "sha256": "dcd93d42348d1590e4c125760208e27a414401910ddad52470a0937ffa7fe9c9"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "66435cdc66939b0f0c9b91a2af77d79fe662c94efb1f71f7939834ce638c2b23"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "package.json",
+    "sha256": "88a02c35a04b555fa1a9495d6aae766c8a99795a7b3917636e39ee850063d3a2"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "README.md",
+    "sha256": "7c84f0012c871c6b1a383e571a522283af88e53a127a207968cbf6f7e38caee3"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "USER_STORIES.md",
+    "sha256": "c121555222904325633a161abcfda330899d91f8e2ff037fa6239fc0cd3b58d8"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "client/index.html",
+    "sha256": "d5a11aab1a2601a5c0389fcca3cfb3b381a1c3c55e40324fd6427dd7a7002252"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "client/src/api.js",
+    "sha256": "9e0f8ea50b43678a09b308dc630018321a45631973f227e811ab96f485f9775a"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "client/src/App.jsx",
+    "sha256": "d80c210762a12b4145e9f519026f60267908ede540b7e921bba82376b8d6bfd0"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "client/src/styles.css",
+    "sha256": "270967ae32837f8b29fd7069288a7196a2fa83ddaa1c99b993c0e41d4f95a3cd"
+  },
+  {
+    "project": "JS1/job-pipeline",
+    "stage": "25",
+    "file": "server/server.js",
+    "sha256": "f56f4ebab1474477cca859d7196bddc3351942ee61a6c148262d3899b24dbfe3"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "90ea357d2d2e67144bd2776ea53ed81dde5a83f54fc492048983fd1896234970"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "package.json",
+    "sha256": "03d8b72c1d2d5a7435c97556f729e6873a6ce657bebf93a27cfe62cd0a72ac24"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "README.md",
+    "sha256": "aee96c576a0a6e62467d5ec5c8333ddfccd9494f8ecc04a2701864d3a79ffd6e"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "USER_STORIES.md",
+    "sha256": "d136eefb8af180c5c12f7d2188ade3ad1040f296cfb4f2c5db45e2ba0f0200d5"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "client/index.html",
+    "sha256": "f245f69d13dcdb5f764a6819e141af2fd0d5b6cf26f00a3e6166d33331d5d97f"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "client/src/api.js",
+    "sha256": "eacba4d6d2aeb774efaa149ec3e28052f8dc621cb94ce81c3ae689aaa549d0fe"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "client/src/App.jsx",
+    "sha256": "5ed868b80ca7c13d44824b86a73aabbca3e919f79e8afbb0f100af65a8040a3f"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "client/src/styles.css",
+    "sha256": "01c2358051db537e0cc7b307587c31284263c93feac2f5f3e0447fbd0fa7043d"
+  },
+  {
+    "project": "JS1/stock-catalog",
+    "stage": "26",
+    "file": "server/server.js",
+    "sha256": "5bd9a66a910482d8130f6c4c908d25b51ea388818af767d22de77441b1381efa"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "20edce821aee69731351b8b7244855c1a52152c64f2236f2eb43bc09a64de85f"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "package.json",
+    "sha256": "96137fd787b7e964c9023e381b9789a471ffe31acf3f6cb513e1c1bfee91ec32"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "README.md",
+    "sha256": "d56947417db153824552f4670ebc2b3b0f6e7acff95ab75d1c92de97fa9ca669"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "USER_STORIES.md",
+    "sha256": "e77b4538e9b67298a56a65cdfe5bd020ac8b2cf5e8be78eeb18e6b5678141df0"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "client/index.html",
+    "sha256": "f40069730c7d16f02b10fbd2094a1762e68d78cbce3fc7410d3a1f2c2737488d"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "client/src/api.js",
+    "sha256": "79e6facc6c64c2d9c6de62870b10b2bf8a3999f7d4316e412acf991581c52720"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "client/src/App.jsx",
+    "sha256": "52a7542cfe7ff04cc3b15a01033de417f4843f2c45189f645cca5e4d08a7b0d4"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "client/src/styles.css",
+    "sha256": "f4fde5df502b300602606ec8d8f04e7ffa35a201bc15bf640433e3a269ab8b4d"
+  },
+  {
+    "project": "JS1/recipe-studio",
+    "stage": "27",
+    "file": "server/server.js",
+    "sha256": "05ae8f9fc9f2495ebe384ef33953ac4396bc6e7cd785df0db47028fc676f304c"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": ".env.example",
+    "sha256": "200a5a95c4a4e4dbce77a60b4ab02d7d1ff5dbd02b9198f81941cc1b71825bd2"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "d9f4e116ae2cdeabd9c3a8a93b730da63b0a58c76c7463f12f7386f44f8cb4ad"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "package.json",
+    "sha256": "9f1aa4ff86c5e77cc533f8e562d2fa130b9a99528b375e7e9a563258bdab8525"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "README.md",
+    "sha256": "4451b6ba06ed3a1d6d870f75a53a568a08b7bf9c3b8334460efcb8dd9443a610"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "USER_STORIES.md",
+    "sha256": "d39877bcadf77c06550577baebfb879a3b04c36418335c7e72a381e2105663aa"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "vite.config.ts",
+    "sha256": "6c009d0b13878143fb3fff2db872e039343a6c1901ffa8c4347b305d6e9b5429"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "client/index.html",
+    "sha256": "757fe72d796d4a7344dbbc99d3bc275dbf538fc88e28466a95d2834afcfc735f"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "client/src/api.ts",
+    "sha256": "d738e241f590e2c9b009bf90bdc4686418f2675912fdc01ec95fc8420c0da402"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "client/src/App.tsx",
+    "sha256": "9f58268e9ac6d4d21279447ce6d4e6280d7d704ff4d709e2f2c0e23c6a070f06"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "client/src/styles.css",
+    "sha256": "c473c86529319efcf561d27fada8e1558af226f3e710d6b6918320ea7925f05e"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "server/db/schema.sql",
+    "sha256": "166a8cea27f4229af8fc10e015d045edeeddca4cc9e7c7cddf12cf084560ae95"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "server/src/db.ts",
+    "sha256": "0f87871aa27d7e7dce82279b1c6ce3c5e649123bf9bdd616951c18c8a76c5413"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "server/src/index.ts",
+    "sha256": "63848872223ad690265f5f3bf0d04c547732e5cb4beaf82285d28e73cc863bc0"
+  },
+  {
+    "project": "JS1/org-explorer",
+    "stage": "28",
+    "file": "shared/types.ts",
+    "sha256": "9fe48304fd75b869a76d3fe1a5150a6d460b27b98f2a6e44e7e0793e881ee001"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "6da66b47e611619e7b34a02f15564c5c2534e0a5759731744beaecb4f22ea024"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "package.json",
+    "sha256": "2adefea5160fe8e94370c0ec31c360bf11e14a2244a0852a3c5cc8650099508c"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "README.md",
+    "sha256": "4ae53b312cc08347d4ba8c151ee84ac2ccc76ab16efb2f2b5508a3c7293e00a0"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "USER_STORIES.md",
+    "sha256": "38288bd832b7d94c6ea9177c291ce38bd9ae59b47547994f20257e4afe421d7d"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "client/index.html",
+    "sha256": "522edcebf32d8825eb41326074eb482aac04ecc661f846d92b88b037fda72220"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "client/src/api.js",
+    "sha256": "4c32dd76b7da6f98ba8011ad735e8584e5582a17fdb7d59e58d421ec3d317806"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "client/src/App.jsx",
+    "sha256": "b319eb9ba37bbc8bb3fa606a98156efd47ae0c39c2b1ddddf23b5e8bb018382b"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "client/src/styles.css",
+    "sha256": "c10080189410d13ab202cadf3bda0989efe4b762af7549dde5a8c97bbb554d70"
+  },
+  {
+    "project": "JS1/mini-blog",
+    "stage": "29",
+    "file": "server/server.js",
+    "sha256": "309738b3de282fa212bc032932b53618bd5718e658a6fc7efaf894058e9c12cd"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": ".env.example",
+    "sha256": "bbf7f4b6c44bbfbaa548321ddbd9e0fe737c0f778e9da7f69f3de3023d3a383b"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "0bb455ab328edf1b14d66cfa70b20b15489f75a121c099233fd36eb1b21c5263"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "package.json",
+    "sha256": "65730578f836d30a4af3e8e65a310021e7db19e75c9404445f15e7d806bc4ff3"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "README.md",
+    "sha256": "db753204f76bb970a0925ba0aaa4e1c8d2bb4746f894de51b8b07ece654e21ea"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "USER_STORIES.md",
+    "sha256": "a01d28988ddf2faa5f00d8b025971f83434bc996d33f8a0e9894b585745160ca"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "vite.config.ts",
+    "sha256": "c76024c823573ec07fe52ec67ca97d2fce11215e0a2e931d473aa4b3f81006b2"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "client/index.html",
+    "sha256": "f72c95287af4610bf94d30e478a006cfaeaac35643e00a86b75a0c0e71279f0e"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "client/src/api.ts",
+    "sha256": "5180559f5a8cc87f6a1073d99382184ae55680c7e5895495aec894bc7c9e2c54"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "client/src/App.tsx",
+    "sha256": "fc126b572af822e6c855096daaef5e08f5100f0f4e63aad91d4380350236edd3"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "client/src/styles.css",
+    "sha256": "52a51a1092e469db549dcea4f6de144475b0668495c4ee3d430619ed6a3c87e7"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "server/db/schema.sql",
+    "sha256": "98bb2b61b16e917e9299aede7e470b416018127df7812b6120e08f83038ba4e6"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "server/src/db.ts",
+    "sha256": "91c02636050a5869b9eeeddc30e9deb9a0929c1d449b46ebde1b51d36760496e"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "server/src/index.ts",
+    "sha256": "89204a1dbbabc08f99980d46ff0599deca555733595f961e5de036dc3f633874"
+  },
+  {
+    "project": "JS1/pulse-analytics",
+    "stage": "30",
+    "file": "shared/types.ts",
+    "sha256": "bd2df669ee7c17bfe1044b1a04138780fc5bab2086945bd1d25beac555c1f846"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": ".env.example",
+    "sha256": "edb800083af722308d5ab71c94cd922056c07169fd13e23ad7018a68dfa50a42"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "e3534992942f046d3792fcd37b02729e61a20b3f08b71564c5ad845b5ca6ef8c"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "package.json",
+    "sha256": "bfe6fbfb0b446096d093fbc5229ad14e378baf2742ef4897cc19c6c46a7f4cff"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "README.md",
+    "sha256": "05d3082c1cf20e18dca5385d35238e7284baefc326b12295cddf425d3fbe07b3"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "USER_STORIES.md",
+    "sha256": "8c3c62446639b0641c1258e09246f5051265cb847f4833b8f9ac0dc88b5f1177"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "vite.config.ts",
+    "sha256": "1843c4c2f77f1c23bb3e5b777f7b0d18f6683a00f5b6fee078a70dd3cdfdb734"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "client/index.html",
+    "sha256": "1e261afdb60ca95db948e8a31c65912a32eb3dfc3fa5f107dbeef4b0d7817b8d"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "client/src/api.ts",
+    "sha256": "471fcfd54a3627a4d733760ca8119287298fe52d4039fae8930c3877c503b8e6"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "client/src/App.tsx",
+    "sha256": "df7d1ed161f0bbc6eb5a02f136d745b29d82dcc627813e74d213235ebeace9b9"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "client/src/styles.css",
+    "sha256": "fde2080bd12555badaed15c33941fe57b4e912c2645c05c6e6996a0ba3f3f0c1"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "server/db/schema.sql",
+    "sha256": "62685649f44306248f7af63b825db6012ed53e355be694757228f87acb94ecd2"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "server/src/db.ts",
+    "sha256": "14ac6f4a5f7c0b537af81f92134ebedc43dd030c1c81f06dc03d11235c3e1bec"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "server/src/index.ts",
+    "sha256": "acf5c490ad077cfea5c4c1a672051868fa2978187ed4218037c71f9627cfe741"
+  },
+  {
+    "project": "JS1/support-tickets",
+    "stage": "31",
+    "file": "shared/types.ts",
+    "sha256": "15481213023bc9e24f98e00967c039b672a7c3990c0f0bee797160dc7cf4be3c"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "2246c4b3963924059f702371b1bf9cda1a15dd24f4ecc43d92d86a743457f754"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "package.json",
+    "sha256": "5edd26dc14f87a1bae674fedbbcaf1ee5aca609f7b326008cf9951ce74b47830"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "README.md",
+    "sha256": "716154001a048fd5c457421e790913bace7a9755995348af095bbd89fb64079b"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "USER_STORIES.md",
+    "sha256": "1ca43ae940a0772b760d4e200fb6f0d894c79c3be189b555d85e8042059e7dfa"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "client/index.html",
+    "sha256": "0c226f71439eb1c958174a6c7ff486cbe10fe931a429bdc2116c3cfceea9509d"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "client/src/api.js",
+    "sha256": "1202f02bffb8d3843eb8e53ef629890204873522424896447446dc35d0bd7165"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "client/src/App.jsx",
+    "sha256": "49a924263850c89c3dff4c6cb71798f43ea474c1fcbdc65f0714ac8c43d6e7b1"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "client/src/styles.css",
+    "sha256": "0be35479e2a131dbf86ae29264f74828e70df184c1082a09b9df9eafc0967683"
+  },
+  {
+    "project": "JS1/issue-desk",
+    "stage": "32",
+    "file": "server/server.js",
+    "sha256": "1fd11d6781c36d2cfcd09331a2c91b3c6c7d29e87680be6c70221f367b86a0e4"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": ".env.example",
+    "sha256": "00c016d437ffde14ae1f2606491edb56b7ed5376ed6cabd7403f725fc14bf82d"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a364713f2fa2dbdb08b6c72c8ebf4d4c8a135205ddb5e8d186021ff24ddae6b1"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "package.json",
+    "sha256": "32663338c3991924d5cab92043f319747b9b2efc55ce9b6c6264a3f96ff3582a"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "README.md",
+    "sha256": "117f0504a130e173f57a883ff533f1951ae218f281ce614dee33ffd620b60a18"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "USER_STORIES.md",
+    "sha256": "b0023a2a0f11931301ec060586f65d03ac3165e343a5136e4db4e7419ea8d098"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "vite.config.ts",
+    "sha256": "fa0de8358c7b2d25fe8fbc85425894c641a48e5ceb5615fd3b1e1c464981e223"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "client/index.html",
+    "sha256": "b41995aa4944c123fcb25bc710919bb207416fdeb2eeaf0ed0ab16861b74f839"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "client/src/api.ts",
+    "sha256": "1fdbdb54222da5d23deaf3b28ace545beadf8e2d23deec18cff29de1e9cd776c"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "client/src/App.tsx",
+    "sha256": "1ceef897e8dcec0f1cb7b57f7a207617b2afee3be9c310630e1be9776f103df0"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "client/src/styles.css",
+    "sha256": "0053427b7c361a786c9c1488b70d6eb038b58c9797a889de3c36e91452dacbea"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "server/db/schema.sql",
+    "sha256": "c65b4b5b0aa3e9e5a03b6b24842274886546c03f9ef12a71a3bba04fd6606e43"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "server/src/db.ts",
+    "sha256": "7fb697eb6d234471e54b0ca8b9a428c20d89cfbb5d8bab5b365c2135806990e9"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "server/src/index.ts",
+    "sha256": "5e5c773ce3fa49884c2603f36a3716408551b9b0389d9b0ba52c314c8e34d0dd"
+  },
+  {
+    "project": "JS1/forum-search",
+    "stage": "33",
+    "file": "shared/types.ts",
+    "sha256": "795f00ccbc779989b258dcd0b6ed7515ee94417418457b6dfc6dbb6c017769e4"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": ".env.example",
+    "sha256": "9669222eb2d82f7dc7d919c14f021ccadba27503568a86e4a78cbce146b002c0"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "957e378de3cddfb0d88fe13e99f406d5dfec3d79fda7767aea37eba2730c4850"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "package.json",
+    "sha256": "f49735edbfad17c7378ffceb730bdddd208a63e530a1aa48044dd5f9df41c9d2"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "README.md",
+    "sha256": "f663ee588ec4b178b308677e7c2ef9a87e6ae2efdeca4c090f07c91589a3c00b"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "USER_STORIES.md",
+    "sha256": "7dd6fa365dd5bbd3025d56b7ea1d2923adbe12f0a75327245c35b168169f49db"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "vite.config.ts",
+    "sha256": "5f69028e4aaff70bf78de319247a603b55ea26fa43f5ed21af6010d82e79f5a4"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "client/index.html",
+    "sha256": "25dd59ecc4c38f723f294c33166d1f363c28fec65ae835a2a54a85043737a745"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "client/src/api.ts",
+    "sha256": "6ef3636fe3435d98fa82576f121e1d0b3e12d2a91093e3b6b8baa58ec3e8684a"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "client/src/App.tsx",
+    "sha256": "bbc9923d7afb4779105c54a552de9f50ebdda8c1c04ac7e99f6862141918350d"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "client/src/styles.css",
+    "sha256": "6af7642eb2021c52ac54db2c9d43c6e9d7a8f4889f34c32d35341b7d4768520e"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "server/db/schema.sql",
+    "sha256": "a584edcae66ec4801ed9284872b9b8548d4cda27b09b7afbf1df5a389809b19e"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "server/src/db.ts",
+    "sha256": "c2b3fe5da9bbfbc0b1ff2e78fd0916ceb8f6b3812358cb15d12d5fefd06874fc"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "server/src/index.ts",
+    "sha256": "442273a975f5740d021002a292b807ccae9e8f236547b55991ae48b878afbd3b"
+  },
+  {
+    "project": "JS1/invoice-studio",
+    "stage": "34",
+    "file": "shared/types.ts",
+    "sha256": "cca138e0762a334514727da492965a5e285d7602a22f08414f6e28764a0cb4cd"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": ".env.example",
+    "sha256": "8c31c8758e4d41dc21a899d319c53f838d3154b2a381ae3fffc2eb819ab2f7c1"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "72977eacfc4e34c07db1b9ec70a71393c681685a5a01733fb37357602219570a"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "package.json",
+    "sha256": "1f9c4f9c0760b245841ee925867de362914236c1a771955e073c17931bc53e51"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "README.md",
+    "sha256": "e2141d2fa4da0b54c5ca10701e00062dcae1309c757b2fcc02ea8dc3498ea304"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "USER_STORIES.md",
+    "sha256": "62510bb051617d006917be7a3a3ef77dbdc09bcc2a52506b57d0a21fc6539985"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "vite.config.ts",
+    "sha256": "3e77128c9c657237884deff182d4642712b345bcf4cc30c66dc6d1f65f36e8c3"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "client/index.html",
+    "sha256": "71e6ad63f9efbb6272dcf114af1821f35699b4092cd25a11ed6d314fef804035"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "client/src/api.ts",
+    "sha256": "38f0d4435e71c72763595007ce7c5e50b99f619a6ee69663cde0ca49e3616dae"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "client/src/App.tsx",
+    "sha256": "275b2ac04fcaa077df5c9344d48f3382d131add65750ea3d7bdc40a45bbc2ae0"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "server/db/schema.sql",
+    "sha256": "7c5e83113e62fc9aa959b7a2eb9dd5246db226a1abab5b56223946c54be28d66"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "server/src/db.ts",
+    "sha256": "5d66cbb02f9c0bbd7e8dfdb04c802611b164be9af9e9e35c76594de497634219"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "server/src/index.ts",
+    "sha256": "faa94967e62811747fd46d5ca9e166e3a6789807d1f205085f1d26da5bedce47"
+  },
+  {
+    "project": "JS1/asset-checkout",
+    "stage": "35",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "e2f52c777b0d188c9d9c6a2a9270a6c1d218741599b44559a30894d5eaa0f344"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "package.json",
+    "sha256": "388565d04f088232700eb5311f5ab9d08988e61b8634613de562d656cf2f9177"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "README.md",
+    "sha256": "955bf5d8ab13cc5cf33472774a95e3e7f2a8f37338f09c241cf66e15cbe0098c"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "USER_STORIES.md",
+    "sha256": "af070d913e3dcb419e50c81f0a47370d12dd047f4a454e84818b4118e1762561"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "client/index.html",
+    "sha256": "17cd1758fa7da60c49bed4749e37cc41aded3920eea89e56a41b9dafdcc3dd9e"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "client/src/api.js",
+    "sha256": "d6dee47c9905bdc74415af08240632cd02e5ed78a99fffa83d7ecfc515a6b553"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "client/src/App.jsx",
+    "sha256": "0200981d79e06f814fac89b368db494646af771d824cee4981c2dde33d50e329"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/equipment-maintenance",
+    "stage": "36",
+    "file": "server/server.js",
+    "sha256": "812002cf25fabd89ec495718743b920b913e8eb1316c6c753ee07521a277ae5f"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "53f64059ed2173293b9343fc23914578de93b76bd4b37bca37e4d20842d92669"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "package.json",
+    "sha256": "3c0d4c7e353e1d6c113f3c3a98e6b5d39912582dacf493c3144906354dfb89ef"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "README.md",
+    "sha256": "e00be29a7f39fccc4aed8fe35d89115962907f3879fa1b61edc677538b5c090d"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "USER_STORIES.md",
+    "sha256": "47c9b49dfa7e647d7d4dce7badece91a4aa0431a0309eeffe0da7ca3cf826e1d"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "client/index.html",
+    "sha256": "235da64e68b9781b9b8bf9c6d44a3c061826f220c5f9e280eb2856619ffde010"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "client/src/api.js",
+    "sha256": "a8ff6e7f8781035282fa9cd2a9aef7f87235bc65aa5356e201a3b62af3267e96"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "client/src/App.jsx",
+    "sha256": "eed22cdb00d4eb1e7b63ae46d42c7b4a83580b130dc90be68a9f82f761c6532a"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/library-lending",
+    "stage": "37",
+    "file": "server/server.js",
+    "sha256": "b31bc7126350ee9f5d19564a58cfe8b36860a82d5e0fe185c9652c018746940e"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "28cfdc39d39819a1ad8118e60e585dffcdf66f9254750080142b5ea9bc161d81"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "package.json",
+    "sha256": "833237282f998d7ac977e833716f05b62caa2644f2f373e957bac8aa630a62e6"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "README.md",
+    "sha256": "58e9d2f447bc174e5322dbf1fc430fd86523e8471470a22e22c6f5141c96a317"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "USER_STORIES.md",
+    "sha256": "c6a1cb937ec2ec07900990d8a2d0e3c104ba84dd419e4b9d833850ec343514d1"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "client/index.html",
+    "sha256": "a9d80c09db5693d7ba58dc04f140acdbdf45ee3e8bd832dc1a83492528f71b61"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "client/src/api.js",
+    "sha256": "521e2593f53b5da833bdd43eb83a7a73ec19dd35567573f1e69e059560d240e7"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "client/src/App.jsx",
+    "sha256": "c5d23a20be34c6115ae3fcf8e3610141c3aacddfb6eb12ee185998b0ba784788"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/gym-membership",
+    "stage": "38",
+    "file": "server/server.js",
+    "sha256": "8b5763b2561aed7eeff30105c1c9787f7af605263ebb873fffab778eb7c71216"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a9c2dd02e111a352f65fa31ea58c047ef1916bab160983e014cd6da4cb60be78"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "package.json",
+    "sha256": "781b5864ba6a08543e312de65a6f2703b5e953c1bec8d1a1593f227c874153b8"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "README.md",
+    "sha256": "3cbf75c17cdb6ff273548666929585540f38f1882d9f23621d877a210ba80993"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "USER_STORIES.md",
+    "sha256": "d6921fbb9255927a17d776d974b4c1503022abb37cdd168b392d09378b06766f"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "client/index.html",
+    "sha256": "f670458fe8483cb1cd746983e5a0b80b498687cff0b37b18021cd01d8d8607aa"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "client/src/api.js",
+    "sha256": "199e6b808925fb398ae2f435b0bf4e28b78d3ad4d4bc4df233ed5f6473dc380b"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "client/src/App.jsx",
+    "sha256": "e009f0499ae3b03eac7a26e6abdeb97e41eb8cc3e88c2a21a6f5a10bc4a5879b"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/campaign-planner",
+    "stage": "39",
+    "file": "server/server.js",
+    "sha256": "abb3d054f0c9be19109baef6d7503801cf5afe9e7e42a79ba44abf5768a4d94a"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "7c28320396e2963e08a9d52e356b17062baff028a94685ef58da49f1b34f7333"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "package.json",
+    "sha256": "c9ee14d71788eae035620bd21c6b74ec24067fa785772afc4e2df17b05ffb9b6"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "README.md",
+    "sha256": "b66db2d8c699b57b57ffe21c627ee647d5e62a4784456d2c7f6cf6b75bbf3401"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "USER_STORIES.md",
+    "sha256": "c4b2832395d1b75fb76d2dff030d4a5112847fc2892452e4658fa440b4fdc8fa"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "client/index.html",
+    "sha256": "3740a4914e5d6f260844cbf91f55dbf8fcfba04b27155efc9420230dac1f4f54"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "client/src/api.js",
+    "sha256": "7aef952b5f2e88ab4f4ae673be31d4eaa108d3607ed8be4bb5d296b81f470fea"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "client/src/App.jsx",
+    "sha256": "91e9fd74ddfe5de7d660cc06adbefb5ef026635a898fba42762d6a48552247eb"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/volunteer-coordinator",
+    "stage": "40",
+    "file": "server/server.js",
+    "sha256": "db15189e0e3b65d13e75553b22dd6722b8e2632bd8c7a4c0cd1cb97409cc75c3"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": ".env.example",
+    "sha256": "90ae3fc2f285e151ba7ec9868221bd90b20e34709ed034f42844863f2e6ac51d"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "40becca7e3e3ded48d0c7fe77c91f034703264b8adf0bfbc2a0727e3fb019013"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "package.json",
+    "sha256": "85de61156e64cac353000ef7b542ab5aef965549c71e1ffb3770fe71d5173e08"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "README.md",
+    "sha256": "c2c5e9b3eaae5a4b39ea078a03e4cd6551375805134a8d91bb95a080de12265c"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "USER_STORIES.md",
+    "sha256": "7ba8b37c3ba445b5ff6d457f3592f89c660082d979f506aa0e1d57238ea5224c"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "vite.config.ts",
+    "sha256": "4ced010a4d74f49846fabc1f91d8e93a93ae313a19e49e7e518dab6caa6b8ecd"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "client/index.html",
+    "sha256": "682fbd6cf8d493920c9e06d2bbe67ed951e38b8ca51dcea1b8bb7453061ac295"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "client/src/api.ts",
+    "sha256": "28227650bac36448cb841d42cab76c9711e192b3e5e1a15319a2f643038385ca"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "client/src/App.tsx",
+    "sha256": "b64261103a28b4a608af0e10004a1d9c75f036f5233c8cbd7c7858f8d096d12d"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "server/db/schema.sql",
+    "sha256": "12849a4a92f157fbc2a751b5bd57ca1a7c44787b565a7d1364da3593861028d1"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "server/src/db.ts",
+    "sha256": "54ac2748e96bc07d5824581fb5f9d52a7d68f5ecaf9caf47f690eaaf0967c578"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "server/src/index.ts",
+    "sha256": "8ce6a57e3db41c40f7c15d149334b1aa79ebbe4d1d8ac912e6c76edb03ba785b"
+  },
+  {
+    "project": "JS1/learning-paths",
+    "stage": "41",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "ab94d9d683e420bba849233a172a073b388c2b8b689e87301f9b115544575341"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "package.json",
+    "sha256": "93d27b998753114cdfec54956c04b75964459ea13f10dd62e1f52822487ec2e5"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "README.md",
+    "sha256": "404240dd3a718eaee367a84cc3f199f87be65be35fa3bcc7f3d0e69505ec366f"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "USER_STORIES.md",
+    "sha256": "75baf43ff1e221c9a7bb022cdbd290a29577cdb7243f0f7c679bda89ce36ad8c"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "client/index.html",
+    "sha256": "8dcee24f49e8b90215cbb2fe703b9c6d08fa22251c884179016fa41f4415f193"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "client/src/api.js",
+    "sha256": "6fc2d187bf15e17101dd9b5192cb3c89a1d98e6c21f1160f08d8fc2c7e715fe4"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "client/src/App.jsx",
+    "sha256": "6f5410a124676289a6e9ceb3a15232aa12f0093bee5c77cc100aca2fda430702"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/project-risks",
+    "stage": "42",
+    "file": "server/server.js",
+    "sha256": "07ab1625e1fcddf0e67183cf932e300a02c6a0f3f02a7549d51784fff23cac30"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": ".env.example",
+    "sha256": "5d94e7246612537ff462f252478d9565c6d2abb3d871af32d0ae5e16020fcf57"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "8e9488b88c003e2328ad00584d5e32db1aa3a1d1366f2299fe4b4545b1a6306b"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "package.json",
+    "sha256": "1a15ab7f3e91d210b3d2d6a8b5d3ba2d2200b9566a9b7d8e0ffaf73442edad83"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "README.md",
+    "sha256": "05631639087a442d561ac638fc8bf2bec79ed0d4d1a81d7c660e800f68dcdb68"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "USER_STORIES.md",
+    "sha256": "b86b691a758ea353147798abe93ab65d51469cf35146b7bffd3a54de1e34c6cc"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "vite.config.ts",
+    "sha256": "5177375dfd672c5badf7232d9bcba0e8f06518fb67d2b47a57743b1fad12a2b2"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "client/index.html",
+    "sha256": "983ee96d16a72de4cc44bd36a9d91b7d5c490104096b01153f37f0ad26358f0a"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "client/src/api.ts",
+    "sha256": "fbdea4fef66603336c12e3b0e419f4f48a8cddc4951e2fb615b144fba4aef93f"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "client/src/App.tsx",
+    "sha256": "247c5cf4b709a3de97639adc81abd3b5cb65e2a24b50e08fc75b6c9dfb24b033"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "server/db/schema.sql",
+    "sha256": "5a5f912700d900cdb2508a9767e5437a88ad67b0df24a9fe6326f2afd20cd864"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "server/src/db.ts",
+    "sha256": "3ad95d35c631814fba86595ba71590fcd39a84aa4d026a0bee1f0c3f965617a9"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "server/src/index.ts",
+    "sha256": "60615c88efe83d0691b3acefe631a1bd22679dc45de211439319eff60186297b"
+  },
+  {
+    "project": "JS1/travel-requests",
+    "stage": "43",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": ".env.example",
+    "sha256": "68ec9f0ccc847008d7dd66d47b244cb53b3049b3301106ddca52a15ecfa36053"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "085e11abbe8327444e4feb86fd002f5cf5de93bde868580c954d6b9796421256"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "package.json",
+    "sha256": "a2c0794e400203d5a16a0e6fcbf960f41d0a662508675ad40af8340257c494e9"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "README.md",
+    "sha256": "6a3f3d41187cbf5224fadfc6decb2ebe3f84357160d79828f56ccf40cceb1311"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "USER_STORIES.md",
+    "sha256": "8f595cd0822070cfcb82471d933ae74f584fee2965674d34bdba97d47e81ad37"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "vite.config.ts",
+    "sha256": "f016e91b4a4597dbacc61cd74b1cfbd5ec495137e629033be9c39227dd84e679"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "client/index.html",
+    "sha256": "b085d118c4a969a94406885509ec891df2315d54f18fabad16a06a47dc7e3baf"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "client/src/api.ts",
+    "sha256": "2423b14d31e1c6d68ab8104a2f4476b04f95e54fd729b07dda24a5465f7b558b"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "client/src/App.tsx",
+    "sha256": "049f2c826ae6d0d82fcd447310ec998828b403c295f7cae1a859242b10af2346"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "server/db/schema.sql",
+    "sha256": "2282d542c6130f1dc2d496cbaa2540c4ede0e4591630753495494d2150626731"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "server/src/db.ts",
+    "sha256": "d1c266dc7c6cc084481a622bc09032c5f3362f80b80835aa831b2b21cb594f59"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "server/src/index.ts",
+    "sha256": "b23b86139a62a5c91b42db9d6d2e03dcda0895690f33f4774d03d48347bd513c"
+  },
+  {
+    "project": "JS1/vendor-contracts",
+    "stage": "44",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "3868197c3abb19cde8f0fc084b6ae00cbfbfc770f9fe0c8d88f6dc6ee5244f44"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "package.json",
+    "sha256": "e728410289b40f3ab72e78366463e8dbf9739b778277ff8d9e76391e28862401"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "README.md",
+    "sha256": "ad2d26a980d4ae6c9789e01dd3fa9519ded59011f0b972de6fb202b9dc397514"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "USER_STORIES.md",
+    "sha256": "ed53aae41c8fabd1a03150beeb5c23fb6c0bc29d3d6a262a2f5c33165412f40f"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "client/index.html",
+    "sha256": "fc6426b91eda1ab3f069f6ae64b8bd8b9e4d2bdcd53c4d7f555e86c47886d405"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "client/src/api.js",
+    "sha256": "4dee1639b871ab3d055519714de6df118ab8670db4e96424f50d8f348f78a08c"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "client/src/App.jsx",
+    "sha256": "597b7fca50d33afb68aca32bc55a9209e241172b04090b89f8d784c846c64759"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/procurement-portal",
+    "stage": "45",
+    "file": "server/server.js",
+    "sha256": "2dc7c9fdb6154ab7699ed87a1e1c37f210d21ff8fe1dcb3456f82c15191ef71c"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "268e9d7a3f0f731901fe40a7e3db339690db89096ddc00ae9b868816bb57cb1c"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "package.json",
+    "sha256": "9478350b6b4b74f8bb2e6a1cf4793280e8f410e9bcab06074369eaeb3f9e569b"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "README.md",
+    "sha256": "a429108c5c927a17068c1ac182446ee47cb8c35b44e95a29f1c865fc3d5bd6f6"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "USER_STORIES.md",
+    "sha256": "d91e9eb5c12739027a9094f8af4df9313a08d0d658df98ff4cd9a17742160b96"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "client/index.html",
+    "sha256": "0510a51795e21c642dcd982d711550e88d71e5894c3f92909389d285e54e6388"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "client/src/api.js",
+    "sha256": "671289eaeab0d9223d76dbe3ed57bb603e5406f3eedc540c91a662d406cd1dab"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "client/src/App.jsx",
+    "sha256": "58db88e2176103392d1a8557c423fa4652040930289328f0d348fb9ddd297dc9"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/property-rentals",
+    "stage": "46",
+    "file": "server/server.js",
+    "sha256": "d6658b39b646139a5aeed7d115b3f9161bca7108ca91bc90f636131fa7a0a0b2"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": ".env.example",
+    "sha256": "5b4e04d4192b4aab31a37960ae16a70ce9f613b6b1b6cfa5bd1e5319da10bc77"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "d1dac8d5b390c3fa1e306814fe578e8ae9cd74d2d7845dc80221abdf6d859a23"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "package.json",
+    "sha256": "2876f6f07d79d340cad042e529b24bd60679d3509f5640ce760aec04e9c9aaf7"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "README.md",
+    "sha256": "eb3670ae4b370a967040760d56595ae880a31b0b710f73d73970663173c7765d"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "USER_STORIES.md",
+    "sha256": "56ba92f10dcb438555e75a455d38a1b20b126675c5fdf08b7effadf0555c4d22"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "vite.config.ts",
+    "sha256": "cc46510007504bbaa61cc8a71253bc3fd2252015e9b753d86900190d364b42f6"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "client/index.html",
+    "sha256": "ac3ab54530e8c0d5d028c4655b8331fa9c660ca7a8201863e2551de7926ae7ac"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "client/src/api.ts",
+    "sha256": "deae7c1d24a837dfaca69ad57a061fa86c26742f807df79f5003e753b7626dfe"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "client/src/App.tsx",
+    "sha256": "52fdd98e811a1752972436d0141cf4dff398aa3420da9a1b534d3a4c4fef2647"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "server/db/schema.sql",
+    "sha256": "9885d3fa66389195a54c316b31f7414c4e4c31fd0b4233aab0064e86671a80ef"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "server/src/db.ts",
+    "sha256": "c2829595250f73ae24e263d11f76bd9bb3cc0349822786695658a540ce3a2336"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "server/src/index.ts",
+    "sha256": "54d69a66607c9dc0f7fbaf328ae5a5a72806a6346182922dab84680ce4cb4b31"
+  },
+  {
+    "project": "JS1/quality-audits",
+    "stage": "47",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a1fee7357f6a0a60174743e0e1e880ea4d6fb21e7db217fd4b39426e545a8bf8"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "package.json",
+    "sha256": "25fb3991ffb24892fb4ca0e5fafc8452ebf5882ba2eacfbb4c6e04aad35cfe58"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "README.md",
+    "sha256": "aed65a495d08b9a5d2f7a7a3515e1ee763bdbe10b49cc4769ae140730ecb0b2f"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "USER_STORIES.md",
+    "sha256": "970a036f52adcddd4f6941d3339372387d18ccbb8b1ad6ca4e97c5047bb50466"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "client/index.html",
+    "sha256": "283254fc82225a13146d4cdd2839fc8f39a5b50b035bfc9f1243e60fef618a8b"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "client/src/api.js",
+    "sha256": "2275df7e5886b0026693e28af7f38b59e35a0f9a8f0c3ab532d649d80e6d5c00"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "client/src/App.jsx",
+    "sha256": "71b846c05baee936b7e46ead87a9acec7547d92dc6823dcc32ab34765355f1f4"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/patient-intake",
+    "stage": "48",
+    "file": "server/server.js",
+    "sha256": "8e1dfd6d8dbd3cb6f0660930ab43cc7d103117cb45fd2c84f6b619ee76389c29"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": ".env.example",
+    "sha256": "7769215c5f65fd9b699029cad789ddaea4f1bb824b79e21feb694a30df18f80d"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "20e9f1af75febf51a0b5339b61e865f363f69054c8f032a1b249cde9544262d4"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "package.json",
+    "sha256": "c0a7b8ec2e3c795847845ecb049bfb51239be73a2ba75bb0fd9f710cacc6ff2f"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "README.md",
+    "sha256": "4e7b9a83b8ec27b0e7b4a1b9bfc25d3b495fffbffaa0b2cdce5aff0cea64dab2"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "USER_STORIES.md",
+    "sha256": "68224f6caa92afbce8c2852bff9e02c59c9dc8506caa85e3ec1864749db2de7c"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "vite.config.ts",
+    "sha256": "9e2cdde7c3085da198ec4665274521cf111e003d1059f7b347e3b150fd2b0c92"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "client/index.html",
+    "sha256": "0c309cbfbdf13d9f66a702b05a9f2e46ead6a783aa74709ebf7280b04c8391a3"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "client/src/api.ts",
+    "sha256": "33fd3d8266a05a10eba379334efd207edc504591408c3a1b1cce23cd27a21d19"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "client/src/App.tsx",
+    "sha256": "51faa4653d3ee953429bf652bce479698db351ad1e30bdf417a0c20153992da9"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "server/db/schema.sql",
+    "sha256": "d3cfc941ea90ca4415a5ce69f29d118bd0201ddf0edab2cff737ad17bc06dd2f"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "server/src/db.ts",
+    "sha256": "95bfa989c11301498fa8b8d0c5941cb7238ce375cf2e0d45b15b79d0d589aca1"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "server/src/index.ts",
+    "sha256": "345c8b7f7a386d366aef5b7d2183afdc07ebcfced0ab42b036d0b127a7fb63dd"
+  },
+  {
+    "project": "JS1/grant-manager",
+    "stage": "49",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": ".env.example",
+    "sha256": "82598b6e9eb1a36289e80218c660408eba628543a44711bcecea5d56ae66705a"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "ba1de0355cd9806b54e0198f53c6aadbc7ad706ae2da73c2bd45859b8e1a7cdf"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "package.json",
+    "sha256": "288a983674985370e53798e4703434f908b52f176a597d9ad8e98d6cc7145654"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "README.md",
+    "sha256": "67d82f1591a43f3ee8560c6c0a9adfec40661fdecc27c5781755239db3de7c11"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "USER_STORIES.md",
+    "sha256": "6df52087a7c894609f71efd49ef7f7dece3c8810a70b20d29d8990dd7e63e37a"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "vite.config.ts",
+    "sha256": "c70a93bf8d53b1cb371472d4fd50dfd146fb9215ac44f96435e0132c03b7d207"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "client/index.html",
+    "sha256": "c6ce7456c05e77993abdfe7755f090ffe111940a2608605dcc3d141842967422"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "client/src/api.ts",
+    "sha256": "620784be1e1d8c0671ff8ac0783ff8c82a9cceaf0eea2809b40f5eddc88891d1"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "client/src/App.tsx",
+    "sha256": "b33169e8af8f9f645f85c24dfbfb3212bc815a56d7faa7ff296a953fcf1254d3"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "server/db/schema.sql",
+    "sha256": "b7e836f305d93e0b675920dfb30c2d45922cb5000da66f26f9c47dfb8239e6d3"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "server/src/db.ts",
+    "sha256": "11bc704798d85ed2cc334b9789178ae627bff74dce32835ffdd80319944f09cb"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "server/src/index.ts",
+    "sha256": "33e31296539baf358382dcca688d7a80734662472555a93eefdd39f09be8c19e"
+  },
+  {
+    "project": "JS1/incident-response",
+    "stage": "50",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  }
+]

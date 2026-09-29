@@ -1,0 +1,323 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Linear",
+  "id": "b2f277b889f9",
+  "summary": [
+    "Issue creation validates domain values and team-owned references before reserving numbers; counter overflow and rejected mutators preserve prior state.",
+    "Explicit stale versions and real PostgreSQL xmin save conflicts produce typed HTTP 409, while unexpected exception details are hidden behind generic HTTP 500 responses.",
+    "Production EF mapping ignores duplicate public collection views and declares domain-generated IDs, fixing model startup and insertion of newly appended activity records while retaining xmin and team/key uniqueness.",
+    "Notification events clear only after successful enqueue; tests demonstrate that enqueue failure after commit retains the event but is not durable delivery.",
+    "All 14 .NET tests pass against a disposable PostgreSQL server, including actual two-context concurrency and API health. The React TypeScript/Vite production build passes.",
+    "Nine rewritten source-based learning guides, a PostgreSQL test helper, exact before snapshots and portable verification evidence are included."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b2f277b889f9/resume14-results.json",
+    "expectedTests": 14,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 14,
+    "passedTests": 14,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Linear",
+        "id": "b2f277b889f9",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+          "restore",
+          "NetLinear.sln"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T16:38:41.878391+00:00",
+        "status": "complete",
+        "log": "resume14-restore-01.log",
+        "pid": 23496,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T16:39:16.842682+00:00",
+        "elapsedSeconds": 34.96
+      },
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Linear",
+        "id": "b2f277b889f9",
+        "command": [
+          "python",
+          "scripts/test-local.py",
+          "--dotnet",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+          "--results",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\b2f277b889f9\\resume14-pg04"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T16:55:26.180100+00:00",
+        "status": "complete",
+        "log": "resume14-postgres-tests-04.log",
+        "pid": 3424,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T16:59:54.442746+00:00",
+        "elapsedSeconds": 268.25
+      },
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Linear",
+        "id": "b2f277b889f9",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9\\web",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T16:54:41.324373+00:00",
+        "status": "complete",
+        "log": "resume14-web-build-01.log",
+        "pid": 16676,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T16:58:05.436252+00:00",
+        "elapsedSeconds": 204.09
+      }
+    ]
+  },
+  "courseWords": 3336,
+  "courseFiles": 9,
+  "courseLinksChecked": 93,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "76e078c273dbb86011c8641175a756d9c889f18279fd0c427f8cb5054015c11c",
+      "after_sha256": "cd70f99a8cac2e31bccafa81f30eb58987167915795d272a336e8d457a88c837"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "1a70e905f3c2cee74343e6071be3978e7f9689ee58b8a764c0a873f849c07c38"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-postgres-tests-04.json",
+      "before_sha256": null,
+      "after_sha256": "2e818ab589d40cba9cad4f3e88135c08727081906761b9e72de8ccf3ff5ed3b0"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-postgres-tests-04.log",
+      "before_sha256": null,
+      "after_sha256": "bf1aa4f9127501b81ed869e36ff20dc0d048eb44e1ac63c6eb70ac6c85cac1dc"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-restore-01.json",
+      "before_sha256": null,
+      "after_sha256": "6eb3022805cefbf584f82fb97acca763f34e1f2b1eb9cbe090ac9efa5909eeff"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-restore-01.log",
+      "before_sha256": null,
+      "after_sha256": "ebbb3d355cbf286b5b58e7b92d9bbdab527c550d3716e470203fd6f6547602a1"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-web-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "1fdc9d4f3ae6ddd13e50175e6dc26b2754c5f2f309b031a47b615e385d41ce3c"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-web-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "4441a82e4d7e1a2048bc37c9354a694a265b34d01d6b2f70e3e952000b17e8fd"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "76e078c273dbb86011c8641175a756d9c889f18279fd0c427f8cb5054015c11c"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Api__Program.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "020f2cb2af86105790e627a8043572cce6bd1c73fe80677eeec9e7eeacf54ba9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Application__Issues__ChangeIssueStateCommand.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "04797a8358e649e3842415187b3457d0059f65bab9d0213e1c9a0dfdabbdb9e5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Application__Issues__CreateIssueCommand.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3962f90e4729bdf35fdd4bd59c93d61fe4baa81d4fbb2e95d5527f5286dd951d"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Domain__Issues__Issue.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ae9f06c856393ffd794e0cd95cb0ae4ec7ae2e6f1dfc8701306fcbe919171aa8"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Domain__Organizations__Team.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9ac2e7db1a5d03bf0c63829c543acc3221e848226330608031a82bc60000187b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Infrastructure__NetLinear.Infrastructure.csproj.original.txt",
+      "before_sha256": null,
+      "after_sha256": "b2fc0cf17b5a728634eb2c913e2dae333182a8f79a3688e96431c11f7cb3a0ff"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetLinear.Infrastructure__Persistence__AppDbContext.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6684415b3504f82b62bb502c85e7e96df98e06c7f7421db57e7f95c3783a2fcc"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetLinear.Tests__ApiSmokeTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ce67d993b48d1656b1a65cf3ea9cc8e43ea228956d47227662ac48509e013710"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetLinear.Tests__IssueDomainTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e8866a7c9e5262aeafa41f9174e5476755a7bf096df4138fbb7e40ad1603c45b"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetLinear.Tests__NetLinear.Tests.csproj.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ab3387945fdebf3fdaad476601ecd808ec109c9f2f87ce0b20f98034e267a3d7"
+    },
+    {
+      "file": "scripts/test-local.py",
+      "before_sha256": null,
+      "after_sha256": "1214c7485bc02420934fbe699036e4de1b445a6adb673cf8633434bcbaf19a4d"
+    },
+    {
+      "file": "src/NetLinear.Api/Program.cs",
+      "before_sha256": "020f2cb2af86105790e627a8043572cce6bd1c73fe80677eeec9e7eeacf54ba9",
+      "after_sha256": "00c28182e94403d35e625eda36f6b3595a9051ec3775c52e6d40faa6223415bd"
+    },
+    {
+      "file": "src/NetLinear.Api/Services/ApiExceptionMapper.cs",
+      "before_sha256": null,
+      "after_sha256": "a8ffa5d2a4d7da4a14596badbacf31e0ea70295ddd05f3860a8f5e2074355fce"
+    },
+    {
+      "file": "src/NetLinear.Application/Common/ConcurrencyConflictException.cs",
+      "before_sha256": null,
+      "after_sha256": "cc3898fd1e38ade3321d63b9ef847dbec9dea26f577671bace873ab68de9920d"
+    },
+    {
+      "file": "src/NetLinear.Application/Issues/ChangeIssueStateCommand.cs",
+      "before_sha256": "04797a8358e649e3842415187b3457d0059f65bab9d0213e1c9a0dfdabbdb9e5",
+      "after_sha256": "dd5e582c8606ff97a7abb475a6ccb519e73c149f38974f1d01e46576d54017aa"
+    },
+    {
+      "file": "src/NetLinear.Application/Issues/CreateIssueCommand.cs",
+      "before_sha256": "3962f90e4729bdf35fdd4bd59c93d61fe4baa81d4fbb2e95d5527f5286dd951d",
+      "after_sha256": "f26327d83daee8c03dadf9d24df4d092869d764d5c69a5daf1de1586975c2827"
+    },
+    {
+      "file": "src/NetLinear.Domain/Issues/Issue.cs",
+      "before_sha256": "ae9f06c856393ffd794e0cd95cb0ae4ec7ae2e6f1dfc8701306fcbe919171aa8",
+      "after_sha256": "09df55d9ba47a4f0834c5f821717482f293d4094412e96bf9781569c9c9614c1"
+    },
+    {
+      "file": "src/NetLinear.Domain/Organizations/Team.cs",
+      "before_sha256": "9ac2e7db1a5d03bf0c63829c543acc3221e848226330608031a82bc60000187b",
+      "after_sha256": "bb2beab495cabcdf009237d36deb3f5744e6e7a2bba9fb2ff72365b1ff93316b"
+    },
+    {
+      "file": "src/NetLinear.Infrastructure/NetLinear.Infrastructure.csproj",
+      "before_sha256": "b2fc0cf17b5a728634eb2c913e2dae333182a8f79a3688e96431c11f7cb3a0ff",
+      "after_sha256": "0add95e976e1361820036923ffab1664eff2297622c7b3c80147a6b24dfa581e"
+    },
+    {
+      "file": "src/NetLinear.Infrastructure/Persistence/AppDbContext.cs",
+      "before_sha256": "6684415b3504f82b62bb502c85e7e96df98e06c7f7421db57e7f95c3783a2fcc",
+      "after_sha256": "f50be9434e7f6bccd89cc8d23157202685ce2c8faacd63f78a842111f6585ada"
+    },
+    {
+      "file": "tests/NetLinear.Tests/ApiExceptionTests.cs",
+      "before_sha256": null,
+      "after_sha256": "4a2b7b957bc57b5107e11acf26b31aa680f0b19d19a984cc05f1d249ae528756"
+    },
+    {
+      "file": "tests/NetLinear.Tests/ApiSmokeTests.cs",
+      "before_sha256": "ce67d993b48d1656b1a65cf3ea9cc8e43ea228956d47227662ac48509e013710",
+      "after_sha256": "e7cdfa7263ea4db79f10f1f4efb29d933296b5064e71d7e7d26fcce6c05f4317"
+    },
+    {
+      "file": "tests/NetLinear.Tests/IssueDomainTests.cs",
+      "before_sha256": "e8866a7c9e5262aeafa41f9174e5476755a7bf096df4138fbb7e40ad1603c45b",
+      "after_sha256": "fb1abdacfd53db3a0b292f62f3d833a7b1dc8c18d86d2d6494f7d3c2cee3d4b0"
+    },
+    {
+      "file": "tests/NetLinear.Tests/IssueHandlerRegressionTests.cs",
+      "before_sha256": null,
+      "after_sha256": "f9cbfb2ed812103f0836356141d56702a4f8bc308143672e070c1995cff21014"
+    },
+    {
+      "file": "tests/NetLinear.Tests/NetLinear.Tests.csproj",
+      "before_sha256": "ab3387945fdebf3fdaad476601ecd808ec109c9f2f87ce0b20f98034e267a3d7",
+      "after_sha256": "59f850d36241648256f889676dcfece4f9d9a1675fb6adb3a94d7eb2abcf8e6e"
+    },
+    {
+      "file": "tests/NetLinear.Tests/PostgresFixture.cs",
+      "before_sha256": null,
+      "after_sha256": "4fdbdb5415613562865526ed66867709130907c84ab1353dc5480befd283dbf9"
+    },
+    {
+      "file": "tests/NetLinear.Tests/Usings.cs",
+      "before_sha256": null,
+      "after_sha256": "fa7287fa9a67aaf2ec7cf43c410dea93b70b759c703a2691bf3263463260528e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "5823e729629a033822d692d39b2faeeb5016870e29c2222c77df14b5e8862089"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "8a0f760784ead053fe80b250cdf8563fb11986e3e2460fb238ad9300a61b458f"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "30777ac66be33ce902eb9e5b34ce198f898e3183fb0be7852e21021c059a2fdb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "a4fab3f64a3556a06cdbcda41a49660d9cb2b8fcabf480cae305ec487857b8c2"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "499924ab02ac65eded3319fbdf82ff8a840fa6b9c1dcddbef697083d7b0900b0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d211fb3c8665c4988a264e3a6ab2005d2b49c061d7378d6fc8d648e12ae10729"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9b42081ed1b0c88053fb3e7243a08e1475123964852ce91cce36c0f3e6b508ef"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f1637a10ae5421197a70fdd531a8c2b85d3558d8b88da8246d8046d3b621a8df"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "55cf446656e11a065c80ef5294d0d8754acfc5492c0adf582513b397f29e8381"
+    }
+  ],
+  "limits": [
+    "Notification delivery remains in memory after commit; crash loss and partial-enqueue duplication require a future durable outbox.",
+    "The health smoke test and direct mapper tests do not constitute complete authenticated browser end-to-end coverage.",
+    "Existing development login, demonstration seed identities and future product backlog remain as documented in the project README."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T17:02:10.000287+00:00"
+}

@@ -1,0 +1,8 @@
+[
+  "tests/test_mvp.py::test_automation_rule_execution",
+  "tests/test_mvp.py::test_duplicate_ingestion_is_idempotent",
+  "tests/test_mvp.py::test_internal_note_isolation",
+  "tests/test_mvp.py::test_permission_boundaries",
+  "tests/test_mvp.py::test_sla_pause_and_resume_behavior",
+  "tests/test_mvp.py::test_ticket_lifecycle_transitions"
+]

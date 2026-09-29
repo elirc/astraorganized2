@@ -1,0 +1,31 @@
+{
+  "id": "7649d96533a4",
+  "status": "ready-for-review",
+  "project": "_Organized Desktop/03 Master Projects/MasterStore",
+  "finding": "listing-search-params.ts used parseInt and accepted malformed price prefixes such as 12px; strict digit and safe-integer parsing now omits malformed bounds.",
+  "changedFiles": [
+    "storefront/src/lib/utils/listing-search-params.ts",
+    "storefront/tests/listing-search-params.test.mjs",
+    "storefront/tests/alias-loader.mjs",
+    "astraupskill/snapshots/src/lib/utils/listing-search-params.ts",
+    "astraupskill/evidence/results-crud-b03.json",
+    "astraupskill/evidence/astra-crud-b03-masterstore.log",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "executed": 2,
+    "passed": true,
+    "command": "node --experimental-strip-types --experimental-loader ./tests/alias-loader.mjs --test ./tests/listing-search-params.test.mjs"
+  },
+  "limits": [
+    "Focused parser evidence only; native Vitest and external catalog integrations were unavailable and unexecuted."
+  ]
+}

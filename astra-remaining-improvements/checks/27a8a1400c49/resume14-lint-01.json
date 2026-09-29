@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+  "id": "27a8a1400c49",
+  "command": [
+    "npm.cmd",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:30:37.109240+00:00",
+  "status": "complete",
+  "log": "resume14-lint-01.log",
+  "pid": 26444,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:41:10.136394+00:00",
+  "elapsedSeconds": 633.0
+}

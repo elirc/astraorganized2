@@ -1,0 +1,241 @@
+[
+ {
+  "wave": 2,
+  "id": "e502bf8af566",
+  "name": "grokbuildorderproject",
+  "rel": "grokbuildorderproject",
+  "status": "delivered",
+  "tests": null,
+  "words": 4226,
+  "deliveredAt": "2026-09-09T05:44:25.964400+00:00",
+  "nfiles": 50,
+  "summary": [
+   "Turns the order scaffold into a working React catalog CRUD and order workflow with typed HTTP boundaries, paging, visible errors and explicit stale-form recovery.",
+   "Reserves inventory and snapshots server decimal prices in one PostgreSQL transaction; conditional versions prevent overselling and stale stock replacement.",
+   "Cancellation restores inventory once and fulfillment is final; foreign keys preserve history and order items retain purchase-time names and prices.",
+   "Adds a fresh-database migration with database constraints, strict payload/query validation, shared Prisma lifecycle and consistent request-ID errors.",
+   "Adds reproducible isolated PostgreSQL, frontend and Chromium verification, locked dependencies, reviewed responsive screenshots and nine detailed mid-level CRUD learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildorderproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildorderproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/e502bf8af566",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/e502bf8af566.json (spec: specs/e502bf8af566.json)",
+  "course": "grokbuildorderproject/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "475084a31c00",
+  "name": "grokbuildppmproject",
+  "rel": "grokbuildppmproject",
+  "status": "delivered",
+  "tests": 14,
+  "words": 4844,
+  "deliveredAt": "2026-09-12T20:07:12.016417+00:00",
+  "nfiles": 49,
+  "summary": [
+   "Make strict Zod parsed task create and partial-update values the actual Prisma write boundary, including supported statuses, title/date normalization, omission versus explicit null, and rejection of unknown fields.",
+   "Classify only Prisma P2025 as missing while forwarding unexpected update/delete/get failures to Express error middleware with sanitized 500 responses; add async route forwarding and an import-safe app listener guard.",
+   "Repair schema-consistent project, organization registration, and portfolio startup gaps; add separate package locks, exact source snapshots, frontend build wiring, one mocked-Prisma HTTP/service harness, and a detailed active-runtime course.",
+   "Align frontend organization inputs and auth/CRUD response handling, accept empty successful deletes, preserve readable errors, and classify malformed JSON as a safe 400."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildppmproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildppmproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/475084a31c00",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/475084a31c00.json (spec: specs/475084a31c00.json)",
+  "course": "grokbuildppmproject/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "4c93b4cf7530",
+  "name": "grokbuildteamproject",
+  "rel": "grokbuildteamproject",
+  "status": "delivered",
+  "tests": null,
+  "words": 4571,
+  "deliveredAt": "2026-09-09T12:09:30.995152+00:00",
+  "nfiles": 73,
+  "summary": [
+   "Replaced unprotected task routes and permissive example tests with expiring authenticated identity, current organization membership/role checks, strict editable requests and scoped project/task CRUD.",
+   "Implemented task descriptions, calendar due dates and paginated member assignment selection backed by same-team compound foreign keys, captured versions, atomic audit writes and reference-aware deletion.",
+   "Added complete owned comment CRUD with author-only editing, explicit administrative moderation, retained audit metadata, parent/tenant scope and concurrency-safe version checks.",
+   "Completed local registration with atomic user/team/owner-membership creation and built memory-only sessions, preserved task/project/comment drafts, export/current-value recovery and navigation guards across all editors.",
+   "Added generated non-overwriting setup, fresh dedicated migration, repeatable fictional seed, 83 passing checks, reviewed desktop/narrow captures and nine detailed source-grounded learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildteamproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildteamproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/4c93b4cf7530",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/4c93b4cf7530.json (spec: specs/4c93b4cf7530.json)",
+  "course": "grokbuildteamproject/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "ca549816cdd1",
+  "name": "_Organized Desktop/05 Numbered Experiments/e14",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e14",
+  "status": "delivered",
+  "tests": null,
+  "words": 7555,
+  "deliveredAt": "2026-09-12T11:39:45.943061+00:00",
+  "nfiles": 92,
+  "summary": [
+   "Added a responsive browser workspace and complete tenant-scoped CRUD for streams, dashboards, alerts, pipelines and saved queries, with bounded pagination, atomic audits, protected references and explicit revision conflict review.",
+   "Strengthened current-user/token authorization, privilege grant limits, expiring sessions, strict typed and nested configuration validation, finite JSON, raw request limits and local host/origin boundaries.",
+   "Made ingestion deduplication, derived metrics, pipeline history and organization retention transactional; fixed partial pipeline output, selected manual runs, trace cycles and cross-trace log correlation.",
+   "Bounded SQL with an isolated tenant subset, authorizer and timeout; corrected filter-before-limit behavior, UTC grouping, mixed label grouping and alert counts/stream selection. Moved notifications to a default-simulated durable outbox with explicit operator delivery.",
+   "Pinned tested direct dependencies, verified an installed wheel with browser assets, added explicit additive migration and preserved 30 original text files. Added nine detailed junior-to-mid-level CRUD guides with examples, exercises, solutions and reviewed screenshots; verified 106 distinct Python cases, 12 real-browser workflows and four packaging checks, plus lint/format/JavaScript syntax."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e14",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "python"
+  ],
+  "slug": "e14",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/ca549816cdd1",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/ca549816cdd1.json (spec: specs/ca549816cdd1.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e14/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "19110bf39fcf",
+  "name": "_Organized Desktop/05 Numbered Experiments/e15",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e15",
+  "status": "delivered",
+  "tests": 176,
+  "words": 6290,
+  "deliveredAt": "2026-09-10T00:24:19.352477+00:00",
+  "nfiles": 90,
+  "summary": [
+   "Added strict request contracts, consistent role visibility/report scoping, active-token checks, safe rendering and explicit owner/demo setup.",
+   "Implemented versioned ticket/configuration CRUD, retained-draft conflict review, same-transaction creation receipts, additive backed-up migration and serialized SQLite writes.",
+   "Corrected terminal/reopen/pending reply timers, protected history/identity merges and references, bounded attachment handling with rollback cleanup and authorized downloads.",
+   "Added nine detailed junior-to-mid-level learning guides, worked examples, trace labs, regression suites, a clean verified installation and nine reviewed browser screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e15",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "python"
+  ],
+  "slug": "e15",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/19110bf39fcf",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/19110bf39fcf.json (spec: specs/19110bf39fcf.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e15/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "da9c28730758",
+  "name": "aiapplybot",
+  "rel": "aiapplybot",
+  "status": "delivered",
+  "tests": null,
+  "words": 4029,
+  "deliveredAt": "2026-09-09T10:09:52.563386+00:00",
+  "nfiles": 32,
+  "summary": [
+   "Added a standard-library loopback dashboard and real SQLite application CRUD with stable IDs, bounded validation, literal search, pagination, captured versions and transactional retained audit.",
+   "Preserved failed and conflicting drafts, added explicit current-record loading, confirmed deletion/locking, draft export, and independently reported save/list-refresh outcomes.",
+   "Added all-or-nothing legacy JSONL import with retained occurrence receipts, non-resurrecting repeat imports, visible unimported CLI history, database identity checks and non-overwriting SQLite backups.",
+   "Hardened bounded profile validation and relative document paths; neutralized the example profile; offline planning preserves unknown answers and leaves consent for manual review; logging and launch failures close browser resources.",
+   "Added nine detailed source-grounded learning documents, repeatable verification commands, 43 Python and eight Chromium checks, and two reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\aiapplybot",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "python"
+  ],
+  "slug": "aiapplybot",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/da9c28730758",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/da9c28730758.json (spec: specs/da9c28730758.json)",
+  "course": "aiapplybot/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "a9672affc47e",
+  "name": "JSProjectLearn",
+  "rel": "JSProjectLearn",
+  "status": "delivered",
+  "tests": 48,
+  "words": 3914,
+  "deliveredAt": "2026-09-09T08:38:17.971086+00:00",
+  "nfiles": 29,
+  "summary": [
+   "Adds mission-linked learning-note CRUD, stable identities, search, pagination and confirmed deletion.",
+   "Separates mission drafts from accepted progress; saves and review evidence are adopted only after browser storage succeeds.",
+   "Validates nested and legacy saves, catalog relationships and four-MiB UTF-8 bounds; preserves corrupt raw data and failed proposals for export.",
+   "Coordinates cooperating tabs with Web Locks, snapshot revisions and reset epochs; stale editors retain their fields.",
+   "Guards prerequisites, canonical checkpoint rewards and due review ratings; retries failed catalog/mission requests and bounds worker execution/output.",
+   "Adds nine detailed CRUD learning documents, real-browser tests, corrected setup/save guidance and reviewed desktop/narrow screenshots.",
+   "Verifies 36 model tests, 12 Chromium scenarios, production build and the unchanged 334-mission archive."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\JSProjectLearn",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "jsprojectlearn",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/a9672affc47e",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/a9672affc47e.json (spec: specs/a9672affc47e.json)",
+  "course": "JSProjectLearn/astraupskill",
+  "batch": "B15"
+ },
+ {
+  "wave": 2,
+  "id": "a1752d846946",
+  "name": "_Organized Desktop/02 Build Projects/buildgum",
+  "rel": "_Organized Desktop/02 Build Projects/buildgum",
+  "status": "delivered",
+  "tests": 59,
+  "words": 4910,
+  "deliveredAt": "2026-09-09T15:20:58.941899+00:00",
+  "nfiles": 30,
+  "summary": [
+   "Replaced inactive catalog controls with versioned product and discount CRUD, archive/restore, confirmed history-aware deletion, literal search and retained editor drafts.",
+   "Added bounded validated local persistence, Web Locks and raw-baseline conflict detection, explicit reviewed backup replacement and corrupt-byte recovery without touching legacy cart data.",
+   "Implemented exact-cent quantities and discounts, immutable simulated receipt snapshots, request-key replay after lost acknowledgement, cancellation and paginated searchable receipt history.",
+   "Preserved the original visual palette and fictional collection, removed unsupported payment/tax/fulfillment claims, fixed text navigation at narrow widths, and added nine detailed learning documents with six reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildgum",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "buildgum",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/a1752d846946",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/a1752d846946.json (spec: specs/a1752d846946.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildgum/astraupskill",
+  "batch": "B15"
+ }
+]

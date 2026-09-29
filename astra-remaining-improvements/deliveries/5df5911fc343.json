@@ -1,0 +1,118 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w23",
+  "id": "5df5911fc343",
+  "summary": [
+    "Preserve the reviewed ticket status production path and add a runnable six-case fault-injection teaching lab.",
+    "Exercise actual transition policy and error classes, scoped repository arguments, transaction-handle propagation, successful side-effect order and refusal/failure boundaries."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5df5911fc343/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/w23",
+        "id": "5df5911fc343",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-ticket-boundary-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5df5911fc343",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:34:47.971026+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 21264,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:34:55.871018+00:00",
+        "elapsedSeconds": 7.9
+      }
+    ],
+    "limits": [
+      "No production source was changed. The lab executes actual ticket service, status policy and error classes with explicit permission, validation, document-builder, repository and transaction adapters.",
+      "Six runtime cases do not execute native Drizzle/PostgreSQL, HTTP, real authorization policy, indexing worker or transaction rollback. An empty update result is simulated, not proof of concurrent mutation safety."
+    ]
+  },
+  "courseWords": 1833,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "tests/runtime-ticket-boundary-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f99b28d6a26773ae96ed27fded0e59461d64c2235cf38039609eedb5dbdb9ac8"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "7ca945a14d40507b75b6731cbc95066b38cb39a1d146b251e2198e7791bd9cc1"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "24aa201774c6c90f771466b08167634ace555c8554cb665787f21472183a3a6f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e9ba480e37f000cf552dc74c8c6ed253a7bb60484e0d70f619b89b694c3edc59"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "273c86a6f6d29ec35241c41d1b496afe90f7388041df230456b2c54d5b76c7cf"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e9ca5d46e7996d3ab08da82f22ff2c56fc22adf08a5c310f5a50d86ae78bac59"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6ce15ff5b16bd9bd0eb91c3a3bdab2dbdab5f4687b05612308e605207123f023"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ddb54f5898f7d287d69cb155d657a47b23f594823dfbe1cf4462f5acf6fa785c"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "234d553bc7090be6377848987e1a154f4af63d70135032992531e0276ff951a4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "0c7749e0f942bea0630cbd8b0c9dab34fd59982bf248f910979636deea7c1123"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1642a4e2843a8addd38e133a5daa4b41eda450b2d4b6b2cfcfedae553e597e51"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1ce8efd151d9cba876fe2d36587b4fed5e1f85268853903eb6532020697c16b2"
+    }
+  ],
+  "limits": [
+    "No production source was changed. The lab executes actual ticket service, status policy and error classes with explicit permission, validation, document-builder, repository and transaction adapters.",
+    "Six runtime cases do not execute native Drizzle/PostgreSQL, HTTP, real authorization policy, indexing worker or transaction rollback. An empty update result is simulated, not proof of concurrent mutation safety."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:43:58.095901+00:00"
+}

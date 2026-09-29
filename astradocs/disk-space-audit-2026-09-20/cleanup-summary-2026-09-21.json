@@ -1,0 +1,15 @@
+{
+  "statusCounts": {
+    "removed": 405
+  },
+  "deletedFiles": 1490402,
+  "deletedLogicalBytes": 50914452117,
+  "fileAndLogicalByteCountsAreLowerBounds": true,
+  "freeBytesBefore": 5801746432,
+  "freeBytesAfter": 55886266368,
+  "observedFreeSpaceIncrease": 50084519936,
+  "lucasrouterMetadataUnchanged": true,
+  "remainingSelectedPaths": 0,
+  "targetsWithErrors": 0,
+  "retainedInventoryCandidates": 456
+}

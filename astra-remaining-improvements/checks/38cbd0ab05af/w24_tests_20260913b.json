@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "tests/feature-platform.test.ts",
+    "--config",
+    "vitest.config.ts",
+    "--reporter=dot"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:49:16.552011+00:00",
+  "status": "complete",
+  "log": "w24_tests_20260913b.log",
+  "pid": 10916,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:49:26.044586+00:00",
+  "elapsedSeconds": 9.49
+}

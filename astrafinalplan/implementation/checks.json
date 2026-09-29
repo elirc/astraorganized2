@@ -1,0 +1,247 @@
+[
+  {
+    "project": "01",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 116.6,
+    "log": "logs/01-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\01\\test\\undo.test.cjs"
+    ]
+  },
+  {
+    "project": "02",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 110.14,
+    "log": "logs/02-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\02\\test\\duplicates.test.cjs"
+    ]
+  },
+  {
+    "project": "03",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 111.93,
+    "log": "logs/03-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\03\\test\\timer.test.cjs"
+    ]
+  },
+  {
+    "project": "04",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 56.19,
+    "log": "logs/04-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\04\\test\\expense-edit.test.cjs"
+    ]
+  },
+  {
+    "project": "05",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 47.36,
+    "log": "logs/05-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\05\\test\\shopping-state.test.ts"
+    ]
+  },
+  {
+    "project": "07",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 284.37,
+    "log": "logs/07-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\07\\server\\test\\tasks.test.cjs"
+    ]
+  },
+  {
+    "project": "08",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 125.74,
+    "log": "logs/08-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\08\\server\\test\\import.test.cjs"
+    ]
+  },
+  {
+    "project": "09",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 41.96,
+    "log": "logs/09-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\09\\server\\test\\reports.test.cjs"
+    ]
+  },
+  {
+    "project": "10",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 155.01,
+    "log": "logs/10-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\stage\\10\\server\\test\\ownership.test.ts"
+    ]
+  },
+  {
+    "project": "05",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 199.7,
+    "log": "logs/05-build.log",
+    "command": [
+      "npm.cmd",
+      "run",
+      "build"
+    ]
+  },
+  {
+    "project": "07",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 63.24,
+    "log": "logs/07-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "08",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 45.54,
+    "log": "logs/08-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "09",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 65.81,
+    "log": "logs/09-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "10",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 49.49,
+    "log": "logs/10-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "10",
+    "check": "server-typecheck",
+    "exit_code": 0,
+    "seconds": 100.99,
+    "log": "logs/10-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "05",
+    "check": "lint",
+    "exit_code": 0,
+    "seconds": 48.26,
+    "log": "logs/05-lint.log",
+    "command": [
+      "npm.cmd",
+      "run",
+      "lint"
+    ]
+  },
+  {
+    "project": "10",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 116.03,
+    "log": "logs/10-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "06",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 510.8,
+    "log": "logs/06-tests-full.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vitest\\vitest.mjs",
+      "run",
+      "--maxWorkers=2"
+    ],
+    "test_cases": 90,
+    "retry_log": "logs/06-tests-retry.log",
+    "retry_command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vitest\\vitest.mjs",
+      "run",
+      "test/JobTracker.test.jsx",
+      "--maxWorkers=1",
+      "--testTimeout=120000",
+      "-t",
+      "appends a record, persists it, and resets the form"
+    ],
+    "retry_seconds": 242.6,
+    "note": "Full suite: 89 of 90 passed; one form test exceeded 30 seconds. Focused retry of that test passed with 120-second allowance. Harness worker startup grace extended to 300 seconds; assertions unchanged."
+  },
+  {
+    "project": "06",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 22.08,
+    "log": "logs/06-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  }
+]

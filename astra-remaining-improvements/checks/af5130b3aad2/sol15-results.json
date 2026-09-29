@@ -1,0 +1,103 @@
+{
+  "passed": true,
+  "total": 11,
+  "passedTests": 11,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "buildevent",
+      "id": "af5130b3aad2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test",
+        "-w",
+        "@ticketing/api",
+        "--",
+        "--maxWorkers=1",
+        "--minWorkers=1",
+        "--testTimeout=60000",
+        "--hookTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:59:49.154200+00:00",
+      "status": "complete",
+      "log": "astra-buildevent-api-tests-r3.log",
+      "pid": 27976,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:01:03.655914+00:00",
+      "elapsedSeconds": 74.49
+    },
+    {
+      "project": "buildevent",
+      "id": "af5130b3aad2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "typecheck",
+        "--",
+        "--concurrency=1"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:36:30.409158+00:00",
+      "status": "complete",
+      "log": "astra-buildevent-typecheck-r2.log",
+      "pid": 32048,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:47:17.238419+00:00",
+      "elapsedSeconds": 646.83
+    },
+    {
+      "project": "buildevent",
+      "id": "af5130b3aad2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "lint",
+        "--",
+        "--concurrency=1"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:59:57.056982+00:00",
+      "status": "complete",
+      "log": "astra-buildevent-lint-r2.log",
+      "pid": 15660,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:02:26.456636+00:00",
+      "elapsedSeconds": 149.38
+    },
+    {
+      "project": "buildevent",
+      "id": "af5130b3aad2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build",
+        "-w",
+        "@ticketing/shared",
+        "-w",
+        "@ticketing/ticket-renderer"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af5130b3aad2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:30:58.708835+00:00",
+      "status": "complete",
+      "log": "astra-buildevent-package-build-r1.log",
+      "pid": 30700,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:35:14.409850+00:00",
+      "elapsedSeconds": 255.7
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "5df5911fc343",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:43:10.960263+00:00",
+  "sourceReview": "Reviewed ticket service, scoped repository, real transition table and AppError; production path retained.",
+  "teachingReview": "Nine chapters reviewed and corrected: removed filler, corrected OPEN to CLOSED policy, added concrete traces, failure comparisons, graded exercises and separate solutions.",
+  "testReview": "Six actual-service cases passed using real policy/error classes. Success arguments, tenant scope, client identity and stopping order asserted. No native authorization, SQL, worker or rollback claims.",
+  "specSHA256": "681d71212db7998f9ae891dac4b2df0d026389f92f14d73b9c5f8b19c6af3dfd",
+  "fileHashes": {
+    "tests/runtime-ticket-boundary-lab.test.mjs": "f99b28d6a26773ae96ed27fded0e59461d64c2235cf38039609eedb5dbdb9ac8",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "7ca945a14d40507b75b6731cbc95066b38cb39a1d146b251e2198e7791bd9cc1",
+    "astraupskill/evidence/results.json": "24aa201774c6c90f771466b08167634ace555c8554cb665787f21472183a3a6f",
+    "astraupskill/README.md": "e9ba480e37f000cf552dc74c8c6ed253a7bb60484e0d70f619b89b694c3edc59",
+    "astraupskill/01-CODEBASE-MAP.md": "273c86a6f6d29ec35241c41d1b496afe90f7388041df230456b2c54d5b76c7cf",
+    "astraupskill/02-CONCEPTS.md": "e9ca5d46e7996d3ab08da82f22ff2c56fc22adf08a5c310f5a50d86ae78bac59",
+    "astraupskill/03-WORKED-CHANGE.md": "6ce15ff5b16bd9bd0eb91c3a3bdab2dbdab5f4687b05612308e605207123f023",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "ddb54f5898f7d287d69cb155d657a47b23f594823dfbe1cf4462f5acf6fa785c",
+    "astraupskill/05-PRACTICE.md": "234d553bc7090be6377848987e1a154f4af63d70135032992531e0276ff951a4",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "0c7749e0f942bea0630cbd8b0c9dab34fd59982bf248f910979636deea7c1123",
+    "astraupskill/07-TRACE-LAB.md": "1642a4e2843a8addd38e133a5daa4b41eda450b2d4b6b2cfcfedae553e597e51",
+    "astraupskill/VERIFICATION.md": "1ce8efd151d9cba876fe2d36587b4fed5e1f85268853903eb6532020697c16b2"
+  },
+  "evidenceHashes": {
+    "checks/5df5911fc343/astra-crud-b04-w23.log": "49603b07e5585854ce9e7eb88b7ac2211ab0d69d7b9911adadade419df158a8f",
+    "checks/5df5911fc343/crud-b04-astra-runtime.json": "e7e616dffae7aa72052d05c174f29205af7cc9a81fc78332529df035154acfcb",
+    "checks/5df5911fc343/crud-b04-astra-runtime.log": "7ca945a14d40507b75b6731cbc95066b38cb39a1d146b251e2198e7791bd9cc1",
+    "checks/5df5911fc343/results-crud-b04.json": "24aa201774c6c90f771466b08167634ace555c8554cb665787f21472183a3a6f"
+  }
+}

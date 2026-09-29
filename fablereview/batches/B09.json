@@ -1,0 +1,242 @@
+[
+ {
+  "wave": 2,
+  "id": "028086674b89",
+  "name": "_Organized Desktop/01 Net Workspaces/.netgum",
+  "rel": "_Organized Desktop/01 Net Workspaces/.netgum",
+  "status": "delivered",
+  "tests": 11,
+  "words": 5276,
+  "deliveredAt": "2026-09-12T23:23:43.240042+00:00",
+  "nfiles": 32,
+  "summary": [
+   "Validates customer, product, variant and coupon inputs before the payment gateway and constructs a valid pending order before inventory/coupon mutations.",
+   "Introduces reusable domain preflight methods and converts malformed email parsing into the expected DomainException contract.",
+   "Returns persisted paid/failed receipts before repeating provider, save or email work on sequential completion retries.",
+   "Adds real application regression cases with EF repositories, state assertions and gateway/email/save counters, plus nine detailed learning chapters and complete test examples."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netgum",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet"
+  ],
+  "slug": "netgum",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/028086674b89",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/028086674b89.json (spec: specs/028086674b89.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.netgum/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "71e7b036865c",
+  "name": "_Organized Desktop/01 Net Workspaces/.nethris",
+  "rel": "_Organized Desktop/01 Net Workspaces/.nethris",
+  "status": "delivered",
+  "tests": null,
+  "words": 6577,
+  "deliveredAt": "2026-09-12T14:01:52.133874+00:00",
+  "nfiles": 180,
+  "summary": [
+   "Replaced demo fallback, shared JWT configuration and automatic default-password accounts with real workshop bootstrap, private database signing material, revocable sessions, current-role authorization and separate Admin account administration.",
+   "Completed employee, department and job-role CRUD with bounded validation, versioned edits, uniqueness, active/archive choices, manager-cycle and lead-department checks, protected deletion and role-sensitive balance/salary views.",
+   "Fixed SQLite timestamp ordering and approval insertion, added exact quarter-hour/cents storage, and implemented PTO bounds, overlap/reservation checks, pending edit/delete/cancel and captured-manager plus distinct-HR approval with atomic balance/history writes.",
+   "Added strong ETags, transactional 24-hour receipts and audit records, paginated lists, bounded org traversal and responsive real-API forms that preserve stale drafts, recover exact operations after response loss, and invalidate delayed reads/cached views on session changes.",
+   "Added nine detailed source-grounded CRUD learning guides, preserved 75 exact original files, labeled 46 historical pages, pinned/locked dependencies and supplied local package/check scripts. Verified 13 foundation tests, 28 HTTP scenarios, 17 browser workflows and three packaging checks, with reviewed desktop/narrow images."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.nethris",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "nethris",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/71e7b036865c",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/71e7b036865c.json (spec: specs/71e7b036865c.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.nethris/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "d30d5dfdf243",
+  "name": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+  "rel": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+  "status": "delivered",
+  "tests": 76,
+  "words": 5845,
+  "deliveredAt": "2026-09-09T21:11:47.954555+00:00",
+  "nfiles": 94,
+  "summary": [
+   "Reworked the .NET and React paste workspace with explicit command contracts, capability headers, generated edit-key receipts, versioned updates/deletes and durable creation request receipts.",
+   "Replaced truncating aggregate writes with bounded validation, cooperating-process file leases, flushed same-directory replacement, readonly reads and explicit legacy migration with exact source backups.",
+   "Added retained and exportable drafts, explicit conflict review, exact creation retries after lost acknowledgements, public-only literal search and pagination, content copy and exact text downloads, forks and responsive forms.",
+   "Added nine detailed project-specific learning guides, historical markers on earlier documentation, pinned setup and meaningful client, backend, HTTP and browser verification."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netpastebin",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "react-jsx"
+  ],
+  "slug": "netpastebin",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/d30d5dfdf243",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/d30d5dfdf243.json (spec: specs/d30d5dfdf243.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.netpastebin/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "a92b3a3a2282",
+  "name": "_Organized Desktop/01 Net Workspaces/.nettrello",
+  "rel": "_Organized Desktop/01 Net Workspaces/.nettrello",
+  "status": "delivered",
+  "tests": null,
+  "words": 4200,
+  "deliveredAt": "2026-09-12T20:56:00.221720+00:00",
+  "nfiles": 29,
+  "summary": [
+   "Implements presence-aware PATCH card updates with JsonElement Undefined versus explicit Null semantics, preservation of omitted fields, explicit clears for nullable values, empty-patch rejection, strict unknown-property handling, and known enum/date validation.",
+   "Prevalidates Card.Update title/description/priority/labels before assignment and repairs Board move ordering so missing targets, negative positions, and full destinations fail before source removal; same-column reorder works at capacity.",
+   "Preserves the existing in-process clone-on-write repository and optimistic version check, while adding real domain/service checks for clone isolation, stale versions, competing writes, linked ordering, and unchanged rejected aggregates.",
+   "Adds an executable HTTP regression that checks actual status and serialized problem codes for title-only, invalid-priority, and empty PATCH requests against a local seeded API.",
+   "Adds nine source-grounded astraupskill guides and exact canonical source snapshots for the bounded change."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.nettrello",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "nettrello",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/a92b3a3a2282",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/a92b3a3a2282.json (spec: specs/a92b3a3a2282.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.nettrello/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "9e7b2d32e0fb",
+  "name": "_Organized Desktop/01 Net Workspaces/.netvg",
+  "rel": "_Organized Desktop/01 Net Workspaces/.netvg",
+  "status": "delivered",
+  "tests": 17,
+  "words": 3986,
+  "deliveredAt": "2026-09-12T23:08:26.840168+00:00",
+  "nfiles": 36,
+  "summary": [
+   "Rejects malformed quote requests and undefined employment types at the application boundary, normalizes country and currency codes, and safely rounds and checks decimal arithmetic.",
+   "Stops quote creation from synthesizing client side success after backend rejection or outage; parses ProblemDetails and gives QuoteBuilder accessible error, retry, loading, and stale quote behavior.",
+   "Adds focused calculator regression tests for rejection, normalization, rounding, and copied requirements, plus nine substantive astraupskill chapters tracing the real request flow.",
+   "Repairs API restore by selecting patched Microsoft.OpenApi 2.7.5 without suppressing warnings; final API and web builds pass."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netvg",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "netvg",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/9e7b2d32e0fb",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/9e7b2d32e0fb.json (spec: specs/9e7b2d32e0fb.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.netvg/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "1bb35a95be79",
+  "name": "_Organized Desktop/01 Net Workspaces/.netzen",
+  "rel": "_Organized Desktop/01 Net Workspaces/.netzen",
+  "status": "delivered",
+  "tests": 3,
+  "words": 4191,
+  "deliveredAt": "2026-09-12T23:12:43.495286+00:00",
+  "nfiles": 35,
+  "summary": [
+   "Materializes normalized tags before mutation and rejects undefined status, priority and comment visibility values.",
+   "Filters the authorized population across source pages before final pagination and excludes internal-comment text from search.",
+   "Replaces broad ticket payloads with data-free SignalR invalidations, refetches selected detail, rejoins on reconnect, and suppresses stale list and hub detail refreshes while preserving drafts.",
+   "Adds real domain/search regression tests, missing React type dependencies, a frontend lockfile and nine detailed learning chapters with worked examples and matched exercises."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netzen",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "netzen",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/1bb35a95be79",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/1bb35a95be79.json (spec: specs/1bb35a95be79.json)",
+  "course": "_Organized Desktop/01 Net Workspaces/.netzen/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "e09d7ae4ffff",
+  "name": "_Organized Desktop/02 Build Projects/buildasana",
+  "rel": "_Organized Desktop/02 Build Projects/buildasana",
+  "status": "delivered",
+  "tests": 9,
+  "words": 4759,
+  "deliveredAt": "2026-09-12T21:45:46.645591+00:00",
+  "nfiles": 42,
+  "summary": [
+   "Prevalidates task priority/status/tags and materializes fallible tag input before mutating WorkTask; missing goal owners and automation projects fail before save/audit.",
+   "Validates automation enums and status action values, rejects unimplemented actions for new rules, and emits execution audit only after a supported branch runs.",
+   "Repairs frontend JSX, Lucide icon types, Vite TypeScript resolution and Node declarations; adds a lockfile and six regression tests including a real HTTP400 boundary check.",
+   "Adds a nine-chapter course with original snapshots, worked examples, matched practice/solutions, source traces and portable verification evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildasana",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "ts"
+  ],
+  "slug": "buildasana",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/e09d7ae4ffff",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/e09d7ae4ffff.json (spec: specs/e09d7ae4ffff.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildasana/astraupskill",
+  "batch": "B09"
+ },
+ {
+  "wave": 2,
+  "id": "0e78f57d70d1",
+  "name": "_Organized Desktop/02 Build Projects/buildjira",
+  "rel": "_Organized Desktop/02 Build Projects/buildjira",
+  "status": "delivered",
+  "tests": null,
+  "words": 4445,
+  "deliveredAt": "2026-09-12T19:21:52.537623+00:00",
+  "nfiles": 19,
+  "summary": [
+   "Reject invalid BuildJira PATCH requests without leaking earlier valid assignments into the singleton issue, project timestamp, audit list, or JSON file.",
+   "Guard malformed JSON field kinds with the existing VALIDATION_ERROR contract while preserving omitted fields, explicit nullable clears, identity fields, and accepted update auditing.",
+   "Add a real disposable-file regression executable, exact source snapshots, active-runtime README link, and nine source-grounded CRUD upskill guides."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildjira",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "dotnet",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "buildjira",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/0e78f57d70d1",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/0e78f57d70d1.json (spec: specs/0e78f57d70d1.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildjira/astraupskill",
+  "batch": "B09"
+ }
+]

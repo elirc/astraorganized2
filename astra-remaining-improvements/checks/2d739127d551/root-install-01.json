@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "id": "2d739127d551",
+  "command": [
+    "C:/Users/Owner/AppData/Roaming/npm/pnpm.cmd",
+    "install",
+    "--frozen-lockfile"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2d739127d551",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:28:31.486977+00:00",
+  "status": "complete",
+  "log": "root-install-01.log",
+  "pid": 39696,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:36:21.510488+00:00",
+  "elapsedSeconds": 470.0
+}

@@ -1,0 +1,19 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Linear",
+  "id": "b2f277b889f9",
+  "command": [
+    "dotnet",
+    "restore",
+    "NetLinear.sln"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:34:05.935965+00:00",
+  "status": "complete",
+  "log": "orchestration-dotnet-restore-20260913.log",
+  "pid": 19856,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T15:34:31.541860+00:00",
+  "elapsedSeconds": 25.59
+}

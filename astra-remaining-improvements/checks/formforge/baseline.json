@@ -1,0 +1,29 @@
+{
+  "command": "pnpm.cmd -r --workspace-concurrency=1 exec vitest run --maxWorkers=2",
+  "passed": true,
+  "tests": 77,
+  "suites": {
+    "core": 34,
+    "web": 27,
+    "data": 9,
+    "api": 7
+  },
+  "priorEnvironmentFailures": [
+    "Sandbox ancestor-directory probe blocked esbuild.",
+    "Cold start under unrestricted parallelism exceeded the first API test timeout."
+  ],
+  "newRegressionBeforeFix": {
+    "publicationRepository": {
+      "newFailures": 2,
+      "existingPassed": 3
+    },
+    "http": {
+      "newFailures": 2,
+      "existingPassed": 7
+    },
+    "autosave": {
+      "newFailures": 1,
+      "existingPassed": 3
+    }
+  }
+}

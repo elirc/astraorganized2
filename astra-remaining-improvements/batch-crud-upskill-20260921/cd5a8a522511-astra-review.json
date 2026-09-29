@@ -1,0 +1,34 @@
+{
+  "id": "cd5a8a522511",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:27:54.872961+00:00",
+  "sourceReview": "Read service/policy/transitions/errors. Employee profile and ownerRole guard precedes mutation; existing HR/IT broader behavior retained. Malformed route-glob comment repaired.",
+  "teachingReview": "Read and corrected all nine chapters: actual helper execution, role versus profile scope, stage derivation, separate exercises and answers, no whole-service transaction claim.",
+  "testReview": "Five independently rebuilt cases use real permissions, transitions and errors. Exact successful stage/audit payload, foreign/HR/IT denial, billing refusal before lookup, missing404, repeat409 and late audit failure all pass.",
+  "specSHA256": "17ab5919419ba4c78c5471eb268d330d9b32d9df1317342eff24f6a84574e604",
+  "fileHashes": {
+    "src/services/onboardingService.ts": "2ff9e8694bcf1b978ba893615d30c1a39da2d7642d404b54e6040f0dc09a9449",
+    "tests/onboarding-task-ownership.test.mjs": "c6961bae14cdb0ed17d5ea69a0d031fab40a3e39891e49adf2f00972b849b28b",
+    "tests/helpers/load-typescript.mjs": "88f9ed3a73123afff0a1c0b40ece5da3e471cdaa70b0a23fe1edb6286b8cd3d7",
+    "astraupskill/snapshots/onboardingService.ts.before": "776233de10ef1a29705fd4922c61960c0ee4ee76e33873b6a24c43e9dac54ce5",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "3a858ee4ea5483504389dac25561209bb67cdf7f2e794a8ff0d8d7904e6b8612",
+    "astraupskill/evidence/results.json": "dedfca690d2821d50a11ca2f697f8de220e6d7946d26a975a67ea05f947b64a6",
+    "astraupskill/README.md": "b2f62904e6150360b3fa74a606c27ba179db468f7eb30afffaea57f6a0e32b91",
+    "astraupskill/01-CODEBASE-MAP.md": "21e2ecce11ff4dc81335104e6b636c6730b6a493b319b4d8d599329f6087074b",
+    "astraupskill/02-CONCEPTS.md": "32672f8a1fe41be510356e740fd2ecf113d793cda5efd1be3e5eb7fad59057ef",
+    "astraupskill/03-WORKED-CHANGE.md": "1229426e406f0962a62d5be153ebf8a67c78985438009b15aceda9cd943769c9",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "d1ed1c1978823b88f2064f5a2037ab7eb1697eba705f1fa12c90eb7553bf2f81",
+    "astraupskill/05-PRACTICE.md": "a8c2398d147d713bca708f58c104742cdec659850c2ed4e190d0ace73dd8f230",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "fe173c92f82464a4c0297abb7c2ce3309b42110873bf149ac627e287c03afaa4",
+    "astraupskill/07-TRACE-LAB.md": "3122c7aaea0cfb26dfbe4213ebc7f607b8dfdaabd11f6a84abf22912a66004f7",
+    "astraupskill/VERIFICATION.md": "5cd14fc2f8970b87bdf2a30d8357e232c22df5937071999d82db3bb34fc4302a"
+  },
+  "evidenceHashes": {
+    "checks/cd5a8a522511/crud-b07-astra-runtime.json": "ea8b04842840456766e16fb799dd31726ecfa13074be7748230e7d09a181b2a2",
+    "checks/cd5a8a522511/crud-b07-astra-runtime.log": "3a858ee4ea5483504389dac25561209bb67cdf7f2e794a8ff0d8d7904e6b8612",
+    "checks/cd5a8a522511/runtime-b07.json": "30961b09b809e46cf8ab9b6aca361d5b4c50ebb028a1a0f0eabbd5cd6d402a99",
+    "checks/cd5a8a522511/runtime-b07.log": "4222c333520a113ede14a19b47f9bfa2f051b30fe6cd59962ce8b82d154125ef",
+    "checks/cd5a8a522511/runtime-b072.json": "dedfca690d2821d50a11ca2f697f8de220e6d7946d26a975a67ea05f947b64a6",
+    "checks/cd5a8a522511/runtime-b072.log": "a8ee56026ccc1fe8fa2eff53f39be36a2a1728c83422a6ed872d3e0045c009d2"
+  }
+}

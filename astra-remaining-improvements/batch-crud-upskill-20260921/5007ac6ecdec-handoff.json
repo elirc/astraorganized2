@@ -1,0 +1,36 @@
+{
+  "id": "5007ac6ecdec",
+  "status": "ready_for_review",
+  "summary": [
+    "Conditional review-item transition closes the stale-read overwrite window.",
+    "Conflict exits before entitlement revocation and audit creation."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/5007ac6ecdec/src/repositories/reviewCycleRepository.ts",
+    "astra-remaining-improvements/stage/5007ac6ecdec/src/services/reviewCycleService.ts",
+    "astra-remaining-improvements/stage/5007ac6ecdec/tests/runtime-review-cycle.test.mjs",
+    "astra-remaining-improvements/stage/5007ac6ecdec/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/snapshots/src/repositories/reviewCycleRepository.ts",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/snapshots/src/services/reviewCycleService.ts",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/evidence/astra-crud-b05-ww1.log",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/evidence/results-crud-b05.json",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/README.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/5007ac6ecdec/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-review-cycle.test.mjs",
+    "passed": 3,
+    "resultsFile": "checks/5007ac6ecdec/results-crud-b05.json"
+  },
+  "limits": [
+    "No live Prisma or concurrent provider test was run.",
+    "Review normal typecheck and database-backed tests before release."
+  ]
+}

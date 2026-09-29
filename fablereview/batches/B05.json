@@ -1,0 +1,212 @@
+[
+ {
+  "wave": 1,
+  "stage": "41",
+  "name": "JS1/learning-paths",
+  "rel": "JS1/learning-paths",
+  "tests": 4,
+  "words": 8158,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\learning-paths",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-learning-paths",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/41",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/learning-paths/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "42",
+  "name": "JS1/project-risks",
+  "rel": "JS1/project-risks",
+  "tests": 3,
+  "words": 7311,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\project-risks",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-project-risks",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/42",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/project-risks/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "43",
+  "name": "JS1/travel-requests",
+  "rel": "JS1/travel-requests",
+  "tests": 4,
+  "words": 8151,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\travel-requests",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-travel-requests",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/43",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/travel-requests/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "44",
+  "name": "JS1/vendor-contracts",
+  "rel": "JS1/vendor-contracts",
+  "tests": 4,
+  "words": 8146,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\vendor-contracts",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-vendor-contracts",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/44",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/vendor-contracts/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "45",
+  "name": "JS1/procurement-portal",
+  "rel": "JS1/procurement-portal",
+  "tests": 3,
+  "words": 7287,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\procurement-portal",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-procurement-portal",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/45",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/procurement-portal/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "46",
+  "name": "JS1/property-rentals",
+  "rel": "JS1/property-rentals",
+  "tests": 3,
+  "words": 7306,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\property-rentals",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-property-rentals",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/46",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/property-rentals/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "47",
+  "name": "JS1/quality-audits",
+  "rel": "JS1/quality-audits",
+  "tests": 4,
+  "words": 8142,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\quality-audits",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-quality-audits",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/47",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/quality-audits/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "48",
+  "name": "JS1/patient-intake",
+  "rel": "JS1/patient-intake",
+  "tests": 3,
+  "words": 7347,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\patient-intake",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-patient-intake",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/48",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/patient-intake/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "49",
+  "name": "JS1/grant-manager",
+  "rel": "JS1/grant-manager",
+  "tests": 4,
+  "words": 8126,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\grant-manager",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-grant-manager",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/49",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/grant-manager/astraupskill",
+  "batch": "B05"
+ },
+ {
+  "wave": 1,
+  "stage": "50",
+  "name": "JS1/incident-response",
+  "rel": "JS1/incident-response",
+  "tests": 4,
+  "words": 8110,
+  "changes": 19,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\incident-response",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-incident-response",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch03/backups/50",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch03/delivery-manifest.json",
+  "course": "JS1/incident-response/astraupskill",
+  "batch": "B05"
+ }
+]

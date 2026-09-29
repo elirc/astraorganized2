@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildjira",
+  "id": "0e78f57d70d1",
+  "command": [
+    "dotnet",
+    "run",
+    "--project",
+    "BuildJira.Api.Regression.csproj",
+    "-c",
+    "Release",
+    "--no-build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1\\tests\\BuildJira.Api.Regression",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:03:20.371348+00:00",
+  "status": "complete",
+  "log": "regression-01.log",
+  "pid": 34232,
+  "exitCode": 2147516566,
+  "passed": false,
+  "finishedAt": "2026-09-12T19:03:36.750214+00:00",
+  "elapsedSeconds": 16.37
+}

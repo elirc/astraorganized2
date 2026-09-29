@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "command": [
+    "npm.cmd",
+    "run",
+    "test",
+    "--",
+    "--run",
+    "src/lib/commerce/commerce.test.ts",
+    "--reporter=dot"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f871ce5e237",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:35:05.040976+00:00",
+  "status": "complete",
+  "log": "e13_tests_verified_20260913.log",
+  "pid": 11416,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T13:42:06.434803+00:00",
+  "elapsedSeconds": 421.41
+}

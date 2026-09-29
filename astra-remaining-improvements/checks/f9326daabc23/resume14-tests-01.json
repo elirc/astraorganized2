@@ -1,0 +1,19 @@
+{
+  "project": "gitvg/storefront",
+  "id": "f9326daabc23",
+  "command": [
+    "pnpm.cmd",
+    "test",
+    "--run"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T16:58:48.176822+00:00",
+  "status": "complete",
+  "log": "resume14-tests-01.log",
+  "pid": 23684,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T16:59:04.250690+00:00",
+  "elapsedSeconds": 16.07
+}

@@ -1,0 +1,188 @@
+{
+  "passed": true,
+  "platform": "Microsoft Windows NT 10.0.26200.0",
+  "runtime": "10.0.10",
+  "total": 30,
+  "checks": [
+    {
+      "name": "Empty initialization and restart preserve the workspace identity and bytes",
+      "passed": true,
+      "milliseconds": 2540,
+      "error": null
+    },
+    {
+      "name": "Create and readonly detail preserve exact source whitespace without exposing hashes",
+      "passed": true,
+      "milliseconds": 1534,
+      "error": null
+    },
+    {
+      "name": "Accepted creation retries reuse one record without another write",
+      "passed": true,
+      "milliseconds": 83,
+      "error": null
+    },
+    {
+      "name": "Reused request IDs reject changed bodies and changed keys",
+      "passed": true,
+      "milliseconds": 253,
+      "error": null
+    },
+    {
+      "name": "Invalid content, labels, enums and weak new capabilities do not write",
+      "passed": true,
+      "milliseconds": 49,
+      "error": null
+    },
+    {
+      "name": "Update advances one version and protects against stale edits",
+      "passed": true,
+      "milliseconds": 251,
+      "error": null
+    },
+    {
+      "name": "Incorrect capabilities cannot update or delete",
+      "passed": true,
+      "milliseconds": 165,
+      "error": null
+    },
+    {
+      "name": "Deletion preserves receipt so an old create request cannot resurrect content",
+      "passed": true,
+      "milliseconds": 326,
+      "error": null
+    },
+    {
+      "name": "Expired records are hidden without purge and can be deleted with their capability",
+      "passed": true,
+      "milliseconds": 465,
+      "error": null
+    },
+    {
+      "name": "Keep expiry does not silently renew a paste during editing",
+      "passed": true,
+      "milliseconds": 38,
+      "error": null
+    },
+    {
+      "name": "Search is literal, public-only, paginated and returns bounded previews",
+      "passed": true,
+      "milliseconds": 1403,
+      "error": null
+    },
+    {
+      "name": "Unlisted links remain directly readable and never appear in public results",
+      "passed": true,
+      "milliseconds": 96,
+      "error": null
+    },
+    {
+      "name": "Independent store instances serialize simultaneous writes without losing records",
+      "passed": true,
+      "milliseconds": 150,
+      "error": null
+    },
+    {
+      "name": "Concurrent same-version edits accept exactly one winner",
+      "passed": true,
+      "milliseconds": 211,
+      "error": null
+    },
+    {
+      "name": "Malformed active JSON stops startup without resetting the file",
+      "passed": true,
+      "milliseconds": 104,
+      "error": null
+    },
+    {
+      "name": "Null, duplicate, unknown and missing persisted fields are rejected",
+      "passed": true,
+      "milliseconds": 4,
+      "error": null
+    },
+    {
+      "name": "Missing active data during operation is not mistaken for a fresh workspace",
+      "passed": true,
+      "milliseconds": 393,
+      "error": null
+    },
+    {
+      "name": "Oversized storage is rejected before loading or replacing it",
+      "passed": true,
+      "milliseconds": 25,
+      "error": null
+    },
+    {
+      "name": "A failed replacement preserves previously accepted bytes",
+      "passed": true,
+      "milliseconds": 41,
+      "error": null
+    },
+    {
+      "name": "Rejected domain mutation and cancellation do not leak in-memory changes to disk",
+      "passed": true,
+      "milliseconds": 76,
+      "error": null
+    },
+    {
+      "name": "Replay callbacks cannot silently change data and writes must advance one revision",
+      "passed": true,
+      "milliseconds": 169,
+      "error": null
+    },
+    {
+      "name": "Existing legacy records require explicit migration before startup",
+      "passed": true,
+      "milliseconds": 13,
+      "error": null
+    },
+    {
+      "name": "Reviewed legacy migration preserves source bytes, views, content and older capabilities",
+      "passed": true,
+      "milliseconds": 1338,
+      "error": null
+    },
+    {
+      "name": "Migration refuses existing workspaces and malformed legacy records",
+      "passed": true,
+      "milliseconds": 60,
+      "error": null
+    },
+    {
+      "name": "UTF-8 BOM and empty legacy collections migrate without adding sample records",
+      "passed": true,
+      "milliseconds": 43,
+      "error": null
+    },
+    {
+      "name": "Paste count capacity rejects the next create without dropping earlier records",
+      "passed": true,
+      "milliseconds": 1531,
+      "error": null
+    },
+    {
+      "name": "Receipt capacity preserves idempotency history instead of pruning it",
+      "passed": true,
+      "milliseconds": 2391,
+      "error": null
+    },
+    {
+      "name": "Activity capacity rejects further changes without losing audit history",
+      "passed": true,
+      "milliseconds": 2382,
+      "error": null
+    },
+    {
+      "name": "Encoded aggregate size is bounded before the active file is replaced",
+      "passed": true,
+      "milliseconds": 2337,
+      "error": null
+    },
+    {
+      "name": "Concurrent independent processes cannot overwrite each other\u0027s accepted creates",
+      "passed": true,
+      "milliseconds": 4379,
+      "error": null
+    }
+  ]
+}

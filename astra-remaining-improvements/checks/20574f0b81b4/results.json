@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "total": 8,
+  "tests": 8,
+  "failed": 0,
+  "checks": [
+    "root-build-01",
+    "root-api-build-03",
+    "root-test-05"
+  ],
+  "scope": "Synthetic independent stores, actual socket handler registration with fake transport, actual Fastify app.inject GET/PATCH responses and close hook. Full original frontend/domain/worker build plus final changed API build passed. No real database, network listener, worker or browser."
+}

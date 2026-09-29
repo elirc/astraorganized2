@@ -1,0 +1,126 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antiemponb",
+  "id": "40905c751e8c",
+  "summary": [
+    "Five actual progress-service cases cover percentage rounding, empty tasks, completion, reopen, transaction selection and late write failure.",
+    "Add nine source-grounded teaching chapters with predictions, worked fixtures, separate practice/solutions and evidence limits; no production behavior changed."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/40905c751e8c/runtime-b083.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/07 Anti Projects/antiemponb",
+        "id": "40905c751e8c",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/onboarding-progress-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\40905c751e8c",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:40:49.149903+00:00",
+        "status": "complete",
+        "log": "crud-b08-astra-runtime.log",
+        "pid": 26896,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:40:57.127336+00:00",
+        "elapsedSeconds": 7.97
+      }
+    ],
+    "limits": [
+      "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+    ]
+  },
+  "courseWords": 1043,
+  "courseFiles": 9,
+  "courseLinksChecked": 5,
+  "files": [
+    {
+      "file": "tests/onboarding-progress-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "52ba5d0a3b835a5442a3e91f460e6a15a9d139b88dac3f7225bd9a9953b9c68c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/onboardingProgress.service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3177fc170e767b3c29fe687691d2e0991cfa0051ff9526f984ef89619565834d"
+    },
+    {
+      "file": "tests/app-error.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "9970ac3a3b9799603e1369121b3a8cc1cbe63fb01a56ccd99135a431414b2cfc"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b08-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "7225f61d77ea40700402bc288a4eac53f4eb9817d543389281a4c4d6c461b9e6"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "61adc9d721384e013c76ed9d3b05db1bdaeb571e4cc857f43b7eb07aa9a81711"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "09e2591ea688f8c3890a8124bbe6eda767bfac4e885f02239d09972d239ac121"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "c4afa6502577a188c8d72fe3c52d83812517175bd59dfd853833e385b2d36a56"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "7a8716cdb345d0fa6826b3285b1c775e6288ae0afcc7cb1b83468052c416928b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "03db8256ff605a2779c228e7d7c79ba5ad654a0d72eda3cbd85772a4f1979e0c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "41bdfc3534346455128e696d949c809553ec60c6d38f8ff59b56ef50067716f8"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "02002a7d51509a0c34b7bfd104210371fa16da939f8163cd9f5a9c2fb5133903"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "5bc2fa18681958b6e7d08e634a2d7a469df8b360156212d4016754dab36bf444"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "cc02a0a9731923419bf4bab4ed06bbd86b7d91895cd7d1d7a4273fc922fd113d"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "63d6975c7aa45001ffa90bfda0ef79c023f6bcc3275c138268c2c4d16f418154"
+    }
+  ],
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:48:20.374350+00:00"
+}

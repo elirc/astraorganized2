@@ -1,0 +1,6 @@
+{
+  "purpose": "Synthetic negative fixture for the handoff checker; not project verification evidence",
+  "files": {
+    "src/NetTrello.Api/Domain/Card.cs": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz2",
+  "id": "fdad4e87a703",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/ticket-reference.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fdad4e87a703",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:41:30.698137+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-identifiers.log",
+  "pid": 36020,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:41:35.708993+00:00",
+  "elapsedSeconds": 5.01
+}

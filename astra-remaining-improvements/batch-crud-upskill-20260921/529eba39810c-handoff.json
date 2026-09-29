@@ -1,0 +1,31 @@
+{
+  "id": "529eba39810c",
+  "status": "ready-for-review",
+  "project": "_Organized Desktop/05 Numbered Experiments/w22",
+  "finding": "refund allowance reads now use the transaction client before refund creation, preventing an accidental pre-transaction consistency boundary.",
+  "changedFiles": [
+    "src/services/refundService.ts",
+    "tests/runtime-refund-scope.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/refundService.ts",
+    "astraupskill/evidence/results-crud-b04.json",
+    "astraupskill/evidence/astra-crud-b04-w22.log",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "executed": 2,
+    "passed": true,
+    "command": "node --experimental-vm-modules --test tests/runtime-refund-scope.test.mjs"
+  },
+  "limits": [
+    "VM service harness only; Prisma, PostgreSQL isolation and HTTP route were not executed."
+  ]
+}

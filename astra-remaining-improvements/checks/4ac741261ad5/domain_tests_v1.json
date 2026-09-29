@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master2",
+  "id": "4ac741261ad5",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--workspace",
+    "@billing/domain"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4ac741261ad5",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://dummy:dummy@localhost:5432/dummy"
+  },
+  "startedAt": "2026-09-12T21:48:22.070928+00:00",
+  "status": "complete",
+  "log": "domain_tests_v1.log",
+  "pid": 39420,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T21:49:02.461910+00:00",
+  "elapsedSeconds": 40.39
+}

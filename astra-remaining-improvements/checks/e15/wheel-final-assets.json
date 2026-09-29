@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "matchingAssets": [
+    "app/static/app.js",
+    "app/static/app.css",
+    "app/templates/admin.html",
+    "app/templates/base.html",
+    "app/templates/index.html",
+    "app/templates/portal.html",
+    "app/templates/staff.html"
+  ]
+}

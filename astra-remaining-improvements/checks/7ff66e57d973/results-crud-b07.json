@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 7,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww46",
+      "id": "7ff66e57d973",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-project-status-race.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7ff66e57d973",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:51:48.393962+00:00",
+      "status": "complete",
+      "log": "crud-b07-astra-runtime.log",
+      "pid": 35064,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:52:00.384475+00:00",
+      "elapsedSeconds": 11.99
+    }
+  ],
+  "limits": [
+    "No live Prisma SQL, concurrent database, route, or rollback execution.",
+    "No retry policy or status-policy redesign is included.",
+    "The repository predicate includes organization and id, not expected status; count checking is not optimistic concurrency control. Real HttpError and role/status policy execute with generated enum adapters."
+  ]
+}

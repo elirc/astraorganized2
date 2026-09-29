@@ -1,0 +1,34 @@
+{
+  "id": "83297bdf668f",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:52:46.354803+00:00",
+  "sourceReview": "Reviewed updateOrderStatus, real transition graph, route SELLER/ADMIN guard, session roles and Prisma6 manifest. Status-qualified update preserves nested event and transaction audit; P2025 maps to409, other update errors rethrow, notification follows successful transaction. Refund path remains outside scope.",
+  "teachingReview": "Read all nine chapters; corrected invalid transition example, buyer/admin role example, allowed seller trace, real-policy scope and six-case count. Explicit status-only limitations include unrelated field/split changes and same-status cycles; no real transaction rollback or payment claim.",
+  "testReview": "Astra replaced permissive policy/error doubles with actual modules, added legal seller and illegal transition cases and forced unrelated error inside update catch. Six captured tests passed: exact predicates/event/audit/notification payloads, conflict, denied seller, original error identity and domain rules. Local preflight passed; database/HTTP/full typecheck unexecuted.",
+  "specSHA256": "4ecb662002e7fca6201c170961cb9a647a2e91f23eed0d7362d90ce7aee8fd79",
+  "fileHashes": {
+    "src/server/orders/service.ts": "d1c4142e069ee32ce7d69228ab105a53c8a761959ec1e8afe552fed2d884814d",
+    "tests/runtime-order-status.test.mjs": "37bcc47346216933bb8f4f51f59f999a57361ddad06071d7255063996031d63c",
+    "tests/helpers-load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-server-orders-service.ts.before": "c94f3de701d1e580e4ad170d94b8dfc74e5fde365e5d9baba2fb6a9eb22d7ccc",
+    "astraupskill/evidence/runtime-order-status.log": "ec6971a226cad16bec36fddf8e06f002a3245bb0f7ada254d452d6d5a7d5baf9",
+    "astraupskill/evidence/results-crud-b02.json": "34d18d11d73fa0b1d76f2c916a5f603432971cafb3ccaa53e316df390e046ec1",
+    "astraupskill/evidence/crud-b02-astra-runtime.log": "403d35d2c2a56f62d4dde2a5523c4d607d4003d7ce9f2b3f79db447ea7d96aa7",
+    "astraupskill/evidence/results.json": "c55570ce4a73a508cf59a1c3b82c992c4a243685bc6eb9537071dbf342fdd875",
+    "astraupskill/README.md": "23f7f122c23432c37a77e9fa062328cffe6543cad16858f7107f541296eb8d18",
+    "astraupskill/01-CODEBASE-MAP.md": "f1bff7d1d971c79ba4876658b5f6e3e56a2c5a44000883d5e09744d191e27590",
+    "astraupskill/02-CONCEPTS.md": "308cb580c0a22cb8e705655993c5839b89a38b98fddf5652d0b2ec69041b6d80",
+    "astraupskill/03-WORKED-CHANGE.md": "95769c2ad50818d264ed9cbe55394d1445c22441a17c952bccd6c1f3a5805398",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "1bf34146c8f1f970233354173cbfb2bbee96aa2e77d5625f7a2cacab757b67ee",
+    "astraupskill/05-PRACTICE.md": "c597693fa7a36c546ba3b57e7a50fc733caf0332c76e2815b3e4af7d83f5931f",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "bc219ab8a311562a8adee2ac29b969f069dc347df0c2e829dd02b0bf6cb6071c",
+    "astraupskill/07-TRACE-LAB.md": "c4874cfe59bb8f9727e5b9807b1f6b780099f8b5e895bd7005f251c68b1d27c4",
+    "astraupskill/VERIFICATION.md": "8c943efe20d08e18d4edf6ed51da3325583160632023764ca3e65b23e8483fd9"
+  },
+  "evidenceHashes": {
+    "checks/83297bdf668f/crud-b02-astra-runtime.json": "99c86654ef76405cd79dc6dd3a9c3af4a9fed3d4e86047f98f2a42372f2e62c9",
+    "checks/83297bdf668f/crud-b02-astra-runtime.log": "403d35d2c2a56f62d4dde2a5523c4d607d4003d7ce9f2b3f79db447ea7d96aa7",
+    "checks/83297bdf668f/results-crud-b02.json": "c55570ce4a73a508cf59a1c3b82c992c4a243685bc6eb9537071dbf342fdd875",
+    "checks/83297bdf668f/runtime-order-status.log": "ec6971a226cad16bec36fddf8e06f002a3245bb0f7ada254d452d6d5a7d5baf9"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "total": 24,
+  "passedTests": 24,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "id": "2f29156b71ed",
+      "command": [
+        "npm.cmd",
+        "test"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T18:33:33.697595+00:00",
+      "status": "complete",
+      "log": "resume14-tests-01.log",
+      "pid": 22856,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T18:34:27.233499+00:00",
+      "elapsedSeconds": 53.53
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "id": "2f29156b71ed",
+      "command": [
+        "npm.cmd",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T18:36:09.787835+00:00",
+      "status": "complete",
+      "log": "resume14-types-01.log",
+      "pid": 25456,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T18:38:38.988960+00:00",
+      "elapsedSeconds": 149.2
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "id": "2f29156b71ed",
+      "command": [
+        "npm.cmd",
+        "run",
+        "lint",
+        "--",
+        "--max-warnings=0"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T18:55:25.644383+00:00",
+      "status": "complete",
+      "log": "resume14-lint-02.log",
+      "pid": 16676,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:00:39.440061+00:00",
+      "elapsedSeconds": 313.79
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "id": "2f29156b71ed",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build",
+        "--",
+        "--webpack"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+      "environmentOverrides": {
+        "CIRCLE_NODE_TOTAL": "2"
+      },
+      "startedAt": "2026-09-19T19:08:23.928658+00:00",
+      "status": "complete",
+      "log": "resume14-build-01.log",
+      "pid": 17776,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:26:15.497798+00:00",
+      "elapsedSeconds": 1071.56
+    },
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "id": "2f29156b71ed",
+      "command": [
+        "npm.cmd",
+        "install",
+        "--package-lock-only",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--prefer-offline"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T19:26:49.461462+00:00",
+      "status": "complete",
+      "log": "resume14-lock-01.log",
+      "pid": 25116,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T19:27:34.100092+00:00",
+      "elapsedSeconds": 44.64
+    }
+  ]
+}

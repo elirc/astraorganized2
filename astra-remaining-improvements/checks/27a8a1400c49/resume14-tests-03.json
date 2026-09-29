@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+  "id": "27a8a1400c49",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--maxWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:27:43.051272+00:00",
+  "status": "complete",
+  "log": "resume14-tests-03.log",
+  "pid": 21048,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:29:10.912638+00:00",
+  "elapsedSeconds": 87.86
+}

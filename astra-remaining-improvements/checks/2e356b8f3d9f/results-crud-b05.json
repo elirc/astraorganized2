@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww13",
+      "id": "2e356b8f3d9f",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-report-submit-atomicity.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2e356b8f3d9f",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:12:40.893388+00:00",
+      "status": "complete",
+      "log": "crud-b05-astra-runtime.log",
+      "pid": 17108,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:12:44.805246+00:00",
+      "elapsedSeconds": 3.87
+    }
+  ],
+  "limits": [
+    "Five runtime cases execute actual repository and error classes with mutable-store and ID adapters. No live Next, authentication, persistence transaction, concurrency or full typecheck.",
+    "This prevents the known missing-parent partial mutations in submit and approve. It does not add idempotency, service authorization, rollback for arbitrary later failures or atomic audit persistence. IDs and submission timestamps are still allocated before parent lookup."
+  ]
+}

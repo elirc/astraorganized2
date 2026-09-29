@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildecom",
+  "id": "83297bdf668f",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-order-status.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\83297bdf668f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T00:48:29.218555+00:00",
+  "status": "complete",
+  "log": "crud-b02-astra-runtime.log",
+  "pid": 30196,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T00:48:42.121194+00:00",
+  "elapsedSeconds": 12.9
+}

@@ -1,0 +1,19 @@
+[
+  {
+    "stage": "51",
+    "route": "/api/cases",
+    "statuses": [
+      "Intake",
+      "Discovery",
+      "Negotiation",
+      "Closed"
+    ],
+    "categories": [
+      "Contract",
+      "Employment",
+      "Real Estate",
+      "Compliance"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  }
+]

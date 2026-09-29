@@ -1,0 +1,233 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master7",
+  "id": "a1d53294d3b0",
+  "summary": [
+    "Scope dashboard audit records to the actor organization before taking 25 entries; preserve platform administrator visibility and the learner empty-list contract.",
+    "Add synthetic two-organization audit fixtures and a real local HTTP regression covering staff, platform administrators and learners; nineteen tests, type checking and the workspace build pass.",
+    "Add a source-linked CRUD course with exact original snapshots, worked examples, practice solutions and recorded verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a1d53294d3b0/results.json",
+    "expectedTests": 19,
+    "command": "npm test -- --pool=threads --poolOptions.threads.singleThread=true --testTimeout=30000; npm run typecheck; npm run build",
+    "environment": "Node 22.16; npm 10.9.2; Vitest 2; actual local HTTP API with synthetic in-memory fixtures; no PostgreSQL connection"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 19,
+    "testFiles": 3,
+    "apiTests": 11,
+    "policyTests": 4,
+    "domainTests": 4,
+    "typecheck": "passed",
+    "build": "passed",
+    "sourceHashesUnchanged": true,
+    "records": {
+      "tests-root-01": {
+        "project": "_Organized Desktop/03 Master Projects/master7",
+        "id": "a1d53294d3b0",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "test",
+          "--",
+          "--pool=threads",
+          "--poolOptions.threads.singleThread=true",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-12T18:52:02.181030+00:00",
+        "status": "complete",
+        "log": "tests-root-01.log",
+        "pid": 32356,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:52:28.353171+00:00",
+        "elapsedSeconds": 26.16
+      },
+      "typecheck-root-01": {
+        "project": "_Organized Desktop/03 Master Projects/master7",
+        "id": "a1d53294d3b0",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-12T18:52:53.073514+00:00",
+        "status": "complete",
+        "log": "typecheck-root-01.log",
+        "pid": 26720,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:53:16.019285+00:00",
+        "elapsedSeconds": 22.9
+      },
+      "build-root-01": {
+        "project": "_Organized Desktop/03 Master Projects/master7",
+        "id": "a1d53294d3b0",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-12T18:54:18.808088+00:00",
+        "status": "complete",
+        "log": "build-root-01.log",
+        "pid": 14364,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T19:01:24.042179+00:00",
+        "elapsedSeconds": 425.22
+      }
+    }
+  },
+  "courseWords": 3814,
+  "courseFiles": 9,
+  "courseLinksChecked": 23,
+  "files": [
+    {
+      "file": "apps/api/src/services.ts",
+      "before_sha256": "3fd568ccc787d55da12c0e969c2c2325dffeac01385a3df791fa6d3a188f99cd",
+      "after_sha256": "ae1165016d77a5a8f32e9edb989724b5183cfc08fff88d7e2f3e7fe901a82cfa"
+    },
+    {
+      "file": "apps/api/src/store.ts",
+      "before_sha256": "35c2d9ca39413c75e5feef7e8dd0462ea23141bb8eef2417295bdf5e9f8d2bbe",
+      "after_sha256": "75d5a6bc6e31ba36543c1e465ebea61200d1d199a1bc81ee1025b454e35b9295"
+    },
+    {
+      "file": "apps/api/src/api.test.ts",
+      "before_sha256": "b8f7ce538f437826def6dfcf15b8168a6ac7b8f1b084610aae3850d5be2471c7",
+      "after_sha256": "fdc702cc1c189fb8bfb590a86c43d3d18565444b4d42605d8602bdd22794aaa0"
+    },
+    {
+      "file": "docs/features/07-audit-log-viewer.md",
+      "before_sha256": "bfce08cd95bacc378d482bd363ed61b278b8ddc9aa2e0d7322e24721e641ea01",
+      "after_sha256": "74255cb2e05392364194b95702a6dcff33e75f5a6f84ab61588ee3ef2fd07fb9"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "331852280fdc61f16c709669857b1b79a53da8d1f62840dd6d5eabf96e60a28e",
+      "after_sha256": "489277c9e0bcbf6622b5a2d964f02df125933f801e3a93c57ebe1d4e7943f8aa"
+    },
+    {
+      "file": "astraupskill/snapshots/services-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "3fd568ccc787d55da12c0e969c2c2325dffeac01385a3df791fa6d3a188f99cd"
+    },
+    {
+      "file": "astraupskill/snapshots/store-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "35c2d9ca39413c75e5feef7e8dd0462ea23141bb8eef2417295bdf5e9f8d2bbe"
+    },
+    {
+      "file": "astraupskill/snapshots/api-tests-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "b8f7ce538f437826def6dfcf15b8168a6ac7b8f1b084610aae3850d5be2471c7"
+    },
+    {
+      "file": "astraupskill/snapshots/audit-feature-before.md.txt",
+      "before_sha256": null,
+      "after_sha256": "bfce08cd95bacc378d482bd363ed61b278b8ddc9aa2e0d7322e24721e641ea01"
+    },
+    {
+      "file": "astraupskill/evidence/root-final-source-hashes.json",
+      "before_sha256": null,
+      "after_sha256": "2796d48bfc586e80e5a0ffb587abd9b5c995e2f31823443d8c552fcc770be421"
+    },
+    {
+      "file": "astraupskill/evidence/install-01.json",
+      "before_sha256": null,
+      "after_sha256": "5e073a3a51e54df5fcfb600b83b9a6c6e4afc45d80a08b3a704d5854f91a6809"
+    },
+    {
+      "file": "astraupskill/evidence/tests-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "83e68fb3c94974932eaa4dc2970710bbb49c5f7a87245b3038031a0d5984a377"
+    },
+    {
+      "file": "astraupskill/evidence/tests-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "d3d3edd753eaca8caf4fbba10ded15ba85936703d30cc4af6e44d11dd30f41ff"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "23c3a9558d375b2ac45a757791c939c61e26737b9e2e31722ceabfd06cd69bc7"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "ccc8a0395c1d7c62dba7db5fb4916180f2b49c53c64383114dc92e5715cf658a"
+    },
+    {
+      "file": "astraupskill/evidence/build-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "11aa7f4c18f7f64e2706533aa244771044e9d3ea844c44738cac280f63f7bc22"
+    },
+    {
+      "file": "astraupskill/evidence/build-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "075098ce2f78692d13be926109abaaffd620277fce6ec367270e4429d06c8ed0"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "1d98a5d3be263ccdddb1a372f68c36a2bd4cc4ecf30d7257b97b9ce2e3c5b3af"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "568a2b43a0b652c0104cae820366f604c677bc56f86b0b4a6780579169b683c0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "874deb417346cae1e4c83824f7e4ee7a6458bfcb6c65fc890f3fd589217c1b91"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "a236f95fb9f0c6b7f6cbb66179d3cbbdc66b9ac08a2ace2dac91acd97f8dbae6"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "14e2ec236a39ae1b520fda340ff5523d89e460f0918533434ce9aafaab9c455e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "68a8c90ac1defd2a6f5bf0bac06383549c48e1152eeb58b4c342300c21f64661"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "05fc4591f581d1e60df968d221cd5ac793157fa278cdac17ecc382b6b3ff3ae8"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e790f2478792915631db6abade69eba642fb36ef43fa9e61b458865e4c2e5766"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "34347312b293c12ef514dfc88f69c036c4050a8dcb79f81dea5beeb215db8e47"
+    }
+  ],
+  "limits": [
+    "The store remains an in-memory teaching implementation with synthetic records.",
+    "No authentication, persistence, notification, or external integration redesign was attempted."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:10:03.521790+00:00"
+}

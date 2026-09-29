@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+  "id": "27a8a1400c49",
+  "command": [
+    "npm.cmd",
+    "run",
+    "prisma:generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+  },
+  "startedAt": "2026-09-19T18:05:17.251683+00:00",
+  "status": "complete",
+  "log": "resume14-generate-01.log",
+  "pid": 17648,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:11:53.315437+00:00",
+  "elapsedSeconds": 395.9
+}

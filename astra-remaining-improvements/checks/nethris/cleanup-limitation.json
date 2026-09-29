@@ -1,0 +1,17 @@
+{
+  "path": "C:/Users/Owner/AppData/Local/Temp/nethris-check-iwwute5q/test.sqlite",
+  "origin": "Private fictional-data database from http-03. All 28 assertions passed; cleanup failed because the Python SQLite context manager committed without closing its connection.",
+  "serverStopped": true,
+  "harnessFixed": "check_api.py now wraps direct SQLite connections in contextlib.closing.",
+  "remainingObservedFiles": ["test.sqlite"],
+  "observedSizeBytes": 196608,
+  "cleanupStatus": "Left untouched after automatic approval review rejected both recursive cleanup and deletion limited to the exact generated file.",
+  "statedReason": "blocked by policy",
+  "doNotRetryDeletion": true,
+  "additionalBlockedAction": {
+    "path": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/71e7b036865c/artifacts/wwwroot/assets/index-DPYsH98L.js",
+    "action": "Removal of an older generated browser bundle during asset replacement",
+    "statedReason": "blocked by policy",
+    "resolution": "The rejected command did not run. Existing build files were preserved, and fresh verification package directories were created under checks/nethris instead."
+  }
+}

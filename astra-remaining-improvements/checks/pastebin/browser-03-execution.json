@@ -1,0 +1,8 @@
+{
+  "command": [
+    "python",
+    "verification/verify_browser.py"
+  ],
+  "exitCode": 1,
+  "seconds": 195.56
+}

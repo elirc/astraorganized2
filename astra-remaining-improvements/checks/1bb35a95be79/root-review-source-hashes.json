@@ -1,0 +1,14 @@
+{
+  "files": {
+    "support-ticketing-app/backend/SupportDesk.Api/Application/Queries/SearchTickets.cs": "f313fca4b8bbd345803a9d2b1656945707c90f2592702479fa9ff2f22a5988fe",
+    "support-ticketing-app/backend/SupportDesk.Api/Domain/Ticket.cs": "c741a27215dc6ab6d22078b231cb32c7ff822e1543da7fcd6949da0a8fc82ad6",
+    "support-ticketing-app/backend/SupportDesk.Api/Infrastructure/InMemoryTicketStore.cs": "11172231d7a6db88a1efb97817eefd40dcfbfe683be501240c121a55ba25a502",
+    "support-ticketing-app/backend/SupportDesk.Api/Realtime/SignalRTicketNotifier.cs": "913cdcca622ae105c6362b2e463fa1a669eb4c35e2ac72a486d09d9599dfe1be",
+    "support-ticketing-app/frontend/package.json": "b5827ef4e422c90c6c25ecfada64bd8c038b3cddf0a0689642dafde92cb5df8a",
+    "support-ticketing-app/frontend/src/api.ts": "db3a3c4f6a3538e17852fd1cca733b7582f207664e110a77865b77a79955d181",
+    "support-ticketing-app/frontend/src/App.tsx": "2fe6a0ac21c7c34a9d8fbb149e4887f7452b638d887fe1388689a67dd7800da2",
+    "support-ticketing-app/backend/SupportDesk.Api.Tests/SupportDesk.Api.Tests.csproj": "cfd746b25c67ac642844032659bf74ec0dd61b5198f4fea91a7974abdb666dad",
+    "support-ticketing-app/backend/SupportDesk.Api.Tests/TicketSafetyTests.cs": "d1a6a898a46f8783dcab1e0d3f04c9f87a46d1096e2fbf32537c156937e0b63c",
+    "support-ticketing-app/frontend/package-lock.json": "1237ca537f976080fa732c15002cf713b2234d71c8fc5dcc245c5419303d7586"
+  }
+}

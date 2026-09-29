@@ -1,0 +1,44 @@
+{
+  "summary": [
+    "Moderation resolution reads through transaction-scoped repositories and conditionally updates the observed OPEN/IN_REVIEW state; stale writes return typed HTTP 409 and cannot create a second terminal audit.",
+    "Strict runtime schemas guard posting creation/decisions, moderation inputs and saved-search create/update, with parsed values used for writes and server-owned identity preserved.",
+    "Posting and moderation pagination now include a deterministic ID tie-break; the Next generated type import matches production build output.",
+    "Expanded the complete suite to 20 passing tests, including synchronized competing reads, rollback-fixture orchestration and actual Prisma predicate/HTTP mapping assertions.",
+    "Replaced mismatched course chapters with nine source-based guides and a new root README, with complete exercises/solutions and explicit database-test limitations."
+  ],
+  "changedFiles": [
+    "src/repositories/moderationCaseRepository.ts",
+    "src/services/moderationService.ts",
+    "tests/unit/moderationService.test.ts",
+    "astraupskill/snapshots/src__services__moderationService.ts.original.txt",
+    "astraupskill/snapshots/src__repositories__moderationCaseRepository.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__moderationSchemas.ts.original.txt",
+    "astraupskill/snapshots/src__services__savedSearchService.ts.original.txt",
+    "astraupskill/snapshots/src__services__postingService.ts.original.txt",
+    "src/repositories/postingRepository.ts",
+    "src/services/postingService.ts",
+    "src/services/savedSearchService.ts",
+    "src/lib/validation/moderationSchemas.ts",
+    "src/lib/validation/postingSchemas.ts",
+    "src/lib/validation/savedSearchSchemas.ts",
+    "tests/unit/boundaries.test.ts",
+    "next-env.d.ts",
+    "README.md",
+    "astraupskill/evidence/resume14-tests-01.json",
+    "astraupskill/evidence/resume14-tests-01.log",
+    "astraupskill/evidence/resume14-types-01.json",
+    "astraupskill/evidence/resume14-types-01.log",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a80284ee08de/resume14-results.json",
+    "expectedTests": 20,
+    "command": "Full Vitest suite and recorded TypeScript/build checks"
+  },
+  "limits": [
+    "The fake transaction helper does not prove database rollback.",
+    "The demo session mechanism and fixtures are training-only."
+  ]
+}

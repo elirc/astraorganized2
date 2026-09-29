@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww3",
+  "id": "5c252a248ab8",
+  "summary": [
+    "Replaced the country-rule repository create call with a composite-key Prisma upsert matching the schema unique constraint.",
+    "Added actual repository runtime coverage for first-write and repeat-write payloads."
+  ],
+  "checks": {
+    "resultsFile": "checks/5c252a248ab8/results-crud-b06.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww3",
+        "id": "5c252a248ab8",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-country-rule-upsert.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5c252a248ab8",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:39:32.730284+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 25396,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:39:37.681968+00:00",
+        "elapsedSeconds": 4.95
+      }
+    ],
+    "limits": [
+      "Actual repository TypeScript executed with explicit Prisma-shaped double; no live database or generated-client typecheck.",
+      "No route, auth, audit, migration, or concurrent transaction test.",
+      "Upsert preserves composite identity and updates mutable fields; audit action semantics remain unchanged."
+    ]
+  },
+  "courseWords": 1789,
+  "courseFiles": 9,
+  "courseLinksChecked": 28,
+  "files": [
+    {
+      "file": "src/repositories/prisma/complianceRepository.ts",
+      "before_sha256": "2db829c58e124ae3d6d8a35095151392f22ef5201ea95e3d16e4a83b880973e3",
+      "after_sha256": "1364c5908a7c90c208ab9e6756f6637e7deabd7568ab63e076c47ba2440a7624"
+    },
+    {
+      "file": "tests/runtime-country-rule-upsert.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "79ff5dea34c224c8f024dc3321a021efbdad05da5ebc8f3ac8ab0215a8f86f96"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-repositories-prisma-complianceRepository.ts.before",
+      "before_sha256": null,
+      "after_sha256": "2db829c58e124ae3d6d8a35095151392f22ef5201ea95e3d16e4a83b880973e3"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "ca0009527cdde17701f7231796b1422e17274a52503e6a3881d027bcb283b352"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "da5fa86700834f8ab4629a8ea4cbb190c01aa890e22c62c1469dcb73bc47b16f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "7857957abd35ee8a941a8100c84154824e2b4fb32f1da1c5c7bd7804a00465d7"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0ed53ee80eaba60ba2e09384250b015926ba3e3a8018b2ade0e7729952ec60bd"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "63210305c6b7bb886e36bff87855e36e54e3b0657a08d9db63bf5aa9e8b3864b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "af2e4533794819c9633778cbb0862c9a2f3b57019f8249c04e018b248b7d0458"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f02572e5b256d4748fb2914888819e779d73c75f816d2610661ee68d4245b7d7"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "54689ff7e4c7354ff3cfeec6ae62610395f493034f45fc91d6899a7ec7b389e0"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "aa02182ab3ac3b5d6674c18a3f952cdb6b54a61efecb5f78d8b828afc14756cb"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "48355de846bfd05612dcd589bd6e4e6b102517fa91dc03c5169422fa757a65a6"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "7a728e5eb9792cba50bac25f10117df576fe1b3405367578412f877891f68c4a"
+    }
+  ],
+  "limits": [
+    "Actual repository TypeScript executed with explicit Prisma-shaped double; no live database or generated-client typecheck.",
+    "No route, auth, audit, migration, or concurrent transaction test.",
+    "Upsert preserves composite identity and updates mutable fields; audit action semantics remain unchanged."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:42:36.669512+00:00"
+}

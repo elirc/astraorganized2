@@ -1,0 +1,32 @@
+{
+  "id": "efb20378d966",
+  "project": "jstrain1",
+  "files": [
+    "server/src/services/userService.js",
+    "tests/runtime-role-duplicates.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/server-src-services-userService.js.before",
+    "astraupskill/evidence/efb20378d966/runtime-role-duplicates.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "Duplicate role IDs were validated using raw array cardinality and could reach unique membership relation writes.",
+    "The fix creates one normalized list and uses it for tenant validation, replacement, and audit metadata."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-role-duplicates.test.mjs",
+    "executedTests": 4,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked persistence contracts; no live Prisma or concurrency claims."
+  ]
+}

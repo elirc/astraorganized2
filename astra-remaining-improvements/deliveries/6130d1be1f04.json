@@ -1,0 +1,245 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e20",
+  "id": "6130d1be1f04",
+  "summary": [
+    "Added versioned customer, supplier, item, warehouse, lead, project, task and timesheet CRUD with current company/role checks, unique codes, reference guards, audit events and a browser workbench.",
+    "Replaced reset-on-restart memory with bounded validated SQLite transactions, rollback on rejected operations, independent-process serialization, random expiring hashed sessions and exclusive setup with generated credentials.",
+    "Fixed partial submissions, identical ledger-line loss, insufficient/reserved stock acceptance, zero-rate handling, accepted invoice cost snapshots, payment reference and overpayment checks, linked document policies, quotation replay, report filtering and entity access.",
+    "Added retained/exportable drafts, conflict handling, scoped reference selectors, responsive forms, nine detailed learning chapters, original workflow regressions, persistence/failure/process checks and reviewed browser screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/erp-suite/results.json",
+    "expectedTests": 46,
+    "environment": "Node 22.16.0, Fastify 5.8.2, TypeScript 5.9.3, Zod 3.25.76, Vitest 3.2.4, builtin SQLite; Chromium 148 in disposable profiles",
+    "command": "npm.cmd run build; npm.cmd test -- --hookTimeout=60000 --testTimeout=90000; python scripts/verify_browser.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 46,
+    "apiTests": 39,
+    "browserScenarios": 7,
+    "visualRechecks": 5,
+    "unitExitCode": 0,
+    "productionBuildPassed": true,
+    "packageLockMatchesPinnedManifest": true,
+    "screenshotsReviewed": 7,
+    "evidence": [
+      "unit-final.json",
+      "unit-execution.json",
+      "unit-final.log",
+      "browser-02/results.json",
+      "browser-03/results.json"
+    ],
+    "buildEvidence": "npm.cmd run build completed with exit code 0 in execution session 39873; only CSS, browser verifier and documentation changed afterward."
+  },
+  "courseWords": 5653,
+  "courseFiles": 9,
+  "courseLinksChecked": 34,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "after_sha256": "38935c23ac9cd0e9230d47a0c0496d525eecc90703cf45980c01481ec1965f8a"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "30e65b7a355a55713e1fa4a85ea58cccc8d2db258f48dce003852d19c927e1fb",
+      "after_sha256": "f24065a2cc6b585da0bb3ea0f4cfed5acda48b0d7833c834996bee6ee9c43ca9"
+    },
+    {
+      "file": "astraupskill/images/01-items-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "370e4c758cac65b6e058d4504d959d24c1c88ea831f167406a2d050cf2a842cb"
+    },
+    {
+      "file": "astraupskill/images/02-project-editor.png",
+      "before_sha256": null,
+      "after_sha256": "2396daf31e0f96d6e33f2204972379363bde5bf24276c4edca6c21de367792fd"
+    },
+    {
+      "file": "astraupskill/images/03-conflict-draft.png",
+      "before_sha256": null,
+      "after_sha256": "8e603d1f7946241aa4813dde507eb5f3225acc47225ad9d52e04638901089719"
+    },
+    {
+      "file": "astraupskill/images/04-auditor-view.png",
+      "before_sha256": null,
+      "after_sha256": "b30467d4526955cdeefd02d66264ba936cf1b6bb2cfc83689dce10294f8287ec"
+    },
+    {
+      "file": "astraupskill/images/05-draft-1440.png",
+      "before_sha256": null,
+      "after_sha256": "b744c46534d21a405e80db1aeb95e1b79f54125ce469432865ab1b82476e0856"
+    },
+    {
+      "file": "astraupskill/images/05-draft-390.png",
+      "before_sha256": null,
+      "after_sha256": "0a860e58f0bd7cd5327bef9e1386be2f3a07ea2c60297512e60e497ec5dd5eb1"
+    },
+    {
+      "file": "astraupskill/images/05-draft-800.png",
+      "before_sha256": null,
+      "after_sha256": "71e626106e8c5bccc3ce5fbc0bd65a52ca7119d25145baeffa785ef2b6c88127"
+    },
+    {
+      "file": "docs/HISTORICAL-README.md",
+      "before_sha256": null,
+      "after_sha256": "7cd361700c3b52e0103f914e7ffe56f93fce6320aacbcf387764e6e67fab4abc"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "975bfdae91a405344db506b94a7318759da98615773970fe0a94a4bc43e99a30",
+      "after_sha256": "fcb252bd789417a0c1adeb329dfd5cad9e5f9a156fe55ccf61bebf466b643f76"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "f42af5942e4452dd0bfc532831564335c788e6f379cfc16886862b4f76fdd44e",
+      "after_sha256": "7b0a0e078bf0a2e7eb491747f35fcc5f0a45c41310c686b9e26589ca064c99a9"
+    },
+    {
+      "file": "public/index.html",
+      "before_sha256": null,
+      "after_sha256": "77928a7c2e4a657d10a95a2356b16ac7829eb5534b94f7c2083ac74ae436d7fa"
+    },
+    {
+      "file": "public/workbench.css",
+      "before_sha256": null,
+      "after_sha256": "6dfff916980942ee9e8fb7286de57d2c9239ca77e3232b1a52ffafeb15e94ca9"
+    },
+    {
+      "file": "public/workbench.js",
+      "before_sha256": null,
+      "after_sha256": "719d275953cb9383dad67c0cdfe1454e22e6c2f20f3a260cfbe9c3e900068b16"
+    },
+    {
+      "file": "scripts/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "154c301bb118035744325be76907e9f8383845bd401870ec4e10cd877a3f0925"
+    },
+    {
+      "file": "src/app.ts",
+      "before_sha256": "aaaa0c0822823789389f4ac4ba13bcb93e0cda07625bdafb3331abf33ba15e3b",
+      "after_sha256": "3ece8ebd86167f88a6dbf891d79fab503a8a1b18d0970dc87539ced04df134f0"
+    },
+    {
+      "file": "src/domain/database.ts",
+      "before_sha256": null,
+      "after_sha256": "fa293cf5bb9b6310ca74a965c62a7f6217af58542d82a5aec6db1882ae622a30"
+    },
+    {
+      "file": "src/domain/erp-service.ts",
+      "before_sha256": "2e7fa39bf3e35e13f7eec2ae8d5d52133ddade6bdb5d38097d5e192c0a639491",
+      "after_sha256": "88619f2432adb51ac67a6746d40b8fca7f564bc90096dc32a54621dddc672798"
+    },
+    {
+      "file": "src/domain/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "5fc17ff5cd2e14e7ad8be910ac5e168f12d4d2e073bb58d4466e5795b0b0a3f4"
+    },
+    {
+      "file": "src/domain/models.ts",
+      "before_sha256": "f987fb3633b1cc7395a5952f0603a7e26d0d2525c44980f3c8b198abf3c0c255",
+      "after_sha256": "c5183beaa29e4a4924e916ceb1a7511ee9200ec4fff61e150c05b1c5a5d36f46"
+    },
+    {
+      "file": "src/domain/security.ts",
+      "before_sha256": null,
+      "after_sha256": "d6b372c52fcd2f10771554ae1b7276e73f33692ff8f2a6a870cb815b2c93e49c"
+    },
+    {
+      "file": "src/domain/state-schema.ts",
+      "before_sha256": null,
+      "after_sha256": "7b78a78b9549389f2d9eb9879478cc31263569c14d3bf2d2dd79174db0caa48c"
+    },
+    {
+      "file": "src/domain/store.ts",
+      "before_sha256": "5a00ee424751437a0d5276931613167a866835c3a11af278a23e0e6c56ae1f2e",
+      "after_sha256": "e815e93ff7fc51bab854b3ba0a097bef9d450f1ef8fd1bf63e090308eed130e3"
+    },
+    {
+      "file": "src/server.ts",
+      "before_sha256": "8d2977b5b76756e3d4837c54e801b22fdc3550433dbd6d16c92b5e1c264f4007",
+      "after_sha256": "6db3117951ce7541560e1670e898f969ec204a1cd2ccd30c761ceb268097b6dc"
+    },
+    {
+      "file": "src/setup.ts",
+      "before_sha256": null,
+      "after_sha256": "1071f99edbdc9d41af59440c59935027e33feecce8f17ac1f9ed7b3ef934bf1c"
+    },
+    {
+      "file": "tests/concurrency.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8c1f66e340f630772afbca4360c4f18abb064976f5c7dabc94c888979551f80d"
+    },
+    {
+      "file": "tests/erp.test.ts",
+      "before_sha256": "64defc7403f83fcd42bfea93720cd59bceb18702c3b8fa174214247e3e829020",
+      "after_sha256": "25375f043f00710910d230b72403a242df819b75d7329efcd909649f04e22bf2"
+    },
+    {
+      "file": "tests/integrity.test.ts",
+      "before_sha256": null,
+      "after_sha256": "14d83bba5e44ad94dc8afe81c706731c8998c330b28c468d43d56ca37fcf24d5"
+    },
+    {
+      "file": "tests/request-worker.ts",
+      "before_sha256": null,
+      "after_sha256": "fbc3873c4f721d5b8ecda76378d26ee7d7da3218e01052e4f5942b2da99eb074"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6d935009b247fc55cf6caf2d6174d5df369c4a4004c0b39c40d9ae1bb7f41fd7"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "51f81c57b523249dfe5c7b9176f56a9b756f965c0a883dcb8f73f8bf48797847"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "777ab895baa5d68664985206ace823e360b2ffee4e0ea3ae4a76c5d20d71236c"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "50600739e8a71ebbd8bd517f6fbf0093ee420413d22e2333fccb132142b20b95"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ab91166ac30e2c8f9a9ded7272496284178ea32dca13cc0e61e3b0483f38cb55"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "56527534488a95d39fb4420c7f668547d1488e5c0694f531bb71c16e48d8596e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7af8fbba65daeabfa52638c60c6048b4ec99df70e9b52bf4cdaa18904551149d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "52c5290a42a0557789f92c08534cfd3ae59f18b8c20a6ab2bae6e216182cb107"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "f38093039a48de47ab18f6d2153f3b83d79a929f7a85a1c55a1d1f4e60bfe57b"
+    }
+  ],
+  "limits": [
+    "Local loopback teaching application with a synchronous JSON aggregate in SQLite, 20 MiB workspace, 10000 records per collection and 1000 sessions; not normalized or horizontally scaled storage.",
+    "Illustrative USD accounting with whole stock units, purchase rates on receipts and accepted standard costs on sales; no valuation variance reconciliation, taxes, period closing, real payments, bank integration or statutory accounting certification. Stock adjustments are not a complete accounting journal.",
+    "Linked documents require complete matching quantities and rates; no partial fulfillment, reversals, manufacturing or reconciliation workflows. Submitted-document replay is supported; durable create-request idempotency is not.",
+    "No account provisioning UI, password recovery, MFA, refresh rotation, distributed rate limits or public deployment. Browser focuses on master and project CRUD; operational posting remains API workflows. Inactive-party policy is a documented extension exercise.",
+    "Drafts and tokens remain in tab memory; exports are for manual review, not automatic restoration. No all-browser, full accessibility, power-loss or production certification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T18:45:06.948942+00:00"
+}

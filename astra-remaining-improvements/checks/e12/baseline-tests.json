@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-reporter=tap",
+    "test/evaluation.test.js",
+    "test/services.test.js"
+  ],
+  "exitCode": 0,
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "nodeReportedMilliseconds": 10498.0808
+}

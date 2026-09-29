@@ -1,0 +1,48 @@
+{
+  "summary": [
+    "Rejects malformed quote requests and undefined employment types at the application boundary, normalizes country and currency codes, and safely rounds and checks decimal arithmetic.",
+    "Stops quote creation from synthesizing client side success after backend rejection or outage; parses ProblemDetails and gives QuoteBuilder accessible error, retry, loading, and stale quote behavior.",
+    "Adds focused calculator regression tests for rejection, normalization, rounding, and copied requirements, plus nine substantive astraupskill chapters tracing the real request flow.",
+    "Repairs API restore by selecting patched Microsoft.OpenApi 2.7.5 without suppressing warnings; final API and web builds pass."
+  ],
+  "changedFiles": [
+    "Directory.Packages.props",
+    "README.md",
+    "src/PeblClone.Api/PeblClone.Api.csproj",
+    "src/PeblClone.Application/Workforce/HiringQuoteCalculator.cs",
+    "src/PeblClone.Web/src/features/QuoteBuilder.tsx",
+    "src/PeblClone.Web/src/services/workforceApi.ts",
+    "tests/PeblClone.Application.Tests/HiringQuoteCalculatorTests.cs",
+    "src/PeblClone.Web/src/services/requestGate.ts",
+    "src/PeblClone.Web/tests/request-gate.test.mjs",
+    "astraupskill/snapshots/Directory.Packages.props.before.txt",
+    "astraupskill/snapshots/HiringQuoteCalculator-before.cs.txt",
+    "astraupskill/snapshots/HiringQuoteCalculatorTests-before.cs.txt",
+    "astraupskill/snapshots/QuoteBuilder-before.tsx.txt",
+    "astraupskill/snapshots/src__PeblClone.Api__PeblClone.Api.csproj.before.txt",
+    "astraupskill/snapshots/workforceApi-before.ts.txt",
+    "astraupskill/evidence/application-tests.trx",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-api-build-02.json",
+    "astraupskill/evidence/root-api-build-02.log",
+    "astraupskill/evidence/root-dotnet-test-02.json",
+    "astraupskill/evidence/root-dotnet-test-02.log",
+    "astraupskill/evidence/root-request-tests-01.json",
+    "astraupskill/evidence/root-request-tests-01.log",
+    "astraupskill/evidence/root-restore-01.json",
+    "astraupskill/evidence/root-restore-01.log",
+    "astraupskill/evidence/root-web-build-03.json",
+    "astraupskill/evidence/root-web-build-03.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9e7b2d32e0fb/results.json",
+    "expectedTests": 17
+  },
+  "limits": [
+    "Country profiles, pricing rates and currency labels are synthetic; no currency conversion or payroll/compliance verification.",
+    "No authentication, quote persistence, database, audit log or external provider is added. Dashboard retains its labeled mock fallback.",
+    "The three Node tests exercise the real request gate with deferred promises, not mounted React; endpoint HTTP behavior and browser interactions remain source-reviewed.",
+    "Decimal costs are rounded to two places but compensation and total retain submitted precision. Current arithmetic case is not a midpoint-specific rounding test; cancellation and duplicate-profile invariants are untested extensions."
+  ]
+}

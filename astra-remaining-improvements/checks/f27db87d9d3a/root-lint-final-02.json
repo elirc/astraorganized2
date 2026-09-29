@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z1",
+  "id": "f27db87d9d3a",
+  "command": [
+    "cmd",
+    "/c",
+    "npm",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f27db87d9d3a",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:48:44.280395+00:00",
+  "status": "complete",
+  "log": "root-lint-final-02.log",
+  "pid": 39196,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T00:55:09.939610+00:00",
+  "elapsedSeconds": 385.65
+}

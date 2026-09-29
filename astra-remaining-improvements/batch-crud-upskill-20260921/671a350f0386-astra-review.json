@@ -1,0 +1,31 @@
+{
+  "id": "671a350f0386",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:04:11.807326+00:00",
+  "sourceReview": "Read workflow service, actual ownership/status/readiness helpers and AppError. Equality return follows ownership and transition check; new activation still validates. No encompassing update/audit transaction.",
+  "teachingReview": "Read all nine chapters, corrected isolated-fixture claims, actual helper scope and non-admin ownership example; documented no-op skips readiness/scheduling and distinct concurrency limits.",
+  "testReview": "Six isolated actual-service cases passed with real policies/errors: four equal states, foreign/missing, exact changed-status payload, invalidedge, readiness and update/audit failures. No DB or cron execution.",
+  "specSHA256": "c17a670fb563536b6c23a31963c94d99dd59f99bbe15812d34996486450071c4",
+  "fileHashes": {
+    "src/services/workflow-definition-service.ts": "351428a1d269775dcb6c0e4a74b7300d03488894d718c7a3bd3e1b4ed5404091",
+    "tests/runtime-workflow-same-status.test.mjs": "3b80bfc1a76e0299cfa45500147cba539cda5c772b31fbb118f4ae14f5520f4c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-services-workflow-definition-service.ts.before": "745b70d84ed4c829982705ea2944a6560c47bc67efb578be2acd26110568a6fe",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "601f765e86fb9c7620a5362f177c78d940030abb3eccdb56a2c39ba3d4db510f",
+    "astraupskill/evidence/results.json": "4a70ab23d15e3ebc17ca6b1a2a6d06cfde6d54a334bcad77e23f005ceab1132a",
+    "astraupskill/README.md": "f8d150b4fca04df60c5d2098969486b2e19983a246d822c4f2fbd2de44254c50",
+    "astraupskill/01-CODEBASE-MAP.md": "f957eb459d1824ec548fe6a59848d2bc7dbd64fcc1c624e073d7af399869cd71",
+    "astraupskill/02-CONCEPTS.md": "bbdc85a4fe79953d181b8c7d558d9a95305fb0d10bb4fc7d9d8d5c9cc0b8b8f1",
+    "astraupskill/03-WORKED-CHANGE.md": "1c0ceae9e5ac0774a1ece083936d5b8db5df29d3c2b583b04fb79389baf96e35",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "b9413789cc87826ede8709cb93c0a9d463d8bafe1b942ce6fdd1768bc393a6db",
+    "astraupskill/05-PRACTICE.md": "50cfb7274cac097f4bf0abeae7bb666db7803eabab5dac3a4305ed9eaa9981f4",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "a2e723cb69afbb1003a79536ae70f40a87087dfd0701e00cd6d060ee4d06f2a1",
+    "astraupskill/07-TRACE-LAB.md": "6e302c40e4037565046418a2f6ab0726ba0feed6589164dcfe8ec4cfbff5fd95",
+    "astraupskill/VERIFICATION.md": "a536cc3cc82d760e31334d3cf1d6e0a7d1da81024f544092f580bd756cf3ffec"
+  },
+  "evidenceHashes": {
+    "checks/671a350f0386/crud-b07-astra-runtime.json": "d84376705a636ae6a128973259f5eeaea528b7acae64bae850b45a2b0bf1549b",
+    "checks/671a350f0386/crud-b07-astra-runtime.log": "601f765e86fb9c7620a5362f177c78d940030abb3eccdb56a2c39ba3d4db510f",
+    "checks/671a350f0386/results-crud-b07.json": "4a70ab23d15e3ebc17ca6b1a2a6d06cfde6d54a334bcad77e23f005ceab1132a"
+  }
+}

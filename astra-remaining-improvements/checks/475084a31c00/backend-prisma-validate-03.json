@@ -1,0 +1,21 @@
+{
+  "project": "grokbuildppmproject",
+  "id": "475084a31c00",
+  "command": [
+    "npx.cmd",
+    "prisma",
+    "validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\475084a31c00\\backend",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://user:pass@127.0.0.1:5432/ppm"
+  },
+  "startedAt": "2026-09-12T19:43:27.183989+00:00",
+  "status": "complete",
+  "log": "backend-prisma-validate-03.log",
+  "pid": 5372,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T19:44:17.869508+00:00",
+  "elapsedSeconds": 50.67
+}

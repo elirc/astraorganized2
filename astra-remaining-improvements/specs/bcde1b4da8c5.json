@@ -1,0 +1,21 @@
+{
+  "summary": [
+    "Five actual product-service cases cover create payload, duplicate and missing refusal, late failure, read/update and soft deactivation.",
+    "Add nine source-grounded teaching chapters with predictions, worked fixtures, separate practice/solutions and evidence limits; no production behavior changed."
+  ],
+  "changedFiles": [
+    "tests/products-service.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/products.service.ts.original.txt",
+    "tests/app-error.test.mjs",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/bcde1b4da8c5/runtime-b085.json"
+  },
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ]
+}

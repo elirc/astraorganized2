@@ -1,0 +1,28 @@
+{
+  "project": "aiheartbeat",
+  "id": "9e1958f807df",
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--no-audit",
+    "--no-fund",
+    "--prefer-offline",
+    "--cache",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+  "startedAt": "2026-09-12T18:22:47Z",
+  "finishedAt": "2026-09-12T18:31:54Z",
+  "elapsedSeconds": 547,
+  "status": "complete",
+  "pid": 23780,
+  "exitCode": 0,
+  "passed": true,
+  "log": "install-03.log",
+  "notes": [
+    "Normal install with lifecycle scripts enabled; no --ignore-scripts flag.",
+    "npm debug log records verbose exit 0 and info ok after adding 93 packages.",
+    "The outer PowerShell redirection surfaced npm stderr warnings as NativeCommandError and returned wrapper code 1; this is not npm's exit code.",
+    "npm warned repeatedly that the lockfile was invalid or damaged while reifying; package-lock.json was not changed."
+  ]
+}

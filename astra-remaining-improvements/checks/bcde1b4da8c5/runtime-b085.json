@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/07 Anti Projects/antiinv",
+      "id": "bcde1b4da8c5",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/products-service.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\bcde1b4da8c5",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T04:40:48.382663+00:00",
+      "status": "complete",
+      "log": "crud-b08-astra-runtime.log",
+      "pid": 22608,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T04:40:57.337723+00:00",
+      "elapsedSeconds": 8.95
+    }
+  ],
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ]
+}

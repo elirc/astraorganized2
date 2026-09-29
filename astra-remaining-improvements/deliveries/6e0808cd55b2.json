@@ -1,0 +1,195 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildsubbox",
+  "id": "6e0808cd55b2",
+  "summary": [
+    "Added versioned inventory, plan and subscriber CRUD, normalized unique email, editable preferences and ratings, history-aware deletion, archive/status changes, literal search and pagination.",
+    "Replaced hard-coded stock subtraction and duplicate batch creation with atomic one-unit-per-item reservations, exact plan counts, hard tag exclusions, accepted quote snapshots, request replay and subscriber-month uniqueness.",
+    "Implemented Reserved/Packed/Shipped/Delivered/Cancelled transitions with tracking requirements, expected versions, ordered retained history and stock restoration exactly once before dispatch.",
+    "Added bounded validated browser persistence, cooperative locks and raw-baseline conflicts, retained/exportable drafts, explicit reviewed recovery, responsive repairs, nine detailed learning documents and seven reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/parcelpilot/results.json",
+    "expectedTests": 54,
+    "environment": "Node 22.16.0, React 19.2.6, Vite 8.0.14, @vitejs/plugin-react 6.0.2; Chromium 148 in disposable profiles",
+    "command": "npm.cmd test; npm.cmd run build; python scripts/verify_browser.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 54,
+    "unitTests": 36,
+    "browserScenarios": 18,
+    "productionBuildPassed": true,
+    "packageLockMatchesPinnedManifest": true,
+    "screenshotsReviewed": 7,
+    "browserResults": "browser-verified/results.json"
+  },
+  "courseWords": 4843,
+  "courseFiles": 9,
+  "courseLinksChecked": 29,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+      "after_sha256": "816276c8efca9126b65d65b0004cdf305af62bc4e75840a255599c3f58938a7f"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "b054cf3d5d2f7f6c10cff5599d62da4da87c74031f02b90c87f994ad796aa0d8"
+    },
+    {
+      "file": "astraupskill/images/builder-390.png",
+      "before_sha256": null,
+      "after_sha256": "6797a329e1f5e1bbecf5f905b8b1132b350c28c1eccacf23fc1f05fdba846201"
+    },
+    {
+      "file": "astraupskill/images/editor-1440.png",
+      "before_sha256": null,
+      "after_sha256": "8c6cfb162e9d1e0bdf088fa5edb583f69e33fc10e8996dda6299bfed164e23ad"
+    },
+    {
+      "file": "astraupskill/images/editor-390.png",
+      "before_sha256": null,
+      "after_sha256": "2823e58e145a58c15470f2119012b2bcf8bada1fdd15c65f2435de89522e0f94"
+    },
+    {
+      "file": "astraupskill/images/editor-800.png",
+      "before_sha256": null,
+      "after_sha256": "f45c4e2d56735fc31a8033c720b993a5c0451045fd693b4eadf9482acdcb54c0"
+    },
+    {
+      "file": "astraupskill/images/overview-1440.png",
+      "before_sha256": null,
+      "after_sha256": "bcc27e5c2c8d92d568ef39d5d492e7ed564bec504cb519ac8f7bff2b54990162"
+    },
+    {
+      "file": "astraupskill/images/overview-390.png",
+      "before_sha256": null,
+      "after_sha256": "5c29f2fc298fa85694014af7e84d8236dc5d7d5fb4a3717b42f61ba4e22cc44b"
+    },
+    {
+      "file": "astraupskill/images/overview-800.png",
+      "before_sha256": null,
+      "after_sha256": "5b60122afb5bf0b94f5f1b27e7f75b0879c1d8c1c9b795f953bd7a70dfda75ec"
+    },
+    {
+      "file": "index.html",
+      "before_sha256": "fcf1b97844a62de6e91b9b0e80a13a4c194a05a5162500a201d23d9c5778bac3",
+      "after_sha256": "9fc628a075a8efdec91a449ef996aed8c380fec1455370ce21d914442a26b893"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "6dbe789bb563a94ea316c84327533ae4257915318234b894bfff97176f96e689",
+      "after_sha256": "eca577bea0d1837d3b4acdbf4b2ae4aaddd1632812875795ca99021884c1c8da"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "688d25cace74b7d712bddc0767549e289f92dd5cc3e67dfe6702df7ccac066a8",
+      "after_sha256": "0edbabab65ca76d704f06fe9059a788dc6c0a043fba4c546bf17f61c5a25625a"
+    },
+    {
+      "file": "scripts/make-initial.mjs",
+      "before_sha256": null,
+      "after_sha256": "c33c6a62030ee4482c2f5614271f418e1d5595e8e5e686b74717311d41fa0a7e"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f89b31bf8a1a80c59caf757742029e312fc8230788f022fb45a2c692b7b33b49"
+    },
+    {
+      "file": "scripts/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "20c3798d958ff2899accdf31aab9f47f5ebfc3b16e0a5ed128ed3ee6b4a4b115"
+    },
+    {
+      "file": "src/App.jsx",
+      "before_sha256": "af672c0a8c8b0e0a044d81950a74f63816c9110a3fa1c7ae3d3b24bc421e004e",
+      "after_sha256": "936f9f7ed61906d721d6743d2f2e0a4446376613e9888a9932b011a2f6a3e59a"
+    },
+    {
+      "file": "src/CatalogEditor.jsx",
+      "before_sha256": null,
+      "after_sha256": "837bb9a8d26e76818b60f4739e332a30b4fffee6084e197d7b523c611efb8d7e"
+    },
+    {
+      "file": "src/initial.js",
+      "before_sha256": null,
+      "after_sha256": "0209cf2c7c87d197e6a2587218c98e48db0cb015aec4c42b3d3d2f48c15fde2f"
+    },
+    {
+      "file": "src/model.js",
+      "before_sha256": null,
+      "after_sha256": "63a601cf1350bada0089c6d5f87136809bbd6413f34a935b2b6c98e27a31405e"
+    },
+    {
+      "file": "src/repository.js",
+      "before_sha256": null,
+      "after_sha256": "0627db7e037243ed3e08458fec7f33dcaafe123cd06f1a2f0c8742b3f59232fd"
+    },
+    {
+      "file": "src/style.css",
+      "before_sha256": "507c0f7c8fb1fda9a289e08c5dbb0ae808dc52afc07f1e855c60325db8b12e85",
+      "after_sha256": "8a96997e76b11a9b4b15cfe680c6fc621ef8f3e103d4c130312884720eb548b5"
+    },
+    {
+      "file": "test/model.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "5e6695454cf57bf810cbd17d89110ec5883518f2069caad2ace6681c3949e0a2"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6248608a681251ff67d900da153db8e4fdd5604b02461bef6d673ad28c3b72b4"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e2fb1b45046f528d1102223d85a617059cf4756a8eb2a95a441e04fc39aae787"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "7b22ec87982ef3ba70e270a63d40dac54cba34c4141ce5e485b5ae7b4ab2807e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "d8b3c72e85ae21e201135f24ee6108fb3bbf24b2841a26e8020e699f2b8797bf"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "48f5b4d460557aa21ed35c675a6f9bb2bd40103b0bab4d6a994c3043e7d0f41a"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3f0ad8879ce1fe9555f9bd87dd5e2cfdb08361e0ae234ebac24c7132f92c2326"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "296324a97a0498155aa3be56511ca052352dddd432c09c482e8f780c64f62c98"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "b26cbefdfd5585280c2741f5389494206ac0682eda67e20dbe18c0e664d08512"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ab797f02303d539fc3a8b74f6bb4b43190f89b600fb7675d53bc1400aad0447a"
+    }
+  ],
+  "limits": [
+    "Local browser workflow without authentication, server authorization, SQL, real payments, recurring billing, tax, notifications, carrier booking or physical inventory reconciliation.",
+    "Manual stock adjustments have versions but no complete movement journal; same-cycle replacements, a skip ledger and returns are unimplemented. Cancelled subscriber-month history remains unique.",
+    "Cooperative same-origin locks and localStorage do not protect against profile access or scripts bypassing the repository; no power-loss, all-browser, full accessibility or deployment certification.",
+    "Aggregate capped at 4 MiB, 1000 items, 100 plans, 1000 subscribers and 2000 shipments. Drafts and frozen attempts remain in tab memory; exports are for manual review, not automatic draft import or durable resumption. Reviewed backup replacement can remove records absent from the file."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T16:00:36.499270+00:00"
+}

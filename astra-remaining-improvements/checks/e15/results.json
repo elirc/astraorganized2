@@ -1,0 +1,157 @@
+{
+  "passed": true,
+  "total": 176,
+  "backend": 156,
+  "browser": 15,
+  "rendering": 5,
+  "backendMethod": "Union of full-01 and reply-timers-01 test identities; repeated regression cases counted once.",
+  "cleanInstall": {
+    "passed": true,
+    "smokeTests": 53,
+    "wheelAssets": 7,
+    "repeatedTestsCountedAgain": false
+  },
+  "screenshots": 9,
+  "gates": {
+    "full": {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "tests",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\full-01\\pytest-temp",
+        "--junitxml",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\full-01\\results.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 490.31
+    },
+    "timerRegression": {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "-m",
+        "pytest",
+        "tests/test_reply_timers.py",
+        "tests/test_crud_and_files.py",
+        "tests/test_mvp.py",
+        "-q",
+        "--basetemp",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\reply-timers-01\\pytest-temp",
+        "--junitxml",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\reply-timers-01\\results.xml"
+      ],
+      "exitCode": 0,
+      "seconds": 283.75
+    },
+    "browser": {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "verification/verify_browser.py"
+      ],
+      "exitCode": 0,
+      "seconds": 444.53
+    },
+    "rendering": {
+      "command": [
+        "C:\\Python313\\python.exe",
+        "verification/verify_rendering.py"
+      ],
+      "exitCode": 0,
+      "seconds": 73.85
+    },
+    "install": [
+      {
+        "name": "venv",
+        "command": [
+          "C:\\Python313\\python.exe",
+          "-m",
+          "venv",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv"
+        ],
+        "exitCode": 0,
+        "seconds": 395.07
+      },
+      {
+        "name": "dependencies",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "-r",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf\\requirements.lock"
+        ],
+        "exitCode": 0,
+        "seconds": 1077.43
+      },
+      {
+        "name": "editable",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "install",
+          "--disable-pip-version-check",
+          "--no-deps",
+          "-e",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf"
+        ],
+        "exitCode": 0,
+        "seconds": 643.16
+      },
+      {
+        "name": "dependency-check",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "check"
+        ],
+        "exitCode": 0,
+        "seconds": 29.86
+      },
+      {
+        "name": "wheel",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pip",
+          "wheel",
+          "--disable-pip-version-check",
+          "--no-deps",
+          "--wheel-dir",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\wheels",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf"
+        ],
+        "exitCode": 0,
+        "seconds": 473.48
+      },
+      {
+        "name": "smoke",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "tests/test_contracts.py",
+          "tests/test_http_boundary.py",
+          "tests/test_reply_timers.py",
+          "-q",
+          "--basetemp",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\pytest-temp",
+          "--junitxml",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\results.xml"
+        ],
+        "exitCode": 0,
+        "seconds": 154.3
+      }
+    ]
+  },
+  "limits": [
+    "Loopback local application; no production deployment or external message delivery.",
+    "No account invitation/password reset/verified identity migration or automation scheduler.",
+    "No all-browser, power-loss, unknown-schema or malware-scanning certification."
+  ]
+}

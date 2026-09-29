@@ -1,0 +1,191 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildgum",
+  "id": "a1752d846946",
+  "summary": [
+    "Replaced inactive catalog controls with versioned product and discount CRUD, archive/restore, confirmed history-aware deletion, literal search and retained editor drafts.",
+    "Added bounded validated local persistence, Web Locks and raw-baseline conflict detection, explicit reviewed backup replacement and corrupt-byte recovery without touching legacy cart data.",
+    "Implemented exact-cent quantities and discounts, immutable simulated receipt snapshots, request-key replay after lost acknowledgement, cancellation and paginated searchable receipt history.",
+    "Preserved the original visual palette and fictional collection, removed unsupported payment/tax/fulfillment claims, fixed text navigation at narrow widths, and added nine detailed learning documents with six reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/buildgum/results.json",
+    "expectedTests": 59,
+    "environment": "Node 22.16.0, TypeScript 6.0.3, React 19.2.6, Vite 8.0.14; Chromium 148 in isolated profiles",
+    "command": "npm.cmd test; npm.cmd run build; python scripts/verify_browser.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 59,
+    "unitTests": 44,
+    "browserScenarios": 15,
+    "productionBuildPassed": true,
+    "packageLockMatchesPinnedManifest": true,
+    "screenshotsReviewed": 6,
+    "browserResults": "browser-verified/results.json",
+    "limits": "Local browser simulation; no authentication, server, payment, tax, recurring billing, delivery, full accessibility or power-loss certification."
+  },
+  "courseWords": 4910,
+  "courseFiles": 9,
+  "courseLinksChecked": 28,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+      "after_sha256": "c2526ee0bac710e8392fa15783813ffb680eee98a63d4580374601b97b59def7"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "48afc2950194a2bded3be71723ea06bd3581a3ef3056df775cd958e1d740c5f3",
+      "after_sha256": "f8141bf0c67f322ca4b8d49a3dc5db858ba073ec2ae9144faa650a81e628601a"
+    },
+    {
+      "file": "astraupskill/images/editor-1440.png",
+      "before_sha256": null,
+      "after_sha256": "7d1551db36fb31e49b2ce00d69965a8c7d7bce705ce6324d5ad349fd3645bb99"
+    },
+    {
+      "file": "astraupskill/images/editor-390.png",
+      "before_sha256": null,
+      "after_sha256": "e3ff40bf6a1bd691be6b2938580f283c48e3702de75290b5b0177e818329da57"
+    },
+    {
+      "file": "astraupskill/images/editor-800.png",
+      "before_sha256": null,
+      "after_sha256": "85c906015bb559992543c56c8110f42d85744ce401bcfa907eb6e0d4aa0dd613"
+    },
+    {
+      "file": "astraupskill/images/storefront-1440.png",
+      "before_sha256": null,
+      "after_sha256": "b4942d3c1a88c44ce71a0d3c0b7109e4834e9aa7b62445b658914fc3e1931d48"
+    },
+    {
+      "file": "astraupskill/images/storefront-390.png",
+      "before_sha256": null,
+      "after_sha256": "fe30db86286858d8ab42fc1728952c52fcf9536398fcdfac6ee41dbc9d2273ba"
+    },
+    {
+      "file": "astraupskill/images/storefront-800.png",
+      "before_sha256": null,
+      "after_sha256": "2d589c26954f2a91b8f7562bc364fc191b9e0614fafae8c317d70bd838558d63"
+    },
+    {
+      "file": "docs/HISTORICAL-README.md",
+      "before_sha256": null,
+      "after_sha256": "48afc2950194a2bded3be71723ea06bd3581a3ef3056df775cd958e1d740c5f3"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "74d16daba6b21147a536dda3899c4df10c7136262909a2b59204bd570f7d71b8",
+      "after_sha256": "6ccb6f9e12614dc5ce05d52c7512d03fe0695a9102591b5646eb7f5e774d4c2e"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "cc87bc072c41c59ceebea5c5f74b3aec0da7782f08affbb47a14a73e1b6c1075",
+      "after_sha256": "05f562c58cfc9f5f880f7311cb2a67a21e0fe4ffb75e2e78384ae0850afcb8ab"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "before_sha256": null,
+      "after_sha256": "671a4d0c183b67c258903c9334a0b65b82888bd1ed8229b831a5227cb300d490"
+    },
+    {
+      "file": "scripts/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "5e0dc0db322083cde986fc28463841fb1a2fc3c34165d67d0dbd70895a72f5f1"
+    },
+    {
+      "file": "src/App.tsx",
+      "before_sha256": "7b23f936e1e2057dedaaef8b6b4525e312cd031287f6c38b67d582ffa70b9ad1",
+      "after_sha256": "f8ea8d4bd3b6b8c6e3176c5e5336a223fe9a56ab567c439a79d3b7637c217e5b"
+    },
+    {
+      "file": "src/initial.ts",
+      "before_sha256": null,
+      "after_sha256": "1c900683697cadcd129e45c4d39c70f06df9c9e20c0f8c839a6f1fc0e90dbb4f"
+    },
+    {
+      "file": "src/model.ts",
+      "before_sha256": null,
+      "after_sha256": "1979acccf1e9c94f7650a7c532c543a4092bffe18a935d9188c0bee1fbec5372"
+    },
+    {
+      "file": "src/repository.ts",
+      "before_sha256": null,
+      "after_sha256": "383c4a15c2191a1f0eb68dc25f78b5b75594dc880fc7a3c1183990f0336e0cbd"
+    },
+    {
+      "file": "src/style.css",
+      "before_sha256": "9867727cfba1a07045e0d7a45c268637e2b794047984dfec99defb90a4a7d303",
+      "after_sha256": "8391ff73a6938d42162682625587697a01f5cae1a38b8974c56c81d2ba3f9d64"
+    },
+    {
+      "file": "test/model.cjs",
+      "before_sha256": null,
+      "after_sha256": "0b6c688bf42395bb0d20d59abe2ddc06fdb171e1aef205241cf477041791ac80"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "cdd99916396b673edbc30dc81585595db2c8a1ca0d8e702410dcbad2cf0fe8d1",
+      "after_sha256": "a3790a201368269d93bb3f81bcf428ae73776a9994325326ea7a59433e93da68"
+    },
+    {
+      "file": "tsconfig.test.json",
+      "before_sha256": null,
+      "after_sha256": "5cf6f28212ac2060f0c32964ee76ca2e89c2736b6208678ccd0fab236976ee6f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c9985f4281718d9883728c31b17879ba4df05059b8f02a46f409eb8ba5a3e5d1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "42a9325a2f64a0881d33c61b5e04bb4c74b5222a1748833cb0f3401c16781177"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "c7df08d3cac8e54c069e16cdb175667a994f344d0d38f0f7cfc9a0d682ee9f44"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "09e4bc9da97b6edb460400d90932b4d4c90def98aeb758d2fefaa98f4d82bc15"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e40db3347da0799359fde11aef64658f46a06ee61b570ef13a04aff3631d2090"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a0cd83477c9faddb3b67817a6596d33a2679c0fb0a99f59b0551662f6b5691b4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "127d9d11605de7702d4c02933d5d0efea2b750f79e20cc31a4b53640fd66c0d5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f8922f44ab4431e79d114afc856d455e1a493bcef808fe998d38ab130cf93db5"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "3945d3e490d77cd06f72d8137a68a8c2b24763b00c6ab995578304df7fde2d6b"
+    }
+  ],
+  "limits": [
+    "Browser-only local simulation without accounts, server authorization, SQL, payments, recurring billing, taxes, stock, refunds or delivery.",
+    "Cooperative Web Locks and localStorage do not protect against other scripts or profile access; no full accessibility, all-browser, power-loss or deployment certification.",
+    "Whole JSON workspace is bounded to 4 MiB, 1000 products, 200 codes and 2000 receipts; all writes use a conservative whole-workspace baseline.",
+    "Cart, editor and retry drafts remain in tab memory; exports are for manual review, not automatic draft import. Abandoning an uncertain request and using a new key can create another receipt. Backup replacement can remove current records absent from the backup."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T15:20:58.941899+00:00"
+}

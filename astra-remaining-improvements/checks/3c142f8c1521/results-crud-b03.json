@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/D2",
+      "id": "3c142f8c1521",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-review-metadata.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3c142f8c1521",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T01:34:32.232323+00:00",
+      "status": "complete",
+      "log": "crud-b03-astra-runtime.log",
+      "pid": 29748,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T01:34:39.680991+00:00",
+      "elapsedSeconds": 7.45
+    }
+  ],
+  "limits": [
+    "Tests execute the actual POST route using explicit ORM, Zod parser, ingestion and NextResponse adapter doubles.",
+    "No PostgreSQL, GitHub ingestion, native Next.js or real Zod validation was executed.",
+    "The existing review creation and rules writes are separate operations; this bounded metadata correction does not add atomic transactions or prevent an incomplete pending review on a later failure."
+  ]
+}

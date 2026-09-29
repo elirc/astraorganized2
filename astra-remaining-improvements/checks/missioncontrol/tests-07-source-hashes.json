@@ -1,0 +1,97 @@
+{
+  "project": "missioncontrol",
+  "id": "ee8b0b1a6855",
+  "sourceRoot": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ee8b0b1a6855",
+  "files": [
+    {
+      "file": "src/FleetCommand.Host/Services/TaskService.cs",
+      "sha256": "ccedf31b0876625fee91db21af55f4a0436afef1390a3f51dfbe48628829e9cf",
+      "bytes": 14401
+    },
+    {
+      "file": "src/FleetCommand.Host/Program.cs",
+      "sha256": "9d419e01b9a870f872cbf8b29f7c7cd995dfa090a4bc8920fc4edf615a565ea9",
+      "bytes": 10382
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/ApiTests.cs",
+      "sha256": "35791a510a8f79ed8bcdf3750470f3a6ffc480c58a9693e619693aaf8f4fa234",
+      "bytes": 26856
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/TestApp.cs",
+      "sha256": "f15d8ddfccbc7b03a4fa071675d98c605c4bfa7be223eda33b9ac826ef798651",
+      "bytes": 4685
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/AssemblyInfo.cs",
+      "sha256": "3f7edd72eac91614fcf49f709dd4e560c74ebef8da68a53a02947e5611cd1869",
+      "bytes": 80
+    },
+    {
+      "file": "astraupskill/snapshots/TaskService-before.cs.txt",
+      "sha256": "914c6733b01b2e98fa55b9a3349913466700e6ebb89f59c46db25d8fe17a9951",
+      "bytes": 11734
+    },
+    {
+      "file": "astraupskill/snapshots/ApiTests-before.cs.txt",
+      "sha256": "09c251bf9e65e5aaa078b3787963e46a551cbe4705d958007d4706908e4f0473",
+      "bytes": 16190
+    },
+    {
+      "file": "astraupskill/snapshots/TestApp-before.cs.txt",
+      "sha256": "b3279e17214f2964cde7434af58f3c0243c7e7e7f162865c8209cf9d978cc66c",
+      "bytes": 3853
+    },
+    {
+      "file": "src/FleetCommand.Contracts/packages.lock.json",
+      "sha256": "2241481b7e74dcdcd600303146b730ecc12cbd8e49aa55755ef95ee499fe229a",
+      "bytes": 66
+    },
+    {
+      "file": "src/FleetCommand.Domain/packages.lock.json",
+      "sha256": "6cdc2f2fea551f1223c21db6135d8fdef1b688ed7d1d32613d394f3633c2088a",
+      "bytes": 143
+    },
+    {
+      "file": "src/FleetCommand.Host/packages.lock.json",
+      "sha256": "146ccf073b5060a2557b005ff6a5328dbe6dc90256e724e90dcef6b2e8d6779f",
+      "bytes": 5326
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/packages.lock.json",
+      "sha256": "b3cc9ff99d1a9b51668f8165b489d8074e1b06fa202c859c9543eefd71498c68",
+      "bytes": 15582
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.cs",
+      "sha256": "aab2ecdfd5c946afd169b5a5fe4f2862689ee2d533ef328a6e56d72690f18bce",
+      "bytes": 20938
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.Designer.cs",
+      "sha256": "e1591876aafec8acdeb9f84dec9dbb0d554dc54b8edea5bc77df66e399a9c926",
+      "bytes": 72864
+    },
+    {
+      "file": "src/FleetCommand.Infrastructure/Migrations/FleetDbContextModelSnapshot.cs",
+      "sha256": "0a2d8214656a515b0804999cc9db1ca0822ab902c4e1f382ed8a21b6c3a449ae",
+      "bytes": 72728
+    },
+    {
+      "file": "astraupskill/snapshots/FleetDbContextModelSnapshot-before.cs.txt",
+      "sha256": "cb94d2fd697425756fe78b43e68ae228574827295445d3087157cee9a8f4ceb6",
+      "bytes": 44629
+    },
+    {
+      "file": "tests/FleetCommand.ApiTests/packages.lock.json",
+      "sha256": "bc6e0aa0978ca354ca125afdd92ca18eb0ec6905a809f6b3c4f5a1e4ba8ddc3a",
+      "bytes": 25431
+    },
+    {
+      "file": "tests/FleetCommand.UnitTests/packages.lock.json",
+      "sha256": "16518d5d7fd256f4af231af4586fe5ed791e35ad3e4cd6c623b1b397807a2d40",
+      "bytes": 3996
+    }
+  ]
+}

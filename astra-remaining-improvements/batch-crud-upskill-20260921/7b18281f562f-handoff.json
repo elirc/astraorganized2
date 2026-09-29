@@ -1,0 +1,31 @@
+{
+  "id": "7b18281f562f",
+  "project": "_Organized Desktop/02 Build Projects/buildagentteaching",
+  "status": "ready-for-review",
+  "finding": "bulkEnroll converted every thrown value into a row-level failure, hiding unexpected persistence errors. It now catches only AppError for expected business refusals and rethrows other errors unchanged.",
+  "changedFiles": [
+    "packages/application/src/services/enrollment-service.ts",
+    "tests/runtime-bulk-enroll.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/08-INDEPENDENT-PRACTICE.md",
+    "astraupskill/VERIFICATION.md",
+    "astraupskill/snapshots/packages/application/src/services/enrollment-service.ts",
+    "astraupskill/evidence/results-crud-b02.json",
+    "astraupskill/evidence/astra-crud-b02-bulk-enrollment.log",
+    "checks/7b18281f562f/results-crud-b02.json",
+    "specs/7b18281f562f.json"
+  ],
+  "tests": {"executed": 6, "passed": 6, "results": "astraupskill/evidence/results-crud-b02.json"},
+  "limits": [
+    "Source-linked Node runtime only; no native database or Vitest execution.",
+    "No claim of concurrent capacity or transaction isolation coverage."
+  ]
+}

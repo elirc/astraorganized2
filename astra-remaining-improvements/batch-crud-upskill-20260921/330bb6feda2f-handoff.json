@@ -1,0 +1,32 @@
+{
+  "id": "330bb6feda2f",
+  "project": "e3",
+  "files": [
+    "lib/server/privacy.ts",
+    "tests/runtime-privacy-alias-delete.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/lib-server-privacy.ts.before",
+    "astraupskill/evidence/330bb6feda2f/runtime-privacy-alias-delete.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "Deletion scrubbed only the requested distinct ID while a person could retain multiple identifiers and aliases.",
+    "The fix derives the project person identifier set, scrubs matching event/raw rows, anonymizes the person, and removes aliases."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-privacy-alias-delete.test.mjs",
+    "executedTests": 2,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked storage contracts; no live filesystem or database concurrency."
+  ]
+}

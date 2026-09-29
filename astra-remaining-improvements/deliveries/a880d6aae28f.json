@@ -1,0 +1,124 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jep vs code",
+  "id": "a880d6aae28f",
+  "summary": [
+    "Use functional state updaters for existing-session player additions and removals so deferred responses preserve the latest local collection.",
+    "Retain first-session creation behavior and existing API-error handling."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a880d6aae28f/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/04 JavaScript Training/jep vs code",
+        "id": "a880d6aae28f",
+        "command": [
+          "node",
+          "--test",
+          "tests/runtime-player-state.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a880d6aae28f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:48:23.190941+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-handlers.log",
+        "pid": 18280,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:48:29.955501+00:00",
+        "elapsedSeconds": 6.76
+      }
+    ],
+    "limits": [
+      "Six cases execute the exact add/remove handler section extracted from production JSX with deferred API doubles and a modeled functional state setter; React itself is not mounted.",
+      "No network, server persistence, browser scheduling or React rendering was executed.",
+      "Concurrent first-session creation, session changes while requests are pending, duplicate server records and request idempotency remain outside this bounded existing-session reconciliation fix."
+    ]
+  },
+  "courseWords": 2526,
+  "courseFiles": 9,
+  "courseLinksChecked": 10,
+  "files": [
+    {
+      "file": "Jeopardy-Game/frontend/src/pages/GameSetupPage.jsx",
+      "before_sha256": "2340b9b9de2ef4cf34fcc70bd88ab3b0f1648ac59765b5a9abba4b1026d4d719",
+      "after_sha256": "9e736cd3448707f438b8127ae86edd3a47feffea4598d3f37c645ec2c59c1613"
+    },
+    {
+      "file": "tests/runtime-player-state.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "fa93ddc758badad6b3b2fd97f0d1ddf1156eb623306f4a049de72417d8e42866"
+    },
+    {
+      "file": "astraupskill/snapshots/GameSetupPage.jsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2340b9b9de2ef4cf34fcc70bd88ab3b0f1648ac59765b5a9abba4b1026d4d719"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-handlers.log",
+      "before_sha256": null,
+      "after_sha256": "89051a628c64369307576d386b18171b8e86ca417fe29044d4cdd6f3876fb048"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "c9fc055c5a372ecc2be59c8536c3d0d68ddaee3fc84529ca5dfc1c33f8c4450f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d87edd15011b8ffdea576ba9751c2d3cce4113e8f764f1fba4476162d151d52d"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "3179eaebba52ebb756ee5d27eeab73d23df084000ee7d7d20154126fd5408e98"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b9ad4c6390d51e199ca6cfbfff771415113ba1e575e2164c4cd70d44f20d05ff"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ece353089431c3c0e0315d42aea0d2aba3ec481d1fd5daff3f7a2ec201fc13ba"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "16dd90bb71db6f6b1be80b1a847ff6f14079f450410861b9faa501d0fe64d09b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "33f3cac4578132dfba56f7d5a1ab8d13379488d3f1bbeada74d5d4370f5971bb"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b9ce8d40ccb3f6922eff08a8d117535dbd0e62c5ba3a8c738dbc6c34841096b5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e82977d601d3cd19ffb9d71837d96a4fc6316a32818100d9302d05e0c7271e26"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "aeb88f1925f8f28dea9ff444531c8975887ac49eb857c60c2b442c9e6df798c5"
+    }
+  ],
+  "limits": [
+    "Six cases execute the exact add/remove handler section extracted from production JSX with deferred API doubles and a modeled functional state setter; React itself is not mounted.",
+    "No network, server persistence, browser scheduling or React rendering was executed.",
+    "Concurrent first-session creation, session changes while requests are pending, duplicate server records and request idempotency remain outside this bounded existing-session reconciliation fix."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:07:09.807108+00:00"
+}

@@ -1,0 +1,36 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "run.ps1",
+    "src/quiz/App.java",
+    "src/quiz/Question.java",
+    "src/quiz/QuestionAttempt.java",
+    "src/quiz/QuestionBank.java",
+    "src/quiz/QuestionFileException.java",
+    "src/quiz/QuestionLoader.java",
+    "src/quiz/QuizEngine.java",
+    "src/quiz/QuizResult.java",
+    "test/quiz/QuestionBankTest.java"
+  ],
+  "summary": [
+    "Adds question create, list, update and confirmed delete with stable identity and durable saves before in-memory publication.",
+    "Uses candidate snapshots, cooperating file locks, stale-byte comparisons and atomic replacement; a versioned UTF-8/Base64 format supports special text and valid empty banks while preserving legacy read compatibility.",
+    "Strengthens domain immutability, duplicate-ID and answer validation, whole-file corruption handling and the supported A-Z choice range.",
+    "Handles EOF during forms and quizzes without partial mutation or crashes; partial results distinguish answered and unanswered questions.",
+    "Adds a JDK 17 test runner, 28 regression cases, nine separate-process checks including competing JVM saves, and nine detailed CRUD upskilling documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j4/results.json",
+    "expectedTests": 37,
+    "command": "run.ps1 -Test; nine process scenarios via verify_j4.py, including two gated JVM writers and persisted CLI reloads",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files and separate JVM processes"
+  },
+  "limits": [
+    "Local CLI and file storage; no HTTP, browser, SQL database, authentication or persisted quiz-attempt history.",
+    "Sidecar locks coordinate cooperating writers; non-cooperating external editors, network filesystems and power-loss durability are outside verification.",
+    "First accepted edit converts legacy data to the versioned format; older binaries cannot read it. Original example data was not modified.",
+    "Startup failures are reported in text without a distinct nonzero application exit status."
+  ]
+}

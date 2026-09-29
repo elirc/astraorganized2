@@ -1,0 +1,10 @@
+{
+  "files": {
+    "src/BorrowBox.Api/Loans/LoanEndpoints.cs": "827b7114fa3427e99bc14d74174c7f1a886e49522bd583f35f3ac0d5db42734f",
+    "src/BorrowBox.Core/Loans/Loan.cs": "04355a58666cedd8a9cd02eae2131ecb01cae1b5b9d0a01fa7b22fcb446d08e6",
+    "src/BorrowBox.Core/Reservations/Reservation.cs": "f3cdafeb767b0a51855283715596a1583fb2685058fdd5f8e98927f6a315aebd",
+    "tests/BorrowBox.Infrastructure.Tests/Loans/CheckoutTests.cs": "827897a554eaa828d17a1255d15bfa4e6bacf98cb8a7dd6b79d4f0e78330ae1f",
+    "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationExpiryTests.cs": "51f96547b7ab09bf8d271ce7cc490ab59f95046d0e64af00a5818e9b59d70041",
+    "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationTests.cs": "2a8337dd24c763caf77b44cc460ef6b11f83ddcc0aca3f8a990054a9908716df"
+  }
+}

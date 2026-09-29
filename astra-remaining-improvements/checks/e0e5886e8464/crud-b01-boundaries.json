@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+  "id": "e0e5886e8464",
+  "command": [
+    "node",
+    "--experimental-strip-types",
+    "--test",
+    "tests/boundaries.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T22:54:56.711985+00:00",
+  "status": "complete",
+  "log": "crud-b01-boundaries.log",
+  "pid": 26864,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T22:55:11.699509+00:00",
+  "elapsedSeconds": 14.98
+}

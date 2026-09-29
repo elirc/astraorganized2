@@ -1,0 +1,52 @@
+{
+  "summary": "Completed safe integer server pricing and direct command validation; atomic synchronous demo order/coupon/refund/fulfillment/audit writes; preserved financial refund status across logistics transitions; aligned action visibility; added regression tests and nine source-based guides.",
+  "limits": [
+    "Demo store is synchronous, process-local and not durable or coordinated across workers.",
+    "Payment capture/refund remains simulated; no external provider or real money operation was performed.",
+    "Tests exercise actual services and in-memory repositories; browser end-to-end and live SQL concurrency are not claimed.",
+    "Lint reports one pre-existing unused-variable warning in the password-omitting user DTO mapper; no lint errors."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log",
+    "astraupskill/evidence/resume14-lint-01.json",
+    "astraupskill/evidence/resume14-lint-01.log",
+    "astraupskill/evidence/resume14-lock-01.json",
+    "astraupskill/evidence/resume14-lock-01.log",
+    "astraupskill/evidence/resume14-tests-01.json",
+    "astraupskill/evidence/resume14-tests-01.log",
+    "astraupskill/evidence/resume14-types-02.json",
+    "astraupskill/evidence/resume14-types-02.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/snapshots/src__components__orders__OrderActionPanel.tsx.original.txt",
+    "astraupskill/snapshots/src__lib__demo__store.ts.original.txt",
+    "astraupskill/snapshots/src__lib__money.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__common.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__orderSchemas.ts.original.txt",
+    "astraupskill/snapshots/src__services__couponService.ts.original.txt",
+    "astraupskill/snapshots/src__services__fulfillmentService.ts.original.txt",
+    "astraupskill/snapshots/src__services__orderService.ts.original.txt",
+    "astraupskill/snapshots/src__services__refundService.ts.original.txt",
+    "package-lock.json",
+    "package.json",
+    "src/components/orders/OrderActionPanel.tsx",
+    "src/lib/demo/store.ts",
+    "src/lib/money.ts",
+    "src/lib/order-status.ts",
+    "src/lib/validation/common.ts",
+    "src/lib/validation/orderSchemas.ts",
+    "src/services/couponService.ts",
+    "src/services/fulfillmentService.ts",
+    "src/services/orderService.ts",
+    "src/services/refundService.ts",
+    "src/tests/commerce-workflows.test.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e7862246212d/resume14-results.json",
+    "expectedTests": 22,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

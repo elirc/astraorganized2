@@ -1,0 +1,45 @@
+{
+  "changedFiles": [
+    "README.md",
+    "ARCHITECTURE_DEEP_DIVE.md",
+    "package.json",
+    "server/package.json",
+    "server/.env.example",
+    "server/src/db/database.js",
+    "server/src/routes/campaigns.js",
+    "server/src/routes/dashboard.js",
+    "server/src/server.js",
+    "server/src/lib/outbox.js",
+    "server/src/lib/campaignCommands.js",
+    "server/src/workers/jobProjection.js",
+    "server/src/workers/emailWorker.js",
+    "server/src/lib/validation.js",
+    "client/src/App.jsx",
+    "client/src/styles.css",
+    "server/test/campaigns.test.cjs",
+    "server/test/outbox.test.cjs",
+    "server/test/persistence.test.cjs"
+  ],
+  "summary": [
+    "Campaign acceptance commits the campaign, pending tracking rows and dispatch intent before any broker call; unavailable queues no longer cause destructive campaign deletion.",
+    "A durable outbox reuses persisted job IDs after uncertain enqueue outcomes and preserves newer active/completed worker status.",
+    "Terminal failure and requeue commands atomically preserve operator history and their new dispatch intent.",
+    "Validation failure now returns null and stops route execution after HTTP 400.",
+    "Dashboard local counts remain available during broker outages, with explicit pending-dispatch status and bounded queue-status reads.",
+    "Nine detailed course documents and updated architecture/setup guides teach dual writes, transactions, retry scopes, failure injection, persistence, examples and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/task-queue/results.json",
+    "expectedTests": 19,
+    "command": "Node syntax checks; npm test --prefix server -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; real HTTP and SQLite; controlled queue responses; temporary file persistence across processes"
+  },
+  "limits": [
+    "Redis and Docker daemon unavailable: actual BullMQ execution, retry scheduling, broker deduplication and full runtime startup were not verified.",
+    "No live browser interaction; React changes were source-reviewed and built.",
+    "Processor is a simulation; no real email was sent and exactly-once provider effects are not guaranteed.",
+    "Retained broker/outbox records require a cleanup policy; missed worker projections need reconciliation.",
+    "No authenticated operator/tenant model or campaign-request idempotency; no backfill of historical orphan work."
+  ]
+}

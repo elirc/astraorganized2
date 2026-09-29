@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "exportedAt": "2026-09-12T10:43:01.477Z",
+  "state": {
+    "meta": {
+      "workspaceId": "workspace-default",
+      "workspaceName": "Team Knowledge Base",
+      "ownerId": "user-owner",
+      "updatedAt": "2026-09-12T10:43:01.243Z",
+      "createdAt": "2026-09-12T10:42:07.358Z"
+    },
+    "users": [
+      {
+        "id": "user-owner",
+        "name": "Browser Learner",
+        "color": "#1f7a8c"
+      },
+      {
+        "id": "user-sarah",
+        "name": "Sarah",
+        "color": "#c0392b"
+      },
+      {
+        "id": "user-diego",
+        "name": "Diego",
+        "color": "#2e7d32"
+      }
+    ],
+    "pages": [
+      {
+        "id": "IKCkTE2WDU8fKMxrtB_KB",
+        "title": "Offline retained title",
+        "parentId": null,
+        "icon": "🏠",
+        "coverImage": "",
+        "isDeleted": false,
+        "isFavorite": true,
+        "shared": "workspace",
+        "roles": {},
+        "createdAt": "2026-09-12T10:42:07.358Z",
+        "updatedAt": "2026-09-12T10:43:01.116Z"
+      },
+      {
+        "id": "gu186rpG8GayqlSY9l87D",
+        "title": "Engineering Notes",
+        "parentId": "IKCkTE2WDU8fKMxrtB_KB",
+        "icon": "🧠",
+        "coverImage": "",
+        "isDeleted": false,
+        "isFavorite": false,
+        "shared": "workspace",
+        "roles": {},
+        "createdAt": "2026-09-12T10:42:07.358Z",
+        "updatedAt": "2026-09-12T10:42:07.358Z"
+      },
+      {
+        "id": "MZRLTx3j2FKH7poCkxEXX",
+        "title": "Meeting Notes",
+        "parentId": "IKCkTE2WDU8fKMxrtB_KB",
+        "icon": "📝",
+        "coverImage": "",
+        "isDeleted": false,
+        "isFavorite": false,
+        "shared": "workspace",
+        "roles": {},
+        "createdAt": "2026-09-12T10:42:07.358Z",
+        "updatedAt": "2026-09-12T10:42:07.358Z"
+      },
+      {
+        "id": "9e5448f0-614e-4d0b-a613-e7628d23d623",
+        "title": "Imported code lesson",
+        "parentId": "IKCkTE2WDU8fKMxrtB_KB",
+        "icon": "📥",
+        "coverImage": "",
+        "isDeleted": false,
+        "isFavorite": false,
+        "shared": "private",
+        "roles": {},
+        "createdAt": "2026-09-12T10:42:58.173Z",
+        "updatedAt": "2026-09-12T10:43:01.116Z"
+      }
+    ],
+    "blocksByPage": {
+      "IKCkTE2WDU8fKMxrtB_KB": [
+        {
+          "id": "R5-jWD4hwL3wl2JG5iysf",
+          "type": "heading1",
+          "text": "Welcome to your workspace",
+          "props": {},
+          "children": []
+        },
+        {
+          "id": "s7wAnIx57l25nEMy5b6ha",
+          "type": "callout",
+          "text": "Use Cmd/Ctrl+K to quickly jump to pages.",
+          "props": {
+            "tone": "info"
+          },
+          "children": []
+        },
+        {
+          "id": "ojTOZQTFChwdojG_5tFAK",
+          "type": "database",
+          "text": "",
+          "props": {
+            "title": "Tasks",
+            "properties": [
+              {
+                "id": "name",
+                "name": "Name",
+                "type": "text"
+              },
+              {
+                "id": "status",
+                "name": "Status",
+                "type": "select",
+                "options": [
+                  "Todo",
+                  "Doing",
+                  "Done"
+                ]
+              },
+              {
+                "id": "due",
+                "name": "Due",
+                "type": "date"
+              },
+              {
+                "id": "assignee",
+                "name": "Assignee",
+                "type": "person"
+              },
+              {
+                "id": "XcsVhyS1Wpq6zcmHEJX7s",
+                "name": "Inspected",
+                "type": "checkbox"
+              }
+            ],
+            "rows": [
+              {
+                "id": "09Do8HVdJ7JJSSxer8Sde",
+                "pageId": "3NKdJBLvpsO2VNOedxL1u",
+                "values": {
+                  "name": "Kickoff call",
+                  "status": "Todo",
+                  "due": "",
+                  "assignee": "Sarah",
+                  "XcsVhyS1Wpq6zcmHEJX7s": false
+                }
+              }
+            ],
+            "views": [
+              {
+                "id": "table",
+                "type": "table",
+                "name": "Table",
+                "filters": [],
+                "sorts": [],
+                "visibleProperties": [
+                  "name",
+                  "status",
+                  "due",
+                  "assignee",
+                  "XcsVhyS1Wpq6zcmHEJX7s"
+                ]
+              },
+              {
+                "id": "board",
+                "type": "board",
+                "name": "Board",
+                "groupBy": "status",
+                "filters": [],
+                "sorts": [],
+                "visibleProperties": [
+                  "name",
+                  "status",
+                  "due",
+                  "assignee",
+                  "XcsVhyS1Wpq6zcmHEJX7s"
+                ]
+              },
+              {
+                "id": "list",
+                "type": "list",
+                "name": "List",
+                "filters": [],
+                "sorts": [],
+                "visibleProperties": [
+                  "name",
+                  "status",
+                  "due",
+                  "assignee",
+                  "XcsVhyS1Wpq6zcmHEJX7s"
+                ]
+              },
+              {
+                "id": "calendar",
+                "type": "calendar",
+                "name": "Calendar",
+                "dateProperty": "due",
+                "filters": [],
+                "sorts": [],
+                "visibleProperties": [
+                  "name",
+                  "status",
+                  "due",
+                  "assignee",
+                  "XcsVhyS1Wpq6zcmHEJX7s"
+                ]
+              },
+              {
+                "id": "gallery",
+                "type": "gallery",
+                "name": "Gallery",
+                "filters": [],
+                "sorts": [],
+                "visibleProperties": [
+                  "name",
+                  "status",
+                  "due",
+                  "assignee",
+                  "XcsVhyS1Wpq6zcmHEJX7s"
+                ]
+              }
+            ],
+            "activeViewId": "table",
+            "templates": [
+              {
+                "id": "JJ0xFnvSJH0iNGzK5yls6",
+                "name": "Bug report",
+                "values": {
+                  "name": "Investigate bug",
+                  "status": "Todo",
+                  "due": "",
+                  "assignee": ""
+                }
+              }
+            ]
+          },
+          "children": []
+        }
+      ],
+      "gu186rpG8GayqlSY9l87D": [
+        {
+          "id": "iEknLiRTzM4dKaVgDPfio",
+          "type": "paragraph",
+          "text": "Capture architecture decisions here.",
+          "props": {},
+          "children": []
+        }
+      ],
+      "MZRLTx3j2FKH7poCkxEXX": [
+        {
+          "id": "nov8y4geXPzb5MToFSBcf",
+          "type": "heading2",
+          "text": "Weekly Sync",
+          "props": {},
+          "children": []
+        },
+        {
+          "id": "eogC-T-slfFyMSIatJHWy",
+          "type": "bullet",
+          "text": "Review current sprint progress",
+          "props": {},
+          "children": []
+        }
+      ],
+      "9e5448f0-614e-4d0b-a613-e7628d23d623": []
+    },
+    "commentThreads": [],
+    "comments": [],
+    "templates": [
+      {
+        "id": "Fbf-nsiaL4x9Dfj-vvcdl",
+        "kind": "page",
+        "name": "Meeting Notes",
+        "payload": {
+          "title": "Meeting Notes",
+          "blocks": [
+            {
+              "type": "heading2",
+              "text": "Agenda",
+              "props": {}
+            },
+            {
+              "type": "bullet",
+              "text": "Topic 1",
+              "props": {}
+            },
+            {
+              "type": "heading2",
+              "text": "Action Items",
+              "props": {}
+            }
+          ]
+        }
+      },
+      {
+        "id": "07RMG1FsaDgZst9rVMTgO",
+        "kind": "page",
+        "name": "Project Brief",
+        "payload": {
+          "title": "Project Brief",
+          "blocks": [
+            {
+              "type": "heading2",
+              "text": "Problem",
+              "props": {}
+            },
+            {
+              "type": "paragraph",
+              "text": "",
+              "props": {}
+            },
+            {
+              "type": "heading2",
+              "text": "Success Metrics",
+              "props": {}
+            }
+          ]
+        }
+      }
+    ],
+    "favorites": [
+      {
+        "id": "bUklc4GsO0SoITu7StasU",
+        "userId": "user-owner",
+        "pageId": "IKCkTE2WDU8fKMxrtB_KB"
+      }
+    ],
+    "recent": [
+      "IKCkTE2WDU8fKMxrtB_KB"
+    ],
+    "sharedLinks": [],
+    "versions": [],
+    "activities": [
+      {
+        "id": "c89cf1e5-cf8e-4755-a996-f99f95cde19b",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:30.432Z"
+      },
+      {
+        "id": "c3457e0e-0892-4d93-8ef7-2d1487013ad9",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:33.179Z"
+      },
+      {
+        "id": "979d6736-d441-42aa-9507-04ca20733c13",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:33.581Z"
+      },
+      {
+        "id": "b0c6ed92-93bb-4272-8bc1-6206e7dce3d1",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:33.842Z"
+      },
+      {
+        "id": "e6136663-1d93-4626-a668-ebdaf8331c6e",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:36.699Z"
+      },
+      {
+        "id": "99300f53-d6a4-419c-8b4f-a89f654c8990",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:37.063Z"
+      },
+      {
+        "id": "7269a6b1-8e1a-4036-b3f9-9efe13bf27ea",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:37.746Z"
+      },
+      {
+        "id": "40848c04-8a0d-4f8a-afed-900799f71b7b",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "page_version_restored",
+        "createdAt": "2026-09-12T10:42:38.200Z"
+      },
+      {
+        "id": "63259c98-2e98-4ff1-980e-b66a895ccfc9",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:45.064Z"
+      },
+      {
+        "id": "c019968f-8295-4646-b0ec-bdf0d7ab7e22",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:49.408Z"
+      },
+      {
+        "id": "c62b79e1-551b-44a7-9bb6-135ff42850ba",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:53.503Z"
+      },
+      {
+        "id": "6098bf2d-dda4-4407-b696-9232928272cc",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:57.613Z"
+      },
+      {
+        "id": "2b37763b-396d-4abf-8a47-9aa6925868c8",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "markdown_imported",
+        "createdAt": "2026-09-12T10:42:58.174Z"
+      },
+      {
+        "id": "4df72aa2-69af-47cc-8f8a-c95f450dd63c",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:58.682Z"
+      },
+      {
+        "id": "d6668e96-ff1a-45e7-853a-3680221fc8c5",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:59.232Z"
+      },
+      {
+        "id": "277d53be-370e-44a5-8589-efd154493d31",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:42:59.848Z"
+      },
+      {
+        "id": "176f596e-daae-4575-a565-0de22a6425c7",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:43:00.242Z"
+      },
+      {
+        "id": "172a0eb8-1e26-4339-8131-a3413725c8e8",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:43:00.915Z"
+      },
+      {
+        "id": "2c828912-a127-4175-a8cc-c8661d48bc4a",
+        "pageId": null,
+        "actorId": "user-owner",
+        "action": "workspace_updated",
+        "createdAt": "2026-09-12T10:43:01.243Z"
+      }
+    ],
+    "trash": []
+  }
+}

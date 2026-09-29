@@ -1,0 +1,77 @@
+{
+  "id": "61d919e84af9",
+  "passed": false,
+  "changedBaselineFiles": [
+    "next-env.d.ts",
+    "package.json",
+    "postcss.config.mjs",
+    "server.ts",
+    "tsconfig.json",
+    "src/app/globals.css",
+    "src/app/api/boards/route.ts",
+    "src/components/board/BoardSurface.tsx",
+    "src/components/board/Card.tsx",
+    "src/components/board/Column.tsx",
+    "src/hooks/useBoardSocket.ts",
+    "src/lib/filter.ts",
+    "src/lib/lexorank/index.ts",
+    "src/lib/services/auth.ts",
+    "src/lib/services/board-service.ts",
+    "src/lib/socket/actions.ts"
+  ],
+  "newSourceFiles": [
+    "eslint.config.mjs",
+    "next.config.mjs",
+    "package-lock.json",
+    "src/lib/services/card-update-set.ts",
+    "tests/socket-actions.test.ts"
+  ],
+  "executableHashesChecked": 0,
+  "snapshotsChecked": 13,
+  "projectLocalLinksChecked": 8,
+  "chapterWords": {
+    "README.md": 253,
+    "01-CODEBASE-MAP.md": 303,
+    "02-CONCEPTS.md": 327,
+    "03-WORKED-CHANGE.md": 316,
+    "04-TESTING-AND-DEBUGGING.md": 368,
+    "05-PRACTICE.md": 418,
+    "06-SOLUTIONS-AND-REVIEW.md": 891,
+    "07-TRACE-LAB.md": 647,
+    "VERIFICATION.md": 309
+  },
+  "courseWords": 3832,
+  "checks": [
+    {
+      "label": "test-10",
+      "status": "complete",
+      "exitCode": 0
+    },
+    {
+      "label": "typecheck-06",
+      "status": "complete",
+      "exitCode": 0
+    },
+    {
+      "label": "lint-03",
+      "status": "complete",
+      "exitCode": 0
+    },
+    {
+      "label": "build-04",
+      "status": "running",
+      "exitCode": null
+    }
+  ],
+  "issues": [
+    {
+      "kind": "unlisted_baseline_change",
+      "file": "next-env.d.ts"
+    },
+    {
+      "kind": "check_not_terminal_pass",
+      "label": "build-04"
+    }
+  ],
+  "limit": "Mechanical preflight only; source correctness and test meaning require Astra review."
+}

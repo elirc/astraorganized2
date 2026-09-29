@@ -1,0 +1,37 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "docs/HISTORICAL-README.md",
+    "scripts/verify.py",
+    "sources.txt",
+    "src/librarytracker/App.java",
+    "src/librarytracker/model/Book.java",
+    "src/librarytracker/model/Borrower.java",
+    "src/librarytracker/model/Loan.java",
+    "src/librarytracker/model/Values.java",
+    "src/librarytracker/service/LibraryManager.java",
+    "src/librarytracker/storage/FileStorage.java",
+    "src/librarytracker/storage/LibraryData.java",
+    "test/librarytracker/LibraryWorkflowTest.java"
+  ],
+  "summary": [
+    "Completed immutable versioned book/borrower CRUD, confirmed deletion of unused records, archive/restore, literal search and immediate save-before-memory commits.",
+    "Added retained loan receipts with accepted title/name snapshots, atomic checkout/return, current-loan consistency, date and reference validation, history-protected deletion and durable allocation watermarks.",
+    "Replaced independent file writes with one bounded strict snapshot, cooperative cross-process baseline protection and atomic replacement; legacy-pair conversion preserves both original files unchanged.",
+    "Added 53 passing Java/CLI/process checks, compilation after consistent source formatting, preserved historical notes and nine detailed learning documents connecting aggregate consistency to future CRUD HTTP and SQL design."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/library-tracker/results.json",
+    "expectedTests": 53,
+    "environment": "JDK 17; Python 3.13; disposable files; independent JVM concurrency",
+    "command": "python scripts/verify.py (44 Java tests, 9 CLI/process checks); separate UTF-8 compilation after Java formatting"
+  },
+  "limits": [
+    "The project remains a Java CLI without HTTP/browser UI, authentication, ownership policy, external notifications, fines, renewals or SQL deployment.",
+    "File locking is cooperative and atomic replacement depends on filesystem support; no power-loss, directory-flush, network-filesystem or multi-machine certification.",
+    "Rejected terminal input is not retained as a draft or automatically merged; reload and deliberate re-entry are required. Snapshots are bounded to 10 MiB and 10,000 records per collection.",
+    "Legacy current loans gain receipts using names available at import; previously discarded returns cannot be reconstructed. ISBN and email checks do not provide external verification."
+  ]
+}

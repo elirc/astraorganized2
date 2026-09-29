@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "tests": 19,
+  "testFiles": 3,
+  "apiTests": 11,
+  "policyTests": 4,
+  "domainTests": 4,
+  "typecheck": "passed",
+  "build": "passed",
+  "sourceHashesUnchanged": true,
+  "records": {
+    "tests-root-01": {
+      "project": "_Organized Desktop/03 Master Projects/master7",
+      "id": "a1d53294d3b0",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "test",
+        "--",
+        "--pool=threads",
+        "--poolOptions.threads.singleThread=true",
+        "--testTimeout=30000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-12T18:52:02.181030+00:00",
+      "status": "complete",
+      "log": "tests-root-01.log",
+      "pid": 32356,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:52:28.353171+00:00",
+      "elapsedSeconds": 26.16
+    },
+    "typecheck-root-01": {
+      "project": "_Organized Desktop/03 Master Projects/master7",
+      "id": "a1d53294d3b0",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-12T18:52:53.073514+00:00",
+      "status": "complete",
+      "log": "typecheck-root-01.log",
+      "pid": 26720,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T18:53:16.019285+00:00",
+      "elapsedSeconds": 22.9
+    },
+    "build-root-01": {
+      "project": "_Organized Desktop/03 Master Projects/master7",
+      "id": "a1d53294d3b0",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a1d53294d3b0",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-12T18:54:18.808088+00:00",
+      "status": "complete",
+      "log": "build-root-01.log",
+      "pid": 14364,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T19:01:24.042179+00:00",
+      "elapsedSeconds": 425.22
+    }
+  }
+}

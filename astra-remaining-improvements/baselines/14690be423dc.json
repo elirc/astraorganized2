@@ -1,0 +1,19 @@
+{
+  "id": "14690be423dc",
+  "project": "_Organized Desktop/05 Numbered Experiments/j7",
+  "files": {
+    "README.md": "1fd071d6a9a14afa88f18931b048d5ae95178bf8c0c61eed4d9f61cc6a9c25d3",
+    "src/oms/App.java": "79941b60625baae7b45da12b6ec1b86414fa3b91fb8f278dc1b71898d890463e",
+    "src/oms/domain/Customer.java": "d82301741cc9d8d5e726275403bd4cba22209781363421d89abd86362768838a",
+    "src/oms/domain/Order.java": "8471f242a35e28f583f9740119f5418ee62f776bcee451cbb470cbec8fa94aec",
+    "src/oms/domain/OrderItem.java": "9f31e1a8f19ef4729bf22acdc05067ff4af9247b7cbdb09f86f8679bec563333",
+    "src/oms/domain/OrderStatus.java": "685711d8763defbf010c848bf9bb043b786695141574ca2adde215fa43400ae6",
+    "src/oms/domain/Product.java": "23eafb18a59ff5125bad2532044f272971e8413d5d8134a4c7357c691a411dea",
+    "src/oms/persistence/DelimitedFileUtil.java": "8ba1cdf802b4b10edad8e3d224e35560427e0e72b7bf0576ec2ee23a705de932",
+    "src/oms/persistence/FileDataStore.java": "bfc45ae13e9ecd5387661828c75019cdd08fd54bd3233810d9c9d42875dd0752",
+    "src/oms/persistence/StoreSnapshot.java": "bc7f1d226a5afea453c80ba43ab8662a06db10986f6b50ed139f9c6138791c14",
+    "src/oms/service/CustomerService.java": "64309351e1f20d26e9cad8f95d620a8955f4a1885802f0d2c2dc21ce3aaefc37",
+    "src/oms/service/OrderService.java": "4edd7b6ac10fcb3f6604d8873d943bf52597ba18c1d363ce4dfee4fbb6163b66",
+    "src/oms/service/ProductService.java": "d79c055268e77a660613b4f6a26a4b08a51dab00a523528111496948b1405b1e"
+  }
+}

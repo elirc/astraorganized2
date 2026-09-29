@@ -1,0 +1,10 @@
+{
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "workingDirectory": "src/Billing.Web",
+  "exitCode": 1,
+  "seconds": 25.66
+}

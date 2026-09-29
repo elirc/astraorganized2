@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/g1",
+  "id": "d7c9faad43d9",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-shop-city.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\d7c9faad43d9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:54:37.400591+00:00",
+  "status": "complete",
+  "log": "crud-b04-astra-runtime.log",
+  "pid": 11228,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:54:46.461327+00:00",
+  "elapsedSeconds": 9.05
+}

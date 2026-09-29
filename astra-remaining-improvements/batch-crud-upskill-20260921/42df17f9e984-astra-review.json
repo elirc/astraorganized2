@@ -1,0 +1,31 @@
+{
+  "id": "42df17f9e984",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:35:35.636586+00:00",
+  "sourceReview": "Read receiving service, real transition schema function and serializer. Corrected staged double-count regression and allowed repeated partial receipts; validated cumulative map consumed once and refusal precedes transaction.",
+  "teachingReview": "Read all nine chapters and corrected status calculation, helper boundaries, repository argument order, exercise quantity and count claims; explicit concurrency and numeric schema limits.",
+  "testReview": "Six passing cases load real errors, serializer and transition function. Partial5of10, duplicate2+3, old4plus2/6/7, duplicateoverage7+4, tenant/line/status refusal and full success. Inert Zod builders do not test parsing; persistence adapters do not prove commit.",
+  "specSHA256": "bd80740e16e4bed1f331b81cc7a24fa383467b085a5b8e67fd9b5b4dc3d19ec0",
+  "fileHashes": {
+    "src/services/purchaseOrderService.ts": "091d306a616764e6fad3605ea6eb60564cb9fee8d3d1a5855eac6efa424cdeab",
+    "tests/runtime-purchase-receiving.test.mjs": "bbabef2521ac7e279d23348fb5a7466b5a0246cb8bf8f12404973c9d922305e6",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-services-purchaseOrderService.ts.before": "fe600ec726edb35c6568eceb2001e3ac08516fff6875a2e28b3199e73475584c",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "f77cfd8df6bf7775b732e2f1058d3f29f1813a742db6ef3cbfc67b73031e02ae",
+    "astraupskill/evidence/results.json": "80573edccfc9d0b3392dbbf6f0364abee1a9449c0280341eca438debde99cd1a",
+    "astraupskill/README.md": "08d5f98e4445fce4350611b18abe63721baa485cb4b2d08838e93b44e3cc76d1",
+    "astraupskill/01-CODEBASE-MAP.md": "587d0318ded6e6ca973295bfe12d7277db667288dd0dce1888d58652a1a0af37",
+    "astraupskill/02-CONCEPTS.md": "6f0503568e6aa4cc5d5f61f5954aba4660b7d76cf5c669d793ad6ed41ef24068",
+    "astraupskill/03-WORKED-CHANGE.md": "9bdee8b2489c684b702897e5c02ea8edf06e6742aa976c5b104ea4ff769a5bc5",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "90937f958ebd1414f6d3080be9f7483b60bcd4f8f314d632776b8e989f6b2c15",
+    "astraupskill/05-PRACTICE.md": "3ca99857f3f1d4b642954784efbc1cc8112e3fa63a961989d168eade8eddd449",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "b07187ee67796b279d77202b0ba8d2bbb24b52cb8f9b25602acac4ef32a24f55",
+    "astraupskill/07-TRACE-LAB.md": "3017b4528a0a7055de993f4e5d571e599b0d47a79a94b0c8d97eaa4e3136e4f2",
+    "astraupskill/VERIFICATION.md": "faf9dc09a266cbc41e63173ad931ddf0d7e130aa9cdede71c9dcf410ea7686ee"
+  },
+  "evidenceHashes": {
+    "checks/42df17f9e984/crud-b08-astra-runtime.json": "b6d12651b633c6a8057e9bbb965dff3c15a11ff243c8a93f8dfaa6035c2510e8",
+    "checks/42df17f9e984/crud-b08-astra-runtime.log": "f77cfd8df6bf7775b732e2f1058d3f29f1813a742db6ef3cbfc67b73031e02ae",
+    "checks/42df17f9e984/results-crud-b08.json": "80573edccfc9d0b3392dbbf6f0364abee1a9449c0280341eca438debde99cd1a"
+  }
+}

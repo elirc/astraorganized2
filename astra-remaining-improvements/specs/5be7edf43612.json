@@ -1,0 +1,52 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/controllers/sprint.controller.js",
+    "apps/api/src/services/issue.service.js",
+    "apps/api/src/services/sprint.service.js",
+    "apps/api/test/issue-concurrency.test.js",
+    "apps/api/test/issue.test.js",
+    "apps/api/test/socket.test.js",
+    "apps/api/test/sprint.test.js",
+    "apps/web/src/lib/hooks.js",
+    "apps/web/src/pages/BacklogPage.jsx",
+    "apps/web/test/backlog-stale-assignment.test.jsx",
+    "astraupskill/evidence/astra-gitjira-api-r4.json",
+    "astraupskill/evidence/astra-gitjira-api-r4.log",
+    "astraupskill/evidence/astra-gitjira-lint-r3.json",
+    "astraupskill/evidence/astra-gitjira-lint-r3.log",
+    "astraupskill/evidence/astra-gitjira-list-sprint-tests-r6.json",
+    "astraupskill/evidence/astra-gitjira-list-sprint-tests-r6.log",
+    "astraupskill/evidence/astra-gitjira-typecheck-r2.json",
+    "astraupskill/evidence/astra-gitjira-typecheck-r2.log",
+    "astraupskill/evidence/astra-gitjira-web-shared-tests-r4.json",
+    "astraupskill/evidence/astra-gitjira-web-shared-tests-r4.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/apps__api__src__controllers__sprint.controller.js.original.txt",
+    "astraupskill/snapshots/apps__api__src__services__issue.service.js.original.txt",
+    "astraupskill/snapshots/apps__api__src__services__sprint.service.js.original.txt",
+    "astraupskill/snapshots/apps__api__test__issue-concurrency.test.js.original.txt",
+    "astraupskill/snapshots/apps__api__test__issue.test.js.original.txt",
+    "astraupskill/snapshots/apps__api__test__socket.test.js.original.txt",
+    "astraupskill/snapshots/apps__api__test__sprint.test.js.original.txt",
+    "astraupskill/snapshots/apps__web__src__lib__hooks.js.original.txt",
+    "astraupskill/snapshots/apps__web__src__pages__BacklogPage.jsx.original.txt",
+    "astraupskill/snapshots/packages__shared__src__issue-schemas.js.original.txt",
+    "packages/shared/src/issue-schemas.js",
+    "scripts/test-local.py"
+  ],
+  "summary": [
+    "Coordinated sprint assignment, start and completion with bounded serializable transactions and state-qualified writes.",
+    "Validated completion destinations and protected browser assignments with strictly advancing timestamp comparisons.",
+    "Added real PostgreSQL regressions and made socket test synchronization and cleanup deterministic; added nine source-based guide chapters."
+  ],
+  "limits": [
+    "API database checks do not certify deployed Redis workers or browser end-to-end behavior."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5be7edf43612/sol15-results.json",
+    "expectedTests": 147,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

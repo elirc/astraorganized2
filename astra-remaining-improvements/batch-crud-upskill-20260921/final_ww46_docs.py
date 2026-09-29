@@ -1,0 +1,10 @@
+from pathlib import Path
+P=Path(__file__).resolve().parent.parent/'stage/7ff66e57d973/astraupskill'
+for p in P.glob('*.md'):
+ t=p.read_text()
+ changes={'Four cases':'Seven cases','four-case':'seven-case','Prisma?s':"Prisma's",'?nothing changed?':'a zero-row result','return committed data':'return the transaction reread','deletion or a concurrent state change':'deletion or a changed organization scope','delete or competing update':'delete or organization-scope change','Lost update':'Zero-row write','count is the write witness':'count confirms a matched mutation, not a committed transaction','evidence/astra-crud-b07-ww46.log':'evidence/crud-b07-astra-runtime.log','evidence/results-crud-b07.json':'evidence/results.json','from the staged project':'from the project directory','Root-owned delivery remains separate; these artifacts are staged for review.':'The captured evidence and explicit limits support review of this bounded change.'}
+ for a,b in changes.items():t=t.replace(a,b)
+ t=t.replace('Then add a trace assertion that all successful repository calls receive the transaction client marker.','The expanded tests assert the transaction client on update, post-update read and audit; the initial read intentionally has no transaction client.')
+ if p.name=='VERIFICATION.md':t+='\nThree additional cases cover a missing post-update reread (500 without audit), preserved update error identity, and the actual repository updateMany arguments. Real HttpError and organization policy execute, with generated enum exports adapted. The where predicate contains id and organizationId only. A competing status change does not necessarily yield count zero, so this fix is not optimistic concurrency control and cannot prevent every stale transition.\n'
+ if p.name=='02-CONCEPTS.md':t+='\nCount one does not show that the status observed before the transaction is still current. The repository does not compare an expected status or version. A separate design would be required to prevent stale transitions under concurrent status changes.\n'
+ p.write_text(t,encoding='utf-8')

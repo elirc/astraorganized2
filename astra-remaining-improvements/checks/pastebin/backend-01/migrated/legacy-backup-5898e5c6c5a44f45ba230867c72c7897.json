@@ -1,0 +1,15 @@
+[
+  {
+    "slug": "Abcd1234",
+    "title": "Legacy",
+    "content": "old trailing text  \n",
+    "language": "plaintext",
+    "visibility": 1,
+    "createdAt": "2026-09-06T12:00:00+00:00",
+    "updatedAt": null,
+    "expiresAt": null,
+    "deleteKeyHash": "47AFF130C1F7A22C25AB46F5D9E11103ABA6ED07008A1F8561C7480193731AE0",
+    "viewCount": 17,
+    "lastViewedAt": "2026-09-08T12:00:00+00:00"
+  }
+]

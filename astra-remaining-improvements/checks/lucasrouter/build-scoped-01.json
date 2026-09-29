@@ -1,0 +1,16 @@
+{
+  "command": [
+    "node",
+    "node_modules/next/dist/bin/next",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+  "startedAt": "2026-09-12T17:05:13.400147+00:00",
+  "status": "complete",
+  "log": "build-scoped-01.log",
+  "pid": 16120,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T17:07:13.999397+00:00",
+  "elapsedSeconds": 120.6
+}

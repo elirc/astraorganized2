@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e6",
+  "id": "20574f0b81b4",
+  "command": [
+    "node",
+    "node_modules/tsx/dist/cli.mjs",
+    "--test",
+    "apps/api/tests/security.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\20574f0b81b4",
+  "environmentOverrides": {
+    "DATABASE_URL": "file:./e6-check.db"
+  },
+  "startedAt": "2026-09-12T22:22:55.465872+00:00",
+  "status": "complete",
+  "log": "e6-test-02.log",
+  "pid": 39548,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:23:03.437959+00:00",
+  "elapsedSeconds": 7.97
+}

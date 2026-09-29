@@ -1,0 +1,2073 @@
+[
+  {
+    "paths": [
+      ".netarchitectureproject",
+      "geminiorganized/General_.Architectureproject"
+    ],
+    "sourceFilesCompared": [
+      1144,
+      32
+    ],
+    "uniqueHashes": [
+      1140,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      ".netopen2",
+      "geminiorganized/General_.Open2"
+    ],
+    "sourceFilesCompared": [
+      7239,
+      32
+    ],
+    "uniqueHashes": [
+      7103,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      ".netramp",
+      "geminiorganized/OpenSource_Upskilling_.Ramp"
+    ],
+    "sourceFilesCompared": [
+      43,
+      32
+    ],
+    "uniqueHashes": [
+      43,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      ".netstripe",
+      "geminiorganized/OpenSource_Upskilling_.Stripe"
+    ],
+    "sourceFilesCompared": [
+      20,
+      20
+    ],
+    "uniqueHashes": [
+      20,
+      20
+    ],
+    "matchingSourceHashes": 20,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      ".nettodo",
+      "geminiorganized/General_.Todo"
+    ],
+    "sourceFilesCompared": [
+      333,
+      32
+    ],
+    "uniqueHashes": [
+      332,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "AlanAndEliSoccer",
+      "geminiorganized/General_Alanandelisoccer"
+    ],
+    "sourceFilesCompared": [
+      43,
+      32
+    ],
+    "uniqueHashes": [
+      43,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "GPTDocs",
+      "geminiorganized/LLM_Generated_Gptdocs"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "JS1",
+      "geminiorganized/LLM_Generated_Js1"
+    ],
+    "sourceFilesCompared": [
+      607,
+      32
+    ],
+    "uniqueHashes": [
+      495,
+      25
+    ],
+    "matchingSourceHashes": 16,
+    "smallerSourceOverlap": 0.64,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "JSProjectLearn",
+      "geminiorganized/LLM_Generated_Jsprojectlearn"
+    ],
+    "sourceFilesCompared": [
+      15,
+      32
+    ],
+    "uniqueHashes": [
+      15,
+      32
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "JSTut",
+      "geminiorganized/General_Jstut"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "_Organized Desktop/03 Master Projects/masterpre",
+      "_Organized Desktop/09 Grav And VG Projects/grav1pretalx"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+      "_Organized Desktop/04 JavaScript Training/jsdrillapp"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 0.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+      "_Organized Desktop/08 App And Product Projects/recipegen-temp"
+    ],
+    "sourceFilesCompared": [
+      5,
+      5
+    ],
+    "uniqueHashes": [
+      5,
+      5
+    ],
+    "matchingSourceHashes": 5,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "_Organized Desktop/08 App And Product Projects/job track",
+      "_Organized Desktop/08 App And Product Projects/job track/job-tracker-next"
+    ],
+    "sourceFilesCompared": [
+      29,
+      25
+    ],
+    "uniqueHashes": [
+      29,
+      25
+    ],
+    "matchingSourceHashes": 17,
+    "smallerSourceOverlap": 0.68,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Manual version-family decision: matching application identity and source structure, with shared substantive source hashes; later modifications explain differences. This does not assert complete byte identity."
+  },
+  {
+    "paths": [
+      "aiapplybot",
+      "geminiorganized/LLM_Generated_Applybot"
+    ],
+    "sourceFilesCompared": [
+      6,
+      6
+    ],
+    "uniqueHashes": [
+      6,
+      6
+    ],
+    "matchingSourceHashes": 6,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "aihelper",
+      "geminiorganized/LLM_Generated_Helper"
+    ],
+    "sourceFilesCompared": [
+      18,
+      18
+    ],
+    "uniqueHashes": [
+      18,
+      18
+    ],
+    "matchingSourceHashes": 18,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "ankijs",
+      "geminiorganized/General_Ankijs"
+    ],
+    "sourceFilesCompared": [
+      134,
+      32
+    ],
+    "uniqueHashes": [
+      134,
+      32
+    ],
+    "matchingSourceHashes": 15,
+    "smallerSourceOverlap": 0.4688,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "aral",
+      "geminiorganized/General_Aral"
+    ],
+    "sourceFilesCompared": [
+      73,
+      32
+    ],
+    "uniqueHashes": [
+      73,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "borrowbox",
+      "geminiorganized/General_Borrowbox"
+    ],
+    "sourceFilesCompared": [
+      38,
+      32
+    ],
+    "uniqueHashes": [
+      38,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildbusinesses",
+      "geminiorganized/LLM_Generated_Buildbusinesses"
+    ],
+    "sourceFilesCompared": [
+      7,
+      7
+    ],
+    "uniqueHashes": [
+      7,
+      7
+    ],
+    "matchingSourceHashes": 7,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildermentor",
+      "geminiorganized/LLM_Generated_Buildermentor"
+    ],
+    "sourceFilesCompared": [
+      77,
+      32
+    ],
+    "uniqueHashes": [
+      77,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildevent",
+      "geminiorganized/LLM_Generated_Buildevent"
+    ],
+    "sourceFilesCompared": [
+      62,
+      32
+    ],
+    "uniqueHashes": [
+      62,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildreviewer",
+      "geminiorganized/LLM_Generated_Buildreviewer"
+    ],
+    "sourceFilesCompared": [
+      74,
+      32
+    ],
+    "uniqueHashes": [
+      74,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildsmallplates",
+      "geminiorganized/LLM_Generated_Buildsmallplates"
+    ],
+    "sourceFilesCompared": [
+      52,
+      32
+    ],
+    "uniqueHashes": [
+      52,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildsql",
+      "geminiorganized/LLM_Generated_Buildsql"
+    ],
+    "sourceFilesCompared": [
+      14,
+      32
+    ],
+    "uniqueHashes": [
+      14,
+      32
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "buildwhiteboard",
+      "geminiorganized/LLM_Generated_Buildwhiteboard"
+    ],
+    "sourceFilesCompared": [
+      10,
+      10
+    ],
+    "uniqueHashes": [
+      10,
+      10
+    ],
+    "matchingSourceHashes": 10,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "c#interview",
+      "geminiorganized/General_C#Interview"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "campusops",
+      "geminiorganized/General_Campusops"
+    ],
+    "sourceFilesCompared": [
+      79,
+      32
+    ],
+    "uniqueHashes": [
+      79,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "claude docs",
+      "geminiorganized/LLM_Generated_ClaudeDocs"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "csharptut",
+      "geminiorganized/General_Csharptut"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "devdeck",
+      "geminiorganized/General_Devdeck"
+    ],
+    "sourceFilesCompared": [
+      37,
+      32
+    ],
+    "uniqueHashes": [
+      37,
+      32
+    ],
+    "matchingSourceHashes": 30,
+    "smallerSourceOverlap": 0.9375,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "fableaihelperv2",
+      "geminiorganized/LLM_Generated_Fablehelperv2"
+    ],
+    "sourceFilesCompared": [
+      80,
+      32
+    ],
+    "uniqueHashes": [
+      79,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "fableaihelperv3",
+      "geminiorganized/LLM_Generated_Fablehelperv3"
+    ],
+    "sourceFilesCompared": [
+      27,
+      27
+    ],
+    "uniqueHashes": [
+      27,
+      27
+    ],
+    "matchingSourceHashes": 27,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "finance-dashboard",
+      "geminiorganized/General_Finance-Dashboard"
+    ],
+    "sourceFilesCompared": [
+      5,
+      3
+    ],
+    "uniqueHashes": [
+      5,
+      3
+    ],
+    "matchingSourceHashes": 1,
+    "smallerSourceOverlap": 0.3333,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Manual version-family decision: matching application identity and source structure, with shared substantive source hashes; later modifications explain differences. This does not assert complete byte identity."
+  },
+  {
+    "paths": [
+      "formforge",
+      "geminiorganized/General_Formforge"
+    ],
+    "sourceFilesCompared": [
+      62,
+      32
+    ],
+    "uniqueHashes": [
+      62,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/FableDocs_Projects_Hermes",
+      "hermes"
+    ],
+    "sourceFilesCompared": [
+      0,
+      7
+    ],
+    "uniqueHashes": [
+      0,
+      7
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Cleanarch",
+      "netcleanarch"
+    ],
+    "sourceFilesCompared": [
+      32,
+      160
+    ],
+    "uniqueHashes": [
+      32,
+      160
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitjira",
+      "gitjira"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitjira-App",
+      "gitjira-app"
+    ],
+    "sourceFilesCompared": [
+      32,
+      178
+    ],
+    "uniqueHashes": [
+      32,
+      178
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg",
+      "gitvg/relay"
+    ],
+    "sourceFilesCompared": [
+      1,
+      127
+    ],
+    "uniqueHashes": [
+      1,
+      127
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/agora",
+      "gitvg/agora"
+    ],
+    "sourceFilesCompared": [
+      32,
+      261
+    ],
+    "uniqueHashes": [
+      32,
+      261
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/agora-net",
+      "gitvg/agora-net"
+    ],
+    "sourceFilesCompared": [
+      32,
+      152
+    ],
+    "uniqueHashes": [
+      32,
+      152
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/atlas",
+      "gitvg/atlas"
+    ],
+    "sourceFilesCompared": [
+      32,
+      507
+    ],
+    "uniqueHashes": [
+      32,
+      507
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/atlas-net",
+      "gitvg/atlas-net"
+    ],
+    "sourceFilesCompared": [
+      32,
+      93
+    ],
+    "uniqueHashes": [
+      32,
+      93
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/bazaar",
+      "gitvg/bazaar"
+    ],
+    "sourceFilesCompared": [
+      32,
+      206
+    ],
+    "uniqueHashes": [
+      32,
+      205
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/bazaar-app",
+      "gitvg/bazaar-app"
+    ],
+    "sourceFilesCompared": [
+      32,
+      216
+    ],
+    "uniqueHashes": [
+      32,
+      216
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/folio",
+      "gitvg/folio"
+    ],
+    "sourceFilesCompared": [
+      32,
+      123
+    ],
+    "uniqueHashes": [
+      32,
+      123
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/folio-app",
+      "gitvg/folio-app"
+    ],
+    "sourceFilesCompared": [
+      32,
+      158
+    ],
+    "uniqueHashes": [
+      32,
+      158
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/harbor",
+      "gitvg/harbor"
+    ],
+    "sourceFilesCompared": [
+      32,
+      121
+    ],
+    "uniqueHashes": [
+      32,
+      121
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/harbor-net",
+      "gitvg/harbor-net"
+    ],
+    "sourceFilesCompared": [
+      32,
+      141
+    ],
+    "uniqueHashes": [
+      32,
+      141
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/pulse",
+      "gitvg/pulse"
+    ],
+    "sourceFilesCompared": [
+      32,
+      217
+    ],
+    "uniqueHashes": [
+      32,
+      217
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/pulse-net",
+      "gitvg/pulse-net"
+    ],
+    "sourceFilesCompared": [
+      32,
+      102
+    ],
+    "uniqueHashes": [
+      32,
+      102
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/relay",
+      "gitvg/relay"
+    ],
+    "sourceFilesCompared": [
+      32,
+      127
+    ],
+    "uniqueHashes": [
+      32,
+      127
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/relay-app",
+      "gitvg/relay-app"
+    ],
+    "sourceFilesCompared": [
+      32,
+      200
+    ],
+    "uniqueHashes": [
+      32,
+      200
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/storefront",
+      "gitvg/storefront"
+    ],
+    "sourceFilesCompared": [
+      32,
+      52
+    ],
+    "uniqueHashes": [
+      32,
+      52
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/tracer",
+      "gitvg/tracer"
+    ],
+    "sourceFilesCompared": [
+      32,
+      84
+    ],
+    "uniqueHashes": [
+      32,
+      84
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Gitvg/tracer-net",
+      "gitvg/tracer-net"
+    ],
+    "sourceFilesCompared": [
+      32,
+      158
+    ],
+    "uniqueHashes": [
+      32,
+      158
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Globehire",
+      "globehire"
+    ],
+    "sourceFilesCompared": [
+      32,
+      74
+    ],
+    "uniqueHashes": [
+      32,
+      74
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Jsharness",
+      "jsharness/VTCode"
+    ],
+    "sourceFilesCompared": [
+      0,
+      2136
+    ],
+    "uniqueHashes": [
+      0,
+      2136
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Jsharness/VTCode",
+      "jsharness/VTCode"
+    ],
+    "sourceFilesCompared": [
+      32,
+      2136
+    ],
+    "uniqueHashes": [
+      32,
+      2136
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Jsharness/ctvodejs",
+      "jsharness/ctvodejs"
+    ],
+    "sourceFilesCompared": [
+      32,
+      113
+    ],
+    "uniqueHashes": [
+      32,
+      113
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_MasterPlan",
+      "master plan"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Masternocu",
+      "masternocu"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Masteroutline",
+      "masteroutline"
+    ],
+    "sourceFilesCompared": [
+      32,
+      2258
+    ],
+    "uniqueHashes": [
+      32,
+      2253
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Meterforge",
+      "meterforge"
+    ],
+    "sourceFilesCompared": [
+      32,
+      69
+    ],
+    "uniqueHashes": [
+      32,
+      69
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Missioncontrol",
+      "missioncontrol"
+    ],
+    "sourceFilesCompared": [
+      32,
+      72
+    ],
+    "uniqueHashes": [
+      32,
+      72
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Mobiletagalog",
+      "mobiletagalog"
+    ],
+    "sourceFilesCompared": [
+      32,
+      34
+    ],
+    "uniqueHashes": [
+      32,
+      34
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Newcodecjs2",
+      "newcodecjs2"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      28,
+      28
+    ],
+    "matchingSourceHashes": 27,
+    "smallerSourceOverlap": 0.9643,
+    "relativePathOverlap": 0.9688,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Newcodex3",
+      "newcodex3"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Newcodexjs",
+      "newcodexJS"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      22,
+      23
+    ],
+    "matchingSourceHashes": 2,
+    "smallerSourceOverlap": 0.0909,
+    "relativePathOverlap": 0.9375,
+    "decision": "group-copy-family",
+    "basis": "Manual version-family decision: matching application identity and source structure, with shared substantive source hashes; later modifications explain differences. This does not assert complete byte identity."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Nopsolutions",
+      "nopsolutionsnet"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Open1",
+      "netopen1"
+    ],
+    "sourceFilesCompared": [
+      32,
+      614
+    ],
+    "uniqueHashes": [
+      32,
+      606
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Open3",
+      "netopen3"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Open5",
+      "netopen5"
+    ],
+    "sourceFilesCompared": [
+      32,
+      2113
+    ],
+    "uniqueHashes": [
+      32,
+      2113
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Perch",
+      "perch"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 23,
+    "smallerSourceOverlap": 0.7188,
+    "relativePathOverlap": 0.7188,
+    "decision": "group-copy-family",
+    "basis": "Manual version-family decision: matching application identity and source structure, with shared substantive source hashes; later modifications explain differences. This does not assert complete byte identity."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Readme",
+      "readme"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Recipeview",
+      "recipeview"
+    ],
+    "sourceFilesCompared": [
+      27,
+      28
+    ],
+    "uniqueHashes": [
+      27,
+      28
+    ],
+    "matchingSourceHashes": 25,
+    "smallerSourceOverlap": 0.9259,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Recipeweb",
+      "recipeweb"
+    ],
+    "sourceFilesCompared": [
+      15,
+      17
+    ],
+    "uniqueHashes": [
+      15,
+      17
+    ],
+    "matchingSourceHashes": 11,
+    "smallerSourceOverlap": 0.7333,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Resume",
+      "resume"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Skillforgejs",
+      "skillforgejs"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Spacegame",
+      "spacegame"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/General_Tagalog",
+      "tagalog"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      32,
+      32
+    ],
+    "matchingSourceHashes": 21,
+    "smallerSourceOverlap": 0.6562,
+    "relativePathOverlap": 0.8125,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Ecommerceproject",
+      "grokbuildecommerceproject"
+    ],
+    "sourceFilesCompared": [
+      22,
+      22
+    ],
+    "uniqueHashes": [
+      22,
+      22
+    ],
+    "matchingSourceHashes": 22,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Grokjs",
+      "grokjs"
+    ],
+    "sourceFilesCompared": [
+      32,
+      2063
+    ],
+    "uniqueHashes": [
+      32,
+      2063
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Groktuts",
+      "groktuts"
+    ],
+    "sourceFilesCompared": [
+      32,
+      185
+    ],
+    "uniqueHashes": [
+      32,
+      185
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Hrproject",
+      "grokbuildhrproject"
+    ],
+    "sourceFilesCompared": [
+      18,
+      18
+    ],
+    "uniqueHashes": [
+      18,
+      18
+    ],
+    "matchingSourceHashes": 18,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Multitenantproject",
+      "grokbuildmultitenantproject"
+    ],
+    "sourceFilesCompared": [
+      18,
+      18
+    ],
+    "uniqueHashes": [
+      18,
+      18
+    ],
+    "matchingSourceHashes": 18,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Orderproject",
+      "grokbuildorderproject"
+    ],
+    "sourceFilesCompared": [
+      17,
+      17
+    ],
+    "uniqueHashes": [
+      17,
+      17
+    ],
+    "matchingSourceHashes": 17,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Ppmproject",
+      "grokbuildppmproject"
+    ],
+    "sourceFilesCompared": [
+      24,
+      24
+    ],
+    "uniqueHashes": [
+      24,
+      24
+    ],
+    "matchingSourceHashes": 24,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Rag",
+      "netairag"
+    ],
+    "sourceFilesCompared": [
+      32,
+      85
+    ],
+    "uniqueHashes": [
+      32,
+      85
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Supportproject",
+      "grokbuildsupportproject"
+    ],
+    "sourceFilesCompared": [
+      0,
+      0
+    ],
+    "uniqueHashes": [
+      0,
+      0
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-or-uncertain-do-not-merge",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/LLM_Generated_Teamproject",
+      "grokbuildteamproject"
+    ],
+    "sourceFilesCompared": [
+      21,
+      21
+    ],
+    "uniqueHashes": [
+      21,
+      21
+    ],
+    "matchingSourceHashes": 21,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Auth",
+      "netauth"
+    ],
+    "sourceFilesCompared": [
+      32,
+      41
+    ],
+    "uniqueHashes": [
+      32,
+      41
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Docu",
+      "netdocu"
+    ],
+    "sourceFilesCompared": [
+      32,
+      78
+    ],
+    "uniqueHashes": [
+      32,
+      78
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Drop",
+      "netdrop"
+    ],
+    "sourceFilesCompared": [
+      32,
+      57
+    ],
+    "uniqueHashes": [
+      32,
+      57
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Intercom",
+      "netintercom"
+    ],
+    "sourceFilesCompared": [
+      32,
+      80
+    ],
+    "uniqueHashes": [
+      32,
+      80
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Linear",
+      "netlinear"
+    ],
+    "sourceFilesCompared": [
+      32,
+      57
+    ],
+    "uniqueHashes": [
+      32,
+      57
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Notion",
+      "netnotion"
+    ],
+    "sourceFilesCompared": [
+      32,
+      92
+    ],
+    "uniqueHashes": [
+      32,
+      92
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Shop",
+      "netshop"
+    ],
+    "sourceFilesCompared": [
+      32,
+      47
+    ],
+    "uniqueHashes": [
+      32,
+      47
+    ],
+    "matchingSourceHashes": 32,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Snapshot",
+      "netsnapshot"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      4,
+      4
+    ],
+    "matchingSourceHashes": 4,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "geminiorganized/OpenSource_Upskilling_Snapshot1",
+      "netsnapshot1"
+    ],
+    "sourceFilesCompared": [
+      32,
+      32
+    ],
+    "uniqueHashes": [
+      5,
+      5
+    ],
+    "matchingSourceHashes": 5,
+    "smallerSourceOverlap": 1.0,
+    "relativePathOverlap": 1.0,
+    "decision": "group-copy-family",
+    "basis": "Current substantive source hashes (up to 32 deterministic samples for large locations), normalized only for CRLF; prior relationships were candidates, not proof. Documents may differ."
+  },
+  {
+    "paths": [
+      "gitvg/agora",
+      "gitvg/agora-net"
+    ],
+    "sourceFilesCompared": [
+      261,
+      152
+    ],
+    "uniqueHashes": [
+      261,
+      152
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0132,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/atlas",
+      "gitvg/atlas-net"
+    ],
+    "sourceFilesCompared": [
+      507,
+      93
+    ],
+    "uniqueHashes": [
+      507,
+      93
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0968,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/bazaar",
+      "gitvg/bazaar-app"
+    ],
+    "sourceFilesCompared": [
+      206,
+      216
+    ],
+    "uniqueHashes": [
+      205,
+      216
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/folio",
+      "gitvg/folio-app"
+    ],
+    "sourceFilesCompared": [
+      123,
+      158
+    ],
+    "uniqueHashes": [
+      123,
+      158
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/harbor",
+      "gitvg/harbor-net"
+    ],
+    "sourceFilesCompared": [
+      121,
+      141
+    ],
+    "uniqueHashes": [
+      121,
+      141
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/pulse",
+      "gitvg/pulse-net"
+    ],
+    "sourceFilesCompared": [
+      217,
+      102
+    ],
+    "uniqueHashes": [
+      217,
+      102
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/relay",
+      "gitvg/relay-app"
+    ],
+    "sourceFilesCompared": [
+      127,
+      200
+    ],
+    "uniqueHashes": [
+      127,
+      200
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  },
+  {
+    "paths": [
+      "gitvg/tracer",
+      "gitvg/tracer-net"
+    ],
+    "sourceFilesCompared": [
+      84,
+      158
+    ],
+    "uniqueHashes": [
+      84,
+      158
+    ],
+    "matchingSourceHashes": 0,
+    "smallerSourceOverlap": 0.0,
+    "relativePathOverlap": 0.0,
+    "decision": "related-implementation-variant-kept-separate",
+    "basis": "Same product concept, separate application implementation/teaching track rather than a client/server package. Current source comparison does not establish a copy; retained separately and explicitly flagged as related."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "cmd.exe",
+    "/c",
+    "npm test -- --run tests/services/versioned-profile-service.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:26:45.045378+00:00",
+  "status": "complete",
+  "log": "ww27-test-17.log",
+  "pid": 24300,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:26:54.440253+00:00",
+  "elapsedSeconds": 9.39
+}

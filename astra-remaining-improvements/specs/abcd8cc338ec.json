@@ -1,0 +1,25 @@
+{
+  "id": "abcd8cc338ec",
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain2",
+  "summary": [
+    "Update workflow metadata, increment version and replace steps within one Drizzle transaction.",
+    "Teach aggregate boundaries, omitted-versus-empty child lists, and error propagation before response conversion."
+  ],
+  "changedFiles": [
+    "src/app/api/workflows/[id]/route.ts",
+    "astraupskill/snapshots/workflow-route.ts.original.txt",
+    "tests/runtime-workflow-transaction.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b03-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/abcd8cc338ec/results-crud-b03.json"
+  },
+  "limits": [
+    "Tests execute the actual PUT route and API response/error helpers with explicit Drizzle, auth, schema and validation doubles.",
+    "The transaction double asserts call scope, order and rejection; it does not prove PostgreSQL rollback, isolation, SQL compilation or real Zod validation.",
+    "Native Next.js, database and browser suites were not run. Existing step-id references and authorization policy are unchanged."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "changedFiles": [
+    "src/db/repos.ts",
+    "src/core/setValidation.ts",
+    "src/core/__tests__/setValidation.test.ts",
+    "src/services/workoutFlow.ts",
+    "src/services/__tests__/workoutFlow.test.ts",
+    "src/db/__tests__/repos-mutations.test.ts",
+    "astraupskill/snapshots/repos-before.ts.txt",
+    "astraupskill/snapshots/workoutFlow-before.ts.txt",
+    "README.md",
+    "astraupskill/evidence.json"
+  ],
+  "summary": [
+    "Set updates validate numeric values, preserve undefined versus null patch semantics, return affected-row results and notify subscribers only after actual mutations.",
+    "Workout completion now guards service orchestration as well as persistence, preventing repeated or missing completions from advancing and saving program progression again.",
+    "Program creation binds and returns the same timestamp; regression tests cover stale mutations, notifications, validation and real progression orchestration through database seams.",
+    "Nine learning guides explain the actual repository/service flow with worked code, exercises, executable solution examples and exact original source snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/buildsmallplates/results.json",
+    "expectedTests": 92,
+    "environment": "Windows; Node 22.16.0; npm 10.9.2; Expo 57.0.7; React Native 0.86.0; TypeScript 6.0.3; Vitest 4.1.10",
+    "command": "Locked npm ci; node node_modules/vitest/vitest.mjs run --maxWorkers=1 --testTimeout=30000 --reporter=json; node node_modules/typescript/bin/tsc --noEmit"
+  },
+  "limits": [
+    "SQLite mutations remain synchronous because the app uses expo-sqlite synchronous APIs; callers still need UI-level error handling for thrown validation or database errors.",
+    "The repository does not add remote sync, authentication, conflict resolution, or a migration beyond the existing schema version.",
+    "The validation policy rejects negative values and non-finite numbers, but domain-specific coaching rules such as minimum load for every exercise remain outside this persistence layer.",
+    "Repository tests use a mocked database seam; no native SQLite/device/emulator run was performed.",
+    "No UI or release build verification is claimed.",
+    "Final suite uses one worker and a 30-second test bound. An earlier parallel run exceeded the default five-second bound in the existing deterministic plate-math property test; all assertions remain enabled."
+  ]
+}

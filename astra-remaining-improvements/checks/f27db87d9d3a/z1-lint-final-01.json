@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z1",
+  "id": "f27db87d9d3a",
+  "command": [
+    "npm.cmd",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f27db87d9d3a",
+  "environmentOverrides": {
+    "NODE_OPTIONS": "--enable-source-maps"
+  },
+  "startedAt": "2026-09-13T00:27:51.982026+00:00",
+  "status": "complete",
+  "log": "z1-lint-final-01.log",
+  "pid": 17908,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T00:33:32.158469+00:00",
+  "elapsedSeconds": 340.17
+}

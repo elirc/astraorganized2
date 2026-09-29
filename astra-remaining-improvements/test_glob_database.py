@@ -1,0 +1,50 @@
+﻿from pathlib import Path
+import json
+b=Path('astra-remaining-improvements');s=b/'stage/993e7c3b44d7';source=(b/'stage/56044dcd81ce/scripts/test-database.mjs').read_text(encoding='utf-8');t=source[:source.index('  await node(\n    "prisma-generate"')];t=t.replace('WORKFORCE_VERIFY_RESULTS_DIR','GLOBS_VERIFY_RESULTS_DIR').replace('astra-workforce-pg-','astra-globs-pg-').replace('astra_workforce_test','astra_globs_test').replace('WORKFORCE_TEST_DATABASE','GLOBS_TEST_DATABASE').replace('NODE_ENV: "test"','NODE_ENV: "production"').replace('JWT_SECRET: "synthetic-test-only-secret-at-least-32-characters",','GLOBS_AUTHOR_TOKEN: "c".repeat(64),\n  GLOBS_DEMO_MODE: "false",').replace('  DEMO_PASSWORD: "Synthetic-Test-Password-2026",\n','')
+t+='''  await node('prisma-generate','node_modules/prisma/build/index.js',['generate']);
+  await node('migrations','node_modules/prisma/build/index.js',['migrate','deploy']);
+  const summary={passed:true,mode,database:'PostgreSQL 18; fresh helper-owned loopback cluster'};
+  if(mode!=='database-check'){
+    if(mode!=='browser'){
+      const model=await run('model-tests',process.execPath,['--test','tests/model.test.js']);
+      const database=await run('database-tests',process.execPath,['--test','tests/database.test.js']);
+      const count=result=>{const match=result.stdout.match(/# pass (\\d+)/);if(!match||!/# fail 0/.test(result.stdout)||!/# skipped 0/.test(result.stdout))throw new Error('Tests were not all executed successfully.');return Number(match[1]);};
+      summary.modelTests=count(model);summary.databaseTests=count(database);
+    }
+    await run('seed',process.execPath,['prisma/seed.js']);
+    await run('seed-repeat',process.execPath,['prisma/seed.js']);
+    if(['verify','browser'].includes(mode)){
+      await node('lint','node_modules/eslint/bin/eslint.js',['.']);
+      await node('build','node_modules/next/dist/bin/next',['build','--webpack'],root,600000);
+      env.GLOBS_WEB_PORT=String(await freePort());env.GLOBS_BROWSER_REPORT=join(results,'browser.json');
+      await node('browser-tests','node_modules/@playwright/test/cli.js',['test'],root,600000);
+      const stats=JSON.parse(readFileSync(join(results,'browser.json'),'utf8')).stats;
+      if(!stats.expected||stats.unexpected||stats.flaky||stats.skipped)throw new Error('Browser tests did not all pass.');
+      summary.browserTests=stats.expected;summary.build=true;summary.lint=true;
+    }
+    writeFileSync(join(results,'results.json'),JSON.stringify(summary,null,2));console.log(JSON.stringify(summary));
+  }
+'''+source[source.index('} finally {\n  if (startAttempted)'):].replace('astra-workforce-pg-','astra-globs-pg-')
+(s/'scripts').mkdir(exist_ok=True);(s/'scripts/test-database.mjs').write_text(t,encoding='utf-8')
+p=s/'package.json';d=json.loads(p.read_text(encoding='utf-8'));d['scripts'].update({'test':'node --test tests/model.test.js','test:database':'node scripts/test-database.mjs backend','verify':'node scripts/test-database.mjs verify'});p.write_text(json.dumps(d,indent=2)+'\n',encoding='utf-8')
+(s/'next.config.mjs').write_text("export default {experimental:{cpus:2},async headers(){return [{source:'/:path*',headers:[{key:'X-Content-Type-Options',value:'nosniff'},{key:'Referrer-Policy',value:'same-origin'}]}];}};\n",encoding='utf-8')
+(s/'tests/database.test.js').write_text('''import test,{before,after} from 'node:test';
+import assert from 'node:assert/strict';
+import {PrismaClient} from '@prisma/client';
+import {createPuzzle,updatePuzzle,publishPuzzle,deletePuzzle,getPuzzle,listPuzzles} from '../src/lib/puzzles/authoring.js';
+import {resolveDailyPuzzle} from '../src/lib/puzzles/resolveDailyPuzzle.js';
+if(process.env.GLOBS_TEST_DATABASE!=='owned-temporary-cluster'||!process.env.DATABASE_URL?.includes('/astra_globs_test?'))throw new Error('Use npm run test:database; an owned disposable database is required.');
+const db=new PrismaClient();let sequence=0;
+const draft=()=>({title:'Edition '+(++sequence),date:new Date(Date.UTC(2027,0,sequence)).toISOString().slice(0,10),locale:'en-US',rootLabel:'Four concepts',categories:Array.from({length:4},(_,i)=>({label:'Category '+i,hint:'',members:Array.from({length:4},(_,j)=>`Word ${i}-${j}`)}))});
+before(async()=>{await db.$connect();});after(async()=>{await db.$disconnect();});
+test('create, read, update and delete retain an audit trail',async()=>{const input=draft();const created=await createPuzzle(db,input);assert.equal(created.groups.length,5);assert.equal(created.version,1);const updated=await updatePuzzle(db,created.id,1,{...input,title:'Revised edition'});assert.equal(updated.id,created.id);assert.equal(updated.version,2);assert.equal((await getPuzzle(db,created.id)).title,'Revised edition');await deletePuzzle(db,created.id,2);await assert.rejects(getPuzzle(db,created.id),e=>e.status===404);assert.deepEqual((await db.puzzleAudit.findMany({where:{puzzleId:created.id},orderBy:{version:'asc'}})).map(a=>a.action),['CREATE','UPDATE','DELETE']);});
+test('concurrent edits from one version have exactly one winner',async()=>{const input=draft(),created=await createPuzzle(db,input);const outcomes=await Promise.allSettled([updatePuzzle(db,created.id,1,{...input,title:'A'}),updatePuzzle(db,created.id,1,{...input,title:'B'})]);assert.equal(outcomes.filter(o=>o.status==='fulfilled').length,1);assert.equal(outcomes.find(o=>o.status==='rejected').reason.status,409);assert.equal((await getPuzzle(db,created.id)).version,2);assert.equal(await db.puzzleAudit.count({where:{puzzleId:created.id}}),2);});
+test('date uniqueness is enforced in the database',async()=>{const input=draft();await createPuzzle(db,input);await assert.rejects(createPuzzle(db,input),e=>e.code==='P2002');assert.equal(await db.puzzle.count({where:{date:new Date(input.date)}}),1);});
+test('publication freezes content and archive preserves that rule',async()=>{const input=draft(),created=await createPuzzle(db,input);const published=await publishPuzzle(db,created.id,1,true);assert.ok(published.publishedAt);await assert.rejects(updatePuzzle(db,created.id,2,{...input,title:'Changed'}),e=>e.status===409);await assert.rejects(deletePuzzle(db,created.id,2),e=>e.status===409);const payload=await resolveDailyPuzzle({date:input.date},db,{demo:false});assert.equal(payload.source,'database');assert.equal(payload.puzzleId,created.id);const archived=await publishPuzzle(db,created.id,2,false);assert.ok(archived.publishedAt);assert.equal(await resolveDailyPuzzle({date:input.date},db,{demo:false}),null);await assert.rejects(updatePuzzle(db,created.id,3,input),e=>e.status===409);await assert.rejects(deletePuzzle(db,created.id,3),e=>e.status===409);});
+test('legacy published rows become permanently frozen when archived',async()=>{const input=draft(),created=await createPuzzle(db,input);await db.puzzle.update({where:{id:created.id},data:{isPublished:true,publishedAt:null}});const archived=await publishPuzzle(db,created.id,1,false);assert.ok(archived.publishedAt);await assert.rejects(updatePuzzle(db,created.id,2,input),e=>e.status===409);});
+test('stale delete and publication requests cannot change current data',async()=>{const input=draft(),created=await createPuzzle(db,input);await updatePuzzle(db,created.id,1,input);await assert.rejects(deletePuzzle(db,created.id,1),e=>e.status===409);await assert.rejects(publishPuzzle(db,created.id,1,true),e=>e.status===409);assert.equal((await getPuzzle(db,created.id)).state,'draft');});
+test('audit insert failure rolls back both puzzle and group updates',async()=>{const input=draft(),created=await createPuzzle(db,input);await db.$executeRawUnsafe(`CREATE FUNCTION reject_test_audit() RETURNS trigger LANGUAGE plpgsql AS $$ BEGIN IF NEW.action = 'UPDATE' THEN RAISE EXCEPTION 'injected audit failure'; END IF; RETURN NEW; END; $$`);await db.$executeRawUnsafe(`CREATE TRIGGER reject_test_audit BEFORE INSERT ON "PuzzleAudit" FOR EACH ROW EXECUTE FUNCTION reject_test_audit()`);try{await assert.rejects(updatePuzzle(db,created.id,1,{...input,title:'Must roll back',categories:input.categories.map((c,i)=>({...c,label:'Replacement '+i}))}));const after=await getPuzzle(db,created.id);assert.equal(after.title,input.title);assert.equal(after.version,1);assert.deepEqual(after.draft.categories,input.categories);assert.equal(await db.puzzleAudit.count({where:{puzzleId:created.id}}),1);}finally{await db.$executeRawUnsafe('DROP TRIGGER reject_test_audit ON "PuzzleAudit"');await db.$executeRawUnsafe('DROP FUNCTION reject_test_audit()');}});
+test('existing results prevent deletion without cascading historical data',async()=>{const input=draft(),created=await createPuzzle(db,input);const result=await db.gameResult.create({data:{puzzleId:created.id,timeSeconds:10}});await assert.rejects(deletePuzzle(db,created.id,1),e=>e.status===409);await assert.rejects(db.puzzle.delete({where:{id:created.id}}));assert.ok(await db.gameResult.findUnique({where:{id:result.id}}));});
+test('database paging and filters bound results and preserve stable order',async()=>{for(let i=0;i<22;i++)await createPuzzle(db,{...draft(),title:'Pageable '+i});const first=await listPuzzles(db,{q:'Pageable',page:1,status:'draft'}),second=await listPuzzles(db,{q:'Pageable',page:2,status:'draft'});assert.equal(first.total,22);assert.equal(first.items.length,20);assert.equal(second.items.length,2);assert.equal(new Set([...first.items,...second.items].map(p=>p.id)).size,22);assert.deepEqual((await listPuzzles(db,{q:'Pageable',page:1,status:'draft'})).items,first.items);});
+test('database outage is surfaced and demo mode is explicit',async()=>{const failing={puzzle:{findFirst:async()=>{throw new Error('offline');}}};await assert.rejects(resolveDailyPuzzle({date:'2026-09-09'},failing,{demo:false}),/offline/);const sample=await resolveDailyPuzzle({date:'2026-09-09'},failing,{demo:true});assert.equal(sample.source,'demo');assert.equal(sample.date,'2026-09-09');assert.ok(sample.puzzleId.startsWith('demo-'));});
+''',encoding='utf-8');print('Added disposable PostgreSQL verification harness and ten real-database scenarios')

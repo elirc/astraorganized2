@@ -1,0 +1,58 @@
+{
+  "summary": [
+    "Validates issue PATCH fields and project-scoped relations before writes, preserving explicit nulls, zero values and no-op semantics with Prisma Int bounds.",
+    "Groups PATCH issue/activity/notification writes and bulk-sprint activity with their transaction client; validates full bulk populations before any updates.",
+    "Scopes move targets to the project board, validates IDs and positions, and provides safe API body/error responses.",
+    "Adds eleven input and actual route/API regression cases, passing production build/lint and nine source-specific learning chapters with complete examples."
+  ],
+  "changedFiles": [
+    "package.json",
+    "README.md",
+    "src/app/api/issues/route.js",
+    "src/app/api/issues/move/route.js",
+    "src/app/api/sprints/plan/route.js",
+    "src/lib/server/activity.js",
+    "src/lib/server/api.js",
+    "src/lib/server/issue-input.js",
+    "tests/issue-input.test.mjs",
+    "tests/issue-routes.test.mjs",
+    "astraupskill/snapshots/package.json.txt",
+    "astraupskill/snapshots/src__app__api__issues__move__route.js.txt",
+    "astraupskill/snapshots/src__app__api__issues__route.js.txt",
+    "astraupskill/snapshots/src__app__api__sprints__plan__route.js.txt",
+    "astraupskill/snapshots/src__lib__server__activity.js.txt",
+    "astraupskill/snapshots/src__lib__server__api.js.txt",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-build-01.json",
+    "astraupskill/evidence/root-build-01.log",
+    "astraupskill/evidence/root-generate-01.json",
+    "astraupskill/evidence/root-generate-01.log",
+    "astraupskill/evidence/root-handler-tests-02.json",
+    "astraupskill/evidence/root-handler-tests-02.log",
+    "astraupskill/evidence/root-install-01.json",
+    "astraupskill/evidence/root-install-01.log",
+    "astraupskill/evidence/root-lint-02.json",
+    "astraupskill/evidence/root-lint-02.log",
+    "astraupskill/evidence/syntax-01.json",
+    "astraupskill/evidence/syntax-01.log",
+    "astraupskill/evidence/syntax-02.json",
+    "astraupskill/evidence/syntax-02.log",
+    "astraupskill/evidence/syntax-03.json",
+    "astraupskill/evidence/syntax-03.log",
+    "astraupskill/evidence/unit-04.json",
+    "astraupskill/evidence/unit-04.log",
+    "astraupskill/evidence/unit-05.json",
+    "astraupskill/evidence/unit-05.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2d739127d551/results.json",
+    "expectedTests": 11
+  },
+  "limits": [
+    "Prisma and identity are mocked in tests; no database rollback, cross-request isolation, browser, Slack or authenticated session test.",
+    "Demo actor selection remains unauthenticated; PATCH has no expected-version protection.",
+    "Move activity remains outside its transaction and source-column position gaps/concurrent ordering remain; POST creation retains existing relation and side-effect gaps.",
+    "Dates accept JavaScript-parsable strings and numeric strings are intentionally accepted for optional integer inputs."
+  ]
+}

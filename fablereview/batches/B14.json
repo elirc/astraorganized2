@@ -1,0 +1,244 @@
+[
+ {
+  "wave": 2,
+  "id": "56044dcd81ce",
+  "name": "_Organized Desktop/02 Build Projects/buildantigVG",
+  "rel": "_Organized Desktop/02 Build Projects/buildantigVG",
+  "status": "delivered",
+  "tests": null,
+  "words": 3748,
+  "deliveredAt": "2026-09-09T07:49:11.402640+00:00",
+  "nfiles": 54,
+  "summary": [
+   "Replaces an empty Nest API and static metrics with a connected PostgreSQL worker directory, bounded search/pagination and active company selection.",
+   "Adds salted scrypt sign-in, signed short-lived tokens, request-time account/tenant checks and tenant-scoped access for three operations roles.",
+   "Implements versioned profile CRUD, guarded lifecycle transitions, read-only terminated history and deletion restricted to unlinked drafts.",
+   "Commits worker changes and minimal audit records together, with database email uniqueness and composite company/tenant ownership constraints.",
+   "Preserves failed/stale UI drafts, confirms destructive actions and current-data replacement, clears workspace state on sign-out and renders names literally.",
+   "Provides a fresh migration, repeatable non-overwriting seed, corrected setup and scope documentation, isolated PostgreSQL/Chromium harness and nine detailed CRUD learning documents.",
+   "Validates 29 real-database API tests, eight Chromium workflows, both builds, type checks, frontend lint, two seed runs and two reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildantigVG",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "buildantigvg",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/56044dcd81ce",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/56044dcd81ce.json (spec: specs/56044dcd81ce.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildantigVG/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "4ac741261ad5",
+  "name": "_Organized Desktop/03 Master Projects/master2",
+  "rel": "_Organized Desktop/03 Master Projects/master2",
+  "status": "delivered",
+  "tests": 30,
+  "words": 5048,
+  "deliveredAt": "2026-09-12T22:19:21.213454+00:00",
+  "nfiles": 40,
+  "summary": [
+   "Scopes mock payment processing to the organization and validates global provider-event ownership and payload identity before replay.",
+   "Keeps payment, invoice, provider event, audit and outbox writes in one Serializable transaction with bounded conflict retries, and prevents invalid invoice transitions or late failure regression.",
+   "Maps explicit domain and HTTP errors to useful client responses while sanitizing unexpected failures; preserves expected money, permission, subscription and idempotency errors.",
+   "Adds 25 API regression tests alongside five domain tests, with nine detailed learning chapters, complete worked test examples, exact original snapshots and portable evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master2",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "master2",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/4ac741261ad5",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/4ac741261ad5.json (spec: specs/4ac741261ad5.json)",
+  "course": "_Organized Desktop/03 Master Projects/master2/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "0b729fe76e93",
+  "name": "_Organized Desktop/03 Master Projects/master3",
+  "rel": "_Organized Desktop/03 Master Projects/master3",
+  "status": "delivered",
+  "tests": null,
+  "words": 3751,
+  "deliveredAt": "2026-09-12T19:12:38.974855+00:00",
+  "nfiles": 21,
+  "summary": [
+   "Reject ticket PATCH requests from viewers before the first Prisma lookup, including priority-only, tags-only, statusless, and empty partial updates.",
+   "Use one role-aware Prisma include for GET and update responses so internal comments are visible only to operational roles, while tenant-scoped writes retain audit and outbox atomicity.",
+   "Add pure authorization and mocked service-interaction coverage plus a detailed CRUD course with exact before snapshots and bounded verification evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master3",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "master3",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/0b729fe76e93",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/0b729fe76e93.json (spec: specs/0b729fe76e93.json)",
+  "course": "_Organized Desktop/03 Master Projects/master3/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "3302b1d1ab07",
+  "name": "_Organized Desktop/03 Master Projects/master4",
+  "rel": "_Organized Desktop/03 Master Projects/master4",
+  "status": "delivered",
+  "tests": null,
+  "words": 3801,
+  "deliveredAt": "2026-09-12T18:44:09.174572+00:00",
+  "nfiles": 29,
+  "summary": [
+   "Aggregate duplicate SKU lines before comparing requested inventory with available stock; reject invalid quantities and direct helper over-reservation.",
+   "Add regression coverage for duplicate demand, invalid quantities and direct helper guards; the complete suite passes 12 tests, type checking and the client build.",
+   "Add nine source-linked learning guides, an exact original rule snapshot, worked practice solutions and actual verification evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master4",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "master4",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/3302b1d1ab07",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/3302b1d1ab07.json (spec: specs/3302b1d1ab07.json)",
+  "course": "_Organized Desktop/03 Master Projects/master4/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "a1d53294d3b0",
+  "name": "_Organized Desktop/03 Master Projects/master7",
+  "rel": "_Organized Desktop/03 Master Projects/master7",
+  "status": "delivered",
+  "tests": null,
+  "words": 3814,
+  "deliveredAt": "2026-09-12T19:10:03.521790+00:00",
+  "nfiles": 26,
+  "summary": [
+   "Scope dashboard audit records to the actor organization before taking 25 entries; preserve platform administrator visibility and the learner empty-list contract.",
+   "Add synthetic two-organization audit fixtures and a real local HTTP regression covering staff, platform administrators and learners; nineteen tests, type checking and the workspace build pass.",
+   "Add a source-linked CRUD course with exact original snapshots, worked examples, practice solutions and recorded verification evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master7",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "master7",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/a1d53294d3b0",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/a1d53294d3b0.json (spec: specs/a1d53294d3b0.json)",
+  "course": "_Organized Desktop/03 Master Projects/master7/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "65f5f5c94a48",
+  "name": "grokbuildecommerceproject",
+  "rel": "grokbuildecommerceproject",
+  "status": "delivered",
+  "tests": 80,
+  "words": 4515,
+  "deliveredAt": "2026-09-09T13:00:38.155655+00:00",
+  "nfiles": 71,
+  "summary": [
+   "Completed authenticated catalogue CRUD with administrator controls, strict money and stock validation, captured versions, retained audit history and reference-aware deletion.",
+   "Implemented customer-scoped orders with exact decimal totals, accepted line snapshots, atomic stock reservation, durable checkout idempotency and cancellation that restores inventory once.",
+   "Built a responsive catalogue, cart and receipt workflow with preserved drafts, frozen retry requests, conflict recovery and explicit simulated fulfillment.",
+   "Added generated non-overwriting setup, fresh migration, repeatable fictional seed, 80 passing checks, four reviewed captures and nine detailed source-grounded learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildecommerceproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildecommerceproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/65f5f5c94a48",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/65f5f5c94a48.json (spec: specs/65f5f5c94a48.json)",
+  "course": "grokbuildecommerceproject/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "baf8258948be",
+  "name": "grokbuildhrproject",
+  "rel": "grokbuildhrproject",
+  "status": "delivered",
+  "tests": null,
+  "words": 4197,
+  "deliveredAt": "2026-09-09T11:38:38.252803+00:00",
+  "nfiles": 67,
+  "summary": [
+   "Repaired the relational model and implemented authenticated employee, department and owned leave CRUD with current database roles, bounded scoped reads and strict request validation.",
+   "Added version-conditional writes, transactional audits, manager-cycle and last-active-HR safeguards, reference-aware deletion, employee deactivation and intentional separation of employee records from login provisioning.",
+   "Implemented inclusive date overlap checks with employee row locks and a PostgreSQL exclusion constraint, plus authorized approval/rejection/cancellation transitions that retain the deciding actor and reject competing stale decisions.",
+   "Built a complete responsive React workspace with memory-only sessions, role-appropriate forms, separate preserved drafts, explicit conflict reconciliation/export, confirmed destructive actions and independent save/refresh feedback.",
+   "Added generated non-overwriting local setup, a fresh dedicated migration and repeatable fictional seed, 76 passing checks, reviewed desktop/narrow screenshots and nine detailed project-specific learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildhrproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildhrproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/baf8258948be",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/baf8258948be.json (spec: specs/baf8258948be.json)",
+  "course": "grokbuildhrproject/astraupskill",
+  "batch": "B14"
+ },
+ {
+  "wave": 2,
+  "id": "01e135926859",
+  "name": "grokbuildmultitenantproject",
+  "rel": "grokbuildmultitenantproject",
+  "status": "delivered",
+  "tests": null,
+  "words": 4115,
+  "deliveredAt": "2026-09-09T10:59:28.482481+00:00",
+  "nfiles": 59,
+  "summary": [
+   "Replaced unverified tenant selection and demo fallbacks with expiring authenticated identity, current database membership/role checks, scoped predicates and repository rejection of missing organization context.",
+   "Implemented project and task CRUD with captured versions, conditional concurrent updates/deletes, transactional retained audit, explicit referenced-project deletion rules and a composite tenant/project foreign key.",
+   "Added bounded strict requests, literal paginated search, consistent count/list reads, request IDs, controlled errors, loopback services and process-local sign-in throttling.",
+   "Built a complete React workspace with in-memory sessions, organization-specific caches, role-appropriate controls, separate preserved drafts, conflict export/reconciliation, confirmed tenant changes and independent save/refresh feedback.",
+   "Added reproducible workspace configuration, generated non-overwriting local credentials, a fresh PostgreSQL migration and non-overwriting fictional seed, 55 checks, reviewed screenshots and nine detailed source-grounded learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\grokbuildmultitenantproject",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "grokbuildmultitenantproject",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/01e135926859",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/01e135926859.json (spec: specs/01e135926859.json)",
+  "course": "grokbuildmultitenantproject/astraupskill",
+  "batch": "B14"
+ }
+]

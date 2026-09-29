@@ -1,0 +1,29 @@
+{
+  "project": "aral",
+  "id": "46f416b83060",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "ci",
+    "--prefer-offline",
+    "--no-audit",
+    "--no-fund",
+    "--fetch-retries=1",
+    "--fetch-timeout=20000",
+    "--maxsockets=2",
+    "--loglevel=verbose"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\46f416b83060",
+  "environmentOverrides": {
+    "HUSKY": "0",
+    "npm_config_cache": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/npm-cache"
+  },
+  "startedAt": "2026-09-19T21:57:28.407222+00:00",
+  "status": "complete",
+  "log": "astra-aral-install-r1.log",
+  "pid": 23820,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T22:20:12.527987+00:00",
+  "elapsedSeconds": 1364.09
+}

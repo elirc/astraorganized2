@@ -1,0 +1,33 @@
+{
+  "id": "06f66ec88e8d",
+  "status": "ready-for-review",
+  "project": "_Organized Desktop/05 Numbered Experiments/w21",
+  "finding": "transitionRouteStatus now maps Prisma P2025 from a concurrent route deletion to AppError 404 while rethrowing unrelated persistence errors.",
+  "changedFiles": [
+    "src/services/admin/gateway-route-service.ts",
+    "src/services/admin/gateway-route-service.test.ts",
+    "tests/runtime-route-status.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/admin/gateway-route-service.ts",
+    "astraupskill/snapshots/src/services/admin/gateway-route-service.test.ts",
+    "astraupskill/evidence/results-crud-b04.json",
+    "astraupskill/evidence/astra-crud-b04-w21.log",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "executed": 2,
+    "passed": true,
+    "command": "node --experimental-vm-modules --test tests/runtime-route-status.test.mjs"
+  },
+  "limits": [
+    "VM service harness only; Prisma, PostgreSQL, Next middleware and real concurrent deletion were not executed."
+  ]
+}

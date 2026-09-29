@@ -1,0 +1,25 @@
+{
+  "id": "7ff66e57d973",
+  "summary": [
+    "Check the tenant-scoped updateMany count before rereading or auditing a project status change.",
+    "Return HTTP 409 when the status write affects zero rows.",
+    "Execute the real project service and policy through seven runtime cases."
+  ],
+  "changedFiles": [
+    "src/services/project-service.ts",
+    "tests/runtime-project-status-race.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/project-service.ts",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7ff66e57d973/results-crud-b07.json"
+  },
+  "limits": [
+    "No live Prisma SQL, concurrent database, route, or rollback execution.",
+    "No retry policy or status-policy redesign is included.",
+    "The repository predicate includes organization and id, not expected status; count checking is not optimistic concurrency control. Real HttpError and role/status policy execute with generated enum adapters."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/test_auth_contracts.py",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\auth-01\\pytest-temp",
+    "--junitxml",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\auth-01\\results.xml"
+  ],
+  "exitCode": 0,
+  "seconds": 257.84
+}

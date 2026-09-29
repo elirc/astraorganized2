@@ -1,0 +1,37 @@
+{
+  "id": "2906d0b177f3",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:30:01.415214+00:00",
+  "sourceReview": "Reviewed POST route, Prisma6 schema, platform creation/audit service and existing dashboard selection reset. Compound environment selector binds submitted application before existing role, policy and lock checks. Other callers and non-atomic service operations unchanged.",
+  "teachingReview": "Replaced padded draft with nine distinct source-based chapters, actual before/after, status trace table, graded exercises and separate solutions. Explicitly labels permission-denial exercise unexecuted and separates relation validity from authorization.",
+  "testReview": "Three actual POST runtime cases passed with predicate-respecting environment adapter: mismatch404 no team/policy/create, matching201 verified team/policy/actor/version arguments, locked423 no creation. No native Prisma/Next/RBAC/SQL/concurrency claim.",
+  "specSHA256": "c8f23b3b3a1c502b6c5996efb393156f3440b94a4f8da1621457b5d7cab1829d",
+  "fileHashes": {
+    "app/api/deployments/route.js": "5a9426cbd90dd8ff0e0a2d31b4a83952939426e6b8bfda66a542a3f9373c1d45",
+    "tests/runtime-deployment-ownership.test.mjs": "ce6f5621fa3374e6da0b39f7a7b81622a9046d3a35330745316e08f70a281b01",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/app-api-deployments-route.js.before": "2bef1ec8fce2e3e428fd1ece2f2275bdc8588f4cb5a308ae21d881a1bbe84ff8",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "bc0ae0027eec684b3f29259da44f5be73e7359314d2405d2fbb35e30acc6485d",
+    "astraupskill/evidence/results.json": "14efd14e8a45be8d7f45e96453f7ae2131f5bb2fe3c05500f28c320623f4adf1",
+    "astraupskill/README.md": "27bca08e1471ac4b971e125b33e761087b3d818d1f75a701b652cb2278246583",
+    "astraupskill/01-CODEBASE-MAP.md": "a5248b8dceeaedc0d0a8a449d466be586bf5287cfc613334ad4c4fbd833db418",
+    "astraupskill/02-CONCEPTS.md": "e4297bd541c231d6e9679f5464cefd80e4aa4dabe505034e15d0419349c8e99b",
+    "astraupskill/03-WORKED-CHANGE.md": "60c812460d8ccf1aeb6ca1be0977e7862f89b61e0b81c52b368484e21d8ed97f",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "4c5dcb59ce8a5671fb315c7f304467fa3bebfa9bb1a2f645b27d44cf9b9220f1",
+    "astraupskill/05-PRACTICE.md": "5764b55ccb25273dd4b2d23935efda4bed42d6191b348c8843594b381db1a24d",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "ec52f52cc4b49b5b96dc1614bdd59399bc940c1af4ddb41cca3ed32cab233252",
+    "astraupskill/07-TRACE-LAB.md": "83592d630e427c5467e6fbeec3c0c5ef4f9e4ee2e55f2067165c3d8f407c2271",
+    "astraupskill/VERIFICATION.md": "2574f49c81c047809f5dde98da779a4aa6120f652b798c96d1220ef2a98eb28d"
+  },
+  "evidenceHashes": {
+    "checks/2906d0b177f3/crud-b03-astra-runtime.json": "933aaa8278e7bc9bfed5d9d5834be75b2ba02a652e23bf27c5812b67a5b426e4",
+    "checks/2906d0b177f3/crud-b03-astra-runtime.log": "bc0ae0027eec684b3f29259da44f5be73e7359314d2405d2fbb35e30acc6485d",
+    "checks/2906d0b177f3/results-crud-b03.json": "14efd14e8a45be8d7f45e96453f7ae2131f5bb2fe3c05500f28c320623f4adf1",
+    "checks/2906d0b177f3/review.txt": "ff03d297ebd2d22ca13250d19eecfe590cf6f4d6d90ec4215dd899c8f53d049b",
+    "checks/2906d0b177f3/review2.txt": "6b2ce134118f449f31ba826fe74ffa62f3a4f35ed2621f7ac354babe9ba4e3ed",
+    "checks/2906d0b177f3/review3.txt": "551a6abca0cb1615e2e053f82ad433c7d54322321afda97615ae88542b5a878b",
+    "checks/2906d0b177f3/review4.txt": "bdc01977225a67b3147b9ec8886d3033c840d9e7faead53ed3dc61821ead7806",
+    "checks/2906d0b177f3/review5.txt": "78d08d8d57628cd78dbe4f11d6b6fe7edbf829e4ddf922d92af1bd63ca9f6102",
+    "checks/2906d0b177f3/review6.txt": "5463c58bd3d9b7623f354ab92bd70f0dbd2910992fa36bdbd0c03a9a4c8181d9"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "mode": "verify",
+  "database": "PostgreSQL 18; helper-owned temporary loopback cluster",
+  "setupTests": 3,
+  "backendTests": 58,
+  "frontendTests": 6,
+  "browserTests": 16,
+  "build": true,
+  "totalTests": 83,
+  "backendBuild": true,
+  "frontendTypecheck": true,
+  "frontendBuild": true,
+  "freshMigration": true,
+  "seedRepeatedWithoutOverwrite": true,
+  "ownedPostgresShutdownConfirmed": true,
+  "reviewedScreenshots": 2,
+  "evidence": [
+    "full-first/results.json",
+    "full-first/backend.json",
+    "full-first/frontend.json",
+    "full-first/browser.json",
+    "full-first/postgres-stop.log"
+  ]
+}

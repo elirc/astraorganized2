@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.nettrello",
+  "id": "a92b3a3a2282",
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-Command",
+    "dotnet restore NetTrello.sln --ignore-failed-sources; if(\\ -ne 0){exit \\}; dotnet build NetTrello.sln --no-restore; if(\\ -ne 0){exit \\}; dotnet run --project tests/NetTrello.Checks/NetTrello.Checks.csproj --no-build; if(\\ -ne 0){exit \\}; powershell -NoProfile -ExecutionPolicy Bypass -File tests/http-regression.ps1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a92b3a3a2282",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:47:40.968820+00:00",
+  "status": "complete",
+  "log": "verify-01.log",
+  "pid": 33460,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:48:38.402496+00:00",
+  "elapsedSeconds": 57.43
+}

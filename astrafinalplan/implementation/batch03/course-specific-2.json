@@ -1,0 +1,127 @@
+[
+  {
+    "stage": 28,
+    "title": "Org Explorer: keeping a tree acyclic",
+    "focus": "recursive queries, structural invariants and concurrent tree moves",
+    "before": "The ancestor check and move were separate operations. Two simultaneous moves could each see an acceptable old tree and together create a cycle.",
+    "after": "Moves validate UUIDs and parent existence, lock structural changes within a transaction, check the subtree under the lock, then update. A node cannot become its own ancestor.",
+    "model": "Each node has a UUID, name, title and nullable parent_id. A null parent means a root. Children point upward; recursive SQL discovers descendants. A valid forest may have several roots, but every parent chain must terminate.",
+    "concept": "Consider two roots A and B. Request one proposes A under B; request two proposes B under A. Both are valid against the initial tree. Checking first and updating later leaves a time-of-check/time-of-use gap. The transaction takes a SHARE ROW EXCLUSIVE table lock before validating the structure. The second writer waits, then sees the first committed move and rejects the cycle. A transaction alone at the default isolation level would not make two independent read-then-write checks safe.\n\nThe lock is deliberately broad: it serializes structural writers for this small teaching app. It is easy to explain and inspect, but reduces concurrent write throughput. A more scalable design requires a proven locking or serializable-retry strategy, not simply removing the lock. The API policy cannot prevent arbitrary direct SQL from creating a cycle if that SQL bypasses the validation. The recursive query and the lock solve different parts of the problem: reachability and concurrency.",
+    "example": "Create roots A and B. Race A-under-B with B-under-A. Exactly one succeeds; the rejected move leaves a readable acyclic tree. Moving A under its own descendant is rejected even without concurrency.",
+    "exercises": [
+      "Show the full ancestor breadcrumb for a selected node.",
+      "Add a dry-run move endpoint that explains rejection.",
+      "Exercise three concurrent structural moves.",
+      "Design a more concurrent alternative to the table lock."
+    ],
+    "answers": [
+      "Walk parent ids with a visited set and show names from root to leaf; missing parents should produce an explicit diagnostic.",
+      "Reuse validation, but explain that a dry run is advisory because the tree can change before the real move. The actual move must revalidate under its lock.",
+      "Use separate requests/connections and assert the final parent graph terminates from every node, rather than assuming a particular winner.",
+      "Compare serializable transactions with retry against a carefully ordered lock set. Write the conflicting schedule and prove it cannot commit a cycle before implementing."
+    ],
+    "symbol": "SHARE ROW EXCLUSIVE",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts"
+  },
+  {
+    "stage": 30,
+    "title": "Pulse Analytics: truthful daily charts",
+    "focus": "calendar buckets, window functions and derived data",
+    "before": "A chart based only on existing event dates omitted quiet days, so a seven-row average could cover more than seven calendar days.",
+    "after": "The series generates every requested calendar day, left-joins daily aggregates, fills missing values with zero and computes the moving average and cumulative total over those rows. Summary uses the same inclusive day window.",
+    "model": "Raw events are timestamped facts with event type, product and purchase amount. Daily aggregates and materialized views are derived data. The chart returns one row per calendar date; a missing event row becomes a zero-valued day rather than disappearing.",
+    "concept": "SQL GROUP BY only produces groups present in the input. If Monday has 10 purchases and Wednesday has 20, Tuesday does not exist in the grouped result. generate_series supplies the calendar spine. LEFT JOIN keeps Tuesday, and COALESCE converts the missing aggregate to zero. Only then does a ROWS window correspond to calendar days. The order of these operations is part of correctness.\n\nThe first moving-average points use the available rows inside the requested window; the first point is a one-day average, not a hidden seven-day warm-up. Cumulative totals also reset at the requested window boundary, and the first delta is null because there is no preceding row in that result. Summary and series share inclusive calendar-day boundaries. The separate top-products query retains a rolling timestamp window. Refreshing a materialized view is an explicit update to a stored derived result; newly inserted raw events can exist before that view reflects them.",
+    "example": "For daily values 10, 0 and 20, the visible moving averages are 10, 5 and 10; cumulative totals are 10, 10 and 30. A seven-day request returns seven rows even if events exist on only two days.",
+    "exercises": [
+      "Add a tooltip that distinguishes zero activity from loading.",
+      "Compare an average with and without zero days.",
+      "Add an explicit materialized-view freshness indicator.",
+      "Offer an optional moving-average warm-up period."
+    ],
+    "answers": [
+      "Use request state for loading and a numeric zero for a completed empty day. Do not use a falsy check that hides zero.",
+      "Compute (10+0+20)/3 versus (10+20)/2 and explain that they answer different questions.",
+      "Store/display the last completed refresh time and leave it unchanged on refresh failure.",
+      "Fetch six preceding days for calculation, compute the window, then trim the displayed range. Document the changed first-point semantics and test them."
+    ],
+    "symbol": "generate_series",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts"
+  },
+  {
+    "stage": 31,
+    "title": "Support Tickets: repeat-safe workflow history",
+    "focus": "row locks, atomic updates and meaningful audit events",
+    "before": "Repeated status or assignment requests could append duplicate history even when the requested value already matched the ticket.",
+    "after": "Status and assignment read the current ticket under a row lock, return it unchanged for a repeated value, and record actual changes transactionally. Input and UUID validation reject malformed requests; failed related writes roll back.",
+    "model": "Tickets reference agents and labels. A ticket has current status and optional assigned agent; history explains actual changes. Junction rows connect tickets to labels. These separate rows must remain consistent with the ticket operation that creates them.",
+    "concept": "An audit event should describe a transition, not merely a button click. With status Open, requesting Resolved twice should produce one Open-to-Resolved event. Both requests must compare against the current locked row. Otherwise two concurrent callers can each read Open and both log the same transition. SELECT FOR UPDATE makes the second caller wait and inspect the committed value.\n\nThe same idea applies to assignment, including assigning the same agent twice. The update and corresponding event belong in the same transaction and use the same database client. Throwing after one successful query does not undo that query unless it is inside a transaction that rolls back. Foreign keys protect references, but a malformed UUID should be rejected before it becomes an opaque database error. This is repeat-safe current-state handling, not global request deduplication: if another valid transition happens between two commands, the later command may create a new event.",
+    "example": "Create a ticket, resolve it twice, and read history. There is one status event. Repeat assigning the same agent with the same expectation. Force a late related write to fail and verify that the earlier ticket changes did not commit.",
+    "exercises": [
+      "Disable the currently selected status action.",
+      "Explain assignment and unassignment in history.",
+      "Add a test for two different concurrent status commands.",
+      "Design an explicit allowed-transition graph."
+    ],
+    "answers": [
+      "Improve the control while retaining the server no-op guard; other callers can still submit the same status.",
+      "Represent no agent explicitly as null and resolve labels for display without changing stored identity.",
+      "Assert a valid serialized history and matching final status, not a predetermined scheduling order.",
+      "Define legal edges and user feedback first. Validate while holding the row lock; no role or transition policy is currently inferred from the status names."
+    ],
+    "symbol": "FOR UPDATE",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts"
+  },
+  {
+    "stage": 33,
+    "title": "Forum Search: reliable filtered pages",
+    "focus": "count/page consistency, stable ordering and bounded input",
+    "before": "Counting and fetching rows in separate snapshots could disagree, and an out-of-range page could strand the user on an empty result after deletion.",
+    "after": "Search count and rows share a read-only repeatable-read transaction. Page numbers clamp to the available range, ordering has an id tie-breaker, and thread/tag inputs and author references are validated.",
+    "model": "Threads belong to authors and can carry tags. A filtered result consists of items, total, page and page count; these values describe one database snapshot for that request. They are not independent facts to calculate with unrelated filters.",
+    "concept": "Suppose six matching threads use a five-row page. Page two has one item. Deleting it leaves five matches, so page two no longer exists. Clamp the requested page after counting, then calculate offset from the clamped value. With zero matches, retain a usable first-page representation rather than negative offsets. Stable sorting adds a unique id after the primary sort key so tied values have a deterministic order.\n\nA REPEATABLE READ transaction makes the count and row query see the same snapshot within one request. It does not freeze results across later page requests: another user can insert or delete between clicks. The browser also has a separate responsibility when multiple searches race. This change does not add a stale-response guard; a request sequence counter or AbortController is a useful independent extension. Database consistency and latest-user-intent rendering address different boundaries.",
+    "example": "Create six threads matching a unique search, visit page two, delete its only item, then fetch page two again. The response reports the clamped first page with five rows and total five. Invalid author or malformed tag data is rejected.",
+    "exercises": [
+      "Add a latest-request-wins guard in the React search flow.",
+      "Keep filters in the URL.",
+      "Test equal timestamps across page boundaries.",
+      "Design cursor pagination for a large changing forum."
+    ],
+    "answers": [
+      "Capture an increasing sequence id per request and apply results only if it is still current; test slow-old versus fast-new completion.",
+      "Parse and validate URL parameters, initialize controls and reset page when filters change. Avoid a state/URL update loop.",
+      "Create tied timestamps and assert the unique secondary ordering across repeated requests on unchanged data.",
+      "Use a cursor containing the primary sort value and unique id; explain how inserts and deletes affect traversal, and retain a deterministic ordering contract."
+    ],
+    "symbol": "REPEATABLE READ",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts"
+  },
+  {
+    "stage": 34,
+    "title": "Invoice Studio: validate first, commit together",
+    "focus": "decimal input contracts and transactional parent/child writes",
+    "before": "Malformed line values could reach arithmetic or database operations, including fractional quantities, impossible calendar dates and unsupported decimal precision.",
+    "after": "Invoices validate client UUIDs, real issue dates, bounded line arrays, whole positive quantities, two-decimal prices and tax from 0 to 100. Parent and line writes commit together, and a late line failure leaves no partial invoice change.",
+    "model": "An invoice is a parent row referencing a client. Line rows reference that invoice and contain description, quantity and unit price. Totals derive from the submitted lines and tax rate. The current UI creates invoices; API update behavior is exercised separately by regression tests.",
+    "concept": "An input contract must distinguish numbers, numeric strings, empty strings, arrays and objects. JavaScript coercion can turn [] into zero and [2] into two; neither is an acceptable quantity payload. Validate primitive shape and decimal precision before arithmetic. Quantity is a positive whole number, whereas unit price allows at most two decimal places. A date input represents a calendar label, so 2028-02-29 is valid and 2027-02-29 is not.\n\nFor two units at 12.34 and zero tax, the total is 24.68. The implementation rounds the aggregate to two decimal places; it is a teaching calculation, not a complete accounting policy for every currency or tax regime. Parent and child writes use one transaction. Updating the parent and deleting old lines before a failed replacement line must roll back all three steps. The failure test injects a database trigger in a disposable schema so it exercises a late database failure instead of stopping at input validation.",
+    "example": "Create two units at 12.34, zero tax, issued 2028-02-29: total 24.68. Reject quantity [2], a three-decimal price and 2027-02-29. Force a replacement line insert to fail and verify the old invoice and lines remain intact.",
+    "exercises": [
+      "Show the calculated total before submit.",
+      "Add an invoice edit form.",
+      "Test the maximum accepted quantity and price boundaries.",
+      "Design an integer-minor-unit monetary model."
+    ],
+    "answers": [
+      "Share a clearly specified calculation contract and show a preview; the server remains authoritative and must validate independently.",
+      "Load the parent and complete line set, preserve their intended replacement semantics, and show failed-save feedback without discarding the draft.",
+      "Use bounded fixtures and assert both immediately accepted and immediately rejected values; distinguish business maxima from database numeric limits.",
+      "Define currency scale, rounding stage and overflow bounds before converting. Explain how tax fractional cents are rounded; do not merely multiply arbitrary floats by 100."
+    ],
+    "symbol": "parseInvoice",
+    "source": "server/src/index.ts",
+    "test": "test/feature.test.ts"
+  }
+]

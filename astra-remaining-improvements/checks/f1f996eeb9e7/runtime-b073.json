@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz4",
+  "id": "f1f996eeb9e7",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/approval-stage-order.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f1f996eeb9e7\\zz4",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:56:03.478132+00:00",
+  "status": "complete",
+  "log": "runtime-b073.log",
+  "pid": 29756,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:56:08.453024+00:00",
+  "elapsedSeconds": 4.75
+}

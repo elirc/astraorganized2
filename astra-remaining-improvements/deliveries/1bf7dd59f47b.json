@@ -1,0 +1,212 @@
+{
+  "project": "mobiletagalog",
+  "id": "1bf7dd59f47b",
+  "summary": [
+    "Added serial, generation-bound synchronization and atomic baseline plus sent-event acknowledgement.",
+    "Preserved events recorded during in-flight sync; prevented late responses, stale refreshes and profile updates from restoring prior sessions.",
+    "Distinguished guest adoption from signed-in account switching and added regression fixtures and source-based guides."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1bf7dd59f47b/sol15-results.json",
+    "expectedTests": 10,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 10,
+    "passedTests": 10,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "mobiletagalog",
+        "id": "1bf7dd59f47b",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "--",
+          "--minWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1bf7dd59f47b",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:54:32.661272+00:00",
+        "status": "complete",
+        "log": "astra-mobile-tests-r1.log",
+        "pid": 23040,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:56:40.519184+00:00",
+        "elapsedSeconds": 127.85
+      },
+      {
+        "project": "mobiletagalog",
+        "id": "1bf7dd59f47b",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1bf7dd59f47b",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:54:42.064508+00:00",
+        "status": "complete",
+        "log": "astra-mobile-typecheck-r1.log",
+        "pid": 22224,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:58:17.670077+00:00",
+        "elapsedSeconds": 215.6
+      }
+    ]
+  },
+  "courseWords": 3289,
+  "courseFiles": 9,
+  "courseLinksChecked": 94,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "59c60bde0a97ff50326c261339059875c05815edb83072c36815d011f879bf27",
+      "after_sha256": "fbd84fdacb803e347e09507b683d60650a026f3a74743e89c9c93931e7e66248"
+    },
+    {
+      "file": "astraupskill/evidence/astra-mobile-tests-r1.json",
+      "before_sha256": null,
+      "after_sha256": "864314ccfb4e7daccc6e2889cfa56e0563da3153d63fc63a0e41b04a41decdcd"
+    },
+    {
+      "file": "astraupskill/evidence/astra-mobile-tests-r1.log",
+      "before_sha256": null,
+      "after_sha256": "de5dcd38d0c66336c46b2dd8c847da1e8d79dc905654e3b87201f8776dfd1a23"
+    },
+    {
+      "file": "astraupskill/evidence/astra-mobile-typecheck-r1.json",
+      "before_sha256": null,
+      "after_sha256": "56acb6fc53a0673cb1876ae595e2febe509961133947759f5dd0ec72c0a72af0"
+    },
+    {
+      "file": "astraupskill/evidence/astra-mobile-typecheck-r1.log",
+      "before_sha256": null,
+      "after_sha256": "50c15afe24e6192b1e82dc4cd61242d013546ec5417a297e84b61b5fa38ef2fc"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "59c60bde0a97ff50326c261339059875c05815edb83072c36815d011f879bf27"
+    },
+    {
+      "file": "astraupskill/snapshots/package-lock.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f110c96250e6253fa3b2751eea5d91c8382f55a27130f80be88f05b62ccf0e5c"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d77b89e68ce3c0631b3168afd6d86791761ab7c8e15c88daca29ae9051d331bf"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__progress.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "225fecc2aaf9bd0eb644743dfba921530a33e3bca6fece1039183fd475812481"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__storage.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ea3ad53870b4cf221457e14e491734744a76257ce46396d0c9ce51271bf633ab"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "f110c96250e6253fa3b2751eea5d91c8382f55a27130f80be88f05b62ccf0e5c",
+      "after_sha256": "378bde88bd6acdc2bf9eb05cfc1ec4b8c282b71512ee1d786a5391b0cb02cb2c"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "d77b89e68ce3c0631b3168afd6d86791761ab7c8e15c88daca29ae9051d331bf",
+      "after_sha256": "c4bec69b57f610d9812cd5f58d7a425cbc8b67d73b0a9cd66a08056a004927d8"
+    },
+    {
+      "file": "src/core/events.test.ts",
+      "before_sha256": null,
+      "after_sha256": "685cf26d5378b4ccfbb86230f4a5ccac51b0c84a00c051929ae878f71da2b11b"
+    },
+    {
+      "file": "src/lib/progress.tsx",
+      "before_sha256": "225fecc2aaf9bd0eb644743dfba921530a33e3bca6fece1039183fd475812481",
+      "after_sha256": "266ab0bcc4758a5211ee1804f71fbbc538c881652b8615828db0fa55abb1ac42"
+    },
+    {
+      "file": "src/lib/storage.test.ts",
+      "before_sha256": null,
+      "after_sha256": "b2d971eba8d556606d724b181aea8fe1a7535c254350ad6568bb4487b8982108"
+    },
+    {
+      "file": "src/lib/storage.ts",
+      "before_sha256": "ea3ad53870b4cf221457e14e491734744a76257ce46396d0c9ce51271bf633ab",
+      "after_sha256": "b5f61daaa0ebf8848b41bef84f9b3999619169f3b8e7884b4740903cfa84548c"
+    },
+    {
+      "file": "src/lib/sync.test.ts",
+      "before_sha256": null,
+      "after_sha256": "549ee6d08b526d6869297d103d4fa1be82a13da4700d2bee6f59acb72ce3065f"
+    },
+    {
+      "file": "src/lib/sync.ts",
+      "before_sha256": null,
+      "after_sha256": "3ebdecb351f6458e6f57c9401c53f3a8d0d0ca4029e70a72f889a5f8be696339"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c0a0ebd90feb76b196291c1967cbbe118a2e8a9c279f2621234f6d8c95a91599"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "017850ad916e0f071ba1e9d6db119ff8a2aed3a4ab4ee7475cf27c9b1bc85195"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "142436d923e419ded52669ed9e099121c15a2f7e2fa4b99ea2ba880bea339a6c"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ef96630d53c6ed8a895f7ca66313463cb664ac1e3624f15f7d96c4c9d7dbac56"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "5439473d77b7b9bd604ce743ef01e9c310eb1f5512481f82e45bc9f9a8ddbe9c"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "226e39b0a1a82ab0741d487330a1b9d9f00a4db971d0f65b5d3a4a4b9e588fbe"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9851546ca22bbac9a45634b60f75d17ef536d2870dc28ac259b3e6ca3343c663"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "fc3cf1d3512f3790b4e6464d34d5147fdbe320f82eb640a9daefe780f9e5e4d1"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "3d2cb53ae41e3c3488c383a096c53fbe8cd4487c79b10cd8e6474a89deeedeac"
+    }
+  ],
+  "limits": [
+    "Provider and Expo SQLite tests use controlled fixtures; no native-device durability or live server integration is claimed.",
+    "Source review covers React provider wiring; pure coordinator tests do not constitute a complete device UI run."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T23:05:59.496931+00:00"
+}

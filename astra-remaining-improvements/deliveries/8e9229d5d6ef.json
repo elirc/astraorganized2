@@ -1,0 +1,248 @@
+{
+  "project": "netdrop",
+  "id": "8e9229d5d6ef",
+  "summary": [
+    "Validated SHA-256 declarations, overflow-safe chunk counts, exact chunk boundaries, and terminal upload lifecycle transitions.",
+    "Made accepted chunk files immutable under competing uploads, preserved identical retries, bounded oversized input reads, and isolated assembled-stream temporary files.",
+    "Checked actual assembled length and checksum before blob or database graph writes; added a pure, overflow-safe quota preflight before external storage.",
+    "Repaired the FileNode.Versions EF relationship mapping conflict exposed by actual context-model initialization.",
+    "Added domain, real-filesystem, and fresh-context handler regressions; the final project suite passed all 22 tests.",
+    "Added nine source-based guide chapters with worked traces, exercises, solutions, exact original snapshots, and recorded verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/8e9229d5d6ef/sol15-results.json",
+    "expectedTests": 22,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 22,
+    "passedTests": 22,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "netdrop",
+        "id": "8e9229d5d6ef",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+          "test",
+          "tests\\NetDropbox.Tests\\NetDropbox.Tests.csproj",
+          "--disable-build-servers",
+          "-m:1",
+          "--no-restore"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8e9229d5d6ef",
+        "environmentOverrides": {
+          "DOTNET_CLI_HOME": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\dotnet-home",
+          "MSBUILDDISABLENODEREUSE": "1"
+        },
+        "startedAt": "2026-09-19T21:30:51.663720+00:00",
+        "status": "complete",
+        "log": "sol15-netdrop-tests-r4.log",
+        "pid": 27196,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T21:33:01.865815+00:00",
+        "elapsedSeconds": 130.18
+      }
+    ]
+  },
+  "courseWords": 3990,
+  "courseFiles": 9,
+  "courseLinksChecked": 92,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "3f45e7b992e76988c1b220d0754098e418ccc277f3076a0fae90bb5c4db46a8c",
+      "after_sha256": "2f444e8ae6829fb6e3170c9dcb6f9ecae6ad90e612d46a1b647d49edebf06618"
+    },
+    {
+      "file": "astraupskill/evidence/sol15-netdrop-tests-r4.json",
+      "before_sha256": null,
+      "after_sha256": "48ce43a6465954ffd721087ee4a05fe5567a9e9a88a799a05da005e34f7d04a6"
+    },
+    {
+      "file": "astraupskill/evidence/sol15-netdrop-tests-r4.log",
+      "before_sha256": null,
+      "after_sha256": "a763e11df21bd606c2ae63844cd8da93d5c11af45a2e616525aec106c36033db"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3f45e7b992e76988c1b220d0754098e418ccc277f3076a0fae90bb5c4db46a8c"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Application__Abstractions__IChunkStorage.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2dcfc1b74bdef1bc752524e6f5de7eb8fe10f1a305dc71a1ef8593c6d2c9e55d"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Application__Common__Hashing.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d0238daf264f03ed6b00ed23246e4b885bc0e1a461c2369141bd3e390c24ff8f"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Application__Uploads__CompleteUpload.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3361aad6e241f5dbd51163cbadfd10633bbc46150cdf8f3b09927c37a7118deb"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Application__Uploads__UploadChunk.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "b26c9c90fb7d23e61e29cc68884e40188f714a2aeda665cf92ecc2eb87e9bacc"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Domain__UploadSession.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f53de67c402af4596601b0458fdb74d9175f2658686e6418908fe0f6020b7daf"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Domain__UserStorageAccount.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "7e407a47c811c8a05f1cb0f3fa82047b6fa95664821d5761aae67b26ff3e4e17"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Infrastructure__Persistence__NetDropboxDbContext.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c5d0f8f7e2b2c36d869ffd19de7b5063e11b1e6ec3839ba9e4bc175ce3d9afd5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetDropbox.Infrastructure__Storage__FileSystemChunkStorage.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ccf39519d3aa46148a3a0841a94758dfa824b1babee94f581c985d29d06c2f66"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetDropbox.Tests__Domain__UploadSessionTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ec64518eaad3ac7308c9204fc4fb784a7df4e885450bd92b9b2c0e50fbf76414"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetDropbox.Tests__Domain__UserStorageAccountTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "be62cc594f62c1e28865316b02399bd1d529ba84536a184b904137b575763efe"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetDropbox.Tests__NetDropbox.Tests.csproj.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4396eb009272e517dadb3464fdcf8aadb155f3a0e10e31ddcdc0374d490f3a3c"
+    },
+    {
+      "file": "src/NetDropbox.Application/Abstractions/IChunkStorage.cs",
+      "before_sha256": "2dcfc1b74bdef1bc752524e6f5de7eb8fe10f1a305dc71a1ef8593c6d2c9e55d",
+      "after_sha256": "b0e388285a83185058fd56938ee1e579f5cc8b0fc395f005fbb091c12a14f266"
+    },
+    {
+      "file": "src/NetDropbox.Application/Common/Hashing.cs",
+      "before_sha256": "d0238daf264f03ed6b00ed23246e4b885bc0e1a461c2369141bd3e390c24ff8f",
+      "after_sha256": "d149243c2ca66439332c515c4b170dfa46ebeef941015427ae87f4ef98ef8a1f"
+    },
+    {
+      "file": "src/NetDropbox.Application/Uploads/CompleteUpload.cs",
+      "before_sha256": "3361aad6e241f5dbd51163cbadfd10633bbc46150cdf8f3b09927c37a7118deb",
+      "after_sha256": "f2210fb276c9d312e506417497cf15e8d0fd7aa7fb210018d9815878eeb37b36"
+    },
+    {
+      "file": "src/NetDropbox.Application/Uploads/UploadChunk.cs",
+      "before_sha256": "b26c9c90fb7d23e61e29cc68884e40188f714a2aeda665cf92ecc2eb87e9bacc",
+      "after_sha256": "37c3a98ed40dbc1e6bba4fd28fab13198aaab8fbc7b7f186834e36a14a325c82"
+    },
+    {
+      "file": "src/NetDropbox.Domain/UploadSession.cs",
+      "before_sha256": "f53de67c402af4596601b0458fdb74d9175f2658686e6418908fe0f6020b7daf",
+      "after_sha256": "3797938c6881b26e365361d2360ae1ef346ccb411558b8862639c9adfcb5b830"
+    },
+    {
+      "file": "src/NetDropbox.Domain/UserStorageAccount.cs",
+      "before_sha256": "7e407a47c811c8a05f1cb0f3fa82047b6fa95664821d5761aae67b26ff3e4e17",
+      "after_sha256": "74399396e96dc2ad7d052f45f5ba09ecda2325e53e11d03ad3d55977e7dc3ef4"
+    },
+    {
+      "file": "src/NetDropbox.Infrastructure/Persistence/NetDropboxDbContext.cs",
+      "before_sha256": "c5d0f8f7e2b2c36d869ffd19de7b5063e11b1e6ec3839ba9e4bc175ce3d9afd5",
+      "after_sha256": "9e768b78ff2e1a343542b34bc81e7b5afa9686e525ecb2cd467db50065f6d328"
+    },
+    {
+      "file": "src/NetDropbox.Infrastructure/Storage/FileSystemChunkStorage.cs",
+      "before_sha256": "ccf39519d3aa46148a3a0841a94758dfa824b1babee94f581c985d29d06c2f66",
+      "after_sha256": "7c91a4dfe9c575c9d8b0723412cdfb65178b97697c0e473ed7313e7be708a2ba"
+    },
+    {
+      "file": "tests/NetDropbox.Tests/Domain/UploadSessionTests.cs",
+      "before_sha256": "ec64518eaad3ac7308c9204fc4fb784a7df4e885450bd92b9b2c0e50fbf76414",
+      "after_sha256": "e74a692d345d3f89aa7d385b41fdeda16b3651a72c58d0b98e8c1dd462f44e70"
+    },
+    {
+      "file": "tests/NetDropbox.Tests/Domain/UserStorageAccountTests.cs",
+      "before_sha256": "be62cc594f62c1e28865316b02399bd1d529ba84536a184b904137b575763efe",
+      "after_sha256": "02e8f87e8197ddfe420568d1c29feab463edbce22943b1e92156f7e6151ae94c"
+    },
+    {
+      "file": "tests/NetDropbox.Tests/NetDropbox.Tests.csproj",
+      "before_sha256": "4396eb009272e517dadb3464fdcf8aadb155f3a0e10e31ddcdc0374d490f3a3c",
+      "after_sha256": "f2a75a589c1a48c31eef951e5a55371ab60b3419c1e31eb9166f65284efb3e0c"
+    },
+    {
+      "file": "tests/NetDropbox.Tests/Uploads/FileSystemChunkStorageTests.cs",
+      "before_sha256": null,
+      "after_sha256": "59f9173e7ccaf5ce5537a4b6bc30af5f33afb9fc8caa1de868642fc059713721"
+    },
+    {
+      "file": "tests/NetDropbox.Tests/Uploads/UploadHandlerTests.cs",
+      "before_sha256": null,
+      "after_sha256": "b6b43b1f84f2271c4cd3a222b06aff395cf8fe31265befd18e3371c265544346"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a9c15f0bd18145f38e57ce1eb221a2cdb072e91ddb6f5ba6844e869babdd20cb"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "cabd2625d3f37c8c1ed47a5027bd7b87cc542b12c2cfa50709ae96fbb26fba67"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "3efbe94b787099bbf854bf534f1bac2f28e139186c5505e7749e76de887792fc"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "0474b789a46e70410d72e988f27c1c1f7d4458ecdeba7ed85757fafacaa44c30"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "a49bc440816130c5b8d1b442b1aa679d8f85f003390f1c38d4df1eb1b2e86352"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d63e87fc62d3129c8a2701056b6a26437a66d4b303e233d14f447c31bff4c80a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "84271a2ff0f73178015c5e2ffbb098d1c28ed45eaa7fb5dbc67305491d81be66"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "3a75130a4a69ded271eb124b535772e507c28de63beed720d9c6bdbb44be19e2"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "27799ad20606afaf340a0400de3d58cc62832ab0b8d0f646b8178773c9af6797"
+    }
+  ],
+  "limits": [
+    "Handler persistence tests use EF InMemory with fake external storage and queue ports; they do not establish SQL uniqueness, rollback, or concurrent database isolation.",
+    "Filesystem concurrency tests use real temporary files on this Windows host. API-host, frontend, and deployed end-to-end checks were not part of the accepted test command.",
+    "Blob persistence, database commit, and subsequent queue notification remain separate resource boundaries. No unsafe shared-blob deletion compensation was added; durable recovery requires its own protocol."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T21:49:40.342212+00:00"
+}

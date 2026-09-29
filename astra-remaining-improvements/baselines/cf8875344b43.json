@@ -1,0 +1,30 @@
+{
+  "id": "cf8875344b43",
+  "project": "_Organized Desktop/12 Other Projects/andie",
+  "files": {
+    ".storybook/main.js": "9833ceb3b5b025f9b052cfc589ce7f0308867887689f6b335688ce9b13c70297",
+    ".storybook/preview.js": "d73fb06982e4467f7cafae2290fc76d2a470bd4768e55da9280e001a63232f11",
+    "scripts/populate-metaobjects.js": "fd03f0bc8663ff399745fa8674f07ec4c9247b36ab26c64354b492b27f035c62",
+    "shopify/.shopifyignore": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "shopify/.theme-check.yml": "eae5b27fd443b35f224043e7d12967d37854f6c6a3a53369530ddd93bc5fbf51",
+    "shopify/.shopify/.gitignore": "9d7825d64370a3fbd926824fc20376d28cfb0a7a05397b79f0af6388abad6827",
+    "shopify/.shopify/metafields.json": "cd5ed9c1847958c7844156505cb510edee4beaa356187a3a22d54f74b9deb38c",
+    "shopify/assets/084148732c224bc68a80.woff": "db86e60160ad5f2ea62f032aa18cde117f9029c87aaddc3c268b9d2742cc6c22",
+    "shopify/assets/0f40fde30e60be1210ee.woff2": "e4d6316418503c8beba4a8ceca56fe9533fa2f3d8b56750015f50e0f32dd12ac",
+    "shopify/assets/158ff5ebc348a83152f6.woff": "180606e5ee281cdd0c8dbced88217efc5f4890ac931c9dea9664e398b9d23480",
+    "shopify/assets/18928fb24e10bed358aa.woff2": "734acf53183aa228b2456acc3179e572fda935e25921796590222988003edff4",
+    "shopify/assets/1bc4880121931e1d5bf7.ttf": "8233271a6572443dc874d6dc2e860c96097bbe877f9c4576dbc5fe959c85ea6f",
+    "shopify/assets/2630a3e3eab21c607e21.svg": "12459f221a0b787bf1eaebf2e4c48fca2bd9f8493f71256c3043e7a0c7e932f6",
+    "shopify/assets/295183786cd8a1389865.woff": "26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc",
+    "shopify/assets/369f8493d9c043e68361.woff2": "33ad88e268bf043c35fbe8eb78e85d5cd55a1891e70e1fb0b3691d08b29007cb",
+    "shopify/assets/378f1b25042f29d55d7f.woff": "f75f4e7fb7d625950c84e51709593b6256f00e6b5de1d243b1c065c907bc0137",
+    "shopify/assets/3d3eb30384470a0a5f6d.gif": "41fa749559a60792dea14d40db6fe0950af008ac565739a3de505a4377f4d168",
+    "shopify/assets/4b125451884fe8349d3e.woff2": "6d6946d1fb2fc3afd942cc301468a4428ac78f3e003b703a93cbc176bc1ff360",
+    "shopify/assets/5483319dabe8fdc4bd69.woff": "703909131236b7e1a779db0a81cd26f2b962617cb5dd74fa4f99fc18946a799f",
+    "shopify/assets/5a246f2d80aefa1b5754.woff": "1f0f00f124c8b84f33c2850f50b0eca83b96e17d35f1fe13a809e2b86c914d16",
+    "shopify/assets/5d9ee970a20020afed7c.woff2": "48647b40fc233a5073b9761b79820c4bd469c5b722020a6ec65f64f1a3cb074c",
+    "shopify/assets/64b11e003a44a5297b86.woff": "012937a7cfc8ddfefbe1b34217cb069d3dc698448dacb8b47ba9ed82ec8833cc",
+    "shopify/assets/6d55b79007ae583c0f7f.woff2": "568b40e8d94e7cb98713db2a0409a28060f2a56f2decf6cf1405b4b40a3198f8",
+    "shopify/assets/80a40c3cd355b1a4cc69.ttf": "5dc8c27762e625c52ff8f394178d3b95dbd531c359672656037288952e7438b9"
+  }
+}

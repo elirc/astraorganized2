@@ -1,0 +1,14 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test\\api.test.mjs",
+    "test\\merge.test.mjs",
+    "test\\mutations.test.mjs",
+    "test\\repository.test.mjs",
+    "test\\schema.test.mjs",
+    "test\\session.test.mjs"
+  ],
+  "exitCode": 0,
+  "seconds": 10.52
+}

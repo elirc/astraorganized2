@@ -1,0 +1,34 @@
+{
+  "id": "612cdbaa5aa0",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:56:41.215059+00:00",
+  "sourceReview": "Reviewed Drizzle composite unique index and equivalent static initialization SQL, original snapshots, and attempts caller; no existing database migrated or duplicate records deleted.",
+  "teachingReview": "Reviewed nine chapters, corrected legacy duplicate fixture, SQL ordering claims, nullable constraint caveat and non-atomic attempt workflow; includes branch traces and graded solutions.",
+  "testReview": "Six passing cases execute exact seed SQL with real in-memory node:sqlite, covering insert/update conflicts, valid pairs, reinitialization and preserved legacy duplicates. No native app or Drizzle execution claimed.",
+  "specSHA256": "49b6e94775c69ad4ab49de7bb5e717e8b12adfda829d9242d6bb09e32428c3a5",
+  "fileHashes": {
+    "src/lib/db/schema.ts": "4fb4ff28e79eb3bda58165e9fb7c1c6009edb92f684b8a025901588089f5d6ad",
+    "src/lib/db/seed.ts": "9ce4c9370b42aec10d12ffced75d29906b51c5cbaa7fcf8e3bfc592a94774a77",
+    "astraupskill/snapshots/src/lib/db/schema.ts": "5f72c227583f1e0a52e422492b77f14cc10ed568ccbb908eb07e933b3c3fbad9",
+    "astraupskill/snapshots/src/lib/db/seed.ts": "e95d5aa22e3735487777727c45acc098a5006699555e5f8415affdde13e06445",
+    "tests/user-card-constraint.test.mjs": "337baa895ae377145fa385602ee1b7351833a176c3542c4912f59ae6c4d34a68",
+    "astraupskill/evidence/crud-b03-astra-sqlite2.log": "86caf676d689951675d60edd3c00b4712fc6ebc35a6ec38cfafb8246b730dbbb",
+    "astraupskill/evidence/results.json": "e6a22547a5fb891e43069f3e7519dbbc3317683867fb1cf67403297493d39daa",
+    "astraupskill/README.md": "a9de580f4f4adbef3b75438c586225964588b2e7b8f4b6a42b27b2cdef81a0a2",
+    "astraupskill/01-CODEBASE-MAP.md": "1e570994d5ad108229d0445d9e6db4b03c2fe43039c09193683e2b52460a67da",
+    "astraupskill/02-CONCEPTS.md": "f67b0a3d3cd9ca44f07d8cc8ee4ddb443c726773dcbabb9299c11cbe035ccfc5",
+    "astraupskill/03-WORKED-CHANGE.md": "93556c0869ded4131c74d34ce3aa6ed91765e43018fc37dc43da01ca7a03e0e3",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "66cc311068100f1e2f8a740e211fbc37bc1574f87085df42e03336d6c5e39439",
+    "astraupskill/05-PRACTICE.md": "38acf19a264bd41b8b12e2d5f82c895fa7829fe60bd5c04840a88520596d2bfa",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "a5fb89adb6f9ddc88bbf5f97fdc72fa63a7adf3febd6620d9f6e3598af625f4c",
+    "astraupskill/07-TRACE-LAB.md": "a4c5c13d4840200596a1d29188e686e3e88d0215f1221f6480a9f26a399eafb4",
+    "astraupskill/VERIFICATION.md": "d9236c5cd4097f5359c1b5c91b4bb7f225b624b45f25e621a88338dda2235b98"
+  },
+  "evidenceHashes": {
+    "checks/612cdbaa5aa0/crud-b03-astra-sqlite.json": "5e1557eee23109f4d7bf203b95781fe426ed03e07ab29a40ff6964a29a89e336",
+    "checks/612cdbaa5aa0/crud-b03-astra-sqlite.log": "9ae810dee96a9969dfa284ebe064baf8f85e76558f6a505caad308c68d30fc15",
+    "checks/612cdbaa5aa0/crud-b03-astra-sqlite2.json": "18995b43cfaf40966bacbb7099f72d8a70dee7ddba8a27512b9c45e3628e017c",
+    "checks/612cdbaa5aa0/crud-b03-astra-sqlite2.log": "86caf676d689951675d60edd3c00b4712fc6ebc35a6ec38cfafb8246b730dbbb",
+    "checks/612cdbaa5aa0/results-crud-b03.json": "e6a22547a5fb891e43069f3e7519dbbc3317683867fb1cf67403297493d39daa"
+  }
+}

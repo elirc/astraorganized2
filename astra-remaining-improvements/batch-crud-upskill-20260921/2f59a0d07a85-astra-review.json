@@ -1,0 +1,35 @@
+{
+  "id": "2f59a0d07a85",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:46:40.958268+00:00",
+  "sourceReview": "Reviewed forum createReply, server action input normalization and Post relations. Parent existence and same-topic guard is before mutation; visibility/concurrency policy unchanged. Local Next guides absent; no Next API changed.",
+  "teachingReview": "Replaced repeated filler across all nine chapters with source-specific schema/caller mapping, worked payload, trace table, graded practice and separate answers.",
+  "testReview": "Expanded actual-module suite from two to five passing cases, covering valid nested/top-level payloads and counters, closed topic, cross-topic/missing parent and original lookup failure. Explicit Prisma/helpers, no native framework or database.",
+  "specSHA256": "d596901992c09300648112f62cae3e5ec9c005c137530d520cbda8ada562983d",
+  "fileHashes": {
+    "src/lib/forum-core.ts": "9c4fa763e893e9cf65ba0b833330d7e1ecddd8ad33fadcb218471d7fb21c2fc5",
+    "tests/reply-parent-boundary.test.mjs": "e4eecb3c006c0a8a4e138e20a9094e264c15041ecf0a79b1a0c4a8f037763c77",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/forum-core.ts.original.txt": "eef9af8a1fd2d1d6aeb035c3c5b47c44a8a3bf7d3cfbaa7a879e5a057d0483a9",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "b0968b832c28007a4a0c6918f378eda9f2ee576d3c0841bd48f3c9a9993dc138",
+    "astraupskill/evidence/results.json": "3f7f486f0777f576f02e842fb87a8816566e03f268e591857fe74b457f618df2",
+    "astraupskill/README.md": "8489b56041e23f54727691edcaef5ca8ae3bc3970ca108b46f42368c1d459771",
+    "astraupskill/01-CODEBASE-MAP.md": "de5263a9d97d59f950f2dbb27d7e3ba1a07aced4ac555bbe1dad60291539db70",
+    "astraupskill/02-CONCEPTS.md": "1829cc062b7f8c47141136ca5d8da77581660a08a7d03be26dbac490e9fc91cb",
+    "astraupskill/03-WORKED-CHANGE.md": "3b5c5a6807ad4b1a86e3f7d4fbea8e60350680c0bab897e4b44a9dad39b71b02",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "2aa67a153427f2ef58375c5c500e53770199d6ab3f383cb0f81b3f92cfd3f005",
+    "astraupskill/05-PRACTICE.md": "b6ddbe94f97103a75c710a8753ee59960cb42c8a4c5b823517636d4140ecdf75",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "1e3ec0fdb0f3289fc652538c668bc72d6a0af87ba689c54d846a1f20964ba686",
+    "astraupskill/07-TRACE-LAB.md": "9f32f0747c50e8e8acff9027eb56a46cbbb7063c5c0d90bfb6a53ddb4a4e15c9",
+    "astraupskill/VERIFICATION.md": "c86f2218a134b24120e36161afca32bb743e21e82a5fb04b65799192072c1380"
+  },
+  "evidenceHashes": {
+    "checks/2f59a0d07a85/crud-b04-astra-runtime.json": "7efb8c2eaa4b55358da72a68e2340096ed5eea8f2ee4fc0c8ea13ccf750c5164",
+    "checks/2f59a0d07a85/crud-b04-astra-runtime.log": "b0968b832c28007a4a0c6918f378eda9f2ee576d3c0841bd48f3c9a9993dc138",
+    "checks/2f59a0d07a85/crud-b04-e17-runtime1.json": "0ad17651610acef73e09c9559c93206133b020ccfc545e85c7e2ca4671c618be",
+    "checks/2f59a0d07a85/crud-b04-e17-runtime1.log": "e5c2fc49a90cdff4a5aeac68316fe729ec361c52ee223fbacc0bbb061cfd15c0",
+    "checks/2f59a0d07a85/crud-b04-e17-runtime2.json": "553a550defb5005fbdf228e6d3fa3f003500f989a1c7d78611479e71465e5e8a",
+    "checks/2f59a0d07a85/crud-b04-e17-runtime2.log": "f45221546ae43a29ced3a0fc19f02084d766d984e117d1cde025067d09e26eb3",
+    "checks/2f59a0d07a85/results-crud-b04.json": "3f7f486f0777f576f02e842fb87a8816566e03f268e591857fe74b457f618df2"
+  }
+}

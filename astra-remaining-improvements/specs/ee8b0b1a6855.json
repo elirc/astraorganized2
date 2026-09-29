@@ -1,0 +1,54 @@
+{
+  "changedFiles": [
+    "src/FleetCommand.Host/Services/TaskService.cs",
+    "src/FleetCommand.Host/Program.cs",
+    "tests/FleetCommand.ApiTests/ApiTests.cs",
+    "tests/FleetCommand.ApiTests/TestApp.cs",
+    "tests/FleetCommand.ApiTests/AssemblyInfo.cs",
+    "astraupskill/snapshots/TaskService-before.cs.txt",
+    "astraupskill/snapshots/ApiTests-before.cs.txt",
+    "astraupskill/snapshots/TestApp-before.cs.txt",
+    "src/FleetCommand.Contracts/packages.lock.json",
+    "src/FleetCommand.Domain/packages.lock.json",
+    "src/FleetCommand.Host/packages.lock.json",
+    "src/FleetCommand.Infrastructure/packages.lock.json",
+    "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.cs",
+    "src/FleetCommand.Infrastructure/Migrations/20260912183503_MissionControlPlatformEntities.Designer.cs",
+    "src/FleetCommand.Infrastructure/Migrations/FleetDbContextModelSnapshot.cs",
+    "astraupskill/snapshots/FleetDbContextModelSnapshot-before.cs.txt",
+    "tests/FleetCommand.ApiTests/packages.lock.json",
+    "tests/FleetCommand.UnitTests/packages.lock.json",
+    "astraupskill/snapshots/Program-before.cs.txt",
+    "README.md",
+    "astraupskill/evidence/tests-07.json",
+    "astraupskill/evidence/tests-07.log",
+    "astraupskill/evidence/tests-07-source-hashes.json",
+    "astraupskill/evidence/restore-locked-01.json",
+    "astraupskill/evidence/Owner_DESKTOP-T0PFEUT_2026-09-12_12_31_32_net10.0.trx",
+    "astraupskill/evidence/Owner_DESKTOP-T0PFEUT_2026-09-12_12_32_00_net10.0.trx"
+  ],
+  "summary": [
+    "Task updates reject blank titles and validate project visibility within the current workspace before mutating tracked task state.",
+    "Task creation and project reassignment allocate project ticket numbers inside an EF-owned serializable SQLite transaction; task/activity writes commit before event publication.",
+    "Prevalidation and metadata serialization prevent rejected updates from contaminating later valid saves in the same scoped service; regression tests cover recovery and mixed concurrent create/move allocation.",
+    "Add a forward EF migration for thirteen existing platform entities omitted from the original model snapshot, allowing the test API host to apply the complete schema without suppressing pending-model checks.",
+    "Isolate the two lifecycle scenarios in disposable test hosts, disable parallel API tests that share process environment, correct the security-scan route, and provide an explicit scheduler opt-out.",
+    "A nine-file learning course explains actual request paths, EF tracking versus database transactions, worked examples, debugging, progressive exercises and their solutions; original source snapshots and verification evidence are included."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/missioncontrol/tests-07",
+    "expectedSuites": 2,
+    "expectedTests": 139,
+    "command": "dotnet test FleetCommand.slnx --no-restore --configuration Release --logger trx --results-directory C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\missioncontrol\\tests-07",
+    "environment": ".NET SDK 10.0.302; Release; generated lockfiles and successful locked restore; ASP.NET test host with fake LLM and disposable SQLite"
+  },
+  "limits": [
+    "ProjectId remains nullable without presence tracking: omitted and explicit null both preserve the assignment; clearing a project is not implemented.",
+    "Concurrency evidence covers request-scoped operations. A long-lived EF context can retain stale tracked entities after an external writer; this is not universal cross-context cache concurrency protection.",
+    "A failed database save requires appropriate context disposal/recovery. Rolling back a SQL transaction does not restore EF tracked objects; the tested validation and serialization failures are prevented before mutation.",
+    "Event publication follows commit but is not a durable outbox, and no cross-request optimistic concurrency token was added.",
+    "The forward migration is exercised against disposable test databases; migration of an existing production dataset was not performed.",
+    "No live LLM, webhook destination, production database, deployed service or visual browser workflow was used."
+  ]
+}

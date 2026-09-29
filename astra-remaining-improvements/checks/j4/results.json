@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "tests": 37,
+  "javaRegressionTests": 28,
+  "separateProcessScenarios": 9,
+  "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+  "checks": [
+    "created question survives separate-process reload with empty explanation",
+    "full update persists under the same question id",
+    "cancelled deletion preserves exact bank bytes",
+    "confirmed deletion persists across processes",
+    "EOF during form discards the incomplete command",
+    "EOF during quiz reports partial scoring without a crash",
+    "empty bank reloads and quiz offers create guidance",
+    "corrupt startup preserves the authoritative file",
+    "two gated JVM editors produce one saved winner and one rejected stale or locked command"
+  ],
+  "limits": [
+    "Local CLI and file storage; no HTTP, browser, database or power-loss testing. Non-cooperating editors do not honor advisory locks."
+  ]
+}

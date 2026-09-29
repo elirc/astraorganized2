@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "pastes": [
+    {
+      "slug": "GbGpgFog4GPPUaOJ3HdJKQ",
+      "title": "Sample",
+      "content": "line one  \r\n\tline two\n\n",
+      "language": "plaintext",
+      "visibility": "public",
+      "createdAt": "2026-09-09T12:00:00+00:00",
+      "updatedAt": null,
+      "expiresAt": null,
+      "editKeyHash": "95DE1C9222686E818459253DF94DDB590BDA7EE7452B08F6514A9C9224E3FAD1",
+      "legacyKey": false,
+      "legacySlug": false,
+      "version": 1,
+      "historicalViews": 0,
+      "historicalLastViewedAt": null
+    }
+  ],
+  "requests": [
+    {
+      "requestId": "10b27054-cd27-461a-8339-5c28014418a6",
+      "fingerprint": "3B87169C05298ADC6D41573F1A8842C5DAD42F7A1673487F04206C9DB5399E2D",
+      "slug": "GbGpgFog4GPPUaOJ3HdJKQ",
+      "acceptedAt": "2026-09-09T12:00:00+00:00"
+    }
+  ],
+  "changes": [
+    {
+      "id": "9ad31fc0-f83a-4202-ad35-1ebad48335e8",
+      "revision": 1,
+      "action": "create",
+      "slug": "GbGpgFog4GPPUaOJ3HdJKQ",
+      "at": "2026-09-09T12:00:00+00:00"
+    }
+  ]
+}

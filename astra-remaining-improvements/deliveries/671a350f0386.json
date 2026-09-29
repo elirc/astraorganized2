@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww7",
+  "id": "671a350f0386",
+  "summary": [
+    "Made equal workflow status requests idempotent by returning after authorization and transition validation without persistence or change audit.",
+    "Added actual workflow service runtime coverage for no-op, valid transition, and invalid transition behavior."
+  ],
+  "checks": {
+    "resultsFile": "checks/671a350f0386/results-crud-b07.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww7",
+        "id": "671a350f0386",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-workflow-same-status.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\671a350f0386",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:01:33.308320+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 37772,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:01:46.212482+00:00",
+        "elapsedSeconds": 12.9
+      }
+    ],
+    "limits": [
+      "Six cases execute actual service, ownership helper, status/readiness policy and AppError with repository/schedule and generated-enum adapters. No HTTP route, live Prisma, cron parsing or concurrency run.",
+      "Equal-status calls retain ownership checks but skip activation-readiness and schedule recalculation. Coarse route permission enforcement is outside this lab. Status update and audit have no enclosing service transaction."
+    ]
+  },
+  "courseWords": 1723,
+  "courseFiles": 9,
+  "courseLinksChecked": 25,
+  "files": [
+    {
+      "file": "src/services/workflow-definition-service.ts",
+      "before_sha256": "745b70d84ed4c829982705ea2944a6560c47bc67efb578be2acd26110568a6fe",
+      "after_sha256": "351428a1d269775dcb6c0e4a74b7300d03488894d718c7a3bd3e1b4ed5404091"
+    },
+    {
+      "file": "tests/runtime-workflow-same-status.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "3b80bfc1a76e0299cfa45500147cba539cda5c772b31fbb118f4ae14f5520f4c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-workflow-definition-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "745b70d84ed4c829982705ea2944a6560c47bc67efb578be2acd26110568a6fe"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "601f765e86fb9c7620a5362f177c78d940030abb3eccdb56a2c39ba3d4db510f"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "4a70ab23d15e3ebc17ca6b1a2a6d06cfde6d54a334bcad77e23f005ceab1132a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f8d150b4fca04df60c5d2098969486b2e19983a246d822c4f2fbd2de44254c50"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f957eb459d1824ec548fe6a59848d2bc7dbd64fcc1c624e073d7af399869cd71"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bbdc85a4fe79953d181b8c7d558d9a95305fb0d10bb4fc7d9d8d5c9cc0b8b8f1"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1c0ceae9e5ac0774a1ece083936d5b8db5df29d3c2b583b04fb79389baf96e35"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b9413789cc87826ede8709cb93c0a9d463d8bafe1b942ce6fdd1768bc393a6db"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "50cfb7274cac097f4bf0abeae7bb666db7803eabab5dac3a4305ed9eaa9981f4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a2e723cb69afbb1003a79536ae70f40a87087dfd0701e00cd6d060ee4d06f2a1"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "6e302c40e4037565046418a2f6ab0726ba0feed6589164dcfe8ec4cfbff5fd95"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a536cc3cc82d760e31334d3cf1d6e0a7d1da81024f544092f580bd756cf3ffec"
+    }
+  ],
+  "limits": [
+    "Six cases execute actual service, ownership helper, status/readiness policy and AppError with repository/schedule and generated-enum adapters. No HTTP route, live Prisma, cron parsing or concurrency run.",
+    "Equal-status calls retain ownership checks but skip activation-readiness and schedule recalculation. Coarse route permission enforcement is outside this lab. Status update and audit have no enclosing service transaction."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:05:29.191041+00:00"
+}

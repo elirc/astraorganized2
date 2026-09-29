@@ -1,0 +1,29 @@
+{
+  "project": "buildreviewer",
+  "id": "3b9c30ec3ce2",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "test",
+    "-w",
+    "@reviewdeck/shared",
+    "--",
+    "--maxWorkers=1",
+    "--minWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+  "environmentOverrides": {
+    "PYTHONIOENCODING": "utf-8",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "startedAt": "2026-09-20T20:54:44.058743+00:00",
+  "status": "complete",
+  "log": "astra-buildreviewer-shared-tests-r1.log",
+  "pid": 26360,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T20:55:40.854722+00:00",
+  "elapsedSeconds": 56.79
+}

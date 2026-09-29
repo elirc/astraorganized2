@@ -1,0 +1,200 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netgum",
+  "id": "028086674b89",
+  "summary": [
+    "Validates customer, product, variant and coupon inputs before the payment gateway and constructs a valid pending order before inventory/coupon mutations.",
+    "Introduces reusable domain preflight methods and converts malformed email parsing into the expected DomainException contract.",
+    "Returns persisted paid/failed receipts before repeating provider, save or email work on sequential completion retries.",
+    "Adds real application regression cases with EF repositories, state assertions and gateway/email/save counters, plus nine detailed learning chapters and complete test examples."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/028086674b89/results.json",
+    "expectedTests": 11
+  },
+  "testResults": {
+    "passed": true,
+    "total": 11,
+    "tests": 11,
+    "failed": 0,
+    "checks": [
+      "luna-restore-01",
+      "luna-test-10",
+      "root-build-01"
+    ],
+    "scope": "Eight application cases using real repositories and EF InMemory with counting gateway/email/unit-of-work doubles, plus three domain cases. Release solution build passed. net8 tests ran with Major roll-forward on net10; no relational transaction or real provider test."
+  },
+  "courseWords": 5276,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "bc6cad2d8b6d28c8753803c6cc36af4144afa5f320036b3ff85455faa7becdfc",
+      "after_sha256": "1c6df48ae54c31e0b71aee8fd0c1add54ed7a2ec8c31780f2cc9da3da6af0c5b"
+    },
+    {
+      "file": "src/Netgum.Application/Checkout/CheckoutService.cs",
+      "before_sha256": "fe8fefbe7351a94b8f6b77f3d9567d3eda8e95b8bb7b80f09811b800ef02d2f4",
+      "after_sha256": "90fb1a03cf65cfaa8ba4b331cc02bd6fa05bd1444f5034893718ab9e767f5f15"
+    },
+    {
+      "file": "src/Netgum.Domain/Orders/Order.cs",
+      "before_sha256": "b1305133697b14a348d88fb257f51a1e5cd31df5c602ad1e92d38708edef65bb",
+      "after_sha256": "7f9a79cce19420aa028e4ec1b539e0114648793fc02bc1ed7e082d59df2f271f"
+    },
+    {
+      "file": "src/Netgum.Domain/Products/Product.cs",
+      "before_sha256": "5eafb64418c5143427fb678b853e6374ed8bb1c09c6e829dae8f200634c24869",
+      "after_sha256": "2ec64229a44e80698d7e939648a293283b4e82a51c97080cc708c919a6a6486f"
+    },
+    {
+      "file": "src/Netgum.Domain/Products/ProductVariant.cs",
+      "before_sha256": "c24ebc8666b542753c3d8dc8abec43a0b61f427cc5c33ab93124d76935cd8117",
+      "after_sha256": "56eaee685b4607686a04d30f4e4e11cfede3a4f81c10698b3a9f5a0095ea0906"
+    },
+    {
+      "file": "src/Netgum.Domain/ValueObjects/EmailAddress.cs",
+      "before_sha256": "3b7a3a2d46638cebe7c37896643b7a887f258c861af4396fba7c8829cb0beb2b",
+      "after_sha256": "fd9c9bb15dfefb4eedcfb5e7f63322cc64072498e05cc2f41345b863273c22fd"
+    },
+    {
+      "file": "tests/Netgum.Tests/Application/CheckoutServiceTests.cs",
+      "before_sha256": "177f718d82753ddec5a5cc7b1bd17b1a7daad2f9e4121e65e5de91adbc22f82c",
+      "after_sha256": "73f76c07be1f4811f3156f57f9df1ef9093eadea9cb740995a55f3abf20372ac"
+    },
+    {
+      "file": "tests/Netgum.Tests/Domain/ProductTests.cs",
+      "before_sha256": "5b4cd81478f95dbde9401f05b5215e8f3288d03f066b68d5f2bd1c435ea70098",
+      "after_sha256": "58bbcb71f90b31ad7d931d0559e0c71effcc5a07c105b87b17a81b60111d4b77"
+    },
+    {
+      "file": "astraupskill/snapshots/CheckoutService-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "fe8fefbe7351a94b8f6b77f3d9567d3eda8e95b8bb7b80f09811b800ef02d2f4"
+    },
+    {
+      "file": "astraupskill/snapshots/CheckoutServiceTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "177f718d82753ddec5a5cc7b1bd17b1a7daad2f9e4121e65e5de91adbc22f82c"
+    },
+    {
+      "file": "astraupskill/snapshots/EmailAddress-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "3b7a3a2d46638cebe7c37896643b7a887f258c861af4396fba7c8829cb0beb2b"
+    },
+    {
+      "file": "astraupskill/snapshots/Order-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "b1305133697b14a348d88fb257f51a1e5cd31df5c602ad1e92d38708edef65bb"
+    },
+    {
+      "file": "astraupskill/snapshots/Product-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "5eafb64418c5143427fb678b853e6374ed8bb1c09c6e829dae8f200634c24869"
+    },
+    {
+      "file": "astraupskill/snapshots/ProductVariant-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "c24ebc8666b542753c3d8dc8abec43a0b61f427cc5c33ab93124d76935cd8117"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__Netgum.Tests__Domain__ProductTests.cs.before.txt",
+      "before_sha256": null,
+      "after_sha256": "5b4cd81478f95dbde9401f05b5215e8f3288d03f066b68d5f2bd1c435ea70098"
+    },
+    {
+      "file": "astraupskill/evidence/luna-restore-01.json",
+      "before_sha256": null,
+      "after_sha256": "602abee0991fec02b6794b712b74972d955ef89896bfce94e89e421b4b1fc25e"
+    },
+    {
+      "file": "astraupskill/evidence/luna-restore-01.log",
+      "before_sha256": null,
+      "after_sha256": "e2bbcc2a693fc7b61f06f5ffe539a4ef78409314ef9db6134ab60d038ac0f4b0"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-10.json",
+      "before_sha256": null,
+      "after_sha256": "1ff00873104b0813de7a307e449ff5fa315f335eb021194bdf25b668ae1fc4a5"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-10.log",
+      "before_sha256": null,
+      "after_sha256": "40a6169baaf4457b5b3bdb3144d99ae10eef1115bb787f5d2dc99f7405901fa7"
+    },
+    {
+      "file": "astraupskill/evidence/netgum-tests.trx",
+      "before_sha256": null,
+      "after_sha256": "ac7f78ef4aae435139a8d266fab8544bc5cba690d854506882b9670a12103def"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "4e1200f9aef3859b7bf6931c18d83a4a1ed047e12a9ac0c81fbdf6e8bc88682f"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "dba342755457647cde2897eeff6125fbdae903252665e765958ac304a24b8bf0"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "e7991aa7a688004ce32ca935acb857f1150525da10d4ecd7a4539aaa2eca200f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "98ef46804b1e1240bf324f0e84d36bf93660dfdbade24ca06f98976e8dabc044"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9456a9ee22ad523016039bf31a54a0816f8627eb28c71179c28aec784aa980ba"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6d0a345f4194fb339e55fcacd835bdac0b5cd26e9f2c4f3da334bcc2ba06e85d"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4d8b68a5b65c5bd0a5275f4cd352a706f3ceddb6990ff06e1f0289c55d650cf5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6c138813fe711b065e2d73fa0325519de4a56b46a995c24845ddd557966c0ef6"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "0967ae42927aabea6c957b78051e3fda421106d2cd055076b96034ed9ad88634"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "2679f713a0de9329f3d72ad9d1042969d514a4b4199e2063e346f8034fbbba98"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e1c073b0a68b58fd0f69c137ed601b6849e047a1b69fd0550b5d88d1bae1a68f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "792c91965aef4f07a2a62377c455e1ae66bad4d1a86684d5e7c6ae17a142637f"
+    }
+  ],
+  "limits": [
+    "EF InMemory tests do not establish SQL constraints, transactions, cross-context stock concurrency or provider compensation.",
+    "Captured-time revalidation reads the same tracked aggregate after the provider await; a created provider intent can remain after later rejection or save failure.",
+    "Sequential terminal retries are covered; concurrent pending completions can duplicate work. Paid is saved before email, so a failed send is not retried by completion; no durable outbox is added.",
+    "Product mutation endpoints retain demo authentication gaps; download remains an ID-holder capability after paid status. No real payment or email provider was used."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T23:23:43.240042+00:00"
+}

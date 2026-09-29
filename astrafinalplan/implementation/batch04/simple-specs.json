@@ -1,0 +1,90 @@
+[
+  {
+    "stage": "58",
+    "table": "posts",
+    "route": "/api/posts",
+    "fields": [
+      "title",
+      "body",
+      "slug",
+      "status",
+      "tags"
+    ],
+    "valid": {
+      "title": "Post title",
+      "body": "Post body",
+      "slug": "post-title",
+      "status": "draft",
+      "tags": [
+        "blog"
+      ]
+    },
+    "title": "Blog Platform"
+  },
+  {
+    "stage": "59",
+    "table": "cards",
+    "route": "/api/cards",
+    "fields": [
+      "title",
+      "body",
+      "lane",
+      "status",
+      "tags"
+    ],
+    "valid": {
+      "title": "Card title",
+      "body": "Card description",
+      "lane": "todo",
+      "status": "todo",
+      "tags": [
+        "product"
+      ]
+    },
+    "title": "Kanban Board"
+  },
+  {
+    "stage": "60",
+    "table": "applications",
+    "route": "/api/applications",
+    "fields": [
+      "company",
+      "role",
+      "stage",
+      "status",
+      "tags"
+    ],
+    "valid": {
+      "company": "Company",
+      "role": "Role",
+      "stage": "applied",
+      "status": "active",
+      "tags": [
+        "remote"
+      ]
+    },
+    "title": "Job Application Tracker"
+  },
+  {
+    "stage": "61",
+    "table": "products",
+    "route": "/api/products",
+    "fields": [
+      "sku",
+      "name",
+      "category",
+      "status",
+      "tags"
+    ],
+    "valid": {
+      "sku": "SKU-001",
+      "name": "Product",
+      "category": "General",
+      "status": "active",
+      "tags": [
+        "stocked"
+      ]
+    },
+    "title": "Inventory Management"
+  }
+]

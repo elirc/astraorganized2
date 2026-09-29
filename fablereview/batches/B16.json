@@ -1,0 +1,228 @@
+[
+ {
+  "wave": 2,
+  "id": "6e0808cd55b2",
+  "name": "_Organized Desktop/02 Build Projects/buildsubbox",
+  "rel": "_Organized Desktop/02 Build Projects/buildsubbox",
+  "status": "delivered",
+  "tests": 54,
+  "words": 4843,
+  "deliveredAt": "2026-09-09T16:00:36.499270+00:00",
+  "nfiles": 31,
+  "summary": [
+   "Added versioned inventory, plan and subscriber CRUD, normalized unique email, editable preferences and ratings, history-aware deletion, archive/status changes, literal search and pagination.",
+   "Replaced hard-coded stock subtraction and duplicate batch creation with atomic one-unit-per-item reservations, exact plan counts, hard tag exclusions, accepted quote snapshots, request replay and subscriber-month uniqueness.",
+   "Implemented Reserved/Packed/Shipped/Delivered/Cancelled transitions with tracking requirements, expected versions, ordered retained history and stock restoration exactly once before dispatch.",
+   "Added bounded validated browser persistence, cooperative locks and raw-baseline conflicts, retained/exportable drafts, explicit reviewed recovery, responsive repairs, nine detailed learning documents and seven reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildsubbox",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "buildsubbox",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/6e0808cd55b2",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/6e0808cd55b2.json (spec: specs/6e0808cd55b2.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildsubbox/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "4c54d18d7d97",
+  "name": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+  "rel": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+  "status": "delivered",
+  "tests": 6,
+  "words": 6027,
+  "deliveredAt": "2026-09-12T23:46:50.177202+00:00",
+  "nfiles": 43,
+  "summary": [
+   "Validates typed cart inputs, joined product stock and ownership before mutations; rejects hostile persisted quantities and non-finite totals at checkout.",
+   "Moves checkout reads and all order/stock/cart writes into one immediate SQLite transaction with a conditional stock decrement.",
+   "Adds lazy database and injectable cart/order/app factories, an import-safe listener and safe unexpected-error responses.",
+   "Adds six production-handler SQLite regressions including second-line failure rollback, a passing client build, and nine detailed learning chapters with a complete fixture."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\jstrain3.0",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "jstrain3-0",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/4c54d18d7d97",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/4c54d18d7d97.json (spec: specs/4c54d18d7d97.json)",
+  "course": "_Organized Desktop/04 JavaScript Training/jstrain3.0/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "6844a7b03c83",
+  "name": "_Organized Desktop/04 JavaScript Training/react",
+  "rel": "_Organized Desktop/04 JavaScript Training/react",
+  "status": "delivered",
+  "tests": null,
+  "words": 3921,
+  "deliveredAt": "2026-09-09T06:17:22.586817+00:00",
+  "nfiles": 26,
+  "summary": [
+   "Repairs broken asset paths and duplicate startup scripts with explicit browser modules and a loopback static server.",
+   "Adds category/question CRUD with stable IDs, isolated drafts, confirmed deletion, validated import/export and legacy saved-data migration.",
+   "Publishes accepted state only after storage succeeds; Web Locks plus exact baseline comparison reject competing stale saves and preserve failed drafts.",
+   "Preserves corrupt data until explicit replacement, provides raw recovery export, and cleans used-clue references when questions or categories are deleted.",
+   "Implements accessible clue reveal, explicit used markers, persisted round progress, keyboard dialogs and responsive layouts with literal text rendering.",
+   "Adds 20 store tests, eleven real Chromium workflows, six syntax gates, two reviewed screenshots and nine detailed CRUD learning documents."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\react",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "react",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/6844a7b03c83",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/6844a7b03c83.json (spec: specs/6844a7b03c83.json)",
+  "course": "_Organized Desktop/04 JavaScript Training/react/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "9b2478e93c69",
+  "name": "_Organized Desktop/05 Numbered Experiments/J1",
+  "rel": "_Organized Desktop/05 Numbered Experiments/J1",
+  "status": "delivered",
+  "tests": 43,
+  "words": 4375,
+  "deliveredAt": "2026-09-09T13:51:18.576756+00:00",
+  "nfiles": 20,
+  "summary": [
+   "Replaced mutable task references and save-on-exit behavior with immutable versioned values, complete edit/reopen/search workflows, explicit deletion confirmation and save-before-memory candidate commits.",
+   "Added strict bounded legacy/versioned decoding, completion invariants, stable ID watermarks, preserved original legacy backups, flushed atomic replacement and cooperative cross-process stale-file protection.",
+   "Stopped malformed startup and incomplete EOF from replacing existing data, and added explicit reload recovery after rejected stale writes.",
+   "Added 43 passing Java/process checks, preserved historical onboarding material and nine detailed learning documents connecting the CLI to future versioned CRUD HTTP and SQL design."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\J1",
+  "exists": true,
+  "has_course": true,
+  "stack": [],
+  "slug": "j1",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/9b2478e93c69",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/9b2478e93c69.json (spec: specs/9b2478e93c69.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/J1/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "767d610cb528",
+  "name": "_Organized Desktop/05 Numbered Experiments/e12",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e12",
+  "status": "delivered",
+  "tests": 118,
+  "words": 6378,
+  "deliveredAt": "2026-09-10T01:25:36.808441+00:00",
+  "nfiles": 85,
+  "summary": [
+   "Implemented typed, authorized CRUD for projects, environments, flags, strategies, segments, variants and dependencies, with protected-change acknowledgment, reference-safe deletion, current-token checks and retained audit history.",
+   "Replaced unsafe direct persistence with bounded validated JSON, per-write leases, revision/digest conflict detection, isolated request snapshots, atomic file replacement before memory publication, explicit owner/demo setup and preserved original data.",
+   "Corrected context evaluation and SDK refresh behavior, fail-closed constraints/variants, scoped metrics batches and limits, HTTP input/origin/host boundaries, and mutable seed isolation.",
+   "Rebuilt the administration UI with eight resource editors, explicit in-memory sign-in, typed PATCH drafts, search/pagination, stale/uncertain-write review, one-time token display and mobile layout.",
+   "Added nine detailed learning guides, worked defects, exercises/solutions, request trace labs, preserved historical sources/docs, reproducible browser verification and reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e12",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "e12",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/767d610cb528",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/767d610cb528.json (spec: specs/767d610cb528.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e12/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "6130d1be1f04",
+  "name": "_Organized Desktop/05 Numbered Experiments/e20",
+  "rel": "_Organized Desktop/05 Numbered Experiments/e20",
+  "status": "delivered",
+  "tests": 46,
+  "words": 5653,
+  "deliveredAt": "2026-09-09T18:45:06.948942+00:00",
+  "nfiles": 39,
+  "summary": [
+   "Added versioned customer, supplier, item, warehouse, lead, project, task and timesheet CRUD with current company/role checks, unique codes, reference guards, audit events and a browser workbench.",
+   "Replaced reset-on-restart memory with bounded validated SQLite transactions, rollback on rejected operations, independent-process serialization, random expiring hashed sessions and exclusive setup with generated credentials.",
+   "Fixed partial submissions, identical ledger-line loss, insufficient/reserved stock acceptance, zero-rate handling, accepted invoice cost snapshots, payment reference and overpayment checks, linked document policies, quotation replay, report filtering and entity access.",
+   "Added retained/exportable drafts, conflict handling, scoped reference selectors, responsive forms, nine detailed learning chapters, original workflow regressions, persistence/failure/process checks and reviewed browser screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e20",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "e20",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/6130d1be1f04",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/6130d1be1f04.json (spec: specs/6130d1be1f04.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/e20/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "1a8f0f6b63c8",
+  "name": "_Organized Desktop/05 Numbered Experiments/j2",
+  "rel": "_Organized Desktop/05 Numbered Experiments/j2",
+  "status": "delivered",
+  "tests": 53,
+  "words": 4046,
+  "deliveredAt": "2026-09-09T14:22:56.171624+00:00",
+  "nfiles": 23,
+  "summary": [
+   "Completed immutable versioned book/borrower CRUD, confirmed deletion of unused records, archive/restore, literal search and immediate save-before-memory commits.",
+   "Added retained loan receipts with accepted title/name snapshots, atomic checkout/return, current-loan consistency, date and reference validation, history-protected deletion and durable allocation watermarks.",
+   "Replaced independent file writes with one bounded strict snapshot, cooperative cross-process baseline protection and atomic replacement; legacy-pair conversion preserves both original files unchanged.",
+   "Added 53 passing Java/CLI/process checks, compilation after consistent source formatting, preserved historical notes and nine detailed learning documents connecting aggregate consistency to future CRUD HTTP and SQL design."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j2",
+  "exists": true,
+  "has_course": true,
+  "stack": [],
+  "slug": "j2",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/1a8f0f6b63c8",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/1a8f0f6b63c8.json (spec: specs/1a8f0f6b63c8.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/j2/astraupskill",
+  "batch": "B16"
+ },
+ {
+  "wave": 2,
+  "id": "d0778f38946f",
+  "name": "_Organized Desktop/05 Numbered Experiments/j3",
+  "rel": "_Organized Desktop/05 Numbered Experiments/j3",
+  "status": "delivered",
+  "tests": null,
+  "words": 4411,
+  "deliveredAt": "2026-09-09T04:13:34.346082+00:00",
+  "nfiles": 20,
+  "summary": [
+   "Balances and transaction history now persist in one validated versioned snapshot with atomic replacement, count footer, failure cleanup and explicit legacy migration.",
+   "Service-owned account copies prevent callers from changing balances outside commands; detached snapshots capture both collections under one synchronized service boundary.",
+   "Money precision, account balances, transaction relationships, duplicate identities and missing references are validated on entry and load.",
+   "Transfers construct their history before mutation; competing withdrawals cannot overdraw one shared service instance.",
+   "Holder rename and confirmed deletion of only unused zero-balance accounts teach domain-aware CRUD while preserving used-account history.",
+   "Nine detailed course documents and a Java 17 runner explain actual source, ownership, consistency, migration, tests, traces and progressive database/HTTP/idempotency exercises."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j3",
+  "exists": true,
+  "has_course": true,
+  "stack": [],
+  "slug": "j3",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/d0778f38946f",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/d0778f38946f.json (spec: specs/d0778f38946f.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/j3/astraupskill",
+  "batch": "B16"
+ }
+]

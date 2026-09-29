@@ -1,0 +1,26 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+  "id": "e0e5886e8464",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "../../batch-crud-upskill-20260921/npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T22:55:53.765234+00:00",
+  "status": "complete",
+  "log": "crud-b01-install.log",
+  "pid": 37608,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:32:20.168612+00:00",
+  "elapsedSeconds": 2186.39
+}

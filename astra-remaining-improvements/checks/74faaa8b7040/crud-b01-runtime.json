@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildaffiliate",
+  "id": "74faaa8b7040",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/campaign-slug.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\74faaa8b7040",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:31:32.227624+00:00",
+  "status": "complete",
+  "log": "crud-b01-runtime.log",
+  "pid": 32528,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:31:35.971623+00:00",
+  "elapsedSeconds": 3.74
+}

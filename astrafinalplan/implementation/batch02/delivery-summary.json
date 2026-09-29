@@ -1,0 +1,82 @@
+[
+  {
+    "project": "JS1/flashcards",
+    "stage": "11",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5144,
+    "changes": 16
+  },
+  {
+    "project": "JS1/habit-tracker",
+    "stage": "12",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 4952,
+    "changes": 14
+  },
+  {
+    "project": "JS1/reading-list",
+    "stage": "13",
+    "test_cases": 1,
+    "learning_files": 9,
+    "learning_words": 4788,
+    "changes": 16
+  },
+  {
+    "project": "JS1/note-vault",
+    "stage": "14",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5385,
+    "changes": 18
+  },
+  {
+    "project": "JS1/budget-tracker",
+    "stage": "15",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 4848,
+    "changes": 14
+  },
+  {
+    "project": "JS1/pantry-inventory",
+    "stage": "16",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 4939,
+    "changes": 15
+  },
+  {
+    "project": "JS1/snippet-vault",
+    "stage": "17",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 4843,
+    "changes": 15
+  },
+  {
+    "project": "JS1/room-booking",
+    "stage": "18",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5563,
+    "changes": 18
+  },
+  {
+    "project": "newcodexJS/04-notes-app",
+    "stage": "19",
+    "test_cases": 1,
+    "learning_files": 9,
+    "learning_words": 5220,
+    "changes": 16
+  },
+  {
+    "project": "newcodexJS/06-bookmark-manager",
+    "stage": "20",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 5898,
+    "changes": 29
+  }
+]

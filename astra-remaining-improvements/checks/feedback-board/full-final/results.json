@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "mode": "verify",
+  "backendTests": 43,
+  "browserTests": 16,
+  "total": 59,
+  "build": true,
+  "database": "Helper-owned temporary SQLite aggregate"
+}

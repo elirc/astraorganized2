@@ -1,0 +1,228 @@
+[
+  {
+    "project": "21",
+    "check": "browser",
+    "passed": true,
+    "api": "none (browser-only)",
+    "persistence": "fresh browser storage"
+  },
+  {
+    "project": "22",
+    "check": "browser",
+    "passed": true,
+    "api": "none (browser-only)",
+    "persistence": "fresh browser storage"
+  },
+  {
+    "project": "23",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "24",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "25",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "26",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "27",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "28",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema"
+  },
+  {
+    "project": "29",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "30",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema"
+  },
+  {
+    "project": "31",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema"
+  },
+  {
+    "project": "32",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository"
+  },
+  {
+    "project": "33",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema"
+  },
+  {
+    "project": "34",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema"
+  },
+  {
+    "project": "35",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "36",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "37",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "38",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "39",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "40",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "41",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "42",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "43",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "44",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "45",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "46",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "47",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "48",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "fresh in-memory repository",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "49",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  },
+  {
+    "project": "50",
+    "check": "browser",
+    "passed": true,
+    "api": "actual isolated HTTP server",
+    "persistence": "disposable PostgreSQL schema",
+    "responsive_check": "390px no horizontal overflow; 1280px usable search width"
+  }
+]

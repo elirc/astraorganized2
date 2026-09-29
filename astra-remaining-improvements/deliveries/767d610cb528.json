@@ -1,0 +1,631 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e12",
+  "id": "767d610cb528",
+  "summary": [
+    "Implemented typed, authorized CRUD for projects, environments, flags, strategies, segments, variants and dependencies, with protected-change acknowledgment, reference-safe deletion, current-token checks and retained audit history.",
+    "Replaced unsafe direct persistence with bounded validated JSON, per-write leases, revision/digest conflict detection, isolated request snapshots, atomic file replacement before memory publication, explicit owner/demo setup and preserved original data.",
+    "Corrected context evaluation and SDK refresh behavior, fail-closed constraints/variants, scoped metrics batches and limits, HTTP input/origin/host boundaries, and mutable seed isolation.",
+    "Rebuilt the administration UI with eight resource editors, explicit in-memory sign-in, typed PATCH drafts, search/pagination, stale/uncertain-write review, one-time token display and mobile layout.",
+    "Added nine detailed learning guides, worked defects, exercises/solutions, request trace labs, preserved historical sources/docs, reproducible browser verification and reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e12/results.json",
+    "expectedTests": 118
+  },
+  "testResults": {
+    "passed": true,
+    "total": 118,
+    "backend": 98,
+    "browser": 20,
+    "counting": "98 backend identities plus 20 browser workflows. Clean-copy backend tests repeat the same cases and are not added again. Setup/syntax/assets are additional gates, not inflated test totals.",
+    "backendExecution": {
+      "command": [
+        "node",
+        "verification/run-tests.js"
+      ],
+      "exitCode": 0,
+      "seconds": 32.54
+    },
+    "browserExecution": {
+      "command": [
+        "python",
+        "verification/verify_browser.py",
+        "<new-evidence-directory>"
+      ],
+      "seconds": 92.54,
+      "checks": [
+        {
+          "name": "explicit sign-in without persisted credentials",
+          "passed": true
+        },
+        {
+          "name": "search and bounded list pagination",
+          "passed": true
+        },
+        {
+          "name": "flag creation renders hostile text literally",
+          "passed": true
+        },
+        {
+          "name": "stale writes preserve changed fields and refresh unedited fields",
+          "passed": true
+        },
+        {
+          "name": "protected changes require acknowledgment of the current draft",
+          "passed": true
+        },
+        {
+          "name": "environment create edit and reference-safe delete",
+          "passed": true
+        },
+        {
+          "name": "project create edit and delete",
+          "passed": true
+        },
+        {
+          "name": "segment create and edit typed constraints",
+          "passed": true
+        },
+        {
+          "name": "invalid JSON reports the field and preserves the draft",
+          "passed": true
+        },
+        {
+          "name": "strategy create edit and scoped segment reference",
+          "passed": true
+        },
+        {
+          "name": "variant defaults typed JSON payload update and delete",
+          "passed": true
+        },
+        {
+          "name": "dependency creation immutable review and removal",
+          "passed": true
+        },
+        {
+          "name": "one-time token display dismissal and revocation",
+          "passed": true
+        },
+        {
+          "name": "lost creation response blocks automatic retry and retains draft",
+          "passed": true
+        },
+        {
+          "name": "server write errors require review before a retained edit can retry",
+          "passed": true
+        },
+        {
+          "name": "archived flag deletion cascades owned strategy and releases segment",
+          "passed": true
+        },
+        {
+          "name": "context playground evaluates accepted configuration",
+          "passed": true
+        },
+        {
+          "name": "member permissions allow scoped writes and deny global creation",
+          "passed": true
+        },
+        {
+          "name": "viewer can inspect without mutation controls",
+          "passed": true
+        },
+        {
+          "name": "mobile layout sign-out and no uncaught browser errors",
+          "passed": true
+        }
+      ]
+    },
+    "cleanSetup": {
+      "passed": true,
+      "backendTestsRepeated": 98,
+      "noNpmDependencies": true,
+      "sourceFilesCopied": 35,
+      "gates": [
+        {
+          "name": "tests",
+          "command": [
+            "C:\\Program Files\\nodejs\\npm.cmd",
+            "test"
+          ],
+          "exitCode": 0,
+          "seconds": 64.49,
+          "stdoutOmitted": false
+        },
+        {
+          "name": "owner-setup",
+          "command": [
+            "node",
+            "src/server/setup.js",
+            "owner",
+            "Clean verification owner",
+            "owner@example.invalid"
+          ],
+          "exitCode": 0,
+          "seconds": 2.36,
+          "stdoutOmitted": true
+        },
+        {
+          "name": "owner-refuses-overwrite",
+          "command": [
+            "node",
+            "src/server/setup.js",
+            "owner",
+            "Replacement",
+            "replacement@example.invalid"
+          ],
+          "exitCode": 1,
+          "seconds": 2.51,
+          "stdoutOmitted": true
+        },
+        {
+          "name": "cli-startup-assets-and-owner-authentication",
+          "passed": true,
+          "staticAssets": 3,
+          "seconds": 5.32
+        }
+      ]
+    },
+    "syntax": {
+      "command": [
+        "node",
+        "--check",
+        "src/ui/app.js"
+      ],
+      "exitCode": 0,
+      "pythonBrowserScriptParsed": true
+    },
+    "screenshotsReviewed": 5,
+    "originalDataPreserved": {
+      "file": "data/state.json",
+      "sha256": "c431fd7eb82749fa862a54700b4872f4fee735ff2444682e739985c079dab692"
+    },
+    "limits": [
+      "Loopback local JSON store; no distributed persistence or power-loss guarantee.",
+      "No durable mutation receipts, metrics deduplication/automatic pruning, or account recovery.",
+      "Basic persisted shape/identity validation; no complete relational migration validation or duplicate-JSON-key rejection.",
+      "Chromium desktop/mobile checks, not all-browser or assistive-technology certification."
+    ]
+  },
+  "courseWords": 6378,
+  "courseFiles": 9,
+  "courseLinksChecked": 68,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "99cca6ede330d26b26c138fca0070540dbeadb93aa0d1479c2f8fc0d5484b043",
+      "after_sha256": "c79c2efab1d5e6a4adc30eceb4cfd13eeedb663ba459cfdd815881b34ca7c401"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "0781951e168299bc96ca6aacd12ad2c1d171815c9c9071a6c2b6e2facfb82657",
+      "after_sha256": "43dc8957da974ee55791d1425f07b52dc11ce797228f3681dea9fa11db6a7e7d"
+    },
+    {
+      "file": "astraupskill/images/01-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "244de110982333688c3cacaf2c8bdb065fda9c1c20e85f3626f0f30bf5900d65"
+    },
+    {
+      "file": "astraupskill/images/02-conflict-review.png",
+      "before_sha256": null,
+      "after_sha256": "c36125c0c4634fe2752d6f358ebd5dc40bb469372719f13fd03c5684eb1858d3"
+    },
+    {
+      "file": "astraupskill/images/03-variant-editor.png",
+      "before_sha256": null,
+      "after_sha256": "fc23831bac8893f1735fba83f2b2aac49f35dce57a2c00a05c8bb612c9cb4fdd"
+    },
+    {
+      "file": "astraupskill/images/04-viewer.png",
+      "before_sha256": null,
+      "after_sha256": "753778badca5b71465665094d9477cfea005a99444a8573e99367b28da9fa9e8"
+    },
+    {
+      "file": "astraupskill/images/05-mobile.png",
+      "before_sha256": null,
+      "after_sha256": "e9b1ce8d34ff3b52f7a4101344847e6f6de68f8a27e05ced30fbbaa9034a194f"
+    },
+    {
+      "file": "docs/onboarding/00-codebase-map.md",
+      "before_sha256": "2464ed0bfb5c60d53674f3c0894ea330b28d3e06feb0f5d77bc90fa5cc15cc75",
+      "after_sha256": "71cefb6159aca9bacb30230afd14d3c1a3b10fd924cfd649037d43e6d9e5a5c6"
+    },
+    {
+      "file": "docs/onboarding/01-reading-order.md",
+      "before_sha256": "f9020a323f74138c4d94895ffa3d1d38af863ed3e581f0925c7a8064cb4c6813",
+      "after_sha256": "0c77051b280c9dcd8b35a5e5195da9947123647c4858ca2d59e1988052b053b8"
+    },
+    {
+      "file": "docs/onboarding/02-review-checklists.md",
+      "before_sha256": "41e579e398f852242a8c172d89c21b828a9736de917cf29280374b00641f6ddc",
+      "after_sha256": "e62c855d579e907a113d87261bacc6a6f916f7f30370e015d92a19c90a8559d2"
+    },
+    {
+      "file": "docs/onboarding/files/src/core/evaluation.js.md",
+      "before_sha256": "356c47cfd959cf57b43f342925cc20a1e1d1aee497fe97806b99486fbe7eacc4",
+      "after_sha256": "2d6b63036fca80048cb881ba14756f9b5db683a5451dfe2f113eb44729afbdab"
+    },
+    {
+      "file": "docs/onboarding/files/src/core/snapshot.js.md",
+      "before_sha256": "0702cc21ad0f68db519514d2416bcb43531ba7c6f34c6d8ec4eb8b14b1b3ab0a",
+      "after_sha256": "164e2b39474c0c6ea8dfc23084a77ae4e68867af4cbe9d19f7f951d5bf2f359f"
+    },
+    {
+      "file": "docs/onboarding/files/src/server/router.js.md",
+      "before_sha256": "5b03b02560ea5baf9b89b026c432e40af2ac8fd8464403f8bbb848edcc21c94c",
+      "after_sha256": "9ad5719b044a3bb028389ec09916fba13fbbc7712ff5aa5c91e38eb8452019ac"
+    },
+    {
+      "file": "docs/onboarding/files/src/server/server.js.md",
+      "before_sha256": "e6f0eb2ff626f89e3d5664e7b568bf778ead12da5c0ded7013d582af0983cdd1",
+      "after_sha256": "6d92695bceaad603ba618c396a17f0cd0fc334245271e6557dfd1a16267305b4"
+    },
+    {
+      "file": "docs/onboarding/files/src/server/services.js.md",
+      "before_sha256": "44a609070cf70969076f448a3a76f29c0dcd593509458edfe19a917bbfb6d7cb",
+      "after_sha256": "423c73f675f6cdb7bc09688ea6822746ab9dac90a50b468eb3a8f653221fb7ec"
+    },
+    {
+      "file": "docs/onboarding/files/src/server/store.js.md",
+      "before_sha256": "df86d958f67186483e1a63de96bca20ad585cc78979461c5a149f8ebb4aa1fc7",
+      "after_sha256": "0534925b3dc5a520a57febad3119e5442727a1d45e055d488ec5b2171b965f97"
+    },
+    {
+      "file": "docs/onboarding/files/src/ui/app.js.md",
+      "before_sha256": "42df53b596493a6c918d063bbb85f3c830c5a43bedc0b00571a5c35172a9c5ce",
+      "after_sha256": "6b64a9f36d1dcb6f0164c0a11baf4455f321170f2d3e08503b1f17f75e680dc8"
+    },
+    {
+      "file": "docs/original/README.md",
+      "before_sha256": null,
+      "after_sha256": "0781951e168299bc96ca6aacd12ad2c1d171815c9c9071a6c2b6e2facfb82657"
+    },
+    {
+      "file": "docs/original/docs/onboarding/00-codebase-map.md",
+      "before_sha256": null,
+      "after_sha256": "2464ed0bfb5c60d53674f3c0894ea330b28d3e06feb0f5d77bc90fa5cc15cc75"
+    },
+    {
+      "file": "docs/original/docs/onboarding/01-reading-order.md",
+      "before_sha256": null,
+      "after_sha256": "f9020a323f74138c4d94895ffa3d1d38af863ed3e581f0925c7a8064cb4c6813"
+    },
+    {
+      "file": "docs/original/docs/onboarding/02-review-checklists.md",
+      "before_sha256": null,
+      "after_sha256": "41e579e398f852242a8c172d89c21b828a9736de917cf29280374b00641f6ddc"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/core/evaluation.js.md",
+      "before_sha256": null,
+      "after_sha256": "356c47cfd959cf57b43f342925cc20a1e1d1aee497fe97806b99486fbe7eacc4"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/core/snapshot.js.md",
+      "before_sha256": null,
+      "after_sha256": "0702cc21ad0f68db519514d2416bcb43531ba7c6f34c6d8ec4eb8b14b1b3ab0a"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/server/router.js.md",
+      "before_sha256": null,
+      "after_sha256": "5b03b02560ea5baf9b89b026c432e40af2ac8fd8464403f8bbb848edcc21c94c"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/server/server.js.md",
+      "before_sha256": null,
+      "after_sha256": "e6f0eb2ff626f89e3d5664e7b568bf778ead12da5c0ded7013d582af0983cdd1"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/server/services.js.md",
+      "before_sha256": null,
+      "after_sha256": "44a609070cf70969076f448a3a76f29c0dcd593509458edfe19a917bbfb6d7cb"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/server/store.js.md",
+      "before_sha256": null,
+      "after_sha256": "df86d958f67186483e1a63de96bca20ad585cc78979461c5a149f8ebb4aa1fc7"
+    },
+    {
+      "file": "docs/original/docs/onboarding/files/src/ui/app.js.md",
+      "before_sha256": null,
+      "after_sha256": "42df53b596493a6c918d063bbb85f3c830c5a43bedc0b00571a5c35172a9c5ce"
+    },
+    {
+      "file": "docs/original/package.json",
+      "before_sha256": null,
+      "after_sha256": "e63b6be0e4604be70c9346d253a7aaa1a6999ee3176fc2da628988923a0ef857"
+    },
+    {
+      "file": "docs/original/sdk/browser-sdk.js",
+      "before_sha256": null,
+      "after_sha256": "5d1837f0a816af9204f0d9481195388cf2d559f2819dfa0347ac1a64b6f3ac5b"
+    },
+    {
+      "file": "docs/original/sdk/server-sdk.js",
+      "before_sha256": null,
+      "after_sha256": "e2ea1e8e8fc460c38d4f1c112f3bf949acda02a703dce1a0d1e5f123e8e31437"
+    },
+    {
+      "file": "docs/original/src/core/evaluation.js.txt",
+      "before_sha256": null,
+      "after_sha256": "4e7302e6c48e6dc0f0f07113afd3814717d3404a74eb1b52e0e439a9f475f5ee"
+    },
+    {
+      "file": "docs/original/src/server/defaults.js.txt",
+      "before_sha256": null,
+      "after_sha256": "1a2a896b5c52f80d27ea7a303001b5420600a3f70e5c038522265425ad582f7d"
+    },
+    {
+      "file": "docs/original/src/server/router.js",
+      "before_sha256": null,
+      "after_sha256": "efc3c98f83e78c1c043ec9b624525cda1240bc67285d787c13779d0d1b29174b"
+    },
+    {
+      "file": "docs/original/src/server/server.js",
+      "before_sha256": null,
+      "after_sha256": "b68d9cc59b6e6dc90595d98e457af57caba3d38fa7eb2f5c729876699d908423"
+    },
+    {
+      "file": "docs/original/src/server/services.js",
+      "before_sha256": null,
+      "after_sha256": "1f4c2624d83f41d1ce1feeba475797f9030576ed08c4caf92f352090e50fc415"
+    },
+    {
+      "file": "docs/original/src/server/store.js",
+      "before_sha256": null,
+      "after_sha256": "799603c42a33098b9b14da1e79c4e97117488ddf420cc98f40daa78c99759f70"
+    },
+    {
+      "file": "docs/original/src/ui/app.js.txt",
+      "before_sha256": null,
+      "after_sha256": "3f80759e2ae200e82d8d551aeef92b90ae6e900dcb161bbbb0445ede06c578e8"
+    },
+    {
+      "file": "docs/original/src/ui/index.html.txt",
+      "before_sha256": null,
+      "after_sha256": "ded88b40a508ef8ff39941d1c3693bcb133e5ecff5a0a83dab9cc257135ba0ca"
+    },
+    {
+      "file": "docs/original/src/ui/styles.css.txt",
+      "before_sha256": null,
+      "after_sha256": "0d2b7bb568b7b60d419ce6a9875fdd47b59be8b77608972d452e96358c169d06"
+    },
+    {
+      "file": "docs/original/test/services.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "b5d9b7effeb7ae5ec229ce21be4b86a96222c3afec2f38e569c5d6293e684641"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "e63b6be0e4604be70c9346d253a7aaa1a6999ee3176fc2da628988923a0ef857",
+      "after_sha256": "430f4c716a6fc01db3d6fb1fa02f702860ab5963ca5529a875da0d60f20970cf"
+    },
+    {
+      "file": "sdk/browser-sdk.js",
+      "before_sha256": "5d1837f0a816af9204f0d9481195388cf2d559f2819dfa0347ac1a64b6f3ac5b",
+      "after_sha256": "13188418fc49f48d078ec96fd76b31bfe7213665c3698e0c49a0912911c48db3"
+    },
+    {
+      "file": "sdk/request.js",
+      "before_sha256": null,
+      "after_sha256": "2e18a9bbf73775d5b03b56424aa9953abbab220dc8871e1ddc57547da8b99993"
+    },
+    {
+      "file": "sdk/server-sdk.js",
+      "before_sha256": "e2ea1e8e8fc460c38d4f1c112f3bf949acda02a703dce1a0d1e5f123e8e31437",
+      "after_sha256": "3faa6ce34c67e410b2db31b441f38723a1ddc5bfcd0a2ada7b202bd7c8416642"
+    },
+    {
+      "file": "src/core/evaluation.js",
+      "before_sha256": "4e7302e6c48e6dc0f0f07113afd3814717d3404a74eb1b52e0e439a9f475f5ee",
+      "after_sha256": "9d05037a2dbd160cffdfc0773fbb0de379069c4c1d605b9175e77b6727bd59d8"
+    },
+    {
+      "file": "src/core/snapshot.js",
+      "before_sha256": "1e98af7c67f843d97cf03cbc64ba767a9eb6a7416df44ea36def3456e3f548f9",
+      "after_sha256": "8b7bca9fd02033afe03549d090cab2399df05de59d6142ef7216437c0a580fe2"
+    },
+    {
+      "file": "src/server/contracts.js",
+      "before_sha256": null,
+      "after_sha256": "5872fe07bcafb8f9c13bb6499ebab8b316b738a55939e198d772ffe8ebf3a7e8"
+    },
+    {
+      "file": "src/server/defaults.js",
+      "before_sha256": "1a2a896b5c52f80d27ea7a303001b5420600a3f70e5c038522265425ad582f7d",
+      "after_sha256": "3a90ebd1fae38567a32b77e081bbf7e3c03c3310ae5bcbcfcf0fa1ab24bff09a"
+    },
+    {
+      "file": "src/server/http-boundary.js",
+      "before_sha256": null,
+      "after_sha256": "40f85d0a18d6fb1ac20abde2390850eaf9534158f35d9a9d383452395c70697d"
+    },
+    {
+      "file": "src/server/router.js",
+      "before_sha256": "efc3c98f83e78c1c043ec9b624525cda1240bc67285d787c13779d0d1b29174b",
+      "after_sha256": "a831588c1fa2ceaccc882d1a60d4058b8225057b69e7ef59448565b1c2ae4adc"
+    },
+    {
+      "file": "src/server/server.js",
+      "before_sha256": "b68d9cc59b6e6dc90595d98e457af57caba3d38fa7eb2f5c729876699d908423",
+      "after_sha256": "1b7ffaa3bc43d1e398116e1003b4aeafd5c86f56d0fc4ed4025ac41c2c726d0f"
+    },
+    {
+      "file": "src/server/services.js",
+      "before_sha256": "1f4c2624d83f41d1ce1feeba475797f9030576ed08c4caf92f352090e50fc415",
+      "after_sha256": "5dcdf07f7fe2906445e474d4730babee14687aed25588f1675fb73a8080cdc77"
+    },
+    {
+      "file": "src/server/setup.js",
+      "before_sha256": null,
+      "after_sha256": "b3a4822175c4e5c6cad9763d00d56bb768eb10be25b05033cd7563e29628ebb7"
+    },
+    {
+      "file": "src/server/storage.js",
+      "before_sha256": null,
+      "after_sha256": "5428ce6662be7681e41ab44bc8dda5271d846b39e20378870b9afc68662fc994"
+    },
+    {
+      "file": "src/server/store.js",
+      "before_sha256": "799603c42a33098b9b14da1e79c4e97117488ddf420cc98f40daa78c99759f70",
+      "after_sha256": "ed533139070711f5e28490be06a89e3639ba832a2103cfd2db1f1a9195d1241e"
+    },
+    {
+      "file": "src/ui/app.js",
+      "before_sha256": "3f80759e2ae200e82d8d551aeef92b90ae6e900dcb161bbbb0445ede06c578e8",
+      "after_sha256": "5838afe9a198fa524fdee36d2f2aa59b1b7300fda4a62774dacc7ec6b1f9b32e"
+    },
+    {
+      "file": "src/ui/index.html",
+      "before_sha256": "ded88b40a508ef8ff39941d1c3693bcb133e5ecff5a0a83dab9cc257135ba0ca",
+      "after_sha256": "cd03bff30883e18071bbe061e68f45dca7b6da00bf0ff1e7ebbfdf18502673b4"
+    },
+    {
+      "file": "src/ui/styles.css",
+      "before_sha256": "0d2b7bb568b7b60d419ce6a9875fdd47b59be8b77608972d452e96358c169d06",
+      "after_sha256": "9ec7981eeea0fc71aba9d5bfc51b3d3667db8fbc080bc1e52503ba538e4461e8"
+    },
+    {
+      "file": "test/authorization.test.js",
+      "before_sha256": null,
+      "after_sha256": "3b9f2b6a2958778fcb306405a06154de700f625fda4d32284739053e5e417555"
+    },
+    {
+      "file": "test/context-cache.test.js",
+      "before_sha256": null,
+      "after_sha256": "df7f500ce06901967535ac26485a81022099cb95f92c0c820282de0174a4e696"
+    },
+    {
+      "file": "test/contracts.test.js",
+      "before_sha256": null,
+      "after_sha256": "7793662d04e52e9648a18658d88e0b8a16fa874459a8c7c9c2547dab15e9342f"
+    },
+    {
+      "file": "test/crud.test.js",
+      "before_sha256": null,
+      "after_sha256": "fe03a1b7d0a950528b548bc00bbe3d7639d6532a732c6bf70ac7928afd206fdf"
+    },
+    {
+      "file": "test/evaluation-safety.test.js",
+      "before_sha256": null,
+      "after_sha256": "1b5aba3f34abba143a9ce72d8a9cd3d5faa1effd77b7de480350a340f16e3fcd"
+    },
+    {
+      "file": "test/evaluation.test.js",
+      "before_sha256": "1d5c0c1c12ceae19264e5e06e6184fc4114a51d4912ecef9224b5070094c546f",
+      "after_sha256": "554dc12991e1ba326a7b9f82f48fd8f645b670d3918edadecc383ec5734ad225"
+    },
+    {
+      "file": "test/fixtures.js",
+      "before_sha256": null,
+      "after_sha256": "f2c2b8001527ddf39ca3e684e4393ee616424e7371ddd6214116a17979948da9"
+    },
+    {
+      "file": "test/http.test.js",
+      "before_sha256": null,
+      "after_sha256": "5af892cc11b005b22fe5be6f31afd6b22228c1f982718263269241890040381c"
+    },
+    {
+      "file": "test/metrics.test.js",
+      "before_sha256": null,
+      "after_sha256": "4e1bf1e6fdac74256e3988c2cb7ab326f3bd82834241a2cacffdaa483f1cc325"
+    },
+    {
+      "file": "test/sdk.test.js",
+      "before_sha256": null,
+      "after_sha256": "c3741c44c3c5c2779c4b97321b3d68fbdec55ad1f39bcca508500b6b5263601c"
+    },
+    {
+      "file": "test/services.test.js",
+      "before_sha256": "b5d9b7effeb7ae5ec229ce21be4b86a96222c3afec2f38e569c5d6293e684641",
+      "after_sha256": "c35fc93be016d52273dd1a7871327235566f3dc41ea957ded931a65208884e69"
+    },
+    {
+      "file": "test/storage.test.js",
+      "before_sha256": null,
+      "after_sha256": "3f1f0c63d1dfa558cd0158d5ba9d8349c40685986a1ca73fea71c28ed87d1246"
+    },
+    {
+      "file": "verification/browser-fixture.js",
+      "before_sha256": null,
+      "after_sha256": "13b764b9a9e0fa5329791bbd822e2828cf256b01b74bdf34cf4bc17344362b41"
+    },
+    {
+      "file": "verification/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "verification/run-tests.js",
+      "before_sha256": null,
+      "after_sha256": "f48851b2dfb262c7343a84763f0f99ca58d2eabe08f89e1ce7cf55d08894afd2"
+    },
+    {
+      "file": "verification/validated-results.json",
+      "before_sha256": null,
+      "after_sha256": "fd9d4b8692fed0a81801af20d957f214c7ce12e9593b29c2ca832f4c9bd1be41"
+    },
+    {
+      "file": "verification/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "610732b0937822d84429de113da6934d1e83deb24c63e208f1965710b616a6b4"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "683cd02cf60bae790a6a365cd431cb2b0d3e3b07041a6f868cda276ffa76925a"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "3d64a59057be5331edbbbe53b2e7e8868049abd55d60fc3be10269859afc6801"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e2b10e2f1ae5c2e1cabd6d24d7786610a1b0459421cf085cc4b07455e08cb27c"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "abb7f350e4cc4113f589858f36e77f685db2c3e64152b7aad7ef628f87272031"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "73671f94171fc8c04c9130fb6e65a83eceb6a93b4f5565346e30da53146307fc"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "0c9e651dbf06d447499ec2e3e444d8b043f69a619eae64d1a2479675804944b0"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "48476591d01156b20e04320af86a0a4ca320825ad4aa1fcd7622baf180cad09a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a0a2d93d4b681606b15d6b2e8ff9bae9621959df740327f20ff52479bec4cb34"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a58c7c4db79555f7542d1b4dce79fa81fb5908d4b3d3a5950038039585193151"
+    }
+  ],
+  "limits": [
+    "Loopback local JSON store; no distributed persistence or power-loss guarantee.",
+    "No durable mutation receipts, metrics deduplication/automatic pruning, or account recovery.",
+    "Basic persisted shape/identity validation; no complete relational migration validation or duplicate-JSON-key rejection.",
+    "Chromium desktop/mobile checks, not all-browser or assistive-technology certification.",
+    "SDK response JSON has no streaming byte cap; finite Date.parse validation is not strict calendar validation.",
+    "One-time token secrets cannot be recovered after a lost creation response; inspect and revoke/recreate as appropriate."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-10T01:25:36.808441+00:00"
+}

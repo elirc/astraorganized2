@@ -1,0 +1,21 @@
+{
+  "files": {
+    "package.json": "aa826821272e1a555c2abee4d56b7c44e2b056534fb302d4cfb7403ff57f7209",
+    "app/api/tickets/[ticketId]/move/route.ts": "bf95590a7e231e95fcd89d0743e9f3530e4480a6163a13ee7238bbd60928676a",
+    "app/api/tickets/[ticketId]/time-entries/route.ts": "4eb816ada58b6b485b02c230f7d69aee731ba1608bd083587cb031588e597c56",
+    "app/api/tickets/[ticketId]/time-entries/start/route.ts": "936df6e719fba41466721ea80eaa68e0586300c4737cf6bd38c0e07c28e5a2d4",
+    "app/api/time-entries/[entryId]/route.ts": "2f0d37f0d20e836054f263eb4d81ebe73181da13ca8264a350624a5f5506a7d1",
+    "app/api/time-entries/[entryId]/stop/route.ts": "11bd13b371e6854ddca89f9e6648eb2f4c199a2a7b4c705e61c2712ac10f5ef9",
+    "app/projects/[projectId]/page.tsx": "4002751ea35b759b5abe9ca01c569cdf2368b296a1d03caa331521e1f140b25e",
+    "components/board/Board.tsx": "441a21b8af4c388244b216859ecd1600339b36e6a6469e92b737f97f8e73d46e",
+    "lib/api-client.ts": "a2c6918dc7fb4e1ea38cf10d5a2ecb36dde4f38ddfb14673bf08aabad1b9b435",
+    "prisma/seed.ts": "f6a5894b01b2447d0160fa2357e3fe64f4d20335a1b8b3b9da6e7792874e934b",
+    "eslint.config.mjs": "857d82b285c09631d5149d51b41cde7fcc586dbb78aa0efd0e86caa5be5355a7",
+    "lib/api-errors.ts": "76525e2ae48c0d9b37d69d5029da501315584ea3bbc3f51a5bad3167628ce690",
+    "lib/board-service.ts": "0f4f4eba18d903a6976757093804d00a390f3395786d1f2baf7a71478f2972d9",
+    "lib/time-entry-handlers.ts": "74c0ab8f2272c75e4ab03a81dc3796a128cd1c38be9a385d06d9c982a6da7fea",
+    "lib/time-entry-service.ts": "34bd151b1f1085a6d4d66b7b9ccefba9ee4156c05bbd8f3e012dc22d547b624a",
+    "lib/time-entry-validation.ts": "0b2a8259690dc34d8d7188f26ff297033b3256a3795dceea53c0563af36dcaf8",
+    "tests/time-entry-validation.test.ts": "fd760c34fb4cc20cefde99e2912643d47a481e3dbd00a51b22d270bc045178f6"
+  }
+}

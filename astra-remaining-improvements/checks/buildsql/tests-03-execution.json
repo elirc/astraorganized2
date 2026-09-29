@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=768",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "--maxWorkers=1",
+    "--no-file-parallelism",
+    "--reporter=default",
+    "--reporter=json",
+    "--outputFile=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\buildsql\\tests-03.json"
+  ],
+  "exitCode": 0,
+  "seconds": 163.88
+}

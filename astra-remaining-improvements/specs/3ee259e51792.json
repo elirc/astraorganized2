@@ -1,0 +1,26 @@
+{
+  "id": "3ee259e51792",
+  "project": "zz9",
+  "summary": [
+    "Preserve tri-state PATCH semantics for nullable requesterEmail and sourceSystem fields.",
+    "Convert present empty values to null while retaining omitted values as undefined.",
+    "Keep scoped lookup and transaction ordering unchanged.",
+    "Five actual-service cases execute real permissions, team scope, note filtering and domain errors."
+  ],
+  "changedFiles": [
+    "src/services/caseService.ts",
+    "tests/runtime-case-clearable-fields.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-caseService.ts.before",
+    "astraupskill/evidence/crud-b08-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3ee259e51792/results-crud-b08.json"
+  },
+  "limits": [
+    "VM test uses explicit dependency doubles and does not execute Prisma SQL, routes, or middleware.",
+    "No concurrent update or full schema integration claim."
+  ]
+}

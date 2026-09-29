@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww4",
+  "id": "7dde79c7a4c0",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/issue-service-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7dde79c7a4c0",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:59:37.214288+00:00",
+  "status": "complete",
+  "log": "crud-ww4-runtime-v5.log",
+  "pid": 25676,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:59:46.890152+00:00",
+  "elapsedSeconds": 9.67
+}

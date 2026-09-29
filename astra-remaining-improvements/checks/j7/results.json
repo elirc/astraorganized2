@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "tests": 42,
+  "javaRegressionTests": 35,
+  "separateProcessCliScenarios": 7,
+  "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+  "checks": [
+    "customer and product survive separate-process reload",
+    "discount survives persisted aggregate reload",
+    "quantity update persists with original price and discount",
+    "CLI rejects sub-cent discount before service mutation",
+    "paid order freezes line edits through CLI",
+    "EOF preserves completed work and discards unfinished input",
+    "corrupt startup leaves authoritative file unchanged"
+  ],
+  "limits": [
+    "Single-threaded local CLI; no database, HTTP, browser, multi-process locking or power-loss test."
+  ]
+}

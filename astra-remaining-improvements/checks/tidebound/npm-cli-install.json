@@ -1,0 +1,10 @@
+{
+  "version": "11.19.1",
+  "url": "https://registry.npmjs.org/npm/-/npm-11.19.1.tgz",
+  "integrity": "sha512-ztsxKxt/kkIaAs+2i0GU6I+DRmUdrNasxTZKJe9TCdSjKxlhah/4r/hl5ygMD6XAg1qZ9c2TNomR4qgOydp10g==",
+  "bytes": 3002869,
+  "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\tidebound\\tooling\\npm-11.19.1",
+  "engines": {
+    "node": "^20.17.0 || >=22.9.0"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "summary": "Validate policy and exception commands directly; atomically publish versions, recipients and audits in a nested synchronous demo transaction; preflight reciprocal exception links and current-version eligibility; retain stable acknowledgment retries and self-scoped employee summaries. Repair malformed lock metadata and add full-state failure tests and source course.",
+  "limits": [
+    "Storage and rollback are process-local mock state, not SQL durability or cross-worker isolation.",
+    "Session selection remains an explicit demo identity mechanism.",
+    "Only uncompleted acknowledgments for the current published policy version may request or receive exceptions; archived requests remain historical."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log",
+    "astraupskill/evidence/resume14-lint-02.json",
+    "astraupskill/evidence/resume14-lint-02.log",
+    "astraupskill/evidence/resume14-lock-01.json",
+    "astraupskill/evidence/resume14-lock-01.log",
+    "astraupskill/evidence/resume14-tests-01.json",
+    "astraupskill/evidence/resume14-tests-01.log",
+    "astraupskill/evidence/resume14-types-01.json",
+    "astraupskill/evidence/resume14-types-01.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/package-lock.json.original.txt",
+    "astraupskill/snapshots/src__lib__mock__mock-db.ts.original.txt",
+    "astraupskill/snapshots/src__lib__utils__date.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__policy-schemas.ts.original.txt",
+    "astraupskill/snapshots/src__services__acknowledgment-service.ts.original.txt",
+    "astraupskill/snapshots/src__services__dashboard-service.ts.original.txt",
+    "astraupskill/snapshots/src__services__exception-service.ts.original.txt",
+    "astraupskill/snapshots/src__services__policy-service.ts.original.txt",
+    "astraupskill/snapshots/tsconfig.json.original.txt",
+    "package-lock.json",
+    "src/lib/mock/mock-db.ts",
+    "src/lib/utils/date.ts",
+    "src/lib/validation/policy-schemas.ts",
+    "src/services/acknowledgment-service.ts",
+    "src/services/dashboard-service.ts",
+    "src/services/exception-service.ts",
+    "src/services/policy-service.ts",
+    "src/tests/workflow-atomicity.test.ts",
+    "tsconfig.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2f29156b71ed/resume14-results.json",
+    "expectedTests": 24,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

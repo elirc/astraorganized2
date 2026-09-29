@@ -1,0 +1,11 @@
+{
+  "files": {
+    "server/src/index.js": "a101c8dc3bb3b3d8b23680f41ade805641067b52d5eafdf44909fda8720fb523",
+    "server/src/db/connection.js": "2a7e737f22d0fb4aa99c5b37336c6c1e7cd8c1a8649dcd7bdd5b260e28322347",
+    "server/src/routes/cart.js": "7a262c1c4662be4e676bf8b9aade9a7dc32a7ef23fee038af04c935e4bd10737",
+    "server/src/routes/orders.js": "2534bf3d483df0786afcea5cec52b369653dc14fb6a59130d696ffb92ab38301",
+    "server/src/services/cartValidation.js": "91f7af64230d5ad9866ef9eac7d5d0678cc65d47c592b9dbabf9a99add56ad6f",
+    "server/src/services/checkout.js": "6a3c221e0d7358ef3cc9715101e652b79aef175daebd20e9fc2b9d53d9740b5b",
+    "server/tests/cart-validation.test.mjs": "bd93ecfbc973cd1daa320d5acdd70c93916be3140dc891b358b205032c362f6e"
+  }
+}

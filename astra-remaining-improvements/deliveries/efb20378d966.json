@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain1",
+  "id": "efb20378d966",
+  "summary": [
+    "Accept duplicate role intent by normalizing before count validation, membership replacement and audit; previously valid duplicate IDs were rejected with status 400.",
+    "Preserve cross-tenant rejection, empty-list clearing, transaction sequencing, and original persistence errors."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/efb20378d966/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/04 JavaScript Training/jstrain1",
+        "id": "efb20378d966",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-role-duplicates.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\efb20378d966",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:59:40.639806+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 26712,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:59:50.173502+00:00",
+        "elapsedSeconds": 9.53
+      }
+    ],
+    "limits": [
+      "Runtime uses explicit repository, Prisma transaction, role lookup, audit, bcrypt, and pagination doubles through a local VM loader.",
+      "No live Prisma schema, HTTP integration, rollback, isolation, or concurrent request test was executed.",
+      "Only role replacement is normalized; user creation is unchanged. Role validation remains outside the transaction; the test checks shared transaction-handle wiring, not real isolation."
+    ]
+  },
+  "courseWords": 2823,
+  "courseFiles": 9,
+  "courseLinksChecked": 41,
+  "files": [
+    {
+      "file": "server/src/services/userService.js",
+      "before_sha256": "5c901c79bacc55b85a711eedcc6ca627be2e7773a75c6ebf6f3d4e763b78622c",
+      "after_sha256": "a541ecc656687cd2dbfda37977e0fb117a8a4bcc30dd501ee4a805e976f88149"
+    },
+    {
+      "file": "tests/runtime-role-duplicates.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "d231372ee7a850b5a85677e048eade411acc9f6bb39f497d78b61996c58e093a"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/server-src-services-userService.js.before",
+      "before_sha256": null,
+      "after_sha256": "5c901c79bacc55b85a711eedcc6ca627be2e7773a75c6ebf6f3d4e763b78622c"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "56d427fbf95809ef5c244f57a3f1c6001f943fd151ca1729c6fa0799b290068c"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "71fbe21c7b56a33ee1b825ed5b2292a9651077f1f4a253ffd66ac19b9311246b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "730a14b190dcc7ca4ce74a00629f5711b75343517759d118ac30a8f45f54c3a8"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d368f68bf3199369ca8854a1271eab5554480da49bff92e2d8d67f609895c419"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "2774f8be3da79055e50e2f4c5d8e709e4bcec3721b38dbeb53d8f8a66a55c2a0"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "953b1d875c14932f5f06c531152515b432948330177723712f3631fbb1a6c6e8"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "86ec4f6ca68f27690a2903d3a8496c517ff0704be1bd481d2fcc4010f1c415c7"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "f20b6b85d6ebf7c5fe92f9776dd532884f39876353c49a5b0499b49220457d08"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1202139337cbf3a6f87ab3d669caff1d63ca7458cf8cc6e0f8c2f2390efe35b9"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "d74c5701ffc61784dbc3f27bdc353461b2a232baafaaa5e6d7b27c8f442a72e0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e7caa2a23ab83296af9c9f096c94febe1d32b67ad6fb1b36c8d53bfc5aec3b27"
+    }
+  ],
+  "limits": [
+    "Runtime uses explicit repository, Prisma transaction, role lookup, audit, bcrypt, and pagination doubles through a local VM loader.",
+    "No live Prisma schema, HTTP integration, rollback, isolation, or concurrent request test was executed.",
+    "Only role replacement is normalized; user creation is unchanged. Role validation remains outside the transaction; the test checks shared transaction-handle wiring, not real isolation."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:04:49.614386+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "195e77d61335",
+  "project": "_Organized Desktop/05 Numbered Experiments/rn1",
+  "summary": [
+    "Invalidate the blocked-accounts query after successful unblock so the deletion is reflected in the cached list, matching the existing block path.",
+    "Preserve remote deletion, signed-out rejection and profile feed reset behavior; add a portable Yarn learning test script."
+  ],
+  "changedFiles": [
+    "social-app/src/state/queries/profile.ts",
+    "social-app/package.json",
+    "social-app/tests/crud-upskill/profile-unblock.test.mjs",
+    "social-app/tests/crud-upskill/load-typescript.mjs",
+    "astraupskill/snapshots/profile.ts.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/evidence/crud-b04-astra-runtime3.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/195e77d61335/results-crud-b04.json"
+  },
+  "limits": [
+    "Four focused cases execute the exact extracted production unblock hook and actual blocked-query key, using session/agent/query-client/AtUri doubles and an explicitly modeled mutation lifecycle.",
+    "No mounted React, TanStack cache engine, real AT Protocol server, native Jest, lint, typecheck, Expo or mobile/browser rendering was executed.",
+    "Invalidation schedules query refresh; this does not prove immediate removal from every list, successful refetch, rollback, request idempotency or session-switch safety.",
+    "Application requires Node >=24.15.0; the focused Yarn script passed on device Node22.16 with explicit --ignore-engines, not a full native application compatibility check."
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww30",
+  "id": "41ea8dcef618",
+  "summary": [
+    "Changed cache expiry comparison from strict greater-than to greater-than-or-equal so entries expire at the declared TTL boundary.",
+    "Added actual QueryResultCache runtime coverage with deterministic before, exact, and after expiry cases."
+  ],
+  "checks": {
+    "resultsFile": "checks/41ea8dcef618/results-crud-b06.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww30",
+        "id": "41ea8dcef618",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-cache-expiry.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\41ea8dcef618",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:41:33.365627+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 37200,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:41:43.278952+00:00",
+        "elapsedSeconds": 9.91
+      }
+    ],
+    "limits": [
+      "Actual cache TypeScript executed with explicit type-export stubs and deterministic Date; no full service or live DB.",
+      "No HTTP, auth, query execution, distributed cache, or concurrency check.",
+      "Fix covers TTL exact-boundary semantics; maxEntries and row-level cache authorization remain separate concerns."
+    ]
+  },
+  "courseWords": 1664,
+  "courseFiles": 9,
+  "courseLinksChecked": 25,
+  "files": [
+    {
+      "file": "src/lib/cache/queryCache.ts",
+      "before_sha256": "2fd9f0f176e6f8495f1a0fdeb5e8775a0ae485239d989844f3c1aca0daa65ad1",
+      "after_sha256": "25d9426d014f01452bb524aec9d78ba238f381fd4c780d2a1909251df37586fd"
+    },
+    {
+      "file": "tests/runtime-cache-expiry.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f9de4fbcbde8d437714d2c6141ab3917e81ce0004f6da21491383b133341c1a1"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-lib-cache-queryCache.ts.before",
+      "before_sha256": null,
+      "after_sha256": "2fd9f0f176e6f8495f1a0fdeb5e8775a0ae485239d989844f3c1aca0daa65ad1"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "fe2e4061140eaeaf961de1e21b749cefc683411ff36f1c8f2c964f2c7b75d556"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "3b99b342e4bf2bcadec89b6c43e9f653d0ccd9fe91112fd914b5e00466e00367"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0edfa1bfbef399069f9f8acc00e76c98dc5af23007100f58e6c71bfc550bc032"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d33e8d8124774889f790278512240ef59350e3341273cd73e7909e17f2c23c7b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "fba6758050a62a54e2160f828ccf966630b8bb56cd5fd34a3513b1f649eda50c"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "32716f76c28ecf6122f8d9e6996802cfaaa576c7086acae91fced1e7942c551e"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "20be5a827349a84c8ec874c80ac12db160ab3c736ecae89ddeaf55b67b168776"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "8d9ba5dc12ba65c65b7af928c2e07c019e77bf45f2de61cf565201bda687de72"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "4068f1be528b17abff044d87ee36964fcfde24a0df16b6fed7b66b22b83349ab"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "62d076a51ba8d08bd1a1ec764356e555ebc104d7bde5356ba93b69079a9994f3"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "0df24a337ab6a31a3b5c51c32470e24c38463240648aba9b83fe6fb68b136ea6"
+    }
+  ],
+  "limits": [
+    "Actual cache TypeScript executed with explicit type-export stubs and deterministic Date; no full service or live DB.",
+    "No HTTP, auth, query execution, distributed cache, or concurrency check.",
+    "Fix covers TTL exact-boundary semantics; maxEntries and row-level cache authorization remain separate concerns."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:44:50.312324+00:00"
+}

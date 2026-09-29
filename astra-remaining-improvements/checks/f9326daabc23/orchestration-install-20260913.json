@@ -1,0 +1,20 @@
+{
+  "project": "gitvg/storefront",
+  "id": "f9326daabc23",
+  "command": [
+    "pnpm.cmd",
+    "install",
+    "--frozen-lockfile",
+    "--ignore-scripts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:55:46.721141+00:00",
+  "status": "complete",
+  "log": "orchestration-install-20260913.log",
+  "pid": 14112,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:59:13.357210+00:00",
+  "elapsedSeconds": 206.63
+}

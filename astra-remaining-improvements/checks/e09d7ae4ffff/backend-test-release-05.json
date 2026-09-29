@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildasana",
+  "id": "e09d7ae4ffff",
+  "command": [
+    "dotnet",
+    "test",
+    "tests/BuildAsana.Application.Tests/BuildAsana.Application.Tests.csproj",
+    "--configuration",
+    "Release",
+    "--no-build",
+    "--no-restore",
+    "--logger",
+    "trx;LogFileName=buildasana-release-05.trx"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e09d7ae4ffff\\backend",
+  "environmentOverrides": {
+    "DOTNET_ROLL_FORWARD": "Major"
+  },
+  "startedAt": "2026-09-12T21:36:11.320939+00:00",
+  "status": "complete",
+  "log": "backend-test-release-05.log",
+  "pid": 9640,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T21:37:27.131916+00:00",
+  "elapsedSeconds": 75.81
+}

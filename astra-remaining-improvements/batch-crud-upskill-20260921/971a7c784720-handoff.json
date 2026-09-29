@@ -1,0 +1,32 @@
+{
+  "id": "971a7c784720",
+  "status": "ready_for_review",
+  "summary": [
+    "Reviewed lock coordinator source is already sound at the service boundary.",
+    "Added a production-source lab for lease ownership, expiry, rereads, and stale cleanup."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/971a7c784720/tests/runtime-lock-coordinator-lab.test.mjs",
+    "astra-remaining-improvements/stage/971a7c784720/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/evidence/astra-crud-b06-ww26.log",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/evidence/results-crud-b06.json",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/README.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/971a7c784720/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-lock-coordinator-lab.test.mjs",
+    "passed": 5,
+    "resultsFile": "checks/971a7c784720/results-crud-b06.json"
+  },
+  "limits": [
+    "Pure service execution with explicit doubles; no live Prisma or concurrent provider run.",
+    "No production fix warranted in reviewed path."
+  ]
+}

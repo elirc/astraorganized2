@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww11",
+  "id": "1d0b328c6621",
+  "summary": [
+    "Restrict protocol activation to draft versions so ACTIVE rows cannot be redundantly mutated or audited.",
+    "Preserve draft activation and sibling retirement while adding a focused lifecycle boundary."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1d0b328c6621/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww11",
+        "id": "1d0b328c6621",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-protocol-activation.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1d0b328c6621",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:06:39.590323+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime2.log",
+        "pid": 25412,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:06:50.475670+00:00",
+        "elapsedSeconds": 10.88
+      }
+    ],
+    "limits": [
+      "Four runtime cases execute actual protocol service, rules and repository with mock-state, id, audit and type-only export adapters. Same-code retirement, unrelated protocol preservation and unchanged participant pins are observed in fixture state.",
+      "No route auth, native application, concurrent activation or durable audit was executed. The real repository mutates state before audit; audit failure leaves activation applied. No rollback guarantee is added."
+    ]
+  },
+  "courseWords": 1646,
+  "courseFiles": 9,
+  "courseLinksChecked": 30,
+  "files": [
+    {
+      "file": "src/lib/domain/protocolRules.ts",
+      "before_sha256": "c3c9baaff03dbe8bfa20fbd2c96c088ec4ececa8c5d09cbe77dceaf762bc170f",
+      "after_sha256": "357f3910f03b34c2d454896bf3edbaf0c62227c6a6ebb85ebb0fd6139992fc53"
+    },
+    {
+      "file": "tests/runtime-protocol-activation.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "a9363453cf8d44a1bac72c600666e8c47eeed947d7d11523f42675f972493599"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-lib-domain-protocolRules.ts.before",
+      "before_sha256": null,
+      "after_sha256": "c3c9baaff03dbe8bfa20fbd2c96c088ec4ececa8c5d09cbe77dceaf762bc170f"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime2.log",
+      "before_sha256": null,
+      "after_sha256": "9c2017efd08cde8f68e927699a80fbe2b147d804f5ffc6f27482173e7046f3c9"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "9b9882b1cd9bf224da9933bfa4551992455a6d831c369b0215ebcd0d37d80834"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6c9da57e99b539cc8e60dd7e7d283ca80d764202018ce93850503b35a1828ffd"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "335764f368c6d62b134414d7f05b115d508858b20cc59a9db08d555c7327766b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "243a56350ef683bfeb07c26197f38055ebd12e8058a2eef07a512ca48611a2c7"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f58ce85d13c1f051faaf0d17d591d9259b89e28ebf18e2fc558f7bc8125cbed4"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "3c768a432de8a93825ea1ac902b4c7f3e186c8bc8621449043f389e831562f58"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "47c314ec5fe0ae8a5f9193143a8f588cb76e466ecd93499321cdb14508f97791"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "cb9e699e6ea5cf648ec9bc2e1f48a4d1308a5752457856960b403c6a368b4312"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "77581ff6dbf04c2f7c779ad3d1fd0fcb3ba9291818b1b2ea9548af3ca74f7528"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2684c97fdb5a3601d72a1400e5b39971d1896fc0dc19b5430c295f9ff297da89"
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual protocol service, rules and repository with mock-state, id, audit and type-only export adapters. Same-code retirement, unrelated protocol preservation and unchanged participant pins are observed in fixture state.",
+    "No route auth, native application, concurrent activation or durable audit was executed. The real repository mutates state before audit; audit failure leaves activation applied. No rollback guarantee is added."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:10:50.145730+00:00"
+}

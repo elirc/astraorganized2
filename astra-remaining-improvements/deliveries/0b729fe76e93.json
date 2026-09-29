@@ -1,0 +1,153 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master3",
+  "id": "0b729fe76e93",
+  "summary": [
+    "Reject ticket PATCH requests from viewers before the first Prisma lookup, including priority-only, tags-only, statusless, and empty partial updates.",
+    "Use one role-aware Prisma include for GET and update responses so internal comments are visible only to operational roles, while tenant-scoped writes retain audit and outbox atomicity.",
+    "Add pure authorization and mocked service-interaction coverage plus a detailed CRUD course with exact before snapshots and bounded verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0b729fe76e93/verify-06.json",
+    "expectedTests": 14,
+    "environment": "Node.js, TypeScript, Vitest, Vite; PostgreSQL is not contacted by the bounded verification",
+    "command": "C:\\Program Files\\nodejs\\node.exe C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run verify"
+  },
+  "testResults": {
+    "project": "_Organized Desktop/03 Master Projects/master3",
+    "id": "0b729fe76e93",
+    "command": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+      "run",
+      "verify"
+    ],
+    "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0b729fe76e93",
+    "environmentOverrides": {},
+    "startedAt": "2026-09-12T19:07:02.500391+00:00",
+    "status": "complete",
+    "log": "verify-06.log",
+    "pid": 36368,
+    "exitCode": 0,
+    "passed": true,
+    "finishedAt": "2026-09-12T19:09:13.219887+00:00",
+    "elapsedSeconds": 130.71
+  },
+  "courseWords": 3751,
+  "courseFiles": 9,
+  "courseLinksChecked": 26,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "732ed37ffb9031ff48bd7dd06e623621fe915111ae01a1d1561e14d42a38e65b",
+      "after_sha256": "78eeeb8fe48cb2b064fbe587fd114abb4a39d76aa04cc0c45800ef891a284db2"
+    },
+    {
+      "file": "apps/api/src/modules/tickets/ticketService.ts",
+      "before_sha256": "4cf802a7cc65a1ce84f57f9a6b82e8992315961af9d8cde29e2c236255d9fcac",
+      "after_sha256": "f60a463b46fc4b522de08e95e9fb3ff03d81ce497f7c0c315585b039da712306"
+    },
+    {
+      "file": "packages/domain/src/index.ts",
+      "before_sha256": "ee686518cd2a2d39e7288bc044922c2733991dfae3b0106a08e0915effc80dbb",
+      "after_sha256": "618e06d5f0e533413b1e02c6f9b8accb1b94972dd1809813a5430ac6ca362829"
+    },
+    {
+      "file": "tests/domain/ticket-rules.test.ts",
+      "before_sha256": "991e65c4557c0c42c16b5b971e621c167b583055caab90acfda46efcf7bf4a0c",
+      "after_sha256": "563891eae875431a6d91f0c43e67d246d87b27c98f75bfcb67aee54a4d851fa6"
+    },
+    {
+      "file": "tests/api/ticket-service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "a18b3425e01a0f99d74a932ecafa6c221215ead0e0472aaaf7562596697cb895"
+    },
+    {
+      "file": "astraupskill/snapshots/ticketService-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "4cf802a7cc65a1ce84f57f9a6b82e8992315961af9d8cde29e2c236255d9fcac"
+    },
+    {
+      "file": "astraupskill/snapshots/ticketRoutes-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "49f022209b7314316a27932719a237b822f31bb386cf19e683e4c5d57fca9cc8"
+    },
+    {
+      "file": "astraupskill/snapshots/domain-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "ee686518cd2a2d39e7288bc044922c2733991dfae3b0106a08e0915effc80dbb"
+    },
+    {
+      "file": "astraupskill/snapshots/ticket-rules-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "991e65c4557c0c42c16b5b971e621c167b583055caab90acfda46efcf7bf4a0c"
+    },
+    {
+      "file": "astraupskill/evidence/verify-06.json",
+      "before_sha256": null,
+      "after_sha256": "acf46fd70e2174c26da02f208f59bc8ae32f59ce8927f22a10114ecf266edd4b"
+    },
+    {
+      "file": "astraupskill/evidence/verify-06.log",
+      "before_sha256": null,
+      "after_sha256": "eb0ab249ad0baf42533e16b1af70297c6086454e7530ae5d8bdc6026d93f6814"
+    },
+    {
+      "file": "astraupskill/evidence/install-01.json",
+      "before_sha256": null,
+      "after_sha256": "3485f323b5ef98d3af7641f479e202fde35ac6997af7a4da689fa538bdfd1d80"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "16881df6a2210e2cb11e7ad37447804719a627a83f821ffe654129bf24896191"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "19c436ad21441e36857bc2161d4e391ce6819f8f538a27611596c482a3bd19d6"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1046359118f68ac1e6e6761175da78df658749869d0b5311f56783181ab56c37"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "023c71438ad49a15c538a9409c94f48ce52382fe39d5357bed8d103daafa1b3c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8890a9ed5abce712370e271bb3165bb6f07787c845c5e95cb2feba1efc2309cd"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "bfdf62bb5a656ac9986cbd364a440fd4fe00abb6b22090db511e9f7c0839dbf7"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "3be3414dcb36094b754981b36a246728f4b3e70949e250b17de3a3d8020fcb90"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9a6bd3e67ac34bb39de79bca6e8ccfb667304419154b2113dc1c0c338fcdfb5d"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "f0a990fa5ea733123a2d19edc6a048fcb9fbb0929890ffcbde3366d61d74f1a4"
+    }
+  ],
+  "limits": [
+    "The role resolver uses demo x-tenant-slug and x-user-email headers for local teaching and is not production authentication.",
+    "The bounded suite covers pure domain helpers plus mocked service interactions and compilation/build; a disposable PostgreSQL integration fixture is still needed to assert durable audit/outbox counts and comment rows over HTTP.",
+    "External notification delivery and worker execution remain outside this source increment; the transaction still persists the outbox handoff atomically."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:12:38.974855+00:00"
+}

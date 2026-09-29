@@ -1,0 +1,51 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/sol15-netdrop-tests-r4.json",
+    "astraupskill/evidence/sol15-netdrop-tests-r4.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Application__Abstractions__IChunkStorage.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Application__Common__Hashing.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Application__Uploads__CompleteUpload.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Application__Uploads__UploadChunk.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Domain__UploadSession.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Domain__UserStorageAccount.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Infrastructure__Persistence__NetDropboxDbContext.cs.original.txt",
+    "astraupskill/snapshots/src__NetDropbox.Infrastructure__Storage__FileSystemChunkStorage.cs.original.txt",
+    "astraupskill/snapshots/tests__NetDropbox.Tests__Domain__UploadSessionTests.cs.original.txt",
+    "astraupskill/snapshots/tests__NetDropbox.Tests__Domain__UserStorageAccountTests.cs.original.txt",
+    "astraupskill/snapshots/tests__NetDropbox.Tests__NetDropbox.Tests.csproj.original.txt",
+    "src/NetDropbox.Application/Abstractions/IChunkStorage.cs",
+    "src/NetDropbox.Application/Common/Hashing.cs",
+    "src/NetDropbox.Application/Uploads/CompleteUpload.cs",
+    "src/NetDropbox.Application/Uploads/UploadChunk.cs",
+    "src/NetDropbox.Domain/UploadSession.cs",
+    "src/NetDropbox.Domain/UserStorageAccount.cs",
+    "src/NetDropbox.Infrastructure/Persistence/NetDropboxDbContext.cs",
+    "src/NetDropbox.Infrastructure/Storage/FileSystemChunkStorage.cs",
+    "tests/NetDropbox.Tests/Domain/UploadSessionTests.cs",
+    "tests/NetDropbox.Tests/Domain/UserStorageAccountTests.cs",
+    "tests/NetDropbox.Tests/NetDropbox.Tests.csproj",
+    "tests/NetDropbox.Tests/Uploads/FileSystemChunkStorageTests.cs",
+    "tests/NetDropbox.Tests/Uploads/UploadHandlerTests.cs"
+  ],
+  "summary": [
+    "Validated SHA-256 declarations, overflow-safe chunk counts, exact chunk boundaries, and terminal upload lifecycle transitions.",
+    "Made accepted chunk files immutable under competing uploads, preserved identical retries, bounded oversized input reads, and isolated assembled-stream temporary files.",
+    "Checked actual assembled length and checksum before blob or database graph writes; added a pure, overflow-safe quota preflight before external storage.",
+    "Repaired the FileNode.Versions EF relationship mapping conflict exposed by actual context-model initialization.",
+    "Added domain, real-filesystem, and fresh-context handler regressions; the final project suite passed all 22 tests.",
+    "Added nine source-based guide chapters with worked traces, exercises, solutions, exact original snapshots, and recorded verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/8e9229d5d6ef/sol15-results.json",
+    "expectedTests": 22,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "limits": [
+    "Handler persistence tests use EF InMemory with fake external storage and queue ports; they do not establish SQL uniqueness, rollback, or concurrent database isolation.",
+    "Filesystem concurrency tests use real temporary files on this Windows host. API-host, frontend, and deployed end-to-end checks were not part of the accepted test command.",
+    "Blob persistence, database commit, and subsequent queue notification remain separate resource boundaries. No unsafe shared-blob deletion compensation was added; durable recovery requires its own protocol."
+  ]
+}

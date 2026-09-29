@@ -1,0 +1,32 @@
+{
+  "id": "e3ea1d9f41f1",
+  "status": "ready_for_review",
+  "summary": [
+    "Reviewed source is already sound; no production fix is claimed.",
+    "Added an executable lab around the real reconciler and disbursement guard."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/tests/runtime-workflow-reconciliation-lab.test.mjs",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/evidence/astra-crud-b05-ww10.log",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/evidence/results-crud-b05.json",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/README.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/e3ea1d9f41f1/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-workflow-reconciliation-lab.test.mjs",
+    "passed": 6,
+    "resultsFile": "checks/e3ea1d9f41f1/results-crud-b05.json"
+  },
+  "limits": [
+    "Pure production module executed with VM loader; full Next and Prisma stack unexecuted.",
+    "No production fix warranted in the reviewed path."
+  ]
+}

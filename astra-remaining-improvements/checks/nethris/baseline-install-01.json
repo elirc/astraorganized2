@@ -1,0 +1,12 @@
+{
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "workingDirectory": "client",
+  "exitCode": 0,
+  "seconds": 278.37
+}

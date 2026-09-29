@@ -1,0 +1,47 @@
+{
+  "id": "e09d7ae4ffff",
+  "passed": true,
+  "changedBaselineFiles": [
+    "README.md",
+    "backend/src/BuildAsana.Api/Program.cs",
+    "backend/src/BuildAsana.Application/Work/WorkManagementService.cs",
+    "backend/src/BuildAsana.Domain/Work/AutomationRule.cs",
+    "backend/src/BuildAsana.Domain/Work/WorkTask.cs",
+    "backend/tests/BuildAsana.Application.Tests/WorkManagementServiceTests.cs",
+    "frontend/package.json",
+    "frontend/tsconfig.json",
+    "frontend/tsconfig.node.json",
+    "frontend/src/App.tsx",
+    "frontend/src/features/dashboard/DashboardView.tsx"
+  ],
+  "newSourceFiles": [
+    "frontend/package-lock.json",
+    "frontend/vite.config.d.ts",
+    "frontend/vite.config.js",
+    "frontend/src/vite-env.d.ts"
+  ],
+  "executableHashesChecked": 0,
+  "snapshotsChecked": 8,
+  "projectLocalLinksChecked": 22,
+  "chapterWords": {
+    "README.md": 277,
+    "01-CODEBASE-MAP.md": 348,
+    "02-CONCEPTS.md": 468,
+    "03-WORKED-CHANGE.md": 714,
+    "04-TESTING-AND-DEBUGGING.md": 446,
+    "05-PRACTICE.md": 335,
+    "06-SOLUTIONS-AND-REVIEW.md": 1217,
+    "07-TRACE-LAB.md": 462,
+    "VERIFICATION.md": 492
+  },
+  "courseWords": 4759,
+  "checks": [
+    {
+      "label": "backend-test-release-05",
+      "status": "complete",
+      "exitCode": 0
+    }
+  ],
+  "issues": [],
+  "limit": "Mechanical preflight only; source correctness and test meaning require Astra review."
+}

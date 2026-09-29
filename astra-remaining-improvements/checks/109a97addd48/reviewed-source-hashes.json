@@ -1,0 +1,18 @@
+{
+  "capturedBy": "Astra at final review; source mtimes precede final build start",
+  "files": {
+    "package.json": "aaaca0fe16a6253259e340d5e7cfbd9fa29be03bd01307879adaa1814127ad84",
+    "package-lock.json": "55d27835506fd404f82572d4459cef13bbdfd9fd512bc64cfefd0b3caff0a0ee",
+    "postcss.config.mjs": "fe78f76eb483fdc486e5f0ba4aabe66c85575aeec3c2d3e89f7024fc4632e67f",
+    "eslint.config.mjs": "3fb77acde330118ac4ecc9aa6713a41024ddb6fdada168588b992bc01b2462f5",
+    "src/repositories/inventoryRepository.ts": "1862f5033e657ab59202a6c535df9f5c2fc13c81efef62e61d8841607790b67b",
+    "src/repositories/inMemoryInventoryRepository.ts": "45c4cc4ace0309f8abe8d2b53ecabd694488e6ca55cd01b859dc0c54024ed4a0",
+    "src/services/inventoryService.ts": "218e56fa4cd89e14f10227428936fed6505d3e62238b60221f00b2aed2a6b93c",
+    "src/services/reservationService.ts": "3ac68757b00765103815d59daae136cb0d57989efd7faf38777c53be0b924e45",
+    "src/app/api/items/[itemId]/route.ts": "d942e6f580f143a42fa825e4455b66a221815224135d383693126804d04a47e0",
+    "src/app/api/items/[itemId]/adjust-stock/route.ts": "912613a111774e7ea88c72cfbab43bc0fc43b8d24f9612953380a324e9da07cb",
+    "src/app/api/reservations/[reservationId]/release/route.ts": "4ba26f91c618494e82069a8e48bc3daef310e207b7c67ba4eb817c922740965c",
+    "tests/inventory.test.ts": "dc55fdb30b487736f9a9a4fbb3f65880e31720a6e00ee5ed9f68da9786cbe449",
+    "tests/register-alias.mjs": "a390b45390f225b058be74fdcc7cecc2736af4ea87b14be71473789cb2dc5e56"
+  }
+}

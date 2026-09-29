@@ -1,0 +1,157 @@
+{
+  "project": "netopen3",
+  "id": "b8fb41bd6255",
+  "summary": [
+    "Replaced repeated index sorting with first-payload lookup and requested-ID iteration, excluding unrequested and duplicate entities.",
+    "Added template-controller regressions for missing/extra results, duplicate payloads and preserved empty-page metadata.",
+    "Added nine source-based guide chapters with focused verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b8fb41bd6255/sol15-results.json",
+    "expectedTests": 4,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 4,
+    "passedTests": 4,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "netopen3",
+        "id": "b8fb41bd6255",
+        "command": [
+          "dotnet",
+          "test",
+          "scripts/template-order-tests/TemplateOrder.Tests.csproj",
+          "--nologo",
+          "--verbosity",
+          "minimal",
+          "/m:1",
+          "/p:UmbracoBuild=true",
+          "/p:GitVersionBaseDirectory=C:/Users/Owner/Desktop/netopen3/Umbraco-CMS",
+          "/p:GitRepoRoot=C:/Users/Owner/Desktop/netopen3/Umbraco-CMS",
+          "--logger",
+          "trx"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b8fb41bd6255",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T21:16:21.274724+00:00",
+        "status": "complete",
+        "log": "astra-netopen3-template-tests-r7.log",
+        "pid": 31532,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T21:20:26.572023+00:00",
+        "elapsedSeconds": 245.29
+      }
+    ]
+  },
+  "courseWords": 3518,
+  "courseFiles": 9,
+  "courseLinksChecked": 94,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "104fcaac959201206b7546ff4563c120364b24c75561184fd744dd00bc6f9cac"
+    },
+    {
+      "file": "Umbraco-CMS/src/Umbraco.Cms.Api.Management/Controllers/ManagementApiControllerBase.cs",
+      "before_sha256": "8147b40ae1f95e10d6360a5327f57ae7bd30df251d9d3a425ab86546838014f1",
+      "after_sha256": "6e349d891142298a1e89455bfcfeb7e47254e5fd8e2cf910433a6985da022e24"
+    },
+    {
+      "file": "Umbraco-CMS/tests/Umbraco.Tests.UnitTests/Umbraco.Cms.Api.Management/Controllers/Template/Item/SearchTemplateItemControllerTests.cs",
+      "before_sha256": "fb639bbc29b458a4a04937df5c84fb908899eec47e8897348394130b1c004952",
+      "after_sha256": "cf9d48eb6e7c5cb61d1a373cf61a8e50e8ca6eb6f75950d320225b6f41a6ee32"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netopen3-template-tests-r7.json",
+      "before_sha256": null,
+      "after_sha256": "824f65292bd09ebcc5b379d77ca8aef514519b849b42785aeaea10b79b3fe059"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netopen3-template-tests-r7.log",
+      "before_sha256": null,
+      "after_sha256": "adcf50459e4276e04f71a7c0f3b0c3841cb1cc7a80f8e3b8fcdbde19890b9af5"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "65bb51dfe82a536e34ca26ce49393ee36268dc30e170551d8cc8250baf8110e7"
+    },
+    {
+      "file": "astraupskill/snapshots/Umbraco-CMS__src__Umbraco.Cms.Api.Management__Controllers__ManagementApiControllerBase.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8147b40ae1f95e10d6360a5327f57ae7bd30df251d9d3a425ab86546838014f1"
+    },
+    {
+      "file": "astraupskill/snapshots/Umbraco-CMS__tests__Umbraco.Tests.UnitTests__Umbraco.Cms.Api.Management__Controllers__Template__Item__SearchTemplateItemControllerTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "fb639bbc29b458a4a04937df5c84fb908899eec47e8897348394130b1c004952"
+    },
+    {
+      "file": "scripts/template-order-tests/Directory.Packages.props",
+      "before_sha256": null,
+      "after_sha256": "1df12d7bfadf9090dfabbfdd54c4425434620f30696a37b3b75dfcfcd8f42f1b"
+    },
+    {
+      "file": "scripts/template-order-tests/TemplateOrder.Tests.csproj",
+      "before_sha256": null,
+      "after_sha256": "77c5083995782736dcae2e8e99c047941b687f47cd5af9b67f418e197c3de8ed"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "092f72baa6a9975af188f64ec472ae14ce79f0a3618a4def2dd31411925fd79d"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7f4fdae95ed3f4470601b5f1e25f3f73ed692862ef073ce09fe33241e8cd032a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d8cd521c77a9603d849be0991f3f26ad74e9f394f7e8c0b61f4e4d82989a67dc"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "02d4263ab4785b0ff6e731b16bd38eec3a44ed8ce541e23d189436f8748241d8"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d7a071697138d38e19b676e2589706cab199a755490fabd7caa7ea3fb82a9858"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "441960ddeaf969e0fe96dbe30a9d5698277b6b8d9592257c0416cf222988f4aa"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d9196aa931d106bf37082d68d635ae434d103b90458900ad22cf4e4afb24812d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "7d667d301fcadbbb2bd9e40e1225ced68fc056d5b4d3967c107db536ca2064d8"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4bfa04adcc3616954fe325760520d6734008589df7f3450b7c1743e9e8ec3d72"
+    }
+  ],
+  "limits": [
+    "Controller tests use service and mapper substitutes; they do not certify production search, database or browser authorization behavior.",
+    "Focused unit verification does not imply the complete upstream Umbraco test suite passed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T22:48:45.054254+00:00"
+}

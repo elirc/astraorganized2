@@ -1,0 +1,119 @@
+{
+  "id": "3302b1d1ab07",
+  "project": "_Organized Desktop/03 Master Projects/master4",
+  "title": "Prevent duplicate-line inventory oversell and invalid reservations",
+  "summary": [
+    "Aggregate duplicate SKU lines before comparing requested inventory with available stock; reject invalid quantities and direct helper over-reservation.",
+    "Add regression coverage for duplicate demand, invalid quantities and direct helper guards; the complete suite passes 12 tests, type checking and the client build.",
+    "Add nine source-linked learning guides, an exact original rule snapshot, worked practice solutions and actual verification evidence."
+  ],
+  "changedFiles": [
+    "src/shared/inventoryRules.ts",
+    "tests/inventoryRules.test.ts",
+    "astraupskill/snapshots/inventoryRules-before.ts.txt",
+    "README.md",
+    "astraupskill/evidence/npm-ci-3.json",
+    "astraupskill/evidence/npm-ci-3.log",
+    "astraupskill/evidence/prisma-generate.json",
+    "astraupskill/evidence/prisma-generate.log",
+    "astraupskill/evidence/db-push.json",
+    "astraupskill/evidence/db-push.log",
+    "astraupskill/evidence/db-seed-absolute.json",
+    "astraupskill/evidence/db-seed-absolute.log",
+    "astraupskill/evidence/inventory-rules.json",
+    "astraupskill/evidence/inventory-rules.log",
+    "astraupskill/evidence/typecheck-2.json",
+    "astraupskill/evidence/typecheck-2.log",
+    "astraupskill/evidence/build-2.json",
+    "astraupskill/evidence/build-2.log",
+    "astraupskill/evidence/full-test-absolute.json",
+    "astraupskill/evidence/full-test-absolute.log"
+  ],
+  "learningFiles": [
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "behavior": [
+    "Two lines for one SKU are summed before the availability comparison.",
+    "Zero, negative, fractional, non-finite, and unsafe integer quantities return validation failures from planReservation.",
+    "applyReservation rejects invalid quantities and quantities above available-to-promise stock.",
+    "Existing valid reservation, shipment, and low-stock behavior remains covered by the domain suite."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3302b1d1ab07/results.json",
+    "expectedTests": 12,
+    "command": "npm ci; npm run db:generate; npm run db:push; npm run db:seed; npm test; npm run typecheck; npm run build",
+    "environment": "Node 22.16; npm 10.9.2; disposable staged SQLite with absolute DATABASE_URL"
+  },
+  "setup": [
+    {
+      "label": "npm-ci-3",
+      "command": "npm.cmd ci --prefer-offline --no-audit --no-fund",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/npm-ci-3.log"
+    },
+    {
+      "label": "prisma-generate",
+      "command": "npm.cmd run db:generate",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/prisma-generate.log"
+    },
+    {
+      "label": "db-push",
+      "command": "npm.cmd run db:push",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/db-push.log"
+    },
+    {
+      "label": "db-seed-absolute",
+      "command": "npm.cmd run db:seed",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/db-seed-absolute.log"
+    }
+  ],
+  "recordedChecks": [
+    {
+      "label": "inventory-rules",
+      "command": "npm.cmd test -- --run tests/inventoryRules.test.ts",
+      "exitCode": 0,
+      "testFilesPassed": 1,
+      "testsPassed": 9,
+      "evidence": "checks/3302b1d1ab07/inventory-rules.log"
+    },
+    {
+      "label": "typecheck-2",
+      "command": "npm.cmd run typecheck",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/typecheck-2.log"
+    },
+    {
+      "label": "build-2",
+      "command": "npm.cmd run build",
+      "exitCode": 0,
+      "evidence": "checks/3302b1d1ab07/build-2.log"
+    },
+    {
+      "label": "full-test-absolute",
+      "command": "npm.cmd test",
+      "exitCode": 0,
+      "testFilesPassed": 2,
+      "testsPassed": 12,
+      "evidence": "checks/3302b1d1ab07/full-test-absolute.log",
+      "database": "Disposable staged SQLite database at prisma/dev.db, supplied through an absolute DATABASE_URL."
+    }
+  ],
+  "limits": [
+    "Nine pure inventory rule tests and three API health/read/export tests pass. The API suite does not execute reservation writes or prove persistent reservation atomicity.",
+    "Duplicate demand and direct helper boundaries are covered; concurrent reservations and invalid stored balance data require separate integration work.",
+    "The existing db:push script resets prisma/dev.db and the seed deletes existing rows. Verification used only a disposable staged database.",
+    "No browser workflow, deployed environment or external integration was exercised."
+  ]
+}

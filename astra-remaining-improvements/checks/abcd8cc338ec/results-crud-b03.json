@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 7,
+  "checks": [
+    {
+      "project": "_Organized Desktop/04 JavaScript Training/jstrain2",
+      "id": "abcd8cc338ec",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-workflow-transaction.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\abcd8cc338ec",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T01:23:43.487126+00:00",
+      "status": "complete",
+      "log": "crud-b03-astra-runtime.log",
+      "pid": 31916,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T01:23:54.994580+00:00",
+      "elapsedSeconds": 11.5
+    }
+  ],
+  "limits": [
+    "Tests execute the actual PUT route and API response/error helpers with explicit Drizzle, auth, schema and validation doubles.",
+    "The transaction double asserts call scope, order and rejection; it does not prove PostgreSQL rollback, isolation, SQL compilation or real Zod validation.",
+    "Native Next.js, database and browser suites were not run. Existing step-id references and authorization policy are unchanged."
+  ]
+}

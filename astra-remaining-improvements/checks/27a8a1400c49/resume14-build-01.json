@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+  "id": "27a8a1400c49",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build",
+    "--",
+    "--webpack"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check",
+    "DEMO_SESSION_SECRET": "local-resume-verification-session-secret-20260919"
+  },
+  "startedAt": "2026-09-19T18:49:58.502715+00:00",
+  "status": "complete",
+  "log": "resume14-build-01.log",
+  "pid": 17064,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T19:13:23.957986+00:00",
+  "elapsedSeconds": 1405.44
+}

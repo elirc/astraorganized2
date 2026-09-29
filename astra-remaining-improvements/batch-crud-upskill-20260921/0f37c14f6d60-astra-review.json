@@ -1,0 +1,36 @@
+{
+  "id": "0f37c14f6d60",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:46:02.486122+00:00",
+  "sourceReview": "Reviewed actual organization policy and service guard after read authorization before persistence; nonadmin changes rejected including null while omitted/same/admin/internal bypass behavior preserved.",
+  "teachingReview": "Reviewed nine chapters and corrected stale viewer-organization exception and unexecuted-test claims. Lessons distinguish read access, field authorization, trusted internal callers, persistence and outbox limits.",
+  "testReview": "Astra ran five permission/service tests with actual permission module loaded by service. Denied cross-org writes have no downstream side effects; same-org/admin updates persist. HTTP and live Prisma/outbox untested. Preflight passed.",
+  "specSHA256": "b9293e22a044547394b68f8977e907944e76949429cb24f13d178d5c1bf62661",
+  "fileHashes": {
+    "packages/server/src/modules/tickets/ticket.permissions.ts": "ff9ef2deec78cd05d02a965aa04408ff5b6d1228b9e6bedf0a5eb594c8fe1344",
+    "packages/server/src/modules/tickets/ticket.service.ts": "c268d201ab2314b4fa3f66429f2473f8e7aea124231169153adb7894465459f2",
+    "packages/server/src/modules/tickets/ticket.test.ts": "bcf4cbb399fd1a72c4a1913791f731cef5f832a3cff899c4d368be55697179d8",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "tests/runtime-permissions.test.mjs": "6db39a9ce0e021ea5180b4414f9f7acf255c80f0118aab519074e8221f3ce242",
+    "tests/runtime-ticket-service.test.mjs": "c6b201f8e8c46ff1668db66da127fe0d72e7705badab8ca47fc6563262767639",
+    "astraupskill/snapshots/packages/server/src/modules/tickets/ticket.permissions.ts": "5fe83a82aa114ef69108f875ff57c101334ca79d16895a600990c419d2197729",
+    "astraupskill/snapshots/packages/server/src/modules/tickets/ticket.service.ts": "21fff6d953dc1f56f866899089cdc55849a37e347e8604deb0db889c0efe2777",
+    "astraupskill/snapshots/packages/server/src/modules/tickets/ticket.test.ts": "beb8358c6c3887b8200e619137a88629546574b3f03d9b33e79463ba1a322494",
+    "astraupskill/evidence/astra-crud-b01-services.log": "20aa7bbcc2971252ce80f4b0352b4e1bf9c4ac364a98e8476412b645a6a592bd",
+    "astraupskill/evidence/results.json": "17e0ccf84bf6cc9c2737902b9f14a99c39ba632b4a4bca6ce9ea284e57ddc2ce",
+    "astraupskill/README.md": "474e21d5dbfa76f00cc87a70f207763cecf142abde599a22f4e259409d366abd",
+    "astraupskill/01-CODEBASE-MAP.md": "e57963ff8b6dda4c2feb1a3cc3aaaef58e15c112439d41c3dba5922c949a21e7",
+    "astraupskill/02-CONCEPTS.md": "14d59b3117074d5e24038fc542f43368415946f7c46fb144b23044a71a7c5028",
+    "astraupskill/03-WORKED-CHANGE.md": "90e5ec58514b536a1ac0968fbabf6bec24ad0a6feb4608865fd3055b98177b4f",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "6d78a9b3681ab416e6ec6135406e10c389d877720219189b89ed30c28578c433",
+    "astraupskill/05-PRACTICE.md": "18880d1ef1428d64325f4f172707b86eaf28540abaa9d8e1b438b221df8a6781",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "e486717420fbfb3ca05b57aaa2b073af5e4b330568ba8f193536846e132278d4",
+    "astraupskill/07-TRACE-LAB.md": "0aeff91e4dc97a35fefea62958aad0cdef4f1bca0cd1a4008d8932deecc858ef",
+    "astraupskill/VERIFICATION.md": "e7cd04ca6b3811fba11b5999f7a236424dd62a158363a98fc4f9c3e494825172"
+  },
+  "evidenceHashes": {
+    "checks/0f37c14f6d60/astra-crud-b01-services.json": "07789362ced51113705cd5a7478d64a5b2b3894647b479253c2d015ae75aa78a",
+    "checks/0f37c14f6d60/astra-crud-b01-services.log": "20aa7bbcc2971252ce80f4b0352b4e1bf9c4ac364a98e8476412b645a6a592bd",
+    "checks/0f37c14f6d60/results-crud-b01.json": "17e0ccf84bf6cc9c2737902b9f14a99c39ba632b4a4bca6ce9ea284e57ddc2ce"
+  }
+}

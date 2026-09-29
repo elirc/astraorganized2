@@ -1,0 +1,24 @@
+{
+  "id": "4e19ba5b5028",
+  "summary": [
+    "Reviewed notification open path and found no production defect warranting a patch.",
+    "Added an actual service lab for recipient isolation, SENT eligibility, aggregate refresh, audit, and admin visibility.",
+    "Captured six executed Node VM cases using the production permission matrix."
+  ],
+  "changedFiles": [
+    "tests/runtime-notification-open-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/4e19ba5b5028/results-crud-b06.json"
+  },
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No live Prisma transaction, Next route, worker, or repeated-open execution.",
+    "Normal project typecheck and provider-backed tests remain follow-up checks.",
+    "Real service, permissions, ApiError and repository aggregate functions execute. Prisma enum exports and unused rendering/Zod imports are adapted. Open tracking has no encompassing transaction; aggregate failure can follow earlier open writes."
+  ]
+}

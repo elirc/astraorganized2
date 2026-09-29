@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Rejects registration requests containing session IDs that are not owned by the selected event.",
+    "Executes five actual-service cases with real permission and AppError code.",
+    "Preserves an exact snapshot and teaches the service-side data boundary and verification limits."
+  ],
+  "changedFiles": [
+    "src/modules/registrations/registration.service.ts",
+    "tests/registration-session-selection.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/modules/registrations/registration.service.ts",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/482e93488b83/results-crud-b07.json"
+  },
+  "limits": [
+    "Persistence, audit and DB singleton adapted; NextResponse and zod exports unused by tested path are stubs.",
+    "No database concurrency or notification delivery proof. Duplicate IDs allowed and deduplicated. Notification failure can follow persistence."
+  ]
+}

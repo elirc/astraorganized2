@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "commands": [
+    {
+      "command": [
+        "npm.cmd",
+        "ci",
+        "--no-audit",
+        "--no-fund",
+        "--cache=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\tidebound\\npm-cache"
+      ],
+      "exitCode": 0,
+      "seconds": 144.5
+    },
+    {
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 67.18
+    }
+  ],
+  "normalInstallScriptsEnabled": true,
+  "lockSha256": "ae1b1890feabe4adcf99cd6f9fdd58791991e96689c7c125cb3531dcd03c1c12",
+  "browserPackageMatchesCleanBuild": true,
+  "assets": {
+    "assets/game-Cv-6ulJq.css": "38581b1cbb8b1ec7b5d745c6afd9f196ea1c23fe4c750242739b12065647c009",
+    "assets/game-CXnvsfRw.js": "de6ca9afef6f826c85baa292d7f27542c1f998ad3dbb6a3bd2bc2dae9f818eef",
+    "assets/modulepreload-polyfill-B5Qt9EMX.js": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0",
+    "assets/progress-BfjEAjKD.js": "59f9ab9a4582da230d35df3d48641d07a7e7a5d18c8e2340105c24d12cdc6de2",
+    "assets/progress-CFhgqDB-.css": "dc58f4d8887267de322c404e50390425a6da3a183c7d91c8cf94c735a7c6a25f",
+    "favicon.svg": "3605da16575a454ff42c1acdafda72f9b8b2396c7a0622e2ee84a482c880256d",
+    "fonts/dmsans-OFL.txt": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+    "fonts/librecaslondisplay-OFL.txt": "9cc8cef15f5e8bcbe99a13ee8d268f6f6f6a5811cd1ed05056ef4608c9b16fd1",
+    "fonts/tidebound-0.ttf": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+    "fonts/tidebound-1.ttf": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+    "fonts/tidebound-2.ttf": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+    "fonts/tidebound-3.ttf": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+    "fonts/tidebound-4.ttf": "199b2a7deefd8d7d9bae05d34902c4c6486bd11b8e5d1a22c0cea8862943a5a1",
+    "index.html": "1b51661bf61d569cf992a5547dafd11c77ac504d4ed865846ac43ade2d42cce7",
+    "progress.html": "1011385373b7196c978534d38d97455c9ca5f10e96fe6c2433e2a83abc2e7899"
+  }
+}

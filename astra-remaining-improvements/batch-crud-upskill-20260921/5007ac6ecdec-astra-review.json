@@ -1,0 +1,34 @@
+{
+  "id": "5007ac6ecdec",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:02:21.570524+00:00",
+  "sourceReview": "Reviewed service, conditional repository update, transaction adapter and decision route. Pending predicate and count guard precede entitlement/audit effects; cycle OPEN remains pre-read only.",
+  "teachingReview": "Reviewed all nine substantive chapters; corrected update count versus commit, real error class, six-case coverage and related-cycle concurrency limit.",
+  "testReview": "Six passing cases execute actual service, HttpError and repository predicate builder with explicit adapters. Revocation/certification, zero count, closed cycle, exact predicate and error stopping order checked; native SQL/rollback not claimed.",
+  "specSHA256": "c9f8f1579f5617c9d8afd814b5751e9a379390b07a2a8f8f4d313f93c7d765e3",
+  "fileHashes": {
+    "src/repositories/reviewCycleRepository.ts": "ced74cdde9180944236e781c1a838e26cb7be1d9cb7c992663724630d5b7f5e2",
+    "src/services/reviewCycleService.ts": "057e03acae097fe840a60d0132afd0af329f5bdf7defbef4c03e7b37152dd085",
+    "tests/runtime-review-cycle.test.mjs": "98a09c6cbf59b8841b57d2d63d9e43cf6a3fdb7c39dcf2a07023a1900203e606",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src/repositories/reviewCycleRepository.ts": "027398a2997fbccef6a1e327d1a2b42a93bdab9eaf344a0a4f5c144dbe1cb83a",
+    "astraupskill/snapshots/src/services/reviewCycleService.ts": "7981afc5bdeac1c0cd32dfc5803ca3b103078bb0544ce4a1c85f6350b968fcd1",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "58fc098a4ad832098d63476b87ed9665256bffd118fb1d68a39cce93965f1674",
+    "astraupskill/evidence/results.json": "a2ae32d652d0b5cc4c2ccfdf385bbf581cdb09545e8fa7c313eb0b09188dc5c0",
+    "astraupskill/README.md": "f7707701f7c1f94d7891463ca9cfa127a160b99161cd064e41055257d3cfb5c1",
+    "astraupskill/01-CODEBASE-MAP.md": "e54f00d1bd62f73e012f303a4fa7d6341654f1e08b42648eb8aed06eb92c3a27",
+    "astraupskill/02-CONCEPTS.md": "0767409a14846df3300258e87d3db14af91a114548293acde466cde5fb762d5f",
+    "astraupskill/03-WORKED-CHANGE.md": "6e23b5e838c04f3bbb4f72034df1258b663a550ecffdff5c30ee26d05034a994",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "b75e04aaa186e08b4b54c5101f610faa88ef806a0274882a9ab353864172bad2",
+    "astraupskill/05-PRACTICE.md": "62dc833622b8778c83bdbfd5035a32b43e363c81148bb28a863b738023da6a7d",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "3480b222174742c1191c580818dbe15b7fc694af45ea48b7ef2ed586e2154f3b",
+    "astraupskill/07-TRACE-LAB.md": "82fd139456a523da6e508fea50969d65fe4b809fdbce24f574008484561652aa",
+    "astraupskill/VERIFICATION.md": "7c66eda60c1b76b4ac0b21d866ddf2d8130968703c8b9c55a3e478d8831243a0"
+  },
+  "evidenceHashes": {
+    "checks/5007ac6ecdec/astra-crud-b05-ww1.log": "b3eb30cab0bb5828dd1b845064421db991a3ce302f598dd6264c393301bc9f29",
+    "checks/5007ac6ecdec/crud-b05-astra-runtime.json": "b1e9f60863339d19c116a958af44177fd2153e4c6a4bf5fe64753340a0c05338",
+    "checks/5007ac6ecdec/crud-b05-astra-runtime.log": "58fc098a4ad832098d63476b87ed9665256bffd118fb1d68a39cce93965f1674",
+    "checks/5007ac6ecdec/results-crud-b05.json": "a2ae32d652d0b5cc4c2ccfdf385bbf581cdb09545e8fa7c313eb0b09188dc5c0"
+  }
+}

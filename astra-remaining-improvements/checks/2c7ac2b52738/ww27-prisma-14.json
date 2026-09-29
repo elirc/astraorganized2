@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "node_modules/.bin/prisma.cmd",
+    "validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:12:13.324829+00:00",
+  "status": "launch-failed",
+  "log": "ww27-prisma-14.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T14:12:13.341433+00:00",
+  "elapsedSeconds": 0.01
+}

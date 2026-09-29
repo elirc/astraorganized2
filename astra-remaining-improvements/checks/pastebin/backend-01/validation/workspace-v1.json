@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "revision": 1,
+  "pastes": [
+    {
+      "slug": "wUM97T72TxsaCQHr4Iag4g",
+      "title": "x",
+      "content": "line one  \r\n\tline two\n\n",
+      "language": "plaintext",
+      "visibility": "public",
+      "createdAt": "2026-09-09T12:00:00+00:00",
+      "updatedAt": null,
+      "expiresAt": null,
+      "editKeyHash": "B05EA812681B3BA39833AE02892A2F5F4DEFF14C8A71B020C57DD5DC5981248E",
+      "legacyKey": false,
+      "legacySlug": false,
+      "version": 1,
+      "historicalViews": 0,
+      "historicalLastViewedAt": null
+    }
+  ],
+  "requests": [
+    {
+      "requestId": "c763b5bf-b553-43f4-a767-7af7272bfc16",
+      "fingerprint": "8826FE5D55F8B262D89834C45E523D68044818FA9062D9BB859282C54A92E8BB",
+      "slug": "wUM97T72TxsaCQHr4Iag4g",
+      "acceptedAt": "2026-09-09T12:00:00+00:00"
+    }
+  ],
+  "changes": [
+    {
+      "id": "3a8d4339-bea1-4a1a-aeae-46081db2d1c7",
+      "revision": 1,
+      "action": "create",
+      "slug": "wUM97T72TxsaCQHr4Iag4g",
+      "at": "2026-09-09T12:00:00+00:00"
+    }
+  ]
+}

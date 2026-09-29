@@ -1,0 +1,215 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netzen",
+  "id": "1bb35a95be79",
+  "summary": [
+    "Materializes normalized tags before mutation and rejects undefined status, priority and comment visibility values.",
+    "Filters the authorized population across source pages before final pagination and excludes internal-comment text from search.",
+    "Replaces broad ticket payloads with data-free SignalR invalidations, refetches selected detail, rejoins on reconnect, and suppresses stale list and hub detail refreshes while preserving drafts.",
+    "Adds real domain/search regression tests, missing React type dependencies, a frontend lockfile and nine detailed learning chapters with worked examples and matched exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1bb35a95be79/results.json",
+    "expectedTests": 3
+  },
+  "testResults": {
+    "passed": true,
+    "total": 3,
+    "tests": 3,
+    "failed": 0,
+    "checks": [
+      "root-dotnet-test-01",
+      "root-web-types-01",
+      "root-web-build-02"
+    ],
+    "scope": "Actual domain and in-memory search regression cases. API compiled through test project; frontend TypeScript and Vite build passed. .NET8 tests ran with Major roll-forward on .NET10. No live hub, HTTP server or browser tests."
+  },
+  "courseWords": 4191,
+  "courseFiles": 9,
+  "courseLinksChecked": 46,
+  "files": [
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api/Application/Queries/SearchTickets.cs",
+      "before_sha256": "72990cfaaeb7b5af57d4c398b171a3fe9e01243f2c60989d21a8e7de9aed1125",
+      "after_sha256": "f313fca4b8bbd345803a9d2b1656945707c90f2592702479fa9ff2f22a5988fe"
+    },
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api/Domain/Ticket.cs",
+      "before_sha256": "ef8f2cd8f6d5a88a7f3aaf30c5bbd7178e152bded3339d41801b5ff1836e3441",
+      "after_sha256": "c741a27215dc6ab6d22078b231cb32c7ff822e1543da7fcd6949da0a8fc82ad6"
+    },
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api/Infrastructure/InMemoryTicketStore.cs",
+      "before_sha256": "7c4385ee5f1f9ea1adbc6b1316b919490664b47a5e7393e0cd173c19cae037a8",
+      "after_sha256": "11172231d7a6db88a1efb97817eefd40dcfbfe683be501240c121a55ba25a502"
+    },
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api/Realtime/SignalRTicketNotifier.cs",
+      "before_sha256": "47afc215461d73fa72465bd1aa9f79cce8acd8a5ff2f52bd5ffdb7bf2f659ffa",
+      "after_sha256": "913cdcca622ae105c6362b2e463fa1a669eb4c35e2ac72a486d09d9599dfe1be"
+    },
+    {
+      "file": "support-ticketing-app/frontend/package.json",
+      "before_sha256": "e9b0c9e265dc1e15e3b6fbf6431f05564a4263e0f94d39e489503821d84b0e28",
+      "after_sha256": "b5827ef4e422c90c6c25ecfada64bd8c038b3cddf0a0689642dafde92cb5df8a"
+    },
+    {
+      "file": "support-ticketing-app/frontend/src/api.ts",
+      "before_sha256": "b5eca344cfe7412f55367a741255435373f764ae08806cfc2dc70812d1d755ae",
+      "after_sha256": "db3a3c4f6a3538e17852fd1cca733b7582f207664e110a77865b77a79955d181"
+    },
+    {
+      "file": "support-ticketing-app/frontend/src/App.tsx",
+      "before_sha256": "c8d7090d064a1f97c9b7953668c55ebadf9b6d309c5a0a9931ac2ff1782e1d9b",
+      "after_sha256": "2fe6a0ac21c7c34a9d8fbb149e4887f7452b638d887fe1388689a67dd7800da2"
+    },
+    {
+      "file": "support-ticketing-app/README.md",
+      "before_sha256": "8569c421eef0374eb89c800dcb11996581f5766692cea00a34c148ecb974c169",
+      "after_sha256": "79cb781fd67299db673a58664aeb5795d346a0c4a4db04dd9f6f3293c45a4562"
+    },
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api.Tests/SupportDesk.Api.Tests.csproj",
+      "before_sha256": null,
+      "after_sha256": "cfd746b25c67ac642844032659bf74ec0dd61b5198f4fea91a7974abdb666dad"
+    },
+    {
+      "file": "support-ticketing-app/backend/SupportDesk.Api.Tests/TicketSafetyTests.cs",
+      "before_sha256": null,
+      "after_sha256": "d1a6a898a46f8783dcab1e0d3f04c9f87a46d1096e2fbf32537c156937e0b63c"
+    },
+    {
+      "file": "support-ticketing-app/frontend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "1237ca537f976080fa732c15002cf713b2234d71c8fc5dcc245c5419303d7586"
+    },
+    {
+      "file": "astraupskill/snapshots/api-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "b5eca344cfe7412f55367a741255435373f764ae08806cfc2dc70812d1d755ae"
+    },
+    {
+      "file": "astraupskill/snapshots/App-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "c8d7090d064a1f97c9b7953668c55ebadf9b6d309c5a0a9931ac2ff1782e1d9b"
+    },
+    {
+      "file": "astraupskill/snapshots/InMemoryTicketStore-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "7c4385ee5f1f9ea1adbc6b1316b919490664b47a5e7393e0cd173c19cae037a8"
+    },
+    {
+      "file": "astraupskill/snapshots/SearchTickets-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "72990cfaaeb7b5af57d4c398b171a3fe9e01243f2c60989d21a8e7de9aed1125"
+    },
+    {
+      "file": "astraupskill/snapshots/SignalRTicketNotifier-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "47afc215461d73fa72465bd1aa9f79cce8acd8a5ff2f52bd5ffdb7bf2f659ffa"
+    },
+    {
+      "file": "astraupskill/snapshots/support-ticketing-app__frontend__package.json.before.txt",
+      "before_sha256": null,
+      "after_sha256": "e9b0c9e265dc1e15e3b6fbf6431f05564a4263e0f94d39e489503821d84b0e28"
+    },
+    {
+      "file": "astraupskill/snapshots/Ticket-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "ef8f2cd8f6d5a88a7f3aaf30c5bbd7178e152bded3339d41801b5ff1836e3441"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "a44b0d9911f3ed5c5d30bf29df0a60882f15dbd29c68b8707c4154b711ef1bb2"
+    },
+    {
+      "file": "astraupskill/evidence/root-dotnet-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "e71aa95e56ebd426d110d92e2a70d05c20afb877719d5f7a26193df054bfabe8"
+    },
+    {
+      "file": "astraupskill/evidence/root-dotnet-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "91ecd61267b472d5492d67d4e2fb94ccde67471d53e3c27d25b8f65a4a2f262e"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-build-02.json",
+      "before_sha256": null,
+      "after_sha256": "38d40c0ccc0ecf1892116a402b3fedbd670d26131036cc3f7e24e921aace8b1e"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-build-02.log",
+      "before_sha256": null,
+      "after_sha256": "6ed17dd7f23f136f58c3ffc1805c13fc3e0f809de2576b2113c7a6fcc31c7a95"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "d669a9ac0a71e5dd94b5a5243895641d7c048831cbfba346d77374167bda07d4"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "d0ddef9f6525b823df9ef45cb987ff5a9fead8dd991d158eeb10ef755330483a"
+    },
+    {
+      "file": "astraupskill/evidence/ticket-safety-tests.trx",
+      "before_sha256": null,
+      "after_sha256": "e66604910de8f5f70ec057a40e49936dad6ea88a90622c3072f7dc38f35480d7"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f2535b45d484158c71500ee581ead172266e17a167caf9eae5cc2ba953bddab4"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e4f1bbbd803b8a90262d5449621645c068f87bf50e71a669cc60739b855268ec"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8118ba6affb56c53ea82e6dba406c9640b98688c3d5288696dd5ea753cb6be87"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "a167f5fe210243e40e340239bc6aead67313ef95f8e795a26d9545ae89c82abe"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "adc54fafa79ecf032421d3f1df92dd1f70c3e99b733eb89740bd0b4d871a5464"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "289693c210130094a4e52687e230c6484a01551459e29772bccc3377dcad15c3"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e7238521909205ee0681ce01f93e12f59761040e185ed4a73a88576e6093e7c2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1fe540339fd554df317849e7108c43f5ca9d6dac0234c790aca858a15fbbb6e0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "fe0f21d11c2d90c81f094aa76149dc9ae1819531c765e36a9b3527be5e288e51"
+    }
+  ],
+  "limits": [
+    "In-memory storage and demo identity headers remain; no real authentication, database, tenant hardening or durable outbox.",
+    "Search aggregates all source pages in memory and is not an atomic snapshot across writes. Internal-comment text is excluded for staff too.",
+    "Three focused backend tests do not establish the complete actor policy, HTTP behavior, SignalR connection behavior or browser rendering.",
+    "Request counters cover list and hub detail refreshes; existing user-driven selection and mutation races remain. Creation-time priority fallback remains unchanged."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T23:12:43.495286+00:00"
+}

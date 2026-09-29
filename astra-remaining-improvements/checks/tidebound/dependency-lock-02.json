@@ -1,0 +1,16 @@
+{
+  "command": [
+    "npx.cmd",
+    "--yes",
+    "--package=npm@11",
+    "npm",
+    "install",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "workingDirectory": ".dependency-refresh",
+  "exitCode": 4294963238,
+  "seconds": 354.16
+}

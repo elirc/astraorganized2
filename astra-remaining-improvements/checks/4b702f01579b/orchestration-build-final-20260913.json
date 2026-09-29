@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {
+    "DATA_SOURCE": "mock",
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww17_build_only",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "startedAt": "2026-09-13T16:14:58.936779+00:00",
+  "status": "complete",
+  "log": "orchestration-build-final-20260913.log",
+  "pid": 20616,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T16:15:48.425011+00:00",
+  "elapsedSeconds": 49.49
+}

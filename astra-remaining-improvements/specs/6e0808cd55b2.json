@@ -1,0 +1,45 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "astraupskill/images/builder-390.png",
+    "astraupskill/images/editor-1440.png",
+    "astraupskill/images/editor-390.png",
+    "astraupskill/images/editor-800.png",
+    "astraupskill/images/overview-1440.png",
+    "astraupskill/images/overview-390.png",
+    "astraupskill/images/overview-800.png",
+    "index.html",
+    "package-lock.json",
+    "package.json",
+    "scripts/make-initial.mjs",
+    "scripts/test.mjs",
+    "scripts/verify_browser.py",
+    "src/App.jsx",
+    "src/CatalogEditor.jsx",
+    "src/initial.js",
+    "src/model.js",
+    "src/repository.js",
+    "src/style.css",
+    "test/model.test.mjs"
+  ],
+  "summary": [
+    "Added versioned inventory, plan and subscriber CRUD, normalized unique email, editable preferences and ratings, history-aware deletion, archive/status changes, literal search and pagination.",
+    "Replaced hard-coded stock subtraction and duplicate batch creation with atomic one-unit-per-item reservations, exact plan counts, hard tag exclusions, accepted quote snapshots, request replay and subscriber-month uniqueness.",
+    "Implemented Reserved/Packed/Shipped/Delivered/Cancelled transitions with tracking requirements, expected versions, ordered retained history and stock restoration exactly once before dispatch.",
+    "Added bounded validated browser persistence, cooperative locks and raw-baseline conflicts, retained/exportable drafts, explicit reviewed recovery, responsive repairs, nine detailed learning documents and seven reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/parcelpilot/results.json",
+    "expectedTests": 54,
+    "environment": "Node 22.16.0, React 19.2.6, Vite 8.0.14, @vitejs/plugin-react 6.0.2; Chromium 148 in disposable profiles",
+    "command": "npm.cmd test; npm.cmd run build; python scripts/verify_browser.py"
+  },
+  "limits": [
+    "Local browser workflow without authentication, server authorization, SQL, real payments, recurring billing, tax, notifications, carrier booking or physical inventory reconciliation.",
+    "Manual stock adjustments have versions but no complete movement journal; same-cycle replacements, a skip ledger and returns are unimplemented. Cancelled subscriber-month history remains unique.",
+    "Cooperative same-origin locks and localStorage do not protect against profile access or scripts bypassing the repository; no power-loss, all-browser, full accessibility or deployment certification.",
+    "Aggregate capped at 4 MiB, 1000 items, 100 plans, 1000 subscribers and 2000 shipments. Drafts and frozen attempts remain in tab memory; exports are for manual review, not automatic draft import or durable resumption. Reviewed backup replacement can remove records absent from the file."
+  ]
+}

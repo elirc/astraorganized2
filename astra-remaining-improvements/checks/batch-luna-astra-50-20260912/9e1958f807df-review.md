@@ -1,0 +1,21 @@
+# Pulse Astra review
+
+Decision: CHANGES REQUIRED — store implementation provisionally sound; course rewrite and final executable checks pending.
+
+Reviewed staged `workspace-store.ts`, `workspace-store.test.ts`, `workspace-model.ts` and chapters 03, 05 and 06. Runtime collection allowlisting precedes SQL preparation, and direct save/delete IDs must be positive safe integers. Existing immediate merge/write transactions and project `ON DELETE SET NULL` behavior are retained. Tests seed all three collections, compare the entire workspace after rejected collection/ID inputs and perform a valid following write. Fixtures use `:memory:` or uniquely created temporary directories.
+
+Course 03's after excerpt omits `assertId`; its case count differs from current tests. Do not claim a demonstrated stacked-SQL exploit: original SQL already prefixes the dynamic identifier and observed evidence proves rejection, not exploitability. Zod 4 integer validation already enforces safe integers; redundant `.safe()` is not a substantive new protection.
+
+Course 06 calls an unseeded example seeded, handles only delete despite Practice 02 requiring save and delete, and mislabels project-deletion testing as the import/export solution. Require accurate complete solutions for exercises 1–5, exact state progression, concrete JSON export shape and source-grounded HTTP-to-SQL/transaction traces. Sent these bounded corrections directly to Luna B.
+
+Full-course pass found chapters 01 and 07 incorrectly map personal workspace writes through automation `actions.ts`/`data.ts`. The actual path is `components/workspace.tsx` fetch to `/api/workspace`, then `app/api/workspace/route.ts`, then the store. The request uses `data`, and existing UI export already emits `{ exportedAt, ...workspace }`. All three before snapshots were independently verified byte-for-byte by SHA-256 against their baseline file hashes; all match.
+
+Final approval requires actual offline workspace tests/typecheck/dashboard build with a disposable database, and rewritten course review. No daemon, real automation/LLM/gh, canonical database or sidecar access. Reviewer owns no implementation or canonical apply; Root owns delivery evidence.
+
+Latest course re-review: the real browser-to-route path, hostile-case count, `assertId` excerpt and Zod 4 limitation are corrected. Remaining bounded fixes sent to Luna B: wrap solution 1 in an `it` callback because the documented `beforeEach` database is unavailable at `describe` definition time; supply the requested concrete JSON export rather than only a TypeScript type; remove the claim that the delivered rejection tests assert task state again after the follow-up write; explain that project deletion changes relational `project_id` while `decode` overrides the possibly stale JSON `projectId`; replace stale export/evidence statements in VERIFICATION. Additional optional chapters 08/09 must not introduce unmatched required exercises. Current source guards and seeded tests remain accepted in design, but no raw final 505-test/typecheck/build logs were present under the checked evidence locations, so final approval remains pending concrete records.
+
+## Final Astra review
+
+Root captured the complete all-workspace run:313 core,69 dashboard and123 shared tests,505 total in26 files. Type checking and the Next webpack dashboard build completed with exit0. The102 executable/configuration hashes remained unchanged throughout final verification. Normal npm install success was independently confirmed from its actual npm debug log, with prior warning/PowerShell wrapper ambiguity retained rather than hidden.
+
+The nine-guide course now follows the real WorkspaceView fetch-to-route-to-store path, includes the safe-id guard, wraps the CRUD solution in a runnable it callback, supplies concrete versioned JSON while distinguishing proposed import from existing export, explains relational project_id versus stale JSON and decode authority, and states the actual rejection/follow-up assertion boundary. Verification includes delivered raw logs and process records and makes no real-automation, browser or production database claim. The three original source snapshots match the immutable baseline. Prepared delivery contains25 files,4258 course words and11 checked course links. Accepted for canonical delivery.

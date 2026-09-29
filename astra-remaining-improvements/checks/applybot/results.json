@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "tests": 51,
+  "modelTests": 43,
+  "browserTests": 8,
+  "javascriptSyntaxExitCode": 0,
+  "screenshotsReviewed": [
+    "desktop.png",
+    "narrow.png"
+  ],
+  "realSQLite": true,
+  "realLoopbackHttp": true,
+  "liveProviderCalls": false,
+  "personalProfilesUsed": false
+}

@@ -1,0 +1,59 @@
+{
+  "changedFiles": [
+    "package.json",
+    "package-lock.json",
+    "postcss.config.mjs",
+    "eslint.config.mjs",
+    "src/repositories/inventoryRepository.ts",
+    "src/repositories/inMemoryInventoryRepository.ts",
+    "src/services/inventoryService.ts",
+    "src/services/reservationService.ts",
+    "src/app/api/items/[itemId]/route.ts",
+    "src/app/api/items/[itemId]/adjust-stock/route.ts",
+    "src/app/api/reservations/[reservationId]/release/route.ts",
+    "tests/inventory.test.ts",
+    "tests/register-alias.mjs",
+    "astraupskill/snapshots/src__repositories__inventoryRepository.ts.txt",
+    "astraupskill/snapshots/src__repositories__inMemoryInventoryRepository.ts.txt",
+    "astraupskill/snapshots/src__services__inventoryService.ts.txt",
+    "astraupskill/snapshots/src__services__reservationService.ts.txt",
+    "astraupskill/snapshots/tests__inventory.test.ts.txt",
+    "astraupskill/snapshots/src__app__api__items__[itemId]__route.ts.txt",
+    "astraupskill/snapshots/src__app__api__items__[itemId]__adjust-stock__route.ts.txt",
+    "astraupskill/snapshots/src__app__api__reservations__[reservationId]__release__route.ts.txt",
+    "astraupskill/evidence/test-script-01.json",
+    "astraupskill/evidence/test-script-01.log",
+    "astraupskill/evidence/typecheck-05.json",
+    "astraupskill/evidence/typecheck-05.log",
+    "astraupskill/evidence/lint-03.json",
+    "astraupskill/evidence/lint-03.log",
+    "astraupskill/evidence/build-04.json",
+    "astraupskill/evidence/build-04.log"
+  ],
+  "summary": [
+    "Preserves omitted item metadata during PATCH updates, accepts reorder point zero, rejects unsafe direct service inputs, and keeps stock changes on the dedicated adjustment command.",
+    "Adds a repository-owned FIFO mutation boundary with cloned-map rollback, used by item, stock, hold, release, and alert sequences; two service instances sharing one repository cannot oversubscribe stock.",
+    "Adds 13 finite Node tests covering retained auth/schema/visibility behavior, partial updates, safe integers, concurrent totals, hold-versus-adjustment invariants, concurrent release, rollback, queue recovery, singular alerts, and the documented unlocked-read limit.",
+    "Updates the staged Next dynamic route parameter shape, Tailwind 4 PostCSS plugin, local ESLint configuration, and lockfile so the reproducible scripts run without interactive or global downloads.",
+    "Provides nine source-grounded upskilling chapters totaling more than 4,000 words, complete matched exercises and solutions, and exact original source snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/109a97addd48/results.json",
+    "expectedTests": 13,
+    "environment": "Node 22.16.0; Next 15.5.25; React 19.3.0; TypeScript 5.8.3; Tailwind CSS 4; ESLint 9 with typescript-eslint 8",
+    "command": "npm run test; npm run lint; node node_modules/typescript/bin/tsc --noEmit; npm run build",
+    "rawEvidence": [
+      "checks/109a97addd48/test-script-01.json",
+      "checks/109a97addd48/typecheck-05.json",
+      "checks/109a97addd48/lint-03.json",
+      "checks/109a97addd48/build-04.json"
+    ]
+  },
+  "limits": [
+    "Tests use synthetic sessions, direct route/service modules, and one disposable in-memory repository; no live server, database, browser, or third-party service is exercised.",
+    "Mutation serialization and rollback apply to one repository object. Unlocked reads can observe intermediate callback state, separate processes are not coordinated, and data disappears on restart.",
+    "A future durable adapter must implement the same contract with database transactions or atomic conditional commands, including alert behavior and isolation.",
+    "The local ESLint configuration excludes generated Next files and does not certify accessibility, distributed deployment, performance, or production operations."
+  ]
+}

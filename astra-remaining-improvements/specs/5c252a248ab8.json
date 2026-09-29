@@ -1,0 +1,25 @@
+{
+  "id": "5c252a248ab8",
+  "changedFiles": [
+    "src/repositories/prisma/complianceRepository.ts",
+    "tests/runtime-country-rule-upsert.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-repositories-prisma-complianceRepository.ts.before",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/5c252a248ab8/results-crud-b06.json",
+    "format": "json"
+  },
+  "limits": [
+    "Actual repository TypeScript executed with explicit Prisma-shaped double; no live database or generated-client typecheck.",
+    "No route, auth, audit, migration, or concurrent transaction test.",
+    "Upsert preserves composite identity and updates mutable fields; audit action semantics remain unchanged."
+  ],
+  "summary": [
+    "Replaced the country-rule repository create call with a composite-key Prisma upsert matching the schema unique constraint.",
+    "Added actual repository runtime coverage for first-write and repeat-write payloads."
+  ],
+  "project": "ww3"
+}

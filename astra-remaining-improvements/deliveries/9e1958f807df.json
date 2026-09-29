@@ -1,0 +1,242 @@
+{
+  "project": "aiheartbeat",
+  "id": "9e1958f807df",
+  "summary": [
+    "Guard direct workspace store callers with own-property collection allowlisting and positive safe-integer IDs before SQLite saves or deletes, preserving existing HTTP/Zod validation.",
+    "Add seeded rejection regressions and verify all three workspaces:505 tests, type checking and the Next webpack dashboard build pass.",
+    "Add nine source-grounded learning guides with complete practice examples, an import/export design exercise, exact original snapshots and captured verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9e1958f807df/results.json",
+    "expectedTests": 505,
+    "command": "npm run test --workspaces --if-present -- --maxWorkers=1 --testTimeout=30000; npm run typecheck; npm run dashboard:build",
+    "environment": "Node22.16; npm10.9.2; three Vitest4 workspaces; Next16.3.1 webpack; disposable absolute PULSE_WORKSPACE_DB"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 505,
+    "testFiles": 26,
+    "workspaces": {
+      "core": 313,
+      "dashboard": 69,
+      "shared": 123
+    },
+    "typecheck": "passed",
+    "build": "passed",
+    "sourceHashesUnchanged": true,
+    "records": {
+      "tests-root-01": {
+        "project": "aiheartbeat",
+        "id": "9e1958f807df",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "--workspaces",
+          "--if-present",
+          "--",
+          "--maxWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+        "environmentOverrides": {
+          "PULSE_WORKSPACE_DB": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/9e1958f807df/root-verification.db"
+        },
+        "startedAt": "2026-09-12T18:52:01.781935+00:00",
+        "status": "complete",
+        "log": "tests-root-01.log",
+        "pid": 5040,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:56:43.545280+00:00",
+        "elapsedSeconds": 281.75
+      },
+      "typecheck-root-01": {
+        "project": "aiheartbeat",
+        "id": "9e1958f807df",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+        "environmentOverrides": {
+          "PULSE_WORKSPACE_DB": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/9e1958f807df/root-verification.db"
+        },
+        "startedAt": "2026-09-12T18:57:48.075653+00:00",
+        "status": "complete",
+        "log": "typecheck-root-01.log",
+        "pid": 10736,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T19:02:01.837276+00:00",
+        "elapsedSeconds": 253.75
+      },
+      "build-root-01": {
+        "project": "aiheartbeat",
+        "id": "9e1958f807df",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "dashboard:build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\9e1958f807df",
+        "environmentOverrides": {
+          "PULSE_WORKSPACE_DB": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/9e1958f807df/root-verification.db"
+        },
+        "startedAt": "2026-09-12T19:03:00.052513+00:00",
+        "status": "complete",
+        "log": "build-root-01.log",
+        "pid": 31824,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T19:09:41.855224+00:00",
+        "elapsedSeconds": 401.79
+      }
+    },
+    "installRecord": "checks/aiheartbeat/install-03.json"
+  },
+  "courseWords": 4258,
+  "courseFiles": 9,
+  "courseLinksChecked": 11,
+  "files": [
+    {
+      "file": "packages/dashboard/app/api/workspace/route.ts",
+      "before_sha256": "d843f4261264cb91464134d98afff5a64b40d8550eeabdcd5071dba6622d7825",
+      "after_sha256": "50d02673b164340312c0b228dc600fb1ef70317a3f8eb30d2e629aabd47b4a19"
+    },
+    {
+      "file": "packages/dashboard/lib/workspace-store.ts",
+      "before_sha256": "498cd28e6abfe8e444b684163149f7518d71ce4a3925e0ae5d396b10602ad854",
+      "after_sha256": "ed07b1550456c5a90c2998d456247ee8fb46265399f3f43a3c44ab06f62c70b3"
+    },
+    {
+      "file": "packages/dashboard/lib/workspace-store.test.ts",
+      "before_sha256": "f60dcae0fb52c9cd495c75cfeee92de7c2f0658cc40e21023e1cb01d753711b4",
+      "after_sha256": "1df6a2d6f81eae8bdb0376fcc62ee9e489a30ace342d69074839820d976ef6b5"
+    },
+    {
+      "file": "astraupskill/snapshots/workspace-route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d843f4261264cb91464134d98afff5a64b40d8550eeabdcd5071dba6622d7825"
+    },
+    {
+      "file": "astraupskill/snapshots/workspace-store.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "498cd28e6abfe8e444b684163149f7518d71ce4a3925e0ae5d396b10602ad854"
+    },
+    {
+      "file": "astraupskill/snapshots/workspace-store.test.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "f60dcae0fb52c9cd495c75cfeee92de7c2f0658cc40e21023e1cb01d753711b4"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "ac196193a143f6d980843d046fe4987e7fd2bd062611a8649df0df7c41cd7f25",
+      "after_sha256": "b0d4a3f702ecb34c2ee537796875585480a05769493d13012517165bfd4f99f6"
+    },
+    {
+      "file": "astraupskill/evidence/root-final-source-hashes.json",
+      "before_sha256": null,
+      "after_sha256": "c75fa5492420902f2a009d1871eddf129919484d9c2e6b347598a24d330b14d8"
+    },
+    {
+      "file": "astraupskill/evidence/install-03.json",
+      "before_sha256": null,
+      "after_sha256": "3f8328a5eee8d54b21364b0e98bedf29b6805ebdd3893209340d68d2116b7a31"
+    },
+    {
+      "file": "astraupskill/evidence/2026-09-12T18_22_48_316Z-debug-0.log",
+      "before_sha256": null,
+      "after_sha256": "20b6fe283c44c0251e90a7b608d2976bd7182cd45c0ce2efc099105713f188d7"
+    },
+    {
+      "file": "astraupskill/evidence/tests-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "354e04d1011785bee7ad2255d2d60b54b5fdc46932b3643dc14d24a6aa00a506"
+    },
+    {
+      "file": "astraupskill/evidence/tests-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "00ec34f56861328c949bf1439a27700b0f9537a9a6b8ba311417df1ed493657a"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "505b36cafded411a66caee737581e5db8203ccd2aad856cac6641f10bfd0d034"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "37ad72691eed6f0292b33f1ba683ee1a2faf4060dc3fab5bfbd7a9292959c9b8"
+    },
+    {
+      "file": "astraupskill/evidence/build-root-01.json",
+      "before_sha256": null,
+      "after_sha256": "009fe8da3f1569a792f886f4a8791e8a07d6b7aa93567b71321846b2decd8780"
+    },
+    {
+      "file": "astraupskill/evidence/build-root-01.log",
+      "before_sha256": null,
+      "after_sha256": "20784ef345e01fabb39312b6105f54e9c689d1b4cf75bae69e099fe0faae5ad6"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "74d8799d6272e436d3331d8d9acec2040519e62c089c6dafbded003f59b180aa"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d6d77012074dee0acc8ea5758bf4ec2c331a6b212da99c5bdf8a78724221f7df"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "417cdc5becc5c91097f7a1b5365ec83cf78a3fa4d672abff896af93094ddfcbb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "b9744fcd600dc4491176977974d3ede9c3fb75cab605e618acaa730125aed791"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "69d8805f22e86dced20ed9d7546247c54f2832e44e038d3c6ade8f13bc35d1a7"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "89c0c8fbb5cad8abefdf36c475f7c5ce561b55a8d624ec04175f259cf99f4a71"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "aaf6bf1eaceba45bae8d486d348bfca8d77ecf1ef7374e200c058669c7f59496"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "12885217b8ee55fc517db0a82716df52ff4a912068cc9291dd39a608f526d7c7"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "524b1b900de86b2a0df492e4fe84f9550cc115acf5a6b16bf5251a39a322321b"
+    }
+  ],
+  "limits": [
+    "This is a local personal workspace without account authentication or multi-user authorization; existing same-origin checks are a separate HTTP boundary.",
+    "The new guards protect direct store callers. No exploitable SQL injection through the existing validated endpoint was demonstrated.",
+    "The course proposes an import contract; no new import implementation, optimistic concurrency or distributed conflict resolution was added.",
+    "Tests use synthetic data, temporary SQLite and mocks. No real daemon, Claude CLI, GitHub automation, external webhook, canonical database or browser workflow was exercised.",
+    "Normal npm ci completed with lifecycle scripts enabled, but npm emitted invalid/damaged lockfile warnings. Actual npm exit0 and subsequent tests/typecheck/build are retained; no broad dependency upgrade was performed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:11:12.083460+00:00"
+}

@@ -1,0 +1,248 @@
+{
+  "project": "aral",
+  "id": "46f416b83060",
+  "summary": [
+    "Deduplicated progress events before ordering with first-arrival payload semantics, preventing retry XP inflation.",
+    "Serialized local records, remote merges, clock corrections and hydration; reconciled live state from persisted events after writes and partial failures.",
+    "Added shared reducer and stateful store regressions, plus nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/46f416b83060/sol15-results.json",
+    "expectedTests": 102,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 102,
+    "passedTests": 102,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "aral",
+        "id": "46f416b83060",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "--workspaces",
+          "--if-present",
+          "--",
+          "--maxWorkers=1",
+          "--minWorkers=1",
+          "--testTimeout=30000",
+          "--hookTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\46f416b83060",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:26:35.185910+00:00",
+        "status": "complete",
+        "log": "astra-aral-tests-r2.log",
+        "pid": 6756,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:32:38.474264+00:00",
+        "elapsedSeconds": 363.28
+      },
+      {
+        "project": "aral",
+        "id": "46f416b83060",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "--workspace",
+          "@aral/shared",
+          "--",
+          "src/derived.test.ts",
+          "--maxWorkers=1",
+          "--minWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\46f416b83060",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:50:50.401979+00:00",
+        "status": "complete",
+        "log": "astra-aral-derived-tests-r4.log",
+        "pid": 21636,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:52:16.811770+00:00",
+        "elapsedSeconds": 86.37
+      },
+      {
+        "project": "aral",
+        "id": "46f416b83060",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\46f416b83060",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T22:46:42.544742+00:00",
+        "status": "complete",
+        "log": "astra-aral-typecheck-r2.log",
+        "pid": 10636,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:56:29.308060+00:00",
+        "elapsedSeconds": 586.76
+      }
+    ]
+  },
+  "courseWords": 3394,
+  "courseFiles": 9,
+  "courseLinksChecked": 96,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "c7444d8cf3cdd754ab2035c2be30d70968ef29de90508497736be6c7d35f12cb",
+      "after_sha256": "855e3532f4e5bf941a4c4b0873796e733be0524e1031741308c47ca0fd05667f"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-derived-tests-r4.json",
+      "before_sha256": null,
+      "after_sha256": "13fd46837d089e28334a52c717f6c2f589a7584e116a20eb19e8217fcc1e6161"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-derived-tests-r4.log",
+      "before_sha256": null,
+      "after_sha256": "52df4aa46ab1c7e6f61be88bff677050dde784a753651b0e96a9252999935aad"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-tests-r2.json",
+      "before_sha256": null,
+      "after_sha256": "2eaa40f5f863cb736022845b7bb2093f9aef194e2584bca6c8c95cba8aa61aed"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-tests-r2.log",
+      "before_sha256": null,
+      "after_sha256": "55cea5bd843ef742e1f17a654b7ca1a077b3d6e4c37fb4a8669788e704e485c4"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-typecheck-r2.json",
+      "before_sha256": null,
+      "after_sha256": "bd9b8180c4df3319a7153c37a5729ce4c8e1f864daa9d2ab3dcdced8189d9a10"
+    },
+    {
+      "file": "astraupskill/evidence/astra-aral-typecheck-r2.log",
+      "before_sha256": null,
+      "after_sha256": "d0de31377a976a7951b63645f50204d82dd782031ab5347e127477a2662fbd09"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c7444d8cf3cdd754ab2035c2be30d70968ef29de90508497736be6c7d35f12cb"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__app__src__db__sync__outbox.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e493b570748c9a3d89bf11ef138c69813c010bf33f1443220c02df76310be090"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__app__src__state__store.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4b734bd041647b8b940173c58d60af4c404580e769a708ca56b7e5e59bb98a23"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__shared__src__derived.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3bff68aba0d17199e51563034d41eb1b05865adc5fe09d67dac103874b0bd7e3"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__shared__src__derived.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "53c6c88fec88144701e4c41881d9e0a6fa2fdd2180539173a5a4fb9739be1cb4"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__shared__src__events.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "5d2f087d1fdf5166e20324ee77f4a0c705fa6a5fb34a9223021512cce1cb9221"
+    },
+    {
+      "file": "packages/app/src/db/sync/outbox.ts",
+      "before_sha256": "e493b570748c9a3d89bf11ef138c69813c010bf33f1443220c02df76310be090",
+      "after_sha256": "1a8bed290e6a8a6b6db9f98ec2d42d9cd234796da51773ab1299efed491b575e"
+    },
+    {
+      "file": "packages/app/src/state/store.test.ts",
+      "before_sha256": null,
+      "after_sha256": "601e383847a8df571df00ec967b6a4c06d5bcd1a6474c8d3d98c83f05086c487"
+    },
+    {
+      "file": "packages/app/src/state/store.ts",
+      "before_sha256": "4b734bd041647b8b940173c58d60af4c404580e769a708ca56b7e5e59bb98a23",
+      "after_sha256": "2cfffdecbd8f85dfad710f1de76ccfdce379b11d6515fc67d428064050238951"
+    },
+    {
+      "file": "packages/shared/src/derived.test.ts",
+      "before_sha256": "3bff68aba0d17199e51563034d41eb1b05865adc5fe09d67dac103874b0bd7e3",
+      "after_sha256": "4d502f07abe06cff2cdcc0c865ed4b2e733e51a658febc4a9b63e5ae06ea72c1"
+    },
+    {
+      "file": "packages/shared/src/derived.ts",
+      "before_sha256": "53c6c88fec88144701e4c41881d9e0a6fa2fdd2180539173a5a4fb9739be1cb4",
+      "after_sha256": "fcb10beff6eeb1c8bfe882df723f5e21b4a81213a2c394c619b9de7b2180a22a"
+    },
+    {
+      "file": "packages/shared/src/events.ts",
+      "before_sha256": "5d2f087d1fdf5166e20324ee77f4a0c705fa6a5fb34a9223021512cce1cb9221",
+      "after_sha256": "cafd015cf90cbd1b3c36f14655f91ecd8fc1082ab734ac9093fbf41d1b953394"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a3c14f7cb4fd02943099f332a8f2ad6784c7d3a22f57494248769191989c2070"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e9cdbf670a3b48b1d54e1c6407ac3664bcc5f66d6e4fdc42fa9e87412d0d1624"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "19c4c0ca629767198e6ef0cb6558f9a65c56166317558d5d801eeac7d4ab26ba"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "045636faa4472bbeecae163d94c90c779061f4c4737dd261cd2110433983add5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "080b47117274d8f87f528c14aab5f0b12cb6993e521db19177573a9e6f547d95"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "91dd3d543c666ff6e1f95974e22a2669109ba90219be07a39b242ce6c6c36b28"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f35b58797565b9a78ce280e0e418ee2b1d9d1d0bb8771681d07494efe7c74185"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "b9dafc643d447895a6c501401448f8021fe2682e22e976f0470f148dca063796"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1b06e11013cac1ce5a6bad7c1dee62b7b6bcb4e943256bbb3409bb8ee1db62fe"
+    }
+  ],
+  "limits": [
+    "Store tests use a Map-backed DAO fixture, not native device SQLite; native persistence durability and rollback are not established.",
+    "Queue ordering is process-local and preserves the existing DAO replacement semantics."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T23:04:59.462211+00:00"
+}

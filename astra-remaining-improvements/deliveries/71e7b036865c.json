@@ -1,0 +1,1029 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.nethris",
+  "id": "71e7b036865c",
+  "summary": [
+    "Replaced demo fallback, shared JWT configuration and automatic default-password accounts with real workshop bootstrap, private database signing material, revocable sessions, current-role authorization and separate Admin account administration.",
+    "Completed employee, department and job-role CRUD with bounded validation, versioned edits, uniqueness, active/archive choices, manager-cycle and lead-department checks, protected deletion and role-sensitive balance/salary views.",
+    "Fixed SQLite timestamp ordering and approval insertion, added exact quarter-hour/cents storage, and implemented PTO bounds, overlap/reservation checks, pending edit/delete/cancel and captured-manager plus distinct-HR approval with atomic balance/history writes.",
+    "Added strong ETags, transactional 24-hour receipts and audit records, paginated lists, bounded org traversal and responsive real-API forms that preserve stale drafts, recover exact operations after response loss, and invalidate delayed reads/cached views on session changes.",
+    "Added nine detailed source-grounded CRUD learning guides, preserved 75 exact original files, labeled 46 historical pages, pinned/locked dependencies and supplied local package/check scripts. Verified 13 foundation tests, 28 HTTP scenarios, 17 browser workflows and three packaging checks, with reviewed desktop/narrow images."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/nethris/results.json",
+    "expectedTests": 61
+  },
+  "testResults": {
+    "passed": true,
+    "count": 61,
+    "foundationTests": 13,
+    "httpChecks": [
+      "bootstrap is atomic, named roles are serialized, repeat setup is refused",
+      "invalid credentials and anonymous directory access are rejected",
+      "balance, salary, account and audit projections respect current roles",
+      "HR cannot grant Admin through employee fields or account routes, or edit Admin employee",
+      "directory filtering, SQL pages and bounded org traversal return real relationships",
+      "HTTP enforces operation keys, JSON shape, content type, body size, origin and host",
+      "creation receipts replay exactly and reject key reuse or case-insensitive duplicates",
+      "department CRUD requires versions and valid department leadership",
+      "referenced departments are protected and archives block new assignments",
+      "job-role CRUD preserves exact cents and validates salary bands",
+      "employee CRUD rejects duplicate identity, cycles and referenced deletion",
+      "account provisioning is separate, unique, password-bounded and follows employee email edits",
+      "Admin password reset revokes existing sessions; ordinary employees cannot edit directory data",
+      "PTO rejects original 9999-hour defect, fractional units, past and overlong dates",
+      "PTO reserves balance, rejects overlap and hides another employee request",
+      "pending edits work; self, skipped-stage, enum and repeated-review guards hold",
+      "HR approval inserts history and deducts once; exact retry preserves balance",
+      "HR stage requires a distinct reviewer; no-manager requests start at HR without self approval",
+      "cancellation preserves decisions, releases dates, and undecided deletion works",
+      "multiple pending requests cannot over-reserve remaining balance",
+      "concurrent create retries produce one request and competing decisions have one winner",
+      "PTO and audit ordering execute successfully in real SQLite HTTP reads",
+      "late receipt failure rolls back earlier domain SaveChanges and audit writes",
+      "last active Admin cannot be demoted or deactivated",
+      "existing JWT observes current role and account deactivation immediately",
+      "authorization is rechecked before replaying a receipt",
+      "manager reassignment removes old request visibility and blocks old decision replay",
+      "logout revokes the server session"
+    ],
+    "browserChecks": [
+      "workshop bootstrap through labeled forms creates a real directory",
+      "rejected API login stays rejected without demo fallback",
+      "stale edit shows current values and preserves the draft for explicit review",
+      "department deletion uses an explicit confirmation and refreshes saved records",
+      "lost response after commit recovers through an exact browser retry without duplication",
+      "job-role forms create, edit and delete exact salary bands",
+      "employee editor performs real create, edit and unreferenced delete",
+      "Admin account editor changes and restores a real account role",
+      "self password reset returns to sign-in after the server revokes the session",
+      "organization view renders saved reporting relationships",
+      "employee UI hides management controls and private colleague values",
+      "employee edit, manager review and HR finalization update real history and balance",
+      "requester cancellation is visible and preserves the request record",
+      "desktop and narrow layouts fit the viewport and show real records",
+      "browser sign-out waits for server revocation",
+      "a delayed refresh cannot restore a signed-out session or cached private views",
+      "acceptance workflows produce no uncaught browser errors"
+    ],
+    "packageChecks": [
+      "locked restores and package build pass",
+      "published browser assets exactly match the final client build",
+      "package contains no private database and matches the published API assembly"
+    ],
+    "dependencyAdvisories": {
+      "npm": 0,
+      "nuget": 0
+    },
+    "originalFilesPreserved": 75,
+    "historicalPagesMarked": 46,
+    "imagesReviewed": {
+      "reviewed": true,
+      "run": "browser-03",
+      "notes": "Viewed desktop screenshot and original-resolution narrow screenshot. Directory text, actions, navigation and six real fixture records are readable; the narrow layout fits without horizontal overflow.",
+      "sha256": {
+        "desktop.png": "d357a370577fb6f34895f745bb3479bcff8a1a303a972ec035dea7d6e4e74fd6",
+        "narrow.png": "04d2459f497780bea8b283696d7e523d3f53b20a8bf3e355156014e6080bfb80"
+      }
+    },
+    "limits": [
+      "Loopback-only single-organization SQLite learning application; no production hosting, payroll, external HR service, notification delivery, account recovery or production abuse-control system.",
+      "PTO uses calendar dates including weekends, quarter-hour amounts, at most eight hours per date and an inclusive span of at most 31 dates. This is simplified workshop policy.",
+      "Approved PTO is immutable: no approved cancellation/refund. Pending requests can be edited/deleted only before decisions; cancellation retains history. Manager reassignment requires cancellation/resubmission when captured and current managers differ.",
+      "Limits: 2,000 employees, 200 departments, 200 job roles, 10,000 PTO requests and 32 manager levels. Selectors load bounded reference lists; SQLite NOCASE indexes use SQLite collation semantics.",
+      "Browser sessions and pending operation snapshots stay in memory; reload requires login and loses the browser retry snapshot. Server sessions last eight hours; CRUD receipts last 24 hours. Setup/login/logout are outside the receipt protocol.",
+      "Admin account provisioning and password reset are implemented; self-service password change, recovery and federated identity are exercises or out of scope.",
+      "Unknown database files are refused. There is no automatic migration or reset of original data; schema changes require a new learning path or a separately reviewed migration.",
+      "Original files and historical course pages are preserved and labeled. Proposed exercises are not counted as implemented functionality; focused browser checks are not an exhaustive accessibility or security audit.",
+      "One synthetic temporary SQLite file from an earlier failed cleanup remains outside the project because automatic approval review blocked its removal. Cleanup of an older generated browser bundle was also blocked, so verification used a fresh package folder and preserved the earlier build. The harness connection-lifetime bug was corrected; see checks/nethris/cleanup-limitation.json in the central audit workspace."
+    ],
+    "commands": [
+      "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
+      "dotnet test tests/Nethris.Tests/Nethris.Tests.csproj --no-restore",
+      "python scripts/check_api.py",
+      "python scripts/check_browser.py"
+    ],
+    "notes": [
+      "Scenario groups contain multiple assertions; repetitions are not added to the distinct count.",
+      "All runtime checks used fresh temporary databases and owned local servers; original databases were not opened."
+    ]
+  },
+  "courseWords": 6577,
+  "courseFiles": 9,
+  "courseLinksChecked": 48,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "f1c11b427292bbcc65bdda14c0006c374d9731199764f31f2ad22c906719ca50",
+      "after_sha256": "5b26f9a886911caa9ce3e147492897a5185ac64c12b3aa0ff7c9162edd2be5ce"
+    },
+    {
+      "file": "Directory.Build.props",
+      "before_sha256": null,
+      "after_sha256": "a883eb12b9f16ea9b3a14869626c3c99b2e5c54587d0dade64711266e2d5f21f"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "c1dae062303783b7fada2c0a75a2372074b7f0bdbdf0c5c13ecb7287f21562c5",
+      "after_sha256": "712542ac23adeaa3868839a3d4ec58d53187ed091e6141f8c0f2717ccf51f7ea"
+    },
+    {
+      "file": "astraupskill/evidence.json",
+      "before_sha256": null,
+      "after_sha256": "1b48e8b24ace205153b3c8d5ba5c0ce11f7c2882c0ad59e3ec720f2712dd2451"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "d357a370577fb6f34895f745bb3479bcff8a1a303a972ec035dea7d6e4e74fd6"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "04d2459f497780bea8b283696d7e523d3f53b20a8bf3e355156014e6080bfb80"
+    },
+    {
+      "file": "client/package-lock.json",
+      "before_sha256": "f64e96887306cf139b4bc60c29787fd97410dfc7deb1dee69ade7182235e182f",
+      "after_sha256": "da210035ec93619496c12c295eb5524f2d1ca5269be82a00f138e2cf31bf101f"
+    },
+    {
+      "file": "client/package.json",
+      "before_sha256": "9aa328bc7d9da4a9390a19c407c66f5c2ae095fc4f0e2b6a89ae75cb21d08b7b",
+      "after_sha256": "e020aceccb0f67d0af1bffeddd4963be299254649d20ec3e1fdc371961771c7f"
+    },
+    {
+      "file": "client/src/App.tsx",
+      "before_sha256": "981749352b70eb5118b5d76d0ddca4b5d67d134d2f6b3b41b8f91bdea1597a39",
+      "after_sha256": "9f61ea65d6c12afa4dcff643ee6533c11adece1382f28a7cf85b1f8a38bbf400"
+    },
+    {
+      "file": "client/src/Workshop.tsx",
+      "before_sha256": null,
+      "after_sha256": "01a935bbcde53736e471b87fefe40415868d7fff90138073cdb2a50c922e0f20"
+    },
+    {
+      "file": "client/src/api.ts",
+      "before_sha256": "f7bbe08624340524a8547fbf9ad015d3768a16aab5ab11c6c44c10d1f77bad48",
+      "after_sha256": "117994b401dd9999a48dfd6ef8e5bfa8bcd77b22e307a0bc7cf8697435b98963"
+    },
+    {
+      "file": "client/src/demoData.ts",
+      "before_sha256": "0745b8e661522b91c9271d52f190e7e67180e02ca358d79de37bd1aa1ec91842",
+      "after_sha256": "2c9bd860ab73b9ddc9de2415d3b287669bc80e8b71cc21eb759ab4258d9e84f5"
+    },
+    {
+      "file": "client/src/main.tsx",
+      "before_sha256": "6f9b426b4aaf25837565c13c7e43d2b075742b798c992783ec13ec52e97cb6cd",
+      "after_sha256": "e01f1c40f7bcc28665aa44bd408c25cc232079a40f0ca2222cb9a4bf04920b6c"
+    },
+    {
+      "file": "client/src/types.ts",
+      "before_sha256": "9b13912b66be6c619f331bf6552df6adde4972ee65bdcdb6b2fb78dfdb2e2456",
+      "after_sha256": "c01dd46859854a84f481226363e4f72141df6fe27f4143d2b6598eedd5f18b90"
+    },
+    {
+      "file": "client/src/workshop.css",
+      "before_sha256": null,
+      "after_sha256": "c39b670bce1bdd7359394a442f9a2e11041087cc2af1a024b529e6e5588cff35"
+    },
+    {
+      "file": "client/src/workshopApi.ts",
+      "before_sha256": null,
+      "after_sha256": "9982e65820f874a990b826b85090ca0527e758518ad36f17294de2072d71bc13"
+    },
+    {
+      "file": "client/vite.config.ts",
+      "before_sha256": "527ca08f0e276abadd893540c243105912d6c95dfab37a10db5bc442bd741629",
+      "after_sha256": "014ac28202a762fcd0bdc7b7ff1dee1458e2fdea07c1f88eb26644419ae62317"
+    },
+    {
+      "file": "docs/original/.gitignore.txt",
+      "before_sha256": null,
+      "after_sha256": "f1c11b427292bbcc65bdda14c0006c374d9731199764f31f2ad22c906719ca50"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c1dae062303783b7fada2c0a75a2372074b7f0bdbdf0c5c13ecb7287f21562c5"
+    },
+    {
+      "file": "docs/original/client/index.html.txt",
+      "before_sha256": null,
+      "after_sha256": "a68ebded62bc1a86b59bd95dcb83c5a49b68d016e7772d0e8d5fc8343ce7fe44"
+    },
+    {
+      "file": "docs/original/client/package-lock.json.txt",
+      "before_sha256": null,
+      "after_sha256": "f64e96887306cf139b4bc60c29787fd97410dfc7deb1dee69ade7182235e182f"
+    },
+    {
+      "file": "docs/original/client/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "9aa328bc7d9da4a9390a19c407c66f5c2ae095fc4f0e2b6a89ae75cb21d08b7b"
+    },
+    {
+      "file": "docs/original/client/src/App.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "981749352b70eb5118b5d76d0ddca4b5d67d134d2f6b3b41b8f91bdea1597a39"
+    },
+    {
+      "file": "docs/original/client/src/api.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "f7bbe08624340524a8547fbf9ad015d3768a16aab5ab11c6c44c10d1f77bad48"
+    },
+    {
+      "file": "docs/original/client/src/demoData.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "0745b8e661522b91c9271d52f190e7e67180e02ca358d79de37bd1aa1ec91842"
+    },
+    {
+      "file": "docs/original/client/src/main.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "6f9b426b4aaf25837565c13c7e43d2b075742b798c992783ec13ec52e97cb6cd"
+    },
+    {
+      "file": "docs/original/client/src/styles.css.txt",
+      "before_sha256": null,
+      "after_sha256": "19969197c415ebddeab05c38aa231d9be9eb5236ef22e390a0ae9acaf8ea3bf5"
+    },
+    {
+      "file": "docs/original/client/src/types.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "9b13912b66be6c619f331bf6552df6adde4972ee65bdcdb6b2fb78dfdb2e2456"
+    },
+    {
+      "file": "docs/original/client/src/vite-env.d.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "bf144e3cdae616e27b064c8c2b94b14525e220fb3facc4cb4884d21b65eb5aa5"
+    },
+    {
+      "file": "docs/original/client/tsconfig.json.txt",
+      "before_sha256": null,
+      "after_sha256": "fb75bddd6ef7c3fbc7872d73786cb844e125a0348751ea549c8655e09f1f07e9"
+    },
+    {
+      "file": "docs/original/client/vite.config.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "527ca08f0e276abadd893540c243105912d6c95dfab37a10db5bc442bd741629"
+    },
+    {
+      "file": "docs/original/docs/upskill/00-fast-track.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c24f0497788e14a57f02b8436705b5c60027a21604642d9be0934725a087dd13"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/01-system-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "138797b8615f9efcf1362f252f746707c96e0c52e4ace9c30f47aff01093ccfc"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/02-file-reading-order.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f10290fbdd2cfd1d654adaf0b3f61b870622f01fd6ce2ff4bb8d1a8e8ecd53ee"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/03-domain-glossary.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a9e8a6822f1ff51a6af9e78e882970bc31094001fafca0a7bfb2088efd197445"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9b9f05472f73322eeb064e12f4df297ca8118bb81d9ca5e0abc83a5b28dd4974"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/05-key-flows.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7a660b7fa2d85f73c3df38acc9febd14de6eb6b125418d736df21800365dce72"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7f2c2a510c18a2a8e11dc162bd2015fae3d4e3b5ffd83313859409639af1750c"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/01-dotnet-runtime-model.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fd9b43add65f7a0342f3659d36849de183558e05ab5d9c5bce899f0f8dfa87be"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md.txt",
+      "before_sha256": null,
+      "after_sha256": "02856d6ece6c00489aa1bbc4f3d705cdaaf315d11c82829312c6150f212f9cba"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ea06282dcc207b7fe146b76f68af2ba907b38dff1388150c9ae9b66b4a8e04f6"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md.txt",
+      "before_sha256": null,
+      "after_sha256": "4be3e61ec11f073f5ffb7ff1f48c60b15ecc3eb2fed70dedf93d9425e9933649"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "5f688b051eefd4f6783342b613ba1a8068a6e7a57e75e8fc7321cea438e05954"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8963710a24c55b4fe1028e53aabfd3199129e09ed60588c3dadeec44bbdef747"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md.txt",
+      "before_sha256": null,
+      "after_sha256": "756cc27fa4eaa926311f542ec1837005acf28562ef89b34e5ad98d74df281823"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md.txt",
+      "before_sha256": null,
+      "after_sha256": "472e6252803fda781a04f32f19d2d255392a196ef2c727a4fad2aa0aa2915103"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md.txt",
+      "before_sha256": null,
+      "after_sha256": "193fb78387c8c9292e82a2246d3ba53673c53cba8863ab307b738182bec56426"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fa6ef7c4259734d034ec613f34e376e80dcae3ea3525f4e2acd94d2022bdbbac"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/06-architecture-critique.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8fd9ce1e9728c47cbd763ed2522416dbb7df7f20b711f1ce3dc00621c025b1bf"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "6c8b8390ffc0280170af1b18fc3619d665ad68695c1d9d41c809cc370352caaf"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/01-annotation-drills.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a9e0243b0d51f269ce7a785f5bd8f7dde8d658341d481c9ef7e13c9622c76f6a"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/02-trace-tables.md.txt",
+      "before_sha256": null,
+      "after_sha256": "26e68ca4221313067c11120a02774b92b4d315714e20bf9275954fb1bb815511"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7e654d17faf76580fe92edeeae9b82c370d677b22b7128d53bcb2c4b25e97b54"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/04-review-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "00013e63d0b6650ffeff3037189ca168045d4fd9879c3fc2eedf3db63f6851e5"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "da02c6d798bd22340dee1172eb86ac6bace399466422907fe286c1ef99fbb2e6"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/01-testing-strategy.md.txt",
+      "before_sha256": null,
+      "after_sha256": "78fdcd7d2499522b687622177c5d658e1334254fd57009730a81e4f1363c4093"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/02-writing-tests-here.md.txt",
+      "before_sha256": null,
+      "after_sha256": "221b569366bd235dc7c76a18a207b267a6e09e82d5c13218fcf2040e6d6ccb32"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/03-systematic-debugging.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a967e0333106f897db0cc9ac39c9248641250a8fc3b7a63fef26a30bd5f84b1f"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/04-performance-thinking.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b4a68b3a66de5d7a02ab78925b153cf17e80647d4e53372011a2ffea63804732"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/05-security-checklist.md.txt",
+      "before_sha256": null,
+      "after_sha256": "68c872c2c69d00388b545dcad1cb18a7a12d364cd22b27bea9c11ff68c90c3d9"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/06-observability-and-operations.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ebc71a63d8af8a05338b5e447aa6cdfcd92b0d69902853e12c301732a74ab478"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "279bb04e111a245a81d0dd93353cf3134da88dcd034a830356dc3e3389c66f5e"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/01-good-first-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "df799c7b1f04f3db9b1f7c2898bdb656b463b5ef2be95a77bf9b25b8f115fe98"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "536816239193f3ee1b0f22cb1d2252b517898bce9d790581cd1a94912fcebe70"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/03-senior-build-projects.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a432f87e133ef41bdf6b0ceaed05d05e07a6efbff960ea3cf7b5f0372f53f3f5"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c18987994b15b19bd304fde08969991aedb750ee0d06fc227db25b6f7c60ec4c"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "01eb5de9fa5767d671f7d3871e7b0030fb196f8acc6df5e962d92f88f7c751fa"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/01-code-review-mindset.md.txt",
+      "before_sha256": null,
+      "after_sha256": "19967d29935e9f16337f09bdffbeb0937297c0ac92cb284f9a0f8cbfd991c288"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md.txt",
+      "before_sha256": null,
+      "after_sha256": "5d6d35cdb0b070b2875ceb97c8ef431b448fe23d14ce73bfec9de3e927059087"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/03-maintainer-communication.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a2424b7db22a3ca3aa33c84f160d35e915b35f9fdd6f8a40195731c7099b3c08"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md.txt",
+      "before_sha256": null,
+      "after_sha256": "57d46e8e35a791946ddd367aa3672cb60ae27e39decafb3dc2a2c6de5e9081b0"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "e3425b71f8c5b3eb3f49023b447ac88fa4358f1ca092a3cea06c462694abb798"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/command-cheatsheet.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b9a0f6ed4218b2ab42d6665f1c452e0bc8920457d103cf8e66693f35d774a4ad"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/learning-rubrics.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a7b64bc56bb01c43b2cc9631ce77424b2af519c6fcd09e5ff28705964246f57b"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/risk-register.md.txt",
+      "before_sha256": null,
+      "after_sha256": "5f3eb4503362eeb21d1d74fafb585d491ed490a86f7f3639734a756ad5feeba9"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/verification-log.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9791fa2050705fa8fd1573497ad640fb5d82689205120c4badfa09a50be75e86"
+    },
+    {
+      "file": "docs/original/docs/upskill/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "10c62011489a88265295881a16909ec55da0dfc9dc392f9a880699260c5f0894"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Contracts/Contracts.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "52bc7955bcda95fe985c064f38aa5cfef17cf524debdf7113b89afbfaf39e8e9"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Data/HrisDbContext.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "6beaea0a16896fc56d7008cde3e230b3e2f567ea78c745fce2a4fc7106894e42"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Data/SeedData.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d6389990080c2a76236d8073be888917869c482ec55b9baacc85f102965341de"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/AuditLog.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d352526140542e09447c03a9b7609dbfa012fe29898f6a389aff60ae9c94fb92"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/Department.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "644be7f53f88e43443c4e47ccfe3579f095935c9167bea4fa4a64a508a86cb11"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/Employee.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "0f4eb2e79792916f074c80584586ec27cb62199a55cb43c0626eaff9df861032"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/Enums.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "4be91c4642b68f7ca822303d6f716b83c1eba0fdc549086ef6214cac2356fd36"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/JobRole.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d86f03ce0f185656110c3a611e8a48fd2388b08bbaa302ff08acbf7ad90f6adc"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/PtoRequest.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "3246ca6c827b6fd2fa059d446c0e5575e675c13a383cf9919ead36cfd23cb9ac"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Domain/UserAccount.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d6fed520f98e9ff0479bd4eaa9a4beaa85123de1ad8d15190346fd2e624e5be7"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Nethris.Api.csproj.txt",
+      "before_sha256": null,
+      "after_sha256": "1e7a0f3ba039f904b8fff4920c0ff6f4cc1172d4ac226b29b17f542cc6e29bb0"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Program.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "ec6f09e4d91b72e5d3c64a6c74ac6461aa93717d0cc6a030fc07e560e5ce2fc3"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Security/JwtTokenService.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "df2e988e90b87ee00a323f314f001fdb80aca8dc217bdca64b400804d7452044"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/Security/PasswordService.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "9a7ea67fdd4a60ebbab6280482a1088abd8d5114f5c05a6928a16945d361115a"
+    },
+    {
+      "file": "docs/original/server/Nethris.Api/appsettings.json.txt",
+      "before_sha256": null,
+      "after_sha256": "0ec0eaebe86e0343c96c3830f01fbf8dfc01239877d5ee4cc23fb03f9617f4ee"
+    },
+    {
+      "file": "docs/upskill/00-fast-track.md",
+      "before_sha256": "c24f0497788e14a57f02b8436705b5c60027a21604642d9be0934725a087dd13",
+      "after_sha256": "77d9565a9d92c29210c2ac9c50e01fd706e5f75f8507e6fe49503035d110abc8"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/01-system-map.md",
+      "before_sha256": "138797b8615f9efcf1362f252f746707c96e0c52e4ace9c30f47aff01093ccfc",
+      "after_sha256": "2ac409538bc036b23312238dc14bd46083b6e8c48af7c95322172ab13be616ff"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/02-file-reading-order.md",
+      "before_sha256": "f10290fbdd2cfd1d654adaf0b3f61b870622f01fd6ce2ff4bb8d1a8e8ecd53ee",
+      "after_sha256": "6e989b50f6c3bfe221e26e44e112712d1d0e8c12bd9747791fa483b27a2fcf92"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/03-domain-glossary.md",
+      "before_sha256": "a9e8a6822f1ff51a6af9e78e882970bc31094001fafca0a7bfb2088efd197445",
+      "after_sha256": "ff9c9a87d1e4ff31a0c2024bfedaaf8191ff699c449d8bc402b26de144c8621f"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md",
+      "before_sha256": "9b9f05472f73322eeb064e12f4df297ca8118bb81d9ca5e0abc83a5b28dd4974",
+      "after_sha256": "883ac3a454dd13da542487b1a904996532f65955dc90df5ea8c8a490d12c9aee"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/05-key-flows.md",
+      "before_sha256": "7a660b7fa2d85f73c3df38acc9febd14de6eb6b125418d736df21800365dce72",
+      "after_sha256": "84aa021e3b0fd860602e03c70a22753e4d65d20359ce2828ce71cf8057d5cf48"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/README.md",
+      "before_sha256": "7f2c2a510c18a2a8e11dc162bd2015fae3d4e3b5ffd83313859409639af1750c",
+      "after_sha256": "8ce483e43feee401deba3fe66e5a818373425ecaf1aa4ed9ccaee53850ddb86d"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/01-dotnet-runtime-model.md",
+      "before_sha256": "fd9b43add65f7a0342f3659d36849de183558e05ab5d9c5bce899f0f8dfa87be",
+      "after_sha256": "1c01c24a6c0b05acac984e980c8f2710d1c6a1ffe7ee44925a732342bc07882e"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md",
+      "before_sha256": "02856d6ece6c00489aa1bbc4f3d705cdaaf315d11c82829312c6150f212f9cba",
+      "after_sha256": "98438dc058140f346b81920b25c9f8c913b4879b56d02e20d3b2bcc1ae567468"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md",
+      "before_sha256": "ea06282dcc207b7fe146b76f68af2ba907b38dff1388150c9ae9b66b4a8e04f6",
+      "after_sha256": "eac4b9d98a84b7e3cf9a0c593845741a1d920efe0722398f81aa353bf05483b6"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md",
+      "before_sha256": "4be3e61ec11f073f5ffb7ff1f48c60b15ecc3eb2fed70dedf93d9425e9933649",
+      "after_sha256": "16e8b16d51ba0ef34215ecab5718386948d38fcf7b9743c38e74216d13dc3bf1"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/README.md",
+      "before_sha256": "5f688b051eefd4f6783342b613ba1a8068a6e7a57e75e8fc7321cea438e05954",
+      "after_sha256": "5ae04455d28763a2ca37ae3f2c9943a7e3641389c4e937c0dd6efc8de1afcbdb"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md",
+      "before_sha256": "8963710a24c55b4fe1028e53aabfd3199129e09ed60588c3dadeec44bbdef747",
+      "after_sha256": "4a8104841e1c31d231a1b1e620bd291c5134e32c77932f38b140e64abe004469"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md",
+      "before_sha256": "756cc27fa4eaa926311f542ec1837005acf28562ef89b34e5ad98d74df281823",
+      "after_sha256": "eb5efad2ae24111588c5005330e805c6fe7a2cfdc4f9070647fb301a7c94e0d0"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md",
+      "before_sha256": "472e6252803fda781a04f32f19d2d255392a196ef2c727a4fad2aa0aa2915103",
+      "after_sha256": "3a3a69fe0ffd80d2ad765e8a82597bbcfb2413ed8da0467ce9500af2ab23ae6d"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md",
+      "before_sha256": "193fb78387c8c9292e82a2246d3ba53673c53cba8863ab307b738182bec56426",
+      "after_sha256": "63c11c531ecdaec6b9ceaa57a730a0d0d8f6586cbb571831beb5b04836eb07a4"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md",
+      "before_sha256": "fa6ef7c4259734d034ec613f34e376e80dcae3ea3525f4e2acd94d2022bdbbac",
+      "after_sha256": "76bf2284524791d1002610792d722f041257c8b1e1b8ec07636ab6c889476145"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/06-architecture-critique.md",
+      "before_sha256": "8fd9ce1e9728c47cbd763ed2522416dbb7df7f20b711f1ce3dc00621c025b1bf",
+      "after_sha256": "ddbd1608144b84d61e7db61179b8b6ed0427dcda63b8e3107882cd08bfe96dc4"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/README.md",
+      "before_sha256": "6c8b8390ffc0280170af1b18fc3619d665ad68695c1d9d41c809cc370352caaf",
+      "after_sha256": "01f97974003c3dafd6aaa18f1d4c42096ca0138c368cda40b2b4647ea221d82e"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/01-annotation-drills.md",
+      "before_sha256": "a9e0243b0d51f269ce7a785f5bd8f7dde8d658341d481c9ef7e13c9622c76f6a",
+      "after_sha256": "7a4598504e48ab5b5ce1180d60bcbf40a4f87f86c32f65d25d20ef17a8593d2c"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/02-trace-tables.md",
+      "before_sha256": "26e68ca4221313067c11120a02774b92b4d315714e20bf9275954fb1bb815511",
+      "after_sha256": "2a5ea92bdd0fb9a0c05c7b93d1710db1bfb06497c8f4d0ca14b96c42e0640056"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md",
+      "before_sha256": "7e654d17faf76580fe92edeeae9b82c370d677b22b7128d53bcb2c4b25e97b54",
+      "after_sha256": "d7e07ba752c5c4fea8781e543c276ca6859e5835995fc65c6cfd953438674310"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/04-review-katas.md",
+      "before_sha256": "00013e63d0b6650ffeff3037189ca168045d4fd9879c3fc2eedf3db63f6851e5",
+      "after_sha256": "521346650b4b0a3e43f36b04a46c548ce9fc4eccd0c8a0e92042c4d0ae9a3a48"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/README.md",
+      "before_sha256": "da02c6d798bd22340dee1172eb86ac6bace399466422907fe286c1ef99fbb2e6",
+      "after_sha256": "677c6b7ad7b095356f5fb917e51434f05e59f6beec11d95440ee99f5f61f7b6a"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/01-testing-strategy.md",
+      "before_sha256": "78fdcd7d2499522b687622177c5d658e1334254fd57009730a81e4f1363c4093",
+      "after_sha256": "60f0ea19b877a4d8a645cd363b729065e4434073a20c9edaa856f3ff6cef0288"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/02-writing-tests-here.md",
+      "before_sha256": "221b569366bd235dc7c76a18a207b267a6e09e82d5c13218fcf2040e6d6ccb32",
+      "after_sha256": "62010da2cf59b2f135908950399122328929b816d6cc2ba45edc80dba26a3b3e"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/03-systematic-debugging.md",
+      "before_sha256": "a967e0333106f897db0cc9ac39c9248641250a8fc3b7a63fef26a30bd5f84b1f",
+      "after_sha256": "3e243600fe25e45f798824fbc78e8e3d92f37af3f050c7ae3d69da947583738d"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/04-performance-thinking.md",
+      "before_sha256": "b4a68b3a66de5d7a02ab78925b153cf17e80647d4e53372011a2ffea63804732",
+      "after_sha256": "6a04a3c646f04b75ca99f1d16f071f78821482b37d8a47f2876c75c6d82d4afe"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/05-security-checklist.md",
+      "before_sha256": "68c872c2c69d00388b545dcad1cb18a7a12d364cd22b27bea9c11ff68c90c3d9",
+      "after_sha256": "1e6c6e7290cbc612f04b6d6460d7d4d32bc6a55580b0b9f5b6834991612a1d62"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/06-observability-and-operations.md",
+      "before_sha256": "ebc71a63d8af8a05338b5e447aa6cdfcd92b0d69902853e12c301732a74ab478",
+      "after_sha256": "45ef47e4652f894915b9bdd4ed131fc8645bc5bbdad49a2d96669c02060a4d5f"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/README.md",
+      "before_sha256": "279bb04e111a245a81d0dd93353cf3134da88dcd034a830356dc3e3389c66f5e",
+      "after_sha256": "fe39439c8097e278a6e63e99a356d734a6d73bc382569fa896c4704ac7542478"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/01-good-first-tickets.md",
+      "before_sha256": "df799c7b1f04f3db9b1f7c2898bdb656b463b5ef2be95a77bf9b25b8f115fe98",
+      "after_sha256": "b9a360d31b875a018adfb281bb0b621755fd7ebb7e7a0be0d73192d423f16fb4"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md",
+      "before_sha256": "536816239193f3ee1b0f22cb1d2252b517898bce9d790581cd1a94912fcebe70",
+      "after_sha256": "e435177e6ed0204610e5aa8b5378d196725619ec702ea24e9bba7a640cd037fc"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/03-senior-build-projects.md",
+      "before_sha256": "a432f87e133ef41bdf6b0ceaed05d05e07a6efbff960ea3cf7b5f0372f53f3f5",
+      "after_sha256": "1846db33b3479d23df8a41e8bcdbd3de1db39b3dfc0af16f8b8a5fd383d0ee73"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md",
+      "before_sha256": "c18987994b15b19bd304fde08969991aedb750ee0d06fc227db25b6f7c60ec4c",
+      "after_sha256": "3d57efdcf26c5d12704994e4b55e489ab975aa126e646578401edbe783397cf2"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/README.md",
+      "before_sha256": "01eb5de9fa5767d671f7d3871e7b0030fb196f8acc6df5e962d92f88f7c751fa",
+      "after_sha256": "ba6355f65ef44f4821548f95fb7cacf4beead464de09e714679efa463d06842a"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/01-code-review-mindset.md",
+      "before_sha256": "19967d29935e9f16337f09bdffbeb0937297c0ac92cb284f9a0f8cbfd991c288",
+      "after_sha256": "1a8c4cadae3d903c2f1d2399fb6e5ab21548fafd4d36d6950b51d0e0f9104602"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md",
+      "before_sha256": "5d6d35cdb0b070b2875ceb97c8ef431b448fe23d14ce73bfec9de3e927059087",
+      "after_sha256": "d3dbb12f1220d4f7bc418aaa497c48316d24e0269f94cee11ad1735ad4745616"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/03-maintainer-communication.md",
+      "before_sha256": "a2424b7db22a3ca3aa33c84f160d35e915b35f9fdd6f8a40195731c7099b3c08",
+      "after_sha256": "70c69919994d51ad64d219b3c75a74b7e831123b2cbc9fb4b7d204f8e56b58b8"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md",
+      "before_sha256": "57d46e8e35a791946ddd367aa3672cb60ae27e39decafb3dc2a2c6de5e9081b0",
+      "after_sha256": "cf8039c2c84d884dd4eaa9b7d57668e2bcd0c78cd4f13351349f4daaab0e91a3"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/README.md",
+      "before_sha256": "e3425b71f8c5b3eb3f49023b447ac88fa4358f1ca092a3cea06c462694abb798",
+      "after_sha256": "798411bb0ced1259d9402a69bdb54c51e037cf98fbfe5186658313e0fbaa34cf"
+    },
+    {
+      "file": "docs/upskill/08-reference/command-cheatsheet.md",
+      "before_sha256": "b9a0f6ed4218b2ab42d6665f1c452e0bc8920457d103cf8e66693f35d774a4ad",
+      "after_sha256": "2e68d7348ab3b3665ac093a22be0f9a0d55d4b6de03a7f9e8f8d46fa8502d73c"
+    },
+    {
+      "file": "docs/upskill/08-reference/learning-rubrics.md",
+      "before_sha256": "a7b64bc56bb01c43b2cc9631ce77424b2af519c6fcd09e5ff28705964246f57b",
+      "after_sha256": "d538d0b89e285139f99c64f11dcc38c0d1090233866f021c09924d36e758065d"
+    },
+    {
+      "file": "docs/upskill/08-reference/risk-register.md",
+      "before_sha256": "5f3eb4503362eeb21d1d74fafb585d491ed490a86f7f3639734a756ad5feeba9",
+      "after_sha256": "7d63a1300e17a97deef1ae368448225e324ab5f38aa076bb9153bc124610cb43"
+    },
+    {
+      "file": "docs/upskill/08-reference/verification-log.md",
+      "before_sha256": "9791fa2050705fa8fd1573497ad640fb5d82689205120c4badfa09a50be75e86",
+      "after_sha256": "f8180a99f4aa620b1acc92af3c40f6d818a20eed9219419f7d36a5203f4a79c7"
+    },
+    {
+      "file": "docs/upskill/README.md",
+      "before_sha256": "10c62011489a88265295881a16909ec55da0dfc9dc392f9a880699260c5f0894",
+      "after_sha256": "654af2cf2b4d1e298a03c8b9cad4ec0e8aaf3b65c097a55c2d9c0d55b5c11a4c"
+    },
+    {
+      "file": "global.json",
+      "before_sha256": null,
+      "after_sha256": "75ad142281ad3f65a55376b9e02259611bc0eb64400c61493668a75b72390881"
+    },
+    {
+      "file": "scripts/check_api.py",
+      "before_sha256": null,
+      "after_sha256": "32449e86986bc1e5fe29f5e6f14d38e2cb411539564451af0166b962851d222f"
+    },
+    {
+      "file": "scripts/check_browser.py",
+      "before_sha256": null,
+      "after_sha256": "306e484f4162564bf541af84b52486ad4c007dc226063328b51d66bf506c83d3"
+    },
+    {
+      "file": "scripts/learning_server.py",
+      "before_sha256": null,
+      "after_sha256": "383677d3fddbba686659465c6711dc86177f74d5b2707815a417c1085f63d48a"
+    },
+    {
+      "file": "scripts/package.ps1",
+      "before_sha256": null,
+      "after_sha256": "8ccf0e9bcdc20185f6af32da355fefa0b17117dee0500cc0291c003c716ff7bf"
+    },
+    {
+      "file": "scripts/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "scripts/start.ps1",
+      "before_sha256": null,
+      "after_sha256": "85fe55253811085fdef83dac98bd9df1059ad6ebfac61566df14d5e25d60a72d"
+    },
+    {
+      "file": "server/Nethris.Api/Contracts/Contracts.cs",
+      "before_sha256": "52bc7955bcda95fe985c064f38aa5cfef17cf524debdf7113b89afbfaf39e8e9",
+      "after_sha256": "8790fa79562e51aaa8230d7389206949a587ae60db85c5ff16419fa400ad84dd"
+    },
+    {
+      "file": "server/Nethris.Api/Contracts/WorkshopContracts.cs",
+      "before_sha256": null,
+      "after_sha256": "d0e06682346c9a768b894d2152f3c70d9f9b2885f437c5b06d59409e4553e67b"
+    },
+    {
+      "file": "server/Nethris.Api/Data/HrisDatabase.cs",
+      "before_sha256": null,
+      "after_sha256": "5b1a3dc3e7f861a8b3bd7cf16fe2a9a27045a14036bf6ff3aecae657d79078ce"
+    },
+    {
+      "file": "server/Nethris.Api/Data/HrisDbContext.cs",
+      "before_sha256": "6beaea0a16896fc56d7008cde3e230b3e2f567ea78c745fce2a4fc7106894e42",
+      "after_sha256": "fc2c097d4a2709c45b8a0bda5722d987aee3557666e1528f44df0ac54e4a384f"
+    },
+    {
+      "file": "server/Nethris.Api/Data/SeedData.cs",
+      "before_sha256": "d6389990080c2a76236d8073be888917869c482ec55b9baacc85f102965341de",
+      "after_sha256": "6e88cb6f32e4e640309132d3311cbcfa4dff9d61d8240fdc12a78c5cac17f549"
+    },
+    {
+      "file": "server/Nethris.Api/Data/WorkshopSeed.cs",
+      "before_sha256": null,
+      "after_sha256": "4e52464e9ec1423bb88142ed2d54ef57d9d7d3f5f03e78c399a6e29e7a10317c"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/Department.cs",
+      "before_sha256": "644be7f53f88e43443c4e47ccfe3579f095935c9167bea4fa4a64a508a86cb11",
+      "after_sha256": "b582c348e5198ea54e12bddf5bc5eec0d5007b8ea68d6b004b1113444d1298b0"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/Employee.cs",
+      "before_sha256": "0f4eb2e79792916f074c80584586ec27cb62199a55cb43c0626eaff9df861032",
+      "after_sha256": "a11ba8044be0f36de47339f5b76ee42efa11c59d1710b489b76768c2fa058292"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/HrisPeople.cs",
+      "before_sha256": null,
+      "after_sha256": "a4f6cdec3c1a19fdadbd0875ae82ccbc3cb648da27b87264d501d71428a5e1bb"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/HrisPto.cs",
+      "before_sha256": null,
+      "after_sha256": "990e6eec0b0ee0b0fd720a97ae2f6df45ce13cb0ed6b3b5697da2841c3548430"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/HrisRules.cs",
+      "before_sha256": null,
+      "after_sha256": "91b33e6ed080552c7a17c098c1be5751c677b1f6c6e00b54493c945f00d7c19b"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/JobRole.cs",
+      "before_sha256": "d86f03ce0f185656110c3a611e8a48fd2388b08bbaa302ff08acbf7ad90f6adc",
+      "after_sha256": "4e5b4f7df6a5872a9c0d7bb6eb5d1c83f1636c554b67cda79a438973fef30e66"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/PtoRequest.cs",
+      "before_sha256": "3246ca6c827b6fd2fa059d446c0e5575e675c13a383cf9919ead36cfd23cb9ac",
+      "after_sha256": "6eaf1bc8e811011aa2c8f99fe2b70b76bbde81fca17771d2f70d0fad7875df5d"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/UserAccount.cs",
+      "before_sha256": "d6fed520f98e9ff0479bd4eaa9a4beaa85123de1ad8d15190346fd2e624e5be7",
+      "after_sha256": "152c6f538810dc3defacb57e4c4cbd132fc6cf3fca643dbedb4cdc4dadbfaa73"
+    },
+    {
+      "file": "server/Nethris.Api/Domain/WorkshopModels.cs",
+      "before_sha256": null,
+      "after_sha256": "70fa9bbe4c7ab556a2a87debe5057793178fa24963f234f53193bb9e270bea76"
+    },
+    {
+      "file": "server/Nethris.Api/HrisApi.cs",
+      "before_sha256": null,
+      "after_sha256": "4d6f8d9ea22e624aad654a09b62073adddc1a926b5b9d9dd9156846e04a4e4a1"
+    },
+    {
+      "file": "server/Nethris.Api/Nethris.Api.csproj",
+      "before_sha256": "1e7a0f3ba039f904b8fff4920c0ff6f4cc1172d4ac226b29b17f542cc6e29bb0",
+      "after_sha256": "c50429de02b6901089727bd7a3018dd5448d24e0c993845beba9e68cf2b6f836"
+    },
+    {
+      "file": "server/Nethris.Api/Program.cs",
+      "before_sha256": "ec6f09e4d91b72e5d3c64a6c74ac6461aa93717d0cc6a030fc07e560e5ce2fc3",
+      "after_sha256": "9f516ae375a74752a61b3e7a83e7dc9863ccb6c4c937a0af363d0008388df3b7"
+    },
+    {
+      "file": "server/Nethris.Api/Security/HrisAuth.cs",
+      "before_sha256": null,
+      "after_sha256": "ebc93223fd38dd20e47fcd06304fa51511ba226ef52dd474778aed12de3ef3dc"
+    },
+    {
+      "file": "server/Nethris.Api/Security/JwtTokenService.cs",
+      "before_sha256": "df2e988e90b87ee00a323f314f001fdb80aca8dc217bdca64b400804d7452044",
+      "after_sha256": "b2bbd705d792c54eb1be2683fa1f5934593e7c111dd4c146281bf153da6f507e"
+    },
+    {
+      "file": "server/Nethris.Api/Security/PasswordService.cs",
+      "before_sha256": "9a7ea67fdd4a60ebbab6280482a1088abd8d5114f5c05a6928a16945d361115a",
+      "after_sha256": "edf720dbc907adbcb77db55e62ea786cc3e093b555e4c5e1a05f76e5b7828ff7"
+    },
+    {
+      "file": "server/Nethris.Api/appsettings.json",
+      "before_sha256": "0ec0eaebe86e0343c96c3830f01fbf8dfc01239877d5ee4cc23fb03f9617f4ee",
+      "after_sha256": "776f7d88b2ffab52e4503cabebace3e02e386b1549e53a7f5769c6b8ccd4778f"
+    },
+    {
+      "file": "server/Nethris.Api/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "1a76013a38e6ef16b46105a93e8f6f4fa041dd1295fd5873ebb170eaf3ad3f10"
+    },
+    {
+      "file": "tests/Nethris.Tests/FoundationTests.cs",
+      "before_sha256": null,
+      "after_sha256": "4a3fc93443d06a40548e3ec4470312481206a8d589ee6fd2586c786caba118f3"
+    },
+    {
+      "file": "tests/Nethris.Tests/Nethris.Tests.csproj",
+      "before_sha256": null,
+      "after_sha256": "410068dafeb72932e13f71ec3dbe0f195de5581867d28af8fc984d7371dd36d2"
+    },
+    {
+      "file": "tests/Nethris.Tests/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "32754859db72587a37478981cf873b6ebe1bfc9b519f7b18b597e855766eb370"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "4dd99e2d5d7d9db4081e677a5ce71ad05c228416d7601929b76de34ae0297a6e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "6b0321e2c114066ab930e5c02a1a0b151ccec76451e6df2222076b4b752bd197"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9d93dc32c88939cb1e5a91588f88dcdbabd7b2c478b830ce8875e2fe2f9be237"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "8953c8484d69d182c2e21f262abb0f8166b92ec01c6e4882f8a414bb7b9012c7"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e789396a175129eb587b359ed716acc9db53df6d1a5ab1f0f9bbacae832853ae"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "937dffcb8bf37cae366c0fd7eaa3fca3696a0ef8ec8af11b43bbc73098c93f2e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f5eed24b36827819395240720bad9e9b3cb46e89fe5ae50b8f7cf29860774d89"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "bca23cc6a9a73b1015ddc711ce37e44ddff0f81631ac960299db1eb942ffd3a9"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "d2fc5ca34b846584e88dd6291abd92d6adfde00d260aff2f410ad950243dff93"
+    }
+  ],
+  "limits": [
+    "Loopback-only single-organization SQLite learning application; no production hosting, payroll, external HR service, notification delivery, account recovery or production abuse-control system.",
+    "PTO uses calendar dates including weekends, quarter-hour amounts, at most eight hours per date and an inclusive span of at most 31 dates. This is simplified workshop policy.",
+    "Approved PTO is immutable: no approved cancellation/refund. Pending requests can be edited/deleted only before decisions; cancellation retains history. Manager reassignment requires cancellation/resubmission when captured and current managers differ.",
+    "Limits: 2,000 employees, 200 departments, 200 job roles, 10,000 PTO requests and 32 manager levels. Selectors load bounded reference lists; SQLite NOCASE indexes use SQLite collation semantics.",
+    "Browser sessions and pending operation snapshots stay in memory; reload requires login and loses the browser retry snapshot. Server sessions last eight hours; CRUD receipts last 24 hours. Setup/login/logout are outside the receipt protocol.",
+    "Admin account provisioning and password reset are implemented; self-service password change, recovery and federated identity are exercises or out of scope.",
+    "Unknown database files are refused. There is no automatic migration or reset of original data; schema changes require a new learning path or a separately reviewed migration.",
+    "Original files and historical course pages are preserved and labeled. Proposed exercises are not counted as implemented functionality; focused browser checks are not an exhaustive accessibility or security audit.",
+    "One synthetic temporary SQLite file from an earlier failed cleanup remains outside the project because automatic approval review blocked its removal. Cleanup of an older generated browser bundle was also blocked, so verification used a fresh package folder and preserved the earlier build. The harness connection-lifetime bug was corrected; see checks/nethris/cleanup-limitation.json in the central audit workspace."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T14:01:52.133874+00:00"
+}

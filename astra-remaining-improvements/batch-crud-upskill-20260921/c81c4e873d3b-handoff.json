@@ -1,0 +1,39 @@
+﻿{
+  "id": "c81c4e873d3b",
+  "project": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+  "finding": "The advertised Python comment route is commented scaffold; active TypeScript Express DELETE /articles/:slug/comments/:id ignored the parent slug and could delete an owned comment through the wrong article URL.",
+  "implementation": "CommentRepository.delete now receives slug and uses Prisma findFirst with id plus article.slug before the existing author check; articles route passes req.params.slug.",
+  "changedFiles": [
+    "fastapi-realworld-example-app/src/repositories/CommentRepository.ts",
+    "fastapi-realworld-example-app/src/routes/articles.ts",
+    "tests/comment-delete-boundary.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/CommentRepository.ts.original.txt",
+    "astraupskill/snapshots/articles.ts.original.txt"
+  ],
+  "courseFiles": [
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "python -X utf8 astra-remaining-improvements/run_project_check.py c81c4e873d3b crud-b03-rewritepy2js-runtime1 -- node --experimental-vm-modules --test tests/comment-delete-boundary.test.mjs",
+    "passed": true,
+    "executedTests": 4,
+    "details": "Actual staged repository loaded through the project-local copied TypeScript VM loader; explicit Prisma double verified exact relation query, zero-write wrong slug, ownership rejection, and route slug wiring."
+  },
+  "limitations": [
+    "No Express mount, auth middleware, real Prisma/PostgreSQL, native package suite, transaction, or concurrency evidence.",
+    "No claim of tenant isolation or malformed-id validation."
+  ],
+  "snapshotHashes": {
+    "astraupskill/snapshots/CommentRepository.ts.original.txt": "5BD338D7F13E47EE0960A541262F90420AF895F97020C9B4E7A9F66013EC3388",
+    "astraupskill/snapshots/articles.ts.original.txt": "6F76AA2AF476C77CADA5BB33567F2D9F5153B69FD33D3DD7258269FEB2269635"
+  }
+}

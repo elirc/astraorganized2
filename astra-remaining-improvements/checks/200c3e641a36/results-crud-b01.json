@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww43",
+      "id": "200c3e641a36",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-status.test.mjs",
+        "tests/runtime-note-service.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\200c3e641a36",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-21T23:37:53.244800+00:00",
+      "status": "complete",
+      "log": "astra-crud-b01-services.log",
+      "pid": 29800,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-21T23:37:59.317218+00:00",
+      "elapsedSeconds": 6.03
+    }
+  ],
+  "limits": [
+    "Vitest command is unrun because isolated dependency installation was unavailable",
+    "Portable VM tests use explicit repository/database contracts; live PostgreSQL race coverage remains for review",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed.",
+    "Status comparison does not detect ACTIVE-to-ARCHIVED-to-ACTIVE changes, body edits or permission changes between read and write."
+  ]
+}

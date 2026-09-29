@@ -1,0 +1,108 @@
+[
+ {
+  "wave": 1,
+  "stage": "71",
+  "name": "newcodexJS/20-marketplace-platform",
+  "rel": "newcodexJS/20-marketplace-platform",
+  "tests": 4,
+  "words": 8377,
+  "changes": 36,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\20-marketplace-platform",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-20-marketplace-platform",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/71",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/20-marketplace-platform/astraupskill",
+  "batch": "B08"
+ },
+ {
+  "wave": 1,
+  "stage": "72",
+  "name": "recipeview",
+  "rel": "recipeview",
+  "tests": 3,
+  "words": 7690,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\recipeview",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "recipeview",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/72",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "recipeview/astraupskill",
+  "batch": "B08"
+ },
+ {
+  "wave": 1,
+  "stage": "73",
+  "name": "calendar+jobtrack",
+  "rel": "calendar+jobtrack",
+  "tests": 92,
+  "words": 7910,
+  "changes": 13,
+  "abs": "C:\\Users\\Owner\\Desktop\\calendar+jobtrack",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "calendar-jobtrack",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/73",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "calendar+jobtrack/astraupskill",
+  "batch": "B08"
+ },
+ {
+  "wave": 1,
+  "stage": "74",
+  "name": "devdeck",
+  "rel": "devdeck",
+  "tests": 62,
+  "words": 7465,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\devdeck",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "devdeck",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/74",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "devdeck/astraupskill",
+  "batch": "B08"
+ },
+ {
+  "wave": 1,
+  "stage": "75",
+  "name": "_Organized Desktop/08 App And Product Projects/job track",
+  "rel": "_Organized Desktop/08 App And Product Projects/job track",
+  "tests": 3,
+  "words": 7892,
+  "changes": 21,
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\job track",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx",
+   "ts"
+  ],
+  "slug": "job-track",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/75",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "_Organized Desktop/08 App And Product Projects/job track/astraupskill",
+  "batch": "B08"
+ }
+]

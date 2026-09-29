@@ -1,0 +1,20 @@
+{
+  "project": "gitvg/storefront",
+  "id": "f9326daabc23",
+  "command": [
+    "pnpm.cmd",
+    "db:generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+  },
+  "startedAt": "2026-09-19T17:01:50.473187+00:00",
+  "status": "complete",
+  "log": "resume14-generate-01.log",
+  "pid": 16416,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T17:03:26.745123+00:00",
+  "elapsedSeconds": 96.22
+}

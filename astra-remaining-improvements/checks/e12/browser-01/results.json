@@ -1,0 +1,76 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "explicit sign-in without persisted credentials",
+      "passed": true
+    },
+    {
+      "name": "search and bounded list pagination",
+      "passed": true
+    },
+    {
+      "name": "flag creation renders hostile text literally",
+      "passed": true
+    },
+    {
+      "name": "stale writes preserve changed fields and refresh unedited fields",
+      "passed": true
+    },
+    {
+      "name": "protected changes require acknowledgment of the current draft",
+      "passed": true
+    },
+    {
+      "name": "environment create edit and reference-safe delete",
+      "passed": true
+    },
+    {
+      "name": "project create edit and delete",
+      "passed": true
+    },
+    {
+      "name": "segment create and edit typed constraints",
+      "passed": true
+    },
+    {
+      "name": "strategy create edit and scoped segment reference",
+      "passed": true
+    },
+    {
+      "name": "variant defaults typed JSON payload update and delete",
+      "passed": true
+    },
+    {
+      "name": "dependency creation immutable review and removal",
+      "passed": true
+    },
+    {
+      "name": "one-time token display dismissal and revocation",
+      "passed": true
+    },
+    {
+      "name": "lost creation response blocks automatic retry and retains draft",
+      "passed": true
+    },
+    {
+      "name": "archived flag deletion cascades owned strategy and releases segment",
+      "passed": true
+    },
+    {
+      "name": "context playground evaluates accepted configuration",
+      "passed": true
+    },
+    {
+      "name": "member permissions allow scoped writes and deny global creation",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "01-desktop.png",
+    "02-conflict-review.png",
+    "03-variant-editor.png",
+    "failure.png"
+  ],
+  "seconds": 257.51
+}

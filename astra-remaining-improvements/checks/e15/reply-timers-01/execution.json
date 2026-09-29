@@ -1,0 +1,17 @@
+{
+  "command": [
+    "C:\\Python313\\python.exe",
+    "-m",
+    "pytest",
+    "tests/test_reply_timers.py",
+    "tests/test_crud_and_files.py",
+    "tests/test_mvp.py",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\reply-timers-01\\pytest-temp",
+    "--junitxml",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\reply-timers-01\\results.xml"
+  ],
+  "exitCode": 0,
+  "seconds": 283.75
+}

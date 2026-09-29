@@ -1,0 +1,14 @@
+[
+  {
+    "project": "68",
+    "check": "setup-migrate",
+    "exit_code": 0,
+    "log": "logs/68-setup-migrate.log"
+  },
+  {
+    "project": "68",
+    "check": "setup-seed",
+    "exit_code": 0,
+    "log": "logs/68-setup-seed.log"
+  }
+]

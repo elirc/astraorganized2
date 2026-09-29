@@ -1,0 +1,21 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Linear",
+  "id": "b2f277b889f9",
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9\\web",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:34:05.913394+00:00",
+  "status": "complete",
+  "log": "orchestration-web-install-20260913.log",
+  "pid": 19672,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:35:54.001136+00:00",
+  "elapsedSeconds": 108.09
+}

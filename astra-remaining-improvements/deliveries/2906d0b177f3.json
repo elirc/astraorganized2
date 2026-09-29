@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+  "id": "2906d0b177f3",
+  "summary": [
+    "Bind deployment environment lookup to the submitted application ID so cross-application environment pairs cannot create deployment rows.",
+    "Preserve existing not-found, permission, and deployment-lock behavior while proving zero creation on ownership mismatch."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2906d0b177f3/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+        "id": "2906d0b177f3",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-deployment-ownership.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2906d0b177f3",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:05:03.609655+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 19124,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:05:15.537352+00:00",
+        "elapsedSeconds": 11.92
+      }
+    ],
+    "limits": [
+      "Route is executed with explicit NextResponse, Zod, Prisma, session, RBAC, and platform-service doubles through a local VM loader.",
+      "No live Next, Prisma SQL, database foreign key, authentication middleware, audit persistence, or concurrency test was run.",
+      "Other deployment creation callers and GET behavior are unchanged; the guard validates the relationship at lookup time and does not make later writes atomic."
+    ]
+  },
+  "courseWords": 1827,
+  "courseFiles": 9,
+  "courseLinksChecked": 12,
+  "files": [
+    {
+      "file": "app/api/deployments/route.js",
+      "before_sha256": "2bef1ec8fce2e3e428fd1ece2f2275bdc8588f4cb5a308ae21d881a1bbe84ff8",
+      "after_sha256": "5a9426cbd90dd8ff0e0a2d31b4a83952939426e6b8bfda66a542a3f9373c1d45"
+    },
+    {
+      "file": "tests/runtime-deployment-ownership.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "ce6f5621fa3374e6da0b39f7a7b81622a9046d3a35330745316e08f70a281b01"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/app-api-deployments-route.js.before",
+      "before_sha256": null,
+      "after_sha256": "2bef1ec8fce2e3e428fd1ece2f2275bdc8588f4cb5a308ae21d881a1bbe84ff8"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "bc0ae0027eec684b3f29259da44f5be73e7359314d2405d2fbb35e30acc6485d"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "14efd14e8a45be8d7f45e96453f7ae2131f5bb2fe3c05500f28c320623f4adf1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "27bca08e1471ac4b971e125b33e761087b3d818d1f75a701b652cb2278246583"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "a5248b8dceeaedc0d0a8a449d466be586bf5287cfc613334ad4c4fbd833db418"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e4297bd541c231d6e9679f5464cefd80e4aa4dabe505034e15d0419349c8e99b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "60c812460d8ccf1aeb6ca1be0977e7862f89b61e0b81c52b368484e21d8ed97f"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4c5dcb59ce8a5671fb315c7f304467fa3bebfa9bb1a2f645b27d44cf9b9220f1"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5764b55ccb25273dd4b2d23935efda4bed42d6191b348c8843594b381db1a24d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ec52f52cc4b49b5b96dc1614bdd59399bc940c1af4ddb41cca3ed32cab233252"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "83592d630e427c5467e6fbeec3c0c5ef4f9e4ee2e55f2067165c3d8f407c2271"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2574f49c81c047809f5dde98da779a4aa6120f652b798c96d1220ef2a98eb28d"
+    }
+  ],
+  "limits": [
+    "Route is executed with explicit NextResponse, Zod, Prisma, session, RBAC, and platform-service doubles through a local VM loader.",
+    "No live Next, Prisma SQL, database foreign key, authentication middleware, audit persistence, or concurrency test was run.",
+    "Other deployment creation callers and GET behavior are unchanged; the guard validates the relationship at lookup time and does not make later writes atomic."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:30:25.397088+00:00"
+}

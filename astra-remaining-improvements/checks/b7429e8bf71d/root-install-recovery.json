@@ -1,0 +1,8 @@
+{
+  "observedAt": "2026-09-12T23:36:23.475639+00:00",
+  "priorLabel": "install-01",
+  "priorPid": 29780,
+  "observed": "PID absent; original agent was interrupted; central record still running, empty log, node_modules/.package-lock.json missing",
+  "interpretation": "Interrupted/incomplete installation; not a pass",
+  "next": "fresh root-install-02"
+}

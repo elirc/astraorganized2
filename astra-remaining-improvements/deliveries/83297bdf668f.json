@@ -1,0 +1,143 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildecom",
+  "id": "83297bdf668f",
+  "summary": [
+    "Protect updateOrderStatus from stale status overwrites by adding the read status to the Prisma update predicate.",
+    "Map only Prisma P2025 to a 409 ORDER_STATUS_CHANGED error before event, audit, and buyer notification side effects while rethrowing unrelated persistence errors.",
+    "Add six production-source runtime cases using the real transition policy and ApiError class, plus a source-specific CRUD course on state, seller scope and side effects."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/83297bdf668f/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/02 Build Projects/buildecom",
+        "id": "83297bdf668f",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-order-status.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\83297bdf668f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:48:29.218555+00:00",
+        "status": "complete",
+        "log": "crud-b02-astra-runtime.log",
+        "pid": 30196,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:48:42.121194+00:00",
+        "elapsedSeconds": 12.9
+      }
+    ],
+    "limits": [
+      "Vitest, full typecheck, live Prisma, HTTP, Stripe, outbox, transaction isolation, and deployed schema support for extended unique filters were not run.",
+      "Runtime tests execute real service source with explicit persistence and framework contracts.",
+      "The guard covers updateOrderStatus status freshness only; it does not claim checkout inventory, refund idempotency, or unrelated order mutation safety.",
+      "Status equality does not detect unrelated field or seller-split changes, or a status changing away and back. The transaction double does not prove real rollback; HTTP role/session and Zod validation are outside the executed suite."
+    ]
+  },
+  "courseWords": 2836,
+  "courseFiles": 9,
+  "courseLinksChecked": 21,
+  "files": [
+    {
+      "file": "src/server/orders/service.ts",
+      "before_sha256": "c94f3de701d1e580e4ad170d94b8dfc74e5fde365e5d9baba2fb6a9eb22d7ccc",
+      "after_sha256": "d1c4142e069ee32ce7d69228ab105a53c8a761959ec1e8afe552fed2d884814d"
+    },
+    {
+      "file": "tests/runtime-order-status.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "37bcc47346216933bb8f4f51f59f999a57361ddad06071d7255063996031d63c"
+    },
+    {
+      "file": "tests/helpers-load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-server-orders-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "c94f3de701d1e580e4ad170d94b8dfc74e5fde365e5d9baba2fb6a9eb22d7ccc"
+    },
+    {
+      "file": "astraupskill/evidence/runtime-order-status.log",
+      "before_sha256": null,
+      "after_sha256": "ec6971a226cad16bec36fddf8e06f002a3245bb0f7ada254d452d6d5a7d5baf9"
+    },
+    {
+      "file": "astraupskill/evidence/results-crud-b02.json",
+      "before_sha256": null,
+      "after_sha256": "34d18d11d73fa0b1d76f2c916a5f603432971cafb3ccaa53e316df390e046ec1"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "403d35d2c2a56f62d4dde2a5523c4d607d4003d7ce9f2b3f79db447ea7d96aa7"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "c55570ce4a73a508cf59a1c3b82c992c4a243685bc6eb9537071dbf342fdd875"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "23f7f122c23432c37a77e9fa062328cffe6543cad16858f7107f541296eb8d18"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f1bff7d1d971c79ba4876658b5f6e3e56a2c5a44000883d5e09744d191e27590"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "308cb580c0a22cb8e705655993c5839b89a38b98fddf5652d0b2ec69041b6d80"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "95769c2ad50818d264ed9cbe55394d1445c22441a17c952bccd6c1f3a5805398"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1bf34146c8f1f970233354173cbfb2bbee96aa2e77d5625f7a2cacab757b67ee"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "c597693fa7a36c546ba3b57e7a50fc733caf0332c76e2815b3e4af7d83f5931f"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "bc219ab8a311562a8adee2ac29b969f069dc347df0c2e829dd02b0bf6cb6071c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "c4874cfe59bb8f9727e5b9807b1f6b780099f8b5e895bd7005f251c68b1d27c4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8c943efe20d08e18d4edf6ed51da3325583160632023764ca3e65b23e8483fd9"
+    }
+  ],
+  "limits": [
+    "Vitest, full typecheck, live Prisma, HTTP, Stripe, outbox, transaction isolation, and deployed schema support for extended unique filters were not run.",
+    "Runtime tests execute real service source with explicit persistence and framework contracts.",
+    "The guard covers updateOrderStatus status freshness only; it does not claim checkout inventory, refund idempotency, or unrelated order mutation safety.",
+    "Status equality does not detect unrelated field or seller-split changes, or a status changing away and back. The transaction double does not prove real rollback; HTTP role/session and Zod validation are outside the executed suite."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:53:46.229441+00:00"
+}

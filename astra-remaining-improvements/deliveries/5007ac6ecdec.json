@@ -1,0 +1,141 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww1",
+  "id": "5007ac6ecdec",
+  "summary": [
+    "Guard review-item decisions with organization, id, and PENDING at the write boundary.",
+    "Return HTTP 409 on a lost state transition before revocation or audit side effects.",
+    "Verify the real TypeScript service with a dependency-free VM test lab."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5007ac6ecdec/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww1",
+        "id": "5007ac6ecdec",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-review-cycle.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5007ac6ecdec",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:00:23.816637+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 34304,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:00:31.689674+00:00",
+        "elapsedSeconds": 7.87
+      }
+    ],
+    "limits": [
+      "Six runtime cases execute actual review service, HttpError and the changed repository predicate builder. Explicit database/transaction/repository adapters verify arguments and ordering; no native Prisma provider or concurrent database run.",
+      "The conditional write guards organization, item id and PENDING, but does not atomically guard review-cycle OPEN status. Native rollback, route authorization and simultaneous reviewer behavior remain unexecuted.",
+      "Normal application typecheck and provider-backed integration were not run after dependency cleanup."
+    ]
+  },
+  "courseWords": 1897,
+  "courseFiles": 9,
+  "courseLinksChecked": 21,
+  "files": [
+    {
+      "file": "src/repositories/reviewCycleRepository.ts",
+      "before_sha256": "027398a2997fbccef6a1e327d1a2b42a93bdab9eaf344a0a4f5c144dbe1cb83a",
+      "after_sha256": "ced74cdde9180944236e781c1a838e26cb7be1d9cb7c992663724630d5b7f5e2"
+    },
+    {
+      "file": "src/services/reviewCycleService.ts",
+      "before_sha256": "7981afc5bdeac1c0cd32dfc5803ca3b103078bb0544ce4a1c85f6350b968fcd1",
+      "after_sha256": "057e03acae097fe840a60d0132afd0af329f5bdf7defbef4c03e7b37152dd085"
+    },
+    {
+      "file": "tests/runtime-review-cycle.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "98a09c6cbf59b8841b57d2d63d9e43cf6a3fdb7c39dcf2a07023a1900203e606"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src/repositories/reviewCycleRepository.ts",
+      "before_sha256": null,
+      "after_sha256": "027398a2997fbccef6a1e327d1a2b42a93bdab9eaf344a0a4f5c144dbe1cb83a"
+    },
+    {
+      "file": "astraupskill/snapshots/src/services/reviewCycleService.ts",
+      "before_sha256": null,
+      "after_sha256": "7981afc5bdeac1c0cd32dfc5803ca3b103078bb0544ce4a1c85f6350b968fcd1"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "58fc098a4ad832098d63476b87ed9665256bffd118fb1d68a39cce93965f1674"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "a2ae32d652d0b5cc4c2ccfdf385bbf581cdb09545e8fa7c313eb0b09188dc5c0"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f7707701f7c1f94d7891463ca9cfa127a160b99161cd064e41055257d3cfb5c1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e54f00d1bd62f73e012f303a4fa7d6341654f1e08b42648eb8aed06eb92c3a27"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0767409a14846df3300258e87d3db14af91a114548293acde466cde5fb762d5f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6e23b5e838c04f3bbb4f72034df1258b663a550ecffdff5c30ee26d05034a994"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b75e04aaa186e08b4b54c5101f610faa88ef806a0274882a9ab353864172bad2"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "62dc833622b8778c83bdbfd5035a32b43e363c81148bb28a863b738023da6a7d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "3480b222174742c1191c580818dbe15b7fc694af45ea48b7ef2ed586e2154f3b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "82fd139456a523da6e508fea50969d65fe4b809fdbce24f574008484561652aa"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "7c66eda60c1b76b4ac0b21d866ddf2d8130968703c8b9c55a3e478d8831243a0"
+    }
+  ],
+  "limits": [
+    "Six runtime cases execute actual review service, HttpError and the changed repository predicate builder. Explicit database/transaction/repository adapters verify arguments and ordering; no native Prisma provider or concurrent database run.",
+    "The conditional write guards organization, item id and PENDING, but does not atomically guard review-cycle OPEN status. Native rollback, route authorization and simultaneous reviewer behavior remain unexecuted.",
+    "Normal application typecheck and provider-backed integration were not run after dependency cleanup."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:03:11.502528+00:00"
+}

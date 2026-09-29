@@ -1,0 +1,9 @@
+{
+  "reviewed": true,
+  "run": "browser-03",
+  "notes": "Viewed desktop screenshot and original-resolution narrow screenshot. Directory text, actions, navigation and six real fixture records are readable; the narrow layout fits without horizontal overflow.",
+  "sha256": {
+    "desktop.png": "d357a370577fb6f34895f745bb3479bcff8a1a303a972ec035dea7d6e4e74fd6",
+    "narrow.png": "04d2459f497780bea8b283696d7e523d3f53b20a8bf3e355156014e6080bfb80"
+  }
+}

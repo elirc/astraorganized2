@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+      "id": "0f37c14f6d60",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-permissions.test.mjs",
+        "tests/runtime-ticket-service.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0f37c14f6d60",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-21T23:37:52.509596+00:00",
+      "status": "complete",
+      "log": "astra-crud-b01-services.log",
+      "pid": 17316,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-21T23:37:58.534761+00:00",
+      "elapsedSeconds": 6.02
+    }
+  ],
+  "limits": [
+    "Vitest command not run because dependencies were not installed.",
+    "Five Node runtime tests exercise actual service and permission source with explicit persistence/integration doubles; no real HTTP, Prisma or outbox execution.",
+    "Optional missing-viewer trusted internal bypass remains; this is an organization-field update guard, not a complete tenant-security audit."
+  ]
+}

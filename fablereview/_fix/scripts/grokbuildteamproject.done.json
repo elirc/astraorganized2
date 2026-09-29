@@ -1,0 +1,1 @@
+["review#1 03 section 2 links projectRepository.ts by name and warns that taskRepository.ts/taskService.ts are re-export shims", "review#3 02 traces one forged request (demo_member + x-org-id: maple) end to end in a table with three variations", "review#2 README prerequisites and pacing", "review#4 root README marks the Docker path unverified and VERIFICATION says so explicitly"]

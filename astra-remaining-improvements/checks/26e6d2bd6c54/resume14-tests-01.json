@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+  "id": "26e6d2bd6c54",
+  "command": [
+    "npm.cmd",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:58:09.431198+00:00",
+  "status": "complete",
+  "log": "resume14-tests-01.log",
+  "pid": 26384,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T18:59:05.163075+00:00",
+  "elapsedSeconds": 55.67
+}

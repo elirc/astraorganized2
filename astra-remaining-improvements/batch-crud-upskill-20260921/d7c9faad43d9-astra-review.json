@@ -1,0 +1,35 @@
+{
+  "id": "d7c9faad43d9",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:57:03.273792+00:00",
+  "sourceReview": "Reviewed store creation, actual utilities, admin POST schema/error mapping and research wrapper. Added parent existence guard before construction; no auth, uniqueness or concurrency guarantee.",
+  "teachingReview": "Reviewed and removed repetitive padding in nine chapters. Corrected ownership terminology and false after-push mutation claim; added route/read mkdir limits, concrete traces, rubric and answers.",
+  "testReview": "Four actual store/utility runtime cases passed: serialized preservation and normalization, invalid parent matrix, write error identity and repeated ids. Explicit I/O/slug adapters; no native atomic-write or Next claim.",
+  "specSHA256": "c387cc233b0414a07f879cc65640681348b8f214f466227ab4d37c8e74bdac75",
+  "fileHashes": {
+    "src/lib/store.ts": "feb3c82ec318d76736a137f7b946ca0a43ac1e4814638ba5cae1c0a5834ec746",
+    "tests/runtime-shop-city.test.mjs": "42e40b253498162b6a29535d047f84d16774257fbf9dd89cec787e414ab2c1c6",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-lib-store.ts.before": "7463f7e3daaf0a7e8e498bb2124d56cd985442de7966ea670d148a03abb08568",
+    "astraupskill/evidence/crud-b04-astra-runtime.log": "00d4b3849cf4ab606db00476cd45bb897332a070748fa607e69bb67e3d06775a",
+    "astraupskill/evidence/results.json": "6ad43183e0ff65049768b30165f10d2df33f578ce14400543e591b24e65ece43",
+    "astraupskill/README.md": "33c1830107dbd9e735b24c9e0704e67f5ce6f0e7a97bfc6ec2ca59fd9a581a50",
+    "astraupskill/01-CODEBASE-MAP.md": "65fedafeaaafa76cab6d88d26ea3b6fd663f9a314887bf1cf5ce7524c4e30432",
+    "astraupskill/02-CONCEPTS.md": "13cdf3ed8343d80e9707c69f968375093a653eb0e7d3ec0cdf6ee8338f452fa3",
+    "astraupskill/03-WORKED-CHANGE.md": "8efd30bb832caacc9eaac4f9f3244765e029173b46523280fa8a08fc34baf115",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "70e3939fe68770870b08cc857c53b0b98d134e2be1852b6a79536e3cf765a8d2",
+    "astraupskill/05-PRACTICE.md": "a32997e397cf2c7a0cac25930680a923a6c5f4ff965b4db981c3b9d6e435a1c3",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "48ce5925df6cef95da10a75c2798b73e3cac53354ef05d9df11dc4c148bda993",
+    "astraupskill/07-TRACE-LAB.md": "9e2d70238db83f80e4be03d71bccd4cd1bb6505f9cabb00b91c65048a191bf70",
+    "astraupskill/VERIFICATION.md": "0068be55d15c897e7dc4fa0e3d1889fd0cb4ef92105e4ea580c50113e4401915"
+  },
+  "evidenceHashes": {
+    "checks/d7c9faad43d9/crud-b04-astra-runtime.json": "7a8e971958fc759289c041277b93a2c3bb86e04091fa1bce0814f4b35d99a9b4",
+    "checks/d7c9faad43d9/crud-b04-astra-runtime.log": "00d4b3849cf4ab606db00476cd45bb897332a070748fa607e69bb67e3d06775a",
+    "checks/d7c9faad43d9/results-crud-b04.json": "6ad43183e0ff65049768b30165f10d2df33f578ce14400543e591b24e65ece43",
+    "checks/d7c9faad43d9/review.txt": "08dd31c20fd248b4db4f52bfeeeec1221b7cebad1d85625f7e8b04fd875bca30",
+    "checks/d7c9faad43d9/review2.txt": "cdeffe75bea31ed5232e44c9c3b485a9b2a65197a089a87e88d642937f00037d",
+    "checks/d7c9faad43d9/review3.txt": "498662f358ace3b6fc63dd1ca6250c8cfa8b63b4ea53db98346f61280da95c9b",
+    "checks/d7c9faad43d9/review4.txt": "547a22b86b10b9e206089324e785ee2d8dbf43db501e86d5f3210e053788162b"
+  }
+}

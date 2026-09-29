@@ -1,0 +1,82 @@
+[
+  {
+    "project": "62",
+    "check": "build",
+    "exit_code": 1,
+    "seconds": 5.09,
+    "log": "logs/62-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "62",
+    "check": "client-typecheck",
+    "exit_code": 2,
+    "seconds": 15.72,
+    "log": "logs/62-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\62\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "62",
+    "check": "server-typecheck",
+    "exit_code": 0,
+    "seconds": 19.99,
+    "log": "logs/62-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\62\\server\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "build",
+    "exit_code": 1,
+    "seconds": 6.41,
+    "log": "logs/63-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "client-typecheck",
+    "exit_code": 2,
+    "seconds": 14.55,
+    "log": "logs/63-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\63\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 15.5,
+    "log": "logs/63-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\63\\server\\tsconfig.json"
+    ]
+  }
+]

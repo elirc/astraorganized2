@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "total": 10,
+  "passedTests": 10,
+  "failed": 0,
+  "suites": {
+    "backend": 9,
+    "frontend": 1
+  },
+  "records": [
+    "backend-prisma-validate-01.json",
+    "backend-prisma-generate-01.json",
+    "backend-typecheck-01.json",
+    "backend-lint-01.json",
+    "backend-test-01.json",
+    "backend-build-01.json",
+    "frontend-typecheck-01.json",
+    "frontend-test-01.json",
+    "frontend-build-01.json"
+  ]
+}

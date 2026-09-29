@@ -1,0 +1,162 @@
+{
+  "schema": 2,
+  "id": "87ef24dc-965b-434c-9dfe-66b7eb4fecca",
+  "revision": 7,
+  "save": {
+    "version": 1,
+    "playerName": "Retained second tab",
+    "completed": {
+      "sql/00_hello_dojo/ex1": "2026-09-09T22:25:03.608Z"
+    },
+    "earnedXp": {
+      "sql/00_hello_dojo/ex1": 100
+    },
+    "attempts": {
+      "sql/00_hello_dojo/ex1": 2
+    },
+    "work": {
+      "sql/00_hello_dojo/ex1": "Ran SELECT 1 AS answer in a SQL workspace; observed one row with the expected value and explained the column alias."
+    },
+    "reviews": {
+      "sql/00_hello_dojo/ex1": {
+        "stage": 0,
+        "due": "2026-09-12T22:25:03.608Z"
+      }
+    },
+    "streak": 1,
+    "lastActive": "2026-09-09",
+    "selectedTrack": "sql"
+  },
+  "projects": [
+    {
+      "id": "5d49cb6c-c4bf-41d9-8955-30ba0dd74f26",
+      "title": "Issue fixture 00",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "a2477341-b5c9-4367-81f8-2ca16b0d77b2",
+      "title": "Issue fixture 01",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "a6331c1c-468b-425c-982b-8b148394c415",
+      "title": "Issue fixture 02",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "c3b05c7c-1978-48fe-8689-1ca50ced21a0",
+      "title": "Issue fixture 03",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "e57fd08a-d763-45f2-9918-6f6d093ea710",
+      "title": "Issue fixture 04",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "ade60cf4-d7d2-4013-82f9-5824036ba0ac",
+      "title": "Issue fixture 05",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "73063b02-f390-4589-8762-63a7ca064421",
+      "title": "Issue fixture 06",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "13eb9b2e-1702-42fc-ba43-e44bf023af73",
+      "title": "Issue fixture 07",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "c682c286-9c7d-4ccf-800e-7c82dec829f6",
+      "title": "Issue fixture 08",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "120c82e1-dba0-476c-8124-3b0f38ab38dc",
+      "title": "Issue fixture 09",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "d2e253cf-2fed-4e47-8fe7-e610d97e7da9",
+      "title": "Issue fixture 10",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "a680550c-a17c-4f66-aee2-a32b564d4128",
+      "title": "Issue fixture 11",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    },
+    {
+      "id": "938d8e9b-4854-46e2-84cc-3c7339482eb0",
+      "title": "Issue fixture 12",
+      "goal": "Create, edit and delete contacts while preserving rejected duplicate-email drafts.",
+      "evidence": "Changed contact validation and form handling. Ran duplicate-email, valid rename and deletion checks; rejected drafts retained their original input. Pagination remains a follow-up.",
+      "status": "planned",
+      "created": "2026-09-09T22:24:55.058Z",
+      "updated": "2026-09-09T22:24:58.257Z",
+      "version": 2
+    }
+  ]
+}

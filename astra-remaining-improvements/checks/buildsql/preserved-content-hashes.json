@@ -1,0 +1,10 @@
+{
+  "public/content/csharp.json": true,
+  "public/content/dotnet.json": true,
+  "public/content/index.json": true,
+  "public/content/node.json": true,
+  "public/content/react.json": true,
+  "public/content/resources.json": true,
+  "public/content/sql.json": true,
+  "public/content/typescript.json": true
+}

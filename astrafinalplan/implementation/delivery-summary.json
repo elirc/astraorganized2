@@ -1,0 +1,82 @@
+[
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5079,
+    "changes": 15
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 4969,
+    "changes": 15
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5049,
+    "changes": 14
+  },
+  {
+    "project": "finance-dashboard",
+    "stage": "04",
+    "test_cases": 2,
+    "learning_files": 9,
+    "learning_words": 5132,
+    "changes": 15
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5243,
+    "changes": 18
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "test_cases": 90,
+    "learning_files": 9,
+    "learning_words": 5476,
+    "changes": 13
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5720,
+    "changes": 14
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "test_cases": 4,
+    "learning_files": 9,
+    "learning_words": 5823,
+    "changes": 16
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5567,
+    "changes": 15
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "test_cases": 3,
+    "learning_files": 9,
+    "learning_words": 5798,
+    "changes": 16
+  }
+]

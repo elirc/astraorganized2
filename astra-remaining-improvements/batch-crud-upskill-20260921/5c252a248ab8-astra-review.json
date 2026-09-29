@@ -1,0 +1,31 @@
+{
+  "id": "5c252a248ab8",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:41:08.028772+00:00",
+  "sourceReview": "Read full repository, composite unique schema and service call/audit. Upsert selector matches schema; mutable update fields only; audit action remains created and undefined end date does not clear old value.",
+  "teachingReview": "Read nine chapters and corrected evidence/count/stray quotes. Course grounds composite identity and tenant boundary, with provider concurrency and audit limitations.",
+  "testReview": "Rewrote dependent tests into four isolated actual-repository cases checking exact create/update selectors, cross-tenant arguments and preserved database error identity. No fake persistence claim.",
+  "specSHA256": "6d38b5adc4a1fc96ece0ddfbede47c70c93ba0e2e3f23bf5a6494101751be233",
+  "fileHashes": {
+    "src/repositories/prisma/complianceRepository.ts": "1364c5908a7c90c208ab9e6756f6637e7deabd7568ab63e076c47ba2440a7624",
+    "tests/runtime-country-rule-upsert.test.mjs": "79ff5dea34c224c8f024dc3321a021efbdad05da5ebc8f3ac8ab0215a8f86f96",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-repositories-prisma-complianceRepository.ts.before": "2db829c58e124ae3d6d8a35095151392f22ef5201ea95e3d16e4a83b880973e3",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "ca0009527cdde17701f7231796b1422e17274a52503e6a3881d027bcb283b352",
+    "astraupskill/evidence/results.json": "da5fa86700834f8ab4629a8ea4cbb190c01aa890e22c62c1469dcb73bc47b16f",
+    "astraupskill/README.md": "7857957abd35ee8a941a8100c84154824e2b4fb32f1da1c5c7bd7804a00465d7",
+    "astraupskill/01-CODEBASE-MAP.md": "0ed53ee80eaba60ba2e09384250b015926ba3e3a8018b2ade0e7729952ec60bd",
+    "astraupskill/02-CONCEPTS.md": "63210305c6b7bb886e36bff87855e36e54e3b0657a08d9db63bf5aa9e8b3864b",
+    "astraupskill/03-WORKED-CHANGE.md": "af2e4533794819c9633778cbb0862c9a2f3b57019f8249c04e018b248b7d0458",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "f02572e5b256d4748fb2914888819e779d73c75f816d2610661ee68d4245b7d7",
+    "astraupskill/05-PRACTICE.md": "54689ff7e4c7354ff3cfeec6ae62610395f493034f45fc91d6899a7ec7b389e0",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "aa02182ab3ac3b5d6674c18a3f952cdb6b54a61efecb5f78d8b828afc14756cb",
+    "astraupskill/07-TRACE-LAB.md": "48355de846bfd05612dcd589bd6e4e6b102517fa91dc03c5169422fa757a65a6",
+    "astraupskill/VERIFICATION.md": "7a728e5eb9792cba50bac25f10117df576fe1b3405367578412f877891f68c4a"
+  },
+  "evidenceHashes": {
+    "checks/5c252a248ab8/crud-b06-astra-runtime.json": "a05296fa43b67a9c33000fb7082bd0c47bcd9f2436d566a2836a963ca2432736",
+    "checks/5c252a248ab8/crud-b06-astra-runtime.log": "ca0009527cdde17701f7231796b1422e17274a52503e6a3881d027bcb283b352",
+    "checks/5c252a248ab8/results-crud-b06.json": "da5fa86700834f8ab4629a8ea4cbb190c01aa890e22c62c1469dcb73bc47b16f"
+  }
+}

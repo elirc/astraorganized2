@@ -1,0 +1,130 @@
+{
+  "passed": true,
+  "total": 72,
+  "passedTests": 72,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "buildreviewer",
+      "id": "3b9c30ec3ce2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test",
+        "-w",
+        "@reviewdeck/shared",
+        "--",
+        "--maxWorkers=1",
+        "--minWorkers=1",
+        "--testTimeout=30000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+      "environmentOverrides": {
+        "PYTHONIOENCODING": "utf-8",
+        "NEXT_TELEMETRY_DISABLED": "1"
+      },
+      "startedAt": "2026-09-20T20:54:44.058743+00:00",
+      "status": "complete",
+      "log": "astra-buildreviewer-shared-tests-r1.log",
+      "pid": 26360,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:55:40.854722+00:00",
+      "elapsedSeconds": 56.79
+    },
+    {
+      "project": "buildreviewer",
+      "id": "3b9c30ec3ce2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test",
+        "-w",
+        "@reviewdeck/api",
+        "--",
+        "--testTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+      "environmentOverrides": {
+        "RUST_LOG": "info"
+      },
+      "startedAt": "2026-09-20T21:14:35.911381+00:00",
+      "status": "complete",
+      "log": "astra-buildreviewer-api-tests-r4.log",
+      "pid": 21860,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:21:09.996957+00:00",
+      "elapsedSeconds": 394.08
+    },
+    {
+      "project": "buildreviewer",
+      "id": "3b9c30ec3ce2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test",
+        "-w",
+        "@reviewdeck/web",
+        "--",
+        "--maxWorkers=1",
+        "--minWorkers=1",
+        "--testTimeout=60000",
+        "--hookTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T21:21:14.959337+00:00",
+      "status": "complete",
+      "log": "astra-buildreviewer-web-tests-r1.log",
+      "pid": 19376,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:31:24.365428+00:00",
+      "elapsedSeconds": 609.4
+    },
+    {
+      "project": "buildreviewer",
+      "id": "3b9c30ec3ce2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T21:31:27.199049+00:00",
+      "status": "complete",
+      "log": "astra-buildreviewer-typecheck-r1.log",
+      "pid": 34740,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:41:58.195965+00:00",
+      "elapsedSeconds": 631.0
+    },
+    {
+      "project": "buildreviewer",
+      "id": "3b9c30ec3ce2",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "build"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T21:42:12.797904+00:00",
+      "status": "complete",
+      "log": "astra-buildreviewer-build-r1.log",
+      "pid": 6284,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T21:55:58.155745+00:00",
+      "elapsedSeconds": 825.35
+    }
+  ]
+}

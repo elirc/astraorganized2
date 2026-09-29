@@ -1,0 +1,28 @@
+{
+  "id": "0f37c14f6d60",
+  "project": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+  "stage": "astra-remaining-improvements/stage/0f37c14f6d60",
+  "finding": "Ticket read authorization checked the existing organization but updateTicket accepted a new organizationId without field-level tenant authorization.",
+  "changedFiles": [
+    "astra-remaining-improvements/stage/0f37c14f6d60/packages/server/src/modules/tickets/ticket.permissions.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/packages/server/src/modules/tickets/ticket.service.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/packages/server/src/modules/tickets/ticket.test.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/0f37c14f6d60/tests/runtime-permissions.test.mjs",
+    "astra-remaining-improvements/stage/0f37c14f6d60/tests/runtime-ticket-service.test.mjs",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.permissions.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.service.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.test.ts",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/README.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/0f37c14f6d60/astraupskill/VERIFICATION.md"
+  ],
+  "tests": "checks/0f37c14f6d60/results-crud-b01.json",
+  "limits": ["Dependency-free runtime permission and service tests passed; Vitest and database integration were not run; Astra review and delivery remain pending."]
+}

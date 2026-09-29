@@ -1,0 +1,40 @@
+# grokbuildorderproject — Fable review
+
+- **Path:** `grokbuildorderproject`  ·  **Wave:** 2  ·  **Stack:** Node/Express + Prisma 5 + PostgreSQL + React/Vite/TS  ·  **Batch:** B15
+- **Astra's change (one line):** Turned a scaffold that only inserted order rows into a real inventory workflow — server-priced Decimal totals, conditional `updateMany` stock reservation guarded by a `version` column inside one interactive transaction, once-only cancellation restock, FK-protected product deletion, strict Zod payload/query validation with request-ID error envelopes, plus a React product/order UI that preserves a conflicting draft and forces an explicit reload.
+- **Course size:** 4,226 words across 9 files (408–550 each)  ·  **Tests claimed:** 37 (24 backend Jest + 8 Vitest + 5 Chromium)  ·  **Tests found on disk:** 37 — `backend/src/__tests__/orderService.test.ts` (24 `it(`), `frontend/src/__tests__/ProductsPage.test.tsx` (8), `e2e/orders.spec.ts` (5)
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 5 | 5 | 5 | 5 | 5 | 4 | 5 | 4.9 |
+
+**Verdict:** KEEP    **Path role:** core
+
+## What Astra did well
+- The code change is the real thing, not a cosmetic edit. `backend/src/repositories/orderRepository.ts:19-24` reserves stock with `tx.product.updateMany({ where: { id, version, stock: { gte: quantity } }, data: { stock: { decrement }, version: { increment } } })` and checks `reserved.count`, so the condition is evaluated at the write boundary rather than in a JS `if`. Cart lines are sorted by product id first ("A common lock order reduces deadlock risk for overlapping carts"), and the course refuses to overclaim it: "It is not a promise that all possible database deadlocks disappear" (03-WORKED-CHANGE.md).
+- Tests exercise behavior, not call counts. The 24 backend cases include `'prevents two concurrent orders from reserving the same last unit'`, `'rolls back stock when the final order insert fails'`, `'competing cancellations cannot restore stock twice'` and `'keeps historical product name and price after catalog changes'` (`backend/src/__tests__/orderService.test.ts:75,79,98,121`) — exactly the invariants 02-CONCEPTS.md names.
+- Optimistic concurrency is enforced by *every* writer and that is made the teaching point: order reservation, cancellation and `productRepository.update/remove` all bump `version` (`backend/src/repositories/productRepository.ts:12-28`). The UI half is real too — on 409 the draft is kept and the stale save disabled until the learner confirms "Reload current product" (`frontend/src/features/products/pages/ProductsPage.tsx:49`).
+- VERIFICATION.md is unusually honest: it records *failed* intermediate runs (backend 23/24 with referenced-product delete returning 500; an esbuild sandbox failure; a wrong Vite root) and states "None of these failed runs was counted as a pass." It also separates liveness from readiness ("The `/health` endpoint reports process liveness, not database readiness") and says "CORS is not access control."
+
+## Problems found (evidence required)
+- **[D7]** 4,226 words across nine files is thin for the ambition. 02-CONCEPTS.md introduces invariants, interactive transactions, optimistic versioning, Decimal money and historical snapshots in 483 words, with one sentence per idea and no timeline/worked numeric example of the race it prevents. A junior who has never seen optimistic locking will need outside reading. No per-chapter time budget appears anywhere in the nine files.
+- **[D3/D7]** 05-PRACTICE.md exercises 4 ("Introduce authenticated ownership") and 6 ("Plan a safe release") are mid-to-senior tasks with no scaffolding; the file itself concedes "This exercise requires a complete authorization design, not just adding a login screen." 06-SOLUTIONS-AND-REVIEW.md gives review criteria but no hint ladder for them.
+- **[D2, minor]** `backend/src/controllers/`, `backend/src/middleware/` and `backend/src/types/` exist on disk as empty directories — leftovers the restructure into `app.ts`/`http.ts`/`validation.ts` did not clean up. 01-CODEBASE-MAP.md never mentions them, so a learner exploring the tree meets three dead folders.
+
+## Spot-checks performed
+- 03-WORKED-CHANGE.md: "The repository performs `updateMany` with both `id` and `version` in its condition… If the count is zero, the repository distinguishes a missing product from a changed product and throws 404 or 409 respectively." -> read `backend/src/repositories/productRepository.ts:10-18`: exactly that, inside `db.$transaction`, with a `findUnique` disambiguation. **Matches.**
+- 03-WORKED-CHANGE.md: "'Reload current product' asks before discarding the proposal and creates a new draft from current fields and version." -> `frontend/src/features/products/pages/ProductsPage.tsx:49` renders the button inside the `conflict` notice and calls `window.confirm('Discard this draft and load the latest product?')` before `startEdit(current)`. **Matches.**
+- Evidence JSON `deliveries/e502bf8af566.json` (`backendTests: 24, frontendTests: 8, browserTests: 5, tests: 37`) -> counted on disk: 24 + 8 + 5 = 37. **Matches exactly; no inflation.**
+- README claim: "Install the locked dependencies and run `npm run verify`. The helper creates its own disposable PostgreSQL database." -> root `package.json` defines `"verify": "node scripts/test-database.mjs verify"`; root `README.md:21` repeats the isolation guarantee and the `initdb` caveat; `backend/package-lock.json` and `frontend/package-lock.json` are present (both were absent in the backup). **Matches** (script not executed — read-only review).
+- 02-CONCEPTS.md: "OrderItem stores the catalog name and price at creation, so later renaming Notebook to Journal does not rewrite an earlier purchase description." -> `orderRepository.ts:21-23` pushes `{ productId, productName: product.name, quantity, price: product.price }` into the created lines and test `:121` asserts it. **Matches.**
+
+## Improvements needed (ordered, concrete, actionable)
+1. Delete (or populate) the empty `backend/src/controllers`, `backend/src/middleware`, `backend/src/types` directories, and add one sentence to `astraupskill/01-CODEBASE-MAP.md` saying routing lives in `routes/` + `http.ts` and cross-cutting error mapping in `errors.ts`/`app.ts`. (effort: S)
+2. Add to `astraupskill/02-CONCEPTS.md` a two-column "what the database sees" timeline for the last-unit race (T1 reads stock=1 v=3 · T2 reads stock=1 v=3 · T1 `updateMany` count=1 · T2 `updateMany` count=0 -> 409). Juniors get optimistic locking from one such table faster than from three paragraphs. (effort: S)
+3. In `astraupskill/05-PRACTICE.md`, label exercises 4–6 "stretch — pair with a senior", and insert one exercise at the difficulty of the delivered change between 1 and 2 (e.g. `PATCH /api/orders/:id` notes field with version check, written test-first). (effort: M)
+4. Add per-chapter time estimates to `astraupskill/README.md` ("map + concepts ~1h; worked change with source open ~2h; practice 1–3, one evening each"). (effort: S)
+
+## One-paragraph summary for the index
+This is the strongest CRUD course in the batch: a real Express/Prisma/PostgreSQL + React app where the delivered change is inventory reservation done properly — one interactive transaction, a conditional `updateMany` guarded by a `version` column and a stock floor, Decimal money, purchase-time snapshots of product name and price, and foreign-key-protected deletes. The nine documents are short but every claim maps to a line you can open, and the 37 tests (24 real-PostgreSQL backend cases, 8 component cases, 5 Chromium scenarios) are named after the invariants they defend rather than the functions they call. Verification is honest enough to record its own failed runs and refuse to count them. Do this course if you want transactions, races and optimistic locking to stop being vocabulary; budget extra time for the concepts chapter because it is dense, and treat practice exercises 4–6 as stretch goals rather than homework.

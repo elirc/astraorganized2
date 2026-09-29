@@ -1,0 +1,34 @@
+{
+  "id": "79c315026b95",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:03:07.392877+00:00",
+  "sourceReview": "Read actual allocation service/repository, in-process queue and errors. Fixed malformed block comment containing route glob terminator; runtime policy unchanged. Worker has read/update race and direct FAILED catch write.",
+  "teachingReview": "Reviewed nine chapters; removed false conditional-claim/audit claims, corrected real error field and distinguished pure terminal guard from unguarded worker catch. Documented in-process queue limitations and syntax repair.",
+  "testReview": "Four actual-policy cases pass with real ValidationError after initial parse failure exposed malformed comment. Exact422/code checks; repository/engine/queue imports adapted but not executed. No worker or rollback claim.",
+  "specSHA256": "dd87398548415ef2349d597edd598c89097afb29321d56239499bb391e40c7c9",
+  "fileHashes": {
+    "tests/runtime-allocation-state-lab.test.mjs": "64ec063fc072f9ceacc007d24e5dc9c781a005ee24f271873ea35fb8c812f7ce",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "src/lib/http/errors.ts": "7cbc05e9b780ab04e87d2ed8966c4e78638a8263b18b1e3ca40f7470883fb409",
+    "astraupskill/snapshots/errors.ts.original.txt": "770e4019a34ccbf1a8205d83fb260895e26e660cc1e384245f69bdeaa822a028",
+    "astraupskill/evidence/crud-b07-astra-runtime2.log": "6c9fd9bf29557e8192feb4c268483583153e865cf6143810370aa8f039b5f25d",
+    "astraupskill/evidence/results.json": "2bf05617a3775d497af726ca03f22ac337c997e296516a2bfca576084bab1391",
+    "astraupskill/README.md": "b68e1c94fdd298f79048115e7e473f52398f1a74df15ed61998fdc8b43fb36de",
+    "astraupskill/01-CODEBASE-MAP.md": "af4978ee23372c9d413353dc2d2f3e182943b06943dc8911c5c513ce32a40a06",
+    "astraupskill/02-CONCEPTS.md": "e951f92bc0f6c23b87641c52bc0afb93384913acaa5c412b02261bd1790bdcff",
+    "astraupskill/03-WORKED-CHANGE.md": "698248e7d61bf502fe83bd1a4b954b67a95694ac5cb841d07afac5dd2ff9be91",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "dcd73e9ae076ec6af8f58ee38499c9f95409c32e81b6094b4ec1cf044a2af62e",
+    "astraupskill/05-PRACTICE.md": "d25a92ae007bf2fd2425ff9b790764932a78566efa19f4574a311f1b877861b6",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "450b292b641b2186566b81e778c08bcf4c0e6ebd35884851667be604163b12c2",
+    "astraupskill/07-TRACE-LAB.md": "e6b0bc75b666bd33741d2ecfb71a08962ebfc41c07a9b78fc8c30d125a8cc9b8",
+    "astraupskill/VERIFICATION.md": "baae9efd9a8301877c5940f1c32b4b70fa8ff966112e50f3962db5f718e4c095"
+  },
+  "evidenceHashes": {
+    "checks/79c315026b95/astra-crud-b07-ww6.log": "3bcb05f4103333a8977cc590f10e26eab8f6d39ae3187e5f5a01d413ab684642",
+    "checks/79c315026b95/crud-b07-astra-runtime.json": "96c93e84b679d82749167e043745fef0e95965469a8a4d2909664eb8bc5a7328",
+    "checks/79c315026b95/crud-b07-astra-runtime.log": "39890db3aba41ba15f52d23d0af5afd1a7c493213cfdc68fad16f41f6c6c7b5f",
+    "checks/79c315026b95/crud-b07-astra-runtime2.json": "898a8798c2b1aa04e2aa8d17460a50522c3584f239761f2e899d0f72d993a78a",
+    "checks/79c315026b95/crud-b07-astra-runtime2.log": "6c9fd9bf29557e8192feb4c268483583153e865cf6143810370aa8f039b5f25d",
+    "checks/79c315026b95/results-crud-b07.json": "2bf05617a3775d497af726ca03f22ac337c997e296516a2bfca576084bab1391"
+  }
+}

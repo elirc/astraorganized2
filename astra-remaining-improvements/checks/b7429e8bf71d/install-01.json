@@ -1,0 +1,16 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "id": "b7429e8bf71d",
+  "command": [
+    "node",
+    "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "ci",
+    "--prefer-offline"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b7429e8bf71d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T23:00:17.874366+00:00",
+  "status": "running",
+  "log": "install-01.log",
+  "pid": 29780
+}

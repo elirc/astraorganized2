@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "checks": [
+    "Published package serves the real React application and static assets",
+    "Browser registration creates a private workspace and authenticated session",
+    "Session credentials are absent from local storage, session storage and cookies",
+    "Customer creation persists through the browser form",
+    "Stale edit is rejected, the draft survives, and explicit reload allows a reviewed edit",
+    "A response lost after commit retries the same operation and creates exactly one customer",
+    "Deletion requires confirmation and removes an unused record"
+  ],
+  "pageErrors": [],
+  "error": "TimeoutError('Locator.select_option: Timeout 30000ms exceeded.\\nCall log:\\n  - waiting for get_by_label(\"Pricing model\", exact=True)\\n')",
+  "serverStopped": true
+}

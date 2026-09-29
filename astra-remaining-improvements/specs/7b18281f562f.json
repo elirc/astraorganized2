@@ -1,0 +1,26 @@
+{
+  "id": "7b18281f562f",
+  "project": "_Organized Desktop/02 Build Projects/buildagentteaching",
+  "summary": [
+    "Keep expected AppError enrollment refusals as independent per-student batch results.",
+    "Rethrow unexpected persistence and programming failures so the batch cannot hide infrastructure incidents.",
+    "Execute the actual TypeScript enrollment service through a dependency-free source-linked runtime harness."
+  ],
+  "changedFiles": [
+    "packages/application/src/services/enrollment-service.ts",
+    "tests/runtime-bulk-enroll.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/packages/application/src/services/enrollment-service.ts",
+    "tests/bulk-enroll-entry.ts",
+    "astraupskill/evidence/crud-b02-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7b18281f562f/results-crud-b02.json"
+  },
+  "limits": [
+    "The runtime harness does not execute Prisma SQL, database rollback, Vitest, or browser actions.",
+    "The batch remains independently transactional per student; no retries or all-or-nothing transaction were added."
+  ]
+}

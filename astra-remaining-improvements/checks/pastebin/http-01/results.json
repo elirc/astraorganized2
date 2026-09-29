@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "total": 17,
+  "expected": 17,
+  "checks": [
+    {
+      "name": "Health and API response headers",
+      "passed": true,
+      "seconds": 0.015
+    },
+    {
+      "name": "Create returns Location and initial ETag",
+      "passed": true,
+      "seconds": 0.533
+    },
+    {
+      "name": "Identical creation retry recovers receipt without writing",
+      "passed": true,
+      "seconds": 0.148
+    },
+    {
+      "name": "Detail and raw reads preserve bytes without counting views or leaking keys",
+      "passed": true,
+      "seconds": 0.261
+    },
+    {
+      "name": "Null, missing, duplicate, unknown and malformed JSON are rejected",
+      "passed": true,
+      "seconds": 0.466
+    },
+    {
+      "name": "Oversized HTTP bodies cannot reach persistence",
+      "passed": true,
+      "seconds": 0.16
+    },
+    {
+      "name": "Foreign write origins and unexpected hosts are rejected",
+      "passed": true,
+      "seconds": 0.108
+    },
+    {
+      "name": "Deletion requires the capability header; URL keys grant no access",
+      "passed": true,
+      "seconds": 0.287
+    },
+    {
+      "name": "Update enforces quoted ETags and rejects stale drafts",
+      "passed": true,
+      "seconds": 0.427
+    },
+    {
+      "name": "Unlisted content is directly readable but absent from public search",
+      "passed": true,
+      "seconds": 0.183
+    },
+    {
+      "name": "Literal search, language filtering and bounded pagination work over HTTP",
+      "passed": true,
+      "seconds": 3.461
+    },
+    {
+      "name": "Corrupt storage returns a recovery error and preserves the original bytes",
+      "passed": true,
+      "seconds": 1.63
+    },
+    {
+      "name": "Versioned deletion cannot be undone by retrying an old create",
+      "passed": true,
+      "seconds": 0.625
+    },
+    {
+      "name": "Unknown API routes return JSON instead of the application page",
+      "passed": true,
+      "seconds": 0.014
+    },
+    {
+      "name": "Server restart retains accepted workspace bytes",
+      "passed": true,
+      "seconds": 0.149
+    },
+    {
+      "name": "Rate limits return a bounded retry response",
+      "passed": true,
+      "seconds": 0.098
+    },
+    {
+      "name": "CLI migration preserves bytes and legacy UTF-8 capabilities work over HTTP",
+      "passed": true,
+      "seconds": 20.198
+    }
+  ],
+  "fatal": null
+}

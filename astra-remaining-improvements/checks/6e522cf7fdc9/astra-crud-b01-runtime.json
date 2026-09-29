@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww48",
+  "id": "6e522cf7fdc9",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "src/tests/runtime-followup.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6e522cf7fdc9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:34:16.907451+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-runtime.log",
+  "pid": 33496,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:34:21.621743+00:00",
+  "elapsedSeconds": 4.71
+}

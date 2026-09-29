@@ -1,0 +1,33 @@
+{
+  "id": "5fd517cae993",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:20:10.688280+00:00",
+  "sourceReview": "Reviewed actual conversation service, role policy, error helpers and updateMany repository filters. Count check gates audit; organization/id write has no old-status condition.",
+  "teachingReview": "Reviewed rewritten nine chapters and corrected invented method/status/return snippet and zero-update claim. Documented actual success object, SLA dates, graded trace and concurrency limits.",
+  "testReview": "Five passing cases load actual service/permissions/errors. Exact scoped transaction args, zero count404, successful audit/dates, resolved/closed clearing, VIEWER/missing/illegal refusal and error identity checked.",
+  "specSHA256": "f963a0826bd2e9fdfa24131d08ecb2fc7339cd04629ba48c1e9c8829bf2341fc",
+  "fileHashes": {
+    "src/services/conversationService.ts": "c37777884d69ddc4a0bed22ae91b8aff0bdfb336e39780f0455bb8c29b27ce90",
+    "tests/runtime-conversation-update-count.test.mjs": "087ddf9f268b4ee9ddcd9d5f9fac767053ed2557eeb22cfe6a94e5e3ae24815e",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-services-conversationService.ts.before": "36f46c8adc774fab04e6e27b728920f1f55d136b8b632e42e8ee6c0e7ddee294",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "09e7cbf0bf85f1dd40f7e3f292048c2a9a9aba32a1a89c93bdae2c09386a3fe8",
+    "astraupskill/evidence/results.json": "c64ee46ca23d38be7133bdb2e4c36bd8dd8fc32ac05f4a0d13282e40cade9a0a",
+    "astraupskill/README.md": "d01f60062ac123b7318c285661fcdf35fed150c7d81d345236c67bbe987dbad0",
+    "astraupskill/01-CODEBASE-MAP.md": "66089122a6d82a13af0a321022f4be9cb3aeb9a47aa2a1b929857dc137bc9ec0",
+    "astraupskill/02-CONCEPTS.md": "c59d0e1e7cdc28c0f9e3d54a12cfe83be84abd03a7ce4e75fcaba43011412b82",
+    "astraupskill/03-WORKED-CHANGE.md": "f7985c2ed80232fd4df918e1a7ed6452f6300d00568d99e281dbf8431bde5973",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "78d3581af7a335579aaaa065cc00c1d6d1a01697619ab69aa9a908106993b515",
+    "astraupskill/05-PRACTICE.md": "39d7b288d9e87a2cfc980596055f5fd642f19c3e2e70d51a12820d3cb7e7d034",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "3f60889c6ba31e18287f9132a97d25a69d08f61abb14e97a2616655a4eaac0f7",
+    "astraupskill/07-TRACE-LAB.md": "8d44ef32774d1b86ffe6643bd826e2c36ec7b010de396ae11ae4302b7c145f30",
+    "astraupskill/VERIFICATION.md": "e63b5473de70bf71d1b010f547bf65a12042d7489009de026a0969de71565824"
+  },
+  "evidenceHashes": {
+    "checks/5fd517cae993/crud-b05-astra-runtime.json": "cfc06b062470932da4b7dc12611d6687268c4307651f25395a15af9eb7a12db8",
+    "checks/5fd517cae993/crud-b05-astra-runtime.log": "09e7cbf0bf85f1dd40f7e3f292048c2a9a9aba32a1a89c93bdae2c09386a3fe8",
+    "checks/5fd517cae993/results-crud-b05.json": "c64ee46ca23d38be7133bdb2e4c36bd8dd8fc32ac05f4a0d13282e40cade9a0a",
+    "checks/5fd517cae993/review.txt": "cd9b4af1494cafa0e91db5be12da75a3583d5a264ff9420b402db570508f9dca",
+    "checks/5fd517cae993/review2.txt": "495fbfa453a9ef9a78968dbff23189827cca28fac339e41efa48cc6cab8a89dd"
+  }
+}

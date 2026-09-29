@@ -1,0 +1,159 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww43",
+  "id": "200c3e641a36",
+  "summary": [
+    "Protect note status transitions with an atomic expected-status predicate",
+    "Return a stable STATUS_CONFLICT before audit on stale writes",
+    "Add project-specific CRUD upskill course"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/200c3e641a36/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww43",
+        "id": "200c3e641a36",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-status.test.mjs",
+          "tests/runtime-note-service.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\200c3e641a36",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:37:53.244800+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-services.log",
+        "pid": 29800,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:37:59.317218+00:00",
+        "elapsedSeconds": 6.03
+      }
+    ],
+    "limits": [
+      "Vitest command is unrun because isolated dependency installation was unavailable",
+      "Portable VM tests use explicit repository/database contracts; live PostgreSQL race coverage remains for review",
+      "Full typecheck/build, real HTTP authorization and live database concurrency were not executed.",
+      "Status comparison does not detect ACTIVE-to-ARCHIVED-to-ACTIVE changes, body edits or permission changes between read and write."
+    ]
+  },
+  "courseWords": 2655,
+  "courseFiles": 9,
+  "courseLinksChecked": 18,
+  "files": [
+    {
+      "file": "src/repositories/note-repository.ts",
+      "before_sha256": "03cfe3cda8f035d905c8071e96bdc3a9ee553c6dfab3c186359aa1cd20ee738f",
+      "after_sha256": "6accd98138ac2b9db6f3ae2914f04ab7bdd2f53d5e37baca7854cbbd6c11353e"
+    },
+    {
+      "file": "src/services/note-service.ts",
+      "before_sha256": "7ca86dcf2fdbea5565a4eb8aba52a95a7959b5c9880f49d1586345249b3679a5",
+      "after_sha256": "e740d4f9721e004ca635d387967877d7c2397e1304be7fc6e55d8981ffb4ec61"
+    },
+    {
+      "file": "tests/services/note-service.test.ts",
+      "before_sha256": "b4f1b9ffa85624bb441ecf0a75c514278930d09c15c5805f2a1be9239479b7be",
+      "after_sha256": "2973f658bc84edcee80746cc946423e3b5df520333a86f671edf896d71db88d7"
+    },
+    {
+      "file": "tests/runtime-status.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "fdf553027d2dd05e11d0c7739eb2e278f559e26bf2210261e6b02d3540e6e3f7"
+    },
+    {
+      "file": "tests/runtime-note-service.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "100d8ab7e4caa66012c81da7097383ee6b0eadaa3d7cf9251cd117f9b9e483d9"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-repositories-note-repository.ts.before",
+      "before_sha256": null,
+      "after_sha256": "03cfe3cda8f035d905c8071e96bdc3a9ee553c6dfab3c186359aa1cd20ee738f"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-note-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "7ca86dcf2fdbea5565a4eb8aba52a95a7959b5c9880f49d1586345249b3679a5"
+    },
+    {
+      "file": "astraupskill/snapshots/tests-services-note-service.test.ts.before",
+      "before_sha256": null,
+      "after_sha256": "b4f1b9ffa85624bb441ecf0a75c514278930d09c15c5805f2a1be9239479b7be"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-services.log",
+      "before_sha256": null,
+      "after_sha256": "5463830d0a98a07521269fe6d903186b581684ebc0e66e28266bd3e8fa25509c"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "4595cdd55133f775e12e89ef7a2fa0a7ee09f45c3c7feeca9580d9c07d31c82a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "bff6aa4413bf19f5e05428d8c6a1d4b5385f13e09d1147f28ad95b534cab647e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "3dfd7ea67699eb84204f208c9546ecd4165ae6b43b8a3d072a902c953b28dc27"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "16c7aab58fb7209a06817843c1d1680e013d37bab9d3571544c54eb76707d794"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c9654ad3045ffeb41f66b0f6d0b78921efc78297de1ec504019a8061c4cc722c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c301d3749193cf9984dbb2a98c17e587772c92a9a24dc9d92ccdcf8066f3bcfb"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9673de0a1ce069104d60b3c42054461fc888140c6034aea5820b9932c09b89f0"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "2fdde229a81e2d05fea5ca1a8b12f93c90b3a46be4268ff7a7070740de25cee5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "65f795b7a8d66b7e1c9dc55413784546fe93d4cfa3f16bd9b9ef12b82a33827e"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "38064f699a631d6b82e91a34b9948a181bda28eba915551b8cda2da4e8b55645"
+    }
+  ],
+  "limits": [
+    "Vitest command is unrun because isolated dependency installation was unavailable",
+    "Portable VM tests use explicit repository/database contracts; live PostgreSQL race coverage remains for review",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed.",
+    "Status comparison does not detect ACTIVE-to-ARCHIVED-to-ACTIVE changes, body edits or permission changes between read and write."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:47:38.934361+00:00"
+}

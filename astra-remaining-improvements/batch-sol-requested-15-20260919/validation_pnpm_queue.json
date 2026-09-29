@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "id": "a81b176807e5",
+      "label": "astra-buildermentor-tests-r1",
+      "exitCode": 1
+    },
+    {
+      "id": "9d3b119f40a0",
+      "label": "astra-skillforge-generate-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "9d3b119f40a0",
+      "label": "astra-skillforge-completion-r1",
+      "exitCode": 1
+    }
+  ],
+  "current": "9d3b119f40a0",
+  "label": "astra-skillforge-completion-r1"
+}

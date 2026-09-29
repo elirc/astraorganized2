@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master 6",
+  "id": "3e4e08e349a1",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "build",
+    "--workspace",
+    "@lms/domain"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3e4e08e349a1",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T23:14:52.675787+00:00",
+  "status": "complete",
+  "log": "root-domain-build-01.log",
+  "pid": 39712,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T23:16:15.215886+00:00",
+  "elapsedSeconds": 82.54
+}

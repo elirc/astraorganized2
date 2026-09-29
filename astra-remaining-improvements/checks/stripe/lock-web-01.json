@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm.cmd",
+    "install",
+    "--package-lock-only",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "workingDirectory": "src/Billing.Web",
+  "exitCode": 0,
+  "seconds": 10.99
+}

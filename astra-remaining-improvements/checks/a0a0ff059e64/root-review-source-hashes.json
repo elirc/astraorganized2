@@ -1,0 +1,13 @@
+{
+  "files": {
+    "backend/ExpenseManagement.Api.csproj": "81a5e68881f2f866d16662d06797c9e408eff13110a008636996178ea03df2ca",
+    "backend/Background/BackgroundJobs.cs": "b406510de066547d411665d936fae72640f139c6e605708152f924fbe403729e",
+    "backend/Background/BackgroundTaskQueue.cs": "563abb8e6fa9ab95408708f152f1a0fb9e47b8990e8063d99b20d44d4bd006bf",
+    "backend/Domain/ExpenseStateMachine.cs": "5d753d081e214c1c9dc388144e7aa05d94b2a19b4be517f28b578f2fac920701",
+    "backend/Services/ExpenseService.cs": "42471a8ed68580bf57ccf1fb02c364fd0b5013ad8f775543c9ffa651065e8f9d",
+    "backend/Storage/DataStore.cs": "851a892a809a386e55922e93bfc027bb6211a64949a13371f5e2ac654cc97369",
+    "backend/ExpenseManagement.Api.Tests/ExpenseManagement.Api.Tests.csproj": "73a9e4a9df093813b14bb017bdba0b67b94cb7ae38c8fedc7080b5771fefe410",
+    "backend/ExpenseManagement.Api.Tests/ExpenseWorkflowTests.cs": "5741cea79d49476d6f0a9b8c75eede7fbe0013e94d5b78c89c81a11629d5cd38",
+    "frontend/package-lock.json": "7d5608fca322c2db68a4330204152e5ac86c243e0e5e85bc95d07966277cafdf"
+  }
+}

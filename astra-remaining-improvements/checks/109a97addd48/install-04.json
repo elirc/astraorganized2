@@ -1,0 +1,28 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "install",
+    "--save-dev",
+    "eslint@^9.0.0",
+    "@eslint/js@^9.0.0",
+    "typescript-eslint@^8.0.0",
+    "--no-audit",
+    "--no-fund",
+    "--prefer-offline",
+    "--cache",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/npm-cache"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\109a97addd48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:15:14.819396+00:00",
+  "status": "complete",
+  "log": "install-04.log",
+  "pid": 21912,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:16:42.368441+00:00",
+  "elapsedSeconds": 87.55
+}

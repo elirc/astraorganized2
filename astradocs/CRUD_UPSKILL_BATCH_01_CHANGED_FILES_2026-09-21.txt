@@ -1,0 +1,185 @@
+_Organized Desktop/02 Build Projects/buildaffiliate/apps/api/src/services/campaign.service.test.ts
+_Organized Desktop/02 Build Projects/buildaffiliate/apps/api/src/services/campaign.service.ts
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/02-CONCEPTS.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/05-PRACTICE.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/evidence/astra-crud-b01-identifiers.log
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/evidence/results.json
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/README.md
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/snapshots/apps__api__src__services__campaign.service.ts.original.txt
+_Organized Desktop/02 Build Projects/buildaffiliate/astraupskill/VERIFICATION.md
+_Organized Desktop/02 Build Projects/buildaffiliate/tests/campaign-slug.test.mjs
+_Organized Desktop/02 Build Projects/buildaffiliate/tests/helpers/load-typescript.mjs
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/02-CONCEPTS.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/05-PRACTICE.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/evidence/astra-crud-b01-dashboard.log
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/evidence/results.json
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/README.md
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/snapshots/backend__src__modules__dashboardConfigs__dashboardConfigs.service.ts.original.txt
+_Organized Desktop/02 Build Projects/buildanalytics/astraupskill/VERIFICATION.md
+_Organized Desktop/02 Build Projects/buildanalytics/backend/src/modules/dashboardConfigs/dashboardConfigs.service.test.ts
+_Organized Desktop/02 Build Projects/buildanalytics/backend/src/modules/dashboardConfigs/dashboardConfigs.service.ts
+_Organized Desktop/02 Build Projects/buildanalytics/tests/dashboard-default.test.mjs
+_Organized Desktop/02 Build Projects/buildanalytics/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/02-CONCEPTS.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/05-PRACTICE.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/evidence/astra-crud-b01-runtime.log
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/evidence/results.json
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/README.md
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/snapshots/src-services-reservationService.ts.before
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/snapshots/tests-reservation-service-transition.test.ts.before
+_Organized Desktop/05 Numbered Experiments/ww36/astraupskill/VERIFICATION.md
+_Organized Desktop/05 Numbered Experiments/ww36/src/services/reservationService.ts
+_Organized Desktop/05 Numbered Experiments/ww36/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/ww36/tests/reservation-service-transition.test.ts
+_Organized Desktop/05 Numbered Experiments/ww36/tests/runtime-expiry.test.mjs
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/02-CONCEPTS.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/05-PRACTICE.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/evidence/astra-crud-b01-services.log
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/evidence/results.json
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/README.md
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/snapshots/src-repositories-note-repository.ts.before
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/snapshots/src-services-note-service.ts.before
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/snapshots/tests-services-note-service.test.ts.before
+_Organized Desktop/05 Numbered Experiments/ww43/astraupskill/VERIFICATION.md
+_Organized Desktop/05 Numbered Experiments/ww43/src/repositories/note-repository.ts
+_Organized Desktop/05 Numbered Experiments/ww43/src/services/note-service.ts
+_Organized Desktop/05 Numbered Experiments/ww43/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/ww43/tests/runtime-note-service.test.mjs
+_Organized Desktop/05 Numbered Experiments/ww43/tests/runtime-status.test.mjs
+_Organized Desktop/05 Numbered Experiments/ww43/tests/services/note-service.test.ts
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/02-CONCEPTS.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/05-PRACTICE.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/evidence/astra-crud-b01-services.log
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/evidence/results.json
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/README.md
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/snapshots/src-repositories-followUpRepository.ts.before
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/snapshots/src-services-followUpService.ts.before
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/snapshots/src-tests-lead-stage-transition.test.ts.before
+_Organized Desktop/05 Numbered Experiments/ww48/astraupskill/VERIFICATION.md
+_Organized Desktop/05 Numbered Experiments/ww48/src/repositories/followUpRepository.ts
+_Organized Desktop/05 Numbered Experiments/ww48/src/services/followUpService.ts
+_Organized Desktop/05 Numbered Experiments/ww48/src/tests/follow-up-status-conflict.test.ts
+_Organized Desktop/05 Numbered Experiments/ww48/src/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/ww48/src/tests/runtime-followup-service.test.mjs
+_Organized Desktop/05 Numbered Experiments/ww48/src/tests/runtime-followup.test.mjs
+_Organized Desktop/05 Numbered Experiments/ww48/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/02-CONCEPTS.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/05-PRACTICE.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/evidence/astra-crud-b01-identifiers.log
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/evidence/results.json
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/README.md
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/snapshots/src__server__modules__tickets__service.test.ts.original.txt
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/snapshots/src__server__modules__tickets__service.ts.original.txt
+_Organized Desktop/05 Numbered Experiments/zz2/astraupskill/VERIFICATION.md
+_Organized Desktop/05 Numbered Experiments/zz2/src/server/modules/tickets/service.test.ts
+_Organized Desktop/05 Numbered Experiments/zz2/src/server/modules/tickets/service.ts
+_Organized Desktop/05 Numbered Experiments/zz2/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/zz2/tests/ticket-reference.test.mjs
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/02-CONCEPTS.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/05-PRACTICE.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/evidence/astra-crud-b01-schema.log
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/evidence/results.json
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/README.md
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/snapshots/src/lib/validation/ticket-schemas.ts
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/snapshots/src/tests/unit/ticket-schemas.test.ts
+_Organized Desktop/05 Numbered Experiments/zz3/astraupskill/VERIFICATION.md
+_Organized Desktop/05 Numbered Experiments/zz3/src/lib/validation/ticket-schemas.ts
+_Organized Desktop/05 Numbered Experiments/zz3/src/tests/unit/ticket-schemas.test.ts
+_Organized Desktop/05 Numbered Experiments/zz3/tests/helpers/load-typescript.mjs
+_Organized Desktop/05 Numbered Experiments/zz3/tests/runtime-schema.test.mjs
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/02-CONCEPTS.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/05-PRACTICE.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/evidence/astra-crud-b01-services.log
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/evidence/results.json
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/README.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.permissions.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.service.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/snapshots/packages/server/src/modules/tickets/ticket.test.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/astraupskill/VERIFICATION.md
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/packages/server/src/modules/tickets/ticket.permissions.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/packages/server/src/modules/tickets/ticket.service.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/packages/server/src/modules/tickets/ticket.test.ts
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/tests/helpers/load-typescript.mjs
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/tests/runtime-permissions.test.mjs
+_Organized Desktop/08 App And Product Projects/grouphelpdesk/tests/runtime-ticket-service.test.mjs
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/02-CONCEPTS.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/05-PRACTICE.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/evidence/astra-crud-b01-all-scraper.log
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/evidence/results.json
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/README.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/snapshots/backend/app/services/scraper.py
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/snapshots/supabase/schema.sql
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/astraupskill/VERIFICATION.md
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/backend/app/services/scraper.py
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/backend/tests/test_scraper_recovery.py
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/backend/tests/test_scraper_resume.py
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/supabase/migrations/20260921_job_comment_unique.sql
+_Organized Desktop/08 App And Product Projects/HNJOBTRACK/supabase/schema.sql
+_Organized Desktop/08 App And Product Projects/recipegen-app/app/api/recipes/route.ts
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/01-CODEBASE-MAP.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/02-CONCEPTS.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/03-WORKED-CHANGE.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/04-TESTING-AND-DEBUGGING.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/05-PRACTICE.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/06-SOLUTIONS-AND-REVIEW.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/07-TRACE-LAB.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/evidence/crud-b01-boundaries.log
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/evidence/crud-b01-typecheck-installed.log
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/evidence/results.json
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/README.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/snapshots/app__api__recipes__route.ts.original.txt
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/snapshots/lib__storage.ts.original.txt
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/snapshots/package.json.original.txt
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/snapshots/tsconfig.json.original.txt
+_Organized Desktop/08 App And Product Projects/recipegen-app/astraupskill/VERIFICATION.md
+_Organized Desktop/08 App And Product Projects/recipegen-app/lib/generation.ts
+_Organized Desktop/08 App And Product Projects/recipegen-app/lib/storage.ts
+_Organized Desktop/08 App And Product Projects/recipegen-app/lib/validation.ts
+_Organized Desktop/08 App And Product Projects/recipegen-app/package.json
+_Organized Desktop/08 App And Product Projects/recipegen-app/tests/boundaries.test.mjs
+_Organized Desktop/08 App And Product Projects/recipegen-app/tsconfig.json

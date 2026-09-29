@@ -1,0 +1,18 @@
+{
+  "files": {
+    "README.md": "25f01ea716710629e1e59974f8f2b0ba92717dc6538e32ba60adc9ca9c8cb18d",
+    "backend/src/BuildAsana.Api/Program.cs": "1fa037e9e18dec663bd3bcb6783d908e38a490cc0fa715ab45d1ec116b69fc7d",
+    "backend/src/BuildAsana.Application/Work/WorkManagementService.cs": "8bf8fc7ee7957f5ca86eaee68410c573caf11dbe5db7eef77b6e74a8ba7c0a42",
+    "backend/src/BuildAsana.Domain/Work/AutomationRule.cs": "4fe980c90cbcbf70c5648f064ad79b0049dcd5815fb28871191e6aa8ff9cc429",
+    "backend/src/BuildAsana.Domain/Work/WorkTask.cs": "38393c2f9028c799f65fd812fa03757ee73bef8d7983a9e13ca7cfee897a57c2",
+    "backend/tests/BuildAsana.Application.Tests/WorkManagementServiceTests.cs": "2663d0fbc8e6625921237e8990811a242848af9c2f21233d90f014b40a5707ac",
+    "frontend/package.json": "1c34daa5ba807bf2a8f4857741a94f506cabde0327b5cd2c6f43fd376cc39c2c",
+    "frontend/tsconfig.json": "61f0272b2b536325935f0ed33315d1cc8fedaae552e35564b93c67b8d070f182",
+    "frontend/tsconfig.node.json": "66362d3973b411c9da6f18808a7149f5e1cf0c3e099815a107a61a71db792adc",
+    "frontend/src/App.tsx": "b7e179c6728121e07196c2f503611948382a9fbc24937f1ff7c2ac77913360c2",
+    "frontend/src/features/dashboard/DashboardView.tsx": "90842bdae9fb8a3a5039d08d7b7b2eafce0a36ce24bcaf15113c8637dfc56095",
+    "frontend/package-lock.json": "42193a0f24eacb698805fd0e7a253f9408f97aee5f803a3c279ecab3c8151fd1",
+    "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  "method": "Astra frozen-source inspection; all executable/config mtimes precede final corresponding build start, no source edits during finalization."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "06325f8ab263",
+  "project": "_Organized Desktop/05 Numbered Experiments/j4",
+  "files": {
+    ".gitignore": "a888b9df89402a815bdb15d30c5280b090be11655ab4cc2299ce748d44cd6ed4",
+    "README.md": "d8f40823b7e598a425a9d7c788d8d4419fbd745371380bab2f638ff064994858",
+    "data/questions.txt": "620fb0313a15f3cbff450ff57698cef44f2d38132ab4c5dd72cc5729a9649be7",
+    "src/quiz/App.java": "a82c20cdb4584b9c43a1fb36dd1f281e3453ff5b74a99c69b86b93ccb4867ede",
+    "src/quiz/Question.java": "23c6066fe7b0e2bbdd8a886fdb4a0935fc7048bd6c79022293e6eff60ffd9970",
+    "src/quiz/QuestionAttempt.java": "5e0cdb7e91766d122882efc6fa61d6e4820bfa6b99ce059d30d72dca4d993708",
+    "src/quiz/QuestionFileException.java": "4aab30169a24e8e8079e0ea319c467244b7217dfa988f3e44c1024a8c461670e",
+    "src/quiz/QuestionLoader.java": "b4ed12cfba9e34b5b8cd152453532f31ff7046b025bb1fc79ce15ed5222f9ef9",
+    "src/quiz/QuizEngine.java": "11c8e6e6a39fab6c96147651b50922227b1ae2be477119b52df9ead1011fa1d5",
+    "src/quiz/QuizResult.java": "e4aa4a0c85dff29df5edc6d15188637a501b859cb4ad6f9530ccd4e805750445"
+  }
+}

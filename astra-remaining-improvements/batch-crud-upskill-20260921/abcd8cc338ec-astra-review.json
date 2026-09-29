@@ -1,0 +1,31 @@
+{
+  "id": "abcd8cc338ec",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:33:05.642451+00:00",
+  "sourceReview": "Reviewed original and final PUT route, PostgreSQL Drizzle client, schema and real API helpers. Parent update/version increment and conditional step delete/insert now share one transaction handle. Tenant predicate, null result, omitted versus empty steps and mapping are preserved; error conversion stays outside callback.",
+  "teachingReview": "Reviewed all nine chapters with source links, before/after, trace table, exercises and concrete answers. Corrected real API helper versus NextResponse adapter scope and globally unique workflow-id fixture guidance. Explicitly distinguishes transaction control-flow evidence from native PostgreSQL rollback.",
+  "testReview": "Independently executed seven actual-route cases. Asserted exact tenant/version expressions, transaction receiver scope, update/delete/insert order, insert and delete rejection without simulated commit, omitted and empty steps, missing parent and validation-before-transaction. Uses explicit ORM/auth/parser doubles, real response helpers; no SQL or database rollback claim.",
+  "specSHA256": "9b0da1aefc3d88aff8940bea7e844297b5736639ed6638ab6560f1beecb9c40e",
+  "fileHashes": {
+    "src/app/api/workflows/[id]/route.ts": "4356fe0bccc612b72751415f0c51bd6fe9bdc4cd2159a66f9d7c9dab6c52ebf7",
+    "astraupskill/snapshots/workflow-route.ts.original.txt": "96fcdf068be7e4f5be211dab39f675d6d346c1d77ca1e2fd699b3a2c0d815f5c",
+    "tests/runtime-workflow-transaction.test.mjs": "75d2fd32712a728d2e5d47ee6488cd677cba74a05abf354bb99fbc52d8ae1c47",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "69a611f1246b4e65268842a71a05116c87a7682ef12418b6ead2a97a944d5db2",
+    "astraupskill/evidence/results.json": "30d428957b4de7bcfe046953c805f88e2cfedeb677d330fe3571a1e25255959e",
+    "astraupskill/README.md": "e5cb910787044bcaa6b4635f0cf0214b1a67fca7492c9e65c31530a6bcbc43d3",
+    "astraupskill/01-CODEBASE-MAP.md": "f067be5920146eca26d81a864b3afea0109091f71a86ba3806ed2579c141d804",
+    "astraupskill/02-CONCEPTS.md": "b54bed22d659d5ede5894717185d86e10ceec44a97a0925a5ec982b2f8d107aa",
+    "astraupskill/03-WORKED-CHANGE.md": "b98ab1a705598134722a74ed0a436302d2e8f0323a031fed76b8a4cf9b74f8e7",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "c2d5ee5f7a6585c97452e75361737f460f5eaad481454d74e512b7cba62b1a92",
+    "astraupskill/05-PRACTICE.md": "3253b5d25cb58cbd88596f4f5d040743bcf54c2aef7fb1fd01c8bc24b0f949ac",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "09d7b1bc8d8a3f4f3732bae1ff81fae87975dbc123b2d01af1691625e90fb4dc",
+    "astraupskill/07-TRACE-LAB.md": "4fb627e2e2313f451b479c200bcc62bdd779982b43ce146eaf0efe522320419d",
+    "astraupskill/VERIFICATION.md": "575d07fab3c62651664e9f1ad71c2704f96d5ea252e628818bdbf749da7d1bba"
+  },
+  "evidenceHashes": {
+    "checks/abcd8cc338ec/crud-b03-astra-runtime.json": "d696c6a4487e9f205bec4dab039b411dc4d6fe84b1ea2c088fbe03d801cd7a10",
+    "checks/abcd8cc338ec/crud-b03-astra-runtime.log": "69a611f1246b4e65268842a71a05116c87a7682ef12418b6ead2a97a944d5db2",
+    "checks/abcd8cc338ec/results-crud-b03.json": "30d428957b4de7bcfe046953c805f88e2cfedeb677d330fe3571a1e25255959e"
+  }
+}

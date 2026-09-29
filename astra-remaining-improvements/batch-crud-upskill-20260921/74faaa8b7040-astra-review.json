@@ -1,0 +1,35 @@
+{
+  "id": "74faaa8b7040",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:54:00.621310+00:00",
+  "sourceReview": "Reviewed full UUID slug suffix, unchanged normalization and60-character prefix, unconstrained unique Prisma slug string and create payload. Corrected native test suffix length. Old persisted slugs unchanged; collision resistance not request idempotency.",
+  "teachingReview": "Reviewed all nine rewritten chapters, corrected original Math.random mechanism and probabilistic-uniqueness wording, concrete prefix arithmetic, service trace, idempotency design exercise and separate answers.",
+  "testReview": "Astra ran three actual helper/service tests with deterministic UUIDs and repository spy: readable format, repeated create payloads retaining brand/name/dates/full suffix, and93-character max slug for long name. No HTTP/auth/DB/typecheck/Vitest execution. Preflight passed.",
+  "specSHA256": "a39589c491f2f5187b816f90cec62a5f7145d7c2b317338efbcaf6a619801377",
+  "fileHashes": {
+    "apps/api/src/services/campaign.service.ts": "45d171c5cea8d29367923eda092c067d1fe52f93d980f5b29815198a3121e310",
+    "apps/api/src/services/campaign.service.test.ts": "be600e178f3b5542e85c475050371f8b38e19220c49de60412c166b429ff7066",
+    "tests/campaign-slug.test.mjs": "d7da6086bdbac6edebadfde06695ca6bbad1fdebfdfe8c339af351f895ad7a33",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/apps__api__src__services__campaign.service.ts.original.txt": "f5569632ae651d6563372b3ae880214675ba6411d864072d71ce60ffba37e4d7",
+    "astraupskill/evidence/astra-crud-b01-identifiers.log": "e37f65edfa79978bfcb791ae29d2400ccb0657c16a51fc264cd8562f3abf963e",
+    "astraupskill/evidence/results.json": "fcd8420cd1b7dcf0b70c639fde939d7f88589ffed9f5f895b47de4236cfe06dc",
+    "astraupskill/README.md": "94696cbcf50ccdedba558177b664c3e44fc40330c29530313085f58cbc90dc22",
+    "astraupskill/01-CODEBASE-MAP.md": "555ca37370148a2a79ac6ded267faa41b49ffd7f51bf97ee1cba978889d8774e",
+    "astraupskill/02-CONCEPTS.md": "0652d55063e1c870c46b010712cc3bce8d3b28c9a81905d2d0a1cff9fb898300",
+    "astraupskill/03-WORKED-CHANGE.md": "ebcd622b36b4afa498ee1a057cc763bc83baa45fbc6b94b6102f40442f8f10ae",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "21d90a33d6ac0acecda49a5e0a991051127aca67c4457cf4c249039293f2f8ab",
+    "astraupskill/05-PRACTICE.md": "ce52eed5b90d0fe10ee3b8caa44584bb081bdb1c140f1eb87c13efccb250e915",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "24e651500ace7d1c6d66709471e5b0b9c0724cf5a5be433559542060a8e5a23d",
+    "astraupskill/07-TRACE-LAB.md": "531c9ac8e75a857ebf87f49795516aebc8be765a8b1051f5d975f0e286210a1c",
+    "astraupskill/VERIFICATION.md": "d6f2c7f42c0441409cca5b8e383b0492b9126d3e1174496ea0aa043887e59edd"
+  },
+  "evidenceHashes": {
+    "checks/74faaa8b7040/astra-crud-b01-identifiers.json": "61c76d85baee89b1785744463a027b826c45ba7afdb1f187b52a9e0f7a9f3834",
+    "checks/74faaa8b7040/astra-crud-b01-identifiers.log": "e37f65edfa79978bfcb791ae29d2400ccb0657c16a51fc264cd8562f3abf963e",
+    "checks/74faaa8b7040/crud-b01-runtime.json": "1576c6df24a106bbfbed5d2f2cbc0f7deddcadcf49b99f90f3f6887834364635",
+    "checks/74faaa8b7040/crud-b01-runtime.log": "22738b5f9051f2cfadab66d92e5177ff1f9f68bd6d3172aaefdf0c84ea78fdcc",
+    "checks/74faaa8b7040/crud-b01.log": "f70133ff84231cc2aab809a7ac500de1bd0caab563dec16d8f6f0333d51b76b5",
+    "checks/74faaa8b7040/results-crud-b01.json": "fcd8420cd1b7dcf0b70c639fde939d7f88589ffed9f5f895b47de4236cfe06dc"
+  }
+}

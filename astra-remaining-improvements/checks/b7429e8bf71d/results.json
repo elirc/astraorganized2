@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "total": 13,
+  "tests": 13,
+  "failed": 0,
+  "checks": [
+    "root-install-02",
+    "luna-generate-final-20260912",
+    "luna-test-freeze-20260912",
+    "luna-typecheck-freeze-20260912",
+    "luna-lint-freeze-20260912",
+    "root-build-final-01"
+  ],
+  "scope": "13 Node test cases across actual parsers, manual/start handlers, stop/start services and board service with Prisma doubles; full lint/typecheck/Next build pass; no live database or browser."
+}

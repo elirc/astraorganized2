@@ -1,0 +1,9 @@
+{
+  "command": [
+    "node",
+    "node_modules/next/dist/bin/next",
+    "build"
+  ],
+  "exitCode": 0,
+  "seconds": 46.6
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "manual-recovery-draft",
+  "slug": "blf74kjhWCv9dBlXnWZlpg",
+  "edit": {
+    "version": 4,
+    "form": {
+      "title": "Browser sample",
+      "content": "exported unsaved draft",
+      "language": "plaintext",
+      "visibility": "public",
+      "expiration": "keep"
+    }
+  },
+  "newForm": {
+    "title": "",
+    "content": "",
+    "language": "plaintext",
+    "visibility": "public",
+    "expiration": "never"
+  },
+  "attempt": null,
+  "instruction": "Contains text and possibly an edit key. Keep locally. An unresolved creation must retry this exact body, request ID and key."
+}

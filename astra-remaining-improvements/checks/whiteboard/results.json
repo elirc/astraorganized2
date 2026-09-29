@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "tests": 25,
+  "backendTests": 17,
+  "browserTests": 8,
+  "lint": true,
+  "typecheckAndBuild": true,
+  "environment": "Node 22.16.0; npm 10.9.2; locked dependencies; Chromium 148.0.7778.96; real HTTP/WebSocket/Yjs, temporary files and separate-process startup",
+  "limits": [
+    "No Docker daemon verification, authenticated access, multi-process storage locking, or per-edit disk receipt."
+  ],
+  "layoutRechecks": 2,
+  "buttonLabelsFit": true
+}

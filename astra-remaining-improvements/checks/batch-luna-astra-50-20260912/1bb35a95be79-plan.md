@@ -1,0 +1,17 @@
+# Astra source plan: .netzen support desk
+
+Canonical `_Organized Desktop/01 Net Workspaces/.netzen`; ID `1bb35a95be79`. Active app under `support-ticketing-app`. Not staged/assigned. Root read command handlers, Permissions, Ticket domain, in-memory store, search/get handlers, DTO mapping, SignalR notifier/hub and frontend client/event usage. Confirm instructions and target .NET before editing.
+
+## Concrete repair
+
+The store already uses a write lock, expected-version check and working-copy snapshots before commit. Preserve and teach these safeguards; do not claim failed tag enumeration currently corrupts stored records. Direct Ticket.ReplaceTags clears its live aggregate before enumerating/normalizing all inputs; precompute validated tags before replacing. Reject undefined status/priority/comment-visibility enum values instead of taking permissive defaults. Preserve Closed terminal behavior and version increment semantics.
+
+The larger exposure is SignalR: anyone can JoinInbox, and notifier broadcasts full ticket summaries and even internal comment bodies to that global group. Frontend blindly upserts summaries into its visible list. Implement a coherent safe event contract. A practical small design is a generic data-free invalidation event followed by an authorized HTTP refetch, with no ticket IDs, names, customer emails or comment bodies in the broadcast. Alternatively implement correctly authorized per-user groups using the demo identity and current permissions, but do not assume arbitrary header roles establish real authentication. Update client handlers, reconnect/rejoin and visible connection-error behavior to match. Ensure stale asynchronous refetches cannot replace newer filter results or reintroduce unauthorized tickets.
+
+SearchTicketsHandler currently fetches only the first 100 globally matching tickets then filters by permission and paginates again, yielding incomplete counts/results. Put ticket visibility and allowed-comment search scope before sorting/count/pagination at the repository boundary. Current text search includes every internal comment, so customers can infer hidden text via search matches even though ToDetailDto filters comment bodies. Summary comment counts should use the same visibility if they would reveal hidden notes. Keep existing public comments and authorized staff visibility.
+
+## Tests and course
+
+Add real domain/store/handler tests for rejected tag/enums no state/version change, stale competing edits one winner, snapshot isolation, >100 mixed-visible tickets with accurate totals/pages, and customer search on an internal-only marker yielding no match. Fake IHubClients/ClientProxy must record actual serialized broadcasts: no sensitive marker from either public or internal ticket data may escape the chosen generic contract. Test frontend event→refetch/reconnect/error behavior with mocks and preserve normal authorized updates. Run backend tests/build and frontend finite tests/TypeScript/Vite build; disclose .NET roll-forward if needed.
+
+Nine detailed guides (~4,000 words) should trace an internal comment command through expected version, permission, working copy, commit, safe notification and authorized client refresh. Explain read filtering before pagination and search inference, existing snapshot guarantees, transport contracts, async state and demo identity limits. Include exact original snapshots, complete role/data fixtures and matched practice/solutions. The in-memory store is not durable and post-commit SignalR is not an outbox; retain these explicit limits.

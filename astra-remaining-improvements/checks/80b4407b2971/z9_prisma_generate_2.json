@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z9",
+  "id": "80b4407b2971",
+  "command": [
+    "npm.cmd",
+    "run",
+    "prisma:generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\80b4407b2971",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://postgres:postgres@localhost:5432/freelancer_ops_portal?schema=public"
+  },
+  "startedAt": "2026-09-13T15:15:57.398092+00:00",
+  "status": "complete",
+  "log": "z9_prisma_generate_2.log",
+  "pid": 24256,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:16:21.013578+00:00",
+  "elapsedSeconds": 23.61
+}

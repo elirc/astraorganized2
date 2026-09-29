@@ -1,0 +1,121 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w25",
+  "id": "13ccdfb915ff",
+  "summary": [
+    "Preserve the existing LockService production implementation and add a bounded executable learning lab.",
+    "Add an actual-service lab for ownership, expiry, release, and contention boundaries.",
+    "Document runtime evidence and distributed-locking limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/13ccdfb915ff/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/w25",
+        "id": "13ccdfb915ff",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-lock-service-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\13ccdfb915ff",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:58:46.528048+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 21936,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:58:53.569598+00:00",
+        "elapsedSeconds": 7.04
+      }
+    ],
+    "limits": [
+      "Six cases execute actual LockService, state machine, scope-key and time helpers with explicit repository/audit adapters. No Next route, actual repository persistence, expiry scan, multi-process contention or durable audit execution.",
+      "The draft incorrectly replaced canReacquire with always true and used a Date-returning time double. Accepted tests load the real modules and distinguish active-lock refusal from a repository version conflict after an eligible reacquire.",
+      "No production code is changed and this bounded lab is not a complete correctness certification of the lock system."
+    ]
+  },
+  "courseWords": 1681,
+  "courseFiles": 9,
+  "courseLinksChecked": 11,
+  "files": [
+    {
+      "file": "tests/runtime-lock-service-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "4934b04380e56553a8b7ca631c5202679ec86f4911f64b8a633ad8611e0535e8"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "5283b5a0eb0c866cf98a7892a49c8c2674f57461f8ed37cae3703d8d947fd54d"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "8c13777a14273f7ba0e3f3983d352f7e713666bcc03e42a0092e13cb16413f0b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e6d566bc204f31b232d1a3db611584a269a300edff0932f219dd8d10e9d766ac"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "58e3b6f9fe9618cfd3a3a69b876e78c1b13a417054b9a8959c556ecca7974311"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "ea95c60f4693479ff491d7b1178f7b75a839a077a5dd006cfa7675d99820932f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "e84c3bfffa725a07e868985c43a59f1f0b240eba851a3507309b3382ee4404d5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "32181789abd9fe3c47982bea39e92e786c858e053fddb904045570f923366e89"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "0494a43265694e13abafca32ae1f14f664c9f79318b63c72fcc3375a2155ce8f"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "501c287c5241103536319b52a4e3efff2de7b2908c28f5b4dca1c8163d5b2266"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "d6bba9b9c67260a88a470e9611fafbe8ddba1a9b88ace5b16e7b62aebc1ef469"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a1c42e4240bc7b0f4cd43d3fb37e2f352dc46b8a51c83ef8ccec78188edd132c"
+    }
+  ],
+  "limits": [
+    "Six cases execute actual LockService, state machine, scope-key and time helpers with explicit repository/audit adapters. No Next route, actual repository persistence, expiry scan, multi-process contention or durable audit execution.",
+    "The draft incorrectly replaced canReacquire with always true and used a Date-returning time double. Accepted tests load the real modules and distinguish active-lock refusal from a repository version conflict after an eligible reacquire.",
+    "No production code is changed and this bounded lab is not a complete correctness certification of the lock system."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:08:59.642579+00:00"
+}

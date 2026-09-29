@@ -1,0 +1,3014 @@
+{
+  "exact_matches": [
+    {
+      "old_id": "proj-netarchitectureproject",
+      "new_id": "f4ff37c6-dde6-55ae-bd4f-01a1020a00ec",
+      "path": ".netarchitectureproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netopen2",
+      "new_id": "a3ce8428-e908-57b8-92e2-76063a0f1337",
+      "path": ".netopen2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netramp",
+      "new_id": "bc477505-a737-5c6f-9d5d-f1fb2fe000c3",
+      "path": ".netramp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netstripe",
+      "new_id": "ee3773a5-94e4-5865-bed1-56f6deb2e198",
+      "path": ".netstripe",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-nettodo",
+      "new_id": "62b62490-4a86-5bab-a6be-b229cabfdd95",
+      "path": ".nettodo",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netcalendy",
+      "new_id": "886fb3b0-3667-5889-933c-b56ff50d7535",
+      "path": "_Organized Desktop/01 Net Workspaces/.netcalendy",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netgum",
+      "new_id": "087acb73-6c2f-57ba-938b-ec965e496187",
+      "path": "_Organized Desktop/01 Net Workspaces/.netgum",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-nethris",
+      "new_id": "c5e3ad2b-1861-5848-9ad5-cb8ecf6017e8",
+      "path": "_Organized Desktop/01 Net Workspaces/.nethris",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netpastebin",
+      "new_id": "25506768-72c7-573b-82cc-8a43bd004555",
+      "path": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netslack",
+      "new_id": "5d724887-9ce0-5827-9b2d-896ac3d6b378",
+      "path": "_Organized Desktop/01 Net Workspaces/.netslack",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-nettrello",
+      "new_id": "d84b5a22-3311-5e2f-b2e6-99f1fd3914e1",
+      "path": "_Organized Desktop/01 Net Workspaces/.nettrello",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netvg",
+      "new_id": "13853dee-fa03-593a-accd-895a8beeea23",
+      "path": "_Organized Desktop/01 Net Workspaces/.netvg",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netzen",
+      "new_id": "4aef6e88-624c-53a1-8579-7dad037b2419",
+      "path": "_Organized Desktop/01 Net Workspaces/.netzen",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-csbootcamp",
+      "new_id": "d3536f8f-07d5-5ed5-8ae0-0f0140760b4b",
+      "path": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildaffiliate",
+      "new_id": "bc3e7570-6629-5b8a-881d-9eb365226763",
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildagenthelpdesk",
+      "new_id": "5ec35a5a-990c-5f3f-8cae-a17d76196894",
+      "path": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildagentteachgem",
+      "new_id": "691c27d0-92fd-5fa6-a9d9-049a02ca6a7c",
+      "path": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildagentteaching",
+      "new_id": "6768c5e0-f5e1-527f-90b3-095546c52585",
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildanalytics",
+      "new_id": "36f300a6-6b4f-5e3e-81d2-4b1853fb27be",
+      "path": "_Organized Desktop/02 Build Projects/buildanalytics",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildantigvg",
+      "new_id": "381268ce-13f6-5979-8820-0167df0ffdc0",
+      "path": "_Organized Desktop/02 Build Projects/buildantigVG",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildasana",
+      "new_id": "0d6e8e4e-38e0-51f2-90be-0e605c3205e2",
+      "path": "_Organized Desktop/02 Build Projects/buildasana",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildcrmpyjs",
+      "new_id": "de420c90-6076-577c-b6d8-041306e0c06f",
+      "path": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildecom",
+      "new_id": "2062b982-8c42-54f4-9bff-597130b585c6",
+      "path": "_Organized Desktop/02 Build Projects/buildecom",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildgum",
+      "new_id": "20ffce38-a222-501a-a601-144e187e274b",
+      "path": "_Organized Desktop/02 Build Projects/buildgum",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildjira",
+      "new_id": "0cfe6593-6781-5c3a-b0cb-355861c1831f",
+      "path": "_Organized Desktop/02 Build Projects/buildjira",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildscedulingpyjs",
+      "new_id": "2613cc64-63c6-57e8-83e5-34da0e31d4d7",
+      "path": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildsubbox",
+      "new_id": "007762bc-1faa-530f-ad09-eccdf69b03dd",
+      "path": "_Organized Desktop/02 Build Projects/buildsubbox",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master",
+      "new_id": "24168211-9efd-5072-b76c-c64b10aebc9c",
+      "path": "_Organized Desktop/03 Master Projects/master",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master-6",
+      "new_id": "7d1eaf34-c787-510a-8e59-5c85751ff645",
+      "path": "_Organized Desktop/03 Master Projects/master 6",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master1",
+      "new_id": "bbc7d1e6-42d7-5744-b967-b4a18e51dabe",
+      "path": "_Organized Desktop/03 Master Projects/master1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master2",
+      "new_id": "0fe67010-ec88-5ce4-9d5e-57619853f0ad",
+      "path": "_Organized Desktop/03 Master Projects/master2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master3",
+      "new_id": "26bf22e6-fac1-537e-8cd9-cea49898e3d2",
+      "path": "_Organized Desktop/03 Master Projects/master3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master4",
+      "new_id": "50d6e16a-de75-5003-abe0-9fc52cecce30",
+      "path": "_Organized Desktop/03 Master Projects/master4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master7",
+      "new_id": "67f17dc9-b973-5e40-a198-a9d7f7bfd5e4",
+      "path": "_Organized Desktop/03 Master Projects/master7",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastercal",
+      "new_id": "09274374-cc70-5236-8b56-82a50153d542",
+      "path": "_Organized Desktop/03 Master Projects/mastercal",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterdidy",
+      "new_id": "b154fda6-8084-50c2-9fd4-2c2af2e28026",
+      "path": "_Organized Desktop/03 Master Projects/masterdidy",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterdub",
+      "new_id": "6a1f476c-1b57-5aea-88e7-1c65742b19f1",
+      "path": "_Organized Desktop/03 Master Projects/masterdub",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterfinisc",
+      "new_id": "4acc8017-c5ab-5c52-8395-bbcbcb1f790b",
+      "path": "_Organized Desktop/03 Master Projects/masterfinisc",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterflag",
+      "new_id": "e2a6979a-2584-5fe7-8a58-6da593508ac0",
+      "path": "_Organized Desktop/03 Master Projects/masterflag",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterform",
+      "new_id": "9ebc6f41-608c-5e53-af03-aa3f04e5084f",
+      "path": "_Organized Desktop/03 Master Projects/masterform",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterhop",
+      "new_id": "6c7bcb89-4aac-553d-9a52-94eb2da418b6",
+      "path": "_Organized Desktop/03 Master Projects/masterhop",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masteridur",
+      "new_id": "638a948a-c93f-5d76-9252-8f1b1936ba2e",
+      "path": "_Organized Desktop/03 Master Projects/masteridur",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterindicopyjs",
+      "new_id": "95fa7442-a345-53ec-a57d-795ecac0e84a",
+      "path": "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterlink",
+      "new_id": "861a5273-6af8-5268-a9d0-cdd2bbd5bd57",
+      "path": "_Organized Desktop/03 Master Projects/masterlink",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastermatter",
+      "new_id": "77ccdde8-9f55-57af-8dc4-113bef79874a",
+      "path": "_Organized Desktop/03 Master Projects/mastermatter",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastermayan",
+      "new_id": "5e60542c-5a1b-5752-9bea-967a57d67f32",
+      "path": "_Organized Desktop/03 Master Projects/mastermayan",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastermorphic",
+      "new_id": "512859df-8f02-5d0e-be8b-2187d57b0e68",
+      "path": "_Organized Desktop/03 Master Projects/mastermorphic",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masternext",
+      "new_id": "478958bc-c4f8-5da6-853c-3d8196cc70fa",
+      "path": "_Organized Desktop/03 Master Projects/masternext",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masternovu",
+      "new_id": "ac54fea5-37d2-5926-bce7-b86ab6fce4f8",
+      "path": "_Organized Desktop/03 Master Projects/masternovu",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masteropen",
+      "new_id": "20fa785e-57a5-5ca6-aefe-8359928282fb",
+      "path": "_Organized Desktop/03 Master Projects/masteropen",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masteropenedxpyjs",
+      "new_id": "c2bf1766-c2af-5863-b237-7229a15ae3ed",
+      "path": "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterpaper",
+      "new_id": "af620cc8-5fe3-5b92-bbea-80429cf95232",
+      "path": "_Organized Desktop/03 Master Projects/masterpaper",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterplane",
+      "new_id": "41b926a1-b6c8-5429-81df-b01a860ff641",
+      "path": "_Organized Desktop/03 Master Projects/masterplane",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterpload",
+      "new_id": "d6894533-31c3-58ef-afce-04ed1af14c1b",
+      "path": "_Organized Desktop/03 Master Projects/masterpload",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterpostiz",
+      "new_id": "47b4f4d7-0dd3-5474-b41d-3514bd011f0e",
+      "path": "_Organized Desktop/03 Master Projects/masterpostiz",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterpre",
+      "new_id": "8d22b021-cd4c-5ade-8469-56775034169e",
+      "path": "_Organized Desktop/03 Master Projects/masterpre",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterrnative",
+      "new_id": "350f5b88-acae-5d02-8e3e-0dcf8019a3e4",
+      "path": "_Organized Desktop/03 Master Projects/masterrnative",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastersaleorpy",
+      "new_id": "cad6cbd8-9e5f-5fad-95b4-0b0170f331c6",
+      "path": "_Organized Desktop/03 Master Projects/mastersaleorPY",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastershadcn",
+      "new_id": "6ef704b9-4068-5b67-9639-a74659a2ed5a",
+      "path": "_Organized Desktop/03 Master Projects/mastershadcn",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterstore",
+      "new_id": "2954180d-daa2-55fa-91ad-8d777a5d9bbb",
+      "path": "_Organized Desktop/03 Master Projects/MasterStore",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastersupa",
+      "new_id": "ed0f3636-6eca-5778-b2da-eb9c76a39965",
+      "path": "_Organized Desktop/03 Master Projects/mastersupa",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastertea",
+      "new_id": "2fd07f80-1073-5fea-8bf5-1b47114c8bc2",
+      "path": "_Organized Desktop/03 Master Projects/mastertea",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastertool",
+      "new_id": "114dbab1-7fde-581d-92a7-7a0e35ae643c",
+      "path": "_Organized Desktop/03 Master Projects/mastertool",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastertwenty",
+      "new_id": "9e2ad3e2-2176-5408-b071-e182d5f87129",
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mastertypebot",
+      "new_id": "fb37addc-f920-5f3a-b59d-3b4b92b10254",
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterumami",
+      "new_id": "1692c0f9-2258-5998-9aa6-f9235d9fc63a",
+      "path": "_Organized Desktop/03 Master Projects/masterumami",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masterzulippy",
+      "new_id": "bb58bcd1-e75e-5d73-93d7-e05601c4c127",
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jep-vs-code",
+      "new_id": "5b34c27d-7e01-5a73-a355-ade72bf27717",
+      "path": "_Organized Desktop/04 JavaScript Training/jep vs code",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jsdrill_sync_20260223_125137",
+      "new_id": "c8feb2aa-e7fd-5d9c-ae48-be5047b28bea",
+      "path": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jsdrillapp",
+      "new_id": "72cad694-3a5f-5da7-a453-fd99301098be",
+      "path": "_Organized Desktop/04 JavaScript Training/jsdrillapp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain1",
+      "new_id": "46072215-5eae-595f-ba00-d911cc17781e",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain2",
+      "new_id": "52f6a0e8-d8c8-5749-ac9d-978b584d8ef1",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain2-2",
+      "new_id": "9d39edb3-813e-5b2e-87da-9a68365ac266",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain2-3",
+      "new_id": "df14b050-ba77-5608-98b6-d90293e4019a",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain2-4",
+      "new_id": "b0851c2d-9cea-5b1a-b0df-1928ef75d3d5",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain3",
+      "new_id": "f76d4894-b4ec-57ad-8ed2-6d14004abe63",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain3-0",
+      "new_id": "c474932d-ea1e-5e01-9c5f-d3c681a036ef",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstrain5",
+      "new_id": "be5c4dc4-7bbe-5c71-9851-23d404aabb5f",
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain5",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-react",
+      "new_id": "132fd583-a114-507e-b685-f60ddbd983a0",
+      "path": "_Organized Desktop/04 JavaScript Training/react",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-reactbullet",
+      "new_id": "d28ff52d-1c5e-506f-9e3b-59b7b7e8aef0",
+      "path": "_Organized Desktop/04 JavaScript Training/reactbullet",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-rewritepy2js",
+      "new_id": "b6044448-0666-50b6-a4c2-ad9bdaa82a02",
+      "path": "_Organized Desktop/04 JavaScript Training/rewritepy2js",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-trainjs",
+      "new_id": "55ed9369-e980-535b-90b7-6a442f419021",
+      "path": "_Organized Desktop/04 JavaScript Training/trainjs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-b1",
+      "new_id": "c0ea2d70-0cb5-5635-b767-ffe686b4ba2b",
+      "path": "_Organized Desktop/05 Numbered Experiments/B1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-d1",
+      "new_id": "17859bab-c356-5541-8db4-ba661548614c",
+      "path": "_Organized Desktop/05 Numbered Experiments/D1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-d2",
+      "new_id": "41ad3c75-50a9-5605-8abf-6a6e1cf84408",
+      "path": "_Organized Desktop/05 Numbered Experiments/D2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-d3",
+      "new_id": "f4ddeaf9-9371-5c52-844a-cafaeab898e5",
+      "path": "_Organized Desktop/05 Numbered Experiments/D3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e1",
+      "new_id": "19477fac-3c1b-5bfb-9766-b529575b4870",
+      "path": "_Organized Desktop/05 Numbered Experiments/e1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e11",
+      "new_id": "3904e026-e7c2-5e97-ae15-d9ef9fd8e481",
+      "path": "_Organized Desktop/05 Numbered Experiments/e11",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e12",
+      "new_id": "ec2f09b2-fcfd-5143-bc1c-c47718691814",
+      "path": "_Organized Desktop/05 Numbered Experiments/e12",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e13",
+      "new_id": "d6294889-b7b1-5e01-b701-0ab6b9846ef3",
+      "path": "_Organized Desktop/05 Numbered Experiments/e13",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e14",
+      "new_id": "290d52f4-9b93-5a1a-8ba9-de00e2f51bc3",
+      "path": "_Organized Desktop/05 Numbered Experiments/e14",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e15",
+      "new_id": "7074b3af-610b-5ee0-bffd-3f4be5791487",
+      "path": "_Organized Desktop/05 Numbered Experiments/e15",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e17",
+      "new_id": "924eaa1a-cf37-5e38-bb15-aebbb61de974",
+      "path": "_Organized Desktop/05 Numbered Experiments/e17",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e2",
+      "new_id": "58f7cd5d-fd44-512f-a686-761e413093ec",
+      "path": "_Organized Desktop/05 Numbered Experiments/e2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e20",
+      "new_id": "b856fb96-73a3-5f0a-ba3d-d05b58c6cd49",
+      "path": "_Organized Desktop/05 Numbered Experiments/e20",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e3",
+      "new_id": "accaf12e-ae12-5857-8199-97726dc93000",
+      "path": "_Organized Desktop/05 Numbered Experiments/e3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e4",
+      "new_id": "303fa2eb-00e9-5e72-b862-07609e420983",
+      "path": "_Organized Desktop/05 Numbered Experiments/e4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-e6",
+      "new_id": "857789f0-3a81-505c-b957-ac1279d5d864",
+      "path": "_Organized Desktop/05 Numbered Experiments/e6",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-g1",
+      "new_id": "524cf53c-7d79-59b5-ae19-b2c641dbdf49",
+      "path": "_Organized Desktop/05 Numbered Experiments/g1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j1",
+      "new_id": "e5e9eb35-0ef8-5c3d-977e-319f6f5efdb2",
+      "path": "_Organized Desktop/05 Numbered Experiments/J1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j2",
+      "new_id": "fa401317-065b-52f6-8f19-f61bbfeec167",
+      "path": "_Organized Desktop/05 Numbered Experiments/j2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j3",
+      "new_id": "d745e97c-f59c-5f95-b47c-f12ef24f25bf",
+      "path": "_Organized Desktop/05 Numbered Experiments/j3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j4",
+      "new_id": "8129af13-05b9-57d9-bc11-9be430f85ece",
+      "path": "_Organized Desktop/05 Numbered Experiments/j4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j5",
+      "new_id": "a97de8fc-3046-5b14-a621-9f86803b2969",
+      "path": "_Organized Desktop/05 Numbered Experiments/j5",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-j7",
+      "new_id": "4a857856-b57a-567f-985c-a3f4333ede0b",
+      "path": "_Organized Desktop/05 Numbered Experiments/j7",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-rn1",
+      "new_id": "635b086d-718f-5932-9731-774d3f42c143",
+      "path": "_Organized Desktop/05 Numbered Experiments/rn1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-w21",
+      "new_id": "a95b009b-a2fe-5b75-9f9c-18900cc9365e",
+      "path": "_Organized Desktop/05 Numbered Experiments/w21",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-w22",
+      "new_id": "f4418cd1-d175-56b6-bac0-376d366cd088",
+      "path": "_Organized Desktop/05 Numbered Experiments/w22",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-w23",
+      "new_id": "1ef98102-aedc-5f5a-b999-785360dc50e1",
+      "path": "_Organized Desktop/05 Numbered Experiments/w23",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-w24",
+      "new_id": "1c114422-6713-5f97-9053-f2edb6c81de4",
+      "path": "_Organized Desktop/05 Numbered Experiments/w24",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-w25",
+      "new_id": "67d2d263-f9a4-5936-8e23-86fa3a19bfbe",
+      "path": "_Organized Desktop/05 Numbered Experiments/w25",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww1",
+      "new_id": "658aead9-1e98-5188-9fe3-ae449d8fcacb",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww10",
+      "new_id": "c1ec4a4d-de1f-5a90-bcab-8c432f16c7de",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww10",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww11",
+      "new_id": "9729a37c-ce29-577e-91f9-4e520319f725",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww11",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww12",
+      "new_id": "d4cb5573-8e6f-513d-9da3-842276baa1bf",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww12",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww13",
+      "new_id": "7aab65b8-95e8-5f2b-9e85-806a27f79d40",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww13",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww14",
+      "new_id": "f496bce5-1803-5a00-88bf-534f10cbbbdc",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww14",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww15",
+      "new_id": "7c6e0dce-ffea-5b29-a4f8-a2c798984408",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww15",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww16",
+      "new_id": "8f237bbc-d6a9-5c3c-bcb2-c5abf3a48747",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww16",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww17",
+      "new_id": "d4e5f5b4-18f1-5d24-8130-c03128304f3a",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww17",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww18",
+      "new_id": "1650fbe5-33ca-5db5-95de-57cadaefc040",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww18",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww19",
+      "new_id": "c63ca4d0-b7da-57c4-9cbe-8e7a3dd29cd2",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww19",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww26",
+      "new_id": "af047360-289f-570d-bc18-35932d112055",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww26",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww27",
+      "new_id": "f13d05bf-3754-5d30-838d-ee9d4343e41c",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww27",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww28",
+      "new_id": "be5fd201-1409-5436-95b1-bb6cbdc2f074",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww28",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww29",
+      "new_id": "49088d8a-69b4-558e-a8a4-c70b6a2a316e",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww29",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww3",
+      "new_id": "bbd609d9-dee5-5b59-b7eb-d5156da4edda",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww30",
+      "new_id": "4ce7f5ee-42a6-50a2-8116-0673815435ee",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww30",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww31",
+      "new_id": "dc7e525a-eec5-5928-82f5-b6c62a80e68a",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww31",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww32",
+      "new_id": "43707cad-4eb3-591c-a229-b9a6ba103e12",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww32",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww34",
+      "new_id": "1fafb9e4-2d6b-597b-bf9a-e9c71694c3fe",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww35",
+      "new_id": "24d96d07-0326-58f3-8be8-ab9b2e98d399",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww35",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww36",
+      "new_id": "51003aab-a2be-5c6d-a352-d65e2d97e5b4",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww36",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww37",
+      "new_id": "9edba3f9-7192-5a3f-b612-7a1211a63d4b",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww37",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww39",
+      "new_id": "31fe6c1f-4a2e-5c86-803b-92fd067225a6",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww39",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww4",
+      "new_id": "413805a2-cf35-57b5-af94-c71b85692482",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww40",
+      "new_id": "00d07c77-5c5a-520e-9314-54431ee3a40f",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww40",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww43",
+      "new_id": "bab23c60-5b83-5a9f-b516-7825b0baba71",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww43",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww45",
+      "new_id": "ff766fc3-39d9-5597-81ee-41e3417bf798",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww45",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww46",
+      "new_id": "4aed610a-9091-56a4-b2d7-4e9ce959909d",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww46",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww47",
+      "new_id": "1c3598b4-a932-5232-93c4-4c6552df4624",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww47",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww48",
+      "new_id": "dfb29405-3356-5378-9776-c44252255e5f",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww48",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww49",
+      "new_id": "c12ef82d-5d95-53ea-90b4-a25e75d7168f",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww49",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww5",
+      "new_id": "91ab7d88-9f6a-5420-b36d-d50c07370bd1",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww5",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww50",
+      "new_id": "2e208405-1fc8-5db3-9702-4666df8d56ad",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww50",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww55",
+      "new_id": "707e6f7b-030e-5285-9bcd-f2a1e8cb2815",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww55",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww6",
+      "new_id": "1743c4a5-9e86-5130-b50e-f7c414ff7888",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww6",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww7",
+      "new_id": "18646ca5-2ee7-5106-8ac4-b45dca6bae39",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww7",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww8",
+      "new_id": "64fc9fd5-90e4-5b65-94ce-7f9f3f7874fb",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww8",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ww9",
+      "new_id": "068262d9-984a-5205-867c-ae5e3923a3fd",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww9",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-x1",
+      "new_id": "3db92ba9-5b7e-53da-adf7-840a317c1dc9",
+      "path": "_Organized Desktop/05 Numbered Experiments/X1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z1",
+      "new_id": "a7699a1f-8365-5e4c-9cd6-ba2fe07d2667",
+      "path": "_Organized Desktop/05 Numbered Experiments/z1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z3",
+      "new_id": "b34679ff-0db5-523f-b944-6a77f1be781a",
+      "path": "_Organized Desktop/05 Numbered Experiments/z3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z6",
+      "new_id": "2d9675ae-c495-5210-a5bb-5a5ce8b91d91",
+      "path": "_Organized Desktop/05 Numbered Experiments/z6",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z7",
+      "new_id": "ad9e0b0f-e5c3-56d3-9a85-f4b4c34ef850",
+      "path": "_Organized Desktop/05 Numbered Experiments/z7",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z8",
+      "new_id": "2aa5504e-b7ad-5f1c-8a44-9c713412fa67",
+      "path": "_Organized Desktop/05 Numbered Experiments/z8",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-z9",
+      "new_id": "1076b3e7-d71e-5e91-9564-20722d3b59e3",
+      "path": "_Organized Desktop/05 Numbered Experiments/z9",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz1",
+      "new_id": "7476eff4-4d27-5fcc-8395-d6b1c7d371f4",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz2",
+      "new_id": "c33a5c78-3fc6-508d-8f97-e8bd7bb68cdf",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz3",
+      "new_id": "b99dc403-6733-55b5-a651-c3047386d931",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz4",
+      "new_id": "f016e643-b116-5481-ad39-9cd7b28576cb",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz4",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz55",
+      "new_id": "1ecc0885-38ef-57aa-9b98-a3b15fe13d8b",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz55",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz6",
+      "new_id": "ccc20421-9a1c-5580-8838-b15dd75bf930",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz7",
+      "new_id": "1a568579-4926-539d-8867-ccd1993301c7",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz7",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz8",
+      "new_id": "450764a1-8e50-597a-bce4-7dc474ab48ff",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz8",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-zz9",
+      "new_id": "f7d2ea5c-8099-5a5a-aa24-86a0e206a494",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz9",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ai-observer-reference",
+      "new_id": "4e24806c-bc1b-5768-868c-9f8da90df0bc",
+      "path": "_Organized Desktop/06 AI And Learning/ai-observer-reference",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aiapplybot",
+      "new_id": "7b288942-1f44-588e-a287-27a579c3385e",
+      "path": "_Organized Desktop/06 AI And Learning/aiapplybot",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aiapplybotjs",
+      "new_id": "03b8fe45-524a-581f-af0e-c39365cdc9ea",
+      "path": "_Organized Desktop/06 AI And Learning/aiapplybotjs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ailearningpath",
+      "new_id": "145d4f0d-d32e-5805-8ab0-5aede0689f41",
+      "path": "_Organized Desktop/06 AI And Learning/ailearningpath",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-claudeailab",
+      "new_id": "60c75254-191e-568c-b28b-b17c67b59207",
+      "path": "_Organized Desktop/06 AI And Learning/claudeailab",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-claudeailab-temp",
+      "new_id": "64e126eb-68af-59c7-82ae-015c16b41396",
+      "path": "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-codehelper",
+      "new_id": "6188c374-9d3c-5bea-a5b0-8fd4354fd159",
+      "path": "_Organized Desktop/06 AI And Learning/codehelper",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-learnpathclaude",
+      "new_id": "7d6f9a93-bd85-5061-9c31-7ef685521d80",
+      "path": "_Organized Desktop/06 AI And Learning/learnpathclaude",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-think",
+      "new_id": "92acbb34-1f10-5fc3-b011-09157365a29d",
+      "path": "_Organized Desktop/06 AI And Learning/think",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-antiemponb",
+      "new_id": "f1666984-ec00-52bf-bd1b-ffa49a38a6d9",
+      "path": "_Organized Desktop/07 Anti Projects/antiemponb",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-antihelpdesk",
+      "new_id": "ae70a467-a9f8-5d5e-a040-1e17ad4760ee",
+      "path": "_Organized Desktop/07 Anti Projects/antihelpdesk",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-antiinv",
+      "new_id": "007bd36f-8ea1-5eaf-be4d-18b872661490",
+      "path": "_Organized Desktop/07 Anti Projects/antiinv",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-antitestbuild",
+      "new_id": "60645595-fed3-5124-8c9a-b4bd5c6e475b",
+      "path": "_Organized Desktop/07 Anti Projects/antitestbuild",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-appmakertrack",
+      "new_id": "f6c40446-1fc3-51cf-bd88-7c65e2343af6",
+      "path": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-eliapplybot",
+      "new_id": "02d4dda0-e70f-55ae-876c-a3f4141b5b4f",
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-eliapplybot-python",
+      "new_id": "2f93eb1a-e870-5b46-836e-ec771762b8bf",
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot-python",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grouphelpdesk",
+      "new_id": "b603b902-f31c-5fc2-a2e4-df529ddd44c1",
+      "path": "_Organized Desktop/08 App And Product Projects/grouphelpdesk",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-hnjobtrack",
+      "new_id": "c278dd6b-f25f-5f9b-92b1-b788738d93c7",
+      "path": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-hnrandom",
+      "new_id": "20f0b276-515d-52b5-be2f-5a2f5c6506d6",
+      "path": "_Organized Desktop/08 App And Product Projects/hnrandom",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-job-track",
+      "new_id": "0701438e-5348-5c7b-9d46-5bb0e540a15d",
+      "path": "_Organized Desktop/08 App And Product Projects/job track",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-recipegen-app",
+      "new_id": "ccd65cad-dfda-59b7-83cb-83aaa40fe968",
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-recipegen-temp",
+      "new_id": "b6b4d552-a718-560b-8b72-3e30b0d3b36b",
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grav1pretalx",
+      "new_id": "715bfb45-b7fc-58d2-9a5d-62f2f801a5db",
+      "path": "_Organized Desktop/09 Grav And VG Projects/grav1pretalx",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-graveopenjspy",
+      "new_id": "63166577-30ca-545d-8e0b-68c54a3b6185",
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-gravreviewboardjspy",
+      "new_id": "16da071e-81a5-53e1-bef1-9f066ea2bd87",
+      "path": "_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-vg",
+      "new_id": "bec66282-a8e0-5186-822d-a5f3bf705326",
+      "path": "_Organized Desktop/09 Grav And VG Projects/vg",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-vgdemo",
+      "new_id": "841c9a69-3e45-5182-b11a-973e3a387dfa",
+      "path": "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-3buildhyper",
+      "new_id": "b2f225d3-5bf7-5e2a-8a64-9ae0e088d541",
+      "path": "_Organized Desktop/12 Other Projects/3buildhyper",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aaa1",
+      "new_id": "7a7b9ecb-a5f0-5afa-8023-c846c67b52b2",
+      "path": "_Organized Desktop/12 Other Projects/aaa1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-andie",
+      "new_id": "76e8eef2-8eb5-5cb2-9693-72862fc8a494",
+      "path": "_Organized Desktop/12 Other Projects/andie",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-appmaketrck",
+      "new_id": "f38f6f10-95cb-5229-9127-3424c85d3e9e",
+      "path": "_Organized Desktop/12 Other Projects/appmaketrck",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-cc",
+      "new_id": "ce5e9445-f5a0-5d9c-b653-a86d22d875bc",
+      "path": "_Organized Desktop/12 Other Projects/cc",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-curse",
+      "new_id": "2cf60ade-0bb2-5eff-a9db-b0d5110c9c9f",
+      "path": "_Organized Desktop/12 Other Projects/curse",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-finaljep",
+      "new_id": "310164f4-441a-5208-991b-95d8bd80e94d",
+      "path": "_Organized Desktop/12 Other Projects/FinalJep",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-finaljepgame",
+      "new_id": "9e6ff6bd-a3b5-59cf-893b-f1943126895e",
+      "path": "_Organized Desktop/12 Other Projects/finaljepgame",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-globgame",
+      "new_id": "fb12e2d8-dd53-5095-9918-d69a93fa0404",
+      "path": "_Organized Desktop/12 Other Projects/GlobGame",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-hypernova-inc-main",
+      "new_id": "e7441e1c-8054-51af-b7f7-9a678b24ab94",
+      "path": "_Organized Desktop/12 Other Projects/hypernova-inc-main",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jdtrrain2-1",
+      "new_id": "2763d4ec-9adb-5ae8-bc95-e32263390981",
+      "path": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-obsidian",
+      "new_id": "8003d747-1a43-5e29-9688-73cc0f4137e3",
+      "path": "_Organized Desktop/12 Other Projects/Obsidian",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-pp8",
+      "new_id": "5b859071-ac3a-54ba-83ab-02c20a272bf0",
+      "path": "_Organized Desktop/12 Other Projects/pp8",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-pyhealth",
+      "new_id": "04c45620-26c0-5744-9f47-3a2c1129cca9",
+      "path": "_Organized Desktop/12 Other Projects/pyhealth",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aiapplybot",
+      "new_id": "c5debe28-1fff-589c-96ad-1d8a5f291090",
+      "path": "aiapplybot",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aicallhelper",
+      "new_id": "7894531c-ddcd-5679-ba66-b7b031ec2efa",
+      "path": "aicallhelper",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aicallhelper2",
+      "new_id": "c00e234a-39e3-5c8f-b8a4-635e067a4f9b",
+      "path": "aicallhelper2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aiheartbeat",
+      "new_id": "597ad996-399c-55a0-89fe-b69545b33c4e",
+      "path": "aiheartbeat",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aihelper",
+      "new_id": "d10802aa-cf23-5364-b615-d9a0bfc8d390",
+      "path": "aihelper",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-alanandelisoccer",
+      "new_id": "f010ea5c-db9d-5959-8b66-758a9e5daf80",
+      "path": "AlanAndEliSoccer",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-ankijs",
+      "new_id": "12a3c002-0c18-56e7-be56-1c092c6edaa8",
+      "path": "ankijs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-antigravupskill",
+      "new_id": "ac37ee26-fcf6-5425-a3d2-5df93f315fab",
+      "path": "antigravupskill",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-aral",
+      "new_id": "ebc4dc65-dc12-5dbb-9c0b-60f8ffbeca2c",
+      "path": "aral",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-astra1",
+      "new_id": "1cf1ef2c-4e3d-5915-a238-65b01ac5918e",
+      "path": "astra1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-astra2",
+      "new_id": "3979a6cd-25ca-5d41-a380-8a9ebd33f4dd",
+      "path": "astra2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-astraspacegameweb",
+      "new_id": "2192b5f6-cfe3-55ce-85ae-3626652a513b",
+      "path": "astraspacegameweb",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-borrowbox",
+      "new_id": "d4d2fe61-98fa-5495-a424-3204d1117fd1",
+      "path": "borrowbox",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildbusinesses",
+      "new_id": "2238c20c-d6f5-54c5-a72a-019d5a5e6925",
+      "path": "buildbusinesses",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildermentor",
+      "new_id": "28aa6c64-49a0-5f91-9301-b8b59730576a",
+      "path": "buildermentor",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildevent",
+      "new_id": "5e646fc1-04dd-5890-9783-c6019caf4c1f",
+      "path": "buildevent",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildreviewer",
+      "new_id": "8618547b-e159-5f2d-a7eb-1a3ec3babdbd",
+      "path": "buildreviewer",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildsmallplates",
+      "new_id": "db50ddad-e8e2-545f-b589-ea6c3ff8e2c8",
+      "path": "buildsmallplates",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildsql",
+      "new_id": "aeaa347a-084a-5132-8dfa-52bf5a36bf57",
+      "path": "buildsql",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-buildwhiteboard",
+      "new_id": "fc6f5d17-ea99-5135-b153-5dc2d75d3fe8",
+      "path": "buildwhiteboard",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-c-interview",
+      "new_id": "af805509-471e-5e36-88cb-3d79370cd6d9",
+      "path": "c#interview",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-calendar-jobtrack",
+      "new_id": "77c7175d-2cd2-5b82-a474-526756b31dea",
+      "path": "calendar+jobtrack",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-campusops",
+      "new_id": "eb37f9bd-b5e5-5f89-9f51-9077147b4b2e",
+      "path": "campusops",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-claude-docs",
+      "new_id": "dd27f172-0465-5f8c-8059-c7fd1333bf99",
+      "path": "claude docs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-csharptut",
+      "new_id": "41d9ae9e-b2c1-5d3c-8a98-51370a3d20c8",
+      "path": "csharptut",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-devdeck",
+      "new_id": "e21faf5e-730c-5001-9ed6-2beb744e6893",
+      "path": "devdeck",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-fableaihelperv2",
+      "new_id": "72d78760-249d-5026-9995-412f3225677d",
+      "path": "fableaihelperv2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-fableaihelperv3",
+      "new_id": "75dc2e51-2c3b-5357-96e9-502d389db668",
+      "path": "fableaihelperv3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-finalcallhelp",
+      "new_id": "d7393357-e18b-5baf-a5c5-f23788d99c99",
+      "path": "finalcallhelp",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-finance-dashboard",
+      "new_id": "8cc04f63-3618-5a1d-addd-0e1a5c9570ff",
+      "path": "finance-dashboard",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-formforge",
+      "new_id": "36bb31ac-a084-5b21-bf2a-ac66b3f81890",
+      "path": "formforge",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-gitjira",
+      "new_id": "4326a2ba-11de-5ddc-94e5-3c1b62725489",
+      "path": "gitjira",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-gitjira-app",
+      "new_id": "966b77b3-73a8-51d6-8d42-5762c661241d",
+      "path": "gitjira-app",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-globehire",
+      "new_id": "f7cd74b9-a48d-5e1e-850b-f2061c97f398",
+      "path": "globehire",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-gptdocs",
+      "new_id": "de7fad63-e122-559b-b40a-259b0e6b0546",
+      "path": "GPTDocs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildecommerceproject",
+      "new_id": "e2f3f624-949c-50f3-97a1-2ad5379a4a76",
+      "path": "grokbuildecommerceproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildhrproject",
+      "new_id": "af157844-f2e4-5aaa-8cfc-9d1815d1ba7d",
+      "path": "grokbuildhrproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildmultitenantproject",
+      "new_id": "8b314694-0815-5035-911b-2b98c57610fe",
+      "path": "grokbuildmultitenantproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildorderproject",
+      "new_id": "47cab2ad-8272-5b7a-8e56-56d294a3d813",
+      "path": "grokbuildorderproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildppmproject",
+      "new_id": "f76a5a1f-a068-520a-ad57-4a60dd4d2263",
+      "path": "grokbuildppmproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildsupportproject",
+      "new_id": "d1a5038f-b422-54d4-939a-b7bdc2a8ef95",
+      "path": "grokbuildsupportproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokbuildteamproject",
+      "new_id": "4916b573-4c57-5adf-88dd-346043b81b3a",
+      "path": "grokbuildteamproject",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-grokjs",
+      "new_id": "d58bea47-1988-59fb-a588-c0be488e89a6",
+      "path": "grokjs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-groktuts",
+      "new_id": "32c1d8d9-7bf2-5c18-ab60-9980ffd6f269",
+      "path": "groktuts",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-hermes",
+      "new_id": "b4c9ecf9-bd97-5937-9a87-1d0c1c7a6a4c",
+      "path": "hermes",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jobtrack",
+      "new_id": "5e9d38e5-2a4e-5286-b638-4e0ed7e78f20",
+      "path": "jobtrack",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-js1",
+      "new_id": "51cfa1e2-b41b-5a13-b362-2d99b17d3fdf",
+      "path": "JS1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jsprojectlearn",
+      "new_id": "bfbc2160-b156-5748-b319-289cb28bf9fb",
+      "path": "JSProjectLearn",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-jstut",
+      "new_id": "b5218138-0af8-5037-a928-688317572f08",
+      "path": "JSTut",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-lucasrouter",
+      "new_id": "dd6c49a7-35dc-5f86-8023-0288a197c9a6",
+      "path": "lucasrouter",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-master-plan",
+      "new_id": "e4bc1b42-376c-55ae-823b-d994cb806037",
+      "path": "master plan",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masternocu",
+      "new_id": "2072ae62-5e02-5311-813c-9ee9f08e8c80",
+      "path": "masternocu",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-masteroutline",
+      "new_id": "88e0e1ca-8946-5172-854d-f3dbae7acff0",
+      "path": "masteroutline",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-meterforge",
+      "new_id": "d3558bdc-7daf-540c-aac5-10ed3f81bd55",
+      "path": "meterforge",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-missioncontrol",
+      "new_id": "73e2715b-456a-5bcf-a67b-9227e9dbd11e",
+      "path": "missioncontrol",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-mobiletagalog",
+      "new_id": "978b5755-7b33-5a55-b1ff-ad1a3d45e102",
+      "path": "mobiletagalog",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netairag",
+      "new_id": "684fce2b-87bd-52a7-9491-592ca68fb23c",
+      "path": "netairag",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netauth",
+      "new_id": "3a3d659b-54a3-55c1-ad0b-15e5ca96fc1d",
+      "path": "netauth",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netcleanarch",
+      "new_id": "bb500e12-c428-577f-b1bb-fec4edb16bf6",
+      "path": "netcleanarch",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netdocu",
+      "new_id": "5a5f618f-c436-5a41-88b4-239079b565b3",
+      "path": "netdocu",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netdrop",
+      "new_id": "acb8f23e-e641-59f0-b2ad-b2e8b87c9638",
+      "path": "netdrop",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netintercom",
+      "new_id": "19eb8db8-b09b-509f-a3f6-0b3b48cf6664",
+      "path": "netintercom",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netlinear",
+      "new_id": "06c82246-11ea-5c46-b6eb-d21459067b54",
+      "path": "netlinear",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netnotion",
+      "new_id": "4f8bb47e-83fc-5d46-96c4-5556bcfe7735",
+      "path": "netnotion",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netopen1",
+      "new_id": "676dfcc9-c1d6-5aaa-aa1d-b84ce6cbce70",
+      "path": "netopen1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netopen3",
+      "new_id": "eda1710b-ce04-5f10-b6ad-740504a711bb",
+      "path": "netopen3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netopen5",
+      "new_id": "e84fe9f0-f8e5-52d1-967f-6af32c50dc9e",
+      "path": "netopen5",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netshop",
+      "new_id": "3e6466e8-eb5e-5d41-83be-b40a1fe14e1c",
+      "path": "netshop",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netsnapshot",
+      "new_id": "215e1ab8-6e14-590a-b39d-3dfbbbd18a4a",
+      "path": "netsnapshot",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-netsnapshot1",
+      "new_id": "1b24342e-9fd4-5a13-b907-caec35d5d0e3",
+      "path": "netsnapshot1",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-newcodecjs2",
+      "new_id": "b3b5d59a-51e6-5a60-afa2-5a4800c0d414",
+      "path": "newcodecjs2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-newcodex3",
+      "new_id": "5fbd4a17-c28f-5a25-8b82-cd465247d0f3",
+      "path": "newcodex3",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-nopsolutionsnet",
+      "new_id": "926741e4-e268-5989-82e2-11bfad4b72e6",
+      "path": "nopsolutionsnet",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-perch",
+      "new_id": "c813a8dc-a506-58f4-af2d-26d1d8ca4579",
+      "path": "perch",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-readme",
+      "new_id": "54bb3528-e739-5c6b-87f2-c00e000cb028",
+      "path": "readme",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-recipeview",
+      "new_id": "39a72485-ad32-517f-97dc-1704b706fce0",
+      "path": "recipeview",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-recipeweb",
+      "new_id": "2f1ac34f-dd9d-5e92-a8ae-206f38083db7",
+      "path": "recipeweb",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-resume",
+      "new_id": "66cbc31a-551b-52b8-858e-79e6886f4bda",
+      "path": "resume",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-skillforgejs",
+      "new_id": "c2000ed7-f571-5774-bb7b-d3394b166d8f",
+      "path": "skillforgejs",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-spacegame",
+      "new_id": "0135d055-3b87-579a-84fe-9bcb9ea584ff",
+      "path": "spacegame",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-spacegamev2",
+      "new_id": "d8adc638-5d3e-506c-916e-1d6f0dff3125",
+      "path": "spacegamev2",
+      "match": "normalized-desktop-path"
+    },
+    {
+      "old_id": "proj-tagalog",
+      "new_id": "68fd5a97-9c8f-5b42-bf8e-749941fc6486",
+      "path": "tagalog",
+      "match": "normalized-desktop-path"
+    }
+  ],
+  "scope_changes": {
+    "old_only": [
+      {
+        "old_id": "proj-nethris",
+        "path": ".nethris",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-aff-wt-be06",
+        "path": "_Organized Desktop/02 Build Projects/aff-wt-be06",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-master-5",
+        "path": "_Organized Desktop/03 Master Projects/master 5",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-master555",
+        "path": "_Organized Desktop/03 Master Projects/master555",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-jsinterview",
+        "path": "_Organized Desktop/04 JavaScript Training/jsinterview",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-jstran2-0",
+        "path": "_Organized Desktop/04 JavaScript Training/jstran2.0",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-rewritepy2jsodoo",
+        "path": "_Organized Desktop/04 JavaScript Training/rewritepy2jsodoo",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-f1",
+        "path": "_Organized Desktop/05 Numbered Experiments/f1",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-j6",
+        "path": "_Organized Desktop/05 Numbered Experiments/j6",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-booklearn",
+        "path": "_Organized Desktop/06 AI And Learning/booklearn",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-claudelearnpath",
+        "path": "_Organized Desktop/06 AI And Learning/claudelearnpath",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-recipegen",
+        "path": "_Organized Desktop/08 App And Product Projects/recipegen",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder",
+        "path": "_Organized Desktop/10 New Folders/New folder",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--10",
+        "path": "_Organized Desktop/10 New Folders/New folder (10)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--11",
+        "path": "_Organized Desktop/10 New Folders/New folder (11)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--12",
+        "path": "_Organized Desktop/10 New Folders/New folder (12)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--13",
+        "path": "_Organized Desktop/10 New Folders/New folder (13)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--2",
+        "path": "_Organized Desktop/10 New Folders/New folder (2)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--3",
+        "path": "_Organized Desktop/10 New Folders/New folder (3)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--4",
+        "path": "_Organized Desktop/10 New Folders/New folder (4)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--5",
+        "path": "_Organized Desktop/10 New Folders/New folder (5)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--6",
+        "path": "_Organized Desktop/10 New Folders/New folder (6)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--7",
+        "path": "_Organized Desktop/10 New Folders/New folder (7)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-new-folder--8",
+        "path": "_Organized Desktop/10 New Folders/New folder (8)",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-amasterplan",
+        "path": "Amasterplan",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-codexlearnp1",
+        "path": "codexlearnp1",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-geminiorganized",
+        "path": "geminiorganized",
+        "reason": "container-expanded",
+        "new_paths": [
+          "geminiorganized/FableDocs_Projects_Hermes",
+          "geminiorganized/General_.Architectureproject",
+          "geminiorganized/General_.Open2",
+          "geminiorganized/General_.Todo",
+          "geminiorganized/General_Alanandelisoccer",
+          "geminiorganized/General_Ankijs",
+          "geminiorganized/General_Aral",
+          "geminiorganized/General_Borrowbox",
+          "geminiorganized/General_C#Interview",
+          "geminiorganized/General_Campusops",
+          "geminiorganized/General_Cleanarch",
+          "geminiorganized/General_Csharptut",
+          "geminiorganized/General_Devdeck",
+          "geminiorganized/General_Finance-Dashboard",
+          "geminiorganized/General_Formforge",
+          "geminiorganized/General_Gitjira",
+          "geminiorganized/General_Gitjira-App",
+          "geminiorganized/General_Gitvg",
+          "geminiorganized/General_Globehire",
+          "geminiorganized/General_Jsharness",
+          "geminiorganized/General_Jstut",
+          "geminiorganized/General_MasterPlan",
+          "geminiorganized/General_Masternocu",
+          "geminiorganized/General_Masteroutline",
+          "geminiorganized/General_Meterforge",
+          "geminiorganized/General_Missioncontrol",
+          "geminiorganized/General_Mobiletagalog",
+          "geminiorganized/General_Newcodecjs2",
+          "geminiorganized/General_Newcodex3",
+          "geminiorganized/General_Newcodexjs",
+          "geminiorganized/General_Nopsolutions",
+          "geminiorganized/General_Open1",
+          "geminiorganized/General_Open3",
+          "geminiorganized/General_Open5",
+          "geminiorganized/General_Perch",
+          "geminiorganized/General_Readme",
+          "geminiorganized/General_Recipeview",
+          "geminiorganized/General_Recipeweb",
+          "geminiorganized/General_Resume",
+          "geminiorganized/General_Skillforgejs",
+          "geminiorganized/General_Spacegame",
+          "geminiorganized/General_Tagalog",
+          "geminiorganized/LLM_Generated_Applybot",
+          "geminiorganized/LLM_Generated_Buildbusinesses",
+          "geminiorganized/LLM_Generated_Buildermentor",
+          "geminiorganized/LLM_Generated_Buildevent",
+          "geminiorganized/LLM_Generated_Buildreviewer",
+          "geminiorganized/LLM_Generated_Buildsmallplates",
+          "geminiorganized/LLM_Generated_Buildsql",
+          "geminiorganized/LLM_Generated_Buildwhiteboard",
+          "geminiorganized/LLM_Generated_ClaudeDocs",
+          "geminiorganized/LLM_Generated_Ecommerceproject",
+          "geminiorganized/LLM_Generated_Fablehelperv2",
+          "geminiorganized/LLM_Generated_Fablehelperv3",
+          "geminiorganized/LLM_Generated_Gptdocs",
+          "geminiorganized/LLM_Generated_Grokjs",
+          "geminiorganized/LLM_Generated_Groktuts",
+          "geminiorganized/LLM_Generated_Helper",
+          "geminiorganized/LLM_Generated_Hrproject",
+          "geminiorganized/LLM_Generated_Js1",
+          "geminiorganized/LLM_Generated_Jsprojectlearn",
+          "geminiorganized/LLM_Generated_Multitenantproject",
+          "geminiorganized/LLM_Generated_Orderproject",
+          "geminiorganized/LLM_Generated_Ppmproject",
+          "geminiorganized/LLM_Generated_Rag",
+          "geminiorganized/LLM_Generated_Supportproject",
+          "geminiorganized/LLM_Generated_Teamproject",
+          "geminiorganized/OpenSource_Upskilling_.Ramp",
+          "geminiorganized/OpenSource_Upskilling_.Stripe",
+          "geminiorganized/OpenSource_Upskilling_Auth",
+          "geminiorganized/OpenSource_Upskilling_Docu",
+          "geminiorganized/OpenSource_Upskilling_Drop",
+          "geminiorganized/OpenSource_Upskilling_Intercom",
+          "geminiorganized/OpenSource_Upskilling_Linear",
+          "geminiorganized/OpenSource_Upskilling_Notion",
+          "geminiorganized/OpenSource_Upskilling_Shop",
+          "geminiorganized/OpenSource_Upskilling_Snapshot",
+          "geminiorganized/OpenSource_Upskilling_Snapshot1"
+        ]
+      },
+      {
+        "old_id": "proj-gitvg",
+        "path": "gitvg",
+        "reason": "container-expanded",
+        "new_paths": [
+          "gitvg/agora",
+          "gitvg/agora-net",
+          "gitvg/astra",
+          "gitvg/atlas",
+          "gitvg/atlas-net",
+          "gitvg/bazaar",
+          "gitvg/bazaar-app",
+          "gitvg/folio",
+          "gitvg/folio-app",
+          "gitvg/harbor",
+          "gitvg/harbor-net",
+          "gitvg/pulse",
+          "gitvg/pulse-net",
+          "gitvg/relay",
+          "gitvg/relay-app",
+          "gitvg/storefront",
+          "gitvg/tracer",
+          "gitvg/tracer-net"
+        ]
+      },
+      {
+        "old_id": "proj-jsharness",
+        "path": "jsharness",
+        "reason": "container-expanded",
+        "new_paths": [
+          "jsharness/VTCode",
+          "jsharness/ctvodejs"
+        ]
+      },
+      {
+        "old_id": "proj-new-folder",
+        "path": "New folder",
+        "reason": "empty-folder-excluded",
+        "new_paths": []
+      },
+      {
+        "old_id": "proj-01-task-manager",
+        "path": "newcodexJS/01-task-manager",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-02-contact-book",
+        "path": "newcodexJS/02-contact-book",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-03-expense-tracker",
+        "path": "newcodexJS/03-expense-tracker",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-04-notes-app",
+        "path": "newcodexJS/04-notes-app",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-05-recipe-manager",
+        "path": "newcodexJS/05-recipe-manager",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-06-bookmark-manager",
+        "path": "newcodexJS/06-bookmark-manager",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-07-blog-platform",
+        "path": "newcodexJS/07-blog-platform",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-08-kanban-board",
+        "path": "newcodexJS/08-kanban-board",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-09-job-application-tracker",
+        "path": "newcodexJS/09-job-application-tracker",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-10-inventory-management",
+        "path": "newcodexJS/10-inventory-management",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-11-survey-builder",
+        "path": "newcodexJS/11-survey-builder",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-12-chat-polling",
+        "path": "newcodexJS/12-chat-polling",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-13-ecommerce-storefront",
+        "path": "newcodexJS/13-ecommerce-storefront",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-14-appointment-booking",
+        "path": "newcodexJS/14-appointment-booking",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-15-api-tester",
+        "path": "newcodexJS/15-api-tester",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-16-team-project-management",
+        "path": "newcodexJS/16-team-project-management",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-17-support-ticket-system",
+        "path": "newcodexJS/17-support-ticket-system",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-18-learning-management-system",
+        "path": "newcodexJS/18-learning-management-system",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-19-realtime-chat-platform",
+        "path": "newcodexJS/19-realtime-chat-platform",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-20-marketplace-platform",
+        "path": "newcodexJS/20-marketplace-platform",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-docs",
+        "path": "newcodexJS/docs",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      },
+      {
+        "old_id": "proj-scripts",
+        "path": "newcodexJS/scripts",
+        "reason": "component-grouped-into-workspace",
+        "new_paths": [
+          "newcodexJS"
+        ]
+      }
+    ],
+    "new_only": [
+      {
+        "new_id": "0271220e-82c6-5ce5-9813-48cd2cc8b603",
+        "path": "geminiorganized/FableDocs_Projects_Hermes",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "4208b771-c608-516c-b9be-184f8e26e6af",
+        "path": "geminiorganized/General_.Architectureproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "422ac28b-9e7a-5f05-a0b7-13b6b058f86d",
+        "path": "geminiorganized/General_.Open2",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "4e8b161f-2a37-5c63-a808-1fab39dc4794",
+        "path": "geminiorganized/General_.Todo",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "08efd770-0570-5143-931f-710a6a3f5bb1",
+        "path": "geminiorganized/General_Alanandelisoccer",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "a80e7531-eb38-5672-a882-88a4182a87de",
+        "path": "geminiorganized/General_Ankijs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "c95702c6-7e9a-5e60-83cd-04e7b067d304",
+        "path": "geminiorganized/General_Aral",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "c9e49ba7-1220-5754-8846-a744058e3c72",
+        "path": "geminiorganized/General_Borrowbox",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "fc1b36aa-e606-5a5e-84ca-f2d98838b6ba",
+        "path": "geminiorganized/General_C#Interview",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "475aa19d-93ca-5149-bfc2-9a2b98c7428f",
+        "path": "geminiorganized/General_Campusops",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "7e8ce63f-95ad-5c3c-9306-ba8bb7c44738",
+        "path": "geminiorganized/General_Cleanarch",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "2a6e1b97-0b73-5436-8a98-bd6ccaec4ab5",
+        "path": "geminiorganized/General_Csharptut",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "e0126ea7-eecf-5bfe-a38a-fb80f3c5130f",
+        "path": "geminiorganized/General_Devdeck",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "ac9dc282-f9f1-52b1-a686-7a9fef5683d2",
+        "path": "geminiorganized/General_Finance-Dashboard",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "70b5bd32-b488-58c2-91bf-cb61750d38ac",
+        "path": "geminiorganized/General_Formforge",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "37e9309c-631e-5cb0-b83d-9e5e9800ecbf",
+        "path": "geminiorganized/General_Gitjira",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "0956aed0-6e33-5e08-b968-972e317309bb",
+        "path": "geminiorganized/General_Gitjira-App",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "8b3d5963-3816-5d20-a9f6-930115664b98",
+        "path": "geminiorganized/General_Gitvg",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "b1bae689-7e4a-5fb5-b376-71b0d44721b0",
+        "path": "geminiorganized/General_Globehire",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "3fd74ea9-3122-5b39-b545-840c9a4e49a1",
+        "path": "geminiorganized/General_Jsharness",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "9067c98c-75f4-5841-b21e-13912685bf4b",
+        "path": "geminiorganized/General_Jstut",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "d0826379-7b00-5342-a732-acc1e6eea2f8",
+        "path": "geminiorganized/General_Masternocu",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "b821e0ac-7fce-580e-b896-421fee570a7e",
+        "path": "geminiorganized/General_Masteroutline",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "49fa8d2e-02f9-55fb-86b1-3aba9a823083",
+        "path": "geminiorganized/General_MasterPlan",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "f1e3bcbd-4d38-59b3-b270-4ba58ff0b25c",
+        "path": "geminiorganized/General_Meterforge",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "a344e585-6895-5dc8-979e-e0cb9408b49b",
+        "path": "geminiorganized/General_Missioncontrol",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "62dfcf97-9c03-5f9a-9684-d5d9796a04e5",
+        "path": "geminiorganized/General_Mobiletagalog",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "76d1f491-2828-5d93-99df-238afa5fc946",
+        "path": "geminiorganized/General_Newcodecjs2",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "981c2441-6aa3-5255-8da8-87fb02830b06",
+        "path": "geminiorganized/General_Newcodex3",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "3449eea7-b4ff-5e1c-85a3-9e747caaf2e5",
+        "path": "geminiorganized/General_Newcodexjs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "4bc73d8c-5530-5a8d-afde-7b8f1997fe32",
+        "path": "geminiorganized/General_Nopsolutions",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "91f64303-47a5-53c1-a4e2-ab3a866bccd5",
+        "path": "geminiorganized/General_Open1",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "4704e4c0-8ccf-51fe-be4d-2811964f2264",
+        "path": "geminiorganized/General_Open3",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "8993c286-035e-5657-86ab-9fd90915f0f3",
+        "path": "geminiorganized/General_Open5",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "ec285e3a-4253-5258-9a61-e157861610c0",
+        "path": "geminiorganized/General_Perch",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "ddba0aca-3d71-5f19-a330-6b08345d8a35",
+        "path": "geminiorganized/General_Readme",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "0e632224-e4ce-59ad-9dd4-c7fcc73f3071",
+        "path": "geminiorganized/General_Recipeview",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "a3b85cd0-8759-59b3-9953-ce3da69e85f4",
+        "path": "geminiorganized/General_Recipeweb",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "445abdde-e8d9-549a-82f5-a3f754f4e685",
+        "path": "geminiorganized/General_Resume",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "7f0ccbb7-7ffc-5610-8a73-c7d00c5c39dd",
+        "path": "geminiorganized/General_Skillforgejs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "3f9e7325-1017-50cb-b2e7-38ecaf1fa6f1",
+        "path": "geminiorganized/General_Spacegame",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "397b6224-81b7-5c50-902a-2f85b6a83721",
+        "path": "geminiorganized/General_Tagalog",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "2e284d2d-25ee-5e2d-9ab8-45f0067f29b4",
+        "path": "geminiorganized/LLM_Generated_Applybot",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "54d669b1-0008-5a6d-b5c7-355c9b8f9e00",
+        "path": "geminiorganized/LLM_Generated_Buildbusinesses",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "17e608cd-6c4c-536f-b3b7-d4457f8c0f8e",
+        "path": "geminiorganized/LLM_Generated_Buildermentor",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "8dcf2dc8-1005-5795-afc2-033bb19b6c6c",
+        "path": "geminiorganized/LLM_Generated_Buildevent",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "c45e9aa0-e580-56f3-b256-7c8636f4091a",
+        "path": "geminiorganized/LLM_Generated_Buildreviewer",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "0c78b48a-aa0b-5acb-8183-fde0d86e12a3",
+        "path": "geminiorganized/LLM_Generated_Buildsmallplates",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "555ac3c0-9628-5775-bd21-946addfd795b",
+        "path": "geminiorganized/LLM_Generated_Buildsql",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "675491cc-c04d-5570-8bfd-80f61a920075",
+        "path": "geminiorganized/LLM_Generated_Buildwhiteboard",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "ea6d20da-020b-5337-b2ce-a13172481bcd",
+        "path": "geminiorganized/LLM_Generated_ClaudeDocs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "2d9922c4-4650-50ec-ac0b-8cc2f4f05ab8",
+        "path": "geminiorganized/LLM_Generated_Ecommerceproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "689ca5ae-4fc2-5352-9171-caceca026dc1",
+        "path": "geminiorganized/LLM_Generated_Fablehelperv2",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "3d88d19b-10d4-5bb4-9dc8-debbc5e657ee",
+        "path": "geminiorganized/LLM_Generated_Fablehelperv3",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "c59aa90b-2ed9-5774-9fb9-6eb8ffe9ed70",
+        "path": "geminiorganized/LLM_Generated_Gptdocs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "34172d3f-3fb3-526d-a596-3ce0eff400a9",
+        "path": "geminiorganized/LLM_Generated_Grokjs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "67fc0c1d-c172-520e-a3c1-7f0e2f7e08c6",
+        "path": "geminiorganized/LLM_Generated_Groktuts",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "8102de8a-ad15-5b97-9738-2e7c62638c49",
+        "path": "geminiorganized/LLM_Generated_Helper",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "908b16f7-b396-59d9-a22f-6078b0ab1a88",
+        "path": "geminiorganized/LLM_Generated_Hrproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "dd08819a-7527-5145-90a7-cd82d17448ed",
+        "path": "geminiorganized/LLM_Generated_Js1",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "6218509b-66ff-593f-9f22-ebbc4b449b6b",
+        "path": "geminiorganized/LLM_Generated_Jsprojectlearn",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "20a86cee-c95a-5d6b-aa19-8db7c373eec3",
+        "path": "geminiorganized/LLM_Generated_Multitenantproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "90ad97b7-811f-544e-a4fd-fdf62f0f2cca",
+        "path": "geminiorganized/LLM_Generated_Orderproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "95112d96-c969-5a38-81eb-63b50a32925a",
+        "path": "geminiorganized/LLM_Generated_Ppmproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "86c10e30-91a6-5cce-bb47-4221fb29befd",
+        "path": "geminiorganized/LLM_Generated_Rag",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "76cf1fef-7cf6-51e5-b5a8-a44495e7c907",
+        "path": "geminiorganized/LLM_Generated_Supportproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "74fc2265-fa8f-5748-ab82-a053945e5714",
+        "path": "geminiorganized/LLM_Generated_Teamproject",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "21cf1894-70eb-5bd5-ba35-986405d8750a",
+        "path": "geminiorganized/OpenSource_Upskilling_.Ramp",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "44a2eb6e-feb5-59c4-a6f3-43e217a00d4d",
+        "path": "geminiorganized/OpenSource_Upskilling_.Stripe",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "4c304804-4da3-53bc-bcc8-63111eaface5",
+        "path": "geminiorganized/OpenSource_Upskilling_Auth",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "1459b6c7-8004-5412-a0de-8ab8dbec3841",
+        "path": "geminiorganized/OpenSource_Upskilling_Docu",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "0ec03317-f0ed-5dcf-a796-f0c9fcb4e653",
+        "path": "geminiorganized/OpenSource_Upskilling_Drop",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "6064ed0b-2f76-50a7-bd0d-e1b324e7060d",
+        "path": "geminiorganized/OpenSource_Upskilling_Intercom",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "f6bc5117-900e-594d-8e00-c80914458d69",
+        "path": "geminiorganized/OpenSource_Upskilling_Linear",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "84ff0bc6-fc09-53c9-bccf-0f392fd1c53e",
+        "path": "geminiorganized/OpenSource_Upskilling_Notion",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "fb8f8d71-aa8c-5862-afa4-61173ef9637a",
+        "path": "geminiorganized/OpenSource_Upskilling_Shop",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "6a29e851-7297-5eeb-a955-f6359ac4bcd7",
+        "path": "geminiorganized/OpenSource_Upskilling_Snapshot",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "9c64a322-9703-5f20-a9fa-a8e433573604",
+        "path": "geminiorganized/OpenSource_Upskilling_Snapshot1",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "geminiorganized"
+        ]
+      },
+      {
+        "new_id": "3bf4aee2-edc1-5da7-8c16-abde4922392f",
+        "path": "gitvg/agora",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "bb63373c-89da-5881-b314-00af1be8b51a",
+        "path": "gitvg/agora-net",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "427e15a7-4d1d-55f4-a29a-4a0b3c4a8a17",
+        "path": "gitvg/astra",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "b03e6934-6235-5f2e-8384-a5a5388f1b3b",
+        "path": "gitvg/atlas",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "3fc958dd-9410-5a8f-86b5-edc862e8184b",
+        "path": "gitvg/atlas-net",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "f4946252-0da8-5234-9764-fb6bf2348769",
+        "path": "gitvg/bazaar",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "fd957958-c893-5143-ac2d-8c4d43ff15c2",
+        "path": "gitvg/bazaar-app",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "eec06eb9-6f6d-50cb-8756-cef118d3ea8d",
+        "path": "gitvg/folio",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "8071d1eb-6c39-5e77-b4f8-37016dc08ad7",
+        "path": "gitvg/folio-app",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "430b115d-5960-5d24-87b3-bf8b044d7280",
+        "path": "gitvg/harbor",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "74555182-1989-5c10-8ed4-310c056f23a8",
+        "path": "gitvg/harbor-net",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "2a7bb620-2804-533c-8ec7-df644606b145",
+        "path": "gitvg/pulse",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "b976f615-d567-505c-82e5-f253e8e755f9",
+        "path": "gitvg/pulse-net",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "36a01b17-6f63-582b-9193-901bf09a2435",
+        "path": "gitvg/relay",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "73e1ef5c-7135-5bca-8c63-a5d769639ba4",
+        "path": "gitvg/relay-app",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "e157e93e-e823-59f0-9251-b72f34736aa9",
+        "path": "gitvg/storefront",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "8dfd3a7d-42de-5dbf-b593-95a7397eb845",
+        "path": "gitvg/tracer",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "72d601f8-5003-5a84-9f6c-7e455b72df15",
+        "path": "gitvg/tracer-net",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "gitvg"
+        ]
+      },
+      {
+        "new_id": "17e1f484-ad2d-5c97-9b43-42e2d80a5fa3",
+        "path": "jsharness/ctvodejs",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "jsharness"
+        ]
+      },
+      {
+        "new_id": "85879e2e-e468-5f3f-bc49-c2e541782498",
+        "path": "jsharness/VTCode",
+        "reason": "expanded-from-old-container",
+        "old_paths": [
+          "jsharness"
+        ]
+      },
+      {
+        "new_id": "0278d15c-73a5-5773-8123-6bc1ba6258e2",
+        "path": "newcodexJS",
+        "reason": "grouped-old-components",
+        "old_paths": [
+          "newcodexJS/01-task-manager",
+          "newcodexJS/02-contact-book",
+          "newcodexJS/03-expense-tracker",
+          "newcodexJS/04-notes-app",
+          "newcodexJS/05-recipe-manager",
+          "newcodexJS/06-bookmark-manager",
+          "newcodexJS/07-blog-platform",
+          "newcodexJS/08-kanban-board",
+          "newcodexJS/09-job-application-tracker",
+          "newcodexJS/10-inventory-management",
+          "newcodexJS/11-survey-builder",
+          "newcodexJS/12-chat-polling",
+          "newcodexJS/13-ecommerce-storefront",
+          "newcodexJS/14-appointment-booking",
+          "newcodexJS/15-api-tester",
+          "newcodexJS/16-team-project-management",
+          "newcodexJS/17-support-ticket-system",
+          "newcodexJS/18-learning-management-system",
+          "newcodexJS/19-realtime-chat-platform",
+          "newcodexJS/20-marketplace-platform",
+          "newcodexJS/docs",
+          "newcodexJS/scripts"
+        ]
+      }
+    ]
+  }
+}

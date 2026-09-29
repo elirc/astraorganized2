@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "mode": "verify",
+  "database": "PostgreSQL 18; fresh helper-owned loopback cluster",
+  "modelTests": 34,
+  "databaseTests": 10,
+  "browserTests": 9,
+  "build": true,
+  "lint": true,
+  "total": 53,
+  "screenshotsReviewed": 2,
+  "seedRuns": 2,
+  "databaseStopped": true,
+  "evidence": [
+    "checks/glob/final/model-tests.log",
+    "checks/glob/final/database-tests.log",
+    "checks/glob/final/browser.json",
+    "checks/glob/final/build.log",
+    "checks/glob/final/lint.log",
+    "checks/glob/final/seed.log",
+    "checks/glob/final/seed-repeat.log",
+    "checks/glob/final/postgres-stop.log"
+  ],
+  "notes": [
+    "Initial browser run found Next internal-URL origin mismatch; corrected to incoming Host with a regression test.",
+    "Alert selectors were scoped to the app to avoid Next route-announcer ambiguity; all final browser cases passed."
+  ]
+}

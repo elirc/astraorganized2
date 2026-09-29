@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "revision": 2,
+  "pastes": [
+    {
+      "slug": "6x4G2IJs0w3MyLWFK9bepg",
+      "title": "Race",
+      "content": "winner A",
+      "language": "plaintext",
+      "visibility": "public",
+      "createdAt": "2026-09-09T12:00:00+00:00",
+      "updatedAt": "2026-09-09T12:00:00+00:00",
+      "expiresAt": null,
+      "editKeyHash": "BBDAD528830DF79A784D9075E7B79271A056876115E2854A39F3E1FBC114ACB8",
+      "legacyKey": false,
+      "legacySlug": false,
+      "version": 2,
+      "historicalViews": 0,
+      "historicalLastViewedAt": null
+    }
+  ],
+  "requests": [
+    {
+      "requestId": "ffe67c5e-645b-4b25-9abc-8fc2a4325511",
+      "fingerprint": "3F740E83E3AB3DA988B672D641F4D20C9F622D38AAD0F033B70237F9B972F883",
+      "slug": "6x4G2IJs0w3MyLWFK9bepg",
+      "acceptedAt": "2026-09-09T12:00:00+00:00"
+    }
+  ],
+  "changes": [
+    {
+      "id": "e41c1167-0f8b-4878-b1b8-f089ee9dc9d4",
+      "revision": 1,
+      "action": "create",
+      "slug": "6x4G2IJs0w3MyLWFK9bepg",
+      "at": "2026-09-09T12:00:00+00:00"
+    },
+    {
+      "id": "0c7ba64a-7920-46dd-ba58-e1a435f81cc7",
+      "revision": 2,
+      "action": "update",
+      "slug": "6x4G2IJs0w3MyLWFK9bepg",
+      "at": "2026-09-09T12:00:00+00:00"
+    }
+  ]
+}

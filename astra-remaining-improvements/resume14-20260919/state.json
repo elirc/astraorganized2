@@ -1,0 +1,132 @@
+{
+  "requested": "Fully finish the 14 staged projects and report additions/changes; exclude all 153 Fable-covered projects.",
+  "started": "2026-09-19",
+  "projects": [
+    {
+      "id": "f98b34acf094",
+      "path": "_Organized Desktop/05 Numbered Experiments/e2",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/f98b34acf094-plan.md",
+      "files": 35,
+      "tests": 34,
+      "deliveredAt": "2026-09-19T16:35:12.072070+00:00"
+    },
+    {
+      "id": "34d60d325094",
+      "path": "geminiorganized/OpenSource_Upskilling_Shop",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/34d60d325094-plan.md",
+      "tests": 20,
+      "files": 45,
+      "deliveredAt": "2026-09-19T17:50:10.681012+00:00"
+    },
+    {
+      "id": "8c8b7f90a8d2",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww50",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/8c8b7f90a8d2-plan.md",
+      "tests": 23,
+      "files": 38,
+      "deliveredAt": "2026-09-19T18:01:38.850514+00:00"
+    },
+    {
+      "id": "f9326daabc23",
+      "path": "gitvg/storefront",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/f9326daabc23-plan.md",
+      "tests": 83,
+      "files": 36,
+      "deliveredAt": "2026-09-19T17:46:08.731866+00:00"
+    },
+    {
+      "id": "0bfafff7d45f",
+      "path": "_Organized Desktop/05 Numbered Experiments/e1",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/0bfafff7d45f-plan.md",
+      "tests": 18,
+      "files": 43,
+      "deliveredAt": "2026-09-19T18:13:20.677142+00:00"
+    },
+    {
+      "id": "a80284ee08de",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww55",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/a80284ee08de-plan.md",
+      "files": 32,
+      "tests": 20,
+      "deliveredAt": "2026-09-19T16:35:49.016348+00:00"
+    },
+    {
+      "id": "2f29156b71ed",
+      "path": "_Organized Desktop/05 Numbered Experiments/zz6",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/2f29156b71ed-plan.md",
+      "files": 40,
+      "tests": 24,
+      "deliveredAt": "2026-09-19T19:29:31.580901+00:00"
+    },
+    {
+      "id": "27a8a1400c49",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww9",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/27a8a1400c49-plan.md",
+      "files": 51,
+      "tests": 26,
+      "deliveredAt": "2026-09-19T19:18:40.354427+00:00"
+    },
+    {
+      "id": "32d4e2fef457",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww35",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/32d4e2fef457-plan.md",
+      "tests": 33,
+      "files": 57,
+      "deliveredAt": "2026-09-19T18:51:56.720192+00:00"
+    },
+    {
+      "id": "e7862246212d",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww49",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/e7862246212d-plan.md",
+      "files": 44,
+      "tests": 22,
+      "deliveredAt": "2026-09-19T19:53:40.231359+00:00"
+    },
+    {
+      "id": "b2f277b889f9",
+      "path": "geminiorganized/OpenSource_Upskilling_Linear",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/b2f277b889f9-plan.md",
+      "files": 45,
+      "tests": 14,
+      "deliveredAt": "2026-09-19T17:02:10.000287+00:00"
+    },
+    {
+      "id": "e5fa6d1a40be",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww34",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/e5fa6d1a40be-plan.md",
+      "files": 55,
+      "tests": 31,
+      "deliveredAt": "2026-09-19T19:43:41.512392+00:00"
+    },
+    {
+      "id": "c178c034b3ed",
+      "path": "_Organized Desktop/05 Numbered Experiments/ww14",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/c178c034b3ed-plan.md",
+      "files": 44,
+      "tests": 21,
+      "deliveredAt": "2026-09-19T19:47:07.485237+00:00"
+    },
+    {
+      "id": "26e6d2bd6c54",
+      "path": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+      "status": "delivered",
+      "plan": "checks/batch-luna-astra-50-20260912/26e6d2bd6c54-plan.md",
+      "files": 59,
+      "tests": 144,
+      "deliveredAt": "2026-09-19T19:33:30.656023+00:00"
+    }
+  ]
+}

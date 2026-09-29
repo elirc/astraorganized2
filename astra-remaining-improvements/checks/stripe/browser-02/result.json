@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "checks": [
+    "Published package serves the real React application and static assets",
+    "Browser registration creates a private workspace and authenticated session",
+    "Session credentials are absent from local storage, session storage and cookies",
+    "Customer creation persists through the browser form",
+    "Stale edit is rejected, the draft survives, and explicit reload allows a reviewed edit",
+    "A response lost after commit retries the same operation and creates exactly one customer",
+    "Deletion requires confirmation and removes an unused record",
+    "Plan and coupon forms persist typed pricing and discount contracts",
+    "Related record selectors create a subscription and correctly timed usage",
+    "Billing creates the expected USD 25 subtotal, USD 5 discount and USD 20 invoice",
+    "Payment controls preserve a decline, succeed a new attempt, and simulate the durable outbox",
+    "Server pagination and search agree on counts and reset the page offset",
+    "Viewer sign-in renders read-only controls and hides owner membership actions",
+    "Desktop and narrow layouts render without horizontal overflow",
+    "No uncaught browser JavaScript errors occurred"
+  ],
+  "pageErrors": [],
+  "serverStopped": true
+}

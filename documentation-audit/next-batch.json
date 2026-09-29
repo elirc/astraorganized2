@@ -1,0 +1,42 @@
+[
+  {
+    "path": ".netarchitectureproject",
+    "reason": "Turn the existing DDD reference into a guided modular-monolith course: bounded contexts, CQRS, transactional outboxes, architecture tests and cross-module changes."
+  },
+  {
+    "path": "jsharness/VTCode",
+    "reason": "Convert rich Rust architecture/configuration reference into incremental runtime lessons: tool dispatch, process boundaries, cancellation, sandbox contracts and failure testing."
+  },
+  {
+    "path": "netopen5",
+    "reason": "Complete Jellyfin\u2019s promising but incomplete Fable cartography pack with request traces, media-job exercises, authorization tests and legacy-migration lessons."
+  },
+  {
+    "path": "missioncontrol",
+    "reason": "Use the implemented control-plane core to teach task state machines, atomic claims, SSE, webhook retries and observability; keep roadmap-only features explicit."
+  },
+  {
+    "path": "lucasrouter",
+    "reason": "Build a React architecture course around dispatcher/driver state, optimizer contracts, lazy loading, map interactions and failure tests. The current demo has mock data and no database/auth."
+  },
+  {
+    "path": "formforge",
+    "reason": "Expand short sprint briefs into schema/discriminated-union walkthroughs, autosave race experiments, accessibility exercises and cross-layer optimistic-concurrency tests."
+  },
+  {
+    "path": "meterforge",
+    "reason": "Expand billing outlines into worked money/temporal-domain examples, tenant isolation, idempotent usage ingestion and transactional invoice/outbox exercises. Distinguish in-memory defaults from durable adapters."
+  },
+  {
+    "path": "campusops",
+    "reason": "Teach work-order state machines, permissions, scheduling, inventory reservations and persistence with concrete traces and tests. Explain the demo-header identity boundary."
+  },
+  {
+    "path": "buildsmallplates",
+    "reason": "Add a mobile/local-first course covering pure progression logic, units, SQLite persistence, schema evolution, navigation state and reproducible offline failure cases."
+  },
+  {
+    "path": "_Organized Desktop/08 App And Product Projects/job track/task-queue-system",
+    "reason": "Extend the existing architecture deep dive into BullMQ/Redis/SQLite labs: API-to-queue dual writes, retry/backoff, crash recovery, dead letters, idempotency and reconciliation."
+  }
+]

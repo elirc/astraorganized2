@@ -1,0 +1,14 @@
+{
+  "command": [
+    "dotnet",
+    "list",
+    "package",
+    "--vulnerable",
+    "--include-transitive",
+    "--format",
+    "json"
+  ],
+  "workingDirectory": "server/Nethris.Api",
+  "exitCode": 0,
+  "seconds": 88.39
+}

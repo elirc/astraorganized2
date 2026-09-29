@@ -1,0 +1,2126 @@
+{
+  "skipped": [
+    {
+      "path": "AstraOrganized",
+      "reason": "Excluded before entry: independent inventory or output folder"
+    },
+    {
+      "path": "AstraOrganized2",
+      "reason": "Excluded before entry: independent inventory or output folder"
+    },
+    {
+      "path": "project-inventory",
+      "reason": "Excluded before entry: independent inventory or output folder"
+    },
+    {
+      "path": "tagalog/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "tagalog/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/ui/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/ui/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/db/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/db/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/core/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/core/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/content/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/content/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/packages/content/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/web/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/web/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/mobile/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/mobile/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/api/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "tagalog/apps/api/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/packages/shared/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/packages/shared/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/packages/shared/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/server/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/server/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/mobile/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/mobile/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/mobile/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/mobile/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegamev2/spacegamev2/apps/mobile/e2e/playwright-report",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "spacegame/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "skillforgejs/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "skillforgejs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "resume/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "recipeweb/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "recipeweb/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "recipeview/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "readme/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "perch/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "nopsolutionsnet/nopCommerce/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "nopsolutionsnet/nopCommerce/src/Build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "nopsolutionsnet/nopCommerce/src/Presentation/Nop.Web/wwwroot/lib_npm/datatables.net-buttons-bs4/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "newcodexJS/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "newcodex3/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "newcodecjs2/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netsnapshot1/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netsnapshot/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netshop/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netopen5/jellyfin/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netopen5/jellyfin/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/templates/UmbracoExtension/Client/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/src/Umbraco.Web.UI.Client/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/src/Umbraco.Web.UI.Client/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/src/Umbraco.Web.UI.Client/src/packages/core/utils/pagination/target",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen3/Umbraco-CMS/src/Umbraco.Web.UI.Client/devops/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netopen1/eShop/artifacts",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Ordering.UnitTests/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Ordering.UnitTests/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Ordering.FunctionalTests/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Ordering.FunctionalTests/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Catalog.FunctionalTests/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Catalog.FunctionalTests/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Basket.UnitTests/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netopen1/eShop/tests/Basket.UnitTests/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netnotion/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netlinear/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netintercom/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netintercom/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netdrop/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netdocu/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netcleanarch/CleanArchitecture/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netcleanarch/CleanArchitecture/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netauth/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "netauth/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "netairag/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "mobiletagalog/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "missioncontrol/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "meterforge/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "masteroutline/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "masteroutline/outline/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "masternocu/nocobase/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/packages/core/cli/src/commands/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/vi/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/ru/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/pt/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/ja/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/id/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/fr/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/es/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/en/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/de/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "masternocu/nocobase/docs/docs/cn/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "master plan/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "lucasrouter/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "lucasrouter/.next",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "lucasrouter/.vercel",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "lucasrouter/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "JSTut/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "JSProjectLearn/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "JSProjectLearn/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "JSProjectLearn/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "jsharness/VTCode/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "jsharness/VTCode/crates/codegen/vtcode-core/src/pods",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "jsharness/ctvodejs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "JS1/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "JS1/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "jobtrack/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "jobtrack/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "hermes/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "groktuts/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokjs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildteamproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildsupportproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildppmproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildorderproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildmultitenantproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildhrproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "grokbuildecommerceproject/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "GPTDocs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "globehire/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "gitvg/tracer-net/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/tracer/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/storefront/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/storefront/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "gitvg/relay-app/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/relay/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/pulse-net/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/pulse/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/harbor-net/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/harbor/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/folio-app/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/folio/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/bazaar-app/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/bazaar/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/atlas-net/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/atlas/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/agora-net/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitvg/agora/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitjira-app/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "gitjira/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "geminiorganized/OpenSource_Upskilling_.Ramp/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Js1/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Fablehelperv3/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Fablehelperv2/cuedeck/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildwhiteboard/playwright-report",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildwhiteboard/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildsmallplates/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Buildbusinesses/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/LLM_Generated_Applybot/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Open5/jellyfin/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Open3/Umbraco-CMS/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Open3/Umbraco-CMS/templates/UmbracoExtension/Client/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Open3/Umbraco-CMS/src/Umbraco.Web.UI.Client/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Open3/Umbraco-CMS/src/Umbraco.Web.UI.Client/src/packages/core/utils/pagination/target",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masteroutline/outline/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/packages/core/test/src/__tests__/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/packages/core/cli/src/commands/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/vi/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/ru/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/pt/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/ja/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/id/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/fr/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/es/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/en/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/de/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Masternocu/nocobase/docs/docs/cn/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Jsharness/VTCode/crates/codegen/vtcode-core/src/pods",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Gitvg/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Gitvg/storefront/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Cleanarch/CleanArchitecture/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_Ankijs/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Todo/eShopOnWeb/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Todo/eShopOnWeb/src/Web/wwwroot/lib/bootstrap/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Todo/eShopOnWeb/src/Web/wwwroot/lib/@aspnet/signalr/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/src/OrchardCore.Themes/TheComingSoonTheme/Assets/TheComingSoonTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/src/OrchardCore.Themes/TheBlogTheme/Assets/TheBlogTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/src/OrchardCore.Themes/TheAgencyTheme/Assets/TheAgencyTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Open2/OrchardCore/src/docs/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "geminiorganized/General_.Architectureproject/modular-monolith-with-ddd/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "formforge/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "finance-dashboard/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "finalcallhelp/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "finalcallhelp/cuedeck/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "finalcallhelp/cuedeck/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "finalcallhelp/cuedeck/.vite/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "fableaihelperv3/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "fableaihelperv3/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "fableaihelperv2/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "fableaihelperv2/cuedeck/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "devdeck/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "csharptut/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "claude docs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "campusops/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "calendar+jobtrack/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "calendar+jobtrack/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "c#interview/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildwhiteboard/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildwhiteboard/playwright-report",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildwhiteboard/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildsql/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildsql/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildsql/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildsql/content-src/vol3/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildsmallplates/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "buildsmallplates/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildreviewer/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildevent/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildermentor/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildbusinesses/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "buildbusinesses/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "borrowbox/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "astraspacegameweb/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/artifacts",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/playwright-report",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/apps/web/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astraspacegameweb/apps/web/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra2/artifacts",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra2/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra2/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra1/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "astra1/.next",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra1/artifacts",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "astra1/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aral/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "antigravupskill/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "ankijs/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "ankijs/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "ankijs/artifacts",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "ankijs/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "ankijs/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "ankijs/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "ankijs/scripts/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "AlanAndEliSoccer/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "aihelper/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "aiheartbeat/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "aiheartbeat/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiheartbeat/packages/shared/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiheartbeat/packages/dashboard/.next",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiheartbeat/packages/dashboard/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiheartbeat/packages/core/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "aicallhelper2/.mypy_cache",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/.pytest_cache",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/.ruff_cache",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/.venv",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/tests/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/frontend/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/frontend/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/stt/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/store/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/session/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/llm/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/bridge/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper2/app_core/audio/__pycache__",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "aicallhelper/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aicallhelper/src-tauri/target",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiapplybot/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "aiapplybot/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/finaljepgame/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/FinalJep/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/FinalJep/finaljep-app/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/cc/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/12 Other Projects/appmaketrck/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/recipegen/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/hnrandom/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/eliapplybot/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/08 App And Product Projects/appmakertrack/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/think/packages/indexer/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/06 AI And Learning/claudeailab/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/z9/src/lib/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/rn1/social-app/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/05 Numbered Experiments/rn1/social-app/src/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/rewritepy2js/fastapi-realworld-example-app/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/reactbullet/bulletproof-react/apps/react-vite/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/reactbullet/bulletproof-react/apps/nextjs-pages/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/reactbullet/bulletproof-react/apps/nextjs-app/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain3.0/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.4/app/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.4/_learning/guides/app/api/cli/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.3/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/tsbootcamp/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/03-appointment-scheduling/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/03-appointment-scheduling/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/02-project-management/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/02-project-management/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/02-project-management/apps/web/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/01-inventory-orders/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/portfolio-projects/01-inventory-orders/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/jstrain/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/csbootcamp/_lib/Check/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2/csbootcamp/_lib/Check/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jsdrillapp/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jep vs code/Jeopardy-Game/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/04 JavaScript Training/jep vs code/Jeopardy-Game/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/.codex",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/packages/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/packages/scripts/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertypebot/typebot.io/apps/builder/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/.yarn",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/packages/twenty-server/src/engine/core-modules/application/application-package/constants/yarn-engine/.yarn",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/packages/twenty-sdk/src/front-component-renderer/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/packages/twenty-sdk/src/cli/utilities/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/packages/twenty-apps/internal/twenty-linear/.yarn",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertwenty/twenty/packages/twenty-apps/internal/self-hosting/.yarn",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/cli/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/plugins/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/v2/devtools/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/ui-lib/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/sdk/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/openapi/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/icons/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/eslint-config-bases/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/db-main-prisma/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/core/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/packages/common-i18n/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/apps/nextjs-app/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertea/teable/apps/nestjs-backend/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa/supabase/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa/supabase/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa/supabase/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa/supabase/examples/edge-functions/supabase/functions/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersupa/supabase/apps/studio/components/interfaces/ConnectSheet/content/steps/shadcn/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastershadcn/ui/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastershadcn/ui/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastershadcn/ui/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersaleorPY/saleor/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastersaleorPY/saleor/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpre/pretalx/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/with-vercel-website/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/with-vercel-postgres/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/with-vercel-mongodb/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/with-postgres/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/with-cloudflare-d1/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/website/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/plugin/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/ecommerce/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/blank/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/templates/_template/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/packages/plugin-cloud-storage/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/packages/payload/src/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/packages/graphql/src/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/packages/create-payload-app/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/packages/codemod/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/examples/localization/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/examples/live-preview/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpload/payload/examples/astro/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterplane/plane/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterplane/plane/apps/api/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpaper/paperless-ngx/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterpaper/paperless-ngx/docker/rootfs/usr/local/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteropen/openstatus/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteropen/openstatus/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/packages/js/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/libs/automation/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/enterprise/workers/socket/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/apps/worker/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/apps/dashboard/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternovu/novu/apps/api/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masternext/nextcrm-app/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermorphic/morphic/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermayan/Mayan-EDMS/mayan/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermayan/Mayan-EDMS/docker/rootfs/usr/local/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/tools/mattermost-govet/license/testdata/src/standard/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/tools/mattermost-govet/license/testdata/src/source_available/enterprise/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/tools/mattermost-govet/license/testdata/src/enterprise/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/server/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastermatter/mattermost/server/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterlink/linkwarden/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterindicoPYJS/indico/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterindicoPYJS/indico/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteridur/idurar-erp-crm/frontend/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masteridur/idurar-erp-crm/backend/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterhop/hoppscotch/packages/hoppscotch-js-sandbox/src/__tests__/pw-namespace/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterhop/hoppscotch/packages/hoppscotch-js-sandbox/src/__tests__/hopp-namespace/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterhop/hoppscotch/packages/hoppscotch-desktop/plugin-workspace/tauri-plugin-appload/examples/tauri-app/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterhop/hoppscotch/packages/hoppscotch-cli/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform/formbricks/.codex",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform/formbricks/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform/formbricks/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform/formbricks/packages/storage/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterform/formbricks/packages/cache/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterflag/flagsmith/frontend/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterflag/flagsmith/frontend/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterflag/flagsmith/frontend/env",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterfinisc/infisical/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/.gemini",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/web/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/web/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/packages/migrate-no-unchecked-indexed-access/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/packages/dev-proxy/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/api/.idea",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterdidy/dify/api/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal/cal.diy/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal/cal.diy/.cursor",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal/cal.diy/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal/cal.diy/.yarn",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastercal/cal.diy/apps/web/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/master1/apps/web/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildjira/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildanalytics/frontend/test-results",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/ui/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/shared/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/observability/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/domain/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/db/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/application/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildagentteaching/packages/agents/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/shared/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/shared/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/shared/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/analytics/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/analytics/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/packages/analytics/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/web/.next",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/web/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/web/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/redirect/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/redirect/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/api/.turbo",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/02 Build Projects/buildaffiliate/apps/api/node_modules",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/csbootcamp/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/csbootcamp/bootcamp/_lib/Check/bin",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/csbootcamp/bootcamp/_lib/Check/obj",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netvg/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": "_Organized Desktop/01 Net Workspaces/.netcalendy/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".nettodo/eShopOnWeb/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": ".nettodo/eShopOnWeb/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".nettodo/eShopOnWeb/src/Web/wwwroot/lib/@aspnet/signalr/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netstripe/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": ".netramp/.claude",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netramp/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": ".netopen2/OrchardCore/.agents",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netopen2/OrchardCore/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": ".netopen2/OrchardCore/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netopen2/OrchardCore/src/OrchardCore.Themes/TheComingSoonTheme/Assets/TheComingSoonTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netopen2/OrchardCore/src/OrchardCore.Themes/TheBlogTheme/Assets/TheBlogTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netopen2/OrchardCore/src/OrchardCore.Themes/TheAgencyTheme/Assets/TheAgencyTheme/dist",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netopen2/OrchardCore/src/docs/.vscode",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    },
+    {
+      "path": ".netarchitectureproject/modular-monolith-with-ddd/.git",
+      "reason": "Git metadata; root presence recorded"
+    },
+    {
+      "path": ".netarchitectureproject/modular-monolith-with-ddd/build",
+      "reason": "Dependency, generated output, cache, or editor/agent state"
+    }
+  ],
+  "errors": [],
+  "recovered_long_paths": [
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/comprehensive-integration-tests_3574768144/should-handle-different-search-queries-with-correct-results_2861573669",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/comprehensive-integration-tests_3574768144/should-properly-handle-version-information-structure_615376852",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-fetch-package-info-for-valid-package_710847887",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-handle-packages-with-special-characters_3303771632",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-throw-error-for-non-existent-packages_3375533292",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-handle-empty-search-results-gracefully_2324342331",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-respect-limit-parameter_1278945580",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-search-packages-from-NPM-registry_1711770735",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/Complete-workflow-package-management-flow_485979426/should-handle-full-package-management-workflow-with-entity-verification_3643795765",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/GET_3829244661/api_946514567/workflows_3928566977/packages_673548056",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/GET_3829244661/api_946514567/workflows_3928566977/packages_673548056/search_2150836393",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/GET_3829244661/api_946514567/workflows_3928566977/packages_673548056/search_2150836393/should-search-NPM-packages-with-valid-query_4047416182",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/GET_3829244661/api_946514567/workflows_3928566977/packages_673548056/search_2150836393/should-handle-scoped-packages-in-search_4026567516",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/NPM-package-support_1766861673",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/NPM-package-support_1766861673/should-execute-workflow-with-REST-API-query-using-NPM-packages-in-template-expressions_3250685822",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/Workflow-with-query-nodes_2025364657",
+    "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/Workflow-with-query-nodes_2025364657/should-execute-workflow-with-REST-API-query-node_847804168",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_fixtures/direct_channel/data/20210622/teams/noteam/channels/mcrm7xee5bnpzn7u9ktsd91dwy/users/knq189b88fdxbdkeeasdynia4o/o3to4ezua3bajj31mzpkn96n5e",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_fixtures/direct_channel/data/20210622/teams/noteam/channels/mcrm7xee5bnpzn7u9ktsd91dwy/users/knq189b88fdxbdkeeasdynia4o/smaa5epsnp89tgjszzue1691ao",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/3rujg3pq7fbc8gyxmzaaqca19c",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/hcfa68wijpgq7k9go9nmak6qza",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/wj79zfkun3f63k5esktmnrgcec",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.6.0_fixtures/raw_mmctl_output/data/20260316/teams/noteam/channels/7t64qaky8tgo3cyn9436tngdae/users/kahpx4q6g3yk9cd9w1j1jmt1ah/7gyj7b9e87fs9fskjeug5kqfso",
+    "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.6.0_fixtures/raw_mmctl_output/data/20260316/teams/noteam/channels/e4b5ng9czfgndbaiu73n8rkbpo/users/kahpx4q6g3yk9cd9w1j1jmt1ah/1r3se1oezfggbn777e83kzhcwy",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/motions/pages/motion-detail/modules/motion-change-recommendation-dialog/components/motion-content-change-recommendation-dialog",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/motions/pages/motion-detail/modules/motion-change-recommendation-dialog/components/motion-title-change-recommendation-dialog",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/participants/pages/participant-detail/pages/participant-detail-manage/components/participant-create-wizard",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/participants/pages/participant-list/modules/participant-list-info-dialog/components/participant-list-info-dialog",
+    "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/organization/pages/committees/pages/committee-detail/modules/committee-detail-meeting/components/committee-detail-meeting-main"
+  ],
+  "original_long_path_errors": [
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/organization/pages/committees/pages/committee-detail/modules/committee-detail-meeting/components/committee-detail-meeting-main",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\09 Grav And VG Projects\\\\graveopenjspy\\\\OpenSlides\\\\openslides-client\\\\client\\\\src\\\\app\\\\site\\\\pages\\\\organization\\\\pages\\\\committees\\\\pages\\\\committee-detail\\\\modules\\\\committee-detail-meeting\\\\components\\\\committee-detail-meeting-main'"
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/participants/pages/participant-list/modules/participant-list-info-dialog/components/participant-list-info-dialog",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\09 Grav And VG Projects\\\\graveopenjspy\\\\OpenSlides\\\\openslides-client\\\\client\\\\src\\\\app\\\\site\\\\pages\\\\meetings\\\\pages\\\\participants\\\\pages\\\\participant-list\\\\modules\\\\participant-list-info-dialog\\\\components\\\\participant-list-info-dialog'"
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/participants/pages/participant-detail/pages/participant-detail-manage/components/participant-create-wizard",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\09 Grav And VG Projects\\\\graveopenjspy\\\\OpenSlides\\\\openslides-client\\\\client\\\\src\\\\app\\\\site\\\\pages\\\\meetings\\\\pages\\\\participants\\\\pages\\\\participant-detail\\\\pages\\\\participant-detail-manage\\\\components\\\\participant-create-wizard'"
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/motions/pages/motion-detail/modules/motion-change-recommendation-dialog/components/motion-title-change-recommendation-dialog",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\09 Grav And VG Projects\\\\graveopenjspy\\\\OpenSlides\\\\openslides-client\\\\client\\\\src\\\\app\\\\site\\\\pages\\\\meetings\\\\pages\\\\motions\\\\pages\\\\motion-detail\\\\modules\\\\motion-change-recommendation-dialog\\\\components\\\\motion-title-change-recommendation-dialog'"
+    },
+    {
+      "path": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy/OpenSlides/openslides-client/client/src/app/site/pages/meetings/pages/motions/pages/motion-detail/modules/motion-change-recommendation-dialog/components/motion-content-change-recommendation-dialog",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\09 Grav And VG Projects\\\\graveopenjspy\\\\OpenSlides\\\\openslides-client\\\\client\\\\src\\\\app\\\\site\\\\pages\\\\meetings\\\\pages\\\\motions\\\\pages\\\\motion-detail\\\\modules\\\\motion-change-recommendation-dialog\\\\components\\\\motion-content-change-recommendation-dialog'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.6.0_fixtures/raw_mmctl_output/data/20260316/teams/noteam/channels/e4b5ng9czfgndbaiu73n8rkbpo/users/kahpx4q6g3yk9cd9w1j1jmt1ah/1r3se1oezfggbn777e83kzhcwy",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_v11.6.0_fixtures\\\\raw_mmctl_output\\\\data\\\\20260316\\\\teams\\\\noteam\\\\channels\\\\e4b5ng9czfgndbaiu73n8rkbpo\\\\users\\\\kahpx4q6g3yk9cd9w1j1jmt1ah\\\\1r3se1oezfggbn777e83kzhcwy'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.6.0_fixtures/raw_mmctl_output/data/20260316/teams/noteam/channels/7t64qaky8tgo3cyn9436tngdae/users/kahpx4q6g3yk9cd9w1j1jmt1ah/7gyj7b9e87fs9fskjeug5kqfso",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_v11.6.0_fixtures\\\\raw_mmctl_output\\\\data\\\\20260316\\\\teams\\\\noteam\\\\channels\\\\7t64qaky8tgo3cyn9436tngdae\\\\users\\\\kahpx4q6g3yk9cd9w1j1jmt1ah\\\\7gyj7b9e87fs9fskjeug5kqfso'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/wj79zfkun3f63k5esktmnrgcec",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_v11.1.0_fixtures\\\\raw_mmctl_output\\\\data\\\\20260123\\\\teams\\\\noteam\\\\channels\\\\os55d37hwjb87b7rnuucic7ngh\\\\users\\\\ouiyzynxmtfcmgret6by3freqc\\\\wj79zfkun3f63k5esktmnrgcec'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/hcfa68wijpgq7k9go9nmak6qza",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_v11.1.0_fixtures\\\\raw_mmctl_output\\\\data\\\\20260123\\\\teams\\\\noteam\\\\channels\\\\os55d37hwjb87b7rnuucic7ngh\\\\users\\\\ouiyzynxmtfcmgret6by3freqc\\\\hcfa68wijpgq7k9go9nmak6qza'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_v11.1.0_fixtures/raw_mmctl_output/data/20260123/teams/noteam/channels/os55d37hwjb87b7rnuucic7ngh/users/ouiyzynxmtfcmgret6by3freqc/3rujg3pq7fbc8gyxmzaaqca19c",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_v11.1.0_fixtures\\\\raw_mmctl_output\\\\data\\\\20260123\\\\teams\\\\noteam\\\\channels\\\\os55d37hwjb87b7rnuucic7ngh\\\\users\\\\ouiyzynxmtfcmgret6by3freqc\\\\3rujg3pq7fbc8gyxmzaaqca19c'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_fixtures/direct_channel/data/20210622/teams/noteam/channels/mcrm7xee5bnpzn7u9ktsd91dwy/users/knq189b88fdxbdkeeasdynia4o/smaa5epsnp89tgjszzue1691ao",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_fixtures\\\\direct_channel\\\\data\\\\20210622\\\\teams\\\\noteam\\\\channels\\\\mcrm7xee5bnpzn7u9ktsd91dwy\\\\users\\\\knq189b88fdxbdkeeasdynia4o\\\\smaa5epsnp89tgjszzue1691ao'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/masterzulipPY/zulip/zerver/tests/fixtures/mattermost_fixtures/direct_channel/data/20210622/teams/noteam/channels/mcrm7xee5bnpzn7u9ktsd91dwy/users/knq189b88fdxbdkeeasdynia4o/o3to4ezua3bajj31mzpkn96n5e",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\masterzulipPY\\\\zulip\\\\zerver\\\\tests\\\\fixtures\\\\mattermost_fixtures\\\\direct_channel\\\\data\\\\20210622\\\\teams\\\\noteam\\\\channels\\\\mcrm7xee5bnpzn7u9ktsd91dwy\\\\users\\\\knq189b88fdxbdkeeasdynia4o\\\\o3to4ezua3bajj31mzpkn96n5e'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/Workflow-with-query-nodes_2025364657",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\workflow_executions.e2e-spec\\\\workflow-executions-controller_905506769\\\\POST_3023114725\\\\api_946514567\\\\workflow_executions_2032654626\\\\Workflow-with-query-nodes_2025364657'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow_executions.e2e-spec/workflow-executions-controller_905506769/POST_3023114725/api_946514567/workflow_executions_2032654626/NPM-package-support_1766861673",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\workflow_executions.e2e-spec\\\\workflow-executions-controller_905506769\\\\POST_3023114725\\\\api_946514567\\\\workflow_executions_2032654626\\\\NPM-package-support_1766861673'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/GET_3829244661/api_946514567/workflows_3928566977/packages_673548056",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\workflow-bundles.e2e-spec\\\\Enterprise-Edition-workflow-bundle-management-controller_2911139425\\\\GET_3829244661\\\\api_946514567\\\\workflows_3928566977\\\\packages_673548056'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/workflow-bundles.e2e-spec/Enterprise-Edition-workflow-bundle-management-controller_2911139425/Complete-workflow-package-management-flow_485979426/should-handle-full-package-management-workflow-with-entity-verification_3643795765",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\workflow-bundles.e2e-spec\\\\Enterprise-Edition-workflow-bundle-management-controller_2911139425\\\\Complete-workflow-package-management-flow_485979426\\\\should-handle-full-package-management-workflow-with-entity-verification_3643795765'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-search-packages-from-NPM-registry_1711770735",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\searchPackages_3754763932\\\\should-search-packages-from-NPM-registry_1711770735'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-respect-limit-parameter_1278945580",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\searchPackages_3754763932\\\\should-respect-limit-parameter_1278945580'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/searchPackages_3754763932/should-handle-empty-search-results-gracefully_2324342331",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\searchPackages_3754763932\\\\should-handle-empty-search-results-gracefully_2324342331'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-throw-error-for-non-existent-packages_3375533292",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\getPackageInfo_595098749\\\\should-throw-error-for-non-existent-packages_3375533292'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-handle-packages-with-special-characters_3303771632",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\getPackageInfo_595098749\\\\should-handle-packages-with-special-characters_3303771632'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/getPackageInfo_595098749/should-fetch-package-info-for-valid-package_710847887",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\getPackageInfo_595098749\\\\should-fetch-package-info-for-valid-package_710847887'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/comprehensive-integration-tests_3574768144/should-properly-handle-version-information-structure_615376852",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\comprehensive-integration-tests_3574768144\\\\should-properly-handle-version-information-structure_615376852'"
+    },
+    {
+      "path": "_Organized Desktop/03 Master Projects/mastertool/tooljet/server/test/__fixtures__/npm-registry.service.spec/NpmRegistryService_314849728/Enterprise-Edition_1256004052/comprehensive-integration-tests_3574768144/should-handle-different-search-queries-with-correct-results_2861573669",
+      "error": "[WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\Owner\\\\Desktop\\\\_Organized Desktop\\\\03 Master Projects\\\\mastertool\\\\tooljet\\\\server\\\\test\\\\__fixtures__\\\\npm-registry.service.spec\\\\NpmRegistryService_314849728\\\\Enterprise-Edition_1256004052\\\\comprehensive-integration-tests_3574768144\\\\should-handle-different-search-queries-with-correct-results_2861573669'"
+    }
+  ]
+}

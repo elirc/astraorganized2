@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww47",
+      "id": "ec28c8c40e53",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-aggregation-state-lab.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ec28c8c40e53",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:55:00.632839+00:00",
+      "status": "complete",
+      "log": "crud-b07-astra-runtime.log",
+      "pid": 31884,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:55:05.969722+00:00",
+      "elapsedSeconds": 5.33
+    }
+  ],
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No Prisma worker, rollup, audit persistence, concurrent claim, or retry execution.",
+    "Provider-backed queue checks remain follow-up work.",
+    "State guard and real AppError execute without behavior doubles. Worker claim and completion transactions were inspected, not executed."
+  ]
+}

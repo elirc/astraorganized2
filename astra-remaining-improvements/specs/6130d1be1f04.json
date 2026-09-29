@@ -1,0 +1,54 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "astraupskill/images/01-items-desktop.png",
+    "astraupskill/images/02-project-editor.png",
+    "astraupskill/images/03-conflict-draft.png",
+    "astraupskill/images/04-auditor-view.png",
+    "astraupskill/images/05-draft-1440.png",
+    "astraupskill/images/05-draft-390.png",
+    "astraupskill/images/05-draft-800.png",
+    "docs/HISTORICAL-README.md",
+    "package-lock.json",
+    "package.json",
+    "public/index.html",
+    "public/workbench.css",
+    "public/workbench.js",
+    "scripts/verify_browser.py",
+    "src/app.ts",
+    "src/domain/database.ts",
+    "src/domain/erp-service.ts",
+    "src/domain/errors.ts",
+    "src/domain/models.ts",
+    "src/domain/security.ts",
+    "src/domain/state-schema.ts",
+    "src/domain/store.ts",
+    "src/server.ts",
+    "src/setup.ts",
+    "tests/concurrency.test.ts",
+    "tests/erp.test.ts",
+    "tests/integrity.test.ts",
+    "tests/request-worker.ts"
+  ],
+  "summary": [
+    "Added versioned customer, supplier, item, warehouse, lead, project, task and timesheet CRUD with current company/role checks, unique codes, reference guards, audit events and a browser workbench.",
+    "Replaced reset-on-restart memory with bounded validated SQLite transactions, rollback on rejected operations, independent-process serialization, random expiring hashed sessions and exclusive setup with generated credentials.",
+    "Fixed partial submissions, identical ledger-line loss, insufficient/reserved stock acceptance, zero-rate handling, accepted invoice cost snapshots, payment reference and overpayment checks, linked document policies, quotation replay, report filtering and entity access.",
+    "Added retained/exportable drafts, conflict handling, scoped reference selectors, responsive forms, nine detailed learning chapters, original workflow regressions, persistence/failure/process checks and reviewed browser screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/erp-suite/results.json",
+    "expectedTests": 46,
+    "environment": "Node 22.16.0, Fastify 5.8.2, TypeScript 5.9.3, Zod 3.25.76, Vitest 3.2.4, builtin SQLite; Chromium 148 in disposable profiles",
+    "command": "npm.cmd run build; npm.cmd test -- --hookTimeout=60000 --testTimeout=90000; python scripts/verify_browser.py"
+  },
+  "limits": [
+    "Local loopback teaching application with a synchronous JSON aggregate in SQLite, 20 MiB workspace, 10000 records per collection and 1000 sessions; not normalized or horizontally scaled storage.",
+    "Illustrative USD accounting with whole stock units, purchase rates on receipts and accepted standard costs on sales; no valuation variance reconciliation, taxes, period closing, real payments, bank integration or statutory accounting certification. Stock adjustments are not a complete accounting journal.",
+    "Linked documents require complete matching quantities and rates; no partial fulfillment, reversals, manufacturing or reconciliation workflows. Submitted-document replay is supported; durable create-request idempotency is not.",
+    "No account provisioning UI, password recovery, MFA, refresh rotation, distributed rate limits or public deployment. Browser focuses on master and project CRUD; operational posting remains API workflows. Inactive-party policy is a documented extension exercise.",
+    "Drafts and tokens remain in tab memory; exports are for manual review, not automatic restoration. No all-browser, full accessibility, power-loss or production certification."
+  ]
+}

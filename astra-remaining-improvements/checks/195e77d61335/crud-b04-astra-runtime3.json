@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/rn1",
+  "id": "195e77d61335",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/corepack/dist/yarn.js",
+    "--ignore-engines",
+    "run",
+    "test:crud-upskill"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\195e77d61335\\social-app",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:20:53.598728+00:00",
+  "status": "complete",
+  "log": "crud-b04-astra-runtime3.log",
+  "pid": 5132,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:21:12.769062+00:00",
+  "elapsedSeconds": 19.17
+}

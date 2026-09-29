@@ -1,0 +1,264 @@
+{
+  "passed": true,
+  "project": "astra2 / Tidebound",
+  "date": "2026-09-12T15:09:39.098148+00:00",
+  "expectedTests": 76,
+  "unitTests": [
+    "does not consume inventory as a negative refund when a paused warehouse leaves the island over capacity",
+    "removes a paused warehouse without pretending it removes another 600 units of capacity",
+    "still protects the last harbor even when that harbor is paused",
+    "world and construction generates a deterministic complete archipelago and valid initial save",
+    "world and construction charges construction once and rejects occupancy, water, locked and non-coastal placement",
+    "world and construction protects required harbor and full warehouses when demolishing",
+    "economy and progression converts inputs exactly and stops when input runs out",
+    "economy and progression limits output by workforce and honors pause toggles",
+    "economy and progression stops production at storage capacity and explains it",
+    "economy and progression consumes food and luxury goods and reacts to starvation",
+    "economy and progression enforces research prerequisites and no duplicate purchases",
+    "economy and progression validates trades atomically and uses real resources and gold",
+    "economy and progression requires exploration, navigation and an expedition before settlement",
+    "shipping and persistence accepts the previously exported earned late-game fixture",
+    "shipping and persistence rejects unsafe identifier strings even when their references are internally consistent",
+    "shipping and persistence requires the original settled home island first with a valid coastal harbor",
+    "shipping and persistence shows paused fleet status without advancing a paused route",
+    "shipping and persistence partially unloads without losing overflow cargo",
+    "shipping and persistence does not award delivery progress for an empty ship",
+    "shipping and persistence saves paused harbors and resumes their waiting routes",
+    "shipping and persistence conserves cargo across repeated trips between player ports, even when a destination is full",
+    "shipping and persistence keeps ships outside the island shoreline throughout the sea journey",
+    "shipping and persistence restores routes, economy, events and deterministic continuation exactly",
+    "shipping and persistence rejects malformed, incompatible and broken-reference saves",
+    "shipping and persistence reaches a verified victory state when every independent objective is fulfilled",
+    "wins from a genuine new game using earned resources and public actions within 90 simulated minutes",
+    "voyage records and snapshots creates a normalized title and an exact independent snapshot",
+    "voyage records and snapshots edits details without changing the snapshot or its saved timestamp",
+    "voyage records and snapshots replaces only the snapshot and summary while preserving identity and notes",
+    "voyage records and snapshots returns a missing result instead of an empty or new world",
+    "voyage records and snapshots rejects malformed imports before creating any record or payload",
+    "voyage records and snapshots bounds input and uses UTF-8 bytes rather than JavaScript character count",
+    "concurrency and atomic outcomes allows only one concurrent creator with the same normalized title",
+    "concurrency and atomic outcomes allows exactly one writer of a shared expected revision",
+    "concurrency and atomic outcomes does not change metadata or payload after a stale replacement",
+    "concurrency and atomic outcomes rolls back an earlier metadata put when the payload write throws",
+    "concurrency and atomic outcomes preserves the previous world and revision after a failed replacement",
+    "concurrency and atomic outcomes protects reserved slots and prevents cross-tab slot overwrites",
+    "concurrency and atomic outcomes keeps an existing manual slot when another page tries initial legacy adoption",
+    "archive and delete lifecycle requires archive and removes metadata and snapshot together",
+    "archive and delete lifecycle cannot delete using an archive view after another tab restores the record",
+    "archive and delete lifecycle retains archived titles and forbids replacing archived snapshots",
+    "archive and delete lifecycle prevents a stale edit from recreating a deleted identity",
+    "archive and delete lifecycle enforces the collection cap inside competing creation transactions"
+  ],
+  "libraryWorkflows": [
+    "Create a named checkpoint and render markup-like learning notes as literal text",
+    "Edit metadata with stable identity and an incremented revision",
+    "Reject a duplicate normalized title and retain the editor draft",
+    "Search notes and show an explicit empty result",
+    "Export the exact saved world after a metadata edit",
+    "Retain the library after a full page reload",
+    "Protect a real two-tab edit and retain the losing draft for review",
+    "Reject a stale manual-slot save from a second page",
+    "Confirm snapshot replacement while preserving the title and notes",
+    "Archive and restore without losing the snapshot or allowing archived replacement",
+    "Cancel deletion safely, then permanently delete an archived checkpoint",
+    "Render a usable narrow library and navigate its editor by keyboard",
+    "Load a manual save and then a checkpoint through explicit confirmation",
+    "Reject invalid import, cancel valid import, then commit and reload a confirmed import",
+    "Paginate a collection larger than one page and bound navigation",
+    "Copy valid legacy slots without changing or deleting their original keys",
+    "Preserve malformed legacy autosave bytes and recover through the valid manual slot",
+    "Keep the game and export available when IndexedDB cannot open",
+    "Roll back a real-browser payload failure, retain the draft, and save after recovery"
+  ],
+  "gameplayWorkflows": [
+    "New game renders an interactive WebGL world and working initial settlement",
+    "Cottage placement on the 3D island consumes materials and adds residents",
+    "Farm placement, inspection and production pause/resume work",
+    "Research spends knowledge and unlocks a functional sawmill",
+    "NPC market screen buys and sells home-harbor goods with correct accounting",
+    "Two-way cargo route creation and pause/resume work through the interface",
+    "Exploration reveals new land and settlement correctly requires navigation",
+    "Manual saves, automatic reload and audio/motion settings survive reload",
+    "Export and import restore game state; malformed imports leave the active voyage intact",
+    "Keyboard pause/resume and in-game help work",
+    "390px mobile layout fits, and management screens remain usable",
+    "New-voyage confirmation can be cancelled; a new seed preserves the manual save",
+    "Standalone production build journal renders, filters tasks and exposes evidence"
+  ],
+  "environment": {
+    "node": "22.16.0",
+    "npmCleanInstall": "10.9.2",
+    "npmLockGeneration": "11.19.1",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "vitest": "4.1.11",
+    "fakeIndexedDb": "6.2.5",
+    "playwright": "1.63.0",
+    "browser": "152.0.7977.76"
+  },
+  "cleanSetup": {
+    "passed": true,
+    "commands": [
+      {
+        "command": [
+          "npm.cmd",
+          "ci",
+          "--no-audit",
+          "--no-fund",
+          "--cache=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\tidebound\\npm-cache"
+        ],
+        "exitCode": 0,
+        "seconds": 144.5
+      },
+      {
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "seconds": 67.18
+      }
+    ],
+    "normalInstallScriptsEnabled": true,
+    "lockSha256": "ae1b1890feabe4adcf99cd6f9fdd58791991e96689c7c125cb3531dcd03c1c12",
+    "browserPackageMatchesCleanBuild": true,
+    "assets": {
+      "assets/game-Cv-6ulJq.css": "38581b1cbb8b1ec7b5d745c6afd9f196ea1c23fe4c750242739b12065647c009",
+      "assets/game-CXnvsfRw.js": "de6ca9afef6f826c85baa292d7f27542c1f998ad3dbb6a3bd2bc2dae9f818eef",
+      "assets/modulepreload-polyfill-B5Qt9EMX.js": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0",
+      "assets/progress-BfjEAjKD.js": "59f9ab9a4582da230d35df3d48641d07a7e7a5d18c8e2340105c24d12cdc6de2",
+      "assets/progress-CFhgqDB-.css": "dc58f4d8887267de322c404e50390425a6da3a183c7d91c8cf94c735a7c6a25f",
+      "favicon.svg": "3605da16575a454ff42c1acdafda72f9b8b2396c7a0622e2ee84a482c880256d",
+      "fonts/dmsans-OFL.txt": "9af36190332437f5ecd09974de43c1f7c77a310a996cdd8ceb25628b458840e1",
+      "fonts/librecaslondisplay-OFL.txt": "9cc8cef15f5e8bcbe99a13ee8d268f6f6f6a5811cd1ed05056ef4608c9b16fd1",
+      "fonts/tidebound-0.ttf": "b0ae3e89a7d3ef2b1838bb4b1ceb0b17cc3435af061eee809d76aa623ff116e9",
+      "fonts/tidebound-1.ttf": "376427b5322148d8de1e03f263bcca4935a2d60ba71d9f94f4947ab664c711ae",
+      "fonts/tidebound-2.ttf": "b79a2ea7a38f33fd96a282fadb9ce97626bb0724a44d21075859f0e50239993a",
+      "fonts/tidebound-3.ttf": "2a8e7f713ee79fbccdef3cef5c787aff47580299f7da60144961e7db2ec08211",
+      "fonts/tidebound-4.ttf": "199b2a7deefd8d7d9bae05d34902c4c6486bd11b8e5d1a22c0cea8862943a5a1",
+      "index.html": "1b51661bf61d569cf992a5547dafd11c77ac504d4ed865846ac43ade2d42cce7",
+      "progress.html": "1011385373b7196c978534d38d97455c9ca5f10e96fe6c2433e2a83abc2e7899"
+    }
+  },
+  "knownAdvisories": 0,
+  "release": {
+    "production": true,
+    "roofRaycastPassed": true,
+    "checklistTasks": 49,
+    "checklistComplete": true,
+    "phasesAccepted": 10,
+    "externalRequests": [],
+    "errors": [],
+    "date": "2026-09-12T15:00:58.817Z"
+  },
+  "graphicsMeasurements": {
+    "date": "2026-09-12T15:01:43.229Z",
+    "browser": "152.0.7977.76",
+    "cpu": "Intel(R) Core(TM) i7-8665U CPU @ 1.90GHz",
+    "logicalCores": 8,
+    "viewport": "1440x1000; device pixel ratio 1; headless Chrome",
+    "graphics": {
+      "webgl": "WebGL 2.0 (OpenGL ES 3.0 Chromium)",
+      "renderer": "ANGLE (Intel, Intel(R) UHD Graphics 620 (0x00003EA0) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+      "vendor": "Google Inc. (Intel)"
+    },
+    "initial": {
+      "frames": 270,
+      "durationMs": 5016,
+      "averageFps": 53.8,
+      "medianFrameMs": 16.7,
+      "p95FrameMs": 33.3
+    },
+    "lateGame": {
+      "playerBuildings": 101,
+      "ships": 6,
+      "shadows": true,
+      "frames": 140,
+      "durationMs": 5016,
+      "averageFps": 27.9,
+      "medianFrameMs": 33.3,
+      "p95FrameMs": 66.6
+    },
+    "lateGameNoShadows": {
+      "frames": 144,
+      "durationMs": 5033,
+      "averageFps": 28.6,
+      "medianFrameMs": 33.3,
+      "p95FrameMs": 50.1
+    },
+    "errors": [],
+    "notes": "Frame callbacks measured over five seconds per scenario. Late-game state was earned through public game actions. Results are machine-specific and not a guarantee for all graphics hardware."
+  },
+  "demolitionComparison": [
+    {
+      "variant": "original",
+      "beforeWood": 1000,
+      "afterWood": 400,
+      "result": {
+        "ok": true,
+        "message": "Building removed; half its materials recovered where storage permits."
+      }
+    },
+    {
+      "variant": "current",
+      "beforeWood": 1000,
+      "afterWood": 1000,
+      "result": {
+        "ok": true,
+        "message": "Building removed; half its materials recovered where storage permits."
+      }
+    }
+  ],
+  "originalTextFilesPreserved": 42,
+  "libraryImages": {
+    "reviewedAt": "2026-09-12T15:01:44.942604+00:00",
+    "images": [
+      {
+        "file": "desktop.png",
+        "width": 1440,
+        "height": 1000,
+        "sha256": "5ebc56b37775853351c87c615a8f12791be1e77dc17bf4c47a0628eeb86b4986",
+        "review": "Viewed by the agent. Readable text, clear controls and no horizontal overflow. Narrow layout scrolls vertically; keyboard navigation and editor access also passed in the browser workflow."
+      },
+      {
+        "file": "narrow.png",
+        "width": 390,
+        "height": 844,
+        "sha256": "79b7eec05be70563b4cf23a84746937c7e11ac3060ae0a095a185186af605cc2",
+        "review": "Viewed by the agent. Readable text, clear controls and no horizontal overflow. Narrow layout scrolls vertically; keyboard navigation and editor access also passed in the browser workflow."
+      }
+    ]
+  },
+  "additionalGameplayImagesReviewed": [
+    {
+      "file": "desktop-game.png",
+      "sha256": "28fc38125d3b1b5aac51b9048867e31d2ec7ab7178af57317fbc33a3957d0c95",
+      "width": 1440,
+      "height": 1000,
+      "review": "Viewed by the agent. The game scene and responsive controls remain readable. Temporary invalid-import and subsequent successful-import toasts are visible from the tested scenario; these are transient notifications, not a current failed load."
+    },
+    {
+      "file": "mobile-game.png",
+      "sha256": "914f036d62fac636b65528191a1aab287aeb4d437591b8e73f724a485b9b2b7a",
+      "width": 390,
+      "height": 844,
+      "review": "Viewed by the agent. The game scene and responsive controls remain readable. Temporary invalid-import and subsequent successful-import toasts are visible from the tested scenario; these are transient notifications, not a current failed load."
+    }
+  ],
+  "summary": [
+    "Added Tidebound\u2019s persistent voyage library with named snapshots, learning notes, search and pagination, metadata edits, explicit snapshot replacement, archive/restore, confirmed deletion and game JSON export.",
+    "Replaced overwrite-only save slots with atomic IndexedDB metadata/snapshot transactions, expected revisions, cross-tab conflict protection, preserved legacy saves, retained drafts and commit-before-load/import/new-game behavior.",
+    "Fixed demolition refunds that consumed existing inventory when a paused warehouse left an island over capacity; corrected paused-warehouse capacity handling and preserved the final paused harbor.",
+    "Pinned dependencies, updated Vitest to the patched 4.1.11 release, added 21 focused regressions, and added a production-browser library runner that owns its local preview and isolated synthetic data.",
+    "Added nine detailed junior-to-mid-level guides, 42 exact original text snapshots, reviewed screenshots, real worked fixes, failure analysis, progressive CRUD exercises and review guidance."
+  ],
+  "limits": [
+    "Browser-local single-player application: no backend, accounts, server authorization, multi-tenancy or cloud synchronization. Collections are origin-specific and may be cleared or evicted.",
+    "Game JSON exports contain the saved world, not checkpoint titles or learning notes. Periodic and visibility-change saves do not guarantee completion during browser shutdown.",
+    "The original documented route-reassignment teleport simplification remains. This pass focuses on durable CRUD learning and the verified demolition accounting bug; it does not turn the simulation into a multiplayer service.",
+    "76 counted cases comprise 44 unit/domain tests, 19 library browser workflows and 13 original gameplay workflows. Clean setup, build, audit, release checks, the source comparison and performance measurements are additional evidence, not inflated into this case count.",
+    "Browser evidence is from Chrome 152.0.7977.76 on this Windows machine. Five-second graphics measurements are hardware-specific; the 101-building scene remains below 30 FPS in this run.",
+    "Original canonical generated artifacts are preserved. New verification logs and additional gameplay captures remain in the central checks directory; two reviewed library screenshots and the consolidated evidence are included with the course."
+  ]
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "project": "62",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.66,
+    "log": "logs/62-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\62\\test\\responses.test.ts"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 9.79,
+    "log": "logs/63-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\63\\test\\membership.test.ts"
+    ]
+  }
+]

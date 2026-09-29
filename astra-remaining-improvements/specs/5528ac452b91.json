@@ -1,0 +1,25 @@
+{
+  "id": "5528ac452b91",
+  "summary": [
+    "Reject multipart part numbers below one as well as above expectedParts.",
+    "Prevent malformed chunk storage and metadata writes while preserving valid retry writes.",
+    "Execute the real UploadService through five dependency-free runtime cases."
+  ],
+  "changedFiles": [
+    "src/services/uploadService.ts",
+    "tests/runtime-upload-bounds.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/uploadService.ts",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5528ac452b91/results-crud-b06.json"
+  },
+  "limits": [
+    "No live Next, Prisma, replica filesystem, completion, quota, or concurrent retry execution.",
+    "Historical malformed chunks are not migrated or deleted by this bounded fix.",
+    "Actual guards, permission rules, base64 utility and error classes execute. Repository/storage adapters do not verify durable storage or atomic retry replacement; delete precedes replacement write."
+  ]
+}

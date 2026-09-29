@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "count": 0,
+  "checks": [],
+  "error": "Traceback (most recent call last):\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\71e7b036865c\\scripts\\check_api.py\", line 205, in main\n    run(server, passed)\n    ~~~^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\71e7b036865c\\scripts\\check_api.py\", line 30, in run\n    admin = server.setup(); at = admin['token']\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\71e7b036865c\\scripts\\learning_server.py\", line 106, in setup\n    return self.ok('POST', 'setup', {'companyName': 'Nethris test workshop', 'firstName': 'Avery',\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                   'lastName': 'Admin', 'email': 'admin@example.test', 'password': PASSWORD, 'seedDemo': True}, expected=201)\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\71e7b036865c\\scripts\\learning_server.py\", line 99, in ok\n    assert status == expected, (method, path, status, expected, data)\n           ^^^^^^^^^^^^^^^^^^\nAssertionError: ('POST', 'setup', 500, 201, {'unparsed': ''})\n",
+  "database": "fresh temporary test database; removed with owned server stopped"
+}

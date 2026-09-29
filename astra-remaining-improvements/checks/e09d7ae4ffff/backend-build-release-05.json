@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildasana",
+  "id": "e09d7ae4ffff",
+  "command": [
+    "--env",
+    "DOTNET_ROLL_FORWARD=Major",
+    "--",
+    "dotnet",
+    "build",
+    "BuildAsana.sln",
+    "--configuration",
+    "Release",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e09d7ae4ffff\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T21:32:40.190472+00:00",
+  "status": "launch-failed",
+  "log": "backend-build-release-05.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T21:32:40.288282+00:00",
+  "elapsedSeconds": 0.09
+}

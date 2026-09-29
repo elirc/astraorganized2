@@ -1,0 +1,220 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+  "id": "e0e5886e8464",
+  "summary": [
+    "Validate recipe requests before provider calls and validate nested provider output before success.",
+    "Recover valid browser history/favorites from mixed or malformed persisted JSON without rewriting data during reads.",
+    "Add 46 production-module regressions and nine source-based teaching chapters with original snapshots, debugging exercises, traces and separate solutions."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e0e5886e8464/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 46,
+    "checks": [
+      {
+        "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+        "id": "e0e5886e8464",
+        "command": [
+          "node",
+          "--experimental-strip-types",
+          "--test",
+          "tests/boundaries.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T22:54:56.711985+00:00",
+        "status": "complete",
+        "log": "crud-b01-boundaries.log",
+        "pid": 26864,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T22:55:11.699509+00:00",
+        "elapsedSeconds": 14.98
+      },
+      {
+        "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+        "id": "e0e5886e8464",
+        "command": [
+          "node",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit",
+          "--incremental",
+          "false"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:33:26.286266+00:00",
+        "status": "complete",
+        "log": "crud-b01-typecheck-installed.log",
+        "pid": 33520,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:35:40.210548+00:00",
+        "elapsedSeconds": 133.92
+      }
+    ],
+    "uncompletedChecks": [
+      {
+        "project": "_Organized Desktop/08 App And Product Projects/recipegen-app",
+        "id": "e0e5886e8464",
+        "command": [
+          "node",
+          "node_modules/eslint/bin/eslint.js",
+          "app/api/recipes/route.ts",
+          "lib/validation.ts",
+          "lib/generation.ts",
+          "lib/storage.ts",
+          "tests/boundaries.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e0e5886e8464",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:39:40.938829+00:00",
+        "status": "complete",
+        "log": "crud-b01-lint-installed.log",
+        "pid": 37244,
+        "exitCode": 4294967295,
+        "passed": false,
+        "finishedAt": "2026-09-21T23:50:33.755002+00:00",
+        "elapsedSeconds": 652.81,
+        "reviewNote": "Stopped by Astra after 652 seconds without diagnostics; not a passing lint result."
+      }
+    ],
+    "limits": [
+      "Focused production-module tests; Next HTTP adapter/browser/provider integration not executed.",
+      "No database exists in this flow. Storage recovery validates and filters on read without rewriting saved collections.",
+      "Changed-file ESLint was stopped after more than ten minutes without diagnostics; no lint pass is claimed."
+    ]
+  },
+  "courseWords": 3415,
+  "courseFiles": 9,
+  "courseLinksChecked": 37,
+  "files": [
+    {
+      "file": "app/api/recipes/route.ts",
+      "before_sha256": "8c1832fa36f4a42f0e6fc7c5bf753c304f091adf3dfd5f33a6431aab08a3dc09",
+      "after_sha256": "4ca739ebbcd6de5fb7f3b0311f57f539b4a1c0bd847c3f1efb5d7c69467f729c"
+    },
+    {
+      "file": "lib/storage.ts",
+      "before_sha256": "77930c0a555b679feba460274a2e54a1e160a1dd7786159c6601edac7143c523",
+      "after_sha256": "c1525df7555fc9a826a1f72d52c0c08f9082b2975f4a8cafc5a53b63985860e3"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "ebe72d038e940661b05a059cbe769bd0cbbc8ae6bc06582d4cc5e85810884f7a",
+      "after_sha256": "021df8ce4c3d56be54422b3eab770049c545a8bf336c6cb7b6969ec95f7ef1d0"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3",
+      "after_sha256": "3cdb1162c33a5c8eb1fe3ac70e74235078f9575f146191848df245127b056fac"
+    },
+    {
+      "file": "lib/validation.ts",
+      "before_sha256": null,
+      "after_sha256": "de55c8280e751e961f44b23f096dad8485c48ecbef6dbbab2f5d22fa76ebfff8"
+    },
+    {
+      "file": "lib/generation.ts",
+      "before_sha256": null,
+      "after_sha256": "c2270fe1e72914736ce135fd1ebbf4b1f2fbbd3b8dc3b915fde9fed13f10af99"
+    },
+    {
+      "file": "tests/boundaries.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "054b12f7ccd88a316e02db9d7098468c324da3867ba2dca0a86e484de41be8f1"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__recipes__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8c1832fa36f4a42f0e6fc7c5bf753c304f091adf3dfd5f33a6431aab08a3dc09"
+    },
+    {
+      "file": "astraupskill/snapshots/lib__storage.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "77930c0a555b679feba460274a2e54a1e160a1dd7786159c6601edac7143c523"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ebe72d038e940661b05a059cbe769bd0cbbc8ae6bc06582d4cc5e85810884f7a"
+    },
+    {
+      "file": "astraupskill/snapshots/tsconfig.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "be18523b23b78b6e1a876ddd107d330f0168bddf09d751b57e0b5edce69c66f3"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b01-boundaries.log",
+      "before_sha256": null,
+      "after_sha256": "c3a627c0aa97465fc32dd2b78f4a2d54954b31ee02267d2c12e7f1ab1560fbce"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b01-typecheck-installed.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "a924e9625cc2917c62842ead1cb85706571927d9949c7beae99f2b30bd6eff84"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e4bae44d13b75b4f4d2d3f9227a707b9a6e5ce821a68fa1ada5a57997fd16618"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b6e0181f161d0a81100d676ea8172dab44f0fccfa1cdc5d0c068d902159919dd"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a7516d14be1d297a866ffb1574183ed0fc81ccc8a1dd539fa31c750c46dde4e6"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f0446b8d629f7fbb94f5798fa1869bb40743e13d67b135fb466ca8a9fc57fb85"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "a0d86056773b26d38659060df5fb91641e40e94a3249244d0fa8e7e9dc98453d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7ddc90c521f237a953a75e498a7952272ea7b698babbcd683312ba9596f1950c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f05aa0807aa49ead1a4bca7753e9d6599d2198680aa6931a328eea4a9de8abd3"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "0bcd3c0b04ae95f2009a530a70351fea5572522feed179446c7beac4a376f746"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "97bf30dc6f8e283fb2f614aa58cea2d40da703274219a0108a34570b288fe37b"
+    }
+  ],
+  "limits": [
+    "Focused production-module tests; Next HTTP adapter/browser/provider integration not executed.",
+    "No database exists in this flow. Storage recovery validates and filters on read without rewriting saved collections.",
+    "Changed-file ESLint was stopped after more than ten minutes without diagnostics; no lint pass is claimed.",
+    "Existing process-local rate limiting, session-storage navigation failure, SDK-internal retries and dietary/culinary accuracy are not certified by this change.",
+    "Full production build and browser end-to-end tests were not run; project typecheck passed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:52:38.028165+00:00"
+}

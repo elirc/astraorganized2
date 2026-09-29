@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python",
+    "-m",
+    "pytest",
+    "tests/test_migrations.py",
+    "-q",
+    "--basetemp",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\migrations-01\\pytest-temp",
+    "--junitxml",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\migrations-01\\results.xml"
+  ],
+  "exitCode": 1,
+  "seconds": 112.98
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Billing.Tests/Billing.Tests.csproj",
+    "--nologo",
+    "--filter",
+    "FullyQualifiedName~RegisterCrudAndEtagRoundtrip",
+    "--logger",
+    "trx;LogFileName=http-smoke-01.trx",
+    "--results-directory",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/stripe/http-smoke-01-results"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 48.43
+}

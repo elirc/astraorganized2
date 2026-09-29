@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "total": 15,
+  "passedTests": 15,
+  "failed": 0,
+  "notExecuted": 0,
+  "evidence": [
+    "z9_unit_13.json",
+    "z9_typecheck_6.json",
+    "z9_lint_4.json",
+    "z9_build_3.json"
+  ]
+}

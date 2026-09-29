@@ -1,0 +1,32 @@
+{
+  "project": "a92b3a3a2282",
+  "sourceFreeze": "executable source and tests frozen before verify-02; guides finalized before handoff",
+  "files": {
+    "README.md": "eaa7ffb43f986883f96632b25cf27d8a33e413d3eb6f414403ffd62394e58333",
+    "NetTrello.sln": "5e2521da23a6cd45853911081c180475891ab64c22bd53cfc21f73e234e5cedd",
+    "src/NetTrello.Api/Application/BoardService.cs": "a7f33b24eba716586d8e3b9aefd6c77c343f7f19854c7d7c0facc9d72ee1fb69",
+    "src/NetTrello.Api/Contracts/BoardDtos.cs": "5eb67d1565ffbe308c1d5e6621bef96c0d4e123cebd9b1a5feb64d1f7ea3624b",
+    "src/NetTrello.Api/Domain/Board.cs": "7b50479a87aa44082ebacb849573c72592c51295be5f4c5b50792fb6a13c7e9e",
+    "src/NetTrello.Api/Domain/BoardColumn.cs": "01b3bdb5367d47d668944938f1403a858b37c4eea5d86ab56690f2de3979eb32",
+    "src/NetTrello.Api/Domain/Card.cs": "53d5a6f2aa28fce319a2b833452d94647bccc88c7d017413f5fcc9809d9f9df5",
+    "tests/NetTrello.Checks/NetTrello.Checks.csproj": "e7786a52a0191b35393897000c12729524bab6e8a2456b1d60dd3db850c9ef00",
+    "tests/NetTrello.Checks/Program.cs": "8b31859e0bd54fad6f7c90ba575a8118e5a94810b2667dd66dce14487ef6bcf1",
+    "tests/http-regression.ps1": "e11a1d40348a79a1f6652567c3ec8a61dce7c4e31b0720aa0374b797ff27efd1",
+    "snapshots/Board-before.cs.txt": "07c90d610a0737a9fb800dffb77afe00c9b8c9dc1549927f97d4db886bbea596",
+    "snapshots/BoardColumn-before.cs.txt": "1f72efb039b4c5586ef0f85c17943424d9283b493deacb9213d7e4d526c6f0d1",
+    "snapshots/BoardDtos-before.cs.txt": "64304dedfd7aa99323771b53743c3dcb507e452d072bfc20c1fcd1a62e06decc",
+    "snapshots/BoardService-before.cs.txt": "ef6387769eeb8d4aa009d706c7d7d2714d551597e26286d0922ddfebfee53f0a",
+    "snapshots/Card-before.cs.txt": "0ff3ad2282ccc187e3122f7d2849188b4ecb5a10b09fe14a14a893b751da1f77",
+    "snapshots/NetTrello.sln-before.txt": "2c4cb8073e45887199ba309339d691a2679f113fc21f9ddd165b7259d67c3536",
+    "snapshots/README-before.md.txt": "8114f00e5b2138da7ccbbedb43db1ea22573422a9d9879a7149f7b2f8bdc3ca4",
+    "astraupskill/README.md": "2c1caa93fe15468588b0d82bd19aa01b55cb7276407a6d9b8b8c2b9d3cda514d",
+    "astraupskill/01-CODEBASE-MAP.md": "32036ecedb634d67e3845c88281b289ce61c5a59ce3dfcac919d9512155a01bd",
+    "astraupskill/02-CONCEPTS.md": "ca9e51e4c18578f2309abe07513ea7be317382a9823bb7fc894657ff50fc6211",
+    "astraupskill/03-WORKED-CHANGE.md": "ca5bfe25a08a513285f337e19482f22ff8a3738e54b8788a478d6d07e4349fe6",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "48f9efbeb76f633039b32735f97bfbcb60f663ef7cef201ece46181d7290219d",
+    "astraupskill/05-PRACTICE.md": "be21a47e7b55783077eab09f8d28178292798a416643f566656ae74190648419",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "2a499e2b6e85bddd1db4b354f7e3363bfde6a5755fb1e921f0a7aa9f4892dfb6",
+    "astraupskill/07-TRACE-LAB.md": "e88b0c1163e16afbb541540232b78619ce51738a1fdfcc5283056a8db23c002d",
+    "astraupskill/VERIFICATION.md": "e3008651527f7fd5e86b39beeb72ad846203b469a7e870d053b0e23d98cfa891"
+  }
+}

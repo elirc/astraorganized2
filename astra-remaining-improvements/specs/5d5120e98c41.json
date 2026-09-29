@@ -1,0 +1,57 @@
+{
+  "changedFiles": [
+    "README.md",
+    "backend/src/app.ts",
+    "backend/src/app.test.ts",
+    "backend/src/modules/auth/auth.schemas.ts",
+    "backend/src/modules/auth/auth.service.ts",
+    "backend/src/shared/utils/jwt.ts",
+    "astraupskill/snapshots/app-before.ts.txt",
+    "astraupskill/snapshots/app-test-before.ts.txt",
+    "astraupskill/snapshots/auth-routes-before.ts.txt",
+    "astraupskill/snapshots/auth-schemas-before.ts.txt",
+    "astraupskill/snapshots/auth-service-before.ts.txt",
+    "astraupskill/evidence/backend-prisma-validate-01.json",
+    "astraupskill/evidence/backend-prisma-validate-01.log",
+    "astraupskill/evidence/backend-prisma-generate-01.json",
+    "astraupskill/evidence/backend-prisma-generate-01.log",
+    "astraupskill/evidence/backend-typecheck-01.json",
+    "astraupskill/evidence/backend-typecheck-01.log",
+    "astraupskill/evidence/backend-lint-01.json",
+    "astraupskill/evidence/backend-lint-01.log",
+    "astraupskill/evidence/backend-test-01.json",
+    "astraupskill/evidence/backend-test-01.log",
+    "astraupskill/evidence/backend-build-01.json",
+    "astraupskill/evidence/backend-build-01.log",
+    "astraupskill/evidence/frontend-typecheck-01.json",
+    "astraupskill/evidence/frontend-typecheck-01.log",
+    "astraupskill/evidence/frontend-test-01.json",
+    "astraupskill/evidence/frontend-test-01.log",
+    "astraupskill/evidence/frontend-build-01.json",
+    "astraupskill/evidence/frontend-build-01.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/install-root-01.json",
+    "astraupskill/evidence/install-root-01.log"
+  ],
+  "summary": [
+    "Close public registration privilege escalation by rejecting caller supplied roles at the strict Zod boundary and hardcoding READ_ONLY in the service, including direct callers and unique race handling.",
+    "Repair Express error transport with four argument middleware, safe malformed JSON/AppError/unexpected responses, and normalized access and refresh JWT claim validation.",
+    "Bind refresh records to their token subject, reject wrong owner, revoked, expired, and expiry-equal records, scope logout by user, and preserve active account checks and public response projection.",
+    "Add one actual Supertest/Vitest Prisma-mocked auth harness, exact original snapshots, finite backend/frontend/Prisma evidence, and a source-grounded nine chapter course."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5d5120e98c41/results.json",
+    "expectedTests": 10,
+    "command": "Backend: Prisma validate/generate, typecheck, lint, Vitest/Supertest and TypeScript build; frontend: typecheck, Vitest and Vite build",
+    "environment": "Node/npm workspace install; Prisma 5.22, Express 4, Vitest 2.1.9, Vite 6.4.2; mocked Prisma auth tests and dummy DATABASE_URL for schema checks; temporary Supertest loopback listeners; no database migration or production listener"
+  },
+  "limits": [
+    "Public registration intentionally creates READ_ONLY users; no privileged provisioning route was added, and administrator bootstrap remains an explicit local seed concern.",
+    "The backend suite mocks Prisma, so it proves HTTP validation, service arguments, token/error mapping, and route forwarding but not PostgreSQL durability or multi-process concurrency.",
+    "Refresh storage ownership and expiry checks are exercised with records supplied by the mock; no live database or token revocation list is claimed. Access-token revocation and refresh rotation remain unimplemented.",
+    "The frontend is the existing login shell and app scaffold; build/test success does not prove browser-to-API authentication or a live account.",
+    "The Prisma schema contains future CRM models, while the active app exposes the auth and health seams; no CRUD or tenant-membership architecture was invented.",
+    "The existing database refresh-token expiry remains fixed at seven days while JWT lifetime is configurable; rotation and access-token revocation remain future work."
+  ]
+}

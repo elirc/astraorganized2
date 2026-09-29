@@ -1,0 +1,326 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Shop",
+  "id": "34d60d325094",
+  "summary": [
+    "Refund batches receive complete pure preflight before provider calls or any line, timestamp or history mutation.",
+    "Refund quantities, paid totals and restock targets are validated; unsupported discounted refunds reject safely before the provider.",
+    "Checkout validates customer/cart/order and every inventory requirement before payment or reservation.",
+    "Idempotency records bind a normalized request fingerprint; changed identities conflict and legacy records fail closed, with an additive SQL upgrade supplied.",
+    "Production EF collection and domain-generated ID mappings are corrected, with explicit generic owned-money configuration.",
+    "Added pure-domain and real PostgreSQL handler regressions using a recording fake payment provider, plus an isolated test helper and nine learning guides."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/34d60d325094/resume14-results.json",
+    "expectedTests": 20,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 20,
+    "passedTests": 20,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Shop",
+        "id": "34d60d325094",
+        "command": [
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+          "restore",
+          "NetShopifyLite.sln",
+          "-m:1",
+          "-nodeReuse:false"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34d60d325094",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:30:32.656796+00:00",
+        "status": "complete",
+        "log": "resume14-restore-02.log",
+        "pid": 20008,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:31:35.897709+00:00",
+        "elapsedSeconds": 63.23
+      },
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Shop",
+        "id": "34d60d325094",
+        "command": [
+          "python",
+          "scripts/test-local.py",
+          "--dotnet",
+          "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+          "--results",
+          "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/34d60d325094/resume14-pg03"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34d60d325094",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:41:31.666905+00:00",
+        "status": "complete",
+        "log": "resume14-postgres-tests-03.log",
+        "pid": 24632,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:45:48.332284+00:00",
+        "elapsedSeconds": 256.66
+      },
+      {
+        "project": "geminiorganized/OpenSource_Upskilling_Shop",
+        "id": "34d60d325094",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34d60d325094\\frontend",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:16:31.365169+00:00",
+        "status": "complete",
+        "log": "resume14-web-build-01.log",
+        "pid": 25456,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:22:55.634249+00:00",
+        "elapsedSeconds": 384.26
+      }
+    ]
+  },
+  "courseWords": 3262,
+  "courseFiles": 9,
+  "courseLinksChecked": 93,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "9e947a574e28008ec7c4e316fc11fbd3d31a02c8cab8659e399de0429246c2ca",
+      "after_sha256": "972d69bcc767c6d1a9c11ee0864876b52d663ca4ac938d0cd3cc1e252f21031f"
+    },
+    {
+      "file": "astraupskill/evidence/regression-1.trx",
+      "before_sha256": null,
+      "after_sha256": "5b3e831e7258c3c33d5d5f206dd36df3b91975751fc189fe5b7e3bd126457d03"
+    },
+    {
+      "file": "astraupskill/evidence/regression-2.trx",
+      "before_sha256": null,
+      "after_sha256": "adf812659e35db2c1d953704fad7ab116867acfe0c48299a480ddb683ff03c50"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-postgres-tests-03.json",
+      "before_sha256": null,
+      "after_sha256": "4290496c035bc52b82d2e17c4c3e49068dbfbe611ba6dabb362bc96a4a5be490"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-postgres-tests-03.log",
+      "before_sha256": null,
+      "after_sha256": "055b329e789660680a97462466dd4ca6ffaf4f74d40fbe1d5d99c1a82404c557"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-restore-02.json",
+      "before_sha256": null,
+      "after_sha256": "ac6bffdaaceb452ab97e9d54b0086900585e406d811a8a730428b06554be9bb7"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-restore-02.log",
+      "before_sha256": null,
+      "after_sha256": "fdc4b3938430a22b5471617c81ab7019db762fcc6a38a1c3694abd4d775b583f"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-web-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "2a30e0f8105deacb28fe8179e890aac6460dd5b2c53e722f58be41a5a48292b2"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-web-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "e9e7debf3635d4d21afc4cb15b6e440f9cdae0cf7367e057e817981d1e4b0007"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9e947a574e28008ec7c4e316fc11fbd3d31a02c8cab8659e399de0429246c2ca"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Api__Program.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4e575fa14f05b5628229dd0c422ceee993e89130e6812725450a408b6c612b42"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Application__Abstractions__IdempotencyRecord.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "81463a5c268d5dab453ea16d1f2b75d1f2f5e3cbd0138a385b41801522fcddc1"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Application__Orders__Checkout.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e144a3d4dcd0ba3eff197c4fb55be7a70354cfc63fe1c94b5d7cc6dcf633c80d"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Application__Orders__RefundOrder.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e467bb8ea628ef594bea6667b2e850e7eec0cad31c5d08559550d4f9cf0324a9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Domain__Inventory__InventoryModels.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c893059f4fd1949e2762f40756e4e4f6362f85b06641bf74f03eace940811696"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Domain__Sales__OrderModels.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3f5b87158c701ad9c1917c7ed85596de42c781d0e82c7adf3f3a7d1e5bfebd12"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Infrastructure__NetShopifyLite.Infrastructure.csproj.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9a23dad5a2eec7fbdd333ace40d967541139572de89a6328cb24a5af74ca214b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__NetShopifyLite.Infrastructure__Persistence__AppDbContext.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "dce37b938338c252bb5148cf15c27fb73ab3bb94d5e9d9b2d7c0678a3eab4c80"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__NetShopifyLite.IntegrationTests__HealthCheckTests.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9485da2bf7c9eb376b6d6626cd10524279e104eba2315cb386c56082838cfa2d"
+    },
+    {
+      "file": "scripts/add-request-fingerprint.sql",
+      "before_sha256": null,
+      "after_sha256": "ddced4b9358f2783bed776d62cafedc461216cf2ebe6132127db72d3bbc3360a"
+    },
+    {
+      "file": "scripts/test-local.py",
+      "before_sha256": null,
+      "after_sha256": "5c6b79e0b928322fa1eff3435d94d53b6317a7d46415ceaca548cf880618b0f2"
+    },
+    {
+      "file": "src/NetShopifyLite.Api/Program.cs",
+      "before_sha256": "4e575fa14f05b5628229dd0c422ceee993e89130e6812725450a408b6c612b42",
+      "after_sha256": "8e89baeda77ecf3bc6fa7e21dd7e64389c9e6a5e8c3ad1e3ad6e31d86232d2c8"
+    },
+    {
+      "file": "src/NetShopifyLite.Application/Abstractions/IdempotencyRecord.cs",
+      "before_sha256": "81463a5c268d5dab453ea16d1f2b75d1f2f5e3cbd0138a385b41801522fcddc1",
+      "after_sha256": "50d21a6f8153a8e623e8b749be870a7402e3ea4443d53194804bfd2b5460cdb0"
+    },
+    {
+      "file": "src/NetShopifyLite.Application/Abstractions/RequestIdentity.cs",
+      "before_sha256": null,
+      "after_sha256": "0e51784ef5bd38cc108aaf1daa2637fb08c254c8bbe1af47ae937e2633f1eed5"
+    },
+    {
+      "file": "src/NetShopifyLite.Application/Orders/Checkout.cs",
+      "before_sha256": "e144a3d4dcd0ba3eff197c4fb55be7a70354cfc63fe1c94b5d7cc6dcf633c80d",
+      "after_sha256": "55cafcdef18227dc0acba1d022df777c4c923d8649ddb1c8253efa2e8f202c86"
+    },
+    {
+      "file": "src/NetShopifyLite.Application/Orders/RefundOrder.cs",
+      "before_sha256": "e467bb8ea628ef594bea6667b2e850e7eec0cad31c5d08559550d4f9cf0324a9",
+      "after_sha256": "b2d2b3abac645b0a4bee5ecf4f01156d8f7bb1bd87074bf9872feb9abfed26d3"
+    },
+    {
+      "file": "src/NetShopifyLite.Domain/Inventory/InventoryModels.cs",
+      "before_sha256": "c893059f4fd1949e2762f40756e4e4f6362f85b06641bf74f03eace940811696",
+      "after_sha256": "6ce62dd60d11a90d47e292fdb968669ed4a46d5c1e290a48240218708b23c5c7"
+    },
+    {
+      "file": "src/NetShopifyLite.Domain/Sales/OrderModels.cs",
+      "before_sha256": "3f5b87158c701ad9c1917c7ed85596de42c781d0e82c7adf3f3a7d1e5bfebd12",
+      "after_sha256": "2e8499c0f222156a87b91c07accf9446798a8de0bf1610c2f9958ef4bcf30368"
+    },
+    {
+      "file": "src/NetShopifyLite.Infrastructure/NetShopifyLite.Infrastructure.csproj",
+      "before_sha256": "9a23dad5a2eec7fbdd333ace40d967541139572de89a6328cb24a5af74ca214b",
+      "after_sha256": "040abacad3dea8f3031a091d335da98d62ae6d7b3d36e621781db1fd2b7905f5"
+    },
+    {
+      "file": "src/NetShopifyLite.Infrastructure/Persistence/AppDbContext.cs",
+      "before_sha256": "dce37b938338c252bb5148cf15c27fb73ab3bb94d5e9d9b2d7c0678a3eab4c80",
+      "after_sha256": "b8d36cc79bcc724dba1986c6d4af2fecd2345b8f8e9038c5d3602fa3019d3f1b"
+    },
+    {
+      "file": "tests/NetShopifyLite.IntegrationTests/CommerceHandlerTests.cs",
+      "before_sha256": null,
+      "after_sha256": "ae41e8d3b0d594fd1e5879c5f17e515c1e5a01b790761afb667a10ad22aeb23c"
+    },
+    {
+      "file": "tests/NetShopifyLite.IntegrationTests/HealthCheckTests.cs",
+      "before_sha256": "9485da2bf7c9eb376b6d6626cd10524279e104eba2315cb386c56082838cfa2d",
+      "after_sha256": "fd31c095cfe4aef2c584f332b93c7b380a26ea35058a5f4c25fb5ee1ae870d4d"
+    },
+    {
+      "file": "tests/NetShopifyLite.IntegrationTests/PostgresFixture.cs",
+      "before_sha256": null,
+      "after_sha256": "709349c420b8cb37f11139cabe2cf56443ad625427b06f26abd12ae295569dd6"
+    },
+    {
+      "file": "tests/NetShopifyLite.IntegrationTests/Usings.cs",
+      "before_sha256": null,
+      "after_sha256": "f006e57ed1a5b38955badb20c52802393287eb620debf7d34d4cd51969b6c0fb"
+    },
+    {
+      "file": "tests/NetShopifyLite.UnitTests/RefundPreflightTests.cs",
+      "before_sha256": null,
+      "after_sha256": "4b28602c319b328696aeb58ccf275604ac5dd28fb13934ecef1de8a97edcbc86"
+    },
+    {
+      "file": "tests/NetShopifyLite.UnitTests/Usings.cs",
+      "before_sha256": null,
+      "after_sha256": "f006e57ed1a5b38955badb20c52802393287eb620debf7d34d4cd51969b6c0fb"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "35ad13d93cdd40c7ae33e9fffc9ea6e92fdacba6ea46c5282fdb164cfc32a918"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e425f8834c3611419d1ba1c92d8b6ba834bd4c3e3d3d7b1808bfac8c5cda209c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bce98086a8efa3e833e6446b3c6e594b355ca33075da151af1898e50065f7f82"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1e2abd8cfbee0de86c1f193e975a475fedd330cfe48879c42c98fad633dcb1c3"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "59fd39eed21645706688f9b23117cebec9a59066134b0f6e44c5d70524215714"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9d86b26311d5d5ae2b160b03e92801420e65fee0d22c54e16a1d814937ebcaf6"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "df5be441d90d09bc0b0e1d83662ba3f875e1d43018dc807db05258b0b1ed0393"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4571fd33f4b00239c562d5204972467956251479ea338131aa17ae6d2a5ae1cc"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "7ba2a669e87b42a29ec6ad7253709b9c9132123b80df60b18021635a51be37d1"
+    }
+  ],
+  "limits": [
+    "Provider success followed by failed database commit still requires reconciliation; exactly-once external financial processing is not implemented.",
+    "Discounted refunds require a future net allocation ledger and currently reject before provider invocation.",
+    "Request identity comparison and cart ownership consistency do not replace trusted customer authentication.",
+    "Existing databases require the provided additive fingerprint column upgrade; historical null fingerprints require reconciliation."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T17:50:10.681012+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "1a8f0f6b63c8",
+  "project": "_Organized Desktop/05 Numbered Experiments/j2",
+  "files": {
+    "README.md": "1e472c228810810d5e2356d03dd86476b64213edde71688674be97d2ad39e145",
+    "docs/onboarding/00-codebase-map.md": "990a786ad64c02e6c1e68b6e0be92ef2088abaaf701d5992c4b25b8423bdfa01",
+    "docs/onboarding/01-reading-order.md": "11719bf7d2facca3fb94a3222e91736981727f9a16c1b7b13d0fa91ef11043ea",
+    "docs/onboarding/02-review-checklists.md": "e2cc95f3986d6ee71c0f3cb0af5ced080dccace790889546b286f49a9a573e0f",
+    "docs/onboarding/files/src/librarytracker/App.java.md": "4a03221daf51654f1b007d703771c5e1ed90086cc92558c9f401385e4fa0d7a8",
+    "docs/onboarding/files/src/librarytracker/model/Book.java.md": "dcb00459ddddf058164ffda4576ed2bdb92c013ba1e21b4f504416943e6fcd17",
+    "docs/onboarding/files/src/librarytracker/model/Borrower.java.md": "ffc197f87d9d38a462907ddea04d4f8fcf770c9eb10dc9cdd465fa93829b9273",
+    "docs/onboarding/files/src/librarytracker/service/LibraryManager.java.md": "2bb77b6907bac63be59c44131d58bcbdb763e5b97455879f4fdd4e3064c056bf",
+    "docs/onboarding/files/src/librarytracker/storage/FileStorage.java.md": "82256b60009d5de49530e919b21a7de15a58b547e67dd90de8e3196835d3da4d",
+    "src/librarytracker/App.java": "d2f3ff900c4c434f5d723d3f8ed673a3a00204677968efb45ea5c5d93ee0785d",
+    "src/librarytracker/model/Book.java": "366a021979cd5a2d2647f2936045d94f4a1ce58a0c8e3d79f6ea6bb2868da25e",
+    "src/librarytracker/model/Borrower.java": "9af46f3e47e5f78aef3c873a059319601eadb62e4ee9154c69f5c3825c813d32",
+    "src/librarytracker/service/LibraryManager.java": "e3529f223a4744a6bab06b4f4ee595a5bceed1803337e098839514b9bbc70e62",
+    "src/librarytracker/storage/FileStorage.java": "969e59f601fd4d989a1bef5b4be2ed165237698d9b41e8e9b8e07af5e72b14af"
+  }
+}

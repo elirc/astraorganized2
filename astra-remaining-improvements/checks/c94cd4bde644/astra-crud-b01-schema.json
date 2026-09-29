@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz3",
+  "id": "c94cd4bde644",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-schema.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c94cd4bde644",
+  "environmentOverrides": {
+    "CRUD_ZOD_PATH": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/e0e5886e8464/node_modules/zod"
+  },
+  "startedAt": "2026-09-21T23:29:27.603160+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-schema.log",
+  "pid": 30516,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:30:15.039635+00:00",
+  "elapsedSeconds": 47.43
+}

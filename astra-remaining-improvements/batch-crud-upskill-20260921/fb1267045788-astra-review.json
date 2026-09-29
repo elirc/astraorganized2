@@ -1,0 +1,36 @@
+{
+  "id": "fb1267045788",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:45:35.255408+00:00",
+  "sourceReview": "Reviewed scraper done-thread preservation, incomplete-thread resume and duplicate-ignore options; matching named unique key and separate guarded migration preserve existing data. Migration and live API contract not executed.",
+  "teachingReview": "Reviewed nine chapters, snapshots, real retry traces and separate exercises/answers; corrected preserve-versus-refresh semantics and existing-database migration guidance, attached nine-test evidence.",
+  "testReview": "Astra ran all nine Python tests including real scrape entry with failed HTTP after parent creation and interrupted500+1batch recovery. Explicit doubles verify call contract and preserved parsed fields, not live SQL or external services. Preflight passed.",
+  "specSHA256": "6c86bd9951c7af40e5a87c0a0ec1863635efd2337388ee4dc02125113ea9aa92",
+  "fileHashes": {
+    "backend/app/services/scraper.py": "9f256fff7fdfd43e3061ef8305e548702a38e2c9362937b11cd1564f36c45798",
+    "supabase/schema.sql": "3ac7ae3089a7abd7c285227e5b62c1754e065126206b9694de7cc5eb16cd6a93",
+    "supabase/migrations/20260921_job_comment_unique.sql": "ae9932fee91ce3ac18ea05aa190bf636ff5f3962499d63aebc1386280d07f65f",
+    "backend/tests/test_scraper_resume.py": "eba87cd563f9f4901ef60292a9902d82b67acc1954ddbd2f65f55b55c912794f",
+    "backend/tests/test_scraper_recovery.py": "66a9bcff53a88276852095a3bb07bb372b1819ea4d86aedc4b83d311c29cfd06",
+    "astraupskill/snapshots/backend/app/services/scraper.py": "0ebe60af87f3ec4b2cabfacbb9cc90938c0fad447b44a791de1afe56388b6be2",
+    "astraupskill/snapshots/supabase/schema.sql": "6ceb0c6757a15e007b98c1deaf177bb21bd1ff0c24b2b04ee4ca99588facae9f",
+    "astraupskill/evidence/astra-crud-b01-all-scraper.log": "70172cde1eff72be19599c22b721a337bef29a7f37598d6422949a78d52c07e9",
+    "astraupskill/evidence/results.json": "9510ecd23be9ebbe29685d5dd1fe1412f0eebfb3b458c9b603dfe996b4ec8de7",
+    "astraupskill/README.md": "72f8dd9a3817395d9ff4b2cb0206d68feedaea163990239fb6b163b1861e4ef5",
+    "astraupskill/01-CODEBASE-MAP.md": "9142b6922f61845f2237d91c1c81c8697ea56ba628a6bcbed24cdc995f7d459a",
+    "astraupskill/02-CONCEPTS.md": "f71225fa13740f3ddc7a7d338810502a16844a5b9f317a06c0445bc222e31a98",
+    "astraupskill/03-WORKED-CHANGE.md": "bd827cc7f892858dae4b6a1ab64295c6a69d39df32351ecb062e35759769a466",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "b67ec9aa26f71887485b1ecbcc10f0110b078fff4f4e4f891d3f3eccb3d002c9",
+    "astraupskill/05-PRACTICE.md": "6e216c4c718750544fc41158eebb082eca3d77556ce46be945f2c74868e12ca4",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "56a791a7acd3faf143120f488809b2686f196407b78d5a271663c94ca5fb4a03",
+    "astraupskill/07-TRACE-LAB.md": "a7904221113d39ace901bc49e0d24fd02e307f89007dfff9f09be491a52dbd88",
+    "astraupskill/VERIFICATION.md": "ac8a0d219be4d500a9bdd7d83f10eea1d20cfc4b40284fd3c41be4b22b5d3b06"
+  },
+  "evidenceHashes": {
+    "checks/fb1267045788/astra-crud-b01-all-scraper.json": "f0f0512dce27061757cc130cf965bc35afc46f70a4af962f0745db7907e1156c",
+    "checks/fb1267045788/astra-crud-b01-all-scraper.log": "70172cde1eff72be19599c22b721a337bef29a7f37598d6422949a78d52c07e9",
+    "checks/fb1267045788/astra-crud-b01-recovery.json": "59945765198966c1b0bda925aa866e61e66fea758b295d543541b6239dbdea41",
+    "checks/fb1267045788/astra-crud-b01-recovery.log": "83f34f6210df1c1f3dd3463975298cc97b8dac3684830383cf20ff1e272499d7",
+    "checks/fb1267045788/results-crud-b01.json": "9510ecd23be9ebbe29685d5dd1fe1412f0eebfb3b458c9b603dfe996b4ec8de7"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "7dde79c7a4c0",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:12:27.677337+00:00",
+  "sourceReview": "Read issue creation/update service, real permission map, workflow helpers and errors. No production change; setup/member validation precedes tx; actual initial/custom rules execute.",
+  "teachingReview": "Replaced generic incorrect normalizer template with nine concrete chapters tracing actual createIssue, scoped membership, fields, activity and automation; separate exercises/solutions and provider limits.",
+  "testReview": "Five passing actual-service cases with real helpers/errors verify scope/status payload, observer/config refusals, assignee predicate, custom-field matrix and activity failure; exact shared tx checks, no rollback claim.",
+  "specSHA256": "2501cc91cb352448db1fc91dcec874ae307ea5e819ef7ee6fc4f3ee680b399ca",
+  "fileHashes": {
+    "tests/issue-service-runtime.test.mjs": "fa036167e61b3ceab8a6118153f31120632e5223b1d6f738094fa98ab90e3bd1",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/issueService.ts.original.txt": "311318f7cafc6be82070f6b17d482d356523efa126a009514e4d2fa7955c56c5",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "2355a410d48304c3cc62efd1333cd82ae0930de2bfbcf0a0d231167b935f744e",
+    "astraupskill/evidence/results.json": "b49a6cec863dcc6ed65601ffe3f4a22d028b654c290d59494da4673b2d216d24",
+    "astraupskill/README.md": "170e50e09ae0f3f3374caa3741f56d3201c965255d15cf7815e078a4d9eac6ea",
+    "astraupskill/01-CODEBASE-MAP.md": "73ef6952c33164d0656d3296518fd9610e2ac89c64b883d78fa2cd3bafdc254e",
+    "astraupskill/02-CONCEPTS.md": "51eaf2756f9700c71a8f90b3ae398760019ceccb459933d6828668be114fdda1",
+    "astraupskill/03-WORKED-CHANGE.md": "9ea584bb7b8da02ff0e34fd0ab1240b665ef827f9eeb2595614f2971db802d34",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "ebcc40d038f0db2732bd3f4032244b075a6c68af69a594a79467149de76b13d3",
+    "astraupskill/05-PRACTICE.md": "3d0c82273cf47bf89f27a4fc13393d84746eda9333e09cf3ffc3fe0509a9337d",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "d710717cab64d943e376f2f0a1710932fd20179ca5679a3936096d52b480ed7a",
+    "astraupskill/07-TRACE-LAB.md": "735c2651281905b16b5c754403e5e64a1908fc47ae6e9d7f4d69aa176a677f21",
+    "astraupskill/VERIFICATION.md": "89873069ad73550181624c1dac14e51c99bf381716b16f3b6f87840152b16398"
+  },
+  "evidenceHashes": {
+    "checks/7dde79c7a4c0/crud-b06-astra-runtime.json": "49a4203094f5626110717a468348b6d4af4b7236e18cf2870da087729ac57c04",
+    "checks/7dde79c7a4c0/crud-b06-astra-runtime.log": "2355a410d48304c3cc62efd1333cd82ae0930de2bfbcf0a0d231167b935f744e",
+    "checks/7dde79c7a4c0/crud-ww4-policy-v2.json": "404aa4db7d99117685cbb8cab4f127db41cf6096b53084a95827f435819ea055",
+    "checks/7dde79c7a4c0/crud-ww4-policy-v2.log": "e634bedbb922e68104649ab639e5733c19daaeddfc999da677fc4f1b790e7aeb",
+    "checks/7dde79c7a4c0/crud-ww4-policy-v3.json": "f8a707b44ba70a4dbae328e85c90adb8713e91a32a9f2be67e56ecade1d85f21",
+    "checks/7dde79c7a4c0/crud-ww4-policy-v3.log": "c278c24fcaec83527e6ee01622b7f8dcfcb6f7d31fd57bcecc88cf4d54f9f94e",
+    "checks/7dde79c7a4c0/crud-ww4-policy.json": "f6a7ca46e924b01161e1f3be08f054d13b4ea2cc136423d17f7b37e6d6dcf0cc",
+    "checks/7dde79c7a4c0/crud-ww4-policy.log": "601b166d4a003559460ffa6d22c1eadc9300a0b4d2d61c7dd88a277889f0aad9",
+    "checks/7dde79c7a4c0/crud-ww4-runtime-v4.json": "08be590e02f5af6d1f85b240eebf1b01c36068f9b8497cbdce654892e6a3860c",
+    "checks/7dde79c7a4c0/crud-ww4-runtime-v4.log": "ad0e31c68cca5f2bcb6384d443d1d272b71f0eb67e305e60e2e0c417d4f1dcc1",
+    "checks/7dde79c7a4c0/crud-ww4-runtime-v5.json": "bacdcb96ee65f165f46acc403949e3bb381bafc0e483d0b9cda2c735fc83fe8b",
+    "checks/7dde79c7a4c0/crud-ww4-runtime-v5.log": "db693265cd016ca1eb62ba5c1c21cc62d1ce64fe32da1e4afd96683406f3eb3d",
+    "checks/7dde79c7a4c0/results-crud-ww4-runtime-v5.json": "b49a6cec863dcc6ed65601ffe3f4a22d028b654c290d59494da4673b2d216d24"
+  }
+}

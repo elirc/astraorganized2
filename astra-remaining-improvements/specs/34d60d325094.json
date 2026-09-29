@@ -1,0 +1,60 @@
+{
+  "summary": [
+    "Refund batches receive complete pure preflight before provider calls or any line, timestamp or history mutation.",
+    "Refund quantities, paid totals and restock targets are validated; unsupported discounted refunds reject safely before the provider.",
+    "Checkout validates customer/cart/order and every inventory requirement before payment or reservation.",
+    "Idempotency records bind a normalized request fingerprint; changed identities conflict and legacy records fail closed, with an additive SQL upgrade supplied.",
+    "Production EF collection and domain-generated ID mappings are corrected, with explicit generic owned-money configuration.",
+    "Added pure-domain and real PostgreSQL handler regressions using a recording fake payment provider, plus an isolated test helper and nine learning guides."
+  ],
+  "limits": [
+    "Provider success followed by failed database commit still requires reconciliation; exactly-once external financial processing is not implemented.",
+    "Discounted refunds require a future net allocation ledger and currently reject before provider invocation.",
+    "Request identity comparison and cart ownership consistency do not replace trusted customer authentication.",
+    "Existing databases require the provided additive fingerprint column upgrade; historical null fingerprints require reconciliation."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/regression-1.trx",
+    "astraupskill/evidence/regression-2.trx",
+    "astraupskill/evidence/resume14-postgres-tests-03.json",
+    "astraupskill/evidence/resume14-postgres-tests-03.log",
+    "astraupskill/evidence/resume14-restore-02.json",
+    "astraupskill/evidence/resume14-restore-02.log",
+    "astraupskill/evidence/resume14-web-build-01.json",
+    "astraupskill/evidence/resume14-web-build-01.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Api__Program.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Application__Abstractions__IdempotencyRecord.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Application__Orders__Checkout.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Application__Orders__RefundOrder.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Domain__Inventory__InventoryModels.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Domain__Sales__OrderModels.cs.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Infrastructure__NetShopifyLite.Infrastructure.csproj.original.txt",
+    "astraupskill/snapshots/src__NetShopifyLite.Infrastructure__Persistence__AppDbContext.cs.original.txt",
+    "astraupskill/snapshots/tests__NetShopifyLite.IntegrationTests__HealthCheckTests.cs.original.txt",
+    "scripts/add-request-fingerprint.sql",
+    "scripts/test-local.py",
+    "src/NetShopifyLite.Api/Program.cs",
+    "src/NetShopifyLite.Application/Abstractions/IdempotencyRecord.cs",
+    "src/NetShopifyLite.Application/Abstractions/RequestIdentity.cs",
+    "src/NetShopifyLite.Application/Orders/Checkout.cs",
+    "src/NetShopifyLite.Application/Orders/RefundOrder.cs",
+    "src/NetShopifyLite.Domain/Inventory/InventoryModels.cs",
+    "src/NetShopifyLite.Domain/Sales/OrderModels.cs",
+    "src/NetShopifyLite.Infrastructure/NetShopifyLite.Infrastructure.csproj",
+    "src/NetShopifyLite.Infrastructure/Persistence/AppDbContext.cs",
+    "tests/NetShopifyLite.IntegrationTests/CommerceHandlerTests.cs",
+    "tests/NetShopifyLite.IntegrationTests/HealthCheckTests.cs",
+    "tests/NetShopifyLite.IntegrationTests/PostgresFixture.cs",
+    "tests/NetShopifyLite.IntegrationTests/Usings.cs",
+    "tests/NetShopifyLite.UnitTests/RefundPreflightTests.cs",
+    "tests/NetShopifyLite.UnitTests/Usings.cs"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/34d60d325094/resume14-results.json",
+    "expectedTests": 20,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

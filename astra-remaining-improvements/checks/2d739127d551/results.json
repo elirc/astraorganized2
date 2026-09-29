@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "total": 11,
+  "tests": 11,
+  "failed": 0,
+  "checks": [
+    "root-install-01",
+    "root-generate-01",
+    "root-handler-tests-02",
+    "root-lint-02",
+    "root-build-01"
+  ],
+  "scope": "Two input-helper cases and nine real route/API cases loaded with Node VM modules and Prisma/identity/framework doubles. Production Next build and lint passed; no real database rollback, auth or browser test."
+}

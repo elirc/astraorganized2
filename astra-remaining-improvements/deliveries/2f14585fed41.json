@@ -1,0 +1,334 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board",
+  "id": "2f14585fed41",
+  "summary": [
+    "Replaced unsigned identity cookies and truncating multi-write JSON persistence with generated local credentials, signed expiring sessions and a validated SQLite transaction boundary that coordinates independent processes.",
+    "Completed owned idea/comment CRUD, captured-version edits, reference-aware deletion, private projections, desired vote/follow state, atomic notifications and audits, guarded duplicate merges and working admin/moderation controls.",
+    "Added preserved form drafts, export/current-value recovery, coordinated pending writes, navigation guards, stable board/roadmap pagination and responsive desktop/narrow layouts.",
+    "Preserved original collection JSON and historical documentation; added explicit non-overwriting fictional setup, 59 passing checks, four reviewed captures and nine detailed project-specific learning documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/feedback-board/results.json",
+    "expectedTests": 59,
+    "environment": "Node 22.16.0; Next.js 16.1.6; React 19.2.3; SQLite 3.49.1; Playwright 1.60 Chromium",
+    "command": "node node_modules/tsx/dist/cli.mjs scripts/verify.ts (43 backend/setup, 16 browser; TypeScript; production build; disposable SQLite fixture)"
+  },
+  "testResults": {
+    "passed": true,
+    "mode": "verify",
+    "backendTests": 43,
+    "browserTests": 16,
+    "total": 59,
+    "build": true,
+    "database": "Helper-owned temporary SQLite aggregate"
+  },
+  "courseWords": 4476,
+  "courseFiles": 9,
+  "courseLinksChecked": 35,
+  "files": [
+    {
+      "file": ".env.example",
+      "before_sha256": null,
+      "after_sha256": "84b5abadadac369e7eeae7abf6bb158f53fdd2642688c4efba425401693315c4"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "6068d16f0e86d89fa230c48cbe9136894418befe52cac73ea9c4c182135c96ea"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "240eb6fb174451c0da1411a95f35c6395701ae86c3e6e75a1b0953c24abbf2cb",
+      "after_sha256": "835c5f7a7d838420044c0887ef3d340bf6b0763e712f23bccfa2bd3b1c6abbef"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "ee021f211b684f86b0c7a5f035e74ec376d12a24f5210057451cc315bca347c5"
+    },
+    {
+      "file": "astraupskill/images/detail-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "7a61a01807d591062431b75ae089b63518ec3981400984b44870abb5df124ab3"
+    },
+    {
+      "file": "astraupskill/images/detail-narrow.png",
+      "before_sha256": null,
+      "after_sha256": "d0d45ba92f04e83748d833325a713b1e1380f0aecda07d080fdc3e0686c7887d"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "c66f9532b5ce7f29157040c98daf17875bf4554e26cfb308be8573ac6867abdd"
+    },
+    {
+      "file": "browser-tests/board.spec.ts",
+      "before_sha256": null,
+      "after_sha256": "4b22dc9a4f970e2205a4d815bff9bb14752d1a7b802b1987eb6195827be20322"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6",
+      "after_sha256": "7b550dda9686c16f36a17bf9051d5dbf31e98555b30d114ac49fc49a1e712651"
+    },
+    {
+      "file": "next.config.ts",
+      "before_sha256": "ab4c61f6ee100ae43610a18512f1ebcec842bb2405431e1009266173f21cf772",
+      "after_sha256": "b68c6c0ef281c7018684fc44d1673c3435ff78f4ab31c4790071ed07c1e33a51"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "07d64805479631ec3f848dfbea543394697b750fee54bfce470d05cd958c43db",
+      "after_sha256": "d28d52a06680fd9f4f16297fe56c151007f8e6185abb360c5e97923e05397060"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "ae078a2db815da833bd6d7b1fab8c1f7be530466fe38e14aa062764ac1f94456",
+      "after_sha256": "dd5f119f2e3a0a0539d78324ebdb92f05220d1c1c0fa68fb21feb31661d15049"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "44b92e8b0399eeb8f093560952b9a6a051387193e5206c61e05e6c8937934413"
+    },
+    {
+      "file": "scripts/setup-local.ts",
+      "before_sha256": null,
+      "after_sha256": "75faa3c17bf65ce77c4a5ee33660b7ed5cf543d99bba97066ae78efda7cfbebf"
+    },
+    {
+      "file": "scripts/verify.ts",
+      "before_sha256": null,
+      "after_sha256": "24f4745c4c8b8c40da28966145de329e10192f606591f4ea4dc152bd84909456"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "41cf051b2772ae8447d4de9315b9b96d8e440b01c1062fb80989de80abbebdb2",
+      "after_sha256": "4fcae2461420203fd5da0035843d5b6ad0a43d3587095510c26bf98fe78322ff"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "before_sha256": "07124c7e37feb752bbe254e5949ee09cc6d803bdc128096305f588b6e228435d",
+      "after_sha256": "2771f8fce9704a5f87b63d797f4f7a4a1220b1e53a211fbd70f342c0985ce694"
+    },
+    {
+      "file": "src/app/login/page.tsx",
+      "before_sha256": "6ea9220703ce6c24a1f2c792cab8eaf802a721222780e8317cc2486288bdaef6",
+      "after_sha256": "949ae1f05abcdcbc94fc85471b1f4e042d9c7fb078e2864bf86919dd321159bc"
+    },
+    {
+      "file": "src/app/moderation/page.tsx",
+      "before_sha256": "ed6b3e6966106b9c036b86efb8593b056616370f6c01366b0b4d9292a901801a",
+      "after_sha256": "3acfaec30f5adc38638394fba4792eb76ccc17700b25d10afdfedb7cbc9f5fdc"
+    },
+    {
+      "file": "src/app/new/page.tsx",
+      "before_sha256": "156304b4443ddf7ddc9a860e366fe8eaf6423cbd31dc6cc51f469c4c0c525029",
+      "after_sha256": "b8d9899a20995ab38c00e0e6981ae4001fbebff132fd1e9f1e7c98dad64f00e7"
+    },
+    {
+      "file": "src/app/notifications/page.tsx",
+      "before_sha256": "e557b5bc44012c86829e609199a9b33917b33adb4410fbc54d32cd8da790a9b3",
+      "after_sha256": "836d9501c39f11ba1f465114cf84423b747c5a7e1d7ae87bb0dc47e572e6263b"
+    },
+    {
+      "file": "src/app/page.tsx",
+      "before_sha256": "bf43e3d7bf5d873d6d03ac7563e939d3b14edf6697ef8579bf452855c9186acc",
+      "after_sha256": "64f268e4c3958b432f2d712b9cdba0021c8b2f3f25fb0e8bb300a75c97ddc509"
+    },
+    {
+      "file": "src/app/post/[slug]/page.tsx",
+      "before_sha256": "1863e3b15fb6b183f6988df32156f1f0a5789ef8f180d009795bba5febbb5b4e",
+      "after_sha256": "49309ead419f500b77a12502f34624680f4abbf6973cac820675c31be28a882f"
+    },
+    {
+      "file": "src/app/roadmap/page.tsx",
+      "before_sha256": "3f36a399d63dbaa1d0af11c5cd9f88034ff578bb2659df3d7de77fb23d84bd73",
+      "after_sha256": "8173083f35a9d5d26595c7045abc78a002703cc92fc8d3d1d4ae601502a9e776"
+    },
+    {
+      "file": "src/app/settings/page.tsx",
+      "before_sha256": "fb2cae3838aa51dbd2eb6b9696513dce0966be81627fbe6dde9e08b2a08cd00e",
+      "after_sha256": "560deccfcdf8295513b39ffe318550a1f7fd3f1936af39a4703e8b4eeb881fb5"
+    },
+    {
+      "file": "src/components/command-form.tsx",
+      "before_sha256": null,
+      "after_sha256": "2d68e8cebd374bc445a39d3251a60b3fa812a978f839bba324efb63f44eea66e"
+    },
+    {
+      "file": "src/components/merge-form.tsx",
+      "before_sha256": null,
+      "after_sha256": "2aa63f7765efe6ee1219c259b2ca44f9ad86faaf5577983eee331e677ac50a65"
+    },
+    {
+      "file": "src/components/page-header.tsx",
+      "before_sha256": "9af5339a9c8b54f1ae3808db3119d4c7e3323144125021e305b09423fefd57d5",
+      "after_sha256": "ca9d8961b9a85b30e14c43b47fdaa6fc00dfbea15a5ec8134969530e2b2ebd0d"
+    },
+    {
+      "file": "src/components/post-editor.tsx",
+      "before_sha256": null,
+      "after_sha256": "66823f8af42d47324e14d8815fd922a6dcefeb10b0aa16a3f6685d640abd8b19"
+    },
+    {
+      "file": "src/components/site-shell.tsx",
+      "before_sha256": "b9932fef490f073ecbf8c5a87f65c96348953b10d9fec6b1ae3b783fa2f507d4",
+      "after_sha256": "df83b60cc8db49090b12f163423fef984925418860d708e869b45cb7215ac45c"
+    },
+    {
+      "file": "src/components/timeline.tsx",
+      "before_sha256": "fc7b08ba6347a7be92843cb53ccea96a8affc695bb6006c8f62475a2d87980e0",
+      "after_sha256": "8779527f14f9898f5a71dc6c671f292acb10e3ab6de2e9ddec2ab707a9be29cb"
+    },
+    {
+      "file": "src/modules/auth/actions.ts",
+      "before_sha256": "45d0a03807eb677c657a0148e493313282177a6f35b22d9886df3d4e3ef6b83d",
+      "after_sha256": "1e9270df4d367561dd078eae3bd08afab877a49526bdf53873ab4f654b392ff8"
+    },
+    {
+      "file": "src/modules/auth/credentials.ts",
+      "before_sha256": null,
+      "after_sha256": "474f52df4ed486a8c83c2ef12918b4894f42346fc54409057808224848f72326"
+    },
+    {
+      "file": "src/modules/auth/demo-users.ts",
+      "before_sha256": "9ee0e76b534b13ec1ac6e6d728e46004966655badccf3bc48bfba43479f12ad7",
+      "after_sha256": "c6d118ed4daad48bcdf58fee455cc39c42dc18db47748b5236986d504806014d"
+    },
+    {
+      "file": "src/modules/auth/policy.ts",
+      "before_sha256": null,
+      "after_sha256": "09f3ea43e7e153e332e140704ef512c83ba82fbcf5a298d9447626544c2e7510"
+    },
+    {
+      "file": "src/modules/auth/session.ts",
+      "before_sha256": "176245fc0d9435c9c655572a00453b8b912c21fa3000f6043e084fed2d006dcf",
+      "after_sha256": "da63b2c413634ac0c552df2041c1a28c71968ac7fdc9d0c0a9de663ab42bfdde"
+    },
+    {
+      "file": "src/modules/feedback/actions.ts",
+      "before_sha256": "561db2aab37fbe39451168d8d0ddd6a562ae4eb689cd25cd306894a606f68621",
+      "after_sha256": "dc0f95159162972205e19f878568102525a0b8c8654ae0dd678ed4ffc38094a5"
+    },
+    {
+      "file": "src/modules/feedback/database-schema.ts",
+      "before_sha256": null,
+      "after_sha256": "d586cdb8fa406ea8c1f3a27cd9b88b7700f4d5b53e378d4493822b4ec69b439a"
+    },
+    {
+      "file": "src/modules/feedback/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "9d3e416208a26b041e0d654efa9a91c51b5c0f191c53ade1bcba0f56cdfd7093"
+    },
+    {
+      "file": "src/modules/feedback/repository.ts",
+      "before_sha256": "59be82af58c7424506128f40c529caae070b9bdfacd2aacb1fbaa3cd085ddcb3",
+      "after_sha256": "8acca2fda6a8014a4d1b825e46834741704cfbdee269b34ad7cb4db2182c9c1d"
+    },
+    {
+      "file": "src/modules/feedback/schemas.ts",
+      "before_sha256": "8e312242c96913567b9dcd5321b16f79753b0f790fd41fe2424d1a7214a97a51",
+      "after_sha256": "72b2c51811bd18bec454091709d77ecfac87ddc5d40c48e0626c132b19f384e7"
+    },
+    {
+      "file": "src/modules/feedback/service.ts",
+      "before_sha256": "af464bb56c437296797e14275cde39b34612a416fb97ed906a2000911d639217",
+      "after_sha256": "a0cae4236e0beb42a8e011f041e87894237cc5e66062f988332c7a0668d6ab64"
+    },
+    {
+      "file": "src/modules/feedback/types.ts",
+      "before_sha256": "6e084945fa186585ac3fdf424fbbb7af08973981538341751b4b0bdc4c736fd1",
+      "after_sha256": "b1317dbf55534c16bf6799633abd13c53c880542373f9c522d0301ac00ecc62b"
+    },
+    {
+      "file": "src/modules/shared/format.ts",
+      "before_sha256": "86c423d2d9c7eca4ce28b10740b73b51824dce5d4e081f583ddd4821e25e1ce0",
+      "after_sha256": "798a62cfa0537a00c5d7bf72510a73113b282147df42bc5ee9015f81bdaa0a09"
+    },
+    {
+      "file": "src/server/json-store.ts",
+      "before_sha256": "e633ac597af491675b477958caee7305a2f874f8d405e8ae69a22ec2e230cd73",
+      "after_sha256": "8cad20c89f54970724bd63d686db603718738a1e5636632de674f0e0e75f53a4"
+    },
+    {
+      "file": "src/server/seed.ts",
+      "before_sha256": null,
+      "after_sha256": "61983a1927d035fb6ff88e6c23437c318eebe33c7498ba73c6dc98c38c99020e"
+    },
+    {
+      "file": "src/server/store.ts",
+      "before_sha256": null,
+      "after_sha256": "62e617ddcf9e99e3154e9d4b0d2d614a56df980f337ee5dd02a4d9d8e8a46d0c"
+    },
+    {
+      "file": "tests/worker.ts",
+      "before_sha256": null,
+      "after_sha256": "2cdf8a958f27879d5064b155640f6c57a324c5d9fc7176a8e9246287772ce155"
+    },
+    {
+      "file": "tests/workflow.test.ts",
+      "before_sha256": null,
+      "after_sha256": "c6a65107e0d624bbfcbf0f8826ccada1ecf16f0ce3d0d7c955394132d9be5d94"
+    },
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "c7487739bedecea0cd7517c023ace4dca3b0574bc6d6d5a182b3b5ec06914542",
+      "after_sha256": "0c01ee97e79cef2cac8a34f4036e5cecc0e32e521b44246fad8de0ad74868a0f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "503e8ad9f8757ffecb00506048c76b027e24ed1b1e1c8c327487330a80fcb4ef"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "6634cf84eae3174e2a3ec195711a9b47652c98729949bf2bab34efe4eedfa54a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "ac51aa2b98efb4da1935b9f608ae9036a46a5404425409f85c45b7e10ae60e3b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "26f0410e2f717f755a21aa0cff704a2066920ae8a04095e5bf6291efc6ac73f3"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "08e070226383b2e05662edcf85669ca15feda1296766627c5deb69a61324119b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "88861c02205626fbd3361ab1393ad89563ff5f6e33c21e3b66619940bbead327"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "66071a037db2dd033be7e92faa57832e2377c78aed69d8009c6efd1090128098"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4d44548079b11a13f574cc31f3e9ae74583609b5836ca5e0e1e185e05c09524f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1f33014749a0243fac823243aa91e08e4481b22cd371057940a2e9191eefab6b"
+    }
+  ],
+  "limits": [
+    "Local single-board credentials and process-local account throttling; no MFA, reset flow, external identity, distributed limits, session revocation or production deployment.",
+    "SQLite aggregate uses the experimental Node 22 built-in module, validates and serializes the full document, and is bounded to 16 MiB / 10,000 rows per collection. Original JSON remains unchanged without automatic import.",
+    "No durable create/comment idempotency, automatic draft import/merge, merge undo or external notification delivery. Review records after uncertain responses; notifications show newest 100 and detail audits newest 30.",
+    "Desktop/narrow Chromium workflows were checked; no comprehensive accessibility audit, power-loss certification or deployment verification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T13:35:12.667844+00:00"
+}

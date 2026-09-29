@@ -1,0 +1,18 @@
+[
+  {
+    "file": "images/dispatch-desktop.png",
+    "source": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2\\e2e-screens\\09-dispatch-desktop.png",
+    "sha256": "4f9de13eee484b3b84453dd40a29626ce9fd11c7faa2dc7fca50b08cbece847c",
+    "viewport": "1366x850, DPR 1",
+    "reviewed": true,
+    "review": "Viewed desktop map/routes and mobile driver controls; layout and typography readable, expected scrolling, no missing style presentation."
+  },
+  {
+    "file": "images/driver-mobile.png",
+    "source": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2\\e2e-screens\\07-driver-D2-mobile.png",
+    "sha256": "c5f583693cc060e1dc997fbed264291c7df8c6445ff70417c147e1624566f66d",
+    "viewport": "375x812, DPR 2",
+    "reviewed": true,
+    "review": "Viewed desktop map/routes and mobile driver controls; layout and typography readable, expected scrolling, no missing style presentation."
+  }
+]

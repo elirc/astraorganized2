@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e17",
+  "id": "2f59a0d07a85",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/reply-parent-boundary.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f59a0d07a85",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:29:42.104398+00:00",
+  "status": "complete",
+  "log": "crud-b04-e17-runtime1.log",
+  "pid": 16640,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T02:29:48.548992+00:00",
+  "elapsedSeconds": 6.44
+}

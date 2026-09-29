@@ -1,0 +1,14 @@
+[
+  {
+    "project": "21",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 131.04,
+    "log": "logs/21-tests.log",
+    "command": [
+      "node",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch03\\stage\\21\\test\\polls.test.cjs"
+    ]
+  }
+]

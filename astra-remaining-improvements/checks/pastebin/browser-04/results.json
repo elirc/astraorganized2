@@ -1,0 +1,78 @@
+{
+  "passed": true,
+  "total": 14,
+  "expected": 14,
+  "checks": [
+    {
+      "name": "Empty landing page does not create sample records or write on read",
+      "passed": true,
+      "seconds": 6.538
+    },
+    {
+      "name": "Create, show receipt and download the exact edit key",
+      "passed": true,
+      "seconds": 9.721
+    },
+    {
+      "name": "Clipboard text and exact raw/download content are preserved without writes",
+      "passed": true,
+      "seconds": 5.45
+    },
+    {
+      "name": "Versioned edit persists exact text and closes only after acceptance",
+      "passed": true,
+      "seconds": 1.474
+    },
+    {
+      "name": "Incorrect capability rejects edit and retains the draft",
+      "passed": true,
+      "seconds": 1.891
+    },
+    {
+      "name": "Two-tab conflict retains text and requires explicit current-version review",
+      "passed": true,
+      "seconds": 9.915
+    },
+    {
+      "name": "Dirty-navigation guard and draft export preserve unfinished work",
+      "passed": true,
+      "seconds": 1.625
+    },
+    {
+      "name": "Lost creation acknowledgement retries the exact request and creates only once",
+      "passed": true,
+      "seconds": 4.423
+    },
+    {
+      "name": "Unlisted paste remains link-readable and excluded from public search",
+      "passed": true,
+      "seconds": 4.75
+    },
+    {
+      "name": "Literal search, language filter and pagination render actual server results",
+      "passed": true,
+      "seconds": 8.275
+    },
+    {
+      "name": "Fork creates a new draft without implicitly writing or retaining an old expiry",
+      "passed": true,
+      "seconds": 0.637
+    },
+    {
+      "name": "Create form is usable without horizontal overflow at three viewport widths",
+      "passed": true,
+      "seconds": 1.873
+    },
+    {
+      "name": "Delete rejects a wrong key and removes only the confirmed version with the correct key",
+      "passed": true,
+      "seconds": 3.181
+    },
+    {
+      "name": "Reload preserves accepted content and the browser has no uncaught application errors",
+      "passed": true,
+      "seconds": 1.261
+    }
+  ],
+  "fatal": null
+}

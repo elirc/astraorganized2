@@ -1,0 +1,134 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+  "id": "612cdbaa5aa0",
+  "summary": [
+    "Enforce the documented one-card-per-user-and-problem invariant with a composite unique index in the Drizzle schema and executable seed DDL.",
+    "Teach database identity, cross-user cardinality, constraint failures and nondestructive handling of legacy duplicate rows."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/612cdbaa5aa0/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+        "id": "612cdbaa5aa0",
+        "command": [
+          "node",
+          "--test",
+          "tests/user-card-constraint.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\612cdbaa5aa0",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:39:46.470323+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-sqlite2.log",
+        "pid": 22692,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:40:01.986582+00:00",
+        "elapsedSeconds": 15.31
+      }
+    ],
+    "limits": [
+      "Tests execute the exact static SQL DDL extracted from the production seed in real in-memory SQLite through Node node:sqlite; the native better-sqlite3/Drizzle/Next.js stack was not run.",
+      "No existing project database was opened or migrated. Reapplying seed DDL creates the index on clean existing tables but fails if duplicate pairs already exist; rows are not automatically removed.",
+      "The attempts route remains unchanged: a racing duplicate insert may return its existing generic failure, and attempt/card/tier writes remain separate operations. This is a uniqueness constraint, not request idempotency or an atomic workflow."
+    ]
+  },
+  "courseWords": 2609,
+  "courseFiles": 9,
+  "courseLinksChecked": 9,
+  "files": [
+    {
+      "file": "src/lib/db/schema.ts",
+      "before_sha256": "5f72c227583f1e0a52e422492b77f14cc10ed568ccbb908eb07e933b3c3fbad9",
+      "after_sha256": "4fb4ff28e79eb3bda58165e9fb7c1c6009edb92f684b8a025901588089f5d6ad"
+    },
+    {
+      "file": "src/lib/db/seed.ts",
+      "before_sha256": "e95d5aa22e3735487777727c45acc098a5006699555e5f8415affdde13e06445",
+      "after_sha256": "9ce4c9370b42aec10d12ffced75d29906b51c5cbaa7fcf8e3bfc592a94774a77"
+    },
+    {
+      "file": "astraupskill/snapshots/src/lib/db/schema.ts",
+      "before_sha256": null,
+      "after_sha256": "5f72c227583f1e0a52e422492b77f14cc10ed568ccbb908eb07e933b3c3fbad9"
+    },
+    {
+      "file": "astraupskill/snapshots/src/lib/db/seed.ts",
+      "before_sha256": null,
+      "after_sha256": "e95d5aa22e3735487777727c45acc098a5006699555e5f8415affdde13e06445"
+    },
+    {
+      "file": "tests/user-card-constraint.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "337baa895ae377145fa385602ee1b7351833a176c3542c4912f59ae6c4d34a68"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-sqlite2.log",
+      "before_sha256": null,
+      "after_sha256": "86caf676d689951675d60edd3c00b4712fc6ebc35a6ec38cfafb8246b730dbbb"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "e6a22547a5fb891e43069f3e7519dbbc3317683867fb1cf67403297493d39daa"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a9de580f4f4adbef3b75438c586225964588b2e7b8f4b6a42b27b2cdef81a0a2"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "1e570994d5ad108229d0445d9e6db4b03c2fe43039c09193683e2b52460a67da"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f67b0a3d3cd9ca44f07d8cc8ee4ddb443c726773dcbabb9299c11cbe035ccfc5"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "93556c0869ded4131c74d34ce3aa6ed91765e43018fc37dc43da01ca7a03e0e3"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "66cc311068100f1e2f8a740e211fbc37bc1574f87085df42e03336d6c5e39439"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "38acf19a264bd41b8b12e2d5f82c895fa7829fe60bd5c04840a88520596d2bfa"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a5fb89adb6f9ddc88bbf5f97fdc72fa63a7adf3febd6620d9f6e3598af625f4c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a4c5c13d4840200596a1d29188e686e3e88d0215f1221f6480a9f26a399eafb4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "d9236c5cd4097f5359c1b5c91b4bb7f225b624b45f25e621a88338dda2235b98"
+    }
+  ],
+  "limits": [
+    "Tests execute the exact static SQL DDL extracted from the production seed in real in-memory SQLite through Node node:sqlite; the native better-sqlite3/Drizzle/Next.js stack was not run.",
+    "No existing project database was opened or migrated. Reapplying seed DDL creates the index on clean existing tables but fails if duplicate pairs already exist; rows are not automatically removed.",
+    "The attempts route remains unchanged: a racing duplicate insert may return its existing generic failure, and attempt/card/tier writes remain separate operations. This is a uniqueness constraint, not request idempotency or an atomic workflow."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:57:40.042620+00:00"
+}

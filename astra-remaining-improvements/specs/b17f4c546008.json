@@ -1,0 +1,23 @@
+{
+  "id": "b17f4c546008",
+  "project": "_Organized Desktop/05 Numbered Experiments/ww18",
+  "summary": [
+    "Add an actual-source quote policy lab covering lifecycle conflicts, integer-cent totals, exact discount thresholds and review routing.",
+    "Preserve production behavior and teach boundary analysis with real money helpers and error classes."
+  ],
+  "changedFiles": [
+    "tests/quote-transition-policy.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/quote-policy.ts.original.txt",
+    "astraupskill/evidence/crud-b05-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b17f4c546008/results-crud-b05.json"
+  },
+  "limits": [
+    "Five Node cases execute actual quote policy, money helpers and error classes without dependency doubles. No quote service, Next, Prisma, transaction, tenant authorization or order conversion execution.",
+    "Pure policy tests use valid typed-like fixtures; request-schema validation, invalid runtime enum values and concurrent approval/price changes are outside this lab. No production code changed."
+  ]
+}

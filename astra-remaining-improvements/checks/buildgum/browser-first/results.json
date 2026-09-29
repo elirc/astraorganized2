@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "total": 15,
+  "checks": [
+    {
+      "name": "sample is honestly labelled and legacy storage is untouched",
+      "passed": true
+    },
+    {
+      "name": "product create edit cents and reload persistence",
+      "passed": true
+    },
+    {
+      "name": "archive and restore affect storefront visibility",
+      "passed": true
+    },
+    {
+      "name": "confirmed deletion removes an unused product",
+      "passed": true
+    },
+    {
+      "name": "discount CRUD normalization and duplicate draft retention",
+      "passed": true
+    },
+    {
+      "name": "quantity and discount produce a durable exact-cent receipt",
+      "passed": true
+    },
+    {
+      "name": "receipt snapshots survive catalog edits and cancellation retains history",
+      "passed": true
+    },
+    {
+      "name": "stale tab rejects save and exports intact editor draft",
+      "passed": true
+    },
+    {
+      "name": "storage failure does not announce a successful save",
+      "passed": true
+    },
+    {
+      "name": "lost acknowledgement retry returns the same single receipt",
+      "passed": true
+    },
+    {
+      "name": "corrupt bytes export and explicit reviewed recovery",
+      "passed": true
+    },
+    {
+      "name": "invalid import cannot replace the accepted workspace",
+      "passed": true
+    },
+    {
+      "name": "cancelled navigation preserves the editor",
+      "passed": true
+    },
+    {
+      "name": "invalid quantity and unavailable code block checkout",
+      "passed": true
+    },
+    {
+      "name": "desktop mobile layouts and literal empty search",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "summary": [
+    "Scopes learner writes to authenticated organization membership, actor-owned enrollment and content belonging to the enrolled course version; selects the current published version for enrollment.",
+    "Validates stored completion rules and required lesson/quiz/assignment sets, rejecting missing learner rows while supporting explicitly empty requirements.",
+    "Groups learner mutations with transaction-client events/outbox writes, completion audit/certificate writes and a terminal replay guard; preserves progress timestamp semantics.",
+    "Orders workspace builds, adds13 actual learner-router cases alongside existing tests, and supplies nine detailed chapters with complete fixtures and portable evidence."
+  ],
+  "changedFiles": [
+    "package.json",
+    "apps/api/src/audit.ts",
+    "apps/api/src/events.ts",
+    "apps/api/src/routes/learner.routes.ts",
+    "packages/domain/src/completion.ts",
+    "packages/domain/src/domain.test.ts",
+    "packages/domain/src/types.ts",
+    "README.md",
+    "apps/api/src/routes/learner.routes.test.ts",
+    "astraupskill/snapshots/apps__api__src__audit.ts.before.txt",
+    "astraupskill/snapshots/apps__api__src__events.ts.before.txt",
+    "astraupskill/snapshots/completion-before.ts.txt",
+    "astraupskill/snapshots/domain.test-before.ts.txt",
+    "astraupskill/snapshots/learner.routes-before.ts.txt",
+    "astraupskill/snapshots/package.json.before.txt",
+    "astraupskill/snapshots/types-before.ts.txt",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-build-final-01.json",
+    "astraupskill/evidence/root-build-final-01.log",
+    "astraupskill/evidence/root-generate-01.json",
+    "astraupskill/evidence/root-generate-01.log",
+    "astraupskill/evidence/root-install-01.json",
+    "astraupskill/evidence/root-install-01.log",
+    "astraupskill/evidence/root-luna-master6-api-tests-full-final-01.json",
+    "astraupskill/evidence/root-luna-master6-api-tests-full-final-01.log",
+    "astraupskill/evidence/root-luna-master6-domain-tests-final-02.json",
+    "astraupskill/evidence/root-luna-master6-domain-tests-final-02.log",
+    "astraupskill/evidence/root-luna-master6-typecheck-full-final-01.json",
+    "astraupskill/evidence/root-luna-master6-typecheck-full-final-01.log",
+    "astraupskill/evidence/root-luna-master6-web-tests-final-01.json",
+    "astraupskill/evidence/root-luna-master6-web-tests-final-01.log",
+    "astraupskill/evidence/root-luna-master6-worker-tests-final-01.json",
+    "astraupskill/evidence/root-luna-master6-worker-tests-final-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3e4e08e349a1/results.json",
+    "expectedTests": 29
+  },
+  "limits": [
+    "Prisma/auth/event/audit are mocked in route tests; no SQL rollback, database uniqueness race, JWT verification, Redis delivery or browser coverage.",
+    "Terminal guard preserves status/certificate, not byte-identical response shape; concurrent first completion and quiz count-plus-one remain unverified.",
+    "Certificate IDs have existing uniqueness constraints but no suffix-collision retry; artifactUrl does not generate a PDF.",
+    "Work remains editable after completion and completion is not restricted to ACTIVE status; development JWT fallback and unexpected error disclosure remain unchanged."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "total": 7,
+  "tests": 7,
+  "failed": 0,
+  "checks": [
+    "root-test-01",
+    "root-typecheck-01",
+    "root-lint-02",
+    "root-build-01"
+  ],
+  "scope": "Actual pure page builders with seeded relation data; full role matrix, dates/offsets/ties, active job counts, empty data and non-mutation. Next production build, TypeScript and ESLint passed; no browser, session, database or write endpoint."
+}

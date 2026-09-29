@@ -1,0 +1,30 @@
+{
+  "id": "42df17f9e984",
+  "project": "zz7",
+  "files": [
+    "src/services/purchaseOrderService.ts",
+    "tests/runtime-purchase-receiving.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-purchaseOrderService.ts.before",
+    "astraupskill/evidence/42df17f9e984-crud-b08-runtime.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "The pre-change validation checked each incoming line against persisted receipt totals but did not fold earlier duplicate entries in the same payload into that accumulator.",
+    "The fix updates the accumulator immediately after each accepted entry, preserving the existing transaction boundary."
+  ],
+  "tests": [
+    "node --experimental-vm-modules --test tests/runtime-purchase-receiving.test.mjs (3/3 passed)"
+  ],
+  "limitations": [
+    "Dependency-free VM harness with explicit doubles; live Prisma, HTTP, and concurrency checks remain unrun."
+  ]
+}

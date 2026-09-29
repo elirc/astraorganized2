@@ -1,0 +1,49 @@
+{
+  "changedFiles": [
+    "README.md",
+    "src/modules/crm/service.ts",
+    "src/modules/crm/repository.ts",
+    "src/server/json-store.ts",
+    "src/modules/auth/session.ts",
+    "package.json",
+    "package-lock.json",
+    "eslint.config.mjs",
+    "tests/crm.test.ts",
+    "snapshots/service-before.ts.txt",
+    "snapshots/repository-before.ts.txt",
+    "snapshots/json-store-before.ts.txt",
+    "snapshots/session-before.ts.txt",
+    "snapshots/package-before.json",
+    "astraupskill/evidence/verify-01.json",
+    "astraupskill/evidence/verify-01.log"
+  ],
+  "summary": [
+    "Applies ownership consistently to representative lead search and dashboard activity, filtering before text matching or the eight-event limit while preserving shared company reads and founder/analyst visibility.",
+    "Validates representative task ownership and existing target ownership before writes, preventing foreign or missing task/note attachments and retaining activity events for permitted writes.",
+    "Serializes lead conversion as one updateCrmDatabase callback that reads current state, checks authorization and retry state, constructs a coherent company/contact/deal/converted-lead/event graph, and commits one replacement value.",
+    "Supports absolute CRM_DB_PATH fixtures, keeps repository updates serialized within one process, and documents the direct JSON write and demo-cookie durability/authentication limits.",
+    "Replaces the unusable next lint command with a finite TypeScript ESLint flat configuration, adds a tsx test command and lockfile, and supplies nine source-grounded learning guides with exact review snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1c908de00eb7/results.json",
+    "logFile": "checks/1c908de00eb7/verify-01.log",
+    "sourceHashesFile": "checks/1c908de00eb7/verify-01-source-hashes.json",
+    "expectedTests": 5,
+    "command": "cmd /c npm.cmd run typecheck && npm.cmd test && npm.cmd run lint && npm.cmd run build",
+    "environment": "Node.js 22; Next.js 15.5.14; TypeScript 5.8.3; ESLint 9 direct TypeScript flat config; synthetic temporary JSON fixture; no external services",
+    "notes": [
+      "Build warning: Next ESLint plugin is not detected because the finite config enables direct TypeScript rules; build and type validation pass.",
+      "Test command exercises actual service functions against an isolated absolute temporary file.",
+      "No production database, user data, private keys, or external service is used."
+    ]
+  },
+  "limits": [
+    "The promise queue serializes update callbacks only within one Node process; a second process can race on the JSON file.",
+    "Direct fs.writeFile is not crash-safe; database transactions, constraints and idempotency are future production work.",
+    "Task/note target authorization reads occur outside the write queue, so this is request-time policy coverage rather than cross-process race protection.",
+    "The demo cookie selects local users and is not production authentication, revocation, MFA or durable session security.",
+    "The finite ESLint setup runs TypeScript rules for explicit source/config paths; Next plugin recommended lint rules are not enabled, as recorded by the build warning.",
+    "Company listings remain intentionally shared under the existing product contract; no external database, browser automation or delivery worker is covered."
+  ]
+}

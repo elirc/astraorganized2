@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz4",
+  "id": "f1f996eeb9e7",
+  "command": [
+    "--cwd",
+    "zz4",
+    "--",
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/approval-stage-order.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f1f996eeb9e7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:55:43.940374+00:00",
+  "status": "launch-failed",
+  "log": "runtime-b07.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-22T03:55:44.057891+00:00",
+  "elapsedSeconds": 0.1
+}

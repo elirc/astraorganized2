@@ -1,0 +1,10 @@
+{
+  "instance": {
+    "database": "astra_test_ten",
+    "port": 55439
+  },
+  "removed_owned_test_schemas": [
+    "astra_661b4b9ccaea4355946827357092de13"
+  ],
+  "temporary_cluster_stopped": true
+}

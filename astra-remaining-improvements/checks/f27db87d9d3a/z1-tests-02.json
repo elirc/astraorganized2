@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z1",
+  "id": "f27db87d9d3a",
+  "command": [
+    "npm",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f27db87d9d3a",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:16:35.740900+00:00",
+  "status": "launch-failed",
+  "log": "z1-tests-02.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T00:16:35.756540+00:00",
+  "elapsedSeconds": 0.01
+}

@@ -1,0 +1,25 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "src/tests/platform-behavior.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {
+    "DATA_SOURCE": "mock",
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww17_build_only"
+  },
+  "startedAt": "2026-09-13T16:10:27.244041+00:00",
+  "status": "complete",
+  "log": "ww17-freeze-tests-20260913.log",
+  "pid": 20832,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T16:10:39.240535+00:00",
+  "elapsedSeconds": 11.99
+}

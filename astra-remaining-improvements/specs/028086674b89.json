@@ -1,0 +1,44 @@
+{
+  "summary": [
+    "Validates customer, product, variant and coupon inputs before the payment gateway and constructs a valid pending order before inventory/coupon mutations.",
+    "Introduces reusable domain preflight methods and converts malformed email parsing into the expected DomainException contract.",
+    "Returns persisted paid/failed receipts before repeating provider, save or email work on sequential completion retries.",
+    "Adds real application regression cases with EF repositories, state assertions and gateway/email/save counters, plus nine detailed learning chapters and complete test examples."
+  ],
+  "changedFiles": [
+    "README.md",
+    "src/Netgum.Application/Checkout/CheckoutService.cs",
+    "src/Netgum.Domain/Orders/Order.cs",
+    "src/Netgum.Domain/Products/Product.cs",
+    "src/Netgum.Domain/Products/ProductVariant.cs",
+    "src/Netgum.Domain/ValueObjects/EmailAddress.cs",
+    "tests/Netgum.Tests/Application/CheckoutServiceTests.cs",
+    "tests/Netgum.Tests/Domain/ProductTests.cs",
+    "astraupskill/snapshots/CheckoutService-before.cs.txt",
+    "astraupskill/snapshots/CheckoutServiceTests-before.cs.txt",
+    "astraupskill/snapshots/EmailAddress-before.cs.txt",
+    "astraupskill/snapshots/Order-before.cs.txt",
+    "astraupskill/snapshots/Product-before.cs.txt",
+    "astraupskill/snapshots/ProductVariant-before.cs.txt",
+    "astraupskill/snapshots/tests__Netgum.Tests__Domain__ProductTests.cs.before.txt",
+    "astraupskill/evidence/luna-restore-01.json",
+    "astraupskill/evidence/luna-restore-01.log",
+    "astraupskill/evidence/luna-test-10.json",
+    "astraupskill/evidence/luna-test-10.log",
+    "astraupskill/evidence/netgum-tests.trx",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-build-01.json",
+    "astraupskill/evidence/root-build-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/028086674b89/results.json",
+    "expectedTests": 11
+  },
+  "limits": [
+    "EF InMemory tests do not establish SQL constraints, transactions, cross-context stock concurrency or provider compensation.",
+    "Captured-time revalidation reads the same tracked aggregate after the provider await; a created provider intent can remain after later rejection or save failure.",
+    "Sequential terminal retries are covered; concurrent pending completions can duplicate work. Paid is saved before email, so a failed send is not retried by completion; no durable outbox is added.",
+    "Product mutation endpoints retain demo authentication gaps; download remains an ID-holder capability after paid status. No real payment or email provider was used."
+  ]
+}

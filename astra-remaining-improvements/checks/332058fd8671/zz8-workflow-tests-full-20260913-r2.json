@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "node_modules\\.bin\\vitest.cmd",
+    "run",
+    "src/tests/auth-permissions.test.ts",
+    "src/tests/review-transition.test.ts",
+    "src/tests/tenant-isolation.test.ts",
+    "src/tests/validation-boundaries.test.ts",
+    "src/tests/workflow-atomicity.test.ts",
+    "--maxWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\332058fd8671",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:38:09.355730+00:00",
+  "status": "complete",
+  "log": "zz8-workflow-tests-full-20260913-r2.log",
+  "pid": 22500,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:38:16.805590+00:00",
+  "elapsedSeconds": 7.45
+}

@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "harnesses": 1,
+  "records": [
+    "service-regression-07.json",
+    "lint-04.json",
+    "typecheck-01.json",
+    "build-01.json"
+  ],
+  "notes": "One executable service regression harness, plus complete lint, typecheck and Next production build. Harness calls are scenarios, not a unit-test count."
+}

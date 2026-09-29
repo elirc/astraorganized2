@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    "fresh CLI setup and repeat-setup refusal preserve database bytes",
+    "actual Next HTTP authorization origin and workspace boundaries",
+    "browser owner sign-in and initial accepted workspace",
+    "page edit accepted through UI and real SQLite",
+    "reload requires token again and reads persisted content",
+    "typed number zero and checkbox false survive accepted save",
+    "new record and numeric sort render through stored view settings",
+    "board and calendar retain unassigned and undated records",
+    "authenticated accepted Markdown download includes table content",
+    "record and referenced property deletion persist with view cleanup",
+    "snapshot capture and restore preserve actual page content",
+    "snapshot deletion removes history without deleting page",
+    "real two-tab stale write refused with local draft retained",
+    "one tab acceptance does not clear another tab retained IndexedDB draft",
+    "explicit three-way conflict choice saved against latest revision",
+    "sign-out preserves a saved draft that has not been reviewed",
+    "simulated network failure retained in real IndexedDB across sign-out and reviewed recovery",
+    "authenticated Markdown import creates code block and selects new page",
+    "comment creation and editing persist through the UI",
+    "comment replies and resolution persist",
+    "block deletion removes dependent thread and comments",
+    "page trash and restore persist and restore active selection",
+    "accepted JSON export excludes owner credential",
+    "390-pixel layout stays within viewport width",
+    "browser workflow has no uncaught page errors"
+  ],
+  "count": 25,
+  "browser": "Chromium via Python Playwright",
+  "server": "Next production server with real temporary SQLite",
+  "limits": [
+    "One network failure was deliberately simulated by aborting a browser route.",
+    "No original database or private user content was opened."
+  ],
+  "screenshots": [
+    "workspace-desktop.png",
+    "workspace-mobile.png"
+  ]
+}

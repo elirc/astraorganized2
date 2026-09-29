@@ -1,0 +1,210 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/job track/task-queue-system",
+  "id": "19856a4178bf",
+  "summary": [
+    "Campaign acceptance commits the campaign, pending tracking rows and dispatch intent before any broker call; unavailable queues no longer cause destructive campaign deletion.",
+    "A durable outbox reuses persisted job IDs after uncertain enqueue outcomes and preserves newer active/completed worker status.",
+    "Terminal failure and requeue commands atomically preserve operator history and their new dispatch intent.",
+    "Validation failure now returns null and stops route execution after HTTP 400.",
+    "Dashboard local counts remain available during broker outages, with explicit pending-dispatch status and bounded queue-status reads.",
+    "Nine detailed course documents and updated architecture/setup guides teach dual writes, transactions, retry scopes, failure injection, persistence, examples and progressive mid-level exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/task-queue/results.json",
+    "expectedTests": 19,
+    "command": "Node syntax checks; npm test --prefix server -- --test-reporter=tap; npm run build --prefix client",
+    "environment": "Node 22.16.0; npm 10.9.2; locked installs; real HTTP and SQLite; controlled queue responses; temporary file persistence across processes"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 19,
+    "checks": [
+      {
+        "name": "server-syntax",
+        "passed": true
+      },
+      {
+        "name": "api-outbox",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--test-reporter=tap"
+        ],
+        "exitCode": 0,
+        "log": "checks/task-queue/api-outbox.log"
+      },
+      {
+        "name": "web-build",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "exitCode": 0,
+        "log": "checks/task-queue/web-build.log"
+      }
+    ],
+    "initialRegressionRun": {
+      "tests": 2,
+      "failed": 2,
+      "note": "After database isolation/schema and router factory, before business fixes"
+    },
+    "scope": "Real HTTP and SQLite, controlled queue responses, separate-process file persistence, server syntax, React build. Redis/BullMQ worker execution and live browser not verified; Docker daemon unavailable."
+  },
+  "courseWords": 5649,
+  "courseFiles": 9,
+  "courseLinksChecked": 34,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "7aece880135fa1806c101e0200ef69ae52c0726cd2953c6c421f91cb76a6bff3",
+      "after_sha256": "240d052b9b5f8a820eb8fd98d82f78c52232d4ca0cbbfa2ac674af4c369471d8"
+    },
+    {
+      "file": "ARCHITECTURE_DEEP_DIVE.md",
+      "before_sha256": "09adc02aa206ec77670153ca075271f290e96fb9992889dab81832a3638e2e33",
+      "after_sha256": "29b224de637312e07190dfb84fbf7fe4c9a1d96b3206fa25deb7539ade6e762d"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "41eab91901132bdd900ca0a159bace8bf79f8de5099b843d13393aea4d2e4021",
+      "after_sha256": "8c5cd973adb7fcddbe4da12f500f2572499cd74e58f6991ccb46c1786dfcb1bd"
+    },
+    {
+      "file": "server/package.json",
+      "before_sha256": "fb4a98cbb0bf976762a58f2f0ddbe4b3c6c196b7ca8ee39b7557c0d483f93462",
+      "after_sha256": "9f66af8cfd957941a4718efc8ab151f53dbda5630955df12e290d31ccfa759a9"
+    },
+    {
+      "file": "server/.env.example",
+      "before_sha256": "ee57fa8879faed6761dc849dcb1cabd58ecc1bd5c20014ba469c479b634752e1",
+      "after_sha256": "083f850ec01d5f13680e0dd27899816471f3ad60083244995e8af211676ebf94"
+    },
+    {
+      "file": "server/src/db/database.js",
+      "before_sha256": "7bb5f03b9709c4c8a41aa334e1f50b5d28ab951c74f5c75cecc002c22fdbc918",
+      "after_sha256": "6a282dbe31626053d4915f41a8949f0753e49ddd3d450a59dda83863ad85d7f7"
+    },
+    {
+      "file": "server/src/routes/campaigns.js",
+      "before_sha256": "0c6d2388fd8e45f8a8a7f93ae36689a49fb0fa642e0f3d68929c9d8094ff9203",
+      "after_sha256": "1de6b9e38d40faa0907fe3dad2256cde2dc52007bdae141981f46098d07f4048"
+    },
+    {
+      "file": "server/src/routes/dashboard.js",
+      "before_sha256": "d20f5323fdbfa83a3533fdae891f3f047d808df44ba7e0ac6ca69b8cfd929bb4",
+      "after_sha256": "e9397e291b71da1ecefb9acb3e8a59bd6cccbebcdfe305ada68e8600e3a30fcf"
+    },
+    {
+      "file": "server/src/server.js",
+      "before_sha256": "b4caf95afaa5593c9b50cf10533e33bdd2046b72948f4742d4e6fc02e73e4892",
+      "after_sha256": "18786b4c91829de6a7b19fe8ba499140355daa3360130ffae4055410e5aa1dac"
+    },
+    {
+      "file": "server/src/lib/outbox.js",
+      "before_sha256": null,
+      "after_sha256": "736e412cdd460c9a0187ba57942e52b60236cf5a48deef43625f805778558c01"
+    },
+    {
+      "file": "server/src/lib/campaignCommands.js",
+      "before_sha256": null,
+      "after_sha256": "3224388ed66398867df8904723499edbb00905768f911aae8174e1e26613ce03"
+    },
+    {
+      "file": "server/src/workers/jobProjection.js",
+      "before_sha256": null,
+      "after_sha256": "549a8e4e102d9b1facb0b56444f0307019660c72ba2c6b03670a181042d6a2cf"
+    },
+    {
+      "file": "server/src/workers/emailWorker.js",
+      "before_sha256": "fc7c30477f5db16c6b42086b651248169d2167c50358ab861b8ce0ce201106c0",
+      "after_sha256": "f6145239653411defcd4c00849bc90c88e4085bfcaf84a8ba48e7a197ef43780"
+    },
+    {
+      "file": "server/src/lib/validation.js",
+      "before_sha256": "e401efb3f222578e329b2b88a0c986eb2e86e1d192e7c1ef1b62fbac5bbcf1a6",
+      "after_sha256": "4b610813aeb6d06d644c0244151010f2273715b77b0898ebe592311630e7221e"
+    },
+    {
+      "file": "client/src/App.jsx",
+      "before_sha256": "53e4fa3f95942695303e297ef231350beb27cae9e52c5f85e9b83c2fe0f6fc0c",
+      "after_sha256": "103ed9f174be594281d5e8ddb7364daf4ae77d325f981c790fbf7a6d6f6830a8"
+    },
+    {
+      "file": "client/src/styles.css",
+      "before_sha256": "87a6a2f341796780f086641dd1fa9d922f8ef71a2d39bc7233af929fe537e2d2",
+      "after_sha256": "e515d95436c2b3d5d6d13fe98bd16c5565e2fb03ac22b00ff74762bd71add540"
+    },
+    {
+      "file": "server/test/campaigns.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "3abbd97701fdbe66aa72bcc374407ba2d3ef92a94537c2f3e8c0fd42bced232e"
+    },
+    {
+      "file": "server/test/outbox.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "45aebeb0a8fcd43762f7e85a58ca84676173f6d192b782c3b0ee34f8c92aa7b8"
+    },
+    {
+      "file": "server/test/persistence.test.cjs",
+      "before_sha256": null,
+      "after_sha256": "00f4d1eb332893fe81a9747965d136f8e813ed2f625664b44e4d6a83d7e324de"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3f8c81d49760d5a334054b78d5533e995860c70fa133a2fad5d8eaf1ae225e43"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b1b5a5707d56ddcc21ff46b6eca5df6b5cea57ea64f7fec1388923f47c7d97c1"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "008e918ae692df51a4267fc11fb7e2b6941733e2bb6dc2441f5707a9ab269925"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1358f499d150c84c7120afcddada58edf4542fa4d52b486741feb0e4d2d6816d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8717fcfae63a35dcd266a571781ab7c62d968b62c5eee735adcc3f74c178a2c0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b0ab2c13ec8aa618d402a2744a61d8c1e3d75d9862bad32ee16b762838d30e42"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e4abf2e4cb3ae71e682dd67ee904977fb7bcaf9479dbaa015f924289d2c0fa20"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "91d22d909020fed2d3c91f8a32cee505ccceb8d494909ab81b09fa9733ac31ec"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "16bda6bffc371d3e72170bb4223d84bcfb5e70139127696c3094233b8e323347"
+    }
+  ],
+  "limits": [
+    "Redis and Docker daemon unavailable: actual BullMQ execution, retry scheduling, broker deduplication and full runtime startup were not verified.",
+    "No live browser interaction; React changes were source-reviewed and built.",
+    "Processor is a simulation; no real email was sent and exactly-once provider effects are not guaranteed.",
+    "Retained broker/outbox records require a cleanup policy; missed worker projections need reconciliation.",
+    "No authenticated operator/tenant model or campaign-request idempotency; no backfill of historical orphan work."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T03:44:32.329540+00:00"
+}

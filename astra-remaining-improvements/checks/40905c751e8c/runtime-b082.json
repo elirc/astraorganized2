@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antiemponb",
+  "id": "40905c751e8c",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/app-error.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\40905c751e8c",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:13:38.992104+00:00",
+  "status": "complete",
+  "log": "runtime-b082.log",
+  "pid": 16724,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:13:48.412612+00:00",
+  "elapsedSeconds": 9.42
+}

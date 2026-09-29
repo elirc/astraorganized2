@@ -1,0 +1,41 @@
+[
+  {
+    "project": "64",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 10.38,
+    "log": "logs/64-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\64\\test\\checkout.test.ts"
+    ]
+  },
+  {
+    "project": "65",
+    "check": "tests",
+    "exit_code": 0,
+    "seconds": 52.05,
+    "log": "logs/65-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\65\\test\\booking.test.ts"
+    ]
+  },
+  {
+    "project": "66",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 8.46,
+    "log": "logs/66-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\tsx\\dist\\cli.mjs",
+      "--test",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\66\\test\\environments.test.ts"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "id": "1d0b328c6621",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:09:58.879445+00:00",
+  "sourceReview": "Reviewed rule, service, real mock-db repository and activation route. Draft-only guard prevents redundant ACTIVE mutation; existing RETIRED refusal remains with changed message. Actual sibling scope retained.",
+  "teachingReview": "Reviewed nine chapters; removed padding, separated exercises/solutions, documented rejection versus idempotent-no-op choice and activation surviving audit failure.",
+  "testReview": "Four passing cases execute actual service/rule/repository with state/id/audit/type adapters. Includes real sibling retirement, other-protocol and participant preservation, missing/active/retired refusal and audit failure after mutation.",
+  "specSHA256": "93efd40927f0ed07bbbe79cf99946b8e7e702c755d37e7d0c686220d1969f69c",
+  "fileHashes": {
+    "src/lib/domain/protocolRules.ts": "357f3910f03b34c2d454896bf3edbaf0c62227c6a6ebb85ebb0fd6139992fc53",
+    "tests/runtime-protocol-activation.test.mjs": "a9363453cf8d44a1bac72c600666e8c47eeed947d7d11523f42675f972493599",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-lib-domain-protocolRules.ts.before": "c3c9baaff03dbe8bfa20fbd2c96c088ec4ececa8c5d09cbe77dceaf762bc170f",
+    "astraupskill/evidence/crud-b05-astra-runtime2.log": "9c2017efd08cde8f68e927699a80fbe2b147d804f5ffc6f27482173e7046f3c9",
+    "astraupskill/evidence/results.json": "9b9882b1cd9bf224da9933bfa4551992455a6d831c369b0215ebcd0d37d80834",
+    "astraupskill/README.md": "6c9da57e99b539cc8e60dd7e7d283ca80d764202018ce93850503b35a1828ffd",
+    "astraupskill/01-CODEBASE-MAP.md": "335764f368c6d62b134414d7f05b115d508858b20cc59a9db08d555c7327766b",
+    "astraupskill/02-CONCEPTS.md": "243a56350ef683bfeb07c26197f38055ebd12e8058a2eef07a512ca48611a2c7",
+    "astraupskill/03-WORKED-CHANGE.md": "f58ce85d13c1f051faaf0d17d591d9259b89e28ebf18e2fc558f7bc8125cbed4",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "3c768a432de8a93825ea1ac902b4c7f3e186c8bc8621449043f389e831562f58",
+    "astraupskill/05-PRACTICE.md": "47c314ec5fe0ae8a5f9193143a8f588cb76e466ecd93499321cdb14508f97791",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "cb9e699e6ea5cf648ec9bc2e1f48a4d1308a5752457856960b403c6a368b4312",
+    "astraupskill/07-TRACE-LAB.md": "77581ff6dbf04c2f7c779ad3d1fd0fcb3ba9291818b1b2ea9548af3ca74f7528",
+    "astraupskill/VERIFICATION.md": "2684c97fdb5a3601d72a1400e5b39971d1896fc0dc19b5430c295f9ff297da89"
+  },
+  "evidenceHashes": {
+    "checks/1d0b328c6621/crud-b05-astra-runtime.json": "a371968a469e0a30f156a0515c857b18d22eb51ada9fd4c679153e26abf89074",
+    "checks/1d0b328c6621/crud-b05-astra-runtime.log": "91fd4f3d2a055897060b9ae9ff85ef9e43774c1b41bf9feed1d99ec6d6def517",
+    "checks/1d0b328c6621/crud-b05-astra-runtime2.json": "0b8bc8bb60e6050be657225660a70a0eae7067851a4b7a7e2669605d4fbc29ab",
+    "checks/1d0b328c6621/crud-b05-astra-runtime2.log": "9c2017efd08cde8f68e927699a80fbe2b147d804f5ffc6f27482173e7046f3c9",
+    "checks/1d0b328c6621/results-crud-b05.json": "9b9882b1cd9bf224da9933bfa4551992455a6d831c369b0215ebcd0d37d80834",
+    "checks/1d0b328c6621/review.txt": "32f69c8dada6580e55e4eb0747a2e08f57500b33e0b619583ded236f5b665ac2",
+    "checks/1d0b328c6621/review2.txt": "ae53b2e04d964c80ce277130163a166837e28b26dd64ea600a6b77a5de3b53ee",
+    "checks/1d0b328c6621/review3.txt": "f4690f56b3251da6d9b93e62ec5b6da736b3bdcec6374e36587331b0af7dad3c",
+    "checks/1d0b328c6621/review4.txt": "18d833bc0503c142ba2277f44bf3d9977aede37540e418ab927bdebe8a9bb130",
+    "checks/1d0b328c6621/review5.txt": "5c00725b631bfb5cce8b2f036287bbd4f1a7dea594c4f8ef1d0ffa6bab2cda30",
+    "checks/1d0b328c6621/review6.txt": "dd41b6b58e001bf9e18585cb364803d9debdae85072bd56b5ad00167977eee2b",
+    "checks/1d0b328c6621/review7.txt": "56b012ac9f2dfb838162d318fa20b576674911b66d1037d2177651b4f11914b1",
+    "checks/1d0b328c6621/review8.txt": "66762f56404f94cf1adcb3defd1ed6a19bcc18ccab1424dcba83378c33649e0b"
+  }
+}

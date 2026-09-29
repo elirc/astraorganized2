@@ -1,0 +1,25 @@
+{
+  "files": {
+    "package.json": "5de30b376b984d7e13b2c1205841bcd7c43499e8851740c306279f9bb65abe17",
+    "package-lock.json": "a5918bf15d846d0cb438513b04d51e3d978c37b9deaab73b3cdece3f9e541a06",
+    "next.config.mjs": "e3fec2020361067e967776284e2a5cc1dd10e39c672481cedb76a3e291ecb009",
+    "postcss.config.mjs": "94272d93e2ca59375e97fc22ded48886a351eb43f206a38c703cf2c3ace2f4eb",
+    "eslint.config.mjs": "60d4b5a90846dbb30608740df735a82f92d327f581185373c6c5d511a0625a70",
+    "tsconfig.json": "13efbb0a56819d8424e2b58932c959ed89fd5e293a2322a1edf6b2d91d20c0f5",
+    "server.ts": "2eaa67a0cf88ca1c402483aff88a75f173c8489424b6b42ce99f106f6dff053a",
+    "src/app/globals.css": "c10db3ed1863ff218dfb84f72df07dc7d992c38f5506aa3c0798c4809206314e",
+    "src/app/api/boards/route.ts": "796d48264e4fe15a797452c4b70c828f563f9f68e8399bacf31da06f76a93067",
+    "src/components/board/BoardSurface.tsx": "c14e85097d1de3c01ab513bd6c4baf2ce931adb1e9357a39470f7889a931c656",
+    "src/components/board/Column.tsx": "eabb6ae3cf091c0477140fdec9f56b23ea792e4ef8d71fd4114a175a35cd1dae",
+    "src/components/board/Card.tsx": "c8c5060f9a5ca7e47c18f77b9f6214f407dea2916f5b500fb6fb57481921354e",
+    "src/hooks/useBoardSocket.ts": "b61d77870edce783413a2a19d330c92e0ec7daa34df2270340171f2678724cb0",
+    "src/lib/filter.ts": "ef6d9098b21726d4c8aa25f4515f658497db25601dbb11a252e1c6100b942f30",
+    "src/lib/lexorank/index.ts": "9a14f46e3bb3ee4625a9c6800a66c6a1be2869c84a088dff39cfc5ba17274c01",
+    "src/lib/services/auth.ts": "43ac1393cc19f7c39ee83588c4d5d6090443f235c1dd0d1dbf2130d7ea619de6",
+    "src/lib/services/board-service.ts": "3cdc616dd16c1beb6290c1f240435b834fe23293a90c8d49ec1c0a3922e5d71b",
+    "src/lib/services/card-update-set.ts": "d8338fc52dd105b13158bbbc08920f30375af4211badd645bf79eba1330ad6fc",
+    "src/lib/socket/actions.ts": "a92738d37944e39ec15c51336b2fbae9bf25dcf68b8127b7b7e373fd8f98598c",
+    "tests/socket-actions.test.ts": "b09b7b35e5d8e3743d9b2719ef5a313651ea8ee08a736c902f2305d9a41b90ce",
+    "next-env.d.ts": "9dd9d642cdb87d4d5b3173217e0c45429b3e47a6f5cf5fb0ead6c644ec5fed01"
+  }
+}

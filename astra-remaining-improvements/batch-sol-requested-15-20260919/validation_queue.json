@@ -1,0 +1,47 @@
+{
+  "status": "complete",
+  "results": [
+    {
+      "id": "37844e1ec56d",
+      "label": "astra-astra5-ui-tests-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "37844e1ec56d",
+      "label": "astra-astra5-typecheck-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "af5130b3aad2",
+      "label": "astra-buildevent-generate-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "af5130b3aad2",
+      "label": "astra-buildevent-api-tests-r1",
+      "exitCode": 1
+    },
+    {
+      "id": "3b9c30ec3ce2",
+      "label": "astra-buildreviewer-shared-build-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "3b9c30ec3ce2",
+      "label": "astra-buildreviewer-shared-tests-r1",
+      "exitCode": 0
+    },
+    {
+      "id": "3b9c30ec3ce2",
+      "label": "astra-buildreviewer-api-tests-r1",
+      "exitCode": 1
+    },
+    {
+      "id": "a8435f7ed53c",
+      "label": "astra-astra1-owned-check-r1",
+      "exitCode": 1
+    }
+  ],
+  "current": "a8435f7ed53c",
+  "label": "astra-astra1-owned-check-r1"
+}

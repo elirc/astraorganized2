@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+  "id": "efdc3ecbb10a",
+  "command": [
+    "go",
+    "test",
+    "./lib/openslides-go/perm"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\efdc3ecbb10a\\OpenSlides",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:24:37.597344+00:00",
+  "status": "launch-failed",
+  "log": "runtime-b09.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-22T04:24:37.707632+00:00",
+  "elapsedSeconds": 0.11
+}

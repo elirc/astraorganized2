@@ -1,0 +1,38 @@
+{
+  "summary": [
+    "Use expiring opaque server-side sessions.",
+    "Enforce client membership before dashboard aggregation.",
+    "Keep bearer tokens out of login JSON responses with an actual route regression."
+  ],
+  "changedFiles": [
+    "tsconfig.json",
+    "src/app/api/dashboard/overview/route.ts",
+    "src/lib/auth/permissions.ts",
+    "src/lib/auth/session.ts",
+    "src/modules/auth/service.ts",
+    "src/modules/dashboard/service.ts",
+    "tests/integration/dashboard-overview.test.ts",
+    "tests/integration/auth-login-route.test.ts",
+    "tests/integration/dashboard-route.test.ts",
+    "tests/unit/permissions.test.ts",
+    "tests/unit/session.test.ts",
+    "astraupskill/snapshots/src__lib__auth__session.ts.original",
+    "astraupskill/snapshots/src__lib__auth__permissions.ts.original",
+    "astraupskill/snapshots/src__modules__dashboard__service.ts.original",
+    "astraupskill/snapshots/src__app__api__dashboard__overview__route.ts.original",
+    "astraupskill/snapshots/tests__unit__permissions.test.ts.original",
+    "astraupskill/snapshots/tests__unit__auth-repository.test.ts.original",
+    "astraupskill/snapshots/tests__integration__dashboard-overview.test.ts.original"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/80b4407b2971/results.json",
+    "expectedSuites": 0,
+    "expectedTests": 15
+  },
+  "limits": [
+    "Demo sessions are process-local and are lost on restart; use a shared durable session store for multi-instance production deployment.",
+    "Demo passwords remain plaintext fixtures for learning mode and must be replaced with password hashing in production.",
+    "Client dashboard time totals are explicitly redacted because CLIENT lacks time.read."
+  ]
+}

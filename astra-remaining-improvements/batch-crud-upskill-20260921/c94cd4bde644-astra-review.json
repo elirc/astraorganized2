@@ -1,0 +1,33 @@
+{
+  "id": "c94cd4bde644",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:31:49.309794+00:00",
+  "sourceReview": "Reviewed both Zod refinements, route parsing before service calls, optional/default semantics and Prisma composite tag key; bounded duplicate-input rejection preserves order and clear/omit behavior.",
+  "teachingReview": "Reviewed all nine chapters; corrected empty PATCH explanation, removed filler, added solved exercises and trace table, local source/snapshot links and exact execution limits.",
+  "testReview": "Astra reran seven actual schema tests using real declared Zod 4.3.6 and project-local TS loader; all passed. Captured explicit shared-install override; no typecheck, HTTP or database integration claim. Mechanical preflight passed.",
+  "specSHA256": "05dcfb93f0103632dce7027e6afed5430c9086da9266586a6903ef1048693a7a",
+  "fileHashes": {
+    "src/lib/validation/ticket-schemas.ts": "77b60727748791337b5283ea0f75eb98fbb348eefd32fa819ba859d7b3fcf0eb",
+    "src/tests/unit/ticket-schemas.test.ts": "18943b62decfed9cef0f612839a2694be127d12425d76c5ea52ca540b1addc01",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "tests/runtime-schema.test.mjs": "f6b3c8f8fd5ecde8e375971ce6e7a7129410f74a24da379bdcb59ff6a4211989",
+    "astraupskill/snapshots/src/lib/validation/ticket-schemas.ts": "d0d74b4f726c93abcc71a98af1b77b274e4f7da782222fa7a6653dbb2256f4a4",
+    "astraupskill/snapshots/src/tests/unit/ticket-schemas.test.ts": "3bd8ded8c4dfd2f255ba00d0206f73859f62663fc579af7e5c0ac454330a203b",
+    "astraupskill/evidence/astra-crud-b01-schema.log": "4736956643a6ded2f950d4fad47bf9416e103c02c4d7a3e7001232924c91e6cb",
+    "astraupskill/evidence/results.json": "8a26a7681da2dbecb26c374759594cec44f9aa9d17cf1c4e2cb655c7936a76ad",
+    "astraupskill/README.md": "1f275fe008293275b66ef6242c6bf2ccb91346a0f56dbf0affff0529e59a4e6c",
+    "astraupskill/01-CODEBASE-MAP.md": "731371ec5a2d63599c670a53ea497ba1a5bb2a1cfeebf1ba08bcf1d8f284fa07",
+    "astraupskill/02-CONCEPTS.md": "a1f1d129bd34c949338bc15de57e6162aac27e1466440928bc22035d0dab1b76",
+    "astraupskill/03-WORKED-CHANGE.md": "90c5f77f4222a720781951fa015edaf0db97e19873311507abd55eae53f1f644",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "95d7fe34f8cb6b9fe9da4c7d3ff0e63f4b01e1fd1be8749ad367d5387e72a05d",
+    "astraupskill/05-PRACTICE.md": "dd4940180f69874ad8d1030ae30e4a863a70e1b868bb1038ab9b38dbbe6aa62e",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "8a293d8f1fc0b4cdc422ecff058a76136306fef3aba43cd1af6e5e8f5197158c",
+    "astraupskill/07-TRACE-LAB.md": "2974fda3da6a45be2a073506862e34999c9992cae9fa1801d513a342bec144c0",
+    "astraupskill/VERIFICATION.md": "51b3666d95cb2734c24dd75343a318afa16ed256c488fe5ff5deac416447222a"
+  },
+  "evidenceHashes": {
+    "checks/c94cd4bde644/astra-crud-b01-schema.json": "fac822fe72443c0f0c11fa9e99ba36f75a8d60045c2e688e368593a84035f1a8",
+    "checks/c94cd4bde644/astra-crud-b01-schema.log": "4736956643a6ded2f950d4fad47bf9416e103c02c4d7a3e7001232924c91e6cb",
+    "checks/c94cd4bde644/results-crud-b01.json": "8a26a7681da2dbecb26c374759594cec44f9aa9d17cf1c4e2cb655c7936a76ad"
+  }
+}

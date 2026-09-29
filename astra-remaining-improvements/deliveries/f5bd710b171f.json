@@ -1,0 +1,143 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/mastermatter",
+  "id": "f5bd710b171f",
+  "summary": [
+    "Treat a zero-row channel update as a not-found failure instead of continuing as if the channel was updated.",
+    "Preserve the existing multiple-row defensive failure while returning the production store not-found error for a missing channel."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f5bd710b171f/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "cases": [
+      "zero_rows_is_not_found",
+      "one_row_returns_channel",
+      "multiple_rows_fails",
+      "rows_affected_failure_propagates",
+      "named_exec_failure_propagates",
+      "invalid_delete_is_rejected_before_SQL"
+    ],
+    "checks": [
+      {
+        "project": "_Organized Desktop/03 Master Projects/mastermatter",
+        "id": "f5bd710b171f",
+        "command": [
+          "python",
+          "mattermost/tests/crud-b02/run_channel_store_harness.py",
+          "--go",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\batch-crud-upskill-20260921\\toolchains\\go1.27.1\\go\\bin\\go.exe"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f5bd710b171f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:18:09.273592+00:00",
+        "status": "complete",
+        "log": "crud-b02-go-harness-final.log",
+        "pid": 18760,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:22:01.938526+00:00",
+        "elapsedSeconds": 232.55
+      }
+    ],
+    "limits": [
+      "Six Go subtests execute the exact extracted updateChannelT method and row-count helper with explicit SQL, model and error contracts.",
+      "The native Mattermost package test, PostgreSQL integration, model validation and unique-constraint classification were not executed.",
+      "Outer Update transaction finalization and public-channel propagation were reviewed in source only; the harness does not execute them."
+    ]
+  },
+  "courseWords": 2752,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": "mattermost/server/channels/store/sqlstore/channel_store.go",
+      "before_sha256": "a5c47a75137cbaa8de08d2d8dc4b36f70e3615610df9687958d81e103052accf",
+      "after_sha256": "a9109e8ecbec970621477e75fec5c3465ddc391106be4b8f50ce209d62e0ebf4"
+    },
+    {
+      "file": "mattermost/server/channels/store/sqlstore/channel_store_update_test.go",
+      "before_sha256": null,
+      "after_sha256": "5e1bffaf50e99c455edaf3912a43a6ee9dd567c6cccf31fa64d0735c176f90b5"
+    },
+    {
+      "file": "mattermost/tests/crud-b02/run_channel_store_harness.py",
+      "before_sha256": null,
+      "after_sha256": "6ef4535db7afc8b796df73bb4dbced1af8ecb77222e2bc1901aacc901e012724"
+    },
+    {
+      "file": "astraupskill/snapshots/channel_store.go.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a5c47a75137cbaa8de08d2d8dc4b36f70e3615610df9687958d81e103052accf"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-go-harness-final.log",
+      "before_sha256": null,
+      "after_sha256": "8f51d4b2883f7f64d44101ab8b6fe828d9650dedee89e87cef76f5286576f57d"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "bf1dba48efd3feb1f0e1805dd9d343ad84f49a898d40724d44891ec685ccf6af"
+    },
+    {
+      "file": "astraupskill/evidence/toolchain-verification.json",
+      "before_sha256": null,
+      "after_sha256": "70792782d48440d54b357a2e02c7aee74dba541229fee945ef1888e46b9864fa"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8caa931a3023f581841e1baa85efc87506af2eed0b22a68891bcec8547a67614"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7cb4458b6a24d2f3196919fae96cfe585cd89ef55a8168a21ed268e1aa600379"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5e2b7c568ed6f29d26bd458db9c4e062d2162f4f20de4e95d4fa36202f76e1c9"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6d6ff6360ab70d8574a548f7dc06fd9074cbc7c27ae99949f21938bc77753850"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "94f0a192f45eaec1ec37221dd6692111939faea6cf8ec58b48e7ab09ab43566e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "816d6f77865af55f15ccde4cad1c7576cbb6d98caad33cc758179a6baed666a3"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b373ac46ce3a6457db4b9caeb5889a97fbff395e7857bf1db397d4571b8d9cda"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9454185ffe5401414ff2d4edf9c5b6514606e16c21b9c03dc7f7d006cfa8e216"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "30dabf91d397795cde8a768eb40e3e7383683f5d47da8fa320cfe78780cd650b"
+    }
+  ],
+  "limits": [
+    "Six Go subtests execute the exact extracted updateChannelT method and row-count helper with explicit SQL, model and error contracts.",
+    "The native Mattermost package test, PostgreSQL integration, model validation and unique-constraint classification were not executed.",
+    "Outer Update transaction finalization and public-channel propagation were reviewed in source only; the harness does not execute them."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:29:48.429602+00:00"
+}

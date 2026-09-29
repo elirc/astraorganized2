@@ -1,0 +1,33 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/modules/tickets/ticketService.ts",
+    "packages/domain/src/index.ts",
+    "tests/domain/ticket-rules.test.ts",
+    "tests/api/ticket-service.test.ts",
+    "astraupskill/snapshots/ticketService-before.ts.txt",
+    "astraupskill/snapshots/ticketRoutes-before.ts.txt",
+    "astraupskill/snapshots/domain-before.ts.txt",
+    "astraupskill/snapshots/ticket-rules-before.ts.txt",
+    "astraupskill/evidence/verify-06.json",
+    "astraupskill/evidence/verify-06.log",
+    "astraupskill/evidence/install-01.json"
+  ],
+  "summary": [
+    "Reject ticket PATCH requests from viewers before the first Prisma lookup, including priority-only, tags-only, statusless, and empty partial updates.",
+    "Use one role-aware Prisma include for GET and update responses so internal comments are visible only to operational roles, while tenant-scoped writes retain audit and outbox atomicity.",
+    "Add pure authorization and mocked service-interaction coverage plus a detailed CRUD course with exact before snapshots and bounded verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0b729fe76e93/verify-06.json",
+    "expectedTests": 14,
+    "environment": "Node.js, TypeScript, Vitest, Vite; PostgreSQL is not contacted by the bounded verification",
+    "command": "C:\\Program Files\\nodejs\\node.exe C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js run verify"
+  },
+  "limits": [
+    "The role resolver uses demo x-tenant-slug and x-user-email headers for local teaching and is not production authentication.",
+    "The bounded suite covers pure domain helpers plus mocked service interactions and compilation/build; a disposable PostgreSQL integration fixture is still needed to assert durable audit/outbox counts and comment rows over HTTP.",
+    "External notification delivery and worker execution remain outside this source increment; the transaction still persists the outbox handoff atomically."
+  ]
+}

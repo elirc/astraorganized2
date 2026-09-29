@@ -1,0 +1,262 @@
+TAP version 13
+# Subtest: offline plan includes missing definition before its entry
+ok 1 - offline plan includes missing definition before its entry
+  ---
+  duration_ms: 15.0798
+  type: 'test'
+  ...
+# Subtest: planning never mutates source objects across multiple targets
+ok 2 - planning never mutates source objects across multiple targets
+  ---
+  duration_ms: 1.3152
+  type: 'test'
+  ...
+# Subtest: matching target entries are unchanged and produce no operations
+ok 3 - matching target entries are unchanged and produce no operations
+  ---
+  duration_ms: 1.5953
+  type: 'test'
+  ...
+# Subtest: changed existing entry is a conflict rather than a silent skip or overwrite
+ok 4 - changed existing entry is a conflict rather than a silent skip or overwrite
+  ---
+  duration_ms: 1.7758
+  type: 'test'
+  ...
+# Subtest: schema differences block entries under that definition
+ok 5 - schema differences block entries under that definition
+  ---
+  duration_ms: 1.4214
+  type: 'test'
+  ...
+# Subtest: reference fields block migration without being silently dropped
+ok 6 - reference fields block migration without being silently dropped
+  ---
+  duration_ms: 0.928
+  type: 'test'
+  ...
+# Subtest: app-owned types require a separate ownership migration
+ok 7 - app-owned types require a separate ownership migration
+  ---
+  duration_ms: 0.8237
+  type: 'test'
+  ...
+# Subtest: duplicate definitions and handles are rejected before planning
+ok 8 - duplicate definitions and handles are rejected before planning
+  ---
+  duration_ms: 42.4323
+  type: 'test'
+  ...
+# Subtest: required missing values and mismatched field types are rejected
+ok 9 - required missing values and mismatched field types are rejected
+  ---
+  duration_ms: 1.388
+  type: 'test'
+  ...
+# Subtest: target-only content is reported and never deleted
+ok 10 - target-only content is reported and never deleted
+  ---
+  duration_ms: 1.8666
+  type: 'test'
+  ...
+# Subtest: source and target identities must differ and be bare shop names
+ok 11 - source and target identities must differ and be bare shop names
+  ---
+  duration_ms: 0.8459
+  type: 'test'
+  ...
+# Subtest: normalized plan ignores definition and field ordering
+ok 12 - normalized plan ignores definition and field ordering
+  ---
+  duration_ms: 3.5687
+  type: 'test'
+  ...
+# Subtest: pagination passes opaque cursors through variables
+ok 13 - pagination passes opaque cursors through variables
+  ---
+  duration_ms: 6.5763
+  type: 'test'
+  ...
+# Subtest: pagination rejects repeated cursors and incomplete envelopes
+ok 14 - pagination rejects repeated cursors and incomplete envelopes
+  ---
+  duration_ms: 1.2229
+  type: 'test'
+  ...
+# Subtest: pagination has a finite page limit
+ok 15 - pagination has a finite page limit
+  ---
+  duration_ms: 0.6462
+  type: 'test'
+  ...
+# Subtest: export retrieves entries for every definition and includes store/version
+ok 16 - export retrieves entries for every definition and includes store/version
+  ---
+  duration_ms: 1.1617
+  type: 'test'
+  ...
+# Subtest: HTTP reads retry bounded throttling without leaking tokens
+ok 17 - HTTP reads retry bounded throttling without leaking tokens
+  ---
+  duration_ms: 67.6341
+  type: 'test'
+  ...
+# Subtest: GraphQL throttling retries reads but other GraphQL errors fail
+ok 18 - GraphQL throttling retries reads but other GraphQL errors fail
+  ---
+  duration_ms: 3.1887
+  type: 'test'
+  ...
+# Subtest: mutations are never automatically retried on HTTP failure
+ok 19 - mutations are never automatically retried on HTTP failure
+  ---
+  duration_ms: 1.3012
+  type: 'test'
+  ...
+# Subtest: network failure preserves unknown mutation outcome without exposing request details
+ok 20 - network failure preserves unknown mutation outcome without exposing request details
+  ---
+  duration_ms: 1.1239
+  type: 'test'
+  ...
+# Subtest: API fallback and malformed successful responses are rejected
+ok 21 - API fallback and malformed successful responses are rejected
+  ---
+  duration_ms: 6.1346
+  type: 'test'
+  ...
+# Subtest: mutation userErrors and missing IDs are never called success
+ok 22 - mutation userErrors and missing IDs are never called success
+  ---
+  duration_ms: 1.3476
+  type: 'test'
+  ...
+# Subtest: apply validates the current stores before ordered creates and receipts
+ok 23 - apply validates the current stores before ordered creates and receipts
+  ---
+  duration_ms: 2.4311
+  type: 'test'
+  ...
+# Subtest: missing confirmation sends no reads or writes
+ok 24 - missing confirmation sends no reads or writes
+  ---
+  duration_ms: 0.7617
+  type: 'test'
+  ...
+# Subtest: changed source or forged plan is rejected before mutations
+ok 25 - changed source or forged plan is rejected before mutations
+  ---
+  duration_ms: 3.3541
+  type: 'test'
+  ...
+# Subtest: a plan with conflicts sends no mutations even for other missing entries
+ok 26 - a plan with conflicts sends no mutations even for other missing entries
+  ---
+  duration_ms: 3.6373
+  type: 'test'
+  ...
+# Subtest: partial remote failure stops later work and retains confirmed receipts
+ok 27 - partial remote failure stops later work and retains confirmed receipts
+  ---
+  duration_ms: 3.5996
+  type: 'test'
+  ...
+# Subtest: journal failure before first mutation prevents all writes
+ok 28 - journal failure before first mutation prevents all writes
+  ---
+  duration_ms: 2.5696
+  type: 'test'
+  ...
+# Subtest: journal failure after a create stops before the next create
+ok 29 - journal failure after a create stops before the next create
+  ---
+  duration_ms: 1.8628
+  type: 'test'
+  ...
+# Subtest: CLI parser rejects unknown duplicate and incomplete options
+ok 30 - CLI parser rejects unknown duplicate and incomplete options
+  ---
+  duration_ms: 0.8327
+  type: 'test'
+  ...
+# Subtest: new output and journal protect existing files and persist receipts
+ok 31 - new output and journal protect existing files and persist receipts
+  ---
+  duration_ms: 262.9063
+  type: 'test'
+  ...
+# Subtest: import and offline CLI planning need no network or credentials
+ok 32 - import and offline CLI planning need no network or credentials
+  ---
+  duration_ms: 572.7654
+  type: 'test'
+  ...
+# Subtest: real HTTP transport uses variables and accepts a valid GraphQL envelope
+ok 33 - real HTTP transport uses variables and accepts a valid GraphQL envelope
+  ---
+  duration_ms: 140.422
+  type: 'test'
+  ...
+# Subtest: source changes since planning prevent all mutations
+ok 34 - source changes since planning prevent all mutations
+  ---
+  duration_ms: 1.2344
+  type: 'test'
+  ...
+# Subtest: target changes since planning prevent all mutations
+ok 35 - target changes since planning prevent all mutations
+  ---
+  duration_ms: 1.1179
+  type: 'test'
+  ...
+# Subtest: mutation document without explicit option still cannot retry
+ok 36 - mutation document without explicit option still cannot retry
+  ---
+  duration_ms: 0.9006
+  type: 'test'
+  ...
+# Subtest: invalid store token and API version fail before transport
+ok 37 - invalid store token and API version fail before transport
+  ---
+  duration_ms: 0.5449
+  type: 'test'
+  ...
+# Subtest: merchant-owned output admin access is not copied into the input enum
+ok 38 - merchant-owned output admin access is not copied into the input enum
+  ---
+  duration_ms: 0.503
+  type: 'test'
+  ...
+# Subtest: non-public admin ownership is explicitly blocked
+ok 39 - non-public admin ownership is explicitly blocked
+  ---
+  duration_ms: 0.4667
+  type: 'test'
+  ...
+# Subtest: enabled online-store or renderable capability is not silently omitted
+ok 40 - enabled online-store or renderable capability is not silently omitted
+  ---
+  duration_ms: 0.7888
+  type: 'test'
+  ...
+# Subtest: target ownership differences block otherwise matching definitions
+ok 41 - target ownership differences block otherwise matching definitions
+  ---
+  duration_ms: 0.568
+  type: 'test'
+  ...
+# Subtest: unknown capability and access settings require schema review
+ok 42 - unknown capability and access settings require schema review
+  ---
+  duration_ms: 0.5699
+  type: 'test'
+  ...
+1..42
+# tests 42
+# suites 0
+# pass 42
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1761.4026

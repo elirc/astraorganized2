@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master3",
+  "id": "0b729fe76e93",
+  "command": [
+    "--cwd",
+    ".",
+    "--",
+    "npm.cmd",
+    "run",
+    "verify"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0b729fe76e93",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T18:54:06.677160+00:00",
+  "status": "launch-failed",
+  "log": "verify-03.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T18:54:06.730713+00:00",
+  "elapsedSeconds": 0.05
+}

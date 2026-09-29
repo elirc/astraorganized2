@@ -1,0 +1,206 @@
+[
+ {
+  "wave": 1,
+  "stage": "11",
+  "name": "JS1/flashcards",
+  "rel": "JS1/flashcards",
+  "tests": 2,
+  "words": 5144,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\flashcards",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-flashcards",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/11",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/flashcards/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "12",
+  "name": "JS1/habit-tracker",
+  "rel": "JS1/habit-tracker",
+  "tests": 2,
+  "words": 4952,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\habit-tracker",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-habit-tracker",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/12",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/habit-tracker/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "13",
+  "name": "JS1/reading-list",
+  "rel": "JS1/reading-list",
+  "tests": 1,
+  "words": 4788,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\reading-list",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-reading-list",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/13",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/reading-list/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "14",
+  "name": "JS1/note-vault",
+  "rel": "JS1/note-vault",
+  "tests": 3,
+  "words": 5385,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\note-vault",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "js1-note-vault",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/14",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/note-vault/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "15",
+  "name": "JS1/budget-tracker",
+  "rel": "JS1/budget-tracker",
+  "tests": 2,
+  "words": 4848,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\budget-tracker",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-budget-tracker",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/15",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/budget-tracker/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "16",
+  "name": "JS1/pantry-inventory",
+  "rel": "JS1/pantry-inventory",
+  "tests": 2,
+  "words": 4939,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\pantry-inventory",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-pantry-inventory",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/16",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/pantry-inventory/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "17",
+  "name": "JS1/snippet-vault",
+  "rel": "JS1/snippet-vault",
+  "tests": 2,
+  "words": 4843,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\snippet-vault",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-snippet-vault",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/17",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/snippet-vault/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "18",
+  "name": "JS1/room-booking",
+  "rel": "JS1/room-booking",
+  "tests": 2,
+  "words": 5563,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\room-booking",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "js1-room-booking",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/18",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "JS1/room-booking/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "19",
+  "name": "newcodexJS/04-notes-app",
+  "rel": "newcodexJS/04-notes-app",
+  "tests": 1,
+  "words": 5220,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\04-notes-app",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "newcodexjs-04-notes-app",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/19",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "newcodexJS/04-notes-app/astraupskill",
+  "batch": "B02"
+ },
+ {
+  "wave": 1,
+  "stage": "20",
+  "name": "newcodexJS/06-bookmark-manager",
+  "rel": "newcodexJS/06-bookmark-manager",
+  "tests": 4,
+  "words": 5898,
+  "changes": 29,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\06-bookmark-manager",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-06-bookmark-manager",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch02/backups/20",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch02/delivery-manifest.json",
+  "course": "newcodexJS/06-bookmark-manager/astraupskill",
+  "batch": "B02"
+ }
+]

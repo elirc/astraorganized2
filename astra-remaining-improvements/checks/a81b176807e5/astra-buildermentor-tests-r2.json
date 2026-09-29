@@ -1,0 +1,26 @@
+{
+  "project": "buildermentor",
+  "id": "a81b176807e5",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/corepack/dist/pnpm.js",
+    "--filter",
+    "@shipshape/api",
+    "run",
+    "test",
+    "--maxWorkers=1",
+    "--minWorkers=1",
+    "--testTimeout=60000",
+    "--hookTimeout=60000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a81b176807e5",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-20T21:25:30.471100+00:00",
+  "status": "complete",
+  "log": "astra-buildermentor-tests-r2.log",
+  "pid": 30084,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T21:30:31.511467+00:00",
+  "elapsedSeconds": 301.04
+}

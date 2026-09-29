@@ -1,0 +1,34 @@
+{
+  "summary": [
+    "Validate recipe requests before provider calls and validate nested provider output before success.",
+    "Recover valid browser history/favorites from mixed or malformed persisted JSON without rewriting data during reads.",
+    "Add 46 production-module regressions and nine source-based teaching chapters with original snapshots, debugging exercises, traces and separate solutions."
+  ],
+  "changedFiles": [
+    "app/api/recipes/route.ts",
+    "lib/storage.ts",
+    "package.json",
+    "tsconfig.json",
+    "lib/validation.ts",
+    "lib/generation.ts",
+    "tests/boundaries.test.mjs",
+    "astraupskill/snapshots/app__api__recipes__route.ts.original.txt",
+    "astraupskill/snapshots/lib__storage.ts.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/snapshots/tsconfig.json.original.txt",
+    "astraupskill/evidence/crud-b01-boundaries.log",
+    "astraupskill/evidence/crud-b01-typecheck-installed.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e0e5886e8464/results-crud-b01.json"
+  },
+  "limits": [
+    "Focused production-module tests; Next HTTP adapter/browser/provider integration not executed.",
+    "No database exists in this flow. Storage recovery validates and filters on read without rewriting saved collections.",
+    "Changed-file ESLint was stopped after more than ten minutes without diagnostics; no lint pass is claimed.",
+    "Existing process-local rate limiting, session-storage navigation failure, SDK-internal retries and dietary/culinary accuracy are not certified by this change.",
+    "Full production build and browser end-to-end tests were not run; project typecheck passed."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "dotnet",
+    "build",
+    "src/Billing.Api/Billing.Api.csproj",
+    "--nologo",
+    "-p:NuGetAudit=false"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 1,
+  "seconds": 110.01
+}

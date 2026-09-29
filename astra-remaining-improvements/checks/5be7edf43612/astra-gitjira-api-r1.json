@@ -1,0 +1,18 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "command": [
+    "python",
+    "scripts/test-local.py"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T21:57:40.107486+00:00",
+  "status": "complete",
+  "log": "astra-gitjira-api-r1.log",
+  "pid": 19388,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T22:02:03.396374+00:00",
+  "elapsedSeconds": 263.28
+}

@@ -1,0 +1,17 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_.Ramp",
+  "id": "a0a0ff059e64",
+  "command": [
+    "npm",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a0a0ff059e64",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:16:22.973936+00:00",
+  "status": "launch-failed",
+  "log": "z1-tests-01.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T00:16:24.320002+00:00",
+  "elapsedSeconds": 0.01
+}

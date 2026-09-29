@@ -1,0 +1,28 @@
+{
+  "id": "785c7da790a8",
+  "project": "_Organized Desktop/03 Master Projects/master",
+  "summary": [
+    "Validate destination project ownership before task creation or PATCH reassignment; preserve title-only edits and existing task ownership filtering.",
+    "Return 404 and perform zero task writes when the destination project is outside the user's scope."
+  ],
+  "changedFiles": [
+    "src/app/api/tasks/[id]/route.ts",
+    "src/app/api/tasks/route.ts",
+    "tests/task-project-isolation.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/tasks-[id]-route.ts.original.txt",
+    "astraupskill/snapshots/tasks-route.ts.original.txt",
+    "astraupskill/evidence/crud-b02-runtime7.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/785c7da790a8/results-crud-b02.json"
+  },
+  "limits": [
+    "The regression uses explicit Prisma and auth doubles; it does not connect to a live database.",
+    "The route's authentication wrapper is stubbed, so middleware and session construction are outside this check.",
+    "The ownership read and task update/create are separate calls; concurrent project deletion or reassignment is outside this bounded fix.",
+    "Schema parsing is stubbed: real Zod validation and Next HTTP handling were not exercised."
+  ]
+}

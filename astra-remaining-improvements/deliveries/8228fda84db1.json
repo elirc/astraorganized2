@@ -1,0 +1,145 @@
+{
+  "project": "campusops",
+  "id": "8228fda84db1",
+  "summary": [
+    "Stock reservation and its history commit together through one shared store; concurrent requests cannot oversell or create ordinary partial writes.",
+    "Inventory reads and inserted objects are detached; duplicate IDs, cancelled writes, quantity overflow and missing-work-order reservations are rejected.",
+    "Inventory routes require the existing Operations policy; part Location links are readable and reservation history is exposed.",
+    "Development web proxy now matches the API launch profile on port 5110.",
+    "Nine detailed source-grounded learning documents explain ownership, transactions, contracts, failure tests, debugging, exercises and a request trace."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/campusops-final",
+    "expectedSuites": 3,
+    "expectedTests": 42,
+    "command": "dotnet test CampusOps.slnx --no-restore --configuration Release --logger trx",
+    "environment": ".NET SDK 10.0.302; locked restore; isolated copy; ASP.NET test host and existing SQLite in-memory adapter tests",
+    "additional": {
+      "webTests": 1,
+      "webBuild": "TypeScript and Vite production build passed",
+      "commands": [
+        "npm.cmd test -- --maxWorkers=2",
+        "npm.cmd run build"
+      ],
+      "node": "22.16.0",
+      "npm": "10.9.2",
+      "manualBrowserVerified": false
+    }
+  },
+  "testResults": {
+    "total": 42,
+    "passed": 42,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "courseWords": 5587,
+  "courseFiles": 9,
+  "courseLinksChecked": 37,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "44e1302b1845c0ae390ffb9e53e17ad1ac570a6fc3ae1aea2d601864620c53b8",
+      "after_sha256": "648826f2a618164662453067d46e32c8f72eb6da56874da299a6722d74f0a31c"
+    },
+    {
+      "file": "src/CampusOps.Core/Inventory/Part.cs",
+      "before_sha256": "c8b1d09273b7731c138c99ba4ff4d88f63d77ca9f12209171f9dec41a3ca8cbc",
+      "after_sha256": "d6b11a4d904b60280f9f91795479dc4fc17ab72c42f6dcbe7d8d17c48221ee60"
+    },
+    {
+      "file": "src/CampusOps.Infrastructure/Inventory/InMemoryPartsStores.cs",
+      "before_sha256": "d56eb297198b9275ff935289e5b1d948dfb75f150095eaccd4863e2b80e447b3",
+      "after_sha256": "a4e557ecfc3b09c31a80b9b8371c391d5d8d70ba6c77befac31e59e18a518694"
+    },
+    {
+      "file": "src/CampusOps.Api/Program.cs",
+      "before_sha256": "02f68da7895a82914c11b4ad0988930fd36ef962231b31a5f88dd43804457f19",
+      "after_sha256": "dc130eee0520115bd4553ea537412744de0efbaa6f224ed3648b9ae43571fbf1"
+    },
+    {
+      "file": "src/CampusOps.Api/Inventory/PartEndpoints.cs",
+      "before_sha256": "73b2deee3884b8028ce7fe8a9aa360e7365d92738d02da3e563b6a77bdcded4e",
+      "after_sha256": "b2da2e841a23785905750ea91673ded4534609dc7668a5f717f6293c60435b06"
+    },
+    {
+      "file": "web/CampusOps.Web/vite.config.ts",
+      "before_sha256": "42aebd9fa132411dfc7a02c6f4f1265706954569d88d133609d425c58d41a55c",
+      "after_sha256": "b0336e159996d509f5e40c2da17692685b16189b5a359226b90268cfc1bf43be"
+    },
+    {
+      "file": "tests/CampusOps.Core.Tests/Inventory/StockCapacityTests.cs",
+      "before_sha256": null,
+      "after_sha256": "b88e5de78ca3ba79fbd32c323ed187c60156225c0540ffbf009609416f9bb981"
+    },
+    {
+      "file": "tests/CampusOps.Infrastructure.Tests/Inventory/PartStoreIsolationTests.cs",
+      "before_sha256": null,
+      "after_sha256": "3dffb4fc967c032eb11992f76460536dc1b5e0f4c97bfb964e00ff9eeb05d4a0"
+    },
+    {
+      "file": "tests/CampusOps.Infrastructure.Tests/Inventory/ConcurrentReservationTests.cs",
+      "before_sha256": "42c0f8ce70d21156ab0765c1ad2029dec96ec438e340d1a28a5fafb53b4711fb",
+      "after_sha256": "e6c05430938a472ff42657c646ee6491d9ee23aeb3f31f5537009f0c2ef227d5"
+    },
+    {
+      "file": "tests/CampusOps.Api.Tests/Inventory/InventoryApiTests.cs",
+      "before_sha256": null,
+      "after_sha256": "36a526ab5ea667dd42dea0c14fead0263b802d3feeb816de95405dcde444db2e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c73d44513f8de14338a7764b25eef33c196a2d2b19c00d4e45c291679d8d9620"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "ff85bb136a9e3862bb36c1e13874a597efe11bce4bdda37884d2915d66b6a3e2"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b082c3435605ddc32e3910ffb261632f2d67b5fafbad4569b380893d7322379d"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "beb19fe97f169da0b6409089130c165b16afe2470a4e3b726af663c65fea5d53"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f9436e12dd5eddb4f151609d89fd8eaeff4c3afc9dd4fd1fe36303342238c744"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b01d63a20165364380087c43b4725af87eaa7dc8a0372166d1002998d4c64d1c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7da2f0c094cc067f15b758aa3f0caeba561c9163c3e1f0ce127694116cd66d91"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e8f8408bd9339f9d7957f11cc97872e75e089324f7d0e291c0b8c60416a0a35d"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "37f9849661c21f044a314fc81c3ee1c9be26af14c332f4635c2ff7c9e5487702"
+    }
+  ],
+  "limits": [
+    "Inventory remains in memory with one-process consistency and no durable transaction or retry idempotency key.",
+    "Demo headers are not production identity; parts have no campus ownership field.",
+    "Work-order existence is checked, but terminal-status policy and cross-module state-transition coordination remain exercises.",
+    "The React console displays work orders; inventory UI is a documented capstone.",
+    "No live browser, deployed service, inventory database migration or manual HTTP trace was executed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T02:48:17.070606+00:00"
+}

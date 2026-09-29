@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "script": "browser-check.mjs",
+      "exitCode": 0,
+      "seconds": 67.55
+    },
+    {
+      "script": "release-check.mjs",
+      "exitCode": 0,
+      "seconds": 26.09
+    },
+    {
+      "script": "performance-check.mjs",
+      "exitCode": 0,
+      "seconds": 53.74
+    }
+  ],
+  "url": "http://127.0.0.1:49202/"
+}

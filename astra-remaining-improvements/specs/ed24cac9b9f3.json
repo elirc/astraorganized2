@@ -1,0 +1,25 @@
+{
+  "id": "ed24cac9b9f3",
+  "changedFiles": [
+    "src/lib/cache/inMemoryCache.ts",
+    "tests/runtime-cache-capacity.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-lib-cache-inMemoryCache.ts.before",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/ed24cac9b9f3/results-crud-b06.json",
+    "format": "json"
+  },
+  "limits": [
+    "Actual cache class with local VM helper; no flag evaluator, route, database, distributed process, memory profiler, or concurrency run.",
+    "Capacity bound is per process and does not address TTL freshness or authorization key design."
+  ],
+  "summary": [
+    "Added an explicit bounded capacity policy to InMemoryCache with default size, disabled zero-capacity behavior, and oldest-key eviction.",
+    "Added actual cache runtime coverage for disabled storage, capacity eviction, and prefix invalidation.",
+    "Reject non-finite, fractional and unsafe capacity values so configured bounds cannot silently become unbounded."
+  ],
+  "project": "ww31"
+}

@@ -1,0 +1,246 @@
+[
+ {
+  "wave": 2,
+  "id": "332058fd8671",
+  "name": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "rel": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "status": "delivered",
+  "tests": null,
+  "words": 3843,
+  "deliveredAt": "2026-09-13T16:20:19.741791+00:00",
+  "nfiles": 26,
+  "summary": [
+   "Hardened self-review submission with tenant, reviewer, subject, cycle, type, status, and active-cycle predicates inside one transaction.",
+   "Added immutable integration claim tokens, conditional retry/claim/complete writes, atomic retry log/audit, and stale-worker log suppression.",
+   "Added repository-contract workflow regressions and nine source-grounded upskill chapters."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\zz8",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "zz8",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/332058fd8671",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/332058fd8671.json (spec: specs/332058fd8671.json)",
+  "course": "_Organized Desktop/05 Numbered Experiments/zz8/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "b7429e8bf71d",
+  "name": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "rel": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "status": "delivered",
+  "tests": 13,
+  "words": 6198,
+  "deliveredAt": "2026-09-13T13:05:36.133779+00:00",
+  "nfiles": 61,
+  "summary": [
+   "Validates timer instants and Prisma Int durations, preserving zero, omitted notes and explicit null. Manual/start factories support actual handler tests and safe errors.",
+   "Protects the stop transition with an endTime-null conditional update; starts enforce the existing application-wide running check inside a transaction.",
+   "Moves board tickets using transaction-local reads, same-project targets, clamped insertion and contiguous sibling positions, including no-op moves.",
+   "Restores full-project ESLint with small unused-code cleanups, supplies thirteen passing regression cases and nine detailed learning chapters with complete executable examples."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\appmakertrack",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "appmakertrack",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/b7429e8bf71d",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/b7429e8bf71d.json (spec: specs/b7429e8bf71d.json)",
+  "course": "_Organized Desktop/08 App And Product Projects/appmakertrack/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "993e7c3b44d7",
+  "name": "_Organized Desktop/12 Other Projects/GlobGame",
+  "rel": "_Organized Desktop/12 Other Projects/GlobGame",
+  "status": "delivered",
+  "tests": 53,
+  "words": 3935,
+  "deliveredAt": "2026-09-09T09:26:23.178750+00:00",
+  "nfiles": 47,
+  "summary": [
+   "Adds a connected structured puzzle-authoring studio with create/read/update/delete, title search, state filters and bounded pagination.",
+   "Validates four-category mini puzzles, real calendar dates, unique words, request bodies and query parameters; protects authoring with a local bearer token.",
+   "Uses conditional versions and PostgreSQL transactions for metadata, category replacement and retained audit records; proves one-winner conflicts and rollback.",
+   "Freezes published content, supports archival without reopening edits, and restricts deletion to never-published drafts without results.",
+   "Replaces silent fallback with explicit labeled demo mode and unavailable-store errors; validates hierarchy and fixes deterministic shuffle bounds.",
+   "Validates saved game boards/history and coordinates accepted browser writes, preserving corrupt data and rejected moves for recovery exports.",
+   "Provides a fresh migration, non-overwriting transactional seed, offline-build fonts, loopback defaults, an isolated PostgreSQL/Chromium harness and nine detailed CRUD learning documents.",
+   "Verifies 34 model checks, 10 PostgreSQL scenarios, nine Chromium workflows, production build, lint, repeated seed and two reviewed screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\12 Other Projects\\GlobGame",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma"
+  ],
+  "slug": "globgame",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/993e7c3b44d7",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/993e7c3b44d7.json (spec: specs/993e7c3b44d7.json)",
+  "course": "_Organized Desktop/12 Other Projects/GlobGame/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "2d739127d551",
+  "name": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "rel": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "status": "delivered",
+  "tests": 11,
+  "words": 5833,
+  "deliveredAt": "2026-09-12T23:47:40.460895+00:00",
+  "nfiles": 46,
+  "summary": [
+   "Validates issue PATCH fields and project-scoped relations before writes, preserving explicit nulls, zero values and no-op semantics with Prisma Int bounds.",
+   "Groups PATCH issue/activity/notification writes and bulk-sprint activity with their transaction client; validates full bulk populations before any updates.",
+   "Scopes move targets to the project board, validates IDs and positions, and provides safe API body/error responses.",
+   "Adds eleven input and actual route/API regression cases, passing production build/lint and nine source-specific learning chapters with complete examples."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\12 Other Projects\\jdtrrain2.1",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "prisma"
+  ],
+  "slug": "jdtrrain2-1",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/2d739127d551",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/2d739127d551.json (spec: specs/2d739127d551.json)",
+  "course": "_Organized Desktop/12 Other Projects/jdtrrain2.1/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "9e1958f807df",
+  "name": "aiheartbeat",
+  "rel": "aiheartbeat",
+  "status": "delivered",
+  "tests": null,
+  "words": 4258,
+  "deliveredAt": "2026-09-12T19:11:12.083460+00:00",
+  "nfiles": 25,
+  "summary": [
+   "Guard direct workspace store callers with own-property collection allowlisting and positive safe-integer IDs before SQLite saves or deletes, preserving existing HTTP/Zod validation.",
+   "Add seeded rejection regressions and verify all three workspaces:505 tests, type checking and the Next webpack dashboard build pass.",
+   "Add nine source-grounded learning guides with complete practice examples, an import/export design exercise, exact original snapshots and captured verification evidence."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\aiheartbeat",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "aiheartbeat",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/9e1958f807df",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/9e1958f807df.json (spec: specs/9e1958f807df.json)",
+  "course": "aiheartbeat/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "077627a58eae",
+  "name": "buildbusinesses",
+  "rel": "buildbusinesses",
+  "status": "delivered",
+  "tests": 67,
+  "words": 5740,
+  "deliveredAt": "2026-09-09T22:17:35.539692+00:00",
+  "nfiles": 85,
+  "summary": [
+   "Separated business rules, schemas, form conversion, migration and browser storage from the UI; completed guarded CRUD for people, money, inventory, assets, daily logs, reminders and budgets.",
+   "Replaced localStorage autosave with validated IndexedDB transactions, post-commit acknowledgement, workspace identity/revision conflicts, retained drafts, reviewed replacements and recovery snapshots.",
+   "Added exact settlement history and cash/receivable/payable calculations, integer-scaled stock movements, reference and history guards, calendar recurrence, daily closing history, literal pagination and formula-safe exports.",
+   "Added reviewed legacy migration with explicit partial-payment reconciliation and preserved source text, nine detailed learning chapters, meaningful domain/storage/browser verification, reproducible setup and historical notices on the earlier curriculum."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\buildbusinesses",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "buildbusinesses",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/077627a58eae",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/077627a58eae.json (spec: specs/077627a58eae.json)",
+  "course": "buildbusinesses/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "52d78d4a92a2",
+  "name": "lucasrouter",
+  "rel": "lucasrouter",
+  "status": "delivered",
+  "tests": 222,
+  "words": 4783,
+  "deliveredAt": "2026-09-12T17:13:08.415229+00:00",
+  "nfiles": 20,
+  "summary": [
+   "Delivery actions sanitize runtime proof inputs, bound names and notes, validate structured image data URLs and retain the existing photo-storage budget.",
+   "Unknown failure reasons reject before mutation; valid failures store the same bounded note in the stop proof and activity event, preserving state/report consistency.",
+   "Tailwind scans application source explicitly, fixing the observed Windows dependency-path build error and avoiding unrelated snapshot/artifact class candidates; the default production build now passes.",
+   "Nine learning guides include real store/action traces, before-and-after code, executable exercise solutions, an exact original store snapshot and two reviewed production-browser screenshots."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\lucasrouter",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "next",
+   "node",
+   "ts"
+  ],
+  "slug": "lucasrouter",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/52d78d4a92a2",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/52d78d4a92a2.json (spec: specs/52d78d4a92a2.json)",
+  "course": "lucasrouter/astraupskill",
+  "batch": "B13"
+ },
+ {
+  "wave": 2,
+  "id": "5d5120e98c41",
+  "name": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "rel": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "status": "delivered",
+  "tests": 10,
+  "words": 4336,
+  "deliveredAt": "2026-09-12T20:33:18.791901+00:00",
+  "nfiles": 41,
+  "summary": [
+   "Close public registration privilege escalation by rejecting caller supplied roles at the strict Zod boundary and hardcoding READ_ONLY in the service, including direct callers and unique race handling.",
+   "Repair Express error transport with four argument middleware, safe malformed JSON/AppError/unexpected responses, and normalized access and refresh JWT claim validation.",
+   "Bind refresh records to their token subject, reject wrong owner, revoked, expired, and expiry-equal records, scope logout by user, and preserve active account checks and public response projection.",
+   "Add one actual Supertest/Vitest Prisma-mocked auth harness, exact original snapshots, finite backend/frontend/Prisma evidence, and a source-grounded nine chapter course."
+  ],
+  "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildCRMPYJS",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "prisma",
+   "ts"
+  ],
+  "slug": "buildcrmpyjs",
+  "backup": "AstraOrganized2/astra-remaining-improvements/backups/5d5120e98c41",
+  "evidence": "AstraOrganized2/astra-remaining-improvements/deliveries/5d5120e98c41.json (spec: specs/5d5120e98c41.json)",
+  "course": "_Organized Desktop/02 Build Projects/buildCRMPYJS/astraupskill",
+  "batch": "B13"
+ }
+]

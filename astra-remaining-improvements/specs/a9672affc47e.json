@@ -1,0 +1,47 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "astraupskill/images/desktop.png",
+    "astraupskill/images/narrow.png",
+    "package-lock.json",
+    "package.json",
+    "playwright.config.ts",
+    "src/App.tsx",
+    "src/components/LearningNotes.tsx",
+    "src/components/SavePanel.tsx",
+    "src/game/engine.test.ts",
+    "src/game/engine.ts",
+    "src/game/lab.ts",
+    "src/game/notes.ts",
+    "src/game/schema.ts",
+    "src/game/storage.test.ts",
+    "src/game/storage.ts",
+    "src/styles.css",
+    "src/types.ts",
+    "tests/learning.spec.ts"
+  ],
+  "summary": [
+    "Adds mission-linked learning-note CRUD, stable identities, search, pagination and confirmed deletion.",
+    "Separates mission drafts from accepted progress; saves and review evidence are adopted only after browser storage succeeds.",
+    "Validates nested and legacy saves, catalog relationships and four-MiB UTF-8 bounds; preserves corrupt raw data and failed proposals for export.",
+    "Coordinates cooperating tabs with Web Locks, snapshot revisions and reset epochs; stale editors retain their fields.",
+    "Guards prerequisites, canonical checkpoint rewards and due review ratings; retries failed catalog/mission requests and bounds worker execution/output.",
+    "Adds nine detailed CRUD learning documents, real-browser tests, corrected setup/save guidance and reviewed desktop/narrow screenshots.",
+    "Verifies 36 model tests, 12 Chromium scenarios, production build and the unchanged 334-mission archive."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/skillforge/results.json",
+    "expectedTests": 48,
+    "command": "npm test; npm run build; npm run verify:content; Playwright Chromium integration suite plus focused review/layout rerun",
+    "environment": "Node 22.16.0; React 19.2.8; TypeScript 7.0.2; Vite 8.2.2; Vitest 5.0.0; Playwright 1.60.0 / Chromium 148"
+  },
+  "limits": [
+    "Local browser storage only; no authenticated backend, SQL database, cross-device synchronization or protected grading.",
+    "Whole-document revisions intentionally reject unrelated concurrent edits; Web Locks require localhost/HTTPS and cooperating clients.",
+    "Manual backups; damaged raw exports and oversized pending exports may need manual recovery before import.",
+    "Checkpoints are self-reported; worker execution is not a security sandbox or automated correctness grader.",
+    "No deployment, power-loss, uncooperative-writer or full accessibility certification."
+  ]
+}

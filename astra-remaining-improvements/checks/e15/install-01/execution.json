@@ -1,0 +1,87 @@
+[
+  {
+    "name": "venv",
+    "command": [
+      "C:\\Python313\\python.exe",
+      "-m",
+      "venv",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv"
+    ],
+    "exitCode": 0,
+    "seconds": 395.07
+  },
+  {
+    "name": "dependencies",
+    "command": [
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "-r",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf\\requirements.lock"
+    ],
+    "exitCode": 0,
+    "seconds": 1077.43
+  },
+  {
+    "name": "editable",
+    "command": [
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "install",
+      "--disable-pip-version-check",
+      "--no-deps",
+      "-e",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf"
+    ],
+    "exitCode": 0,
+    "seconds": 643.16
+  },
+  {
+    "name": "dependency-check",
+    "command": [
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "check"
+    ],
+    "exitCode": 0,
+    "seconds": 29.86
+  },
+  {
+    "name": "wheel",
+    "command": [
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pip",
+      "wheel",
+      "--disable-pip-version-check",
+      "--no-deps",
+      "--wheel-dir",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\wheels",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\19110bf39fcf"
+    ],
+    "exitCode": 0,
+    "seconds": 473.48
+  },
+  {
+    "name": "smoke",
+    "command": [
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\.venv\\Scripts\\python.exe",
+      "-m",
+      "pytest",
+      "tests/test_contracts.py",
+      "tests/test_http_boundary.py",
+      "tests/test_reply_timers.py",
+      "-q",
+      "--basetemp",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\pytest-temp",
+      "--junitxml",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\e15\\install-01\\results.xml"
+    ],
+    "exitCode": 0,
+    "seconds": 154.3
+  }
+]

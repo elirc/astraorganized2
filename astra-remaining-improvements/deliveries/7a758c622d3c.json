@@ -1,0 +1,141 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww36",
+  "id": "7a758c622d3c",
+  "summary": [
+    "Prevent completion of active reservations at or after expiresAt",
+    "Keep release available as expired-hold cleanup",
+    "Add service regression coverage and CRUD upskill course"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7a758c622d3c/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww36",
+        "id": "7a758c622d3c",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-expiry.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7a758c622d3c",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:34:18.738450+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-runtime.log",
+        "pid": 31228,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:34:23.216371+00:00",
+        "elapsedSeconds": 4.47
+      }
+    ],
+    "limits": [
+      "Vitest command is unrun because npm registry tooling did not complete",
+      "Portable VM tests use explicit mocked repository/Prisma contracts and do not claim live PostgreSQL concurrency",
+      "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+    ]
+  },
+  "courseWords": 2497,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "src/services/reservationService.ts",
+      "before_sha256": "6dba9752b7b653f73cb26305a8d44d8e71af8241abd090d9a2a6eabab7b49bbf",
+      "after_sha256": "04df8f91312b0c30bd004390035c7b1575f7a85275128fbf3dd82a6abeae922f"
+    },
+    {
+      "file": "tests/reservation-service-transition.test.ts",
+      "before_sha256": "77dc06c118870dd0476f8e9eba4318580a7fa6d98824a443854351652c8a8e31",
+      "after_sha256": "2eec8ed479e909ae6c1799b248d5dfb475945d37093e53e096fc890f0cf0cff8"
+    },
+    {
+      "file": "tests/runtime-expiry.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "16b7ab32e82890843292773653e450c7de23806d3deda847bd449c5cd68dd368"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-reservationService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "6dba9752b7b653f73cb26305a8d44d8e71af8241abd090d9a2a6eabab7b49bbf"
+    },
+    {
+      "file": "astraupskill/snapshots/tests-reservation-service-transition.test.ts.before",
+      "before_sha256": null,
+      "after_sha256": "77dc06c118870dd0476f8e9eba4318580a7fa6d98824a443854351652c8a8e31"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "3cc12bf00776203b06cbcbd0ad0850c71b288d543b815b0bae664069dbb7362a"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "9cc829bbf60d22a6c49b05475e0c3b5f4a234fb2452262c262165452e2d971c1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e2724890f0edddceaa19bc6388c6fedc4f35d59ca807f9fd4c0835be1dff6162"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "8402208365ca5e4a85d37da597debece95a537effb804ebbe183fdeaba89ff00"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5f49009d170e33c089927ab46e5fc5781cbf075868b4683ed757ddbaec0b91eb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "61d73769d30b7281607f2eecf468c4c2847de1d9fa3126867b8ce3935b809ce5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "efa31d0c26a4ace55ce6736c3c94d344e1e4dcaed54f819f3946077c05e8e47a"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "abdac8e2e2bdb1dc384729e21cc53759331ab0c89c2adc9f812d79f810b80a78"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c20ac8208371aef7c7d9bc1ea4bf7b8fc2621d2e1c4421777249182947a96ac2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8bb7c6a00e58a9fab25397d806fdab69086c351ad6ed09e5d77eac152f5494f4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c16afbd516b51744d91a8e89d469fd04b171f9d24e0827569138a5cbe6b50260"
+    }
+  ],
+  "limits": [
+    "Vitest command is unrun because npm registry tooling did not complete",
+    "Portable VM tests use explicit mocked repository/Prisma contracts and do not claim live PostgreSQL concurrency",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:49:33.247278+00:00"
+}

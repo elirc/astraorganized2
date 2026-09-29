@@ -1,0 +1,24 @@
+{
+  "summary": [
+    "Make ticket references collision-resistant for concurrent creates while preserving the SUP- display prefix.",
+    "Add a production TicketService regression for consecutive creates and nine source-grounded CRUD chapters."
+  ],
+  "changedFiles": [
+    "src/server/modules/tickets/service.ts",
+    "src/server/modules/tickets/service.test.ts",
+    "tests/ticket-reference.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src__server__modules__tickets__service.ts.original.txt",
+    "astraupskill/evidence/astra-crud-b01-identifiers.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/snapshots/src__server__modules__tickets__service.test.ts.original.txt"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fdad4e87a703/results-crud-b01.json"
+  },
+  "limits": [
+    "Focused Vitest was blocked by an uncached dependency; no database or HTTP integration was run.",
+    "UUID uniqueness still relies on the database unique constraint for final enforcement."
+  ]
+}

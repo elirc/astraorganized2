@@ -1,0 +1,61 @@
+{
+  "summary": [
+    "Made SLA escalation deadline selection aware of first response completion and bounded escalation to one conditional claim per ticket.",
+    "Added deterministic rule selection, target validation, missing assignment target checks, compare-and-set writes, and a Prisma transaction that atomically claims escalation routing with its audit event.",
+    "Added fail-closed unknown-role behavior at helper and route boundaries, including inherited-key defenses, with twenty focused tests across seven files",
+    "Added nine portable source-grounded upskill chapters with complete transaction rollback and runtime permission examples."
+  ],
+  "changedFiles": [
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/README.md",
+    "astraupskill/VERIFICATION.md",
+    "astraupskill/snapshots/escalationService.ts.original.txt",
+    "astraupskill/snapshots/permissions.ts.original.txt",
+    "astraupskill/snapshots/ticketRepository.ts.original.txt",
+    "astraupskill/snapshots/ticketService.ts.original.txt",
+    "next-env.d.ts",
+    "package-lock.json",
+    "prisma/schema.prisma",
+    "prisma/seed.ts",
+    "src/app/api/auth/me/route.ts",
+    "src/app/api/rules/assignment/route.ts",
+    "src/app/api/rules/escalation/route.ts",
+    "src/app/api/slas/route.ts",
+    "src/app/api/tickets/[ticketId]/assign/route.ts",
+    "src/app/api/tickets/[ticketId]/comments/route.ts",
+    "src/app/api/tickets/[ticketId]/route.ts",
+    "src/app/api/tickets/route.ts",
+    "src/lib/auth/permissions.ts",
+    "src/lib/middleware/withAuth.ts",
+    "src/lib/middleware/withRole.ts",
+    "src/repositories/contracts.ts",
+    "src/repositories/ticketRepository.ts",
+    "src/services/escalationService.ts",
+    "src/services/ticketService.ts",
+    "src/tests/assignment-service.test.ts",
+    "src/tests/escalation-service.test.ts",
+    "src/tests/permissions.test.ts",
+    "src/tests/route-unknown-role.test.ts",
+    "tsconfig.json",
+    "vitest.config.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1c688787ace6/results.json",
+    "expectedTests": 20,
+    "testRecord": "checks/1c688787ace6/ww39-own-property-tests-20260913.json",
+    "typecheckRecord": "checks/1c688787ace6/ww39-own-property-typecheck-20260913.json",
+    "buildRecord": "checks/1c688787ace6/orchestration-build-role-final-20260913.json"
+  },
+  "limits": [
+    "Unit tests use repository fakes and do not prove PostgreSQL transaction isolation, crash durability, or cross-process locking.",
+    "The schema stores one escalatedAt timestamp, so escalation is intentionally bounded to one claim per ticket.",
+    "No live cron route or user database is used by the checks."
+  ]
+}

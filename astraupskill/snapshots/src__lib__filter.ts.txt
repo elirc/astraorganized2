@@ -1,0 +1,19 @@
+export type BoardFilterState = {
+  query: string;
+  assignee: string;
+  label: string;
+  status: "all" | "done" | "open";
+  dueBefore?: string;
+  dueAfter?: string;
+};
+
+export function applyBoardFilters<T extends { title: string; description: string | null }>(
+  cards: T[],
+  filter: BoardFilterState
+) {
+  const q = filter.query.trim().toLowerCase();
+  return cards.filter((card) => {
+    if (q && !`${card.title} ${card.description ?? ""}`.toLowerCase().includes(q)) return false;
+    return true;
+  });
+}

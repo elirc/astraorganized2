@@ -1,0 +1,222 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netvg",
+  "id": "9e7b2d32e0fb",
+  "summary": [
+    "Rejects malformed quote requests and undefined employment types at the application boundary, normalizes country and currency codes, and safely rounds and checks decimal arithmetic.",
+    "Stops quote creation from synthesizing client side success after backend rejection or outage; parses ProblemDetails and gives QuoteBuilder accessible error, retry, loading, and stale quote behavior.",
+    "Adds focused calculator regression tests for rejection, normalization, rounding, and copied requirements, plus nine substantive astraupskill chapters tracing the real request flow.",
+    "Repairs API restore by selecting patched Microsoft.OpenApi 2.7.5 without suppressing warnings; final API and web builds pass."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/9e7b2d32e0fb/results.json",
+    "expectedTests": 17
+  },
+  "testResults": {
+    "passed": true,
+    "total": 17,
+    "tests": 17,
+    "failed": 0,
+    "checks": [
+      "root-restore-01",
+      "root-dotnet-test-02",
+      "root-request-tests-01",
+      "root-web-build-03",
+      "root-api-build-02"
+    ],
+    "scope": "14 application xUnit cases (13 calculator and one dashboard), three actual RequestGate Node cases using deferred promises; API Release and web builds passed. No mounted React or HTTP integration test."
+  },
+  "courseWords": 3986,
+  "courseFiles": 9,
+  "courseLinksChecked": 40,
+  "files": [
+    {
+      "file": "Directory.Packages.props",
+      "before_sha256": "ae72cb46c9d95e1a6a4ac339b1157fac20270977b5269c30e02b347b1e339c84",
+      "after_sha256": "380fde4e9751a182ffa975715ac46cd6945f94a9e9e81841aaaa2ecf7562ba99"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "8bfe59f821d722b32e8355dd848eb8ba78b8c089e651fff328db09d28dfbb399",
+      "after_sha256": "281c5655f876e1627d4c6567239290e4e99f9d6bdfae33ada19a11ce5731c653"
+    },
+    {
+      "file": "src/PeblClone.Api/PeblClone.Api.csproj",
+      "before_sha256": "8853fe0bb813b37391b435426a5a1f505cba8cb5f170afbb50461707fb39ed90",
+      "after_sha256": "87daa6a5f424ba306c70c160767cbca2a5833a2d48975b43040c13a9fe99d887"
+    },
+    {
+      "file": "src/PeblClone.Application/Workforce/HiringQuoteCalculator.cs",
+      "before_sha256": "d1a83709fb06251ff5390923ab0fd4cb4a1e03fb03d5df8cc0edf350b3564a49",
+      "after_sha256": "3d9cc66f9e9fec5b94c6e57394355963f561ed8c11374dab1575694a01aa5942"
+    },
+    {
+      "file": "src/PeblClone.Web/src/features/QuoteBuilder.tsx",
+      "before_sha256": "03f9180ff936370150fa5e640eb5d5c48448de3fef51e0e39e285e0844fe83a9",
+      "after_sha256": "be92b14f6f263f3cb50d5417d9efcebbcb9aa87a838a5d28fec080a7f0b722a5"
+    },
+    {
+      "file": "src/PeblClone.Web/src/services/workforceApi.ts",
+      "before_sha256": "2a476faf599e2da2fdaa1f9ac58f08a60599f5a67e32e1ed454ef1fc62b1401d",
+      "after_sha256": "f42af33773bae46d9686610da86068a80bfa6a3fa3465f05dd57193feb9c5149"
+    },
+    {
+      "file": "tests/PeblClone.Application.Tests/HiringQuoteCalculatorTests.cs",
+      "before_sha256": "73819ce76554c55d797f3165ca50eac794d0946b54165dcae78c9b706b9f716d",
+      "after_sha256": "fd41910ca5733f13e78ae545e3fc2d74e3dafc58da2d447885541e347c0ffcca"
+    },
+    {
+      "file": "src/PeblClone.Web/src/services/requestGate.ts",
+      "before_sha256": null,
+      "after_sha256": "600e109ff5862b744f8ea816c19fe4340029a735065b121c044f963fef8afcf1"
+    },
+    {
+      "file": "src/PeblClone.Web/tests/request-gate.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "175d1a32eb16306cb215dbc3c27f22b500004183d93477591fb130cbb9a2d477"
+    },
+    {
+      "file": "astraupskill/snapshots/Directory.Packages.props.before.txt",
+      "before_sha256": null,
+      "after_sha256": "ae72cb46c9d95e1a6a4ac339b1157fac20270977b5269c30e02b347b1e339c84"
+    },
+    {
+      "file": "astraupskill/snapshots/HiringQuoteCalculator-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d1a83709fb06251ff5390923ab0fd4cb4a1e03fb03d5df8cc0edf350b3564a49"
+    },
+    {
+      "file": "astraupskill/snapshots/HiringQuoteCalculatorTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "73819ce76554c55d797f3165ca50eac794d0946b54165dcae78c9b706b9f716d"
+    },
+    {
+      "file": "astraupskill/snapshots/QuoteBuilder-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "03f9180ff936370150fa5e640eb5d5c48448de3fef51e0e39e285e0844fe83a9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__PeblClone.Api__PeblClone.Api.csproj.before.txt",
+      "before_sha256": null,
+      "after_sha256": "8853fe0bb813b37391b435426a5a1f505cba8cb5f170afbb50461707fb39ed90"
+    },
+    {
+      "file": "astraupskill/snapshots/workforceApi-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "2a476faf599e2da2fdaa1f9ac58f08a60599f5a67e32e1ed454ef1fc62b1401d"
+    },
+    {
+      "file": "astraupskill/evidence/application-tests.trx",
+      "before_sha256": null,
+      "after_sha256": "ae11b210837cfb39ab629d3a56b6d7e621263e1af9cb33cc500f4d799b871f40"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "c220b694d2f189f4aef1c1e067023d245d4f44200f1cae4bea7b3b67c2e34bef"
+    },
+    {
+      "file": "astraupskill/evidence/root-api-build-02.json",
+      "before_sha256": null,
+      "after_sha256": "874ca09982cbbb1b9b2ec0dfd3d04e786fec3f78aa19656eb1dc8e18bc7bc78a"
+    },
+    {
+      "file": "astraupskill/evidence/root-api-build-02.log",
+      "before_sha256": null,
+      "after_sha256": "2bb4de2509282c5fc5641360dec488795781af9478758c4097ae024dfd4b6990"
+    },
+    {
+      "file": "astraupskill/evidence/root-dotnet-test-02.json",
+      "before_sha256": null,
+      "after_sha256": "230f056c52fec3cbfa83628e78c71f5328f592e6c2aa80366e36635b86da6f67"
+    },
+    {
+      "file": "astraupskill/evidence/root-dotnet-test-02.log",
+      "before_sha256": null,
+      "after_sha256": "8d2de96240df20969b3d2069b8e58330981c188f5c8cdcd094f8e524e3b6ab84"
+    },
+    {
+      "file": "astraupskill/evidence/root-request-tests-01.json",
+      "before_sha256": null,
+      "after_sha256": "7428f2a1f48ac27b5a7f95236d3db8df9aa0b2779339a2e58e4643eb7d9a5c06"
+    },
+    {
+      "file": "astraupskill/evidence/root-request-tests-01.log",
+      "before_sha256": null,
+      "after_sha256": "023da6a966617bebebf02ca5642a742926069c4105426a1c83a40118a0a7559f"
+    },
+    {
+      "file": "astraupskill/evidence/root-restore-01.json",
+      "before_sha256": null,
+      "after_sha256": "025037778a78e494f460f1226d86cf00e96c4977de7d19abba777052883c0308"
+    },
+    {
+      "file": "astraupskill/evidence/root-restore-01.log",
+      "before_sha256": null,
+      "after_sha256": "37b0a2ba391e0851db7bc47d4bf51682c487de86710c7f3b472f36df355a0c01"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-build-03.json",
+      "before_sha256": null,
+      "after_sha256": "110422a1d6e9325740bf639a9380b9bad2847462079998a8431fc20b890d7bbf"
+    },
+    {
+      "file": "astraupskill/evidence/root-web-build-03.log",
+      "before_sha256": null,
+      "after_sha256": "634c3a814683b0ac408ae86290344cc544ae90b1f703febc09e6ba0698477442"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6e334d19b19b4a1b82604e6e829c2c1710310cc342b3277b8b43f39d876523c1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e8c6cd5f4b09291beb6d89073152a2600e8dbbd4c282bb6f2eef563e0cacb458"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b7fd914ecd507ceb0cd280211d388c4c806f5f3244cee0672f27587953bec382"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "f0638e418489306f419f2c2544abe77f8ebdb1b7e2802cdc724461b5d631a31c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "eae3c0a6ebc24e0965fe7edf9ca5228e08db05ff5f1459595bdf3ee0897cbbd5"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7d3d8dd782246375dd7230de2ff831329bc5dea4d27b8c6f1f189c348273632e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "71365cc13d7d93f5e3b767b92a2d134a565ff62feb09134fe77ca2650187fe81"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "57850203109fc76d20ebfcb7e45fed020b6a2f7947a0df06bf3122f496aec7e8"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "31a29ee8d843080d31b4da34e1f0f60c2b8bd87dccb2433a6ae0d71412549e43"
+    }
+  ],
+  "limits": [
+    "Country profiles, pricing rates and currency labels are synthetic; no currency conversion or payroll/compliance verification.",
+    "No authentication, quote persistence, database, audit log or external provider is added. Dashboard retains its labeled mock fallback.",
+    "The three Node tests exercise the real request gate with deferred promises, not mounted React; endpoint HTTP behavior and browser interactions remain source-reviewed.",
+    "Decimal costs are rounded to two places but compensation and total retain submitted precision. Current arithmetic case is not a midpoint-specific rounding test; cancellation and duplicate-profile invariants are untested extensions."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T23:08:26.840168+00:00"
+}

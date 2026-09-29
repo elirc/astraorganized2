@@ -1,0 +1,33 @@
+{
+  "id": "2cdf30cead55",
+  "approved": true,
+  "reviewedAt": "2026-09-22T01:46:02.090969+00:00",
+  "sourceReview": "Reviewed six AppDataContext update callbacks, helper and exact baseline, plus all six form error paths including the nested feed-usage catch. Existence guard runs before save/state; duplicate ids retain original all-match replacement semantics. No storage concurrency guarantee.",
+  "teachingReview": "Reviewed nine chapters and corrected duplicate-id behavior, shallow immutability, async rejection, three-test count and stale-closure limits. Distinguishes source-inspected context/form behavior from executed helper behavior.",
+  "testReview": "Independently ran three actual TypeScript helper tests with frozen input records, new array and unchanged-neighbor identity, missing and empty collections, and duplicate-id compatibility. No React, AsyncStorage or full package-suite claim.",
+  "specSHA256": "6e3a49887d07fc91144998915c560d7c04eeabe38efb4d199062727122369081",
+  "fileHashes": {
+    "src/context/AppDataContext.tsx": "03d855e8e2f636b9267a6328f95a16931f46a2d0dbc32efb6b30f969602b557b",
+    "src/utils/collection.ts": "468f44ae5cd91a498d8273e83efab22e37c5dbf783bc9121e233d740e759f347",
+    "tests/collection-runtime.test.mjs": "771f6846bfc5b4ced927ab86c245e3f2fef2c93658bc0cd2d20158ed887ce818",
+    "astraupskill/snapshots/src/context/AppDataContext.tsx": "155762b26e9cd3a1277cb32ca22d3809be4d9ef27b1b098c617007af4c321001",
+    "tests/collection.test.ts": "b682f97b25f27af236dc3b60ba1cc00d80666e3347af5022f5b6506e969a9bd8",
+    "astraupskill/evidence/crud-b03-astra-runtime.log": "a501f4efba2edd27ba3773b22dcf45b868dd0ad14fbac92171c7c3e4b9180206",
+    "astraupskill/evidence/results.json": "1a5b248208fb873e2a0f9061ec903ad2adfd6d444e6b82c9ef0abc4c7b66c380",
+    "astraupskill/README.md": "8487551c054a85267fb94dc02fc62b35087330eb52e215c76a87abc0e1411f02",
+    "astraupskill/01-CODEBASE-MAP.md": "4abb38ea6eee175eefa840908e37a2a608014a2d69e9842dd277720a247f76ce",
+    "astraupskill/02-CONCEPTS.md": "aa3f015d66ae9284c7982f3c2c5200a72400e6ed77e984b87b24e37d3f73ea1c",
+    "astraupskill/03-WORKED-CHANGE.md": "203c86526c6304bfb21c423654604a014cc83326ce4fc4235cc6b87e8486e2db",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "8056ebec4ae6f983aab4a090c4d66ee4dd1f7d0102f6dd31edb77174bf0e1e02",
+    "astraupskill/05-PRACTICE.md": "3795cf3eddaafc76283c476e860bbd565b485edca797f33f338b527973732493",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "1766a9af831e9f37391b7874b59afd2557bd3fa7ed0ca9a2fe7dc2c38fde2d92",
+    "astraupskill/07-TRACE-LAB.md": "e48752144c38b2e2006361d1f7cf4885c60ce17fefe10970eacf37d26465c62f",
+    "astraupskill/VERIFICATION.md": "024f6fabab58754637805f13fde479acc2e15b7b821ee2b61e92443d49564fad"
+  },
+  "evidenceHashes": {
+    "checks/2cdf30cead55/astra-crud-b03-masterrnative.log": "a994b834f73112728b7efc8912f7b817d7a8cf2e0e9c41f1fc963a5df22b167f",
+    "checks/2cdf30cead55/crud-b03-astra-runtime.json": "2ff46c345fc5b89c83c46443c52e89ddb5f7d5ca0c0228be83ce2028803ac220",
+    "checks/2cdf30cead55/crud-b03-astra-runtime.log": "a501f4efba2edd27ba3773b22dcf45b868dd0ad14fbac92171c7c3e4b9180206",
+    "checks/2cdf30cead55/results-crud-b03.json": "1a5b248208fb873e2a0f9061ec903ad2adfd6d444e6b82c9ef0abc4c7b66c380"
+  }
+}

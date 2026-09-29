@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+  "id": "2f29156b71ed",
+  "command": [
+    "npm.cmd",
+    "install",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T17:50:16.020328+00:00",
+  "status": "complete",
+  "log": "resume14-install-01.log",
+  "pid": 7696,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T17:52:11.595760+00:00",
+  "elapsedSeconds": 115.57
+}

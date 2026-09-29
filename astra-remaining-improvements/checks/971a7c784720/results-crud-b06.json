@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww26",
+      "id": "971a7c784720",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-lock-coordinator-lab.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\971a7c784720",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:26:47.224028+00:00",
+      "status": "complete",
+      "log": "crud-b06-astra-runtime.log",
+      "pid": 15792,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:26:52.447210+00:00",
+      "elapsedSeconds": 5.22
+    }
+  ],
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No live provider, FOR UPDATE, route, concurrent worker, or rollback execution.",
+    "Normal project typecheck and provider-backed tests remain follow-up checks.",
+    "Authorization and ApiError execute from actual source; repository/transaction adapters do not establish row locking or isolation."
+  ]
+}

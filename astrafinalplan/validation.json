@@ -1,0 +1,37 @@
+{
+  "valid": true,
+  "root_records": 389,
+  "organized_records": 202,
+  "nested_apps": 75,
+  "total_individual_plans": 464,
+  "sections": {
+    "1": {
+      "file": "01-foundations-and-learning-content.md",
+      "root_records": 48,
+      "nested_apps": 0
+    },
+    "2": {
+      "file": "02-client-apps-and-apis.md",
+      "root_records": 40,
+      "nested_apps": 5
+    },
+    "3": {
+      "file": "03-full-stack-workflows.md",
+      "root_records": 66,
+      "nested_apps": 18
+    },
+    "4": {
+      "file": "04-domain-rules-and-reliability.md",
+      "root_records": 86,
+      "nested_apps": 37
+    },
+    "5": {
+      "file": "05-architecture-and-specializations.md",
+      "root_records": 149,
+      "nested_apps": 15
+    }
+  },
+  "local_links_checked": 2487,
+  "errors": [],
+  "source_app_runtime_checks": "not performed; this deliverable is a plan"
+}

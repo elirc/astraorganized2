@@ -1,0 +1,31 @@
+{
+  "passed": false,
+  "checks": [
+    "fresh CLI setup and repeat-setup refusal preserve database bytes",
+    "actual Next HTTP authorization origin and workspace boundaries",
+    "browser owner sign-in and initial accepted workspace",
+    "page edit accepted through UI and real SQLite",
+    "reload requires token again and reads persisted content",
+    "typed number zero and checkbox false survive accepted save",
+    "new record and numeric sort render through stored view settings",
+    "board and calendar retain unassigned and undated records",
+    "authenticated accepted Markdown download includes table content",
+    "record and referenced property deletion persist with view cleanup",
+    "snapshot capture and restore preserve actual page content",
+    "snapshot deletion removes history without deleting page",
+    "real two-tab stale write refused with local draft retained",
+    "one tab acceptance does not clear another tab retained IndexedDB draft",
+    "explicit three-way conflict choice saved against latest revision",
+    "sign-out preserves a saved draft that has not been reviewed",
+    "simulated network failure retained in real IndexedDB across sign-out and reviewed recovery",
+    "authenticated Markdown import creates code block and selects new page",
+    "comment creation and editing persist through the UI",
+    "comment replies and resolution persist",
+    "block deletion removes dependent thread and comments",
+    "page trash and restore persist and restore active selection"
+  ],
+  "count": 22,
+  "error": "'charmap' codec can't decode byte 0x8f in position 786: character maps to <undefined>",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\jstrain23\\browser_check.py\", line 106, in <module>\n    event.value.save_as(str(out/'accepted.json'));exported=json.loads((out/'accepted.json').read_text());assert 'state' in exported;assert token not in json.dumps(exported);passed('accepted JSON export excludes owner credential')\n                                                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Python313\\Lib\\pathlib\\_local.py\", line 546, in read_text\n    return PathBase.read_text(self, encoding, errors, newline)\n           ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python313\\Lib\\pathlib\\_abc.py\", line 633, in read_text\n    return f.read()\n           ~~~~~~^^\n  File \"C:\\Python313\\Lib\\encodings\\cp1252.py\", line 23, in decode\n    return codecs.charmap_decode(input,self.errors,decoding_table)[0]\n           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nUnicodeDecodeError: 'charmap' codec can't decode byte 0x8f in position 786: character maps to <undefined>\n",
+  "pageErrors": []
+}

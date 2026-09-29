@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antihelpdesk",
+  "id": "859e461c9fd8",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/permissions-errors.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\859e461c9fd8",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:40:49.683428+00:00",
+  "status": "complete",
+  "log": "crud-b08-astra-runtime.log",
+  "pid": 37592,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:40:57.634667+00:00",
+  "elapsedSeconds": 7.95
+}

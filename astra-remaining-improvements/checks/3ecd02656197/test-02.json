@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z7",
+  "id": "3ecd02656197",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--reporter=verbose"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3ecd02656197",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:01:02.300847+00:00",
+  "status": "complete",
+  "log": "test-02.log",
+  "pid": 14976,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T22:02:15.724722+00:00",
+  "elapsedSeconds": 73.42
+}

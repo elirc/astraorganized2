@@ -1,0 +1,26 @@
+{
+  "project": "missioncontrol",
+  "id": "ee8b0b1a6855",
+  "command": [
+    "dotnet",
+    "test",
+    "FleetCommand.slnx",
+    "--no-restore",
+    "--configuration",
+    "Release",
+    "--logger",
+    "trx",
+    "--results-directory",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\missioncontrol\\tests-07"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ee8b0b1a6855",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:31:01.814310+00:00",
+  "status": "complete",
+  "log": "tests-07.log",
+  "pid": 16328,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T19:32:27.626423+00:00",
+  "elapsedSeconds": 85.81
+}

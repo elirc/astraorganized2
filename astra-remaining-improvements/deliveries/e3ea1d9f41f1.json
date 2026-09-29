@@ -1,0 +1,120 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww10",
+  "id": "e3ea1d9f41f1",
+  "summary": [
+    "Preserve production reconciliation and add an eight-case actual-source decision-table lab.",
+    "Teach lifecycle precedence, verification completeness, condition regression and disbursement gating without claiming persistence guarantees."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e3ea1d9f41f1/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 8,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww10",
+        "id": "e3ea1d9f41f1",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-workflow-reconciliation-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e3ea1d9f41f1",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:02:30.877040+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 30976,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:02:36.099472+00:00",
+        "elapsedSeconds": 5.19
+      }
+    ],
+    "limits": [
+      "Eight Node cases execute actual pure reconciler and disbursement guard without dependency doubles. No Prisma, Next, transaction, authorization or provider callback execution.",
+      "Stage regression to CONDITIONS is domain behavior, not database rollback. Pending and referred decisions explicitly select CREDIT_DECISIONING rather than generic current-stage fallthrough.",
+      "Local Next.js guides absent after cleanup; no framework code was changed. Full application typecheck and command integration remain unexecuted."
+    ]
+  },
+  "courseWords": 1786,
+  "courseFiles": 9,
+  "courseLinksChecked": 13,
+  "files": [
+    {
+      "file": "tests/runtime-workflow-reconciliation-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "3322b13de71b5ecacd43ec03515b022e1e50f28c029920d97579ccb4f70153b0"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "7dc44a7670ab3cbc4557104da32898b53fcb8acc88a803a37023296caf618235"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "b81ebb6cf5f9e00ed038a0e1203ea6c608dccd0fa2b9c7b28df1911a5dbbe87b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "1ca82234bad2863c5df3eecc8649b101c735d8ab1f3d7ff47100120ccd737daf"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b2c7d29586e2ee2d9385985ca047e0d11e1d4e058b55b673fe02ef1349d76ebf"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "70755b190e7aecb0044820075c024b746a8f0cc7f77f0ac4561b6b44dcfc522e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "fafa3b9038ecde95efdcc4a92f88f375c0ccb5aae88ba699937560279fe53362"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6ca2a4358210c6b09852db8d994ec41ba9467ca45718f594e22eb9d1091d1942"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "6cf0bd6774538522c730f917b7a7ef5e8e20a4d2d495f090a8a3417806739e6f"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "179e312942578947b7b4f47b9e34d8726dfd63324047b0f4ae6bfba1fa8db731"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "604568bf3da1ee5c96819da200e87200c7f714fc61a171e917128faefbe36e9c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1a28890e24d43af68539898c495c9760ddcd75e8b14b6d990d9055e706564f16"
+    }
+  ],
+  "limits": [
+    "Eight Node cases execute actual pure reconciler and disbursement guard without dependency doubles. No Prisma, Next, transaction, authorization or provider callback execution.",
+    "Stage regression to CONDITIONS is domain behavior, not database rollback. Pending and referred decisions explicitly select CREDIT_DECISIONING rather than generic current-stage fallthrough.",
+    "Local Next.js guides absent after cleanup; no framework code was changed. Full application typecheck and command integration remain unexecuted."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:05:11.675960+00:00"
+}

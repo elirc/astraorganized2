@@ -1,0 +1,12 @@
+{
+  "command": [
+    "dotnet",
+    "build",
+    "verification/BackendChecks/BackendChecks.csproj",
+    "--disable-build-servers",
+    "-m:1",
+    "-p:UseSharedCompilation=false"
+  ],
+  "exitCode": 1,
+  "seconds": 174.75
+}

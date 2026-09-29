@@ -1,0 +1,59 @@
+{
+  "summary": [
+    "Issue creation validates domain values and team-owned references before reserving numbers; counter overflow and rejected mutators preserve prior state.",
+    "Explicit stale versions and real PostgreSQL xmin save conflicts produce typed HTTP 409, while unexpected exception details are hidden behind generic HTTP 500 responses.",
+    "Production EF mapping ignores duplicate public collection views and declares domain-generated IDs, fixing model startup and insertion of newly appended activity records while retaining xmin and team/key uniqueness.",
+    "Notification events clear only after successful enqueue; tests demonstrate that enqueue failure after commit retains the event but is not durable delivery.",
+    "All 14 .NET tests pass against a disposable PostgreSQL server, including actual two-context concurrency and API health. The React TypeScript/Vite production build passes.",
+    "Nine rewritten source-based learning guides, a PostgreSQL test helper, exact before snapshots and portable verification evidence are included."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/evidence/resume14-postgres-tests-04.json",
+    "astraupskill/evidence/resume14-postgres-tests-04.log",
+    "astraupskill/evidence/resume14-restore-01.json",
+    "astraupskill/evidence/resume14-restore-01.log",
+    "astraupskill/evidence/resume14-web-build-01.json",
+    "astraupskill/evidence/resume14-web-build-01.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Api__Program.cs.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Application__Issues__ChangeIssueStateCommand.cs.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Application__Issues__CreateIssueCommand.cs.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Domain__Issues__Issue.cs.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Domain__Organizations__Team.cs.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Infrastructure__NetLinear.Infrastructure.csproj.original.txt",
+    "astraupskill/snapshots/src__NetLinear.Infrastructure__Persistence__AppDbContext.cs.original.txt",
+    "astraupskill/snapshots/tests__NetLinear.Tests__ApiSmokeTests.cs.original.txt",
+    "astraupskill/snapshots/tests__NetLinear.Tests__IssueDomainTests.cs.original.txt",
+    "astraupskill/snapshots/tests__NetLinear.Tests__NetLinear.Tests.csproj.original.txt",
+    "scripts/test-local.py",
+    "src/NetLinear.Api/Program.cs",
+    "src/NetLinear.Api/Services/ApiExceptionMapper.cs",
+    "src/NetLinear.Application/Common/ConcurrencyConflictException.cs",
+    "src/NetLinear.Application/Issues/ChangeIssueStateCommand.cs",
+    "src/NetLinear.Application/Issues/CreateIssueCommand.cs",
+    "src/NetLinear.Domain/Issues/Issue.cs",
+    "src/NetLinear.Domain/Organizations/Team.cs",
+    "src/NetLinear.Infrastructure/NetLinear.Infrastructure.csproj",
+    "src/NetLinear.Infrastructure/Persistence/AppDbContext.cs",
+    "tests/NetLinear.Tests/ApiExceptionTests.cs",
+    "tests/NetLinear.Tests/ApiSmokeTests.cs",
+    "tests/NetLinear.Tests/IssueDomainTests.cs",
+    "tests/NetLinear.Tests/IssueHandlerRegressionTests.cs",
+    "tests/NetLinear.Tests/NetLinear.Tests.csproj",
+    "tests/NetLinear.Tests/PostgresFixture.cs",
+    "tests/NetLinear.Tests/Usings.cs"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b2f277b889f9/resume14-results.json",
+    "expectedTests": 14,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "limits": [
+    "Notification delivery remains in memory after commit; crash loss and partial-enqueue duplication require a future durable outbox.",
+    "The health smoke test and direct mapper tests do not constitute complete authenticated browser end-to-end coverage.",
+    "Existing development login, demonstration seed identities and future product backlog remain as documented in the project README."
+  ]
+}

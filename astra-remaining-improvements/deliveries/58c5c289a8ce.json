@@ -1,0 +1,799 @@
+{
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+  "id": "58c5c289a8ce",
+  "summary": [
+    "Reworked the existing Next/SQLite knowledge workspace with explicit owner setup/adoption, loopback request boundaries, bearer authorization, strict relational JSON validation and atomic revision-checked writes.",
+    "Integrated accepted-state save status, generation-aware autosave, independent retained drafts for each editing session, explicit saved-draft recovery and three-way conflict review; cross-tab notices no longer overwrite drafts.",
+    "Improved page/subtree, block and comment CRUD; typed database records, property cleanup, filters/sorts and usable table/board/calendar/list/gallery views; authenticated exports and fenced-code Markdown import.",
+    "Added paginated snapshot inspection, restore and deletion; restored content preserves current hierarchy and visibility labels. Updated Next and its lint package to 16.3.3 and removed seven unused direct dependencies.",
+    "Added nine detailed junior-to-mid-level CRUD learning guides with worked examples, source traces, failure labs, exercises and review outlines; preserved 46 original text files and marked older learning notes as historical. Verified 97 Node tests and 25 browser/HTTP/setup workflow groups, plus build and lint."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/jstrain23/results.json",
+    "expectedTests": 122
+  },
+  "testResults": {
+    "passed": true,
+    "date": "2026-09-12T10:44:04.585605+00:00",
+    "project": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+    "distinctChecks": 122,
+    "nodeTests": 97,
+    "browserWorkflowGroups": 25,
+    "countsNote": "Node tests plus the enumerated browser/HTTP/setup workflow groups. Repeated and failed runs are not counted again. Build and lint are additional checks.",
+    "node": {
+      "command": [
+        "node",
+        "--test",
+        "test\\api.test.mjs",
+        "test\\client.test.mjs",
+        "test\\database.test.mjs",
+        "test\\markdown.test.mjs",
+        "test\\merge.test.mjs",
+        "test\\mutations.test.mjs",
+        "test\\repository.test.mjs",
+        "test\\schema.test.mjs",
+        "test\\session.test.mjs",
+        "test\\store.test.mjs"
+      ],
+      "exitCode": 0,
+      "seconds": 8.05
+    },
+    "lint": {
+      "command": [
+        "node",
+        "node_modules/eslint/bin/eslint.js",
+        "src",
+        "scripts",
+        "test"
+      ],
+      "exitCode": 0,
+      "seconds": 114.35
+    },
+    "build": {
+      "command": [
+        "node",
+        "node_modules/next/dist/bin/next",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 49.05
+    },
+    "browser": {
+      "passed": true,
+      "checks": [
+        "fresh CLI setup and repeat-setup refusal preserve database bytes",
+        "actual Next HTTP authorization origin and workspace boundaries",
+        "browser owner sign-in and initial accepted workspace",
+        "page edit accepted through UI and real SQLite",
+        "reload requires token again and reads persisted content",
+        "typed number zero and checkbox false survive accepted save",
+        "new record and numeric sort render through stored view settings",
+        "board and calendar retain unassigned and undated records",
+        "authenticated accepted Markdown download includes table content",
+        "record and referenced property deletion persist with view cleanup",
+        "snapshot capture and restore preserve actual page content",
+        "snapshot deletion removes history without deleting page",
+        "real two-tab stale write refused with local draft retained",
+        "one tab acceptance does not clear another tab retained IndexedDB draft",
+        "explicit three-way conflict choice saved against latest revision",
+        "sign-out preserves a saved draft that has not been reviewed",
+        "simulated network failure retained in real IndexedDB across sign-out and reviewed recovery",
+        "authenticated Markdown import creates code block and selects new page",
+        "comment creation and editing persist through the UI",
+        "comment replies and resolution persist",
+        "block deletion removes dependent thread and comments",
+        "page trash and restore persist and restore active selection",
+        "accepted JSON export excludes owner credential",
+        "390-pixel layout stays within viewport width",
+        "browser workflow has no uncaught page errors"
+      ],
+      "count": 25,
+      "browser": "Chromium via Python Playwright",
+      "server": "Next production server with real temporary SQLite",
+      "limits": [
+        "One network failure was deliberately simulated by aborting a browser route.",
+        "No original database or private user content was opened."
+      ],
+      "screenshots": [
+        "workspace-desktop.png",
+        "workspace-mobile.png"
+      ]
+    },
+    "screenshots": [
+      {
+        "file": "images/workspace-desktop.png",
+        "sha256": "df892826c1450acee3470d2a21dcc4437b3897ca7f3cbcfa89843011a87b9613",
+        "visuallyReviewed": true
+      },
+      {
+        "file": "images/workspace-mobile.png",
+        "sha256": "a7e98d9fc7c594e41459421125d36ee10f006f6b8e5633b88c5cfb051e7c0576",
+        "visuallyReviewed": true
+      }
+    ],
+    "limits": [
+      "Local single-owner workspace; visibility labels are metadata, and presence is limited to same-origin tabs.",
+      "No durable operation receipts, account recovery, encrypted browser draft storage or general JSON restore UI.",
+      "Bounded whole-document JSON model, rolling server activity and bounded snapshots; standard duplicate-key JSON parsing remains.",
+      "Legacy adoption is explicit, validates accepted content and preserves legacy tables; incompatible existing data requires deliberate investigation, not automatic repair.",
+      "Markdown import/export covers a block subset and table text, not a lossless workspace round trip.",
+      "Chromium desktop/mobile checks on Windows; not all browsers, operating systems or assistive technologies. One network failure is deliberately simulated.",
+      "Fresh database setup and installed lock consistency verified; no separate full clean-copy dependency installation was performed after the version update.",
+      "Original user database was not opened, migrated or replaced during this delivery."
+    ],
+    "sourceHashes": {
+      "src/app/favicon.ico": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932",
+      "src/app/globals.css": "dcadd694d13f647a276ca2e1443816761b5d63a0548de7cf6131a3eacd7175c3",
+      "src/app/layout.js": "de7d3f8445b0f3fe56385ddc7c11638df210b08a17e52f95403875a44db87b28",
+      "src/app/page.js": "e505f52484a11b56a5abd5bb53729119695a2254a69ca2a8755b86ba68dd023b",
+      "src/components/DatabaseBlock.js": "2a6d1344236754261a8574447927de732705c19ff89d480faceff35cac571cbb",
+      "src/components/useWorkspaceConnection.js": "8ff4b5dff4223c19c74c3dcac895edef6f63fc14c2747408ecde3febda326912",
+      "src/components/WorkspaceApp.js": "69f10aa460ddd6344e5f3b018f2b43e797cc6a77f48951a547ce2c76a61d788d",
+      "src/lib/databaseModel.mjs": "ef687e60151dfc28188809edb0179cec0aee6884f388d4e4bf3e8030ff8a29fa",
+      "src/lib/defaultWorkspace.js": "bed7a605391908e8f8b368ad9096a03925a71e1aedfa89d78b862709849e0bfb",
+      "src/lib/httpRoute.js": "2c0ba6b4cf0c4a48a0e6fcd845cef33fd064e73c290be2f82cae1d23ede474c8",
+      "src/lib/markdown.js": "139b6f53d7cd98a5ea8bdb5355283c321327f297b599a75aca0d5d7a1fa45dbb",
+      "src/lib/mergeWorkspace.mjs": "4c34cdcc42791fbd5252e83a173ae1d86239104e6d741821cd060e58c0258ec4",
+      "src/lib/offlineStore.js": "a8fc4d80fc330820bde10f6341924feee2d937af032f5c70b0a5d572bab7df9e",
+      "src/lib/sqlite.js": "b8cd0ab1405dd8288aaecaa36d268eb56c0a942f911a3dc4015cbc0f4d692c2b",
+      "src/lib/workspaceApi.mjs": "9266f3f3b6ef1bf75473ade10e322f0c5ad474230fd2616c8134b1c1e497509a",
+      "src/lib/workspaceClient.mjs": "69ae5a79632f0f3fd9d89c067205ab7703c70fa562ff46f44310910313699f29",
+      "src/lib/workspaceMutations.mjs": "a76e62453183b85953b37adbf486bf57db5b8ae9e75285c8aae3d10d51b9e1b2",
+      "src/lib/workspaceRepository.mjs": "3f3e9b01bae5ab7e1f7ef5b0fc1f75c179d6548152c69a43689493256c80c67b",
+      "src/lib/workspaceSchema.mjs": "da3565285eb7f95d025be5e126861222440115ab7ae96d8a1797f5290584bef8",
+      "src/lib/workspaceSession.mjs": "588c5b9fd4e40320d6cf3a20a6a50f10019fd431fb86fa240b3053655de76343",
+      "src/lib/workspaceStore.js": "124374e28810d1d7fa85d13058fcbf38d98f2fb60d0dde67ff126a1b072b5a45",
+      "src/lib/workspaceUtils.js": "a2ac468dce28921980c23929f5d2fd68257ba7f5d8ded8bd486c6b46470a4ded",
+      "src/app/api/search/route.js": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61",
+      "src/app/api/workspace/route.js": "24121439d149926c20948fcf0df3d90d5398ba899b3875455e12f5b6fd553390",
+      "src/app/api/workspace/version/route.js": "57f4c048ff6c46b8c908f534f93b0738904f3fe9d11c619e30887dfc27a2777e",
+      "src/app/api/import/markdown/route.js": "e9b8d506bbae0f871a5727220bd468800081755cb016eb015447055f31736154",
+      "src/app/api/export/html/route.js": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61",
+      "src/app/api/export/json/route.js": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61",
+      "src/app/api/export/markdown/route.js": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61"
+    }
+  },
+  "courseWords": 7441,
+  "courseFiles": 9,
+  "courseLinksChecked": 52,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "207e265ff4901f9ad9f96d8ce08530e04f9fc600815472a66d0a446096d654cd",
+      "after_sha256": "bc1060d350c677c384d210aab78d55bd0ddec6d40305e179edf1c4e27eab4b18"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "1a8a559a56b79702c51a43b20399cfd6f0d72c41ca97e408ee027eaca3ec253a",
+      "after_sha256": "1d7a18ccf4ebd85ce707663cea6d20a950b13bf478bbfc2f24ee6720b0524989"
+    },
+    {
+      "file": "_learning/00-ARCHITECTURE.md",
+      "before_sha256": "f0a8fc82588e4090388d5fa391c93eade64f2d210386359624986440bb822c95",
+      "after_sha256": "90cd44b89beba9ad4e707d7d68e5ea14d3ae28e7a8ddc8b8a5b354162139bcdb"
+    },
+    {
+      "file": "_learning/01-LEARNING-PATH.md",
+      "before_sha256": "ee15fc30b00a3d0cc3c58830a9c71ca607d0798d0076e1213c77dedb04da072b",
+      "after_sha256": "6b780b91db388e5b5db567f594503d1b604f2b0d09d59165452d1e8492d8e1fe"
+    },
+    {
+      "file": "_learning/02-GLOSSARY.md",
+      "before_sha256": "f6ed77997c944d37514df15b6ac9d563fa6dfb3fcc5fa020d6f62df9bf5a8804",
+      "after_sha256": "35988b8536d5285bd37bef5fb5764550ec563211c3ddda1b01a97eb379d7b1fd"
+    },
+    {
+      "file": "_learning/03-PATTERNS.md",
+      "before_sha256": "20571e2e1bff4df274d11b3c7325aa2a592e67a0dedae4033a931ba15d29a5ab",
+      "after_sha256": "fbc69557ce71525a88caabb51dd9b6cae14aa0aaa1e5c3ac4c73dfeba25de0d2"
+    },
+    {
+      "file": "_learning/README.md",
+      "before_sha256": null,
+      "after_sha256": "dec3202adb032cff4bba4d6ed9f80247788d3506e3a86a65a5f4c9243d556d1e"
+    },
+    {
+      "file": "_learning/guides/package.json.guide.md",
+      "before_sha256": "2cc912b17f3b4837efe987ecf09c0efda36e8ba191636a425b7240ad32bbec78",
+      "after_sha256": "0a6881d04c92ae2b08f8292b9ac6be88fa90fb59e2fb9ffaed97925bb3a63b6a"
+    },
+    {
+      "file": "_learning/guides/src/app/api/export/html/route.js.guide.md",
+      "before_sha256": "4e2de14aae180543939496ef4b6124ae1126502f5a1de4f26d5872767061c82e",
+      "after_sha256": "ef3b4ec192ad7d40039d86658b444eaee1fc922382d7ca1a3a22fa004cc70fca"
+    },
+    {
+      "file": "_learning/guides/src/app/api/export/markdown/route.js.guide.md",
+      "before_sha256": "8021d7764fd377a0733259651ae79f618dd7f601994bb27e17f824d931c4a394",
+      "after_sha256": "334823f8acbbf0f5e071c937cac7d153e7a6a06607f967df9f1283751c6354b6"
+    },
+    {
+      "file": "_learning/guides/src/app/api/import/markdown/route.js.guide.md",
+      "before_sha256": "685526dd35cd999a8a3f1d986790f5438a41edb08d282181d2a66fdea5915286",
+      "after_sha256": "99a291a10f8c5eed0c2d64d57e689ce4b6867d18d1171c8faa69ef49eaa7a347"
+    },
+    {
+      "file": "_learning/guides/src/app/api/search/route.js.guide.md",
+      "before_sha256": "e3be7df685b74b70b6b819da15f554f4836323f72f5264379f33c51b6f07320e",
+      "after_sha256": "8fbb72e140ce83cef9d4a539295b3682f40570ce512cd165bbdae18ca9496cc3"
+    },
+    {
+      "file": "_learning/guides/src/app/api/workspace/route.js.guide.md",
+      "before_sha256": "9165b08b05ec2254047dffa8e811d5f5f13b9d7d7c32af96a912287a1c5ada9c",
+      "after_sha256": "5dd99a24c452cd65de99db2fda9d3a1ba39a2a30c76df0be5b758da088ea4871"
+    },
+    {
+      "file": "_learning/guides/src/app/api/workspace/version/route.js.guide.md",
+      "before_sha256": "0649b269cca3925c055ea4687669ee4754ddd11cb717d247654b786e5fb9f309",
+      "after_sha256": "cb4814569c9c0c84484f2ce56fa1b606ff71a87c2eb5ae476b328403c0157508"
+    },
+    {
+      "file": "_learning/guides/src/app/globals.css.guide.md",
+      "before_sha256": "612104bae08ada2dd9f61d189fa45fdc12ce44332a79c5104a266efaf8761e6e",
+      "after_sha256": "e0ef195a09a71fd16ccdcf77713ae707047f5d3f1a6acfcceec71cf1117a729a"
+    },
+    {
+      "file": "_learning/guides/src/app/layout.js.guide.md",
+      "before_sha256": "32180c3cdb209948f9ef9f497c608d64b58d9eb4592083abda3ea23ce087435a",
+      "after_sha256": "83277bbe177210e1ed049255f71a46c95492cc3759de19adc67618b9a6e2245b"
+    },
+    {
+      "file": "_learning/guides/src/app/page.js.guide.md",
+      "before_sha256": "e40c0c00374c0e3b9eb80305bf2f031ab9187e2ee04ad32a75138433da81b622",
+      "after_sha256": "40faeb1847aea68d5175226a8a5b36a0a2ea60762d37b00af4489d12c04e2683"
+    },
+    {
+      "file": "_learning/guides/src/components/WorkspaceApp.js.guide.md",
+      "before_sha256": "2f7cc2ca9d1f36102f401ada306306546c6fd0579af1d14e260140889a036b0b",
+      "after_sha256": "a6d1a2d7ef9fdba121e5e9772ebc7d8c57a7a096ae801f293b60ee8f38e95c20"
+    },
+    {
+      "file": "_learning/guides/src/lib/defaultWorkspace.js.guide.md",
+      "before_sha256": "d235d93b22db9d653a54a0bc85f82a921fd79043080cffd4cf585af7c29a1564",
+      "after_sha256": "15bc7b1248bdab8457247e507536ce886ed6c04d9f55bbe0510e9cb48ca6e901"
+    },
+    {
+      "file": "_learning/guides/src/lib/markdown.js.guide.md",
+      "before_sha256": "3a11c07cff44c58773030456989433f10ef500df4f08d9c57d01ec74e7ae4d58",
+      "after_sha256": "13556926abb6a462d0d0fb5fb7150ce22d31da88c4524ee6895c96a0a2cfcd68"
+    },
+    {
+      "file": "_learning/guides/src/lib/offlineStore.js.guide.md",
+      "before_sha256": "05ecc549fd8cf014784f4d2ca3bed5f6d8f7b3a682ef0847454d68cf340f0e33",
+      "after_sha256": "96d5ba2823ab7e9949e0727388f7f33658c0a2d888de639df8c425e5ed65f5ea"
+    },
+    {
+      "file": "_learning/guides/src/lib/sqlite.js.guide.md",
+      "before_sha256": "dbd8798eba31c757dd9d5a93fbbb8b59f0831de56d13b32f3d86c5bbb8b9ad8c",
+      "after_sha256": "43adc520d9b6971deed97f63557dde2b55cab6736bf44fdac8e24037b5f211c8"
+    },
+    {
+      "file": "_learning/guides/src/lib/workspaceStore.js.guide.md",
+      "before_sha256": "a3f2c064ea1592fecf1fe4c4b9d0b8a094279c80c96988f728773e5b22a3b074",
+      "after_sha256": "512fb99d89a821536aba16b2590056cbb6e6fb2eb0584c53b17c04d4ffa1de4f"
+    },
+    {
+      "file": "_learning/guides/src/lib/workspaceUtils.js.guide.md",
+      "before_sha256": "e30356e8bb0bea70708653174e327de40028c6b09f1263ed96867c1a8b6ab4b5",
+      "after_sha256": "2983f3c1a54d9c621e799cfa0ed318b2b5e60e767bea632ff3fbc51413227a1c"
+    },
+    {
+      "file": "astraupskill/images/workspace-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "df892826c1450acee3470d2a21dcc4437b3897ca7f3cbcfa89843011a87b9613"
+    },
+    {
+      "file": "astraupskill/images/workspace-mobile.png",
+      "before_sha256": null,
+      "after_sha256": "a7e98d9fc7c594e41459421125d36ee10f006f6b8e5633b88c5cfb051e7c0576"
+    },
+    {
+      "file": "astraupskill/verification-results.json",
+      "before_sha256": null,
+      "after_sha256": "353dc8c813503f2fc5aaa50d5121cc52e84fbd1311024d8c71595f820d8ae33d"
+    },
+    {
+      "file": "docs/original/.claude/settings.local.json.txt",
+      "before_sha256": null,
+      "after_sha256": "d0b3275c125ebe67b4b51cbad708700e68b0682dc0e9c122a95d4f97a16406d0"
+    },
+    {
+      "file": "docs/original/.gitignore.txt",
+      "before_sha256": null,
+      "after_sha256": "207e265ff4901f9ad9f96d8ce08530e04f9fc600815472a66d0a446096d654cd"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "1a8a559a56b79702c51a43b20399cfd6f0d72c41ca97e408ee027eaca3ec253a"
+    },
+    {
+      "file": "docs/original/_learning/00-ARCHITECTURE.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f0a8fc82588e4090388d5fa391c93eade64f2d210386359624986440bb822c95"
+    },
+    {
+      "file": "docs/original/_learning/01-LEARNING-PATH.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ee15fc30b00a3d0cc3c58830a9c71ca607d0798d0076e1213c77dedb04da072b"
+    },
+    {
+      "file": "docs/original/_learning/02-GLOSSARY.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f6ed77997c944d37514df15b6ac9d563fa6dfb3fcc5fa020d6f62df9bf5a8804"
+    },
+    {
+      "file": "docs/original/_learning/03-PATTERNS.md.txt",
+      "before_sha256": null,
+      "after_sha256": "20571e2e1bff4df274d11b3c7325aa2a592e67a0dedae4033a931ba15d29a5ab"
+    },
+    {
+      "file": "docs/original/_learning/guides/package.json.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "2cc912b17f3b4837efe987ecf09c0efda36e8ba191636a425b7240ad32bbec78"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/export/html/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "4e2de14aae180543939496ef4b6124ae1126502f5a1de4f26d5872767061c82e"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/export/markdown/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8021d7764fd377a0733259651ae79f618dd7f601994bb27e17f824d931c4a394"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/import/markdown/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "685526dd35cd999a8a3f1d986790f5438a41edb08d282181d2a66fdea5915286"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/search/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "e3be7df685b74b70b6b819da15f554f4836323f72f5264379f33c51b6f07320e"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/workspace/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9165b08b05ec2254047dffa8e811d5f5f13b9d7d7c32af96a912287a1c5ada9c"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/api/workspace/version/route.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0649b269cca3925c055ea4687669ee4754ddd11cb717d247654b786e5fb9f309"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/globals.css.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "612104bae08ada2dd9f61d189fa45fdc12ce44332a79c5104a266efaf8761e6e"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/layout.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "32180c3cdb209948f9ef9f497c608d64b58d9eb4592083abda3ea23ce087435a"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/app/page.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "e40c0c00374c0e3b9eb80305bf2f031ab9187e2ee04ad32a75138433da81b622"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/components/WorkspaceApp.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "2f7cc2ca9d1f36102f401ada306306546c6fd0579af1d14e260140889a036b0b"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/defaultWorkspace.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d235d93b22db9d653a54a0bc85f82a921fd79043080cffd4cf585af7c29a1564"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/markdown.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "3a11c07cff44c58773030456989433f10ef500df4f08d9c57d01ec74e7ae4d58"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/offlineStore.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "05ecc549fd8cf014784f4d2ca3bed5f6d8f7b3a682ef0847454d68cf340f0e33"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/sqlite.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "dbd8798eba31c757dd9d5a93fbbb8b59f0831de56d13b32f3d86c5bbb8b9ad8c"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/workspaceStore.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a3f2c064ea1592fecf1fe4c4b9d0b8a094279c80c96988f728773e5b22a3b074"
+    },
+    {
+      "file": "docs/original/_learning/guides/src/lib/workspaceUtils.js.guide.md.txt",
+      "before_sha256": null,
+      "after_sha256": "e30356e8bb0bea70708653174e327de40028c6b09f1263ed96867c1a8b6ab4b5"
+    },
+    {
+      "file": "docs/original/eslint.config.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "d1257bff0b0aa0cb73034a730f33405d4de7d440678564d0183c5ca1244bb639"
+    },
+    {
+      "file": "docs/original/jsconfig.json.txt",
+      "before_sha256": null,
+      "after_sha256": "56123956b551c203af11a2a5a985e82bcfdf6d4e619acbdd0a5e2bf1e79aba58"
+    },
+    {
+      "file": "docs/original/next.config.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "2a19430e74dcb8a7b1f16c8675d0fd5cd088fda7290ee9bdb500778b4c71c5ab"
+    },
+    {
+      "file": "docs/original/package-lock.json.txt",
+      "before_sha256": null,
+      "after_sha256": "dec2871f88ebcfaa38c8c9b51ed4d2f5341ff057a5fcaeed5c24c0ec8b570a19"
+    },
+    {
+      "file": "docs/original/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "b0184415bac977fc2cbb34ad312afe790d4b351e86a59d31421cadac4b536c43"
+    },
+    {
+      "file": "docs/original/postcss.config.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "dfac7ac2d86d326a0e5adb024e7943c181393ed17a5fcb8f0315b24c7da6ddde"
+    },
+    {
+      "file": "docs/original/src/app/api/export/html/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "aabfeaeca307901d5e4f4e4c0f94d2823c5041354df00f58aa2496f36ecc082b"
+    },
+    {
+      "file": "docs/original/src/app/api/export/markdown/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "c0f72f6b3cf5d92ffda6392945746563dc22f1bf49711ddcc0bfb5e802c12b76"
+    },
+    {
+      "file": "docs/original/src/app/api/import/markdown/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "de124ac9f22d7e09fc64cecd5fbd9e04a15e8bbd801bb06b3b679b673ac26db8"
+    },
+    {
+      "file": "docs/original/src/app/api/search/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "d446cc274f59bc40b243b4fe0d020e150cbe4db79157740c60b88c118e399edf"
+    },
+    {
+      "file": "docs/original/src/app/api/workspace/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "3ec3382eaf5904227b8e6fe36dce8cca5ea31d47999300b8fbb2942512ca691c"
+    },
+    {
+      "file": "docs/original/src/app/api/workspace/version/route.js.txt",
+      "before_sha256": null,
+      "after_sha256": "31f5d17995f85f633a21ccb638693d0a236f468fc2b73417838bb3a2d58165be"
+    },
+    {
+      "file": "docs/original/src/app/globals.css.txt",
+      "before_sha256": null,
+      "after_sha256": "7ac3fa3f00b5f90f4a8b9aaeb00561692abdc3932fe3fbe6a11cf0555077428c"
+    },
+    {
+      "file": "docs/original/src/app/layout.js.txt",
+      "before_sha256": null,
+      "after_sha256": "dcf76aed9ae13131b7deea2bf13195030933e61d6a9507e34b26c2f6bfd79f96"
+    },
+    {
+      "file": "docs/original/src/app/page.js.txt",
+      "before_sha256": null,
+      "after_sha256": "e505f52484a11b56a5abd5bb53729119695a2254a69ca2a8755b86ba68dd023b"
+    },
+    {
+      "file": "docs/original/src/components/WorkspaceApp.js.txt",
+      "before_sha256": null,
+      "after_sha256": "495ae92c5f3879b3a111540da14275f0797123f41ff87b5565422897daba3b5f"
+    },
+    {
+      "file": "docs/original/src/lib/defaultWorkspace.js.txt",
+      "before_sha256": null,
+      "after_sha256": "a21f0928cadd2ee21cae25c0096dddb976875d7376115a5bbe52df89e010d867"
+    },
+    {
+      "file": "docs/original/src/lib/markdown.js.txt",
+      "before_sha256": null,
+      "after_sha256": "bcd5e2fd952783c40d027ab829d5e494d489bb7b7b6480d9ce84b3305832cf9d"
+    },
+    {
+      "file": "docs/original/src/lib/offlineStore.js.txt",
+      "before_sha256": null,
+      "after_sha256": "8a4557bdb22b2604098ee1138ac0d2df6ed6d3eab18e4656e2db36003b5ded5d"
+    },
+    {
+      "file": "docs/original/src/lib/sqlite.js.txt",
+      "before_sha256": null,
+      "after_sha256": "edf93b5da56959b624505ded4e55a72b561694c8b41157fc95a13107d42a622b"
+    },
+    {
+      "file": "docs/original/src/lib/workspaceStore.js.txt",
+      "before_sha256": null,
+      "after_sha256": "fe1e84b02e9e9567e7dd55e14aa2b6a1ddccbdce13f5e1d42b5ebb2b9ff62bd4"
+    },
+    {
+      "file": "docs/original/src/lib/workspaceUtils.js.txt",
+      "before_sha256": null,
+      "after_sha256": "03b2ed6a85beabfb4ede53931eaa8914ae131a8cc8bbd8b292550475af374c5d"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "dec2871f88ebcfaa38c8c9b51ed4d2f5341ff057a5fcaeed5c24c0ec8b570a19",
+      "after_sha256": "a6bc36c7ed7ee6a1dff83b2a454e9c4831ce08677eb2418ba9b5cffd118188d3"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "b0184415bac977fc2cbb34ad312afe790d4b351e86a59d31421cadac4b536c43",
+      "after_sha256": "08ca1f6b5bc4f4aa69e7641553e4685611419543f05c679cfcca3a56b366aab0"
+    },
+    {
+      "file": "scripts/browser-check.py",
+      "before_sha256": null,
+      "after_sha256": "8357429e71e0d6414a407b86d29f00486b27bee38d8b1e088c92c001344fe0cb"
+    },
+    {
+      "file": "scripts/setup.mjs",
+      "before_sha256": null,
+      "after_sha256": "27c3175493b01a809d67d545e18b5e8c887d1712a7ffaf7a5a9107ec703d5a8e"
+    },
+    {
+      "file": "scripts/test.mjs",
+      "before_sha256": null,
+      "after_sha256": "70150221d78fa96ccaaa95dc6e54b8646ce0213bb3203d7d28e033181c18707d"
+    },
+    {
+      "file": "src/app/api/export/html/route.js",
+      "before_sha256": "aabfeaeca307901d5e4f4e4c0f94d2823c5041354df00f58aa2496f36ecc082b",
+      "after_sha256": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61"
+    },
+    {
+      "file": "src/app/api/export/json/route.js",
+      "before_sha256": null,
+      "after_sha256": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61"
+    },
+    {
+      "file": "src/app/api/export/markdown/route.js",
+      "before_sha256": "c0f72f6b3cf5d92ffda6392945746563dc22f1bf49711ddcc0bfb5e802c12b76",
+      "after_sha256": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61"
+    },
+    {
+      "file": "src/app/api/import/markdown/route.js",
+      "before_sha256": "de124ac9f22d7e09fc64cecd5fbd9e04a15e8bbd801bb06b3b679b673ac26db8",
+      "after_sha256": "e9b8d506bbae0f871a5727220bd468800081755cb016eb015447055f31736154"
+    },
+    {
+      "file": "src/app/api/search/route.js",
+      "before_sha256": "d446cc274f59bc40b243b4fe0d020e150cbe4db79157740c60b88c118e399edf",
+      "after_sha256": "45877075216bbf5ba03bee51f5b5105b7fce3f8de7dafc97d734b2ab7bb24a61"
+    },
+    {
+      "file": "src/app/api/workspace/route.js",
+      "before_sha256": "3ec3382eaf5904227b8e6fe36dce8cca5ea31d47999300b8fbb2942512ca691c",
+      "after_sha256": "24121439d149926c20948fcf0df3d90d5398ba899b3875455e12f5b6fd553390"
+    },
+    {
+      "file": "src/app/api/workspace/version/route.js",
+      "before_sha256": "31f5d17995f85f633a21ccb638693d0a236f468fc2b73417838bb3a2d58165be",
+      "after_sha256": "57f4c048ff6c46b8c908f534f93b0738904f3fe9d11c619e30887dfc27a2777e"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "7ac3fa3f00b5f90f4a8b9aaeb00561692abdc3932fe3fbe6a11cf0555077428c",
+      "after_sha256": "dcadd694d13f647a276ca2e1443816761b5d63a0548de7cf6131a3eacd7175c3"
+    },
+    {
+      "file": "src/app/layout.js",
+      "before_sha256": "dcf76aed9ae13131b7deea2bf13195030933e61d6a9507e34b26c2f6bfd79f96",
+      "after_sha256": "de7d3f8445b0f3fe56385ddc7c11638df210b08a17e52f95403875a44db87b28"
+    },
+    {
+      "file": "src/components/DatabaseBlock.js",
+      "before_sha256": null,
+      "after_sha256": "2a6d1344236754261a8574447927de732705c19ff89d480faceff35cac571cbb"
+    },
+    {
+      "file": "src/components/WorkspaceApp.js",
+      "before_sha256": "495ae92c5f3879b3a111540da14275f0797123f41ff87b5565422897daba3b5f",
+      "after_sha256": "69f10aa460ddd6344e5f3b018f2b43e797cc6a77f48951a547ce2c76a61d788d"
+    },
+    {
+      "file": "src/components/useWorkspaceConnection.js",
+      "before_sha256": null,
+      "after_sha256": "8ff4b5dff4223c19c74c3dcac895edef6f63fc14c2747408ecde3febda326912"
+    },
+    {
+      "file": "src/lib/databaseModel.mjs",
+      "before_sha256": null,
+      "after_sha256": "ef687e60151dfc28188809edb0179cec0aee6884f388d4e4bf3e8030ff8a29fa"
+    },
+    {
+      "file": "src/lib/defaultWorkspace.js",
+      "before_sha256": "a21f0928cadd2ee21cae25c0096dddb976875d7376115a5bbe52df89e010d867",
+      "after_sha256": "bed7a605391908e8f8b368ad9096a03925a71e1aedfa89d78b862709849e0bfb"
+    },
+    {
+      "file": "src/lib/httpRoute.js",
+      "before_sha256": null,
+      "after_sha256": "2c0ba6b4cf0c4a48a0e6fcd845cef33fd064e73c290be2f82cae1d23ede474c8"
+    },
+    {
+      "file": "src/lib/markdown.js",
+      "before_sha256": "bcd5e2fd952783c40d027ab829d5e494d489bb7b7b6480d9ce84b3305832cf9d",
+      "after_sha256": "139b6f53d7cd98a5ea8bdb5355283c321327f297b599a75aca0d5d7a1fa45dbb"
+    },
+    {
+      "file": "src/lib/mergeWorkspace.mjs",
+      "before_sha256": null,
+      "after_sha256": "4c34cdcc42791fbd5252e83a173ae1d86239104e6d741821cd060e58c0258ec4"
+    },
+    {
+      "file": "src/lib/offlineStore.js",
+      "before_sha256": "8a4557bdb22b2604098ee1138ac0d2df6ed6d3eab18e4656e2db36003b5ded5d",
+      "after_sha256": "a8fc4d80fc330820bde10f6341924feee2d937af032f5c70b0a5d572bab7df9e"
+    },
+    {
+      "file": "src/lib/sqlite.js",
+      "before_sha256": "edf93b5da56959b624505ded4e55a72b561694c8b41157fc95a13107d42a622b",
+      "after_sha256": "b8cd0ab1405dd8288aaecaa36d268eb56c0a942f911a3dc4015cbc0f4d692c2b"
+    },
+    {
+      "file": "src/lib/workspaceApi.mjs",
+      "before_sha256": null,
+      "after_sha256": "9266f3f3b6ef1bf75473ade10e322f0c5ad474230fd2616c8134b1c1e497509a"
+    },
+    {
+      "file": "src/lib/workspaceClient.mjs",
+      "before_sha256": null,
+      "after_sha256": "69ae5a79632f0f3fd9d89c067205ab7703c70fa562ff46f44310910313699f29"
+    },
+    {
+      "file": "src/lib/workspaceMutations.mjs",
+      "before_sha256": null,
+      "after_sha256": "a76e62453183b85953b37adbf486bf57db5b8ae9e75285c8aae3d10d51b9e1b2"
+    },
+    {
+      "file": "src/lib/workspaceRepository.mjs",
+      "before_sha256": null,
+      "after_sha256": "3f3e9b01bae5ab7e1f7ef5b0fc1f75c179d6548152c69a43689493256c80c67b"
+    },
+    {
+      "file": "src/lib/workspaceSchema.mjs",
+      "before_sha256": null,
+      "after_sha256": "da3565285eb7f95d025be5e126861222440115ab7ae96d8a1797f5290584bef8"
+    },
+    {
+      "file": "src/lib/workspaceSession.mjs",
+      "before_sha256": null,
+      "after_sha256": "588c5b9fd4e40320d6cf3a20a6a50f10019fd431fb86fa240b3053655de76343"
+    },
+    {
+      "file": "src/lib/workspaceStore.js",
+      "before_sha256": "fe1e84b02e9e9567e7dd55e14aa2b6a1ddccbdce13f5e1d42b5ebb2b9ff62bd4",
+      "after_sha256": "124374e28810d1d7fa85d13058fcbf38d98f2fb60d0dde67ff126a1b072b5a45"
+    },
+    {
+      "file": "src/lib/workspaceUtils.js",
+      "before_sha256": "03b2ed6a85beabfb4ede53931eaa8914ae131a8cc8bbd8b292550475af374c5d",
+      "after_sha256": "a2ac468dce28921980c23929f5d2fd68257ba7f5d8ded8bd486c6b46470a4ded"
+    },
+    {
+      "file": "test/api.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "9322bd55172bcb96dd10c16e5c60a4ab17b63e46c71e13494ef35607681bdd28"
+    },
+    {
+      "file": "test/client.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "21facfe41d646cfe46f49e82ddc79b3730cfe81db1afb25e5d3f9a39010ab7de"
+    },
+    {
+      "file": "test/database.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "850a26c260a8e6eb0d0ae1ac8adcdc383a2a745b53a0cddfc84ce8ed22893890"
+    },
+    {
+      "file": "test/fixtures.mjs",
+      "before_sha256": null,
+      "after_sha256": "68e1df87dbcba21f90374433e9c734712e17285950fe3e4d1dd1720c00f89242"
+    },
+    {
+      "file": "test/markdown.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "174876b306268cd6b7fffc71c74a7d064b139c4606c14cd664bc081f2b1aa9fa"
+    },
+    {
+      "file": "test/merge.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "5d2c8de004750e5ff6653235c273bb911e39cc6fa753f6f45ce3e77f69405d4d"
+    },
+    {
+      "file": "test/mutations.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "a8b45ebfa37f5a9f74c9db2f739898bf39c6ff8c8c2fd73b999560caf51514aa"
+    },
+    {
+      "file": "test/repository.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "24f48946d7be693f49fc1ff1496c3e79b2e006b6d8768a45f8ed41a932b2eb0d"
+    },
+    {
+      "file": "test/schema.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "7bca01e68197900a671c2480e0bec5d0a8e53f1110e84867b92bf8969b84960b"
+    },
+    {
+      "file": "test/session.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "70005b9f35c44b9f1d69341b49ee4d93e38dc0ee93f909420d51865e30e5a198"
+    },
+    {
+      "file": "test/store.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "cdb9ec985d32893725959cc2ab790f4faecd4aa477a0c307b785ee7091917f2c"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a3f43837872c5337778e6e1d31b38940d76e2b9db01ebc6f3dde633be8a8a0b6"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "dd430fa03e9511a2c55667287e175c6d81314779821ea9e202e749c80a018eee"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1939207af2e967a0091bfba35c20e4afa7d4cfb0cc6478137d0d8c596686cd44"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "68fd5cf3843c58daab54f30a4824b42a8262cc07cb7ba233fe28eeb6a2f75f43"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "22027739257a5310a9ac6aa4dd7d490eb7baba465e28a57197061f0b77eed7d1"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "8afe9067fcdfd0a1e60cfee98a1cb484e88a36b8d22a58d6178ec90c47e636d4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f31c15d5202a93196dba054c19e2c742070cbcb4602147bf02352efcdca4e46b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "5bee48448b97e6e0b472a9f7c25b5c849ed75188122b81f8c363e2c193afa382"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "77092e46cd064dd378e1244cbb771e23fdaf4846dfc758d2263cce4b3a66bdfc"
+    }
+  ],
+  "limits": [
+    "Local single-owner workspace; visibility labels are metadata, and presence is limited to same-origin tabs.",
+    "No durable operation receipts, account recovery, encrypted browser draft storage or general JSON restore UI.",
+    "Bounded whole-document JSON model, rolling server activity and bounded snapshots; standard duplicate-key JSON parsing remains.",
+    "Legacy adoption is explicit, validates accepted content and preserves legacy tables; incompatible existing data requires deliberate investigation, not automatic repair.",
+    "Markdown import/export covers a block subset and table text, not a lossless workspace round trip.",
+    "Chromium desktop/mobile checks on Windows; not all browsers, operating systems or assistive technologies. One network failure is deliberately simulated.",
+    "Fresh database setup and installed lock consistency verified; no separate full clean-copy dependency installation was performed after the version update.",
+    "Original user database was not opened, migrated or replaced during this delivery."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T10:45:14.740567+00:00"
+}

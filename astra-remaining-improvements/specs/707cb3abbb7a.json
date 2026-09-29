@@ -1,0 +1,29 @@
+{
+  "id": "707cb3abbb7a",
+  "project": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+  "summary": [
+    "Prevent updateTicketAction from overwriting a ticket version read earlier by requiring organization, id, and updatedAt to match in the update where clause.",
+    "Map the known Prisma P2025 compare-and-set conflict to a reload error before audit or notification side effects, while preserving the committed update DTO for existing side-effect logic.",
+    "Add a portable runtime regression that executes the real TypeScript action through a project-local VM loader for stale and successful paths."
+  ],
+  "changedFiles": [
+    "apps/web/lib/actions.ts",
+    "tests/runtime-ticket-update.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/apps-web-lib-actions.ts.before",
+    "astraupskill/evidence/runtime-ticket-update.log",
+    "astraupskill/evidence/results-crud-b02.json",
+    "astraupskill/evidence/crud-b02-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/707cb3abbb7a/results-crud-b02.json"
+  },
+  "limits": [
+    "Vitest, full typecheck, live Prisma/database, HTTP, and production connector timestamp precision were not run.",
+    "The runtime test uses explicit Next, Prisma, audit, and notification doubles while executing the real updateTicketAction source.",
+    "This guard covers the updateTicketAction read-to-write boundary; it does not claim serializable transactions, protection for unrelated unconditional ticket mutations, or detection of edits occurring before the server read.",
+    "Domain capability, transition, normalization and SLA helpers are substituted; status-change notification fan-out is not exercised. Timestamp collisions and edits before the server read are not detected by this guard."
+  ]
+}

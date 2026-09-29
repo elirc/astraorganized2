@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww5",
+  "id": "41315da7b7f9",
+  "command": [
+    "npx.cmd",
+    "tsc",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\41315da7b7f9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:47:58.849206+00:00",
+  "status": "complete",
+  "log": "ww5-typecheck-final-05.log",
+  "pid": 24484,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:48:37.137155+00:00",
+  "elapsedSeconds": 38.29
+}

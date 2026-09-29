@@ -1,0 +1,217 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z1",
+  "id": "f27db87d9d3a",
+  "summary": [
+    "Binds workflow action permission to the current pending step, preserving both delegated and original assignee authority and existing admin/support override.",
+    "Filters internal comments before creating requester comments and timeline DTOs, including requesters with operational roles.",
+    "Distinguishes create from explicit missing/blank update IDs, validates request type/intent/action and resubmission fields, and rejects unsafe reassignment targets.",
+    "Validates workflow SLA, steps and delegation intervals before persistence; adds sixteen actual file-store service tests and nine detailed chapters with complete fixtures."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f27db87d9d3a/results.json",
+    "expectedTests": 16
+  },
+  "testResults": {
+    "passed": true,
+    "total": 16,
+    "tests": 16,
+    "failed": 0,
+    "checks": [
+      "root-install-01",
+      "z1-tests-final-03",
+      "root-typecheck-final-02",
+      "root-lint-final-02",
+      "z1-build-final-01"
+    ],
+    "scope": "16 actual service tests using the production JSON store in unique OS temporary directories; full typecheck/lint/Next build pass. No live HTTP, cookie-auth, browser, crash consistency or multiple-process tests."
+  },
+  "courseWords": 5252,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "bc551b7e0db48767e5df40df89dd2f569670b71418c70f222db8fbf1f94aeb6e",
+      "after_sha256": "4ee412ad9630474cdf0c9fa17ed53826a5396940c0e24108ad43f702190053b2"
+    },
+    {
+      "file": "src/lib/auth/policy.ts",
+      "before_sha256": "26a6d6c15696086f929176231ecfb73650881f17586ed824eaeb5bc40f695345",
+      "after_sha256": "662d27cc852f7f8a7b172743d4a5d4e6eda9accd26ba409cc2c6b7f08c67e02b"
+    },
+    {
+      "file": "src/lib/services/admin-service.ts",
+      "before_sha256": "1b5ca6d2eb262250ec43f906995093f5c0b723d41a9e092f7f47fcf57d01c0f7",
+      "after_sha256": "1906893f642b54f188a7ad6849d7f4fe26e1a9e65b0000b456dca40de610b867"
+    },
+    {
+      "file": "src/lib/services/request-service.ts",
+      "before_sha256": "77007d9286fd23e7056d9054bbbf7edd906aed0b1bb360788b8fb5d36139c85d",
+      "after_sha256": "960d5d95f361c29cb0070df78a961cfa60d1d20cc4b60b18f230b4ff21b3b1f7"
+    },
+    {
+      "file": "src/lib/services/workflow-service.ts",
+      "before_sha256": "6d801e7790ebed20d59f49814273576fa7ad42459db5b7cc4d3fb3e29bd0209c",
+      "after_sha256": "db7611f47169f217d4044d16998ea54b5c93db3afbbf9f8b596b51c20be22699"
+    },
+    {
+      "file": "tests/service-layer.test.ts",
+      "before_sha256": "1342f18dcb78759611585af9a6f67455a189e56da183926673a0c8c8b16261ef",
+      "after_sha256": "4b1ea60a0f4e3f03de5db06439e0ab5fdc53ac26b22aa52a58bd155a886e6f5f"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__auth__policy.ts.before",
+      "before_sha256": null,
+      "after_sha256": "26a6d6c15696086f929176231ecfb73650881f17586ed824eaeb5bc40f695345"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__services__admin-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "1b5ca6d2eb262250ec43f906995093f5c0b723d41a9e092f7f47fcf57d01c0f7"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__services__request-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "77007d9286fd23e7056d9054bbbf7edd906aed0b1bb360788b8fb5d36139c85d"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__services__workflow-service.ts.before",
+      "before_sha256": null,
+      "after_sha256": "6d801e7790ebed20d59f49814273576fa7ad42459db5b7cc4d3fb3e29bd0209c"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__service-layer.test.ts.before",
+      "before_sha256": null,
+      "after_sha256": "1342f18dcb78759611585af9a6f67455a189e56da183926673a0c8c8b16261ef"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "3d12a26ead9aa74628b14d98ae6e1626a1310d2081b745d8efa29d385e49b187"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-01.json",
+      "before_sha256": null,
+      "after_sha256": "16bd34fda68ff33a152fe6bf92053d7d9293baddec82fba21a25e4bba8794e2f"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-01.log",
+      "before_sha256": null,
+      "after_sha256": "512903a5c9bfc53afadf21d28ff857f56c438612a5b6d994265bf6a8c92c2aec"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-final-02.json",
+      "before_sha256": null,
+      "after_sha256": "9c775baa5ad1af513585d74087f3fe444a0162d5beb386182ba8a0dcfc73a18a"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-final-02.log",
+      "before_sha256": null,
+      "after_sha256": "01721f5648b39a0f2cbad6af2eae347f463765e98384d49c0a4ec110827d7c57"
+    },
+    {
+      "file": "astraupskill/evidence/root-typecheck-final-02.json",
+      "before_sha256": null,
+      "after_sha256": "f4d3f6e30092536034a457e95e424443a947d2c83d8ad41b368e14321c84d193"
+    },
+    {
+      "file": "astraupskill/evidence/root-typecheck-final-02.log",
+      "before_sha256": null,
+      "after_sha256": "1574724628464b8b1a1996b583f1296dd1ddcad3c5a268c7c322db9137df0673"
+    },
+    {
+      "file": "astraupskill/evidence/z1-build-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "4dd4dc2c5d39c795b37d58e6c499c69d71eedd3685b17d50e58b463ea5830417"
+    },
+    {
+      "file": "astraupskill/evidence/z1-build-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "96e192a7e77955c39a8c93ead9237b44207e419dda8485dc8a5987954f5a95c8"
+    },
+    {
+      "file": "astraupskill/evidence/z1-lint-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "2e640b14149ce0f7696e9d6a3069a224e0a1a993dbe9e8123deb3c3cfdce1a68"
+    },
+    {
+      "file": "astraupskill/evidence/z1-lint-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "01721f5648b39a0f2cbad6af2eae347f463765e98384d49c0a4ec110827d7c57"
+    },
+    {
+      "file": "astraupskill/evidence/z1-tests-final-03.json",
+      "before_sha256": null,
+      "after_sha256": "bd9a0336fe5bc4941d008833033d56af687b5463548f46fb2f6cb0301513d087"
+    },
+    {
+      "file": "astraupskill/evidence/z1-tests-final-03.log",
+      "before_sha256": null,
+      "after_sha256": "32e84b778224d9627b2d8273af12fe6502cc35f4a7e98e8a9cf9d62c3a819bba"
+    },
+    {
+      "file": "astraupskill/evidence/z1-typecheck-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "988042a1491394c0d732d50def5c8404b75e5ab3a113c95cd65725ea7b7c5d35"
+    },
+    {
+      "file": "astraupskill/evidence/z1-typecheck-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "1574724628464b8b1a1996b583f1296dd1ddcad3c5a268c7c322db9137df0673"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "916fa060ae9eeaf6ce056a709b27fc11642785e77786212d1b104ddc01294668"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9b21ccae877e89e04f6b229b205ca96ec6dbf79c67dfff0c320d47064a188861"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bbc9ee8480e117afbaed8bd0daf9b5c07d52f487bb29ab43fffd2fe53044a5c4"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "af3719b2220f959a7462238cc18e1fab13a2db8c6a4069514cfeca2880c92f57"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "be739ab8b84717664f8bb11ffe5a9d38f4462d4812b6229a0d63ea7e1619d4e6"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "8ca36d4eebf228538aee64fbce90dc60e408c45b535b1e45e95721f93b4a940d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "20c7d0cf065b4f5f88f57bfe7ad35d031e380e62890b37b5660b32603ea223c0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4de5a4e52a07a2169e79a23197e7395b0ddedbdffcfa32c4ef8626e1e92b58f4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2600ae9fe25a5ed048fd7d5b6c7a39997593016afe39dbce507bca4b37794a72"
+    }
+  ],
+  "limits": [
+    "Single-process JSON clone-before-write and serialized-value assertions do not establish crash consistency or cross-process locking.",
+    "No HTTP server, cookie authentication or browser coverage; service Error does not itself establish a particular HTTP status.",
+    "Requester exclusion also applies to operational/admin requesters; existing permission to create an internal note is separate from read filtering.",
+    "Demo identity and existing file-store architecture remain; this increment does not introduce durable database transactions."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T00:56:50.229280+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww1",
+      "id": "5007ac6ecdec",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-review-cycle.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5007ac6ecdec",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:00:23.816637+00:00",
+      "status": "complete",
+      "log": "crud-b05-astra-runtime.log",
+      "pid": 34304,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:00:31.689674+00:00",
+      "elapsedSeconds": 7.87
+    }
+  ],
+  "limits": [
+    "Six runtime cases execute actual review service, HttpError and the changed repository predicate builder. Explicit database/transaction/repository adapters verify arguments and ordering; no native Prisma provider or concurrent database run.",
+    "The conditional write guards organization, item id and PENDING, but does not atomically guard review-cycle OPEN status. Native rollback, route authorization and simultaneous reviewer behavior remain unexecuted.",
+    "Normal application typecheck and provider-backed integration were not run after dependency cleanup."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 3,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww30",
+      "id": "41ea8dcef618",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-cache-expiry.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\41ea8dcef618",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T03:41:33.365627+00:00",
+      "status": "complete",
+      "log": "crud-b06-astra-runtime.log",
+      "pid": 37200,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T03:41:43.278952+00:00",
+      "elapsedSeconds": 9.91
+    }
+  ],
+  "limits": [
+    "Actual cache TypeScript executed with explicit type-export stubs and deterministic Date; no full service or live DB.",
+    "No HTTP, auth, query execution, distributed cache, or concurrency check.",
+    "Fix covers TTL exact-boundary semantics; maxEntries and row-level cache authorization remain separate concerns."
+  ]
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "project": "23",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 51.5,
+    "log": "logs/23-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "24",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 48.63,
+    "log": "logs/24-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "25",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 41.85,
+    "log": "logs/25-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "26",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 49.71,
+    "log": "logs/26-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "27",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 42.25,
+    "log": "logs/27-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "28",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 35.34,
+    "log": "logs/28-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "28",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 79.23,
+    "log": "logs/28-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "29",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 34.07,
+    "log": "logs/29-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "30",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 33.33,
+    "log": "logs/30-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "30",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 111.67,
+    "log": "logs/30-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "31",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 27.5,
+    "log": "logs/31-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "31",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 102.97,
+    "log": "logs/31-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "32",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 39.78,
+    "log": "logs/32-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "33",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 31.74,
+    "log": "logs/33-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "33",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 90.76,
+    "log": "logs/33-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "34",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 24.71,
+    "log": "logs/34-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "34",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 94.61,
+    "log": "logs/34-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "35",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 24.23,
+    "log": "logs/35-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "35",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 81.99,
+    "log": "logs/35-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "36",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 31.68,
+    "log": "logs/36-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "37",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 20.62,
+    "log": "logs/37-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "38",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 21.46,
+    "log": "logs/38-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "39",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 21.58,
+    "log": "logs/39-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "40",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 18.78,
+    "log": "logs/40-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "41",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 27.67,
+    "log": "logs/41-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "41",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 85.18,
+    "log": "logs/41-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "42",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 28.63,
+    "log": "logs/42-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "43",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 31.17,
+    "log": "logs/43-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "43",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 81.32,
+    "log": "logs/43-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "44",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 26.8,
+    "log": "logs/44-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "44",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 74.19,
+    "log": "logs/44-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "45",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 25.24,
+    "log": "logs/45-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "46",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 18.02,
+    "log": "logs/46-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "47",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 16.13,
+    "log": "logs/47-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "47",
+    "check": "typecheck",
+    "exit_code": 2,
+    "seconds": 66.97,
+    "log": "logs/47-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "48",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 22.09,
+    "log": "logs/48-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "49",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 18.61,
+    "log": "logs/49-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "49",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 79.01,
+    "log": "logs/49-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "50",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 23.81,
+    "log": "logs/50-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "50",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 84.84,
+    "log": "logs/50-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit"
+    ]
+  }
+]

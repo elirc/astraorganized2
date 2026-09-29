@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 3,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/ww8",
+      "id": "4d914b7440f4",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-job-claim-contract.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4d914b7440f4",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T04:05:20.425383+00:00",
+      "status": "complete",
+      "log": "crud-b07-astra-runtime.log",
+      "pid": 34636,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T04:05:29.919684+00:00",
+      "elapsedSeconds": 9.27
+    }
+  ],
+  "limits": [
+    "Actual documentRepository function with Prisma-shaped double; no production source mutation.",
+    "No worker, extractor, Prisma SQL lock, transaction, audit, or concurrent process test."
+  ]
+}

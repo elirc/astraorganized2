@@ -1,0 +1,13 @@
+{
+  "command": [
+    "node",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache\\_npx\\83e71da30ae7cab2\\node_modules\\prettier\\bin\\prettier.cjs",
+    "--write",
+    "app/static/app.js",
+    "app/static/app.css",
+    "README.md",
+    "astraupskill"
+  ],
+  "exitCode": 0,
+  "output": "app/static/app.js 13236ms\napp/static/app.css 2880ms\nREADME.md 3815ms\nastraupskill/01-CODEBASE-MAP.md 556ms\nastraupskill/02-CONCEPTS.md 594ms\nastraupskill/03-WORKED-CHANGE.md 884ms\nastraupskill/04-TESTING-AND-DEBUGGING.md 683ms\nastraupskill/05-PRACTICE.md 592ms\nastraupskill/06-SOLUTIONS-AND-REVIEW.md 382ms\nastraupskill/07-TRACE-LAB.md 296ms\nastraupskill/README.md 352ms\nastraupskill/VERIFICATION.md 587ms\n"
+}

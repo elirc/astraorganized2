@@ -1,0 +1,293 @@
+{
+  "project": "grokbuildorderproject",
+  "id": "e502bf8af566",
+  "summary": [
+    "Turns the order scaffold into a working React catalog CRUD and order workflow with typed HTTP boundaries, paging, visible errors and explicit stale-form recovery.",
+    "Reserves inventory and snapshots server decimal prices in one PostgreSQL transaction; conditional versions prevent overselling and stale stock replacement.",
+    "Cancellation restores inventory once and fulfillment is final; foreign keys preserve history and order items retain purchase-time names and prices.",
+    "Adds a fresh-database migration with database constraints, strict payload/query validation, shared Prisma lifecycle and consistent request-ID errors.",
+    "Adds reproducible isolated PostgreSQL, frontend and Chromium verification, locked dependencies, reviewed responsive screenshots and nine detailed mid-level CRUD learning documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/grok-order/verified/results.json",
+    "expectedTests": 37,
+    "command": "npm run verify: fresh temporary PostgreSQL cluster, migration, 24 Jest cases, eight Vitest cases, five Chromium scenarios and both builds",
+    "environment": "Node 22.16.0; npm 10.9.2; PostgreSQL 18.1; Prisma 5.22.0; Playwright 1.60.0; isolated loopback cluster"
+  },
+  "testResults": {
+    "passed": true,
+    "backendTests": 24,
+    "database": "PostgreSQL; fresh helper-owned loopback cluster; migrations applied",
+    "mode": "verify",
+    "frontendTests": 8,
+    "browserTests": 5,
+    "backendBuild": true,
+    "frontendBuild": true,
+    "tests": 37,
+    "screenshotsReviewed": 2
+  },
+  "courseWords": 4226,
+  "courseFiles": 9,
+  "courseLinksChecked": 37,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "94945ec8c1682ed9d1e8380e05a2845d416b484a1ff0301107b3ed53be89a285",
+      "after_sha256": "e62af699f33be0b55bbd29c39b917b20ce5052317689cf0cddc6a9e7d777a2d4"
+    },
+    {
+      "file": "JOURNAL.md",
+      "before_sha256": "4b689ada221a85259014d5e3f58c0abe3825c8017e33b43a86dd12009be27ef3",
+      "after_sha256": "a9f8df32d1f6e0597e3a59c3e1ff9af5c102e9b9bf631601c16cc8071eb55bfa"
+    },
+    {
+      "file": "PHASE_PLANS.md",
+      "before_sha256": "26132d4c6e8c01da5eae72c5073a534ed6b5e3fb61e6b3acd52863b98efefb78",
+      "after_sha256": "300f876a005b71db05cac266cc145799fe74003df4d6c8821e60369fcaacec89"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "ede103f5246e2de61bf1fd8b004dec404968508c09f62191427e7299a42a6e66",
+      "after_sha256": "562e7f777c94ca185fffe70510c0e8703826e2d5844e612c5659a8387917933f"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "15d21078741cb5d0a26cde13f27b2b13b64e65113af4b7d7d1433552942e9fa3"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "4e635cf460ed66f3d0e83a53cfe988ec4e19d9cea1c494945e9ef3cda6f374ef"
+    },
+    {
+      "file": "backend/.env.example",
+      "before_sha256": null,
+      "after_sha256": "8e14237e78745010775a2516327937182c6c5bf365a1e3aa66298e04056a921d"
+    },
+    {
+      "file": "backend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "7ed7ea719c5f99b2f68292940aa30a827fc5ebf29b6250c45a7070d2f194fc46"
+    },
+    {
+      "file": "backend/package.json",
+      "before_sha256": "e2a3adc66e3845b79074e0747749f8c835eb2070495023c7c5084ae99900f526",
+      "after_sha256": "db76df763b80762084970f6943a0be012c8f883a1aa7a520b9e49a410d483ec0"
+    },
+    {
+      "file": "backend/prisma/migrations/20260909000000_initial/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "58cd76200778ed72f8d609948a65ad5b927e43cd9852aa77da86682dff4423e0"
+    },
+    {
+      "file": "backend/prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "backend/prisma/schema.prisma",
+      "before_sha256": "1186f4ed79001016b8dd1f699c4d653776348f6fa298f548be3bef100c0149a4",
+      "after_sha256": "594b911742b50d4607c20bdbc90ab7794c89f4cc3b929bd633f815f371783104"
+    },
+    {
+      "file": "backend/src/__tests__/orderService.test.ts",
+      "before_sha256": "363a1a826a19e571527e07198c95900adadba5a472e6bb76ebfd024c78ae7c2e",
+      "after_sha256": "1048dfb5dbee8e6232b26aa018d75c49f309b2020c3450e49cb83a724f703222"
+    },
+    {
+      "file": "backend/src/app.ts",
+      "before_sha256": null,
+      "after_sha256": "9669d4116e59e4bd03cba007cbd1889215e2e0480294a1fac8210239c9c6067e"
+    },
+    {
+      "file": "backend/src/db.ts",
+      "before_sha256": null,
+      "after_sha256": "756628eec5c6d1539e67fccbc1e1990758f606653581292f374b8823ca4b13d4"
+    },
+    {
+      "file": "backend/src/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "11d24a4b242592071a8b91dc8a24d9bd13c9ccef70af818befdc7c974b651dfe"
+    },
+    {
+      "file": "backend/src/http.ts",
+      "before_sha256": null,
+      "after_sha256": "fe6a2d1fc2376078567e3be9fcb1b163f490b5cd6485046782a2a0b36e38e3b4"
+    },
+    {
+      "file": "backend/src/index.ts",
+      "before_sha256": "721552aede658684adaf69dfcff6d408f1e171670254c2d856bc68350e273d89",
+      "after_sha256": "0803772c954644e46f3db42aadfa20f3a6f716e8f8f20febaa91f2a0f2ee2314"
+    },
+    {
+      "file": "backend/src/repositories/orderRepository.ts",
+      "before_sha256": "c6e5e1abbc4338061a1d35f9584f4bdc7a3cf2a67bf5c410e23f61f3f759c8b9",
+      "after_sha256": "681afd50be48a2e9c5eeeed11d2a62a09396364f0b6b909fd99e23e6e54dc845"
+    },
+    {
+      "file": "backend/src/repositories/productRepository.ts",
+      "before_sha256": "657c79365f36e3a2e64c9cfee21026c557ac667d593473884ca6bab52bf538ba",
+      "after_sha256": "8027909672b0e3dcb79846137513defe7cf55561e2fd809c4c38bf8a291994f8"
+    },
+    {
+      "file": "backend/src/routes/orderRoutes.ts",
+      "before_sha256": "0c02682d461f8ee8ff0554e1546b7022674e07090c3135f18a437d6c7a6759c8",
+      "after_sha256": "3af319f4676518d0900471e0453da808a30b71e9cd25f65b8185683aa73f0870"
+    },
+    {
+      "file": "backend/src/routes/productRoutes.ts",
+      "before_sha256": "fc55f396c0ba227d75683f88e30fba4b03f1e1dae5747473d8dd6cc919b94a39",
+      "after_sha256": "75ae5ee7c9e122c78eb6a9c579d261edad66b02d48bcf1fc2a105563072f74cb"
+    },
+    {
+      "file": "backend/src/services/orderService.ts",
+      "before_sha256": "266d59f167e072790505a0ce937982f02cbdce763ab373ff6a2aa71a1fc0e6e9",
+      "after_sha256": "46964e8436ec5c54c2893f2a00a9d68d8dfaaf67218744e2c2009eede910b9a5"
+    },
+    {
+      "file": "backend/src/services/productService.ts",
+      "before_sha256": "46e92cc3b0030cad8cc41fc62bfda318a97e00c68a076bee8ed44c9f130b2158",
+      "after_sha256": "5771660aaed4e042eab44ca0a5e4e0624b70a194145eab13b1472bfe62af5a6a"
+    },
+    {
+      "file": "backend/src/validation.ts",
+      "before_sha256": null,
+      "after_sha256": "b55fa61e5dd42c247edaa8798b6e5726fda7d33e8145835f1f56b671dd086d6e"
+    },
+    {
+      "file": "backend/tsconfig.json",
+      "before_sha256": null,
+      "after_sha256": "a3bd07ce890222214527750d161195219a5c56227fd935eea0927f69c5a1595d"
+    },
+    {
+      "file": "e2e/orders.spec.ts",
+      "before_sha256": null,
+      "after_sha256": "58ce746277b77ce6568eaea8f580fc57c18f2d9cb4d3935d64aff463501d495c"
+    },
+    {
+      "file": "frontend/.env.example",
+      "before_sha256": null,
+      "after_sha256": "b64f9553ee4fd020b7e89a0b05c2a10ef448a4bd5913167536c8764a2d167b9a"
+    },
+    {
+      "file": "frontend/index.html",
+      "before_sha256": "505cff27c54cdb1904886fd97a5ba10010bb39936fc884acbc7027bcfc172319",
+      "after_sha256": "e15982fc615031af78f9b7b515171fe8a40ae1e0daca694afc451cf9b865167d"
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "fe9cce4c31f9f4bdbaac87de1b38f51ab6aa5f29cbc5007213082d8ca1f3be39"
+    },
+    {
+      "file": "frontend/src/App.tsx",
+      "before_sha256": "6b3ad5cf6d989d6e006eb53e26572a5bfa04052c614910f58fe2233f4d41c29a",
+      "after_sha256": "9db5bd9d2d4b735cb109e751489bcc40d1e51981bbbe27160c6d010c3f17080a"
+    },
+    {
+      "file": "frontend/src/__tests__/ProductsPage.test.tsx",
+      "before_sha256": "ab5a8520eda7acf0126f8adc32b33e0ee5c03113fa9331811b480e08bf1bf535",
+      "after_sha256": "5bae9292bedf1320c9b8723cf39c74ac8fba65a033cb08e192f5b688fc471915"
+    },
+    {
+      "file": "frontend/src/api/client.ts",
+      "before_sha256": "e59bc0cd388d1c0ce2a706fc4f3aee93bac9648a102d1d224f301fce653962b2",
+      "after_sha256": "1409a3acab879f1f3a9c8b9611f9559994e497f043bb9cf2233f08085834dfa3"
+    },
+    {
+      "file": "frontend/src/features/products/pages/ProductsPage.tsx",
+      "before_sha256": "439c4e3f3924135e0ac859c166c65548a3277cb8eb6348bf852f173f970ec1ac",
+      "after_sha256": "cd2a2f4608e2c2b65ad9da5adb7672b381d2d4d91170d7dfe590b771acfab346"
+    },
+    {
+      "file": "frontend/src/index.css",
+      "before_sha256": "1249e6a98143d8c24abf21c326109b4272dd7f6ee31a7ecec0f2a8718aa7858a",
+      "after_sha256": "d9c95e83199ace04bf5d8fab6e5e923b6f03eb548e0358de52659ce8add2f8c7"
+    },
+    {
+      "file": "frontend/tsconfig.json",
+      "before_sha256": null,
+      "after_sha256": "fd4d04e43cfc0a2763f49cac889b809d11d968b25fc9870edf28a9842e10019b"
+    },
+    {
+      "file": "frontend/vitest.config.ts",
+      "before_sha256": "e214a9829ffc048747802523ea6ba2f6b6b76dc814a52ca55a5df2d2fe7f273d",
+      "after_sha256": "597838287f11a1e196cc60a2d12b12c9f0ce9ebbec1f64d32bc6e6aadd75c08f"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "3212b47716e1440dfa50582b6997e56de98edf4ec649eb732a8a7089096f4a81"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": null,
+      "after_sha256": "ad896f5ee524f458c398e1f6b549f096fd516145867d4980e3128eb446667de1"
+    },
+    {
+      "file": "playwright.config.ts",
+      "before_sha256": null,
+      "after_sha256": "ebcfb75f61aed315196875c63ed8e045cd3c3ed5347a24e55ac81b71b6e7d3f5"
+    },
+    {
+      "file": "scripts/test-database.mjs",
+      "before_sha256": null,
+      "after_sha256": "3562ab3fbfe0e4dcc2b893e72768b07d8efc4817814382f085398b713b117a17"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "295bc3cecc772957b18845533e592a76a22c4251be9d01ba5309cc280426cb2a"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "ac243577a422ab9dcad7869deac33116206e6d13236282e6ad1c0dd03da476d3"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "cd5723e60772161dc026d54d2e0cc52e9deb7969f02bd42f1a6459bcdf8f0a92"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "148f0eef9dcb2951e6fb23d3f7073faf9622c9a905ab93f2de9e83820325f7fb"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d891109bfc0245a218fda6f7c3a3b512e7948a485002dafefb2850122ba95937"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b1cba8177e5c7b1fb0e713cb2c7a533d9eef2c5acb4a13972c3a9bf1aa048983"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "55fb6c63846de4a4bf0a651b823d22e512e716bb1b98c25a7c073d3f70247082"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "eda009d7be6ba214bf4099588cb5236aaf3d9ef128b8f7ca4d828f5cbd342d62"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "218a3f016105a3ed5621642289856fea7655f71d00b8c52c18a15216a7c21728"
+    }
+  ],
+  "limits": [
+    "Shared local demo without authenticated ownership, request idempotency, payment processing or production deployment.",
+    "Initial migration is for a fresh database; existing installations require a reviewed data-preserving migration, which was not applied to personal data.",
+    "Supplier and PurchaseOrder remain future models without routes; inventory ledger and database-readiness checks remain exercises.",
+    "Docker, production capacity, crash recovery, power-loss behavior and failover were not verified."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T05:44:25.964400+00:00"
+}

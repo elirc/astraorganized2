@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz55",
+  "id": "cd5a8a522511",
+  "summary": [
+    "Employee task completion now requires both profile ownership and an EMPLOYEE task assignment before mutation.",
+    "Five actual-service cases execute real permission, transition and error modules, including no-write refusals, stage advance and audit failure.",
+    "The course documents the source map, ownership concepts, worked change, debugging, exercises, answers, trace, and verification limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/cd5a8a522511/runtime-b072.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/zz55",
+        "id": "cd5a8a522511",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/onboarding-task-ownership.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\cd5a8a522511",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:23:03.932286+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 34116,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:23:19.357561+00:00",
+        "elapsedSeconds": 15.42
+      }
+    ],
+    "limits": [
+      "Persistence, audit and job adapters; no Next, Prisma, database isolation or rollback execution.",
+      "Employee ownerRole restriction only; HR/IT broader existing capability behavior unchanged. No enclosing service transaction."
+    ]
+  },
+  "courseWords": 1768,
+  "courseFiles": 9,
+  "courseLinksChecked": 2,
+  "files": [
+    {
+      "file": "src/services/onboardingService.ts",
+      "before_sha256": "776233de10ef1a29705fd4922c61960c0ee4ee76e33873b6a24c43e9dac54ce5",
+      "after_sha256": "2ff9e8694bcf1b978ba893615d30c1a39da2d7642d404b54e6040f0dc09a9449"
+    },
+    {
+      "file": "tests/onboarding-task-ownership.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "c6961bae14cdb0ed17d5ea69a0d031fab40a3e39891e49adf2f00972b849b28b"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "88f9ed3a73123afff0a1c0b40ece5da3e471cdaa70b0a23fe1edb6286b8cd3d7"
+    },
+    {
+      "file": "astraupskill/snapshots/onboardingService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "776233de10ef1a29705fd4922c61960c0ee4ee76e33873b6a24c43e9dac54ce5"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "3a858ee4ea5483504389dac25561209bb67cdf7f2e794a8ff0d8d7904e6b8612"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "dedfca690d2821d50a11ca2f697f8de220e6d7946d26a975a67ea05f947b64a6"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b2f62904e6150360b3fa74a606c27ba179db468f7eb30afffaea57f6a0e32b91"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "21e2ecce11ff4dc81335104e6b636c6730b6a493b319b4d8d599329f6087074b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "32672f8a1fe41be510356e740fd2ecf113d793cda5efd1be3e5eb7fad59057ef"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1229426e406f0962a62d5be153ebf8a67c78985438009b15aceda9cd943769c9"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d1ed1c1978823b88f2064f5a2037ab7eb1697eba705f1fa12c90eb7553bf2f81"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a8c2398d147d713bca708f58c104742cdec659850c2ed4e190d0ace73dd8f230"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "fe173c92f82464a4c0297abb7c2ce3309b42110873bf149ac627e287c03afaa4"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "3122c7aaea0cfb26dfbe4213ebc7f607b8dfdaabd11f6a84abf22912a66004f7"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "5cd14fc2f8970b87bdf2a30d8357e232c22df5937071999d82db3bb34fc4302a"
+    }
+  ],
+  "limits": [
+    "Persistence, audit and job adapters; no Next, Prisma, database isolation or rollback execution.",
+    "Employee ownerRole restriction only; HR/IT broader existing capability behavior unchanged. No enclosing service transaction."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:30:21.764442+00:00"
+}

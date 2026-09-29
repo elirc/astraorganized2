@@ -1,0 +1,39 @@
+{
+  "passed": false,
+  "total": 8,
+  "checks": [
+    {
+      "name": "explicit empty initialization and read-only preview",
+      "passed": true
+    },
+    {
+      "name": "contact create edit and accepted version",
+      "passed": true
+    },
+    {
+      "name": "exact payment cash and retained overpayment draft",
+      "passed": true
+    },
+    {
+      "name": "fractional stock movement and atomic overdraw rejection",
+      "passed": true
+    },
+    {
+      "name": "reference-protected and ordinary delete paths",
+      "passed": true
+    },
+    {
+      "name": "asset log and budget forms retain valid relationships",
+      "passed": true
+    },
+    {
+      "name": "calendar recurrence creates one linked occurrence",
+      "passed": true
+    },
+    {
+      "name": "two tabs reject stale edits and export retained drafts",
+      "passed": false,
+      "error": "Locator expected to be visible\nActual value: None\nError: element(s) not found \nCall log:\n  - Expect \"to_be_visible\" with timeout 5000ms\n  - waiting for get_by_text(\"Another tab saved changes.\")\n"
+    }
+  ]
+}

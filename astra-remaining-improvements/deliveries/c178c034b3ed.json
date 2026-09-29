@@ -1,0 +1,334 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+  "id": "c178c034b3ed",
+  "summary": "Keep completed training enrollments terminal and stable; validate direct assessment scores; condition scoped completion writes and issue one certificate atomically with audit; add an additive certificate uniqueness migration; clamp UTC expiry months; validate assignment commands and preserve progress on replay; cancel active assignments with audit transaction. Repair missing inverse Course relations so Prisma generation succeeds.",
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c178c034b3ed/resume14-results.json",
+    "expectedTests": 21,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 21,
+    "passedTests": 21,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+        "id": "c178c034b3ed",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--maxWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c178c034b3ed",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T19:29:16.352089+00:00",
+        "status": "complete",
+        "log": "resume14-tests-03.log",
+        "pid": 26652,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:30:35.838207+00:00",
+        "elapsedSeconds": 79.47
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+        "id": "c178c034b3ed",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c178c034b3ed",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T19:27:42.852937+00:00",
+        "status": "complete",
+        "log": "resume14-types-02.log",
+        "pid": 22932,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:29:13.971642+00:00",
+        "elapsedSeconds": 91.12
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+        "id": "c178c034b3ed",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c178c034b3ed",
+        "environmentOverrides": {
+          "CIRCLE_NODE_TOTAL": "2",
+          "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check"
+        },
+        "startedAt": "2026-09-19T19:30:23.653437+00:00",
+        "status": "complete",
+        "log": "resume14-build-01.log",
+        "pid": 27012,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:45:34.446187+00:00",
+        "elapsedSeconds": 910.78
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+        "id": "c178c034b3ed",
+        "command": [
+          "node",
+          "node_modules/prisma/build/index.js",
+          "generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c178c034b3ed",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check"
+        },
+        "startedAt": "2026-09-19T19:18:46.212266+00:00",
+        "status": "complete",
+        "log": "resume14-generate-02.log",
+        "pid": 19272,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:19:59.144212+00:00",
+        "elapsedSeconds": 72.93
+      }
+    ]
+  },
+  "courseWords": 4010,
+  "courseFiles": 9,
+  "courseLinksChecked": 101,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "228c0e20ebb1e8b7efe8010a2550b096615a28877460b013cdebb18acb29e5f0"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "dad97941407b9c627fe5a68834e01b5ba8a98f32e3944e0fb48e9bfc3ccc175d"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "639156c2822fe1959ae6a64f6430d0b74e19636e4b9a9b84e32d7271a08bfb8d"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-02.json",
+      "before_sha256": null,
+      "after_sha256": "410afda9a711b64c9032deb81c44f9e3ab87a2d660ed81660370788a556d5a1a"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-02.log",
+      "before_sha256": null,
+      "after_sha256": "c7bbc9ece37fe7056783ca1d5f8e99c74d011fcd9e2d31d4c1a24283c62448c6"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.json",
+      "before_sha256": null,
+      "after_sha256": "24edb79e40628c6f6da84fdaced6f18fe97f0637c60145befdcf3c21eb831947"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.log",
+      "before_sha256": null,
+      "after_sha256": "888aab8e0af7d497779d7b5805b079b56aa87c4af849cb6164e9bbaa49458172"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.json",
+      "before_sha256": null,
+      "after_sha256": "5f54c8c767e502c3881ecbd21d377acabde2b7062f5601d698d907799ba981af"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.log",
+      "before_sha256": null,
+      "after_sha256": "c9f0e4be74d138d7b8faa0e83a64cac7f8c0f5d93d84c32d221b3b7b67ba04a7"
+    },
+    {
+      "file": "astraupskill/snapshots/next-env.d.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "49df074387d4b05520af50d63113d10bf9a1fc6c0662f5c387c131e6da11edb6"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2dae8a72a65a4e3f74dc32905c9bfb13d7360244e10a95339e647839d3381a57"
+    },
+    {
+      "file": "astraupskill/snapshots/prisma__schema.prisma.original.txt",
+      "before_sha256": null,
+      "after_sha256": "1395546e4ad403e7cd1e7410e22c0f2c931d048fc5925ca8c509a66219658725"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__api__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "59137bf207f805b59b94d03ffd2ffea16d15b83adeee893138cadf86d720326c"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__auth__session.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "dd28dc5afe80aef6860c444df2ca8fc8bf808d389f71de9f34c938ee1994b82b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__assignmentSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "31d278c897d484c795e730f8d42658d21347c2b103b9d4e283241152db84619a"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__assignmentRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f0b954d6fc4d76a0785cffb1d4502db8a36c51cb68e0c80715ba1ffc9e84d069"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__enrollmentRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "403e164a20bdc8819cfc86400d538d66bb6f17bf562a1685710d20eb43fefa34"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__assignmentService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0200c049ba4a6c5a19e4ec436819344281f6cb72c5b1605b952d024fbfefa9a0"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__enrollmentService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3b0d6c0eec27ab057d08b748b3048e2c4b196f3e35c64f6110c7a07681010e40"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__serviceHelpers.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ad3b09793e89ad755e76f3e7d4b5ab22095651775032817f0cafe8e94fe6b083"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "49df074387d4b05520af50d63113d10bf9a1fc6c0662f5c387c131e6da11edb6",
+      "after_sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "f5c720bea142f3f7a8558cefffe312ec0ed89b9da17ee66b792eb4fab9b0445d"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "2dae8a72a65a4e3f74dc32905c9bfb13d7360244e10a95339e647839d3381a57",
+      "after_sha256": "bf983c2860d01a36f297b6fcc5dfcdf1bdeb6673b934c4f8a9e864ede22a7407"
+    },
+    {
+      "file": "prisma/migrations/202609190001_one_certificate_per_enrollment/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "d8dd54cb858c97a273f353d4e437c6ce349a55265ca3fef06e4de67996bb4349"
+    },
+    {
+      "file": "prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "prisma/schema.prisma",
+      "before_sha256": "1395546e4ad403e7cd1e7410e22c0f2c931d048fc5925ca8c509a66219658725",
+      "after_sha256": "5bc58c1e48fbf389e9a1bd2c5071154b01c09ff65b40410c41f4e4688e82fccd"
+    },
+    {
+      "file": "src/lib/api/route.ts",
+      "before_sha256": "59137bf207f805b59b94d03ffd2ffea16d15b83adeee893138cadf86d720326c",
+      "after_sha256": "cf12d8d2e0c742ae91819740d4aff3e2671eec974035a261ae1429af8af897c7"
+    },
+    {
+      "file": "src/lib/auth/session.ts",
+      "before_sha256": "dd28dc5afe80aef6860c444df2ca8fc8bf808d389f71de9f34c938ee1994b82b",
+      "after_sha256": "871f1a27a6b8670a4e2cbafe89022ed38267cb7560c8a391ec600504f7c2a9dd"
+    },
+    {
+      "file": "src/lib/validation/assignmentSchemas.ts",
+      "before_sha256": "31d278c897d484c795e730f8d42658d21347c2b103b9d4e283241152db84619a",
+      "after_sha256": "ced5c4e137e00c3300608d256048cbafbe74cbca8db732cf22474f1809e54ac1"
+    },
+    {
+      "file": "src/repositories/assignmentRepository.ts",
+      "before_sha256": "f0b954d6fc4d76a0785cffb1d4502db8a36c51cb68e0c80715ba1ffc9e84d069",
+      "after_sha256": "ce504dbeb4b49aa292c7bcf1b3d9072eca3bba23bf7a8c50ab027dd5e309a5fb"
+    },
+    {
+      "file": "src/repositories/enrollmentRepository.ts",
+      "before_sha256": "403e164a20bdc8819cfc86400d538d66bb6f17bf562a1685710d20eb43fefa34",
+      "after_sha256": "a60e81bf31a1a28830ffc88d34ee4d81681f72d6654b1fc8090f0e2eb4a2427c"
+    },
+    {
+      "file": "src/services/assignmentService.ts",
+      "before_sha256": "0200c049ba4a6c5a19e4ec436819344281f6cb72c5b1605b952d024fbfefa9a0",
+      "after_sha256": "5cf9091073df9c13db8c4b16b79bfbe09762c76643a7a564a51a1e754f5e0f52"
+    },
+    {
+      "file": "src/services/enrollmentService.ts",
+      "before_sha256": "3b0d6c0eec27ab057d08b748b3048e2c4b196f3e35c64f6110c7a07681010e40",
+      "after_sha256": "9490af9fc5ed1ba663309abee3619cdadff28e310223f14fa84481734043d8f0"
+    },
+    {
+      "file": "src/services/serviceHelpers.ts",
+      "before_sha256": "ad3b09793e89ad755e76f3e7d4b5ab22095651775032817f0cafe8e94fe6b083",
+      "after_sha256": "bca0cae2512ec49ff33a62f31a24cd83fa1de57bb69854f163ebb12ceb046082"
+    },
+    {
+      "file": "tests/completion-workflows.test.ts",
+      "before_sha256": null,
+      "after_sha256": "5f5e1404c101611a2989138b3394016aa6c0de78441e27ba8f58ffea1559151e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "109fb98134fe4bf425163804f096369b74bab544b30d2aa66b44887d1f926c40"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "930548f2168dfd36201ad47374e71e063726625ba9c0fcb43628e36a9359d01c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "dbf6d7b313550a768d9d2c456e984dd0379c989079a9859892f670ada55ba298"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c14f7d6ab63ea49abbcc9e8d8bb05c31a75238b020350c50fc52345a161b4c9a"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6b06ac5be40dfe5195004c249e96248f68ff56e912b85039863a30827ff86d53"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "e040efabb275abf70295abbd6368c37bdb106ea70b962a37cea2244a97f2e00e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9eebff9adbeaf01312305ac8de0d03b4945da721a2feeb3be4c3fae8d43dbabf"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "2aa3e6d0b93d7697533c735f42ad189fc283f120a26cdd71293f0e3202c85889"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "72c552b30c35e1d74737c1eef8b9d0d3ec10c01cb1a0f2d5aa1e392898da3c51"
+    }
+  ],
+  "limits": [
+    "Assessment scores remain client-supplied demo inputs; this is not secure exam grading.",
+    "New certificate unique index requires an existing-schema baseline and duplicate-data review before applying to an existing database; no original database was changed.",
+    "Service tests use actual repositories with a cloned transaction fixture and conditional query checks, not a live PostgreSQL concurrency test."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T19:47:07.485237+00:00"
+}

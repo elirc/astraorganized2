@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww14",
+  "id": "c178c034b3ed",
+  "command": [
+    "npm.cmd",
+    "install",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund",
+    "--prefer-offline"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c178c034b3ed",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T18:42:35.908399+00:00",
+  "status": "complete",
+  "log": "resume14-install-01.log",
+  "pid": 27536,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T19:12:57.783484+00:00",
+  "elapsedSeconds": 1821.86
+}

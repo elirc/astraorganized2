@@ -1,0 +1,565 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\playwright.config.mjs",
+    "rootDir": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/993e7c3b44d7/browser-tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/993e7c3b44d7/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/993e7c3b44d7/browser-tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\glob\\browser-first\\browser.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.60.0",
+    "workers": 1,
+    "webServer": {
+      "command": "node node_modules/next/dist/bin/next start --hostname 127.0.0.1 --port 49347",
+      "url": "http://127.0.0.1:49347/studio",
+      "reuseExistingServer": false,
+      "timeout": 90000
+    }
+  },
+  "suites": [
+    {
+      "title": "studio.spec.js",
+      "file": "studio.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "HTTP author and public filter boundaries return explicit statuses",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:15:04.054Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-4a24c0b9f69b5c93e215",
+          "file": "studio.spec.js",
+          "line": 65,
+          "column": 1
+        },
+        {
+          "title": "studio creates, edits and publishes an immutable playable edition",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 13685,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Puzzle saved' })\nExpected substring: \u001b[32m\"version 1\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Puzzle saved' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Puzzle saved' })\nExpected substring: \u001b[32m\"version 1\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Puzzle saved' })\u001b[22m\n\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:103:75",
+                    "location": {
+                      "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                      "column": 75,
+                      "line": 103
+                    },
+                    "snippet": "  101 |   await fill(page, draft(1));\n  102 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 103 |   await expect(page.getByRole(\"status\").filter({hasText:\"Puzzle saved\"})).toContainText(\"version 1\");\n      |                                                                           ^\n  104 |   await page\n  105 |     .getByLabel(\"Puzzle title\", { exact: true })\n  106 |     .fill(\"Browser revised edition\");"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                        "column": 75,
+                        "line": 103
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Puzzle saved' })\nExpected substring: \u001b[32m\"version 1\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Puzzle saved' })\u001b[22m\n\n\n  101 |   await fill(page, draft(1));\n  102 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 103 |   await expect(page.getByRole(\"status\").filter({hasText:\"Puzzle saved\"})).toContainText(\"version 1\");\n      |                                                                           ^\n  104 |   await page\n  105 |     .getByLabel(\"Puzzle title\", { exact: true })\n  106 |     .fill(\"Browser revised edition\");\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:103:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:15:04.611Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-studio-creates-edit-71fd2--immutable-playable-edition\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-studio-creates-edit-71fd2--immutable-playable-edition\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                    "column": 75,
+                    "line": 103
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-eb53a522ad4ce504db97",
+          "file": "studio.spec.js",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "stale studio editor retains and exports its draft before loading current",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3349,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"changed\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Cross-origin authoring is not allowed. Your draft…</p> aka getByText('Cross-origin authoring is not')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"changed\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Cross-origin authoring is not allowed. Your draft…</p> aka getByText('Cross-origin authoring is not')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:142:41",
+                    "location": {
+                      "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                      "column": 41,
+                      "line": 142
+                    },
+                    "snippet": "  140 |   expect(winner.status()).toBe(200);\n  141 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 142 |   await expect(page.getByRole(\"alert\")).toContainText(\"changed\");\n      |                                         ^\n  143 |   await expect(page.getByLabel(\"Puzzle title\", { exact: true })).toHaveValue(\n  144 |     \"My retained edit\",\n  145 |   );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                        "column": 41,
+                        "line": 142
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"changed\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Cross-origin authoring is not allowed. Your draft…</p> aka getByText('Cross-origin authoring is not')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n  140 |   expect(winner.status()).toBe(200);\n  141 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 142 |   await expect(page.getByRole(\"alert\")).toContainText(\"changed\");\n      |                                         ^\n  143 |   await expect(page.getByLabel(\"Puzzle title\", { exact: true })).toHaveValue(\n  144 |     \"My retained edit\",\n  145 |   );\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:142:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:15:28.775Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-stale-studio-editor-301be-raft-before-loading-current\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-stale-studio-editor-301be-raft-before-loading-current\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                    "column": 41,
+                    "line": 142
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-d92ebce585f6a91dd7ba",
+          "file": "studio.spec.js",
+          "line": 123,
+          "column": 1
+        },
+        {
+          "title": "delete can be cancelled and confirmed; sign-out clears the token",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8116,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Draft deleted' })\nExpected substring: \u001b[32m\"deleted\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Draft deleted' })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Draft deleted' })\nExpected substring: \u001b[32m\"deleted\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Draft deleted' })\u001b[22m\n\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:174:76",
+                    "location": {
+                      "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                      "column": 76,
+                      "line": 174
+                    },
+                    "snippet": "  172 |   page.once(\"dialog\", (d) => d.accept());\n  173 |   await page.getByRole(\"button\", { name: \"Delete draft\" }).click();\n> 174 |   await expect(page.getByRole(\"status\").filter({hasText:\"Draft deleted\"})).toContainText(\"deleted\");\n      |                                                                            ^\n  175 |   expect(\n  176 |     (\n  177 |       await request.get(\"/api/studio/puzzles/\" + created.id, { headers })"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                        "column": 76,
+                        "line": 174
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('status').filter({ hasText: 'Draft deleted' })\nExpected substring: \u001b[32m\"deleted\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('status').filter({ hasText: 'Draft deleted' })\u001b[22m\n\n\n  172 |   page.once(\"dialog\", (d) => d.accept());\n  173 |   await page.getByRole(\"button\", { name: \"Delete draft\" }).click();\n> 174 |   await expect(page.getByRole(\"status\").filter({hasText:\"Draft deleted\"})).toContainText(\"deleted\");\n      |                                                                            ^\n  175 |   expect(\n  176 |     (\n  177 |       await request.get(\"/api/studio/puzzles/\" + created.id, { headers })\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:174:76"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:15:38.125Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-delete-can-be-cance-d6236-d-sign-out-clears-the-token\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-delete-can-be-cance-d6236-d-sign-out-clears-the-token\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                    "column": 76,
+                    "line": 174
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-dc8315ab802e48c3dd31",
+          "file": "studio.spec.js",
+          "line": 158,
+          "column": 1
+        },
+        {
+          "title": "server failure preserves editor inputs and does not show save success",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4292,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"unavailable\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Database temporarily unavailable Your draft remai…</p> aka getByText('Database temporarily')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"unavailable\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Database temporarily unavailable Your draft remai…</p> aka getByText('Database temporarily')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:208:41",
+                    "location": {
+                      "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                      "column": 41,
+                      "line": 208
+                    },
+                    "snippet": "  206 |   );\n  207 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 208 |   await expect(page.getByRole(\"alert\")).toContainText(\"unavailable\");\n      |                                         ^\n  209 |   await expect(page.getByLabel(\"Puzzle title\", { exact: true })).toHaveValue(\n  210 |     \"Retained on outage\",\n  211 |   );"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                        "column": 41,
+                        "line": 208
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"unavailable\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"studio-error\">Database temporarily unavailable Your draft remai…</p> aka getByText('Database temporarily')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n  206 |   );\n  207 |   await page.getByRole(\"button\", { name: \"Save puzzle\", exact: true }).click();\n> 208 |   await expect(page.getByRole(\"alert\")).toContainText(\"unavailable\");\n      |                                         ^\n  209 |   await expect(page.getByLabel(\"Puzzle title\", { exact: true })).toHaveValue(\n  210 |     \"Retained on outage\",\n  211 |   );\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:208:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:15:51.046Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-server-failure-pres-3bf6b--does-not-show-save-success\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-server-failure-pres-3bf6b--does-not-show-save-success\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                    "column": 41,
+                    "line": 208
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-a0d532656fe62097183e",
+          "file": "studio.spec.js",
+          "line": 188,
+          "column": 1
+        },
+        {
+          "title": "game saves a merge before displaying it and restores it after reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:16:04.527Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-1693fd32a52b892c48df",
+          "file": "studio.spec.js",
+          "line": 220,
+          "column": 1
+        },
+        {
+          "title": "corrupt session is preserved and exported before confirmed reset",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3665,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:16:08.623Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-93af2badcbdc8028888b",
+          "file": "studio.spec.js",
+          "line": 261,
+          "column": 1
+        },
+        {
+          "title": "quota failure keeps the accepted game board and exports pending move",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3041,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Quota\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"my-3 text-red-800\">Quota exceeded</p> aka getByText('Quota exceeded')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Quota\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"my-3 text-red-800\">Quota exceeded</p> aka getByText('Quota exceeded')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:314:41",
+                    "location": {
+                      "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                      "column": 41,
+                      "line": 314
+                    },
+                    "snippet": "  312 |   await page.getByRole(\"button\", { name: a.label, exact: false }).click();\n  313 |   await page.getByRole(\"button\", { name: b.label, exact: false }).click();\n> 314 |   await expect(page.getByRole(\"alert\")).toContainText(\"Quota\");\n      |                                         ^\n  315 |   await expect(\n  316 |     page.getByRole(\"button\", { name: a.label, exact: false }),\n  317 |   ).toBeVisible();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                        "column": 41,
+                        "line": 314
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"Quota\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <p role=\"alert\" class=\"my-3 text-red-800\">Quota exceeded</p> aka getByText('Quota exceeded')\n    2) <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div> aka locator('[id=\"__next-route-announcer__\"]')\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\u001b[2m    - locator resolved to <div role=\"alert\" aria-live=\"assertive\" id=\"__next-route-announcer__\"></div>\u001b[22m\n\u001b[2m    - unexpected value \"\"\u001b[22m\n\n\n  312 |   await page.getByRole(\"button\", { name: a.label, exact: false }).click();\n  313 |   await page.getByRole(\"button\", { name: b.label, exact: false }).click();\n> 314 |   await expect(page.getByRole(\"alert\")).toContainText(\"Quota\");\n      |                                         ^\n  315 |   await expect(\n  316 |     page.getByRole(\"button\", { name: a.label, exact: false }),\n  317 |   ).toBeVisible();\n    at C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js:314:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:16:12.427Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-quota-failure-keeps-92888-rd-and-exports-pending-move\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\test-results\\studio-quota-failure-keeps-92888-rd-and-exports-pending-move\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\993e7c3b44d7\\browser-tests\\studio.spec.js",
+                    "column": 41,
+                    "line": 314
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-1ddcbe4e115c13acccc8",
+          "file": "studio.spec.js",
+          "line": 291,
+          "column": 1
+        },
+        {
+          "title": "studio desktop and narrow forms stay within the page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5173,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-09-09T09:16:20.838Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3324084181281abe3b7c-c9792fe18d9874c29a95",
+          "file": "studio.spec.js",
+          "line": 328,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-09-09T09:14:55.392Z",
+    "duration": 94607.773,
+    "expected": 4,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

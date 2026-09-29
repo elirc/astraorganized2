@@ -1,0 +1,1209 @@
+{
+ "per_course": {
+  "js1-task-board": {
+   "wave": 1,
+   "words": 5079,
+   "paras": 75,
+   "shared_paras": 47,
+   "shared_pct": 62.7
+  },
+  "js1-contact-book": {
+   "wave": 1,
+   "words": 4969,
+   "paras": 74,
+   "shared_paras": 47,
+   "shared_pct": 63.5
+  },
+  "js1-focus-timer": {
+   "wave": 1,
+   "words": 5049,
+   "paras": 76,
+   "shared_paras": 47,
+   "shared_pct": 61.8
+  },
+  "finance-dashboard": {
+   "wave": 1,
+   "words": 5132,
+   "paras": 76,
+   "shared_paras": 47,
+   "shared_pct": 61.8
+  },
+  "recipeweb": {
+   "wave": 1,
+   "words": 5243,
+   "paras": 79,
+   "shared_paras": 48,
+   "shared_pct": 60.8
+  },
+  "jobtrack": {
+   "wave": 1,
+   "words": 5476,
+   "paras": 80,
+   "shared_paras": 48,
+   "shared_pct": 60.0
+  },
+  "newcodexjs-01-task-manager": {
+   "wave": 1,
+   "words": 5720,
+   "paras": 85,
+   "shared_paras": 51,
+   "shared_pct": 60.0
+  },
+  "newcodexjs-02-contact-book": {
+   "wave": 1,
+   "words": 5823,
+   "paras": 82,
+   "shared_paras": 51,
+   "shared_pct": 62.2
+  },
+  "newcodexjs-03-expense-tracker": {
+   "wave": 1,
+   "words": 5567,
+   "paras": 81,
+   "shared_paras": 51,
+   "shared_pct": 63.0
+  },
+  "newcodexjs-05-recipe-manager": {
+   "wave": 1,
+   "words": 5798,
+   "paras": 82,
+   "shared_paras": 51,
+   "shared_pct": 62.2
+  },
+  "js1-flashcards": {
+   "wave": 1,
+   "words": 5144,
+   "paras": 76,
+   "shared_paras": 51,
+   "shared_pct": 67.1
+  },
+  "js1-habit-tracker": {
+   "wave": 1,
+   "words": 4952,
+   "paras": 74,
+   "shared_paras": 51,
+   "shared_pct": 68.9
+  },
+  "js1-reading-list": {
+   "wave": 1,
+   "words": 4788,
+   "paras": 73,
+   "shared_paras": 51,
+   "shared_pct": 69.9
+  },
+  "js1-note-vault": {
+   "wave": 1,
+   "words": 5385,
+   "paras": 77,
+   "shared_paras": 48,
+   "shared_pct": 62.3
+  },
+  "js1-budget-tracker": {
+   "wave": 1,
+   "words": 4848,
+   "paras": 75,
+   "shared_paras": 51,
+   "shared_pct": 68.0
+  },
+  "js1-pantry-inventory": {
+   "wave": 1,
+   "words": 4939,
+   "paras": 74,
+   "shared_paras": 51,
+   "shared_pct": 68.9
+  },
+  "js1-snippet-vault": {
+   "wave": 1,
+   "words": 4843,
+   "paras": 76,
+   "shared_paras": 47,
+   "shared_pct": 61.8
+  },
+  "js1-room-booking": {
+   "wave": 1,
+   "words": 5563,
+   "paras": 78,
+   "shared_paras": 52,
+   "shared_pct": 66.7
+  },
+  "newcodexjs-04-notes-app": {
+   "wave": 1,
+   "words": 5220,
+   "paras": 79,
+   "shared_paras": 50,
+   "shared_pct": 63.3
+  },
+  "newcodexjs-06-bookmark-manager": {
+   "wave": 1,
+   "words": 5898,
+   "paras": 81,
+   "shared_paras": 50,
+   "shared_pct": 61.7
+  },
+  "js1-poll-studio": {
+   "wave": 1,
+   "words": 5953,
+   "paras": 90,
+   "shared_paras": 61,
+   "shared_pct": 67.8
+  },
+  "js1-kanban-flow": {
+   "wave": 1,
+   "words": 5722,
+   "paras": 89,
+   "shared_paras": 61,
+   "shared_pct": 68.5
+  },
+  "js1-course-roster": {
+   "wave": 1,
+   "words": 5824,
+   "paras": 89,
+   "shared_paras": 67,
+   "shared_pct": 75.3
+  },
+  "js1-event-admin": {
+   "wave": 1,
+   "words": 5629,
+   "paras": 84,
+   "shared_paras": 68,
+   "shared_pct": 81.0
+  },
+  "js1-job-pipeline": {
+   "wave": 1,
+   "words": 5680,
+   "paras": 87,
+   "shared_paras": 67,
+   "shared_pct": 77.0
+  },
+  "js1-stock-catalog": {
+   "wave": 1,
+   "words": 5775,
+   "paras": 90,
+   "shared_paras": 67,
+   "shared_pct": 74.4
+  },
+  "js1-recipe-studio": {
+   "wave": 1,
+   "words": 5715,
+   "paras": 85,
+   "shared_paras": 68,
+   "shared_pct": 80.0
+  },
+  "js1-org-explorer": {
+   "wave": 1,
+   "words": 6592,
+   "paras": 97,
+   "shared_paras": 70,
+   "shared_pct": 72.2
+  },
+  "js1-mini-blog": {
+   "wave": 1,
+   "words": 5677,
+   "paras": 87,
+   "shared_paras": 67,
+   "shared_pct": 77.0
+  },
+  "js1-pulse-analytics": {
+   "wave": 1,
+   "words": 6596,
+   "paras": 96,
+   "shared_paras": 70,
+   "shared_pct": 72.9
+  },
+  "js1-support-tickets": {
+   "wave": 1,
+   "words": 6621,
+   "paras": 96,
+   "shared_paras": 70,
+   "shared_pct": 72.9
+  },
+  "js1-issue-desk": {
+   "wave": 1,
+   "words": 5707,
+   "paras": 87,
+   "shared_paras": 67,
+   "shared_pct": 77.0
+  },
+  "js1-forum-search": {
+   "wave": 1,
+   "words": 6696,
+   "paras": 97,
+   "shared_paras": 70,
+   "shared_pct": 72.2
+  },
+  "js1-invoice-studio": {
+   "wave": 1,
+   "words": 6606,
+   "paras": 96,
+   "shared_paras": 71,
+   "shared_pct": 74.0
+  },
+  "js1-asset-checkout": {
+   "wave": 1,
+   "words": 8151,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-equipment-maintenance": {
+   "wave": 1,
+   "words": 7306,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-library-lending": {
+   "wave": 1,
+   "words": 7347,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-gym-membership": {
+   "wave": 1,
+   "words": 7303,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-campaign-planner": {
+   "wave": 1,
+   "words": 7301,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-volunteer-coordinator": {
+   "wave": 1,
+   "words": 7292,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-learning-paths": {
+   "wave": 1,
+   "words": 8158,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-project-risks": {
+   "wave": 1,
+   "words": 7311,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-travel-requests": {
+   "wave": 1,
+   "words": 8151,
+   "paras": 110,
+   "shared_paras": 91,
+   "shared_pct": 82.7
+  },
+  "js1-vendor-contracts": {
+   "wave": 1,
+   "words": 8146,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-procurement-portal": {
+   "wave": 1,
+   "words": 7287,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-property-rentals": {
+   "wave": 1,
+   "words": 7306,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-quality-audits": {
+   "wave": 1,
+   "words": 8142,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-patient-intake": {
+   "wave": 1,
+   "words": 7347,
+   "paras": 104,
+   "shared_paras": 87,
+   "shared_pct": 83.7
+  },
+  "js1-grant-manager": {
+   "wave": 1,
+   "words": 8126,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-incident-response": {
+   "wave": 1,
+   "words": 8110,
+   "paras": 109,
+   "shared_paras": 91,
+   "shared_pct": 83.5
+  },
+  "js1-legal-case-tracker": {
+   "wave": 1,
+   "words": 7892,
+   "paras": 112,
+   "shared_paras": 80,
+   "shared_pct": 71.4
+  },
+  "js1-subscription-billing": {
+   "wave": 1,
+   "words": 8391,
+   "paras": 113,
+   "shared_paras": 98,
+   "shared_pct": 86.7
+  },
+  "js1-field-service": {
+   "wave": 1,
+   "words": 8396,
+   "paras": 113,
+   "shared_paras": 98,
+   "shared_pct": 86.7
+  },
+  "js1-research-studies": {
+   "wave": 1,
+   "words": 8383,
+   "paras": 113,
+   "shared_paras": 97,
+   "shared_pct": 85.8
+  },
+  "js1-warehouse-ledger": {
+   "wave": 1,
+   "words": 7573,
+   "paras": 110,
+   "shared_paras": 71,
+   "shared_pct": 64.5
+  },
+  "js1-secure-notes": {
+   "wave": 1,
+   "words": 7316,
+   "paras": 109,
+   "shared_paras": 71,
+   "shared_pct": 65.1
+  },
+  "js1-live-chat": {
+   "wave": 1,
+   "words": 7504,
+   "paras": 111,
+   "shared_paras": 72,
+   "shared_pct": 64.9
+  },
+  "newcodexjs-07-blog-platform": {
+   "wave": 1,
+   "words": 8107,
+   "paras": 111,
+   "shared_paras": 99,
+   "shared_pct": 89.2
+  },
+  "newcodexjs-08-kanban-board": {
+   "wave": 1,
+   "words": 8107,
+   "paras": 111,
+   "shared_paras": 99,
+   "shared_pct": 89.2
+  },
+  "newcodexjs-09-job-application-tracker": {
+   "wave": 1,
+   "words": 8095,
+   "paras": 111,
+   "shared_paras": 96,
+   "shared_pct": 86.5
+  },
+  "newcodexjs-10-inventory-management": {
+   "wave": 1,
+   "words": 8086,
+   "paras": 111,
+   "shared_paras": 96,
+   "shared_pct": 86.5
+  },
+  "newcodexjs-11-survey-builder": {
+   "wave": 1,
+   "words": 7900,
+   "paras": 110,
+   "shared_paras": 70,
+   "shared_pct": 63.6
+  },
+  "newcodexjs-12-chat-polling": {
+   "wave": 1,
+   "words": 7991,
+   "paras": 110,
+   "shared_paras": 70,
+   "shared_pct": 63.6
+  },
+  "newcodexjs-13-ecommerce-storefront": {
+   "wave": 1,
+   "words": 7975,
+   "paras": 110,
+   "shared_paras": 70,
+   "shared_pct": 63.6
+  },
+  "newcodexjs-14-appointment-booking": {
+   "wave": 1,
+   "words": 7609,
+   "paras": 110,
+   "shared_paras": 72,
+   "shared_pct": 65.5
+  },
+  "newcodexjs-15-api-tester": {
+   "wave": 1,
+   "words": 8041,
+   "paras": 111,
+   "shared_paras": 70,
+   "shared_pct": 63.1
+  },
+  "newcodexjs-16-team-project-management": {
+   "wave": 1,
+   "words": 8377,
+   "paras": 111,
+   "shared_paras": 92,
+   "shared_pct": 82.9
+  },
+  "newcodexjs-17-support-ticket-system": {
+   "wave": 1,
+   "words": 8425,
+   "paras": 111,
+   "shared_paras": 86,
+   "shared_pct": 77.5
+  },
+  "newcodexjs-18-learning-management-system": {
+   "wave": 1,
+   "words": 8377,
+   "paras": 111,
+   "shared_paras": 92,
+   "shared_pct": 82.9
+  },
+  "newcodexjs-19-realtime-chat-platform": {
+   "wave": 1,
+   "words": 8382,
+   "paras": 111,
+   "shared_paras": 92,
+   "shared_pct": 82.9
+  },
+  "newcodexjs-20-marketplace-platform": {
+   "wave": 1,
+   "words": 8377,
+   "paras": 111,
+   "shared_paras": 92,
+   "shared_pct": 82.9
+  },
+  "recipeview": {
+   "wave": 1,
+   "words": 7690,
+   "paras": 109,
+   "shared_paras": 62,
+   "shared_pct": 56.9
+  },
+  "calendar-jobtrack": {
+   "wave": 1,
+   "words": 7910,
+   "paras": 111,
+   "shared_paras": 68,
+   "shared_pct": 61.3
+  },
+  "devdeck": {
+   "wave": 1,
+   "words": 7465,
+   "paras": 112,
+   "shared_paras": 68,
+   "shared_pct": 60.7
+  },
+  "job-track": {
+   "wave": 1,
+   "words": 7892,
+   "paras": 115,
+   "shared_paras": 62,
+   "shared_pct": 53.9
+  },
+  "grokbuildmultitenantproject": {
+   "wave": 2,
+   "words": 4115,
+   "paras": 59,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "netgum": {
+   "wave": 2,
+   "words": 5276,
+   "paras": 75,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j4": {
+   "wave": 2,
+   "words": 4003,
+   "paras": 59,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildbusinesses": {
+   "wave": 2,
+   "words": 5740,
+   "paras": 85,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildwhiteboard": {
+   "wave": 2,
+   "words": 4419,
+   "paras": 65,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "master3": {
+   "wave": 2,
+   "words": 3751,
+   "paras": 44,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildjira": {
+   "wave": 2,
+   "words": 4445,
+   "paras": 59,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildsql": {
+   "wave": 2,
+   "words": 6392,
+   "paras": 88,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "ww37": {
+   "wave": 2,
+   "words": 5179,
+   "paras": 66,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j7": {
+   "wave": 2,
+   "words": 4302,
+   "paras": 62,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e15": {
+   "wave": 2,
+   "words": 6290,
+   "paras": 98,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "job-track-task-queue-system": {
+   "wave": 2,
+   "words": 5649,
+   "paras": 93,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j2": {
+   "wave": 2,
+   "words": 4046,
+   "paras": 77,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "netzen": {
+   "wave": 2,
+   "words": 4191,
+   "paras": 58,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "ww39": {
+   "wave": 2,
+   "words": 3828,
+   "paras": 40,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z3-founder-crm-lite": {
+   "wave": 2,
+   "words": 4136,
+   "paras": 52,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e6": {
+   "wave": 2,
+   "words": 4197,
+   "paras": 56,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "job-track-live-chat-support-platform": {
+   "wave": 2,
+   "words": 5764,
+   "paras": 95,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "ww27": {
+   "wave": 2,
+   "words": 4100,
+   "paras": 58,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "jdtrrain2-1": {
+   "wave": 2,
+   "words": 5833,
+   "paras": 81,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z3-customer-feedback-board": {
+   "wave": 2,
+   "words": 4476,
+   "paras": 68,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "formforge": {
+   "wave": 2,
+   "words": 7432,
+   "paras": 119,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "meterforge": {
+   "wave": 2,
+   "words": 7414,
+   "paras": 111,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "master4": {
+   "wave": 2,
+   "words": 3801,
+   "paras": 46,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "zz8": {
+   "wave": 2,
+   "words": 3843,
+   "paras": 66,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "w24": {
+   "wave": 2,
+   "words": 3695,
+   "paras": 55,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "master-6": {
+   "wave": 2,
+   "words": 5533,
+   "paras": 85,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z7": {
+   "wave": 2,
+   "words": 4549,
+   "paras": 68,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "ww5": {
+   "wave": 2,
+   "words": 4198,
+   "paras": 52,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-llm-generated-helper": {
+   "wave": 2,
+   "words": 6355,
+   "paras": 96,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "grokbuildppmproject": {
+   "wave": 2,
+   "words": 4844,
+   "paras": 64,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "master2": {
+   "wave": 2,
+   "words": 5048,
+   "paras": 75,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "ww17": {
+   "wave": 2,
+   "words": 4156,
+   "paras": 38,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "jstrain3-0": {
+   "wave": 2,
+   "words": 6027,
+   "paras": 76,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "grokbuildteamproject": {
+   "wave": 2,
+   "words": 4571,
+   "paras": 70,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "astra2": {
+   "wave": 2,
+   "words": 7815,
+   "paras": 127,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z6": {
+   "wave": 2,
+   "words": 4231,
+   "paras": 51,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "lucasrouter": {
+   "wave": 2,
+   "words": 4783,
+   "paras": 62,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "borrowbox": {
+   "wave": 2,
+   "words": 4792,
+   "paras": 73,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildantigvg": {
+   "wave": 2,
+   "words": 3748,
+   "paras": 49,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "jstrain2-3": {
+   "wave": 2,
+   "words": 7441,
+   "paras": 110,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildcrmpyjs": {
+   "wave": 2,
+   "words": 4336,
+   "paras": 59,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e20": {
+   "wave": 2,
+   "words": 5653,
+   "paras": 95,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "d1": {
+   "wave": 2,
+   "words": 4939,
+   "paras": 64,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "grokbuildecommerceproject": {
+   "wave": 2,
+   "words": 4515,
+   "paras": 70,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildsmallplates": {
+   "wave": 2,
+   "words": 4567,
+   "paras": 66,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "react": {
+   "wave": 2,
+   "words": 3921,
+   "paras": 56,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildsubbox": {
+   "wave": 2,
+   "words": 4843,
+   "paras": 91,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "nethris": {
+   "wave": 2,
+   "words": 6577,
+   "paras": 114,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e12": {
+   "wave": 2,
+   "words": 6378,
+   "paras": 94,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e13": {
+   "wave": 2,
+   "words": 3366,
+   "paras": 33,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z9": {
+   "wave": 2,
+   "words": 4010,
+   "paras": 36,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "campusops": {
+   "wave": 2,
+   "words": 5587,
+   "paras": 78,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "globgame": {
+   "wave": 2,
+   "words": 3935,
+   "paras": 59,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j1": {
+   "wave": 2,
+   "words": 4375,
+   "paras": 72,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "aiheartbeat": {
+   "wave": 2,
+   "words": 4258,
+   "paras": 52,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "netvg": {
+   "wave": 2,
+   "words": 3986,
+   "paras": 54,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-ramp": {
+   "wave": 2,
+   "words": 4973,
+   "paras": 65,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildgum": {
+   "wave": 2,
+   "words": 4910,
+   "paras": 86,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "master7": {
+   "wave": 2,
+   "words": 3814,
+   "paras": 53,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "nettrello": {
+   "wave": 2,
+   "words": 4200,
+   "paras": 51,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "jsprojectlearn": {
+   "wave": 2,
+   "words": 3914,
+   "paras": 52,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "geminiorganized-opensource-upskilling-stripe": {
+   "wave": 2,
+   "words": 6818,
+   "paras": 109,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "astra4-2": {
+   "wave": 2,
+   "words": 3774,
+   "paras": 47,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "appmakertrack": {
+   "wave": 2,
+   "words": 6198,
+   "paras": 81,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "grokbuildhrproject": {
+   "wave": 2,
+   "words": 4197,
+   "paras": 61,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "e14": {
+   "wave": 2,
+   "words": 7555,
+   "paras": 118,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "andie": {
+   "wave": 2,
+   "words": 3955,
+   "paras": 61,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j3": {
+   "wave": 2,
+   "words": 4411,
+   "paras": 63,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "netpastebin": {
+   "wave": 2,
+   "words": 5845,
+   "paras": 82,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "b1": {
+   "wave": 2,
+   "words": 4074,
+   "paras": 56,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "j5": {
+   "wave": 2,
+   "words": 4483,
+   "paras": 63,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "aiapplybot": {
+   "wave": 2,
+   "words": 4029,
+   "paras": 57,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "buildasana": {
+   "wave": 2,
+   "words": 4759,
+   "paras": 68,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "job-track-restaurant-kitchen-display-system": {
+   "wave": 2,
+   "words": 5614,
+   "paras": 85,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "grokbuildorderproject": {
+   "wave": 2,
+   "words": 4226,
+   "paras": 60,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "missioncontrol": {
+   "wave": 2,
+   "words": 5136,
+   "paras": 66,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  },
+  "z1": {
+   "wave": 2,
+   "words": 5252,
+   "paras": 81,
+   "shared_paras": 0,
+   "shared_pct": 0.0
+  }
+ },
+ "most_copied": [
+  {
+   "n": 75,
+   "h": "c539df990164b7145cd29a5ffa8060ee",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "554dc698b48c9e598f6a880cf2007087",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "d5c12bb565e5907b5f8f6e5bf4bd908e",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "c99b42d38892977ea69a4841a807b118",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "160b1b57b26dc4b849ee9bdbfa3c4c3d",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "49c2db89e78db952639da54e425fe738",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "ccfdad19668a4aebc6b38ab761f5976f",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "2295cb6c5f4c1b89afeb5d319abb4f9c",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "edcbf7e963ab59867f51c80be97ae4c0",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "2df25da2e82d162fc49b6628e1e37ac5",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "784aeb101215b0c6b73669112395353b",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  },
+  {
+   "n": 75,
+   "h": "fadf1d7f5a4ab43d2c7f02a87268fcff",
+   "slugs": [
+    "calendar-jobtrack",
+    "devdeck",
+    "finance-dashboard",
+    "job-track",
+    "jobtrack"
+   ]
+  }
+ ]
+}

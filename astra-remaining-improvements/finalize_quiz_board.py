@@ -1,0 +1,16 @@
+﻿from pathlib import Path
+import json,hashlib,os,shutil
+B=Path('astra-remaining-improvements');S=B/'stage/6844a7b03c83';C=B/'checks/quiz-board/final'
+for name in ['desktop','narrow']:
+ assert hashlib.sha256((C/f'{name}.png').read_bytes()).digest()==hashlib.sha256((B/'checks/quiz-board'/f'{name}.png').read_bytes()).digest(),'Final screenshot differs from reviewed image'
+ p=S/'astraupskill/images'/f'{name}.png';p.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(C/f'{name}.png',p)
+p=S/'astraupskill/VERIFICATION.md';t=p.read_text(encoding='utf-8').replace('The final gate runs 20 Node storage/domain cases, eleven Chromium scenarios and six JavaScript syntax checks.', 'Final result: all 31 tests passed (20 Node and eleven Chromium), with six successful syntax checks. The [desktop](images/desktop.png) and [narrow](images/narrow.png) screenshots were visually reviewed; final images match the reviewed captures.');p.write_text(t,encoding='utf-8')
+baseline=json.loads((B/'baselines/6844a7b03c83.json').read_text(encoding='utf-8'))['files'];files=[]
+for root,dirs,names in os.walk(S):
+ dirs[:]=[d for d in dirs if d not in {'node_modules','test-results','playwright-report','.verification','.git'}]
+ for name in names:
+  p=Path(root)/name;rel=p.relative_to(S).as_posix()
+  if rel.startswith('astraupskill/') and rel.endswith('.md'):continue
+  if hashlib.sha256(p.read_bytes()).hexdigest()!=baseline.get(rel):files.append(rel)
+spec={'changedFiles':sorted(files),'summary':['Repairs broken asset paths and duplicate startup scripts with explicit browser modules and a loopback static server.','Adds category/question CRUD with stable IDs, isolated drafts, confirmed deletion, validated import/export and legacy saved-data migration.','Publishes accepted state only after storage succeeds; Web Locks plus exact baseline comparison reject competing stale saves and preserve failed drafts.','Preserves corrupt data until explicit replacement, provides raw recovery export, and cleans used-clue references when questions or categories are deleted.','Implements accessible clue reveal, explicit used markers, persisted round progress, keyboard dialogs and responsive layouts with literal text rendering.','Adds 20 store tests, eleven real Chromium workflows, six syntax gates, two reviewed screenshots and nine detailed CRUD learning documents.'],'checks':{'format':'json','resultsFile':'checks/quiz-board/final/results.json','expectedTests':31,'command':'npm test; eleven Playwright Chromium scenarios; six node --check gates; desktop/narrow screenshot review','environment':'Node 22.16.0; Playwright 1.60.0; Chromium; fresh browser contexts, real localStorage/Web Locks and loopback HTTP'},'limits':['Vanilla JavaScript despite the historical react folder name; no server data API, SQL database, authentication or remote sharing.','No player score ledger or server-side answer secrecy; point values label clues and browser modules contain the answer bank.','Web Locks coordinate cooperating same-origin tabs; direct storage writers, cleared browser data, different origins and power-loss durability remain outside guarantees.','No full accessibility certification or production deployment; original sample content was retained.']}
+(B/'specs/6844a7b03c83.json').write_text(json.dumps(spec,indent=2),encoding='utf-8');print(files)

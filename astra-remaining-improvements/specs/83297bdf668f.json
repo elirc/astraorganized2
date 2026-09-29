@@ -1,0 +1,29 @@
+{
+  "id": "83297bdf668f",
+  "project": "_Organized Desktop/02 Build Projects/buildecom",
+  "summary": [
+    "Protect updateOrderStatus from stale status overwrites by adding the read status to the Prisma update predicate.",
+    "Map only Prisma P2025 to a 409 ORDER_STATUS_CHANGED error before event, audit, and buyer notification side effects while rethrowing unrelated persistence errors.",
+    "Add six production-source runtime cases using the real transition policy and ApiError class, plus a source-specific CRUD course on state, seller scope and side effects."
+  ],
+  "changedFiles": [
+    "src/server/orders/service.ts",
+    "tests/runtime-order-status.test.mjs",
+    "tests/helpers-load-typescript.mjs",
+    "astraupskill/snapshots/src-server-orders-service.ts.before",
+    "astraupskill/evidence/runtime-order-status.log",
+    "astraupskill/evidence/results-crud-b02.json",
+    "astraupskill/evidence/crud-b02-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/83297bdf668f/results-crud-b02.json"
+  },
+  "limits": [
+    "Vitest, full typecheck, live Prisma, HTTP, Stripe, outbox, transaction isolation, and deployed schema support for extended unique filters were not run.",
+    "Runtime tests execute real service source with explicit persistence and framework contracts.",
+    "The guard covers updateOrderStatus status freshness only; it does not claim checkout inventory, refund idempotency, or unrelated order mutation safety.",
+    "Status equality does not detect unrelated field or seller-split changes, or a status changing away and back. The transaction double does not prove real rollback; HTTP role/session and Zod validation are outside the executed suite."
+  ]
+}

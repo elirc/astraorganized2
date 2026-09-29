@@ -1,0 +1,142 @@
+{
+  "project": "netopen5",
+  "id": "7115d7be5ffc",
+  "summary": [
+    "Rejected nonpositive and integer-doubling-overflow latest-media limits before user or library access.",
+    "Preserved the twenty-item default, valid query forwarding, and the shared legacy-route guard.",
+    "Added focused controller regressions and nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7115d7be5ffc/sol15-results.json",
+    "expectedTests": 10,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 10,
+    "passedTests": 10,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "netopen5",
+        "id": "7115d7be5ffc",
+        "command": [
+          "dotnet",
+          "test",
+          "tests/Jellyfin.Api.Tests/Jellyfin.Api.Tests.csproj",
+          "--no-restore",
+          "--filter",
+          "FullyQualifiedName~UserLibraryLatestMediaTests",
+          "--nologo",
+          "--verbosity",
+          "minimal",
+          "/m:1",
+          "--logger",
+          "trx"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7115d7be5ffc\\jellyfin",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T20:26:24.544191+00:00",
+        "status": "complete",
+        "log": "astra-netopen5-latest-tests-r3.log",
+        "pid": 33040,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T20:27:56.651636+00:00",
+        "elapsedSeconds": 92.11
+      }
+    ]
+  },
+  "courseWords": 3162,
+  "courseFiles": 9,
+  "courseLinksChecked": 93,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "099b1da774b0672f5a9c993167a26afe626f3e387610be74827a4d5adbbc86b7"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netopen5-latest-tests-r3.json",
+      "before_sha256": null,
+      "after_sha256": "946337cb59fc86efc4a85e2bb68654c9b8688e5db024f333015e2d25d77c454a"
+    },
+    {
+      "file": "astraupskill/evidence/astra-netopen5-latest-tests-r3.log",
+      "before_sha256": null,
+      "after_sha256": "9f0cfb816b300c5545b59df2268e69c3bf37ce9fcd78077c5514488ef3167fda"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "5ea7535981680082eb695672d0d669ac1b2c5c1afbab2fbfe02f2abee6444266"
+    },
+    {
+      "file": "astraupskill/snapshots/jellyfin__Jellyfin.Api__Controllers__UserLibraryController.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2d9e1e97e9a519cbbd89c520b031359d5a1c4bb9816cd49fc23edfd30db338a5"
+    },
+    {
+      "file": "jellyfin/Jellyfin.Api/Controllers/UserLibraryController.cs",
+      "before_sha256": "2d9e1e97e9a519cbbd89c520b031359d5a1c4bb9816cd49fc23edfd30db338a5",
+      "after_sha256": "1e979231e77c103e061a69a6e7d2a528835f26853ea60a53d57e7c64cb9feeb9"
+    },
+    {
+      "file": "jellyfin/tests/Jellyfin.Api.Tests/Controllers/UserLibraryLatestMediaTests.cs",
+      "before_sha256": null,
+      "after_sha256": "c9913ea2d1929d50513381bc7d4d17206803c7de67bbccda6bd2a06283e3ef64"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d3ba2228e5f55b453a94a53d022bae5e1ed4ab334c9552c17eff291483f2c922"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "fcce4703c426874a16936bcd9e96116915a473e95acc632519d523b362e426d9"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "10b58bdc280c773966d1ea68b152e98a7aa870a5aa696798309b161596010cae"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "67283b10291dac19ff9120544e052f8114647050f30b0a5fa524e86113b9d798"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "829b05b867848d849a7d1c9a792d9f15e06ba7516af415aa37c9eca7c6dae2b1"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "07a53b8bae63e0b1939dd198d7d1f6890e8fa459ed14887815b527efd14d9529"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "70e9622b38809c06e8ee5785623a5e03d37ae5d865ea0a737e45d32794e53a4e"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "c31128aca9c2a746b280e8687b7e64ad3d3edcdb350a9f5cbcc0c5790411bd1d"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "35270d39a6e33f78f83e1cdcbafb4a4c2cf7d92a9d7a81523c70c98b41f07c02"
+    }
+  ],
+  "limits": [
+    "Tests use mocked library collaborators, not a running Jellyfin server or real media scan.",
+    "The arithmetic bound is not a production capacity or rate-limit guarantee; HTTP binding and middleware are outside these focused tests."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T20:38:47.731133+00:00"
+}

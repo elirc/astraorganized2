@@ -1,0 +1,252 @@
+[
+  {
+    "stage": 62,
+    "title": "Survey Builder: valid answers and response capacity",
+    "focus": "nested validation and atomic response submission",
+    "before": "Unknown choices, empty required arrays and invalid ratings could be stored. Opening dates were not checked and the response limit was checked before the transaction.",
+    "after": "Public reads and submissions enforce opening windows and capacity. Submission locks the survey, validates answers against its questions, writes response/answers and increments the counter in one transaction. Optional blank ratings stay null.",
+    "model": "A user owns surveys. A survey has questions, each with a question_type and optional choice rows/config. A response belongs to a survey; response_answers reference that response and its questions. response_count is a stored aggregate that must match accepted submissions.",
+    "concept": "Validation is a relationship problem here. A string can be valid text but an invalid choice for this question. Load the question definitions and check answer keys, requiredness, types and allowed choices before writing. A multi-choice array must contain known labels; deduplicate repeated selections. An optional blank rating means no answer, not zero. A required matrix must include each configured row and only configured columns.\n\nThe response counter is a second mutable fact. Insert the response and all its answers, then increment the counter using the same transaction. A late error must undo the earlier inserts. Capacity adds a concurrency rule: lock the survey row before checking response_count, so two requests cannot both take the last slot. The transaction reads the questions through the same connection.\n\nThe date window compares instants, unlike the domain apps' date-only fields. At the end timestamp the survey is closed. The access code is checked inside the submission transaction. The app still uses a demo owner header for administrative routes. Concurrent editing of question definitions and full administrative authorization deserve their own design; this change focuses on response acceptance.",
+    "example": "A required multi-choice question accepts JavaScript once even if it appears twice in the submitted array. Unknown, object and empty answers return 400 and create no response. Two submissions to max_responses=1 produce one 201 and one 400. Future, expired and closed surveys reject submissions.",
+    "source": "server/src/services/surveyService.ts",
+    "symbol": "submitResponse",
+    "test": "test/responses.test.ts",
+    "exercises": [
+      "Display required-answer errors next to their questions.",
+      "Add an answer-preview table before submission.",
+      "Force the second answer insert to fail and verify the whole response rolls back.",
+      "Define a policy for editing a question after responses exist."
+    ],
+    "answers": [
+      "Map question IDs to errors without replacing the respondent draft; keep the server check authoritative.",
+      "Build a read-only projection of the draft. Do not count a preview as a response or increment the counter.",
+      "Use a disposable-schema trigger and assert response rows, answer rows and counter all equal their pre-request values.",
+      "Consider immutable question revisions. Existing answers should continue referencing the wording/options they answered; changing choices in place can distort results."
+    ]
+  },
+  {
+    "stage": 63,
+    "title": "Polling Chat: scope every conversation operation",
+    "focus": "membership predicates and shared route guards",
+    "before": "History, polling, reactions and group-management routes did not consistently verify membership. A duplicate member ID could break group creation.",
+    "after": "A shared route guard verifies the demo user's membership for conversation/message operations, restricts group management to admins and validates read-receipt references. Group creation deduplicates members.",
+    "model": "Users join conversations through conversation_members, whose role is admin/member. Messages reference a conversation and author. Reactions reference a message and user. Read receipts store last_read_message_id on membership rows; typing indicators also reference conversation/user.",
+    "concept": "A foreign key proves that a referenced row exists, not that the caller is allowed to see it. The route guard resolves a message to its conversation and checks the membership pair (conversation_id,user_id). This covers GET history, GET polling, POST reactions and metadata operations with the same rule. Owner checks still decide who may edit a particular message.\n\nA read receipt is not merely any existing message ID. It must belong to the conversation being marked read, or unread calculations become misleading. An administrator role is likewise scoped to the membership row for that conversation; being an admin in another group grants nothing here. The x-demo-user-id header is still freely chosen in this educational app, so this demonstrates authorization structure without providing real authentication.\n\nPolling retrieves messages after a cursor. Membership must be checked on every poll, not only when the UI first opens a room, because membership can change. This central check is a useful boundary, but it is not a transaction spanning every subsequent read; strict coordination with simultaneous membership removal would need additional policy and locking.",
+    "example": "User 3 cannot read or poll the study room, react to its messages, type there or add members. User 2 can read and react but cannot manage members. A receipt pointing to another room is rejected. The author can edit/delete a message; a deleted message cannot be revived by editing.",
+    "source": "server/src/routes/chatRoutes.ts",
+    "symbol": "chatRouter.use",
+    "test": "test/membership.test.ts",
+    "exercises": [
+      "Add clear UI feedback when access to an open conversation is removed.",
+      "Add a member-role badge that reflects the conversation membership.",
+      "Test polling after removing a user from a group.",
+      "Replace demo headers with signed-in user identity."
+    ],
+    "answers": [
+      "Stop the polling loop after the access error, clear protected content and show a way to choose another conversation.",
+      "Read role from the current conversation's member list, never from a globally cached label.",
+      "Read successfully, remove membership as admin, then poll with the removed user and assert 404 with no private message payload.",
+      "Populate user identity from verified sessions and retain the membership guard. Authentication and authorization remain different responsibilities."
+    ]
+  },
+  {
+    "stage": 64,
+    "title": "Ecommerce Storefront: atomic cart checkout",
+    "focus": "locking shared inventory and preserving a failed checkout",
+    "before": "Repeated cart additions could exceed stock; checkout read stock without locking, allowing overselling or duplicate orders from concurrent requests.",
+    "after": "Cart additions/edits validate the cumulative quantity under a cart/product lock. Checkout locks the cart and products in ID order, rechecks active stock, then writes order/items, decrements stock and clears the cart atomically.",
+    "model": "A cart belongs to a user or guest session. cart_items reference products and store quantity/unit_price. Orders snapshot address and monetary totals; order_items snapshot product details. Products store stock_quantity. Payment is the existing mock payment flow.",
+    "concept": "A cart does not reserve stock. Two users may each put the last item into their cart, but only one should successfully check out. The checkout transaction serializes access to the product and reads its current stock after the lock. The losing request leaves its cart available for correction rather than creating a negative stock balance.\n\nTwo checkouts of one cart also need coordination. Locking the cart means the second request sees an empty cart after the first commits. Locking only product rows would not clearly protect the cart's logical one-order boundary. Products are locked in a consistent ID order to reduce deadlock risk when carts contain the same products in different order.\n\nThe order, line items, stock decrement and cart removal share one transaction. The failure-injection test rejects an order-item insert and observes stock and cart, not just the HTTP 500. The app retains demo user headers, mock payment and existing pricing/shipping policy. It is not connected to a payment provider. Cart merge and administrative operations still need separate review before a production design.",
+    "example": "With stock 3, adding 2 succeeds but adding another 2 or editing to 4 fails and leaves quantity 2. Two buyers checking out the last unit yield one order. Force an order-item failure: stock and cart remain; retrying normally succeeds.",
+    "source": "server/src/services/storeService.ts",
+    "symbol": "checkout",
+    "test": "test/checkout.test.ts",
+    "exercises": [
+      "Show which cart line lost availability after a failed checkout.",
+      "Display a checkout price breakdown from server-returned totals.",
+      "Test two carts whose product order is reversed.",
+      "Design a real payment workflow with idempotency."
+    ],
+    "answers": [
+      "Return structured product identifiers in stock errors and retain the cart; allow users to adjust quantities or remove the item.",
+      "Use the server as the final price authority. UI estimates must not overwrite persisted order totals.",
+      "Include the same two products in opposite order and submit concurrently; assert no oversell and investigate any deadlock response.",
+      "Separate payment authorization from final order state, use stable idempotency keys and reconcile retries/webhooks. A SQL transaction cannot atomically commit an external payment API."
+    ]
+  },
+  {
+    "stage": 65,
+    "title": "Appointment Booking: concurrent slot protection",
+    "focus": "half-open time intervals and a shared write lock",
+    "before": "Two bookings could both pass the overlap query before either insert committed. A notification failure could leave a booking saved without its expected confirmation record.",
+    "after": "Appointment creation and confirmed timing/status updates lock the provider before checking overlaps. Booking and its notification commit together. Conflicting reschedules leave the original appointment untouched.",
+    "model": "Provider profiles belong to users and own services. Appointments reference provider, customer and service, with start_time/end_time/status/price. Availability rules supply candidate slots; notification rows describe booking events.",
+    "concept": "Represent an appointment as the half-open interval [start,end). A 10:00\u201310:30 appointment and a 10:30\u201311:00 appointment are adjacent, not overlapping. The overlap predicate is existing.start < proposed.end AND existing.end > proposed.start. Using <= at both boundaries would reject valid back-to-back bookings.\n\nThe preflight conflict query is useful feedback but cannot settle concurrency. The model takes the provider lock, rechecks overlap and writes inside one transaction. Creation and rescheduling use the same provider coordination rule, so they cannot independently approve overlapping confirmed appointments. The provider lock deliberately favors a simple explanation over maximum parallelism.\n\nThe booking notification is a database row, not an email sent by this task. Inserting it inside the booking transaction ensures the two records commit together. Availability windows, booking buffers, advance-booking policy and cancelled-record rescheduling remain separate business rules; the tested guarantee is overlap protection and atomic booking confirmation, not full scheduling policy enforcement.",
+    "example": "Two requests for 2099-01-01T10:00:00Z create one confirmed appointment and one 409 conflict. A 10:30 appointment succeeds. Moving it to 10:15 fails and leaves 10:30 stored. Reject notification inserts in the test schema and verify no booking is added.",
+    "source": "server/src/models/appointmentModel.ts",
+    "symbol": "createAppointment",
+    "test": "test/booking.test.ts",
+    "exercises": [
+      "Explain the overlap predicate with four drawn intervals.",
+      "Add provider-local timezone labels to confirmation feedback.",
+      "Test a booking competing with a reschedule into the same slot.",
+      "Enforce all advertised availability and cancellation policies at the write boundary."
+    ],
+    "answers": [
+      "Cover disjoint, adjacent, partially overlapping and fully contained intervals; evaluate both inequalities for each.",
+      "Keep stored instants unchanged and format in the provider's timezone; include a daylight-saving transition example.",
+      "Start both requests against a known fixture and assert at most one confirmed overlap, regardless of which request wins.",
+      "Use a common policy service under the appropriate lock. Define buffers, closed days, past times and reopening cancelled appointments explicitly rather than assuming the slot picker prevents direct API calls."
+    ]
+  },
+  {
+    "stage": 66,
+    "title": "API Tester: safe environment replacement",
+    "focus": "atomic active selection and validating replacement collections",
+    "before": "Activating a missing or another user's environment cleared the old active flag before failing. Duplicate variable keys could fail late, and writes could compete for active selection.",
+    "after": "Environment create/update/activate serialize on the owner row. The target is verified before clearing active flags. Variable replacement locks its environment, rejects duplicate normalized keys and preserves the prior set on failure.",
+    "model": "Users own environments, which own env_variables. Exactly one environment is selected through the application activation paths, unless the user explicitly deactivates all. Variables have key, value, is_secret and sort_order. Saved requests and proxy history are separate domains.",
+    "concept": "A transaction rolls back only if it fails. Returning undefined after clearing flags would commit the earlier update, even if the service later throws outside that transaction. Validate the target inside the transaction and throw there before clearing the old selection. The per-user lock also coordinates activation through metadata edits and creates.\n\nReplacing a list is a common CRUD operation: delete the old children, insert the new children. Validate the complete candidate before deletion. Duplicate keys after trimming are ambiguous because interpolation needs one value per name; reject the candidate instead of silently choosing a winner. The endpoint intentionally accepts a JSON array, unlike most object-based CRUD requests. A blanket object-only middleware would break this valid contract.\n\nEnvironment values may include secrets in normal use. The teaching examples use synthetic localhost URLs, not credentials. This task does not send proxy requests to external services. The project still uses a demo user header and has broader collection/folder ownership and proxy concerns outside this environment-focused change. The new guide separates these limitations from the implemented behavior.",
+    "example": "Activate a nonexistent environment and confirm Local remains active. Concurrently activate Local and Staging: only one ends active for that user. Replacing variables with KEY and spaced KEY returns 400 and preserves BASE_URL. Sending [] explicitly clears the owned environment.",
+    "source": "server/src/models/environmentModel.ts",
+    "symbol": "activateEnvironment",
+    "test": "test/environments.test.ts",
+    "exercises": [
+      "Show an active badge only after the activation request succeeds.",
+      "Add a duplicate-key hint while editing variables.",
+      "Force an insert failure halfway through replacement and check the original variables.",
+      "Add ownership checks to collection/folder/request moves."
+    ],
+    "answers": [
+      "Keep the previous badge until the server returns the committed selection; on failure show the error and retain the old state.",
+      "Use the same trim rule as the server and highlight both conflicting rows, while retaining authoritative server validation.",
+      "Use a disposable trigger and compare ordered key/value pairs before and after failure. A transaction must include delete and every insert.",
+      "Verify that both source and destination belong to the signed-in user and that folder/collection IDs agree. Test cross-owner references before any move writes."
+    ]
+  },
+  {
+    "stage": 67,
+    "title": "Team Project Management: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records.",
+    "model": "tasks belong to the grouping reference workspace_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: todo, in_progress, blocked, done, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a tasks record to its previous workflow state. A legacy archived row without the new saved field falls back to todo; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in in_progress, archive it twice and restore it twice. Only the actual transitions add history, and restore returns in_progress. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ]
+  },
+  {
+    "stage": 68,
+    "title": "Support Ticket System: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records.",
+    "model": "tickets belong to the grouping reference team_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: open, pending, escalated, resolved, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a tickets record to its previous workflow state. A legacy archived row without the new saved field falls back to open; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and team_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in pending, archive it twice and restore it twice. Only the actual transitions add history, and restore returns pending. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ]
+  },
+  {
+    "stage": 69,
+    "title": "Learning Management System: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records.",
+    "model": "courses belong to the grouping reference school_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: draft, review, published, retired, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a courses record to its previous workflow state. A legacy archived row without the new saved field falls back to draft; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and school_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in review, archive it twice and restore it twice. Only the actual transitions add history, and restore returns review. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ]
+  },
+  {
+    "stage": 70,
+    "title": "Conversation Administration: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records.",
+    "model": "conversations belong to the grouping reference workspace_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: active, muted, incident, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a conversations record to its previous workflow state. A legacy archived row without the new saved field falls back to active; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. This project is a conversation administration CRUD scaffold; its name does not establish live message delivery.",
+    "example": "Create a record in muted, archive it twice and restore it twice. Only the actual transitions add history, and restore returns muted. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ]
+  },
+  {
+    "stage": 71,
+    "title": "Marketplace Listing Administration: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records.",
+    "model": "listings belong to the grouping reference vendor_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: draft, active, flagged, paused, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a listings record to its previous workflow state. A legacy archived row without the new saved field falls back to draft; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and vendor_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in active, archive it twice and restore it twice. Only the actual transitions add history, and restore returns active. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ]
+  }
+]

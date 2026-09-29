@@ -1,0 +1,31 @@
+{
+  "id": "41ea8dcef618",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:43:53.597156+00:00",
+  "sourceReview": "Read full cache and query execution caller. Only expiry comparison changes to greater-or-equal; capacity and service behavior unchanged.",
+  "teachingReview": "Reviewed all nine chapters, fixed deletion-proof exercise and unsupported visibility sufficiency wording, removed stray quotes. Half-open interval and lazy expiry explained with precise caller limits.",
+  "testReview": "Three deterministic actual-class cases pass before/equal/after TTL. Added backward-clock assertion after exact expiry to demonstrate actual removal. No service/DB execution.",
+  "specSHA256": "c63921ede4900be3b65a304ebc27e55f711bdb3022d7d6bc35bc6873690d2f94",
+  "fileHashes": {
+    "src/lib/cache/queryCache.ts": "25d9426d014f01452bb524aec9d78ba238f381fd4c780d2a1909251df37586fd",
+    "tests/runtime-cache-expiry.test.mjs": "f9de4fbcbde8d437714d2c6141ab3917e81ce0004f6da21491383b133341c1a1",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-lib-cache-queryCache.ts.before": "2fd9f0f176e6f8495f1a0fdeb5e8775a0ae485239d989844f3c1aca0daa65ad1",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "fe2e4061140eaeaf961de1e21b749cefc683411ff36f1c8f2c964f2c7b75d556",
+    "astraupskill/evidence/results.json": "3b99b342e4bf2bcadec89b6c43e9f653d0ccd9fe91112fd914b5e00466e00367",
+    "astraupskill/README.md": "0edfa1bfbef399069f9f8acc00e76c98dc5af23007100f58e6c71bfc550bc032",
+    "astraupskill/01-CODEBASE-MAP.md": "d33e8d8124774889f790278512240ef59350e3341273cd73e7909e17f2c23c7b",
+    "astraupskill/02-CONCEPTS.md": "fba6758050a62a54e2160f828ccf966630b8bb56cd5fd34a3513b1f649eda50c",
+    "astraupskill/03-WORKED-CHANGE.md": "32716f76c28ecf6122f8d9e6996802cfaaa576c7086acae91fced1e7942c551e",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "20be5a827349a84c8ec874c80ac12db160ab3c736ecae89ddeaf55b67b168776",
+    "astraupskill/05-PRACTICE.md": "8d9ba5dc12ba65c65b7af928c2e07c019e77bf45f2de61cf565201bda687de72",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "4068f1be528b17abff044d87ee36964fcfde24a0df16b6fed7b66b22b83349ab",
+    "astraupskill/07-TRACE-LAB.md": "62d076a51ba8d08bd1a1ec764356e555ebc104d7bde5356ba93b69079a9994f3",
+    "astraupskill/VERIFICATION.md": "0df24a337ab6a31a3b5c51c32470e24c38463240648aba9b83fe6fb68b136ea6"
+  },
+  "evidenceHashes": {
+    "checks/41ea8dcef618/crud-b06-astra-runtime.json": "104f2ff0d13ef054e564ca3906dff08fdd82df98bdef22e5984ca5def995c29a",
+    "checks/41ea8dcef618/crud-b06-astra-runtime.log": "fe2e4061140eaeaf961de1e21b749cefc683411ff36f1c8f2c964f2c7b75d556",
+    "checks/41ea8dcef618/results-crud-b06.json": "3b99b342e4bf2bcadec89b6c43e9f653d0ccd9fe91112fd914b5e00466e00367"
+  }
+}

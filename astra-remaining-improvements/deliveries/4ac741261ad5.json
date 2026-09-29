@@ -1,0 +1,243 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master2",
+  "id": "4ac741261ad5",
+  "summary": [
+    "Scopes mock payment processing to the organization and validates global provider-event ownership and payload identity before replay.",
+    "Keeps payment, invoice, provider event, audit and outbox writes in one Serializable transaction with bounded conflict retries, and prevents invalid invoice transitions or late failure regression.",
+    "Maps explicit domain and HTTP errors to useful client responses while sanitizing unexpected failures; preserves expected money, permission, subscription and idempotency errors.",
+    "Adds 25 API regression tests alongside five domain tests, with nine detailed learning chapters, complete worked test examples, exact original snapshots and portable evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/4ac741261ad5/results.json",
+    "expectedTests": 30
+  },
+  "testResults": {
+    "passed": true,
+    "total": 30,
+    "tests": 30,
+    "failed": 0,
+    "domainTests": 5,
+    "apiServiceTests": 16,
+    "apiRouteTests": 9,
+    "checks": [
+      "prisma_validate_v2",
+      "root-generate-01",
+      "root-verify-01"
+    ],
+    "scope": "Mocked Prisma service tests, actual Express router and shared error middleware with mocked service/auth, domain tests, schema validation, client generation, workspace typechecks and builds. No live database or provider."
+  },
+  "courseWords": 5048,
+  "courseFiles": 9,
+  "courseLinksChecked": 18,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "084e4d9f22232f82562c2d8a71e67f749a6f1e259e229e5ac5804a599bddaa4e",
+      "after_sha256": "783b7dd46cc2c24f7bb96494cd1a33c70c6642bf5b7859d88eb0443566143c17"
+    },
+    {
+      "file": "apps/api/src/app.ts",
+      "before_sha256": "803d7a4f211ba91be14df324f9d243348da5ede6d94b87293fd609d3a876dd2f",
+      "after_sha256": "562b2602ce3da513abed7b04f960c7a5f083f0bb4ad70554c88d72fdf1dd58f3"
+    },
+    {
+      "file": "apps/api/src/modules/billing.routes.ts",
+      "before_sha256": "270255efa577b50571f2b460288489a28a99d7e45fa67062165aad86f3e7db62",
+      "after_sha256": "9d2087c64e6639e7187dbe8911fe566ed20fb88699046af93c858c1152a2fa90"
+    },
+    {
+      "file": "apps/api/src/modules/payments.routes.ts",
+      "before_sha256": "ce691111634f0ea7a9257dfbaa006059a185d42014c287f22c405f7b14d9e252",
+      "after_sha256": "75e2d5e4b31ad6a84031bc7009a6bb787b969bf737aa02abba115aedaeabf561"
+    },
+    {
+      "file": "apps/api/src/shared/auth.ts",
+      "before_sha256": "2bed000402806fa055e287630844e044da602b60e62c8f3200fc61d0dcf46e1f",
+      "after_sha256": "8354d27ac5f5ada36edd714f64febeadcec7a600417903ab529d001ac9c5f2a3"
+    },
+    {
+      "file": "apps/api/src/shared/idempotent.ts",
+      "before_sha256": "12b1b3de77e53c48e75ca3018763cce19ff122549117e24e2574b5b9e6d0134b",
+      "after_sha256": "9f55c400e989900bfc8c8a95132b9846ae6d68cf9b3c1f957f236f82d0bfe7ae"
+    },
+    {
+      "file": "packages/domain/src/billing-state.ts",
+      "before_sha256": "80ec843143428eecbac069d7e68c1ff6d8282ec473bb594f14d1569f5cb2e042",
+      "after_sha256": "a9701eea0622266e3085d5d6c266ea7af475d0a1313bd89fa66ca06922827923"
+    },
+    {
+      "file": "packages/domain/src/index.ts",
+      "before_sha256": "ab2f25d5546b4604324f0b8a6e8389bbf0d42706086646e56708351e52e9b451",
+      "after_sha256": "371bdfc27ae42779b17265baf881a9fab7e156ecef008e28acf49971cc2ac887"
+    },
+    {
+      "file": "packages/domain/src/money.ts",
+      "before_sha256": "2a0506b6980e716d1994d670ba9ba2b46f6e37d91f4c752128797969cd5f3144",
+      "after_sha256": "64ccc9283e8d8b6ec0c07163ba2884733bdd1f0abfc7ec8e87012060286dc724"
+    },
+    {
+      "file": "packages/domain/src/permissions.ts",
+      "before_sha256": "b4f0fa0a6e10083f38d29f6e44202feb1a040352e00d2ad854fd7cd81535dcba",
+      "after_sha256": "a61d80790bcbcae292d270a8b86499dcdc195fc5bd2041fb3d56ac34640c79a2"
+    },
+    {
+      "file": "packages/domain/src/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "be259450d5806a2e80163a3506242b7c4cb3a17d9734c5366e286f41cf188dd0"
+    },
+    {
+      "file": "apps/api/src/shared/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "c2bc2306787ef273bee6d3c8f483cf9042401a89a3f29fce490a17e331b8740c"
+    },
+    {
+      "file": "apps/api/src/modules/payments.service.ts",
+      "before_sha256": null,
+      "after_sha256": "c3f29963823b06b1daf2abb07371cd3bb93cf8768dc12838de44076ea881fafe"
+    },
+    {
+      "file": "apps/api/src/modules/payments.service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "93c4eb4690ce2267577ee37410dc38c825c64fd47dfeba9020d984ab602a63f3"
+    },
+    {
+      "file": "apps/api/src/modules/payments.routes.test.ts",
+      "before_sha256": null,
+      "after_sha256": "cbe6ab2d778c5a4bef4d2a9d5245ed48853d2fd52732c3d36c46bd574481f8d9"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__app.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "803d7a4f211ba91be14df324f9d243348da5ede6d94b87293fd609d3a876dd2f"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__modules__billing.routes.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "270255efa577b50571f2b460288489a28a99d7e45fa67062165aad86f3e7db62"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__modules__payments.routes.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "ce691111634f0ea7a9257dfbaa006059a185d42014c287f22c405f7b14d9e252"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__shared__auth.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "2bed000402806fa055e287630844e044da602b60e62c8f3200fc61d0dcf46e1f"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__shared__idempotent.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "12b1b3de77e53c48e75ca3018763cce19ff122549117e24e2574b5b9e6d0134b"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__domain__src__billing-state.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "80ec843143428eecbac069d7e68c1ff6d8282ec473bb594f14d1569f5cb2e042"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__domain__src__index.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "ab2f25d5546b4604324f0b8a6e8389bbf0d42706086646e56708351e52e9b451"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__domain__src__money.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "2a0506b6980e716d1994d670ba9ba2b46f6e37d91f4c752128797969cd5f3144"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__domain__src__permissions.ts.before.txt",
+      "before_sha256": null,
+      "after_sha256": "b4f0fa0a6e10083f38d29f6e44202feb1a040352e00d2ad854fd7cd81535dcba"
+    },
+    {
+      "file": "astraupskill/evidence/prisma_validate_v2.json",
+      "before_sha256": null,
+      "after_sha256": "eb90831a00eb03f33d135b2efa94e7db551d4a846544bda40dc7202010eb1611"
+    },
+    {
+      "file": "astraupskill/evidence/prisma_validate_v2.log",
+      "before_sha256": null,
+      "after_sha256": "6ab5830ec69d2d103a8ccef6c0e1adb7f32eb0fbbd9b163065f0e9f793a67198"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "f334a1b78a940193283efd5b327b5a4d1653504f1373ba8f3cd7b71176fbd7af"
+    },
+    {
+      "file": "astraupskill/evidence/root-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "90fc3a3caa72a07a9b7a6f08f743be060871059852c7994bed8cccf0537aedef"
+    },
+    {
+      "file": "astraupskill/evidence/root-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "749960bd81f4bfd1b45eedf713113b260de67831197ab81cce966c0a37c05f71"
+    },
+    {
+      "file": "astraupskill/evidence/root-verify-01.json",
+      "before_sha256": null,
+      "after_sha256": "d40bf243b77795056cb7d5dc97fa5e4a87dd24f04ce519a588d73ea5b8304817"
+    },
+    {
+      "file": "astraupskill/evidence/root-verify-01.log",
+      "before_sha256": null,
+      "after_sha256": "a6073162b68a4d1a817092130c22abede3c356ac6e6bec0d7a46e8479e229fd1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8167b79e07c230db839650444857dc6754e784eea3c319f1b3bba44b05d81968"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "ec5a6c556066b0032673448d483323b9066d8932a572defa94532e98d27f1de5"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f6010b31d852fa7761eb0cfa9c246409421fc48f313fd22e2bace75f4f79bf99"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "82be001178099b445c67943bbfbb01c9380aa54237923a7add7b6d4ad58d6880"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1df108034e42e0d2e2ebda0556540f8a66e412b81a2226b149414c2e278ee253"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "27d7aa1c4882226ede688a9ae8b0bac62ef9a10a231a8cac0fa2bb54efb7502b"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "2024f46874faa4b7796a4eba461fa9fbe12f1000a135c554299f67539d4f8f5d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "be28e34c07ab06214d7865ff53063af696c0be812f82c8768a67a98d2f87673a"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "2c3906d2a0206d2a193875eb5f300f21cae3144d8e3cbdff89a5895195463fb0"
+    }
+  ],
+  "limits": [
+    "Synthetic payment provider and demo header authentication; no provider signature verification or external service was exercised.",
+    "Mock Prisma callbacks establish control-flow and write arguments, not database rollback, durability or concurrency guarantees.",
+    "HTTP tests use the actual router/parser/shared error handler with mocked service and permissions; full application membership wiring and browser interaction remain untested.",
+    "Subscription idempotency and count-based invoice numbering retain pre-existing race risks; no live database, migration, worker or Redis was run."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T22:19:21.213454+00:00"
+}

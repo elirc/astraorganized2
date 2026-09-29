@@ -1,0 +1,30 @@
+{
+  "id": "3ee259e51792",
+  "project": "zz9",
+  "files": [
+    "src/services/caseService.ts",
+    "tests/runtime-case-clearable-fields.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-caseService.ts.before",
+    "astraupskill/evidence/3ee259e51792-crud-b08-runtime.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "The schema permits empty requesterEmail and sourceSystem to clear nullable fields, but the service converted empty strings to undefined so Prisma omitted the update.",
+    "The service now distinguishes omitted fields from explicit clears while preserving authorization and transaction placement."
+  ],
+  "tests": [
+    "node --experimental-vm-modules --test tests/runtime-case-clearable-fields.test.mjs (3/3 passed)"
+  ],
+  "limitations": [
+    "Dependency-free VM harness with explicit doubles; live Prisma, HTTP, and concurrency checks remain unrun."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/07 Anti Projects/antiemponb",
+      "id": "40905c751e8c",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/onboarding-progress-runtime.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\40905c751e8c",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T04:40:49.149903+00:00",
+      "status": "complete",
+      "log": "crud-b08-astra-runtime.log",
+      "pid": 26896,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T04:40:57.127336+00:00",
+      "elapsedSeconds": 7.97
+    }
+  ],
+  "limits": [
+    "Actual source runtime with explicitly injected persistence or enum adapters. No HTTP authentication, live database or concurrency proof."
+  ]
+}

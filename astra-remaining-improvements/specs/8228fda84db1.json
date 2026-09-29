@@ -1,0 +1,47 @@
+{
+  "changedFiles": [
+    "README.md",
+    "src/CampusOps.Core/Inventory/Part.cs",
+    "src/CampusOps.Infrastructure/Inventory/InMemoryPartsStores.cs",
+    "src/CampusOps.Api/Program.cs",
+    "src/CampusOps.Api/Inventory/PartEndpoints.cs",
+    "web/CampusOps.Web/vite.config.ts",
+    "tests/CampusOps.Core.Tests/Inventory/StockCapacityTests.cs",
+    "tests/CampusOps.Infrastructure.Tests/Inventory/PartStoreIsolationTests.cs",
+    "tests/CampusOps.Infrastructure.Tests/Inventory/ConcurrentReservationTests.cs",
+    "tests/CampusOps.Api.Tests/Inventory/InventoryApiTests.cs"
+  ],
+  "summary": [
+    "Stock reservation and its history commit together through one shared store; concurrent requests cannot oversell or create ordinary partial writes.",
+    "Inventory reads and inserted objects are detached; duplicate IDs, cancelled writes, quantity overflow and missing-work-order reservations are rejected.",
+    "Inventory routes require the existing Operations policy; part Location links are readable and reservation history is exposed.",
+    "Development web proxy now matches the API launch profile on port 5110.",
+    "Nine detailed source-grounded learning documents explain ownership, transactions, contracts, failure tests, debugging, exercises and a request trace."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/campusops-final",
+    "expectedSuites": 3,
+    "expectedTests": 42,
+    "command": "dotnet test CampusOps.slnx --no-restore --configuration Release --logger trx",
+    "environment": ".NET SDK 10.0.302; locked restore; isolated copy; ASP.NET test host and existing SQLite in-memory adapter tests",
+    "additional": {
+      "webTests": 1,
+      "webBuild": "TypeScript and Vite production build passed",
+      "commands": [
+        "npm.cmd test -- --maxWorkers=2",
+        "npm.cmd run build"
+      ],
+      "node": "22.16.0",
+      "npm": "10.9.2",
+      "manualBrowserVerified": false
+    }
+  },
+  "limits": [
+    "Inventory remains in memory with one-process consistency and no durable transaction or retry idempotency key.",
+    "Demo headers are not production identity; parts have no campus ownership field.",
+    "Work-order existence is checked, but terminal-status policy and cross-module state-transition coordination remain exercises.",
+    "The React console displays work orders; inventory UI is a documented capstone.",
+    "No live browser, deployed service, inventory database migration or manual HTTP trace was executed."
+  ]
+}

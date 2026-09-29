@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w24",
+  "id": "38cbd0ab05af",
+  "command": [
+    "node.exe",
+    "--conditions=react-server",
+    "--import",
+    "tsx",
+    "--test",
+    "tests/feature-platform.test.ts",
+    "src/lib/auth/security-boundary.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\38cbd0ab05af",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:27:46.254250+00:00",
+  "status": "complete",
+  "log": "w24_tests_final_20260913.log",
+  "pid": 23648,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:27:49.865992+00:00",
+  "elapsedSeconds": 3.61
+}

@@ -1,0 +1,25 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildasana",
+  "id": "e09d7ae4ffff",
+  "command": [
+    "dotnet",
+    "test",
+    "BuildAsana.sln",
+    "--configuration",
+    "Release",
+    "--no-build",
+    "--logger",
+    "trx;LogFileName=buildasana-release-02.trx"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e09d7ae4ffff\\backend",
+  "environmentOverrides": {
+    "DOTNET_ROLL_FORWARD": "Major"
+  },
+  "startedAt": "2026-09-12T21:10:20.334006+00:00",
+  "status": "interrupted",
+  "log": "backend-test-release-02.log",
+  "pid": 34632,
+  "passed": false,
+  "reconciledAt": "2026-09-12T21:58:43.898913+00:00",
+  "recoveryNote": "Wrapper interrupted during earlier HTTP test recovery; recordedPID34632 subsequently absent. Final acceptedtest05 passes9/9."
+}

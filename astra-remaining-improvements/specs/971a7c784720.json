@@ -1,0 +1,24 @@
+{
+  "id": "971a7c784720",
+  "summary": [
+    "Reviewed lock coordinator behavior and found no production defect warranting a patch.",
+    "Added an actual coordinator lab for ownership, expiry, status rereads, holder cleanup, and stale sweeps.",
+    "Captured five executed Node VM cases with explicit provider limits."
+  ],
+  "changedFiles": [
+    "tests/runtime-lock-coordinator-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/crud-b06-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/971a7c784720/results-crud-b06.json"
+  },
+  "limits": [
+    "No production fix warranted in reviewed path.",
+    "No live provider, FOR UPDATE, route, concurrent worker, or rollback execution.",
+    "Normal project typecheck and provider-backed tests remain follow-up checks.",
+    "Authorization and ApiError execute from actual source; repository/transaction adapters do not establish row locking or isolation."
+  ]
+}

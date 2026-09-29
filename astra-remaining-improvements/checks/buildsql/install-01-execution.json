@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund",
+    "--cache",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+  ],
+  "exitCode": 0,
+  "seconds": 1140.48
+}

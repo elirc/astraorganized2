@@ -1,0 +1,208 @@
+[
+ {
+  "wave": 1,
+  "stage": "01",
+  "name": "JS1/task-board",
+  "rel": "JS1/task-board",
+  "tests": 3,
+  "words": 5079,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\task-board",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-task-board",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/01",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "JS1/task-board/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "02",
+  "name": "JS1/contact-book",
+  "rel": "JS1/contact-book",
+  "tests": 2,
+  "words": 4969,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\contact-book",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-contact-book",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/02",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "JS1/contact-book/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "03",
+  "name": "JS1/focus-timer",
+  "rel": "JS1/focus-timer",
+  "tests": 3,
+  "words": 5049,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\JS1\\focus-timer",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "js1-focus-timer",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/03",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "JS1/focus-timer/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "04",
+  "name": "finance-dashboard",
+  "rel": "finance-dashboard",
+  "tests": 2,
+  "words": 5132,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\finance-dashboard",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node"
+  ],
+  "slug": "finance-dashboard",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/04",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "finance-dashboard/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "05",
+  "name": "recipeweb",
+  "rel": "recipeweb",
+  "tests": 3,
+  "words": 5243,
+  "changes": 18,
+  "abs": "C:\\Users\\Owner\\Desktop\\recipeweb",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "recipeweb",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/05",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "recipeweb/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "06",
+  "name": "jobtrack",
+  "rel": "jobtrack",
+  "tests": 90,
+  "words": 5476,
+  "changes": 13,
+  "abs": "C:\\Users\\Owner\\Desktop\\jobtrack",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "jobtrack",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/06",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "jobtrack/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "07",
+  "name": "newcodexJS/01-task-manager",
+  "rel": "newcodexJS/01-task-manager",
+  "tests": 3,
+  "words": 5720,
+  "changes": 14,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\01-task-manager",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "newcodexjs-01-task-manager",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/07",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "newcodexJS/01-task-manager/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "08",
+  "name": "newcodexJS/02-contact-book",
+  "rel": "newcodexJS/02-contact-book",
+  "tests": 4,
+  "words": 5823,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\02-contact-book",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "newcodexjs-02-contact-book",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/08",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "newcodexJS/02-contact-book/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "09",
+  "name": "newcodexJS/03-expense-tracker",
+  "rel": "newcodexJS/03-expense-tracker",
+  "tests": 3,
+  "words": 5567,
+  "changes": 15,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\03-expense-tracker",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "react-jsx"
+  ],
+  "slug": "newcodexjs-03-expense-tracker",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/09",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "newcodexJS/03-expense-tracker/astraupskill",
+  "batch": "B01"
+ },
+ {
+  "wave": 1,
+  "stage": "10",
+  "name": "newcodexJS/05-recipe-manager",
+  "rel": "newcodexJS/05-recipe-manager",
+  "tests": 3,
+  "words": 5798,
+  "changes": 16,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\05-recipe-manager",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-05-recipe-manager",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/backups/10",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/delivery-manifest.json",
+  "course": "newcodexJS/05-recipe-manager/astraupskill",
+  "batch": "B01"
+ }
+]

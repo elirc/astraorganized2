@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antitestbuild",
+  "id": "f4fdec40dcb7",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/countries-service.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f4fdec40dcb7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:30:07.997448+00:00",
+  "status": "complete",
+  "log": "runtime-b094.log",
+  "pid": 2252,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:30:15.574810+00:00",
+  "elapsedSeconds": 7.57
+}

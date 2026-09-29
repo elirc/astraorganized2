@@ -1,0 +1,14 @@
+{
+  "command": [
+    "powershell.exe",
+    "-NoProfile",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "scripts/publish-local.ps1",
+    "-SkipInstall"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 91.93
+}

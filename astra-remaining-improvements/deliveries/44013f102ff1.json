@@ -1,0 +1,716 @@
+{
+  "project": "geminiorganized/LLM_Generated_Helper",
+  "id": "44013f102ff1",
+  "summary": [
+    "Added a dependency-free local CRUD Practice Journal for profiles, questions, sessions and scored attempts, with snapshots, lifecycle rules, archive/reference protection and authenticated export.",
+    "Implemented bounded JSON persistence with exclusive writer leases and byte revisions, typed HTTP input, owner setup that refuses overwrite, and server search/pagination.",
+    "Built the journal UI with typed edits, in-memory sign-in, retained drafts, explicit stale/uncertain-write review, responsive layout and a complete practice workflow.",
+    "Repaired existing settings acceptance/encryption/error behavior; introduced write-only credential forms, trusted-frame IPC, cancellation, visible startup errors and readable settings layout.",
+    "Added nine detailed learning guides, worked regressions, exercises/solutions, trace labs, reproducible verification and five reviewed screenshots; preserved 27 original code/documentation snapshots and updated documentation entry points."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/llm_generated_helper/results.json",
+    "expectedTests": 140
+  },
+  "testResults": {
+    "passed": true,
+    "date": "2026-09-12T09:31:16.406302+00:00",
+    "project": "geminiorganized/LLM_Generated_Helper",
+    "distinctChecks": 140,
+    "nodeTests": 120,
+    "browserChecks": 14,
+    "mockedRendererChecks": 6,
+    "baselineNodeTests": 73,
+    "regressionsFailedBefore": 8,
+    "regressionsPassedAfter": 8,
+    "nodeRun": {
+      "command": [
+        "node",
+        "--require",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\llm_generated_helper\\guard-fixtures.cjs",
+        "--test",
+        "test\\audio.test.js",
+        "test\\ipc.test.js",
+        "test\\json-file.test.js",
+        "test\\llm.test.js",
+        "test\\practice-http.test.js",
+        "test\\practice.test.js",
+        "test\\prompt.test.js",
+        "test\\settings-safety.test.js",
+        "test\\sse.test.js",
+        "test\\store.test.js",
+        "test\\stt.test.js"
+      ],
+      "exitCode": 0,
+      "seconds": 53.35
+    },
+    "browser": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "explicit sign-in with token held only in tab memory",
+          "passed": true
+        },
+        {
+          "name": "server pagination across 23 seeded profiles",
+          "passed": true
+        },
+        {
+          "name": "create profile and reload accepted representation",
+          "passed": true
+        },
+        {
+          "name": "stale write retains draft and rebases only edited fields after explicit review",
+          "passed": true
+        },
+        {
+          "name": "create profile-specific question with user text rendered as text",
+          "passed": true
+        },
+        {
+          "name": "create planned session and explicitly start it",
+          "passed": true
+        },
+        {
+          "name": "create scored attempt with immutable question snapshot and valid zero score",
+          "passed": true
+        },
+        {
+          "name": "accepted write with lost response requires review and avoids duplicate submission",
+          "passed": true
+        },
+        {
+          "name": "completed session protects attempts and failed save preserves draft",
+          "passed": true
+        },
+        {
+          "name": "explicit reopening enables another review cycle",
+          "passed": true
+        },
+        {
+          "name": "referenced profile deletion rejected without removing the editor",
+          "passed": true
+        },
+        {
+          "name": "authenticated export includes records without credential or audit internals",
+          "passed": true
+        },
+        {
+          "name": "delete attempt session question and profile in explicit dependency order",
+          "passed": true
+        },
+        {
+          "name": "mobile layout and sign-out without uncaught page errors",
+          "passed": true
+        }
+      ],
+      "screenshots": [
+        "01-conflict-review.png",
+        "02-attempt.png",
+        "03-profile.png",
+        "04-mobile.png"
+      ],
+      "seconds": 54.36
+    },
+    "mockedRenderer": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "saved credentials are represented by presence with blank write-only fields",
+          "passed": true
+        },
+        {
+          "name": "settings PATCH preserves omitted key and sends explicit clear and false values",
+          "passed": true
+        },
+        {
+          "name": "failed settings save retains draft and requires explicit accepted-state reload",
+          "passed": true
+        },
+        {
+          "name": "expanded settings controls remain reachable in minimum-size window",
+          "passed": true
+        },
+        {
+          "name": "cancel control invokes dedicated bridge operation for in-flight work",
+          "passed": true
+        },
+        {
+          "name": "startup storage errors are displayed instead of silently treated as ready",
+          "passed": true
+        }
+      ],
+      "evidence": "Chromium with mocked preload; no native Electron, OS encryption, capture or providers"
+    },
+    "freshSetup": {
+      "passed": true,
+      "checks": [
+        {
+          "name": "fresh source copy repeats all 120 Node tests without npm install",
+          "passed": true
+        },
+        {
+          "name": "all current source test and verification JavaScript parses in fresh copy",
+          "passed": true
+        },
+        {
+          "name": "real setup initializes once stores only token hash and refuses overwrite byte-for-byte",
+          "passed": true
+        },
+        {
+          "name": "real server CLI starts with clean owner state and serves three exact UI assets",
+          "passed": true
+        }
+      ],
+      "repeatedNodeTests": 120,
+      "dependencyInstall": false
+    },
+    "countsNote": "140 = 120 Node + 14 real journal browser + 6 mocked desktop renderer checks. Four fresh-copy/setup groups are supplemental; the repeated 120 tests are not added again.",
+    "finalRendererChanges": "After the clean-copy check, prevented textarea flex shrink and cleared stale saved status before a new save. renderer-02 passed all six checks including these assertions; final renderer syntax passed.",
+    "failedBrowserRuns": "browser-01 and browser-02 stopped on assertions expecting different words than the correct rejection messages. Assertions were corrected; browser-03 passed all 14 workflows.",
+    "screenshots": [
+      {
+        "file": "images/01-conflict-review.png",
+        "sha256": "2b3b2297e57cc75e1da9da7e20e13bfae9e59248522e474d902e8e58898f16e1",
+        "sourceRun": "browser-03",
+        "visuallyReviewed": true
+      },
+      {
+        "file": "images/02-attempt.png",
+        "sha256": "c49381bb45b5b931a84eb8d8cec6de3791fec70531daa0a041610c4c2317e1ed",
+        "sourceRun": "browser-03",
+        "visuallyReviewed": true
+      },
+      {
+        "file": "images/03-profile.png",
+        "sha256": "29cdd3f0e08eca19e35d4db747b9350e70b21e88a2808054b56a4f9ebc4c5f68",
+        "sourceRun": "browser-03",
+        "visuallyReviewed": true
+      },
+      {
+        "file": "images/04-mobile.png",
+        "sha256": "cf0bb5d84b5f6384612092d757f9d92188d17c126a6e5548c607933205b1991f",
+        "sourceRun": "browser-03",
+        "visuallyReviewed": true
+      },
+      {
+        "file": "images/05-settings-draft.png",
+        "sha256": "2dc9979bb1008a0c3313de19914adc800d2dfaeb07515d9d8a3fde022f707296",
+        "sourceRun": "renderer-02",
+        "visuallyReviewed": true
+      }
+    ],
+    "limits": [
+      "Single-owner loopback JSON application; no distributed database, power-loss guarantee, import, token recovery or durable creation receipts.",
+      "Global revision, bounded collections/file and rolling 1000-entry activity; stale writer leases require explicit investigation.",
+      "Persisted structure/reference checks are not exhaustive history validation; standard JSON duplicate-key behavior remains.",
+      "Desktop renderer uses a mocked preload bridge; native Electron, OS encryption, capture, live providers and Windows installer were not run.",
+      "Existing Electron dependencies retained; no claim they are current. Provider streaming/body-limit behavior was not fully hardened.",
+      "Browser checks cover Chromium desktop/mobile workflows, not all browsers or assistive technologies."
+    ],
+    "sourceHashes": {
+      "src/preload.js": "15b64010496aa34992a5f9aea381e9db5ee7856b079d9598d3dd0b364aee8aa0",
+      "src/main/ipc-controller.js": "4d434ccc0148006e5ceca05bd3e179262d11f30873df3b8f680afc995f1ff8e3",
+      "src/main/ipc.js": "0ed84363437a83c820fff9339523b43eebc585114326b73316cea42b87610619",
+      "src/main/llm.js": "5dd8d705397d2d46b1ca1698497d35da285403ff739927df2e9299abd682c55c",
+      "src/main/main.js": "64a394cd5f35afc37ce285720895016f557fb7fc710ee516faa12ce3bcec8de0",
+      "src/main/prompt.js": "6f157df053f716f47272d489cddd5610408110da6059719406e3d3c53f5fca09",
+      "src/main/settings-store.js": "c121c781f865af0f241e6b44af20f74e6d74c8a2a1d6ff8239d5d0d5fcd5c170",
+      "src/main/sse.js": "dab77e2a2f758308eac9dab1693532b08b865910e2ddc219f2143c4c0b4c9ff7",
+      "src/main/store.js": "198ac765e47f6ac2d297f772698c321f0ad52ab31de7e90fe34d402e945c6eda",
+      "src/main/stt.js": "f50a5600a56ff1ce724b0ccd296af3a1bfea5fd0de5667cc0d00d09d83dbd710",
+      "src/practice/domain.js": "eabb7ac04a3dedf1fb859afe39a18fe6cdc9204d7851c5b201bf449b9c02d486",
+      "src/practice/server.js": "3d5167e5640f85b8b67eb7fc3dd8d0445dcf00d44dcb6b321b90147f54237b2d",
+      "src/practice/setup.js": "717c4f6dc91c41a6c69ae2ea8e8addc0faae5fb43fbd8a73dc55c1c781629d16",
+      "src/renderer/app.js": "dda8aaa53fa2c225739e8dfc8dcce9589300d8a7a3519523732896a488a3065d",
+      "src/renderer/audio.js": "269cbc40db123209086d647af8291d40876be5e85936e0167e46900ce096ed19",
+      "src/renderer/index.html": "90b6e9c9a3d16e84b4bb6d92f5fd5b7bb05d34d814addd4b5746b776da2a94ad",
+      "src/renderer/styles.css": "0ed7ec0aa6f2d230db1204fedf6fbb722db5c0c4641a2a0ce0c877070287dd82",
+      "src/shared/json-file.js": "a4152790220ef266783d4ac0627e197d488e2f9fc7371e12eaf956a2902a0987",
+      "src/practice/ui/app.js": "7d12ab4e0a0ce8290ac7745a4f927763aad95c5f60cdc413ae83e1c362b5ab3f",
+      "src/practice/ui/index.html": "e5af185b92f36b63250968ba18d327e495ad3e53879df6480179579376a2fa0f",
+      "src/practice/ui/styles.css": "9fcf634649e6cc7360999a73688f19abfae0868cae706f00a11a1a192447618b"
+    }
+  },
+  "courseWords": 6355,
+  "courseFiles": 9,
+  "courseLinksChecked": 64,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "790e3169bc19b046fe55ba1da6d13b976c28363c8c00462a2195fe5faf260910",
+      "after_sha256": "fbda1c60b0a598025857c732b17181959edfe9127fdfb79036cfab17dd260f03"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "75cec04456ce5cd7be7d15a6a79c65d4dc290ac741843eb3848bb068cb186669",
+      "after_sha256": "6921a75f608f0d9aeb82d2da95c838782984b7e529692b47449fa8115b8b85b8"
+    },
+    {
+      "file": "astraupskill/images/01-conflict-review.png",
+      "before_sha256": null,
+      "after_sha256": "2b3b2297e57cc75e1da9da7e20e13bfae9e59248522e474d902e8e58898f16e1"
+    },
+    {
+      "file": "astraupskill/images/02-attempt.png",
+      "before_sha256": null,
+      "after_sha256": "c49381bb45b5b931a84eb8d8cec6de3791fec70531daa0a041610c4c2317e1ed"
+    },
+    {
+      "file": "astraupskill/images/03-profile.png",
+      "before_sha256": null,
+      "after_sha256": "29cdd3f0e08eca19e35d4db747b9350e70b21e88a2808054b56a4f9ebc4c5f68"
+    },
+    {
+      "file": "astraupskill/images/04-mobile.png",
+      "before_sha256": null,
+      "after_sha256": "cf0bb5d84b5f6384612092d757f9d92188d17c126a6e5548c607933205b1991f"
+    },
+    {
+      "file": "astraupskill/images/05-settings-draft.png",
+      "before_sha256": null,
+      "after_sha256": "2dc9979bb1008a0c3313de19914adc800d2dfaeb07515d9d8a3fde022f707296"
+    },
+    {
+      "file": "astraupskill/verification-results.json",
+      "before_sha256": null,
+      "after_sha256": "d5b82c6f656908e94c456fc7d7dedd81fd460311f4539d7b85e2f8b8e81d337b"
+    },
+    {
+      "file": "docs/ALTERNATIVE_APP_SPEC.md",
+      "before_sha256": "463366e5086117012a0552cf68c9dc25cb6fac5814044ccab9741ae5c0607da2",
+      "after_sha256": "761a1a8e38b1fede4eb6bba0d0d3a59ca4d3176990bd62c0d5debfcc1949a4a9"
+    },
+    {
+      "file": "docs/ARCHITECTURE.md",
+      "before_sha256": "bbe724edf3c46f434b5fd3d75360af8590f33bf5ee2c5a90068b8d8ac9f259a8",
+      "after_sha256": "f21a538d286296e88fdae09f369e04f43b55072bfcddd0baa3a703cf7e3a2355"
+    },
+    {
+      "file": "docs/CODE_REVIEW.md",
+      "before_sha256": "fc8cb733705337fe18e5235a81099b33f0aa2c5d580c3579811781d61c488282",
+      "after_sha256": "4d39578d85aac27cf94d3a045bb5891fc76ec20eadfb14f79a5a1986147bfc99"
+    },
+    {
+      "file": "docs/ONBOARDING.md",
+      "before_sha256": "0c53b2d349549a95760e55e7c0a5562e3a96886cc783db89ec5bf2bc76f8dc33",
+      "after_sha256": "32cabab5a6ff7af1fd47f82e809c4adcfc08d6efd29b8a1e2a494d1a780bf952"
+    },
+    {
+      "file": "docs/README.md",
+      "before_sha256": "dbfdf7b9c241ac2044047331bebd1bcf7dc61352813b13a174888c7d9390c0d2",
+      "after_sha256": "39f51a25c99e0d9baa647892d8f1e746b5bee120e0a136c146f6ff9cc50aba50"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "before_sha256": "c423dd439876c845de2cec1378c55e18d43ebbdb9c01be2a4c121a645fdabbc7",
+      "after_sha256": "5b52b6ce599f300f8a21d74ac61edca2ee953deaf7431518a394c04f88f905fc"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "75cec04456ce5cd7be7d15a6a79c65d4dc290ac741843eb3848bb068cb186669"
+    },
+    {
+      "file": "docs/original/docs/ALTERNATIVE_APP_SPEC.md.txt",
+      "before_sha256": null,
+      "after_sha256": "463366e5086117012a0552cf68c9dc25cb6fac5814044ccab9741ae5c0607da2"
+    },
+    {
+      "file": "docs/original/docs/ARCHITECTURE.md.txt",
+      "before_sha256": null,
+      "after_sha256": "bbe724edf3c46f434b5fd3d75360af8590f33bf5ee2c5a90068b8d8ac9f259a8"
+    },
+    {
+      "file": "docs/original/docs/CODE_REVIEW.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fc8cb733705337fe18e5235a81099b33f0aa2c5d580c3579811781d61c488282"
+    },
+    {
+      "file": "docs/original/docs/ONBOARDING.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0c53b2d349549a95760e55e7c0a5562e3a96886cc783db89ec5bf2bc76f8dc33"
+    },
+    {
+      "file": "docs/original/docs/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "dbfdf7b9c241ac2044047331bebd1bcf7dc61352813b13a174888c7d9390c0d2"
+    },
+    {
+      "file": "docs/original/docs/TESTING.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c423dd439876c845de2cec1378c55e18d43ebbdb9c01be2a4c121a645fdabbc7"
+    },
+    {
+      "file": "docs/original/package-lock.json.txt",
+      "before_sha256": null,
+      "after_sha256": "2de49ed801321649d48f7f5297860d524e869ba39f03e0b8347daaa22bdf5277"
+    },
+    {
+      "file": "docs/original/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "fcc46cd4fb5d9ccd91e29ff3b3aa21e933a09f92896d20639615b38512763cc9"
+    },
+    {
+      "file": "docs/original/src/main/ipc.js.txt",
+      "before_sha256": null,
+      "after_sha256": "82ac9b793860cbe993b71d4828f57a7eeada3ef0f0c21956f50e6c7153c9679a"
+    },
+    {
+      "file": "docs/original/src/main/llm.js.txt",
+      "before_sha256": null,
+      "after_sha256": "0b1a2d124b2b4d0684afe58b8e454ff4a2956e5263b96b7e08a1368d7f710b25"
+    },
+    {
+      "file": "docs/original/src/main/main.js.txt",
+      "before_sha256": null,
+      "after_sha256": "11432f1bb930f63ab913a78eb99a217ffbf70589abfbe1f335fa77fdab20ae6e"
+    },
+    {
+      "file": "docs/original/src/main/prompt.js.txt",
+      "before_sha256": null,
+      "after_sha256": "b101b55e1da3077358c7ee450250fb7fd6deb93e433f07dbde851fbf90ffdb2a"
+    },
+    {
+      "file": "docs/original/src/main/sse.js.txt",
+      "before_sha256": null,
+      "after_sha256": "fd4dfa2ab1aed6d7cc53fb7d56cf6a6a1b561f83a3fa958f3e89cf7cede8bb1e"
+    },
+    {
+      "file": "docs/original/src/main/store.js.txt",
+      "before_sha256": null,
+      "after_sha256": "26a5f1910dc7357d8c4d391d99c0588f201c8e66fa7d63b305325cb9a87a99a4"
+    },
+    {
+      "file": "docs/original/src/main/stt.js.txt",
+      "before_sha256": null,
+      "after_sha256": "7b7cb60bef3da793f4cf0f8a75bad7a3acf419709c9bfcbe697be8db5e7bd791"
+    },
+    {
+      "file": "docs/original/src/preload.js.txt",
+      "before_sha256": null,
+      "after_sha256": "fe1a8b84879664e11b3fcc4ae7232f36c00265cf986e24fca2a17a5309b6c81c"
+    },
+    {
+      "file": "docs/original/src/renderer/app.js.txt",
+      "before_sha256": null,
+      "after_sha256": "3d57491946bcc2815599a7e35d7ac49e2068eeb0f20a4aec775133a4d5aee1bf"
+    },
+    {
+      "file": "docs/original/src/renderer/audio.js.txt",
+      "before_sha256": null,
+      "after_sha256": "80b4aa6346c6a83fb7f6f574c9614e059ccd365a8c2deb740d38ae9f7a818455"
+    },
+    {
+      "file": "docs/original/src/renderer/index.html.txt",
+      "before_sha256": null,
+      "after_sha256": "50d627de9a0349e88f68478a5c6a63cf21cdc13d94ba3ac4a603883e8fb6a0c4"
+    },
+    {
+      "file": "docs/original/src/renderer/styles.css.txt",
+      "before_sha256": null,
+      "after_sha256": "71511f6b4acd78844acabb4134cc38bd562fa6328949388f9f9c25085cc1bbd2"
+    },
+    {
+      "file": "docs/original/test/audio.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "b4477a8fb653c30d88e3af51f06c0e01b566d3794665c0f1bd7dc15b1594f3f0"
+    },
+    {
+      "file": "docs/original/test/llm.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "7bd69c90dd5a3c5b52e2fb828f04505a6fcba5c00cfd7c1878c9aae91c07e018"
+    },
+    {
+      "file": "docs/original/test/prompt.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "c28cef6ba61fe1c6eae56ffba3e7b55959ae06d8b73aca6bfc1d7de6732a9800"
+    },
+    {
+      "file": "docs/original/test/sse.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "7c3429cd5056204f5f00c84b2b3092d946e20609e8087f7513f9f7a842ed92b9"
+    },
+    {
+      "file": "docs/original/test/store.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "ccc9574c73c5154605e7cebbee30049020d6cde3053a78f92e0e459e5e6b1a51"
+    },
+    {
+      "file": "docs/original/test/stt.test.js.txt",
+      "before_sha256": null,
+      "after_sha256": "d1ed90a752cc35accc9fedd7667cc322c5f86134322b48b0183d8cfc9f65532f"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "2de49ed801321649d48f7f5297860d524e869ba39f03e0b8347daaa22bdf5277",
+      "after_sha256": "1b794c341d6a50d0079ec1425c501015249a58b124e02062c992cebeb0fd4b1c"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "fcc46cd4fb5d9ccd91e29ff3b3aa21e933a09f92896d20639615b38512763cc9",
+      "after_sha256": "62e2288ba33b213cc124771de280668ec66e99db01da07c20d9f44b7d38f7c28"
+    },
+    {
+      "file": "src/main/ipc-controller.js",
+      "before_sha256": null,
+      "after_sha256": "4d434ccc0148006e5ceca05bd3e179262d11f30873df3b8f680afc995f1ff8e3"
+    },
+    {
+      "file": "src/main/ipc.js",
+      "before_sha256": "82ac9b793860cbe993b71d4828f57a7eeada3ef0f0c21956f50e6c7153c9679a",
+      "after_sha256": "0ed84363437a83c820fff9339523b43eebc585114326b73316cea42b87610619"
+    },
+    {
+      "file": "src/main/llm.js",
+      "before_sha256": "0b1a2d124b2b4d0684afe58b8e454ff4a2956e5263b96b7e08a1368d7f710b25",
+      "after_sha256": "5dd8d705397d2d46b1ca1698497d35da285403ff739927df2e9299abd682c55c"
+    },
+    {
+      "file": "src/main/main.js",
+      "before_sha256": "11432f1bb930f63ab913a78eb99a217ffbf70589abfbe1f335fa77fdab20ae6e",
+      "after_sha256": "64a394cd5f35afc37ce285720895016f557fb7fc710ee516faa12ce3bcec8de0"
+    },
+    {
+      "file": "src/main/prompt.js",
+      "before_sha256": "b101b55e1da3077358c7ee450250fb7fd6deb93e433f07dbde851fbf90ffdb2a",
+      "after_sha256": "6f157df053f716f47272d489cddd5610408110da6059719406e3d3c53f5fca09"
+    },
+    {
+      "file": "src/main/settings-store.js",
+      "before_sha256": null,
+      "after_sha256": "c121c781f865af0f241e6b44af20f74e6d74c8a2a1d6ff8239d5d0d5fcd5c170"
+    },
+    {
+      "file": "src/main/sse.js",
+      "before_sha256": "fd4dfa2ab1aed6d7cc53fb7d56cf6a6a1b561f83a3fa958f3e89cf7cede8bb1e",
+      "after_sha256": "dab77e2a2f758308eac9dab1693532b08b865910e2ddc219f2143c4c0b4c9ff7"
+    },
+    {
+      "file": "src/main/store.js",
+      "before_sha256": "26a5f1910dc7357d8c4d391d99c0588f201c8e66fa7d63b305325cb9a87a99a4",
+      "after_sha256": "198ac765e47f6ac2d297f772698c321f0ad52ab31de7e90fe34d402e945c6eda"
+    },
+    {
+      "file": "src/main/stt.js",
+      "before_sha256": "7b7cb60bef3da793f4cf0f8a75bad7a3acf419709c9bfcbe697be8db5e7bd791",
+      "after_sha256": "f50a5600a56ff1ce724b0ccd296af3a1bfea5fd0de5667cc0d00d09d83dbd710"
+    },
+    {
+      "file": "src/practice/domain.js",
+      "before_sha256": null,
+      "after_sha256": "eabb7ac04a3dedf1fb859afe39a18fe6cdc9204d7851c5b201bf449b9c02d486"
+    },
+    {
+      "file": "src/practice/server.js",
+      "before_sha256": null,
+      "after_sha256": "3d5167e5640f85b8b67eb7fc3dd8d0445dcf00d44dcb6b321b90147f54237b2d"
+    },
+    {
+      "file": "src/practice/setup.js",
+      "before_sha256": null,
+      "after_sha256": "717c4f6dc91c41a6c69ae2ea8e8addc0faae5fb43fbd8a73dc55c1c781629d16"
+    },
+    {
+      "file": "src/practice/ui/app.js",
+      "before_sha256": null,
+      "after_sha256": "7d12ab4e0a0ce8290ac7745a4f927763aad95c5f60cdc413ae83e1c362b5ab3f"
+    },
+    {
+      "file": "src/practice/ui/index.html",
+      "before_sha256": null,
+      "after_sha256": "e5af185b92f36b63250968ba18d327e495ad3e53879df6480179579376a2fa0f"
+    },
+    {
+      "file": "src/practice/ui/styles.css",
+      "before_sha256": null,
+      "after_sha256": "9fcf634649e6cc7360999a73688f19abfae0868cae706f00a11a1a192447618b"
+    },
+    {
+      "file": "src/preload.js",
+      "before_sha256": "fe1a8b84879664e11b3fcc4ae7232f36c00265cf986e24fca2a17a5309b6c81c",
+      "after_sha256": "15b64010496aa34992a5f9aea381e9db5ee7856b079d9598d3dd0b364aee8aa0"
+    },
+    {
+      "file": "src/renderer/app.js",
+      "before_sha256": "3d57491946bcc2815599a7e35d7ac49e2068eeb0f20a4aec775133a4d5aee1bf",
+      "after_sha256": "dda8aaa53fa2c225739e8dfc8dcce9589300d8a7a3519523732896a488a3065d"
+    },
+    {
+      "file": "src/renderer/audio.js",
+      "before_sha256": "80b4aa6346c6a83fb7f6f574c9614e059ccd365a8c2deb740d38ae9f7a818455",
+      "after_sha256": "269cbc40db123209086d647af8291d40876be5e85936e0167e46900ce096ed19"
+    },
+    {
+      "file": "src/renderer/index.html",
+      "before_sha256": "50d627de9a0349e88f68478a5c6a63cf21cdc13d94ba3ac4a603883e8fb6a0c4",
+      "after_sha256": "90b6e9c9a3d16e84b4bb6d92f5fd5b7bb05d34d814addd4b5746b776da2a94ad"
+    },
+    {
+      "file": "src/renderer/styles.css",
+      "before_sha256": "71511f6b4acd78844acabb4134cc38bd562fa6328949388f9f9c25085cc1bbd2",
+      "after_sha256": "0ed7ec0aa6f2d230db1204fedf6fbb722db5c0c4641a2a0ce0c877070287dd82"
+    },
+    {
+      "file": "src/shared/json-file.js",
+      "before_sha256": null,
+      "after_sha256": "a4152790220ef266783d4ac0627e197d488e2f9fc7371e12eaf956a2902a0987"
+    },
+    {
+      "file": "test/audio.test.js",
+      "before_sha256": "b4477a8fb653c30d88e3af51f06c0e01b566d3794665c0f1bd7dc15b1594f3f0",
+      "after_sha256": "caa3a8b86ae7d455c37c0b2891c7a0ce2c34e44f318080e6aed50e486433df70"
+    },
+    {
+      "file": "test/ipc.test.js",
+      "before_sha256": null,
+      "after_sha256": "7df38d9088c34399d8ddd28092e5d44095331ad4ebbc096f5c1ffc620e739244"
+    },
+    {
+      "file": "test/json-file.test.js",
+      "before_sha256": null,
+      "after_sha256": "bd8b87400b9951e9f66703960c49ab03f7c45320c5d2f5eebc772e1af92f958d"
+    },
+    {
+      "file": "test/llm.test.js",
+      "before_sha256": "7bd69c90dd5a3c5b52e2fb828f04505a6fcba5c00cfd7c1878c9aae91c07e018",
+      "after_sha256": "2b5070b0ab81ef43c2e85631c530f3e795438bb2f664a048d9b1848f1408c342"
+    },
+    {
+      "file": "test/practice-http.test.js",
+      "before_sha256": null,
+      "after_sha256": "4cd0b4b1cbd79f06a5861c9b7983f6d06bb88f2d1b488c54e5bc220d7571bd3b"
+    },
+    {
+      "file": "test/practice.test.js",
+      "before_sha256": null,
+      "after_sha256": "59699d708fbe02db9ce292391081cd0c1ba41b6eec3323f21302afff5e1ea087"
+    },
+    {
+      "file": "test/prompt.test.js",
+      "before_sha256": "c28cef6ba61fe1c6eae56ffba3e7b55959ae06d8b73aca6bfc1d7de6732a9800",
+      "after_sha256": "8ba27badf4b55963391dc404a1b7774a3ade55e0482ef470b9593c01502a1597"
+    },
+    {
+      "file": "test/settings-safety.test.js",
+      "before_sha256": null,
+      "after_sha256": "bb9fe216b33f0f451cae17889590c724ffd227a5c68485d4dc93a63957d45813"
+    },
+    {
+      "file": "test/sse.test.js",
+      "before_sha256": "7c3429cd5056204f5f00c84b2b3092d946e20609e8087f7513f9f7a842ed92b9",
+      "after_sha256": "fcdd5b8163c224e81aeb7874039b75da70c0d7f81713a5f8f925e50cef96c27c"
+    },
+    {
+      "file": "test/store.test.js",
+      "before_sha256": "ccc9574c73c5154605e7cebbee30049020d6cde3053a78f92e0e459e5e6b1a51",
+      "after_sha256": "7ed9d3081e96fb81729c3d7238982be30222e5b5aef1be52e1dc874eb218aeea"
+    },
+    {
+      "file": "test/stt.test.js",
+      "before_sha256": "d1ed90a752cc35accc9fedd7667cc322c5f86134322b48b0183d8cfc9f65532f",
+      "after_sha256": "1ec9f63bcb51bf1a6c746e832acdecf44ec233d5c8209762ead9c7da2c8d1cfc"
+    },
+    {
+      "file": "verification/browser-fixture.cjs",
+      "before_sha256": null,
+      "after_sha256": "593317b6a3b2faa6ac6e30e069494ae014a4ec6852f4b4c7867cc6b4131e385f"
+    },
+    {
+      "file": "verification/check-syntax.js",
+      "before_sha256": null,
+      "after_sha256": "71039d89f0984a7087b829c492798ada50868927b3d8814ff02d75da201ab8a9"
+    },
+    {
+      "file": "verification/practice-fixture.cjs",
+      "before_sha256": null,
+      "after_sha256": "6eb3e25caf86f26c85dc54704898d7ff8b5e7174ad476077c7451772ff07799c"
+    },
+    {
+      "file": "verification/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "verification/run-tests.js",
+      "before_sha256": null,
+      "after_sha256": "f39621fa1472f8c980ce029d2ba53416e3c93ff4a616867e763b59efb3bca925"
+    },
+    {
+      "file": "verification/test-encryption.cjs",
+      "before_sha256": null,
+      "after_sha256": "e317f274980b10cbc692a5a3e88505a07878c77a865b54d69754324561b3c53f"
+    },
+    {
+      "file": "verification/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "13982eb50160cf3c030fd0afc7985655d5a4b88d3e5b66f3d8c79d4c72f850c2"
+    },
+    {
+      "file": "verification/verify_renderer.py",
+      "before_sha256": null,
+      "after_sha256": "6ef6185461394c26a5db3095c320cff302f2373cdff03dbd067fbcb0d8d99b73"
+    },
+    {
+      "file": "verification/verify_setup.py",
+      "before_sha256": null,
+      "after_sha256": "18c4d2b90d4cbea7453c338f6df4118f61b684936e131c863e828649d783601c"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "54e87ba2505977d63e72db5d9b2ef932ddb768fd4689cc124be984834a4890eb"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9b95783997344f8e60620b282fbe3e9c43c1aba91d4e5fb795f1fd98087bb884"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "c2976343cab706e5341d4dfb5be376f644f56ca47d1ed31391314069ae7c1acf"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9b9762fff07fce042142bfaff2d19d814f4a9589b6bc9bdd1028e1d06b5a7b9f"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b832c5f7059b691e078a1565633ef8c77bdaeda8d9e7ae3b07a7d21e98c9c920"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "00272915c67a62e5ae45af63a4a0e1213fbfca370d878d60c3085ba24d535c90"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b13d577a9ab2191c65057729ae06223f8f69a0e7b1cedcdc6c05253475cf7f78"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e8edf91320fb9f01ea6a77564f01718a7517b7157cd9ec90cfec961c5c9c7fa4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4d4f5a314ac34b940428358c86634eea8f2546591a6cd4f7429c6a61becce43f"
+    }
+  ],
+  "limits": [
+    "Single-owner loopback JSON application; no distributed database, power-loss guarantee, import, token recovery or durable creation receipts.",
+    "Global revision, bounded collections/file and rolling 1000-entry activity; stale writer leases require explicit investigation.",
+    "Persisted structure/reference checks are not exhaustive history validation; standard JSON duplicate-key behavior remains.",
+    "Desktop renderer uses a mocked preload bridge; native Electron, OS encryption, capture, live providers and Windows installer were not run.",
+    "Existing Electron dependencies retained; no claim they are current. Provider streaming/body-limit behavior was not fully hardened.",
+    "Browser checks cover Chromium desktop/mobile workflows, not all browsers or assistive technologies."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T09:31:58.341712+00:00"
+}

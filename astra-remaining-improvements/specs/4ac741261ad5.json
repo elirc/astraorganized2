@@ -1,0 +1,52 @@
+{
+  "summary": [
+    "Scopes mock payment processing to the organization and validates global provider-event ownership and payload identity before replay.",
+    "Keeps payment, invoice, provider event, audit and outbox writes in one Serializable transaction with bounded conflict retries, and prevents invalid invoice transitions or late failure regression.",
+    "Maps explicit domain and HTTP errors to useful client responses while sanitizing unexpected failures; preserves expected money, permission, subscription and idempotency errors.",
+    "Adds 25 API regression tests alongside five domain tests, with nine detailed learning chapters, complete worked test examples, exact original snapshots and portable evidence."
+  ],
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/app.ts",
+    "apps/api/src/modules/billing.routes.ts",
+    "apps/api/src/modules/payments.routes.ts",
+    "apps/api/src/shared/auth.ts",
+    "apps/api/src/shared/idempotent.ts",
+    "packages/domain/src/billing-state.ts",
+    "packages/domain/src/index.ts",
+    "packages/domain/src/money.ts",
+    "packages/domain/src/permissions.ts",
+    "packages/domain/src/errors.ts",
+    "apps/api/src/shared/errors.ts",
+    "apps/api/src/modules/payments.service.ts",
+    "apps/api/src/modules/payments.service.test.ts",
+    "apps/api/src/modules/payments.routes.test.ts",
+    "astraupskill/snapshots/apps__api__src__app.ts.before.txt",
+    "astraupskill/snapshots/apps__api__src__modules__billing.routes.ts.before.txt",
+    "astraupskill/snapshots/apps__api__src__modules__payments.routes.ts.before.txt",
+    "astraupskill/snapshots/apps__api__src__shared__auth.ts.before.txt",
+    "astraupskill/snapshots/apps__api__src__shared__idempotent.ts.before.txt",
+    "astraupskill/snapshots/packages__domain__src__billing-state.ts.before.txt",
+    "astraupskill/snapshots/packages__domain__src__index.ts.before.txt",
+    "astraupskill/snapshots/packages__domain__src__money.ts.before.txt",
+    "astraupskill/snapshots/packages__domain__src__permissions.ts.before.txt",
+    "astraupskill/evidence/prisma_validate_v2.json",
+    "astraupskill/evidence/prisma_validate_v2.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-generate-01.json",
+    "astraupskill/evidence/root-generate-01.log",
+    "astraupskill/evidence/root-verify-01.json",
+    "astraupskill/evidence/root-verify-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/4ac741261ad5/results.json",
+    "expectedTests": 30
+  },
+  "limits": [
+    "Synthetic payment provider and demo header authentication; no provider signature verification or external service was exercised.",
+    "Mock Prisma callbacks establish control-flow and write arguments, not database rollback, durability or concurrency guarantees.",
+    "HTTP tests use the actual router/parser/shared error handler with mocked service and permissions; full application membership wiring and browser interaction remain untested.",
+    "Subscription idempotency and count-based invoice numbering retain pre-existing race risks; no live database, migration, worker or Redis was run."
+  ]
+}

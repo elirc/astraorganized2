@@ -1,0 +1,144 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/andie",
+  "id": "cf8875344b43",
+  "summary": [
+    "Replaces immediately executing credential-embedded migration code with a dependency-free CLI whose default and offline planning paths perform no account requests.",
+    "Adds complete paginated definition/entry reads, variable-bound cursors, bounded read retries, API-version checks and layered HTTP/GraphQL/mutation error handling without credential dumps.",
+    "Builds deterministic immutable plans that expose schema/value conflicts, unsupported ownership/capabilities and reference mappings instead of silently dropping fields or overwriting existing entries.",
+    "Explicit apply re-exports both stores, rejects stale or forged plans and all conflicts, creates sequentially without mutation retries and journals confirmed receipts with partial-failure recovery.",
+    "Adds synthetic fixtures, 42 local tests including real loopback transport and offline child-process verification, plus nine detailed integration/CRUD upskilling documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/andie/results.json",
+    "expectedTests": 42,
+    "command": "node --test test/migration.test.js; three node --check gates; staged source/docs token-literal scan",
+    "environment": "Node 22.16.0; no third-party dependencies; controlled API clients, real temporary files, child processes and loopback HTTP only"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 42,
+    "syntaxChecks": 3,
+    "embeddedTokenScan": "No Shopify token literals in staged source/docs/JSON",
+    "transport": "Controlled fetch boundaries plus one real loopback HTTP server; no live Shopify account requests or mutations",
+    "environment": "Node 22.16.0; dependency-free node:test",
+    "checks": [
+      "Offline CLI and import have no network side effects",
+      "Deterministic plans validate source and target snapshots",
+      "Paged reads, bounded retries, GraphQL/userErrors and unknown mutation outcomes",
+      "Stale/forged plans and conflicts stop before mutation",
+      "Partial create and journal failures preserve receipts and stop later work",
+      "Exclusive output files and local journal replacement",
+      "Source object immutability and explicit reference-field conflicts"
+    ]
+  },
+  "courseWords": 3955,
+  "courseFiles": 9,
+  "courseLinksChecked": 17,
+  "files": [
+    {
+      "file": ".env.example",
+      "before_sha256": null,
+      "after_sha256": "8873b7cdef82a9d817fa1831814e5b2601c30a987be417a2541ba6566bd50a27"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "bb53c092709bd49a6abc45454f10763fc747143396a1258f6e657aa8913f90b5"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "b2c48063f02ac7616a3d22d52fd90d22102c398f4f54a735cacacc8f442c9a26"
+    },
+    {
+      "file": "fixtures/source.json",
+      "before_sha256": null,
+      "after_sha256": "786c0db646d388de6f5ffcfcc4d506729e3821a289f3385ad79d6acbd93d0c11"
+    },
+    {
+      "file": "fixtures/target.json",
+      "before_sha256": null,
+      "after_sha256": "bf0a0ebf78e261fbb878805695ada7919a4edc39a409ed61d5d823fedfc74b53"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": null,
+      "after_sha256": "bc18bb8c0e72a25491d32d632b87305cd14816c00dcb684b72f474d4b73fadba"
+    },
+    {
+      "file": "scripts/lib/client.js",
+      "before_sha256": null,
+      "after_sha256": "3c6a3195dc4b76a7757e8af2d3a39537c8e5a5d978e374f4f79d991c3b730796"
+    },
+    {
+      "file": "scripts/lib/planner.js",
+      "before_sha256": null,
+      "after_sha256": "12431eb5626ce029b0b5ac9e306e9d3c7b7919d61846249ce80a1fb3cca6225b"
+    },
+    {
+      "file": "scripts/populate-metaobjects.js",
+      "before_sha256": "fd03f0bc8663ff399745fa8674f07ec4c9247b36ab26c64354b492b27f035c62",
+      "after_sha256": "90a51ca4dcb03d32c1d34020ddea1f97939fecbd21788cd9df98dc00be6a9960"
+    },
+    {
+      "file": "test/migration.test.js",
+      "before_sha256": null,
+      "after_sha256": "a16d0790e194ba159f4030636198009f52c4fe1c86b949ed2ce81819dd2e842e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "fc3fdc1006ae78d696b17d750853f819991138a8208031ffe6cbf0be8ef04673"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "77fac827484f02067ceb66c0d891d3a8be9eb55a54e57a39beeaeac01159fb35"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "bfd0557bc9559ba0c93bd75ea9e9325b0c13782a5a26a4b3108f4bbed08a6a0e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "26e1b78740b593d1785e92603a32f43c0ac06392381207cb8fb5d7f0b40e64bb"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "6fd6faa57f486d066ab34c38e31c54233ba2652919e08419acbada0158eecc27"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "92936e47e812b3b309a2a511a328888cb1296a0f6a327c36232ed8a06cfe3e60"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d7612923ab8f94489f37012a4997d005c40344078253e773d58623b696ebefc0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "66375aa4d91a98e476859ccbff46c3e1b39881351125d3726c3a0ba2f547e2f0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ef8961e5e819a748cb4fde8b9c74686cabdcc82f1bfee75376a7e3c22f06123f"
+    }
+  ],
+  "limits": [
+    "Original embedded credentials must be revoked and replaced by the account owner; removing source literals does not revoke them or erase historical/backup copies. No original token was used.",
+    "No live Shopify account calls or mutations were performed; API 2026-07 documentation was reviewed but live scopes and store-specific acceptance remain unverified.",
+    "Creates only; updates, deletes, references, app-owned or unsupported-capability migrations and a full store backup are not implemented.",
+    "Exports/preflight are not atomic with concurrent remote writes; journals do not guarantee power-loss durability or remote rollback.",
+    "Theme assets and Storybook configuration are incomplete retained remnants, not a verified frontend build."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T06:01:25.675022+00:00"
+}

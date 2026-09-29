@@ -1,0 +1,176 @@
+{
+  "project": "buildermentor",
+  "id": "a81b176807e5",
+  "summary": [
+    "Separated retrieval dependencies and deterministic ranking while retaining the production parameterized SQL adapter.",
+    "Validated query vectors and returned a safe typed unavailable error for embedding and query failures.",
+    "Added local provenance, ranking, SQL-construction and failure regressions plus nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a81b176807e5/sol15-results.json",
+    "expectedTests": 38,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 38,
+    "passedTests": 38,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "buildermentor",
+        "id": "a81b176807e5",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/corepack/dist/pnpm.js",
+          "--filter",
+          "@shipshape/api",
+          "run",
+          "test",
+          "--maxWorkers=1",
+          "--minWorkers=1",
+          "--testTimeout=60000",
+          "--hookTimeout=60000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a81b176807e5",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T21:25:30.471100+00:00",
+        "status": "complete",
+        "log": "astra-buildermentor-tests-r2.log",
+        "pid": 30084,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T21:30:31.511467+00:00",
+        "elapsedSeconds": 301.04
+      },
+      {
+        "project": "buildermentor",
+        "id": "a81b176807e5",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/corepack/dist/pnpm.js",
+          "-r",
+          "--workspace-concurrency=1",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\a81b176807e5",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T21:40:04.329613+00:00",
+        "status": "complete",
+        "log": "astra-buildermentor-typecheck-r2.log",
+        "pid": 30608,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T21:50:08.271731+00:00",
+        "elapsedSeconds": 603.86
+      }
+    ]
+  },
+  "courseWords": 4627,
+  "courseFiles": 9,
+  "courseLinksChecked": 94,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "8c607c0da49d46d5226c9c8de5ed441d918464097dad567cba200695a182b4d1",
+      "after_sha256": "758dd187ddccd6ba9fd9aa4132470af59e85f1596c752e22d58e7a1dacd5b1ea"
+    },
+    {
+      "file": "apps/api/src/rag/retrieve.ts",
+      "before_sha256": "e96dc977c6480c4392dec57322b688aa92b8c58de91b3a9ee14ea6917a4f237f",
+      "after_sha256": "24f1840aabc5b371520a1e9a1e20344e0168e56434fb0231e0b16b1476dcf98b"
+    },
+    {
+      "file": "apps/api/test/fixtures/reliability.md",
+      "before_sha256": null,
+      "after_sha256": "4edcf53f1708d702ddf1ba576e8d3d8d1564ee38fb85e395244b0d5a3c438348"
+    },
+    {
+      "file": "apps/api/test/ingest-retrieval.test.ts",
+      "before_sha256": null,
+      "after_sha256": "93d6b0c4a80900ed00b5c304d45ef7a03996d412145439c844e1d0e2487c2a36"
+    },
+    {
+      "file": "astraupskill/evidence/astra-buildermentor-tests-r2.json",
+      "before_sha256": null,
+      "after_sha256": "094b75f2da11b48855191e3961dfbcd27a8a32d5c8a059ae3743f472d5b38d9c"
+    },
+    {
+      "file": "astraupskill/evidence/astra-buildermentor-tests-r2.log",
+      "before_sha256": null,
+      "after_sha256": "48eac311beb2d8ff5bca280695693f98c25362f3e7d53889730a9d594aa33d50"
+    },
+    {
+      "file": "astraupskill/evidence/astra-buildermentor-typecheck-r2.json",
+      "before_sha256": null,
+      "after_sha256": "788eeb3cd4b65ed8aac1ab203a1a1f315d1513f0613af3bd5274d6571ec452ee"
+    },
+    {
+      "file": "astraupskill/evidence/astra-buildermentor-typecheck-r2.log",
+      "before_sha256": null,
+      "after_sha256": "da982b34336d11c037d8a79d007575f83d9ff2ae6ffca6f660d38381d8ef237e"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8c607c0da49d46d5226c9c8de5ed441d918464097dad567cba200695a182b4d1"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__rag__retrieve.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e96dc977c6480c4392dec57322b688aa92b8c58de91b3a9ee14ea6917a4f237f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a0e0006b406251a8627c8c99ff62d4b40bda516b43110260a86eefa9a48000b2"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "a9bb5ec9b05653cc447d686fe28c700038467dcfe83574d591b6deef43862362"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5bb488e6b7fbd5cd71f717cbfc040f137bf7aa19266203f562b1fe7bfb182ce4"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4636df3e9e2a3cd510ddc285b395a380a8bb31e8a9477af014ec10ea0303d37b"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "cbf34d579bc63303248704c3229d8974bd324040ff6f88203af1f4deccfbf759"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "1d0eb558587924798994a80486a1c12857903ccc1c43a56f41f0e6ae6bb0020d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "309c027b1c09061005a08533a6f2caf9c8d34570db103d82eb5ad99a7e1cbc23"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "40262cfafe8d77c55fe09d8896dd852c53ece0617d4964de53db11b4fb22c079"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8126a03e2e022179c70849959d39337260946e5b5739e654dee74a75c1acdd6c"
+    }
+  ],
+  "limits": [
+    "SQL adapter tests compile the query with a mocked executor; they do not prove database-backed tenant isolation.",
+    "No live embedding/model quality or non-Markdown parsing claim is established."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T21:56:58.103552+00:00"
+}

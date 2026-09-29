@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D1",
+  "id": "61d919e84af9",
+  "command": [
+    "node",
+    "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\61d919e84af9",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgres://synthetic.invalid/d1"
+  },
+  "startedAt": "2026-09-12T21:39:53.418933+00:00",
+  "status": "complete",
+  "log": "build-02.log",
+  "pid": 7912,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T21:45:30.568154+00:00",
+  "elapsedSeconds": 337.08
+}

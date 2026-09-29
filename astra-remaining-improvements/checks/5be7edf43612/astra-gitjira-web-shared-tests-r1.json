@@ -1,0 +1,27 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "test",
+    "-w",
+    "@gitjira/web",
+    "-w",
+    "@gitjira/shared",
+    "--",
+    "--maxWorkers=1",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T23:33:45.461078+00:00",
+  "status": "complete",
+  "log": "astra-gitjira-web-shared-tests-r1.log",
+  "pid": 6960,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T23:44:05.386496+00:00",
+  "elapsedSeconds": 619.92
+}

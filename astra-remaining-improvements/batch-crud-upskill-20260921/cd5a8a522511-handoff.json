@@ -1,0 +1,25 @@
+{
+  "id": "cd5a8a522511",
+  "project": "zz55",
+  "files": [
+    "src/services/onboardingService.ts",
+    "tests/onboarding-task-ownership.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/onboardingService.ts.before",
+    "astraupskill/evidence/onboarding-task-ownership.log",
+    "astraupskill/evidence/results-crud-b07.json",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "finding": "Employee task completion now enforces both profile ownership and task role assignment before any transition or write.",
+  "tests": ["node --experimental-vm-modules --test tests/onboarding-task-ownership.test.mjs (3 passed)"],
+  "limits": ["Explicit collaborator doubles; no live Prisma, Next route, session, HTTP, browser, or concurrency execution."],
+  "spec": "astra-remaining-improvements/specs/cd5a8a522511.json"
+}

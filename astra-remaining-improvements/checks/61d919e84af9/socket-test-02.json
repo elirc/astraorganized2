@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D1",
+  "id": "61d919e84af9",
+  "command": [
+    "node",
+    "--import",
+    "tsx",
+    "--test",
+    "tests/socket-actions.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\61d919e84af9",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgres://test:test@localhost:5432/test"
+  },
+  "startedAt": "2026-09-12T20:54:22.034030+00:00",
+  "status": "complete",
+  "log": "socket-test-02.log",
+  "pid": 38972,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T20:54:40.181143+00:00",
+  "elapsedSeconds": 18.14
+}

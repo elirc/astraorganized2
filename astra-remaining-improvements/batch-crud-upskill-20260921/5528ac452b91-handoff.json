@@ -1,0 +1,33 @@
+{
+  "id": "5528ac452b91",
+  "status": "ready_for_review",
+  "summary": [
+    "Multipart uploads now enforce the inclusive one-based part range.",
+    "Invalid parts stop before storage and repository writes; valid parts retain the existing path."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/5528ac452b91/src/services/uploadService.ts",
+    "astra-remaining-improvements/stage/5528ac452b91/tests/runtime-upload-bounds.test.mjs",
+    "astra-remaining-improvements/stage/5528ac452b91/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/snapshots/src/services/uploadService.ts",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/evidence/astra-crud-b06-ww28.log",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/evidence/results-crud-b06.json",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/README.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/5528ac452b91/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-upload-bounds.test.mjs",
+    "passed": 4,
+    "resultsFile": "checks/5528ac452b91/results-crud-b06.json"
+  },
+  "limits": [
+    "Service-level VM test only; provider, filesystem, completion, and concurrent retry checks remain follow-up work."
+  ]
+}

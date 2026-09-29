@@ -1,0 +1,22 @@
+{
+  "project": "buildreviewer",
+  "id": "3b9c30ec3ce2",
+  "command": [
+    "node",
+    "-e",
+    "require('./test/global-setup.cjs')()"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b9c30ec3ce2\\apps\\api",
+  "environmentOverrides": {
+    "NODE_ENV": "test",
+    "RUST_LOG": "info"
+  },
+  "startedAt": "2026-09-20T21:04:17.615365+00:00",
+  "status": "complete",
+  "log": "astra-buildreviewer-fixture-setup-r3.log",
+  "pid": 22152,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-20T21:04:42.418931+00:00",
+  "elapsedSeconds": 24.8
+}

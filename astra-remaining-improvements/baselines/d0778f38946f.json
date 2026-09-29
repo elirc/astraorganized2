@@ -1,0 +1,21 @@
+{
+  "id": "d0778f38946f",
+  "project": "_Organized Desktop/05 Numbered Experiments/j3",
+  "files": {
+    "README.md": "df9bef3c0e4f2cda4314fc3931d7553b897b30640942a2f3f39cef35f8ac38f7",
+    "data/accounts.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "data/transactions.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "out/bankapp/App.class": "642dc69d12a176f0c0bc9623ee65332b9e46aa41e9d23402bbc0ecbff92394cf",
+    "out/bankapp/model/BankAccount.class": "16b7b101d39a2248f90d94cc5cb57f6a3a78470f952e259bebbe328f82e44569",
+    "out/bankapp/model/Transaction.class": "621f3f317b14de1534f4720bf039d57f66d2c1efb9987463a387fde982a1227e",
+    "out/bankapp/model/TransactionType.class": "4f17b3879f13d6057a57089e677dc29edbb56abd58d5ccb95bd847604a05f786",
+    "out/bankapp/service/BankService.class": "c48b01ff38e9186c3d87b266cadf6c6bbde9eeec96a14c508379c9d18c41a517",
+    "out/bankapp/storage/FileStorage.class": "49d6c1b655b0f3edd1c5ceb67a750415bd4564398ab7f6e9f24f8b9de8b211f5",
+    "src/bankapp/App.java": "84818248a6161d25dc15a54b68d229f37fc0bbce76efc6f913a1c84a9005282c",
+    "src/bankapp/model/BankAccount.java": "cf515ca81857cf3c8a64962a00baa3a3e2d779a5461aa2c8a8c3e0809a9ab29e",
+    "src/bankapp/model/Transaction.java": "93d38e9f11f5fb46c71aa75d64fb706f8216aa68e6c47f71e286f0f8bb3c4618",
+    "src/bankapp/model/TransactionType.java": "effe33f76c07e6648fffbcf5c7edcbb2508f982d3c51df26b978826b6d2a1f97",
+    "src/bankapp/service/BankService.java": "3ea7cdb5a53677ad54f2564de4410116e9383499a79dab4d4f72504ad6161166",
+    "src/bankapp/storage/FileStorage.java": "394c3a4ae5ec2f1957a21460eff93d78438835abd2e2dbfd7b6bef71b329e617"
+  }
+}

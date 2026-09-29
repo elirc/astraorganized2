@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "files": 33,
+  "unchangedAST": true,
+  "output": "32 files reformatted, 1 file left unchanged\n"
+}

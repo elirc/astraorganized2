@@ -1,0 +1,132 @@
+{
+  "project": "_Organized Desktop/06 AI And Learning/claudeailab",
+  "id": "fa998c611f1d",
+  "summary": [
+    "Return 404 for PATCH and DELETE of missing experiments.",
+    "Prevent missing-ID mutations from reporting false CRUD success.",
+    "Preserve existing soft-archive behavior for found experiments.",
+    "Five runtime route cases also cover successful PATCH payload/tag serialization and missing post-write reread."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fa998c611f1d/results-crud-b08.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/06 AI And Learning/claudeailab",
+        "id": "fa998c611f1d",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-experiment-route.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fa998c611f1d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:32:55.069606+00:00",
+        "status": "complete",
+        "log": "crud-b08-astra-runtime.log",
+        "pid": 30684,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:33:06.035754+00:00",
+        "elapsedSeconds": 10.93
+      }
+    ],
+    "limits": [
+      "VM route harness uses explicit Next/Drizzle/database doubles; no live server or SQLite.",
+      "No concurrency or full middleware claim.",
+      "DELETE uses a pre-read and does not inspect affected-row count; concurrent disappearance after lookup remains outside this fix."
+    ]
+  },
+  "courseWords": 1611,
+  "courseFiles": 9,
+  "courseLinksChecked": 38,
+  "files": [
+    {
+      "file": "src/app/api/experiments/[id]/route.ts",
+      "before_sha256": "b4bdb3d4a6a5362a94492e976cc214fe0f28eb96c75d35a8390c53a6ce4b48ad",
+      "after_sha256": "06ecaf0c96f5994032eae70db5c86c2278e3e0c78caea0b0fbef6646fd5f548a"
+    },
+    {
+      "file": "tests/runtime-experiment-route.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "93c59a1331f49e6b940c2188026b1f001e98139fc885c8cbc645c8f83024aba9"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-app-api-experiments-id-route.ts.before",
+      "before_sha256": null,
+      "after_sha256": "b4bdb3d4a6a5362a94492e976cc214fe0f28eb96c75d35a8390c53a6ce4b48ad"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b08-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "ebc7beb6bdc9ca3fb3b566c1e3a15525586c73f243c0b4dbe34e66482438e54a"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ce3f92ad5d2065db641bd59b7276a835b0ff73af80c82698adcdbb161a8d9b00"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "49f186f4c4a4646e5c70061bd014ddb1ef91e15013dc1d023f758d6c61e4564e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "4b19a5137d0c21a1baaf6c295e18b8f10236be443048f1e5246944bfb17f9027"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d758eac1c69e3bd5883e29caf99fecb6951048597e6390ba4d82b8dc58852a6d"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "2f514c55e82dcf6873d2de0ff2b8ef669357fa4b2eb815501cf701abc4e2df24"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e18ef7c4480a9bf0121b6404c00adbef8f4118df7e30f84e3aae34e9c1e7e638"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "f1b900f1edcac210ff49ce03e72dcd18d38ffe07a64fe802f05f03f3a9f05348"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f503ecc2dd5f07beee115c9662ec722f7f99d0b67c0b965e40cc77c6cebe717a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "4e17f6a111786d171e622f968de489cde6a2620d36a62b76b4ab13ff11bd325b"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1b7fe24a540f1b35e99180d8684b839ee4fe8732df7e96a6c7f5147ba7dc08a7"
+    }
+  ],
+  "limits": [
+    "VM route harness uses explicit Next/Drizzle/database doubles; no live server or SQLite.",
+    "No concurrency or full middleware claim.",
+    "DELETE uses a pre-read and does not inspect affected-row count; concurrent disappearance after lookup remains outside this fix."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:45:44.864282+00:00"
+}

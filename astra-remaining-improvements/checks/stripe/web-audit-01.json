@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm.cmd",
+    "audit",
+    "--omit=dev",
+    "--json"
+  ],
+  "workingDirectory": "src/Billing.Web",
+  "exitCode": 0,
+  "seconds": 13.78
+}

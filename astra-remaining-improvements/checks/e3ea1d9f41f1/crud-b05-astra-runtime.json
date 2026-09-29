@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww10",
+  "id": "e3ea1d9f41f1",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-workflow-reconciliation-lab.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e3ea1d9f41f1",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:02:30.877040+00:00",
+  "status": "complete",
+  "log": "crud-b05-astra-runtime.log",
+  "pid": 30976,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:02:36.099472+00:00",
+  "elapsedSeconds": 5.19
+}

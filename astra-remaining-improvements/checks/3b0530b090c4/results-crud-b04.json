@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/e11",
+      "id": "3b0530b090c4",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/share-room-integrity.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3b0530b090c4",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:30:55.268175+00:00",
+      "status": "complete",
+      "log": "crud-b04-astra-runtime.log",
+      "pid": 37540,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:31:01.518323+00:00",
+      "elapsedSeconds": 6.25
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual store source with real Node path and explicit filesystem/nanoid/scene adapters; no Express, auth signing or real filesystem persistence was executed.",
+    "No-share-write assertions assume an initialized store; readDb may create initial directories/database when absent. File read-modify-write remains non-atomic and existing orphan shares are not migrated.",
+    "The existing route has no new explicit mapping of the service error to HTTP404; this fix establishes a store rejection, not a newly verified HTTP error contract."
+  ]
+}

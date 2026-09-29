@@ -1,0 +1,27 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+  "id": "fb1267045788",
+  "command": [
+    "python",
+    "-X",
+    "utf8",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_scraper_recovery.py",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fb1267045788\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-21T23:25:55.255061+00:00",
+  "status": "complete",
+  "log": "astra-crud-b01-recovery.log",
+  "pid": 33632,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-21T23:26:04.540985+00:00",
+  "elapsedSeconds": 9.28
+}

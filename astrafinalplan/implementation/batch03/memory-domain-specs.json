@@ -1,0 +1,155 @@
+[
+  {
+    "stage": "36",
+    "route": "/api/work-orders",
+    "statuses": [
+      "Open",
+      "Scheduled",
+      "In Progress",
+      "Completed"
+    ],
+    "categories": [
+      "HVAC",
+      "Electrical",
+      "Network",
+      "Safety"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "37",
+    "route": "/api/loans",
+    "statuses": [
+      "Requested",
+      "Checked Out",
+      "Overdue",
+      "Returned"
+    ],
+    "categories": [
+      "Fiction",
+      "Nonfiction",
+      "Reference",
+      "Children"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "38",
+    "route": "/api/memberships",
+    "statuses": [
+      "Lead",
+      "Active",
+      "Paused",
+      "Cancelled"
+    ],
+    "categories": [
+      "Strength",
+      "Cardio",
+      "Yoga",
+      "Personal Training"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "39",
+    "route": "/api/campaigns",
+    "statuses": [
+      "Planning",
+      "Active",
+      "Paused",
+      "Complete"
+    ],
+    "categories": [
+      "Email",
+      "Social",
+      "Events",
+      "Paid Search"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "40",
+    "route": "/api/shifts",
+    "statuses": [
+      "Draft",
+      "Open",
+      "Filled",
+      "Complete"
+    ],
+    "categories": [
+      "Food Bank",
+      "Tutoring",
+      "Cleanup",
+      "Fundraising"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "42",
+    "route": "/api/risks",
+    "statuses": [
+      "Identified",
+      "Mitigating",
+      "Accepted",
+      "Closed"
+    ],
+    "categories": [
+      "Schedule",
+      "Budget",
+      "Security",
+      "Vendor"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "45",
+    "route": "/api/requests",
+    "statuses": [
+      "Draft",
+      "Submitted",
+      "Approved",
+      "Rejected"
+    ],
+    "categories": [
+      "Software",
+      "Hardware",
+      "Services",
+      "Travel"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "46",
+    "route": "/api/units",
+    "statuses": [
+      "Available",
+      "Application",
+      "Occupied",
+      "Maintenance"
+    ],
+    "categories": [
+      "Studio",
+      "One Bedroom",
+      "Two Bedroom",
+      "House"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  },
+  {
+    "stage": "48",
+    "route": "/api/intakes",
+    "statuses": [
+      "New",
+      "Reviewing",
+      "Scheduled",
+      "Closed"
+    ],
+    "categories": [
+      "Primary Care",
+      "Dental",
+      "Vision",
+      "Behavioral Health"
+    ],
+    "purpose": "A more complex JavaScript CRUD learning app using a React client and Express server."
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "id":"c94cd4bde644",
+  "project":"_Organized Desktop/05 Numbered Experiments/zz3",
+  "stage":"astra-remaining-improvements/stage/c94cd4bde644",
+  "finding":"Ticket tag arrays accepted duplicate ids, allowing malformed relation create/update commands to reach Prisma.",
+  "changedFiles":["astra-remaining-improvements/stage/c94cd4bde644/src/lib/validation/ticket-schemas.ts","astra-remaining-improvements/stage/c94cd4bde644/src/tests/unit/ticket-schemas.test.ts","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/snapshots/src/lib/validation/ticket-schemas.ts","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/snapshots/src/tests/unit/ticket-schemas.test.ts","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/README.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/01-CODEBASE-MAP.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/02-CONCEPTS.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/03-WORKED-CHANGE.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/04-TESTING-AND-DEBUGGING.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/05-PRACTICE.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/06-SOLUTIONS-AND-REVIEW.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/07-TRACE-LAB.md","astra-remaining-improvements/stage/c94cd4bde644/astraupskill/VERIFICATION.md"],
+  "runtimeFiles":["astra-remaining-improvements/stage/c94cd4bde644/tests/helpers/load-typescript.mjs","astra-remaining-improvements/stage/c94cd4bde644/tests/runtime-schema.test.mjs"],
+  "tests":"checks/c94cd4bde644/results-crud-b01.json",
+  "runtimeTest":"node --experimental-vm-modules --test tests/runtime-schema.test.mjs (3 passed with real Zod)",
+  "limits":["Dependency-free runtime schema tests passed with real Zod; Vitest and Prisma were not run; Astra review and delivery remain pending."]
+}

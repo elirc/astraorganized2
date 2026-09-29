@@ -1,0 +1,35 @@
+{
+  "passed": false,
+  "total": 7,
+  "checks": [
+    {
+      "name": "home has labeled empty login fields and navigation",
+      "passed": true
+    },
+    {
+      "name": "administrator signs in through the interface",
+      "passed": true
+    },
+    {
+      "name": "customer create edit and literal hostile text",
+      "passed": true
+    },
+    {
+      "name": "stale administration edit retains draft and supports explicit review",
+      "passed": true
+    },
+    {
+      "name": "all seven administration forms open with labeled inputs",
+      "passed": true
+    },
+    {
+      "name": "canned reply CRUD through the interface",
+      "passed": true
+    },
+    {
+      "name": "staff creates a ticket for a selected customer",
+      "passed": false,
+      "error": "Locator expected to contain text '#1000'\nActual value: Select a ticket \nCall log:\n  - Expect \"to_contain_text\" with timeout 5000ms\n  - waiting for locator(\"#ticket-title\")\n    8 \u00d7 locator resolved to <h2 id=\"ticket-title\">Select a ticket</h2>\n      - unexpected value \"Select a ticket\"\n"
+    }
+  ]
+}

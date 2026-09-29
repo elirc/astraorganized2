@@ -1,0 +1,27 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_Linear",
+  "id": "b2f277b889f9",
+  "command": [
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8\\dotnet.exe",
+    "build",
+    "tests/NetLinear.Tests/NetLinear.Tests.csproj",
+    "--no-restore",
+    "-m:1",
+    "-nodeReuse:false",
+    "-p:UseSharedCompilation=false"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b2f277b889f9",
+  "environmentOverrides": {
+    "DOTNET_ROOT": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8",
+    "DOTNET_ROOT_X64": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\toolchains\\dotnet8",
+    "DOTNET_CLI_TELEMETRY_OPTOUT": "1"
+  },
+  "startedAt": "2026-09-13T16:11:22.478044+00:00",
+  "status": "complete",
+  "log": "root-sdk8-handler-build-20260913-r2.log",
+  "pid": 7580,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T16:12:31.500457+00:00",
+  "elapsedSeconds": 69.02
+}

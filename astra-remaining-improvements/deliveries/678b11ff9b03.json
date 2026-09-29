@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww15",
+  "id": "678b11ff9b03",
+  "summary": [
+    "Provide a runnable production-source lab for assigned-buyer offer authorization and mutation ordering.",
+    "Verify assigned buyer success, role/identity rejection, and provider failure with zero later status/audit calls."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/678b11ff9b03/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww15",
+        "id": "678b11ff9b03",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/transaction-offer-policy.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\678b11ff9b03",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:14:22.375349+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 27708,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:14:26.165770+00:00",
+        "elapsedSeconds": 3.78
+      }
+    ],
+    "limits": [
+      "Four actual-service cases load real viewer/offer guards, policy and error classes with only repository port adapters. No Next, native persistence, external provider or rollback execution.",
+      "createOffer is a repository operation, not an external provider call in this lab. Status/audit failure can follow earlier attempted writes; there is no service transaction wrapper. submitOffer does not call the workflow-transition validator used by updateStatus."
+    ]
+  },
+  "courseWords": 1500,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "tests/transaction-offer-policy.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "2743a6feae0898ae19a7125d56f161bc52b03cac3b8dbf7d5fac3a29d35bcee7"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/transaction-service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2193c0b58249ff89e48210d42b34a031a9ef3d7cf2f1b999814e2006811d38c2"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "6657a65aa0c2e3ba71eebeaa1513c625b2511eac546d18eea674b7c8bd37a198"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "eadf785afe0ba369f9722ddc7fea1c2f92e3bbcc3016bb3236e4933d598b558b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f5df89e4ed9921551433c501c1a49107ccb0f50d3a91f191ff3f7207f5f6e46c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "a03a77cca1f86904dbcce0b3929c1e080b453fba9e33356b4cf8a28875062243"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "abe4d4d589a16c82acec3cb2d8a5c665359a18b3478ec716620c4b19170f433e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "02008b3a4323b06ecb92d29251aebff45151644de4dd5fffc497f49afbe5d7dd"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "876d074f603a9139d5b6c4f0b6b6b399b7da7b248ebf7774463d0a3088890a88"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "bf5de029abb2046c52b3d6bb5cb341ad4d1c6c41c3a66a754f1b30c5c0cf6254"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1883a1fa15bce83a90a7a87796c88f521977cb6c7b58a6f557f656fb926ea9cf"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "93fa64b6b9fe2e324c6fad447775aec1dc074e50c6fa9d6cd05e805b06fb645e"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1b7d94a7d9dbae22049a6be0930970df6b2ccf7695684c9afd834926e7101a3e"
+    }
+  ],
+  "limits": [
+    "Four actual-service cases load real viewer/offer guards, policy and error classes with only repository port adapters. No Next, native persistence, external provider or rollback execution.",
+    "createOffer is a repository operation, not an external provider call in this lab. Status/audit failure can follow earlier attempted writes; there is no service transaction wrapper. submitOffer does not call the workflow-transition validator used by updateStatus."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:17:48.563535+00:00"
+}

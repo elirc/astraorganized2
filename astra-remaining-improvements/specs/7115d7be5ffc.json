@@ -1,0 +1,26 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-netopen5-latest-tests-r3.json",
+    "astraupskill/evidence/astra-netopen5-latest-tests-r3.log",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/snapshots/jellyfin__Jellyfin.Api__Controllers__UserLibraryController.cs.original.txt",
+    "jellyfin/Jellyfin.Api/Controllers/UserLibraryController.cs",
+    "jellyfin/tests/Jellyfin.Api.Tests/Controllers/UserLibraryLatestMediaTests.cs"
+  ],
+  "summary": [
+    "Rejected nonpositive and integer-doubling-overflow latest-media limits before user or library access.",
+    "Preserved the twenty-item default, valid query forwarding, and the shared legacy-route guard.",
+    "Added focused controller regressions and nine source-based guide chapters."
+  ],
+  "limits": [
+    "Tests use mocked library collaborators, not a running Jellyfin server or real media scan.",
+    "The arithmetic bound is not a production capacity or rate-limit guarantee; HTTP binding and middleware are outside these focused tests."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7115d7be5ffc/sol15-results.json",
+    "expectedTests": 10,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

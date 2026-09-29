@@ -1,0 +1,50 @@
+{
+  "summary": "Retain booking and attendee state in a cloned process-local repository; enforce guest tokens, strict command fields, organizer-wide offered availability and atomic rescheduling with fresh token/attendee linkage; wire all reads and routes to current state with typed failures. Add source-based course and regression tests.",
+  "limits": [
+    "Demo state is process-local and resets on restart; no multi-worker durability.",
+    "Owner authentication, event/team editing and calendar integrations remain simulations. Existing seed tokens are illustrative.",
+    "UTC regression coverage does not certify all DST gaps, folds or overnight scheduling behavior."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/resume14-build-01.json",
+    "astraupskill/evidence/resume14-build-01.log",
+    "astraupskill/evidence/resume14-lint-01.json",
+    "astraupskill/evidence/resume14-lint-01.log",
+    "astraupskill/evidence/resume14-tests-02.json",
+    "astraupskill/evidence/resume14-tests-02.log",
+    "astraupskill/evidence/resume14-types-01.json",
+    "astraupskill/evidence/resume14-types-01.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/snapshots/src__app__api__bookings__[bookingId]__cancel__route.ts.original.txt",
+    "astraupskill/snapshots/src__app__api__bookings__[bookingId]__confirm__route.ts.original.txt",
+    "astraupskill/snapshots/src__app__api__bookings__[bookingId]__reschedule__route.ts.original.txt",
+    "astraupskill/snapshots/src__app__api__bookings__route.ts.original.txt",
+    "astraupskill/snapshots/src__app__layout.tsx.original.txt",
+    "astraupskill/snapshots/src__lib__availability.ts.original.txt",
+    "astraupskill/snapshots/src__lib__booking-state.ts.original.txt",
+    "astraupskill/snapshots/src__lib__demo-data.ts.original.txt",
+    "astraupskill/snapshots/src__lib__mock-services.ts.original.txt",
+    "package.json",
+    "scripts/alias-loader.mjs",
+    "src/app/api/bookings/[bookingId]/cancel/route.ts",
+    "src/app/api/bookings/[bookingId]/confirm/route.ts",
+    "src/app/api/bookings/[bookingId]/reschedule/route.ts",
+    "src/app/api/bookings/route.ts",
+    "src/app/layout.tsx",
+    "src/lib/availability.ts",
+    "src/lib/booking-repository.ts",
+    "src/lib/booking-service.ts",
+    "src/lib/booking-state.ts",
+    "src/lib/demo-data.ts",
+    "src/lib/mock-services.ts",
+    "src/tests/booking-flow.test.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0bfafff7d45f/resume14-results.json",
+    "expectedTests": 18,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

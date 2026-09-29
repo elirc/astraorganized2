@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "--check",
+    "app/static/app.js"
+  ],
+  "exitCode": 0
+}

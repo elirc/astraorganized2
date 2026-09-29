@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww32",
+  "id": "829e8e7b8605",
+  "summary": [
+    "Provide a runnable source lab for workspace-scoped message posting and guest refusal.",
+    "Verify successful transaction orchestration with created message and sync event adapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/829e8e7b8605/results-crud-b06.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww32",
+        "id": "829e8e7b8605",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/message-post-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\829e8e7b8605",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:47:09.641783+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 33784,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:47:24.469453+00:00",
+        "elapsedSeconds": 14.72
+      }
+    ],
+    "limits": [
+      "Six actual message-service cases load real role policy and errors, with channel-access, repository, transaction and realtime adapters. No Next, Prisma rollback/isolation or network delivery execution.",
+      "Private notification filtering and attachment query arguments execute in the service; the adapters do not prove repository scoping or live transport confidentiality. Publishing follows the transaction response; persisted event does not prove delivery."
+    ]
+  },
+  "courseWords": 1663,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "tests/message-post-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "28371fa2161510f9d7e9089916e86443b4ae30b08c1fb6230c59c83ee452a100"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/messageService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "50fe4d811ba6c558216d17dec55ef0d825ba5550590cf5705b762a98224a9c41"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "c2bc16292213a7fd52f5ef91ec5a4a08114f363cfcb03b8c3f4d29ad45d40aa2"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "46bd4dc9cd0734aeed4e83fc827dea779dd3d40dbb5bb6db78134f173a7ecd57"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "4bede51f95c02e64e189cd99f61a28f447af575dbb982c39a14648cc639b5763"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9c4276ee3301889901c48eb9e67d6d9f7e8461cb7ef0b1d873105867ec8450e5"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a9bb14916976f0115d1cac1d91dabb502b1c8933acad034d181a8041ceb18ad5"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9cceeddaac59c5bf38f9b35cdec9814013ebaf706730ee9a614d50ae56023988"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "bab99fe8579ecff392dd5f92b8661928da5efe514708275b45de433c4680181d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "220ff80ebcb6a79d955c5f1bc222bacb6c0f8aa31a5d2c24bfcb4d224d00d93c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d1f4caf6e738c99ebcfd1a01a3c311bf1fb7b0644339f0c4180abce2bae36a3e"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8afcc7de382a9f330e41a6f6ba294f7d0fb9fee00fd9abd0da836681abcca101"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "be022faa9b8d8dbe8a384e50e84862d83f233d14974be919e234b6a5a987842b"
+    }
+  ],
+  "limits": [
+    "Six actual message-service cases load real role policy and errors, with channel-access, repository, transaction and realtime adapters. No Next, Prisma rollback/isolation or network delivery execution.",
+    "Private notification filtering and attachment query arguments execute in the service; the adapters do not prove repository scoping or live transport confidentiality. Publishing follows the transaction response; persisted event does not prove delivery."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:51:47.581601+00:00"
+}

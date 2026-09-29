@@ -1,0 +1,2622 @@
+{
+ "js1-task-board": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-contact-book": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-focus-timer": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "finance-dashboard": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "recipeweb": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "jobtrack": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-01-task-manager": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-02-contact-book": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-03-expense-tracker": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-05-recipe-manager": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-flashcards": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-habit-tracker": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-reading-list": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-note-vault": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-budget-tracker": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-pantry-inventory": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-snippet-vault": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-room-booking": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-04-notes-app": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-06-bookmark-manager": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-poll-studio": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-kanban-flow": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-course-roster": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-event-admin": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-job-pipeline": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-stock-catalog": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-recipe-studio": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-org-explorer": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-mini-blog": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-pulse-analytics": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-support-tickets": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-issue-desk": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-forum-search": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-invoice-studio": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-asset-checkout": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-equipment-maintenance": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-library-lending": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-gym-membership": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-campaign-planner": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-volunteer-coordinator": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-learning-paths": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-project-risks": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-travel-requests": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-vendor-contracts": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-procurement-portal": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-property-rentals": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-quality-audits": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-patient-intake": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-grant-manager": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-incident-response": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-legal-case-tracker": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-subscription-billing": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-field-service": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-research-studies": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-warehouse-ledger": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-secure-notes": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "js1-live-chat": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-07-blog-platform": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-08-kanban-board": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-09-job-application-tracker": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-10-inventory-management": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-11-survey-builder": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-12-chat-polling": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-13-ecommerce-storefront": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-14-appointment-booking": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-15-api-tester": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-16-team-project-management": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-17-support-ticket-system": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-18-learning-management-system": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-19-realtime-chat-platform": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "newcodexjs-20-marketplace-platform": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "recipeview": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "calendar-jobtrack": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "devdeck": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "job-track": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "grokbuildmultitenantproject": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "netgum": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "j4": {
+  "missing": [],
+  "words": {
+   "README.md": 306,
+   "01-INTERVIEW-QUESTIONS.md": 2153,
+   "02-STORIES-AND-RESUME.md": 921,
+   "03-CODE-READING-DRILL.md": 1460,
+   "04-TAKE-HOME.md": 1031,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1188,
+   "06-FLASHCARDS.md": 716
+  },
+  "bom": [],
+  "shared_pct": 1.1,
+  "badcites": [],
+  "ncites": 77,
+  "barecites": 1
+ },
+ "buildbusinesses": {
+  "missing": [],
+  "words": {
+   "README.md": 376,
+   "01-INTERVIEW-QUESTIONS.md": 1952,
+   "02-STORIES-AND-RESUME.md": 966,
+   "03-CODE-READING-DRILL.md": 1549,
+   "04-TAKE-HOME.md": 1027,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1226,
+   "06-FLASHCARDS.md": 768
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 113,
+  "barecites": 0
+ },
+ "buildwhiteboard": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "master3": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "buildjira": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "buildsql": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "ww37": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "j7": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "e15": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "job-track-task-queue-system": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "j2": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "netzen": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "ww39": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "z3-founder-crm-lite": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "e6": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "job-track-live-chat-support-platform": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "ww27": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "jdtrrain2-1": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "z3-customer-feedback-board": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "formforge": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "meterforge": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "master4": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "zz8": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "w24": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "master-6": {
+  "missing": [
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {
+   "README.md": 423,
+   "01-INTERVIEW-QUESTIONS.md": 2355,
+   "02-STORIES-AND-RESUME.md": 1064
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 24,
+  "barecites": 0
+ },
+ "z7": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "ww5": {
+  "missing": [],
+  "words": {
+   "README.md": 363,
+   "01-INTERVIEW-QUESTIONS.md": 2463,
+   "02-STORIES-AND-RESUME.md": 948,
+   "03-CODE-READING-DRILL.md": 1724,
+   "04-TAKE-HOME.md": 1103,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1434,
+   "06-FLASHCARDS.md": 621
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 136,
+  "barecites": 79
+ },
+ "geminiorganized-llm-generated-helper": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "grokbuildppmproject": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "master2": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "ww17": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "jstrain3-0": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "grokbuildteamproject": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "astra2": {
+  "missing": [],
+  "words": {
+   "README.md": 392,
+   "01-INTERVIEW-QUESTIONS.md": 2500,
+   "02-STORIES-AND-RESUME.md": 899,
+   "03-CODE-READING-DRILL.md": 1585,
+   "04-TAKE-HOME.md": 1091,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1240,
+   "06-FLASHCARDS.md": 736
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 188,
+  "barecites": 0
+ },
+ "z6": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "lucasrouter": {
+  "missing": [],
+  "words": {
+   "README.md": 349,
+   "01-INTERVIEW-QUESTIONS.md": 2022,
+   "02-STORIES-AND-RESUME.md": 1027,
+   "03-CODE-READING-DRILL.md": 1696,
+   "04-TAKE-HOME.md": 1128,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1372,
+   "06-FLASHCARDS.md": 674
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 107,
+  "barecites": 0
+ },
+ "borrowbox": {
+  "missing": [],
+  "words": {
+   "README.md": 341,
+   "01-INTERVIEW-QUESTIONS.md": 2223,
+   "02-STORIES-AND-RESUME.md": 897,
+   "03-CODE-READING-DRILL.md": 1509,
+   "04-TAKE-HOME.md": 957,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1361,
+   "06-FLASHCARDS.md": 803
+  },
+  "bom": [],
+  "shared_pct": 1.0,
+  "badcites": [],
+  "ncites": 173,
+  "barecites": 0
+ },
+ "buildantigvg": {
+  "missing": [],
+  "words": {
+   "README.md": 336,
+   "01-INTERVIEW-QUESTIONS.md": 2104,
+   "02-STORIES-AND-RESUME.md": 899,
+   "03-CODE-READING-DRILL.md": 1622,
+   "04-TAKE-HOME.md": 1099,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1292,
+   "06-FLASHCARDS.md": 869
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 146,
+  "barecites": 0
+ },
+ "jstrain2-3": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "buildcrmpyjs": {
+  "missing": [],
+  "words": {
+   "README.md": 361,
+   "01-INTERVIEW-QUESTIONS.md": 2202,
+   "02-STORIES-AND-RESUME.md": 1083,
+   "03-CODE-READING-DRILL.md": 1642,
+   "04-TAKE-HOME.md": 1064,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1503,
+   "06-FLASHCARDS.md": 913
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 156,
+  "barecites": 121
+ },
+ "e20": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "d1": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "grokbuildecommerceproject": {
+  "missing": [],
+  "words": {
+   "README.md": 374,
+   "01-INTERVIEW-QUESTIONS.md": 2927,
+   "02-STORIES-AND-RESUME.md": 1010,
+   "03-CODE-READING-DRILL.md": 1602,
+   "04-TAKE-HOME.md": 1237,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1533,
+   "06-FLASHCARDS.md": 942
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 127,
+  "barecites": 81
+ },
+ "buildsmallplates": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "react": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "buildsubbox": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "nethris": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "e12": {
+  "missing": [],
+  "words": {
+   "README.md": 326,
+   "01-INTERVIEW-QUESTIONS.md": 2145,
+   "02-STORIES-AND-RESUME.md": 1045,
+   "03-CODE-READING-DRILL.md": 1681,
+   "04-TAKE-HOME.md": 1136,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1433,
+   "06-FLASHCARDS.md": 877
+  },
+  "bom": [],
+  "shared_pct": 0.9,
+  "badcites": [
+   "`services.js:115",
+   "`services.js:165",
+   "`services.js:271",
+   "`router.js:402",
+   "`router.js:418"
+  ],
+  "ncites": 123,
+  "barecites": 7
+ },
+ "e13": {
+  "missing": [
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {
+   "README.md": 391,
+   "01-INTERVIEW-QUESTIONS.md": 2528,
+   "02-STORIES-AND-RESUME.md": 1180,
+   "03-CODE-READING-DRILL.md": 2002,
+   "04-TAKE-HOME.md": 1373
+  },
+  "bom": [],
+  "shared_pct": 2.2,
+  "badcites": [],
+  "ncites": 69,
+  "barecites": 0
+ },
+ "z9": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "campusops": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "globgame": {
+  "missing": [],
+  "words": {
+   "README.md": 320,
+   "01-INTERVIEW-QUESTIONS.md": 2361,
+   "02-STORIES-AND-RESUME.md": 1080,
+   "03-CODE-READING-DRILL.md": 1771,
+   "04-TAKE-HOME.md": 1140,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1460,
+   "06-FLASHCARDS.md": 898
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [
+   "`route.js:13",
+   "`route.js:16",
+   "`daily/route.js:16",
+   "`daily/route.js:16"
+  ],
+  "ncites": 113,
+  "barecites": 62
+ },
+ "j1": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "aiheartbeat": {
+  "missing": [],
+  "words": {
+   "README.md": 366,
+   "01-INTERVIEW-QUESTIONS.md": 2197,
+   "02-STORIES-AND-RESUME.md": 894,
+   "03-CODE-READING-DRILL.md": 1603,
+   "04-TAKE-HOME.md": 1105,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1397,
+   "06-FLASHCARDS.md": 769
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 86,
+  "barecites": 3
+ },
+ "netvg": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "geminiorganized-opensource-upskilling-ramp": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "buildgum": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "master7": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "nettrello": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "jsprojectlearn": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "geminiorganized-opensource-upskilling-stripe": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "astra4-2": {
+  "missing": [],
+  "words": {
+   "README.md": 395,
+   "01-INTERVIEW-QUESTIONS.md": 2395,
+   "02-STORIES-AND-RESUME.md": 898,
+   "03-CODE-READING-DRILL.md": 1808,
+   "04-TAKE-HOME.md": 1037,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1244,
+   "06-FLASHCARDS.md": 636
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 168,
+  "barecites": 0
+ },
+ "appmakertrack": {
+  "missing": [],
+  "words": {
+   "README.md": 300,
+   "01-INTERVIEW-QUESTIONS.md": 2496,
+   "02-STORIES-AND-RESUME.md": 900,
+   "03-CODE-READING-DRILL.md": 1910,
+   "04-TAKE-HOME.md": 1176,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1289,
+   "06-FLASHCARDS.md": 830
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 123,
+  "barecites": 0
+ },
+ "grokbuildhrproject": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "e14": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "andie": {
+  "missing": [],
+  "words": {
+   "README.md": 312,
+   "01-INTERVIEW-QUESTIONS.md": 2500,
+   "02-STORIES-AND-RESUME.md": 914,
+   "03-CODE-READING-DRILL.md": 1640,
+   "04-TAKE-HOME.md": 1078,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1384,
+   "06-FLASHCARDS.md": 797
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 159,
+  "barecites": 0
+ },
+ "j3": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "netpastebin": {
+  "missing": [],
+  "words": {
+   "README.md": 422,
+   "01-INTERVIEW-QUESTIONS.md": 2625,
+   "02-STORIES-AND-RESUME.md": 1194,
+   "03-CODE-READING-DRILL.md": 1664,
+   "04-TAKE-HOME.md": 1131,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1542,
+   "06-FLASHCARDS.md": 742
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 193,
+  "barecites": 165
+ },
+ "b1": {
+  "missing": [],
+  "words": {
+   "README.md": 301,
+   "01-INTERVIEW-QUESTIONS.md": 2378,
+   "02-STORIES-AND-RESUME.md": 894,
+   "03-CODE-READING-DRILL.md": 1449,
+   "04-TAKE-HOME.md": 958,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1246,
+   "06-FLASHCARDS.md": 831
+  },
+  "bom": [],
+  "shared_pct": 1.1,
+  "badcites": [],
+  "ncites": 145,
+  "barecites": 0
+ },
+ "j5": {
+  "missing": [
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {
+   "README.md": 332,
+   "01-INTERVIEW-QUESTIONS.md": 2513,
+   "02-STORIES-AND-RESUME.md": 1103
+  },
+  "bom": [],
+  "shared_pct": 2.1,
+  "badcites": [],
+  "ncites": 37,
+  "barecites": 29
+ },
+ "aiapplybot": {
+  "missing": [],
+  "words": {
+   "README.md": 348,
+   "01-INTERVIEW-QUESTIONS.md": 2385,
+   "02-STORIES-AND-RESUME.md": 963,
+   "03-CODE-READING-DRILL.md": 1617,
+   "04-TAKE-HOME.md": 1132,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1517,
+   "06-FLASHCARDS.md": 1000
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [],
+  "ncites": 86,
+  "barecites": 0
+ },
+ "buildasana": {
+  "missing": [],
+  "words": {
+   "README.md": 369,
+   "01-INTERVIEW-QUESTIONS.md": 2107,
+   "02-STORIES-AND-RESUME.md": 900,
+   "03-CODE-READING-DRILL.md": 1439,
+   "04-TAKE-HOME.md": 1017,
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md": 1229,
+   "06-FLASHCARDS.md": 736
+  },
+  "bom": [],
+  "shared_pct": 0.0,
+  "badcites": [
+   "`AuditEvent.cs:53 (beyond EOF)",
+   "`Common/Entity.cs:32 (beyond EOF)",
+   "`Common/Entity.cs:36 (beyond EOF)",
+   "`Domain/Work/AuditEvent.cs:53 (beyond EOF)"
+  ],
+  "ncites": 191,
+  "barecites": 160
+ },
+ "job-track-restaurant-kitchen-display-system": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "grokbuildorderproject": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "missioncontrol": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ },
+ "z1": {
+  "missing": [
+   "README.md",
+   "01-INTERVIEW-QUESTIONS.md",
+   "02-STORIES-AND-RESUME.md",
+   "03-CODE-READING-DRILL.md",
+   "04-TAKE-HOME.md",
+   "05-SYSTEM-DESIGN-FOLLOWUPS.md",
+   "06-FLASHCARDS.md"
+  ],
+  "words": {},
+  "bom": [],
+  "shared_pct": null,
+  "badcites": [],
+  "ncites": 0,
+  "barecites": 0
+ }
+}

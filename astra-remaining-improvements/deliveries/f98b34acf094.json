@@ -1,0 +1,218 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e2",
+  "id": "f98b34acf094",
+  "summary": [
+    "Public CMS list/detail reads hide drafts, archived entries and deleted records unless the established actor has the appropriate preview permission; deleted content remains hidden from all readers.",
+    "Content writes validate object shape, known fields, locale, typed values and explicit null/default semantics before entry, revision or audit mutation; public nested query DTOs are detached.",
+    "Publication revalidates the current schema, blocks terminal-state resurrection and preserves history on repeated accepted publication.",
+    "Expanded the regression suite to 34 cases covering actual HTTP handlers, authenticated sessions and tokens, malformed inputs, rejection-state preservation, numeric ordering and nested object ownership.",
+    "Replaced mismatched staged learning chapters with nine source-grounded guides, exercises/solutions, actual code excerpts and explicit process-memory and webhook limitations."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f98b34acf094/resume14-results.json",
+    "expectedTests": 34,
+    "command": "Full Vitest suite and recorded TypeScript/build checks; ESLint"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 34,
+    "passedTests": 34,
+    "failed": 0,
+    "notExecuted": 0,
+    "evidence": [
+      "resume14-tests-02",
+      "resume14-types-01",
+      "resume14-lint-01",
+      "resume14-build-01"
+    ],
+    "scope": "Full Vitest suite plus listed type/build/lint checks; no live database or external provider run."
+  },
+  "courseWords": 3731,
+  "courseFiles": 9,
+  "courseLinksChecked": 94,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "fce74b0aa7fbd6b144c072f8aed33589658abfede2a4136a91ee205d39338e2d",
+      "after_sha256": "38763c13c184d12520daadf4c8c0fcb9946dbfa2c63e5ac0dbdcf0ac5a7649ad"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "bd104208caa2c51cb6fcd55c41d80a9ed65b4597bda8f4bf47db2e26d60894bb",
+      "after_sha256": "aea4e9d5d1b0001d663ccfddb93b627aa381350cafc5ad20c3806c842e67a778"
+    },
+    {
+      "file": "vitest.config.ts",
+      "before_sha256": null,
+      "after_sha256": "a9b7c4e07d28e65c672c9a7ad75d68d5f384efcd2f9600f134b2c9a13c671c29"
+    },
+    {
+      "file": "tests/cms-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "bd0d4cb73d09e1b106915661d8d7a69cf710753b426a6efd846788342733d681"
+    },
+    {
+      "file": "src/app/api/[uid]/route.ts",
+      "before_sha256": "05423de6077e82b23322563d07d8acfde8820af8d0fff1fe35121e76249d0815",
+      "after_sha256": "0bc7923b5c5e4e113577a9bd356afe76a2fcd46ddf4a148388f4c07c5e5d18ca"
+    },
+    {
+      "file": "src/app/api/[uid]/[id]/route.ts",
+      "before_sha256": "0dd49e275f6fb954fedc35b8f3b73e082d66d99f3165c4c25e71d97580fab169",
+      "after_sha256": "835afd271bb640a1434885b7095c9b6ccd411eb2d8ea9b74e0c61a52dff2644e"
+    },
+    {
+      "file": "src/lib/cms/query.ts",
+      "before_sha256": "ff47bffc8020dcfeca1e6ab231f29d1ac7782032880cbb2b99d2f0db99331961",
+      "after_sha256": "07bf5cc50b4b80dab592225cd32f95e056800cffed1d90c94fc2a7311c3b03ef"
+    },
+    {
+      "file": "src/lib/cms/store.ts",
+      "before_sha256": "7028bbae3a8b275ed5de498adb3a33fa68845c4da72528c0c2436423f78dfcd6",
+      "after_sha256": "c8359fcbae2963c51151ad6f4697fab444811508500baf10ee3aaa29909bd8f1"
+    },
+    {
+      "file": "src/lib/config/env.ts",
+      "before_sha256": "259c73c6116207227a68e2d592a1c6bab401e236ca279f1a1804f263d0fd182e",
+      "after_sha256": "bf571005e3aed5bf21c91735e3201124d0d6e9203dbc8adfe0ff611f31f743eb"
+    },
+    {
+      "file": "src/lib/server/cms-api.ts",
+      "before_sha256": "fee92f5ef9f71cdca596eac05dc4c6ff361b103fbad275f3f482dcb1e004e3cb",
+      "after_sha256": "be3946c80b6c5caf299ecc41c8a513717d6a3e1873657a94ad75b635988cd0f7"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__[uid]__route.ts.original",
+      "before_sha256": null,
+      "after_sha256": "05423de6077e82b23322563d07d8acfde8820af8d0fff1fe35121e76249d0815"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__[uid]__[id]__route.ts.original",
+      "before_sha256": null,
+      "after_sha256": "0dd49e275f6fb954fedc35b8f3b73e082d66d99f3165c4c25e71d97580fab169"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__cms__query.ts.original",
+      "before_sha256": null,
+      "after_sha256": "ff47bffc8020dcfeca1e6ab231f29d1ac7782032880cbb2b99d2f0db99331961"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__cms__store.ts.original",
+      "before_sha256": null,
+      "after_sha256": "7028bbae3a8b275ed5de498adb3a33fa68845c4da72528c0c2436423f78dfcd6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__config__env.ts.original",
+      "before_sha256": null,
+      "after_sha256": "259c73c6116207227a68e2d592a1c6bab401e236ca279f1a1804f263d0fd182e"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__server__cms-api.ts.original",
+      "before_sha256": null,
+      "after_sha256": "fee92f5ef9f71cdca596eac05dc4c6ff361b103fbad275f3f482dcb1e004e3cb"
+    },
+    {
+      "file": "src/lib/cms/entry-validation.ts",
+      "before_sha256": null,
+      "after_sha256": "8671d7b17ee5434004d2bcab36f4594800b7c1882f56c0ad8aa1ab1771ca4717"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "83bf232631a00a869b8c30b1a780bd01605abb366d1aec2ef3d8cc7522f3d531",
+      "after_sha256": "31728eedd31b13cc24b50e3d2b0675dfef387a186fb089d28b0d414b8b813ec6"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.json",
+      "before_sha256": null,
+      "after_sha256": "3f5c7108989efa7c8951215fc5961a0d968bf602d3199aecb8e8c635c73d2d5f"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.log",
+      "before_sha256": null,
+      "after_sha256": "94fd2de4e6e475e61efbbc2d6dda531387bc1847d286bc9b2d712cbfbec9e909"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "fd85325c8c38bb8c407b0582709bcaa7e17e7e970ae2d6db95ce52a74bdca661"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "a8fc7714b3709a7ae958228ad106d10d7beda0627ac10ab8fedea1caee4157b0"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "c557f116b1b8a9a509d999b1fbb6afb9022354cff5b89ec3bfad560d4d2af6e4"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "d6dfe3dc451af1aea1af4fd07366b4dcf92e19dc870d95162ed354ae366fb813"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "96ae6e4abda0e70ae956c1f1aa19ecd0cdbc8d98ea6295c9adadcb65fed21466"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b12cac209fef8b2a49e2cb41bb9152a0520e6099ddca0526ae217bd45334588c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e0ad73a94a95796f215bdc760fac06c14ccdf394fd60e978e9852c06a38a9f3d"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "573c340ac3477a26d9e796c05371e75aeadcd2c87276cda6ff0bd088190a3230"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "98f462deb10bf21687f588676578182670395148cec453368a213b18280b5969"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "f4c85daa058b9d0a30fedf6122591aef43a7dbca70517712ecca959a51948513"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "274db735de03a62e61b56337291c6d74690930d168813a79c4505185a2d8de98"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a9903d8d364153cc160370df10d82357b4962f8050f5f55f0c14d29285f6dfdc"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ed0494ff2b43fc48d8009ea7398b2e52229d4158e091df9acff9b8dc32fb7d71"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "310eb3d38baea4ca0c2f90b3a3464c2aafca3f18a125955878948eff16209502"
+    }
+  ],
+  "limits": [
+    "The CMS store remains process-local demo state and does not establish database durability.",
+    "Webhook delivery behavior remains documented as a demo limitation.",
+    "Demo role authentication is available only with explicit non-production opt-in."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T16:35:12.072070+00:00"
+}

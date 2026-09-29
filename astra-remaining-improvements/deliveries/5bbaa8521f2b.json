@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww45",
+  "id": "5bbaa8521f2b",
+  "summary": [
+    "Add six actual-service runtime cases using real knowledge publishing permissions and domain errors.",
+    "Add source-grounded decision tables, call tracing, failure injection and review exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5bbaa8521f2b/results-crud-ww45-runtime-v5.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww45",
+        "id": "5bbaa8521f2b",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/knowledge-entry-service-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5bbaa8521f2b",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:17:42.111847+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 23172,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:17:59.817623+00:00",
+        "elapsedSeconds": 17.13
+      }
+    ],
+    "limits": [
+      "Database repositories and transaction are adapters; no Next authentication, SQL filtering, rollback or isolation execution.",
+      "Production source unchanged. Equal-status writes and audit behavior documented, not changed."
+    ]
+  },
+  "courseWords": 1029,
+  "courseFiles": 9,
+  "courseLinksChecked": 4,
+  "files": [
+    {
+      "file": "tests/knowledge-entry-service-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "e9714a69de9d10f04688e35ec9fc2d046f5c29a864d3c9c424e40424fbee1d5c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/knowledgeEntryService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "409d0eb67a447fe3e41c5cacc0d0366c1312f95d757ef0145030cdd9cd573a4f"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "3e735f0438eb7aa7db154c23a2af803d37eba8fe317cbcea41dd773a1d8c35aa"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "03b416d67b829baa43cdf7acdbf74ada49219b9d3ca644a430772c99eed41f2d"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b1b6dacf358fb95f2d2e89c1021c5fe1b61e3662bd65028af19665a584fad647"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d7623d8bf297aa213ad15c039bc2894864e01aae014a04dc9e6f1556d6e1f10e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "a18b2620ca282c399fd7028675eafd16c217b58ff625b9cb28562e481a7918ae"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "87f5ffbd95a17c544dd7a205ad6b24f21be7b86f88e4acaef6e64a4898c6cc62"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8e38d034b7eda8655862bbed708b34e9e96becacb075e72e9a272055fbca6dfa"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "2d75007894e4e41d165e461c95546c294d8349078fb4d39f9d582f2cd123e28d"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "868f6db7835d2e45c593ca62dcc4e83b8855d50a046439cff46ff8680bcf393a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "d79d2a5d04fabe95cc2c7f06b5aafd83ed388f3656231dda22b00e624ad03e24"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4b0bb5fd63b356e73a86da574350ae6235c508535d9baf5d2d125589f89b564b"
+    }
+  ],
+  "limits": [
+    "Database repositories and transaction are adapters; no Next authentication, SQL filtering, rollback or isolation execution.",
+    "Production source unchanged. Equal-status writes and audit behavior documented, not changed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:21:45.716283+00:00"
+}

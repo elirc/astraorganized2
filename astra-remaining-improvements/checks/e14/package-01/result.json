@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "checks": [
+    "Build distributable wheel with pinned build dependencies",
+    "Wheel contains current application and browser assets without database or environment files",
+    "Install wheel into a separate directory without an editable source checkout",
+    "Installed application imports from wheel, serves assets and persists authenticated CRUD"
+  ],
+  "seconds": 217.76
+}

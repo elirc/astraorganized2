@@ -1,0 +1,179 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildjira",
+  "id": "0e78f57d70d1",
+  "summary": [
+    "Reject invalid BuildJira PATCH requests without leaking earlier valid assignments into the singleton issue, project timestamp, audit list, or JSON file.",
+    "Guard malformed JSON field kinds with the existing VALIDATION_ERROR contract while preserving omitted fields, explicit nullable clears, identity fields, and accepted update auditing.",
+    "Add a real disposable-file regression executable, exact source snapshots, active-runtime README link, and nine source-grounded CRUD upskill guides."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0e78f57d70d1/results.json",
+    "expectedTests": 1,
+    "command": "dotnet run --project tests/BuildJira.Api.Regression/BuildJira.Api.Regression.csproj -c Release --no-build",
+    "environment": ".NET target net8.0; local executable run used DOTNET_ROLL_FORWARD=Major with installed .NET 10 runtime; disposable absolute JSON file; no canonical data or archived npm packages"
+  },
+  "testResults": {
+    "passed": true,
+    "harnesses": 1,
+    "scenarioGroups": 6,
+    "malformedInputCases": 9,
+    "build": "passed",
+    "records": {
+      "regression-05": {
+        "project": "_Organized Desktop/02 Build Projects/buildjira",
+        "id": "0e78f57d70d1",
+        "command": [
+          "dotnet",
+          "run",
+          "--project",
+          "BuildJira.Api.Regression.csproj",
+          "-c",
+          "Release",
+          "--no-build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1\\tests\\BuildJira.Api.Regression",
+        "environmentOverrides": {
+          "DOTNET_ROLL_FORWARD": "Major"
+        },
+        "startedAt": "2026-09-12T19:17:11.195899+00:00",
+        "status": "complete",
+        "log": "regression-05.log",
+        "pid": 20236,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T19:17:35.412667+00:00",
+        "elapsedSeconds": 24.21
+      },
+      "build-release-02": {
+        "project": "_Organized Desktop/02 Build Projects/buildjira",
+        "id": "0e78f57d70d1",
+        "command": [
+          "dotnet",
+          "build",
+          "apps/dotnet/BuildJira.Api/BuildJira.Api.csproj",
+          "-c",
+          "Release",
+          "--no-restore"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\0e78f57d70d1",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-12T19:16:35.610561+00:00",
+        "status": "complete",
+        "log": "build-release-02.log",
+        "pid": 2040,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T19:16:43.464559+00:00",
+        "elapsedSeconds": 7.85
+      }
+    }
+  },
+  "courseWords": 4445,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "bfd706f0ed60fa6fce2f75d6db8a3c7488f35e99cd0e010cf35d73396a7c682d",
+      "after_sha256": "961ba520f52b40e2503e5985a091542e43d75864dcdd866e4b5c042fd183e6f8"
+    },
+    {
+      "file": "apps/dotnet/BuildJira.Api/Services/BuildJiraStore.cs",
+      "before_sha256": "766d82308b3929f31dc72c2565ce1eb96c22ff7f875a604ddd2446dbfdc797ce",
+      "after_sha256": "64f00e2f1e5f952727540ea59e72a04980fefee6e23bf19c13d775869abebee6"
+    },
+    {
+      "file": "tests/BuildJira.Api.Regression/BuildJira.Api.Regression.csproj",
+      "before_sha256": null,
+      "after_sha256": "23bfff5dc644f8a04440944d33f2e429741302ac880e42fd55ddb8b2aef14985"
+    },
+    {
+      "file": "tests/BuildJira.Api.Regression/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "c78deca21d73d6c3a16e6dd8cbd828e79743e621efd10311fa5af6ce2dbfb672"
+    },
+    {
+      "file": "astraupskill/snapshots/BuildJiraStore-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "766d82308b3929f31dc72c2565ce1eb96c22ff7f875a604ddd2446dbfdc797ce"
+    },
+    {
+      "file": "astraupskill/snapshots/Program-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d5c24f60fba980179d78ce9029c21dbae190ff83968175267e082cc007801318"
+    },
+    {
+      "file": "astraupskill/evidence/regression-05.json",
+      "before_sha256": null,
+      "after_sha256": "b0eee6afe53a04b1928c50ae1e9cfdf015c7a6944a6063bbb9fcc484980acaca"
+    },
+    {
+      "file": "astraupskill/evidence/regression-05.log",
+      "before_sha256": null,
+      "after_sha256": "62e359ac8ed98be98ba1659faf0b51bb06485314de65960be8f666445c783ae3"
+    },
+    {
+      "file": "astraupskill/evidence/build-release-02.json",
+      "before_sha256": null,
+      "after_sha256": "4676b5da11d1fb09b1aaf1697d0de5dbda5f6ab22274617bfc5917604ea7f469"
+    },
+    {
+      "file": "astraupskill/evidence/build-release-02.log",
+      "before_sha256": null,
+      "after_sha256": "ab2d009e4fa27cf8010c6497080df86ddb367355f5756a8d58da5497498ce099"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "13e4140230f7efb3378e183b6dacf3ab646a59459018e7c0787e067e66718895"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "07909024b004d1fc2bf24dbd1dc0966ea7d8418bf4f761e40252cca1421e05f9"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "e33b777d794df50094892f3475d203f2b4713eae1ca00423e438615cc2ce2f93"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1b7e1730d7b4a469d144cee034cb56f9d44c28940fae383439a0f2131a619a99"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "06f57bb2d122b31fbc28150d9f924b23bf8f54c3a0507163c9a7e74d0eab7267"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "2dc5f95e86ecdcc8b69adb950f57c1b2b0efeef7efc7fccd8cf2d8c8bdaeb57e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "319ed40c0ea8bb9c37714554e4aa036f1e5886ef18e3531cc04abc51066f429f"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "681d7554c16cdbae07241dda237f6e105bdf4e27a8cb3e01fb70ef74c3b0e654"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ccb20e94df3ba8eafc214bcf7fe05b3812e466e9c5e425c63f88be38fc977960"
+    }
+  ],
+  "limits": [
+    "The demo x-user-id actor resolver is local teaching infrastructure, not production authentication.",
+    "The regression proves in-process singleton isolation and durable JSON behavior using a disposable file; it does not prove crash-safe file replacement or multi-process coordination.",
+    "HTTP route status mapping, assignee relationship policy, enum policy changes, creation rules, external notifications, and the archived TypeScript/Prisma implementation remain outside this bounded repair."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:21:52.537623+00:00"
+}

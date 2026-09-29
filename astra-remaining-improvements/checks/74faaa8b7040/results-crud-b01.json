@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 3,
+  "checks": [
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildaffiliate",
+      "id": "74faaa8b7040",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/campaign-slug.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\74faaa8b7040",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-21T23:41:28.918641+00:00",
+      "status": "complete",
+      "log": "astra-crud-b01-identifiers.log",
+      "pid": 36060,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-21T23:41:34.157067+00:00",
+      "elapsedSeconds": 5.24
+    }
+  ],
+  "limits": [
+    "Focused Vitest was not run because dependencies were unavailable in the staged workspace.",
+    "Database uniqueness and cross-process behavior remain deployment checks."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "bcde1b4da8c5",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:46:39.751685+00:00",
+  "sourceReview": "Read all ProductsService methods and real AppError. No production change; create SKU precheck, missing read/update404, direct deactivate and unfiltered list documented honestly.",
+  "teachingReview": "Rewrote all nine unrelated onboarding templates as inventory source lessons with exact SKU payload, separate practice and answers, precondition versus late failure and race-window limits.",
+  "testReview": "Five passing actual-service cases with real AppError and explicit relative Prisma adapter: create payload, duplicate/missing refusal, provider failure, scoped read/update and direct deactivate. No schema/auth/uniqueness/commit claims.",
+  "specSHA256": "9ea0e3357ecf4101e5388fddc03235d2bb863090bbe709c52396f0cc7cea6f7d",
+  "fileHashes": {
+    "tests/products-service.test.mjs": "5342acce6dc3b3bc73f9161b662faf03d59701b0a953506dc6f01c4e1178f75f",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/products.service.ts.original.txt": "58718ff42b95ca62d50a428e7f2a41e03543f10f845fecf0033a1bc70b1a3a09",
+    "tests/app-error.test.mjs": "dd6ffbf6a4773b982e3d10bbfa9f4afcf9f227c4764aaa862dd47c50e2b05fed",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "d993969c68bcd96a1717214bb26d0a99fd33cc5220e537ee9cdf9307d9bd007b",
+    "astraupskill/evidence/results.json": "14c6ed02f6b23a4930c23b132711d463468cb08413c01bba2005727218f476e4",
+    "astraupskill/README.md": "c48bf789e0c1e0ae6a2b5ee096132e51fa5ed6842403d84c732fbc2d281118ba",
+    "astraupskill/01-CODEBASE-MAP.md": "d148c93840dd8b6df7a2df800db17b0e0fb02f19110e485ab52cd4cf5a67f26e",
+    "astraupskill/02-CONCEPTS.md": "0d4403f3afce2bf9b61b0a152e91c5d408ffcdbff5caf75c7f6c1bb909e6fb5e",
+    "astraupskill/03-WORKED-CHANGE.md": "b259e9d480ebb541d656955b191087661979d5081814543b110962aab5f8f3e8",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "c48b2a73a99f436232285dc557f2075aababff92423743fd8c851f284b68c133",
+    "astraupskill/05-PRACTICE.md": "d44f67d439ebb1a1e5eaaec6d9002683f4f5167f25229887e48907ca52e288c6",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "f60b034f6af6fdf77a0ea3e85c83f54982459999c3fa9be913eedae44835bbf6",
+    "astraupskill/07-TRACE-LAB.md": "383f2fcb7b6cb1547023d24cc28488c08264f5f19e0e89fb95aec18c4c4871f3",
+    "astraupskill/VERIFICATION.md": "d0e7c9066061a64e4c084574ba93ea3fb906621d15b94487d22f8bc908bb44ea"
+  },
+  "evidenceHashes": {
+    "checks/bcde1b4da8c5/crud-b08-astra-runtime.json": "a808e68f3a42e6fa39e20ff1bd6dbfa2bf88e0b923966eecf49bf6845b4cf676",
+    "checks/bcde1b4da8c5/crud-b08-astra-runtime.log": "d993969c68bcd96a1717214bb26d0a99fd33cc5220e537ee9cdf9307d9bd007b",
+    "checks/bcde1b4da8c5/runtime-b08.json": "4da8c368b31ba88ed64056401dbaf05e1ef29933c0f86ca9f409f3a477b4037b",
+    "checks/bcde1b4da8c5/runtime-b08.log": "f86100461f8174dfeac4742fdf4c208be11272781dd6f7ea9735d7e059fc17ca",
+    "checks/bcde1b4da8c5/runtime-b084.json": "bbee3ba6d6c5f8f657541c49155cf00be83367f88d826bc8bc323a619cf1fa0e",
+    "checks/bcde1b4da8c5/runtime-b084.log": "3e38a888b2f9167a207a269e72af81b09840faa5ffe099cbbc4600b82cc03e81",
+    "checks/bcde1b4da8c5/runtime-b085.json": "14c6ed02f6b23a4930c23b132711d463468cb08413c01bba2005727218f476e4",
+    "checks/bcde1b4da8c5/runtime-b085.log": "dea8b7626a040b8d67265a414872796c2b21669671bc34ac6c6d536307001ad2"
+  }
+}

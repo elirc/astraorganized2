@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz6",
+  "id": "2f29156b71ed",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build",
+    "--",
+    "--webpack"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2f29156b71ed",
+  "environmentOverrides": {
+    "CIRCLE_NODE_TOTAL": "2"
+  },
+  "startedAt": "2026-09-19T19:08:23.928658+00:00",
+  "status": "complete",
+  "log": "resume14-build-01.log",
+  "pid": 17776,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T19:26:15.497798+00:00",
+  "elapsedSeconds": 1071.56
+}

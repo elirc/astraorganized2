@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/mastermatter",
+  "id": "f5bd710b171f",
+  "command": [
+    "python",
+    "tests/crud-b02/run_channel_store_harness.py",
+    "--go",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\batch-crud-upskill-20260921\\toolchains\\go1.27.1\\go\\bin\\go.exe"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f5bd710b171f",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T01:00:06.052870+00:00",
+  "status": "complete",
+  "log": "crud-b02-harness1.log",
+  "pid": 28584,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-22T01:00:08.968388+00:00",
+  "elapsedSeconds": 2.91
+}

@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "projectRecords": 298,
+  "physicalLocationsAccounted": 420,
+  "topProjects": 50,
+  "nextBatch": 10,
+  "reportLinksChecked": 985,
+  "brokenReportLinks": [],
+  "sourceOrManifestPathsAssignedOnce": 278184,
+  "scanReadErrors": 0,
+  "representativeDocuments": 1868,
+  "note": "Read-only audit integrity checks; no project runtime, install, build or test suite was executed."
+}

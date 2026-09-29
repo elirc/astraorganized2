@@ -1,0 +1,43 @@
+{
+  "passed": true,
+  "directory": "browser-05",
+  "review": "All nine images opened and visually inspected: readable list text, compact sidebars, populated mobile administration fields, anonymous portal without reply form/logout, signed-in public history, and retained-draft comparison.",
+  "files": [
+    {
+      "name": "01-home-desktop.png",
+      "sha256": "f06f96c9da45c26bacd6666b4d01d39426b2c842370b05059e8861f3fcf42635"
+    },
+    {
+      "name": "02-customer-editor.png",
+      "sha256": "656cf411bf2b071ba8747d68808ebfc73653d01db6059d8e7acf752290a90489"
+    },
+    {
+      "name": "03-conflict-review.png",
+      "sha256": "6423eaadc7a84e2a4830fb6d0e302a1b5aad9be8ff019d77f848c586c3cadf5e"
+    },
+    {
+      "name": "04-administration-desktop.png",
+      "sha256": "a2cb390a30f43d39ad2ecfaaf5bba3c23fb89c01ebd8456f1b5e333c4f732d07"
+    },
+    {
+      "name": "05-staff-desktop.png",
+      "sha256": "e2cb5518f34a7e26cebafe4dbea8bd9d13e30a5ffd0e390d91f1d5cd57b050e4"
+    },
+    {
+      "name": "06-staff-mobile.png",
+      "sha256": "91ed2417bb8521c16680d0311469cf6bd2a539b5d4830ce69377112bb125b7e2"
+    },
+    {
+      "name": "07-administration-mobile.png",
+      "sha256": "ed0b71f6334f72e9d3e4f216f65860543e564394194c8faa230bdfe38d5b6da0"
+    },
+    {
+      "name": "08-portal-mobile.png",
+      "sha256": "65335a5c688e60d0e91eb526c1d550a0e736a193a6b56d1c3fa1b5b4f32cca3d"
+    },
+    {
+      "name": "09-portal-history.png",
+      "sha256": "7d7a408d6ec1895fb502bdd219963d71a12948908bfa1d2216c11e6c07b118a0"
+    }
+  ]
+}

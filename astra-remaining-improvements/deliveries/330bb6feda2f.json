@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e3",
+  "id": "330bb6feda2f",
+  "summary": [
+    "Resolve the full project-scoped identifier set before privacy deletion so aliases and canonical IDs are scrubbed together.",
+    "Remove associated alias mappings while preserving unrelated records and unknown-ID audit behavior."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/330bb6feda2f/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/e3",
+        "id": "330bb6feda2f",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-privacy-alias-delete.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\330bb6feda2f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:48:15.545309+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 28984,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:48:22.811467+00:00",
+        "elapsedSeconds": 7.26
+      }
+    ],
+    "limits": [
+      "Four actual privacy-service runtime cases use explicit store, id and clock adapters; no Next route, real authorization, filesystem durability or concurrent mutation executed.",
+      "This bounded change expands identifier matching and alias cleanup in the existing scrubber. It is not complete erasure: other properties, userProperties, sessions, derived tables and audit metadata are not comprehensively scrubbed.",
+      "No-person deletion still scrubs exact matching event/raw history and aliases; only a completely unmatched id changes audit alone. Export behavior is unchanged."
+    ]
+  },
+  "courseWords": 1937,
+  "courseFiles": 9,
+  "courseLinksChecked": 48,
+  "files": [
+    {
+      "file": "lib/server/privacy.ts",
+      "before_sha256": "343658ce21db502a8e135f4484a2f9ade957461580fcab10810742b8aa42d8b5",
+      "after_sha256": "1d51ef8ff40c767857ef46c6b84d7e98473fe57faa6ef62029fafa0e58299e03"
+    },
+    {
+      "file": "tests/runtime-privacy-alias-delete.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f20172f8c2d55b091515443e01d74b68f30cb1c5dd3024b28118b3383a78e3c2"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/lib-server-privacy.ts.before",
+      "before_sha256": null,
+      "after_sha256": "343658ce21db502a8e135f4484a2f9ade957461580fcab10810742b8aa42d8b5"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "29eb59866dd644e329e47e06be5ad18782c6c3ae58662ff77cb5641e2f6bc5f6"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "aeffa7c822edd76584496c8f50ff697cbcfa73decf0d160f1bf23bdceafb0ee1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a6dd5d07231a9b7286fcc2d5f11128fa44ef3b64ddcc17f8dbafdb75354b30ec"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "cb9bd7368fc8034bcaa2a6f58534c57f7c7da12bd987e11dcee67376bb23b394"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9021d7d33a5a28d030fc6845f41f0813f40df6b31181f5b51d2218a34f901f1f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "cb077d2635714bd89e16a5a765ebefd609c31ae2e3445848833ce168897294f0"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "00647efc82513d8a298fdc2fd348e4a7159ff2d84de1414728f204c2e1e493c4"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "51fcdc0fdcc7e64cf79ac8bb8e34456107e6ec3648ef6026abca50de153a8b1b"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ee4201bfeba84ff685c33483b6967beb9558760536605f305fb69805c81bfaac"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "94ccc61883ed36649489f7ccb57984382a95d44a11413fa9aa202ab965605b18"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b5fb02fa5a91b8da2b9150c8b4a3bae8ff02e88ce026e5559900f0892c599bdc"
+    }
+  ],
+  "limits": [
+    "Four actual privacy-service runtime cases use explicit store, id and clock adapters; no Next route, real authorization, filesystem durability or concurrent mutation executed.",
+    "This bounded change expands identifier matching and alias cleanup in the existing scrubber. It is not complete erasure: other properties, userProperties, sessions, derived tables and audit metadata are not comprehensively scrubbed.",
+    "No-person deletion still scrubs exact matching event/raw history and aliases; only a completely unmatched id changes audit alone. Export behavior is unchanged."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:51:08.412377+00:00"
+}

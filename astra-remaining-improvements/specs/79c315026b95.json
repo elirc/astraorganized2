@@ -1,0 +1,25 @@
+{
+  "id": "79c315026b95",
+  "summary": [
+    "Fix an accidentally terminated block comment in the real HTTP error module so TypeScript can parse it.",
+    "Added a production state-machine lab for legal and invalid run transitions.",
+    "Captured four executed Node VM policy cases with explicit worker limits."
+  ],
+  "changedFiles": [
+    "tests/runtime-allocation-state-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "src/lib/http/errors.ts",
+    "astraupskill/snapshots/errors.ts.original.txt",
+    "astraupskill/evidence/crud-b07-astra-runtime2.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/79c315026b95/results-crud-b07.json"
+  },
+  "limits": [
+    "No Prisma worker, claim, aggregation, rollup, audit, failure recovery, or retry execution.",
+    "Provider-backed queue checks remain follow-up work.",
+    "Real ValidationError is loaded. Unexecuted repository/engine exports and queue registration are adapted. Worker catch directly writes FAILED without transition guard; terminal helper refusal does not certify worker immutability."
+  ]
+}

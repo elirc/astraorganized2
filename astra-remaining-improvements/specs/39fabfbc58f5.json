@@ -1,0 +1,25 @@
+{
+  "id": "39fabfbc58f5",
+  "project": "_Organized Desktop/03 Master Projects/master1",
+  "summary": [
+    "Preserve an existing completedAt timestamp when a DONE task is updated to DONE again.",
+    "Stamp completion only when entering DONE, clear it when reopening, and leave it untouched when status is omitted."
+  ],
+  "changedFiles": [
+    "apps/api/src/modules/tasks/tasks.service.ts",
+    "tests/tasks-service-completion.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/tasks.service.ts.original.txt",
+    "astraupskill/evidence/crud-b02-runtime2.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/39fabfbc58f5/results-crud-b02.json"
+  },
+  "limits": [
+    "The regression invokes the real TasksService with explicit Prisma and audit doubles; it does not connect to a live database.",
+    "The local loader removes standalone Nest decorator syntax because Node's dependency-free TypeScript stripper cannot parse it; service method logic remains actual source.",
+    "This checks completion timestamp behavior only; concurrent task updates and database transaction behavior are outside scope."
+  ]
+}

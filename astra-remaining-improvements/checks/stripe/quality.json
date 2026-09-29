@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "command": [
+        "C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\Scripts\\ruff.exe",
+        "check",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af19f6e32dba\\tests\\browser_smoke.py"
+      ],
+      "exitCode": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "command": [
+        "C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\Scripts\\ruff.exe",
+        "format",
+        "--check",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af19f6e32dba\\tests\\browser_smoke.py"
+      ],
+      "exitCode": 0,
+      "output": "1 file already formatted\n"
+    }
+  ],
+  "pythonSyntax": "passed"
+}

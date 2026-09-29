@@ -1,0 +1,40 @@
+{
+  "id": "7a06d436fe48",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:19:03.624792+00:00",
+  "sourceReview": "Read actual jobPostingService and ApiError; no production changes. Actor-derived submission fields and reviewable state set traced; reviewer role not checked here.",
+  "teachingReview": "Read and rewrote all nine chapters to explain scoped reads, state versus permission, adapter ordering and stale-read limits with prediction, matrix and failure exercises.",
+  "testReview": "Five passing real-service cases cover submit payload, both reviewable states and decisions, missing/nonreviewable refusal, scoped detail read and write/audit failure ordering. Real ApiError; database and audit adapters only.",
+  "specSHA256": "e2cdfa36c9d8cd8106da69ed286af1f51b09eb48bf00c9700c06e93763fd1a06",
+  "fileHashes": {
+    "tests/job-posting-service-runtime.test.mjs": "e78ca0cfb4afdd4aed23f7fe91fa93cc0f796560ede8332e3ce9cb1183a8742c",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/jobPostingService.ts.original.txt": "563b237ef157a2895ac80c5f051245d9f2739c55de306bc30956721d7f287154",
+    "astraupskill/evidence/crud-b06-astra-runtime.log": "80dd9d1e19e7f43c73590eff587507ac14be5a3e9240c6622dc4c559212e8370",
+    "astraupskill/evidence/results.json": "6bec0ba46c9acbc9e7cb213ecbb615efd9c37500b9511030594c730880e95b0e",
+    "astraupskill/README.md": "8241e82361bc0c536c50df869b6ca49bae1c6fd8d1052bfa8a5083168b29112e",
+    "astraupskill/01-CODEBASE-MAP.md": "2269d4682fedaf54e15dc9cec7a326b1a0f6c4a5f5adce568488f54125fb60ee",
+    "astraupskill/02-CONCEPTS.md": "8047b0366287c4a6ca95ba8ccf165809f800747b0cd0c906b73fc9cfe0edf347",
+    "astraupskill/03-WORKED-CHANGE.md": "1b3e7c324c9bf51c2f15939ec8e28d4c81b9d8c2541244539d49af5860368f00",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "43bd637a6e05d6349299b0edd518480e33ba5c0a1b1c42a582ab6b8370bc1ba2",
+    "astraupskill/05-PRACTICE.md": "4698f29da00460f5a7b46fe564890f2452a4e89c61ff3b3a3cdc33751b5c2786",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "86f5b7306caa3b5e32b65075173d8e6cfef8baafe6aea110ae2628acbdeebc39",
+    "astraupskill/07-TRACE-LAB.md": "9a62934d4effd4b333feee64719b20cca7d398376f3c53ea7c39c14f33bc9bef",
+    "astraupskill/VERIFICATION.md": "c44ec6cde403ef54c15bd160d7e35777da1e3ed8b941ef891db71c88717911af"
+  },
+  "evidenceHashes": {
+    "checks/7a06d436fe48/crud-b06-astra-runtime.json": "3ade9328a793e82f9e5055a3b9046722ae74f3565d847bbab3306ab37f6e8992",
+    "checks/7a06d436fe48/crud-b06-astra-runtime.log": "80dd9d1e19e7f43c73590eff587507ac14be5a3e9240c6622dc4c559212e8370",
+    "checks/7a06d436fe48/crud-ww40-policy-v2.json": "72731ab97004479fa2fa34eb9705fdd99cae4d11ef7babf48b28b72a52f368ca",
+    "checks/7a06d436fe48/crud-ww40-policy-v2.log": "b16561926c4e92189c785c3ced83ecf4b1581f85f7f3abbb0eabcb1cf736ada6",
+    "checks/7a06d436fe48/crud-ww40-policy-v3.json": "fd71c78bb3064cbc7457e11a5afea7431d3a9a91311ce81006597c5e7330d66a",
+    "checks/7a06d436fe48/crud-ww40-policy-v3.log": "d0cb16934b4a9a3f62131ebea82498f68de8d4486003a0b8d913d3c33a27f30b",
+    "checks/7a06d436fe48/crud-ww40-policy.json": "86af61e42b2f0661729a9d065b4302c3822dd02f08f16f60c2a2ff59ed7836bd",
+    "checks/7a06d436fe48/crud-ww40-policy.log": "7ef3a8b3fd3503f495d56018829a0b8893b3b2ce9825298504f7434d70794de2",
+    "checks/7a06d436fe48/crud-ww40-runtime-v4.json": "4630d70380dfc8d00271958f5fe9afd029339f232c50a65caba094d84bdb5af6",
+    "checks/7a06d436fe48/crud-ww40-runtime-v4.log": "295a735534613ce4b3837342e4277cc9dcfc08a6dd2c27d8da75aec607778aa0",
+    "checks/7a06d436fe48/crud-ww40-runtime-v5.json": "ac004ace4dae7444d9e711d4a03f2d7d88cbdcaa276e89a85a92c11ea809347a",
+    "checks/7a06d436fe48/crud-ww40-runtime-v5.log": "4794bf81218df926fcec1cbf50ff79f15286a9778ca142d0b27117fd1eb3799e",
+    "checks/7a06d436fe48/results-crud-ww40-runtime-v5.json": "6bec0ba46c9acbc9e7cb213ecbb615efd9c37500b9511030594c730880e95b0e"
+  }
+}

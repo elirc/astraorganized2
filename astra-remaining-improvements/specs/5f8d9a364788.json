@@ -1,0 +1,24 @@
+{
+  "summary": [
+    "Deal stage movement now treats a null update reread as a safe not-found result.",
+    "Four actual-service cases use real errors for null reread, ordinary success, pipeline refusal and won-stage payload.",
+    "Exact source snapshot and source-grounded course explain repository reread limits."
+  ],
+  "changedFiles": [
+    "src/services/dealService.ts",
+    "tests/deal-stage-update-result.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/services/dealService.ts",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5f8d9a364788/results-crud-b07.json"
+  },
+  "limits": [
+    "Repository, Prisma transaction, pipeline, and audit are explicit doubles.",
+    "No real provider or concurrency execution.",
+    "Guard proves non-null reread before dependent writes, not transactional race resolution."
+  ]
+}

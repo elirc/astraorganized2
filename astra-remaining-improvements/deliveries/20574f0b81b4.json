@@ -1,0 +1,240 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e6",
+  "id": "20574f0b81b4",
+  "summary": [
+    "Adds isolated MemoryStore construction, workspace membership and owner/maintainer guards, recipient-scoped inbox projections, and pre-mutation tracker relation checks.",
+    "Rejects unauthorized issue updates and statuses belonging to another issue type before changing issue/planner state; repaired expected failures map to Fastify 403/404 responses.",
+    "Registers socket handlers through a testable seam, validates payloads/cursors, awaits room joins, derives member identity and broadcasts socket-owned presence cleanup including the final empty list.",
+    "Adds eight finite store, socket and real Fastify injection tests, plus nine source-grounded chapters with complete executed examples and exact original snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/20574f0b81b4/results.json",
+    "expectedTests": 8
+  },
+  "testResults": {
+    "passed": true,
+    "total": 8,
+    "tests": 8,
+    "failed": 0,
+    "checks": [
+      "root-build-01",
+      "root-api-build-03",
+      "root-test-05"
+    ],
+    "scope": "Synthetic independent stores, actual socket handler registration with fake transport, actual Fastify app.inject GET/PATCH responses and close hook. Full original frontend/domain/worker build plus final changed API build passed. No real database, network listener, worker or browser."
+  },
+  "courseWords": 4197,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "53f1bf2a5404b03f41a89822173fa6e9db7b8fa6277d1d03d6915c80c737b819",
+      "after_sha256": "5c15b8d5f7d5ab93b3560169e64286f4720f6d6dc8cfc23df8a9637dd776f597"
+    },
+    {
+      "file": "apps/api/src/data/store.ts",
+      "before_sha256": "10c7c5282f8e378ad75b371ae09824721551eba8fed40208205a78adc3cb19eb",
+      "after_sha256": "103245e5752b123f52d0dc0c8046ce283f843a438a855885593d86767429703f"
+    },
+    {
+      "file": "apps/api/src/realtime/socket-server.ts",
+      "before_sha256": "3c095a47f7beb7f154e3470c7ff25e86a7a59a83fe6cf3dcf4d8da5200cdc43e",
+      "after_sha256": "47d7ad965923b2ef16e2b3dd4bf559fbd98616a905dd37ac3b8f8ff2d220122d"
+    },
+    {
+      "file": "apps/api/src/data/store-error.ts",
+      "before_sha256": null,
+      "after_sha256": "4db6805d71ed97df9f8cd75fab9a7108abbd3718c2e03aa79f96642aaeca2721"
+    },
+    {
+      "file": "apps/api/src/realtime/presence-registry.ts",
+      "before_sha256": null,
+      "after_sha256": "9820c9ad195c611a2a848b2a4c346248696a7811c62b7ded0329ffd8542c0cb9"
+    },
+    {
+      "file": "apps/api/src/realtime/presence-types.ts",
+      "before_sha256": null,
+      "after_sha256": "7ca270711ff3b6f167cf704f53d4ba1d8f6b6eee24015aad222532bd41fe2a7f"
+    },
+    {
+      "file": "apps/api/tests/security.test.ts",
+      "before_sha256": null,
+      "after_sha256": "42808eaf757a145a8e7b22841fba683aef22c67487f8f3f79b337f3490ece510"
+    },
+    {
+      "file": "apps/api/tests/boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "0e441dd61a23ce6958a06a777e1bc8249ef0a639be6972c6540e8ea5d842b559"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__app.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "c137c6997ef932bd26423b5f9dd4994a1ad53a5d11ac7c256044e1f13b224891"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__data__store.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "10c7c5282f8e378ad75b371ae09824721551eba8fed40208205a78adc3cb19eb"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__realtime__socket-server.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "3c095a47f7beb7f154e3470c7ff25e86a7a59a83fe6cf3dcf4d8da5200cdc43e"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__routes__chat.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "273458d5935b45412d15a7232cfbb5c648528664d5d609fccd043639f1b813c0"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__routes__inbox.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "8eaff35fae26bd94f3a7f1f9fbd7863f0c0cd7af5f8ee4d03c251cf7fb181e88"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__routes__tracker.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "4f976b9971366a4d7a5115c2a918fc551e3615d46c1beb3f963bf58774cf114f"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__routes__workspaces.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "06a659fffb2bad5b48aa9ddc150beeef4bf0a35196403b58ce926820b55165ca"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__domain__src__types.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "faa06c9d31c89e54a74009aecc0ab916faff592c069c6e7729e96cc2f3da3981"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "f779dd0ad9c7e96352c08fcd322c669bf236dd41e204da541cce12f602ff7a34"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "aa101a0b33b3231c5568bdf28aa73a2f182ebdf7f804cf502f51205dc7e3998a"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-02.json",
+      "before_sha256": null,
+      "after_sha256": "659c12f8155237d619a59e2687ae2c34bbfe6582469469181837467d8a4a85c1"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-02.log",
+      "before_sha256": null,
+      "after_sha256": "64dc6fb957090dc42db857828a3fd9e14fef7e9880a152a28a63d89bdc11edbb"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-03.json",
+      "before_sha256": null,
+      "after_sha256": "e24f6250e9ebfe7e99aa25d6c4965ee0fc9ad90a994fcefd6862342e161475de"
+    },
+    {
+      "file": "astraupskill/evidence/e6-test-03.log",
+      "before_sha256": null,
+      "after_sha256": "4d38cbdbe3777c423d345f5076d0bae24172409ce3bc094cdb0a8440e0cb9cf6"
+    },
+    {
+      "file": "astraupskill/evidence/e6-typecheck-01.json",
+      "before_sha256": null,
+      "after_sha256": "bc6af51314bb7eb5f82241cd70a507912e653118e34fc117a826e5b02d19978b"
+    },
+    {
+      "file": "astraupskill/evidence/e6-typecheck-01.log",
+      "before_sha256": null,
+      "after_sha256": "1327bef305d776b79533119279156c42185328fd0831c4b67a99b997f87397ea"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ce03e521af919b3b405550d5839c46f3c20aeb87143b72cdb15af92583ee7a30"
+    },
+    {
+      "file": "astraupskill/evidence/root-api-build-03.json",
+      "before_sha256": null,
+      "after_sha256": "165fd692f07cf6d88a4bea3f3a27c2ec325c3f05cbee7d5c3204d32fa6f33e6c"
+    },
+    {
+      "file": "astraupskill/evidence/root-api-build-03.log",
+      "before_sha256": null,
+      "after_sha256": "43edac302704966987b817a431cc5513d01c8d5c633ddbb07401225ec2b52b9c"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "a1a4313e85334b2a932ccaddede9583148d9f965548e7343c3085f5ec6167fbb"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "39f51b115ccd9cdcba11e3c3c2c64746edead8ac1da592851b1f641e6cd1c74d"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-05.json",
+      "before_sha256": null,
+      "after_sha256": "91f230be8bf6d79fdbef05ff9aee9dfb0d80f7785a3dffe66a18d75aedd5255e"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-05.log",
+      "before_sha256": null,
+      "after_sha256": "c2eec67b997848cf143d3f64ae5a07beeef3e08656f1a140ec341c26738eedfb"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "84bf1b76689f823e657008de1ed654fb2c28627be5860bddcf823fa5d648bc94"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "6fa99a13d2805cfe5602358da46d2be0500975ec1e90bcd7dc3155ef568aca69"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "479c4b637b594ad29db1094799e337a413a4b50abd7bad053a413ba5d727e3a2"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "b1f4111313552b0ed07c1faa63d44dd3844643d3e7e34c19504448a4f271f107"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "3a1bd16c70e22ff03d0c0ae9a7ea6279bd4d5461fc87c77229d5036958eef13b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "664975b6e7caa6c5a21bcaa334b8a9975c3fe37fe1595447863840ed9238c8a9"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8d61cf50ad8de3c47a0909b1c0fd85c7439da4b90329d2aa0f161ca73b9e1e76"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "bcdf752293498139bc290a85f25a7a6d3abbd3647806a5e1a881ca52d94768df"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "48fbd0f160a1ed75a66bcc20757c7e46b400ef76ed1e57b233b1edceaf7c8906"
+    }
+  ],
+  "limits": [
+    "Fixed demo identity and simulated auth remain; no real authenticated tenant/session boundary was exercised.",
+    "Mutable in-memory state is not durable or transactional; planner side effects and count-derived issue identifiers retain existing limits.",
+    "Socket tests use real registration with a fake transport; no live socket listener, Redis adapter, distributed presence, worker or browser was run.",
+    "Eight tests cover the repaired paths; other endpoints retain existing policies, and explicit null clearing/durable message idempotency remain follow-up work."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T22:52:18.219899+00:00"
+}

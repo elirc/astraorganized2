@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "tests": 13,
+  "checks": [
+    {
+      "name": "socket",
+      "command": [
+        "npm.cmd",
+        "test",
+        "--",
+        "--test-reporter=tap"
+      ],
+      "exitCode": 0,
+      "log": "checks/chat/socket.log"
+    },
+    {
+      "name": "web-build",
+      "command": [
+        "npm.cmd",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "log": "checks/chat/web-build.log"
+    }
+  ],
+  "initialRegressionRun": {
+    "tests": 6,
+    "failed": 6,
+    "note": "After adding isolated database option, before business fixes"
+  },
+  "scope": "Real Socket.IO server/client connections and SQLite memory database; React production build; no live browser, upload or REST endpoint verification"
+}

@@ -1,0 +1,7 @@
+# Astra review: Master6
+
+Reviewed all seven changed baseline source files, the production learner-route fixture and all nine guides. Tenant membership, actor-owned enrollment, course-version content and stored completion rules are checked before writes. Enrollment and completion use transaction-aware event/outbox helpers; completion adds audit/certificate writes and a terminal replay guard. Root corrected the course examples, required-ID semantics, certificate constraints, timestamp behavior and test-scope claims, and included the complete runnable fixture.
+
+Fifteen domain cases and fourteen API cases passed: 29 distinct tests. Web and worker commands found zero tests. Workspace typecheck and the ordered domain/API/Next web/worker production build passed. Mechanical preflight verified eight executable hashes, seven exact original snapshots, 31 local links and 5,533 course words. Guarded canonical delivery applied 42 files after original hashes matched.
+
+Route tests mock Prisma, authentication and event/audit helpers; they establish branches and transaction-client arguments, not live PostgreSQL rollback or concurrent safety. No Redis, browser, real JWT verification or PDF generation was exercised. Existing certificate uniqueness constraints have no code-collision retry. Terminal replay preserves state but not identical response shape. Post-completion edits, unrestricted completion source statuses, development JWT fallback and unexpected error-message disclosure remain documented limitations.

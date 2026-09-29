@@ -1,0 +1,277 @@
+[
+  {
+    "stage": 51,
+    "title": "Legal Case Tracker: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. The synchronous in-memory repository changes a record and appends history together within one process.",
+    "model": "The main record represents a case owner, case category, due date and amount. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Intake, Discovery, Negotiation, Closed. Categories are Contract, Employment, Real Estate, Compliance. Activities reference the record ID. Records and activities live in JavaScript arrays and reset when the API process restarts.",
+    "concept": "A status command expresses a desired value. If a legal case tracker record is already Discovery, setting it to Discovery again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. Synchronous array operations cannot interleave midway through an await because there is no await in that boundary. This explanation is specific to one process. Adding disk I/O or multiple API instances requires a new coordination design.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Intake to Discovery, then repeat Discovery: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/server.js",
+    "symbol": "createRepository",
+    "test": "test/domain.test.js",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ]
+  },
+  {
+    "stage": 52,
+    "title": "Subscription Billing: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot.",
+    "model": "The main record represents a customer subscription, plan category, renewal date and billing amount. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Trial, Active, Past Due, Cancelled. Categories are Starter, Growth, Enterprise, Internal. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a subscription billing record is already Active, setting it to Active again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Trial to Active, then repeat Active: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/domain.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ]
+  },
+  {
+    "stage": 53,
+    "title": "Field Service: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot.",
+    "model": "The main record represents a field visit, responsible technician, service category and visit cost. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Requested, Scheduled, On Site, Complete, Cancelled. Categories are Install, Repair, Inspection, Training. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a field service record is already Scheduled, setting it to Scheduled again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Requested to Scheduled, then repeat Scheduled: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/domain.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ]
+  },
+  {
+    "stage": 54,
+    "title": "Research Studies: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot.",
+    "model": "The main record represents a study, coordinator, research category and review date. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Design, Recruiting, Running, Analysis, Complete. Categories are Usability, Market, Clinical, Internal. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a research studies record is already Recruiting, setting it to Recruiting again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Design to Recruiting, then repeat Recruiting: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/domain.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ]
+  },
+  {
+    "stage": 55,
+    "title": "Warehouse Ledger: transactions and derived stock",
+    "focus": "protecting a balance under concurrent writes",
+    "before": "Fractional quantities were truncated, and two transactions could both read enough stock before either wrote its debit.",
+    "after": "Movement and transfer payloads require valid UUIDs, bounded whole quantities and text reasons. Every write locks the product before reading balances. Transfers remain two atomic ledger entries.",
+    "model": "Products and warehouses have UUIDs. A movement references one of each and carries signed integer delta, reason and creation time. Stock is SUM(delta) per product/warehouse; there is no separately stored balance to synchronize.",
+    "concept": "An append-only ledger represents corrections with new entries. Receiving 10 adds +10; issuing 3 adds -3; the balance is 7. A transfer adds -q at the source and +q at the destination, so total stock across warehouses is conserved. Deleting a movement to correct a mistake would erase the explanation of how stock arrived at its current value.\n\nA transaction makes multiple writes all-or-nothing, but a transaction alone does not prevent two readers from approving the same stock. This app locks a product row before computing balances. All movement and transfer writers use that same lock. One product lock serializes its warehouses, trading some concurrency for an understandable rule and avoiding inconsistent lock order between opposite transfers. Direct SQL writers that ignore this protocol are outside the application guarantee.\n\nNumber.isInteger checks the quantity rather than truncating it. A request for 1.7 units must not quietly become one unit. The bound matches the SQL integer column. The product lock is taken even for receipts so all writers participate in one ordering. Warehouse existence is checked before inserts; SQL foreign keys still protect stored references.",
+    "example": "The seeded cable stock is 40 at Main. Send two concurrent issues of 30: one succeeds, one is rejected, and the balance is 10. Force the destination credit of a transfer to fail: neither debit nor credit remains. A valid transfer of 3 leaves total stock unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "lockProduct",
+    "test": "test/ledger.test.ts",
+    "exercises": [
+      "Display a running balance in the ledger.",
+      "Add a reversal command referencing the original movement.",
+      "Reject a transfer when one warehouse is missing and show recovery feedback.",
+      "Compare per-product locking with per-product/warehouse locking."
+    ],
+    "answers": [
+      "Order movements by timestamp and a stable tie-breaker, then accumulate deltas. Explain that the visible 100-row window may require an opening balance.",
+      "Create an opposite signed movement in a transaction and store the original ID. Prevent a repeated reversal from duplicating the effect.",
+      "Assert no new rows on failure, retain the form and explain which reference is missing.",
+      "Finer locks improve concurrency but transfers require both locks in a deterministic order. Include opposing transfers in a deadlock test before adopting that design."
+    ]
+  },
+  {
+    "stage": 56,
+    "title": "Secure Notes: owned CRUD and runtime boundaries",
+    "focus": "authorizing records and rejecting malformed JSON",
+    "before": "Object-valued credentials and note fields could reach string or password operations. Reading a single owned note had no dedicated endpoint.",
+    "after": "Credentials and note text are typed and bounded, email normalization is consistent, and an owned note detail endpoint completes the read path. Owner checks protect read, update and delete; logout revokes its token.",
+    "model": "Users and tokens are Maps; notes are an array with id, userId, title, body and createdAt. A Bearer token selects a user. Passwords are salted and hashed with scrypt. All data and sessions disappear on server restart.",
+    "concept": "Authentication asks which user the request represents. Authorization asks whether that user may access this note. Finding a note by ID alone is insufficient: the owner predicate must also match. Returning the same 404 for a missing and another user's note keeps the response consistent. The test signs in as two different users and tries each operation rather than merely inspecting the middleware name.\n\nTypeScript is not involved in this JavaScript server, and even TypeScript types would not validate network JSON. A password object must fail before scryptSync. Email normalization trims and lowercases before looking up the same map key for register and login. Passwords are not trimmed, because spaces are part of the user's chosen credential.\n\nThe title has a 2\u2013200 character rule; the body is text up to 20,000 characters. Validation happens before the note mutates. This is a small authentication teaching app, with in-memory sessions, open CORS and synchronous hashing. Persistent accounts, rate limits, session expiration and deployment configuration remain separate improvements.",
+    "example": "User A creates Learning note. User B sees an empty note list and receives 404 for A's detail, edit and delete paths. An invalid body leaves the old note intact. After A logs out, the old token receives 401.",
+    "source": "server/server.js",
+    "symbol": "requireAuth",
+    "test": "test/notes.test.js",
+    "exercises": [
+      "Show an explicit empty-note state after login.",
+      "Add a last-edited timestamp that changes only after a valid update.",
+      "Test a failed login followed by a successful login.",
+      "Move users, tokens and notes into persistent storage."
+    ],
+    "answers": [
+      "Distinguish an empty successful list from a failed request; do not display no notes while authentication is still loading.",
+      "Keep createdAt stable and set updatedAt only at the successful mutation boundary. Test rejected edits do not touch it.",
+      "Keep the generic invalid-credentials response and confirm a malformed input does not terminate the process.",
+      "Create owner foreign keys, use parameterized queries and keep owner predicates on every record operation. Design session expiration and password hashing capacity explicitly."
+    ]
+  },
+  {
+    "stage": 57,
+    "title": "Live Chat: validate before broadcasting",
+    "focus": "HTTP boundaries, WebSocket messages and database notifications",
+    "before": "Malformed socket events could call trim on nonstrings; listener startup occurred during import and asynchronous failures could escape their handlers.",
+    "after": "Room fields and socket messages are validated. Runtime start/stop functions enable isolated tests; malformed messages are ignored, database failures close the affected socket, and the payload size is bounded.",
+    "model": "Rooms have id, slug and name. Messages have id, roomId, author, body and createdAt. WebSockets subscribe to room IDs, while PostgreSQL LISTEN/NOTIFY delivers committed message notifications to the process.",
+    "concept": "A WebSocket remains open across many messages. One bad JSON message should not kill the process or prevent the next valid message. Parsing JSON checks syntax; checking type, author and body checks the protocol shape. A maximum frame payload bounds memory use independently from field-length validation.\n\nThe write path inserts into PostgreSQL. A database trigger produces a notification, the dedicated LISTEN connection receives it, and the process broadcasts to sockets in that room. This is a different path from returning an HTTP response. The integration test waits for a real message broadcast and then reads HTTP history to confirm persistence.\n\nStarting listeners at module import makes tests unexpectedly bind ports and retain database connections. Explicit lifecycle functions put those side effects under caller control. stopRuntime terminates sockets, closes the server and listener, and clears a scheduled retry. The current reconnection attempt is bounded teaching behavior, not a durable delivery guarantee: disconnected clients recover recent history, not an acknowledged message queue. Author names remain free-form demo labels, not authenticated users.",
+    "example": "Connect to study, wait for presence, send malformed JSON, null, and an object-valued author, then send Trace this insert. The valid message broadcasts and appears once in HTTP history. Creating study twice returns 409.",
+    "source": "server/src/index.ts",
+    "symbol": "connectSocket",
+    "test": "test/chat.test.ts",
+    "exercises": [
+      "Show a sending/error state for a message draft.",
+      "Add a room rename endpoint without changing the room ID or slug.",
+      "Test two rooms to ensure broadcasts do not cross subscriptions.",
+      "Design acknowledged delivery and reconnect replay."
+    ],
+    "answers": [
+      "Introduce a client message ID and an acknowledgement protocol; retain the draft until accepted. Do not infer durable storage merely from socket.send returning.",
+      "Validate the new display name and update only that field; existing messages retain their room foreign key.",
+      "Open a socket in each room, send one message and assert only the matching room receives it. Close both sockets in finally.",
+      "Use persistent message IDs and a replay cursor. Explain duplicates, ordering and acknowledgement loss before claiming exactly-once delivery."
+    ]
+  },
+  {
+    "stage": 58,
+    "title": "Blog Platform: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results.",
+    "model": "Blog Platform stores posts with integer IDs and fields title, body, slug, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/posts list/create and GET/PUT/DELETE /api/posts/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"title\": \"Post title\", \"body\": \"Post body\", \"slug\": \"post-title\", \"status\": \"draft\", \"tags\": [\"blog\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for slug while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ]
+  },
+  {
+    "stage": 59,
+    "title": "Kanban Board: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results.",
+    "model": "Kanban Board stores cards with integer IDs and fields title, body, lane, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/cards list/create and GET/PUT/DELETE /api/cards/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"title\": \"Card title\", \"body\": \"Card description\", \"lane\": \"todo\", \"status\": \"todo\", \"tags\": [\"product\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for lane while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ]
+  },
+  {
+    "stage": 60,
+    "title": "Job Application Tracker: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results.",
+    "model": "Job Application Tracker stores applications with integer IDs and fields company, role, stage, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/applications list/create and GET/PUT/DELETE /api/applications/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"company\": \"Company\", \"role\": \"Role\", \"stage\": \"applied\", \"status\": \"active\", \"tags\": [\"remote\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for company while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ]
+  },
+  {
+    "stage": 61,
+    "title": "Inventory Management: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results.",
+    "model": "Inventory Management stores products with integer IDs and fields sku, name, category, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/products list/create and GET/PUT/DELETE /api/products/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"sku\": \"SKU-001\", \"name\": \"Product\", \"category\": \"General\", \"status\": \"active\", \"tags\": [\"stocked\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for sku while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ]
+  }
+]

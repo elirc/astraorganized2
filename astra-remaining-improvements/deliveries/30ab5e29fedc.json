@@ -1,0 +1,123 @@
+{
+  "project": "meterforge",
+  "id": "30ab5e29fedc",
+  "summary": [
+    "Atomic tenant-scoped usage ingestion returns the stored winner under competing retries.",
+    "Normalized same-payload retries return the original identity; changed-payload retries return HTTP 409 without mutation.",
+    "A tenant-scoped GET route makes POST Location readable.",
+    "Response-start middleware and Problem Details customization preserve matching request correlation identifiers on errors.",
+    "Nine detailed learning documents explain real source, concepts, worked changes, tests, debugging, exercises, solution reasoning and request traces."
+  ],
+  "checks": {
+    "format": "trx",
+    "resultsDirectory": "checks/meterforge-verified",
+    "expectedSuites": 4,
+    "expectedTests": 51,
+    "command": "dotnet test MeterForge.slnx --no-restore --configuration Release --logger trx",
+    "environment": ".NET SDK 10.0.302; isolated copy; locked restore; local memory adapters and ASP.NET test host"
+  },
+  "testResults": {
+    "total": 51,
+    "passed": 51,
+    "failed": 0,
+    "notExecuted": 0
+  },
+  "courseWords": 7414,
+  "courseFiles": 9,
+  "courseLinksChecked": 48,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "4a4c1ee196b36f33176ff8f2a896f3b58ef2f52df3da6b3eb22867a856fd3aa6",
+      "after_sha256": "abe000ec2232c0c5871997746e246bb1e05c443e7fa869692d28581e3f889e4c"
+    },
+    {
+      "file": "src/MeterForge.Application/Usage/UsageIngestionService.cs",
+      "before_sha256": "e42c3df49d4c8563443d7e302d8ee4e1494e9825a5597bce07b2c5a76eef661f",
+      "after_sha256": "65e57512424ec03bd68d3773e1ac3d864d86694c51df1829d6816a184f63d952"
+    },
+    {
+      "file": "src/MeterForge.Infrastructure/Usage/InMemoryUsageEventStore.cs",
+      "before_sha256": "dc35125c65ed386d8a4bde8d65cac82c95a442b11cac17d45a680d7d2448591c",
+      "after_sha256": "18408282fba0c5f3ef9b3c0be57b2a9ceb456c63f9033ecb2d28702f052eb8c8"
+    },
+    {
+      "file": "src/MeterForge.Api/Usage/UsageEndpoints.cs",
+      "before_sha256": "ff3fdfd6b61df8f07fae08f27aa4b025da733a79196e40e491f7b6de8477f0bb",
+      "after_sha256": "90fd901f702c0c5dbeff0197af7562c7a5e3da861690da7ff3baac9a400f02bc"
+    },
+    {
+      "file": "src/MeterForge.Api/Errors/BusinessRuleExceptionHandler.cs",
+      "before_sha256": "bab359357b06b5ff78301e8837525c83ba5d351afb78cfd8632bf68ff1799ee1",
+      "after_sha256": "ef364a2a2df8d901a6f66e9904d96284387f4eaa476b5e8f71147d159660f8eb"
+    },
+    {
+      "file": "src/MeterForge.Api/Program.cs",
+      "before_sha256": "c12f01351aafc6d86c060a103c353f9f96bac3c306f46d2bd44d31a197c5b74a",
+      "after_sha256": "aaf96b56379a55fb8bb6368ca2cd989524ab8908ebe35b0a7af681005fd47bae"
+    },
+    {
+      "file": "tests/MeterForge.Application.Tests/Usage/UsageIngestionTests.cs",
+      "before_sha256": "a40a3804bb489e84a9741ebf9a5c5d5a8bfb23801ea7c4dce26d9e0a53a82b50",
+      "after_sha256": "5d6d4d2d4b5dbd6a677912e377ab3e619391afcbcc467ae98df6179c7849d00c"
+    },
+    {
+      "file": "tests/MeterForge.Api.Tests/Usage/UsageApiTests.cs",
+      "before_sha256": null,
+      "after_sha256": "e2450c9bfe9a8769001dad99f4d09fabd92a484a3ce08a980000eb72993455c1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "ab18ae71956e693d152ed4b883149f640fb4679ee8ac7f88ffb362477d2dd3dd"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9fdfeaab851478759990e4797e783d7ed9c3e22196df8cc42dbb574632a99b6c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "756f0b7504d1f6dbd0aee1f86511c9d36dc1e9e8adac5e81b4996ae62b93f634"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "845faf3b70cb800bc5cf7b27fcc3a0f155729807a8be1da9956e744ae918bfd4"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8f074f1ac9887249fe6f2e1f148f9bd01511ab54ebbebbfb7c777daae53770f7"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "30d000f3c347b480fc782d4b3e25b2d6bd9f268e9266143f9b19e22a9deec48b"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9a2cbf7e80775db494f82834e2b8d6905cb2eeaa2fb7c9812ddf6b545645f963"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e00022a4c20c9312613f9e9eedfb177a376b9497968b91e7498611887da955dd"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "218de305d32771543b245437e1922b0432a4bbc74acaca0b0c9a5748d2e1eea2"
+    }
+  ],
+  "limits": [
+    "Default usage storage remains in memory and is not coordinated across processes.",
+    "Route tenancy is not production authentication/authorization.",
+    "Subscription existence/ownership is a documented extension, not implemented in this use case.",
+    "No live database, browser, provider or deployed environment verified."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T02:07:11.417379+00:00"
+}

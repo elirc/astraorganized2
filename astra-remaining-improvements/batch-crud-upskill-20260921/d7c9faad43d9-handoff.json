@@ -1,0 +1,32 @@
+{
+  "id": "d7c9faad43d9",
+  "project": "g1",
+  "files": [
+    "src/lib/store.ts",
+    "tests/runtime-shop-city.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-lib-store.ts.before",
+    "astraupskill/evidence/d7c9faad43d9/runtime-shop-city.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "createShopStore accepted arbitrary numeric cityId and could write an orphan shop.",
+    "The fix checks city existence before constructing or writing the child record."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-shop-city.test.mjs",
+    "executedTests": 2,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked storage/I/O; no live database or concurrency."
+  ]
+}

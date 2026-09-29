@@ -1,0 +1,26 @@
+{
+  "id": "c94cd4bde644",
+  "project": "_Organized Desktop/05 Numbered Experiments/zz3",
+  "summary": [
+    "Reject duplicate tag identities in ticket create and metadata update commands.",
+    "Preserve valid empty and omitted tag semantics while failing before relation writes."
+  ],
+  "changedFiles": [
+    "src/lib/validation/ticket-schemas.ts",
+    "src/tests/unit/ticket-schemas.test.ts",
+    "tests/helpers/load-typescript.mjs",
+    "tests/runtime-schema.test.mjs",
+    "astraupskill/snapshots/src/lib/validation/ticket-schemas.ts",
+    "astraupskill/snapshots/src/tests/unit/ticket-schemas.test.ts",
+    "astraupskill/evidence/astra-crud-b01-schema.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c94cd4bde644/results-crud-b01.json"
+  },
+  "limits": [
+    "Runtime schema tests used real Zod 4.3.6 through an explicit shared-install override; normal runner resolves project-local zod.",
+    "Vitest, full typecheck/build, HTTP, authorization and Prisma/database integration were not executed."
+  ]
+}

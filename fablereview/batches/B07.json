@@ -1,0 +1,212 @@
+[
+ {
+  "wave": 1,
+  "stage": "61",
+  "name": "newcodexJS/10-inventory-management",
+  "rel": "newcodexJS/10-inventory-management",
+  "tests": 4,
+  "words": 8086,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\10-inventory-management",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-10-inventory-management",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/61",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/10-inventory-management/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "62",
+  "name": "newcodexJS/11-survey-builder",
+  "rel": "newcodexJS/11-survey-builder",
+  "tests": 3,
+  "words": 7900,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\11-survey-builder",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-11-survey-builder",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/62",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/11-survey-builder/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "63",
+  "name": "newcodexJS/12-chat-polling",
+  "rel": "newcodexJS/12-chat-polling",
+  "tests": 3,
+  "words": 7991,
+  "changes": 34,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\12-chat-polling",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-12-chat-polling",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/63",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/12-chat-polling/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "64",
+  "name": "newcodexJS/13-ecommerce-storefront",
+  "rel": "newcodexJS/13-ecommerce-storefront",
+  "tests": 3,
+  "words": 7975,
+  "changes": 35,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\13-ecommerce-storefront",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-13-ecommerce-storefront",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/64",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/13-ecommerce-storefront/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "65",
+  "name": "newcodexJS/14-appointment-booking",
+  "rel": "newcodexJS/14-appointment-booking",
+  "tests": 3,
+  "words": 7609,
+  "changes": 41,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\14-appointment-booking",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-14-appointment-booking",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/65",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/14-appointment-booking/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "66",
+  "name": "newcodexJS/15-api-tester",
+  "rel": "newcodexJS/15-api-tester",
+  "tests": 4,
+  "words": 8041,
+  "changes": 43,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\15-api-tester",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-15-api-tester",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/66",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/15-api-tester/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "67",
+  "name": "newcodexJS/16-team-project-management",
+  "rel": "newcodexJS/16-team-project-management",
+  "tests": 4,
+  "words": 8377,
+  "changes": 36,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\16-team-project-management",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-16-team-project-management",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/67",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/16-team-project-management/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "68",
+  "name": "newcodexJS/17-support-ticket-system",
+  "rel": "newcodexJS/17-support-ticket-system",
+  "tests": 4,
+  "words": 8425,
+  "changes": 36,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\17-support-ticket-system",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-17-support-ticket-system",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/68",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/17-support-ticket-system/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "69",
+  "name": "newcodexJS/18-learning-management-system",
+  "rel": "newcodexJS/18-learning-management-system",
+  "tests": 4,
+  "words": 8377,
+  "changes": 36,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\18-learning-management-system",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-18-learning-management-system",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/69",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/18-learning-management-system/astraupskill",
+  "batch": "B07"
+ },
+ {
+  "wave": 1,
+  "stage": "70",
+  "name": "newcodexJS/19-realtime-chat-platform",
+  "rel": "newcodexJS/19-realtime-chat-platform",
+  "tests": 4,
+  "words": 8382,
+  "changes": 36,
+  "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\19-realtime-chat-platform",
+  "exists": true,
+  "has_course": true,
+  "stack": [
+   "node",
+   "ts"
+  ],
+  "slug": "newcodexjs-19-realtime-chat-platform",
+  "backup": "AstraOrganized2/astrafinalplan/implementation/batch04/backups/70",
+  "evidence": "AstraOrganized2/astrafinalplan/implementation/batch04/delivery-manifest.json",
+  "course": "newcodexJS/19-realtime-chat-platform/astraupskill",
+  "batch": "B07"
+ }
+]

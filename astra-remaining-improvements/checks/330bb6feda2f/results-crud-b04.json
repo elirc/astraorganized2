@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/e3",
+      "id": "330bb6feda2f",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-privacy-alias-delete.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\330bb6feda2f",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:48:15.545309+00:00",
+      "status": "complete",
+      "log": "crud-b04-astra-runtime.log",
+      "pid": 28984,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:48:22.811467+00:00",
+      "elapsedSeconds": 7.26
+    }
+  ],
+  "limits": [
+    "Four actual privacy-service runtime cases use explicit store, id and clock adapters; no Next route, real authorization, filesystem durability or concurrent mutation executed.",
+    "This bounded change expands identifier matching and alias cleanup in the existing scrubber. It is not complete erasure: other properties, userProperties, sessions, derived tables and audit metadata are not comprehensively scrubbed.",
+    "No-person deletion still scrubs exact matching event/raw history and aliases; only a completely unmatched id changes audit alone. Export behavior is unchanged."
+  ]
+}

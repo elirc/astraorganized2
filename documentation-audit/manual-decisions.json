@@ -1,0 +1,414 @@
+[
+  {
+    "path": "jsharness/VTCode",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Substantial architecture/configuration reference; documentation map and embedded duplicates inflate keyword counts. A progressive codebase-learning curriculum was not established."
+  },
+  {
+    "path": "gitvg/atlas",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/folio",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/tracer",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/relay",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/pulse",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/harbor",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/agora",
+    "status": "Substantially enhanced",
+    "rating": "High",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "gitvg/bazaar",
+    "status": "Substantially enhanced",
+    "rating": "High",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "perch",
+    "status": "Substantially enhanced",
+    "rating": "High",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified."
+  },
+  {
+    "path": "meterforge",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Actual learner and sprint files were opened. There is a useful course specification, but most individual sprints are 36?126-word outlines rather than detailed source walkthroughs and guided exercises."
+  },
+  {
+    "path": "campusops",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Actual learner and sprint files were opened. There is a useful course specification, but most individual sprints are 36?126-word outlines rather than detailed source walkthroughs and guided exercises."
+  },
+  {
+    "path": "geminiorganized/General_Jsharness/VTCode",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Substantial architecture/configuration reference; documentation map and embedded duplicates inflate keyword counts. A progressive codebase-learning curriculum was not established. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/atlas",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/folio",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/tracer",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/relay",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/pulse",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/harbor",
+    "status": "Substantially enhanced",
+    "rating": "Exceptional",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/agora",
+    "status": "Substantially enhanced",
+    "rating": "High",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "geminiorganized/General_Gitvg/bazaar",
+    "status": "Substantially enhanced",
+    "rating": "High",
+    "reason": "Reviewed learner guidance plus sprint/ADR content: concrete progressive tasks, design alternatives, failure exercises and review workflow. Local source exists; claims about hosted PR review history were not independently verified. Corresponding copied curriculum; source comparison is recorded separately."
+  },
+  {
+    "path": "_Organized Desktop/06 AI And Learning/claudeailab-temp",
+    "status": "Excluded ? unchanged framework starter",
+    "rating": "Low",
+    "reason": "Opened src/app/page.tsx: untouched Next.js welcome screen with default templates/docs links. No independent product behavior established."
+  },
+  {
+    "path": "_Organized Desktop/08 App And Product Projects/recipegen-temp",
+    "status": "Excluded ? unchanged framework starter",
+    "rating": "Low",
+    "reason": "Opened src/app/page.tsx: untouched Next.js welcome screen with default templates/docs links. No independent product behavior established."
+  },
+  {
+    "path": "aihelper",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Onboarding and architecture explain the existing app, but a long alternative-app build specification supplies much of the apparent learning depth. It is a proposed successor, not a completed progressive codebase curriculum."
+  },
+  {
+    "path": "finalcallhelp",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "Useful Electron architecture, product review and end-user testing walkthroughs; a substantial progressive SWE learning system was not established in the sampled documents."
+  },
+  {
+    "path": "_Organized Desktop/12 Other Projects/curse",
+    "status": "Partially enhanced",
+    "rating": "Medium",
+    "reason": "The JavaScript practice guide is largely general language instruction. Architecture notes mix current and proposed capabilities, and unrelated resume examples do not count as codebase learning evidence."
+  },
+  {
+    "path": "astra5",
+    "name": "Stockade",
+    "summary": "Multi-tenant commerce teaching app with storefront, merchant operations, inventory and financial workflows.",
+    "reason": "Master mentorship prompt and roadmap are proposals, not evidence that the learner has completed the curriculum."
+  },
+  {
+    "path": ".netopen2",
+    "name": "Orchard Core",
+    "selectionReason": "Tenant-aware dependency injection and persistence traces lead into post-commit side effects, idempotency and failure-design drills."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastertwenty",
+    "name": "Twenty",
+    "selectionReason": "Metadata-driven CRM architecture, permission-aware ORM flows and senior projects on outboxes, webhook delivery and contract tests."
+  },
+  {
+    "path": "masteroutline",
+    "name": "Outline",
+    "selectionReason": "Document mutation traces connect transactions, events, queues and WebSockets; multiple learning packs add ADRs, interview practice and a study plan."
+  },
+  {
+    "path": "masternocu",
+    "name": "NocoBase",
+    "selectionReason": "Plugin lifecycle, resource actions, ACL and repository traces are paired with concrete pagination and mass-assignment exercises."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterfinisc",
+    "name": "Infisical",
+    "selectionReason": "Secret-write walkthroughs connect validation, authorization, data access and queues; drills address races, cache behavior and security boundaries."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastercal",
+    "name": "Cal.diy",
+    "selectionReason": "Booking, reservations, cancellation and webhook traces expose race conditions; scoped tickets turn those flows into hands-on work."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastertea",
+    "name": "Teable",
+    "selectionReason": "Record updates, recalculation and realtime synchronization connect to an incremental CQRS migration and source-based contribution exercises."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterform",
+    "name": "Formbricks",
+    "selectionReason": "Survey response validation and browser SDK queues support junior tickets, architecture study and exercises across client/server boundaries."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterpload",
+    "name": "Payload",
+    "selectionReason": "Config-driven CMS behavior is traced through REST, hooks, authorization and database adapters, followed by contribution and design exercises."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterdidy",
+    "name": "Dify",
+    "selectionReason": "Chat streaming, tenant boundaries, RAG and background work are explained through concrete flows and scoped implementation tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterpaper",
+    "name": "Paperless-ngx",
+    "selectionReason": "Upload-to-worker/OCR walkthroughs teach Django, Angular and background processing; contribution tasks connect failures to regression tests."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterpre",
+    "name": "pretalx",
+    "selectionReason": "Proposal workflows, persistent mail and versioned schedules provide concrete Django architecture lessons, failure analysis and junior tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastermayan",
+    "name": "Mayan EDMS",
+    "selectionReason": "Document ingestion, ACLs, event decorators and layered Celery workers provide broad operational and authorization learning with twenty starter tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterzulipPY",
+    "name": "Zulip",
+    "selectionReason": "Message delivery crosses Django actions and realtime event delivery; reading and contribution exercises make a large mixed-language system navigable."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterplane",
+    "name": "Plane",
+    "selectionReason": "Work-item flows connect Django, Celery, multiple React apps and realtime collaboration; guided tickets cover cross-service ownership."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastersupa",
+    "name": "Supabase Studio workspace",
+    "selectionReason": "Extensive source-anchored lessons and missions distinguish server data, workspace state, table state, React Query and testable frontend boundaries."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastertypebot",
+    "name": "Typebot",
+    "selectionReason": "Tiered missions explain durable editor state versus transient graph state, with source excerpts, checkpoints and implementation/testing tracks."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masteropen",
+    "name": "OpenStatus",
+    "selectionReason": "Monitoring architecture and inferred ADRs combine with practical missions about state ownership, cache invalidation and operational tradeoffs."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masternovu",
+    "name": "Novu",
+    "selectionReason": "Notification infrastructure and codebase-health analysis are complemented by junior-to-senior missions on dashboard state, contracts and failure surfaces."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterhop",
+    "name": "Hoppscotch",
+    "selectionReason": "Request execution, GraphQL services, sandboxing and versioned schemas support detailed walkthroughs and invariant-focused contribution tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterflag",
+    "name": "Flagsmith",
+    "selectionReason": "Flag evaluation, priority rules, caching and streaming become code-reading exercises and tenant-boundary test tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterdub",
+    "name": "Dub",
+    "selectionReason": "Short-link redirects, attribution and transactional data expose hot-path/cache tradeoffs; the curriculum includes concrete junior contribution work."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterlink",
+    "name": "Linkwarden",
+    "selectionReason": "Bookmark writes, collection permissions, preservation workers and search indexing form an approachable full-stack architecture curriculum."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterpostiz",
+    "name": "Postiz",
+    "selectionReason": "Scheduling traces connect API, workers and durable workflows; exercises explicitly discuss the repository’s testing gaps rather than assuming coverage."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterumami",
+    "name": "Umami",
+    "selectionReason": "Analytics ingestion and query flows teach privacy, throughput, multiple storage backends and targeted testing through concrete tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masteropenedxPYJS",
+    "name": "Open edX",
+    "selectionReason": "Large LMS/authoring boundaries are paired with source-reading paths and predict-then-verify runtime drills with observable self-grading criteria."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastertool",
+    "name": "ToolJet",
+    "selectionReason": "Progressive missions connect React state, reusable hooks, API contracts and source-level design reasoning in a substantial application builder."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastershadcn",
+    "name": "shadcn/ui",
+    "selectionReason": "Registry, website and CLI boundaries teach code distribution and AST-based installation, with source excerpts and senior architecture missions."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masternext",
+    "name": "NextCRM",
+    "selectionReason": "Seven concrete CRM flows expose server actions, read/write authorization asymmetry, cache revalidation and testable cross-layer changes."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masteridur",
+    "name": "IDURAR",
+    "selectionReason": "Authentication, generic CRUD and invoice flows explain dynamic controller discovery, reusable UI and domain-specific overrides through guided missions."
+  },
+  {
+    "path": "nopsolutionsnet",
+    "name": "nopCommerce",
+    "selectionReason": "Storefront, administration and plugin architecture support localized contribution tickets and a grounded ecommerce system-design exercise."
+  },
+  {
+    "path": "netopen1",
+    "name": "eShop / .NET Aspire",
+    "selectionReason": "Distributed commerce flows, inferred ADRs and a 72-story bootcamp provide prerequisites, hints, acceptance criteria and operational capstones."
+  },
+  {
+    "path": ".nettodo",
+    "name": "eShopOnWeb",
+    "selectionReason": "A manageable monolith supports design-before-code feature tickets, authorization regression work and observable junior-to-senior learning rubrics."
+  },
+  {
+    "path": "netcleanarch",
+    "name": "CleanArchitecture",
+    "selectionReason": "Multiple learning packs explain dependency direction, feature slices and tradeoffs, then add scoped contributions, ADRs and interview practice."
+  },
+  {
+    "path": "_Organized Desktop/04 JavaScript Training/reactbullet",
+    "name": "Bulletproof React",
+    "selectionReason": "Source-based chapters and missions compare domain architecture across Vite and Next.js variants, with exercises on state and boundary ownership."
+  },
+  {
+    "path": "_Organized Desktop/04 JavaScript Training/jstrain5",
+    "name": "OpsForge",
+    "selectionReason": "Nine detailed chapters connect production-oriented Next.js, data access, background work, testing and review of assisted code to concrete source."
+  },
+  {
+    "path": "_Organized Desktop/04 JavaScript Training/jstrain2.2",
+    "name": "JavaScript bootcamp and app labs",
+    "selectionReason": "Extensive drills and coaching include multi-file debugging hunts, prediction checkpoints and spaced practice tied to executable application files."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastermorphic",
+    "name": "Morphic",
+    "selectionReason": "Streaming AI answers, tool execution, persistence and caching form explicit request traces with test-oriented contribution exercises."
+  },
+  {
+    "path": "spacegamev2",
+    "name": "Warband",
+    "selectionReason": "Architecture and postmortems teach server authority, deterministic retries, time and database uniqueness; exercises reproduce specific failure classes."
+  },
+  {
+    "path": "gitvg/atlas",
+    "name": "Atlas",
+    "selectionReason": "A full sprint curriculum connects domain modeling to durable outboxes and webhook delivery, with ADRs, flaw analysis and review exercises."
+  },
+  {
+    "path": "gitvg/folio",
+    "name": "Folio",
+    "selectionReason": "Progressive collaboration lessons develop identity, ordering, tombstones and CRDT convergence through source-based experiments and fuzzing."
+  },
+  {
+    "path": "gitvg/tracer",
+    "name": "Tracer",
+    "selectionReason": "The issue-tracker curriculum progresses from REST to offline synchronization, mutation logs and realtime delivery with explicit failure/review lessons."
+  },
+  {
+    "path": "gitvg/relay",
+    "name": "Relay",
+    "selectionReason": "Workflow-engine sprints teach durable execution, retries, connectors and DAG validation using concrete graph cases and implementation tradeoffs."
+  },
+  {
+    "path": "gitvg/harbor",
+    "name": "Harbor",
+    "selectionReason": "Support and retrieval lessons teach evaluation before feature expansion, chunking/search tradeoffs and traceable sprint-level engineering decisions."
+  },
+  {
+    "path": "gitvg/pulse",
+    "name": "Pulse analytics",
+    "selectionReason": "A progressive analytics course links ingestion and insights to storage migration, workload measurement and documented operational exercises."
+  },
+  {
+    "path": "gitvg/agora",
+    "name": "Agora",
+    "selectionReason": "Commerce sprints and ADRs connect cart/domain events and promotion extensibility to design alternatives and code-review reasoning."
+  },
+  {
+    "path": "gitvg/bazaar",
+    "name": "Bazaar",
+    "selectionReason": "Fifteen commerce sprints explain cart behavior, caching and consistency across buyer and merchant surfaces, with explicit teaching-adapter limits."
+  },
+  {
+    "path": "perch",
+    "name": "Perch",
+    "selectionReason": "A progressive PR-oriented course provides learner guidance, local sprint narratives and final restore/incident ownership exercises."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/masterindicoPYJS",
+    "name": "Indico",
+    "selectionReason": "A large event platform is made approachable through request-handler/data-layer maps and concrete task, authorization and cleanup-test tickets."
+  },
+  {
+    "path": "_Organized Desktop/03 Master Projects/mastersaleorPY",
+    "name": "Saleor",
+    "selectionReason": "GraphQL commerce cartography and contribution tasks introduce transaction tracing, checkout contracts and source-grounded engineering reasoning."
+  }
+]

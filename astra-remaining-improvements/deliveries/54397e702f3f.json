@@ -1,0 +1,133 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildanalytics",
+  "id": "54397e702f3f",
+  "summary": [
+    "Repair default-peer clearing for dashboard configuration PATCHes with omitted role or default fields.",
+    "Add eight runtime regressions plus nine source-linked CRUD chapters with effective-state exercises and solved traces."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/54397e702f3f/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 8,
+    "checks": [
+      {
+        "project": "_Organized Desktop/02 Build Projects/buildanalytics",
+        "id": "54397e702f3f",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/dashboard-default.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\54397e702f3f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:32:51.713109+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-dashboard.log",
+        "pid": 5132,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:32:55.801923+00:00",
+        "elapsedSeconds": 4.08
+      }
+    ],
+    "limits": [
+      "Focused Node runtime tests use explicit Prisma transaction spies; real SQL rollback, isolation, HTTP authorization and browser behavior were not executed.",
+      "Normal Vitest suite, full typecheck and build were not run. The existing pre-read and create path mean this PATCH repair does not guarantee global or concurrent default uniqueness."
+    ]
+  },
+  "courseWords": 2500,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "backend/src/modules/dashboardConfigs/dashboardConfigs.service.ts",
+      "before_sha256": "daeb5512b474f8021481e9e0bd32d89fbc371a202d4b898ac8313b2fd2cc6de7",
+      "after_sha256": "7d150a94ecabd26fcfbea183762509e9fc3d8c781ae6e9c5ea5a37f4a81a0ab2"
+    },
+    {
+      "file": "backend/src/modules/dashboardConfigs/dashboardConfigs.service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "13c947b4317042398d1ee65581da1b1f4eb3036d23f2654ee4f73a216e81d461"
+    },
+    {
+      "file": "tests/dashboard-default.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "c95db1f09474e0eb92b503d2301735d1ad77a0a8af2effa1097b1fab185565f9"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/backend__src__modules__dashboardConfigs__dashboardConfigs.service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "daeb5512b474f8021481e9e0bd32d89fbc371a202d4b898ac8313b2fd2cc6de7"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-dashboard.log",
+      "before_sha256": null,
+      "after_sha256": "fd438ea6469c04fbda6a40afd7e29484962a90e9085aa3b6f64ad08c87e0600d"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "16b9c00f48acf19be976585a48d8b51d8d0c0355887ce64e959996d319f72cdf"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e201fbf8496163d401f876d81ddb86c3d317b5beead5aab0668a5dc0e88eb459"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "295047fd9d81607ac4801c485df0399846325f2e7c29b03cfc53bbd337016a86"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6e8269e329e140af39c80767497c7e04993cd950f9b750e828fa14f5b945dc27"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "54c0f652eec5d4cdc38fb39d197f775aa013bd75fa018f1bb5ed3012559d4851"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8168d38ec923d17f9376a4e62c172b167a1b8ee2e2154adf34b30637544b36ab"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "72f50d41b2a1e891a7825cbdd739cee536e363aa3b964e7a1e5440243660a1e8"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "27c9c84530052ad08a535385c6e64a0b5174bd625faa47a9d1fc12c883db0204"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "c5dac32bbc26e9fbeaa56ff31f6f5eaf099ce1ce7693aef2e909edff187c21bc"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c47d904378368ce8de9a53ce9742c116866b4170fe12e620c174264328c32187"
+    }
+  ],
+  "limits": [
+    "Focused Node runtime tests use explicit Prisma transaction spies; real SQL rollback, isolation, HTTP authorization and browser behavior were not executed.",
+    "Normal Vitest suite, full typecheck and build were not run. The existing pre-read and create path mean this PATCH repair does not guarantee global or concurrent default uniqueness."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:39:34.667614+00:00"
+}

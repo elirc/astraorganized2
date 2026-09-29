@@ -1,0 +1,36 @@
+{
+  "id": "a880d6aae28f",
+  "approved": true,
+  "reviewedAt": "2026-09-22T02:05:57.937110+00:00",
+  "sourceReview": "Reviewed original and revised handlers. Both existing-session add and remove now use functional collection updates after API success; first-session replacement and error branches preserved. Recovered missing immutable staging baseline from unchanged canonical files, preserved staged edit and verified exact snapshot.",
+  "teachingReview": "Read all nine chapters and corrected original behavior, snapshot paths, latest pending state terminology and add/remove race traces. Exercises distinguish local reconciliation from server persistence, stale-session and first-session risks.",
+  "testReview": "Six actual extracted handler cases execute deferred API responses and a modeled functional setter: out-of-order adds, add/remove, two removes, rejected requests, blank guard and first-session happy path. No React mount or real server claimed.",
+  "specSHA256": "de045696328c08e7e8219a3c6e61b72e8423f0bcf3d82f6e07d700aac8698fda",
+  "fileHashes": {
+    "Jeopardy-Game/frontend/src/pages/GameSetupPage.jsx": "9e736cd3448707f438b8127ae86edd3a47feffea4598d3f37c645ec2c59c1613",
+    "tests/runtime-player-state.test.mjs": "fa93ddc758badad6b3b2fd97f0d1ddf1156eb623306f4a049de72417d8e42866",
+    "astraupskill/snapshots/GameSetupPage.jsx.original.txt": "2340b9b9de2ef4cf34fcc70bd88ab3b0f1648ac59765b5a9abba4b1026d4d719",
+    "astraupskill/evidence/crud-b03-astra-handlers.log": "89051a628c64369307576d386b18171b8e86ca417fe29044d4cdd6f3876fb048",
+    "astraupskill/evidence/results.json": "c9fc055c5a372ecc2be59c8536c3d0d68ddaee3fc84529ca5dfc1c33f8c4450f",
+    "astraupskill/README.md": "d87edd15011b8ffdea576ba9751c2d3cce4113e8f764f1fba4476162d151d52d",
+    "astraupskill/01-CODEBASE-MAP.md": "3179eaebba52ebb756ee5d27eeab73d23df084000ee7d7d20154126fd5408e98",
+    "astraupskill/02-CONCEPTS.md": "b9ad4c6390d51e199ca6cfbfff771415113ba1e575e2164c4cd70d44f20d05ff",
+    "astraupskill/03-WORKED-CHANGE.md": "ece353089431c3c0e0315d42aea0d2aba3ec481d1fd5daff3f7a2ec201fc13ba",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "16dd90bb71db6f6b1be80b1a847ff6f14079f450410861b9faa501d0fe64d09b",
+    "astraupskill/05-PRACTICE.md": "33f3cac4578132dfba56f7d5a1ab8d13379488d3f1bbeada74d5d4370f5971bb",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "b9ce8d40ccb3f6922eff08a8d117535dbd0e62c5ba3a8c738dbc6c34841096b5",
+    "astraupskill/07-TRACE-LAB.md": "e82977d601d3cd19ffb9d71837d96a4fc6316a32818100d9302d05e0c7271e26",
+    "astraupskill/VERIFICATION.md": "aeb88f1925f8f28dea9ff444531c8975887ac49eb857c60c2b442c9e6df798c5"
+  },
+  "evidenceHashes": {
+    "checks/a880d6aae28f/crud-b03-astra-handlers.json": "3b847278d5072016db08a0b73e138673c3d7899fb4e266e0c38cc0d7b636e6d4",
+    "checks/a880d6aae28f/crud-b03-astra-handlers.log": "89051a628c64369307576d386b18171b8e86ca417fe29044d4cdd6f3876fb048",
+    "checks/a880d6aae28f/crud-b03-runtime1.json": "815eefeff9ac8d582bcc4994acd55daaafa07bbc3561c297db8873e705c8c91d",
+    "checks/a880d6aae28f/crud-b03-runtime1.log": "2fc164ae5964564da8b888a2dc00a11e2a64cb47358cbb9ebe516fd876d07979",
+    "checks/a880d6aae28f/crud-b03-runtime2.json": "65f5a502175782390de9ae3e3a60e51453702d37d4b3813b2415bde7ce83ddd6",
+    "checks/a880d6aae28f/crud-b03-runtime2.log": "b131a89812f5fe93e5333bcdd91a4b9f1ab35ee6991ed36131d90a4f3deecc84",
+    "checks/a880d6aae28f/crud-b03-runtime3.json": "6c96f7de434b6d16d79e89f5c1e77048b38283be90f0923a5510abd44a501fd8",
+    "checks/a880d6aae28f/crud-b03-runtime3.log": "44245ecf1d0feb4ce7943f051c8b2ff1696cae09343078f8c6e0688376b5dcfc",
+    "checks/a880d6aae28f/results-crud-b03.json": "c9fc055c5a372ecc2be59c8536c3d0d68ddaee3fc84529ca5dfc1c33f8c4450f"
+  }
+}

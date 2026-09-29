@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/06 AI And Learning/codehelper",
+  "id": "7ba004a89f06",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/project-store-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7ba004a89f06",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:10:19.210989+00:00",
+  "status": "complete",
+  "log": "crud-codehelper-runtime-v1.log",
+  "pid": 31252,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:10:35.962332+00:00",
+  "elapsedSeconds": 16.75
+}

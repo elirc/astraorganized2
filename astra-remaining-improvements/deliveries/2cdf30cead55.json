@@ -1,0 +1,134 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/masterrnative",
+  "id": "2cdf30cead55",
+  "summary": [
+    "Reject silent updates for missing record ids while preserving existing duplicate-id replacement semantics.",
+    "Reuse one identity guard across all six context update callbacks.",
+    "Run three dependency-free runtime cases against the actual TypeScript helper."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2cdf30cead55/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/03 Master Projects/masterrnative",
+        "id": "2cdf30cead55",
+        "command": [
+          "node",
+          "--experimental-strip-types",
+          "--test",
+          "tests/collection-runtime.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2cdf30cead55",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:41:41.994965+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 30092,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:42:00.693585+00:00",
+        "elapsedSeconds": 18.7
+      }
+    ],
+    "limits": [
+      "Three runtime cases execute only the actual identity helper; the six context call sites and form error handlers were reviewed in source, not mounted.",
+      "No Expo rendering, AsyncStorage integration, full typecheck or package-suite pass is claimed. The helper checks the supplied array and does not prevent stale-closure or concurrent whole-array writes."
+    ]
+  },
+  "courseWords": 2816,
+  "courseFiles": 9,
+  "courseLinksChecked": 32,
+  "files": [
+    {
+      "file": "src/context/AppDataContext.tsx",
+      "before_sha256": "155762b26e9cd3a1277cb32ca22d3809be4d9ef27b1b098c617007af4c321001",
+      "after_sha256": "03d855e8e2f636b9267a6328f95a16931f46a2d0dbc32efb6b30f969602b557b"
+    },
+    {
+      "file": "src/utils/collection.ts",
+      "before_sha256": null,
+      "after_sha256": "468f44ae5cd91a498d8273e83efab22e37c5dbf783bc9121e233d740e759f347"
+    },
+    {
+      "file": "tests/collection-runtime.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "771f6846bfc5b4ced927ab86c245e3f2fef2c93658bc0cd2d20158ed887ce818"
+    },
+    {
+      "file": "astraupskill/snapshots/src/context/AppDataContext.tsx",
+      "before_sha256": null,
+      "after_sha256": "155762b26e9cd3a1277cb32ca22d3809be4d9ef27b1b098c617007af4c321001"
+    },
+    {
+      "file": "tests/collection.test.ts",
+      "before_sha256": null,
+      "after_sha256": "b682f97b25f27af236dc3b60ba1cc00d80666e3347af5022f5b6506e969a9bd8"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "a501f4efba2edd27ba3773b22dcf45b868dd0ad14fbac92171c7c3e4b9180206"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "1a5b248208fb873e2a0f9061ec903ad2adfd6d444e6b82c9ef0abc4c7b66c380"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8487551c054a85267fb94dc02fc62b35087330eb52e215c76a87abc0e1411f02"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "4abb38ea6eee175eefa840908e37a2a608014a2d69e9842dd277720a247f76ce"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "aa3f015d66ae9284c7982f3c2c5200a72400e6ed77e984b87b24e37d3f73ea1c"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "203c86526c6304bfb21c423654604a014cc83326ce4fc4235cc6b87e8486e2db"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "8056ebec4ae6f983aab4a090c4d66ee4dd1f7d0102f6dd31edb77174bf0e1e02"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3795cf3eddaafc76283c476e860bbd565b485edca797f33f338b527973732493"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1766a9af831e9f37391b7874b59afd2557bd3fa7ed0ca9a2fe7dc2c38fde2d92"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e48752144c38b2e2006361d1f7cf4885c60ce17fefe10970eacf37d26465c62f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "024f6fabab58754637805f13fde479acc2e15b7b821ee2b61e92443d49564fad"
+    }
+  ],
+  "limits": [
+    "Three runtime cases execute only the actual identity helper; the six context call sites and form error handlers were reviewed in source, not mounted.",
+    "No Expo rendering, AsyncStorage integration, full typecheck or package-suite pass is claimed. The helper checks the supplied array and does not prevent stale-closure or concurrent whole-array writes."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:47:27.537770+00:00"
+}

@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "command": [
+    "npm.cmd",
+    "exec",
+    "tsc",
+    "--",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f871ce5e237",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:27:32.247120+00:00",
+  "status": "complete",
+  "log": "e13_typecheck_final1.log",
+  "pid": 16724,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:28:44.069376+00:00",
+  "elapsedSeconds": 71.82
+}

@@ -1,0 +1,25 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netslack",
+  "id": "7f289bf2abfa",
+  "command": [
+    "dotnet",
+    "run",
+    "--project",
+    "tests/NetSlack.ScopeHarness",
+    "--configuration",
+    "Release",
+    "--no-restore",
+    "-p:",
+    "UseSharedCompilation=false"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f289bf2abfa",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T00:41:12.600130+00:00",
+  "status": "complete",
+  "log": "crud-b02-astra-harness.log",
+  "pid": 15200,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T00:43:26.712070+00:00",
+  "elapsedSeconds": 134.09
+}

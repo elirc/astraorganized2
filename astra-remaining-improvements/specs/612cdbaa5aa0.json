@@ -1,0 +1,26 @@
+{
+  "id": "612cdbaa5aa0",
+  "project": "_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137",
+  "summary": [
+    "Enforce the documented one-card-per-user-and-problem invariant with a composite unique index in the Drizzle schema and executable seed DDL.",
+    "Teach database identity, cross-user cardinality, constraint failures and nondestructive handling of legacy duplicate rows."
+  ],
+  "changedFiles": [
+    "src/lib/db/schema.ts",
+    "src/lib/db/seed.ts",
+    "astraupskill/snapshots/src/lib/db/schema.ts",
+    "astraupskill/snapshots/src/lib/db/seed.ts",
+    "tests/user-card-constraint.test.mjs",
+    "astraupskill/evidence/crud-b03-astra-sqlite2.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/612cdbaa5aa0/results-crud-b03.json"
+  },
+  "limits": [
+    "Tests execute the exact static SQL DDL extracted from the production seed in real in-memory SQLite through Node node:sqlite; the native better-sqlite3/Drizzle/Next.js stack was not run.",
+    "No existing project database was opened or migrated. Reapplying seed DDL creates the index on clean existing tables but fails if duplicate pairs already exist; rows are not automatically removed.",
+    "The attempts route remains unchanged: a racing duplicate insert may return its existing generic failure, and attempt/card/tier writes remain separate operations. This is a uniqueness constraint, not request idempotency or an atomic workflow."
+  ]
+}

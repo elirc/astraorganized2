@@ -1,0 +1,11 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test/context-cache.test.js",
+    "test/sdk.test.js"
+  ],
+  "exitCode": 0,
+  "seconds": 11.95,
+  "expectedFailureBeforeFix": false
+}

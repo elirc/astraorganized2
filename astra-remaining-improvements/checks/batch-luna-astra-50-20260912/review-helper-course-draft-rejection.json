@@ -1,0 +1,87 @@
+{
+  "id": "4ac741261ad5",
+  "passed": false,
+  "changedBaselineFiles": [
+    "apps/api/src/app.ts",
+    "apps/api/src/modules/payments.routes.ts",
+    "apps/api/src/shared/auth.ts"
+  ],
+  "newSourceFiles": [
+    "apps/api/src/modules/payments.routes.test.ts",
+    "apps/api/src/modules/payments.service.test.ts",
+    "apps/api/src/modules/payments.service.ts",
+    "apps/api/src/shared/errors.ts"
+  ],
+  "executableHashesChecked": 0,
+  "snapshotsChecked": 0,
+  "projectLocalLinksChecked": 18,
+  "chapterWords": {
+    "README.md": 76,
+    "01-CODEBASE-MAP.md": 290,
+    "02-CONCEPTS.md": 289,
+    "03-WORKED-CHANGE.md": 260,
+    "04-TESTING-AND-DEBUGGING.md": 252,
+    "05-PRACTICE.md": 273,
+    "06-SOLUTIONS-AND-REVIEW.md": 255,
+    "07-TRACE-LAB.md": 263,
+    "VERIFICATION.md": 269
+  },
+  "courseWords": 2227,
+  "checks": [],
+  "issues": [
+    {
+      "kind": "unlisted_baseline_change",
+      "file": "apps/api/src/modules/payments.routes.ts"
+    },
+    {
+      "kind": "unlisted_baseline_change",
+      "file": "apps/api/src/shared/auth.ts"
+    },
+    {
+      "kind": "unlisted_new_source",
+      "file": "apps/api/src/modules/payments.routes.test.ts"
+    },
+    {
+      "kind": "unlisted_new_source",
+      "file": "apps/api/src/shared/errors.ts"
+    },
+    {
+      "kind": "short_required_chapter",
+      "file": "README.md",
+      "words": 76
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "01-CODEBASE-MAP.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "02-CONCEPTS.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "03-WORKED-CHANGE.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "04-TESTING-AND-DEBUGGING.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "05-PRACTICE.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "06-SOLUTIONS-AND-REVIEW.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "07-TRACE-LAB.md"
+    },
+    {
+      "kind": "literal_newline_in_prose",
+      "file": "VERIFICATION.md"
+    }
+  ],
+  "limit": "Mechanical preflight only; source correctness and test meaning require Astra review."
+}

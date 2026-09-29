@@ -1,0 +1,1495 @@
+{
+  "project": "geminiorganized/OpenSource_Upskilling_.Stripe",
+  "id": "af19f6e32dba",
+  "summary": [
+    "Replaced volatile global state with durable SQLite workspaces, current-role authorization, revocable sessions, Owner/Operator/Viewer membership management, parameterized queries and protected cross-workspace relationships.",
+    "Completed customer/plan/coupon CRUD, archive rules, subscription cancellation and unused-record deletion, pre-invoice usage editing/deletion, invoice inspection/voiding, searchable paginated lists and responsive React forms.",
+    "Added strong ETag preconditions, preserved stale drafts and exact browser retries backed by transactional 24-hour receipts and atomic audit history; verified concurrent same-key requests and a response lost after commit.",
+    "Fixed money bounds and serialization, mixed-currency totals, anchored billing catch-up, atomic invoice/usage/subscription/outbox updates, payment-attempt identity, terminal payment protection and signed event deduplication. All payments and outgoing events remain explicit local simulations.",
+    "Fixed baseline builds, pinned and locked verified .NET/React dependencies, removed the shared default signing secret, added local run/check/package scripts, preserved 125 original text files, labeled 93 historical pages and added nine detailed CRUD learning guides. Verified 66 backend/HTTP tests, 15 real-browser workflows and three packaging checks, with reviewed desktop/narrow images."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/stripe/results.json",
+    "expectedTests": 84
+  },
+  "testResults": {
+    "passed": true,
+    "verifiedAt": "2026-09-12T12:29:41.709784+00:00",
+    "backendAndHttpTests": 66,
+    "browserWorkflowChecks": 15,
+    "packagingChecks": 3,
+    "totalChecks": 84,
+    "browserChecks": [
+      "Published package serves the real React application and static assets",
+      "Browser registration creates a private workspace and authenticated session",
+      "Session credentials are absent from local storage, session storage and cookies",
+      "Customer creation persists through the browser form",
+      "Stale edit is rejected, the draft survives, and explicit reload allows a reviewed edit",
+      "A response lost after commit retries the same operation and creates exactly one customer",
+      "Deletion requires confirmation and removes an unused record",
+      "Plan and coupon forms persist typed pricing and discount contracts",
+      "Related record selectors create a subscription and correctly timed usage",
+      "Billing creates the expected USD 25 subtotal, USD 5 discount and USD 20 invoice",
+      "Payment controls preserve a decline, succeed a new attempt, and simulate the durable outbox",
+      "Server pagination and search agree on counts and reset the page offset",
+      "Viewer sign-in renders read-only controls and hides owner membership actions",
+      "Desktop and narrow layouts render without horizontal overflow",
+      "No uncaught browser JavaScript errors occurred"
+    ],
+    "packaging": [
+      "Published browser assets exactly match the final Vite build",
+      "Published package contains no application database or App_Data files",
+      "Backend, test and frontend dependency lock files exist"
+    ],
+    "quality": {
+      "passed": true,
+      "checks": [
+        {
+          "command": [
+            "C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\Scripts\\ruff.exe",
+            "check",
+            "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af19f6e32dba\\tests\\browser_smoke.py"
+          ],
+          "exitCode": 0,
+          "output": "All checks passed!\n"
+        },
+        {
+          "command": [
+            "C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\Scripts\\ruff.exe",
+            "format",
+            "--check",
+            "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\af19f6e32dba\\tests\\browser_smoke.py"
+          ],
+          "exitCode": 0,
+          "output": "1 file already formatted\n"
+        }
+      ],
+      "pythonSyntax": "passed"
+    },
+    "dependencyAudits": "npm full installed tree and NuGet API transitive tree reported no known advisories at verification time.",
+    "screenshotsReviewed": {
+      "passed": true,
+      "browserRun": "browser-02",
+      "images": [
+        "desktop.png",
+        "narrow.png"
+      ],
+      "viewports": [
+        "1440 x 1050",
+        "390 x 844"
+      ],
+      "observations": [
+        "Desktop navigation, metrics, simulator controls and paginated record rows are aligned and readable.",
+        "Narrow layout stacks metrics and controls, wraps navigation into three columns and keeps record actions visible without horizontal overflow.",
+        "Visible text is correctly encoded; status and action labels are legible with no overlapping controls.",
+        "Screenshots show fictional data from the final passing packaged-browser run."
+      ]
+    },
+    "originalDatabaseOpened": false,
+    "realPaymentsOrExternalMessages": false,
+    "originalTextFilesPreserved": 125,
+    "limitations": [
+      "Loopback-only single-node SQLite simulator; no public deployment, real payment provider, outgoing HTTP delivery or automatic billing scheduler.",
+      "USD/EUR/GBP only; no taxes, proration, refunds, credit notes or currency conversion.",
+      "Relational identity/relationship tables wrap immutable JSON records; some internal workflows materialize bounded collections. Limit: 5,000 domain records per workspace.",
+      "Eight-hour in-memory browser session, 24-hour durable operation receipts; pending browser retry state is lost when the tab closes. Auth registration/login are outside the receipt protocol.",
+      "Owner/Operator/Viewer membership management is implemented, but no password-change/recovery flow, invitation email, federated identity, existing-account workspace linking or owner transfer.",
+      "Original data was not opened or replaced. Unknown database files are refused; migration requires separate reviewed work or a new learning database path.",
+      "Provider callback signatures use a custom local HMAC protocol, not Stripe compatibility. Audit and provider-event history have no retention UI.",
+      "Historical documentation is labeled and preserved; proposed course exercises are not counted as implemented functionality."
+    ]
+  },
+  "courseWords": 6818,
+  "courseFiles": 9,
+  "courseLinksChecked": 58,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "4053ffa0cb7b2b5a8f9149e50d0a9ac2f7ba9bab8aa689b7318485f02a583f7e",
+      "after_sha256": "ef912f69ea1d8bbbaea1ab8804baae8724fb61e0468d1e4210cb1cb79de7fc0b"
+    },
+    {
+      "file": "astraupskill/evidence.json",
+      "before_sha256": null,
+      "after_sha256": "1a3169da55274d37b85058701e5b698f978dc427f7007dfe9e4326f8e3ea2139"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "52b45ec10d73c8ab219764ce38659d0a3bd6640b2f48d60505d0bd97b55e2111"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "9587b0c4761e13f7f75a526dca82eb10862326ebc350ebd456dd12aa6ea6c9c8"
+    },
+    {
+      "file": "Directory.Build.props",
+      "before_sha256": null,
+      "after_sha256": "a883eb12b9f16ea9b3a14869626c3c99b2e5c54587d0dade64711266e2d5f21f"
+    },
+    {
+      "file": "docs/original/.gitignore.txt",
+      "before_sha256": null,
+      "after_sha256": "4053ffa0cb7b2b5a8f9149e50d0a9ac2f7ba9bab8aa689b7318485f02a583f7e"
+    },
+    {
+      "file": "docs/original/docs/architecture.md.txt",
+      "before_sha256": null,
+      "after_sha256": "76cc080128e6c27e6f02da44a7801e801424f0734daef20883af741f69964232"
+    },
+    {
+      "file": "docs/original/docs/upskill/00-fast-track.md.txt",
+      "before_sha256": null,
+      "after_sha256": "3a5129993f3432c79d20f4ca36c529f690648f9af1d1845a9f662393d731617d"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/01-system-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "65ab14a8f457ccbd7d6fb4a73f907ba56e7deac00b3025be98b7c9ec7e9f07d4"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/02-file-reading-order.md.txt",
+      "before_sha256": null,
+      "after_sha256": "052f0bdb4e9b629f6ebe421756ffa27329eef4031104bdd0ea5aba9686281fc2"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/03-domain-glossary.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7af7f564bba4c8ced33d779a33f00f338c3c28e19ce49f3b5d38cfcd8ad889ac"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c580403e68ec00aa694c6b0d774bcb8c0d8c19d60c88e526760db5b804239f52"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/05-key-flows.md.txt",
+      "before_sha256": null,
+      "after_sha256": "bc9ad6469e16fd51a79f89b2fa280e2ae12c7062aa1467fbd904361743edab25"
+    },
+    {
+      "file": "docs/original/docs/upskill/01-codebase-cartography/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0900437c7c97f1b22573eab585ceacea4d605e22abe5963f937367006ff5288e"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/01-dotnet-runtime-model.md.txt",
+      "before_sha256": null,
+      "after_sha256": "66e5c1f4d211159216156636018e02bb142dc6f8d07801e922662d9ecc39faf9"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fdfa51d1104d8d7381411d304092b293a1ec65e336c2abfc65fc60ea2ea52304"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "674087b3d7716429137dcdf6a629381401b6ef512d5573f10c5aa4ee6e989a7a"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md.txt",
+      "before_sha256": null,
+      "after_sha256": "218b3da05f4415716c82fc0e167f1bd8220bc12350521d4cdbdfb99b71a0509a"
+    },
+    {
+      "file": "docs/original/docs/upskill/02-stack-and-language-mastery/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a1a588bc3f36296bdd95d7dff427a20a3d80205b66bf6846edfc6a5214423417"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8387a070922d26ea464d3f5dd67f7e2f1a9d3138d5ff6afbf7b8d8f03ad25f2c"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c25b6db992ec4977854fce89e9a81e3be95e8b27017b277570d3864c6dc618fc"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md.txt",
+      "before_sha256": null,
+      "after_sha256": "90844da340f27ab7aa2ac06067dd6a4597fc7adfeaf9004ca6f49bcf7689fcc6"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md.txt",
+      "before_sha256": null,
+      "after_sha256": "246642762668865a582f221edc1dfcba63b22bb15b6c6ff6832dcdbdbc8036ed"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md.txt",
+      "before_sha256": null,
+      "after_sha256": "4ff9031c8137df22e66db56efb0bf07cfc9215724c7630ac56eb7d6993064841"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/06-architecture-critique.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d97dad3f6b37bc5b0f6e12e51797cdb555656a2d23a70b658d60d8b1822f317d"
+    },
+    {
+      "file": "docs/original/docs/upskill/03-architecture-and-patterns/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a50186a602ed7d63351c5b18982369012418398a1cdfa29105045ab103994d11"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/01-annotation-drills.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8f251283dd9f400309eced3c17377d64180fd3d90b5112715a73e65b450a3b54"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/02-trace-tables.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7d02b7015ad623a339eacd7fbae403d957f588afde2b063c2b2fb18eb3fdf4c4"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d6a221d17e51a88838bf6a05fb60d088f3560b796979634e02a775e9f29424da"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/04-review-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d97cd8b2d92d54273536a194eff3fa94b91718a62c4fa13ec8400b22a9a6e470"
+    },
+    {
+      "file": "docs/original/docs/upskill/04-code-reading-gym/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0e77da392bb8e7be7f03dcd68b9aa3a75248cfa42ad973432c59bfa27f6660b3"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/01-testing-strategy.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7f625170e002c672a295970aa57ab9eae0f2f65a9f2270360c2686322d6e4a88"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/02-writing-tests-here.md.txt",
+      "before_sha256": null,
+      "after_sha256": "6f1c51aea1829f8d77a49972e6e669a77fd4a88175bea4abfa2f73b0b4653066"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/03-systematic-debugging.md.txt",
+      "before_sha256": null,
+      "after_sha256": "31d95a1363f3048882908ca0e954d7f65030e30c1ba89e3e6273830de35eebc1"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/04-performance-thinking.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fe3f377cdf4ed20ab44a271519867026c14f02c957085a91430c639071b4008b"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/05-security-checklist.md.txt",
+      "before_sha256": null,
+      "after_sha256": "bc5e1b9cb8c20b63d64bb0c4025a5c070fc1a5333776d9605cece67c7bffa088"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/06-observability-and-operations.md.txt",
+      "before_sha256": null,
+      "after_sha256": "66d287c3dcfc468c41fc573d1a612433c4a901f80581ef36356d800bcea752a1"
+    },
+    {
+      "file": "docs/original/docs/upskill/05-quality-engineering/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a244479f8b7d35b52979c93de13713fee25e7b180456884f53a4fd5702573bb2"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/01-good-first-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "35f5bb0774ae756499422501f14d879b16e86caf5641ba35b8b5df48d80090e2"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7912b57fb9a4e4a094a45ae9209e3d025bae3d0b7307457f9a452277c1225cca"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/03-senior-build-projects.md.txt",
+      "before_sha256": null,
+      "after_sha256": "90c50c7f51229619cce399c395df7cc51e5c796ef815c958d7e5703d593f509e"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b31427ab9479ccbcb3ae491675db7eca57ea5ede9c726a4f13bca8f527beea0b"
+    },
+    {
+      "file": "docs/original/docs/upskill/06-contribution-practice/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "25bf79b9165acd07c3ae08539a8da7d9f8d6ee9c71765f1b29bb96a34aa81ed9"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/01-code-review-mindset.md.txt",
+      "before_sha256": null,
+      "after_sha256": "3166f418db83414935fa4f3b6d341db52cfff037a4c7f7c7761d60f8bab476c7"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fc0f084b8482692605461745beb4a82a8e574064fd9b5d8053829b551203ef34"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/03-maintainer-communication.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f55b9bca130cda97646b523b01f19eff1c0d9d951caa737a9ced0fa5d5441727"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0e2efd04c4c0d6afb43bf62234c14bd32d4295e7564b7dd8e7f145ae10d5f7f9"
+    },
+    {
+      "file": "docs/original/docs/upskill/07-career-and-collaboration/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "00bc93e0a7bff5c73d943de1d42f1a2c95b934d5dd299c6a5328b6cf2e945dee"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/command-cheatsheet.md.txt",
+      "before_sha256": null,
+      "after_sha256": "74702a45c4ff3f1d25b321d321c5af535ec4e6dc478ea388f638db17553a1cf6"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/learning-rubrics.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fcf62bea0b7056c5f50248fb13549b33ac3bcd19831fc7bad20d47c005e0f46f"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/risk-register.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8f96067386d1617506bd975512ec49f2793e73c2b0dc2973eb29db739e3191af"
+    },
+    {
+      "file": "docs/original/docs/upskill/08-reference/verification-log.md.txt",
+      "before_sha256": null,
+      "after_sha256": "11d4c16db30aff21be52348d2b10dd67b0930ca93087a132ce66915e4e30dd55"
+    },
+    {
+      "file": "docs/original/docs/upskill/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "64bc4fab07b1638ac5fc9c175e1c0abe1ace29bfc7406ed8eb23ef15f1077e90"
+    },
+    {
+      "file": "docs/original/docs/webhooks.md.txt",
+      "before_sha256": null,
+      "after_sha256": "54db20615410063c25fd4e13a0dbc0cf478ed74040c32dcbc95704b386d73257"
+    },
+    {
+      "file": "docs/original/docs2/00-fast-track.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9e88c43ce9fe25e7fb0b4d873d2bbaa8f9b73ce04ffe5778718d1d3922eaf2e1"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/01-system-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "18c1694ec66e1d71768b22b50efd2caa108866b0d7cc12e1f3f655c807acbde2"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/02-file-reading-order.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c21fbeaa508dcb99476e06a745c0bbe8d297d8dc5e69eadb45a8ace7a894b04c"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/03-domain-glossary.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ca5eca30e8e6bb48442fc68fc65bbd29f0a41faf58a59131d17ff98d3e6c3339"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/04-runtime-and-tooling-map.md.txt",
+      "before_sha256": null,
+      "after_sha256": "594ecff448e7536fd7f0dcc7f735fb4ea115150441d4cfaadd77519ea4b0b1c8"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/05-key-flows.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d5e2c33a517c43c638f488a1e9c063e09f32c7298ad59577a779cec719681397"
+    },
+    {
+      "file": "docs/original/docs2/01-codebase-cartography/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "a1d399b9c97ac833348bf24406842d46d466b59fcb765855b57968d162932206"
+    },
+    {
+      "file": "docs/original/docs2/02-stack-and-language-mastery/01-dotnet-runtime-model.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8c999ad9095bbd19af44be0475bf4006c94b0fb9b17b266b3171635a3c349024"
+    },
+    {
+      "file": "docs/original/docs2/02-stack-and-language-mastery/02-framework-mental-models.md.txt",
+      "before_sha256": null,
+      "after_sha256": "1760b35f7a94cb290426e11f2e0f8f45a61175c0b325dd244b8d616b215a881c"
+    },
+    {
+      "file": "docs/original/docs2/02-stack-and-language-mastery/03-type-system-and-contracts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "1a97f8237b16bdcd3be05956380932885518016ea5e458eca2ed9e32ad2d8950"
+    },
+    {
+      "file": "docs/original/docs2/02-stack-and-language-mastery/04-tooling-and-build-system.md.txt",
+      "before_sha256": null,
+      "after_sha256": "2545258c086a7d4191acc188d2957c6a681e8873204e8ff37d8332f1ecf4c43a"
+    },
+    {
+      "file": "docs/original/docs2/02-stack-and-language-mastery/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "6db76eb087873eb95805f9463ec351e2834358d1d186dbc6935a8e93df9210ef"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/01-boundaries-and-layers.md.txt",
+      "before_sha256": null,
+      "after_sha256": "d521c5f1fdd9790ea206585eb1f4a5aafcdc07bb585fa69caac1ce4269c93ddd"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/02-data-model-and-persistence.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ad219e431d6210364f3ff50b54d176907b1ebc23af1fbd96b57973887e21850b"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/03-validation-auth-and-permissions.md.txt",
+      "before_sha256": null,
+      "after_sha256": "218fa0907a437761783799c1786caf4b3570125ed3b3f14d6fbd19a4340b17dc"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/04-side-effects-async-and-reliability.md.txt",
+      "before_sha256": null,
+      "after_sha256": "65445ecee51780e35c2efcb23aa25f9ca54dc9a9e74cbde096f679fe779c7581"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/05-pattern-catalog.md.txt",
+      "before_sha256": null,
+      "after_sha256": "72caba0ef4b0b3c5ca7f86eb373cb013b16f124071e9bf5f6236e0c67aacd848"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/06-architecture-critique.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7e4d353cfbf2d523887094edd3c18bfad8696e31f82aacc47a3a835c6362374a"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/07-comparative-implementations.md.txt",
+      "before_sha256": null,
+      "after_sha256": "05c581ab08120ebf1b919d193a573311c43f00bfadb2ce52ab1783d3252dd838"
+    },
+    {
+      "file": "docs/original/docs2/03-architecture-and-patterns/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "b069d3c5740403c3029799f9e93e905742b55c9a097f55f3fde34456baf62eae"
+    },
+    {
+      "file": "docs/original/docs2/04-code-reading-gym/01-annotation-drills.md.txt",
+      "before_sha256": null,
+      "after_sha256": "17c4028b474b420982480e036c0194353b63baf3a8eda45548bd03299f122afa"
+    },
+    {
+      "file": "docs/original/docs2/04-code-reading-gym/02-trace-tables.md.txt",
+      "before_sha256": null,
+      "after_sha256": "4f607d99b6bcdeebe4db0d33ef0e5fd06ee129e76e96a51ee57413de8835d676"
+    },
+    {
+      "file": "docs/original/docs2/04-code-reading-gym/03-fake-code-contrasts.md.txt",
+      "before_sha256": null,
+      "after_sha256": "3e9389cc03c8c770bdab03a72aaa464b88833e1a89a50f5889f12b08fe17be37"
+    },
+    {
+      "file": "docs/original/docs2/04-code-reading-gym/04-review-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "1cb8962a928e81520a8ebd25a8cf215d413931ae86554141b417730522080744"
+    },
+    {
+      "file": "docs/original/docs2/04-code-reading-gym/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "6aff7939c045409fcdde53dce4061be11ae520df729433f1eada5befdb579781"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/01-testing-strategy.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8964ff18c2c2f00bd36301fdcb770e2e35e4b97b064bc5c804dd6929c1cce22e"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/02-writing-tests-here.md.txt",
+      "before_sha256": null,
+      "after_sha256": "1176ec365e7e8225d4ec9ad593000f56f498adbcc1eb45683b776166071948d2"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/03-systematic-debugging.md.txt",
+      "before_sha256": null,
+      "after_sha256": "2dce2575966d1baad8e0fe777914a2d9ea44e36336958b84063ae60bd4db607b"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/04-performance-thinking.md.txt",
+      "before_sha256": null,
+      "after_sha256": "806979b6eccb3fbf2384ba9dc41cf2f9183a561c0e8cf0f84e4b76b35adce7ae"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/05-security-checklist.md.txt",
+      "before_sha256": null,
+      "after_sha256": "38980818c43f0554e64f71dd049db3c878134ba3c339d96d86e4ee2507cd6378"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/06-observability-and-operations.md.txt",
+      "before_sha256": null,
+      "after_sha256": "c8240be3dca57059198a6f0368ce54b9f35e6f31c287677d0b2b72acf1fdb041"
+    },
+    {
+      "file": "docs/original/docs2/05-quality-engineering/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f7956f6c8be0ae9ae47204bba168890a5351d4760c4ef1310acd882da4298da3"
+    },
+    {
+      "file": "docs/original/docs2/06-contribution-practice/01-good-first-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "7d7af95f60e4504a806bd1fb0ee12897cc0d7208dd5a4feea58d607d951c7fb0"
+    },
+    {
+      "file": "docs/original/docs2/06-contribution-practice/02-mid-level-feature-tickets.md.txt",
+      "before_sha256": null,
+      "after_sha256": "91576bc03ea3e1fda6331c52b8d757a6217c770f53c9e21472d74572e4ca9530"
+    },
+    {
+      "file": "docs/original/docs2/06-contribution-practice/03-senior-build-projects.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9d0f39ad5cbcbc325b26353216a5edfc2450a9bd9282ab51e7442918ac0705c9"
+    },
+    {
+      "file": "docs/original/docs2/06-contribution-practice/04-refactor-and-design-katas.md.txt",
+      "before_sha256": null,
+      "after_sha256": "099697cce738e01fd167315fa0f9d92099383dbec34a0dc336272fadbc18b93b"
+    },
+    {
+      "file": "docs/original/docs2/06-contribution-practice/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "acf67ec2113e8372a0648f1a3142660aacd5d18a8bad8ee7c8fc2c487f8e2285"
+    },
+    {
+      "file": "docs/original/docs2/07-career-and-collaboration/01-code-review-mindset.md.txt",
+      "before_sha256": null,
+      "after_sha256": "02ae2016584424001c3b905257af45531330c661968ad28544bd6a0129bb12d4"
+    },
+    {
+      "file": "docs/original/docs2/07-career-and-collaboration/02-writing-prs-and-rfcs.md.txt",
+      "before_sha256": null,
+      "after_sha256": "fbfb05f3c8d67a37bd94f83396bd5a32c4eb062376692b5cc5ce04ca95d86f17"
+    },
+    {
+      "file": "docs/original/docs2/07-career-and-collaboration/03-maintainer-communication.md.txt",
+      "before_sha256": null,
+      "after_sha256": "80c4b286375fd90b4573ce896c59bd5dd56d26124c6d3776d79c71870d091e73"
+    },
+    {
+      "file": "docs/original/docs2/07-career-and-collaboration/04-interview-prep-from-this-repo.md.txt",
+      "before_sha256": null,
+      "after_sha256": "ebeff1ff1619265b558f01bb73e01c9f6edd6b6ea64d1b9eabb224cae022cb3a"
+    },
+    {
+      "file": "docs/original/docs2/07-career-and-collaboration/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "72f9b168858fd7ae6913285b53a8be3b5103b0ad8ea41ba4126fd54cab7e5531"
+    },
+    {
+      "file": "docs/original/docs2/08-reference/command-cheatsheet.md.txt",
+      "before_sha256": null,
+      "after_sha256": "e0c16f00cdb0ae99cc41748f18dfba62de4a7faf4d0f9e0e535f6abfc0840056"
+    },
+    {
+      "file": "docs/original/docs2/08-reference/learning-rubrics.md.txt",
+      "before_sha256": null,
+      "after_sha256": "81a45329bf0679437b3bfb6a3b82da32c3856a34ed06f1a8427b44ada59318b4"
+    },
+    {
+      "file": "docs/original/docs2/08-reference/risk-register.md.txt",
+      "before_sha256": null,
+      "after_sha256": "0bea69745ed9feb06f34bf20b5c8f45062dfde1fe8275c5565eadff7b3722167"
+    },
+    {
+      "file": "docs/original/docs2/08-reference/verification-log.md.txt",
+      "before_sha256": null,
+      "after_sha256": "cc4592e4f8e33d3e75848fcd800a9bb41dc7a73db97ca0f3daaa71102d19b5b0"
+    },
+    {
+      "file": "docs/original/docs2/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "f19ce63eee51147d6d6b52651115f9287867acc2ca4f8ae2c30c9865bfc53b2f"
+    },
+    {
+      "file": "docs/original/README.md",
+      "before_sha256": null,
+      "after_sha256": "f85f86d176c9eecf050e6b0d03d5e558624445930f7fcf81e1f49b5b1f2b7bd2"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "9722654b5512bce046fbed85d6f1700c8969af6f06cd0d8cafc5b8dc773f5b16"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/appsettings.Development.json.txt",
+      "before_sha256": null,
+      "after_sha256": "0ee927e86b8b85917e3210c662f6b2f94b3f6f3cdc579c1caf06b451db9846a8"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/appsettings.json.txt",
+      "before_sha256": null,
+      "after_sha256": "9bd3fd07bf0e507ca419666a9c1a301589d3a52af59d0a13ea7d425f2644cdad"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Billing.Api.csproj.txt",
+      "before_sha256": null,
+      "after_sha256": "45a3ecb41afb9586711c788661b7d1cf73a2f64d09fbb21fe87a9e2f476de4e3"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Contracts/Requests.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "51be872393ddc791e06b6002cdda0ab6bc4dd6004fc0e0832d996e86661207d3"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Contracts/Responses.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "c8f2b4f9d8511a5e12a5b563da1c41030208f33ad0ea1f8cfcf7fcbd9c8c0879"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Domain/BillingClock.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d7da8af74297472bb2e61f9c7d6d220a45d5d095cdf253e147067c4fdf794e70"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Domain/BillingEnums.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "79072aa80abc635196862b7ecdcc6d74d1f0456e8568b3a908bebd9028016309"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Domain/BillingModels.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "ae0f0466a498818af1744d6435f63ea39bbd5cc7010cbd13f7d85d035a751465"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Domain/Money.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "86e82e018a9604ad0fc55dcc1976ee69c65ee38cd2cac4114d206e19e0fe112c"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/BillingEngine.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "67d02125f730ac84b66baaad83172ca1ba9d678a22ef6a69a61f45c26977a11b"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/BillingOptions.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d01b2f7284d757ea1788bae8487f0c6fadfacda6cb66fc53ba5b38e2e24fe541"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/BillingStore.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "3495837d3cf137e3793713919b706f57b88f706dd6570f6bb88f2609eca13a35"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/IdempotencyMiddleware.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "56a15b551dbc59960f8c2d9635f51cdc64e101dda7c52088a034d057d3281912"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/PaymentWorker.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "fd4b46e60f354368b475a3cc61edc268dc4f3756d55c8c6a150d23813d22e0ef"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/WebhookDeliveryWorker.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "2644b5a6d49ee7b6536d888abdf66506b92670527fffaa3789c71063123d5042"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Infrastructure/WebhookSignatureVerifier.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "5745ebcf5376c33000a19f666d8cd7f42514f57dae2d7061bbfd0c369ab571af"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Program.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "fc8b342f4639c7e3c03ec1c76096e6fd0ac14f0a87cadf31d511b10dbee0c07b"
+    },
+    {
+      "file": "docs/original/src/Billing.Api/Properties/launchSettings.json.txt",
+      "before_sha256": null,
+      "after_sha256": "163a954c499e57aa487df3da9d3f234206d99de5f2eeeac0ff5304869188ec16"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/.env.example.txt",
+      "before_sha256": null,
+      "after_sha256": "fa367f1b4810174cd67c00a379025dc8ea2dc5c08ff718ea12b76e60df5585bf"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/index.html.txt",
+      "before_sha256": null,
+      "after_sha256": "a7b6fa8c4c15a110e5c230e2c42fa860abdee78575179fa8b3742fb850e69cb9"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "8aa39ff7f278a9a9ad814681fd92cd50fcad822fba743a7a77233daaa98806a7"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/src/api.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "ee6e8c9b009df0b55e8b55a5c61b13a9cacef06c9e68b4d6044dafa4c52eacf8"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/src/App.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "e9bc2792b4ae4b1e2e1e68d81c55da0ff79686876b3efd04a7a83ccc0d60b2a7"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/src/main.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "a8dab5383752c999c8fd2050d45438478ec458901ee4043bcb9298b39c928c8b"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/src/styles.css.txt",
+      "before_sha256": null,
+      "after_sha256": "390ae7c50fc18dbb88b7a6bd8cf346236321789c4b3c1e14c00096388fc760f4"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/tsconfig.json.txt",
+      "before_sha256": null,
+      "after_sha256": "60e3f0d2f9682089a1d101ea9b39a7a5612d2c3e9d14fae45ac496fce47670b0"
+    },
+    {
+      "file": "docs/original/src/Billing.Web/vite.config.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "8c9bc73b76e568cdddda8828bd8f404867960576fd3788588080ad70975a7ca9"
+    },
+    {
+      "file": "docs/original/SubscriptionBillingDashboard.sln.txt",
+      "before_sha256": null,
+      "after_sha256": "e832d3f4d290654b0d6dc39866aad635340939055d48bf42635222461de85455"
+    },
+    {
+      "file": "docs/upskill/00-fast-track.md",
+      "before_sha256": "3a5129993f3432c79d20f4ca36c529f690648f9af1d1845a9f662393d731617d",
+      "after_sha256": "ed47fb2d9b6468224c019e1d011f4f1f53a8d39c9b6a918f4a866c6c3b296833"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/01-system-map.md",
+      "before_sha256": "65ab14a8f457ccbd7d6fb4a73f907ba56e7deac00b3025be98b7c9ec7e9f07d4",
+      "after_sha256": "68006c73172520d0b6b36d6e2f6da967ebd8ec9e4ddd7801131a26819ef95593"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/02-file-reading-order.md",
+      "before_sha256": "052f0bdb4e9b629f6ebe421756ffa27329eef4031104bdd0ea5aba9686281fc2",
+      "after_sha256": "9a0eb90766f017fa3fed713abb9853ed4bea7f1123d708c75d956b7044f06c36"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/03-domain-glossary.md",
+      "before_sha256": "7af7f564bba4c8ced33d779a33f00f338c3c28e19ce49f3b5d38cfcd8ad889ac",
+      "after_sha256": "6dd26b7153266937cc509e2e6f23ddbfa84b300e0a9db1b55cddd571648c87fe"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md",
+      "before_sha256": "c580403e68ec00aa694c6b0d774bcb8c0d8c19d60c88e526760db5b804239f52",
+      "after_sha256": "491023dddc98da46afa27d6d8b7b79bbdfe6223f771d8e5db2ec260ed0401b66"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/05-key-flows.md",
+      "before_sha256": "bc9ad6469e16fd51a79f89b2fa280e2ae12c7062aa1467fbd904361743edab25",
+      "after_sha256": "b6b17b5f98ce6707490b1cbd1fc0fed3920ee92a06db29a3fedbe9a7a64a6aad"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/README.md",
+      "before_sha256": "0900437c7c97f1b22573eab585ceacea4d605e22abe5963f937367006ff5288e",
+      "after_sha256": "e64d07d305dbb6f97748ff246e0728907727ed114bfccaf9b16c599c9ae3b9a3"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/01-dotnet-runtime-model.md",
+      "before_sha256": "66e5c1f4d211159216156636018e02bb142dc6f8d07801e922662d9ecc39faf9",
+      "after_sha256": "475cbdac7b89c3de83c60b8efb007acfaf1e030163f36a47ff5cd938c8f655f6"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md",
+      "before_sha256": "fdfa51d1104d8d7381411d304092b293a1ec65e336c2abfc65fc60ea2ea52304",
+      "after_sha256": "392ee6b56a8afadc14dbc204b34176de497b9e1ca96700c50a599e1261777a81"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md",
+      "before_sha256": "674087b3d7716429137dcdf6a629381401b6ef512d5573f10c5aa4ee6e989a7a",
+      "after_sha256": "c7adde3dc13d611981296e22b980cec4cdc8de3af675f4f24f9d9b0c60b1d2b0"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md",
+      "before_sha256": "218b3da05f4415716c82fc0e167f1bd8220bc12350521d4cdbdfb99b71a0509a",
+      "after_sha256": "a4f97e74b848c2855179cbd4aee78bffa4eed8760a94b89b4bc6de531caef201"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/README.md",
+      "before_sha256": "a1a588bc3f36296bdd95d7dff427a20a3d80205b66bf6846edfc6a5214423417",
+      "after_sha256": "9759f6221b6ef01771e6fe8202ac485071ce4ee0405907c192625c60eae70b3e"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md",
+      "before_sha256": "8387a070922d26ea464d3f5dd67f7e2f1a9d3138d5ff6afbf7b8d8f03ad25f2c",
+      "after_sha256": "8bf22a254f7b5038730c16145937be9671335b50768f3cc55f94b7f06474c7ed"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md",
+      "before_sha256": "c25b6db992ec4977854fce89e9a81e3be95e8b27017b277570d3864c6dc618fc",
+      "after_sha256": "c35d960db83038c3d90143ac70c66b8698a83498af82518b1f5472f311e9cd2e"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md",
+      "before_sha256": "90844da340f27ab7aa2ac06067dd6a4597fc7adfeaf9004ca6f49bcf7689fcc6",
+      "after_sha256": "70a9c0c6a0fbe1d405ddea50e7666e4e65e589607e9ba8f94ba93cab5741a417"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md",
+      "before_sha256": "246642762668865a582f221edc1dfcba63b22bb15b6c6ff6832dcdbdbc8036ed",
+      "after_sha256": "b343e7825e27c5ae9c97cb9f32cc39751dad76cb048a0f9afbf4bf3b1dc49e46"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md",
+      "before_sha256": "4ff9031c8137df22e66db56efb0bf07cfc9215724c7630ac56eb7d6993064841",
+      "after_sha256": "52d3756a065f2968d425cefc94464c1b3b4aa017b483b8c4b0fb62c30b4985d0"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/06-architecture-critique.md",
+      "before_sha256": "d97dad3f6b37bc5b0f6e12e51797cdb555656a2d23a70b658d60d8b1822f317d",
+      "after_sha256": "f7f2f1c91a7f41f7130a135ee0665fd9ff1c7ce8756d6be7bfc20d4b6157dcb7"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/README.md",
+      "before_sha256": "a50186a602ed7d63351c5b18982369012418398a1cdfa29105045ab103994d11",
+      "after_sha256": "155666af33cf0c786c84365cf99d588f37216d64e3496d490a73241023aa7a7b"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/01-annotation-drills.md",
+      "before_sha256": "8f251283dd9f400309eced3c17377d64180fd3d90b5112715a73e65b450a3b54",
+      "after_sha256": "a9554afbf46ddd42292d866af3dcb0519d5b489eda34883816efff2e0552a22e"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/02-trace-tables.md",
+      "before_sha256": "7d02b7015ad623a339eacd7fbae403d957f588afde2b063c2b2fb18eb3fdf4c4",
+      "after_sha256": "15ead6148b132165aaeeac7dbce45eb069d3b27b680df7ae6b8a0faf43c8c615"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md",
+      "before_sha256": "d6a221d17e51a88838bf6a05fb60d088f3560b796979634e02a775e9f29424da",
+      "after_sha256": "c8b110fb29353115d4b338ca124222ec771bd328b2591236cc389296ccc67f70"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/04-review-katas.md",
+      "before_sha256": "d97cd8b2d92d54273536a194eff3fa94b91718a62c4fa13ec8400b22a9a6e470",
+      "after_sha256": "95ada28e31e1cbb51abf76e2a2b7449a5fb981d4cec83d3a57b719ade012d349"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/README.md",
+      "before_sha256": "0e77da392bb8e7be7f03dcd68b9aa3a75248cfa42ad973432c59bfa27f6660b3",
+      "after_sha256": "813bbd704f7025294acf2962ef139eab5364478aae133ff7a753982298a00e03"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/01-testing-strategy.md",
+      "before_sha256": "7f625170e002c672a295970aa57ab9eae0f2f65a9f2270360c2686322d6e4a88",
+      "after_sha256": "03c742a18e1eb8a728c1e5efca46d02fe3018913835369501b8cef37940ae8b9"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/02-writing-tests-here.md",
+      "before_sha256": "6f1c51aea1829f8d77a49972e6e669a77fd4a88175bea4abfa2f73b0b4653066",
+      "after_sha256": "d78f5e66d6c870c064141d798984f8438e22db323d117a21b8737a7652311cf0"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/03-systematic-debugging.md",
+      "before_sha256": "31d95a1363f3048882908ca0e954d7f65030e30c1ba89e3e6273830de35eebc1",
+      "after_sha256": "87e36d5dec42eeae7fd34bd5ff59fd60d9bc913b0360dfddec6404a0ca5d6610"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/04-performance-thinking.md",
+      "before_sha256": "fe3f377cdf4ed20ab44a271519867026c14f02c957085a91430c639071b4008b",
+      "after_sha256": "535649da5283219ef9762e48b802b490c7d060705c25f1509f7a0849db328d9a"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/05-security-checklist.md",
+      "before_sha256": "bc5e1b9cb8c20b63d64bb0c4025a5c070fc1a5333776d9605cece67c7bffa088",
+      "after_sha256": "e56a32b307f1f715693491bdbe5ca3114d35404a6aefb0fdd0a9d4e58b0cbc9e"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/06-observability-and-operations.md",
+      "before_sha256": "66d287c3dcfc468c41fc573d1a612433c4a901f80581ef36356d800bcea752a1",
+      "after_sha256": "7d571d86a6b436200bf6cf3b2e81e4fac32f3a1dae0c2e9bc04b77af23b3f56f"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/README.md",
+      "before_sha256": "a244479f8b7d35b52979c93de13713fee25e7b180456884f53a4fd5702573bb2",
+      "after_sha256": "93a6df94775d29c6fc585b9144811e3c7315061d06c408192850f6d4993b69dc"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/01-good-first-tickets.md",
+      "before_sha256": "35f5bb0774ae756499422501f14d879b16e86caf5641ba35b8b5df48d80090e2",
+      "after_sha256": "0a037f3fd35d4ee995edd0d5f06f185265ce502f6fd9b38d4b5e93c7fb1317cb"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md",
+      "before_sha256": "7912b57fb9a4e4a094a45ae9209e3d025bae3d0b7307457f9a452277c1225cca",
+      "after_sha256": "02910371f5acc5fa0cc9152d72d51f7a49b49f4c68ddd4157198c55a14d70908"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/03-senior-build-projects.md",
+      "before_sha256": "90c50c7f51229619cce399c395df7cc51e5c796ef815c958d7e5703d593f509e",
+      "after_sha256": "21666037b40adff124a70e10fddefeb970eb41a08b084a8cce712643ece8400d"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md",
+      "before_sha256": "b31427ab9479ccbcb3ae491675db7eca57ea5ede9c726a4f13bca8f527beea0b",
+      "after_sha256": "077fe829ed75e51dcd2fc9c28b4354059f2c0fdd420d742b64f7ac3a7de1dbcc"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/README.md",
+      "before_sha256": "25bf79b9165acd07c3ae08539a8da7d9f8d6ee9c71765f1b29bb96a34aa81ed9",
+      "after_sha256": "267d94bb37bef91f312014705e25e3c1e65983c7e43c09965a0f92bd4ba4a457"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/01-code-review-mindset.md",
+      "before_sha256": "3166f418db83414935fa4f3b6d341db52cfff037a4c7f7c7761d60f8bab476c7",
+      "after_sha256": "03bf8f5cf5b752c5f3ebb4058a60c45500619419bbab9aa8cb13b22f69cb4e3e"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md",
+      "before_sha256": "fc0f084b8482692605461745beb4a82a8e574064fd9b5d8053829b551203ef34",
+      "after_sha256": "af999429a3199f16e1eeeef4ef20458ae8a74c04477aac90be7ec69ee2cd2981"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/03-maintainer-communication.md",
+      "before_sha256": "f55b9bca130cda97646b523b01f19eff1c0d9d951caa737a9ced0fa5d5441727",
+      "after_sha256": "18601146ae205c2e43b65c0de78f68d4983464565829c417cc32f7dd6335265b"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md",
+      "before_sha256": "0e2efd04c4c0d6afb43bf62234c14bd32d4295e7564b7dd8e7f145ae10d5f7f9",
+      "after_sha256": "99b8570fbb2809cdbcfeee15162e2fc2e482f1abad9cc553e32847ff710953b4"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/README.md",
+      "before_sha256": "00bc93e0a7bff5c73d943de1d42f1a2c95b934d5dd299c6a5328b6cf2e945dee",
+      "after_sha256": "e687abc438b1091e41818c47973cd612c422744fae833ff999a4c4019697ee03"
+    },
+    {
+      "file": "docs/upskill/08-reference/command-cheatsheet.md",
+      "before_sha256": "74702a45c4ff3f1d25b321d321c5af535ec4e6dc478ea388f638db17553a1cf6",
+      "after_sha256": "1c1ee78ef3495119fed8504f90a769cb121a9399c8293f6fe134ff3a3da80a7e"
+    },
+    {
+      "file": "docs/upskill/08-reference/learning-rubrics.md",
+      "before_sha256": "fcf62bea0b7056c5f50248fb13549b33ac3bcd19831fc7bad20d47c005e0f46f",
+      "after_sha256": "191b3fa1d682814ccf76041a8ab195ba3f31c7c26ce100561c860058da5fb6b1"
+    },
+    {
+      "file": "docs/upskill/08-reference/risk-register.md",
+      "before_sha256": "8f96067386d1617506bd975512ec49f2793e73c2b0dc2973eb29db739e3191af",
+      "after_sha256": "7bb342f04deb0c291118dcec9862a69a57bee04c5b5926efa4c668df530d2885"
+    },
+    {
+      "file": "docs/upskill/08-reference/verification-log.md",
+      "before_sha256": "11d4c16db30aff21be52348d2b10dd67b0930ca93087a132ce66915e4e30dd55",
+      "after_sha256": "a15634a9f284e73dbb54555a21a26dc80cf44b51544c5c6b2851aeb1f45577f8"
+    },
+    {
+      "file": "docs/upskill/README.md",
+      "before_sha256": "64bc4fab07b1638ac5fc9c175e1c0abe1ace29bfc7406ed8eb23ef15f1077e90",
+      "after_sha256": "bd9a147b6f4b3e18a1a75c0f0ec9b54f5a5afb6592a52e76dfd57b1fa5bc5e9e"
+    },
+    {
+      "file": "docs2/00-fast-track.md",
+      "before_sha256": "9e88c43ce9fe25e7fb0b4d873d2bbaa8f9b73ce04ffe5778718d1d3922eaf2e1",
+      "after_sha256": "6813b5492cabf50332c4e890bbe80f3dcf11763cb38bc90a83d66c949a29159d"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/01-system-map.md",
+      "before_sha256": "18c1694ec66e1d71768b22b50efd2caa108866b0d7cc12e1f3f655c807acbde2",
+      "after_sha256": "e33fcdd5d8462d110a38b18e06c38fb1ef868df2023fd5b47e31fd4f029c8f29"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/02-file-reading-order.md",
+      "before_sha256": "c21fbeaa508dcb99476e06a745c0bbe8d297d8dc5e69eadb45a8ace7a894b04c",
+      "after_sha256": "cc3752ecf499c481cc6eb6fd6d95eded4ece33a38507f41866d6d5516f22a3c9"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/03-domain-glossary.md",
+      "before_sha256": "ca5eca30e8e6bb48442fc68fc65bbd29f0a41faf58a59131d17ff98d3e6c3339",
+      "after_sha256": "8573a1cf3b35bae4a3fc8d58dd9e4b97daf49addb1c48f122ba9cd1fd8e92ae5"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/04-runtime-and-tooling-map.md",
+      "before_sha256": "594ecff448e7536fd7f0dcc7f735fb4ea115150441d4cfaadd77519ea4b0b1c8",
+      "after_sha256": "7a093abdf6070f9874a1a91c26d5f344cf565028e934ca034f76de10dbbd4f26"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/05-key-flows.md",
+      "before_sha256": "d5e2c33a517c43c638f488a1e9c063e09f32c7298ad59577a779cec719681397",
+      "after_sha256": "3ceb269722818ccad54371153da00aa5aa4fc7196027c807b395a2cef29767d5"
+    },
+    {
+      "file": "docs2/01-codebase-cartography/README.md",
+      "before_sha256": "a1d399b9c97ac833348bf24406842d46d466b59fcb765855b57968d162932206",
+      "after_sha256": "5ea429b12be4713309dedae16840f3faf5e8d998efe043d0c95a90a7cb3ca1a6"
+    },
+    {
+      "file": "docs2/02-stack-and-language-mastery/01-dotnet-runtime-model.md",
+      "before_sha256": "8c999ad9095bbd19af44be0475bf4006c94b0fb9b17b266b3171635a3c349024",
+      "after_sha256": "56e002a2548ea6cd0a37628dd360e900de8778d7002004a4c5cb926faf3f52b9"
+    },
+    {
+      "file": "docs2/02-stack-and-language-mastery/02-framework-mental-models.md",
+      "before_sha256": "1760b35f7a94cb290426e11f2e0f8f45a61175c0b325dd244b8d616b215a881c",
+      "after_sha256": "c223c654119b824e14f649b75f77363ea424011a141bd5ba949f0ddee7fe2990"
+    },
+    {
+      "file": "docs2/02-stack-and-language-mastery/03-type-system-and-contracts.md",
+      "before_sha256": "1a97f8237b16bdcd3be05956380932885518016ea5e458eca2ed9e32ad2d8950",
+      "after_sha256": "6879200383cdc06ce718dd28ed62b137000adf2751b90fd6147c9f61916fc9bf"
+    },
+    {
+      "file": "docs2/02-stack-and-language-mastery/04-tooling-and-build-system.md",
+      "before_sha256": "2545258c086a7d4191acc188d2957c6a681e8873204e8ff37d8332f1ecf4c43a",
+      "after_sha256": "aa899c2abc30c6c8ff19206d62a6fe9d76f3c9e4c57a485ef4fd4360194bbd11"
+    },
+    {
+      "file": "docs2/02-stack-and-language-mastery/README.md",
+      "before_sha256": "6db76eb087873eb95805f9463ec351e2834358d1d186dbc6935a8e93df9210ef",
+      "after_sha256": "410ed12ee7b6286648e27f42f0b9bb5b2f8fa4edc3a569aa5623af6ab64c87b5"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/01-boundaries-and-layers.md",
+      "before_sha256": "d521c5f1fdd9790ea206585eb1f4a5aafcdc07bb585fa69caac1ce4269c93ddd",
+      "after_sha256": "fa38bb85b1e10b24b8a9b3f41ddb27abca1cbc7930e7184a869dcba829b0dc05"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/02-data-model-and-persistence.md",
+      "before_sha256": "ad219e431d6210364f3ff50b54d176907b1ebc23af1fbd96b57973887e21850b",
+      "after_sha256": "4829da600559d28dea672f86c4e35a5bf07dac880acbf0441989f06415a76184"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/03-validation-auth-and-permissions.md",
+      "before_sha256": "218fa0907a437761783799c1786caf4b3570125ed3b3f14d6fbd19a4340b17dc",
+      "after_sha256": "94ccea63b90051257985e7e572e914511e14b93c2a6259bd6e4df7185af509d2"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/04-side-effects-async-and-reliability.md",
+      "before_sha256": "65445ecee51780e35c2efcb23aa25f9ca54dc9a9e74cbde096f679fe779c7581",
+      "after_sha256": "e9d545573bbb82f3f30399ce634fdd69be2631259fc18318220fd178cca30820"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/05-pattern-catalog.md",
+      "before_sha256": "72caba0ef4b0b3c5ca7f86eb373cb013b16f124071e9bf5f6236e0c67aacd848",
+      "after_sha256": "7ef014dafb1d10cc79e0bbac1e807471c01b1bd3ce19f4183c66d51592a6b713"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/06-architecture-critique.md",
+      "before_sha256": "7e4d353cfbf2d523887094edd3c18bfad8696e31f82aacc47a3a835c6362374a",
+      "after_sha256": "01a906fbb03d807aba7d2038e0dedd9a296e16b01e3bcde7f9bddba480a5f824"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/07-comparative-implementations.md",
+      "before_sha256": "05c581ab08120ebf1b919d193a573311c43f00bfadb2ce52ab1783d3252dd838",
+      "after_sha256": "bbad164b06bf10adb076497db631c05eb0260714880731eb282e2aca8d4752fd"
+    },
+    {
+      "file": "docs2/03-architecture-and-patterns/README.md",
+      "before_sha256": "b069d3c5740403c3029799f9e93e905742b55c9a097f55f3fde34456baf62eae",
+      "after_sha256": "8f9498e014a49772f315c9c1faab006531055ceeed724168b3cf8c9dfa043564"
+    },
+    {
+      "file": "docs2/04-code-reading-gym/01-annotation-drills.md",
+      "before_sha256": "17c4028b474b420982480e036c0194353b63baf3a8eda45548bd03299f122afa",
+      "after_sha256": "6eefd6cdbfb6aa7da77b82b6339becdcf1b7ba6b1f1c65767e7b86ea268eb26f"
+    },
+    {
+      "file": "docs2/04-code-reading-gym/02-trace-tables.md",
+      "before_sha256": "4f607d99b6bcdeebe4db0d33ef0e5fd06ee129e76e96a51ee57413de8835d676",
+      "after_sha256": "372b2c5ea8c6535d592b2b94f74a7d9e10631707e0b3dad440c768c31e45b75e"
+    },
+    {
+      "file": "docs2/04-code-reading-gym/03-fake-code-contrasts.md",
+      "before_sha256": "3e9389cc03c8c770bdab03a72aaa464b88833e1a89a50f5889f12b08fe17be37",
+      "after_sha256": "0c7ea6c9ce32db4f7f4ce854b0158a01ef7286ba2b7e617d40b49877d9ba41ff"
+    },
+    {
+      "file": "docs2/04-code-reading-gym/04-review-katas.md",
+      "before_sha256": "1cb8962a928e81520a8ebd25a8cf215d413931ae86554141b417730522080744",
+      "after_sha256": "b087bfc226bcce93abe9d8c6f33d8b8aa595361b65d44829ca11bbaaaf2a08d8"
+    },
+    {
+      "file": "docs2/04-code-reading-gym/README.md",
+      "before_sha256": "6aff7939c045409fcdde53dce4061be11ae520df729433f1eada5befdb579781",
+      "after_sha256": "4a0a195c73ad826012e38a4a86f346e6a698c3bbefba721de33ebb087b1a09f6"
+    },
+    {
+      "file": "docs2/05-quality-engineering/01-testing-strategy.md",
+      "before_sha256": "8964ff18c2c2f00bd36301fdcb770e2e35e4b97b064bc5c804dd6929c1cce22e",
+      "after_sha256": "9ce91d4494972cf4c03886975cc846851f54d66d04f9a4fe87b13b008e1363c5"
+    },
+    {
+      "file": "docs2/05-quality-engineering/02-writing-tests-here.md",
+      "before_sha256": "1176ec365e7e8225d4ec9ad593000f56f498adbcc1eb45683b776166071948d2",
+      "after_sha256": "8ab4efd1a9eac314798318e9fc9f5bb2b78795e9fccf2b5e1e2d79463c476df2"
+    },
+    {
+      "file": "docs2/05-quality-engineering/03-systematic-debugging.md",
+      "before_sha256": "2dce2575966d1baad8e0fe777914a2d9ea44e36336958b84063ae60bd4db607b",
+      "after_sha256": "5ed6127607e46a37c63b99ba0fe3fd6ea439de988c6a955a7b2f5cd5d90b44fe"
+    },
+    {
+      "file": "docs2/05-quality-engineering/04-performance-thinking.md",
+      "before_sha256": "806979b6eccb3fbf2384ba9dc41cf2f9183a561c0e8cf0f84e4b76b35adce7ae",
+      "after_sha256": "b2719ad52690f3143414c902ebda7d9f20dfbd7137d00ba502b13e180a355593"
+    },
+    {
+      "file": "docs2/05-quality-engineering/05-security-checklist.md",
+      "before_sha256": "38980818c43f0554e64f71dd049db3c878134ba3c339d96d86e4ee2507cd6378",
+      "after_sha256": "6180b46817de6c58783c14a5c69fdd58108ecc4ec0dbbec77b0f8ce285105787"
+    },
+    {
+      "file": "docs2/05-quality-engineering/06-observability-and-operations.md",
+      "before_sha256": "c8240be3dca57059198a6f0368ce54b9f35e6f31c287677d0b2b72acf1fdb041",
+      "after_sha256": "35c41a067fb08aa2b1ef5655b657b9903d9f13fd2c5094c91455a88005b282f6"
+    },
+    {
+      "file": "docs2/05-quality-engineering/README.md",
+      "before_sha256": "f7956f6c8be0ae9ae47204bba168890a5351d4760c4ef1310acd882da4298da3",
+      "after_sha256": "c7223258985b9fa24026a27cb7369cd1f41f8e2df3fb37e961a1cafe31c2d0aa"
+    },
+    {
+      "file": "docs2/06-contribution-practice/01-good-first-tickets.md",
+      "before_sha256": "7d7af95f60e4504a806bd1fb0ee12897cc0d7208dd5a4feea58d607d951c7fb0",
+      "after_sha256": "f87a3abde347d92d09c817c418978d8e7ae70373dafd9939636527dd5327ec80"
+    },
+    {
+      "file": "docs2/06-contribution-practice/02-mid-level-feature-tickets.md",
+      "before_sha256": "91576bc03ea3e1fda6331c52b8d757a6217c770f53c9e21472d74572e4ca9530",
+      "after_sha256": "21cc76cfd2bc98685f4f86829142b28b3963e7d69e114bfd733b825054aaa2de"
+    },
+    {
+      "file": "docs2/06-contribution-practice/03-senior-build-projects.md",
+      "before_sha256": "9d0f39ad5cbcbc325b26353216a5edfc2450a9bd9282ab51e7442918ac0705c9",
+      "after_sha256": "42ec375171f848a9ef85cfea770d9ded73134b13306dd74cb3f5d2e94f4a9fdf"
+    },
+    {
+      "file": "docs2/06-contribution-practice/04-refactor-and-design-katas.md",
+      "before_sha256": "099697cce738e01fd167315fa0f9d92099383dbec34a0dc336272fadbc18b93b",
+      "after_sha256": "a1e5ecbe31fb781ebb80ed083718faca345a52643faf73e9fce5b63cb6e25145"
+    },
+    {
+      "file": "docs2/06-contribution-practice/README.md",
+      "before_sha256": "acf67ec2113e8372a0648f1a3142660aacd5d18a8bad8ee7c8fc2c487f8e2285",
+      "after_sha256": "50eefe09e50544779b6ae2ad12f1631d7518a31c3d377efcf2a7190d18975fac"
+    },
+    {
+      "file": "docs2/07-career-and-collaboration/01-code-review-mindset.md",
+      "before_sha256": "02ae2016584424001c3b905257af45531330c661968ad28544bd6a0129bb12d4",
+      "after_sha256": "7bb3169746004692c2ca13496635af99139a6962513b40b6fb2dfa0c9ff89153"
+    },
+    {
+      "file": "docs2/07-career-and-collaboration/02-writing-prs-and-rfcs.md",
+      "before_sha256": "fbfb05f3c8d67a37bd94f83396bd5a32c4eb062376692b5cc5ce04ca95d86f17",
+      "after_sha256": "90c256bb68394c78e7f698d1d59280f25eaa3a9f6849e36ea9fa20ea993cc4fe"
+    },
+    {
+      "file": "docs2/07-career-and-collaboration/03-maintainer-communication.md",
+      "before_sha256": "80c4b286375fd90b4573ce896c59bd5dd56d26124c6d3776d79c71870d091e73",
+      "after_sha256": "88fcdedae7217b5bc5c0d3df7cf81213cb6c075d0e91e37f4f4662d14c80170b"
+    },
+    {
+      "file": "docs2/07-career-and-collaboration/04-interview-prep-from-this-repo.md",
+      "before_sha256": "ebeff1ff1619265b558f01bb73e01c9f6edd6b6ea64d1b9eabb224cae022cb3a",
+      "after_sha256": "a7028d7bfb16e97c506c9c71f8e7b8a099dfbb84214db1f5a1f2836bd7dc334d"
+    },
+    {
+      "file": "docs2/07-career-and-collaboration/README.md",
+      "before_sha256": "72f9b168858fd7ae6913285b53a8be3b5103b0ad8ea41ba4126fd54cab7e5531",
+      "after_sha256": "d77aa7b0c9184849bc37b02c95135b27b3c255ba94f97685d552c37c50f9677c"
+    },
+    {
+      "file": "docs2/08-reference/command-cheatsheet.md",
+      "before_sha256": "e0c16f00cdb0ae99cc41748f18dfba62de4a7faf4d0f9e0e535f6abfc0840056",
+      "after_sha256": "335b3942549023951b89ecadc53c2b0fb2c6f775186da9afc44c4ff269a4df2b"
+    },
+    {
+      "file": "docs2/08-reference/learning-rubrics.md",
+      "before_sha256": "81a45329bf0679437b3bfb6a3b82da32c3856a34ed06f1a8427b44ada59318b4",
+      "after_sha256": "815ec23dfe9dc83db6e5adfe15975098df910b81e5ce536f13b0e433a2d2f93c"
+    },
+    {
+      "file": "docs2/08-reference/risk-register.md",
+      "before_sha256": "0bea69745ed9feb06f34bf20b5c8f45062dfde1fe8275c5565eadff7b3722167",
+      "after_sha256": "86c55553a774062ad332d542fe4a2add190151c3d9c13dfdfee8e57cde7f4278"
+    },
+    {
+      "file": "docs2/08-reference/verification-log.md",
+      "before_sha256": "cc4592e4f8e33d3e75848fcd800a9bb41dc7a73db97ca0f3daaa71102d19b5b0",
+      "after_sha256": "52ef032c54fced0808d06531ea045b79c1e2267e991615b7b222ed3609226f59"
+    },
+    {
+      "file": "docs2/README.md",
+      "before_sha256": "f19ce63eee51147d6d6b52651115f9287867acc2ca4f8ae2c30c9865bfc53b2f",
+      "after_sha256": "34bf2511c89b0c7b7ebd140cfe8683d8f722802413e23697f98e4c575cb481a2"
+    },
+    {
+      "file": "global.json",
+      "before_sha256": null,
+      "after_sha256": "75ad142281ad3f65a55376b9e02259611bc0eb64400c61493668a75b72390881"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "9722654b5512bce046fbed85d6f1700c8969af6f06cd0d8cafc5b8dc773f5b16",
+      "after_sha256": "b1f1ce56bb2d0643144a7cc8661ffdd501f25767d51aa732f41ba0cd1662fa77"
+    },
+    {
+      "file": "scripts/check.ps1",
+      "before_sha256": null,
+      "after_sha256": "91e8ea7a6f311e75e2c9e8c65890febb4f6b13044ac5ef217fe25a97d7a7d7d9"
+    },
+    {
+      "file": "scripts/publish-local.ps1",
+      "before_sha256": null,
+      "after_sha256": "ac7dbc43dba9b39aca67f09727842384f036fb4dbf56bcca73d9b49bed801b73"
+    },
+    {
+      "file": "scripts/run-api.ps1",
+      "before_sha256": null,
+      "after_sha256": "c72a470f93bcbf49cfa7f6c024be689eaf10e61518d754250e9fbd6f1ffb169d"
+    },
+    {
+      "file": "src/Billing.Api/appsettings.Development.json",
+      "before_sha256": "0ee927e86b8b85917e3210c662f6b2f94b3f6f3cdc579c1caf06b451db9846a8",
+      "after_sha256": "dcac01f8a603cd04882d1aa079a1fa73559f9ccaa0017ca0e430370212e6062f"
+    },
+    {
+      "file": "src/Billing.Api/appsettings.json",
+      "before_sha256": "9bd3fd07bf0e507ca419666a9c1a301589d3a52af59d0a13ea7d425f2644cdad",
+      "after_sha256": "10194e83b68f8d33eb5853a63ffff9ca1dee9d5d1c54b6f0ac9757526a8b7246"
+    },
+    {
+      "file": "src/Billing.Api/Billing.Api.csproj",
+      "before_sha256": "45a3ecb41afb9586711c788661b7d1cf73a2f64d09fbb21fe87a9e2f476de4e3",
+      "after_sha256": "9a92b9609cc7060e4732ac20eac353449fe5abb001105d321c437e6252b38d4a"
+    },
+    {
+      "file": "src/Billing.Api/Domain/BillingEnums.cs",
+      "before_sha256": "79072aa80abc635196862b7ecdcc6d74d1f0456e8568b3a908bebd9028016309",
+      "after_sha256": "2aea6aecde075be2667a4a079f81d8eea1e47e6a26b6a09507085e5ae9554a07"
+    },
+    {
+      "file": "src/Billing.Api/Domain/BillingError.cs",
+      "before_sha256": null,
+      "after_sha256": "4c5e22f3df9eb082f05bb6b0dece9cf9525535660cb3307f62eadb9460354784"
+    },
+    {
+      "file": "src/Billing.Api/Domain/BillingModels.cs",
+      "before_sha256": "ae0f0466a498818af1744d6435f63ea39bbd5cc7010cbd13f7d85d035a751465",
+      "after_sha256": "3842ee14dc8dbb1401a3eaad705f094dc504c2732ac170f87f6a55f75db64344"
+    },
+    {
+      "file": "src/Billing.Api/Domain/CatalogRequests.cs",
+      "before_sha256": null,
+      "after_sha256": "1d7caed888f19e28ad50fedab06fd3dfb7208f60312bfa55498de88886155bc1"
+    },
+    {
+      "file": "src/Billing.Api/Domain/Money.cs",
+      "before_sha256": "86e82e018a9604ad0fc55dcc1976ee69c65ee38cd2cac4114d206e19e0fe112c",
+      "after_sha256": "69c7bb55e400d024ff8e6622bce7bb2b5edd5d8a9e80d798dbcf19ae48f84cbb"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/BillingDatabase.cs",
+      "before_sha256": null,
+      "after_sha256": "50fc957361aa91eef88e673a60b14d208592717b42662163839dcf27b8986efb"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/BillingEngine.cs",
+      "before_sha256": "67d02125f730ac84b66baaad83172ca1ba9d678a22ef6a69a61f45c26977a11b",
+      "after_sha256": "356efe64ca86e456cb2d398a3fca405af126fc28922fc02f396cbd16684aba19"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/BillingJson.cs",
+      "before_sha256": null,
+      "after_sha256": "c55b6bc2b0dca19f97f2d5bfb811845a371103fc7b7f57dadc8d116b6dbbff1c"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/BillingOptions.cs",
+      "before_sha256": "d01b2f7284d757ea1788bae8487f0c6fadfacda6cb66fc53ba5b38e2e24fe541",
+      "after_sha256": "02d51235ca9921efe0315c4655b3b603c4386a0aeeb90748688d901a525db2d6"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/BillingStore.cs",
+      "before_sha256": "3495837d3cf137e3793713919b706f57b88f706dd6570f6bb88f2609eca13a35",
+      "after_sha256": "328cd1c2b1738323cdcadc7dcba037a6d485b8158326959325ccd28b2726fe09"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/CatalogService.cs",
+      "before_sha256": null,
+      "after_sha256": "cbe7d78680074d0800f3255a041ceb73f1eebadc684b29297eaac7599226a884"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/IdempotencyMiddleware.cs",
+      "before_sha256": "56a15b551dbc59960f8c2d9635f51cdc64e101dda7c52088a034d057d3281912",
+      "after_sha256": "84191009e5f31f097fd2399bc1ddb4fa637447a83fc0eced002e59b616d96799"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/PaymentWorker.cs",
+      "before_sha256": "fd4b46e60f354368b475a3cc61edc268dc4f3756d55c8c6a150d23813d22e0ef",
+      "after_sha256": "94e22ba2e37ade1c2843f47821cd67286c1758176f695c3d4c3d034b57d35645"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/WebhookDeliveryWorker.cs",
+      "before_sha256": "2644b5a6d49ee7b6536d888abdf66506b92670527fffaa3789c71063123d5042",
+      "after_sha256": "1d4727bf647ca8b0acdf17d9f13541c6dbe6b31120e42d2de657ba21628e698d"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/WebhookSignatureVerifier.cs",
+      "before_sha256": "5745ebcf5376c33000a19f666d8cd7f42514f57dae2d7061bbfd0c369ab571af",
+      "after_sha256": "808a9c03c391f18007e7fa0835aa4e251776490d0bbcf8a49a28d6dba1058061"
+    },
+    {
+      "file": "src/Billing.Api/Infrastructure/WorkspaceAuth.cs",
+      "before_sha256": null,
+      "after_sha256": "50f471f55a1400ca2d5209847eacb77cbf25cf1f3622019ed5d0c6a0935d83e6"
+    },
+    {
+      "file": "src/Billing.Api/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "ec5fef28e8d30930e0c20dc5433f61bae88f5def10aa5b65b4a768a328ff1d16"
+    },
+    {
+      "file": "src/Billing.Api/Program.cs",
+      "before_sha256": "fc8b342f4639c7e3c03ec1c76096e6fd0ac14f0a87cadf31d511b10dbee0c07b",
+      "after_sha256": "802e0a8921adddd2c355499aa6425bd59e63e2033cfb980ff853f536764d2b25"
+    },
+    {
+      "file": "src/Billing.Web/.env.example",
+      "before_sha256": "fa367f1b4810174cd67c00a379025dc8ea2dc5c08ff718ea12b76e60df5585bf",
+      "after_sha256": "262105d5ca541f76ad56469d24978b4e28e9983b49d4bc8bf0de2712702780a7"
+    },
+    {
+      "file": "src/Billing.Web/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "3252f067267a09025e83bd0c721692a6aedb2e4bc173b0926fdcd0d5612fe562"
+    },
+    {
+      "file": "src/Billing.Web/package.json",
+      "before_sha256": "8aa39ff7f278a9a9ad814681fd92cd50fcad822fba743a7a77233daaa98806a7",
+      "after_sha256": "672ae544dde63256a73c74f070db672fb7420a9963f5e8b9e3384d6cf8095354"
+    },
+    {
+      "file": "src/Billing.Web/src/api.ts",
+      "before_sha256": "ee6e8c9b009df0b55e8b55a5c61b13a9cacef06c9e68b4d6044dafa4c52eacf8",
+      "after_sha256": "cc782d2dea42eb0d7f1339f7f4a1e158f4b3ae7ecbed07cbcb7293c143a0fa1b"
+    },
+    {
+      "file": "src/Billing.Web/src/App.tsx",
+      "before_sha256": "e9bc2792b4ae4b1e2e1e68d81c55da0ff79686876b3efd04a7a83ccc0d60b2a7",
+      "after_sha256": "1dee11a4ba59dbf40327f0dced1ab2544b0c14f744f5119d7745214274a29da5"
+    },
+    {
+      "file": "src/Billing.Web/src/forms.ts",
+      "before_sha256": null,
+      "after_sha256": "b191cb6142bc452ba4119c5b0652c0cc2cfb9caa5a51509ce6d7d8da4659f3f4"
+    },
+    {
+      "file": "src/Billing.Web/src/styles.css",
+      "before_sha256": "390ae7c50fc18dbb88b7a6bd8cf346236321789c4b3c1e14c00096388fc760f4",
+      "after_sha256": "7522ea8674ff35f5e8bc3cc4454badc3d3ac572d560d8942314f8242dae92a02"
+    },
+    {
+      "file": "src/Billing.Web/vite.config.ts",
+      "before_sha256": "8c9bc73b76e568cdddda8828bd8f404867960576fd3788588080ad70975a7ca9",
+      "after_sha256": "e05e6fa3c7932015506f702f24a4ee9d463fb0a733397aa861e67b376656c947"
+    },
+    {
+      "file": "SubscriptionBillingDashboard.sln",
+      "before_sha256": "e832d3f4d290654b0d6dc39866aad635340939055d48bf42635222461de85455",
+      "after_sha256": "39e286eff9cd14f161b2231f025d8606dff06349d876800ee4ca6373560bc649"
+    },
+    {
+      "file": "tests/Billing.Tests/Billing.Tests.csproj",
+      "before_sha256": null,
+      "after_sha256": "4799111a1b9e0d6f8a68272f350402a73f0f101019debad8bc8992187c01a105"
+    },
+    {
+      "file": "tests/Billing.Tests/HttpTests.cs",
+      "before_sha256": null,
+      "after_sha256": "76750ddd754806d26525fe5ce1088b904ac5f012c325ab006f5f7884d6eaa3d3"
+    },
+    {
+      "file": "tests/Billing.Tests/MoneyTests.cs",
+      "before_sha256": null,
+      "after_sha256": "358c17ad73ceed490ea47b802a5a6109f1e49b1c847b97a53c837249092ab017"
+    },
+    {
+      "file": "tests/Billing.Tests/packages.lock.json",
+      "before_sha256": null,
+      "after_sha256": "1566e4e4c97a59b8b34b932ab20f02a04fbf267e9c86aa8da9812039e9e0cb77"
+    },
+    {
+      "file": "tests/Billing.Tests/WorkflowTests.cs",
+      "before_sha256": null,
+      "after_sha256": "95fddb426276339cbe66d9069343f962c63d6a06af781b1e33cda6ea3b2a62eb"
+    },
+    {
+      "file": "tests/browser_smoke.py",
+      "before_sha256": null,
+      "after_sha256": "d078376e7e67ca32cd1175409d22aa3b0ba810521ae4b406633349cc367ad326"
+    },
+    {
+      "file": "tests/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e89240258d6f84e8af784536f4cb8e8a69e979da21a4e6db720646dea6f74e24"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7f8bb746f3ff85cc3cdef293e75fab9d468012909d456e65400dffd185af48c0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "49930e3b85b909902cfe3a34785c2a7b5d5fbf0142a217133d80394d522bb5f1"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "59c1144677f70caaf1f768392fc57cb4da1d21c188e0a0df6e5e9f43dd7a641e"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e90617f7ae3afe21813e1e42b8fc6ee7f51fef6421c677be82af0a7868fb3e5f"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "8854d6338fd25df1902b34c5ac169903e9359a71f88e2cb5526dea00c76ffb28"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9d5205a40acefc64e8644729188a0959030d8355439c34017cc00921fe6f79bb"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "128d252189af1fb7c30ba49daa92dfe50585dd7e0e3f5bce6001a0d558b9f7a1"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "61ce61f5946d84c5bc9849ff64e7d2d1ab92653f20a36dbc12f9905dccedb532"
+    }
+  ],
+  "limits": [
+    "Loopback-only single-node SQLite simulator; no public deployment, real payment provider, outgoing HTTP delivery or automatic billing scheduler.",
+    "USD/EUR/GBP only; no taxes, proration, refunds, credit notes or currency conversion.",
+    "Relational identity/relationship tables wrap immutable JSON records; some internal workflows materialize bounded collections. Limit: 5,000 domain records per workspace.",
+    "Eight-hour in-memory browser session, 24-hour durable operation receipts; pending browser retry state is lost when the tab closes. Auth registration/login are outside the receipt protocol.",
+    "Owner/Operator/Viewer membership management is implemented, but no password-change/recovery flow, invitation email, federated identity, existing-account workspace linking or owner transfer.",
+    "Original data was not opened or replaced. Unknown database files are refused; migration requires separate reviewed work or a new learning database path.",
+    "Provider callback signatures use a custom local HMAC protocol, not Stripe compatibility. Audit and provider-event history have no retention UI.",
+    "Historical documentation is labeled and preserved; proposed course exercises are not counted as implemented functionality."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T12:31:16.629048+00:00"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "5f8d9a364788",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:27:11.170671+00:00",
+  "sourceReview": "Read service and real HTTP error helpers; null update reread guard precedes history/audit, pipeline validation and status derivation preserved. Snapshot exact.",
+  "teachingReview": "Read all nine chapters; corrected fake-error description and punctuation, retained scoped reread, transaction limits, predictions, failure trace and separate review solutions.",
+  "testReview": "Four passed actual-service cases with real errors; null reread, ordinary success, foreign pipeline refusal and exact WON payload/history with shared context/transaction. Repository adapters do not prove SQL race resolution.",
+  "specSHA256": "a7512fef00baba556c5aefd48b21e3551479275db79e81dcb396f60b547ae2e2",
+  "fileHashes": {
+    "src/services/dealService.ts": "6e296a69ec07fccdb777a7a2b9c441e3d54ee0d94e8f7482cd4392f0cc8ddffc",
+    "tests/deal-stage-update-result.test.mjs": "5fed59a83135391361c7f775ecd840521143b1dce6aa12095cce36561f3d8474",
+    "tests/helpers/load-typescript.mjs": "4065a565d1381446772ef23f676585817a2b819ebc0e5f3e4b577f246d784bd0",
+    "astraupskill/snapshots/src/services/dealService.ts": "b66880960dd9af559385086c0e82a00e8a5ba61d5ff4c38fa363d7dc5c0989ae",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "1a9a3f47b376875d28827c3b951eb5ff7e487003ed9e3b9bee5f840d27626dc9",
+    "astraupskill/evidence/results.json": "86d4f41e70906bb534713c2dd9ed63418a6ada16eeab411664f854a52e4735bd",
+    "astraupskill/README.md": "8fce842ec592dfed615663addad5b81dd4374e828dd32986b52974fa373c2987",
+    "astraupskill/01-CODEBASE-MAP.md": "a0ab8def4da5d19f4842fe7c3ba9a03ea34fb0a4aa841253f750a5d5d38f9127",
+    "astraupskill/02-CONCEPTS.md": "9e6cf29f8291b018122218aad8f8d657d44519a76d28088af9c322a8939a47f7",
+    "astraupskill/03-WORKED-CHANGE.md": "f6007ca0a42520dbf6010e9cc48cd3d645204a5a7684d4e6c2750e5ca56af09d",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "7f99e2aac6f03a2c8acae9a620a274ef952c2ce3769d1085ee6fd99084c8f739",
+    "astraupskill/05-PRACTICE.md": "691f7a3e8dba2366d8cfef030594e8a75c7d52a7ce1ed774e0b540cfb1615886",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "4ef48c0c548b9194c0b5936db1b23ceae2e3e986d12bf780b98fe997eceddba7",
+    "astraupskill/07-TRACE-LAB.md": "27cd36bbb1d4e5cbcb286974128098a6cd5a3bf8a7057272bb1c6659af7572a1",
+    "astraupskill/VERIFICATION.md": "5c29e64c078cb47ddde31633efd2e5f27dd2f16ddb03997655f8f2b26842351b"
+  },
+  "evidenceHashes": {
+    "checks/5f8d9a364788/crud-b07-astra-runtime.json": "35d246de772520620dbebbd0ecf4b4a3a09f70415c7a613a2a77555a45b29b9d",
+    "checks/5f8d9a364788/crud-b07-astra-runtime.log": "1a9a3f47b376875d28827c3b951eb5ff7e487003ed9e3b9bee5f840d27626dc9",
+    "checks/5f8d9a364788/results-crud-b07.json": "86d4f41e70906bb534713c2dd9ed63418a6ada16eeab411664f854a52e4735bd"
+  }
+}

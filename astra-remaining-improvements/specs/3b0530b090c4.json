@@ -1,0 +1,25 @@
+{
+  "id": "3b0530b090c4",
+  "project": "_Organized Desktop/05 Numbered Experiments/e11",
+  "summary": [
+    "Require an own room-map entry before share token generation or persistence, rejecting missing and inherited object-property names.",
+    "Preserve existing share shape and JSON persistence for valid room references."
+  ],
+  "changedFiles": [
+    "server/store.ts",
+    "tests/share-room-integrity.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/store.ts.original.txt",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3b0530b090c4/results-crud-b04.json"
+  },
+  "limits": [
+    "Four runtime cases execute actual store source with real Node path and explicit filesystem/nanoid/scene adapters; no Express, auth signing or real filesystem persistence was executed.",
+    "No-share-write assertions assume an initialized store; readDb may create initial directories/database when absent. File read-modify-write remains non-atomic and existing orphan shares are not migrated.",
+    "The existing route has no new explicit mapping of the service error to HTTP404; this fix establishes a store rejection, not a newly verified HTTP error contract."
+  ]
+}

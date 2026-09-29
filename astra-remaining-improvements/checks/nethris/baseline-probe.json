@@ -1,0 +1,19 @@
+{
+  "loginRoleValue": 2,
+  "readStatuses": {
+    "/api/departments": 200,
+    "/api/job-roles": 200,
+    "/api/employees": 200,
+    "/api/org-chart": 200,
+    "/api/pto": 500,
+    "/api/audit-logs": 500
+  },
+  "hrCreatesAdminStatus": 201,
+  "newAccountRole": 3,
+  "overdrawRequestStatus": 201,
+  "directHrApprovalStatus": 500,
+  "balanceAfterApproval": 132.0,
+  "serverStopped": true,
+  "originalDatabaseOpened": false,
+  "runtimeNote": "Original net8.0 assembly probed with DOTNET_ROLL_FORWARD=Major in this local environment."
+}

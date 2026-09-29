@@ -1,0 +1,126 @@
+{
+  "passed": true,
+  "total": 147,
+  "passedTests": 147,
+  "failed": 0,
+  "checks": [
+    {
+      "project": "gitjira-app",
+      "id": "5be7edf43612",
+      "command": [
+        "python",
+        "scripts/test-local.py",
+        "--",
+        "--maxWorkers=1",
+        "--testTimeout=60000",
+        "--hookTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+      "environmentOverrides": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "startedAt": "2026-09-19T22:57:21.621605+00:00",
+      "status": "complete",
+      "log": "astra-gitjira-api-r4.log",
+      "pid": 3836,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T23:31:49.094805+00:00",
+      "elapsedSeconds": 2067.46
+    },
+    {
+      "project": "gitjira-app",
+      "id": "5be7edf43612",
+      "command": [
+        "python",
+        "scripts/test-local.py",
+        "--",
+        "test/issue.test.js",
+        "test/sprint.test.js",
+        "--maxWorkers=1",
+        "--testTimeout=60000",
+        "--hookTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+      "environmentOverrides": {
+        "PYTHONIOENCODING": "utf-8"
+      },
+      "startedAt": "2026-09-20T20:11:25.175664+00:00",
+      "status": "complete",
+      "log": "astra-gitjira-list-sprint-tests-r6.log",
+      "pid": 32296,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:28:52.102022+00:00",
+      "elapsedSeconds": 1046.92
+    },
+    {
+      "project": "gitjira-app",
+      "id": "5be7edf43612",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "test",
+        "-w",
+        "@gitjira/web",
+        "-w",
+        "@gitjira/shared",
+        "--",
+        "--maxWorkers=1",
+        "--testTimeout=60000",
+        "--hookTimeout=60000"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:45:29.782314+00:00",
+      "status": "complete",
+      "log": "astra-gitjira-web-shared-tests-r4.log",
+      "pid": 23776,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:53:36.933991+00:00",
+      "elapsedSeconds": 487.15
+    },
+    {
+      "project": "gitjira-app",
+      "id": "5be7edf43612",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "typecheck"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-19T23:36:28.630849+00:00",
+      "status": "complete",
+      "log": "astra-gitjira-typecheck-r2.log",
+      "pid": 20552,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-19T23:37:33.934742+00:00",
+      "elapsedSeconds": 64.95
+    },
+    {
+      "project": "gitjira-app",
+      "id": "5be7edf43612",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+        "run",
+        "lint"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-20T20:45:40.278660+00:00",
+      "status": "complete",
+      "log": "astra-gitjira-lint-r3.log",
+      "pid": 33836,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-20T20:47:35.610406+00:00",
+      "elapsedSeconds": 115.33
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww47",
+  "id": "ec28c8c40e53",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-aggregation-state-lab.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ec28c8c40e53",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T03:55:00.632839+00:00",
+  "status": "complete",
+  "log": "crud-b07-astra-runtime.log",
+  "pid": 31884,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T03:55:05.969722+00:00",
+  "elapsedSeconds": 5.33
+}

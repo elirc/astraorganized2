@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "javaTests": 35,
+  "processChecks": 8,
+  "total": 43,
+  "checks": [
+    "create-eof",
+    "restart-list",
+    "cancel-delete",
+    "edit-reopen-search",
+    "incomplete-eof",
+    "confirm-delete",
+    "corrupt-startup",
+    "two-jvm-conflict"
+  ],
+  "environment": "JDK 17; disposable temporary fixture; no personal task files used"
+}

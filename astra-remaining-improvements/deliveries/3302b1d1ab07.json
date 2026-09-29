@@ -1,0 +1,362 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master4",
+  "id": "3302b1d1ab07",
+  "summary": [
+    "Aggregate duplicate SKU lines before comparing requested inventory with available stock; reject invalid quantities and direct helper over-reservation.",
+    "Add regression coverage for duplicate demand, invalid quantities and direct helper guards; the complete suite passes 12 tests, type checking and the client build.",
+    "Add nine source-linked learning guides, an exact original rule snapshot, worked practice solutions and actual verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3302b1d1ab07/results.json",
+    "expectedTests": 12,
+    "command": "npm ci; npm run db:generate; npm run db:push; npm run db:seed; npm test; npm run typecheck; npm run build",
+    "environment": "Node 22.16; npm 10.9.2; disposable staged SQLite with absolute DATABASE_URL"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 12,
+    "testFiles": 2,
+    "domainTests": 9,
+    "apiReadTests": 3,
+    "typecheck": "passed",
+    "build": "passed",
+    "sourceHashes": {
+      "src/shared/inventoryRules.ts": "bce8e7fd3d5ccf886241fb6347451c2580ebfdd4f2fa4ddebef3f57b611b2e7a",
+      "tests/inventoryRules.test.ts": "be8cad44448297e63dca3f114583d21d4faf151c0eb5790933ebf22867b19870"
+    },
+    "records": {
+      "npm-ci-3": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "ci",
+          "--prefer-offline",
+          "--no-audit",
+          "--no-fund",
+          "--cache",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:24:32.523907+00:00",
+        "status": "complete",
+        "log": "npm-ci-3.log",
+        "pid": 30420,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:31:18.492031+00:00",
+        "elapsedSeconds": 405.95
+      },
+      "prisma-generate": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "run",
+          "db:generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:33:37.364727+00:00",
+        "status": "complete",
+        "log": "prisma-generate.log",
+        "pid": 32432,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:34:07.304091+00:00",
+        "elapsedSeconds": 29.94
+      },
+      "db-push": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "run",
+          "db:push"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:35:47.390150+00:00",
+        "status": "complete",
+        "log": "db-push.log",
+        "pid": 17960,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:35:58.802397+00:00",
+        "elapsedSeconds": 11.41
+      },
+      "db-seed-absolute": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "run",
+          "db:seed"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/3302b1d1ab07/prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:36:56.455775+00:00",
+        "status": "complete",
+        "log": "db-seed-absolute.log",
+        "pid": 992,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:37:01.141726+00:00",
+        "elapsedSeconds": 4.68
+      },
+      "inventory-rules": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--run",
+          "tests/inventoryRules.test.ts"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:31:25.667617+00:00",
+        "status": "complete",
+        "log": "inventory-rules.log",
+        "pid": 38536,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:31:59.861262+00:00",
+        "elapsedSeconds": 34.18
+      },
+      "typecheck-2": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:34:14.364941+00:00",
+        "status": "complete",
+        "log": "typecheck-2.log",
+        "pid": 14380,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:34:43.269757+00:00",
+        "elapsedSeconds": 28.9
+      },
+      "build-2": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:./prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:34:46.195396+00:00",
+        "status": "complete",
+        "log": "build-2.log",
+        "pid": 12164,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:35:16.378380+00:00",
+        "elapsedSeconds": 30.18
+      },
+      "full-test-absolute": {
+        "project": "_Organized Desktop/03 Master Projects/master4",
+        "id": "3302b1d1ab07",
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3302b1d1ab07",
+        "environmentOverrides": {
+          "DATABASE_URL": "file:C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/stage/3302b1d1ab07/prisma/dev.db"
+        },
+        "startedAt": "2026-09-12T18:37:06.443193+00:00",
+        "status": "complete",
+        "log": "full-test-absolute.log",
+        "pid": 12908,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-12T18:37:15.838442+00:00",
+        "elapsedSeconds": 9.38
+      }
+    }
+  },
+  "courseWords": 3801,
+  "courseFiles": 9,
+  "courseLinksChecked": 12,
+  "files": [
+    {
+      "file": "src/shared/inventoryRules.ts",
+      "before_sha256": "a421dc097f6477375d8b59e73d8f9a052a787e9978be2ad3c28a4d448a52376b",
+      "after_sha256": "bce8e7fd3d5ccf886241fb6347451c2580ebfdd4f2fa4ddebef3f57b611b2e7a"
+    },
+    {
+      "file": "tests/inventoryRules.test.ts",
+      "before_sha256": "433cf2906e9f9d40758d5e270a700c4d60d8625cb474d365548454666b2afd57",
+      "after_sha256": "be8cad44448297e63dca3f114583d21d4faf151c0eb5790933ebf22867b19870"
+    },
+    {
+      "file": "astraupskill/snapshots/inventoryRules-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "a421dc097f6477375d8b59e73d8f9a052a787e9978be2ad3c28a4d448a52376b"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "f573defcd5b16d0b8a43c3469bc26b5333d7381aa101a2be81bc005c15881f33",
+      "after_sha256": "d6adc9b9628960e74a2f8cbbd7e30c2b35595615a80d2356d7a62a00bc34f63f"
+    },
+    {
+      "file": "astraupskill/evidence/npm-ci-3.json",
+      "before_sha256": null,
+      "after_sha256": "47d79b52e7b306688566a74a0512d4d94f91330e752d867b272d02b1830a382c"
+    },
+    {
+      "file": "astraupskill/evidence/npm-ci-3.log",
+      "before_sha256": null,
+      "after_sha256": "cfed0083ffdb289d621331b9bd9906bdae2585075bc16bb703ff6efc64869e30"
+    },
+    {
+      "file": "astraupskill/evidence/prisma-generate.json",
+      "before_sha256": null,
+      "after_sha256": "fc28f8dfba2600120473831de5ac4de67e64c86363f3628c27b9d1ed9fa185a9"
+    },
+    {
+      "file": "astraupskill/evidence/prisma-generate.log",
+      "before_sha256": null,
+      "after_sha256": "b442e24fd648cdc1ab8be786f05cf5b71ba29257c5bc4e54f16ed2755106955d"
+    },
+    {
+      "file": "astraupskill/evidence/db-push.json",
+      "before_sha256": null,
+      "after_sha256": "aa403222a95c1e02ea294d7a578d1d6aad697691f892e40f07693ab6b8ee731f"
+    },
+    {
+      "file": "astraupskill/evidence/db-push.log",
+      "before_sha256": null,
+      "after_sha256": "7257930f72a60f6aea0854f9dcca7aeb4a6a6d707d53a72dbee7853a3409044f"
+    },
+    {
+      "file": "astraupskill/evidence/db-seed-absolute.json",
+      "before_sha256": null,
+      "after_sha256": "8a8f35f83c2d18b85242072fbdc2c23133d697e3879e9bcea66abc8d7d8e74cd"
+    },
+    {
+      "file": "astraupskill/evidence/db-seed-absolute.log",
+      "before_sha256": null,
+      "after_sha256": "9a83dab1c3baa3ac8455ac90295cb9ec8341987b4eb77a2966fd1979dbcb8e20"
+    },
+    {
+      "file": "astraupskill/evidence/inventory-rules.json",
+      "before_sha256": null,
+      "after_sha256": "b43e8115bf7e38dc047a7e6642f3a3511322bf4612c5bd2d826890f17a39b332"
+    },
+    {
+      "file": "astraupskill/evidence/inventory-rules.log",
+      "before_sha256": null,
+      "after_sha256": "71d6e22bf9a38e3b3fec3680800b8d8be7cf2651735b6bbde848697a6063ee1a"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-2.json",
+      "before_sha256": null,
+      "after_sha256": "88338cca890f49dc770944bedb220ff0fd3e58d296fc79ca59e21329185574f0"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-2.log",
+      "before_sha256": null,
+      "after_sha256": "411ff6bf5df2ee5c52771037ccae9b64eea03a9a3cdc3722ab6563458a0c80fd"
+    },
+    {
+      "file": "astraupskill/evidence/build-2.json",
+      "before_sha256": null,
+      "after_sha256": "5e9bcb08e999d910f7e464d9fc4805b7eb31e6d36eb729b3c7b8709b2da9505f"
+    },
+    {
+      "file": "astraupskill/evidence/build-2.log",
+      "before_sha256": null,
+      "after_sha256": "3942e2551b317332eaf1782deca2af93030ccc83bb065e9420fd4b3e072a33cf"
+    },
+    {
+      "file": "astraupskill/evidence/full-test-absolute.json",
+      "before_sha256": null,
+      "after_sha256": "32e88571b4479e51af0435268fe5008ee36b8d0723a5b32e30cec683c305f73a"
+    },
+    {
+      "file": "astraupskill/evidence/full-test-absolute.log",
+      "before_sha256": null,
+      "after_sha256": "42d531a168ed5f7aa86abd78818172716f4551160f44cd51bc20c8d307cdd2fd"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "42a383f003a4c68e1eb50c4c9407a00dfb2f7c150c4f7cf5dc9e080eb1e0c522"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "df75dbac1aa57c4fb0bf27e07b10f3712ea003841dbdbae0de342c128de3d431"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1fba3fb676a064d27d2a6e8de77d029e4b6ed740a154e9b268d9dc572c4c0ba9"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "363d253514a0bef4133a73ccd4d53e1139315acd758e3cb23908e3d994a336e3"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "842fa9c6b9802c0e1ad77f1f89c7f2ef789d3c49facce5c71bbfdaf361eb4acb"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "ccdda4204f7f5306aa5f722a98fd0345aeb9df5fc0b81dc33c804b292e8bc22a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "e76f62fa2644463f0e02043d0d29a89ffb007615834f74040c83b28e15526228"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "0f992f6da98286c9444681a9a10a2438a6fa8bfda2a9da7d4dc895c3583ee1db"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b49eadd295352e01a81b3efdd236e90dfb4eb50b17bd35e06a6a7a782417ba88"
+    }
+  ],
+  "limits": [
+    "Nine pure inventory rule tests and three API health/read/export tests pass. The API suite does not execute reservation writes or prove persistent reservation atomicity.",
+    "Duplicate demand and direct helper boundaries are covered; concurrent reservations and invalid stored balance data require separate integration work.",
+    "The existing db:push script resets prisma/dev.db and the seed deletes existing rows. Verification used only a disposable staged database.",
+    "No browser workflow, deployed environment or external integration was exercised."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T18:44:09.174572+00:00"
+}

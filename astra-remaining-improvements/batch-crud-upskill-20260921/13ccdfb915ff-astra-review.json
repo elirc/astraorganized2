@@ -1,0 +1,30 @@
+{
+  "id": "13ccdfb915ff",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:08:13.277866+00:00",
+  "sourceReview": "Read LockService, real state policy, scope helper and time helper. Retained production behavior and corrected draft fixtures that bypassed ACTIVE eligibility and returned Date instead of ISO string.",
+  "teachingReview": "Reviewed rewritten nine chapters; explicit policy versus repository contention, expiry cleanup audit limit, graded scenarios and separate solutions. Removed original repeated filler and encoding artifacts.",
+  "testReview": "Six passing actual-service cases load real state/time/scope modules; release ownership/admin, expiry refusal, eligible version conflict, active-held and renewal tested with repo/audit adapters. No distributed locking claim.",
+  "specSHA256": "9748e5195e426bb05f7170641a069e1d97a7c386b1487d8a47b7464ddf94fc88",
+  "fileHashes": {
+    "tests/runtime-lock-service-lab.test.mjs": "4934b04380e56553a8b7ca631c5202679ec86f4911f64b8a633ad8611e0535e8",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "5283b5a0eb0c866cf98a7892a49c8c2674f57461f8ed37cae3703d8d947fd54d",
+    "astraupskill/evidence/results.json": "8c13777a14273f7ba0e3f3983d352f7e713666bcc03e42a0092e13cb16413f0b",
+    "astraupskill/README.md": "e6d566bc204f31b232d1a3db611584a269a300edff0932f219dd8d10e9d766ac",
+    "astraupskill/01-CODEBASE-MAP.md": "58e3b6f9fe9618cfd3a3a69b876e78c1b13a417054b9a8959c556ecca7974311",
+    "astraupskill/02-CONCEPTS.md": "ea95c60f4693479ff491d7b1178f7b75a839a077a5dd006cfa7675d99820932f",
+    "astraupskill/03-WORKED-CHANGE.md": "e84c3bfffa725a07e868985c43a59f1f0b240eba851a3507309b3382ee4404d5",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "32181789abd9fe3c47982bea39e92e786c858e053fddb904045570f923366e89",
+    "astraupskill/05-PRACTICE.md": "0494a43265694e13abafca32ae1f14f664c9f79318b63c72fcc3375a2155ce8f",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "501c287c5241103536319b52a4e3efff2de7b2908c28f5b4dca1c8163d5b2266",
+    "astraupskill/07-TRACE-LAB.md": "d6bba9b9c67260a88a470e9611fafbe8ddba1a9b88ace5b16e7b62aebc1ef469",
+    "astraupskill/VERIFICATION.md": "a1c42e4240bc7b0f4cd43d3fb37e2f352dc46b8a51c83ef8ccec78188edd132c"
+  },
+  "evidenceHashes": {
+    "checks/13ccdfb915ff/astra-crud-b05-w25.log": "f22529e3f3cb6c78b2153eac5e7a58bb9e0d5dcc1edcd6ea6c5b98e91431488d",
+    "checks/13ccdfb915ff/crud-b05-astra-runtime.json": "676b430c51f228c71ed5013620bf4a64d6cd49e24c8ec1322d1587ea82fdb002",
+    "checks/13ccdfb915ff/crud-b05-astra-runtime.log": "5283b5a0eb0c866cf98a7892a49c8c2674f57461f8ed37cae3703d8d947fd54d",
+    "checks/13ccdfb915ff/results-crud-b05.json": "8c13777a14273f7ba0e3f3983d352f7e713666bcc03e42a0092e13cb16413f0b"
+  }
+}

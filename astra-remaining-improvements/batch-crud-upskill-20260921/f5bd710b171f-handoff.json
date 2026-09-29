@@ -1,0 +1,26 @@
+{
+  "id": "f5bd710b171f",
+  "project": "_Organized Desktop/03 Master Projects/mastermatter",
+  "finding": "SqlChannelStore.updateChannelT accepted RowsAffected()==0 as success. A missing channel could therefore flow through Update into public-channel propagation and return the caller's channel object instead of a not-found error. The production boundary now returns store.NewErrNotFound(\"Channel\", channel.Id) for zero rows and retains the existing multiple-row error.",
+  "changedFiles": [
+    "mattermost/server/channels/store/sqlstore/channel_store.go",
+    "mattermost/server/channels/store/sqlstore/channel_store_update_test.go",
+    "mattermost/tests/crud-b02/run_channel_store_harness.py",
+    "astraupskill/snapshots/channel_store.go.original.txt"
+  ],
+  "tests": [
+    "Attempted python -X utf8 astra-remaining-improvements/run_project_check.py f5bd710b171f crud-b02-go-test -- go test ./server/channels/store/sqlstore -run TestValidateChannelUpdateCount -count=1.",
+    "Native Go test was blocked because go is unavailable; a dependency-free runner now extracts the exact production methods into a temporary module and is ready for the portable toolchain."
+  ],
+  "limitations": [
+    "The native Mattermost package regression has not executed; only the exact-method dependency-free harness ran.",
+    "No live database or Mattermost application boot was used.",
+    "The stage copier also stopped on a Windows path error in an unrelated deeply nested snapshot path; the changed production files and exact snapshot were staged manually."
+  ],
+  "sourceMap": {
+    "service": "mattermost/server/channels/store/sqlstore/channel_store.go SqlChannelStore.Update calls updateChannelT, then upsertPublicChannelT and commits",
+    "failureBoundary": "updateChannelT inspects SQL RowsAffected after updating Channels",
+    "contract": "zero rows means store.NewErrNotFound(Channel, channel id); one row succeeds; more than one remains an internal consistency error",
+    "downstream": "SqlChannelStore.Update only reaches public-channel propagation after updateChannelT succeeds"
+  }
+}

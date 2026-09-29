@@ -1,0 +1,15 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Billing.Tests/Billing.Tests.csproj",
+    "--nologo",
+    "--logger",
+    "trx;LogFileName=workflow-01.trx",
+    "--results-directory",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/stripe/workflow-01-results"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 1,
+  "seconds": 130.44
+}

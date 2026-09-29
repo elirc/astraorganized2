@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww18",
+  "id": "b17f4c546008",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/quote-transition-policy.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b17f4c546008",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:48:55.594039+00:00",
+  "status": "complete",
+  "log": "crud-b05-ww18-runtime2.log",
+  "pid": 19212,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:49:01.680157+00:00",
+  "elapsedSeconds": 6.08
+}

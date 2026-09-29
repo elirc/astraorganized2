@@ -1,0 +1,26 @@
+{
+  "id": "2cdf30cead55",
+  "project": "_Organized Desktop/03 Master Projects/masterrnative",
+  "summary": [
+    "Reject silent updates for missing record ids while preserving existing duplicate-id replacement semantics.",
+    "Reuse one identity guard across all six context update callbacks.",
+    "Run three dependency-free runtime cases against the actual TypeScript helper."
+  ],
+  "changedFiles": [
+    "src/context/AppDataContext.tsx",
+    "src/utils/collection.ts",
+    "tests/collection-runtime.test.mjs",
+    "astraupskill/snapshots/src/context/AppDataContext.tsx",
+    "tests/collection.test.ts",
+    "astraupskill/evidence/crud-b03-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2cdf30cead55/results-crud-b03.json"
+  },
+  "limits": [
+    "Three runtime cases execute only the actual identity helper; the six context call sites and form error handlers were reviewed in source, not mounted.",
+    "No Expo rendering, AsyncStorage integration, full typecheck or package-suite pass is claimed. The helper checks the supplied array and does not prevent stale-closure or concurrent whole-array writes."
+  ]
+}

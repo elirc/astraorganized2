@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--max-old-space-size=512",
+    "node_modules/typescript/bin/tsc",
+    "-b"
+  ],
+  "exitCode": 0,
+  "seconds": 150.14
+}

@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww5",
+  "id": "41315da7b7f9",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\41315da7b7f9",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:08:09.787555+00:00",
+  "status": "complete",
+  "log": "ww5-build-final-04.log",
+  "pid": 22396,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:10:46.136569+00:00",
+  "elapsedSeconds": 156.35
+}

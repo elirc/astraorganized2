@@ -1,0 +1,10 @@
+﻿# Isolated copies, dependency caches and original-file backups are local work artifacts.
+/stage/
+/backups/
+/dotnet-home/
+/nuget-packages/
+/pnpm-store/
+/npm-cache/
+__pycache__/
+
+/playwright-browsers/

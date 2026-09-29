@@ -1,0 +1,131 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/w22",
+  "id": "529eba39810c",
+  "summary": [
+    "Move payment and successful-refund reads into the refund transaction before allowance validation.",
+    "Propagate the transaction client through the repository reads and create.",
+    "Prove client scope and over-refund refusal with the actual service."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/529eba39810c/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/w22",
+        "id": "529eba39810c",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-refund-scope.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\529eba39810c",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:35:42.083464+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 36268,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:35:51.711194+00:00",
+        "elapsedSeconds": 9.63
+      }
+    ],
+    "limits": [
+      "Five runtime cases execute actual refund service, state machine and RouteError with explicit repository/transaction/UUID adapters. No native Prisma, PostgreSQL, HTTP or provider payment operation was executed.",
+      "Passing the transaction client keeps reads and writes in the same transaction, but default isolation does not by itself prevent simultaneous refunds from exceeding the allowance. No locking, serializable retry or durable idempotency was added.",
+      "The existing service simulates provider success with a generated id; tests do not establish real-provider refunds, real database rollback or request authorization."
+    ]
+  },
+  "courseWords": 1744,
+  "courseFiles": 9,
+  "courseLinksChecked": 6,
+  "files": [
+    {
+      "file": "src/services/refundService.ts",
+      "before_sha256": "b47d3411d1700d953e72331b86b54cf3d9e7b00a0361932dc5330c210a4365f0",
+      "after_sha256": "9661256ecbc0893e05fc9f6b4b2efe75ee5a6e355cf6d443577863ad6e6ea406"
+    },
+    {
+      "file": "tests/runtime-refund-scope.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "47b73fb8e761f468087b0a3196da0a625a51e903232f4551e74c52ca0f0834ab"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src/services/refundService.ts",
+      "before_sha256": null,
+      "after_sha256": "b47d3411d1700d953e72331b86b54cf3d9e7b00a0361932dc5330c210a4365f0"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "6fa3c4851e810a429556b7c5b4945d7355a5a64a77401054732122598fe7f155"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "c1f6fb1b589cae9e075e47f38ea74b34d33ac677b20d9f3a816b9f61a34741cf"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "b37e972053e736a458dbe9caa630e456ed001fedf7cdd58df92734a4bfc7f028"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0df54ffd74401609ad3037c9dd84eec4723edcf516c32595713c0ae1771de54a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6fff7a0c544d22b2b6e84e4630f16ef023cf4af480d2c1100c709d5775212714"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c8e7d3ec78e88b14f9e70959a03b7f7ce81aef0642beca308cbf11abd052fe17"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4f7d4fa4a803563dfb8e6ed1b0ad3bb05bb5c44b5c6aacce46f0bdabc674f5ef"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5b2616ad4ce7d054a99263b0e7dc01ff36d41d985e30f1b5b5cd8e88e364367c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "bb2e0f01427d423dc65d0006b266e7d162ca78e5f1a26663cf1aa3a67071956b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "9be6569d9951b5d3baa1c34c36d4c8f33a4e7f57dc1948403062547f0e93d651"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "a7cce48dc39fb76824fb5cb849feae3a67a2b3d06b54aac5e33720e9ecf2daaf"
+    }
+  ],
+  "limits": [
+    "Five runtime cases execute actual refund service, state machine and RouteError with explicit repository/transaction/UUID adapters. No native Prisma, PostgreSQL, HTTP or provider payment operation was executed.",
+    "Passing the transaction client keeps reads and writes in the same transaction, but default isolation does not by itself prevent simultaneous refunds from exceeding the allowance. No locking, serializable retry or durable idempotency was added.",
+    "The existing service simulates provider success with a generated id; tests do not establish real-provider refunds, real database rollback or request authorization."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:42:48.814995+00:00"
+}

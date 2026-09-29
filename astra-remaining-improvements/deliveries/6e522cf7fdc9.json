@@ -1,0 +1,162 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww48",
+  "id": "6e522cf7fdc9",
+  "summary": [
+    "Protect pending follow-up status changes with compare-and-set persistence",
+    "Avoid parent-summary and activity writes after stale update conflicts",
+    "Add project-specific CRUD upskill course"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/6e522cf7fdc9/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww48",
+        "id": "6e522cf7fdc9",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "src/tests/runtime-followup.test.mjs",
+          "src/tests/runtime-followup-service.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\6e522cf7fdc9",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:37:57.167924+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-services.log",
+        "pid": 29232,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:38:05.445266+00:00",
+        "elapsedSeconds": 8.15
+      }
+    ],
+    "limits": [
+      "Vitest command is unrun because isolated dependency installation was unavailable",
+      "Portable VM tests use explicit repository/database contracts and do not prove two live PostgreSQL transactions race correctly",
+      "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+    ]
+  },
+  "courseWords": 2867,
+  "courseFiles": 9,
+  "courseLinksChecked": 26,
+  "files": [
+    {
+      "file": "src/repositories/followUpRepository.ts",
+      "before_sha256": "162a4d1352a21a3bd223636a0ab5785bef6535e9afc64c9f3b6093a0ee7f6d78",
+      "after_sha256": "de2c96f679ea2fdb4d5c5e6b148e669250841d68de51afeb944983fb228f3d5e"
+    },
+    {
+      "file": "src/services/followUpService.ts",
+      "before_sha256": "c746686d5a5422ff1fc81f29d47186a1c5e63a3bb93a62914b2fea560b525a2a",
+      "after_sha256": "73b04533765dedb435c06d343b1b461c5b6483e90a8612b6b765151a53141745"
+    },
+    {
+      "file": "src/tests/follow-up-status-conflict.test.ts",
+      "before_sha256": null,
+      "after_sha256": "77a34bd2cf358af00abab57a56b60f19a7f4edb5088b332a4fc476e606d5f6ff"
+    },
+    {
+      "file": "src/tests/runtime-followup.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "7e081184f9fdcd30ac421c90ce9a37b89fdec1eddb103a1fd3fcf8aa2832734d"
+    },
+    {
+      "file": "src/tests/runtime-followup-service.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "4aad86bc6b4670639e2b336d7f1b94b2450dd06f6a69ea1b410be229156a02af"
+    },
+    {
+      "file": "src/tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-repositories-followUpRepository.ts.before",
+      "before_sha256": null,
+      "after_sha256": "162a4d1352a21a3bd223636a0ab5785bef6535e9afc64c9f3b6093a0ee7f6d78"
+    },
+    {
+      "file": "astraupskill/snapshots/src-services-followUpService.ts.before",
+      "before_sha256": null,
+      "after_sha256": "c746686d5a5422ff1fc81f29d47186a1c5e63a3bb93a62914b2fea560b525a2a"
+    },
+    {
+      "file": "astraupskill/snapshots/src-tests-lead-stage-transition.test.ts.before",
+      "before_sha256": null,
+      "after_sha256": "0993843b34c29bec29ab52b4937b72213ab6687db568768fb5759119422052c9"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-services.log",
+      "before_sha256": null,
+      "after_sha256": "9cff3f215ed64158c6730bc7f085f21941eccb6e6db0c0c82ba46e16f283ea8f"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "94f4ed3c2ae95cd97dbf6383e2576a302aefccf1d0ab37cf6a866b14bcd828a5"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0c593529984373f3de3ca38fac08b38f869b513eaf07473a78a995849236f4c5"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "24de374a4d52b35d02c543c439d52ed0e7cb23f66052ae6e55d4d12cb6db55e2"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9dcb2c9b1d3bbc96d96709acac7823d27c2c3deb63c5f90c91bf48ffe7ffbaff"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "343d2299dfa2fcf620af61c32001c157631195dba0658154e652416a3bf4e8d9"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "441bfad4728234087d9150b07ee6ccd92b7e3001daf52aba19713d2065efb119"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "686c869b6fd2726cc7b0f8c2d052807ede078a4f6e5548eaa14ef561f9206ee4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c42acee1edfa8ac3c4fc2da3eb0b1354305de6cd25456cc6a2dfe44bed3a112d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e9adf7aac6ee180d9ce6c8446123ada061ddde3e6f0916a3674ac0cce81b9f9c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "da8e7484dee54a691408069d631fa8edae4666862b1686d6f03e3d808f6a4c0c"
+    }
+  ],
+  "limits": [
+    "Vitest command is unrun because isolated dependency installation was unavailable",
+    "Portable VM tests use explicit repository/database contracts and do not prove two live PostgreSQL transactions race correctly",
+    "Full typecheck/build, real HTTP authorization and live database concurrency were not executed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:48:40.401699+00:00"
+}

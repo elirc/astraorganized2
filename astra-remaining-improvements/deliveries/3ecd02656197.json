@@ -1,0 +1,240 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z7",
+  "id": "3ecd02656197",
+  "summary": [
+    "Secure decision DTO projection omits compensation for unauthorized roles.",
+    "Dashboard and interview pages sort raw instants before formatting, with deterministic invalid-date fallback.",
+    "Job rows count active applications only and render an explicit empty highlighted-job state.",
+    "Pure Vitest regressions verify projection, ordering, active filtering, empty state, and snapshot non-mutation."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3ecd02656197/results.json",
+    "expectedTests": 7,
+    "command": "npm test; npm run lint; npm run build",
+    "environment": "Node/npm with Next 16.2.2; no database or external service"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 7,
+    "tests": 7,
+    "failed": 0,
+    "checks": [
+      "root-test-01",
+      "root-typecheck-01",
+      "root-lint-02",
+      "root-build-01"
+    ],
+    "scope": "Actual pure page builders with seeded relation data; full role matrix, dates/offsets/ties, active job counts, empty data and non-mutation. Next production build, TypeScript and ESLint passed; no browser, session, database or write endpoint."
+  },
+  "courseWords": 4549,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "c86eb301516ede078036c72412dad6d22c86436e0af2dfd114b4d9f3868a1447",
+      "after_sha256": "2622fb478f4ab8848368df966f2a270a12948fb105adce20465f439b90a1d8b2"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "ea246529f71b6eeb1d3e6b48cd1c0b53e68e5922bee8ba08d493aa03a5582383",
+      "after_sha256": "ad9269efd67c2d890772ff0440af80365b5d8eac0edeed11ea3ef7dec6199fca"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "72179019e281211c3530d1eef136e67957ed1d784e002597fa04036261d93535",
+      "after_sha256": "5433ed2845e4d50192e97d190e1b79ed78343612b68013dd57250427b3b7c416"
+    },
+    {
+      "file": "vitest.config.ts",
+      "before_sha256": null,
+      "after_sha256": "40bb3eb2d60fa910de7dc506aa827a7ae40e8fdf13b25778957649d119a24979"
+    },
+    {
+      "file": "src/features/dashboard/server/get-dashboard-page-data.ts",
+      "before_sha256": "3f7e4a567b60bef75d045bb11bbcd5f13f868f3aa2a058aca1ac48e37ca12019",
+      "after_sha256": "a0d19c469bfdedaba93c842f98f173c8b750aeca5a3247f6964cb42e5a40d2bd"
+    },
+    {
+      "file": "src/features/decisions/server/get-decisions-page-data.ts",
+      "before_sha256": "4432e5123ee6c262dade71f7186d2e6d907ebf0cf35346d67c4934fa75ea07bc",
+      "after_sha256": "71e86cd164718d17b51e246ffcc450b56251e2a312e909c7bfb6963e53667654"
+    },
+    {
+      "file": "src/features/interviews/server/get-interviews-page-data.ts",
+      "before_sha256": "284796aa341f45274fd40ad4d12ac923aaa671106f7861635a9c4f33e621a2ef",
+      "after_sha256": "d9805dd8a7b98d7ecdcdc04042b554562ab0cdca258da26bb453a80980541b40"
+    },
+    {
+      "file": "src/features/jobs/server/get-jobs-page-data.ts",
+      "before_sha256": "318da33c1188a8e80d33e3b1a8abe14c85f014f6162bb78c0627a710f78aa78a",
+      "after_sha256": "eb467d7eb95abdcb6688199092276e82e9cf7b4b9c829f3361d03254b09a47bf"
+    },
+    {
+      "file": "src/features/jobs/components/jobs-screen.tsx",
+      "before_sha256": "7f5d16ba1c078a3bc15b0406d8960c22070facc2f8ad016256fe0aa2f75989b4",
+      "after_sha256": "a4c844177f5ea14b4b0aad356526390cf4904daa869c12a95add655f9b305aa0"
+    },
+    {
+      "file": "src/features/shared/lib/formatters.ts",
+      "before_sha256": "28fe067bbc8335b0beb206abd402e914c43780802e61d4c4f843de70be6645d5",
+      "after_sha256": "794b179ba22300a8359ad9a5c416fde1914c41cdb87c4a75f3b69161f1486842"
+    },
+    {
+      "file": "src/features/shared/server/page-data.test.ts",
+      "before_sha256": null,
+      "after_sha256": "ded4e391e6c1a17cd040c6e9473967d5b536292b5d2252669c4e398ae22a1bb9"
+    },
+    {
+      "file": "astraupskill/snapshots/formatters-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "28fe067bbc8335b0beb206abd402e914c43780802e61d4c4f843de70be6645d5"
+    },
+    {
+      "file": "astraupskill/snapshots/get-dashboard-page-data-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "3f7e4a567b60bef75d045bb11bbcd5f13f868f3aa2a058aca1ac48e37ca12019"
+    },
+    {
+      "file": "astraupskill/snapshots/get-decisions-page-data-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "4432e5123ee6c262dade71f7186d2e6d907ebf0cf35346d67c4934fa75ea07bc"
+    },
+    {
+      "file": "astraupskill/snapshots/get-interviews-page-data-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "284796aa341f45274fd40ad4d12ac923aaa671106f7861635a9c4f33e621a2ef"
+    },
+    {
+      "file": "astraupskill/snapshots/get-jobs-page-data-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "318da33c1188a8e80d33e3b1a8abe14c85f014f6162bb78c0627a710f78aa78a"
+    },
+    {
+      "file": "astraupskill/snapshots/jobs-screen-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "7f5d16ba1c078a3bc15b0406d8960c22070facc2f8ad016256fe0aa2f75989b4"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-02.json",
+      "before_sha256": null,
+      "after_sha256": "2fb877d6feab08a51b5ce4f05a5b804251e4cf33552ada1796da15d995c15345"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-02.log",
+      "before_sha256": null,
+      "after_sha256": "2661f624511f4ec8f1b09a6a52eeb123a5ac2c3967caa5519ada2031cd42c587"
+    },
+    {
+      "file": "astraupskill/evidence/test-02.json",
+      "before_sha256": null,
+      "after_sha256": "e885d78e659d14e0495a6164714b306263220bbfcf8c9f2b9f8c5241f9567db8"
+    },
+    {
+      "file": "astraupskill/evidence/test-02.log",
+      "before_sha256": null,
+      "after_sha256": "7c3eeb497eeda7b3edc32a6c0c16f2cda701b625325e4c354c0cdd958efa8c74"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "4edb781b862501405662b9a90c0d23afec7f34e4003f61b9d6a7ef22d7ace1ec"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "fe347764043146195e815ff26caf134ee39d6e121346545e4d658b123af73d89"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "4dc8a9c67ef2f6e57e44c1b56f01bd753589ca1dc5c5add6ec4f85a7b4b05b6f"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-02.json",
+      "before_sha256": null,
+      "after_sha256": "11736d60fc6ec05cc8d37e8b406a9c401d5cdcdb34b0d45ef7d1f444289acba4"
+    },
+    {
+      "file": "astraupskill/evidence/root-lint-02.log",
+      "before_sha256": null,
+      "after_sha256": "97e97971ab30dc20db61922949f0905b9a156fefa93a04ab246239e841e7715e"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-01.json",
+      "before_sha256": null,
+      "after_sha256": "534a6d7905ac68d63e16315b5276023aeee814606cd30f75b9dfae41ee88717a"
+    },
+    {
+      "file": "astraupskill/evidence/root-test-01.log",
+      "before_sha256": null,
+      "after_sha256": "cf0dd659bc814ef4d886a33f19c2e48bb54b0115fc465896bfe60166d75b64d0"
+    },
+    {
+      "file": "astraupskill/evidence/root-typecheck-01.json",
+      "before_sha256": null,
+      "after_sha256": "7009c2a224ef1f3cc70ca7f3e84b94a0cb23d260d732175419b4cd036da3bca9"
+    },
+    {
+      "file": "astraupskill/evidence/root-typecheck-01.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "7c4039e6357933d43111d082760c71e43b7507392d35a785a4ff314ae8271413"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d2b78bad197f56a0af5804ce791c0b25a16db72d60f500cfc68cd7ad7bf9539c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9f1d732f56edd5969b793fdf6940707dfa6e8d7cc7907960a29263d7ee496d18"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "a78e2dd5458405d2926b888febaedc1a549c55c833a3181a1068ac9b931778f5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "28f94d091d0f54be3fac86dff4f213afc58fcf35002e6f6162dab04606b2d720"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "def2e5a2c936f8e0008e2c3e411dcfa0e1f85d4b2bad24f142acf955fe9292e2"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "efbb153724d3f0cc88c9fc941e8207a3060a1d9fda44817bc29da4d9d72155ad"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "fb40500d67f731b10a91c797c30b0dcd368dc526f82aa693866bcefd0deafa8c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "bfaadce11cee553d578aa1284a10da19f0ae632ccdcd62aa5558b7525b16b913"
+    }
+  ],
+  "limits": [
+    "Seeded in-memory read-only repository; no CRUD write or database transaction coverage.",
+    "Fixed demo user user_jordan and explicit role fixtures; no real authentication, tenant isolation, or authorization middleware.",
+    "Compensation policy is enforced at DTO serialization; existing note visibility policy is unchanged.",
+    "Invalid timestamps display Unknown date and sort last; future write validation is unimplemented.",
+    "The proposed optimistic-concurrency stage-change command is teaching material only.",
+    "Build and static checks passed; no browser interaction or real authenticated request was exercised."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T22:32:13.125800+00:00"
+}

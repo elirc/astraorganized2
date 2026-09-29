@@ -1,0 +1,38 @@
+{
+  "id": "200c3e641a36",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:46:17.315963+00:00",
+  "sourceReview": "Reviewed expected-status repository predicate, updated service signature and count check before audit; same public DTO path. Status-only ABA/body/authorization races explicitly not solved.",
+  "teachingReview": "Reviewed worked compare-and-set example, graduated conflict/permission exercises and separate answers; added ABA limitation and truthful five-case VM execution record.",
+  "testReview": "Astra ran five repository/service runtime cases: predicate, stale no-audit conflict, winning DTO/audit, unchanged-state rejection and permission rejection before transaction. Permission/DB explicit doubles, no SQL race claim. Preflight passed.",
+  "specSHA256": "ea14a2e5e63da61e5e9f65e138b6198031de81e1f035d8d7353aa3ad64bdd910",
+  "fileHashes": {
+    "src/repositories/note-repository.ts": "6accd98138ac2b9db6f3ae2914f04ab7bdd2f53d5e37baca7854cbbd6c11353e",
+    "src/services/note-service.ts": "e740d4f9721e004ca635d387967877d7c2397e1304be7fc6e55d8981ffb4ec61",
+    "tests/services/note-service.test.ts": "2973f658bc84edcee80746cc946423e3b5df520333a86f671edf896d71db88d7",
+    "tests/runtime-status.test.mjs": "fdf553027d2dd05e11d0c7739eb2e278f559e26bf2210261e6b02d3540e6e3f7",
+    "tests/runtime-note-service.test.mjs": "100d8ab7e4caa66012c81da7097383ee6b0eadaa3d7cf9251cd117f9b9e483d9",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-repositories-note-repository.ts.before": "03cfe3cda8f035d905c8071e96bdc3a9ee553c6dfab3c186359aa1cd20ee738f",
+    "astraupskill/snapshots/src-services-note-service.ts.before": "7ca86dcf2fdbea5565a4eb8aba52a95a7959b5c9880f49d1586345249b3679a5",
+    "astraupskill/snapshots/tests-services-note-service.test.ts.before": "b4f1b9ffa85624bb441ecf0a75c514278930d09c15c5805f2a1be9239479b7be",
+    "astraupskill/evidence/astra-crud-b01-services.log": "5463830d0a98a07521269fe6d903186b581684ebc0e66e28266bd3e8fa25509c",
+    "astraupskill/evidence/results.json": "4595cdd55133f775e12e89ef7a2fa0a7ee09f45c3c7feeca9580d9c07d31c82a",
+    "astraupskill/README.md": "bff6aa4413bf19f5e05428d8c6a1d4b5385f13e09d1147f28ad95b534cab647e",
+    "astraupskill/01-CODEBASE-MAP.md": "3dfd7ea67699eb84204f208c9546ecd4165ae6b43b8a3d072a902c953b28dc27",
+    "astraupskill/02-CONCEPTS.md": "16c7aab58fb7209a06817843c1d1680e013d37bab9d3571544c54eb76707d794",
+    "astraupskill/03-WORKED-CHANGE.md": "c9654ad3045ffeb41f66b0f6d0b78921efc78297de1ec504019a8061c4cc722c",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "c301d3749193cf9984dbb2a98c17e587772c92a9a24dc9d92ccdcf8066f3bcfb",
+    "astraupskill/05-PRACTICE.md": "9673de0a1ce069104d60b3c42054461fc888140c6034aea5820b9932c09b89f0",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "2fdde229a81e2d05fea5ca1a8b12f93c90b3a46be4268ff7a7070740de25cee5",
+    "astraupskill/07-TRACE-LAB.md": "65f795b7a8d66b7e1c9dc55413784546fe93d4cfa3f16bd9b9ef12b82a33827e",
+    "astraupskill/VERIFICATION.md": "38064f699a631d6b82e91a34b9948a181bda28eba915551b8cda2da4e8b55645"
+  },
+  "evidenceHashes": {
+    "checks/200c3e641a36/astra-crud-b01-runtime.json": "d2f2515b711da2ac9686e3a91457d7d272b7ecbbdb954bbd569d687b27b698b0",
+    "checks/200c3e641a36/astra-crud-b01-runtime.log": "95fade55523d09ef840d8b47225f98aa98ce3c18e61c28b262b0af383db326d2",
+    "checks/200c3e641a36/astra-crud-b01-services.json": "84f1b330484b100394e7a529530cd62a4d593c794470547ac126ad0ecab92aa7",
+    "checks/200c3e641a36/astra-crud-b01-services.log": "5463830d0a98a07521269fe6d903186b581684ebc0e66e28266bd3e8fa25509c",
+    "checks/200c3e641a36/results-crud-b01.json": "4595cdd55133f775e12e89ef7a2fa0a7ee09f45c3c7feeca9580d9c07d31c82a"
+  }
+}

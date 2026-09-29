@@ -1,0 +1,19 @@
+{
+  "project": "astra5",
+  "id": "37844e1ec56d",
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Fulfil.Tests/Fulfil.Tests.csproj"
+  ],
+  "commandCompleteness": "Known command prefix only; additional original flags were not retained. This is not a reconstructed exact invocation.",
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\37844e1ec56d",
+  "status": "complete",
+  "exitCode": 0,
+  "passed": true,
+  "log": "astra5-captured-tests.log",
+  "provenance": "Successful direct tool capture from the initial implementation phase; normalized by root after stopping subagents.",
+  "originalLog": "checks\\sol15-astra5-dotnet-test-r2.log",
+  "originalLogSha256": "a63b0b8511a7557d1779c41627a065f2093796087e60a7241aa90716ecb5ad07",
+  "timingCompleteness": "Original structured timing record unavailable; no timestamps were inferred."
+}

@@ -1,0 +1,24 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "command": [
+    "node",
+    "node_modules/prettier/bin/prettier.cjs",
+    "--write",
+    "apps/api/src/services/issue.service.js",
+    "apps/api/test/sprint.test.js",
+    "apps/api/test/issue.test.js",
+    "apps/api/test/socket.test.js",
+    "apps/api/test/issue-concurrency.test.js"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T23:35:25.703724+00:00",
+  "status": "complete",
+  "log": "astra-gitjira-format-r2.log",
+  "pid": 20588,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T23:35:47.532997+00:00",
+  "elapsedSeconds": 21.83
+}

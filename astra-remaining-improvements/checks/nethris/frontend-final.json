@@ -1,0 +1,11 @@
+{
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "workingDirectory": "client",
+  "exitCode": 0,
+  "seconds": 93.34,
+  "recordedRun": "frontend-07"
+}

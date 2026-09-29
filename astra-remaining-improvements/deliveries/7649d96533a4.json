@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/MasterStore",
+  "id": "7649d96533a4",
+  "summary": [
+    "Reject malformed price bounds, including trailing line terminators and unsafe integer overflow.",
+    "Preserve valid non-negative digit bounds, server first-value semantics and URL serialization behavior.",
+    "Execute five focused tests against the real listing parser, serializer and key builder."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7649d96533a4/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/03 Master Projects/MasterStore",
+        "id": "7649d96533a4",
+        "command": [
+          "node",
+          "--experimental-strip-types",
+          "--experimental-loader",
+          "./tests/alias-loader.mjs",
+          "--test",
+          "tests/listing-search-params.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7649d96533a4\\storefront",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:42:54.506691+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 9296,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:43:14.621635+00:00",
+        "elapsedSeconds": 20.11
+      }
+    ],
+    "limits": [
+      "No claim about Next rendering, provider requests, catalog persistence, authorization, cache behavior, or durable webhook idempotency."
+    ]
+  },
+  "courseWords": 2672,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "storefront/src/lib/utils/listing-search-params.ts",
+      "before_sha256": "2e4f7c959feba2be7e55d1d883642379917ea46ec27efe5979691e83a5a75710",
+      "after_sha256": "284ab7038357aa533be317823fc06c4c199ae94ae0a3f610d8a5495fb564c268"
+    },
+    {
+      "file": "storefront/tests/listing-search-params.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "399528804185c6a728f8864c03b26e01ac675bfbc4e960a7a6b96bb47e5493d3"
+    },
+    {
+      "file": "storefront/tests/alias-loader.mjs",
+      "before_sha256": null,
+      "after_sha256": "fe5d9e6d75f785b4aedaee0de2645f155d3e200bbb1e58bfc03f8e87b4dfb9ee"
+    },
+    {
+      "file": "astraupskill/snapshots/src/lib/utils/listing-search-params.ts",
+      "before_sha256": null,
+      "after_sha256": "2e4f7c959feba2be7e55d1d883642379917ea46ec27efe5979691e83a5a75710"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "5547fc44b53a3ecd6b0e842131717da0fc315ebbb336ad105844dc654cb1d859"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "cfd4f3830931b498fda67ac5b884cb2806f1a320b243f25c45866b8de3694fc1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9018f64d0bed9ce928bb4395bbb1fcc734a1a2ad13c18b6b9c65f4055ebb1ae0"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9340d47c3cd944e7da4df990b12e00b7f818262ed20255a5b237ec234b6a9f60"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "1486447befe357d530e4474827308ce0c9f3c2e1d5baded35ca3781441332d10"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "18ed2254b6cec213e4a07cf9513cab747e2b6498140a9f9f982b120633fa3ab7"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "41b010d3f7c1f2be94661f2ebb008a2f93b6e8d1520aba773f5be81f4e8e2c28"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7e8dbb6ea1920c55c371639e51808c3c743c41ec33b77c11d118ac76d31e0aab"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "508d1fb030132dc393a2f2b0207a9f9a6cd11cef3826c399d2f32a07e18f44ff"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "0a468bff32704f9691a6390fd2be77242527ddb31209aa199e72dee81406495c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "f455a3a60f39ae44f40ecb0bb1d9523e0698746bcf6a3b58a9056cdfa1f7cd16"
+    }
+  ],
+  "limits": [
+    "No claim about Next rendering, provider requests, catalog persistence, authorization, cache behavior, or durable webhook idempotency."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:49:17.621745+00:00"
+}

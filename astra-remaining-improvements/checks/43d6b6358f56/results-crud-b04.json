@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/D3",
+      "id": "43d6b6358f56",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/api-key-verify-boundary.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\43d6b6358f56",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:21:38.569578+00:00",
+      "status": "complete",
+      "log": "crud-b04-astra-runtime.log",
+      "pid": 23800,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:21:46.837105+00:00",
+      "elapsedSeconds": 8.26
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual apiKeys.ts with real Node SHA-256 and explicit Drizzle/schema/database predicate adapters. No Next.js, native ORM or PostgreSQL is executed.",
+    "The sequential verification read and lastUsedAt write are unchanged; concurrent revocation/deletion between them is not made atomic. Key verification does not establish every caller permission or organization lifecycle rule."
+  ]
+}

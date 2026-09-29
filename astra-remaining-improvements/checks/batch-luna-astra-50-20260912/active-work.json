@@ -1,0 +1,29 @@
+{
+  "root": "Astra plans, independently reviews, validates and applies; maintains reports",
+  "batchDelivered": 32,
+  "overallDelivered": 74,
+  "luna_course_finish": "e13 implementation; Master6 delivered",
+  "luna_checkout_finish": "z6 5137a9c91d26 assigned; Appmaker frozen/root owns final build/course/spec",
+  "luna_ramp": "ww27 2c7ac2b52738 assigned; z1 frozen/root owns final lint/typecheck/course/spec",
+  "rootSetupHandles": {
+    "ww27Install": 37318,
+    "w24Install": 1777,
+    "appmakerBuild": 49809,
+    "z1Lint": 72414
+  },
+  "retired": "All older queue workers must not resume or edit delivered projects.",
+  "latestAudit": {
+    "projects": 67,
+    "files": 3173,
+    "matchingProjects": 66,
+    "onlyKnownDifference": "JSProjectLearn nine pre-existing user edits"
+  },
+  "readyForNextAssignment": {},
+  "stoppedReadOnlyScans": [
+    17908,
+    38296,
+    34580,
+    15316,
+    29372
+  ]
+}

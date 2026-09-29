@@ -1,0 +1,4 @@
+﻿from pathlib import Path
+import subprocess
+b=Path('astra-remaining-improvements').resolve();s=b/'stage/993e7c3b44d7';p=s/'src/components/globs/GameClient.js';t=p.read_text(encoding='utf-8').replace('const snapshot=serializeState(next);baseline.current=', 'const snapshot=serializeState(next);hydrateState(createInitialState(puzzle),snapshot);baseline.current=');p.write_text(t,encoding='utf-8')
+cli=next((b/'npm-cache/_npx').glob('*/node_modules/prettier/bin/prettier.cjs'));r=subprocess.run(['node',str(cli),'--write','src','tests','browser-tests','scripts','prisma/seed.js','playwright.config.mjs','next.config.mjs'],cwd=s,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,encoding='utf-8',errors='replace');(b/'checks/glob').mkdir(parents=True,exist_ok=True);(b/'checks/glob/format.log').write_text(r.stdout,encoding='utf-8');print(r.returncode,r.stdout[-1000:])

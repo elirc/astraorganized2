@@ -1,0 +1,29 @@
+{
+  "validated_at": "2026-09-06T18:39:33.494691+00:00",
+  "valid": true,
+  "records": 388,
+  "software_workspaces": 362,
+  "learning_or_reference_collections": 26,
+  "git_roots_covered": 108,
+  "directories_scanned": 100421,
+  "files_discovered": 415133,
+  "sampled_file_references": 5130,
+  "broken_evidence_paths": [],
+  "unresolved_scan_errors": [],
+  "unassigned_source_files": [
+    {
+      "path": "gitvg/tools/publish-organized-projects.ps1",
+      "reason": "Workspace publishing helper, not a separate project; not executed."
+    }
+  ],
+  "likely_duplicate_groups": 56,
+  "projects_with_learning_paths": 306,
+  "checks": [
+    "Unique IDs and paths",
+    "All referenced source/learning paths present in discovery",
+    "All Git roots covered",
+    "Relationship references resolve",
+    "All source directories accounted for",
+    "No AstraOrganized paths in independent inventory"
+  ]
+}

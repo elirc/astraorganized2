@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "total": 59,
+  "unitTests": 44,
+  "browserScenarios": 15,
+  "productionBuildPassed": true,
+  "packageLockMatchesPinnedManifest": true,
+  "screenshotsReviewed": 6,
+  "browserResults": "browser-verified/results.json",
+  "limits": "Local browser simulation; no authentication, server, payment, tax, recurring billing, delivery, full accessibility or power-loss certification."
+}

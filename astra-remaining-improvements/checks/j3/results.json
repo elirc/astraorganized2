@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "tests": 35,
+  "javaRegressionTests": 28,
+  "separateProcessCliScenarios": 7,
+  "compiler": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all",
+  "checks": [
+    "create and separate process reload",
+    "transfer balance and paired history survive reload",
+    "CLI rejects precision without balance mutation",
+    "CLI rename persists",
+    "CLI delete protects used accounts and confirms unused deletion",
+    "EOF does not create unfinished account",
+    "corrupt startup preserves authoritative snapshot"
+  ],
+  "limits": [
+    "No real funds or external services; no HTTP adapter or database; synchronization is per service instance, not cross-process."
+  ]
+}

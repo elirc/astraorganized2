@@ -1,0 +1,22 @@
+{
+  "summary": [
+    "Align development newsletter queue state transitions with the database path by rejecting re-queue attempts from queued state.",
+    "Preserve first-queue recipient scheduling and audit behavior while preventing duplicate retry side effects."
+  ],
+  "changedFiles": [
+    "src/server/newsletters/service.ts",
+    "tests/runtime-newsletter-state.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-server-newsletters-service.ts.before",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1cf37faa32e8/results-crud-b04.json"
+  },
+  "limits": [
+    "Four actual-service runtime cases load the real dedupe-key helper with explicit dev store, queue, audit, database and environment adapters. No native Prisma, Redis, HTTP or worker execution.",
+    "The development branch changes status before awaiting queued jobs. A queue failure leaves queued state and prevents retry through this function; recovery/outbox redesign is not included. No durable delivery, atomicity or concurrency guarantee is claimed."
+  ]
+}

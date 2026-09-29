@@ -1,0 +1,29 @@
+{
+  "id": "cb18aae6d81d",
+  "project": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+  "summary": [
+    "Protect appointment completion from stale status writes by requiring the status read before validation to still match during the update.",
+    "Map only Prisma P2025 to APPOINTMENT_STATUS_CHANGED 409 before activity and audit side effects while preserving unrelated persistence errors.",
+    "Add five production-source runtime cases using the real state machine, AppError and audit helper, with a fixed clock and source-specific course."
+  ],
+  "changedFiles": [
+    "backend/src/modules/appointments/appointments.service.ts",
+    "tests/runtime-appointment-complete.test.mjs",
+    "tests/helpers-load-typescript.mjs",
+    "astraupskill/snapshots/backend-appointments-service.ts.before",
+    "astraupskill/evidence/runtime-appointment-complete.log",
+    "astraupskill/evidence/results-crud-b02.json",
+    "astraupskill/evidence/crud-b02-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/cb18aae6d81d/results-crud-b02.json"
+  },
+  "limits": [
+    "Vitest, Express, full typecheck, live Prisma, transaction isolation, external notifications, and deployed schema support for extended unique filters were not run.",
+    "Runtime tests execute actual appointmentsService.complete with explicit persistence and framework contracts.",
+    "The guard covers completion status freshness only; cancellation, rescheduling, recurrence, and booking conflict paths remain outside this bounded change.",
+    "Status equality does not detect other field changes or a reschedule/reconfirm cycle. Test transaction contracts do not prove database rollback; HTTP authentication/authorization and missing generated Prisma typing remain outside the executed suite."
+  ]
+}

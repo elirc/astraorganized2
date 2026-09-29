@@ -1,0 +1,47 @@
+{
+  "summary": [
+    "Materializes normalized tags before mutation and rejects undefined status, priority and comment visibility values.",
+    "Filters the authorized population across source pages before final pagination and excludes internal-comment text from search.",
+    "Replaces broad ticket payloads with data-free SignalR invalidations, refetches selected detail, rejoins on reconnect, and suppresses stale list and hub detail refreshes while preserving drafts.",
+    "Adds real domain/search regression tests, missing React type dependencies, a frontend lockfile and nine detailed learning chapters with worked examples and matched exercises."
+  ],
+  "changedFiles": [
+    "support-ticketing-app/backend/SupportDesk.Api/Application/Queries/SearchTickets.cs",
+    "support-ticketing-app/backend/SupportDesk.Api/Domain/Ticket.cs",
+    "support-ticketing-app/backend/SupportDesk.Api/Infrastructure/InMemoryTicketStore.cs",
+    "support-ticketing-app/backend/SupportDesk.Api/Realtime/SignalRTicketNotifier.cs",
+    "support-ticketing-app/frontend/package.json",
+    "support-ticketing-app/frontend/src/api.ts",
+    "support-ticketing-app/frontend/src/App.tsx",
+    "support-ticketing-app/README.md",
+    "support-ticketing-app/backend/SupportDesk.Api.Tests/SupportDesk.Api.Tests.csproj",
+    "support-ticketing-app/backend/SupportDesk.Api.Tests/TicketSafetyTests.cs",
+    "support-ticketing-app/frontend/package-lock.json",
+    "astraupskill/snapshots/api-before.ts.txt",
+    "astraupskill/snapshots/App-before.tsx.txt",
+    "astraupskill/snapshots/InMemoryTicketStore-before.cs.txt",
+    "astraupskill/snapshots/SearchTickets-before.cs.txt",
+    "astraupskill/snapshots/SignalRTicketNotifier-before.cs.txt",
+    "astraupskill/snapshots/support-ticketing-app__frontend__package.json.before.txt",
+    "astraupskill/snapshots/Ticket-before.cs.txt",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-dotnet-test-01.json",
+    "astraupskill/evidence/root-dotnet-test-01.log",
+    "astraupskill/evidence/root-web-build-02.json",
+    "astraupskill/evidence/root-web-build-02.log",
+    "astraupskill/evidence/root-web-types-01.json",
+    "astraupskill/evidence/root-web-types-01.log",
+    "astraupskill/evidence/ticket-safety-tests.trx"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/1bb35a95be79/results.json",
+    "expectedTests": 3
+  },
+  "limits": [
+    "In-memory storage and demo identity headers remain; no real authentication, database, tenant hardening or durable outbox.",
+    "Search aggregates all source pages in memory and is not an atomic snapshot across writes. Internal-comment text is excluded for staff too.",
+    "Three focused backend tests do not establish the complete actor policy, HTTP behavior, SignalR connection behavior or browser rendering.",
+    "Request counters cover list and hub detail refreshes; existing user-driven selection and mutation races remain. Creation-time priority fallback remains unchanged."
+  ]
+}

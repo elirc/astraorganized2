@@ -1,0 +1,51 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "explicit sign-in with token held only in tab memory",
+      "passed": true
+    },
+    {
+      "name": "server pagination across 23 seeded profiles",
+      "passed": true
+    },
+    {
+      "name": "create profile and reload accepted representation",
+      "passed": true
+    },
+    {
+      "name": "stale write retains draft and rebases only edited fields after explicit review",
+      "passed": true
+    },
+    {
+      "name": "create profile-specific question with user text rendered as text",
+      "passed": true
+    },
+    {
+      "name": "create planned session and explicitly start it",
+      "passed": true
+    },
+    {
+      "name": "create scored attempt with immutable question snapshot and valid zero score",
+      "passed": true
+    },
+    {
+      "name": "accepted write with lost response requires review and avoids duplicate submission",
+      "passed": true
+    },
+    {
+      "name": "completed session protects attempts and failed save preserves draft",
+      "passed": true
+    },
+    {
+      "name": "explicit reopening enables another review cycle",
+      "passed": true
+    }
+  ],
+  "screenshots": [
+    "01-conflict-review.png",
+    "02-attempt.png",
+    "failure.png"
+  ],
+  "seconds": 70.39
+}

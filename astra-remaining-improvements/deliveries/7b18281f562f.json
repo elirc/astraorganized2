@@ -1,0 +1,134 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildagentteaching",
+  "id": "7b18281f562f",
+  "summary": [
+    "Keep expected AppError enrollment refusals as independent per-student batch results.",
+    "Rethrow unexpected persistence and programming failures so the batch cannot hide infrastructure incidents.",
+    "Execute the actual TypeScript enrollment service through a dependency-free source-linked runtime harness."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7b18281f562f/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/02 Build Projects/buildagentteaching",
+        "id": "7b18281f562f",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-bulk-enroll.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7b18281f562f",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:07:21.572569+00:00",
+        "status": "complete",
+        "log": "crud-b02-astra-runtime.log",
+        "pid": 31052,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:07:33.522983+00:00",
+        "elapsedSeconds": 11.95
+      }
+    ],
+    "limits": [
+      "The runtime harness does not execute Prisma SQL, database rollback, Vitest, or browser actions.",
+      "The batch remains independently transactional per student; no retries or all-or-nothing transaction were added."
+    ]
+  },
+  "courseWords": 2873,
+  "courseFiles": 9,
+  "courseLinksChecked": 30,
+  "files": [
+    {
+      "file": "packages/application/src/services/enrollment-service.ts",
+      "before_sha256": "dcaaf4aa618fe607beebf4b5341fd310f308012cce9b423792e57643f66ecb5a",
+      "after_sha256": "972a47798035712d0dd87cb31977c6e30c4754b981737bf63de76e85a0ed4cb4"
+    },
+    {
+      "file": "tests/runtime-bulk-enroll.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "2f5c3f0e87071845b6f6f20f4e5f08917dc817eb373d39ded59fd40921f386a6"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/packages/application/src/services/enrollment-service.ts",
+      "before_sha256": null,
+      "after_sha256": "dcaaf4aa618fe607beebf4b5341fd310f308012cce9b423792e57643f66ecb5a"
+    },
+    {
+      "file": "tests/bulk-enroll-entry.ts",
+      "before_sha256": null,
+      "after_sha256": "da32a7ca45fc8c18cea3f1f3153897c1344a56475f3919ffc60532e515070593"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "dab2c9384daa3623e5b8e36f476a72c5a4c2ca92cae2b698486b1f32afeb746e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "0b9c2530928c34a5f1c21ab506645cd6ba667b25feb1841e14d740b01870c6af"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a18c86fa7634fee6404fd897b9c86d5e0fbe90551b8aa785012fc4f1ef73ce90"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e853b44cb344b9f54c780addf88a84db92598893515ea15be699143032ba55ff"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5986b5e1da5f30d528f0b693838eb734fadcf1ddee915e92adfa8dc5cbb8d5c5"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6b70f62bafb008ab3fe9c408f13443fe698ff1f4d9a8fb26e4dc16e1ef149143"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "d9af518492051fbdaef19417a4615ef3f36872274203454e6bd5b9e94b8f8194"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "301b6bebb1230a732857b8ae969e1e6ab1678a47832d1d4450c88015368a0a49"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "1b0d8af74e98ff9d1d91fefb58d8648cae4d3c0b5d135e318d94c01bfb1e354b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "087ac6276249697a5ca4f3422224707d1b1db2c15dc80dc04689cb10cbfd53f8"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "933481c0a834d3177c798bb49634483612598f5febcfd1540042a9a91e910f40"
+    }
+  ],
+  "limits": [
+    "The runtime harness does not execute Prisma SQL, database rollback, Vitest, or browser actions.",
+    "The batch remains independently transactional per student; no retries or all-or-nothing transaction were added."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:20:02.984240+00:00"
+}

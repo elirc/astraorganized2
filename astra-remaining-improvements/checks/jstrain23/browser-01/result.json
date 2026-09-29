@@ -1,0 +1,10 @@
+{
+  "passed": false,
+  "checks": [
+    "fresh CLI setup and repeat-setup refusal preserve database bytes"
+  ],
+  "count": 1,
+  "error": "",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\jstrain23\\browser_check.py\", line 42, in <module>\n    assert request('/api/workspace?workspaceId=missing')[0]==422\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+  "pageErrors": []
+}

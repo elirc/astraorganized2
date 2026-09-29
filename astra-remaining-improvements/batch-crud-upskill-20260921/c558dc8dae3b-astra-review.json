@@ -1,0 +1,32 @@
+{
+  "id": "c558dc8dae3b",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:47:56.644789+00:00",
+  "sourceReview": "Read entire TraceVaultService: disabled list behavior versus sourceStatus detection, temporary map, sorted mapping, repeated reads, search and usage aggregation. Source unchanged.",
+  "teachingReview": "Replaced all generic chapters with concrete fixture arithmetic, snippet versus matching distinction, separate practice/answers, performance and provider limits.",
+  "testReview": "Five actual-service cases pass: mapping/read/search, disabled/undetected and missing behavior, sort order, thinking-text case-insensitive search with positive limit/snippet cap, tokens/tools/day aggregation and provider error. Explicit SourceAdapter only, no provider/MCP/performance claim.",
+  "specSHA256": "23132896a98654a38d05b83c05ede9c889415818f58d011c41d820fadc987fa8",
+  "fileHashes": {
+    "tests/trace-vault-service-runtime.test.mjs": "2e3eb6874002d585d955371eb72a8c3bcd9a55ec8956151f55efefe1a3d550c5",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/service.ts.original.txt": "695e52c22a0123d6fef168545334154b6e3923977544167f927072701d3be72d",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "b7dc445f112a25bb1947f19bb67de825d01415f7c935418c56f0990bdc9c7c88",
+    "astraupskill/evidence/results.json": "928845cf5f872f32041dcdf332dab397e3b9e95b905bbbd1574d133288997262",
+    "astraupskill/README.md": "82507f786f4ea4f87aca60fb0750b0d3657ed4d14e2fe2b9f843ba5dc7ddd631",
+    "astraupskill/01-CODEBASE-MAP.md": "73568319f4c96ec72a3898aecde72717ee632c7d218612d25bcac8f0edac7d6c",
+    "astraupskill/02-CONCEPTS.md": "cd3c7d9d1da1b3446eb969447eadc0cb4669e75f6cbda5efe4db28e065cd5bca",
+    "astraupskill/03-WORKED-CHANGE.md": "4ef2f5d27431784d1a5f53e5caec019b9712168d87b8dbca5683b25a08f31548",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "1e1fc55c44f7ae6806eef584f53fb1423fba65f4cc6cbae16131ecccef004566",
+    "astraupskill/05-PRACTICE.md": "d2031f47a869bc266958f1fc1d432b71dd81e59e52763afb16211a6bbed6321a",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "2a232acee352311d35883f7e9f91692e31d35f52a06e5575f0c2ab67d1091b7a",
+    "astraupskill/07-TRACE-LAB.md": "cace070a1137ce2ebdb5d60521d11225ead6edde9663b85fef39c4dd477e0dd9",
+    "astraupskill/VERIFICATION.md": "6e58369c6ab274dbb00a27151d3c6ff9a9ee2bff10120c0c50f981ef34e13227"
+  },
+  "evidenceHashes": {
+    "checks/c558dc8dae3b/crud-b08-astra-runtime.json": "0e1e310d987bcfdc7d7a72d562d8df8e21423b82e58c80f63b161934bf41cd45",
+    "checks/c558dc8dae3b/crud-b08-astra-runtime.log": "b7dc445f112a25bb1947f19bb67de825d01415f7c935418c56f0990bdc9c7c88",
+    "checks/c558dc8dae3b/crud-think-runtime-v1.json": "715fb432fdde351d96a57d887d6c45922c382bbb3f66ec4d848af8e3550b6043",
+    "checks/c558dc8dae3b/crud-think-runtime-v1.log": "8fc7fdc42b965f64d9f91c3bb29628f6ea8e10e89a59f6b330e79aa96b5d8aa7",
+    "checks/c558dc8dae3b/results-crud-think-runtime-v1.json": "928845cf5f872f32041dcdf332dab397e3b9e95b905bbbd1574d133288997262"
+  }
+}

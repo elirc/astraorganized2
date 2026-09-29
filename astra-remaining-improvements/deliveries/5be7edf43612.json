@@ -1,0 +1,366 @@
+{
+  "project": "gitjira-app",
+  "id": "5be7edf43612",
+  "summary": [
+    "Coordinated sprint assignment, start and completion with bounded serializable transactions and state-qualified writes.",
+    "Validated completion destinations and protected browser assignments with strictly advancing timestamp comparisons.",
+    "Added real PostgreSQL regressions and made socket test synchronization and cleanup deterministic; added nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5be7edf43612/sol15-results.json",
+    "expectedTests": 147,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 147,
+    "passedTests": 147,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "gitjira-app",
+        "id": "5be7edf43612",
+        "command": [
+          "python",
+          "scripts/test-local.py",
+          "--",
+          "--maxWorkers=1",
+          "--testTimeout=60000",
+          "--hookTimeout=60000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+        "environmentOverrides": {
+          "PYTHONIOENCODING": "utf-8"
+        },
+        "startedAt": "2026-09-19T22:57:21.621605+00:00",
+        "status": "complete",
+        "log": "astra-gitjira-api-r4.log",
+        "pid": 3836,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T23:31:49.094805+00:00",
+        "elapsedSeconds": 2067.46
+      },
+      {
+        "project": "gitjira-app",
+        "id": "5be7edf43612",
+        "command": [
+          "python",
+          "scripts/test-local.py",
+          "--",
+          "test/issue.test.js",
+          "test/sprint.test.js",
+          "--maxWorkers=1",
+          "--testTimeout=60000",
+          "--hookTimeout=60000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+        "environmentOverrides": {
+          "PYTHONIOENCODING": "utf-8"
+        },
+        "startedAt": "2026-09-20T20:11:25.175664+00:00",
+        "status": "complete",
+        "log": "astra-gitjira-list-sprint-tests-r6.log",
+        "pid": 32296,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T20:28:52.102022+00:00",
+        "elapsedSeconds": 1046.92
+      },
+      {
+        "project": "gitjira-app",
+        "id": "5be7edf43612",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "test",
+          "-w",
+          "@gitjira/web",
+          "-w",
+          "@gitjira/shared",
+          "--",
+          "--maxWorkers=1",
+          "--testTimeout=60000",
+          "--hookTimeout=60000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T20:45:29.782314+00:00",
+        "status": "complete",
+        "log": "astra-gitjira-web-shared-tests-r4.log",
+        "pid": 23776,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T20:53:36.933991+00:00",
+        "elapsedSeconds": 487.15
+      },
+      {
+        "project": "gitjira-app",
+        "id": "5be7edf43612",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T23:36:28.630849+00:00",
+        "status": "complete",
+        "log": "astra-gitjira-typecheck-r2.log",
+        "pid": 20552,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T23:37:33.934742+00:00",
+        "elapsedSeconds": 64.95
+      },
+      {
+        "project": "gitjira-app",
+        "id": "5be7edf43612",
+        "command": [
+          "node",
+          "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5be7edf43612",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-20T20:45:40.278660+00:00",
+        "status": "complete",
+        "log": "astra-gitjira-lint-r3.log",
+        "pid": 33836,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-20T20:47:35.610406+00:00",
+        "elapsedSeconds": 115.33
+      }
+    ]
+  },
+  "courseWords": 5426,
+  "courseFiles": 9,
+  "courseLinksChecked": 101,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "59b70a8488b884ce5c8387ef954817aa515c99e2b99e13aa74012d6b25ad8a2a",
+      "after_sha256": "34839450315974c2ed58041bce2452e25aaa1e09f0b4f590aadbcc2db4a2d650"
+    },
+    {
+      "file": "apps/api/src/controllers/sprint.controller.js",
+      "before_sha256": "36e63b63c1c0e5bb6454208e1defb8cf0ea309e005c19683aa7d439a0afc0e71",
+      "after_sha256": "cd1ad78385e0deb0db645538d1fea888f0d1c67a610b27dd50e1af3192408130"
+    },
+    {
+      "file": "apps/api/src/services/issue.service.js",
+      "before_sha256": "caebc7d534d4c2e4e35062fbf9a1935c9fd918031e80e81a73a8a54bdf01f0ae",
+      "after_sha256": "6ebce6429c7197c50fe0faf2524f186707491d7476da8c5f480ad5fc349f656c"
+    },
+    {
+      "file": "apps/api/src/services/sprint.service.js",
+      "before_sha256": "3447b97db639c52c6a5918b1b263a35a60b8092425f642a55e06a6b3ca8e6780",
+      "after_sha256": "5900b2e380dee4e125f6c03521a5f5f600cef484de2c5f9b0f70c2fab047bb15"
+    },
+    {
+      "file": "apps/api/test/issue-concurrency.test.js",
+      "before_sha256": "7172fc9b586a45d7fb5b7b357930999ae79308560c96d7c5fcb67be1dabb4db6",
+      "after_sha256": "6e4fbf5ed06341b0a8e34c654a11a8ccae5243186b9b632d0c8bf72cc30a3834"
+    },
+    {
+      "file": "apps/api/test/issue.test.js",
+      "before_sha256": "584a7a05c940c754b44899cd1ffd6090605ba5adc38bcee8567a82b34c46582d",
+      "after_sha256": "54762a7d91e4a24bb78a6919e21141fd645e72841743faa5a908bd15cac37fbb"
+    },
+    {
+      "file": "apps/api/test/socket.test.js",
+      "before_sha256": "4781e782ea158eea00e44ba2fc4e54c43659a39b0254c85b71d91f9f37c4cdfa",
+      "after_sha256": "9533b52067b13f1a1cb4cf45765cb7060b2c025a8bc1c7b68a9dbf4d3f7e52b0"
+    },
+    {
+      "file": "apps/api/test/sprint.test.js",
+      "before_sha256": "db22faa56868d61e5a0c2adb23875165ab46f14b4ea507f5eec09a418725c95a",
+      "after_sha256": "d3bc7893eec0406239fe6a01915b62cdefae75b1db57a7f3c58dc35126e6033c"
+    },
+    {
+      "file": "apps/web/src/lib/hooks.js",
+      "before_sha256": "6472cd5f4f660e7226be6541435d30c16e9ce98d8aa8d3998980dce8efa123cf",
+      "after_sha256": "85ecbb86b29f4d58628723b7b901c999808739b2d33da128dc1eeac89c2dc662"
+    },
+    {
+      "file": "apps/web/src/pages/BacklogPage.jsx",
+      "before_sha256": "2933d3d3b63ff84576ee0e74483ce32506b1179ab9a243b9112d7a7f459ba69d",
+      "after_sha256": "41434096270f33662bf6b51cd13490b2d12e6c1cc13640882c7acc02ef4521ed"
+    },
+    {
+      "file": "apps/web/test/backlog-stale-assignment.test.jsx",
+      "before_sha256": null,
+      "after_sha256": "36370f2a27170d1cb31b6f29a85aa8be278abd4312c118f95ca04adabd49edf0"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-api-r4.json",
+      "before_sha256": null,
+      "after_sha256": "6603f10c5ac3b7e1d58a0da4e0e25dc49c08c22983983d3e553b154f591de706"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-api-r4.log",
+      "before_sha256": null,
+      "after_sha256": "8ab8301e4ee65882f5722b4b172776d72329331cacd09e40172ed2f4a92ca24b"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-lint-r3.json",
+      "before_sha256": null,
+      "after_sha256": "3783f73f9967c944a7e47765d7c30fb6b37eb4299cbfddf47c98cdbc7645d1da"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-lint-r3.log",
+      "before_sha256": null,
+      "after_sha256": "24ccc7d95a91324dae8fa836c2d973dc1852c04d96dd3ffcb1a4c4a89a1c0945"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-list-sprint-tests-r6.json",
+      "before_sha256": null,
+      "after_sha256": "dddf03a3e70c0a2b374c0cad6eb8e70f96c4365536c5ba2b29c5031e0c23305e"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-list-sprint-tests-r6.log",
+      "before_sha256": null,
+      "after_sha256": "24e05743791cb698e1091db52bc47a3ab0a220aa2385c34c1c36e6bda48ba9f5"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-typecheck-r2.json",
+      "before_sha256": null,
+      "after_sha256": "bd3c93df31455ba27fada280bdbbc5b2fd696ab1d546bdd2cef95fef8a0f6054"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-typecheck-r2.log",
+      "before_sha256": null,
+      "after_sha256": "722ce3e82ab2a31ff7b17b9a803f12bacacf6921a5fa9d9426dd46aa0471c3a2"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-web-shared-tests-r4.json",
+      "before_sha256": null,
+      "after_sha256": "4b40cbbe0bd0267e81a94d7ee600f1765d1012fc3b399e9d6f7166112673e745"
+    },
+    {
+      "file": "astraupskill/evidence/astra-gitjira-web-shared-tests-r4.log",
+      "before_sha256": null,
+      "after_sha256": "04b9e388fbe450e616d74b59af17c06cbcf779e0a9a12a1efdd325d483fa326e"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "59b70a8488b884ce5c8387ef954817aa515c99e2b99e13aa74012d6b25ad8a2a"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__controllers__sprint.controller.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "36e63b63c1c0e5bb6454208e1defb8cf0ea309e005c19683aa7d439a0afc0e71"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__services__issue.service.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "caebc7d534d4c2e4e35062fbf9a1935c9fd918031e80e81a73a8a54bdf01f0ae"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__services__sprint.service.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "3447b97db639c52c6a5918b1b263a35a60b8092425f642a55e06a6b3ca8e6780"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__test__issue-concurrency.test.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "7172fc9b586a45d7fb5b7b357930999ae79308560c96d7c5fcb67be1dabb4db6"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__test__issue.test.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "584a7a05c940c754b44899cd1ffd6090605ba5adc38bcee8567a82b34c46582d"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__test__socket.test.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4781e782ea158eea00e44ba2fc4e54c43659a39b0254c85b71d91f9f37c4cdfa"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__test__sprint.test.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "db22faa56868d61e5a0c2adb23875165ab46f14b4ea507f5eec09a418725c95a"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__web__src__lib__hooks.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6472cd5f4f660e7226be6541435d30c16e9ce98d8aa8d3998980dce8efa123cf"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__web__src__pages__BacklogPage.jsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2933d3d3b63ff84576ee0e74483ce32506b1179ab9a243b9112d7a7f459ba69d"
+    },
+    {
+      "file": "astraupskill/snapshots/packages__shared__src__issue-schemas.js.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9974d247cdb24e5f7e60dbc26c7f69f8fcac529f4a3b946631396765d87c424d"
+    },
+    {
+      "file": "packages/shared/src/issue-schemas.js",
+      "before_sha256": "9974d247cdb24e5f7e60dbc26c7f69f8fcac529f4a3b946631396765d87c424d",
+      "after_sha256": "45c9791b80acc3588786392b519dbb1a35684f5cab2cd0a411fba08638c83092"
+    },
+    {
+      "file": "scripts/test-local.py",
+      "before_sha256": null,
+      "after_sha256": "e4e5c3e49d715b8da5fe2851d8a7305052f62780b1303400d6ff221a91599a28"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9fd340b3be68587ef770dbf37a69136370c8e176dc76ad7d3492106fb76de7e6"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "5cee0c558e2e920eccdb81f22dcda66672b38dc59f6632d1054eb3f84b0df90c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f6e58b263aa3ce1b85b0abaf12000ad4b7e295071bb2d12e2058993e8621d87f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4b44476f1e644ae57bfe2c90af2f505487ac376d656b01c7791da9366c94349c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "23e97daf86f862d70d971207e24c3979640fe3622a9a4aa2cc5ca864a4a06f50"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5ca6906374b4a094db9f7d56b09521c572a591008f8c89ed69721094ce2e7493"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "2de74ecda1b9e393d4b9c3506882ff6570433ec771bbff5e48f190e8d4d3951a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "998223318465639b43d73306ea2c4d1ecfe7757a22ca0e78a0b321a1f606eefe"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "014016103b2df0967a442eb53e090aae3c3b8b2936b12bf874498ff44381513f"
+    }
+  ],
+  "limits": [
+    "API database checks do not certify deployed Redis workers or browser end-to-end behavior."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-20T20:56:00.453732+00:00"
+}

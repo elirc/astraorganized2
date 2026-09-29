@@ -1,0 +1,348 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "id": "b7429e8bf71d",
+  "summary": [
+    "Validates timer instants and Prisma Int durations, preserving zero, omitted notes and explicit null. Manual/start factories support actual handler tests and safe errors.",
+    "Protects the stop transition with an endTime-null conditional update; starts enforce the existing application-wide running check inside a transaction.",
+    "Moves board tickets using transaction-local reads, same-project targets, clamped insertion and contiguous sibling positions, including no-op moves.",
+    "Restores full-project ESLint with small unused-code cleanups, supplies thirteen passing regression cases and nine detailed learning chapters with complete executable examples."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/b7429e8bf71d/results.json",
+    "expectedTests": 13
+  },
+  "testResults": {
+    "passed": true,
+    "total": 13,
+    "tests": 13,
+    "failed": 0,
+    "checks": [
+      "root-install-02",
+      "luna-generate-final-20260912",
+      "luna-test-freeze-20260912",
+      "luna-typecheck-freeze-20260912",
+      "luna-lint-freeze-20260912",
+      "root-build-final-01"
+    ],
+    "scope": "13 Node test cases across actual parsers, manual/start handlers, stop/start services and board service with Prisma doubles; full lint/typecheck/Next build pass; no live database or browser."
+  },
+  "courseWords": 6198,
+  "courseFiles": 9,
+  "courseLinksChecked": 25,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "7e51fb81be45adfd2db76f656e358fe813ffa19e7fda7ef4eb32b27f9c24ea27",
+      "after_sha256": "aa826821272e1a555c2abee4d56b7c44e2b056534fb302d4cfb7403ff57f7209"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "80e56b40155302f4e35cf371ee8a70e7035549b3876e1150f9a77724f4d9b0b6",
+      "after_sha256": "8d8c757d682049de43469ce0de785f7c76ec519dd9e7e30fc2e233a500b1de56"
+    },
+    {
+      "file": "app/api/tickets/[ticketId]/move/route.ts",
+      "before_sha256": "7c655bae719d66351507cbf1cad09ef988dfc0eefa56c4582c3229df43ac5148",
+      "after_sha256": "bf95590a7e231e95fcd89d0743e9f3530e4480a6163a13ee7238bbd60928676a"
+    },
+    {
+      "file": "app/api/tickets/[ticketId]/time-entries/route.ts",
+      "before_sha256": "3f232da994c3fb9e7304d2de5bcb4f777614c605b8556283a1dfb31e3c80acd2",
+      "after_sha256": "4eb816ada58b6b485b02c230f7d69aee731ba1608bd083587cb031588e597c56"
+    },
+    {
+      "file": "app/api/tickets/[ticketId]/time-entries/start/route.ts",
+      "before_sha256": "438c51209413f7a6f9e67d310a991b774e53fc840552b385df831d076a5e6061",
+      "after_sha256": "936df6e719fba41466721ea80eaa68e0586300c4737cf6bd38c0e07c28e5a2d4"
+    },
+    {
+      "file": "app/api/time-entries/[entryId]/route.ts",
+      "before_sha256": "33e5215f7590c3bc9bee96f87462f747d60ad717b0564f01cde5ab7d10618421",
+      "after_sha256": "2f0d37f0d20e836054f263eb4d81ebe73181da13ca8264a350624a5f5506a7d1"
+    },
+    {
+      "file": "app/api/time-entries/[entryId]/stop/route.ts",
+      "before_sha256": "92e50991e8d471f1eac87416a3cac47ef9bb3b6a5a5904e21dee4b0194f5693a",
+      "after_sha256": "11bd13b371e6854ddca89f9e6648eb2f4c199a2a7b4c705e61c2712ac10f5ef9"
+    },
+    {
+      "file": "app/projects/[projectId]/page.tsx",
+      "before_sha256": "034a45d50498d1dcfcccb8a7f29b2a2203d00ccd0d5824f6f22d76e520b06c66",
+      "after_sha256": "4002751ea35b759b5abe9ca01c569cdf2368b296a1d03caa331521e1f140b25e"
+    },
+    {
+      "file": "components/board/Board.tsx",
+      "before_sha256": "74f9b00e3d2a6ef5d3c871d8e21405660b386e36e6795d3e136ee095c755ca23",
+      "after_sha256": "441a21b8af4c388244b216859ecd1600339b36e6a6469e92b737f97f8e73d46e"
+    },
+    {
+      "file": "lib/api-client.ts",
+      "before_sha256": "7859c85b411e7d6197125d0cc7fe2141d680b144511d7cbf953f6c720f13b51a",
+      "after_sha256": "a2c6918dc7fb4e1ea38cf10d5a2ecb36dde4f38ddfb14673bf08aabad1b9b435"
+    },
+    {
+      "file": "prisma/seed.ts",
+      "before_sha256": "4335405daed7746e102519ee9adab01b4afbe1c2af1f693347fe8f2d92bab272",
+      "after_sha256": "f6a5894b01b2447d0160fa2357e3fe64f4d20335a1b8b3b9da6e7792874e934b"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "857d82b285c09631d5149d51b41cde7fcc586dbb78aa0efd0e86caa5be5355a7"
+    },
+    {
+      "file": "lib/api-errors.ts",
+      "before_sha256": null,
+      "after_sha256": "76525e2ae48c0d9b37d69d5029da501315584ea3bbc3f51a5bad3167628ce690"
+    },
+    {
+      "file": "lib/board-service.ts",
+      "before_sha256": null,
+      "after_sha256": "0f4f4eba18d903a6976757093804d00a390f3395786d1f2baf7a71478f2972d9"
+    },
+    {
+      "file": "lib/time-entry-handlers.ts",
+      "before_sha256": null,
+      "after_sha256": "74c0ab8f2272c75e4ab03a81dc3796a128cd1c38be9a385d06d9c982a6da7fea"
+    },
+    {
+      "file": "lib/time-entry-service.ts",
+      "before_sha256": null,
+      "after_sha256": "34bd151b1f1085a6d4d66b7b9ccefba9ee4156c05bbd8f3e012dc22d547b624a"
+    },
+    {
+      "file": "lib/time-entry-validation.ts",
+      "before_sha256": null,
+      "after_sha256": "0b2a8259690dc34d8d7188f26ff297033b3256a3795dceea53c0563af36dcaf8"
+    },
+    {
+      "file": "tests/time-entry-validation.test.ts",
+      "before_sha256": null,
+      "after_sha256": "fd760c34fb4cc20cefde99e2912643d47a481e3dbd00a51b22d270bc045178f6"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__tickets__[ticketId]__move__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "7c655bae719d66351507cbf1cad09ef988dfc0eefa56c4582c3229df43ac5148"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__tickets__[ticketId]__time-entries__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "3f232da994c3fb9e7304d2de5bcb4f777614c605b8556283a1dfb31e3c80acd2"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__tickets__[ticketId]__time-entries__start__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "438c51209413f7a6f9e67d310a991b774e53fc840552b385df831d076a5e6061"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__time-entries__[entryId]__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "33e5215f7590c3bc9bee96f87462f747d60ad717b0564f01cde5ab7d10618421"
+    },
+    {
+      "file": "astraupskill/snapshots/app__api__time-entries__[entryId]__stop__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "92e50991e8d471f1eac87416a3cac47ef9bb3b6a5a5904e21dee4b0194f5693a"
+    },
+    {
+      "file": "astraupskill/snapshots/app__projects__[projectId]__page.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "034a45d50498d1dcfcccb8a7f29b2a2203d00ccd0d5824f6f22d76e520b06c66"
+    },
+    {
+      "file": "astraupskill/snapshots/components__board__Board.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "74f9b00e3d2a6ef5d3c871d8e21405660b386e36e6795d3e136ee095c755ca23"
+    },
+    {
+      "file": "astraupskill/snapshots/lib__api-client.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "7859c85b411e7d6197125d0cc7fe2141d680b144511d7cbf953f6c720f13b51a"
+    },
+    {
+      "file": "astraupskill/snapshots/lib__db.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "1ca0f8ddef6dc9b2e808333cee4262cc578d11f65b3344202552b40805ae0c62"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "7e51fb81be45adfd2db76f656e358fe813ffa19e7fda7ef4eb32b27f9c24ea27"
+    },
+    {
+      "file": "astraupskill/snapshots/prisma__schema.prisma.txt",
+      "before_sha256": null,
+      "after_sha256": "99621fb3f4b6fde3a731c48a7c68a643401a010ab5a34e3991c907b8f4ce4559"
+    },
+    {
+      "file": "astraupskill/snapshots/prisma__seed.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "4335405daed7746e102519ee9adab01b4afbe1c2af1f693347fe8f2d92bab272"
+    },
+    {
+      "file": "astraupskill/snapshots/types__index.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "b26e499ea1c2f1f9b7de98935f08fd93c504defd18acc89ec9a1714b4b4b0acc"
+    },
+    {
+      "file": "astraupskill/evidence/luna-generate-final-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "aad986a32413089b13a1f6d7024d8dffde8cb0b3e6ec4277082227ee39ce9471"
+    },
+    {
+      "file": "astraupskill/evidence/luna-generate-final-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "137f9b594127af72f4985d543b2aa962578fe86c108cad6d448f34b506d64552"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-final2-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "ed902f540b531b96cc0f874c848bc6401869bcc5d638795259b19dc064da6b48"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-final2-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "a17add75bcd9e042215d311d5b55e2c795707f2c3d2ae6eca29c4bb970cb33cf"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-freeze-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "ea9891e69d5e60e9d077f558c9a57fb89b0349d66ab650c1872cbd0d3a542897"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-freeze-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "a17add75bcd9e042215d311d5b55e2c795707f2c3d2ae6eca29c4bb970cb33cf"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-full-baseline-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "75c03e4038ae9dd0564acf2b7c57431590c18b90af3869ce37798cf092227716"
+    },
+    {
+      "file": "astraupskill/evidence/luna-lint-full-baseline-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "6b99f336ed070e40ec536a8d25464aa942fc509de2d78bbf35b6b926327903f9"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-final2-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "74b0ead7c5e3f6b3d0dff912f1a9cc9b5efed4d98065d8ba284c6119a7a1de5c"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-final2-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "022d7af5a9d0f5eb6a29889b950b85a274b59370610edf0316a00799d74d0b13"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-freeze-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "96e439fb181ce49b0213b1f60bf9cf2c669968c70583c2949b24fc4dc4e94bb9"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-freeze-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "03e88a4bf25a6d64fe43135bf4a00ae2d39a38a6e39be0cb389908c7be74ecf9"
+    },
+    {
+      "file": "astraupskill/evidence/luna-typecheck-final2-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "831a52d701bef8173c6c7ea8de1e139dd33f2245d9d8667552e8580ccdf3746e"
+    },
+    {
+      "file": "astraupskill/evidence/luna-typecheck-final2-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/luna-typecheck-freeze-20260912.json",
+      "before_sha256": null,
+      "after_sha256": "6a884512d19d647f3799cf50a0fa94f693da9bcb8ec212f44e8585409343af47"
+    },
+    {
+      "file": "astraupskill/evidence/luna-typecheck-freeze-20260912.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "599a0fc7099529300788878adae4823838f6e6c5f95d83c47faab1c470719187"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-final-01.json",
+      "before_sha256": null,
+      "after_sha256": "43d61ea7a44956e18e88f31e8249193a1b8e2dd04d2213a37cc0ffbb0ea64319"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-final-01.log",
+      "before_sha256": null,
+      "after_sha256": "c1c32d95267bdba012bc6bec5043ed5d8e0eed6507145ce6e74f77bdfa9d00ab"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-02.json",
+      "before_sha256": null,
+      "after_sha256": "982491f2cfd870a9c371c796c76c7f4f6cd4599c8ef82fc0888369b362ad6403"
+    },
+    {
+      "file": "astraupskill/evidence/root-install-02.log",
+      "before_sha256": null,
+      "after_sha256": "5c64cb2b4c544f7f778e15942c0169df595c4d15650945b3dbffedbfd74f4eae"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "61da1d7c6ea162c19451389c7130fdbd014b6bfa49373b2098789d808b776c57"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "ef0148bdc1109c0bdd247442a508d8bd602e304005a645007ecb61f9e0129646"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "26698c8cf726074e06977b256e19417e3d36b13285fc8061422557a515838d15"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "edd6e8e4a0db1a8d5876c61048f2fe4d2f8fc55810a7f843b73f159889fb67a4"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1cf4657dd999aa623dcd9e635ece3e2e2fd6f4337b4c1a8780b0f370c988125d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "cf5f207c1a76352b94f478c991b671af8062b0cac84347e860c7436b78090c6c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "3e6135e282c991ad7da6d89d6cd1f29fba6ac1059c62668160902f5ac73272c2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "83e8767aba31a34dddba5b389f75b8bb1a1527627efaf3956338b2efb5c7b4b8"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "d47b56aa7e76433840db5bdea7d5806968cebbac1a13eda532b154798b557c9d"
+    }
+  ],
+  "limits": [
+    "Tests use partial Prisma doubles and actual handler/service functions; no generated SQLite persistence, rollback, HTTP server, browser or authentication coverage.",
+    "No trusted actor resolver or per-user timer relation; project consistency is not user authorization.",
+    "Start and board concurrency across connections/processes is unverified; ticket positions have no uniqueness constraint.",
+    "Stop protects the transition but its later read may observe subsequent edits. Existing unrelated CRUD routes remain outside this increment."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T13:05:36.133779+00:00"
+}

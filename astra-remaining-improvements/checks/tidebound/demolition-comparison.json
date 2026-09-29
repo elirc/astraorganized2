@@ -1,0 +1,20 @@
+[
+  {
+    "variant": "original",
+    "beforeWood": 1000,
+    "afterWood": 400,
+    "result": {
+      "ok": true,
+      "message": "Building removed; half its materials recovered where storage permits."
+    }
+  },
+  {
+    "variant": "current",
+    "beforeWood": 1000,
+    "afterWood": 1000,
+    "result": {
+      "ok": true,
+      "message": "Building removed; half its materials recovered where storage permits."
+    }
+  }
+]

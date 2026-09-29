@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "backendTestsRepeated": 98,
+  "noNpmDependencies": true,
+  "sourceFilesCopied": 35,
+  "sourceHashes": {
+    "package.json": "430f4c716a6fc01db3d6fb1fa02f702860ab5963ca5529a875da0d60f20970cf",
+    "src/core/constants.js": "21d04a42170500d1dd073d6a03eb2a4fba30cb64950fe8483bbdbd82d724e241",
+    "src/core/evaluation.js": "9d05037a2dbd160cffdfc0773fbb0de379069c4c1d605b9175e77b6727bd59d8",
+    "src/core/hash.js": "3ad11e8a253b9a61c0ca7a3bf68eb7abee7941e8833a9c14c6b67bceb6ed29ab",
+    "src/core/snapshot.js": "8b7bca9fd02033afe03549d090cab2399df05de59d6142ef7216437c0a580fe2",
+    "src/server/contracts.js": "5872fe07bcafb8f9c13bb6499ebab8b316b738a55939e198d772ffe8ebf3a7e8",
+    "src/server/defaults.js": "3a90ebd1fae38567a32b77e081bbf7e3c03c3310ae5bcbcfcf0fa1ab24bff09a",
+    "src/server/http-boundary.js": "40f85d0a18d6fb1ac20abde2390850eaf9534158f35d9a9d383452395c70697d",
+    "src/server/router.js": "a831588c1fa2ceaccc882d1a60d4058b8225057b69e7ef59448565b1c2ae4adc",
+    "src/server/server.js": "1b7ffaa3bc43d1e398116e1003b4aeafd5c86f56d0fc4ed4025ac41c2c726d0f",
+    "src/server/services.js": "5dcdf07f7fe2906445e474d4730babee14687aed25588f1675fb73a8080cdc77",
+    "src/server/setup.js": "b3a4822175c4e5c6cad9763d00d56bb768eb10be25b05033cd7563e29628ebb7",
+    "src/server/storage.js": "5428ce6662be7681e41ab44bc8dda5271d846b39e20378870b9afc68662fc994",
+    "src/server/store.js": "ed533139070711f5e28490be06a89e3639ba832a2103cfd2db1f1a9195d1241e",
+    "src/ui/app.js": "5838afe9a198fa524fdee36d2f2aa59b1b7300fda4a62774dacc7ec6b1f9b32e",
+    "src/ui/index.html": "cd03bff30883e18071bbe061e68f45dca7b6da00bf0ff1e7ebbfdf18502673b4",
+    "src/ui/styles.css": "9ec7981eeea0fc71aba9d5bfc51b3d3667db8fbc080bc1e52503ba538e4461e8",
+    "sdk/browser-sdk.js": "13188418fc49f48d078ec96fd76b31bfe7213665c3698e0c49a0912911c48db3",
+    "sdk/request.js": "2e18a9bbf73775d5b03b56424aa9953abbab220dc8871e1ddc57547da8b99993",
+    "sdk/server-sdk.js": "3faa6ce34c67e410b2db31b441f38723a1ddc5bfcd0a2ada7b202bd7c8416642",
+    "test/authorization.test.js": "3b9f2b6a2958778fcb306405a06154de700f625fda4d32284739053e5e417555",
+    "test/context-cache.test.js": "df7f500ce06901967535ac26485a81022099cb95f92c0c820282de0174a4e696",
+    "test/contracts.test.js": "7793662d04e52e9648a18658d88e0b8a16fa874459a8c7c9c2547dab15e9342f",
+    "test/crud.test.js": "fe03a1b7d0a950528b548bc00bbe3d7639d6532a732c6bf70ac7928afd206fdf",
+    "test/evaluation-safety.test.js": "1b5aba3f34abba143a9ce72d8a9cd3d5faa1effd77b7de480350a340f16e3fcd",
+    "test/evaluation.test.js": "554dc12991e1ba326a7b9f82f48fd8f645b670d3918edadecc383ec5734ad225",
+    "test/fixtures.js": "f2c2b8001527ddf39ca3e684e4393ee616424e7371ddd6214116a17979948da9",
+    "test/helpers.js": "a141dfb5af764b2d41f6de06ade3159aa383392539cb629c00f7a1c02e84f0ab",
+    "test/http.test.js": "5af892cc11b005b22fe5be6f31afd6b22228c1f982718263269241890040381c",
+    "test/metrics.test.js": "4e1bf1e6fdac74256e3988c2cb7ab326f3bd82834241a2cacffdaa483f1cc325",
+    "test/sdk.test.js": "c3741c44c3c5c2779c4b97321b3d68fbdec55ad1f39bcca508500b6b5263601c",
+    "test/services.test.js": "c35fc93be016d52273dd1a7871327235566f3dc41ea957ded931a65208884e69",
+    "test/storage.test.js": "3f1f0c63d1dfa558cd0158d5ba9d8349c40685986a1ca73fea71c28ed87d1246",
+    "verification/browser-fixture.js": "13b764b9a9e0fa5329791bbd822e2828cf256b01b74bdf34cf4bc17344362b41",
+    "verification/run-tests.js": "f48851b2dfb262c7343a84763f0f99ca58d2eabe08f89e1ce7cf55d08894afd2"
+  },
+  "gates": [
+    {
+      "name": "tests",
+      "command": [
+        "C:\\Program Files\\nodejs\\npm.cmd",
+        "test"
+      ],
+      "exitCode": 0,
+      "seconds": 64.49,
+      "stdoutOmitted": false
+    },
+    {
+      "name": "owner-setup",
+      "command": [
+        "node",
+        "src/server/setup.js",
+        "owner",
+        "Clean verification owner",
+        "owner@example.invalid"
+      ],
+      "exitCode": 0,
+      "seconds": 2.36,
+      "stdoutOmitted": true
+    },
+    {
+      "name": "owner-refuses-overwrite",
+      "command": [
+        "node",
+        "src/server/setup.js",
+        "owner",
+        "Replacement",
+        "replacement@example.invalid"
+      ],
+      "exitCode": 1,
+      "seconds": 2.51,
+      "stdoutOmitted": true
+    },
+    {
+      "name": "cli-startup-assets-and-owner-authentication",
+      "passed": true,
+      "staticAssets": 3,
+      "seconds": 5.32
+    }
+  ]
+}

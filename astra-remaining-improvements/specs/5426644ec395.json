@@ -1,0 +1,48 @@
+{
+  "summary": [
+    "Reservation and checkout now validate candidate times before mutating equipment.",
+    "Return validates time and equipment state before changing loan state.",
+    "Cancellation and expiry check cooperating equipment state before reservation transitions.",
+    "Deterministic clock regressions preserve state on invalid and mismatched operations while retaining existing concurrency coverage."
+  ],
+  "changedFiles": [
+    "src/BorrowBox.Api/Loans/LoanEndpoints.cs",
+    "src/BorrowBox.Core/Loans/Loan.cs",
+    "src/BorrowBox.Core/Reservations/Reservation.cs",
+    "tests/BorrowBox.Infrastructure.Tests/Loans/CheckoutTests.cs",
+    "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationExpiryTests.cs",
+    "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationTests.cs",
+    "README.md",
+    "astraupskill/snapshots/CheckoutTests-before.cs.txt",
+    "astraupskill/snapshots/Loan-before.cs.txt",
+    "astraupskill/snapshots/LoanEndpoints-before.cs.txt",
+    "astraupskill/snapshots/Reservation-before.cs.txt",
+    "astraupskill/snapshots/ReservationTests-before.cs.txt",
+    "astraupskill/snapshots/tests__BorrowBox.Infrastructure.Tests__Reservations__ReservationExpiryTests.cs.before.txt",
+    "astraupskill/evidence/BorrowBox.Api.Tests.trx",
+    "astraupskill/evidence/BorrowBox.Core.Tests.trx",
+    "astraupskill/evidence/BorrowBox.Infrastructure.Tests.trx",
+    "astraupskill/evidence/luna-restore-01.json",
+    "astraupskill/evidence/luna-restore-01.log",
+    "astraupskill/evidence/luna-test-04.json",
+    "astraupskill/evidence/luna-test-04.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-build-02.json",
+    "astraupskill/evidence/root-build-02.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5426644ec395/results.json",
+    "expectedTests": 29
+  },
+  "limits": [
+    "Validation ordering prevents rejected input from mutating live in-memory references.",
+    "Stores retain live references and expose no transaction or reservation/loan Save contract; post-persistence failure rollback is not claimed.",
+    "Per-equipment checkout locking remains; borrower-limit races across different equipment remain.",
+    "SQLite equipment adapter is not selected and no schema or production data was changed.",
+    "Hosted expiry worker is not run as a long-lived verification process.",
+    "Demo header authentication and selected Staff policies is not production authentication, actor binding, or tenant isolation.",
+    "Future coordinator, optimistic concurrency, and durable activity transaction are proposed only.",
+    "API tests use an in-process application host; lifecycle endpoint date/error mapping and browser behavior remain source-reviewed rather than newly integrated HTTP tests."
+  ]
+}

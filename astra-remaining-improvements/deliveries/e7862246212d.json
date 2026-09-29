@@ -1,0 +1,354 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+  "id": "e7862246212d",
+  "summary": "Completed safe integer server pricing and direct command validation; atomic synchronous demo order/coupon/refund/fulfillment/audit writes; preserved financial refund status across logistics transitions; aligned action visibility; added regression tests and nine source-based guides.",
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/e7862246212d/resume14-results.json",
+    "expectedTests": 22,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 22,
+    "passedTests": 22,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+        "id": "e7862246212d",
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:22:20.257749+00:00",
+        "status": "complete",
+        "log": "resume14-tests-01.log",
+        "pid": 27200,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:23:20.194765+00:00",
+        "elapsedSeconds": 59.9
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+        "id": "e7862246212d",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T19:29:38.436192+00:00",
+        "status": "complete",
+        "log": "resume14-types-02.log",
+        "pid": 10976,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:30:53.591464+00:00",
+        "elapsedSeconds": 75.14
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+        "id": "e7862246212d",
+        "command": [
+          "npm.cmd",
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T19:30:56.401051+00:00",
+        "status": "complete",
+        "log": "resume14-lint-01.log",
+        "pid": 23108,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:39:25.000341+00:00",
+        "elapsedSeconds": 508.57
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+        "id": "e7862246212d",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build",
+          "--",
+          "--webpack"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+        "environmentOverrides": {
+          "CIRCLE_NODE_TOTAL": "2"
+        },
+        "startedAt": "2026-09-19T19:34:56.331069+00:00",
+        "status": "complete",
+        "log": "resume14-build-01.log",
+        "pid": 24072,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:50:45.641540+00:00",
+        "elapsedSeconds": 949.31
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww49",
+        "id": "e7862246212d",
+        "command": [
+          "npm.cmd",
+          "install",
+          "--package-lock-only",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "--prefer-offline"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e7862246212d",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T19:50:58.636456+00:00",
+        "status": "complete",
+        "log": "resume14-lock-01.log",
+        "pid": 20172,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:52:24.774528+00:00",
+        "elapsedSeconds": 86.14
+      }
+    ]
+  },
+  "courseWords": 4004,
+  "courseFiles": 9,
+  "courseLinksChecked": 100,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "after_sha256": "b2171adae40f11e05ffd213d44b10d71aa05e6e118260eab5401398433c765c0"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "3958dca7dfc80a5b1a4dd5be8e86594c3da9ed63c9ba6b00c0ce5971632ca66e"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "84ece924cc90978d9c4b8caa2fda483dbe2f555b2bd44c4037569b9afbce24f4"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "f5d8abc93291d8f2238a61aab017b1beb8aac85c1a48a49c179d332ae34db9e1"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "efcd0fcd78495129a823e49a2440de183e300af6d9804e8bb60cf4edefab6845"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lock-01.json",
+      "before_sha256": null,
+      "after_sha256": "c6c13d575801b718bc8c2e71caf4ab55cc279514c5d4481aa2753b13603df80f"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lock-01.log",
+      "before_sha256": null,
+      "after_sha256": "2b2bbbf93489e72436a76087518c0ea9a2edc890ec71f668ed8bb2124f488c60"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-01.json",
+      "before_sha256": null,
+      "after_sha256": "3d27e8edf6708236111508242cbdd7eec9ad84077a8669c5a49694f0ba317633"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-01.log",
+      "before_sha256": null,
+      "after_sha256": "ba2a168e0e79a4f22bf7304da24fef326794038afc4b6178eb2dfe7cbc222d29"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.json",
+      "before_sha256": null,
+      "after_sha256": "c10c8c20e04cf8cffe5cabc4723b45edb577fead963c6bcc448163948e74b027"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.log",
+      "before_sha256": null,
+      "after_sha256": "e126853079024834a6af950fdd3169c030cbd002a200d62a35fb7a76233eace4"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "0b6656f2ce0c500a6c1f6e5fcf5ded600c55ed2d05899be2889b690a7fab1e68"
+    },
+    {
+      "file": "astraupskill/snapshots/src__components__orders__OrderActionPanel.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d7c13ee9dedd086ea7ae06dc8b35123268bfa683b28467b6dc06198bbf6c9199"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__demo__store.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ce5f0009ea693ddb9631bd00af3333763dbceabbdf91e6763f623733afd57da1"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__money.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d85c21635d5126f1882e60f982ba12b19dde86f54fcc734f6bdfa61bad0e4201"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__common.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8f2cc152013bd1fe3e7bb7a8bb5a1de758bb2f62e1c6d3aafa960b004e63d929"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__orderSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6d8e25f24aa8113d12d2153d631a0292186f2967eef4ef810ba9e29ee7ec0a66"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__couponService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "fa43f6593ca15e7831397eb4b7f8523aed79c2bbabf175b3354bfa524a3feb10"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__fulfillmentService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "5090023dea36cc949684b7fb236a6653356e52d74f4133384817b1f0b341beaa"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__orderService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "037d925baa017ea986fbd94d68c864bf12eab631bdb5d3aae8892783c74995f5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__refundService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4a77e1dbc0fe712007461f2c989b39d4a4c8eb44e4b9354c2b438ebed4024ded"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "eebb397d936ac2040bcce8d77fe9a8da169f3315e27c23c617d7adf66bba9553"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "0b6656f2ce0c500a6c1f6e5fcf5ded600c55ed2d05899be2889b690a7fab1e68",
+      "after_sha256": "8489d6e54fc2a06c6bf60b4360de12aa38e2052cbf0481641e8f3962f60e7235"
+    },
+    {
+      "file": "src/components/orders/OrderActionPanel.tsx",
+      "before_sha256": "d7c13ee9dedd086ea7ae06dc8b35123268bfa683b28467b6dc06198bbf6c9199",
+      "after_sha256": "f12355333a0cda5cbc16e0d82474cbaf8830200d3ce02f21fd93e4fdb3171b5e"
+    },
+    {
+      "file": "src/lib/demo/store.ts",
+      "before_sha256": "ce5f0009ea693ddb9631bd00af3333763dbceabbdf91e6763f623733afd57da1",
+      "after_sha256": "8f4886fd62c830b7d03687d77824e3c821ae94eb4bac7136aa007a19fa9edf58"
+    },
+    {
+      "file": "src/lib/money.ts",
+      "before_sha256": "d85c21635d5126f1882e60f982ba12b19dde86f54fcc734f6bdfa61bad0e4201",
+      "after_sha256": "e67c6c7c0ea02377a9fcdb157cc5b9d54986969808e0a462371c046d88a359b3"
+    },
+    {
+      "file": "src/lib/order-status.ts",
+      "before_sha256": null,
+      "after_sha256": "8b8cc6875c5dd2dd1d4cca23df43451b238ccf1d69cf8ab89e7420f4fd94c6f0"
+    },
+    {
+      "file": "src/lib/validation/common.ts",
+      "before_sha256": "8f2cc152013bd1fe3e7bb7a8bb5a1de758bb2f62e1c6d3aafa960b004e63d929",
+      "after_sha256": "bf3d074e8c1726dc5e57bcd243d7f3c34afc8b68e1ef8aef9d54da8c7802eff2"
+    },
+    {
+      "file": "src/lib/validation/orderSchemas.ts",
+      "before_sha256": "6d8e25f24aa8113d12d2153d631a0292186f2967eef4ef810ba9e29ee7ec0a66",
+      "after_sha256": "5877ebe29e390666879bc32ee7d466a64e6db681fac72b6ad5d0202af5fe4f50"
+    },
+    {
+      "file": "src/services/couponService.ts",
+      "before_sha256": "fa43f6593ca15e7831397eb4b7f8523aed79c2bbabf175b3354bfa524a3feb10",
+      "after_sha256": "77e91f9aab06905147aa9639472c26b7755f7c8e817be43f093d9da4f9c809ea"
+    },
+    {
+      "file": "src/services/fulfillmentService.ts",
+      "before_sha256": "5090023dea36cc949684b7fb236a6653356e52d74f4133384817b1f0b341beaa",
+      "after_sha256": "72a7e319e129131d01f37206fed97b6610c59d6d6ee513dcd59177865dd81cc2"
+    },
+    {
+      "file": "src/services/orderService.ts",
+      "before_sha256": "037d925baa017ea986fbd94d68c864bf12eab631bdb5d3aae8892783c74995f5",
+      "after_sha256": "1853786c9b0c0fc47170fd01a3f57756a1dbbe340539cc96497042f76a639a23"
+    },
+    {
+      "file": "src/services/refundService.ts",
+      "before_sha256": "4a77e1dbc0fe712007461f2c989b39d4a4c8eb44e4b9354c2b438ebed4024ded",
+      "after_sha256": "a8d4db3ea8ea98a64ef7b33b81f3171b21bd442fc76940105c7f6347bef68743"
+    },
+    {
+      "file": "src/tests/commerce-workflows.test.ts",
+      "before_sha256": null,
+      "after_sha256": "7d1996c7c16f7647b059bb241b1b8f4488395c2ccc7fc75f1252c813fdb25680"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "e154287e7e67f9348d9cbbabc0068105f43ced0c22b740bcfb0c115e00247668"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "80f54695aab212cc6df2db7b7c0b61017dbdde8704e21506bd89337f21800f97"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "cb64173af99e41433c8e274dc112af44a2cdd4cc353e707ccdad8e75ef96ebf7"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "39a005d9b5849d5eb657acd5704798e497e174d5e51c5ec163eb6ea145b773f8"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4abeca7012591504f0b4a9215cf3016810e2f8ca1fe5ce415a238d2986c809dc"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "39497848d45e676ebb51b8aad66c1ab743974a243551113372797ad03c7f1018"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "0f946b7b2b72e35f37b80f6923702d76e3a41383fc264e74998b1ec813b39ddd"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "b71fcb9d656ba0212b25a63c4f8a4228b148c83c8778a48fac4ab677ce293687"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1c1e238f0a693f985a9563c98a5732cff65ee8c3a20b53617674f7c44dc16116"
+    }
+  ],
+  "limits": [
+    "Demo store is synchronous, process-local and not durable or coordinated across workers.",
+    "Payment capture/refund remains simulated; no external provider or real money operation was performed.",
+    "Tests exercise actual services and in-memory repositories; browser end-to-end and live SQL concurrency are not claimed.",
+    "Lint reports one pre-existing unused-variable warning in the password-omitting user DTO mapper; no lint errors."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T19:53:40.231359+00:00"
+}

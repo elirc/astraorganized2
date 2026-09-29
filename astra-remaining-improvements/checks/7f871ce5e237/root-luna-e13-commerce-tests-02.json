@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "npm",
+    "run",
+    "test",
+    "--",
+    "--run",
+    "src/lib/commerce/commerce.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f871ce5e237",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:29:47.847032+00:00",
+  "status": "running",
+  "log": "root-luna-e13-commerce-tests-02.log",
+  "pid": 3256
+}

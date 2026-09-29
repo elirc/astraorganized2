@@ -1,0 +1,396 @@
+{
+  "project": "grokbuildecommerceproject",
+  "id": "65f5f5c94a48",
+  "summary": [
+    "Completed authenticated catalogue CRUD with administrator controls, strict money and stock validation, captured versions, retained audit history and reference-aware deletion.",
+    "Implemented customer-scoped orders with exact decimal totals, accepted line snapshots, atomic stock reservation, durable checkout idempotency and cancellation that restores inventory once.",
+    "Built a responsive catalogue, cart and receipt workflow with preserved drafts, frozen retry requests, conflict recovery and explicit simulated fulfillment.",
+    "Added generated non-overwriting setup, fresh migration, repeatable fictional seed, 80 passing checks, four reviewed captures and nine detailed source-grounded learning documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/commerce-workspace/results.json",
+    "expectedTests": 80,
+    "environment": "Node 22.16.0; Prisma 6.19.2; PostgreSQL 18; React 18; Vite 5.4.21; Playwright 1.60 Chromium",
+    "command": "node scripts/test-database.mjs verify (55 backend, 8 frontend, 3 setup, 14 browser; types/builds; seed twice; owned cluster shutdown)"
+  },
+  "testResults": {
+    "passed": true,
+    "mode": "verify",
+    "database": "PostgreSQL 18; helper-owned temporary loopback cluster",
+    "setupTests": 3,
+    "backendTests": 55,
+    "frontendTests": 8,
+    "browserTests": 14,
+    "build": true,
+    "total": 80
+  },
+  "courseWords": 4515,
+  "courseFiles": 9,
+  "courseLinksChecked": 46,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "94945ec8c1682ed9d1e8380e05a2845d416b484a1ff0301107b3ed53be89a285",
+      "after_sha256": "ff512f98837c158c4b37cd9975b9358de51692ef4ff74cbcd397860def64153c"
+    },
+    {
+      "file": "JOURNAL.md",
+      "before_sha256": "9ff5feac3785b8707c00c35051fa0d20d883f248104fb16c7a1a3af40342c3e4",
+      "after_sha256": "7ae96d6227044fbeb77f116a9c5200ec2b80d0e84fa402053509d671d1f8df69"
+    },
+    {
+      "file": "PHASE_PLANS.md",
+      "before_sha256": "4a2a056df35d6b8362841278456628d0f204d59e7c90aafdb66ab2bfec72ba69",
+      "after_sha256": "6859415334c27464dd0cf488847b8bcee3ac99144c72a953201584fb30f73674"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "eacc6f3ea61d437d518e956d40ea610d49f2d339d7534dfeafb64ad5bd7ee58a",
+      "after_sha256": "a70ecd295d5c17481183f546557111f08adc959d8a64758a937c88aca146dc00"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "a2c4162deca948d991b1b59095e4fd61dd3456a5b12901e2422aa3ac27cac057"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "dd205cae053896b88cbbd1dd35dc51687cbc8011be94492e2c3a78d4aea368d8"
+    },
+    {
+      "file": "astraupskill/images/receipt-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "d7673feae3a08291248cf118024a4c883ea3f24f60275363f63f109e95cf5579"
+    },
+    {
+      "file": "astraupskill/images/receipt-narrow.png",
+      "before_sha256": null,
+      "after_sha256": "d4057e53caf4f6b6875d89d96207c7a96ec97b6f413ee9cfd93ca022dbc88172"
+    },
+    {
+      "file": "backend/.env.example",
+      "before_sha256": null,
+      "after_sha256": "f6b2f79487c203fe92ff616b648bb8b320d97b6c56122af15e39478c145b448b"
+    },
+    {
+      "file": "backend/jest.config.js",
+      "before_sha256": null,
+      "after_sha256": "c0c3d42c6557bf8b55885853e13914166d3ef1cfdcbae58062c1f2fa2b6fb186"
+    },
+    {
+      "file": "backend/package.json",
+      "before_sha256": "44c08a8fbcb1126379c90eca6a063f05fc746898cd81461181b7bab8d4a5dbb1",
+      "after_sha256": "b8a0837312be2895c37f891c42e8f3e13d5001cdd324d2f0353cfd240585c81e"
+    },
+    {
+      "file": "backend/prisma/migrations/202609090001_commerce_workspace/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "82321e6ba8176c7fd69559bcc43cac590f3c2a84525fdad5fe106dcecdd20b33"
+    },
+    {
+      "file": "backend/prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "backend/prisma/schema.prisma",
+      "before_sha256": "9a26dc4b8a0615789cc8fd0110c286e905a15d3252e60e4f8ecbe6df4380d487",
+      "after_sha256": "2ac270a5454dce18427d157ad79012d0427ff886e2a7acb72d6c2c7451fa546a"
+    },
+    {
+      "file": "backend/src/__tests__/productService.test.ts",
+      "before_sha256": "fed41f03c0e30436dcfca7c30e191df5ac99dd89507c52f5132e390ef3e0f049",
+      "after_sha256": "3b1a9901c30037cf4794492738d95287fa2c6b25e751399d66ea064a637e7a3c"
+    },
+    {
+      "file": "backend/src/__tests__/workflow.integration.test.ts",
+      "before_sha256": null,
+      "after_sha256": "cc450d2d5523077b597e25ce2d7fd2e379006c8c916060afaf4051d4d48d2ce2"
+    },
+    {
+      "file": "backend/src/app.ts",
+      "before_sha256": null,
+      "after_sha256": "66775618301de329c9b29bfbdf9f6b9a94f7a66c637e46e9998601b021825c4a"
+    },
+    {
+      "file": "backend/src/controllers/productController.ts",
+      "before_sha256": "a2a0289f5bd21fd748364af28272639fd42097b891f25a3a3ac34134127180e8",
+      "after_sha256": "f33ee9f3f25f3b9c0714f2a96c20d710785cf0913a3368cfda96e4b8ec94bff5"
+    },
+    {
+      "file": "backend/src/index.ts",
+      "before_sha256": "b872e65b4dde4a6e460f5e4067e30e21de4de35ee64d4fbfa511a37f61b45372",
+      "after_sha256": "ebb0b6c195ac0240eecfcdfd18f0ec4b03a194abef486470e75e688e5f755abf"
+    },
+    {
+      "file": "backend/src/lib/domain.ts",
+      "before_sha256": null,
+      "after_sha256": "5dda4bae7e6dec0671f291d66ffc9155fedd2ee4d7093d87a5b4ec6422438011"
+    },
+    {
+      "file": "backend/src/lib/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "7ba0ce92f43d21699aaf39c260eff73c30ce8bdad7bec5a8113bc3da266c4a9c"
+    },
+    {
+      "file": "backend/src/lib/prisma.ts",
+      "before_sha256": "c267e4fd10cd8fce3247ff04255994c17987db529ac34cbec42da52e7415ac64",
+      "after_sha256": "f50a61fda0a9649252c4f07492bf359eeb6e07799c70dea423959c776eaf9b07"
+    },
+    {
+      "file": "backend/src/lib/validation.ts",
+      "before_sha256": null,
+      "after_sha256": "f3e36b71ff5c933943d512b8fad0adeccd30ecf4a2523beed84399ac492ac44f"
+    },
+    {
+      "file": "backend/src/middleware/auth.ts",
+      "before_sha256": null,
+      "after_sha256": "c8f2a0a5968b4efd1ae55541bbcbde4667dfd99439dcca09e913ae6c5f1e366f"
+    },
+    {
+      "file": "backend/src/repositories/orderRepository.ts",
+      "before_sha256": "a4226753166938327e0087af9a458de5acd2f4b1794cdcc2650475084abee09f",
+      "after_sha256": "f23ed78a50ebf5919baebb45f8738088cdd5bc749a70a16c734744e6696b9d57"
+    },
+    {
+      "file": "backend/src/repositories/productRepository.ts",
+      "before_sha256": "cf2429f89c1cdf0f4da1656cda68c0549df839bb53dd8ee74e3829ddeae8963e",
+      "after_sha256": "974944dcb8c0a249677a4c8b9bbf7ed64f9338101d83c28ae8726b985fcc26df"
+    },
+    {
+      "file": "backend/src/routes/authRoutes.ts",
+      "before_sha256": "83250bbdada5d9cdc5eed23b030e965563e5e56a5965bc777dcfd96d75844ecf",
+      "after_sha256": "814c4742160da5e6a0108af7fb6380f333912d6d967041e77d74fe1b6eac56b3"
+    },
+    {
+      "file": "backend/src/routes/orderRoutes.ts",
+      "before_sha256": "2d5b8eec4b7b5a9b15f7fcb7ace223401014a85d3a4c25a70fad86708a872a4e",
+      "after_sha256": "b944c6dc5362b673704ee7530facbf1e974972525c0707f3cef807ad343004ea"
+    },
+    {
+      "file": "backend/src/routes/productRoutes.ts",
+      "before_sha256": "0f54f8c89b6dbb2b6ca97c30cd36ad66406b8d0115921ebe339310fdb86af747",
+      "after_sha256": "62b4e15be077f1be5c8eb40341b59c594650317bfba0e0d5219a62626b078412"
+    },
+    {
+      "file": "backend/src/seed.ts",
+      "before_sha256": null,
+      "after_sha256": "02a835e70d425513d56a7410946bbb2706398f1268b00379e16305b113891805"
+    },
+    {
+      "file": "backend/src/services/authService.ts",
+      "before_sha256": "67d348286b09ed31279c46fee26d401684117369281a7a12935ef625f7737833",
+      "after_sha256": "69b17fbd641aa900d9cbda6ae3a9ccbb88878b2a98689be29bae0fc97122970a"
+    },
+    {
+      "file": "backend/src/services/orderService.ts",
+      "before_sha256": "137d0fa6481cbba0497dfbe28e1f9810e38f04ab2b4aacad41ba5da3c81367c2",
+      "after_sha256": "a1b85accf550e0aead9d765df145c6a984f0d8f51fdd922313f54925aa2206f9"
+    },
+    {
+      "file": "backend/src/services/productService.ts",
+      "before_sha256": "c632bed37d7b7cdae790bfce21361ae6639298dda125a4f89f456a42510cd40c",
+      "after_sha256": "7b873112339a682ad5cfae57c640a07e51828eb03d60d82db15e1a1f12a136e4"
+    },
+    {
+      "file": "backend/tsconfig.json",
+      "before_sha256": null,
+      "after_sha256": "64ad79850b3a55b72445f7c1967f0b043587ed2d0a143d91905407a08ed32688"
+    },
+    {
+      "file": "browser-tests/commerce.spec.mjs",
+      "before_sha256": null,
+      "after_sha256": "be7dd5fd89705b7b7957f728296c94dd2e26bfcfec93caf75d2e21ba2d008068"
+    },
+    {
+      "file": "docker-compose.yml",
+      "before_sha256": "cd536035f309027313dedafa0d2af07e6f660bb8878e859cc89ae4a1417df9d4",
+      "after_sha256": "9b843972bc69b7cf9a3dffa77dc249101868e8c21085782e260910777cf5dbe0"
+    },
+    {
+      "file": "frontend/.env.example",
+      "before_sha256": null,
+      "after_sha256": "a3b747af0b34de11d781d7a4c4821c6cc8eaeebd14a5d7f1f2bae0776c3e647c"
+    },
+    {
+      "file": "frontend/index.html",
+      "before_sha256": "63cb19f7d9da373fe322ab11b73145f62c44b0b053714ae5f7883b15cfec46f6",
+      "after_sha256": "6fd3227403d4c345b25c1112c5c3d3a517c4ed638ab9cf917cdf48d1ddb7b069"
+    },
+    {
+      "file": "frontend/package.json",
+      "before_sha256": "68344b442dd9feb4109957a44fa75a421bee33001f99b952573575223f3ff329",
+      "after_sha256": "d624be1999b524996f2b86d71c2e3c7525512c5b252f462877fcbaaf9149b2cf"
+    },
+    {
+      "file": "frontend/postcss.config.js",
+      "before_sha256": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc",
+      "after_sha256": "332554db544bdd0ebd00fe65ada700cd83146016bb4b8ef2f056ed5fc59b496a"
+    },
+    {
+      "file": "frontend/src/App.tsx",
+      "before_sha256": "0aec41e1759c7ec1c37923b74c02de62da26dd6b385571820e358a6a0b522280",
+      "after_sha256": "2b5a05c219d5e40079219a2a5f70d9a3cf3a700a3a6c76efc0d74c362a4f4d71"
+    },
+    {
+      "file": "frontend/src/__tests__/ProductsPage.test.tsx",
+      "before_sha256": "5ecc5ef22acb0fa7308bc321cf33e4024c3ec4a1efbc40c42237fc07b7f8af6e",
+      "after_sha256": "e54b9987f5aff47330b7d21c538cf84294e0affcf10385ce8a2ee6aad242d1bb"
+    },
+    {
+      "file": "frontend/src/__tests__/setup.ts",
+      "before_sha256": null,
+      "after_sha256": "1c1f608698cea6a2bdf222d68ef48fb2a8f6bb99297afe3ed87151cb67739a99"
+    },
+    {
+      "file": "frontend/src/api/client.ts",
+      "before_sha256": "9a0a7f1fe553d411385db1f25fab8476c6a768ee1330c15fd0884b3a255b4e32",
+      "after_sha256": "bb85fb92105ef6c76033d98056da07960324685c0f62d18abffaecb96516fc3f"
+    },
+    {
+      "file": "frontend/src/components/Feedback.tsx",
+      "before_sha256": null,
+      "after_sha256": "9bd3672a9cd77b6c32817f1a2b30c5f9f603ca227b563884d4b738ef15fecaae"
+    },
+    {
+      "file": "frontend/src/features/cart/CartPanel.tsx",
+      "before_sha256": null,
+      "after_sha256": "4356f6cc9e3e29bdfe110aff8571e94259ea76e7ef154c63ab90c561e69c9f4e"
+    },
+    {
+      "file": "frontend/src/features/orders/pages/OrdersPage.tsx",
+      "before_sha256": "4a2d182cd16e7ce0de2e2ed7b73d572f7e31e48f6202c4d01056666cc8193923",
+      "after_sha256": "b1dd64980038c66fc69608ffcf398b81a25a8349a3aeab6a0cf235e267d1bfa7"
+    },
+    {
+      "file": "frontend/src/features/products/pages/ProductsPage.tsx",
+      "before_sha256": "f4fc32ed93c7025b399f09500b572744582f56a83441693afba4c77186be1407",
+      "after_sha256": "b8776e9dc83fb6f580c63d988bdab47f0c57b69a7c08106284ff0ec0ae8fbf1e"
+    },
+    {
+      "file": "frontend/src/hooks/useWorkspace.ts",
+      "before_sha256": null,
+      "after_sha256": "49f8366f04e79641494b5061bbd7818b8c57caa5726487bdbee576f2f83f6af7"
+    },
+    {
+      "file": "frontend/src/index.css",
+      "before_sha256": "cc1a7ad0d019ddb1d32d0ecb588ba0ac26ce41d8625dd6c366348b25f83a28ec",
+      "after_sha256": "d2ee1b456a029a487c40e09ac09f24af86fb19519dd457fbc6057e7d9c9fd8e9"
+    },
+    {
+      "file": "frontend/src/main.tsx",
+      "before_sha256": "583520fe04de972951b9ed87bf5ee4c52df33adcf922251e1ade2d7094f1b7f3",
+      "after_sha256": "a7abd7d4681461fc08ce131fa1ef785ba83ef0fbe403d5d0164d0c7642bb12fa"
+    },
+    {
+      "file": "frontend/src/test/setup.ts",
+      "before_sha256": "a46d66851af2c056e805fdd574bf5ec3adb1181c43c5e41f0a1c592e338afe64",
+      "after_sha256": "90ec9100c29e008c3d9194acd818e2cfa6dc6e177154bc8e10c5959aa35619ed"
+    },
+    {
+      "file": "frontend/src/vite-env.d.ts",
+      "before_sha256": null,
+      "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "file": "frontend/tsconfig.json",
+      "before_sha256": null,
+      "after_sha256": "0b5bd376764e988f2ebfa547db2a7601eb5249feffe403017fb5c82c71291a56"
+    },
+    {
+      "file": "frontend/vite.config.ts",
+      "before_sha256": "0709465427668ae85ef999f63762d7a06fd92962363fe8cc142ad656d3548115",
+      "after_sha256": "45140d8f9897fbce6ebb7602b32cbdade04cad87df2da36f6ccccf8ca9103d39"
+    },
+    {
+      "file": "frontend/vitest.config.ts",
+      "before_sha256": "e214a9829ffc048747802523ea6ba2f6b6b76dc814a52ca55a5df2d2fe7f273d",
+      "after_sha256": "c30e84ecff85ae632260ec5451ba62f973223b4b30adc1d4a63a31ed11d4eb72"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "bd9e2d7b92892bb4ca206cf2cf6a1bde5a1263195cc7105c82b86442f03f82c5"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": null,
+      "after_sha256": "e028a98e89347fdc146dc3b19dddcf05f775f6ff3868cac3589f5a86be791628"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "203bd10cf10780114e3f94edfb257ccc28ee6fbd6fd006b12822cbfe2cf50325"
+    },
+    {
+      "file": "scripts/setup-local.mjs",
+      "before_sha256": null,
+      "after_sha256": "b914607885fb1972300ab0a682182b677da9b2c2bc6fe513dcfc277ea2c414e9"
+    },
+    {
+      "file": "scripts/setup-local.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "7bc87e160b87d9caffe0d09b4ce949835d8e9e00f411c694ff97a76fa57a75bb"
+    },
+    {
+      "file": "scripts/test-database.mjs",
+      "before_sha256": null,
+      "after_sha256": "7d1ca38d1a746b46848bdb007f762dc824bb3d725dd18497c15d55e48e4c9a95"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "747e8e8a2f61eabfaba709c331dc7720cc580e84218305dec416bbd966e4fd97"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "05b14d48783b0a4ae03c47b462bf2005a426921750075cd82b8feb1f27e9fded"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0071a412c0b18d3d1856a20958133cc282154e8cdda691d4f6c7abf18a2c2c88"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6cb359cedfce734646fc53a33694a769172fe1da9b47121f5399e420a1806028"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "65b231b41fc7443ffc32f4839469ec8c384806e5c4219c4f4ce30451f2b2c5b0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "28d3cc96074c6c096f413899880c7ce9ca5112ea491e034cfb17a6934ff2bf07"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7ea47e4f0468cad8d4d0ba1e493862fb1a79b62d3da40de9f424ccd7f1caffcf"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "fe8df54a795e940a5b4a9ae44d2faefd30d4f8714572548bb74c0bf623c43966"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "3c3cf1f5558d91fcb703c26c058792c1931c6c32fa7faf71142368039c7a0adc"
+    }
+  ],
+  "limits": [
+    "Local demo authentication with process-local throttling; no MFA, reset/refresh flow, distributed limiting or atomic in-flight revocation.",
+    "No actual payments, taxes, shipping, refunds or notifications. Checkout uses current server prices; quoted-price reconfirmation remains an exercise.",
+    "Memory-only cart and retry key with manual export; no draft import/merge. Review history before abandoning an uncertain checkout key.",
+    "Fresh dedicated migration only; no automatic unknown-data upgrade, Docker daemon verification, production deployment, comprehensive accessibility audit or power-loss certification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T13:00:38.155655+00:00"
+}

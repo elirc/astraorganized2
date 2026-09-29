@@ -1,0 +1,18 @@
+{
+  "files": {
+    "apps/api/src/app.ts": "562b2602ce3da513abed7b04f960c7a5f083f0bb4ad70554c88d72fdf1dd58f3",
+    "apps/api/src/modules/billing.routes.ts": "9d2087c64e6639e7187dbe8911fe566ed20fb88699046af93c858c1152a2fa90",
+    "apps/api/src/modules/payments.routes.ts": "75e2d5e4b31ad6a84031bc7009a6bb787b969bf737aa02abba115aedaeabf561",
+    "apps/api/src/shared/auth.ts": "8354d27ac5f5ada36edd714f64febeadcec7a600417903ab529d001ac9c5f2a3",
+    "apps/api/src/shared/idempotent.ts": "9f55c400e989900bfc8c8a95132b9846ae6d68cf9b3c1f957f236f82d0bfe7ae",
+    "packages/domain/src/billing-state.ts": "a9701eea0622266e3085d5d6c266ea7af475d0a1313bd89fa66ca06922827923",
+    "packages/domain/src/index.ts": "371bdfc27ae42779b17265baf881a9fab7e156ecef008e28acf49971cc2ac887",
+    "packages/domain/src/money.ts": "64ccc9283e8d8b6ec0c07163ba2884733bdd1f0abfc7ec8e87012060286dc724",
+    "packages/domain/src/permissions.ts": "a61d80790bcbcae292d270a8b86499dcdc195fc5bd2041fb3d56ac34640c79a2",
+    "packages/domain/src/errors.ts": "be259450d5806a2e80163a3506242b7c4cb3a17d9734c5366e286f41cf188dd0",
+    "apps/api/src/shared/errors.ts": "c2bc2306787ef273bee6d3c8f483cf9042401a89a3f29fce490a17e331b8740c",
+    "apps/api/src/modules/payments.service.ts": "c3f29963823b06b1daf2abb07371cd3bb93cf8768dc12838de44076ea881fafe",
+    "apps/api/src/modules/payments.service.test.ts": "93c4eb4690ce2267577ee37410dc38c825c64fd47dfeba9020d984ab602a63f3",
+    "apps/api/src/modules/payments.routes.test.ts": "cbe6ab2d778c5a4bef4d2a9d5245ed48853d2fd52732c3d36c46bd574481f8d9"
+  }
+}

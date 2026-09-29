@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+      "id": "cb18aae6d81d",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-appointment-complete.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\cb18aae6d81d",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T00:51:34.899484+00:00",
+      "status": "complete",
+      "log": "crud-b02-astra-runtime.log",
+      "pid": 36056,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T00:51:42.089115+00:00",
+      "elapsedSeconds": 7.18
+    }
+  ],
+  "limits": [
+    "Vitest, Express, full typecheck, live Prisma, transaction isolation, external notifications, and deployed schema support for extended unique filters were not run.",
+    "Runtime tests execute actual appointmentsService.complete with explicit persistence and framework contracts.",
+    "The guard covers completion status freshness only; cancellation, rescheduling, recurrence, and booking conflict paths remain outside this bounded change.",
+    "Status equality does not detect other field changes or a reschedule/reconfirm cycle. Test transaction contracts do not prove database rollback; HTTP authentication/authorization and missing generated Prisma typing remain outside the executed suite."
+  ]
+}

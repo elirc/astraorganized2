@@ -1,0 +1,132 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z6",
+  "id": "5137a9c91d26",
+  "summary": [
+    "Filter knowledge-base projections by page visibility before pagination and sanitize nested space pages.",
+    "Reject forged page-space edits and missing explicit page IDs; keep tags inside the save transaction.",
+    "Add source-grounded learning material and preserve the documented demo-auth and concurrency limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5137a9c91d26/z6-test-05.json"
+  },
+  "testResults": {
+    "project": "_Organized Desktop/05 Numbered Experiments/z6",
+    "id": "5137a9c91d26",
+    "command": [
+      "npm.cmd",
+      "test",
+      "--",
+      "--pool=forks",
+      "--maxWorkers=1",
+      "--testTimeout=30000"
+    ],
+    "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5137a9c91d26",
+    "environmentOverrides": {},
+    "startedAt": "2026-09-13T13:42:00.685456+00:00",
+    "status": "complete",
+    "log": "z6-test-05.log",
+    "pid": 9484,
+    "exitCode": 0,
+    "passed": true,
+    "finishedAt": "2026-09-13T13:42:50.567968+00:00",
+    "elapsedSeconds": 49.88
+  },
+  "courseWords": 4231,
+  "courseFiles": 9,
+  "courseLinksChecked": 13,
+  "files": [
+    {
+      "file": "src/modules/knowledge-base/queries.ts",
+      "before_sha256": "e7d77233dae5db599ad7f3d85896a92cb58b9a75ce336f7ee06885a5f2b49e9a",
+      "after_sha256": "b7e75874c74dd1c918a3002f2a73fa6f370c2ea107d291f39a877137fb1d7c0a"
+    },
+    {
+      "file": "src/modules/knowledge-base/schemas.ts",
+      "before_sha256": "d92b75aaec9e5a8424fc3ab3d3170c94a9618d8b0309c046089455a4d2536727",
+      "after_sha256": "3ac6020fc1d4af19a7f13b77de07e9b0140c52bedcb617b94b52644419eb7944"
+    },
+    {
+      "file": "src/modules/knowledge-base/service.ts",
+      "before_sha256": "e460ce8a59cac11edf967979b7dac3b60df0b7b5c67901b4dc75ac3fd475dc44",
+      "after_sha256": "98a9c80bf9d7b1527fb7191a55155ebfdcc6c5138cefe0f323e5e8b8c1a2f762"
+    },
+    {
+      "file": "src/modules/knowledge-base/service.regressions.test.ts",
+      "before_sha256": null,
+      "after_sha256": "99f57cd53b52ce6575f600545d50754ad7cee2e589ef36dc56ec35f679c356af"
+    },
+    {
+      "file": "astraupskill/source-snapshots/queries.ts.original",
+      "before_sha256": null,
+      "after_sha256": "e7d77233dae5db599ad7f3d85896a92cb58b9a75ce336f7ee06885a5f2b49e9a"
+    },
+    {
+      "file": "astraupskill/source-snapshots/schemas.ts.original",
+      "before_sha256": null,
+      "after_sha256": "d92b75aaec9e5a8424fc3ab3d3170c94a9618d8b0309c046089455a4d2536727"
+    },
+    {
+      "file": "astraupskill/source-snapshots/service.ts.original",
+      "before_sha256": null,
+      "after_sha256": "e460ce8a59cac11edf967979b7dac3b60df0b7b5c67901b4dc75ac3fd475dc44"
+    },
+    {
+      "file": "astraupskill/source-snapshots/SHA256SUMS.txt",
+      "before_sha256": null,
+      "after_sha256": "ce0aac43b0542eccacf21be64111c00f0f067f2bd099d1404a9ec807eec15c09"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "8dd3e61eeb0e7eb9f20d36d366e8197ff23d2379700eab64b8591c6c0c924829"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "5eefcd4fd9978f4ae22839c46dddabc71f2c1bf6035238563e8d33bfe159cb50"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6031c26513d3c53f93e0f27265ec00af4776fee3586310be2c2a8f9e44fd6a5e"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4b99168afe41330b460466fc9a521cac5ed69613f3328dc68c07cf8851bded0e"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c228ddfa5ac993f55935f9f00634ce5f4688ed5542da27e8a7bb4bf3739e9f5b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "bad8a86d7edaa979d9f5284d359aa057b77c7a0642cdc1819fd3e00483bd8b67"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f6b8b1b6d07e47ab6f9335b8322d92cf9ecacccdfa482a8b8a35b70dc65ee1c2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "27425e0e99f9cbb459afbd6866dfae8070a5fd2a85a36f7427be5a69064f7d4b"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "0c45fcbe12c425920212ff8bc41a6ac79d78767113ff4961646be66e880112f6"
+    }
+  ],
+  "limits": [
+    "Regression coverage exercises schema parsing, the visibility predicate, and the transaction callback contract with faithful unit doubles; no live database, browser or deployed authentication coverage was run.",
+    "The application still uses its local demo session model and Prisma SQLite setup.",
+    "Cross-process revision and tag-creation races require database integration verification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T13:50:02.344803+00:00"
+}

@@ -1,0 +1,46 @@
+# restaurant-kitchen-display-system — Fable review
+
+- **Path:** `_Organized Desktop/08 App And Product Projects/job track/restaurant-kitchen-display-system`  ·  **Wave:** 2  ·  **Stack:** Node 22 + Express + better-sqlite3 + Socket.IO + Zod; React 18 (JSX) + Vite client  ·  **Batch:** B17
+- **Astra's change (one line):** Fixed query-boolean parsing (`?includeLateOnly=false` no longer behaves like `true`, unknown spellings are rejected), corrected parent-order aggregation so an order is only `ready` when *all* items are terminal, wrapped every mutation together with its audit-event write in one `db.transaction` and moved the Socket.IO `emit` after the commit, extracted an Express app factory + `KDS_DB_PATH=:memory:` option + a JSON error handler so the real API is testable, fixed two browser `window.prompt` Cancel paths and a leaked refresh timer, and added a 12-case suite (8 route/rollback, 3 lifecycle, 1 real-entrypoint startup).
+- **Course size:** 5,614 words across 9 files  ·  **Tests claimed:** 12  ·  **Tests found on disk:** 12 (7 named + a 4-scenario parameterized loop in `server/test/kds.test.cjs:73-91`, plus 1 in `server/test/startup.test.cjs`); the retained TAP log shows `# tests 12 / # pass 12 / # fail 0`
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 5 | 5 | 5 | 5 | 4 | 5 | 4 | 5 | 4.8 |
+
+**Verdict:** KEEP    **Path role:** core
+
+## What Astra did well
+- **This is the cleanest "transaction boundary" lesson in the batch, and the code proves it.** `server/src/routes/api.js:197-209`: the `UPDATE orders SET priority` and `recordEvent('order.priority_bumped', …)` are inside one `db.transaction(() => {...})()`, and `emit('order_updated', updated)` is on the line *after* it closes. The same shape repeats at lines 55, 131, 238 and 294. A junior can diff this against the backup and see exactly what "commit before you broadcast" means.
+- **The rollback tests inject a real database failure, four times, via a table-driven loop.** `server/test/kds.test.cjs:73-91` iterates priority / item status / manual 86 / global 86, aborts the audit insert with a SQLite trigger, and asserts `assert.deepEqual(snapshot(), beforeState)` plus `assert.equal(notifications.length, 0, 'No change notification may describe rolled-back state')`. That assertion message *is* the lesson.
+- **The baseline caveat is stated rather than hidden.** `VERIFICATION.md`: "This was not an unchanged-project baseline: the original project had no runnable test script, and the isolated test harness was added first." 11 tests ran first, 3 passed and 8 failed — and the delivery JSON records `{tests: 11, passed: 3, failed: 8}` identically. Most deliverables in this wave would have reported "all tests pass" and stopped.
+- **The aggregation fix is correct at the edges, not just the happy path.** `server/src/lib/kdsService.js:25-36` returns `null` when an order has zero items (so an empty order cannot fall through to `ready`), treats ready+eighty-sixed as the terminal set, and only marks `ready` when `terminalCount === counts.total`. `is_late` is cleared once ready (`:44`).
+- **Exercise/solution separation is enforced in text**: `06-SOLUTIONS-AND-REVIEW.md` opens "The examples describe acceptable approaches, not finished patches that were silently added to the app", and `05-PRACTICE.md` §1 sets real acceptance criteria ("assert item states, parent summary, affected-order identity, and the number of parent notifications … Direct SQL may inspect evidence, but it should not perform the action the test claims to exercise").
+
+## Problems found (evidence required)
+- **[D5]** Every command in all 9 files is Windows PowerShell (`npm.cmd ci`, `npm.cmd test --prefix server -- --test-reporter=tap`). A macOS/Linux junior gets no working command line anywhere in the course, and Node is pinned only in prose ("use Node 22") — there is no `.nvmrc` or `engines` field, while the evidence JSON pins 22.16.0/npm 10.9.2.
+- **[D5]** All 9 `astraupskill/*.md` files carry a UTF-8 BOM (`﻿# Kitchen Display System…`), which shows as a stray glyph in some viewers.
+- **[D5 — minor]** The README sends the learner hunting for the client port: "Check the client package's dev script and its environment example for the browser URL". The number (5177) is one grep away and should just be stated, as the API port (4300) is.
+- **[D2 — unmentioned]** Several routes do a `SELECT` existence check *outside* the following transaction (e.g. `server/src/routes/api.js:192-197`: `SELECT id FROM orders WHERE id = ?` → 404 → then `db.transaction(...)`). `VERIFICATION.md` does concede "Existing-state checks before several write transactions are not a demonstrated multi-process compare-and-set strategy", so this is disclosed — but the *course chapters* never show the learner where that read-then-write gap lives in the source.
+- **[D7]** The course assumes the learner can already read SQL aggregate `CASE WHEN` expressions, Socket.IO rooms, React `useEffect` cleanup and Zod schemas. It is a good final-third course, not an entry point, and nothing in the README says so.
+
+## Spot-checks performed
+- README: "make explicit false query values behave correctly … [reject] unknown boolean spellings" -> `server/src/lib/validation.js:25` (`includeLateOnly: z.enum(['true','false']).transform(v => v === 'true').optional()` — an unknown spelling fails the enum instead of coercing truthy) -> **matches**.
+- README: "commit mutation and audit writes together, and emit change notifications after a successful commit" -> `server/src/routes/api.js:197-209` (transaction closes, then `emit`) -> **matches**.
+- README: "Tests set `KDS_DB_PATH=:memory:` before importing the database and assert that choice before any cleanup" -> the test harness sets and asserts it, and `server/src/app.js` accepts an injected `io` + `requestLogging:false` so the production polling timer is not started -> **matches**.
+- README: "cancelling either 86 prompt now cancels the action, and effect cleanup clears the pending refresh timer" -> `client/src/App.jsx:205-206` and `:225-226` (`const answer = window.prompt(...); if (answer === null) return;` — note an empty string still proceeds, which is the correct distinction) and `:125`/`:141` `clearTimeout(refreshTimerRef.current)` -> **matches**.
+- Delivery JSON `expectedTests: 12` -> retained TAP log `checks/kds/api.log` lists `ok 1` … `ok 12` with `# pass 12`, and the names line up 1:1 with the source file -> **matches** (verifiable evidence, not a bare number).
+- README: "The API defaults to port 4300" and error handler returns JSON -> `server/src/app.js` (`entity.parse.failed` → 400 "Invalid JSON body", `entity.too.large` → 413, otherwise 500 `{message: 'Kitchen operation failed'}` — the exact body the rollback tests assert) -> **matches**.
+- Browser-check honesty: README/`VERIFICATION.md` both say no live browser test was run and the prompt fixes were "source-reviewed and built"; delivery JSON `limits[0]` says the same -> **no overclaim**.
+
+## Improvements needed (ordered, concrete, actionable)
+1. Add an `.nvmrc` (`22.16.0`) plus `"engines": {"node": ">=22"}` to the root `package.json`, and give `astraupskill/README.md` and `04-TESTING-AND-DEBUGGING.md` a POSIX command block beside the `npm.cmd` one. (effort: S)
+2. Add a short section to `02-CONCEPTS.md` — "the check that is outside the transaction" — pointing at `server/src/routes/api.js:192-197` and asking the learner to write the interleaving that makes the 404 check stale; then make it exercise 7 of `05-PRACTICE.md` (implement `updated_at`-based compare-and-set). This converts a disclosed limit into the course's best exercise. (effort: M)
+3. Strip the UTF-8 BOM from the 9 `astraupskill/*.md` files. (effort: S)
+4. State the client port (5177) and dev URL literally in `astraupskill/README.md` instead of telling the learner to look it up. (effort: S)
+5. Add a prerequisites line to the README (SQL aggregates, React effect cleanup, Zod basics) and a glossary in `02-CONCEPTS.md` for aggregate summary, audit event, 86, terminal state, best-effort notification, outbox. (effort: S)
+
+## One-paragraph summary for the index
+The best all-round CRUD course in batch B17 and a strong candidate for the core path. It is a real Express + SQLite + React app where one user action touches several related rows and several open screens, which is exactly where junior CRUD instincts break down. Astra fixed four genuinely instructive defects — a query string `false` that behaved like `true`, an order that reported itself ready while items were still queued, mutations that could commit while their audit row failed, and notifications sent before commit — and each fix is pinned by a test that injects a real SQLite failure and then asserts the database snapshot is byte-identical to before. The verification record is unusually trustworthy: it names the 8-of-11 initial failures, keeps the TAP log, and states outright that no live browser test was run. Do this one after you are comfortable with SQL joins and React effects; budget several sessions, and translate the `npm.cmd` commands if you are not on Windows.

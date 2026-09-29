@@ -1,0 +1,36 @@
+{
+  "id": "52d78d4a92a2",
+  "project": "lucasrouter",
+  "changedFiles": [
+    "src/lib/deliveryValidation.ts",
+    "src/store/useAppStore.ts",
+    "package.json",
+    "tests/delivery-validation.test.ts",
+    "tests/store.test.ts",
+    "astraupskill/snapshots/useAppStore.ts.txt",
+    "src/app/globals.css",
+    "README.md",
+    "astraupskill/evidence.json",
+    "astraupskill/images/dispatch-desktop.png",
+    "astraupskill/images/driver-mobile.png"
+  ],
+  "summary": [
+    "Delivery actions sanitize runtime proof inputs, bound names and notes, validate structured image data URLs and retain the existing photo-storage budget.",
+    "Unknown failure reasons reject before mutation; valid failures store the same bounded note in the stop proof and activity event, preserving state/report consistency.",
+    "Tailwind scans application source explicitly, fixing the observed Windows dependency-path build error and avoiding unrelated snapshot/artifact class candidates; the default production build now passes.",
+    "Nine learning guides include real store/action traces, before-and-after code, executable exercise solutions, an exact original store snapshot and two reviewed production-browser screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/lucasrouter/results.json",
+    "expectedTests": 222,
+    "environment": "Windows; Node 22.16.0; Next 16.3.1; React 19.2.8; TypeScript 5.9.3; Vitest 4.1.10; Tailwind 4.3.3; installed local browser selected by the original Puppeteer smoke script",
+    "command": "Installed Vitest full suite --maxWorkers=1 --testTimeout=30000; tsc --noEmit; eslint . --max-warnings=0; default next build; original smoke-e2e.mjs against an owned local production server"
+  },
+  "limits": [
+    "This remains a browser-local demonstration with no authentication, tenant authorization or transactional server database.",
+    "Photo validation checks data URL structure and existing storage budget; it does not decode image pixels or validate MIME contents.",
+    "The final successful build uses the default Turbopack command after scoping Tailwind to src. Earlier unscoped Turbopack and Webpack attempts failed and remain recorded.",
+    "The final checks used the installed staged dependency tree. Root independently captured tests, typecheck, lint, production build and browser smoke, but did not recapture a clean pnpm installation."
+  ]
+}

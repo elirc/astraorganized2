@@ -1,0 +1,39 @@
+{
+  "id": "6e522cf7fdc9",
+  "approved": true,
+  "reviewedAt": "2026-09-21T23:46:42.346173+00:00",
+  "sourceReview": "Reviewed PENDING conditional update and count check before lead summary/activity; fixed reread response to preserve owner and omit nested lead, with null guard. All production call sites checked.",
+  "teachingReview": "Reviewed source-linked conflict traces and separate solutions; corrected service test status and explained preserved DTO after reread. Three runtime cases and real-database limits explicit.",
+  "testReview": "Astra ran three repository/service cases for conditional predicate, stale write with no summary/activity, and success with expected arguments, completion timestamp and preserved response shape. No live Prisma isolation proof. Preflight passed.",
+  "specSHA256": "7228b6ded483770bd95c913fb467cca78d6b9d2d579b4ed80c316cf511cb490c",
+  "fileHashes": {
+    "src/repositories/followUpRepository.ts": "de2c96f679ea2fdb4d5c5e6b148e669250841d68de51afeb944983fb228f3d5e",
+    "src/services/followUpService.ts": "73b04533765dedb435c06d343b1b461c5b6483e90a8612b6b765151a53141745",
+    "src/tests/follow-up-status-conflict.test.ts": "77a34bd2cf358af00abab57a56b60f19a7f4edb5088b332a4fc476e606d5f6ff",
+    "src/tests/runtime-followup.test.mjs": "7e081184f9fdcd30ac421c90ce9a37b89fdec1eddb103a1fd3fcf8aa2832734d",
+    "src/tests/runtime-followup-service.test.mjs": "4aad86bc6b4670639e2b336d7f1b94b2450dd06f6a69ea1b410be229156a02af",
+    "src/tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/src-repositories-followUpRepository.ts.before": "162a4d1352a21a3bd223636a0ab5785bef6535e9afc64c9f3b6093a0ee7f6d78",
+    "astraupskill/snapshots/src-services-followUpService.ts.before": "c746686d5a5422ff1fc81f29d47186a1c5e63a3bb93a62914b2fea560b525a2a",
+    "astraupskill/snapshots/src-tests-lead-stage-transition.test.ts.before": "0993843b34c29bec29ab52b4937b72213ab6687db568768fb5759119422052c9",
+    "astraupskill/evidence/astra-crud-b01-services.log": "9cff3f215ed64158c6730bc7f085f21941eccb6e6db0c0c82ba46e16f283ea8f",
+    "astraupskill/evidence/results.json": "94f4ed3c2ae95cd97dbf6383e2576a302aefccf1d0ab37cf6a866b14bcd828a5",
+    "astraupskill/README.md": "0c593529984373f3de3ca38fac08b38f869b513eaf07473a78a995849236f4c5",
+    "astraupskill/01-CODEBASE-MAP.md": "24de374a4d52b35d02c543c439d52ed0e7cb23f66052ae6e55d4d12cb6db55e2",
+    "astraupskill/02-CONCEPTS.md": "9dcb2c9b1d3bbc96d96709acac7823d27c2c3deb63c5f90c91bf48ffe7ffbaff",
+    "astraupskill/03-WORKED-CHANGE.md": "343d2299dfa2fcf620af61c32001c157631195dba0658154e652416a3bf4e8d9",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "441bfad4728234087d9150b07ee6ccd92b7e3001daf52aba19713d2065efb119",
+    "astraupskill/05-PRACTICE.md": "686c869b6fd2726cc7b0f8c2d052807ede078a4f6e5548eaa14ef561f9206ee4",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "c42acee1edfa8ac3c4fc2da3eb0b1354305de6cd25456cc6a2dfe44bed3a112d",
+    "astraupskill/07-TRACE-LAB.md": "e9adf7aac6ee180d9ce6c8446123ada061ddde3e6f0916a3674ac0cce81b9f9c",
+    "astraupskill/VERIFICATION.md": "da8e7484dee54a691408069d631fa8edae4666862b1686d6f03e3d808f6a4c0c"
+  },
+  "evidenceHashes": {
+    "checks/6e522cf7fdc9/astra-crud-b01-runtime.json": "3d7cc7ec973836f1ce0537c08445ae5395aaa15feaf439ea76c0a0adb2a8511e",
+    "checks/6e522cf7fdc9/astra-crud-b01-runtime.log": "befe8fefb5c73932e629a89fa6ece7bf9a5cc3b679664063e2894442385aad84",
+    "checks/6e522cf7fdc9/astra-crud-b01-services.json": "3f040ec0068e912a54440999da233833341b5442c819e6190ac606d14b673c36",
+    "checks/6e522cf7fdc9/astra-crud-b01-services.log": "9cff3f215ed64158c6730bc7f085f21941eccb6e6db0c0c82ba46e16f283ea8f",
+    "checks/6e522cf7fdc9/results-crud-b01.json": "94f4ed3c2ae95cd97dbf6383e2576a302aefccf1d0ab37cf6a866b14bcd828a5"
+  }
+}

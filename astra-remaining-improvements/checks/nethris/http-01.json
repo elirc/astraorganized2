@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "scripts/check_api.py",
+    "--report",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/nethris/http-01-evidence.json"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 1,
+  "seconds": 48.89
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/09 Grav And VG Projects/vg",
+  "id": "49d315dbedf7",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/contractor-service-runtime.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\49d315dbedf7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:40:34.329258+00:00",
+  "status": "complete",
+  "log": "crud-vg-runtime-v1.log",
+  "pid": 30108,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:40:40.982414+00:00",
+  "elapsedSeconds": 6.65
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "dotnet",
+    "test",
+    "tests/Nethris.Tests/Nethris.Tests.csproj",
+    "--nologo",
+    "--logger",
+    "trx;LogFileName=foundation-01.trx",
+    "--results-directory",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/nethris/foundation-01-results"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 126.09
+}

@@ -1,0 +1,5246 @@
+[
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "1df9eec0cc794a6ba806900a51fbba478c0944fe2d68c9115fb1304478acd791"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "package.json",
+    "sha256": "f5f500481d0d0b7442f185c2e78fea1138198ac0925de2e5c783a897fff9bf26"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "README.md",
+    "sha256": "ab6553502035caeaf964031d64d7060341f7415ad5149f25d302e1266e8408a0"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "USER_STORIES.md",
+    "sha256": "20f3e799db0e936d27217dbf948e59f83234517f97e13004ae1b14bb964ad5b6"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/index.html",
+    "sha256": "959fe341034d331451bc0b5aafed5dbd6c8c05741cb8cd04986dac88b44edeaa"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/api.js",
+    "sha256": "5933e06c65775e86c01d66dd78e3b2f9688c0df102777cdbd37201788d69ddf8"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/App.jsx",
+    "sha256": "b3f136a12c16857ddcbafc7b78ac7d16c89674b9ca0cae622db3140f83e0a5dc"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "client/src/styles.css",
+    "sha256": "9c2e515f918fd692e113410097e7871ba1e54807f783e9a8ff72bbf688cce28c"
+  },
+  {
+    "project": "JS1/legal-case-tracker",
+    "stage": "51",
+    "file": "server/server.js",
+    "sha256": "c0d3690ca6a1f6e951d52abdd13aed920150f408b20a91a403fe8e13fad3ca80"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": ".env.example",
+    "sha256": "8fb6e8b269623e2f079c80ef6ba378a0fd0cc2faea4cd457c308555525de8df8"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "017f89816dadfe845d6577aefb85618893be88ae7ee10f5c48267b00dda7625b"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "package.json",
+    "sha256": "e91536f81f3c2e1269116746e0b4fe746f20cf22849e15e13b6f83d3bce0f348"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "README.md",
+    "sha256": "a2909706198a98d366fad28e04089d8d96a51eecb7d4a7cd7381309e70d2be1f"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "USER_STORIES.md",
+    "sha256": "3a13d367611166186f21f052258e9545800ce6971d80a7842b31fd54a1dc4ab2"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "vite.config.ts",
+    "sha256": "6fe87840a1f7c6a638b573d8012adf23b8dff4ee1b526d2ea1eb3c286c449b7b"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/index.html",
+    "sha256": "28cad5566a278fae7da8cbba9c6c817bd653173c86f448c3e6a5977ecbecd18a"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/api.ts",
+    "sha256": "41d41831593d1010563cdb0ddc5e9f5beb4f62274fa611f28063a96cd01dbba2"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/App.tsx",
+    "sha256": "83cc908bb4025ddf262bbf6c894e78f69da4f6be61d7025388d85ec203b4b6a6"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/db/schema.sql",
+    "sha256": "5860dfd9a80e844ed8089c74aee5fcdc6cca5b8816e6027a9240cd76c5b702c8"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/src/db.ts",
+    "sha256": "fdb4cc4021ddb3a4ab8a389e31db94dbdddffa03485e7d0102ddfc9b43cff41b"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "server/src/index.ts",
+    "sha256": "160e123a801465b68851426a99e6c641c0d8cf3fd4dc26024d7cc298b6cad7fe"
+  },
+  {
+    "project": "JS1/subscription-billing",
+    "stage": "52",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": ".env.example",
+    "sha256": "e4ced858dbafb611df96e07a0406a198205541bb2c3f96e8d47e221b5bc78d6e"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "b79d2d35c3ad0998a302d63f46bc2bda0157ba51aa90964bf353ac1a696cee91"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "package.json",
+    "sha256": "41c939482c4570a7c8c292deb5208bbf178b4271f85f151f76a3427485e4f61a"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "README.md",
+    "sha256": "b851c006121ace791a6df38e2c7d8ae8174a68dfe0eb8839abacc6ce7c119da0"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "USER_STORIES.md",
+    "sha256": "56b1765c8bc5e42285488c4ce523a39b6b53e52c065f724b25be62e60f21288e"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "vite.config.ts",
+    "sha256": "26ef845a9e10b4afadb2318104f5026047778eb4b9d643baacea4b1ccacc9d67"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/index.html",
+    "sha256": "8d08e05a8d1bde376c3fe27e3b1ff6383badd03facf0475b987c569a8a21c990"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/api.ts",
+    "sha256": "830a9bd0a6a36bb10f3cbe7fdbb63102a25cfd2c52388484890bb8fda98da5fb"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/App.tsx",
+    "sha256": "0401b84d732ae0ab662baa9a5d517b13bbd578d545c971bf656726721f0d7fde"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/db/schema.sql",
+    "sha256": "a295bf7b11ebd3047925292c52459c684dfdc50f5e916376a7219a9544d96ef0"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/src/db.ts",
+    "sha256": "397d2a82adb8404436900024b41237cb23a219d2236d6efd3f393511dcc43aeb"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "server/src/index.ts",
+    "sha256": "9f522f6e9a6dbd1270082386e5fdc6d6c42475cdaedd7830e2c248c566bb412a"
+  },
+  {
+    "project": "JS1/field-service",
+    "stage": "53",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": ".env.example",
+    "sha256": "a85716b072d59c8eb533ac048caa710aad7e3dcfcdcadbf32d5cd72398551c5d"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "1d2e2f8e16a14b09394a5e7af5a6cb06f0491f421153f69820447d8e111a87f7"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "package.json",
+    "sha256": "0260c59bda82bea886e636981c87399d56b09b42e420c48f51449b56d87258c5"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "README.md",
+    "sha256": "f2dc92a9de7525985abe93ead389a08f6421ea90fa6b703539a51eff870e8bfb"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "tsconfig.json",
+    "sha256": "7bfd1942fcdecb39d1736b3d5a6c08c3bc9f34e1c9e0cfd51e387d0f78686d46"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "USER_STORIES.md",
+    "sha256": "f997f418ec6c51633b986c327765ec62220760c07d2c411f21eabcbcbfb10100"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "vite.config.ts",
+    "sha256": "79ff44596bb310221bc31bd9ea64134f9d963892fc6fb7c56f96ab2cd2bccc2d"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/index.html",
+    "sha256": "16948af6856f6e4054ecfe8150503e2703e4140431d5110800e73ed247d88a56"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/api.ts",
+    "sha256": "5851bdea1c4682a3eed93d7ca142ee757245c65d9d0f2b2347dfa3606c2c3e67"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/App.tsx",
+    "sha256": "97c7bc6dd3b51abe580ad0122312bba1c3cc2a057fc15bc79ae56781205456a8"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/main.tsx",
+    "sha256": "5025da510060edca9be2cbd201ca2855dc92a5071a8df9036686d607e4fc5c9c"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "client/src/styles.css",
+    "sha256": "6f933b3170aeb466794f96948bd4d7ae4f5b09c58a27b7748a0079ebc81663cf"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/db/schema.sql",
+    "sha256": "0fd62fb9bc22a8fca2daafa8d867be84944ebd0118f59d80152d96172791d40a"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/src/db.ts",
+    "sha256": "0516f6dd50deda78e14c67cc9e204e446d7ec43766e37431b072dc22e3bcd75b"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "server/src/index.ts",
+    "sha256": "0aaecfa7c5a69c3c018ce7288438280a6a1cc5027f156e52c760f662d0e86694"
+  },
+  {
+    "project": "JS1/research-studies",
+    "stage": "54",
+    "file": "shared/types.ts",
+    "sha256": "c1e3d448a13bc2581d7d3034019056ff338622d0fc341144ee6c499d51f18fd8"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": ".env.example",
+    "sha256": "ec76b053e95a24fff0088bcb1dd40705ce520a904572dc0312cd2a3e6b5d7635"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "a6136f7711c8c97b47c815b5e9b12f4cd86dd7b72cbe11b2a3ef39bc6f7943dc"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "package.json",
+    "sha256": "6ce51946efc5d0d8263266e9f7f7e5205d93bb048adaae540ac150099d906215"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "README.md",
+    "sha256": "b85655eb710f824a50ad246addc4e1a71eda2a7bfd8b1e1c69dd4dc2cfa8c5df"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "USER_STORIES.md",
+    "sha256": "bd22df6c8dbd63801c6d409c2dd6544284907bf4be4220cbc6457b4dc7cb193a"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "vite.config.ts",
+    "sha256": "bde90de251f228dd3c861792b937216f3bdf59d13c6b5dec65fd3423f8aba2ed"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/index.html",
+    "sha256": "b2069f915bf985dd39d9ef897cf1a742c8f86f54acb8015ff769206e227fda14"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/api.ts",
+    "sha256": "7b246a8631083fc8e18a118c3a585a9302d49329aaebb476244b462c70366ab0"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/App.tsx",
+    "sha256": "70a33c1b54ec44053e63794e9aee18fdf58414937907b1715d8e274ebf028aeb"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "client/src/styles.css",
+    "sha256": "643a304e84fe2812b2676c94bac292f2010752b47de5956736c10adf8e2e148a"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "server/db/schema.sql",
+    "sha256": "993df62199eff13810e162f8402edfed8e00fa0e8226092d89728e50ea879262"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "server/src/db.ts",
+    "sha256": "be9a7df3d4824e4133bf06efa6c9532230d3e6f452acfae1be8f3b57eba9c5f2"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "server/src/index.ts",
+    "sha256": "98eeae689937ad4351788453765a853ff8c26b459645300fda84fe939b8716a4"
+  },
+  {
+    "project": "JS1/warehouse-ledger",
+    "stage": "55",
+    "file": "shared/types.ts",
+    "sha256": "aa6b5e9c634c0ad3d9579269e70eaa3b8a593b99575b79f4bb679a8f19479dbc"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "93507dd11d36619bbea8b346ea42a2300f2489fbd2bce36e0d390e3c86cd30dc"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "package.json",
+    "sha256": "eb021692352be55654f4cd4609f8181ce48011daeaa84c207453d328e3964ff0"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "README.md",
+    "sha256": "c4d811a11aae8ab937005dbd55bc549809039e78664819eef5c53cb8e2e81f54"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "USER_STORIES.md",
+    "sha256": "e420e66fd473af649a5963d2bce67c14ed70f0b816c7dae2629399b6273c5d23"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/index.html",
+    "sha256": "938e557f7aff9a90f4e615f4eec034cd18f8e109ed9bb4c2a6652faf8f17533e"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/api.js",
+    "sha256": "3499b971c3b2d67f7eb236429824ff502a3eb634668d50dfb7448321dd8cc9e3"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/App.jsx",
+    "sha256": "952e5ade0b3c801b6bcdb1ccd28b2fdf38004c8c49a184b85b1d50b90376f648"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "client/src/styles.css",
+    "sha256": "edf733369509388df52edcb9ab4bacb0aeed7b5329b961e49d3e585d69e87c02"
+  },
+  {
+    "project": "JS1/secure-notes",
+    "stage": "56",
+    "file": "server/server.js",
+    "sha256": "5af7939a7d84afd9328eb4d5fdec0cedd4cdbc1dab9678842b0a688f7d326bfe"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": ".env.example",
+    "sha256": "0dd1e42e85572597664bb2c1f99bf1288971767768abd3d73f4e87a5a55ff035"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "d32d4048511fe1c7eb7e4c2f95f3deae5cc8a44920471db91204293a1b962a0f"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "package.json",
+    "sha256": "3285b44544190e4b2f50d2bc3c44093f2801e284324c40ebee45821d43ce303c"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "README.md",
+    "sha256": "48f7a13d9c0e43cbed4f5814f19447aaedabcf82eae9495f6581128b2022bb06"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "tsconfig.json",
+    "sha256": "9b91ed73903886de22c941f9c0d9990e26dfa3c6c146fb235ba14e159890102b"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "USER_STORIES.md",
+    "sha256": "b69718c850dc962d18a612314028b9fca7dd96e97ac05d95545dcb9b22e358a7"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "vite.config.ts",
+    "sha256": "ebe5700ab535a3bf1219cb8b4f531855d5c9658c90a969534d5a1fd9fa20ba6f"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/index.html",
+    "sha256": "f0410e0f26dcebbf92dcef883bd74dd7f4fe491b27f6b339e2600af0676fe62b"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/src/api.ts",
+    "sha256": "e4a6f49ac41d1caceb767c20ae9bb96caf93b6cd51951aa5266a0f9b9f75076c"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/src/App.tsx",
+    "sha256": "a93838a34546cdea7a63f93267786376e1d5990a485f4443eba2463495ce6051"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/src/main.tsx",
+    "sha256": "2dae0f9e6e34f4d3798f3dfdfc4afb700732eda06ef4369e51a6d83700694c64"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "client/src/styles.css",
+    "sha256": "e5a26a22231d969f39631ca0b723a52a9b121e0dbb9741e946aaa25929ba94c2"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "server/db/schema.sql",
+    "sha256": "3c98ae5f97812af38a67ab4e240fc5a0ce01f751ea02969d2c48f5b3db3bafaf"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "server/src/db.ts",
+    "sha256": "a8c8b7a07307e376a722746e132258f1deded5b51e57490076ef76228533b205"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "server/src/index.ts",
+    "sha256": "340bf99db8c208ae5cf27e10ec22c8d913b9993b5725eb8958fcdb7bd1815de2"
+  },
+  {
+    "project": "JS1/live-chat",
+    "stage": "57",
+    "file": "shared/types.ts",
+    "sha256": "926e0066485e2420e81a9619318e7d74e3e1bf178110d665857cec377e674605"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": ".env.example",
+    "sha256": "7ee8cbeda32b585e4a199acc3fb0a6e8feb234f1d4417c7e979e0b6c573bb5d8"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "README.md",
+    "sha256": "5f340b2c51dab82f862b7baa86bde50d9ae020f42196bc35bd7105f59578757c"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/package.json",
+    "sha256": "1feca7a1ae1343363c2fb6b0f76492e92b996d8170baeeb78c27b4d42d0bdf0a"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/tsconfig.json",
+    "sha256": "398b398766a6434885cdbd30d3f7bedbe490e8d34a460dd9658a4e9d60c63e56"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/App.tsx",
+    "sha256": "ecb01f2a6c363d252ce3b62c69dbf749c41290d70b618c0083a719d1a333e762"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "client/src/services/api.ts",
+    "sha256": "fc872598499df89a3371b5c5ea43272d7ddbada3ff774e299ece34236aa1786d"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/package.json",
+    "sha256": "2c60bd4d05ecd56ed1fc84faf4af9e5c8a18bd7dca54923ea797eab3216fc461"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "15809c73372e3177c8936cd1775b4b42cb8e9c0133f7eaa427ae270500a8507a"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "d772ffefa2dbe57a39f112be97a3c704c7339083557e723169d07067d07fba34"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/app.ts",
+    "sha256": "1d2e42b693c34303032aeaa4b08e60b11ea9b935d9886c1568c5b0026b35b1f9"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/server.ts",
+    "sha256": "270670117f2a6332604fd3ab2bd99bee8b9446a0455933fa4fdb26e3599dad72"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/config/db.ts",
+    "sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/config/env.ts",
+    "sha256": "d1b64372cb94efb21400631c24ccfa34dd2b03ca10555e95330c306de1100c04"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/models/model.ts",
+    "sha256": "a18e77d77e3eda110a11ffcb44425b9c07d5756dcfe1aa78e246547017141bb4"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/services/service.ts",
+    "sha256": "439045544550bb8a72db9f1754d1ad8c7cb3d1b7cf8233a0d90a24dd6bb72049"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c"
+  },
+  {
+    "project": "newcodexJS/07-blog-platform",
+    "stage": "58",
+    "file": "server/src/utils/response.ts",
+    "sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": ".env.example",
+    "sha256": "2c223c2a6e9ad7e7ce7508afa1fe74c70e3e6efe9e4c116cf19bc8a284a98755"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "README.md",
+    "sha256": "08ee681abc4e5cccbe51ed92dae70bc6498d2492c79eb34551abf5a65619af9d"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/package.json",
+    "sha256": "870e1c5c12a6e4535e7b79a8f0a5d824f831d9fd54223dc685fc9eed5756c584"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/tsconfig.json",
+    "sha256": "398b398766a6434885cdbd30d3f7bedbe490e8d34a460dd9658a4e9d60c63e56"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/App.tsx",
+    "sha256": "fd35a0bc32676ff2d3584ade85f9bc6d98df4d3a2353d22cbf5ef3b3daefba35"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "client/src/services/api.ts",
+    "sha256": "0855cc1855a8ab36802d39673854a0114e66189efe92a4593c308d5aa285f38b"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/package.json",
+    "sha256": "c04b5b507fe51d9392842ec6e9292194ec71490c3691ca0838fdc59ea6b6b4b6"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "b5c82a1c420d1dfd18119eb8c90904e21e2df3f676384607b89655d2db3d1f7f"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "ffdbc9fad3e0a63d78f81e9e5b25a1af6ad2071c0ed44a1cb46c5cfaf1539d36"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/app.ts",
+    "sha256": "4303ac420cb8e1be1c8bef1dffcf90d6347205d812d38a6166212a239a0296af"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/server.ts",
+    "sha256": "3f8bd13afda0e58f82ed9f035056f6fd222f40464b0cac5e429a94166539f53d"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/config/db.ts",
+    "sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/config/env.ts",
+    "sha256": "83b63e09fdc49c3040c9ef43e4683ab57f67ce3adde9781e7595dc7ed540c0a9"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/models/model.ts",
+    "sha256": "eabc290a77549e0463118b83b376ad82db4d2563719f8addfc791d36fe647ce8"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/services/service.ts",
+    "sha256": "1d623825df2b7a3abf9c37899e6dc746bfb9a31b1100afea1abc59bbc98b509b"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c"
+  },
+  {
+    "project": "newcodexJS/08-kanban-board",
+    "stage": "59",
+    "file": "server/src/utils/response.ts",
+    "sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": ".env.example",
+    "sha256": "ab321d595fff8c916d2fd12efacc9d90c6f5ed25d2bbf8b2682bde826714aa93"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "README.md",
+    "sha256": "53f74568c4aed639a84bc0193d9c039b4f448191fd97a1b440080ba313f9c1a1"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/package.json",
+    "sha256": "80325ab5f6df200c119ed42a1879ca9f9700db277b11e15cdac75e43c1863703"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/tsconfig.json",
+    "sha256": "398b398766a6434885cdbd30d3f7bedbe490e8d34a460dd9658a4e9d60c63e56"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/App.tsx",
+    "sha256": "f1deb15ed95c6dd6ad3ad241bf37ce00bd7a2d2b4d64e47880e8aaa1083c32ca"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "client/src/services/api.ts",
+    "sha256": "56a45c7096899f7cccb23239832a5cbfff6349333900bf565d2484a15a2b9a0c"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/package.json",
+    "sha256": "ffed6a06ad509b54be6f22839affbc766ce59b3b4c0cae062037cdb57c610025"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "2956edee5bb04b00394f0a02bef97d4ee9f7794d80f7499d4d775192b53f3122"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "5a54cce6fde1d7d987c64c002d97a137dc1f3932ebc28349c4997c4d51d89dc9"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/app.ts",
+    "sha256": "47fbbeacee7c470a8c736d38ac7c67393753f4bc092c007257fccb2d757f76cd"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/server.ts",
+    "sha256": "eda904a3bea9730b5f363e1f49f305279c90affe94fb522a30aaff97dfac4610"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/config/db.ts",
+    "sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/config/env.ts",
+    "sha256": "8f130eed515511708e1c92308380a63db818dc60bbcdc0e036415457c3bb4270"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/models/model.ts",
+    "sha256": "4b4b6f69d5ec32d9a0a2d4bafbf0b8c2533c2928119bcf7380d8f0cc9b0b6039"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/services/service.ts",
+    "sha256": "f372dc2fc30368f452f17cd2079d7bec193bcf4a1f28efeafbd1b13840493286"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c"
+  },
+  {
+    "project": "newcodexJS/09-job-application-tracker",
+    "stage": "60",
+    "file": "server/src/utils/response.ts",
+    "sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": ".env.example",
+    "sha256": "7b5ebc93a994fb2438ae48b7cc2606168177962d46687dac64b2f39863d24dda"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "README.md",
+    "sha256": "63c610aea7587182e90c39c1a39312fcb77f9ec0e24519e4ba501fad1d2c3aa2"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/package.json",
+    "sha256": "4941c39552671d8072895eb0fe097926023993ea30d21f40a3a1c1ff1ebb10e2"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/tsconfig.json",
+    "sha256": "398b398766a6434885cdbd30d3f7bedbe490e8d34a460dd9658a4e9d60c63e56"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/App.module.css",
+    "sha256": "fb195c9cae3e9ef7c2de036e62e0b01a6d268e723b2765703bdd0672b59e0529"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/App.tsx",
+    "sha256": "cc4baf89bc7790439da008e1c7071cfe005cc17f020b981c6268150d3de0b09a"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/index.css",
+    "sha256": "6521eaa26a1f51c84dde104e26e4461e02c11bf2f8b34a1d50618a162b141d23"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "client/src/services/api.ts",
+    "sha256": "2975adcde197b574a4a078060d56b9b73e7aa7da773a594abdb3bad36716b105"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/package.json",
+    "sha256": "c97d3925e8a709e3699333253b1475cd0cc3df63fb1fbfc1654899bae9ba47e3"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "4ff80b27e6c52c7367ad988e0b149542a43a9f03b38eb88065154cded09cadac"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "7f5c21243c09d4b827df1561c91c757fd188e6f4e4699e5087f7f7f5044e47dd"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/app.ts",
+    "sha256": "960bb6e02ed513c8852d7d28c7c8561e0ae54f062ce7d931c1d80dd672c52d10"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/server.ts",
+    "sha256": "d62eae628417854022508718b3d1a56e5e37531c9405e6a279a8e95624436aea"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/config/db.ts",
+    "sha256": "71462b0ba95a81a0b890e264fec1cf609dcdc929d98a228f8e9c572c5688f67d"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/config/env.ts",
+    "sha256": "fe4b5159498b8453de4645ee88ad840d146a99c1406af30fb672ea25662a3d96"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "5b974f5a5c23e7ebec2a28d12befeb291f3dbe058b82bb50b0dc4e5d0545dbee"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fbe65f2d36240cf4d800a1a198058bc13983fce44850a1ef1ab3fc4a8b8f9f3e"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/models/model.ts",
+    "sha256": "d221b95d43b86d40216fe66de9a35adeaddd20dc11317e39c10f0df0246a43ed"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "1a61fc73ff20acdffaea72750e25c56cfe94c71a5de5c40a5cbc841c2f93cac3"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/services/service.ts",
+    "sha256": "171d83e6ef85fe82464322e4c9c446f6c3d697f96296b3ca045083f8be50908c"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "33f05a561fa4ef6e911ee298d03ab79862207c1bde19b7eb5776ef8b1bffbf9c"
+  },
+  {
+    "project": "newcodexJS/10-inventory-management",
+    "stage": "61",
+    "file": "server/src/utils/response.ts",
+    "sha256": "941dd503bf455fe348af8ecd801e1bd2e63478c0d091be3ca4e1eb8b122e6ad0"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": ".env.example",
+    "sha256": "50de259cbfea057bcc1288c62e4b6c54d48295b158a9aa006f5821f4c393d87d"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "README.md",
+    "sha256": "8f88b8df83ba7ed36480bdf9d96f2862b7ac153be3c113fc0162a351c1ed23b2"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/index.html",
+    "sha256": "8093c425dfbb92fc991f4757b7f234fefd62efc05cc632708b0d80937197ed66"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/package.json",
+    "sha256": "0a727e674cfce28a4d373de10bf4f73c9f13cae3be5e79ef44a543b8e18afdff"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/tsconfig.json",
+    "sha256": "83cc8aca740e9ce8a596d34b871f6afefc4519c29fa0d9a015f69eea599c831f"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/vite.config.ts",
+    "sha256": "14115887126fb2520b516caa0e2aebe3d8503bea59260ab664d4f0969dcba7ba"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/App.module.css",
+    "sha256": "a4d289e55b6ae010dc6b4e71fee9074934b5e837d969cf6ac0f1fa3138b15ee8"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/App.tsx",
+    "sha256": "d797fc1857ccd33d0b64a5bda310ccf3b7fe62ff457647d2a34541543ab3e363"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/index.css",
+    "sha256": "c7546d69a79aeb114f8261c062e03fc6cea6f215ebab6b00ae5a5b41d5dc680e"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/main.tsx",
+    "sha256": "d741b5405cc6b108c2aa117387f1ff2b1696a194f0e2fe1e900b0dd1484e667b"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/features/surveys/PublicSurveyPage.tsx",
+    "sha256": "4202e24c50e693c5577b035c9f880f13c9098d25d10e6afb3fa7724c207da687"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/features/surveys/SurveyBuilderPage.tsx",
+    "sha256": "1fdca44275787fa1540a5ac631b941827634967a890149c7bb6a624f001f941b"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/features/surveys/SurveyResultsPage.tsx",
+    "sha256": "516d5cbee47ad60c3bd7a95d849e8d126426dfd5f9a84fb77e00a170d8525106"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/features/surveys/SurveysPage.tsx",
+    "sha256": "9c0758b0d3e65f9990fca7de8a3ba022f9f03ae91453636cff6825172ebb641c"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/services/api.ts",
+    "sha256": "867d6111862e29f0d058e725bf14058fc213b7b452867592f871775def00f686"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "client/src/types/survey.ts",
+    "sha256": "5e173e3c43a462964e6e86d0f171c3a2844114ddc9855178b9e5b94dd91c8c6c"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/knexfile.ts",
+    "sha256": "b653e9f7dfa4d9fc76b080e0587bc0ad6af621fc9d5178f6eb6b7739316f94b0"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/package.json",
+    "sha256": "2062eb230c5433bfed077affd03293f69ee09364e79c5a2c501ec93039c177fb"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/tsconfig.json",
+    "sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "586059cb73d44ee45393d62ed0ffc952a287ab08e111ebed945519b456d5feb8"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "7719b11898ee07dbb6ff8c343bc38861102fa69dea4a69b920ea4d77cd8e93fb"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/app.ts",
+    "sha256": "c7cf0dc1aad7026eb531acee75a163494a2e2e80b2401e16028458b57cec0fa5"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/index.ts",
+    "sha256": "cc8d32d7a52eeff12c084320212afe81ce5127aa8ab2537c8bae4eb84ccf3c06"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/config/db.ts",
+    "sha256": "e7d7ff3d23875c041b6f586e0ccbac5fc39335c3a9ba4c5f71ea45dd369c362b"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/config/env.ts",
+    "sha256": "d79b9dc28e737e23d99238de2234bbac745e44c4bda544293a7bd13ad16d0564"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/controllers/surveyController.ts",
+    "sha256": "96f229b9c0a5902767bef8b080414194a16bc82ca22c361b9daed1ee4d86b972"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/middleware/errors.ts",
+    "sha256": "2146ec77d72e38801ca29e0499c9d3e58f0f7d71542a763dc3c557c6f1181cd4"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/middleware/validate.ts",
+    "sha256": "ed1d12c3275b872c9d65e4e2f14d3a4341faebe581f63df204d6031f42c80120"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/models/surveyModel.ts",
+    "sha256": "419d04c134ab9038e8089df9501e423003dfde31de193ab2bd1bb6445f7e3cf7"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/routes/surveyRoutes.ts",
+    "sha256": "845e0dd96b6ae4585e3b18fcb821ad0ebdd0d2696ef45b3acc0ab16dcb0a789a"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/services/surveyService.ts",
+    "sha256": "442b59ce409a82e3b246346c476238f9d1e2d81b553ef06dbbe56761e7127c22"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/utils/http.ts",
+    "sha256": "695b53197a156699aa201a9dedfc1a77974508f71b5e4e7d2eaa70b37c878d25"
+  },
+  {
+    "project": "newcodexJS/11-survey-builder",
+    "stage": "62",
+    "file": "server/src/validators/surveyValidators.ts",
+    "sha256": "a57cf7ef0866a582bec4b25f1de7572a01e39c38b6a97fe44b0e1c06070019bf"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": ".env.example",
+    "sha256": "e3ab7f719046b1a4f2c0215c84f867ba5df10832957ea8e12062a828e04ecb24"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "README.md",
+    "sha256": "eab7ba15adebdacd81e2eb812c76e12e928cddc1406c6fe5c7fb9d9e30586a2a"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/index.html",
+    "sha256": "8093c425dfbb92fc991f4757b7f234fefd62efc05cc632708b0d80937197ed66"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/package.json",
+    "sha256": "73e4bd97bb0b998e9da15809510a36ec45b7b4aacfa59ee6ae9adc7275757c04"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/tsconfig.json",
+    "sha256": "83cc8aca740e9ce8a596d34b871f6afefc4519c29fa0d9a015f69eea599c831f"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/vite.config.ts",
+    "sha256": "1c4ea159305b48e1373f52e51bd5a758593e3b9e83e892f991a5de70ad9dfb39"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/App.module.css",
+    "sha256": "2b1ce1122adde635656982b3c40f8a5a5d0bcdad01c1e1f8a25104fac9a73145"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/App.tsx",
+    "sha256": "d858738bb10d230892b53dc0fbfb46ff10fe27649fdf3f949002e606b1c5e4e5"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/index.css",
+    "sha256": "152d0c5463959b0912558ca37da3e87a8e77814b6450ae4df99a491946c68c39"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/main.tsx",
+    "sha256": "f389895df65b8df8e669da1554d75ffccad3e04f64e325ec9fc93a0f2b2de170"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/services/api.ts",
+    "sha256": "53669d8a6c60ee21e39a0307d33eb2218635cfaae8fd2b80bc899d21d5e3837d"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "client/src/types/chat.ts",
+    "sha256": "0d24ac488778d27139868677947d28bb90e84cb2a3fbffdcfff6985f9e2ff5d8"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/knexfile.ts",
+    "sha256": "865d11ba934f069026b5552d6802e8ff8b713c64ce44ca4855a4bf5e94311a7c"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/package.json",
+    "sha256": "07c4df6f9720e62eadd00984212c4cdf5a448c99554ef9659852271c2252cbea"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/tsconfig.json",
+    "sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "8668d1c7323bd46f24e59fd6f92ed1c80e4c372d78748a79517eea7ca6244ddc"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "3ea3fd2e1fe86c1f0657e29b69293dfbdfa2010702287649621eb5114d911150"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/app.ts",
+    "sha256": "80c816ca8d1639a7b1f4d58aa30e699176a19dd37783d234e70e8fcd545cfcef"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/index.ts",
+    "sha256": "5ced2d83efc3e578f02470d0f52ee0a15ec3875ea852b9ce55f9f6c4c3199e36"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/config/db.ts",
+    "sha256": "c110a260c245e241ad9ddb6d33f5f5c1c7ea8653c96bd56883eae439d02658b3"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/config/env.ts",
+    "sha256": "9a90d686e37b2b352773d368da60ecc7a5dfa55bca0f08924fb36847c58b5a9a"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/controllers/chatController.ts",
+    "sha256": "2200f6cb32d30dc58a5904a9223e3aa5cc97018e3a56d17a283347056671a60c"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/middleware/errors.ts",
+    "sha256": "073c8aa933a15ec7bdaa03a5e9ccb950badbdf9d0f4d97a1bb10bcc9a258cae6"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/middleware/validate.ts",
+    "sha256": "d1547c293e967048c387c4ab6f74e39570982a088677d95621e3ea451c328358"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/models/chatModel.ts",
+    "sha256": "d53a4699d0650f0f0ce92ddc3b75de11d45a1d0e0f10c18b675695d8373c75a3"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/routes/chatRoutes.ts",
+    "sha256": "7b1fc41617687c7d699ad0e46d88e921ee814ba546c58020d04a354f4c81f15a"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/services/chatService.ts",
+    "sha256": "0eee4500b9f2039941218f3a4a4158f60ae6675bfb874fef749251d8cb994111"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/utils/http.ts",
+    "sha256": "7c646967e6bc372faa4400e3657c8d95925f3804951dbf9caf18fc2c1dc7bfb6"
+  },
+  {
+    "project": "newcodexJS/12-chat-polling",
+    "stage": "63",
+    "file": "server/src/validators/chatValidators.ts",
+    "sha256": "8ce7237ff1c326a2778bda2ca78d442aaa70a2e847d93c0c6fc42f762feabfbb"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": ".env.example",
+    "sha256": "6ceef6fb36f06ac556db68bd9c7abaf370037d401169fd7b1dc7699a3c8feb80"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "README.md",
+    "sha256": "a1c08ac23c92630bb301d4a132809b09d4ccd2f4c179566253d7f6f6cc3609c7"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/index.html",
+    "sha256": "8093c425dfbb92fc991f4757b7f234fefd62efc05cc632708b0d80937197ed66"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/package.json",
+    "sha256": "64dc7000e8288f9ac764d7514cc3b1ca3cc2bba8a13fd9ed06145144ce44e7c0"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/tsconfig.json",
+    "sha256": "83cc8aca740e9ce8a596d34b871f6afefc4519c29fa0d9a015f69eea599c831f"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/vite.config.ts",
+    "sha256": "07e3ec8e3b69eed875ad77ae97770e227d29ea35d011a3278813e94c958d3762"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/App.module.css",
+    "sha256": "2eddcd4e8fa807381937120bec102164821742fbbada2600b5556e7dfe14f2d9"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/App.tsx",
+    "sha256": "2529920348ea3ecdd6a26f567e050a0df48223aeddb90e5d0b5a7c4dcd49e04f"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/index.css",
+    "sha256": "1f825f66bd5d67f8f9eac9a4cc1585b24cbd18aae427e88e2cd36e7a718c5856"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/main.tsx",
+    "sha256": "8fb203cbc2aa3e604eff5c7a0ccd39779442b61e48559c96867891530b0604db"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/services/api.ts",
+    "sha256": "929949f17404e815ac9188a631664655e204ac13f8213333b34834a08af4bc51"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "client/src/types/store.ts",
+    "sha256": "194df86ca6b13b0d06cd28a61b131f552b9888e4052c3bfa7e7e96f433db1db7"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/knexfile.ts",
+    "sha256": "8ba798d29a1119a9358c37395fea06c3eb8c578667f61e3ab5b3567e167510c2"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/package.json",
+    "sha256": "e1169fe5f897ebe8e07c60c2442d5145cb24ca6f184bbab4be7a0fc82c2d82e4"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/tsconfig.json",
+    "sha256": "fe72930f596cd760d4e3a675b0952738165a0ec695cb197d112b4f37cca0484f"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "1651a37b27080c47acc37ad7223c23651f2b877bbc1cbe5514fb180bf8c9abaf"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "17176a3a048681126e62321600788468c1695619d6c6c0151288eaa1044e8e4f"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/app.ts",
+    "sha256": "c92b9e6c9a5997fd22e5438effeaa0687e852e1cc6196ac116a129c8657bc421"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/index.ts",
+    "sha256": "f1ab9dc0882db57ae52d734cfcbe4f0a6d46e63d057f236800e5d30cb87f0ad0"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/config/db.ts",
+    "sha256": "c110a260c245e241ad9ddb6d33f5f5c1c7ea8653c96bd56883eae439d02658b3"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/config/env.ts",
+    "sha256": "21658f3e0c893894ed23db9b9c914208c27d71aed343ba6790f3b9928b1c4a42"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/controllers/storeController.ts",
+    "sha256": "93cef5e951ddbf8455e092057a4c9692ed033ec727febac5d83a3fea7ccc7a6e"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/middleware/errors.ts",
+    "sha256": "e5ccb7106bd0225c33fb79f89a8d410f9e199e30e8f248cc1041acd23171bdf5"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/middleware/validate.ts",
+    "sha256": "56c9f1b6d0b7a6613d3daccee3f864ff97917082033fb85d2bda19a04bf1686e"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/models/storeModel.ts",
+    "sha256": "d599b6c17e0536a9069c0cfdf544a5cf3df173f17d065212d61e1512cedbaa16"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/routes/storeRoutes.ts",
+    "sha256": "58a30ad159c96592e04ba2b5f0987002c4df1e2d88b2ce5fa8a28395f4f22287"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/services/storeService.ts",
+    "sha256": "a0f1deec00bec3784c4e1b12fea1d9b79252e2d1a0db038caba79c9f052d78fd"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/utils/http.ts",
+    "sha256": "4b25554f9121daf39a8e7b165ef9a799867848165ef8a2c4e1748e4a6b5786d4"
+  },
+  {
+    "project": "newcodexJS/13-ecommerce-storefront",
+    "stage": "64",
+    "file": "server/src/validators/storeValidators.ts",
+    "sha256": "6c70649d616b8f216b9a0fd19b3dcfd36188c454a40eebd9cb65df5a8ef7ffa4"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": ".env.example",
+    "sha256": "9f3fbc13f50630d8087da4d5c4686c8debace457292c45eca2b7a6c171431e09"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "README.md",
+    "sha256": "ac5cdd65badb72df05dad6499aaae112219cba47f389d24ac6a1293e42cd481f"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/index.html",
+    "sha256": "9ac438ee340ad82a3a3dc6262e24719e108096206f25bd62b46a7dfa7e489eea"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/package.json",
+    "sha256": "82431b6ba092e077679c6dae5745c6ce2c35fb084529e882fe114f70a34c1e74"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/tsconfig.json",
+    "sha256": "01fbb6b1715be2942cb6894012746d50fa5fd41aa72d3b5fdf5bafa4a12c4f19"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/vite.config.ts",
+    "sha256": "70c5cc634d4a8a7155463a9d4bc307de46f320f9cf406fb142c271e8a8abc2a1"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/App.module.css",
+    "sha256": "d6c5572c90c59a37b428f73dbd2b5301f2681a6acc2e408af903de97e620a26a"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/App.tsx",
+    "sha256": "a2903d052099f6ed978162b0d6264a0e6199bf4543ea784529c315854c0c699c"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/index.css",
+    "sha256": "e215dfc93bb792ac8dcc607ea4b3d8d07a942ea12fd69fe58474ed35e932f025"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/main.tsx",
+    "sha256": "d33d2b594842a49ffc0c223cce45e320a74bd780b21b8427010c7aaaa147485a"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/components/ui/Button.tsx",
+    "sha256": "866bc65fc3b6a7e0e00c05d42ced1dccd39ff10207ea988c282bb8d6abe93afa"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/appointments/components/AppointmentList.tsx",
+    "sha256": "fe7b13f5305db077e1d9ca03fd18260ffc6d41a4cc45b56908c7f29159499b56"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/appointments/components/AppointmentStatusBadge.tsx",
+    "sha256": "7aeccf205f5b8c2bb229d773b94044a981d741cb4da927b310c2e9e87dee18f7"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/availability/components/OverrideManager.tsx",
+    "sha256": "6ed0dd8d889d171bf03013ab2c584f7dd334250f1935d99f32155fbee7720646"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/availability/components/WeeklyScheduleEditor.tsx",
+    "sha256": "ab0589d740bc41f47891039f8edf29184ec7ebdfc443a8fdd3bdd448e01fafca"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/booking/components/BookingConfirmation.tsx",
+    "sha256": "595fab4a5b022ca4ba24f858d21a9889978cfd208b36bcfe024a755de4a04dbe"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/booking/components/DatePicker.tsx",
+    "sha256": "c2e8bbc91819feb385af2da6a8624e8a9fbaef7c2ea0a031b42109c493911938"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/booking/components/TimeSlotGrid.tsx",
+    "sha256": "ba3d6674d7f1624e31567075ace9b986455b8d6859c184aecea2a80b77640c5d"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/calendar/components/CalendarMonthView.tsx",
+    "sha256": "dc0ab370c8634b64d77617823e1e2b2fe04d44d60a524ad4b6919751ac531e9e"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/providers/components/ProviderCard.tsx",
+    "sha256": "00bef8923d3647d11f608d1c026287fccda5b1654602b9ca53b6c6a6d91fc8f8"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/providers/components/ProviderSearch.tsx",
+    "sha256": "a5b4879cbf59db949cc96b99f5038c60715722e17388b46db45224e7fc8b53c1"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/features/providers/components/ServiceList.tsx",
+    "sha256": "f3fa0e00d3a0a1011d16d7679f26bff8ad16639772f3fa72a4bb89cbcffd9e31"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/BookingPage.tsx",
+    "sha256": "ddb8f72ee17932e9e51e8b50431cd7142bdfccbc7c091210e99963d0d090713c"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/BrowseProvidersPage.tsx",
+    "sha256": "4267f798b4ddce0e446470c16aed114fab36c0eec808f3a1eabe3450baa50d82"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/CustomerDashboardPage.tsx",
+    "sha256": "dce60b4fc31bd498e90a3203df2fe582c88f176456e006aa29f0c4c8e1bbd0fd"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/ProviderDashboardPage.tsx",
+    "sha256": "bdf637f3e1ba16517e56bf8dacd862528dc80cee1213810707a18812622ca3d4"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/ProviderPage.tsx",
+    "sha256": "ba848f47bc236beb0fb9595ff9b671f1db8422b0867b5b95fa2bbaaa466588b3"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/pages/ProviderSettingsPage.tsx",
+    "sha256": "f3d1f4f07729bed935a268696ba4398a33166c89a1ef4cc913836027b754439b"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/services/api.ts",
+    "sha256": "80ccaa40803ae9bfbabcc335b2a926e1441f24f064372d51baeeaea59eb83f55"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "client/src/types/index.ts",
+    "sha256": "dc1fba5945b2565ea084063d4adfb549cdecea40956bca97aa6fcf1605672dbd"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/knexfile.ts",
+    "sha256": "f43d4c1086a6cf82ad7924c6addc3f49a7f40cbb84c3dc5021e99beaca893e50"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/package.json",
+    "sha256": "bb15f1a70b7eb6c85b2ed53bee735d108e604842eb40ca063e95c2ed554bc60d"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/tsconfig.json",
+    "sha256": "f5eb74ac9002de2870ee5d82614d84dc3368c155712efd4783f64098f91b7382"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/db/migrations/20260703140000_create_appointment_booking.ts",
+    "sha256": "3456e9293a82f61dcd9778fd7c364e332ca82b540168125c9fd6c41503f62bfd"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/db/seeds/001_appointment_booking_seed.ts",
+    "sha256": "8f0ab88e4a1f5eb44fdb1be0ab2abb60629719ff7598830a61d63f1a6bef5311"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/app.ts",
+    "sha256": "eb27476da77c7afa1f9e041a62c171d8f469f5862973d2843a2e9ca7b194e353"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/server.ts",
+    "sha256": "8d2fa09cbe1d5873241b36f9948108c8332099e1af4ee5eb49ae683dab5229a0"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/config/db.ts",
+    "sha256": "0952fdd514cfc145edc3898fa7f358beeab2e4c17ccfd273c1a4199be8fc2a7b"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/config/env.ts",
+    "sha256": "de08c70ea37f4002d18b174134a8bb5a2661814bca2a50bce53b802c5ff31aff"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/controllers/appointmentController.ts",
+    "sha256": "1923d198cc3fc808109c2474f8316ea8d3bc5e8d540cb862ef9655c5a5a950c4"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/controllers/providerController.ts",
+    "sha256": "647bfa86139abd27a200bfddc430d85dd306afe0f61f349a399ed44f23c88a77"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "afd9351926f40b4da28bb7707b6d2f96f908c063536c824177cd764c47f927cb"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "3a37e5cca978de91878beca13ec03d543f070ad39d3b9a11ad6f49735d5b75ad"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/middleware/validate.ts",
+    "sha256": "994006b9329c8254b28ac46499d16cf0ad94280d5632541cc360239564095110"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/appointmentModel.ts",
+    "sha256": "7d305046d719b69556f1b32490507f41bbaabc397e950f907559102f769191f1"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/availabilityModel.ts",
+    "sha256": "74318229a1c3d3f689a7b7b178c3663316267b577c28d57e21c73f5ae9e1d6ca"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/notificationModel.ts",
+    "sha256": "ddefe7d2a6b539dda19b14900a86d74b6b03c3c25728b64164e8903ceb410d42"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/providerModel.ts",
+    "sha256": "8195a5bee84f72905134b68fae6ac50cd6397d6924412f2f4a31bb6e4bf25dde"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/models/serviceModel.ts",
+    "sha256": "e050e3e22ec837301d39d83303722f865e84c9c589cdebb88d4b9471ceb764ff"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/routes/appointmentRoutes.ts",
+    "sha256": "034ea5fd30d53d947196126f0407abcfddfdb5ce51aa7f9fdf626e2293bd5698"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/routes/providerRoutes.ts",
+    "sha256": "f24b04214f887f22dc1e98d583da68305c2269b8cfb66df66ddc7597d9c5b704"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/appointmentService.ts",
+    "sha256": "05fffdf8818fdfe262ea6edd66db2b687079d6d06e070910ade7c08f5c1b0714"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/providerService.ts",
+    "sha256": "c858c1064c54fb196e329e4593f6d798c9d8d2a2bd40b56077ab8a0e407bf470"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/services/slotService.ts",
+    "sha256": "cbe7b2a5898197c6fb942bcba9c1f5720a064fb3be69e12fdfb351312e2265fd"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/types/express.d.ts",
+    "sha256": "a064e562b3415be449df946202f4cbf40af9f020947e2c540612e637744f3243"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "71fdfeec225f173a42b5a19c523d993991219b80f79137978a488a5d6991520b"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/utils/response.ts",
+    "sha256": "bfa60ff556c88e7c6e19f842dfb4335019bd138c383ff91ed9a47f627207343d"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/validators/appointmentValidators.ts",
+    "sha256": "095bea344204eda17bf07489a77aecba6e36c01665a95057b78c8d75a0687fcd"
+  },
+  {
+    "project": "newcodexJS/14-appointment-booking",
+    "stage": "65",
+    "file": "server/src/validators/providerValidators.ts",
+    "sha256": "c184e4fcf79a00fbbef94c3bb0e637136347d90cc0ec96565b4a09e3f44df838"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": ".env.example",
+    "sha256": "726a2b9a8c21d93f1649b59477c7daa9ba2a6f0ddd14a26e05118d582a411c56"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "README.md",
+    "sha256": "616646fddee6671c611cc7f6084e09ae4eaa740c388ac9065439939e7f302ddc"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/index.html",
+    "sha256": "28f4112f8a3f49ad5e65f512a7d8295ea39f654e76d69ad4f22cf1320d0e5746"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/package.json",
+    "sha256": "704e9990d1de6c31a4fbbf900b038835adc294546bb465e266f961e32b43e5a6"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/tsconfig.json",
+    "sha256": "01fbb6b1715be2942cb6894012746d50fa5fd41aa72d3b5fdf5bafa4a12c4f19"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/vite.config.ts",
+    "sha256": "48b46b4daf85aa296fd8e39d6ab4747075fc4be1d0e4d3da3add53ff61f8cdc6"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/App.module.css",
+    "sha256": "6d89e09f78bf73cd783667bbe24e83ac026f23ce332ea4a58b8b0b6317586613"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/App.tsx",
+    "sha256": "b1af19e3a086ae7aa1885b488986e906ad17aef449648487730fc2b0f4a1c558"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/index.css",
+    "sha256": "df5159d4da21e57226bedd65ad3bcbe7acc5bae3c333e334804aacc0df1715cf"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/main.tsx",
+    "sha256": "23bca143c01806c81d5d093a25fba58c5657dc4a9f6594eeb2d28b6cde4d59b2"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/components/ui/CodeEditor.tsx",
+    "sha256": "a857363e2e72d0294a8dc577f0da95bb5b05e697669c5295ebd9ec807ea16e2b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/collections/components/CollectionTree.tsx",
+    "sha256": "f9341ba469a09e00daae904719eedc6b8d94436e5073c735d5aad1e55eab7b52"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/environments/components/EnvironmentSelector.tsx",
+    "sha256": "132dd433c4da1e9c006bad93a61a735b494c09fd876ba077f05e024343ad32c3"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/history/components/HistoryPanel.tsx",
+    "sha256": "72ab17e4fd8d797d89a917031fe95756e680d377b705bd690f1832e09465eb93"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/AuthEditor.tsx",
+    "sha256": "7f1df901a7e0c10b45b41f3efbfda7a57102614b4824f07fd0d4e552f4effc7c"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/BodyEditor.tsx",
+    "sha256": "cfc6fa868616d6f19eb219f9afc78aaa1e161711a4e9b41c7b9d5c48130b45e0"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/KeyValueEditor.tsx",
+    "sha256": "d0e62f27b52408308c963b2963ae1cd07c42658f892b5ef9f464104669b9909f"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/RequestConfigTabs.tsx",
+    "sha256": "bf8d5efc908ccccbe67ce702d6b2cab3358b50a9a9bba7821ec3ad32490f3976"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/RequestTabs.tsx",
+    "sha256": "1a68bbd275c49273224ef36e77f809d3ed3737e1eeb04189c7ee5f1fe253e1f5"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/request-builder/components/UrlBar.tsx",
+    "sha256": "30011357eba445e15af977a2379ff32b5922c0cd8e5d121bae1256d8bc79a1ac"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/features/response-viewer/components/ResponsePanel.tsx",
+    "sha256": "ef61a07ee551a8db9822b127726db57fe815d5a365322560df111117de41ae66"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/pages/WorkbenchPage.tsx",
+    "sha256": "826c1a733015d29425e97c206815bf5c562a8051833aed2a470589366ca39300"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/services/api.ts",
+    "sha256": "d0a23e251486894a61389aeecfd516cbf6143e29a1de957901650f4e53703dd1"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/types/index.ts",
+    "sha256": "0eb98f893a1e3888f6f990026af3776c55fd518fba86fd14138221e2fde8dcf0"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "client/src/utils/interpolate.ts",
+    "sha256": "ae0cb4099a24834bc9d9e9a8b63da49c3bb97ee917b9eb5e88f9dbde0ea88b52"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/knexfile.ts",
+    "sha256": "f43d4c1086a6cf82ad7924c6addc3f49a7f40cbb84c3dc5021e99beaca893e50"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/package.json",
+    "sha256": "475aa8fdbe1754b5348f5b56e99d7f6e632bf7ae5fa87931e85562381c260874"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/tsconfig.json",
+    "sha256": "f5eb74ac9002de2870ee5d82614d84dc3368c155712efd4783f64098f91b7382"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/db/migrations/20260703150000_create_api_tester.ts",
+    "sha256": "16f33be82b8fce92f489939ebcf054155ed34ad62eb2f1eb9cc37a1d4697a63e"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/db/seeds/001_api_tester_seed.ts",
+    "sha256": "9f840d8b32a1551b4575506228e561ad0fe435d778984c4fb3bcda2d0cd0509d"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/app.ts",
+    "sha256": "9e0344a4c07bd6f8d8a6fba170845e98637d7d7f6ca0010371522681a393143d"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/server.ts",
+    "sha256": "3ddea0694e123ac24ef1d21cfc8ae49c37169900ca558b226f75c7a55eab6833"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/config/db.ts",
+    "sha256": "0952fdd514cfc145edc3898fa7f358beeab2e4c17ccfd273c1a4199be8fc2a7b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/config/env.ts",
+    "sha256": "a789bd265bae66bd2a4f530bb94924d5491e2d93f5dac5adb0ef72f9b703ff7b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/collectionController.ts",
+    "sha256": "66c1ba6b4e7a87a4a6fa562d707d2910ace3bb97aa9c29dd2137fbc060b53adb"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/environmentController.ts",
+    "sha256": "5abac657ab31c1bddd44e3fc61a899c8acf3f017fc49907e9ab5a994ec8b02a2"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/historyController.ts",
+    "sha256": "53bf6b0a6a2d2843a9677afa3a319987d04cb7d477fbc91a21199158d01b77e6"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/controllers/proxyController.ts",
+    "sha256": "716190939dbbe8e1e0007e19368261e089b908a01103d8b83271d5e441e8aa84"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "fb566562fca1d7379e4c44612e4b8dcd105d77d86012f4b46196e2fefca9be23"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "b6685b70b3b4afec08ace99b284a0fa75a214684830bcc09fee093e2f7bf97ad"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/middleware/validate.ts",
+    "sha256": "436cc10548a6e872e5bee4324657064269d2dd1a1727115b5e2554ec5b076918"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/collectionModel.ts",
+    "sha256": "f50d50c30605b5e29f8395f35b02834d9df20982a1950912fb0c60df4b0b2561"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/environmentModel.ts",
+    "sha256": "53f63007e99e1639922e6482ea279e506890c6e8461f332270dda0b8a00e6bd8"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/historyModel.ts",
+    "sha256": "5d4e2d58ee816e911f92f43f7e37eed602ebc4f8c1c83910c1ad1f773df5f605"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/models/requestModel.ts",
+    "sha256": "489062c59c11b33328bc270bb01e54ba4d7b16df6095e16529fe4a117891118b"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/routes/index.ts",
+    "sha256": "406d42f121d85a2a05a5257a477e6c2237a7e0c7e441ad5d357648f7fb6639be"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/collectionService.ts",
+    "sha256": "aaf2e15bc6b79b9c7d508ff333a91394d255d8c1cffd0a6b16301c171db39b77"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/environmentService.ts",
+    "sha256": "18b80ceca2be19d7ad51af6172289702c0f8cf35416e7b5f2520f9a11f8355b4"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/historyService.ts",
+    "sha256": "92561d28432cef13e5a5f63ff1241c928c71959bda3b1c195d6bfe360fe37f6d"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/services/proxyService.ts",
+    "sha256": "097284a4136dd0d0fb3ca849a82b03e30c2517aabc56602710b8214c407544f2"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/types/express.d.ts",
+    "sha256": "1fb2b5afe6142cb168157a7b0c04e9a5e967aaa446f9b2f89df05e6c24bf0376"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "116ca68d29e75fbf18981bd435f29c0edbd7a8632abcac8b9432bad3274740f1"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/utils/interpolate.ts",
+    "sha256": "f0a4983a59e74ca4450eed9c22ed8044237115cfbfaa70e64e7c57cff44d9063"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/utils/response.ts",
+    "sha256": "5d2fb154b483f5f81841b7f1bff5298513fcfbb72073272bc123d31576508996"
+  },
+  {
+    "project": "newcodexJS/15-api-tester",
+    "stage": "66",
+    "file": "server/src/validators/schemas.ts",
+    "sha256": "e5a1ac0b218778afa0eb5c32a0bf006a6fb164a52ddb09c0b922157c485d9405"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": ".env.example",
+    "sha256": "a1c1d012e1b4f22ca18ce213996736ce33e2ff038a6e8c7c222c58ae44d0e020"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "README.md",
+    "sha256": "94628d021babcd638cd127b54c4e225961e41f77de7fce151aa481f996956193"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/package.json",
+    "sha256": "35957e8814fe7547f36e186c287fcc90f48245e58cb18816ed571c3d00c83bf8"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/tsconfig.json",
+    "sha256": "4d79384fecf6ea31f27647e147c9c3fd1616d0ef52a58caa6f3cdf75f1ed8d50"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/App.module.css",
+    "sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/App.tsx",
+    "sha256": "f5212a562417f4b908cbf53fc1cc09895b02d4ea04d1b8d610f91a701ad96139"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/index.css",
+    "sha256": "9d5b2e38e9277cb5caa1e45b91aed32bbf803bffa92eb3898fbb5d856139dd73"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/types.ts",
+    "sha256": "121642fc538676a3fdcaa2ddad7bef47aaa07090b37884ccd6c4d7c1da83ab73"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "client/src/services/api.ts",
+    "sha256": "e1e231751edfdb856ac7f02752ca7de504236aef480a6e9b4810b55b39dec434"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/package.json",
+    "sha256": "9210041f66dafcdf1329192a883b689886f1e6e8f90098a1c8bf4f9efe718d75"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "d6376ee8891daaf023b226c7ed727e4d473c3aa479a4a911804a0153c9855c6a"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "sha256": "522256cfc5727d580edb6eb4efc0d977e44a7d5733727b36a99bc33f634f5a89"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "ec4fbba731af925f01bc2dffda8a4a424db66be6fbcf15b6e1fa41cefc734473"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/app.ts",
+    "sha256": "1eb32e69d4e4827209d4d85c5eb599553a61a7fa1daeea3ccb0ecc8b541a0222"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/server.ts",
+    "sha256": "48d714d867eaec429bb611191057f9f5fd0c9fc8c7d28058995350c841638494"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/config/db.ts",
+    "sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/config/env.ts",
+    "sha256": "45cb443d86e61570c698a746cfbb6954de93434dbe73a47c3569c4fe62032d82"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/models/model.ts",
+    "sha256": "0f992ea1b52bdd51926645d763db24181b14a370b882bba465ac39aa091f1ab4"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/services/service.ts",
+    "sha256": "2a1fdd5a69dd4634f7d0154255734538f325d6c52f012542c46b8ef0fed711b4"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff"
+  },
+  {
+    "project": "newcodexJS/16-team-project-management",
+    "stage": "67",
+    "file": "server/src/utils/response.ts",
+    "sha256": "9db0ff10765fd9a1c2f2059ed97f1f672ccbff1bb6e8b08a30f1dfcadbd2909b"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": ".env.example",
+    "sha256": "498205d2988db13f5221e20f75fa61074bc666c361a5f42d46cfae777ed57085"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "README.md",
+    "sha256": "120ecbc9c192e129b2ad3fbe38cf510c555fbce210f83641c3fc1527ea6fc710"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/package.json",
+    "sha256": "0681b541d74ade2fb738d1c231c7d4317bc920610cb21a4d11bbc6116550a898"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/tsconfig.json",
+    "sha256": "4d79384fecf6ea31f27647e147c9c3fd1616d0ef52a58caa6f3cdf75f1ed8d50"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/App.module.css",
+    "sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/App.tsx",
+    "sha256": "ee94e20abfea3d1c0782df306294e1f03b1c0de2b368ee5c8cb8f0185f1f40d8"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/index.css",
+    "sha256": "9d5b2e38e9277cb5caa1e45b91aed32bbf803bffa92eb3898fbb5d856139dd73"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/types.ts",
+    "sha256": "e9c278575ef83eb163d350245349c7924d9245b5f5b6f0d1e302856690fe4ffc"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "client/src/services/api.ts",
+    "sha256": "d701cec65758f0b4a0c38627f6c926e62b1c8ffd1d5d7cf0aad9b6a04546083e"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/package.json",
+    "sha256": "94e0b6aefdf0ac71b334fcdc0d2d08237588f7bbb57a2674e7cef2de171f9a49"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "2aa64bad521890d782ce00e37902032af4e546f0adaa34fed3c5b1b59caee6e0"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "sha256": "5d67f9bb0e7ed7aaf919a285df46b646b51c8ed1f5d989983c40ea87605fa30b"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "c06fba5c35d0df3edce25e23dfee27963b3bc07f71da3866ba231bb0abe6c11c"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/app.ts",
+    "sha256": "4a658a8fce409d441e69f7e928b625ff06377527f401f6f69c7cef016ac3b661"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/server.ts",
+    "sha256": "a2ebc9f2860a4cdd03889be3b197415e3813a951c34addfca0ba310d42155a0d"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/config/db.ts",
+    "sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/config/env.ts",
+    "sha256": "7e293453aecc4e674c236af5d355865130e94249459df760fb3f176968d332a8"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/models/model.ts",
+    "sha256": "287809ce88a175c86ada70f0007b5324f1a4274b136d4344e4d8d53908c9ba15"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/services/service.ts",
+    "sha256": "ebf5e9b6a551dda8a359fb2d1ff9b1001733975920ec7a6ccb74fd2b04108346"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff"
+  },
+  {
+    "project": "newcodexJS/17-support-ticket-system",
+    "stage": "68",
+    "file": "server/src/utils/response.ts",
+    "sha256": "9db0ff10765fd9a1c2f2059ed97f1f672ccbff1bb6e8b08a30f1dfcadbd2909b"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": ".env.example",
+    "sha256": "df53e0c02a13ed5158cec341dfd6f7f0c46329c6a067dab45ce8b1306cbd75b1"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "README.md",
+    "sha256": "e3110864ce0768c49128972fbbe3738cf0e9fbbcedbb55ae3a633998319b68c7"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/package.json",
+    "sha256": "9a2d9c8ac2c8b19a262bbdc543f31e6d27533d33afa6c3833233957d65eb7d11"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/tsconfig.json",
+    "sha256": "4d79384fecf6ea31f27647e147c9c3fd1616d0ef52a58caa6f3cdf75f1ed8d50"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/App.module.css",
+    "sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/App.tsx",
+    "sha256": "9a75600c5a010c86d6918ebb8b12f5ba29bcaa3dbeb6f250e3956776b3dfb780"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/index.css",
+    "sha256": "9d5b2e38e9277cb5caa1e45b91aed32bbf803bffa92eb3898fbb5d856139dd73"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/types.ts",
+    "sha256": "4eb60aa6b60599c8694bb6e72105f27dc5c93930638d2ea2718b82014ce17dfc"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "client/src/services/api.ts",
+    "sha256": "8f7ad5d98f290b6b5b96e2def905282512c8a2202381ca238e0184a673903331"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/package.json",
+    "sha256": "3ed5a8da17f19df564d56f5aa765b2abd94aaf9b3da1f8b0782a35150dcb716c"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "94947744e3f26f69664f51e1ebb3279c9ca3bc018f666179842b042fe1acc2e8"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "sha256": "927466c2bd31001936699c6c74a8940c369b39e0229faa0603589feda10fd308"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "b4c618768dc54850e26dcd7ccd0be0bb1ab8d078893e966e1a5204f4918949e9"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/app.ts",
+    "sha256": "8ce6abe0e802b4a1e47ab6a1a1cd8c5c69df2aa7a64263ac1b5fca8a5ea8257b"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/server.ts",
+    "sha256": "16118f7988c52101a18c41fadd7d593b965dcf9a518bce2f5a6386ebcf1f7b5d"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/config/db.ts",
+    "sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/config/env.ts",
+    "sha256": "becac1bbec470a2b9887534870a50310abecc24cd5d56f72f33e22a5452da523"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/models/model.ts",
+    "sha256": "d96964359e8408bd7a9fc132de0ca04b5f43f40e46432c879c7a5f74cd0a96d7"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/services/service.ts",
+    "sha256": "f05992f0c0d01a0eac7792002a5c75f3ad10c44d5b66c8de140e922649546f8b"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff"
+  },
+  {
+    "project": "newcodexJS/18-learning-management-system",
+    "stage": "69",
+    "file": "server/src/utils/response.ts",
+    "sha256": "9db0ff10765fd9a1c2f2059ed97f1f672ccbff1bb6e8b08a30f1dfcadbd2909b"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": ".env.example",
+    "sha256": "f595ba3dfc07945499dfcbd4e6ea5c4e2c555603682ac5670942075828c81623"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "README.md",
+    "sha256": "8d6ea8f3ffd7ae61f654afad3c2b9a2cf1c15344a4b7df649cb9beab050812c6"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/package.json",
+    "sha256": "080cdfb15ef4c1e71a3415c8f32248feddd8225856ffa8da6b3580a0041a1896"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/tsconfig.json",
+    "sha256": "4d79384fecf6ea31f27647e147c9c3fd1616d0ef52a58caa6f3cdf75f1ed8d50"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/App.module.css",
+    "sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/App.tsx",
+    "sha256": "fad4aa007edcc97895eb8a62a69b40105f14b6752da2cf8cefa5ee4bfc1bba42"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/index.css",
+    "sha256": "9d5b2e38e9277cb5caa1e45b91aed32bbf803bffa92eb3898fbb5d856139dd73"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/types.ts",
+    "sha256": "121642fc538676a3fdcaa2ddad7bef47aaa07090b37884ccd6c4d7c1da83ab73"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "client/src/services/api.ts",
+    "sha256": "59f1c698ef2568fd3443643b365149b5b7c5e4dff722e6fdd9db6855fd558eee"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/package.json",
+    "sha256": "ba0dc820f0318f6fcc767cf705dd75ddc04def23b56c485e4775a8c774c9c94b"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "714246439a4bd8dba2d86e0939f9080daf0e399a71a6d236cfd25b49c1dcf0ee"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "sha256": "1deed9b8e8f212975995e609b13f18f3ebd661a9acb45878ddb8e99543fc5fcc"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "d77a1fe026f11b287f44016c70f499842751a0fe17497ccd1d9203c9d9c292cb"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/app.ts",
+    "sha256": "57f7f9d39d433d0f432eda6c291de7b75d95a1b04dac7b65494cc6a656d7441c"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/server.ts",
+    "sha256": "c25e29ac6b8318872d7bfecc80d77795a8518a6936c43cacb7ad84232c9cdc1b"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/config/db.ts",
+    "sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/config/env.ts",
+    "sha256": "134a4b4e9e73151c8282f1f09de1faa63e898e6ec5d80b89d22a0a38a43d531c"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/models/model.ts",
+    "sha256": "2d46bc995cdd9e0c491ad6666de910b847412efc39896bde0f7b975e857af855"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/services/service.ts",
+    "sha256": "eec36cb3e7456640d273eeaa678b116ce3669401f1a5a004dc6d8404ae9c6cac"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff"
+  },
+  {
+    "project": "newcodexJS/19-realtime-chat-platform",
+    "stage": "70",
+    "file": "server/src/utils/response.ts",
+    "sha256": "9db0ff10765fd9a1c2f2059ed97f1f672ccbff1bb6e8b08a30f1dfcadbd2909b"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": ".env.example",
+    "sha256": "89b2c24d2f67b9b245e894d7e4355bada1fd9aa3a2adf83c05e4ff9923ee7fe6"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "README.md",
+    "sha256": "54d8f6e1660421b7a2b54b851c1f224f586f1c4c3e3e4e5d991e2219b4370912"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/index.html",
+    "sha256": "4a528f95431e4251fda2710be50b2bf295ed2221ecc559ca4be982ae803c9ab4"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/package.json",
+    "sha256": "3485d11f5bdd92f47d736a76acf11cd1d5238ad7389d91ce39a18bf6863a41ce"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/tsconfig.json",
+    "sha256": "4d79384fecf6ea31f27647e147c9c3fd1616d0ef52a58caa6f3cdf75f1ed8d50"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/vite.config.ts",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/App.module.css",
+    "sha256": "61c512501fabc4484be0443cacd951558062ba06f6e90cdebb985ecfbd5bc07a"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/App.tsx",
+    "sha256": "c3ac45a7d51bc6327010400a9b0376a11830431d8d743de3b90a49c10daf8acd"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/index.css",
+    "sha256": "9d5b2e38e9277cb5caa1e45b91aed32bbf803bffa92eb3898fbb5d856139dd73"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/main.tsx",
+    "sha256": "49396923c9ff41d8be464a0b8e95c51060f383d970c8fbe16e7d635468a09c73"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/types.ts",
+    "sha256": "0ee504e3c45ddb4957d9ad313f2e18a336c38575fe81bdd78dd58007d907a25c"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/vite-env.d.ts",
+    "sha256": "406b3ebf3026bb027f214c9891fe01ec45438dee2d9e8b733c9b5f6e5d99d870"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "client/src/services/api.ts",
+    "sha256": "5058c6f9070d0edb7f86f38349794b3518afdad0b28372023798e91b25400ee5"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/knexfile.ts",
+    "sha256": "b673042f219f831444e3f9294ef75cdf74f7a4163a91e88266b166832338a806"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/package.json",
+    "sha256": "d5f2efd55ee78e8ad33407cf7f3c89633ce15cd37514369821482d358fa7d65d"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/tsconfig.json",
+    "sha256": "349069fc9ae01527194b6415109f2c15aeb584314ea664a02d405a7fc4824828"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/migrations/001_init.ts",
+    "sha256": "5e016b161308246f02944a146c6138774a389641113d9262e5c72d9c3620fec5"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/migrations/002_enterprise_features.ts",
+    "sha256": "5eec4847877d1ef48eedaa810909f4ebf0ae0a3936b1ffc6d086e4ed1f5b03ba"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "98a9aeeef5a7752908ee0118349b8b741ebfce4f16336c17025365891a7f3bc2"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/app.ts",
+    "sha256": "e71ef578ba349ca7b1cb3450feef32ebb793961242e31616d11598ce567bbcb6"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/server.ts",
+    "sha256": "b0216859f83854ff189a9ec34141db359a2a9436f21fe9dc4e8d7967d3347649"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/config/db.ts",
+    "sha256": "5d175e232be74271f193f14bbaf5c3d6c406d9a22dcc240f3380538d949646ee"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/config/env.ts",
+    "sha256": "74691ccf55d374f6870717c369795a2d6eb5412f5171c676a5787b97dabb05e4"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/controllers/controller.ts",
+    "sha256": "8369e425d1197ae5d8eaaefd0ba9e82f7304663d1578ab83ba2b0fc74297b85a"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/middleware/errorMiddleware.ts",
+    "sha256": "93f401f1cf59b706f6fe823db6b6b02417de2aa80e812bd64d5d4c51abcac497"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/middleware/requestContext.ts",
+    "sha256": "198a36d8e8a5474418454f8cfaa3f78c67ca6b880ac690df105a84f49e864b4f"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/models/model.ts",
+    "sha256": "c73e347b19e5b4d1a8eed36889e33ed00c788bb07c8c90eb4286cd83974b42cb"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/routes/routes.ts",
+    "sha256": "05dfcf2cdea88f729c8e1213528011db24e448f36e77ba7310ead9e17ae47b9b"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/services/service.ts",
+    "sha256": "3d083bfb0921b36609b07275abf0738d1992c4d1b9b43d094a0608dba1aa9826"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "90c03743bbfba99a8cd1c50b30e29af4f4a6ddfe7fb5def2d1666d7356a578ff"
+  },
+  {
+    "project": "newcodexJS/20-marketplace-platform",
+    "stage": "71",
+    "file": "server/src/utils/response.ts",
+    "sha256": "9db0ff10765fd9a1c2f2059ed97f1f672ccbff1bb6e8b08a30f1dfcadbd2909b"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "index.html",
+    "sha256": "3586d19e89a58a59080fd4b6a2e30ff483ea5341962cc4228afb069f50c286c0"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "package-lock.json",
+    "sha256": "7637b8cf991cb7241b04e81cbf592a9e6494a919e742f02cc8a62aa17460b6b7"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "package.json",
+    "sha256": "5373e343fa33b8dc5ff7b1ec8f3fc4cbd4c72c661555cb61e7c8a6d9fedbfd69"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "README.md",
+    "sha256": "ee105caad5d4b54d44f8b79ecf9f090e0b56d3ef62fd2992edcbd097800f6cdf"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "tsconfig.json",
+    "sha256": "b7a747b251dbff6a5d8589934ab198c74b00a119e8013d81a7f7a6e71db85b8d"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "tsconfig.node.json",
+    "sha256": "af364d0250f3f048fb2a0aec9029c0b6353f6076c3bb2538d84e0b90b92ea4d2"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "vite.config.ts",
+    "sha256": "cfe8009636b3dbfa90c96b7ec99acb5d1719d0aa1ac9291e73c1c7087fd305da"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/db.ts",
+    "sha256": "2d2ee8ac2307f62b23d121c1bff865b2edf1649887a5aa628560df9505a158ca"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/index.ts",
+    "sha256": "600e3c947b6bc035c0d8b15fd88d981ca0768d0818b3b6ea2865afcf0fdbb2da"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/queries.ts",
+    "sha256": "eb1a81f865aae18d47cba6d809ecb6c3f3f22d9625db87a724da0c7091436f59"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/schema.sql",
+    "sha256": "4b5a5eb47d73fd6f95ef0a418b2b781790e3b09fbd90b3164ecdbef61098dafa"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "server/seed.ts",
+    "sha256": "4a4ded00ac0a07694d97c1cb611e94ea9fbdc51de8803331d12403539c11ac54"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "shared/quantity.ts",
+    "sha256": "10dd3eed633a2b82f7f3ec72055d8f4a83779b0dad2039ac0638362f48ec5841"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "shared/types.ts",
+    "sha256": "85ad481ee08d7140cc1a926e9561891313874cce13d7c5e2daeb926b50429de0"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/api.ts",
+    "sha256": "19a2dd9325fbb15739caa1684e324c26100d8acc901cbf83d02ab179a9b2fbe2"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/app.css",
+    "sha256": "4cbb0b9f1d0474d453692278e55a0ad3e8a2d0bca3d2e621064ba71552836b72"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/App.tsx",
+    "sha256": "cdc00b76370dd05fdabfd4da98d199cbdfbac6023a19c30bba58afac82c21447"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/main.tsx",
+    "sha256": "bc9b320f0e1d7b30269a2194821fbed7309583e6cf293ea16dd9b73ab88ac9f0"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/styles.css",
+    "sha256": "00f58463b6694069a37705f23b20cdc0718d5fc1cec40491ffb11b6654d9a6a9"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/components/bits.tsx",
+    "sha256": "badaeb81f513a7fc1d180d0d21e3546eb2118dc3a08d60e7f011750089512173"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/components/SearchBar.tsx",
+    "sha256": "e47e93d1ee69127f1fa282741edd9d19b3f1b48c6704e00a7f68d48f868a9d22"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/components/Sheet.tsx",
+    "sha256": "4070b9d9c7856e1c0576ddd75b56e3a8b9f8329d6fe2de6ffa1f51a42b8320ac"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/components/TagInput.tsx",
+    "sha256": "29d6493a51e6bcba66c7ca80eb5c207ed47df6db561bcf953e6eac25db9104c7"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/components/Toast.tsx",
+    "sha256": "c7d8b74befb280e9ff8347dc784e7459abe33e38917c0a653126f3106078338e"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/lib/format.ts",
+    "sha256": "989cf4206d51b1634e44a7df905f842b85f709d7618c40bd72bdd14c11af9f66"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/CookLogCard.tsx",
+    "sha256": "4bd43e60888513c5eb66303a7efdf10f072eb534a23fb543cd8f61821c580315"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/CookLogEditor.tsx",
+    "sha256": "7d93db908f476ebe30e10ff9973834825e96aae28f00c1f46382aa9de5a7093d"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/DishEditor.tsx",
+    "sha256": "d28284c28d4eccf8d1163a26926d9530ffdb8d18e9b7b98974869badc01bdbc1"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/DishPage.tsx",
+    "sha256": "51e3e388e9f85a5a6d1a3f459dd68af1e3c877ce6b725de0c158af670c3b2107"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/HomePage.tsx",
+    "sha256": "5390128b4622ea433d6eaffc5f9add917f9ff017f6c77010e4dde99f0023e622"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/RecipeEditor.tsx",
+    "sha256": "0de31e6b9c146bb59e1cf371aaf0251c6bf8480feda574851fcc9ae616b828da"
+  },
+  {
+    "project": "recipeview",
+    "stage": "72",
+    "file": "src/pages/RecipePage.tsx",
+    "sha256": "ef62a86cd84f04eda5a6a51d3283e0a0b359863efb0f1215cd86d7da0b244e73"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "index.html",
+    "sha256": "143c0d3773d0aabf5160cae98cc9c2c777976f068cab745b80b0d79f2c310de5"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "package-lock.json",
+    "sha256": "3daa94b0ff2ae779be20a9fc261f5ec627f1138b9eed027f4be18ce76c560e20"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "package.json",
+    "sha256": "c404ec86b5032c04bded6735c268197671e2dbbe664422db9315c540657c22da"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "README.md",
+    "sha256": "84dfa761f0db288d9e1acd9dd1ff50c526b14bbfa51462910b068cdcb8bbef18"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "tsconfig.app.json",
+    "sha256": "e9de7f9f85cec12ba7e2d1a25f599f983847efd1e0287a125da2fed7e76226ac"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "tsconfig.json",
+    "sha256": "e8d6f7b50828db3953e21c7e92584f9206b3cd2551b4012507372afbb7fe9ce3"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "tsconfig.node.json",
+    "sha256": "3796a2f03917829e46972fcab47f0d183ce78016b17c145330c127b73524014c"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "vite.config.ts",
+    "sha256": "b525f621bda773d2cfc6930c2e63a0b7a6ce144063069bc9b32c423261a201e9"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/App.test.tsx",
+    "sha256": "4f87fddcf3728fdf0d984639d7e4a432c133f7070bd2c03da40852195541b367"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/App.tsx",
+    "sha256": "988965053dad1bcaafc30ce70e0e4ad6d4bdd03eba83ff8ffd91cd728288a3f1"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/index.css",
+    "sha256": "7f33a5e17bacdbcc724be8b269b8a00b85f41a331db31d73a7b45477317b4a8f"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/main.tsx",
+    "sha256": "107009a405bf5f251d292de2cc4c38c3fd792283b61a2b2e08f6b086ac4abf75"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/types.ts",
+    "sha256": "f4369e7f086b8956f37a045af9064cbfb6cffef4002a87cf2ef5ef92555ceeb4"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/vite-env.d.ts",
+    "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/ChartFrame.tsx",
+    "sha256": "fb1092c1173b4603c60b17a4c50b79f450ca600d41a89b223e9b54cf364787ca"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/ColumnChart.tsx",
+    "sha256": "5dfe91319d7907c19a1fd05f10d6bce378e63abe4dbb0e2efc0522047b882944"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/Funnel.tsx",
+    "sha256": "7c668f9237a2c2f7f078d1a6ebc976f4b938912a9ab93636eab6a1b7647f7f3e"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/HBarChart.tsx",
+    "sha256": "125e037ca53c348c06264d394d86e63d56918a45933deed0220a3f2276b9c893"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/Heatmap.tsx",
+    "sha256": "21790ed60b9c609c0204587989d5dbab8a31d4dc80068d8a4c2aa47e188bdd9e"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/scale.ts",
+    "sha256": "a155bf88d7b1f2d2f48fca9d1dd3e23fd7ff816ea8c7495a84a799b40fa4d064"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/charts/StatTile.tsx",
+    "sha256": "95df4ad8ea49befb221e54cb38c0c817221239e444f770810edafe46eaab69d0"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/layout/AppShell.tsx",
+    "sha256": "bb2b7b86e421319a4824b8942c7bf8333b248a918406e2c59377eb82f0d79e60"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/Button.tsx",
+    "sha256": "11c973f844695fa1901bd41170588bed5db0232e075d0d5e29b0db74d5be230f"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/ConfirmDialog.tsx",
+    "sha256": "7009d87513d5bc253ad5b0895ef9b381feccee959aa883709c7846e93c02f5cf"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/EmptyState.tsx",
+    "sha256": "1d1db3fa26438db8c340bb6a3fd8c8fb199b63c55453b5dd184221d5d2e478e6"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/Field.tsx",
+    "sha256": "1b9f2a743f7c9e670321441da793c02e31cce5fe37a8309189248396ee5c34b5"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/Modal.tsx",
+    "sha256": "4dac14eb7cb34c1ae23f334af8b61da49a04351e6f2c79e0e815b28533b9f1d3"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/Segmented.tsx",
+    "sha256": "83efb5dc261ca54d10534086025194a7897ef8065f39f48de49677e7ad9d613d"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/StageBadge.tsx",
+    "sha256": "3acc56e37dbf0599dfc42999a0672844eaea362750e3f038016bdc6a53a6e7d2"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/components/ui/Toast.tsx",
+    "sha256": "491e12218f1cb3677ab87ac98b9769c24151c8acfa96a340dffeee44121d8499"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/AgendaView.tsx",
+    "sha256": "37aff86ab217021cf4dec7705a639a885699e8fcaef63e0cc9dee465c843712c"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/CalendarPage.tsx",
+    "sha256": "9d5aff4411b078706d95e82336b2850fbb6de834b977012508ba21fd7a5082a8"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/colors.ts",
+    "sha256": "c7b75689edcf8f57acb18bb790004bd90730d7ff9d45474ee953f89dbf17add2"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/EventChip.tsx",
+    "sha256": "5f0e031ef141404ce5c619d882475f572b6fa1758c487825c301ad89561c1fdc"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/EventEditor.tsx",
+    "sha256": "0d4581bd54a81e89a824fe1eeff71b6f7a01a32e4a520c74ccae7023c30ab6f7"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/MonthView.tsx",
+    "sha256": "278ed63a3313331555cc82062e8b30a5295e226f535835d702ce73aa18c16636"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/TimeGridView.test.ts",
+    "sha256": "421b398ce8e1cfd02f1528703c6b88b600109a8ec6ca7c4d65db5763abb5706e"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/calendar/TimeGridView.tsx",
+    "sha256": "7308c8b24994916f8638093071dd4a45b16564c94f1a5b8bfb4cb40a849f28a4"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/game/ProgressPage.tsx",
+    "sha256": "bc3fe6e54b4e86a52bae41a67df7994c1ea4773a8cb5ffbb047bce15fce3bb82"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/game/rules.test.ts",
+    "sha256": "e559b3e669451b977e9cea439557e344b709c3829f073e4699d0a8aa512b85fd"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/game/rules.ts",
+    "sha256": "040a2cfe8c06ac147cd4ae9634e7aa6728d39e29d81d8839b1f5d04451080989"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/game/useGame.ts",
+    "sha256": "4696fbadab1bb28596b1195f4921b6f536410b6294b724e19b9215d29caf75cd"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/BoardView.tsx",
+    "sha256": "764f8b7fbdf604b6c337ba54e602451f14c1ca1e64a9722e4689776c0947da32"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/DailyGoalStrip.tsx",
+    "sha256": "73fe2b9c71ea364e6f7ca2601903c18b0d8683144ae90b6f7f4b65bbbf53191c"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/JobEditor.tsx",
+    "sha256": "d6b007be35e6bcdbffb11012e43e18c48a7bef5aba442f7ffdc0219f491e7d50"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/JobsPage.test.tsx",
+    "sha256": "c5853dc778f96ad7f207fb12703e982ab78fd0a7853abafd95d27c122b41a37b"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/JobsPage.tsx",
+    "sha256": "4c3de75233913d71a638f1e5119bfb7bb399fceb12d0dffad71bebaf373fd7cb"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/stageMeta.ts",
+    "sha256": "18e8173cae3130285f922308b3962f95c352d8c24b11d6799836cccfc5ccf35f"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/jobs/TableView.tsx",
+    "sha256": "03936851ec211c81f2dee730e23a40b79929fec3de4079767157ad3db87e79f8"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/settings/SettingsPage.tsx",
+    "sha256": "6222c8f28102a2a216792cb2c4749945a3f6fe13b4f63994faa3da3292e1dded"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/stats/analytics.test.ts",
+    "sha256": "72b6db9deae33415253142d1c289f43ba5fd84dc17cd21e17c928aa41205b568"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/stats/analytics.ts",
+    "sha256": "9076f1f3845f1e7d9e7001f70027f89dfc89ba362a576fde68b40ae0b8ba44ba"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/features/stats/StatsPage.tsx",
+    "sha256": "4706401f737f8e90989a22c619f6003ef860a1f0ab7c57b8c9b503a0cdf2f942"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/backup.test.ts",
+    "sha256": "3de72e73c14eec5994bbaf5e17b8411157e79376f67909c52542ab35c66fb9d8"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/backup.ts",
+    "sha256": "e6436342d8e7787568d6f15a6015fe46ae93fda2a7e436ad87144af2d19af7db"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/cn.ts",
+    "sha256": "2dc62e6a7e6161e9581a8e7bec0d55c5b8a16a98b4ef3c2d80b99df9d2c933ad"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/date.ts",
+    "sha256": "ff262caf73516630cd738e870a5770ecfe0bc469234cc913bfb3a81bc4229d7a"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/demo.ts",
+    "sha256": "33af589a7431e207cdc2d249d182745b8097057ba54593066edc6aa11c4e9b9d"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/id.ts",
+    "sha256": "9587b256d0339827f7af600894111d766e8381c9b54ccebae809660ae6bee0cc"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/recurrence.test.ts",
+    "sha256": "b7b69916fadd578dd2a41845cdcc4f7a211d4036345475a41588b83f0a1200ae"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/lib/recurrence.ts",
+    "sha256": "8bc0e6928e93549aea8d9eda70f51a138176ee604193c08971f55d5600774496"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/store/calendar.ts",
+    "sha256": "e42af288666db495a2cacc1abb2a94bf124744805ae2f57eebf0fe4227764f08"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/store/jobs.ts",
+    "sha256": "198de8fa598188868b8a03469535fb0997c9140a9eb39074bbfa0a18649d5f29"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/store/settings.ts",
+    "sha256": "baf9f13f59958c2711fdf854ddad6ba33d7fffcaa45e5350b9960c5688f11c62"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/store/stores.test.ts",
+    "sha256": "71e657e94dd4342be8d59ac451f9bb78a2660c777cd1ef9738593f5cab03d0b6"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/test/factories.ts",
+    "sha256": "7a81f5207cc680a409779ad17a559e3dbe724587a02338643028fa2472223581"
+  },
+  {
+    "project": "calendar+jobtrack",
+    "stage": "73",
+    "file": "src/test/setup.ts",
+    "sha256": "541655892fa8e7a2520b38daa2ee43918d3c692c96f129645d677142a6fd147b"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": ".oxlintrc.json",
+    "sha256": "b4d344818a1e1bf43997e4744a9153c8eef770c98b58229cd86363dabb85ded4"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "HANDOFF.md",
+    "sha256": "9b824050b9a3c5795db87fdebbccc97d4806178069f33608d79dd94aa4b2fce1"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "index.html",
+    "sha256": "fc9086c8c4a4a0e0c34dc95a34825671ee9512132b6a23d368114dd6f7c81133"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "package-lock.json",
+    "sha256": "5a39bf42eab9bf23d6cba5cc0ff7400d0184679f29d4c96c2273fff521623818"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "package.json",
+    "sha256": "d1847b9362fa7e685388fffe3dc025b161c0045b6d22b7b99d03c565f4042c1d"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "README.md",
+    "sha256": "ae72e70c7751665ac8faed221d8e906a45ee94908942a889e6bab20af8b7410a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "TESTING.md",
+    "sha256": "2218650dd32b6faebc2c78e2e5586315780257d76f7f62eb2dae25e59ac2b324"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "tsconfig.app.json",
+    "sha256": "f180c09aca2d8d9feb9fdc618f88dddebbc82d0eaff24d352221808dbca91dce"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "tsconfig.json",
+    "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "tsconfig.node.json",
+    "sha256": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "vite.config.ts",
+    "sha256": "884038cd079fa1ae233bc303b534698b90353e1b614db9fa5e480e11570b6b7e"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "public/favicon.svg",
+    "sha256": "61bc9a161de58248288e6905425d7180f0624c2865007b97d763fdac12043a66"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "public/icon.svg",
+    "sha256": "2db5e1758f1e4fb5bb0aa2cbdfab5e92d5d426a0b4895893de61860de97b976a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "public/icons.svg",
+    "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/App.css",
+    "sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/app.integration.test.ts",
+    "sha256": "e6d720c1252ef4f4863dc3c2d223397f8e74e3a708daacc8904cf7db84cfdc36"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/App.tsx",
+    "sha256": "fc77abd29abb6dbe984df1ac4a859e22d3a52e7a213c5039f011f7ee964160ba"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/db.ts",
+    "sha256": "3481152da44fc814814387f197e624b0bf121e6698bd9a01952540c6c8fd3433"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/index.css",
+    "sha256": "b5bf9864c529c75a37bb4b2c0571cb946f33d5e978ad2537671c504d2965942b"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/main.tsx",
+    "sha256": "22199f2bca5b5cc987108fe9d6e6fb7207516e5d4ae68f11564eb2b8ee8eabe2"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/queue.test.ts",
+    "sha256": "ef7eb05a5fc8e32b32638e3817a5ebd29f8e29f3b099540216d3efe06a38fe2a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/queue.ts",
+    "sha256": "7bca3ad259c8990e9c003171a02a53bba4e7922ad7d18aa5ce1cbc0c0ceeaf64"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/scheduler.test.ts",
+    "sha256": "1941baea6672011eb720a2707aedb6c5a2bd6bbc303346fe43d06cda4719139b"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/scheduler.ts",
+    "sha256": "fb6e927fa1f37c6d412e6e4384342626c45b1e64b80f5a5a54d2d43507c47fb0"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/store.ts",
+    "sha256": "2d6f84d3cb86cdb86e0063bfbaccd753ce39fee8df63619c153631bc7c342dc4"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/types.ts",
+    "sha256": "10d57560009b302c3ec783ef94097742554f2dad2e07014d44b2f7dbdaf7ef7a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/assets/react.svg",
+    "sha256": "35ef61ed53b323ae94a16a8ec659b3d0af3880698791133f23b084085ab1c2e5"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/assets/vite.svg",
+    "sha256": "5be21acd42eb7b896e517f4e0f0f11eb5c5d9e54fbbcebe9453f033008fcca6f"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/components/CardView.tsx",
+    "sha256": "1bad7d236f38458ac2844d4598d0b3e97176b5ce1cd7827f1c923c9f587f7056"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/components/CodeBlock.tsx",
+    "sha256": "0819cfa3c86a46baaf60c34d28cf99c8dcbc0d69f3f43be99deac090e4c8bd0d"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/components/GradeBar.tsx",
+    "sha256": "588d794d200c1df9b95325b886681896d6c09e446c896e390b38f2730930a5d5"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/components/RichText.tsx",
+    "sha256": "6848a78ac54354349785d5ce6dd9a7e4d1691d269a41bb29cfeddeaf329229fe"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/screens/Home.tsx",
+    "sha256": "b83c3eb3bc75b3db13e514b3779d84830c66e75bd38419b4340180423502463c"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/screens/Session.tsx",
+    "sha256": "3792218406f75b81c66d37912f184651eff14ba27cd67aaa0dd8b9811f454460"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/screens/Settings.tsx",
+    "sha256": "8373b44a1fd465fe04ef4c67beef642ac377332056c15deba3aeaf8080b6e9bb"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/screens/Stats.tsx",
+    "sha256": "e2b2ee7fc7fef76e5946fa1be03829690035454f51c341bd453cb3483c5301d0"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/screens/Summary.tsx",
+    "sha256": "f1c92abe84edeae1ec66e65b6f2252e1275aefc3e90c6442f644f9a4ad889e57"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "ARCHITECTURE_DEEP_DIVE.md",
+    "sha256": "6470d06021dbd368a49183b6371aaace33253eca68d047abfef365cd9db0fcde"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "package-lock.json",
+    "sha256": "2ebc3a4d89e1d517d24b4afbf5d74ed8b46f673d8d4e5416a92724eeb7e97a8e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "package.json",
+    "sha256": "54a426d20724be3cf600c46ba197fc8e9fb837030be33691c2e616d12da89031"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "README.md",
+    "sha256": "7e3c9875d87710d77c8a4ab47cd167fcf8ab027036e85bc038c3ab6c49bce7e3"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/.env.example",
+    "sha256": "02b290498bd0b248e2b6400706364888546802981f1f4e20189f8b99bff177a2"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/index.html",
+    "sha256": "20b2ea4af49f0eade17a342b8ce082806145f58d139581672d369880dce90626"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/package-lock.json",
+    "sha256": "7dca9cd8fbe6a0caaa38be4086e6f0363de86c65cb5446856bba3e0fde2bb28e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/package.json",
+    "sha256": "dfa8032858c6155f788a33e2a7707468e14ebfd1775a7350ece506d0fcc08cad"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/tsconfig.json",
+    "sha256": "f1918195c1483e8872ea1087b4d6f195b967dffe295719623531995639564d42"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/vite.config.js",
+    "sha256": "8a24aa9ac5bfb05fac98be59b702bed7ad684265217473112b800a63078f34c2"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/public/vite.svg",
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/App.jsx",
+    "sha256": "65bca4e12182f3a4837976609a3df4eeaa999da07d97744dbe148f9c4a5c4393"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/counter.ts",
+    "sha256": "7580ce935ad5fd8f5598ee53533fbddbd5d34e5aaf6cfbb7f81f3ef1969bf4e3"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/main.jsx",
+    "sha256": "50c36b48e8cc6815156a21d7c9bc8510adea5fd2e2e36989c08848443c7b001b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/main.ts",
+    "sha256": "9592a6269d9e9c1426595eec9f1b6d2b58d8399f4cdce6546d403d96f613ecdc"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/style.css",
+    "sha256": "81b5564e0527ba1f2b7ada78a611777d5dbf7211da9e460dc4d07474fea971f6"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/styles.css",
+    "sha256": "6041834a618b05c9200a7aa826be64b320648a803a90f6e6a052263b39baa34c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/typescript.svg",
+    "sha256": "f6ead1af17acc3f55ad857f3bc936df8754281e2932c1b472dbb9b36ab873f1c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/components/ApplicationFormModal.jsx",
+    "sha256": "27dc710a245849cc2e204975c6e19389419e37bddfc02a32f08155b57291a9c1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/components/Layout.jsx",
+    "sha256": "aa302aaa4bd841abb96f6c431687ee085b85e3b6b15106143c2aca180f0ab5ad"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/components/ProtectedRoute.jsx",
+    "sha256": "f7e05fe5d1d76481df7da29918d7484e65a113f3e0311b4aa7662e14cc2996a1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/components/StatCard.jsx",
+    "sha256": "09fd60c01a06bb2153f2cee03b5992cab5b87c1e528b42af404d30f2bdb3a0a0"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/lib/api.js",
+    "sha256": "84c7bd107296ec58140049b09084eece931f114fa8ee4a613687455752ec0633"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/ApplicationsPage.jsx",
+    "sha256": "dd6ae3382795c355d37ce537b00586e8380566042449c701fba1f5f034ae5c92"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/DashboardPage.jsx",
+    "sha256": "c36d192b82386b2a30521b165f482d1f896f22bf0d051f518d14df03185b953f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/LoginPage.jsx",
+    "sha256": "8fa13e34bed591b0b2b85fa5e7e38011b5d1be082e396e49c888d8573d0db241"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/pages/RegisterPage.jsx",
+    "sha256": "7e4691e1659bc6b9dfae544c1108834a39e55d7cd0befb38c661b1e972e3abd7"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/store/authStore.js",
+    "sha256": "89edf253e999947466807fe8a60f8d08de577f18f706983d82a3938c601e3713"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "client/src/utils/status.js",
+    "sha256": "eed586b4845707d885dfe42b666097fc7b963bd526cdde35683ef64efb7ddf13"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/ARCHITECTURE_DEEP_DIVE.md",
+    "sha256": "25fb973f2128c50b3a913d6e92174107033012e712fe706283324677bfb2d582"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/package-lock.json",
+    "sha256": "2ebc3a4d89e1d517d24b4afbf5d74ed8b46f673d8d4e5416a92724eeb7e97a8e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/package.json",
+    "sha256": "54a426d20724be3cf600c46ba197fc8e9fb837030be33691c2e616d12da89031"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/README.md",
+    "sha256": "7e3c9875d87710d77c8a4ab47cd167fcf8ab027036e85bc038c3ab6c49bce7e3"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/.env.example",
+    "sha256": "02b290498bd0b248e2b6400706364888546802981f1f4e20189f8b99bff177a2"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/index.html",
+    "sha256": "20b2ea4af49f0eade17a342b8ce082806145f58d139581672d369880dce90626"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/package-lock.json",
+    "sha256": "7dca9cd8fbe6a0caaa38be4086e6f0363de86c65cb5446856bba3e0fde2bb28e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/package.json",
+    "sha256": "dfa8032858c6155f788a33e2a7707468e14ebfd1775a7350ece506d0fcc08cad"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/vite.config.js",
+    "sha256": "8a24aa9ac5bfb05fac98be59b702bed7ad684265217473112b800a63078f34c2"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/public/vite.svg",
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/App.jsx",
+    "sha256": "65bca4e12182f3a4837976609a3df4eeaa999da07d97744dbe148f9c4a5c4393"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/main.jsx",
+    "sha256": "50c36b48e8cc6815156a21d7c9bc8510adea5fd2e2e36989c08848443c7b001b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/styles.css",
+    "sha256": "6041834a618b05c9200a7aa826be64b320648a803a90f6e6a052263b39baa34c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/components/ApplicationFormModal.jsx",
+    "sha256": "27dc710a245849cc2e204975c6e19389419e37bddfc02a32f08155b57291a9c1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/components/Layout.jsx",
+    "sha256": "aa302aaa4bd841abb96f6c431687ee085b85e3b6b15106143c2aca180f0ab5ad"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/components/ProtectedRoute.jsx",
+    "sha256": "f7e05fe5d1d76481df7da29918d7484e65a113f3e0311b4aa7662e14cc2996a1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/components/StatCard.jsx",
+    "sha256": "09fd60c01a06bb2153f2cee03b5992cab5b87c1e528b42af404d30f2bdb3a0a0"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/lib/api.js",
+    "sha256": "84c7bd107296ec58140049b09084eece931f114fa8ee4a613687455752ec0633"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/pages/ApplicationsPage.jsx",
+    "sha256": "dd6ae3382795c355d37ce537b00586e8380566042449c701fba1f5f034ae5c92"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/pages/DashboardPage.jsx",
+    "sha256": "c36d192b82386b2a30521b165f482d1f896f22bf0d051f518d14df03185b953f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/pages/LoginPage.jsx",
+    "sha256": "8fa13e34bed591b0b2b85fa5e7e38011b5d1be082e396e49c888d8573d0db241"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/pages/RegisterPage.jsx",
+    "sha256": "7e4691e1659bc6b9dfae544c1108834a39e55d7cd0befb38c661b1e972e3abd7"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/store/authStore.js",
+    "sha256": "89edf253e999947466807fe8a60f8d08de577f18f706983d82a3938c601e3713"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/client/src/utils/status.js",
+    "sha256": "eed586b4845707d885dfe42b666097fc7b963bd526cdde35683ef64efb7ddf13"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/.env.example",
+    "sha256": "98061ff53685810325369f7ee723fe307a568370acaf62b37b5c238a77bf81c5"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/package-lock.json",
+    "sha256": "df61d23043a3d94cb6d017239c8239d68fb10d44267919daa7abb687ad6beb0f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/package.json",
+    "sha256": "6218e20551e72246a12b86f45bf8be93e2b0a0b25fd76a3559022325ca109d62"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/constants.js",
+    "sha256": "f5b80ea2efc9ea3d709e140b6a15a315bee8d5fc340621a2ebb171c22eb50eb4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/db.js",
+    "sha256": "d292c76e1f38ddd8b67fb1fac724ee67004607a5e1891120ee77c416c5fad09c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/server.js",
+    "sha256": "a8be502e6773a2ec4f1f8f989f0b90840b6288469627d4765b8f5fa3a255c0ef"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/utils.js",
+    "sha256": "f1321394d5ab4af6a3613bd2de61f74cee038f77295d6da5d8200da3d2e2b0f5"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/validation.js",
+    "sha256": "36331462da21a9a27e1ef30e9b8d50d9667aaa5ab7aa9a412109f41e789979fe"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/middleware/auth.js",
+    "sha256": "f7169c20bcbec1cc6e534375b7151afaabeec75db59c7faad55f60333d35b952"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/routes/applications.js",
+    "sha256": "e9043d4feac779438fd9503f9e00e3c3b0f8ea70fcf84b04041244e3e0418a5d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/routes/auth.js",
+    "sha256": "8fdf71f9d4a8074f81ae4788aec70b7d2d983490c573c9013be6da464a38d482"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "job-tracker-next/server/src/routes/dashboard.js",
+    "sha256": "ccee0f01df79b818338d38c93fd6f4feed7fde51f44724e2f9c9aa1e59e2b588"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/ARCHITECTURE_DEEP_DIVE.md",
+    "sha256": "537217ec3526276f91e67584bd9ea75fe3896070cf917d82b0a699411337ac2d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/package-lock.json",
+    "sha256": "006f9eccb49bdb53d7a35ab83e9184129a16f51f781b782759900f5c012a9b07"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/package.json",
+    "sha256": "6d794047a52ff59bfe8150e3016fee03a306a6fcea7326cc26f044995e069a85"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/README.md",
+    "sha256": "e2a18903954bbfa45019e16c34b140cf4ea4931cbe8d8247a6188f820b3056b7"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/.env.example",
+    "sha256": "8a8bae4be8cb0d1d8753540321fb8018963a221ca13b392365c1a1657580cab4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/index.html",
+    "sha256": "76ccdeffbe95a1c146ec66299f3c7d4148c5393b5df2f1e6b4153bdc8215a5e1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/package-lock.json",
+    "sha256": "94e1ed3b231df489faa7c1b67d33336b2c2b70f0a71c3afde216283dfbf9b803"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/package.json",
+    "sha256": "6099494b4057764e3cfaede41ee290bfb55fbd6dcabef8d4f68a474720212c1a"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/vite.config.js",
+    "sha256": "a73d5e1739319f12b28a9bfaf076630747a72bd175d663036e967b4079d1ab1d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/public/vite.svg",
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/src/App.jsx",
+    "sha256": "3e95721dbf0ebb2c039507c7e441e8031b56704744b9718cc464621b98114f72"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/src/main.jsx",
+    "sha256": "c1a5dadbe1fa1047b859b67b4f89fca31be23eda2744bb5067128f95f73a5a03"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/src/styles.css",
+    "sha256": "2b3d27a9211e1058e2532959a73fa3301a06fd43dbacb755ab866acead9785a4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/src/lib/api.js",
+    "sha256": "585bd3018188d31167b093043b22474c7788f83acf5ab93d271a566e1afd1578"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/client/src/lib/socket.js",
+    "sha256": "a347b4b1bbe0a6014beb1a00b94b5707d816769393566676892ccea51cb3ae45"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/.env.example",
+    "sha256": "28bbf3352008c53c2bb0da0ddd4a547afa72a577026d9132bbbb42c13c378996"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/package-lock.json",
+    "sha256": "d6a2ab58a8ef4d67bce1812977d607625990cabe8aa62a56073fcc409091ba4d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/package.json",
+    "sha256": "acebcd9b1f934d9d5056eea0e01e43959d9b95f2a2845bdcda557af28073e2e7"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/server.js",
+    "sha256": "9564327478e0886cadf1497950b2dc285de4a6e9027c67d3cef2146101ee0d69"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/socket.js",
+    "sha256": "6e938b83125653207d9ab24a7cdb20bb467af7a48b050b5d9cb8b076e3664d26"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/db/database.js",
+    "sha256": "c08a752ce861328ff5474802f109d0ec45ff0bd4986d13266c7f255be87d6d3f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/lib/chatService.js",
+    "sha256": "64223bc6f53d8c4039b5fbaed6823af49a2663bb1b2c9d090f88edb0cdd9077c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/lib/config.js",
+    "sha256": "775258b9fcc3a3897b3cd982424ad3568e536fe6291050da87175c767ca3636b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/lib/validation.js",
+    "sha256": "bb3e053089c3dc9be4db1320bcff8a29db337df46a5c952c12d5f488ce1cefd1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "live-chat-support-platform/server/src/routes/api.js",
+    "sha256": "08e04d154c14eab881ae44e09247df521358554af8598f3dbce97d4e42f89c6a"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/package-lock.json",
+    "sha256": "cbbc8003c0888679df3052ffbf89c2d397265147f964cd6fb4f8e2186278a9d4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/package.json",
+    "sha256": "e2d350a5eca0ab46477576bf493c4b580bbd21db41b300c186b2db19c1b6f1e5"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/README.md",
+    "sha256": "7628039692e05955d139bfc35632d6e8596621f3c39cf49a8e61a2defa3dc444"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/.env.example",
+    "sha256": "164718dd662f214b7bc42507532c0ef98c6787aa0c39735bae4710c4c9ae6c17"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/index.html",
+    "sha256": "332a49e27a2409afd07e7afd8cc0ce66e130cad824564109c19b22c42fce707c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/package-lock.json",
+    "sha256": "f7878feacefaf3364316d2052739c888bbb101ce4b0eae4388c69b4438bbe7bc"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/package.json",
+    "sha256": "d9460be076fcb91efdf3880138cd58ee1d10824abf62ff9dce5775037e123cfc"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/vite.config.js",
+    "sha256": "a73d5e1739319f12b28a9bfaf076630747a72bd175d663036e967b4079d1ab1d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/public/vite.svg",
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/src/App.jsx",
+    "sha256": "61dd2d71f690c59be45d494acf49f07caf54be5dfe8aaf4fd57f8a4090f40ced"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/src/main.jsx",
+    "sha256": "c1a5dadbe1fa1047b859b67b4f89fca31be23eda2744bb5067128f95f73a5a03"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/src/styles.css",
+    "sha256": "d4c6309083aa0bd0774fa36bb3cabd59701bfc8b5539b2660382ad841db84d0d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/src/lib/api.js",
+    "sha256": "4806cbc418ca53f570816e083a2109e2e3d3c1aba27c458cdd653d8277f96758"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/client/src/lib/socket.js",
+    "sha256": "da9032cc08b32f5c433f3c6a46620e5abd618a339e1291e26558755c00491dda"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/.env.example",
+    "sha256": "fbcef76092db199f281aba744fd04d4d612393a155672ccb9b349c44cbe6dd63"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/package-lock.json",
+    "sha256": "72181e117d56570c6037b626ac92426ba1ae5b41cc20f2f2b1c60d0cf6f6ad29"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/package.json",
+    "sha256": "38ea5b90e13afb05e8a490ac059ff69ba92240b43a369813d710d261a910ed7c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/server.js",
+    "sha256": "000323272e961c83b78db2483526863bca42cc979dafafff0dddfd233e057fe3"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/db/database.js",
+    "sha256": "91a698e9301f46865a3826e2c0fd3175a2e5fdcf0c2b16a738d8d36aea690fe1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/lib/config.js",
+    "sha256": "b186b3a8d290eb3811b1a5c3b5a0acef983af0503f56d8e394888688eddd441e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/lib/kdsService.js",
+    "sha256": "93e27fb18d58afc4cf745e4a3f7470edcce67c84d92e6cff4aa7c8be83a5279e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/lib/validation.js",
+    "sha256": "4207e92e7a5aeab806df6e63baad383fad99926789d2cd07a8965fcf422d6ada"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "restaurant-kitchen-display-system/server/src/routes/api.js",
+    "sha256": "770668a7d1ea4454b05e4512cfe17b8c655306c21418594220456ebf6424b220"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/.env.example",
+    "sha256": "98061ff53685810325369f7ee723fe307a568370acaf62b37b5c238a77bf81c5"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/package-lock.json",
+    "sha256": "df61d23043a3d94cb6d017239c8239d68fb10d44267919daa7abb687ad6beb0f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/package.json",
+    "sha256": "6218e20551e72246a12b86f45bf8be93e2b0a0b25fd76a3559022325ca109d62"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/constants.js",
+    "sha256": "f5b80ea2efc9ea3d709e140b6a15a315bee8d5fc340621a2ebb171c22eb50eb4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/db.js",
+    "sha256": "d292c76e1f38ddd8b67fb1fac724ee67004607a5e1891120ee77c416c5fad09c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/server.js",
+    "sha256": "a8be502e6773a2ec4f1f8f989f0b90840b6288469627d4765b8f5fa3a255c0ef"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/utils.js",
+    "sha256": "f1321394d5ab4af6a3613bd2de61f74cee038f77295d6da5d8200da3d2e2b0f5"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/validation.js",
+    "sha256": "36331462da21a9a27e1ef30e9b8d50d9667aaa5ab7aa9a412109f41e789979fe"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/middleware/auth.js",
+    "sha256": "f7169c20bcbec1cc6e534375b7151afaabeec75db59c7faad55f60333d35b952"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/routes/applications.js",
+    "sha256": "e9043d4feac779438fd9503f9e00e3c3b0f8ea70fcf84b04041244e3e0418a5d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/routes/auth.js",
+    "sha256": "8fdf71f9d4a8074f81ae4788aec70b7d2d983490c573c9013be6da464a38d482"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "server/src/routes/dashboard.js",
+    "sha256": "ccee0f01df79b818338d38c93fd6f4feed7fde51f44724e2f9c9aa1e59e2b588"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/ARCHITECTURE_DEEP_DIVE.md",
+    "sha256": "09adc02aa206ec77670153ca075271f290e96fb9992889dab81832a3638e2e33"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/package-lock.json",
+    "sha256": "dfb2159c0ce975a60539055845b1dd1f30d74b842fcf517096176c332243ab5c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/package.json",
+    "sha256": "41eab91901132bdd900ca0a159bace8bf79f8de5099b843d13393aea4d2e4021"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/README.md",
+    "sha256": "7aece880135fa1806c101e0200ef69ae52c0726cd2953c6c421f91cb76a6bff3"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/.env.example",
+    "sha256": "811f8e0c97200445ab0eb8d3d4c787183d8cccc6ef0b61f70577993a233a2876"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/index.html",
+    "sha256": "de1628617672e5f7d2120c7c0886e2a0754df4e1d3d91ff4b0690412682f8d9a"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/package-lock.json",
+    "sha256": "9b911576e24650b93d9ae0b0793c85be42dfc845b5c7bf35eecdd38933da6efa"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/package.json",
+    "sha256": "5d89b08ac544e80b968ba578cbc35565cd7325b169d87344824f893a49b1a134"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/vite.config.js",
+    "sha256": "a73d5e1739319f12b28a9bfaf076630747a72bd175d663036e967b4079d1ab1d"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/public/vite.svg",
+    "sha256": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/src/App.jsx",
+    "sha256": "53e4fa3f95942695303e297ef231350beb27cae9e52c5f85e9b83c2fe0f6fc0c"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/src/main.jsx",
+    "sha256": "c1a5dadbe1fa1047b859b67b4f89fca31be23eda2744bb5067128f95f73a5a03"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/src/styles.css",
+    "sha256": "87a6a2f341796780f086641dd1fa9d922f8ef71a2d39bc7233af929fe537e2d2"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/src/components/StatCard.jsx",
+    "sha256": "c559b818d0c58ebba05db2f6be17241f7a7dbe0da48070fba23c78c62d5370d0"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/client/src/lib/api.js",
+    "sha256": "cee1a39a0b8dd1e7e4a960b6216ef6ad4902dbe2f8de57b36e2f4333f20bf91f"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/.env.example",
+    "sha256": "ee57fa8879faed6761dc849dcb1cabd58ecc1bd5c20014ba469c479b634752e1"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/package-lock.json",
+    "sha256": "72616f2934b919c06de892d113767da162b1227f1a36410284c773bf05c1966e"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/package.json",
+    "sha256": "fb4a98cbb0bf976762a58f2f0ddbe4b3c6c196b7ca8ee39b7557c0d483f93462"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/server.js",
+    "sha256": "b4caf95afaa5593c9b50cf10533e33bdd2046b72948f4742d4e6fc02e73e4892"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/worker.js",
+    "sha256": "bf99b44bdefc11201186303d8363a2688e4c27a05aa8a2562066baf27375c18b"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/db/database.js",
+    "sha256": "7bb5f03b9709c4c8a41aa334e1f50b5d28ab951c74f5c75cecc002c22fdbc918"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/lib/config.js",
+    "sha256": "b8bcc823ec3a55f5fe885135afd2a0c9205336be1c56554c23e5eda87a7cc773"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/lib/redis.js",
+    "sha256": "75f22878c1b7abc6f9cc7cc59a02dba9edeb64a69a0b87222914d05a07bec25a"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/lib/validation.js",
+    "sha256": "e401efb3f222578e329b2b88a0c986eb2e86e1d192e7c1ef1b62fbac5bbcf1a6"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/queues/index.js",
+    "sha256": "10bb81e59af994240d67a852c0adc276ac49a54f15f33f7b916f65c29ba614a6"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/routes/campaigns.js",
+    "sha256": "0c6d2388fd8e45f8a8a7f93ae36689a49fb0fa642e0f3d68929c9d8094ff9203"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/routes/dashboard.js",
+    "sha256": "d20f5323fdbfa83a3533fdae891f3f047d808df44ba7e0ac6ca69b8cfd929bb4"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/workers/emailProcessor.js",
+    "sha256": "db3611b1da8351ba40277949734ed9969e4427e3c0a3700877e70b3179560dc6"
+  },
+  {
+    "project": "_Organized Desktop/08 App And Product Projects/job track",
+    "stage": "75",
+    "file": "task-queue-system/server/src/workers/emailWorker.js",
+    "sha256": "fc7c30477f5db16c6b42086b651248169d2167c50358ab861b8ce0ce201106c0"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/code-quality.ts",
+    "sha256": "6cb2f16410e778d91267128302dda831d8682a372b03f0b364063af41d895179"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/css-fundamentals.ts",
+    "sha256": "4210ceea9733b3d1c6d924231b0146d709b2d3480f14201af3b36537fb3dbdc5"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/debugging-and-errors.ts",
+    "sha256": "7568473b6c9d2051506fe1e2d60924547fb7dcd67749fc523c34b421d02c2f80"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/dsa-patterns.ts",
+    "sha256": "bced64ffcd0cec7ea000fc8f961509424e3576d286e341021c682ad5d24f875e"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/index.ts",
+    "sha256": "30e261d09333e34b574df94e582c6935239c05554c3bf7242e3b80a3bad72b04"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/js-async.ts",
+    "sha256": "29775757ac1854054a4d089c3cd10dd5f33133ea09562ed375aff69ef137af5b"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/js-fundamentals.ts",
+    "sha256": "84937b5f6283afc8d1e5fbec4593eb8eca5c3f99fd946dde84c4c42e4d0b1943"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/react-mental-model.ts",
+    "sha256": "e3e1f362443184aaead1b79f7edaf3e8a8d5c09c235252e8d738ac0c4ad8d5fb"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/security-basics.ts",
+    "sha256": "2348b6dd266f38c1e177b1d05c86a73f6b25e53d28fe8329b42f3ddbc586c81f"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/tooling.ts",
+    "sha256": "e863e88371108852f2b1528f9eb662492f17189dc586e21c0132f23b94c45b7a"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/ts-essentials.ts",
+    "sha256": "e4939c4ce37bd124aff2886facc6a64b0c155c00054f6555f33704ec6d4373a8"
+  },
+  {
+    "project": "devdeck",
+    "stage": "74",
+    "file": "src/content/web-and-systems.ts",
+    "sha256": "8271f2f1395aacdf7ece459a05fd5fc7b0b99d782f126118b07c5541d775d84b"
+  }
+]

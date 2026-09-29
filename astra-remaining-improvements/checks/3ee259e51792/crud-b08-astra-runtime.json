@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz9",
+  "id": "3ee259e51792",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-case-clearable-fields.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3ee259e51792",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:32:53.542179+00:00",
+  "status": "complete",
+  "log": "crud-b08-astra-runtime.log",
+  "pid": 33760,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:33:11.734963+00:00",
+  "elapsedSeconds": 18.19
+}

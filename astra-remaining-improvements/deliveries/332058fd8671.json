@@ -1,0 +1,197 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "summary": [
+    "Hardened self-review submission with tenant, reviewer, subject, cycle, type, status, and active-cycle predicates inside one transaction.",
+    "Added immutable integration claim tokens, conditional retry/claim/complete writes, atomic retry log/audit, and stale-worker log suppression.",
+    "Added repository-contract workflow regressions and nine source-grounded upskill chapters."
+  ],
+  "changedFiles": [
+    "package-lock.json",
+    "prisma/schema.prisma",
+    "src/jobs/process-queued-integration-jobs.ts",
+    "src/repositories/integration-repository.ts",
+    "src/repositories/repository-types.ts",
+    "src/repositories/review-repository.ts",
+    "src/services/integration-service.ts",
+    "src/services/review-service.ts",
+    "src/tests/auth-permissions.test.ts",
+    "src/tests/review-transition.test.ts",
+    "src/tests/tenant-isolation.test.ts",
+    "src/tests/validation-boundaries.test.ts",
+    "src/tests/workflow-atomicity.test.ts",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/README.md",
+    "astraupskill/VERIFICATION.md",
+    "astraupskill/snapshots/integration-repository.ts.original.txt",
+    "astraupskill/snapshots/integration-service.ts.original.txt",
+    "astraupskill/snapshots/review-repository.ts.original.txt",
+    "astraupskill/snapshots/review-service.ts.original.txt"
+  ],
+  "checks": {
+    "format": "json",
+    "testsFile": "checks/332058fd8671/zz8-workflow-tests-full-20260913-r2.json",
+    "typecheckFile": "checks/332058fd8671/zz8-workflow-typecheck-20260913.json"
+  },
+  "limits": [
+    "Unit fakes establish repository contracts but do not prove PostgreSQL isolation or crash recovery.",
+    "Integration attempts increment only after a worker claim; claim tokens are internal credentials.",
+    "No live database push, seed, vendor integration, or canonical folder was used."
+  ],
+  "testResults": {
+    "passed": true,
+    "expectedTests": 6,
+    "executedTests": 6,
+    "testFiles": 5,
+    "command": "node_modules/.bin/vitest.cmd run src/tests/auth-permissions.test.ts src/tests/review-transition.test.ts src/tests/tenant-isolation.test.ts src/tests/validation-boundaries.test.ts src/tests/workflow-atomicity.test.ts --maxWorkers=1",
+    "log": "zz8-workflow-tests-full-20260913-r2.log",
+    "typecheck": {
+      "passed": true,
+      "log": "zz8-workflow-typecheck-20260913.log"
+    },
+    "environment": "stage-local repaired npm ci; Prisma Client generated from stage schema with placeholder DATABASE_URL; no live database"
+  },
+  "courseWords": 3843,
+  "courseFiles": 9,
+  "courseLinksChecked": 9,
+  "files": [
+    {
+      "file": "package-lock.json",
+      "before_sha256": "76fdb0c4d93600fc989e45cf8dbb48193fa77daf27bbe1e0baf74ab328cf3ac3",
+      "after_sha256": "e27dea2aa8e670bc82ff1e2dffdd9bfe3f7d6456cf373b60ecc59b7958c98cb8"
+    },
+    {
+      "file": "prisma/schema.prisma",
+      "before_sha256": "13d1389871bbb2b2b61f0d00dff92576a69b9c2f55bd248872d5b77b8855f91a",
+      "after_sha256": "347e57f24dd26f28803c155c1e881e697fd44a6ad4097368f03f74deeec14254"
+    },
+    {
+      "file": "src/jobs/process-queued-integration-jobs.ts",
+      "before_sha256": "286a914619a0a1f6beec47fdcf8fba17aeb603a3545e3c9aa7b701e2fa1268a5",
+      "after_sha256": "2a88756677d6270145649a94cd11d80f14238ee1c7b7df62ded137c86bb43423"
+    },
+    {
+      "file": "src/repositories/integration-repository.ts",
+      "before_sha256": "62d38fd3170e9d555a8f6f605a357a0cba107de3ac1d1f5161822391fcd97774",
+      "after_sha256": "6f8e3b5273bf6ec6b600e201e627fc2bf3da55ddffc05485bd54fc71f32e16d0"
+    },
+    {
+      "file": "src/repositories/repository-types.ts",
+      "before_sha256": "c7423b2999457c0d413124f3420f87e4a324c49966d481a9b6e7f9de3bc0753e",
+      "after_sha256": "9d28f9096f798d4cf08aafa0a41a2446609dcaad58a3aac06c61a8be8d00115d"
+    },
+    {
+      "file": "src/repositories/review-repository.ts",
+      "before_sha256": "5a40a7e009f86d11ef18eab25cfa1e2fce969e4799b12572171ae8de3e6df256",
+      "after_sha256": "c4cf2601f030b80d9fcc8898c50cdd6babc669d219a37ab2622354f39fb62abb"
+    },
+    {
+      "file": "src/services/integration-service.ts",
+      "before_sha256": "cff31f37bcd8a74d64e96b12ac77ac76a3de3d0f3adf99efa04dcda65d6bcbb7",
+      "after_sha256": "6982a4602fa075b5069de391b4a429b959071133aa5cc2400fa08a956cda8f15"
+    },
+    {
+      "file": "src/services/review-service.ts",
+      "before_sha256": "a9d50a53b290a010cc13757472bb1f41eba84c837adc830c801e2e9dd0939291",
+      "after_sha256": "9c587cc47b8a12fb2ef7bc5d6e129abc2a209051cf47593bdb3791e8ec7a7027"
+    },
+    {
+      "file": "src/tests/auth-permissions.test.ts",
+      "before_sha256": "7297f5935ce07e246792a2a1af6af9ba50566f0ae20ab8d4e75bc9bc9f96d5d7",
+      "after_sha256": "7297f5935ce07e246792a2a1af6af9ba50566f0ae20ab8d4e75bc9bc9f96d5d7"
+    },
+    {
+      "file": "src/tests/review-transition.test.ts",
+      "before_sha256": "76ee5035cc79343adace35ce236adb522c6964e93e7c06f0ec03557e4c4b3f7f",
+      "after_sha256": "76ee5035cc79343adace35ce236adb522c6964e93e7c06f0ec03557e4c4b3f7f"
+    },
+    {
+      "file": "src/tests/tenant-isolation.test.ts",
+      "before_sha256": "8bdf9df57f5f93faee539f195cef7ba2a12fa04fe4f1b9422c3bdf409f4b0150",
+      "after_sha256": "8bdf9df57f5f93faee539f195cef7ba2a12fa04fe4f1b9422c3bdf409f4b0150"
+    },
+    {
+      "file": "src/tests/validation-boundaries.test.ts",
+      "before_sha256": "3b1888787fb5916aaf2b7da78e449b155239a8e0f52096ed17a68dd903024ab0",
+      "after_sha256": "3b1888787fb5916aaf2b7da78e449b155239a8e0f52096ed17a68dd903024ab0"
+    },
+    {
+      "file": "src/tests/workflow-atomicity.test.ts",
+      "before_sha256": null,
+      "after_sha256": "052e0fe96acd31bdeda3185f4ef03cb1f925ac67c2d5ddf16b350f31922f8b09"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "31ae4f1fb9062ce6dd38567581215f334baee9e383232c409ee44fff8a6d930c"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "833bff75f852e4640e40846d172b56ed536d0711e84c348263880d0963b4e799"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "abc9cb39c595eff6d49211cac7c6cec826f46012ae2a44e17e6cc5f81697b2a9"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "cf0e80319fbcf7fa92b06a430fd7cc364750bd82f168631a1f54e9d1a34c00cc"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9afeaa24d75a1560e3bb4b8a3b2acc99ead7fca7201331025e334686e0dd6197"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "a5fdc65abbaac0495356af63f4d4cb628a6b0fa2a1e96c6bbb25df536f6d4ac6"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e5960810303125c0c07acebdbf4226a7fab4a04c9b5f522cccea6efb788ad4ce"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "77569acc7c773404faa200472148e56af14c80e45095b981be7e775ba4983e16"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1e76bb4c30c4b9e7db3cbd6f482a16c171a803c9af8eb35babca1a536cb5bbca"
+    },
+    {
+      "file": "astraupskill/snapshots/integration-repository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "62d38fd3170e9d555a8f6f605a357a0cba107de3ac1d1f5161822391fcd97774"
+    },
+    {
+      "file": "astraupskill/snapshots/integration-service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "cff31f37bcd8a74d64e96b12ac77ac76a3de3d0f3adf99efa04dcda65d6bcbb7"
+    },
+    {
+      "file": "astraupskill/snapshots/review-repository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "5a40a7e009f86d11ef18eab25cfa1e2fce969e4799b12572171ae8de3e6df256"
+    },
+    {
+      "file": "astraupskill/snapshots/review-service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a9d50a53b290a010cc13757472bb1f41eba84c837adc830c801e2e9dd0939291"
+    }
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T16:20:19.741791+00:00"
+}

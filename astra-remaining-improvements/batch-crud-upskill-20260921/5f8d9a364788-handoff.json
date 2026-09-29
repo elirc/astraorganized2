@@ -1,0 +1,31 @@
+﻿{
+    "id":  "5f8d9a364788",
+    "project":  "zz1",
+    "files":  [
+                  "src/services/dealService.ts",
+                  "tests/deal-stage-update-result.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src/services/dealService.ts",
+                  "astraupskill/evidence/deal-stage-update-result.log",
+                  "astraupskill/evidence/results-crud-b07.json",
+                  "README.md",
+                  "01-CODEBASE-MAP.md",
+                  "02-CONCEPTS.md",
+                  "03-WORKED-CHANGE.md",
+                  "04-TESTING-AND-DEBUGGING.md",
+                  "05-PRACTICE.md",
+                  "06-SOLUTIONS-AND-REVIEW.md",
+                  "07-TRACE-LAB.md",
+                  "VERIFICATION.md"
+              ],
+    "finding":  "Deal stage movement previously continued to history and audit when tenant-scoped update reread returned null; it now raises deal_not_found first.",
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/deal-stage-update-result.test.mjs (2 passed)"
+              ],
+    "limits":  [
+                   "Repository, Prisma transaction, pipeline, and audit are explicit doubles.",
+                   "No real provider or concurrency execution.",
+                   "Guard proves non-null reread before dependent writes, not transactional race resolution."
+               ],
+    "spec":  "astra-remaining-improvements/specs/5f8d9a364788.json"
+}

@@ -1,0 +1,187 @@
+{
+  "project": "astra4.2",
+  "id": "b415b13a50ee",
+  "summary": [
+    "Adds shared strict snapshot/settings/command validation, legacy defaults and saved reminder CRUD with independent active messages.",
+    "Checks editor revisions, submits partial settings patches, preserves rejected drafts and serializes cooperating preview saves with Web Locks.",
+    "Persists accepted worker data before reconciling alarms/windows, reports post-save effect warnings and repairs missing effects on later reads.",
+    "Preserves corrupt preview data for raw export and requires a confirmed, baseline-checked reset; retains local artwork upload and timer behavior.",
+    "Adds 39 Node cases, ten Chromium scenarios including a real unpacked extension, four reviewed layouts, a verified matching extension archive and nine detailed CRUD learning lessons."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/interlude/results.json",
+    "expectedTests": 49,
+    "command": "npm run build; npm test; Playwright ten scenarios; one affected layout recheck; archive member equality",
+    "environment": "Node 22.16.0; Playwright 1.60.0; Chromium 148; isolated profiles"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 49,
+    "nodeTests": 39,
+    "browserTests": 10,
+    "additionalLayoutRecheck": 1,
+    "build": "passed",
+    "archiveMembers": 11,
+    "screenshots": 4,
+    "environment": "Node 22.16.0; Playwright 1.60.0; Chromium 148; isolated real unpacked extension and preview"
+  },
+  "courseWords": 3774,
+  "courseFiles": 9,
+  "courseLinksChecked": 26,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "295aa1f18923880afebb2e08aa70a8c4f285cc52baea238b8d2864d10e45d825",
+      "after_sha256": "63efac973ded3e09921e703f02e44877208f9fc00fdb9aff163babd4d2772d75"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "e3bdc02116da6aa507d97b7223730d689542c9193505b3b948ae115b5c49ce50",
+      "after_sha256": "f1b144475adfdccaa7e0b716fb2065ca2bc3712ef8d1736e442ffd3c4a62982c"
+    },
+    {
+      "file": "astraupskill/images/dashboard-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "651958ed0bd0f03fdba41dd4334611315fa889c12f667c141db9a2cb90d32bb9"
+    },
+    {
+      "file": "astraupskill/images/dashboard-narrow.png",
+      "before_sha256": null,
+      "after_sha256": "fd041a96cafd5df75ef6b328483f9c06245e50594b969f6418ece775e5198e66"
+    },
+    {
+      "file": "astraupskill/images/messages-desktop.png",
+      "before_sha256": null,
+      "after_sha256": "4c7d742a2bd0d763f1968f63bb654490834f39b10b0205e8baa40ceab4896170"
+    },
+    {
+      "file": "astraupskill/images/messages-narrow.png",
+      "before_sha256": null,
+      "after_sha256": "13a7c9cc9c286a686e0b4efb0063045b4c3ed5061fc1b494d14b6f12be9b7078"
+    },
+    {
+      "file": "extension/app.js",
+      "before_sha256": "fe909307afa9e8cca5bdf171056f17481684ad38e9f293ebf5b68e5d5bf6fd71",
+      "after_sha256": "025453c5ec4289b2608e8b77dd74475eb73527166dd7df08afdfb89040e40806"
+    },
+    {
+      "file": "extension/background.js",
+      "before_sha256": "0c96031b41cf82da43d9daf92975d6e1272975dd6ec9c6130608c2ec4f7fac67",
+      "after_sha256": "ea01f071664ea4329275688d2788a9768e3f5414ac7f335b291c5d88c680f022"
+    },
+    {
+      "file": "extension/model.js",
+      "before_sha256": null,
+      "after_sha256": "f165e22964fc478b64035e98ceda4b70c2e97586597e9264645bcea1a57f74cc"
+    },
+    {
+      "file": "extension/styles.css",
+      "before_sha256": "50f308b68ab5836eb8af9c9196079d9f4d27249dbea0c1932ddc3f79971400b3",
+      "after_sha256": "d7d9be876e1af3badffa45639d4b571b5b86388ae6eb433eef653fc13186938e"
+    },
+    {
+      "file": "interlude-extension.zip",
+      "before_sha256": "990cec6860c4589917f73deaf1f6d6fc095909a8aebe50a46ff08ca0049317eb",
+      "after_sha256": "963282849ac40e2fe9e541e08c1794d1a21786ec287d62c52ce3cfdd738a986c"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "3fa850e33b766c61895ab29efc469528602d4016852ce16691ddbd039f663b2c",
+      "after_sha256": "aaf68ee9b7de46c675f1dc25a3963daf1c63406e5cc237168b3d18fabcad6f29"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "f385d2d27243a48562c9230c98e6316f210b2a684f5129b9a6858aa709f81312",
+      "after_sha256": "6c4ee7778be449bfd316ce8a99f39311376b37654640ca9646cd36812888f25e"
+    },
+    {
+      "file": "playwright.config.js",
+      "before_sha256": null,
+      "after_sha256": "110cb7f3871ebef2110100d266e40ede43cf841d96a5fe09dc30c2d085d7f85f"
+    },
+    {
+      "file": "server.js",
+      "before_sha256": "9116af05badab951af580219e84b5b783455dd27b5b7469b960c897d40844efb",
+      "after_sha256": "b85b77c02021b420a8f3c196f51e44e56ef7e273326f25b88c0e4684b01a940e"
+    },
+    {
+      "file": "src/app.js",
+      "before_sha256": "e9842d40857e85931dba2033f257e743841230f2244381b4d3e5ad66befef1dd",
+      "after_sha256": "21edc88d6987e89e7de463bb6f44c6e4ee1602a3052844c4f55e710d90de5ec3"
+    },
+    {
+      "file": "tests/browser-check.mjs",
+      "before_sha256": "e85da676b2be4c4c4b9cc1340e9d72c9ed0a381a1d466341f898a177ed9c779a",
+      "after_sha256": "99aec70dd7e926a1d5e4802a5e663ebbf87805bf660e79cc708363aa0b895e30"
+    },
+    {
+      "file": "tests/browser/interlude.spec.js",
+      "before_sha256": null,
+      "after_sha256": "a91b9cb8eefcab0e2e6e298176cb5691e9ef1c1ab587d3f046e8bace3fb96bf9"
+    },
+    {
+      "file": "tests/model.test.js",
+      "before_sha256": null,
+      "after_sha256": "e9fa4b6fb93cf48a13780629499c5a096a2bac04fb677a59f07741a4febda19c"
+    },
+    {
+      "file": "tests/worker-reliability.test.js",
+      "before_sha256": null,
+      "after_sha256": "2c4bfb7480eb2ec4154ed6e8804d12dc8e29b32cfc0d80b148a30e499ace06a4"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "70b6bd565f9da181778a0fa08e449013fde5377cec989d743851c2a0d054558c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "3e390d7ff893ce8780986d99cb3e8195c560f56a9a241a4d3d6d0162796095cc"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "72ee7e1524497dda3372bfd631189a8d306bd26ec52f5e8a3246476fd5e3d073"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "b50d37d1015ae17abb39fcbaff816c31bd76f00b58b9180c4cbb9fae1c211d68"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e5f2f6e01cd3faddcf5266c50dbf3da6cb5a6cf73bbbbed8a26bb8ad2ce21dff"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "c041d021d59c2d10cdb7fbe59b1a26e3ef42b06fd33be89625581bcaf40d2dcc"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c4f495af8b5db503dd23433fd5a03ff6b2a81f8f21b8dc2a9ad4693d06d11aba"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "521db25895f4a142e14f6fd56706731a9e2178edb915a480adbefa63de451997"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "0020f028ef660e510102962782b83ef87e0a86731addc48c53bb755f466a466e"
+    }
+  ],
+  "limits": [
+    "Local preview/extension only; no HTTP data service, SQL database, authentication, remote sharing or durable distributed outbox.",
+    "Preview Web Locks and worker serialization coordinate participating local operations; direct storage writers and cross-device concurrency are outside the protocol.",
+    "Alarms can be delayed, including by sleep. Reconciliation is best effort; simultaneous cleanup and ID-persistence failure can leave an orphan window.",
+    "Raw export has no implemented general import. Preview and extension storage are separate. No personal profile, sleep/crash/power-loss durability or full accessibility certification was tested."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T06:44:32.888520+00:00"
+}

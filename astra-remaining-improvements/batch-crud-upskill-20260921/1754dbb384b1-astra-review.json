@@ -1,0 +1,31 @@
+{
+  "id": "1754dbb384b1",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:29:59.943794+00:00",
+  "sourceReview": "Inspected actual upsertReview UPDATE and INSERT plus real utilities. Content UPDATE omits hidden reset; INSERT still initializes visible state; rankings retained.",
+  "teachingReview": "Read nine chapters, fixed nested project links and run directory, removed quote artifacts and moved practice answers out. Distinguishes author content from moderator visibility.",
+  "testReview": "Two actual-data-module cases pass using real utilities and SQLite-shaped/date helper adapters: scoped existing UPDATE payload preserves hidden column, new INSERT sets visible default and author/shop fields. No live SQLite, session or ranking correctness claim.",
+  "specSHA256": "63d58bffdb89be7f0f2b36c6bd26f84fc8c24535e936fa8decc3330a0423efd1",
+  "fileHashes": {
+    "bagel-intel-platform/src/lib/data.ts": "bb94d96ff7b693f6baf366e8066180eca3bbcf6fe31f5069ee0e11e4be18a294",
+    "bagel-intel-platform/tests/runtime-review-moderation.test.mjs": "3738ff362b3959d9c7852f975c2f82aff7f83851daba9ba17083096cef74662b",
+    "bagel-intel-platform/tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "bagel-intel-platform/astraupskill/snapshots/src-lib-data.ts.before": "a6e9a0dadcf8be02871ed2bf305acdc8bcb50a370b4b0e66ff4404f19a76fc70",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "281ae145f634f385633ade694f5723f614e66bc77dea5494ae3ac397db1cabf1",
+    "astraupskill/evidence/results.json": "67cc13bf278a4bcc3c8ce8f56228d47ece942b8fcecb9d7d7417e2ccb57fa83c",
+    "astraupskill/README.md": "921495957550939c1434277cf7ddbfe27fa50af4962b5cfe49a69de243a020be",
+    "astraupskill/01-CODEBASE-MAP.md": "a6f2f3aed08a07339518f54ae5da89050da2cc9c15ac61d938eb3b7fb84ce67d",
+    "astraupskill/02-CONCEPTS.md": "cddc73fae053fecf8d6d2f7466d3b1129d9e211dea8df1b8c6309d162c20035a",
+    "astraupskill/03-WORKED-CHANGE.md": "6239f84c5b0ddc975b1017270173bda917e1da7f12c7d79516ab82f7f8f0ee5a",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "c618fb03ee47e551b52ed434e869370ef150a419a8337699dbee7e9f7c0f8081",
+    "astraupskill/05-PRACTICE.md": "409519cb808c90445e9ab0f57870d45e09592ab88c78c04caf1f8ad8c38a4400",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "c8ad38d3955793bb8c673f5dac33973d58e6ba7d19606d0df1948ab2773d7c19",
+    "astraupskill/07-TRACE-LAB.md": "a74e603d4476a9008e37604de09c4d2c3d86758a4cb99c7d50f92bc5d767f04e",
+    "astraupskill/VERIFICATION.md": "8be0b77fbfdac7f826d082a5eb052440ef2fa5d192eeafaa6bb76613b856b8ef"
+  },
+  "evidenceHashes": {
+    "checks/1754dbb384b1/crud-b07-astra-runtime.json": "1f4fdaea424a881f3c86816817bd139756330473586c7dc7420b4cac939ef1b1",
+    "checks/1754dbb384b1/crud-b07-astra-runtime.log": "281ae145f634f385633ade694f5723f614e66bc77dea5494ae3ac397db1cabf1",
+    "checks/1754dbb384b1/results-crud-b07.json": "67cc13bf278a4bcc3c8ce8f56228d47ece942b8fcecb9d7d7417e2ccb57fa83c"
+  }
+}

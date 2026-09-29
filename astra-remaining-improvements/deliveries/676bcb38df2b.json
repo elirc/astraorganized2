@@ -1,0 +1,184 @@
+{
+  "project": "buildsmallplates",
+  "id": "676bcb38df2b",
+  "summary": [
+    "Set updates validate numeric values, preserve undefined versus null patch semantics, return affected-row results and notify subscribers only after actual mutations.",
+    "Workout completion now guards service orchestration as well as persistence, preventing repeated or missing completions from advancing and saving program progression again.",
+    "Program creation binds and returns the same timestamp; regression tests cover stale mutations, notifications, validation and real progression orchestration through database seams.",
+    "Nine learning guides explain the actual repository/service flow with worked code, exercises, executable solution examples and exact original source snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/buildsmallplates/results.json",
+    "expectedTests": 92,
+    "environment": "Windows; Node 22.16.0; npm 10.9.2; Expo 57.0.7; React Native 0.86.0; TypeScript 6.0.3; Vitest 4.1.10",
+    "command": "Locked npm ci; node node_modules/vitest/vitest.mjs run --maxWorkers=1 --testTimeout=30000 --reporter=json; node node_modules/typescript/bin/tsc --noEmit"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 92,
+    "passedTests": 92,
+    "failed": 0,
+    "notExecuted": 0,
+    "testRun": {
+      "command": [
+        "node",
+        "node_modules/vitest/vitest.mjs",
+        "run",
+        "--maxWorkers=1",
+        "--testTimeout=30000",
+        "--reporter=json",
+        "--outputFile=C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/buildsmallplates/test-final-04-results.json"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\676bcb38df2b",
+      "startedAt": "2026-09-12T16:54:46.251840+00:00",
+      "status": "complete",
+      "log": "test-final-04.log",
+      "pid": 20000,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T16:55:21.715259+00:00",
+      "elapsedSeconds": 35.46
+    },
+    "typecheckRun": {
+      "command": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\676bcb38df2b",
+      "startedAt": "2026-09-12T16:51:34.514300+00:00",
+      "status": "complete",
+      "log": "typecheck-final-03.log",
+      "pid": 28280,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-12T16:53:03.154177+00:00",
+      "elapsedSeconds": 88.64
+    },
+    "install": {
+      "command": "npm ci --no-audit --no-fund --cache=<private project cache> --loglevel=verbose",
+      "exitCode": 0,
+      "packages": 544,
+      "log": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\buildsmallplates\\npm-ci-01.log",
+      "normalInstallScripts": true
+    },
+    "rawTests": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\buildsmallplates\\test-final-04-results.json",
+    "environment": "Windows; Node 22.16.0; npm 10.9.2; Expo 57.0.7; React Native 0.86.0; TypeScript 6.0.3; Vitest 4.1.10",
+    "limits": [
+      "Repository tests use a mocked database seam; no native SQLite/device/emulator run was performed.",
+      "No UI or release build verification is claimed.",
+      "Final suite uses one worker and a 30-second test bound. An earlier parallel run exceeded the default five-second bound in the existing deterministic plate-math property test; all assertions remain enabled."
+    ]
+  },
+  "courseWords": 4567,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "src/db/repos.ts",
+      "before_sha256": "d09f73588c8f64ac280746cb0bed5b74e80d602708dc128a13be9b3a0befb198",
+      "after_sha256": "c45bffbedc39c03e49dfabb207366d86719f18e24d176a339f0c9b1627aee837"
+    },
+    {
+      "file": "src/core/setValidation.ts",
+      "before_sha256": null,
+      "after_sha256": "fba193eb62964862160f86bee7a23be2cd431f403892cfa57b6217654cf9b4ed"
+    },
+    {
+      "file": "src/core/__tests__/setValidation.test.ts",
+      "before_sha256": null,
+      "after_sha256": "db0b2347723ec086c1270fdc0234d08891ce7d6cc5149f998390a4b51f10fa7b"
+    },
+    {
+      "file": "src/services/workoutFlow.ts",
+      "before_sha256": "35f442bad30cc437722fdaa55bbb6ee3c78c53a727c4f71c6a3e8879d381f572",
+      "after_sha256": "feb27eeb766e8dae186c4169178687cd26e0e0fec2befe3be87c6ef90336d3f3"
+    },
+    {
+      "file": "src/services/__tests__/workoutFlow.test.ts",
+      "before_sha256": null,
+      "after_sha256": "450efd8beae8793f58c42d41806afe0ba4eb7cd225157006cc9a23ea8e446511"
+    },
+    {
+      "file": "src/db/__tests__/repos-mutations.test.ts",
+      "before_sha256": null,
+      "after_sha256": "609e237b0f48bd0624b238225cc43aaca4fbb1a00111e6cabe1b2337ce1d1b43"
+    },
+    {
+      "file": "astraupskill/snapshots/repos-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d09f73588c8f64ac280746cb0bed5b74e80d602708dc128a13be9b3a0befb198"
+    },
+    {
+      "file": "astraupskill/snapshots/workoutFlow-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "35f442bad30cc437722fdaa55bbb6ee3c78c53a727c4f71c6a3e8879d381f572"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "936a336e4f60e86e78009dec892c044e2d09964da80db2e3df8a86986c59488b",
+      "after_sha256": "e2000b666ef1b201bfa6aa0b3d587632007e64f2514b3f769780f4666c75b830"
+    },
+    {
+      "file": "astraupskill/evidence.json",
+      "before_sha256": null,
+      "after_sha256": "06f9c84ac1fec96dfa79e478008cec6e4a5ad2f575dd030999c2dcc0b216cc30"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "4492a18c637a60b673744f5e5c85671f4f46bcc9d58cfe5901390f5994245291"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "a65ced167497bfbd47dfb4b4c0c98d71b1f486c59bf82e0283602bf38911c312"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "515e5273e79cba1b3e5ecedb14303ed9b09fb0c81af4239ad804edf370cdd255"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "65348efc95d80e7d73d2591f5ebb1cb70cde8ccb460b1dde763a138e43db1529"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4ffcdc2701fd8f40808cc341d4b3eb22a426c1e71a383b937141ed7743722bde"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b6ec5e2e9cd1912f5050c506a3c0e122ba957df94e32c7a0f06458a8a3341ba0"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "92fc56e9bdb2e29691d0c52d7ad9d47fd02154b70bf80bfb5fd3f4c5da2452b2"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8caf94a0f58b217e695eb0476347eba23bd809e5ab6fd9c3158a64c43eb4004c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b693422bcc4d9dcef46bc2f351dbcdf0a262479988c3d24202af16654b9d21ca"
+    }
+  ],
+  "limits": [
+    "SQLite mutations remain synchronous because the app uses expo-sqlite synchronous APIs; callers still need UI-level error handling for thrown validation or database errors.",
+    "The repository does not add remote sync, authentication, conflict resolution, or a migration beyond the existing schema version.",
+    "The validation policy rejects negative values and non-finite numbers, but domain-specific coaching rules such as minimum load for every exercise remain outside this persistence layer.",
+    "Repository tests use a mocked database seam; no native SQLite/device/emulator run was performed.",
+    "No UI or release build verification is claimed.",
+    "Final suite uses one worker and a 30-second test bound. An earlier parallel run exceeded the default five-second bound in the existing deterministic plate-math property test; all assertions remain enabled."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T16:58:20.695917+00:00"
+}

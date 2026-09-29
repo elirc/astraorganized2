@@ -1,0 +1,34 @@
+{
+  "id": "cb18aae6d81d",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:54:48.792343+00:00",
+  "sourceReview": "Reviewed completion service, real state machine, AppError and audit helper. Conditional id+read-status update catches P2025 before activity/audit, returns accepted row and preserves other errors. Scope excludes other lifecycle writes, reschedule/reconfirm cycles and authorization changes.",
+  "teachingReview": "Read all nine chapters; corrected helper-double claims, five-case evidence, no-row deletion possibility and rollback wording. Course has concrete completion walkthrough, trace table, exercises/answers and explicit status-only, Express/database integration limits.",
+  "testReview": "Astra strengthened fixture to run actual state machine, AppError, getById and audit helper with a fixed Date. Five captured tests passed covering exact update/activity/audit payloads, stale conflict, cancelled/completed rejection, missing record and original update-error identity. No live transaction or HTTP auth claim; preflight passed.",
+  "specSHA256": "04f4b52ae285ae14e262b652d9c18cc234502b8841e3ac119aaefaf7483fce5d",
+  "fileHashes": {
+    "backend/src/modules/appointments/appointments.service.ts": "42a0325c9a93cb9835ffee1d807829ad6961997bbe48015794972043fbfedd8c",
+    "tests/runtime-appointment-complete.test.mjs": "fe9bc8d224c5c0fe4b3a4241401be37d58dd83a90af78a0e85d298735757edcf",
+    "tests/helpers-load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/backend-appointments-service.ts.before": "83ea8bf579462520b6349f58abe0f39d7b85f125b86a80380c49ab21c85e844c",
+    "astraupskill/evidence/runtime-appointment-complete.log": "9b5c8357f3528d86b942bf66da3077ed2613d1069df3352ef96450b317daef6f",
+    "astraupskill/evidence/results-crud-b02.json": "64dea677b0cede080b86649394ff5e708270d7661f23fe3ac5e59457ae19be31",
+    "astraupskill/evidence/crud-b02-astra-runtime.log": "eb392a72c8e8edb3c8af78526ce89d0830d9b4a215ff25870061b2f8e3aa6768",
+    "astraupskill/evidence/results.json": "a049ce558763b349d88302ce4624539449d023e90007728be88c2cfd5197904a",
+    "astraupskill/README.md": "eb25a918877bfbb1e1532c226ba9c3d1b4a1ccec808c4ac5d8be2883ac01e60c",
+    "astraupskill/01-CODEBASE-MAP.md": "4fa6f8dc7a011ab3a2cb451453240b3fcad7e1d7d78356058b5c5cf9f20bef4a",
+    "astraupskill/02-CONCEPTS.md": "9edb8974d181159c307c7c23a99da1062b8f52be57f9ad9ba0a60c250d86b715",
+    "astraupskill/03-WORKED-CHANGE.md": "1460e20168cc557aec483fd553dfcf6a1f57a6aba3ea350d911b5dd4f23af10f",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "5976e38b1d31afb9d33df9774690df0aba632fb79506559f05d863b142ac8f6d",
+    "astraupskill/05-PRACTICE.md": "5eb52bdeb9a9e1b5195b6452a414b89e8b09532c4efc7ae28972ac3e942cbbab",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "ae5e41003ad747f89d0aba019d31aff3a2e9c976553a8974fe85b110262121d4",
+    "astraupskill/07-TRACE-LAB.md": "7ee17670fcc1bd61dfc9eb0eebd6c72b1b7c66d820d9a65c01140f3a3101b927",
+    "astraupskill/VERIFICATION.md": "8c609a77fa86b1de3bb85b8fc302013c8e0c1b618c9591171da921c040e7b9ce"
+  },
+  "evidenceHashes": {
+    "checks/cb18aae6d81d/crud-b02-astra-runtime.json": "0938a29f35e77ef77db6a248c353a09c23f40596dee8a98fe2dfeb235ce69c1b",
+    "checks/cb18aae6d81d/crud-b02-astra-runtime.log": "eb392a72c8e8edb3c8af78526ce89d0830d9b4a215ff25870061b2f8e3aa6768",
+    "checks/cb18aae6d81d/results-crud-b02.json": "a049ce558763b349d88302ce4624539449d023e90007728be88c2cfd5197904a",
+    "checks/cb18aae6d81d/runtime-appointment-complete.log": "9b5c8357f3528d86b942bf66da3077ed2613d1069df3352ef96450b317daef6f"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/dotnet/BuildJira.Api/Services/BuildJiraStore.cs",
+    "tests/BuildJira.Api.Regression/BuildJira.Api.Regression.csproj",
+    "tests/BuildJira.Api.Regression/Program.cs",
+    "astraupskill/snapshots/BuildJiraStore-before.cs.txt",
+    "astraupskill/snapshots/Program-before.cs.txt",
+    "astraupskill/evidence/regression-05.json",
+    "astraupskill/evidence/regression-05.log",
+    "astraupskill/evidence/build-release-02.json",
+    "astraupskill/evidence/build-release-02.log"
+  ],
+  "summary": [
+    "Reject invalid BuildJira PATCH requests without leaking earlier valid assignments into the singleton issue, project timestamp, audit list, or JSON file.",
+    "Guard malformed JSON field kinds with the existing VALIDATION_ERROR contract while preserving omitted fields, explicit nullable clears, identity fields, and accepted update auditing.",
+    "Add a real disposable-file regression executable, exact source snapshots, active-runtime README link, and nine source-grounded CRUD upskill guides."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/0e78f57d70d1/results.json",
+    "expectedTests": 1,
+    "command": "dotnet run --project tests/BuildJira.Api.Regression/BuildJira.Api.Regression.csproj -c Release --no-build",
+    "environment": ".NET target net8.0; local executable run used DOTNET_ROLL_FORWARD=Major with installed .NET 10 runtime; disposable absolute JSON file; no canonical data or archived npm packages"
+  },
+  "limits": [
+    "The demo x-user-id actor resolver is local teaching infrastructure, not production authentication.",
+    "The regression proves in-process singleton isolation and durable JSON behavior using a disposable file; it does not prove crash-safe file replacement or multi-process coordination.",
+    "HTTP route status mapping, assignee relationship policy, enum policy changes, creation rules, external notifications, and the archived TypeScript/Prisma implementation remain outside this bounded repair."
+  ]
+}

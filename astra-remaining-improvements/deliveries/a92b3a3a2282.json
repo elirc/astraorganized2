@@ -1,0 +1,194 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.nettrello",
+  "id": "a92b3a3a2282",
+  "summary": [
+    "Implements presence-aware PATCH card updates with JsonElement Undefined versus explicit Null semantics, preservation of omitted fields, explicit clears for nullable values, empty-patch rejection, strict unknown-property handling, and known enum/date validation.",
+    "Prevalidates Card.Update title/description/priority/labels before assignment and repairs Board move ordering so missing targets, negative positions, and full destinations fail before source removal; same-column reorder works at capacity.",
+    "Preserves the existing in-process clone-on-write repository and optimistic version check, while adding real domain/service checks for clone isolation, stale versions, competing writes, linked ordering, and unchanged rejected aggregates.",
+    "Adds an executable HTTP regression that checks actual status and serialized problem codes for title-only, invalid-priority, and empty PATCH requests against a local seeded API.",
+    "Adds nine source-grounded astraupskill guides and exact canonical source snapshots for the bounded change."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "stage/a92b3a3a2282/astraupskill/evidence/results.json",
+    "logFile": "stage/a92b3a3a2282/astraupskill/evidence/verify-03.log",
+    "sourceHashesFile": "checks/a92b3a3a2282/verify-03-source-hashes.json",
+    "expectedTests": 1,
+    "command": "cmd /c dotnet restore NetTrello.sln --ignore-failed-sources && dotnet build NetTrello.sln --no-restore && dotnet run --project tests/NetTrello.Checks/NetTrello.Checks.csproj --no-build && powershell -NoProfile -ExecutionPolicy Bypass -File tests/http-regression.ps1",
+    "environment": "ASP.NET Core net8 API; .NET SDK 10.0.302 with documented major roll-forward for local HTTP process; no database, credentials or external service",
+    "notes": [
+      "verify-03 terminal exit 0; restore and solution build have zero warnings/errors.",
+      "Domain/service harness reports JSON presence, invalid shape/enum, aggregate prevalidation, version conflicts and clone isolation passed.",
+      "HTTP harness reports serialized title-only PATCH, invalid enum problem and empty patch problem passed.",
+      "verify-01 had malformed nested guards and verify-02 is superseded by verify-03 after final deserialization coverage."
+    ]
+  },
+  "testResults": {
+    "passed": true,
+    "passedTests": 1,
+    "testCountMeaning": "one domain/service console harness plus one HTTP script; not separately discovered unit tests",
+    "checks": [
+      "verify-03.json"
+    ]
+  },
+  "courseWords": 4200,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "8114f00e5b2138da7ccbbedb43db1ea22573422a9d9879a7149f7b2f8bdc3ca4",
+      "after_sha256": "eaa7ffb43f986883f96632b25cf27d8a33e413d3eb6f414403ffd62394e58333"
+    },
+    {
+      "file": "NetTrello.sln",
+      "before_sha256": "2c4cb8073e45887199ba309339d691a2679f113fc21f9ddd165b7259d67c3536",
+      "after_sha256": "5e2521da23a6cd45853911081c180475891ab64c22bd53cfc21f73e234e5cedd"
+    },
+    {
+      "file": "src/NetTrello.Api/Application/BoardService.cs",
+      "before_sha256": "ef6387769eeb8d4aa009d706c7d7d2714d551597e26286d0922ddfebfee53f0a",
+      "after_sha256": "a7f33b24eba716586d8e3b9aefd6c77c343f7f19854c7d7c0facc9d72ee1fb69"
+    },
+    {
+      "file": "src/NetTrello.Api/Contracts/BoardDtos.cs",
+      "before_sha256": "64304dedfd7aa99323771b53743c3dcb507e452d072bfc20c1fcd1a62e06decc",
+      "after_sha256": "85731f78940c7593172a4ce99776be84f958f998c56f85584d614284c9f59796"
+    },
+    {
+      "file": "src/NetTrello.Api/Domain/Board.cs",
+      "before_sha256": "07c90d610a0737a9fb800dffb77afe00c9b8c9dc1549927f97d4db886bbea596",
+      "after_sha256": "7b50479a87aa44082ebacb849573c72592c51295be5f4c5b50792fb6a13c7e9e"
+    },
+    {
+      "file": "src/NetTrello.Api/Domain/BoardColumn.cs",
+      "before_sha256": "1f72efb039b4c5586ef0f85c17943424d9283b493deacb9213d7e4d526c6f0d1",
+      "after_sha256": "01b3bdb5367d47d668944938f1403a858b37c4eea5d86ab56690f2de3979eb32"
+    },
+    {
+      "file": "src/NetTrello.Api/Domain/Card.cs",
+      "before_sha256": "0ff3ad2282ccc187e3122f7d2849188b4ecb5a10b09fe14a14a893b751da1f77",
+      "after_sha256": "53d5a6f2aa28fce319a2b833452d94647bccc88c7d017413f5fcc9809d9f9df5"
+    },
+    {
+      "file": "tests/NetTrello.Checks/NetTrello.Checks.csproj",
+      "before_sha256": null,
+      "after_sha256": "e7786a52a0191b35393897000c12729524bab6e8a2456b1d60dd3db850c9ef00"
+    },
+    {
+      "file": "tests/NetTrello.Checks/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "ab87ca78e432b81b2bc8976c273d28cd945479c79083265df5c492d9856cd418"
+    },
+    {
+      "file": "tests/http-regression.ps1",
+      "before_sha256": null,
+      "after_sha256": "e11a1d40348a79a1f6652567c3ec8a61dce7c4e31b0720aa0374b797ff27efd1"
+    },
+    {
+      "file": "snapshots/Board-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "07c90d610a0737a9fb800dffb77afe00c9b8c9dc1549927f97d4db886bbea596"
+    },
+    {
+      "file": "snapshots/BoardColumn-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "1f72efb039b4c5586ef0f85c17943424d9283b493deacb9213d7e4d526c6f0d1"
+    },
+    {
+      "file": "snapshots/BoardDtos-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "64304dedfd7aa99323771b53743c3dcb507e452d072bfc20c1fcd1a62e06decc"
+    },
+    {
+      "file": "snapshots/BoardService-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "ef6387769eeb8d4aa009d706c7d7d2714d551597e26286d0922ddfebfee53f0a"
+    },
+    {
+      "file": "snapshots/Card-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "0ff3ad2282ccc187e3122f7d2849188b4ecb5a10b09fe14a14a893b751da1f77"
+    },
+    {
+      "file": "snapshots/NetTrello.sln-before.txt",
+      "before_sha256": null,
+      "after_sha256": "2c4cb8073e45887199ba309339d691a2679f113fc21f9ddd165b7259d67c3536"
+    },
+    {
+      "file": "snapshots/README-before.md.txt",
+      "before_sha256": null,
+      "after_sha256": "8114f00e5b2138da7ccbbedb43db1ea22573422a9d9879a7149f7b2f8bdc3ca4"
+    },
+    {
+      "file": "astraupskill/evidence/verify-03.json",
+      "before_sha256": null,
+      "after_sha256": "a58942c3532ed6f5ff9f895e02168a473d290bf21d754de2d222799039365dc1"
+    },
+    {
+      "file": "astraupskill/evidence/verify-03.log",
+      "before_sha256": null,
+      "after_sha256": "82c93f01f006a22b3c032467099f0a3bea76a5bb53ce6ce2af3bb1e1b1979b90"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "35257e59cae25ae74e8e28e55d3cbea457b51230f726d165cd594e94fcb0fb68"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "36a131fec09cc7fd73c6274614f71483d9915ed7142dd4bde11e2b23a5c370b5"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "278015c09e91f762ac51da4434d856ec702696c4125bd20e00c53c69d455d048"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "fad3283de9dd0111fa3e8234e0c6b23dae1284d4a9c534c860984f6463e2fd74"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9f16b8eb7f0de9ff36e03acb8bfab17fdedfbbcb205f669d4d4094b891fa31ad"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e0047640a9cff5e32b8fffe061a0c0060d5bac9e54f15c4ab6c73b2d57866e6b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "be21a47e7b55783077eab09f8d28178292798a416643f566656ae74190648419"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d0385405d2facab6d437cfd175b70490a2ab1c41319c966fd90680fddf43eaec"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "32cc608366edaa2e6c1be2c51a8cd74517a121f026a58febe9e2ab3ef6f4e238"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e8002ebb28d0cedcc9d28826972e253bee8a2e1d1d1a95915e620b07c00660bc"
+    }
+  ],
+  "limits": [
+    "InMemoryBoardRepository serializes callbacks only within one process and has no durable database or cross-process lock.",
+    "Clone-on-write preserves stored state after callback failure; direct domain methods still require their own prevalidation, which this patch adds.",
+    "PATCH presence handling is covered by DTO deserialization and local HTTP checks, but no browser or production authentication test is included.",
+    "The HTTP script rolls the net8 API forward to the installed .NET 10 runtime; it does not prove behavior on a deployed .NET 8 host.",
+    "No crash-safe persistence, database uniqueness constraint, distributed optimistic concurrency, or power-loss recovery is claimed.",
+    "Client callers were traced but no client build or browser check ran; the console failed-move snapshot omits board Version and UpdatedAt."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T20:56:00.221720+00:00"
+}

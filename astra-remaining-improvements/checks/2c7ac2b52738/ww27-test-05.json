@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--testTimeout=30000"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:23:58.690147+00:00",
+  "status": "complete",
+  "log": "ww27-test-05.log",
+  "pid": 15728,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T13:24:35.959866+00:00",
+  "elapsedSeconds": 37.27
+}

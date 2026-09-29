@@ -1,0 +1,29 @@
+{
+  "project": "mobiletagalog",
+  "id": "1bf7dd59f47b",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "ci",
+    "--prefer-offline",
+    "--no-audit",
+    "--no-fund",
+    "--fetch-retries=1",
+    "--fetch-timeout=20000",
+    "--maxsockets=2",
+    "--loglevel=verbose"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1bf7dd59f47b",
+  "environmentOverrides": {
+    "npm_config_cache": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/npm-cache",
+    "HUSKY": "0"
+  },
+  "startedAt": "2026-09-19T22:21:17.898507+00:00",
+  "status": "complete",
+  "log": "astra-mobile-install-r1.log",
+  "pid": 24056,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-19T22:25:37.521409+00:00",
+  "elapsedSeconds": 259.59
+}

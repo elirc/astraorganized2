@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildagentteachGEM",
+  "id": "26e6d2bd6c54",
+  "command": [
+    "node",
+    "node_modules/prisma/build/index.js",
+    "generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\26e6d2bd6c54",
+  "environmentOverrides": {
+    "DATABASE_URL": "file:./verification-unused.db"
+  },
+  "startedAt": "2026-09-19T18:53:01.305270+00:00",
+  "status": "complete",
+  "log": "resume14-generate-01.log",
+  "pid": 21648,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T18:55:09.389419+00:00",
+  "elapsedSeconds": 128.08
+}

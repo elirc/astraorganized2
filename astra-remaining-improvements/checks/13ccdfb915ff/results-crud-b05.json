@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 6,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/w25",
+      "id": "13ccdfb915ff",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-lock-service-lab.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\13ccdfb915ff",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:58:46.528048+00:00",
+      "status": "complete",
+      "log": "crud-b05-astra-runtime.log",
+      "pid": 21936,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:58:53.569598+00:00",
+      "elapsedSeconds": 7.04
+    }
+  ],
+  "limits": [
+    "Six cases execute actual LockService, state machine, scope-key and time helpers with explicit repository/audit adapters. No Next route, actual repository persistence, expiry scan, multi-process contention or durable audit execution.",
+    "The draft incorrectly replaced canReacquire with always true and used a Date-returning time double. Accepted tests load the real modules and distinguish active-lock refusal from a repository version conflict after an eligible reacquire.",
+    "No production code is changed and this bounded lab is not a complete correctness certification of the lock system."
+  ]
+}

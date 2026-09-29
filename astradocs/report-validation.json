@@ -1,0 +1,26 @@
+{
+  "records": 389,
+  "nested_apps": 75,
+  "prior_records_covered": 388,
+  "new_records": [
+    "astra4.2"
+  ],
+  "phase_counts": {
+    "0": 25,
+    "1": 23,
+    "2": 29,
+    "3": 11,
+    "4": 66,
+    "5": 86,
+    "6": 91,
+    "7": 58
+  },
+  "all_prior_records_reviewed": true,
+  "report_local_links_checked": 2068,
+  "broken_report_links": [],
+  "missing_evidence": [],
+  "gemini_fresh_files_read": 476,
+  "gemini_read_errors": [],
+  "runtime_tests": "not run; report-only task",
+  "valid": true
+}

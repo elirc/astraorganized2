@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test/schema.test.mjs",
+    "test/merge.test.mjs"
+  ],
+  "exitCode": 0,
+  "seconds": 5.3
+}

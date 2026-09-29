@@ -1,0 +1,268 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildasana",
+  "id": "e09d7ae4ffff",
+  "summary": [
+    "Prevalidates task priority/status/tags and materializes fallible tag input before mutating WorkTask; missing goal owners and automation projects fail before save/audit.",
+    "Validates automation enums and status action values, rejects unimplemented actions for new rules, and emits execution audit only after a supported branch runs.",
+    "Repairs frontend JSX, Lucide icon types, Vite TypeScript resolution and Node declarations; adds a lockfile and six regression tests including a real HTTP400 boundary check.",
+    "Adds a nine-chapter course with original snapshots, worked examples, matched practice/solutions, source traces and portable verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "stage/e09d7ae4ffff/astraupskill/evidence/results.json",
+    "sourceHashesFile": "checks/e09d7ae4ffff/review-source-hashes.json",
+    "expectedTests": 9,
+    "command": "Release dotnet build/test with DOTNET_ROLL_FORWARD=Major; frontend npm run build and npm run lint",
+    "notes": [
+      "Final backend build06/test05 and frontend build01/lint01 passed;9xUnit tests.",
+      "No executable changes during final docs/spec review; generated Vite outputs are excluded."
+    ]
+  },
+  "testResults": {
+    "passed": true,
+    "total": 9,
+    "passedTests": 9,
+    "failed": 0,
+    "testCountMeaning": "9 discovered xUnit tests:3existing+6new; HTTP is one of9.",
+    "checks": [
+      "backend-restore-01",
+      "backend-build-release-06",
+      "backend-test-release-05",
+      "frontend-build-01",
+      "frontend-lint-01"
+    ],
+    "limits": [
+      "In-memory shared references and dictionary locks do not supply durable transactions, aggregate rollback, or cross-request isolation; save/audit/automation sequences can still partially complete on infrastructure failure.",
+      "Demo actor/role headers are not authentication or tenant membership enforcement.",
+      "Nine tests cover domain/service guards and one real loopback HTTP invalid-status request; no live database, browser, external webhook or native .NET 8 runtime was tested.",
+      "Legacy unsupported automation audit skipping was source-reviewed but not directly injected in the suite; positive automation asserts DTO state and audit presence, not exact audit cardinality or reloaded persistence.",
+      "Frontend retains API-unavailable mock fallback and local-only board changes; build repairs do not add persistent frontend CRUD.",
+      "The HTTP test uses fixed local port51937, a Release prebuild and major roll-forward on this machine; its40 readiness attempts can be slow. Other existing input-constructor errors and concurrency gaps remain."
+    ]
+  },
+  "courseWords": 4759,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "db8462a649b5994f1fe34b5cb8efd0c536918c952ca66d39006484b6b04f85c3",
+      "after_sha256": "25f01ea716710629e1e59974f8f2b0ba92717dc6538e32ba60adc9ca9c8cb18d"
+    },
+    {
+      "file": "backend/src/BuildAsana.Api/Program.cs",
+      "before_sha256": "e4a4c24b309cc78299ac505d6ac2a068c1a6770e1a2bde2ae63448b681670169",
+      "after_sha256": "1fa037e9e18dec663bd3bcb6783d908e38a490cc0fa715ab45d1ec116b69fc7d"
+    },
+    {
+      "file": "backend/src/BuildAsana.Application/Work/WorkManagementService.cs",
+      "before_sha256": "cc270b66df1f8b38a08a59359d3d65e9625c212b0a3e64a24d0a621cd311591b",
+      "after_sha256": "8bf8fc7ee7957f5ca86eaee68410c573caf11dbe5db7eef77b6e74a8ba7c0a42"
+    },
+    {
+      "file": "backend/src/BuildAsana.Domain/Work/AutomationRule.cs",
+      "before_sha256": "e9849fc3cefedb460be94515ead934b65be5064895148dbe1517b9ded844a0ca",
+      "after_sha256": "4fe980c90cbcbf70c5648f064ad79b0049dcd5815fb28871191e6aa8ff9cc429"
+    },
+    {
+      "file": "backend/src/BuildAsana.Domain/Work/WorkTask.cs",
+      "before_sha256": "5105028088a2f99c6906c14f6c59b97096dd56ff738720d5afc7239f6e156dab",
+      "after_sha256": "38393c2f9028c799f65fd812fa03757ee73bef8d7983a9e13ca7cfee897a57c2"
+    },
+    {
+      "file": "backend/tests/BuildAsana.Application.Tests/WorkManagementServiceTests.cs",
+      "before_sha256": "70904f005dc0266cbe24e8c7250fc8b4e3b29d7e128032fd98a7c89c144de155",
+      "after_sha256": "2663d0fbc8e6625921237e8990811a242848af9c2f21233d90f014b40a5707ac"
+    },
+    {
+      "file": "frontend/package.json",
+      "before_sha256": "9b60ac59c939d24e462e1d21d02b5902b82a6e74bec9917f63ddde404384bb54",
+      "after_sha256": "1c34daa5ba807bf2a8f4857741a94f506cabde0327b5cd2c6f43fd376cc39c2c"
+    },
+    {
+      "file": "frontend/tsconfig.json",
+      "before_sha256": "a043926a1c02562384a05d174123966c72d6b145b8a89201e673d31a1f024de4",
+      "after_sha256": "61f0272b2b536325935f0ed33315d1cc8fedaae552e35564b93c67b8d070f182"
+    },
+    {
+      "file": "frontend/tsconfig.node.json",
+      "before_sha256": "c40d0614fda5b8a746a1ba2e3be8e2370140c0167851ac77881cd53bb5647cdd",
+      "after_sha256": "66362d3973b411c9da6f18808a7149f5e1cf0c3e099815a107a61a71db792adc"
+    },
+    {
+      "file": "frontend/src/App.tsx",
+      "before_sha256": "866e4b6ec8bc745d65784843bfe40fea9cd94f230dd1f8542c7e05239c3982ea",
+      "after_sha256": "b7e179c6728121e07196c2f503611948382a9fbc24937f1ff7c2ac77913360c2"
+    },
+    {
+      "file": "frontend/src/features/dashboard/DashboardView.tsx",
+      "before_sha256": "75c3e1b234ca7a18d464a19c928f20b14d428dcf12eae40e39d09aa35ee657b8",
+      "after_sha256": "90842bdae9fb8a3a5039d08d7b7b2eafce0a36ce24bcaf15113c8637dfc56095"
+    },
+    {
+      "file": "frontend/package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "42193a0f24eacb698805fd0e7a253f9408f97aee5f803a3c279ecab3c8151fd1"
+    },
+    {
+      "file": "frontend/src/vite-env.d.ts",
+      "before_sha256": null,
+      "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "file": "astraupskill/snapshots/AutomationRule-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "e9849fc3cefedb460be94515ead934b65be5064895148dbe1517b9ded844a0ca"
+    },
+    {
+      "file": "astraupskill/snapshots/frontend-App-before.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "866e4b6ec8bc745d65784843bfe40fea9cd94f230dd1f8542c7e05239c3982ea"
+    },
+    {
+      "file": "astraupskill/snapshots/frontend-tsconfig-before.json.txt",
+      "before_sha256": null,
+      "after_sha256": "a043926a1c02562384a05d174123966c72d6b145b8a89201e673d31a1f024de4"
+    },
+    {
+      "file": "astraupskill/snapshots/HttpExtensions-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "76c19f3b79c4d8fea43ff97d2ab9bdcd5dd2d53af811a79dd7e6cacb5d24b75a"
+    },
+    {
+      "file": "astraupskill/snapshots/Program-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "e4a4c24b309cc78299ac505d6ac2a068c1a6770e1a2bde2ae63448b681670169"
+    },
+    {
+      "file": "astraupskill/snapshots/WorkManagementService-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "cc270b66df1f8b38a08a59359d3d65e9625c212b0a3e64a24d0a621cd311591b"
+    },
+    {
+      "file": "astraupskill/snapshots/WorkManagementServiceTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "70904f005dc0266cbe24e8c7250fc8b4e3b29d7e128032fd98a7c89c144de155"
+    },
+    {
+      "file": "astraupskill/snapshots/WorkTask-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "5105028088a2f99c6906c14f6c59b97096dd56ff738720d5afc7239f6e156dab"
+    },
+    {
+      "file": "astraupskill/evidence/backend-build-release-06.json",
+      "before_sha256": null,
+      "after_sha256": "d6d7d6326489b07ae68c2544f4b3dbe79315fd829945499a178e6484b8e92db6"
+    },
+    {
+      "file": "astraupskill/evidence/backend-build-release-06.log",
+      "before_sha256": null,
+      "after_sha256": "ab4bd9fbd30cf3e55d1a160d13898af3072dcf3c47047d496d90fbc0c054d10d"
+    },
+    {
+      "file": "astraupskill/evidence/backend-restore-01.json",
+      "before_sha256": null,
+      "after_sha256": "95167acf590aeb144657b850cf65b21338e88eea13532d194c90a4bae69fcf1d"
+    },
+    {
+      "file": "astraupskill/evidence/backend-restore-01.log",
+      "before_sha256": null,
+      "after_sha256": "2ad9967f2280d0195ad457a92fe6a353a8492625846632386df6dfc446efe4bc"
+    },
+    {
+      "file": "astraupskill/evidence/backend-test-release-05.json",
+      "before_sha256": null,
+      "after_sha256": "b6c7dee2d1c24d9d6085e336521435f9cfbd799193a563a862e4fc098baf7928"
+    },
+    {
+      "file": "astraupskill/evidence/backend-test-release-05.log",
+      "before_sha256": null,
+      "after_sha256": "9474df2bc729370667d6690653d984290119efe87350583858ad9db20a05a4b3"
+    },
+    {
+      "file": "astraupskill/evidence/buildasana-release-05.trx",
+      "before_sha256": null,
+      "after_sha256": "b0bd1783dfe9e42804a042b0f58e429227f4e707a4056cbbf2bde0bbd938a515"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "2dd0c44c738330273bda5ca36ff0aaf90fb64692d944912bd3b8e795973e3f5a"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "d56a39b375d6f746107b0bae5058e45231531b10901c89b61ee3ba176451760e"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "4c868dd44e432789bb7a02ccecd5bc14e294ba49481a2caf951feeb951b41e96"
+    },
+    {
+      "file": "astraupskill/evidence/frontend-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "7829148b56e7ab00c5d63c52f0e75193f003a863681193b75a9827987b6ba7b7"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "63c45375cc2c59680cdeed96a5f0d677b9efcf67083234d61b4e68f0bbb5d5af"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "dcf23b72c6e83e04a1f8d2bd78d0cc0a69ca90f1e5aee9149a0e6ca117699b96"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "82257896377ef5cef47e911680dd36f3ca1a8396acfa4f641e6774e85db019b0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "c08e96a8447883bfebf207a20c545cc4e5e957d2d54efc7c533cc590e38deb34"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "76396b743d5d3bb6979d44002342d67d8c53c0aa4d787a4547bc2d76024be7f4"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "fb32691cc576eedec15d4910ac153612260f3c01746c16800e14d306714ed61c"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5aec227b2e263bff3926304d7edf2484f8b92e65219c62132df0e5a4a1e861c5"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "0f7905b957ccfac203a3cd97c966f58be9ef5b63436b300a26afdc8e675187fb"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ca9d1e5b67adcbc1e212a4d9ae5ebb635a856745cef3a15f55413c1b03512dea"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c8da1c5972b730148142c572da46af54dd42008816c7593795853e41efa1f6a9"
+    }
+  ],
+  "limits": [
+    "In-memory shared references and dictionary locks do not supply durable transactions, aggregate rollback, or cross-request isolation; save/audit/automation sequences can still partially complete on infrastructure failure.",
+    "Demo actor/role headers are not authentication or tenant membership enforcement.",
+    "Nine tests cover domain/service guards and one real loopback HTTP invalid-status request; no live database, browser, external webhook or native .NET 8 runtime was tested.",
+    "Legacy unsupported automation audit skipping was source-reviewed but not directly injected in the suite; positive automation asserts DTO state and audit presence, not exact audit cardinality or reloaded persistence.",
+    "Frontend retains API-unavailable mock fallback and local-only board changes; build repairs do not add persistent frontend CRUD.",
+    "The HTTP test uses fixed local port51937, a Release prebuild and major roll-forward on this machine; its40 readiness attempts can be slow. Other existing input-constructor errors and concurrency gaps remain."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T21:45:46.645591+00:00"
+}

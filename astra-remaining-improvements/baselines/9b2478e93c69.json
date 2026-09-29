@@ -1,0 +1,18 @@
+{
+  "id": "9b2478e93c69",
+  "project": "_Organized Desktop/05 Numbered Experiments/J1",
+  "files": {
+    "README.md": "2872e39553d4c4c0bf93ebe4168975f7cc1bfac260c0ed20a510adf60d314246",
+    "docs/onboarding/00-codebase-map.md": "7d5d6f6760ed8b579517e8d8bb5ef1533ca2255158eaafa11ca51b47ad730d92",
+    "docs/onboarding/01-reading-order.md": "568651f462808fdad75596afbcc1b29e2cc93855e8dcd968a0c74839ef77540d",
+    "docs/onboarding/02-review-checklists.md": "6e98d6fe8a06f0cfd28b3933d1ae8821d29533693f64cd4631333d6e72acb68a",
+    "docs/onboarding/files/src/todo/App.java.md": "a322ff34f174cd1214a3a5fb414982ecd74004a168bcf6aa8930a54c4b53df5b",
+    "docs/onboarding/files/src/todo/model/Task.java.md": "f0fc8384f00f41369a6a01e054299504c27a3e5248d8cf220cd313ae4dc71bd3",
+    "docs/onboarding/files/src/todo/repository/TaskRepository.java.md": "407d3924670a85e5eb7331193fc6ca503173096bf427ead40a1bb31c7529e4aa",
+    "docs/onboarding/files/src/todo/service/TaskManager.java.md": "eda44de1c7a4c9be3e6a8f2a97b59b995bf5eb7132a87c8bc0c7fda062fa2ffe",
+    "src/todo/App.java": "48093063db8ea74fac2f25863ee3aeb1039935d67a124a6479a050a2014b7a56",
+    "src/todo/model/Task.java": "b20b2a5fd6b03d7bd28cee6b5ea3a0f9510d6fd84247549d1320072f452ebcdd",
+    "src/todo/repository/TaskRepository.java": "555d297672a13fb4e971406c5a1ec247f717c8090a4dca8d71312c596b5969ea",
+    "src/todo/service/TaskManager.java": "e2e31ba334144771bb3636dfd4585ffe2c37172aeab99fe8f8e2b31d805989f1"
+  }
+}

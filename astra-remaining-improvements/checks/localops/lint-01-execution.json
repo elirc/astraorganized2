@@ -1,0 +1,8 @@
+{
+  "command": [
+    "node",
+    "node_modules/eslint/bin/eslint.js",
+    "."
+  ],
+  "exitCode": 15
+}

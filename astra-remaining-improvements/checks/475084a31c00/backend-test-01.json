@@ -1,0 +1,20 @@
+{
+  "project": "grokbuildppmproject",
+  "id": "475084a31c00",
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--reporter=dot"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\475084a31c00\\backend",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:46:04.582868+00:00",
+  "status": "complete",
+  "log": "backend-test-01.log",
+  "pid": 34940,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T19:46:33.562719+00:00",
+  "elapsedSeconds": 28.98
+}

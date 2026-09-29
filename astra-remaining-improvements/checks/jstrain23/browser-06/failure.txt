@@ -1,0 +1,51 @@
+saved: Saved and accepted.
+
+Save
+Review latest
+Download local draft
+Discard draft
+Export accepted JSON
+Export legacy drafts
+Sign out
+Knowledge Workspace
+Quick Find
+New Page
+Import Markdown
+TEMPLATES
+Meeting NotesProject Brief
+FAVORITES
+Offline retained title
+RECENT
+Offline retained title
+PAGES
+🏠
+Offline retained title
+🧠
+Engineering Notes
+📥
+Imported code lesson
+📝
+Meeting Notes
+Trash (0)
+Offline retained title
+Imported code lesson
+Accepted MD
+Accepted HTML
+Snapshot
+Versions
+Top level
+Offline retained title
+Engineering Notes
+Meeting Notes
+Private
+Workspace label
+Public label
++ Add block
+Local tab presence
+
+You are viewing this page as Browser Learner.
+
+No other local tabs on this page.
+Comments
+No comments yet.
+Version History

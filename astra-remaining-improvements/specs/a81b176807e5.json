@@ -1,0 +1,29 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/rag/retrieve.ts",
+    "apps/api/test/fixtures/reliability.md",
+    "apps/api/test/ingest-retrieval.test.ts",
+    "astraupskill/evidence/astra-buildermentor-tests-r2.json",
+    "astraupskill/evidence/astra-buildermentor-tests-r2.log",
+    "astraupskill/evidence/astra-buildermentor-typecheck-r2.json",
+    "astraupskill/evidence/astra-buildermentor-typecheck-r2.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/apps__api__src__rag__retrieve.ts.original.txt"
+  ],
+  "summary": [
+    "Separated retrieval dependencies and deterministic ranking while retaining the production parameterized SQL adapter.",
+    "Validated query vectors and returned a safe typed unavailable error for embedding and query failures.",
+    "Added local provenance, ranking, SQL-construction and failure regressions plus nine source-based guide chapters."
+  ],
+  "limits": [
+    "SQL adapter tests compile the query with a mocked executor; they do not prove database-backed tenant isolation.",
+    "No live embedding/model quality or non-Markdown parsing claim is established."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/a81b176807e5/sol15-results.json",
+    "expectedTests": 38,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

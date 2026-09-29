@@ -1,0 +1,44 @@
+{
+  "changedFiles": [
+    "README.md",
+    ".gitignore",
+    "run.ps1",
+    "src/oms/App.java",
+    "src/oms/domain/Customer.java",
+    "src/oms/domain/Product.java",
+    "src/oms/domain/Order.java",
+    "src/oms/domain/OrderItem.java",
+    "src/oms/domain/DomainValues.java",
+    "src/oms/service/CustomerService.java",
+    "src/oms/service/ProductService.java",
+    "src/oms/service/OrderService.java",
+    "src/oms/persistence/FileDataStore.java",
+    "src/oms/persistence/StoreSnapshot.java",
+    "src/oms/persistence/DelimitedFileUtil.java",
+    "test/oms/RegressionTests.java"
+  ],
+  "summary": [
+    "Complete aggregate restoration preserves saved discounts, item price snapshots, status and timestamps instead of clamping discounts before items load.",
+    "Orders and items are detached across service and snapshot boundaries; derived totals cannot be invalidated through escaped mutable references.",
+    "Quantity replacement is implemented through service and CLI; rejected subtotal reductions preserve discounts and timestamps, and paid orders reject content edits.",
+    "Strict money precision, state transitions, duplicate identities, references, item uniqueness, booleans and escape sequences are validated at their entry points.",
+    "One versioned atomic snapshot replaces four independent file writes; legacy migration preserves old files, and corrupt startup stops without overwriting data.",
+    "Nine detailed course documents and a Java 17 runner teach aggregate rules, restoration, failure tests, traces and progressive HTTP/database/concurrency exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/j7/results.json",
+    "expectedTests": 42,
+    "command": "run.ps1 -Test; seven separate-process CLI scenarios",
+    "environment": "Microsoft OpenJDK 17.0.10; --release 17 -Xlint:all; real temporary files; isolated source"
+  },
+  "limits": [
+    "Single-threaded local CLI; no concurrent service or cross-process file protection, HTTP, browser, database or authenticated ownership.",
+    "Save/exit/EOF persistence can lose unsaved edits after forced termination; no power-loss or network-filesystem guarantee.",
+    "Failed normal exit retry behavior was source-reviewed; automated failure injection covered the storage replacement boundary.",
+    "Count footer is not cryptographic integrity; basic email validation and no SKU uniqueness.",
+    "No real payment/refund, inventory or event history; paid cancellation is a local state transition only.",
+    "Legacy files remain unchanged after migration and become stale; old binaries must not be alternated with current source on the same dataset.",
+    "Strict loading requires reviewed repair of invalid copies; CLI diagnostics have no structured failure exit-code contract."
+  ]
+}

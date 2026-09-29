@@ -1,0 +1,15 @@
+{
+  "command": [
+    "dotnet",
+    "list",
+    "src/Billing.Api/Billing.Api.csproj",
+    "package",
+    "--vulnerable",
+    "--include-transitive",
+    "--format",
+    "json"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 26.66
+}

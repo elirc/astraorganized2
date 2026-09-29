@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/zz8",
+  "id": "332058fd8671",
+  "command": [
+    "node.cmd",
+    "-e",
+    "const e=require('esbuild'); console.log(JSON.stringify({esbuild:e.version,platform:process.platform,arch:process.arch,out:e.transformSync('const x: number = 1',{loader:'ts'}).code})); console.log(process.version);"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\332058fd8671",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:17:42.260352+00:00",
+  "status": "launch-failed",
+  "log": "setup-verify-esbuild.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T15:17:42.300597+00:00",
+  "elapsedSeconds": 0.04
+}

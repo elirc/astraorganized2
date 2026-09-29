@@ -1,0 +1,313 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+  "id": "8c8b7f90a8d2",
+  "summary": [
+    "API key services parse strict runtime schemas and preserve omitted versus null configuration values.",
+    "Lifecycle reads and authorization use the transaction client; update and rotation require ACTIVE, and rotation compares the previously read hash before recording history.",
+    "Creation locks the organization row before enforcing the 25-active-key limit, generating material and creating key/audit records.",
+    "Added authorized success, stale-write, tenant/ownership, response secrecy, lock-contract and rollback-fixture regressions.",
+    "Added a reproducible dependency lock, typecheck script and nine source-based learning guides with exact verification evidence."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/8c8b7f90a8d2/resume14-results.json",
+    "expectedTests": 23,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 23,
+    "passedTests": 23,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+        "id": "8c8b7f90a8d2",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--pool",
+          "threads",
+          "--poolOptions.threads.singleThread",
+          "--testTimeout",
+          "30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8c8b7f90a8d2",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:32:58.390116+00:00",
+        "status": "complete",
+        "log": "resume14-tests-02.log",
+        "pid": 14584,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:33:40.396975+00:00",
+        "elapsedSeconds": 42.0
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+        "id": "8c8b7f90a8d2",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8c8b7f90a8d2",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:26:28.776016+00:00",
+        "status": "complete",
+        "log": "resume14-types-01.log",
+        "pid": 23684,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:30:59.534661+00:00",
+        "elapsedSeconds": 270.75
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+        "id": "8c8b7f90a8d2",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8c8b7f90a8d2",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused",
+          "SESSION_SECRET": "astra-build-only-synthetic-secret-20260919"
+        },
+        "startedAt": "2026-09-19T17:47:11.439482+00:00",
+        "status": "complete",
+        "log": "resume14-build-02.log",
+        "pid": 21224,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:59:14.460321+00:00",
+        "elapsedSeconds": 723.0
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww50",
+        "id": "8c8b7f90a8d2",
+        "command": [
+          "npm.cmd",
+          "run",
+          "prisma:generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\8c8b7f90a8d2",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+        },
+        "startedAt": "2026-09-19T17:16:38.177122+00:00",
+        "status": "complete",
+        "log": "resume14-generate-01.log",
+        "pid": 2300,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:25:58.237124+00:00",
+        "elapsedSeconds": 560.04
+      }
+    ]
+  },
+  "courseWords": 3299,
+  "courseFiles": 9,
+  "courseLinksChecked": 93,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "14000cc88e02afb93b672bd5f747b9e26e4eaa3ffad51dd56d5c5e97c279689e"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-02.json",
+      "before_sha256": null,
+      "after_sha256": "764d45766259008481ad338555d4f53b2082d97325a5180d7f4f032051d9216b"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-02.log",
+      "before_sha256": null,
+      "after_sha256": "f3a5ee524130a454c078321b83b51b03a0074ebb6d8a7bd5fa82e1f91c177fc5"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "6f4acda6faae475f1e8871174d913a2e48d2d2193757aed3a2df5d5e16dc4a94"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "1f69b871ffcad91e4bd6c8c8968257f71d58bf1abe054764f983713b9c297af5"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.json",
+      "before_sha256": null,
+      "after_sha256": "2ee99a4eb11912e046aa926f158258e3f644880cffcfcccbfc7013eb20fb813f"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.log",
+      "before_sha256": null,
+      "after_sha256": "f1ace1631ede4451ac4d1d3584c338c1eba01085384c230d45dcb55051691a09"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "58860c817c1fe283505ce919a0fd9c2f5c5c06ba50dea35f470c86abfa279263"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "e5c2850d985a161d5a8b3f1c38453a48ba96e666756895fbaaaeafcb6ef1002f"
+    },
+    {
+      "file": "astraupskill/snapshots/next-env.d.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "adf4775929a6831fee74a8723ad8642093100847a5c17f9ed3a65d41456f0956"
+    },
+    {
+      "file": "astraupskill/snapshots/next.config.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c88892ca5d0981c51beba80344a20b62d745ebde29853b610c56498a9ef98e79"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d1ee27733662c1521676328e76cffea258feeb9cb4ac82a25629f566be778297"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__orgs__[orgId]__api-keys__[keyId]__route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e21ff34c25ab255c1b07016a59289efc4e996a6b676537d890c8fc1970525a8f"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__apiKeySchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "47c5dcc5befb3a2fb4e52af20160ce76e41ea14b0d586adbe7161bae9d4da1b2"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__apiKeyRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "fc061057a7a8a9fba36b0c31f6d91849a420c52850b60054f459dd3ebd8984d5"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__apiKeyService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4691103d4326f66b5ce585d21f6a057aa378d132b457d653a91f10ce73be0cee"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__data-isolation.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "cde67b8e1ee8586dbc7fc3925a746fa535554de1907199239bcc0fdcde3d972c"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__state-transition.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "15f3ec9f5a5f3e551b1300c95c93b94be92cc1eb430e0eb057a6926de64f4ebe"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "adf4775929a6831fee74a8723ad8642093100847a5c17f9ed3a65d41456f0956",
+      "after_sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6"
+    },
+    {
+      "file": "next.config.ts",
+      "before_sha256": "c88892ca5d0981c51beba80344a20b62d745ebde29853b610c56498a9ef98e79",
+      "after_sha256": "c65b17ab2dd413294bed71ca40f2349c5ff0dd1d10631ff34b0cd0264ba626cf"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "41a42044e3c3201d002524ec1c3adfa556e05cb75e4e87ebd9498336d4cfd358"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "d1ee27733662c1521676328e76cffea258feeb9cb4ac82a25629f566be778297",
+      "after_sha256": "9817b41498a6cfc2be015e6a977478daf1e58b9940acea7d8a73283b335e48b5"
+    },
+    {
+      "file": "src/app/api/orgs/[orgId]/api-keys/[keyId]/route.ts",
+      "before_sha256": "e21ff34c25ab255c1b07016a59289efc4e996a6b676537d890c8fc1970525a8f",
+      "after_sha256": "728db9c5abb2b8d3eca509451e06e52add8e2a90d002444d97b727ee3f0fc948"
+    },
+    {
+      "file": "src/lib/validation/apiKeySchemas.ts",
+      "before_sha256": "47c5dcc5befb3a2fb4e52af20160ce76e41ea14b0d586adbe7161bae9d4da1b2",
+      "after_sha256": "6a248580b49c4b001f6efb0f3edd603d0cba49be9867a20054046f2f9a26dc61"
+    },
+    {
+      "file": "src/repositories/apiKeyRepository.ts",
+      "before_sha256": "fc061057a7a8a9fba36b0c31f6d91849a420c52850b60054f459dd3ebd8984d5",
+      "after_sha256": "1ea3705c288c0332b23cfa41c42b24cf18a02e0c742b270125f1a89454cf7f3c"
+    },
+    {
+      "file": "src/services/apiKeyService.ts",
+      "before_sha256": "4691103d4326f66b5ce585d21f6a057aa378d132b457d653a91f10ce73be0cee",
+      "after_sha256": "218902b0fef289f222f1d7856648da8988c118ce92069044374793032918df13"
+    },
+    {
+      "file": "tests/data-isolation.test.ts",
+      "before_sha256": "cde67b8e1ee8586dbc7fc3925a746fa535554de1907199239bcc0fdcde3d972c",
+      "after_sha256": "c2d9170d268dfc5a9d8c30db186b136fa467565f0a197e3671c070b3e67e369c"
+    },
+    {
+      "file": "tests/service-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "1023262ed1d8f7dde9c21d3e637d2145d5f541be2c679abdc74c25f14b272cd9"
+    },
+    {
+      "file": "tests/state-transition.test.ts",
+      "before_sha256": "15f3ec9f5a5f3e551b1300c95c93b94be92cc1eb430e0eb057a6926de64f4ebe",
+      "after_sha256": "41fe7d85719c8615bd5e1b21172b9894e13ca081fa3c47d92bf58b191e8d2b42"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3d6fd904324faec0c3125d6282333c6b0ccfa67607a66e4de1e754383ade31ba"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "8277377e18c513b4e3a9eb060570d43c810f86bcdbd374f63af0ec1a260da927"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "4adc73cc36251b8da1de564f6bd614f453fbf4751e900a5c736c254d32498190"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "3ea9ab6b8df739f3b270381bc67a6e0d455d86f4fdf964a1861919aa70e88d60"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "c9ff7842ce408df3f94cff594c45454e3a73acca16c7fafbb818fe9f2c8094d2"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3c7a605d57d8fc1d9e7f3bfb6911fd8c0ec20051260771ebbecbe2d8ce51a99c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "074fea3722e9dda6be267dea8655b531d6578c2fffef18d6e551d6bfe7e9da03"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f3e2b72de897be693088d8a60580e029bca96c2269a8ae492f5e1856f75c110f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c9e3619fba04f72ab0a0292338babce3a5ad2621872f24b62061b636ddf8d8de"
+    }
+  ],
+  "limits": [
+    "Concurrency and rollback tests use fixtures and production-query spies, not a live PostgreSQL race.",
+    "The organization limit relies on cooperating create paths using the same row lock.",
+    "Existing local demonstration authentication is retained; no real external key was created or rotated."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T18:01:38.850514+00:00"
+}

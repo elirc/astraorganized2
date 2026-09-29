@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python",
+    "scripts/check_browser.py",
+    "--report",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/nethris/browser-02-evidence.json",
+    "--screenshots",
+    "astraupskill/images"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 192.53
+}

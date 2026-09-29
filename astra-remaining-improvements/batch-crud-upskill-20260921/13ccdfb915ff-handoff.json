@@ -1,0 +1,29 @@
+{
+  "id": "13ccdfb915ff",
+  "status": "ready-for-review",
+  "project": "_Organized Desktop/05 Numbered Experiments/w25",
+  "finding": "No production fix warranted; LockService already centralizes lifecycle and authorization. Added actual-service lab.",
+  "changedFiles": [
+    "tests/runtime-lock-service-lab.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/evidence/results-crud-b05.json",
+    "astraupskill/evidence/astra-crud-b05-w25.log",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "executed": 4,
+    "passed": true,
+    "command": "node --experimental-vm-modules --test tests/runtime-lock-service-lab.test.mjs"
+  },
+  "limits": [
+    "No production fix warranted; native Next, durable repository and multi-process contention unexecuted."
+  ]
+}

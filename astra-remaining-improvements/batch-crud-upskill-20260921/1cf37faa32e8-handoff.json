@@ -1,0 +1,32 @@
+{
+  "id": "1cf37faa32e8",
+  "project": "e4",
+  "files": [
+    "src/server/newsletters/service.ts",
+    "tests/runtime-newsletter-state.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-server-newsletters-service.ts.before",
+    "astraupskill/evidence/1cf37faa32e8/runtime-newsletter-state.tap.txt",
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "findings": [
+    "Dev mode accepted queued newsletters for re-queue while database mode rejected them.",
+    "The dev guard now requires draft, preventing duplicate jobs and audit while preserving first queue."
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-newsletter-state.test.mjs",
+    "executedTests": 3,
+    "passed": true
+  },
+  "limitations": [
+    "Mocked queue/storage contracts; no live infrastructure."
+  ]
+}

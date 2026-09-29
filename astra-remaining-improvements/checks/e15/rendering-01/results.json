@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "total": 5,
+  "checks": [
+    {
+      "name": "ticket list treats subject requester team status and priority as text",
+      "passed": true
+    },
+    {
+      "name": "message body author and attachment names stay literal while newlines remain visible",
+      "passed": true
+    },
+    {
+      "name": "ticket metadata never parses requester or assignment fields as markup",
+      "passed": true
+    },
+    {
+      "name": "select placeholder and option label remain text",
+      "passed": true
+    },
+    {
+      "name": "admin list helper accepts nodes with literal text",
+      "passed": true
+    }
+  ]
+}

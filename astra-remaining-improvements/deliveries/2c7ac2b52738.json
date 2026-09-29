@@ -1,0 +1,194 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "summary": [
+    "Make version adapters presence-aware and reject unknown versions.",
+    "Validate profile ownership and rollout inputs before repository or audit writes.",
+    "Repair test startup comments and document API-versioning limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/2c7ac2b52738/ww27-test-18.json"
+  },
+  "testResults": {
+    "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+    "id": "2c7ac2b52738",
+    "command": [
+      "cmd.exe",
+      "/c",
+      "npm test"
+    ],
+    "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+    "environmentOverrides": {},
+    "startedAt": "2026-09-13T14:27:29.971046+00:00",
+    "status": "complete",
+    "log": "ww27-test-18.log",
+    "pid": 24304,
+    "exitCode": 0,
+    "passed": true,
+    "finishedAt": "2026-09-13T14:27:38.295390+00:00",
+    "elapsedSeconds": 8.32
+  },
+  "courseWords": 4100,
+  "courseFiles": 9,
+  "courseLinksChecked": 10,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "95a355a7e57cbbacdda345db8172f659c1bf53795c1efe8503ebe8a9858facbb",
+      "after_sha256": "7bcd5e4f306a5760bd09368b5c0c87bc293c2b0c171510c5cd50e2ac629ba424"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "3a5e0a66c1aee8bef7d8e38ffc140c03298721831fb94533abaf8dcc72ce18eb"
+    },
+    {
+      "file": ".eslintrc.json",
+      "before_sha256": null,
+      "after_sha256": "3ad3cd68091519925f8dbbae05756476d59f1b71f3890e5be2e5d382009560e4"
+    },
+    {
+      "file": "src/lib/http/api-response.ts",
+      "before_sha256": "82377bb46aab443672163f587dff63de9560db0baf18418a185548e26a2c7492",
+      "after_sha256": "1b6b9a3b9b88d4ed72c6e68cffbe87c086728af5e1d5e051ae3e70bcc3126c61"
+    },
+    {
+      "file": "src/lib/http/route-utils.ts",
+      "before_sha256": "afaf0d096e7d52ce5c4903db48e436844d69197029094b9b843c1ee68f59ba02",
+      "after_sha256": "e360a0645b61379b9d1699a6ab88cc5afc59a372a6d804e35e9f9b82a6d0f4f0"
+    },
+    {
+      "file": "src/lib/server/container.ts",
+      "before_sha256": "decf6c6700a31b13453a8ba3c14c9fa961ab33dfb13eb7bc469b66d640af0d34",
+      "after_sha256": "76827a10996ed89c0b4ee51b529537bf9410bf7d46e8530a0ffd571b91340177"
+    },
+    {
+      "file": "src/lib/versioning/customer-profile-contracts.ts",
+      "before_sha256": "522455c9d4d97fb6118e82d44f4a96a71b789291aa210d0a9a44188116d8bd12",
+      "after_sha256": "e5702eddb7146ed24e3c06e47e00eefea865e04e2f370ebfc71284345d479906"
+    },
+    {
+      "file": "src/services/api-version-service.ts",
+      "before_sha256": "7b576460ec27a1dc3cdf9503165fb36040dcc4587cddf1b5041bc2e3da98def3",
+      "after_sha256": "24f7888f9845997eaeb52bb5bfc6878b873a35516bd76f1da502075e4b141493"
+    },
+    {
+      "file": "src/services/customer-profile-service.ts",
+      "before_sha256": "143892715058d28692092208cf530e8c10f7845e51c70d1904737b1485a38a0e",
+      "after_sha256": "9d3a33414c10e5aafd6b71243f1b8190a4264f4d30c9595efe860b8504cfb47e"
+    },
+    {
+      "file": "src/app/api/platform/customer-profiles/route.ts",
+      "before_sha256": "e5078a8a8168f78e5a5a2654d0f40c671ae794d6add37b4d76931793e04a39e5",
+      "after_sha256": "9addf5ef602bd28ebc561b9cd08c59207728a4f58e8bb1710a142678f44d20b8"
+    },
+    {
+      "file": "src/repositories/audit-log-repository.ts",
+      "before_sha256": "c0a14ea45dc42c24ee4fb2b775d6ba75e90e245c99aa81739eaf566de4f4987d",
+      "after_sha256": "203541aa48872c100ed071570515bada355e9b7a22f516a85b7055a878c0fad5"
+    },
+    {
+      "file": "src/repositories/version-catalog-repository.ts",
+      "before_sha256": "490b0e8417b861d0e65299c12bb71b1807ee8843a6b4cdb7696cdd836f21c137",
+      "after_sha256": "0e8218dce01bc42a1737ab6945f6c4dd8979877721f02aa7fcc578bda9e016de"
+    },
+    {
+      "file": "tests/routes/version-rollout-route.test.ts",
+      "before_sha256": "f980792a9739d3c03388a2502a419142aa33aa7049761ac0e954383068a4601c",
+      "after_sha256": "ab63a8cf90e09cf9e64981b62499bceace82a712e1b68f88aaa2396c8d957793"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__http__api-response.ts.original",
+      "before_sha256": null,
+      "after_sha256": "82377bb46aab443672163f587dff63de9560db0baf18418a185548e26a2c7492"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__http__route-utils.ts.original",
+      "before_sha256": null,
+      "after_sha256": "afaf0d096e7d52ce5c4903db48e436844d69197029094b9b843c1ee68f59ba02"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__server__container.ts.original",
+      "before_sha256": null,
+      "after_sha256": "decf6c6700a31b13453a8ba3c14c9fa961ab33dfb13eb7bc469b66d640af0d34"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__versioning__customer-profile-contracts.ts.original",
+      "before_sha256": null,
+      "after_sha256": "522455c9d4d97fb6118e82d44f4a96a71b789291aa210d0a9a44188116d8bd12"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__api-version-service.ts.original",
+      "before_sha256": null,
+      "after_sha256": "7b576460ec27a1dc3cdf9503165fb36040dcc4587cddf1b5041bc2e3da98def3"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__customer-profile-service.ts.original",
+      "before_sha256": null,
+      "after_sha256": "143892715058d28692092208cf530e8c10f7845e51c70d1904737b1485a38a0e"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__routes__version-rollout-route.test.ts.original",
+      "before_sha256": null,
+      "after_sha256": "f980792a9739d3c03388a2502a419142aa33aa7049761ac0e954383068a4601c"
+    },
+    {
+      "file": "tests/services/versioned-profile-service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "20d8c210d7e63caf988595139f400fc5430cc22f996d89d3b77e4a636926bd3b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "f61f0aa1f6142a26c222a698a683723d26cebda46e33cb73d657cfba5c3bfc27"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b4802f2cf99cb4a6ae6fdf35c4cb08ef38bf9f5f938df22afd4205799a708490"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "36d83a779f5c4df5be129f19299e2e0c3d56db01412c023d6faa0361320f0db6"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "1366382d1ad0212bd60560147d8106030c975621d519bc31dc9b7d90f93da46d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e56a80f2a8c571cf635b32d89cb01bbb8a73eff61d9f3f01b3d1da2d74fea756"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "ebbc163679c41575b1c0cf5abcd2c429fe10192b09c26de5bcf48004a12278e5"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "55d9c7bf97122332a365f0833fdc841155d8f78b72d8343865ad22045c3f35b6"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "1d3543e3b50840a68ace29f4ac0ecde77243876065683c0771510c9485cc66f7"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "4a7c5c8ad363eb39faa69b07eea4a6bacba8a5a34133185e9864921fb8855fb0"
+    }
+  ],
+  "limits": [
+    "Tests use fake repositories and route mocks; no live database or traffic was used.",
+    "The in-process compensation boundary restores rollout state when audit recording fails; a production adapter should use one database transaction across rollout and audit rows.",
+    "The demo session and rollout policy are teaching infrastructure, not production identity or deployment controls."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T14:32:55.550011+00:00"
+}

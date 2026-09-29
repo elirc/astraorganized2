@@ -1,0 +1,24 @@
+{
+  "id": "43d6b6358f56",
+  "project": "_Organized Desktop/05 Numbered Experiments/D3",
+  "summary": [
+    "Reject API key strings with more than one delimiter before hashing or database access.",
+    "Keep verification consistent with list lifecycle rules by excluding soft-deleted keys while preserving organization and revoked filters."
+  ],
+  "changedFiles": [
+    "lib/services/apiKeys.ts",
+    "tests/api-key-verify-boundary.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/apiKeys.ts.original.txt",
+    "astraupskill/evidence/crud-b04-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/43d6b6358f56/results-crud-b04.json"
+  },
+  "limits": [
+    "Four runtime cases execute actual apiKeys.ts with real Node SHA-256 and explicit Drizzle/schema/database predicate adapters. No Next.js, native ORM or PostgreSQL is executed.",
+    "The sequential verification read and lastUsedAt write are unchanged; concurrent revocation/deletion between them is not made atomic. Key verification does not establish every caller permission or organization lifecycle rule."
+  ]
+}

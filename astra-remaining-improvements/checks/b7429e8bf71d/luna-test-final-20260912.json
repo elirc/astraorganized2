@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "id": "b7429e8bf71d",
+  "command": [
+    "npm",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b7429e8bf71d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:21:52.372738+00:00",
+  "status": "launch-failed",
+  "log": "luna-test-final-20260912.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T00:21:52.389611+00:00",
+  "elapsedSeconds": 0.01
+}

@@ -1,0 +1,221 @@
+{
+  "project": "borrowbox",
+  "id": "5426644ec395",
+  "summary": [
+    "Reservation and checkout now validate candidate times before mutating equipment.",
+    "Return validates time and equipment state before changing loan state.",
+    "Cancellation and expiry check cooperating equipment state before reservation transitions.",
+    "Deterministic clock regressions preserve state on invalid and mismatched operations while retaining existing concurrency coverage."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5426644ec395/results.json",
+    "expectedTests": 29
+  },
+  "testResults": {
+    "passed": true,
+    "total": 29,
+    "tests": 29,
+    "failed": 0,
+    "suites": [
+      {
+        "suite": "BorrowBox.Infrastructure.Tests",
+        "tests": 19,
+        "evidence": "astraupskill/evidence/BorrowBox.Infrastructure.Tests.trx"
+      },
+      {
+        "suite": "BorrowBox.Core.Tests",
+        "tests": 6,
+        "evidence": "astraupskill/evidence/BorrowBox.Core.Tests.trx"
+      },
+      {
+        "suite": "BorrowBox.Api.Tests",
+        "tests": 4,
+        "evidence": "astraupskill/evidence/BorrowBox.Api.Tests.trx"
+      }
+    ],
+    "checks": [
+      "luna-restore-01",
+      "luna-test-04",
+      "root-build-02"
+    ],
+    "scope": "6 Core,19 Infrastructure and4 in-process API tests; in-memory stores and existing fake race seam. Full Release build passed. No durable database transaction, production authentication or browser test."
+  },
+  "courseWords": 4792,
+  "courseFiles": 9,
+  "courseLinksChecked": 14,
+  "files": [
+    {
+      "file": "src/BorrowBox.Api/Loans/LoanEndpoints.cs",
+      "before_sha256": "0072e8c9961a4da5479f7aad59d79c76ad861406606d65dc8c45058275cc7b7a",
+      "after_sha256": "827b7114fa3427e99bc14d74174c7f1a886e49522bd583f35f3ac0d5db42734f"
+    },
+    {
+      "file": "src/BorrowBox.Core/Loans/Loan.cs",
+      "before_sha256": "a570dc3549d11dde6ee7d54badc4547aac637ab16d98df2fd69c4b169f02b274",
+      "after_sha256": "04355a58666cedd8a9cd02eae2131ecb01cae1b5b9d0a01fa7b22fcb446d08e6"
+    },
+    {
+      "file": "src/BorrowBox.Core/Reservations/Reservation.cs",
+      "before_sha256": "b8faf3b72fbab9439e517fec0afe65ea6886e76723119da421770a637d573473",
+      "after_sha256": "f3cdafeb767b0a51855283715596a1583fb2685058fdd5f8e98927f6a315aebd"
+    },
+    {
+      "file": "tests/BorrowBox.Infrastructure.Tests/Loans/CheckoutTests.cs",
+      "before_sha256": "aba35b58c90ad5324bcb1bcf219d26309ef9003a7179427c8d9ebda5ff306024",
+      "after_sha256": "827897a554eaa828d17a1255d15bfa4e6bacf98cb8a7dd6b79d4f0e78330ae1f"
+    },
+    {
+      "file": "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationExpiryTests.cs",
+      "before_sha256": "05a1f4fb822fbe9cebae90754a927e89abb81548551a0af80fceeb442324898c",
+      "after_sha256": "51f96547b7ab09bf8d271ce7cc490ab59f95046d0e64af00a5818e9b59d70041"
+    },
+    {
+      "file": "tests/BorrowBox.Infrastructure.Tests/Reservations/ReservationTests.cs",
+      "before_sha256": "d52421bd34e99df2a947bd2165eb34ff490ccbda7754ee3f371ed8add236873c",
+      "after_sha256": "2a8337dd24c763caf77b44cc460ef6b11f83ddcc0aca3f8a990054a9908716df"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "011c8cc782355c78135c46febbfba3a3da30c495c5bce4a5ffbe5c084e72e8a4",
+      "after_sha256": "994ced8a681acf8ac273358d563dd610db6a3e00fa83659d413978c6da3d0490"
+    },
+    {
+      "file": "astraupskill/snapshots/CheckoutTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "aba35b58c90ad5324bcb1bcf219d26309ef9003a7179427c8d9ebda5ff306024"
+    },
+    {
+      "file": "astraupskill/snapshots/Loan-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "a570dc3549d11dde6ee7d54badc4547aac637ab16d98df2fd69c4b169f02b274"
+    },
+    {
+      "file": "astraupskill/snapshots/LoanEndpoints-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "0072e8c9961a4da5479f7aad59d79c76ad861406606d65dc8c45058275cc7b7a"
+    },
+    {
+      "file": "astraupskill/snapshots/Reservation-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "b8faf3b72fbab9439e517fec0afe65ea6886e76723119da421770a637d573473"
+    },
+    {
+      "file": "astraupskill/snapshots/ReservationTests-before.cs.txt",
+      "before_sha256": null,
+      "after_sha256": "d52421bd34e99df2a947bd2165eb34ff490ccbda7754ee3f371ed8add236873c"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__BorrowBox.Infrastructure.Tests__Reservations__ReservationExpiryTests.cs.before.txt",
+      "before_sha256": null,
+      "after_sha256": "05a1f4fb822fbe9cebae90754a927e89abb81548551a0af80fceeb442324898c"
+    },
+    {
+      "file": "astraupskill/evidence/BorrowBox.Api.Tests.trx",
+      "before_sha256": null,
+      "after_sha256": "871a0a040cec7edab7332f369b486f6a82e19c9a5861b63c298f692962d0864b"
+    },
+    {
+      "file": "astraupskill/evidence/BorrowBox.Core.Tests.trx",
+      "before_sha256": null,
+      "after_sha256": "dfc50a9560296f46c69f2d22af2bc3faedaf132c1690868634f20836dbc54be9"
+    },
+    {
+      "file": "astraupskill/evidence/BorrowBox.Infrastructure.Tests.trx",
+      "before_sha256": null,
+      "after_sha256": "319f89f32307dc0c98e9c02eeced769dd4b86324a564ab8b73bb4a28456dce07"
+    },
+    {
+      "file": "astraupskill/evidence/luna-restore-01.json",
+      "before_sha256": null,
+      "after_sha256": "57d097a75cc5e986ac30cb3f225bbf28c790f6116b328ec01ebbd2c22d253d39"
+    },
+    {
+      "file": "astraupskill/evidence/luna-restore-01.log",
+      "before_sha256": null,
+      "after_sha256": "43ef25e6822b5e1faa9f92b2fcfcc6ecce7b47284ef6cacc0b4be46e0a94392a"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-04.json",
+      "before_sha256": null,
+      "after_sha256": "2fe4dca2a8e034677c74863479c4fab774528d32c5a28892b75b721c4f54286e"
+    },
+    {
+      "file": "astraupskill/evidence/luna-test-04.log",
+      "before_sha256": null,
+      "after_sha256": "f5a7abf7a5f7bbc46cf590d87a38d51c72c60f5579330f2c324d7b6ce5a334f8"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "92775fe60e83e5093f0dccdac6e7533745d58bb4fa13aae06c9e56c8f048727a"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-02.json",
+      "before_sha256": null,
+      "after_sha256": "88f1f2e0626c33eefc6dcc597827372dd21775cee37d81ae4c8417881bfe9c9e"
+    },
+    {
+      "file": "astraupskill/evidence/root-build-02.log",
+      "before_sha256": null,
+      "after_sha256": "3a2fe9426f3d43d0b8549b3a6e3e27959c887cbc3d163596116403bdaf67c49a"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3c47f7c2f0c6c412a28e6deb1adaa3c2333b891d61285ca6fdab79a672bafa34"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7f5dd9b788ff4cc5bd0a0005b5568ce11225764d5609ec2a1145e04c8c0bf329"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8baa92d64fc9d2a002dd0f3e7821049b48e58475dee6d9ac58b44a31e2148638"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "5adfad2a453a4d271dcc03b4a1b60577aed39efd28778a9da6028f19f29812a0"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "70cdbf7faf8981d1bfe2c38a5197829152dc1f0f4342188e5425f34ef9270718"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "1ab844d47b1f2a39fb194b4966119d4b3c2ec71c4d314bca1fad9d944421654b"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "9c4054b21f07decc18edaecb44aa0cfcf95efffe8fadec19aeed44282f962164"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "038baab3a22108fd1696470a964c7d820edfef29fe17facdf9f4302926969394"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "05661f026385d9c1cd6fe7e0b3b2367324505186d321cfa6c116ba4ab1151e93"
+    }
+  ],
+  "limits": [
+    "Validation ordering prevents rejected input from mutating live in-memory references.",
+    "Stores retain live references and expose no transaction or reservation/loan Save contract; post-persistence failure rollback is not claimed.",
+    "Per-equipment checkout locking remains; borrower-limit races across different equipment remain.",
+    "SQLite equipment adapter is not selected and no schema or production data was changed.",
+    "Hosted expiry worker is not run as a long-lived verification process.",
+    "Demo header authentication and selected Staff policies is not production authentication, actor binding, or tenant isolation.",
+    "Future coordinator, optimistic concurrency, and durable activity transaction are proposed only.",
+    "API tests use an in-process application host; lifecycle endpoint date/error mapping and browser behavior remain source-reviewed rather than newly integrated HTTP tests."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T23:01:52.881095+00:00"
+}

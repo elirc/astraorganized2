@@ -1,0 +1,26 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/sol15-globehire-app-tests-r1.json",
+    "astraupskill/evidence/sol15-globehire-app-tests-r1.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "tests/GlobeHire.Application.Tests/HireCases/HireCaseTenantIsolationTests.cs"
+  ],
+  "summary": [
+    "Added application-level regressions proving client-scoped hire-case completion and submission cannot mutate another client's aggregate.",
+    "Verified valid owner completion records the injected UTC audit time and increments the optimistic version once.",
+    "Verified a stale owner version preserves the untouched checklist item and reports the stable concurrency business error.",
+    "Added nine source-grounded learning chapters that trace route identity, repository keys, aggregate transitions, testing, and operational limits."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/509c3537abdd/sol15-results.json",
+    "expectedTests": 8,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "limits": [
+    "The project uses singleton in-memory repositories and does not prove durable or distributed transaction behavior.",
+    "ClientId is supplied by the teaching API route; authentication and organization membership are outside this change.",
+    "The targeted application test project was run; no external providers, databases, or broad solution checks were used."
+  ]
+}

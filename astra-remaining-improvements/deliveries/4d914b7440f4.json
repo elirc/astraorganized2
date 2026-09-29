@@ -1,0 +1,118 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww8",
+  "id": "4d914b7440f4",
+  "summary": [
+    "Verify actual extraction-job claim predicate, attempt increment, result forwarding and database error propagation without claiming a concurrent worker execution.",
+    "Added actual repository runtime learning-lab coverage without changing already-correct production logic."
+  ],
+  "checks": {
+    "resultsFile": "checks/4d914b7440f4/results-crud-b07.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww8",
+        "id": "4d914b7440f4",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-job-claim-contract.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4d914b7440f4",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T04:05:20.425383+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 34636,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T04:05:29.919684+00:00",
+        "elapsedSeconds": 9.27
+      }
+    ],
+    "limits": [
+      "Actual documentRepository function with Prisma-shaped double; no production source mutation.",
+      "No worker, extractor, Prisma SQL lock, transaction, audit, or concurrent process test."
+    ]
+  },
+  "courseWords": 1629,
+  "courseFiles": 9,
+  "courseLinksChecked": 21,
+  "files": [
+    {
+      "file": "tests/runtime-job-claim-contract.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "7104bd845270ee5344f934d057e2c67703d7cd6b820474330ba72163df31346c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "a2d3cc8164d0587c24f8ac0bd39641b2a4605cb6f2ee820eebbe3c32304815fc"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "16c6a8b41641d7a40e5398ecd3a029a3f4515daaac849d7e411865f300b417ba"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a4431a78d3e260b2c47a881f1c3cc01976575ee9b13f70763ac0db990014e6d4"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "c3b8f3b1c0e8a78b2ac6fedce076296cd46d43a73bbfd42bd5e55b08d177d97e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "431d8dc1654df4b88803c2cf2446c848884c430d89b93d4be43fa31ab7471524"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "accc8f6c429c066a1c98d56d7e8eee9d69ab4dfe7450e5e1ff6c4db0bd4c4cd1"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ec56189399d6d3907b9692d9685da959473f3af3287e5d812cd15d3e7c7e43fd"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "b72b146810a9ac332602cc90df1ff183dd02105120deca90768a689cdfc7ce94"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "eabb5a991c513ca4d78586cfae9401e730902ce5f83cb59de4ddd56dc03cd64c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "8f9ca6ca37e010fb77dfea317b1b6aa6eb307a26202c43ad140374dc40e18313"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "13b62fcf09aae251ccdc7145f5d89b37903f019c40fc0384d62855518fa0fe18"
+    }
+  ],
+  "limits": [
+    "Actual documentRepository function with Prisma-shaped double; no production source mutation.",
+    "No worker, extractor, Prisma SQL lock, transaction, audit, or concurrent process test."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T04:10:56.273040+00:00"
+}

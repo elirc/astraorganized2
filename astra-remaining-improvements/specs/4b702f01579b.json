@@ -1,0 +1,153 @@
+{
+  "summary": [
+    "Playbook status updates now use tenant-scoped compare-and-set transactions that commit the audit row with the state change in both adapters.",
+    "Health configuration publication now selects the next version, replaces tenant snapshots, and writes the publication audit in one transaction boundary; service calculations pin the proposed components.",
+    "Renewal context and numeric validation remain fail-closed, with adapter parity regression coverage and nine source-grounded guides."
+  ],
+  "changedFiles": [
+    "tsconfig.json",
+    "prisma/schema.prisma",
+    "src/lib/validation/playbook-schemas.ts",
+    "src/lib/validation/renewal-schemas.ts",
+    "src/repositories/contracts.ts",
+    "src/repositories/mock/mock-repository-factory.ts",
+    "src/repositories/prisma/prisma-health-config-repository.ts",
+    "src/repositories/prisma/prisma-playbook-repository.ts",
+    "src/services/health-score-config-service.ts",
+    "src/services/playbook-service.ts",
+    "src/services/renewal-forecast-service.ts",
+    "src/tests/platform-behavior.test.ts",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/README.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/4b702f01579b/results.json",
+    "expectedTests": 12,
+    "testRecord": "checks/4b702f01579b/ww17-freeze-tests-20260913.json",
+    "typecheckRecord": "checks/4b702f01579b/ww17-freeze-typecheck-20260913.json",
+    "lintRecord": "checks/4b702f01579b/ww17-freeze-lint-20260913.json",
+    "buildRecord": "checks/4b702f01579b/orchestration-build-final-20260913.json"
+  },
+  "limits": [
+    "Mock tests cannot prove database isolation across processes; Prisma transaction behavior requires the production database build check.",
+    "No canonical project or customer database was written."
+  ],
+  "status": "prepared-final",
+  "files": [
+    {
+      "file": "tsconfig.json",
+      "before_sha256": "5c51df4c59f4510d8c7dadf07a5c32132228826a3b331da5e286207b4df7ef9c",
+      "after_sha256": "fa4fe37271682cb8230614d3d344f7b86a26cd142369245dfd78f00b26614c9d"
+    },
+    {
+      "file": "prisma/schema.prisma",
+      "before_sha256": "ea3d5c413ef4b613dae65849459e6cad2d7900287386cd7b6ab6612960e2261d",
+      "after_sha256": "d05dca8653c8afabf1a361f85283cbd8d128394d8d484864149664ffc025d294"
+    },
+    {
+      "file": "src/lib/validation/playbook-schemas.ts",
+      "before_sha256": "762ccdeaa714397d3a36595fd58a13546afe6f4d1491fa8af8278ad635f731c9",
+      "after_sha256": "9b3d702affabc880d90f30543eb7859b83b0e546a216383489fd7ba81db95572"
+    },
+    {
+      "file": "src/lib/validation/renewal-schemas.ts",
+      "before_sha256": "53c8ef4f1f60d01e0975e0fa1a858edf8fe5f2f0fa38c992476c02763767dffe",
+      "after_sha256": "b9bcc4bd1d5a7ca9107bb4f75524b626e64c5da94cd5f70c8d32694a1bb501fc"
+    },
+    {
+      "file": "src/repositories/contracts.ts",
+      "before_sha256": "2762b2a8d98eb60d98b50ef34e704b09cd881b04c242c47cb1a6f071abb27d6a",
+      "after_sha256": "924dedd492a6bab805ed00c8470f7ba8a5eeeed4ad96ec1a7f2254c8d96edae4"
+    },
+    {
+      "file": "src/repositories/mock/mock-repository-factory.ts",
+      "before_sha256": "771fb90a16d9a188f01dea942bf3dab314dc51aa3abb686e921c03af6fb0e0bb",
+      "after_sha256": "913046b752465ca7171207d44ab508e8fdab9b1ae52e0c2cbfb57c4cc6ea0f20"
+    },
+    {
+      "file": "src/repositories/prisma/prisma-health-config-repository.ts",
+      "before_sha256": "9c4a630711b83ce0db73709ebc4ed358f16b0a98d3d9a9d5ba38d8f40fca58c0",
+      "after_sha256": "d07b94e3867376171802ba818b0df05ea20e68fe6480018de82aa00b77e18b8d"
+    },
+    {
+      "file": "src/repositories/prisma/prisma-playbook-repository.ts",
+      "before_sha256": "f19877da84bc5642709e7521c9adb330de7dce4c29f5d70e35161d5f35cf5bb0",
+      "after_sha256": "21b1995f5a85f4473c28689f88c691d2effe2f99f70fa150febf60b9700f554b"
+    },
+    {
+      "file": "src/services/health-score-config-service.ts",
+      "before_sha256": "3964e52c8280fad93a7d7fdf62481ebe309f5f2aade3508c8c971de4be244026",
+      "after_sha256": "07df3d3940110d9cfda3605d29c335ab0541878c650a32709842b153a377057c"
+    },
+    {
+      "file": "src/services/playbook-service.ts",
+      "before_sha256": "fc265fe01bc14deae14efbdfbf07480b87c802aeee4ee9880f1113f0404cf1cd",
+      "after_sha256": "d93526e17f9620120e575560ff4bb81625d0eb5a879035d84de393a09b7d71b7"
+    },
+    {
+      "file": "src/services/renewal-forecast-service.ts",
+      "before_sha256": "2a17f906bf4765c080df840b6b9e45a5227fbe3d8d65e95bc120025cc0ee9ce2",
+      "after_sha256": "a05832bbb6b70ee80b1d04c681689c5a51e4f78365e2dae6bf5564fb58ea5d78"
+    },
+    {
+      "file": "src/tests/platform-behavior.test.ts",
+      "before_sha256": "ab860c2922286283bd8574f4590010a64f6b08d07780fac5ef8373eb42c3498f",
+      "after_sha256": "42f3c000663ba90f5d1dfa802f1775f054b60f436544e9187248ac648af38bd2"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f93eb1a8708d0f3651ad8769f3393b6521e580187fe1dfa3164ce2bbed9a378a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "66b3f09f6851c395df0d61728feebf7d85c1e18520f2d349a13604080522b928"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "487eadff390078b941696abad29aa53addf859e6c1d719fc1a7f72e66f9bbe33"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ad95403feb44625d45f5153e41d2e9c6906e75627e593ac8b8892737c11ab775"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "6ea0b86a9aae382f5419db2a87df81054d5382fffdefddd9b879962f4c3680de"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "d249c0dadfabca018b49c4aaceb71ca567f5fc90a452394eeafb1e167ddce338"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "d943a7bca3b5df7c845c76d4ad5d8ac2645d700d194a3bb3051503f7bb6cceb2"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "35a4e083109bcfbf2057f18090445fb1308ddc133da354e9eb37cae436d349ac"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "7f89024cc5b56d2e89a2c484fc9d6ebfb793418d4def5c0d87c8757ee7f48552"
+    }
+  ],
+  "courseWords": 4156,
+  "courseFiles": 9
+}

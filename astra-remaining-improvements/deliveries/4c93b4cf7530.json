@@ -1,0 +1,421 @@
+{
+  "project": "grokbuildteamproject",
+  "id": "4c93b4cf7530",
+  "summary": [
+    "Replaced unprotected task routes and permissive example tests with expiring authenticated identity, current organization membership/role checks, strict editable requests and scoped project/task CRUD.",
+    "Implemented task descriptions, calendar due dates and paginated member assignment selection backed by same-team compound foreign keys, captured versions, atomic audit writes and reference-aware deletion.",
+    "Added complete owned comment CRUD with author-only editing, explicit administrative moderation, retained audit metadata, parent/tenant scope and concurrency-safe version checks.",
+    "Completed local registration with atomic user/team/owner-membership creation and built memory-only sessions, preserved task/project/comment drafts, export/current-value recovery and navigation guards across all editors.",
+    "Added generated non-overwriting setup, fresh dedicated migration, repeatable fictional seed, 83 passing checks, reviewed desktop/narrow captures and nine detailed source-grounded learning documents."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/team-workspace/results.json",
+    "expectedTests": 83,
+    "environment": "Node 22.16.0; Prisma 6.19.2; PostgreSQL 18; React 18; Vite 5.4.21; Playwright 1.60 Chromium",
+    "command": "node scripts/test-database.mjs verify (58 backend, 6 frontend, 3 setup, 16 browser; types/builds; seed twice; owned cluster shutdown)"
+  },
+  "testResults": {
+    "passed": true,
+    "mode": "verify",
+    "database": "PostgreSQL 18; helper-owned temporary loopback cluster",
+    "setupTests": 3,
+    "backendTests": 58,
+    "frontendTests": 6,
+    "browserTests": 16,
+    "build": true,
+    "totalTests": 83,
+    "backendBuild": true,
+    "frontendTypecheck": true,
+    "frontendBuild": true,
+    "freshMigration": true,
+    "seedRepeatedWithoutOverwrite": true,
+    "ownedPostgresShutdownConfirmed": true,
+    "reviewedScreenshots": 2,
+    "evidence": [
+      "full-first/results.json",
+      "full-first/backend.json",
+      "full-first/frontend.json",
+      "full-first/browser.json",
+      "full-first/postgres-stop.log"
+    ]
+  },
+  "courseWords": 4571,
+  "courseFiles": 9,
+  "courseLinksChecked": 47,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "94945ec8c1682ed9d1e8380e05a2845d416b484a1ff0301107b3ed53be89a285",
+      "after_sha256": "ff512f98837c158c4b37cd9975b9358de51692ef4ff74cbcd397860def64153c"
+    },
+    {
+      "file": "JOURNAL.md",
+      "before_sha256": "1eb4861f70f3be3070e64aba007008916a2ad7e658f040e25d01fddcc621aeb6",
+      "after_sha256": "f6f1d6a0d663c8fcf4d45a161fd800b9bc9960008dd58e7a2eb6cfcc984178ae"
+    },
+    {
+      "file": "PHASE_PLANS.md",
+      "before_sha256": "fbfbb76a711b6b4b510c6647a54fa129a86647a25195fbab1d59abf17204201b",
+      "after_sha256": "89c31b07cfeba42454281eb5094492aa41fe9e8707333f2217195a77f1c08de6"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "e3045187c1ede75c559cb3ac07b2a78ac97850d5a3be860045bc179418c0579b",
+      "after_sha256": "04bf5788413568c6fb53ab4d204a1e969e96a38abdc7cce3afa06a29221bc7af"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "2fe1545aac312815e38803bf224f7a48535b14e3a1dcde85a3c3465ce312f11e"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "410e735455ef50f41227f795615b8bf3ab5395d9064adaf1f0b311d5b192e3af"
+    },
+    {
+      "file": "backend/.env.example",
+      "before_sha256": "daa918525cb5f3086df4a20c87d9028009939f4ffa69d1d08094b3e2b70b2ee5",
+      "after_sha256": "58e153bdc72597fe37f076d017c4380bcefb16d539f07428ed564b26b05846a4"
+    },
+    {
+      "file": "backend/jest.config.js",
+      "before_sha256": "b7696fe2e68064dfa6b9cb6c0d7c4fec78f288c13eec3e2eebe28aab2386f60d",
+      "after_sha256": "2c8e2521092f64addaf777f2ca7281080baa16993f79915c516aff34b740bc64"
+    },
+    {
+      "file": "backend/package.json",
+      "before_sha256": "a132d440baf1c24ee23764ec97a6864601a216924883219fd168c9f487b4dc17",
+      "after_sha256": "722db38c089cf72b60cee6f1803cb53c6ac01eb90589c55ec5b20a710059244e"
+    },
+    {
+      "file": "backend/prisma/migrations/202609090001_team_workspace/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "5225a641901255e32d960723ef5439e9613947eb8851c010a4784576976343cd"
+    },
+    {
+      "file": "backend/prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "backend/prisma/schema.prisma",
+      "before_sha256": "155c6056fd4161ce87ff0dc01350b373688e61621046cbbc79b8751c307bb591",
+      "after_sha256": "811f416150dd118f66ea35b00594ed83634da27647a832e3ff2f4c4f36b2637c"
+    },
+    {
+      "file": "backend/src/__tests__/authService.test.ts",
+      "before_sha256": "9ad0f262ca10370e2f0a7cb9a04759160ddb19d0c852bf77e34f185b77ae993a",
+      "after_sha256": "34b0725a2d6ba09452bba948f775330b504483b15e5c52e786e90c8d0c995142"
+    },
+    {
+      "file": "backend/src/__tests__/taskRoutes.integration.test.ts",
+      "before_sha256": "62032287838d110fada7a7091302345d3f08e9c35eb155871fe504b880f7ee50",
+      "after_sha256": "e43810db0ec300ed03132ca95fc2a602fdf2524c3b527045fdb5a6caccbe30d9"
+    },
+    {
+      "file": "backend/src/app.ts",
+      "before_sha256": null,
+      "after_sha256": "82458757f56b48624a863f40ce5a49a6fc4cd935cc142f196df7f355fe2ac5e5"
+    },
+    {
+      "file": "backend/src/controllers/projectController.ts",
+      "before_sha256": null,
+      "after_sha256": "84b33d952ccd7c3a60d18c61d5cf857d543b9c160581c75a6958766bebe442aa"
+    },
+    {
+      "file": "backend/src/controllers/taskController.ts",
+      "before_sha256": "80a50a165b2bbf5d797740bf03a0496706059b026a79dfbfecda4866a79d43be",
+      "after_sha256": "e6e0a2dcba8c1869cfb26f96164ae5bd5094b725281b9176f84870af11b0c9b3"
+    },
+    {
+      "file": "backend/src/index.ts",
+      "before_sha256": "40cfb73f732e411d10fcf32d9455d22b68e921322c7659c86f474756c765aa13",
+      "after_sha256": "661677ce1979318ffe146ee041002fcdbbb014147bae4e1a07b56d1dc63f2684"
+    },
+    {
+      "file": "backend/src/lib/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "7ba0ce92f43d21699aaf39c260eff73c30ce8bdad7bec5a8113bc3da266c4a9c"
+    },
+    {
+      "file": "backend/src/lib/prisma.ts",
+      "before_sha256": null,
+      "after_sha256": "f50a61fda0a9649252c4f07492bf359eeb6e07799c70dea423959c776eaf9b07"
+    },
+    {
+      "file": "backend/src/lib/validation.ts",
+      "before_sha256": null,
+      "after_sha256": "12734266be485a1582331614077323c6bfb77a67294374ff7b11702fdd5b8152"
+    },
+    {
+      "file": "backend/src/middleware/auth.ts",
+      "before_sha256": null,
+      "after_sha256": "0090084f51cd00ad3fe48cdd84d4ec5ad63ed4708734ebcc1ebe1c558e0a5af6"
+    },
+    {
+      "file": "backend/src/middleware/tenantContext.ts",
+      "before_sha256": null,
+      "after_sha256": "208eeb952b41f8eb875fd42df94c24824b9703ff7e1cfee60ebe12cd3534bce8"
+    },
+    {
+      "file": "backend/src/repositories/commentRepository.ts",
+      "before_sha256": null,
+      "after_sha256": "7fc9d296c7a996c01b2f8617fbb5f07e601943b69c98e23132f29df769f5ab0a"
+    },
+    {
+      "file": "backend/src/repositories/projectRepository.ts",
+      "before_sha256": null,
+      "after_sha256": "81d7fbd5fc783dfa6f402553378156626a77afeef72a0438e382ae453b7a008b"
+    },
+    {
+      "file": "backend/src/repositories/taskRepository.ts",
+      "before_sha256": "951f1cd24b64e539f27863547ee304c18fdda6e32ae28e7b4d2d8cea3145bd7e",
+      "after_sha256": "2668fe64c52d7b8bc4d2da5241a9f2ca22e5fbf5803ff1bb2530afe273920327"
+    },
+    {
+      "file": "backend/src/routes/authRoutes.ts",
+      "before_sha256": "4a43c09928a2697c34d95510b8294e2f670726895a03fe21fed80e3cbebdde83",
+      "after_sha256": "814c4742160da5e6a0108af7fb6380f333912d6d967041e77d74fe1b6eac56b3"
+    },
+    {
+      "file": "backend/src/routes/projectRoutes.ts",
+      "before_sha256": null,
+      "after_sha256": "f0d2eddf6b82d59c9fc7b6099027c8faf076953084f23405dc001ad84d6bdedf"
+    },
+    {
+      "file": "backend/src/routes/taskRoutes.ts",
+      "before_sha256": "156fa4617ee9e7dee07a2a639d59499826c938906da025128325b3cd0212b2a5",
+      "after_sha256": "90f1ffdb2fac805d76cdd7868025c9ab3a162833a319078de01bb73f5a3430fc"
+    },
+    {
+      "file": "backend/src/seed.ts",
+      "before_sha256": null,
+      "after_sha256": "a0aab6a3b9eef802ae7230f33395ee42193a8f02bb23f1662f10444d96684853"
+    },
+    {
+      "file": "backend/src/services/authService.ts",
+      "before_sha256": "79b6f67b6f80fc1cd7cd62559923567b33136e5a66d886ca14d27437d4ef1f56",
+      "after_sha256": "bf0d6d7f4e57fb2eed21551209f753be45f1c4c4364b5d7430c8270f9f59e514"
+    },
+    {
+      "file": "backend/src/services/commentService.ts",
+      "before_sha256": null,
+      "after_sha256": "9a4713c72285471f431013edd0be4bd10ae429e4c2f3d523f5568c4c1da3b7e6"
+    },
+    {
+      "file": "backend/src/services/projectService.ts",
+      "before_sha256": null,
+      "after_sha256": "7ab016d7f99777e9342b6c98f9c123abd27c1dfd7486da8b2bbbdea65d2d0fae"
+    },
+    {
+      "file": "backend/src/services/taskService.ts",
+      "before_sha256": "de376eafce4df6edf875d83aef558e28abf2503e06d4bd8f4138f74289a5cfbb",
+      "after_sha256": "bb082c186d44de9140a5a655f9277fd72227799eaeeb214273bc6b4f02516098"
+    },
+    {
+      "file": "backend/tsconfig.json",
+      "before_sha256": "6cfdb225152c735a8a9911dc6846f9be19b099e4690e775c768389373ebff7e5",
+      "after_sha256": "64ad79850b3a55b72445f7c1967f0b043587ed2d0a143d91905407a08ed32688"
+    },
+    {
+      "file": "browser-tests/workspace.spec.mjs",
+      "before_sha256": null,
+      "after_sha256": "36d185782e09fbcba8f2935308f8f748acec4b210c3a24d224bb230c62c3f797"
+    },
+    {
+      "file": "docker-compose.yml",
+      "before_sha256": "cef70de0e8e54e1bd2332a92074977e808dc94e9c5af29926d242e9f6da286ba",
+      "after_sha256": "42fdaaedda99694d1d3ae0028836a2092b07aa82630d7b7cdda76df9adfa64db"
+    },
+    {
+      "file": "frontend/.env.example",
+      "before_sha256": "075e2c3ce0267638c4da373817e702e156aeab01c337b52ad725bef6b0999c63",
+      "after_sha256": "b730e1b5af5a86024a99f8c6422e2d03afd829f2590be341d77daf374aff7d4c"
+    },
+    {
+      "file": "frontend/index.html",
+      "before_sha256": "bb252df8f70ad7d01dbd635e8d5e1c887e3ea32ecd2884aab139871f54c4fff6",
+      "after_sha256": "6fd3227403d4c345b25c1112c5c3d3a517c4ed638ab9cf917cdf48d1ddb7b069"
+    },
+    {
+      "file": "frontend/package.json",
+      "before_sha256": "44029b698cdc20cabf121dad41cc5b7160fc88b636b852196c946691e046fbce",
+      "after_sha256": "2a815255a0019d9432ac579e99fab87a9002c7c07ee9cb358101a39433fef79f"
+    },
+    {
+      "file": "frontend/postcss.config.js",
+      "before_sha256": "190c877db466995bf1482f4a16abd06e04a89ede3119341e2a86ff96e1737b27",
+      "after_sha256": "332554db544bdd0ebd00fe65ada700cd83146016bb4b8ef2f056ed5fc59b496a"
+    },
+    {
+      "file": "frontend/src/App.tsx",
+      "before_sha256": "cd1d1f15a650e8101958f85fef3d924505c62718e14b1bcc1da87a299bc5d256",
+      "after_sha256": "f91a75d10ff18890102f25ebbdb8ddf938e67b12ce3baa85872ccac236293146"
+    },
+    {
+      "file": "frontend/src/__tests__/TaskList.test.tsx",
+      "before_sha256": "5a5c3dc2f0eefa5e401ff70f763ac13df74e1a9060e83cb1014382a047950abb",
+      "after_sha256": "e13e5e8e32e288cc0292fe1af7e882f41a60c512a39120d43ab938cf1fbbc2a5"
+    },
+    {
+      "file": "frontend/src/__tests__/setup.ts",
+      "before_sha256": null,
+      "after_sha256": "1c1f608698cea6a2bdf222d68ef48fb2a8f6bb99297afe3ed87151cb67739a99"
+    },
+    {
+      "file": "frontend/src/api/client.ts",
+      "before_sha256": "a062bd75bb12d08b2a294971d70ed39cdac3add02f1569c6b62dbc2e27101eb0",
+      "after_sha256": "a80502fda934e6724d5ebfc05112ada4c4c6ab899bcf02b074a6421a5e17907a"
+    },
+    {
+      "file": "frontend/src/features/organizations/pages/OrganizationsPage.tsx",
+      "before_sha256": null,
+      "after_sha256": "5157ac14d9b35db4e21ce6094c8090525c1a2dfd008b46d0bfd90eccad2bfc72"
+    },
+    {
+      "file": "frontend/src/features/projects/pages/ProjectsPage.tsx",
+      "before_sha256": null,
+      "after_sha256": "f88dc036b21398bb1343b1422c94d13272044b7a9820002c91192afcf0f89bce"
+    },
+    {
+      "file": "frontend/src/features/tasks/components/AssigneePicker.tsx",
+      "before_sha256": null,
+      "after_sha256": "45c779e6ac78965d290448be4ca65de2c7354aa849b65dd4b429da5744a91060"
+    },
+    {
+      "file": "frontend/src/features/tasks/components/CommentsPanel.tsx",
+      "before_sha256": null,
+      "after_sha256": "12d726ee5dc15fc58d61918fa6a640588b6687dd219eac99767d0350b1ce94a7"
+    },
+    {
+      "file": "frontend/src/features/tasks/components/TaskList.tsx",
+      "before_sha256": "9971f186c45fb71227379077ce62fd1dbabc1cf0e7a6cbb90e71740ba5bfd97a",
+      "after_sha256": "d7983cb5ec2fc628127d4416dcf6ddc7167f33f8ecb8501e14da901ac90be085"
+    },
+    {
+      "file": "frontend/src/features/tasks/pages/TasksPage.tsx",
+      "before_sha256": "a5c5c94382c53d972c0c0b16cd191f58c34d1f3052e50fbaec79ea66a6a020c7",
+      "after_sha256": "ff01ca5b53ea7a21c85cbcbafc5c2e5180e5d0aaf80b37bf4b0cd18735aeaafe"
+    },
+    {
+      "file": "frontend/src/index.css",
+      "before_sha256": "41718aba6613da1e1a30f4a89be886ae21bf8b86dcaac6d5ab5c9ccfa6c0c036",
+      "after_sha256": "733b6927b801188f4cace6492bba0a53e82ffcfb9c9f52d2b44e670d77d8c749"
+    },
+    {
+      "file": "frontend/src/main.tsx",
+      "before_sha256": "ff7ec8eedf8398ebf4c87551c42da192f60f034a2410ee699419cacb903d20de",
+      "after_sha256": "a7abd7d4681461fc08ce131fa1ef785ba83ef0fbe403d5d0164d0c7642bb12fa"
+    },
+    {
+      "file": "frontend/src/test/setup.ts",
+      "before_sha256": "a46d66851af2c056e805fdd574bf5ec3adb1181c43c5e41f0a1c592e338afe64",
+      "after_sha256": "90ec9100c29e008c3d9194acd818e2cfa6dc6e177154bc8e10c5959aa35619ed"
+    },
+    {
+      "file": "frontend/src/vite-env.d.ts",
+      "before_sha256": null,
+      "after_sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "file": "frontend/tsconfig.json",
+      "before_sha256": "980d6cbe977ddfb52d3ab1bdd3fba30f8c1db9371b3b14aa4557d32bb00ce54b",
+      "after_sha256": "0b5bd376764e988f2ebfa547db2a7601eb5249feffe403017fb5c82c71291a56"
+    },
+    {
+      "file": "frontend/vite.config.ts",
+      "before_sha256": "a589353fddd2e38f168d4ee3b7484bd937a46209507051c5cd98a478f0d9526f",
+      "after_sha256": "c1799ef5ba462b19c18a2065d2390b9c0382f16ea190d8eab1a721c37c03b84e"
+    },
+    {
+      "file": "frontend/vitest.config.ts",
+      "before_sha256": "12a90b68de746708fcc8e0e53365622f0cfff04e8f4c212dd7d8fb04d28d5060",
+      "after_sha256": "65f226afe22dc0dfb75c0c3fb2324499703049b62524313fa900e65c88f80f77"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "a9515d0726a34201cd77e1244544c23e2fc428712c1145506eeaa1ab993a1fd1"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": null,
+      "after_sha256": "7496969a78e2f31de350b8c936ede4bc8517edef1e85e8884e84b6506199586a"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "a37331bc0213ec45132b4655bb4e206ad194b0bbadbdde52c2a3e00eafd27124"
+    },
+    {
+      "file": "scripts/setup-local.mjs",
+      "before_sha256": null,
+      "after_sha256": "8482b601bb70ca5769659243c5c8d9b3d982540b46f77d7d299990a4b81003f3"
+    },
+    {
+      "file": "scripts/setup-local.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "7bc87e160b87d9caffe0d09b4ce949835d8e9e00f411c694ff97a76fa57a75bb"
+    },
+    {
+      "file": "scripts/test-database.mjs",
+      "before_sha256": null,
+      "after_sha256": "0ebae037b0d065f71a7bbcd7075ae1e9853af2c51af2d568ad08d2f425abdce8"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "84b73b29db435f6dcb58f7ca920a2144d7b23bfb8b2ea4314265daa48a6fa8e1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "cdad6adab46dfd902d06b98a37e45cb254831baaa94105dc0281be096b30dd37"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "9b8a96359cffcf03cdf15bd6a319d326605f94789c2bd67928f4956c7980ac24"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "41733a0a80674317ad2b684eeb82d3387818a4b8f054609c72c66981ec346533"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "e25fe42f47ed3709078b8f982512f8a61bddd443d4993cd3860ce84613a87637"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7e9496a42a6e1b87468a4b2cc117ad29c8e9aad9cbccf3e74bb9cedc0a6c5587"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "574c912ea2f2145fccbace2eaf136e58b3763bfbf1185f0b8b5882da7fa101dc"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "66e6b101d4b1fb40cdefc7c5496997656b6fda063807fddf44d613c3d3a71ca6"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e4daf98236c515d8422712ee545a32235012980c59ee2198284153f5e12f9867"
+    }
+  ],
+  "limits": [
+    "Local demo authentication and registration with process-local throttling; no MFA, email verification, reset/refresh flow, server-side token revocation or production deployment. Membership is checked per request without atomic in-flight revocation.",
+    "Fresh dedicated database migration only; no automatic upgrade of unknown data, power-loss certification or comprehensive accessibility audit. Docker configuration was not exercised with a daemon.",
+    "No invitation, membership/role management or team-deletion UI; no reminders, approval workflow or live external notification delivery. Existing assigned memberships require explicit reassignment before removal.",
+    "No durable create idempotency, automatic draft import/merge or full historical snapshots. Comment audits are retained in PostgreSQL without a dedicated audit UI."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T12:09:30.995152+00:00"
+}

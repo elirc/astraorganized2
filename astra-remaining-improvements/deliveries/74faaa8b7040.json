@@ -1,0 +1,133 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildaffiliate",
+  "id": "74faaa8b7040",
+  "summary": [
+    "Use a full UUID suffix for newly created campaign slugs while preserving readable name normalization and the 60-character prefix bound.",
+    "Add three production helper/service runtime tests and nine source-linked chapters on CRUD identity, uniqueness and request idempotency."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/74faaa8b7040/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 3,
+    "checks": [
+      {
+        "project": "_Organized Desktop/02 Build Projects/buildaffiliate",
+        "id": "74faaa8b7040",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/campaign-slug.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\74faaa8b7040",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:41:28.918641+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-identifiers.log",
+        "pid": 36060,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:41:34.157067+00:00",
+        "elapsedSeconds": 5.24
+      }
+    ],
+    "limits": [
+      "Focused Vitest was not run because dependencies were unavailable in the staged workspace.",
+      "Database uniqueness and cross-process behavior remain deployment checks."
+    ]
+  },
+  "courseWords": 2559,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "apps/api/src/services/campaign.service.ts",
+      "before_sha256": "f5569632ae651d6563372b3ae880214675ba6411d864072d71ce60ffba37e4d7",
+      "after_sha256": "45d171c5cea8d29367923eda092c067d1fe52f93d980f5b29815198a3121e310"
+    },
+    {
+      "file": "apps/api/src/services/campaign.service.test.ts",
+      "before_sha256": null,
+      "after_sha256": "be600e178f3b5542e85c475050371f8b38e19220c49de60412c166b429ff7066"
+    },
+    {
+      "file": "tests/campaign-slug.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "d7da6086bdbac6edebadfde06695ca6bbad1fdebfdfe8c339af351f895ad7a33"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/apps__api__src__services__campaign.service.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f5569632ae651d6563372b3ae880214675ba6411d864072d71ce60ffba37e4d7"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-identifiers.log",
+      "before_sha256": null,
+      "after_sha256": "e37f65edfa79978bfcb791ae29d2400ccb0657c16a51fc264cd8562f3abf963e"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "fcd8420cd1b7dcf0b70c639fde939d7f88589ffed9f5f895b47de4236cfe06dc"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "94696cbcf50ccdedba558177b664c3e44fc40330c29530313085f58cbc90dc22"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "555ca37370148a2a79ac6ded267faa41b49ffd7f51bf97ee1cba978889d8774e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0652d55063e1c870c46b010712cc3bce8d3b28c9a81905d2d0a1cff9fb898300"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ebcd622b36b4afa498ee1a057cc763bc83baa45fbc6b94b6102f40442f8f10ae"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "21d90a33d6ac0acecda49a5e0a991051127aca67c4457cf4c249039293f2f8ab"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "ce52eed5b90d0fe10ee3b8caa44584bb081bdb1c140f1eb87c13efccb250e915"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "24e651500ace7d1c6d66709471e5b0b9c0724cf5a5be433559542060a8e5a23d"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "531c9ac8e75a857ebf87f49795516aebc8be765a8b1051f5d975f0e286210a1c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "d6f2c7f42c0441409cca5b8e383b0492b9126d3e1174496ea0aa043887e59edd"
+    }
+  ],
+  "limits": [
+    "Focused Vitest was not run because dependencies were unavailable in the staged workspace.",
+    "Database uniqueness and cross-process behavior remain deployment checks."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:54:28.797935+00:00"
+}

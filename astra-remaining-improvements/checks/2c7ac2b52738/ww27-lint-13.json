@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "cmd.exe",
+    "/c",
+    "node_modules\\\\.bin\\\\eslint.cmd src tests"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T14:21:30.072498+00:00",
+  "status": "complete",
+  "log": "ww27-lint-13.log",
+  "pid": 2276,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T14:22:00.384121+00:00",
+  "elapsedSeconds": 30.31
+}

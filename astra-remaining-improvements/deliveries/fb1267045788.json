@@ -1,0 +1,150 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+  "id": "fb1267045788",
+  "summary": [
+    "Make HN comment acquisition resumable when a thread parent exists but a prior run stopped before importing children.",
+    "Preserve completed parsed listings by returning early and use duplicate-ignore upsert for incomplete retries."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fb1267045788/results-crud-b01.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 9,
+    "checks": [
+      {
+        "project": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+        "id": "fb1267045788",
+        "command": [
+          "python",
+          "-X",
+          "utf8",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_scraper*.py",
+          "-v"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fb1267045788\\backend",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-21T23:42:57.608787+00:00",
+        "status": "complete",
+        "log": "astra-crud-b01-all-scraper.log",
+        "pid": 16492,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-21T23:43:27.821786+00:00",
+        "elapsedSeconds": 30.17
+      }
+    ],
+    "limits": [
+      "Focused tests use fake database and HTTP module boundaries.",
+      "Live service and migration execution were not performed."
+    ]
+  },
+  "courseWords": 2848,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "backend/app/services/scraper.py",
+      "before_sha256": "0ebe60af87f3ec4b2cabfacbb9cc90938c0fad447b44a791de1afe56388b6be2",
+      "after_sha256": "9f256fff7fdfd43e3061ef8305e548702a38e2c9362937b11cd1564f36c45798"
+    },
+    {
+      "file": "supabase/schema.sql",
+      "before_sha256": "6ceb0c6757a15e007b98c1deaf177bb21bd1ff0c24b2b04ee4ca99588facae9f",
+      "after_sha256": "3ac7ae3089a7abd7c285227e5b62c1754e065126206b9694de7cc5eb16cd6a93"
+    },
+    {
+      "file": "supabase/migrations/20260921_job_comment_unique.sql",
+      "before_sha256": null,
+      "after_sha256": "ae9932fee91ce3ac18ea05aa190bf636ff5f3962499d63aebc1386280d07f65f"
+    },
+    {
+      "file": "backend/tests/test_scraper_resume.py",
+      "before_sha256": null,
+      "after_sha256": "eba87cd563f9f4901ef60292a9902d82b67acc1954ddbd2f65f55b55c912794f"
+    },
+    {
+      "file": "backend/tests/test_scraper_recovery.py",
+      "before_sha256": null,
+      "after_sha256": "66a9bcff53a88276852095a3bb07bb372b1819ea4d86aedc4b83d311c29cfd06"
+    },
+    {
+      "file": "astraupskill/snapshots/backend/app/services/scraper.py",
+      "before_sha256": null,
+      "after_sha256": "0ebe60af87f3ec4b2cabfacbb9cc90938c0fad447b44a791de1afe56388b6be2"
+    },
+    {
+      "file": "astraupskill/snapshots/supabase/schema.sql",
+      "before_sha256": null,
+      "after_sha256": "6ceb0c6757a15e007b98c1deaf177bb21bd1ff0c24b2b04ee4ca99588facae9f"
+    },
+    {
+      "file": "astraupskill/evidence/astra-crud-b01-all-scraper.log",
+      "before_sha256": null,
+      "after_sha256": "70172cde1eff72be19599c22b721a337bef29a7f37598d6422949a78d52c07e9"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "9510ecd23be9ebbe29685d5dd1fe1412f0eebfb3b458c9b603dfe996b4ec8de7"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "72f8dd9a3817395d9ff4b2cb0206d68feedaea163990239fb6b163b1861e4ef5"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "9142b6922f61845f2237d91c1c81c8697ea56ba628a6bcbed24cdc995f7d459a"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f71225fa13740f3ddc7a7d338810502a16844a5b9f317a06c0445bc222e31a98"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "bd827cc7f892858dae4b6a1ab64295c6a69d39df32351ecb062e35759769a466"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "b67ec9aa26f71887485b1ecbcc10f0110b078fff4f4e4f891d3f3eccb3d002c9"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "6e216c4c718750544fc41158eebb082eca3d77556ce46be945f2c74868e12ca4"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "56a791a7acd3faf143120f488809b2686f196407b78d5a271663c94ca5fb4a03"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a7904221113d39ace901bc49e0d24fd02e307f89007dfff9f09be491a52dbd88"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "ac8a0d219be4d500a9bdd7d83f10eea1d20cfc4b40284fd3c41be4b22b5d3b06"
+    }
+  ],
+  "limits": [
+    "Focused tests use fake database and HTTP module boundaries.",
+    "Live service and migration execution were not performed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-21T23:45:58.346020+00:00"
+}

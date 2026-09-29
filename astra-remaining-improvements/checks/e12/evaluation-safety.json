@@ -1,0 +1,12 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "test/evaluation.test.js",
+    "test/evaluation-safety.test.js",
+    "test/context-cache.test.js"
+  ],
+  "exitCode": 0,
+  "seconds": 7.55,
+  "expectedFailureBeforeFix": false
+}

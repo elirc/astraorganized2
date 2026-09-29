@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "id": "1c688787ace6",
+  "command": [
+    "npm.cmd",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1c688787ace6",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://verification:verification@127.0.0.1:1/ww39_build_only",
+    "NEXT_TELEMETRY_DISABLED": "1"
+  },
+  "startedAt": "2026-09-13T15:23:50.642434+00:00",
+  "status": "complete",
+  "log": "orchestration-build-20260913.log",
+  "pid": 22996,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T15:27:06.748675+00:00",
+  "elapsedSeconds": 196.11
+}

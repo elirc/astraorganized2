@@ -1,0 +1,17 @@
+{
+  "command": [
+    "dotnet",
+    "restore",
+    "FleetCommand.slnx",
+    "--use-lock-file"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ee8b0b1a6855",
+  "startedAt": "2026-09-12T17:18:55.341620+00:00",
+  "status": "complete",
+  "log": "restore-01.log",
+  "pid": 9024,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T17:20:41.652116+00:00",
+  "elapsedSeconds": 106.31
+}

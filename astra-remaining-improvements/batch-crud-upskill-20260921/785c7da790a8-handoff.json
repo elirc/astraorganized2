@@ -1,0 +1,29 @@
+{
+  "id": "785c7da790a8",
+  "project": "_Organized Desktop/03 Master Projects/master",
+  "finding": "Task POST and PATCH scoped task rows to the current user but accepted any projectId, so a user could create or attach a task to another user's project. Both routes now verify the destination project with the authenticated user before create/updateMany and return 404 without writing when it is not owned; PATCH checks supplied empty strings as well as nonempty ids.",
+  "changedFiles": [
+    "src/app/api/tasks/[id]/route.ts",
+    "src/app/api/tasks/route.ts",
+    "tests/task-project-isolation.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/tasks-[id]-route.ts.original.txt",
+    "astraupskill/snapshots/tasks-route.ts.original.txt"
+  ],
+  "tests": [
+    "python -X utf8 astra-remaining-improvements/run_project_check.py 785c7da790a8 crud-b02-runtime7 -- node --experimental-vm-modules --test tests/task-project-isolation.test.mjs",
+    "7 tests passed across PATCH and POST project boundaries, including foreign/empty/owned/omitted/missing-task/unauthenticated cases. Earlier failed harness attempts remain recorded in checks/785c7da790a8."
+  ],
+  "limitations": [
+    "Uses explicit Prisma/auth doubles rather than a live database.",
+    "Authentication wrapper and middleware are stubbed.",
+    "Ownership lookup and task update/create are separate operations, so concurrency behavior is not covered."
+  ],
+  "sourceMap": {
+    "route": "src/app/api/tasks/route.ts and src/app/api/tasks/[id]/route.ts",
+    "auth": "withUser supplies the authenticated user id",
+    "validation": "taskSchema parses POST fields; patchSchema parses PATCH fields, while tests use a parse-through double",
+    "authorization": "Both routes use prisma.project.findFirst with destination project id and userId before task create/updateMany",
+    "persistence": "POST creates with authenticated userId; PATCH updateMany remains user-scoped, followed by findUnique for the response"
+  }
+}

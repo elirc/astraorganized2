@@ -1,0 +1,26 @@
+{
+  "id": "39fabfbc58f5",
+  "project": "_Organized Desktop/03 Master Projects/master1",
+  "finding": "TasksService.update assigned a fresh completedAt every time a caller sent status DONE, so retrying an already completed task changed its historical completion time. The update now preserves before.completedAt for DONE-to-DONE updates, stamps a new Date only when entering DONE, clears it when reopening, and leaves it untouched when status is omitted.",
+  "changedFiles": [
+    "apps/api/src/modules/tasks/tasks.service.ts",
+    "tests/tasks-service-completion.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/tasks.service.ts.original.txt"
+  ],
+  "tests": [
+    "python -X utf8 astra-remaining-improvements/run_project_check.py 39fabfbc58f5 crud-b02-runtime1 -- node --experimental-vm-modules --test tests/tasks-service-completion.test.mjs",
+    "3 tests passed against the actual TasksService.update implementation with explicit Prisma and audit doubles."
+  ],
+  "limitations": [
+    "No live Prisma/database or Nest application boot was used.",
+    "The project-local loader removes standalone Nest decorator syntax solely to let Node parse the actual service body.",
+    "Concurrent updates and transaction boundaries are not covered."
+  ],
+  "sourceMap": {
+    "controller": "apps/api/src/modules/tasks/tasks.controller.ts routes PATCH :id to TasksService.update",
+    "service": "apps/api/src/modules/tasks/tasks.service.ts reads before, builds status/completedAt data, updates Prisma, then audits",
+    "state": "Task.status uses OPEN/IN_PROGRESS/BLOCKED/DONE/CANCELLED and completedAt is nullable in packages/database/prisma/schema.prisma",
+    "failureBoundary": "findUniqueOrThrow remains the missing-task boundary; audit logging remains after the update"
+  }
+}

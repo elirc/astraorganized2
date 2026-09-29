@@ -1,0 +1,390 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+  "id": "27a8a1400c49",
+  "summary": "Use Serializable transaction-scoped booking and waitlist repositories with bounded serialization retries, conditional expected-version lifecycle writes, atomic cancellation/promotion/audits, UTC candidate windows with requested duration and FIFO ordering, strict time guards and resource-local preview queries. Add transaction-aware regressions and source course.",
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/27a8a1400c49/resume14-results.json",
+    "expectedTests": 26,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 26,
+    "passedTests": 26,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+        "id": "27a8a1400c49",
+        "command": [
+          "npm.cmd",
+          "test",
+          "--",
+          "--maxWorkers=1",
+          "--testTimeout=30000"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:27:43.051272+00:00",
+        "status": "complete",
+        "log": "resume14-tests-03.log",
+        "pid": 21048,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:29:10.912638+00:00",
+        "elapsedSeconds": 87.86
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+        "id": "27a8a1400c49",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:13:19.826930+00:00",
+        "status": "complete",
+        "log": "resume14-types-01.log",
+        "pid": 27244,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:19:51.112189+00:00",
+        "elapsedSeconds": 391.17
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+        "id": "27a8a1400c49",
+        "command": [
+          "npm.cmd",
+          "run",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T18:30:37.109240+00:00",
+        "status": "complete",
+        "log": "resume14-lint-01.log",
+        "pid": 26444,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:41:10.136394+00:00",
+        "elapsedSeconds": 633.0
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+        "id": "27a8a1400c49",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build",
+          "--",
+          "--webpack"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://check:check@127.0.0.1:1/check",
+          "DEMO_SESSION_SECRET": "local-resume-verification-session-secret-20260919"
+        },
+        "startedAt": "2026-09-19T18:49:58.502715+00:00",
+        "status": "complete",
+        "log": "resume14-build-01.log",
+        "pid": 17064,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T19:13:23.957986+00:00",
+        "elapsedSeconds": 1405.44
+      },
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww9",
+        "id": "27a8a1400c49",
+        "command": [
+          "npm.cmd",
+          "run",
+          "prisma:generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\27a8a1400c49",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+        },
+        "startedAt": "2026-09-19T18:05:17.251683+00:00",
+        "status": "complete",
+        "log": "resume14-generate-01.log",
+        "pid": 17648,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T18:11:53.315437+00:00",
+        "elapsedSeconds": 395.9
+      }
+    ]
+  },
+  "courseWords": 3549,
+  "courseFiles": 9,
+  "courseLinksChecked": 97,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "5d3931b661c9c2d3a58b2a7469ecc853e3ebb81068ad7f612e4d56b3b9948473",
+      "after_sha256": "0524a26cef65b84d03b4326527100265ee8a8f00a181d3f7d4687d2b57165ad8"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "268b100985899808c662036e32ec2bffe91177072b8edeac0ac3a209a73cd7bd"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "8fb3eb73920fb787f2da30d576a52e3a0988bd18d5db51403b4f7a4da1aae8bd"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "b31a7ab4539d8241197d91f52a97587f8ecf96b078340e179b60f0706c1ad930"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "04c8da00e5f3c3dc7e27bb6a596d776c33d6a457866a4de6df46c4d5a962aaea"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "999993d8718acf140d5e951901274f299224a5899fa5eb993615748f86ac7464"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "bd09f7bac711e2a02378098e2eedb2fe4c156779841272d46fa4bbc3b5200b71"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.json",
+      "before_sha256": null,
+      "after_sha256": "e849ac50eaa337fc19c8030692e80a88eb7b665dacb8ce447928048d7e2d6033"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-03.log",
+      "before_sha256": null,
+      "after_sha256": "4fc964f379e96541815f9c58b3a6b48d23232f3a51dd04d3aead5eb60da773e3"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.json",
+      "before_sha256": null,
+      "after_sha256": "bd65f22af5bbe095cae9f61f538e6b8a9036d891221ce7f689c46a278b4ade92"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-01.log",
+      "before_sha256": null,
+      "after_sha256": "6e47f87d1af18513c7410afb44d5b7fc83c81b1c286fcda2d427366500d825bc"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "5d3931b661c9c2d3a58b2a7469ecc853e3ebb81068ad7f612e4d56b3b9948473"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c8c03aa41d1fe7d735ea7f7511eb25800a4de4494ea51685b9c922b370d027c6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__time__availability.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "988f6aa2a1e9bc0a2d1dd2e3d4212b5994edc3b58b4c23886c77c047b300451b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__time__timezone.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8547f78c2b02d1e435b4af34773ed992eefc2104091f627a596b5c10c5fdb467"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__bookingSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8eaa4b5c371fcc0c3d4c279ae5ee6140f446dc76dcc45f0d8f8cc1b43d1c872d"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__commonSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "68a522680fbf29b4f12e85ee0f66c71f523cea6c28c0c8cdab9b24d463b0a2ab"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__validation__waitlistSchemas.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "33610665ee80f47d25f59a2cefa5dca2237c38d35722e105b8b14ab357e3330a"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__bookingRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "2f83b0361b3ff228f74d6ab4ed0e4afacd43651612889026364645254ad8fdf9"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__waitlistRepository.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "4252a7355210fee58f15acd6b7723c019dfe7b8b4a15f128bc4fffce339d6161"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__availabilityService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "1bcd476ccb29bc2eba097a5661c65e962700b1a6e38997cc78cfb2f794b399eb"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__bookingService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "d6ad7debf166783ac57d63d1ebed300340928e5ee230f053ddaf0fa2a377f026"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__waitlistService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "cac5f2023df865347b4d00f40180ab30caa41fd552a52803956763b5396cc6bd"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__booking-state-transition.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8866a4af6d6c2b5a96e653b1eecd9aa727bfa78888606a7a7889709b281d6518"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__resource-route-permissions.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6f9d30d647b8fc11fed7f40226934551cbda9ccd3ffe6fed7fb714b761ac49e7"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "c8c03aa41d1fe7d735ea7f7511eb25800a4de4494ea51685b9c922b370d027c6",
+      "after_sha256": "b6cdcb32dc40b93446f5a48b161673b19639fbb8228a033195f0ca8f28f77901"
+    },
+    {
+      "file": "src/lib/db/scheduling-transaction.ts",
+      "before_sha256": null,
+      "after_sha256": "b45a4ba572def7fb2afa13a4d023692e355e03458bc8749141613176da8f7041"
+    },
+    {
+      "file": "src/lib/time/availability.ts",
+      "before_sha256": "988f6aa2a1e9bc0a2d1dd2e3d4212b5994edc3b58b4c23886c77c047b300451b",
+      "after_sha256": "9c07941121148a3aba1eda0061ff1de33774b15054f49f23297a683c5bb67c13"
+    },
+    {
+      "file": "src/lib/time/timezone.ts",
+      "before_sha256": "8547f78c2b02d1e435b4af34773ed992eefc2104091f627a596b5c10c5fdb467",
+      "after_sha256": "0362dead4de1d43a9143d3f4ac44d9c534ef4867d6c8a97de0becf63c8a1a579"
+    },
+    {
+      "file": "src/lib/validation/bookingSchemas.ts",
+      "before_sha256": "8eaa4b5c371fcc0c3d4c279ae5ee6140f446dc76dcc45f0d8f8cc1b43d1c872d",
+      "after_sha256": "965005185946c2d9d9b88bd2e9dfc6965f6ddf7dbc690698e691102bc4fe4f06"
+    },
+    {
+      "file": "src/lib/validation/commonSchemas.ts",
+      "before_sha256": "68a522680fbf29b4f12e85ee0f66c71f523cea6c28c0c8cdab9b24d463b0a2ab",
+      "after_sha256": "9771e6b155fdd8ade8d9aaf37e1f4cd76e39e1fe47a5c0cc7aef5ccec7c17c85"
+    },
+    {
+      "file": "src/lib/validation/waitlistSchemas.ts",
+      "before_sha256": "33610665ee80f47d25f59a2cefa5dca2237c38d35722e105b8b14ab357e3330a",
+      "after_sha256": "1f3915ca69eddf1f22d5217cf90fbd029752950561bb5bd3fee5f1d324d79ddd"
+    },
+    {
+      "file": "src/repositories/bookingRepository.ts",
+      "before_sha256": "2f83b0361b3ff228f74d6ab4ed0e4afacd43651612889026364645254ad8fdf9",
+      "after_sha256": "7c0fbf429830963a86bf62bf6afde872ee95802a19fcd37cb179b0130fafebb9"
+    },
+    {
+      "file": "src/repositories/waitlistRepository.ts",
+      "before_sha256": "4252a7355210fee58f15acd6b7723c019dfe7b8b4a15f128bc4fffce339d6161",
+      "after_sha256": "e0696bf522d79c571e2ca324746943346e42402889d9e1fb71410a31c19b1549"
+    },
+    {
+      "file": "src/services/availabilityService.ts",
+      "before_sha256": "1bcd476ccb29bc2eba097a5661c65e962700b1a6e38997cc78cfb2f794b399eb",
+      "after_sha256": "eb449557a39155f59a013c2f1bd67d79e543654a2769d6548181a7a2e7bc1426"
+    },
+    {
+      "file": "src/services/bookingService.ts",
+      "before_sha256": "d6ad7debf166783ac57d63d1ebed300340928e5ee230f053ddaf0fa2a377f026",
+      "after_sha256": "bf22eeebc5530eff9241209009bf721d1ec1cfda402e6858023c9f420ce4050e"
+    },
+    {
+      "file": "src/services/waitlistService.ts",
+      "before_sha256": "cac5f2023df865347b4d00f40180ab30caa41fd552a52803956763b5396cc6bd",
+      "after_sha256": "80358a338817356dc2f6a9a288dc47d9303873ef4ff5a2c35cd16bfb808a6df1"
+    },
+    {
+      "file": "tests/booking-state-transition.test.ts",
+      "before_sha256": "8866a4af6d6c2b5a96e653b1eecd9aa727bfa78888606a7a7889709b281d6518",
+      "after_sha256": "56da5d545827d04f92be74ea6e0f3f5795c3b7dd01faa9c35af9493e63d00f8b"
+    },
+    {
+      "file": "tests/repository-transactions.test.ts",
+      "before_sha256": null,
+      "after_sha256": "68b5194f64c53803fa9ac39805d84abccdd115443a187337b00043515d15e4ae"
+    },
+    {
+      "file": "tests/resource-route-permissions.test.ts",
+      "before_sha256": "6f9d30d647b8fc11fed7f40226934551cbda9ccd3ffe6fed7fb714b761ac49e7",
+      "after_sha256": "c547a29a4a972f8142df2fd6eb32a462007beac323f3db4a0a3abc4c51adc8d2"
+    },
+    {
+      "file": "tests/scheduling-workflows.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8906ad06b7ba6af5b5400d389ded904a7cad9b2131feee464803a8068501e3c7"
+    },
+    {
+      "file": "tests/time-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "1c349f603d841b0b369214ae119c7e7c7f9e3905ed4196d92451f70e26114c7e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "5f8e6de72f6f4bc0bc12d2ab9c502302cc9f3e1007b8c6ab7e09a2ab8d2568c1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "f30e21588452f58448768c86fa172a3fa8daf80ea25533eedace39081c5316e8"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "0e85d43c99f6b5ac8d82027669ef7f191d3cdbaf347a8a0dd8905efe08d8ea85"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c4eca5a323f45e22d84983ebc12e989eb55312de96d59aaeb2cfffe37153b6c9"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "ac634cfc70bcc9fcfb46f176e76f2896aeb60d6264e352a61db1e7bfed5ea168"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "cb1de531a9f57485f68c392fded5cf0868742fd5141875457961b9ad7880daac"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7008ee389d9dcca683b683fb87413ef2f3f6b107c3580c152c684242e9628ae0"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "12c69c02c9aebdf846dbb4b511a315147738abf07cd1abc0d110defa0892dfe5"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c5d737250613ba1d72d8df9b59837e4b7fa5aa81cf3bb66ce1983e656bafc461"
+    }
+  ],
+  "limits": [
+    "Tests use transaction-aware mocks and actual query construction; no live PostgreSQL concurrency claim.",
+    "Retryable workflow contains database work only; future external effects need idempotency/outbox.",
+    "Waitlist scans active entries across local dates; large datasets may need indexed UTC search windows. Offset-free ambiguous times choose the earlier instant."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T19:18:40.354427+00:00"
+}

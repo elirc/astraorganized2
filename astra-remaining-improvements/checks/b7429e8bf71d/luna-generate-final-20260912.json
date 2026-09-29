@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+  "id": "b7429e8bf71d",
+  "command": [
+    "node",
+    "node_modules\\prisma\\build\\index.js",
+    "generate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\b7429e8bf71d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:21:50.966999+00:00",
+  "status": "complete",
+  "log": "luna-generate-final-20260912.log",
+  "pid": 35528,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T00:22:45.548527+00:00",
+  "elapsedSeconds": 54.58
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\109a97addd48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T19:58:48.055571+00:00",
+  "status": "complete",
+  "log": "build-01.log",
+  "pid": 31584,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T20:00:59.355964+00:00",
+  "elapsedSeconds": 131.3
+}

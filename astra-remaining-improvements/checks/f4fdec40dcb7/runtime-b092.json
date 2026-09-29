@@ -1,0 +1,18 @@
+{
+  "project": "_Organized Desktop/07 Anti Projects/antitestbuild",
+  "id": "f4fdec40dcb7",
+  "command": [
+    "npm.cmd",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f4fdec40dcb7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:26:26.122092+00:00",
+  "status": "complete",
+  "log": "runtime-b092.log",
+  "pid": 31748,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:28:12.527873+00:00",
+  "elapsedSeconds": 106.4
+}

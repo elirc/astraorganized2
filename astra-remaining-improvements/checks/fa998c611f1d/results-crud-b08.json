@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "executedTests": 5,
+  "checks": [
+    {
+      "project": "_Organized Desktop/06 AI And Learning/claudeailab",
+      "id": "fa998c611f1d",
+      "command": [
+        "node",
+        "--experimental-vm-modules",
+        "--test",
+        "tests/runtime-experiment-route.test.mjs"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\fa998c611f1d",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T04:32:55.069606+00:00",
+      "status": "complete",
+      "log": "crud-b08-astra-runtime.log",
+      "pid": 30684,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T04:33:06.035754+00:00",
+      "elapsedSeconds": 10.93
+    }
+  ],
+  "limits": [
+    "VM route harness uses explicit Next/Drizzle/database doubles; no live server or SQLite.",
+    "No concurrency or full middleware claim.",
+    "DELETE uses a pre-read and does not inspect affected-row count; concurrent disappearance after lookup remains outside this fix."
+  ]
+}

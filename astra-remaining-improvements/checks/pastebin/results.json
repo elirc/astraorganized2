@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "total": 76,
+  "expected": 76,
+  "suites": [
+    {
+      "suite": "client",
+      "total": 15,
+      "passed": true,
+      "results": "client-tests-01.log"
+    },
+    {
+      "suite": "backend-02",
+      "total": 30,
+      "passed": true,
+      "results": "backend-02/results.json"
+    },
+    {
+      "suite": "http-01",
+      "total": 17,
+      "passed": true,
+      "results": "http-01/results.json"
+    },
+    {
+      "suite": "browser-04",
+      "total": 14,
+      "passed": true,
+      "results": "browser-04/results.json"
+    }
+  ],
+  "executions": {
+    "client-tests-01": {
+      "command": [
+        "node",
+        "--test",
+        "--test-concurrency=1",
+        "tests/client.test.js"
+      ],
+      "exitCode": 0,
+      "seconds": 7.8
+    },
+    "backend-build-04": {
+      "command": [
+        "dotnet",
+        "build",
+        "verification/BackendChecks/BackendChecks.csproj",
+        "--no-restore",
+        "--disable-build-servers",
+        "-m:1",
+        "-p:UseSharedCompilation=false"
+      ],
+      "exitCode": 0,
+      "seconds": 178.19
+    },
+    "backend-tests-02": {
+      "command": [
+        "dotnet",
+        "verification/BackendChecks/bin/Debug/net10.0/BackendChecks.dll",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\pastebin\\backend-02"
+      ],
+      "exitCode": 0,
+      "seconds": 25.48
+    },
+    "http-01": {
+      "command": [
+        "python",
+        "verification/verify_http.py"
+      ],
+      "exitCode": 0,
+      "seconds": 74.81
+    },
+    "frontend-build-03": {
+      "command": [
+        "node",
+        "--max-old-space-size=512",
+        "node_modules/vite/bin/vite.js",
+        "build"
+      ],
+      "exitCode": 0,
+      "seconds": 37.63
+    },
+    "browser-04": {
+      "command": [
+        "python",
+        "verification/verify_browser.py"
+      ],
+      "exitCode": 0,
+      "seconds": 274.32
+    },
+    "frontend-install-01": {
+      "command": [
+        "npm.cmd",
+        "ci",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+      ],
+      "exitCode": 0,
+      "seconds": 177.2
+    },
+    "frontend-lock-01": {
+      "command": [
+        "npm.cmd",
+        "install",
+        "--package-lock-only",
+        "--ignore-scripts",
+        "--no-audit",
+        "--no-fund",
+        "--cache",
+        "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+      ],
+      "exitCode": 0,
+      "seconds": 438.63
+    }
+  },
+  "reviewedScreenshots": [
+    "01-empty-workspace.png",
+    "02-created-paste.png",
+    "03-rejected-edit.png",
+    "04-version-conflict.png",
+    "05-retained-creation.png",
+    "06-search-pagination.png",
+    "07-form-1440.png",
+    "07-form-390.png",
+    "07-form-800.png"
+  ],
+  "visualReview": "Nine final browser-04 images inspected: readable notices, retained drafts, pagination and 1440/800/390 pixel forms; no clipping or action overlap observed.",
+  "verificationDate": "2026-09-09",
+  "priorRuns": "Earlier failures and corrections are retained in logs and explained in astraupskill/VERIFICATION.md; repeated checks are not counted again."
+}

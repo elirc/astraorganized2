@@ -1,0 +1,130 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D2",
+  "id": "3c142f8c1521",
+  "summary": [
+    "Snapshot newly accepted project rules in review metadata instead of stale pre-update rules.",
+    "Return the same finalized metadata written to the review, including its template and effective rules."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3c142f8c1521/results-crud-b03.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/D2",
+        "id": "3c142f8c1521",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-review-metadata.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\3c142f8c1521",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T01:34:32.232323+00:00",
+        "status": "complete",
+        "log": "crud-b03-astra-runtime.log",
+        "pid": 29748,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T01:34:39.680991+00:00",
+        "elapsedSeconds": 7.45
+      }
+    ],
+    "limits": [
+      "Tests execute the actual POST route using explicit ORM, Zod parser, ingestion and NextResponse adapter doubles.",
+      "No PostgreSQL, GitHub ingestion, native Next.js or real Zod validation was executed.",
+      "The existing review creation and rules writes are separate operations; this bounded metadata correction does not add atomic transactions or prevent an incomplete pending review on a later failure."
+    ]
+  },
+  "courseWords": 2601,
+  "courseFiles": 9,
+  "courseLinksChecked": 8,
+  "files": [
+    {
+      "file": "src/app/api/reviews/route.ts",
+      "before_sha256": "7442021414d0f7e75d6155e67699b671ae0db33a53134cd37e768c1aa68316ba",
+      "after_sha256": "bcd5a90e57e89dbdb94301e16c893011ab208b1c9c8725dd5a3861a438f4112a"
+    },
+    {
+      "file": "astraupskill/snapshots/reviews-route.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "7442021414d0f7e75d6155e67699b671ae0db33a53134cd37e768c1aa68316ba"
+    },
+    {
+      "file": "tests/runtime-review-metadata.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "2d66a53c740097428d7aa715025feb85d3a4856aaa97792b87485087df840fff"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b03-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "449198480e7ec29bd83d8d3b687ba4f58e1dbc81abe7a2754be1368bd938b121"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "e5dafeb9bfc589707e8828ccd4c3d585df706cc84f615f43583f5f4a116097f4"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "6974dc0f65478e87c2665ff410909188d38316536fdbfae4f3e8276fd88d2af1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "daded9ede8a128dec65c8d72f0699dc7ea3a681a5fdb03175b83ac4eb8b1ae63"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d2f4fc5a01196b56f2cba06b864b38ac7e4bd21f45f11ec8d11e6732aecf4d92"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "aadf162389a3a1f66ac4c5918dec5b87c71f1446c3ce12a5ac3ee83dee245379"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "774ea2e83b9232c1d2a2d73229c1dbe5916e9cd12d4381df6b6543309516264b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "2da431139a11b7331836c72f07aa9eecd5ca72eb4775aea0da1deb072de47b06"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b37b9a68d34c3396b0e274a1ae6d04d88d6083de125608a59eaca6d3c69040b9"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "bcbc33191cfddb6648045601a43582f735306ec64e59c9f0cb0af4764ac70353"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8ddb24677754c9a403921e5920238ff68392f4e16f8523b65f5739c977187231"
+    }
+  ],
+  "limits": [
+    "Tests execute the actual POST route using explicit ORM, Zod parser, ingestion and NextResponse adapter doubles.",
+    "No PostgreSQL, GitHub ingestion, native Next.js or real Zod validation was executed.",
+    "The existing review creation and rules writes are separate operations; this bounded metadata correction does not add atomic transactions or prevent an incomplete pending review on a later failure."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T01:59:21.282869+00:00"
+}

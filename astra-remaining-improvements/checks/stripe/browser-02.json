@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python",
+    "tests/browser_smoke.py",
+    "--output",
+    "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/stripe/browser-02"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 62.63
+}

@@ -1,0 +1,175 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww5",
+  "id": "41315da7b7f9",
+  "summary": [
+    "Prevalidate compensation approval permission, tenant/link identity, submitted state, and assigned approver before writes.",
+    "Serialize approval, compensation, notification, and audit writes with snapshot rollback and expected-state guards.",
+    "Whitelist lifecycle updates, validate compensation inputs, repair the API handler comment syntax, and add regression coverage plus source-grounded learning guides."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/41315da7b7f9/ww5-tests-final-05.json",
+    "expectedTests": 11
+  },
+  "testResults": {
+    "project": "_Organized Desktop/05 Numbered Experiments/ww5",
+    "id": "41315da7b7f9",
+    "command": [
+      "npm.cmd",
+      "test",
+      "--",
+      "--run"
+    ],
+    "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\41315da7b7f9",
+    "environmentOverrides": {},
+    "startedAt": "2026-09-13T14:13:17.758329+00:00",
+    "status": "complete",
+    "log": "ww5-tests-final-05.log",
+    "pid": 24508,
+    "exitCode": 0,
+    "passed": true,
+    "finishedAt": "2026-09-13T14:13:32.490737+00:00",
+    "elapsedSeconds": 14.73
+  },
+  "courseWords": 4198,
+  "courseFiles": 9,
+  "courseLinksChecked": 11,
+  "files": [
+    {
+      "file": "src/lib/db/mockStore.ts",
+      "before_sha256": "0164e404476d289f39123b42332a74edf0fab72436c83fc635ab659131126bfd",
+      "after_sha256": "7293d3fd2d35ca280e7a657027932d5b3ecfc3acc1388f026e3a17c6c7a0b101"
+    },
+    {
+      "file": "src/repositories/approvalRepository.ts",
+      "before_sha256": "1c9cb26f9ba2a8565f0491e96ec64e216e9f922a6f57f0cecfede43ce807f5a6",
+      "after_sha256": "2e5d9bbcfd0747f381ab0112ab2066337846c50e6c39c750f522d734d94483b9"
+    },
+    {
+      "file": "src/repositories/compensationRepository.ts",
+      "before_sha256": "44ec592d6d6d752136c2a2f8f66fb352e658f972e522651e72e38db70d7bf1f4",
+      "after_sha256": "cbbf019075e5b87b4e418ae4b568d8c1df36b1dc763c2cd4e0ab5b9a09d3a030"
+    },
+    {
+      "file": "src/services/approvalService.ts",
+      "before_sha256": "e9960313379405b694fb51ceabede5c2ce9aef459796b6a747040aec30900af4",
+      "after_sha256": "12fad99908410a1bfdec403bada638de3e010dd5bda0078f7b5949b26d92f2b1"
+    },
+    {
+      "file": "src/services/compensationService.ts",
+      "before_sha256": "37b847bcd8bc97ff40e8e322ecc2e5b1bef5fb67c19591b689ea11d4aecd2193",
+      "after_sha256": "26fa4b1011abb7f1226aa9c4146a765b1e5eb2eaf035886b6e3e15da12dcae26"
+    },
+    {
+      "file": "src/lib/api/withApiHandler.ts",
+      "before_sha256": "0523aa90ff5ddac4a08f11e0732cda8de1e90e95a5bf2c8f57200df0c7e62b57",
+      "after_sha256": "e785d4a5e082910e6ce1b8daa26483dbfa75a103b0a5cb0922dc8e46a6702a57"
+    },
+    {
+      "file": "src/tests/state-transition.test.ts",
+      "before_sha256": "4193a3444a369d64fa0e1c10665ab438c87a2a7242eb58cc37869bbab1b7ea47",
+      "after_sha256": "dd556366e92f001a35dd385518399a583a6396776bb5d6840f319a8c66d3fd60"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "e34c808613e7167ebfa7f24dc24cad9fbae3c7f1857e070938b2897effd38611",
+      "after_sha256": "b26b56458f62f2dc55e8556c09b725048df9d36a7fb3100cd1065f80e12f24e6"
+    },
+    {
+      "file": "next-env.d.ts",
+      "before_sha256": "36b0816264c3303d92f5b660d6d30911357097b36fc87a67d9aead43e6960952",
+      "after_sha256": "85ae5aee75f011967cf2d25cbc342f62d69314e9d925f7f4aa3456fc2cffcca6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__db__mockStore.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "0164e404476d289f39123b42332a74edf0fab72436c83fc635ab659131126bfd"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__approvalRepository.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "1c9cb26f9ba2a8565f0491e96ec64e216e9f922a6f57f0cecfede43ce807f5a6"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__compensationRepository.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "44ec592d6d6d752136c2a2f8f66fb352e658f972e522651e72e38db70d7bf1f4"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__approvalService.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "e9960313379405b694fb51ceabede5c2ce9aef459796b6a747040aec30900af4"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__compensationService.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "37b847bcd8bc97ff40e8e322ecc2e5b1bef5fb67c19591b689ea11d4aecd2193"
+    },
+    {
+      "file": "astraupskill/snapshots/src__lib__api__withApiHandler.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "0523aa90ff5ddac4a08f11e0732cda8de1e90e95a5bf2c8f57200df0c7e62b57"
+    },
+    {
+      "file": "astraupskill/snapshots/package.json.txt",
+      "before_sha256": null,
+      "after_sha256": "e34c808613e7167ebfa7f24dc24cad9fbae3c7f1857e070938b2897effd38611"
+    },
+    {
+      "file": "astraupskill/snapshots/next-env.d.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "36b0816264c3303d92f5b660d6d30911357097b36fc87a67d9aead43e6960952"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "7962fe2d3ca10a22ad057694c6116d2733605b2ed367d04d07cd9f67dad1af8c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "24171c07dd46b0bb642c411a94c59978f22068a754fdfc104066c870228d062f"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "8b9574a91dd2d4cd4c0dd1a48105142c586061e4d53967c12efabd75e5ac4a89"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "cd8b95ab6fa1fa79ff81852532bf3abc734b678f9f3f003f2ca9690518fd010e"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "43a32949f738896db929f5be543699bb8cab3545ab4b51ca6e06042369913403"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "a344a24568a24676cafe4161dc5930071dfb544eee8d036728f4a9708a3b68a1"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "34222d88596b491388635ddad989afc7b7b6918989a23f1e4dc068d671e36ac5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "e76886e7b3db6bdf6ea25190b7cce32ff3bd51f2c73c466fc96d23c4223086e9"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8462224438b56ddb20655595c58ecf14924dac154bb0c29a0594c9f752aca295"
+    }
+  ],
+  "limits": [
+    "Mock-store serialization and rollback are process-local and do not prove database crash durability or cross-process locking.",
+    "Focused tests cover service and repository behavior; browser, external notification delivery, and production identity-provider integration remain outside this increment."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-13T14:26:41.533837+00:00"
+}

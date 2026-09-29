@@ -1,0 +1,162 @@
+[
+  {
+    "file": "astrafinalplan\\implementation\\stage\\01\\app.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\01\\test\\browser.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\01\\test\\undo.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\02\\app.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\02\\test\\browser.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\02\\test\\duplicates.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\03\\app.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\03\\test\\browser.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\03\\test\\timer.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\04\\app.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\04\\test\\browser.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\04\\test\\expense-edit.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\05\\test\\shopping-state.test.ts",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\05\\src\\store\\shoppingState.ts",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\06\\src\\jobBackup.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\06\\test\\jobBackup.test.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\07\\server\\test\\database.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\07\\server\\test\\tasks.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\07\\server\\src\\services\\taskService.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\08\\server\\test\\database.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\08\\server\\test\\import.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\08\\server\\src\\models\\contactModel.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\08\\server\\src\\services\\contactService.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\08\\server\\src\\utils\\csv.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\09\\server\\test\\database.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\09\\server\\test\\reports.test.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\09\\server\\src\\models\\expenseModel.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\09\\server\\src\\services\\expenseService.js",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\10\\server\\test\\database.cjs",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\10\\server\\test\\ownership.test.ts",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\10\\server\\src\\models\\recipeModel.ts",
+    "exit_code": 0,
+    "error": ""
+  },
+  {
+    "file": "astrafinalplan\\implementation\\stage\\10\\server\\src\\services\\recipeService.ts",
+    "exit_code": 0,
+    "error": ""
+  }
+]

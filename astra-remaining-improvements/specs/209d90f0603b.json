@@ -1,0 +1,31 @@
+{
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/astra-meetings-tests-r3.json",
+    "astraupskill/evidence/astra-meetings-tests-r3.log",
+    "astraupskill/evidence/regression.trx",
+    "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Application__Meetings__ChangeMeetingMainAttributes__ChangeMeetingMainAttributesCommandHandler.cs.original.txt",
+    "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Application__Meetings__CreateMeeting__CreateMeetingCommandHandler.cs.original.txt",
+    "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Domain__Meetings__MeetingTerm.cs.original.txt",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Application/Meetings/ChangeMeetingMainAttributes/ChangeMeetingMainAttributesCommandHandler.cs",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Application/Meetings/CreateMeeting/CreateMeetingCommandHandler.cs",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Domain/Meetings/MeetingTerm.cs",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Domain/Meetings/Rules/MeetingTermMustEndAfterStartRule.cs",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Tests/UnitTests/Meetings/MeetingTermCommandHandlerTests.cs",
+    "modular-monolith-with-ddd/src/Modules/Meetings/Tests/UnitTests/Meetings/MeetingTermTests.cs"
+  ],
+  "summary": [
+    "Preserved requested meeting end dates in create and change handlers.",
+    "Rejected zero or reversed meeting intervals through a shared domain business rule.",
+    "Added actual handler and value-object regressions; passed 97 unit tests and added nine source-based guide chapters."
+  ],
+  "limits": [
+    "Repository substitutes establish handler and aggregate behavior, not SQL transaction rollback or HTTP/browser behavior."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/209d90f0603b/sol15-results.json",
+    "expectedTests": 97,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

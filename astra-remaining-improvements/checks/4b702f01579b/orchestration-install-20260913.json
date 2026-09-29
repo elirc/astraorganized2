@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww17",
+  "id": "4b702f01579b",
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4b702f01579b",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:02:50.438551+00:00",
+  "status": "complete",
+  "log": "orchestration-install-20260913.log",
+  "pid": 19452,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-13T15:13:20.410506+00:00",
+  "elapsedSeconds": 629.97
+}

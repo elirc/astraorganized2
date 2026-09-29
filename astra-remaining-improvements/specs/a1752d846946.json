@@ -1,0 +1,44 @@
+{
+  "changedFiles": [
+    ".gitignore",
+    "README.md",
+    "astraupskill/images/editor-1440.png",
+    "astraupskill/images/editor-390.png",
+    "astraupskill/images/editor-800.png",
+    "astraupskill/images/storefront-1440.png",
+    "astraupskill/images/storefront-390.png",
+    "astraupskill/images/storefront-800.png",
+    "docs/HISTORICAL-README.md",
+    "package-lock.json",
+    "package.json",
+    "scripts/test.mjs",
+    "scripts/verify_browser.py",
+    "src/App.tsx",
+    "src/initial.ts",
+    "src/model.ts",
+    "src/repository.ts",
+    "src/style.css",
+    "test/model.cjs",
+    "tsconfig.json",
+    "tsconfig.test.json"
+  ],
+  "summary": [
+    "Replaced inactive catalog controls with versioned product and discount CRUD, archive/restore, confirmed history-aware deletion, literal search and retained editor drafts.",
+    "Added bounded validated local persistence, Web Locks and raw-baseline conflict detection, explicit reviewed backup replacement and corrupt-byte recovery without touching legacy cart data.",
+    "Implemented exact-cent quantities and discounts, immutable simulated receipt snapshots, request-key replay after lost acknowledgement, cancellation and paginated searchable receipt history.",
+    "Preserved the original visual palette and fictional collection, removed unsupported payment/tax/fulfillment claims, fixed text navigation at narrow widths, and added nine detailed learning documents with six reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/buildgum/results.json",
+    "expectedTests": 59,
+    "environment": "Node 22.16.0, TypeScript 6.0.3, React 19.2.6, Vite 8.0.14; Chromium 148 in isolated profiles",
+    "command": "npm.cmd test; npm.cmd run build; python scripts/verify_browser.py"
+  },
+  "limits": [
+    "Browser-only local simulation without accounts, server authorization, SQL, payments, recurring billing, taxes, stock, refunds or delivery.",
+    "Cooperative Web Locks and localStorage do not protect against other scripts or profile access; no full accessibility, all-browser, power-loss or deployment certification.",
+    "Whole JSON workspace is bounded to 4 MiB, 1000 products, 200 codes and 2000 receipts; all writes use a conservative whole-workspace baseline.",
+    "Cart, editor and retry drafts remain in tab memory; exports are for manual review, not automatic draft import. Abandoning an uncertain request and using a new key can create another receipt. Backup replacement can remove current records absent from the backup."
+  ]
+}

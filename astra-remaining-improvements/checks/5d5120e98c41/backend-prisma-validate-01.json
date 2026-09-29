@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+  "id": "5d5120e98c41",
+  "command": [
+    "npm.cmd",
+    "exec",
+    "prisma",
+    "validate"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5d5120e98c41\\backend",
+  "environmentOverrides": {
+    "DATABASE_URL": "postgresql://postgres:postgres@localhost:5432/lightweight_crm_test?schema=public"
+  },
+  "startedAt": "2026-09-12T20:24:09.602009+00:00",
+  "status": "complete",
+  "log": "backend-prisma-validate-01.log",
+  "pid": 6132,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:24:20.338868+00:00",
+  "elapsedSeconds": 10.73
+}

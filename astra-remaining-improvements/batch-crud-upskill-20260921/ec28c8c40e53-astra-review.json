@@ -1,0 +1,30 @@
+{
+  "id": "ec28c8c40e53",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:57:55.529058+00:00",
+  "sourceReview": "Read actual transition module, AppError and complete worker service. Pure lab leaves production unchanged; worker conditional claim and separate completion/failure transactions inspected only.",
+  "teachingReview": "Read all nine chapters, corrected commit timing and atomicity overclaims; added crash-after-claim limitation and distinction between helper refusal and persisted worker state.",
+  "testReview": "Four passing actual state-policy cases, with real AppError and no behavior doubles. All legal edges, terminal refusals, skipped completion and descriptive409 error verified; no worker/DB execution.",
+  "specSHA256": "ac199ab0c4f5f5e9c7aa3e2105f3909dd94364b3b30dfdc07999d1586c9d94f7",
+  "fileHashes": {
+    "tests/runtime-aggregation-state-lab.test.mjs": "155488e2c2001d79b958f4f8d51c37f5be3e5a57a70e74c1e3f6dabb081bbc03",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/evidence/crud-b07-astra-runtime.log": "425337669eaf2fc709eab217a82bd849f3b5b6f01cb49446ab2e422523584300",
+    "astraupskill/evidence/results.json": "5d9f40d2dfc687d2fa60d433a8bfe5f0827f2e546eb09703c73ce1af89fe3b9b",
+    "astraupskill/README.md": "f664399ab85be8f1fcc5a73dc55470a6a64e8a952c7550cdc87c04fdc66fcfb3",
+    "astraupskill/01-CODEBASE-MAP.md": "63d01c22d0482f935219e3f9771a68c528538d63301c14ec5e56abcd24f778da",
+    "astraupskill/02-CONCEPTS.md": "bf8ac39bc7d639efc6ac00b9e2c219b4f7b1d0d2ff1609501e8da10cc2c40789",
+    "astraupskill/03-WORKED-CHANGE.md": "ce6c02a6e8e93241d8ed8fa4bba20e8511656beff6efb5127e4f6207bfecc1ce",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "6f878e324a96659e1f1d51941751b959bb04df8b08f47cececd46b766f866669",
+    "astraupskill/05-PRACTICE.md": "c64e4db328bc5e8e1179b110ca63c4cb3bf92138b9f59cb57d2f13f18e43087a",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "5b0dfcfab817dce20156734f47bc6312bf8abf8b6fd017bafab661264e68373b",
+    "astraupskill/07-TRACE-LAB.md": "511a59b6c8b7f2c9be9e17b9acc3970c7e63c053bfb9255d4ecf54bcf3797da7",
+    "astraupskill/VERIFICATION.md": "a324aabb82ff4e9cb6228d51a592837fb6b65afa7bf72625473c1a5a98cc2ff6"
+  },
+  "evidenceHashes": {
+    "checks/ec28c8c40e53/astra-crud-b07-ww47.log": "287158352bb22f8cd0a0dcd50417bf3ab85508033ba272ffa942af08a55e7c6a",
+    "checks/ec28c8c40e53/crud-b07-astra-runtime.json": "4aea71656bc2a8118f307fa0899eba5ad93d080ccb412f880101024cee7cc66f",
+    "checks/ec28c8c40e53/crud-b07-astra-runtime.log": "425337669eaf2fc709eab217a82bd849f3b5b6f01cb49446ab2e422523584300",
+    "checks/ec28c8c40e53/results-crud-b07.json": "5d9f40d2dfc687d2fa60d433a8bfe5f0827f2e546eb09703c73ce1af89fe3b9b"
+  }
+}

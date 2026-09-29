@@ -1,0 +1,24 @@
+{
+  "id": "671a350f0386",
+  "changedFiles": [
+    "src/services/workflow-definition-service.ts",
+    "tests/runtime-workflow-same-status.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src-services-workflow-definition-service.ts.before",
+    "astraupskill/evidence/crud-b07-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "resultsFile": "checks/671a350f0386/results-crud-b07.json",
+    "format": "json"
+  },
+  "limits": [
+    "Six cases execute actual service, ownership helper, status/readiness policy and AppError with repository/schedule and generated-enum adapters. No HTTP route, live Prisma, cron parsing or concurrency run.",
+    "Equal-status calls retain ownership checks but skip activation-readiness and schedule recalculation. Coarse route permission enforcement is outside this lab. Status update and audit have no enclosing service transaction."
+  ],
+  "summary": [
+    "Made equal workflow status requests idempotent by returning after authorization and transition validation without persistence or change audit.",
+    "Added actual workflow service runtime coverage for no-op, valid transition, and invalid transition behavior."
+  ],
+  "project": "ww7"
+}

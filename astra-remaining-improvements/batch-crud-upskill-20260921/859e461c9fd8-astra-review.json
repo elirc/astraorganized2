@@ -1,0 +1,31 @@
+{
+  "id": "859e461c9fd8",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:45:47.150189+00:00",
+  "sourceReview": "Read actual permission matrix and hasPermission. Exact strings, wildcard and unknown-role fallback preserved; source unchanged.",
+  "teachingReview": "Replaced all nine unrelated onboarding template chapters with real helpdesk role matrix, capability versus row scope, separate exercises/answers, wildcard and fail-closed trace.",
+  "testReview": "Five actual-policy cases pass: owner wildcard, requester denial, unknown role, own-read versus broad-read and agent update/delete, exact spelling and unknown owner permission. Enum adapter only; no row isolation/authentication claim.",
+  "specSHA256": "42ccad8a653386e5e42528a3b9ed2bc8fbfe02880913ece31a7678bf05ca3108",
+  "fileHashes": {
+    "tests/permissions-errors.test.mjs": "5299ca78a66388b4e0d53137309f0a1838fbb2030015130b0992bb379bd11560",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/permissions.ts.original.txt": "3e2718c97efc177cffc3318b9b1911415c7e30ebe757ad304fafbec0db411122",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "c424129b3d59f95c948ba51253f6930156e1e72aa66b5c8b0424593d27238330",
+    "astraupskill/evidence/results.json": "6d9c53aae6136ebe984ce12eab0e79191927cebb8a58df86cee9eafc118f9ee0",
+    "astraupskill/README.md": "d33714358c778a7abee19c80ddf4d04184587c86e8091109c7f835e79ceb29b1",
+    "astraupskill/01-CODEBASE-MAP.md": "190bd979ca19f9be0ddd77c6f37325e3869879f0efe678d4d758f570232689d4",
+    "astraupskill/02-CONCEPTS.md": "1c8cd4ece9cc789c629cb353c1b4dcc10264bcb7f55a8258866f4537e031332d",
+    "astraupskill/03-WORKED-CHANGE.md": "06812a90b5b91b37a9d30c5d1ded67c06f674aa325b2ecafa4a7755fe3b8a87c",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "385c4b097a27be82d6c7c97adbc2fcd940c292f2a5d4990b1007e0957749b01f",
+    "astraupskill/05-PRACTICE.md": "522c70aca33f78d26d93871b59fb0fdeb34e227a171fe083b85d4917988cab74",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "57e7f8b5b4f8ece117596adee66fac2f60c4f4a35b1ab224b0b03e86f3089965",
+    "astraupskill/07-TRACE-LAB.md": "598ebbd26c0bbb16b757bf4507b72c4d353dc82617a9744ef7c5ae0c32330d40",
+    "astraupskill/VERIFICATION.md": "75e2d74ab10a3a4c279dda53516e2005cb9342829b50da41161351a525a63bf5"
+  },
+  "evidenceHashes": {
+    "checks/859e461c9fd8/crud-b08-astra-runtime.json": "94e5535c33f5f80d0b8841a5cfb576179ef10dc81cc8377f713e71ee7b08b2a6",
+    "checks/859e461c9fd8/crud-b08-astra-runtime.log": "c424129b3d59f95c948ba51253f6930156e1e72aa66b5c8b0424593d27238330",
+    "checks/859e461c9fd8/runtime-b08.json": "6d9c53aae6136ebe984ce12eab0e79191927cebb8a58df86cee9eafc118f9ee0",
+    "checks/859e461c9fd8/runtime-b08.log": "dc23308701d4e645cadebf2e11ab91b520a8eda957b824c8d52c51bf18436dbc"
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "summary": [
+    "Preserves omitted item metadata during PATCH updates, accepts reorder point zero, rejects unsafe direct service inputs, and keeps stock changes on the dedicated adjustment command.",
+    "Adds a repository-owned FIFO mutation boundary with cloned-map rollback, used by item, stock, hold, release, and alert sequences; two service instances sharing one repository cannot oversubscribe stock.",
+    "Adds 13 finite Node tests covering retained auth/schema/visibility behavior, partial updates, safe integers, concurrent totals, hold-versus-adjustment invariants, concurrent release, rollback, queue recovery, singular alerts, and the documented unlocked-read limit.",
+    "Updates the staged Next dynamic route parameter shape, Tailwind 4 PostCSS plugin, local ESLint configuration, and lockfile so the reproducible scripts run without interactive or global downloads.",
+    "Provides nine source-grounded upskilling chapters totaling more than 4,000 words, complete matched exercises and solutions, and exact original source snapshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/109a97addd48/results.json",
+    "expectedTests": 13,
+    "environment": "Node 22.16.0; Next 15.5.25; React 19.3.0; TypeScript 5.8.3; Tailwind CSS 4; ESLint 9 with typescript-eslint 8",
+    "command": "npm run test; npm run lint; node node_modules/typescript/bin/tsc --noEmit; npm run build",
+    "rawEvidence": [
+      "checks/109a97addd48/test-script-01.json",
+      "checks/109a97addd48/typecheck-05.json",
+      "checks/109a97addd48/lint-03.json",
+      "checks/109a97addd48/build-04.json"
+    ]
+  },
+  "testResults": {
+    "passed": true,
+    "total": 13,
+    "passedTests": 13,
+    "failed": 0,
+    "records": [
+      "test-script-01.json",
+      "typecheck-05.json",
+      "lint-03.json",
+      "build-04.json"
+    ]
+  },
+  "courseWords": 5179,
+  "courseFiles": 9,
+  "courseLinksChecked": 15,
+  "files": [
+    {
+      "file": "package.json",
+      "before_sha256": "9b541a774b2d9b2b1892940fad8d589597f080e6471e2d7d5491cdc085d00370",
+      "after_sha256": "aaaca0fe16a6253259e340d5e7cfbd9fa29be03bd01307879adaa1814127ad84"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": null,
+      "after_sha256": "55d27835506fd404f82572d4459cef13bbdfd9fd512bc64cfefd0b3caff0a0ee"
+    },
+    {
+      "file": "postcss.config.mjs",
+      "before_sha256": "e32657baf631d7c5f4dc67b4b2ee0ec8e7d5b3c41860e09cddce7c0377cd80bc",
+      "after_sha256": "fe78f76eb483fdc486e5f0ba4aabe66c85575aeec3c2d3e89f7024fc4632e67f"
+    },
+    {
+      "file": "eslint.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "3fb77acde330118ac4ecc9aa6713a41024ddb6fdada168588b992bc01b2462f5"
+    },
+    {
+      "file": "src/repositories/inventoryRepository.ts",
+      "before_sha256": "66273a41750f4fd6cb0b6414466cdbf1516cdaacaf7c41a8a914198f86f47c6b",
+      "after_sha256": "1862f5033e657ab59202a6c535df9f5c2fc13c81efef62e61d8841607790b67b"
+    },
+    {
+      "file": "src/repositories/inMemoryInventoryRepository.ts",
+      "before_sha256": "14a4dca5e99885a3d7efcba32e6d9aafb78331b220b7c21df66ac5e71cb73859",
+      "after_sha256": "45c4cc4ace0309f8abe8d2b53ecabd694488e6ca55cd01b859dc0c54024ed4a0"
+    },
+    {
+      "file": "src/services/inventoryService.ts",
+      "before_sha256": "5e5bf47ac7dced48884f0458ccd6cb8fdf6eb172ab2bc5ac811c8077c35b2a0a",
+      "after_sha256": "218e56fa4cd89e14f10227428936fed6505d3e62238b60221f00b2aed2a6b93c"
+    },
+    {
+      "file": "src/services/reservationService.ts",
+      "before_sha256": "43e68cc9c57e976766311a8771bf72a62c89e824a0d55bf5043c7b37fbc35bd2",
+      "after_sha256": "3ac68757b00765103815d59daae136cb0d57989efd7faf38777c53be0b924e45"
+    },
+    {
+      "file": "src/app/api/items/[itemId]/route.ts",
+      "before_sha256": "5107213ee81d0761fb6ce642001307cdcadefb280d70a487cd1a84d2e29c4e72",
+      "after_sha256": "d942e6f580f143a42fa825e4455b66a221815224135d383693126804d04a47e0"
+    },
+    {
+      "file": "src/app/api/items/[itemId]/adjust-stock/route.ts",
+      "before_sha256": "496bf410a1634df2cc1f3e9d568112dddd055906652b2e0a93d9418d722d9b62",
+      "after_sha256": "912613a111774e7ea88c72cfbab43bc0fc43b8d24f9612953380a324e9da07cb"
+    },
+    {
+      "file": "src/app/api/reservations/[reservationId]/release/route.ts",
+      "before_sha256": "cb0803c1f88045c7e3963b8ca07fa42320de35694787f74bada01473b789193a",
+      "after_sha256": "4ba26f91c618494e82069a8e48bc3daef310e207b7c67ba4eb817c922740965c"
+    },
+    {
+      "file": "tests/inventory.test.ts",
+      "before_sha256": "c0f84e02090d460f7b516d395a808e298591677478d87923e96859e108264bcb",
+      "after_sha256": "dc55fdb30b487736f9a9a4fbb3f65880e31720a6e00ee5ed9f68da9786cbe449"
+    },
+    {
+      "file": "tests/register-alias.mjs",
+      "before_sha256": null,
+      "after_sha256": "a390b45390f225b058be74fdcc7cecc2736af4ea87b14be71473789cb2dc5e56"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__inventoryRepository.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "66273a41750f4fd6cb0b6414466cdbf1516cdaacaf7c41a8a914198f86f47c6b"
+    },
+    {
+      "file": "astraupskill/snapshots/src__repositories__inMemoryInventoryRepository.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "14a4dca5e99885a3d7efcba32e6d9aafb78331b220b7c21df66ac5e71cb73859"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__inventoryService.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "5e5bf47ac7dced48884f0458ccd6cb8fdf6eb172ab2bc5ac811c8077c35b2a0a"
+    },
+    {
+      "file": "astraupskill/snapshots/src__services__reservationService.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "43e68cc9c57e976766311a8771bf72a62c89e824a0d55bf5043c7b37fbc35bd2"
+    },
+    {
+      "file": "astraupskill/snapshots/tests__inventory.test.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "c0f84e02090d460f7b516d395a808e298591677478d87923e96859e108264bcb"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__items__[itemId]__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "5107213ee81d0761fb6ce642001307cdcadefb280d70a487cd1a84d2e29c4e72"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__items__[itemId]__adjust-stock__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "496bf410a1634df2cc1f3e9d568112dddd055906652b2e0a93d9418d722d9b62"
+    },
+    {
+      "file": "astraupskill/snapshots/src__app__api__reservations__[reservationId]__release__route.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "cb0803c1f88045c7e3963b8ca07fa42320de35694787f74bada01473b789193a"
+    },
+    {
+      "file": "astraupskill/evidence/test-script-01.json",
+      "before_sha256": null,
+      "after_sha256": "c5aad395bb31d60bcc4794def0d05ed8962d04bd6d1ea48ca1a810a511964302"
+    },
+    {
+      "file": "astraupskill/evidence/test-script-01.log",
+      "before_sha256": null,
+      "after_sha256": "55c68fd6c6f149fa93edee3640c92f21b5f0b79ea5170f8552d6159460f998eb"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-05.json",
+      "before_sha256": null,
+      "after_sha256": "736a7ff9a38af9f3ed00280776eb60090b7807ed352d45cbb5af2b0ad7574f09"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-05.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/lint-03.json",
+      "before_sha256": null,
+      "after_sha256": "2e2a134ee4f24e18137132a623f6cd4a92a250905889c0c49481a78a92866d17"
+    },
+    {
+      "file": "astraupskill/evidence/lint-03.log",
+      "before_sha256": null,
+      "after_sha256": "25333b613451c0e5573a6a81cb5335b40fae6ecbb08467949299fdfeed3f948b"
+    },
+    {
+      "file": "astraupskill/evidence/build-04.json",
+      "before_sha256": null,
+      "after_sha256": "465980cea1bc6c76d7c0ddd3eae038e6e5f3328e71b6eb6ab58931b452172ecd"
+    },
+    {
+      "file": "astraupskill/evidence/build-04.log",
+      "before_sha256": null,
+      "after_sha256": "231d8f3e0e08f2b1ea22af777f4ee90830a2a3395312586119136c080ebf7eca"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "699fc9fc86281020dbd583420f3fd83042acf62e42484cd3424d4596c65f2473"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "eeffec04b29964e8a5c5b0401c9f7d1c6c9a786bc05ae037002f805eb572da08"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "ad747674fc56aa6a9bff08b3b328bece22873a09a135ca88ec5f8cc137cf2e83"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "611c47a0d1a326a0d90a31c881f14bca6e1d515f34fe1e042c580ae482d23b1a"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "34206d2225bb10eca91c45c2175a47d23c74ff5a44ccc681b2a3b3c2037c5a69"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "95767e83e981fb50935f3efab7a718c5d04f9ff37355fb99935d31f2df7b5a24"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "14775b8be3cb9e4cc6d73cbd1500e4c5229283a9829b334c3bc89fbe32c2c6ed"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "6fa9bce8c6771ba0cd05b019e87746321698023ddaea67a20693bf62ff22440c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "3495756ae404758a62dfcf66cc0c0ff246cf6bdfcf601c33cc83aa9fdfa5b362"
+    }
+  ],
+  "limits": [
+    "Tests use synthetic sessions, direct route/service modules, and one disposable in-memory repository; no live server, database, browser, or third-party service is exercised.",
+    "Mutation serialization and rollback apply to one repository object. Unlocked reads can observe intermediate callback state, separate processes are not coordinated, and data disappears on restart.",
+    "A future durable adapter must implement the same contract with database transactions or atomic conditional commands, including alert behavior and isolation.",
+    "The local ESLint configuration excludes generated Next files and does not certify accessibility, distributed deployment, performance, or production operations."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T20:29:28.449544+00:00"
+}

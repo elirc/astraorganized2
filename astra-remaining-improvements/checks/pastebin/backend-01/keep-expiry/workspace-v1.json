@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "revision": 2,
+  "pastes": [
+    {
+      "slug": "yg9Sifo0mRZ9fo56Fw8OYw",
+      "title": "Updated",
+      "content": "x",
+      "language": "plaintext",
+      "visibility": "public",
+      "createdAt": "2026-09-09T12:00:00+00:00",
+      "updatedAt": "2026-09-09T12:00:00+00:00",
+      "expiresAt": "2026-09-16T12:00:00+00:00",
+      "editKeyHash": "6853DD1C06551E9A67E9BA71847297B6A05C304E96094D169F3312C2A847F9AF",
+      "legacyKey": false,
+      "legacySlug": false,
+      "version": 2,
+      "historicalViews": 0,
+      "historicalLastViewedAt": null
+    }
+  ],
+  "requests": [
+    {
+      "requestId": "1f4e7b0f-e4b8-4817-91bf-b276c495206c",
+      "fingerprint": "DDE0210371262413309F3172DDE444E03B0EF7249AA9C8B1D186C1101E7E33C1",
+      "slug": "yg9Sifo0mRZ9fo56Fw8OYw",
+      "acceptedAt": "2026-09-09T12:00:00+00:00"
+    }
+  ],
+  "changes": [
+    {
+      "id": "21e8857b-3cac-4eb4-acae-c8267a4a7388",
+      "revision": 1,
+      "action": "create",
+      "slug": "yg9Sifo0mRZ9fo56Fw8OYw",
+      "at": "2026-09-09T12:00:00+00:00"
+    },
+    {
+      "id": "2b020d24-ac53-44f2-bb37-6c77abd20c7f",
+      "revision": 2,
+      "action": "update",
+      "slug": "yg9Sifo0mRZ9fo56Fw8OYw",
+      "at": "2026-09-09T12:00:00+00:00"
+    }
+  ]
+}

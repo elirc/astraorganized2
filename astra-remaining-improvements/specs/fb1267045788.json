@@ -1,0 +1,27 @@
+{
+  "id": "fb1267045788",
+  "project": "_Organized Desktop/08 App And Product Projects/HNJOBTRACK",
+  "summary": [
+    "Make HN comment acquisition resumable when a thread parent exists but a prior run stopped before importing children.",
+    "Preserve completed parsed listings by returning early and use duplicate-ignore upsert for incomplete retries."
+  ],
+  "changedFiles": [
+    "backend/app/services/scraper.py",
+    "supabase/schema.sql",
+    "supabase/migrations/20260921_job_comment_unique.sql",
+    "backend/tests/test_scraper_resume.py",
+    "backend/tests/test_scraper_recovery.py",
+    "astraupskill/snapshots/backend/app/services/scraper.py",
+    "astraupskill/snapshots/supabase/schema.sql",
+    "astraupskill/evidence/astra-crud-b01-all-scraper.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/fb1267045788/results-crud-b01.json"
+  },
+  "limits": [
+    "Focused tests use fake database and HTTP module boundaries.",
+    "Live service and migration execution were not performed."
+  ]
+}

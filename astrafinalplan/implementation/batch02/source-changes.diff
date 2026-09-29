@@ -1,0 +1,1935 @@
+--- JS1/flashcards/app.js (before)
++++ JS1/flashcards/app.js (after)
+@@ -14,7 +14,9 @@
+   // study session
+   studyOrder: [],
+   studyIndex: 0,
+-  flipped: false
++  flipped: false,
++  unlearnedOnly: false,
++  studyError: ""
+ };
+ 
+ const manageTab = document.querySelector("#manage-tab");
+@@ -50,7 +52,13 @@
+ studyTab.addEventListener("click", () => setMode("study"));
+ deckFilter.addEventListener("change", (event) => {
+   state.deck = event.target.value;
+-  render();
++  if (state.mode === "study") startStudy(false);
++  else render();
++});
++
++document.querySelector("#unlearned-only").addEventListener("change", (event) => {
++  state.unlearnedOnly = event.target.checked;
++  if (state.mode === "study") startStudy(false);
+ });
+ 
+ form.addEventListener("submit", handleSubmit);
+@@ -212,7 +220,8 @@
+ }
+ 
+ function startStudy(shuffle) {
+-  const cards = visibleCards();
++  const cards = visibleCards().filter((card) => !state.unlearnedOnly || !card.known);
++  state.studyError = "";
+   state.studyOrder = cards.map((card) => card.id);
+   if (shuffle) shuffleArray(state.studyOrder);
+   state.studyIndex = 0;
+@@ -233,13 +242,19 @@
+ 
+ function grade(known) {
+   const card = currentStudyCard();
+-  if (!card) return;
+-  card.known = known;
+-  saveCards();
+-  if (state.studyIndex < state.studyOrder.length - 1) {
+-    state.studyIndex += 1;
+-    state.flipped = false;
+-  }
++  if (!card || !state.flipped) return;
++  const next = state.cards.map((item) => item.id === card.id ? { ...item, known } : item);
++  try {
++    localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
++  } catch {
++    state.studyError = "Could not save your grade. Try again; this card has not advanced.";
++    renderStudy();
++    return;
++  }
++  state.cards = next;
++  state.studyError = "";
++  state.studyIndex += 1;
++  state.flipped = false;
+   renderStudy();
+ }
+ 
+@@ -249,15 +264,15 @@
+   const controlsDisabled = !card;
+ 
+   flipButton.disabled = controlsDisabled;
+-  againButton.disabled = controlsDisabled;
+-  knownButton.disabled = controlsDisabled;
++  againButton.disabled = controlsDisabled || !state.flipped;
++  knownButton.disabled = controlsDisabled || !state.flipped;
+ 
+   if (!card) {
+-    studyProgress.textContent = "Card 0 of 0";
+-    flashcardText.textContent = "No cards in this deck. Add some in Manage.";
++    studyProgress.textContent = total ? `Completed ${total} of ${total}` : "Card 0 of 0";
++    flashcardText.textContent = total ? "Session complete. Start again with Shuffle & restart." : "No matching cards. Change the deck or unlearned filter, or add cards in Manage.";
+     flashcardHint.textContent = "";
+     flashcard.classList.remove("flipped");
+-    studySummary.textContent = "";
++    studySummary.textContent = total ? `${state.studyOrder.filter((id) => state.cards.find((item) => item.id === id)?.known).length}/${total} marked "got it"` : "";
+     return;
+   }
+ 
+@@ -270,7 +285,7 @@
+     const c = state.cards.find((item) => item.id === id);
+     return c && c.known;
+   }).length;
+-  studySummary.textContent = `${knownCount}/${total} marked "got it"`;
++  studySummary.textContent = state.studyError || `${knownCount}/${total} marked "got it"`;
+ }
+ 
+ function shuffleArray(array) {
+--- JS1/flashcards/index.html (before)
++++ JS1/flashcards/index.html (after)
+@@ -23,6 +23,7 @@
+     <div class="toolbar">
+       <label for="deck-filter">Deck</label>
+       <select id="deck-filter"></select>
++      <label class="study-filter"><input type="checkbox" id="unlearned-only"> Study unlearned cards only</label>
+     </div>
+ 
+     <!-- MANAGE VIEW -->
+--- JS1/flashcards/package.json (before)
++++ JS1/flashcards/package.json (after)
+@@ -0,0 +1,10 @@
++{
++  "name": "astra-browser-exercise-11",
++  "private": true,
++  "scripts": {
++    "test": "node --test test/*.test.cjs"
++  },
++  "devDependencies": {
++    "jsdom": "^25.0.1"
++  }
++}
+--- JS1/flashcards/styles.css (before)
++++ JS1/flashcards/styles.css (after)
+@@ -318,3 +318,9 @@
+     grid-template-columns: 1fr;
+   }
+ }
++
++/* Keep the study option together while allowing narrow toolbars to wrap. */
++.toolbar { flex-wrap: wrap; }
++.toolbar > select { flex: 1 1 240px; width: auto; }
++.toolbar .study-filter { display: inline-flex; align-items: center; gap: 8px; }
++.study-filter input[type="checkbox"] { width: auto; margin: 0; }
+--- JS1/habit-tracker/app.js (before)
++++ JS1/habit-tracker/app.js (after)
+@@ -139,7 +139,10 @@
+     streak.className = "streak-badge";
+     const streakValue = currentStreak(habit);
+     streak.textContent = streakValue === 1 ? "1 day streak" : `${streakValue} day streak`;
+-    header.append(title, streak);
++    const best = document.createElement("span");
++    best.className = "streak-badge best-streak";
++    best.textContent = `Best: ${bestStreak(habit)} days`;
++    header.append(title, streak, best);
+ 
+     const grid = document.createElement("div");
+     grid.className = "day-grid";
+@@ -150,6 +153,7 @@
+       cell.type = "button";
+       cell.className = `day-cell ${done ? "done" : ""}`;
+       cell.setAttribute("aria-pressed", String(done));
++      cell.setAttribute("aria-label", `${habit.name}: ${iso}`);
+       cell.innerHTML = `<span class="dow">${weekday(day)}</span><span class="dom">${day.getDate()}</span>`;
+       cell.addEventListener("click", () => toggleDay(habit.id, iso));
+       grid.append(cell);
+@@ -193,11 +197,28 @@
+ function currentStreak(habit) {
+   let streak = 0;
+   const cursor = startOfToday();
++  // Today is still in progress; yesterday may anchor an active streak.
++  if (!habit.history[isoDate(cursor)]) cursor.setDate(cursor.getDate() - 1);
+   while (habit.history[isoDate(cursor)]) {
+     streak += 1;
+     cursor.setDate(cursor.getDate() - 1);
+   }
+   return streak;
++}
++
++function bestStreak(habit, today = isoDate(startOfToday())) {
++  const days = Object.entries(habit.history).filter(([date, checked]) => {
++    if (checked !== true || !/^\d{4}-\d{2}-\d{2}$/.test(date) || date > today) return false;
++    const parsed = new Date(`${date}T00:00:00Z`);
++    return Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === date;
++  }).map(([date]) => Date.parse(`${date}T00:00:00Z`) / 86400000).sort((a, b) => a - b);
++  let best = 0, run = 0, previous;
++  for (const day of days) {
++    run = previous !== undefined && day === previous + 1 ? run + 1 : 1;
++    best = Math.max(best, run);
++    previous = day;
++  }
++  return best;
+ }
+ 
+ function button(label, variant, onClick) {
+--- JS1/habit-tracker/package.json (before)
++++ JS1/habit-tracker/package.json (after)
+@@ -0,0 +1,10 @@
++{
++  "name": "astra-browser-exercise-12",
++  "private": true,
++  "scripts": {
++    "test": "node --test test/*.test.cjs"
++  },
++  "devDependencies": {
++    "jsdom": "^25.0.1"
++  }
++}
+--- JS1/reading-list/app.js (before)
++++ JS1/reading-list/app.js (after)
+@@ -23,6 +23,7 @@
+ let editingId = null;
+ let searchTerm = "";
+ let sortMode = "title";
++let statusFilter = "All";
+ 
+ const form = document.querySelector("#book-form");
+ const idInput = document.querySelector("#book-id");
+@@ -38,6 +39,11 @@
+ const sortInput = document.querySelector("#sort");
+ const booksList = document.querySelector("#books");
+ const empty = document.querySelector("#empty");
++
++document.querySelector("#status-filter").addEventListener("change", (event) => {
++  statusFilter = event.target.value;
++  renderBooks();
++});
+ 
+ form.addEventListener("submit", saveBook);
+ cancelButton.addEventListener("click", resetForm);
+@@ -127,18 +133,19 @@
+   return [...books]
+     .filter((book) => {
+       const searchable = `${book.title} ${book.author} ${book.status} ${book.notes}`.toLowerCase();
+-      return searchable.includes(searchTerm);
++      return (statusFilter === "All" || book.status === statusFilter) && searchable.includes(searchTerm);
+     })
+     .sort((a, b) => {
+       if (sortMode === "rating") {
+-        return Number(b.rating) - Number(a.rating);
++        return Number(b.rating) - Number(a.rating) || a.title.localeCompare(b.title) || a.id.localeCompare(b.id);
+       }
+-      return a[sortMode].localeCompare(b[sortMode]);
++      return a[sortMode].localeCompare(b[sortMode]) || a.id.localeCompare(b.id);
+     });
+ }
+ 
+ function renderBooks() {
+   const visibleBooks = getVisibleBooks();
++  document.querySelector("#reading-summary").textContent = `Showing ${visibleBooks.length} of ${books.length} books. ${books.filter((book) => book.status === "Finished").length} finished overall.`;
+   booksList.innerHTML = "";
+   empty.hidden = visibleBooks.length > 0;
+ 
+--- JS1/reading-list/index.html (before)
++++ JS1/reading-list/index.html (after)
+@@ -64,6 +64,9 @@
+             <option value="status">Sort by status</option>
+             <option value="rating">Sort by rating</option>
+           </select>
++        <label for="status-filter">Reading status</label>
++        <select id="status-filter"><option value="All">All statuses</option><option>Want to Read</option><option>Reading</option><option>Finished</option></select>
++        <p id="reading-summary" role="status"></p>
+         </div>
+         <div id="books" class="book-grid" aria-live="polite"></div>
+         <p id="empty" class="empty" hidden>No books match the current view.</p>
+--- JS1/reading-list/package.json (before)
++++ JS1/reading-list/package.json (after)
+@@ -0,0 +1,10 @@
++{
++  "name": "astra-browser-exercise-13",
++  "private": true,
++  "scripts": {
++    "test": "node --test test/*.test.cjs"
++  },
++  "devDependencies": {
++    "jsdom": "^25.0.1"
++  }
++}
+--- JS1/reading-list/styles.css (before)
++++ JS1/reading-list/styles.css (after)
+@@ -201,3 +201,13 @@
+     flex-direction: column;
+   }
+ }
++
++/* Search, sorting and status stay usable as the available width changes. */
++.toolbar { flex-wrap: wrap; }
++.toolbar input { flex: 1 1 220px; min-width: 0; }
++.toolbar select { flex: 1 1 180px; width: auto; }
++.toolbar label { margin: 0; }
++.toolbar p { flex-basis: 100%; margin: 0; }
++@media (max-width: 820px) {
++  .toolbar input, .toolbar select { flex: none; width: 100%; }
++}
+--- JS1/note-vault/package.json (before)
++++ JS1/note-vault/package.json (after)
+@@ -6,7 +6,9 @@
+   "scripts": {
+     "dev:server": "node server/server.js",
+     "dev:client": "vite --host 127.0.0.1",
+-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
++    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
++    "test": "node --test test/*.test.js",
++    "build": "vite build"
+   },
+   "dependencies": {
+     "@vitejs/plugin-react": "latest",
+--- JS1/note-vault/vite.config.js (before)
++++ JS1/note-vault/vite.config.js (after)
+@@ -0,0 +1,3 @@
++import { defineConfig } from "vite";
++import react from "@vitejs/plugin-react";
++export default defineConfig({ root: "client", plugins: [react()], server: { host: "127.0.0.1" } });
+--- JS1/note-vault/client/index.html (before)
++++ JS1/note-vault/client/index.html (after)
+@@ -7,6 +7,6 @@
+ </head>
+ <body>
+   <div id="root"></div>
+-  <script type="module" src="/src/App.jsx"></script>
++  <script type="module" src="/src/main.jsx"></script>
+ </body>
+ </html>
+--- JS1/note-vault/client/src/App.jsx (before)
++++ JS1/note-vault/client/src/App.jsx (after)
+@@ -46,15 +46,17 @@
+   }
+ 
+   async function pin(id) {
+-    await togglePin(id);
+-    await refresh();
++    try { await togglePin(id); await refresh(); }
++    catch (error) { setMessage(error.message); }
+   }
+ 
+   async function remove(id) {
+-    await deleteNote(id);
+-    if (editingId === id) resetForm();
+-    setMessage("Note removed from disk.");
+-    await refresh();
++    try {
++      await deleteNote(id);
++      if (editingId === id) resetForm();
++      setMessage("Note removed from disk.");
++      await refresh();
++    } catch (error) { setMessage(error.message); }
+   }
+ 
+   function resetForm() {
+@@ -74,17 +76,17 @@
+ 
+       <section className="grid">
+         <form className="panel" onSubmit={handleSubmit}>
+-          <label>Title</label>
+-          <input value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} />
++          <label htmlFor="note-title">Title</label>
++          <input id="note-title" value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} />
+ 
+-          <label>Body</label>
+-          <textarea rows="8" value={form.body} onChange={(event) => setForm({ ...form, body: event.target.value })} />
++          <label htmlFor="note-body">Body</label>
++          <textarea id="note-body" rows="8" value={form.body} onChange={(event) => setForm({ ...form, body: event.target.value })} />
+ 
+           <div className="actions">
+             <button type="submit">{editingId ? "Save note" : "Add note"}</button>
+             {editingId && <button type="button" className="secondary" onClick={resetForm}>Cancel</button>}
+           </div>
+-          <p className="message">{message}</p>
++          <p role="status" className="message">{message}</p>
+         </form>
+ 
+         <section className="panel">
+--- JS1/note-vault/client/src/main.jsx (before)
++++ JS1/note-vault/client/src/main.jsx (after)
+@@ -0,0 +1,3 @@
++import { createRoot } from "react-dom/client";
++import App from "./App.jsx";
++createRoot(document.getElementById("root")).render(<App />);
+--- JS1/note-vault/server/repository.js (before)
++++ JS1/note-vault/server/repository.js (after)
+@@ -0,0 +1,109 @@
++import * as fs from "node:fs/promises";
++import { dirname } from "node:path";
++
++// The repository reads and writes a JSON file on disk. Every mutation
++// rewrites the whole file, so data survives a server restart.
++export async function createNoteRepository(file, io = fs) {
++  let tail = Promise.resolve();
++  function serial(operation) {
++    const result = tail.then(operation);
++    tail = result.catch(() => {});
++    return result;
++  }
++  async function readAll() {
++    try {
++      const raw = await io.readFile(file, "utf8");
++      const notes = JSON.parse(raw);
++      if (!Array.isArray(notes)) throw new Error("The notes file must contain an array.");
++      return notes;
++    } catch (error) {
++      // First run: the file (or its folder) doesn't exist yet. Seed it.
++      if (error.code === "ENOENT") {
++        const seed = [
++          {
++            id: crypto.randomUUID(),
++            title: "Welcome",
++            body: "This note lives in server/data/notes.json. Restart the server and it will still be here.",
++            pinned: true,
++            updatedAt: new Date().toISOString()
++          }
++        ];
++        await writeAll(seed);
++        return seed;
++      }
++      throw error;
++    }
++  }
++
++  async function writeAll(notes) {
++    await io.mkdir(dirname(file), { recursive: true });
++    const temporary = `${file}.${crypto.randomUUID()}.tmp`;
++    try {
++      await io.writeFile(temporary, JSON.stringify(notes, null, 2), { flag: "wx" });
++      await io.rename(temporary, file);
++    } finally {
++      await io.unlink(temporary).catch(() => {});
++    }
++  }
++
++  function sort(notes) {
++    return [...notes].sort((a, b) => {
++      if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
++      return b.updatedAt.localeCompare(a.updatedAt);
++    });
++  }
++
++  await serial(readAll);
++  const methods = {
++    async list({ search }) {
++      const notes = await readAll();
++      const needle = search.toLowerCase();
++      const filtered = notes.filter((note) =>
++        `${note.title} ${note.body}`.toLowerCase().includes(needle)
++      );
++      return sort(filtered);
++    },
++    async create(input) {
++      const notes = await readAll();
++      const note = {
++        id: crypto.randomUUID(),
++        title: input.title.trim(),
++        body: input.body.trim(),
++        pinned: false,
++        updatedAt: new Date().toISOString()
++      };
++      notes.push(note);
++      await writeAll(notes);
++      return note;
++    },
++    async update(id, input) {
++      const notes = await readAll();
++      const index = notes.findIndex((note) => note.id === id);
++      if (index === -1) return null;
++      notes[index] = {
++        ...notes[index],
++        title: input.title.trim(),
++        body: input.body.trim(),
++        updatedAt: new Date().toISOString()
++      };
++      await writeAll(notes);
++      return notes[index];
++    },
++    async togglePin(id) {
++      const notes = await readAll();
++      const index = notes.findIndex((note) => note.id === id);
++      if (index === -1) return null;
++      notes[index] = { ...notes[index], pinned: !notes[index].pinned };
++      await writeAll(notes);
++      return notes[index];
++    },
++    async remove(id) {
++      const notes = await readAll();
++      const next = notes.filter((note) => note.id !== id);
++      if (next.length === notes.length) return false;
++      await writeAll(next);
++      return true;
++    }
++  };
++  return Object.fromEntries(Object.entries(methods).map(([name, operation]) => [name, (...args) => serial(() => operation(...args))]));
++}
+--- JS1/note-vault/server/server.js (before)
++++ JS1/note-vault/server/server.js (after)
+@@ -1,156 +1,76 @@
+ import express from "express";
+ import cors from "cors";
+-import { readFile, writeFile, mkdir } from "node:fs/promises";
++import { createNoteRepository } from "./repository.js";
++import { pathToFileURL } from "node:url";
+ import { dirname, join } from "node:path";
+ import { fileURLToPath } from "node:url";
+ 
+-const app = express();
+-const port = 4106;
+-
+-app.use(cors());
+-app.use(express.json());
++const port = Number(process.env.PORT || 4106);
+ 
+ const here = dirname(fileURLToPath(import.meta.url));
+ const DATA_FILE = join(here, "data", "notes.json");
+ 
+-const repository = await createNoteRepository(DATA_FILE);
++export async function createApp(file = DATA_FILE) {
++const app = express();
++app.use(cors());
++app.use(express.json({ limit: "128kb" }));
++const repository = await createNoteRepository(file);
++const wrap = (handler) => (req, res, next) => Promise.resolve(handler(req, res, next)).catch(next);
+ 
+-app.get("/api/notes", async (req, res) => {
++app.get("/api/notes", wrap(async (req, res) => {
+   const { search = "" } = req.query;
++  if (typeof search !== "string" || search.length > 200) return res.status(400).json({ error: "Search must be text up to 200 characters." });
+   res.json(await repository.list({ search }));
+-});
++}));
+ 
+-app.post("/api/notes", validateNote, async (req, res) => {
++app.post("/api/notes", validateNote, wrap(async (req, res) => {
+   res.status(201).json(await repository.create(req.body));
+-});
++}));
+ 
+-app.put("/api/notes/:id", validateNote, async (req, res) => {
++app.put("/api/notes/:id", validateNote, wrap(async (req, res) => {
+   const note = await repository.update(req.params.id, req.body);
+   if (!note) {
+     return res.status(404).json({ error: "Note not found." });
+   }
+   res.json(note);
+-});
++}));
+ 
+-app.patch("/api/notes/:id/pin", async (req, res) => {
++app.patch("/api/notes/:id/pin", wrap(async (req, res) => {
+   const note = await repository.togglePin(req.params.id);
+   if (!note) {
+     return res.status(404).json({ error: "Note not found." });
+   }
+   res.json(note);
+-});
++}));
+ 
+-app.delete("/api/notes/:id", async (req, res) => {
++app.delete("/api/notes/:id", wrap(async (req, res) => {
+   const removed = await repository.remove(req.params.id);
+   if (!removed) {
+     return res.status(404).json({ error: "Note not found." });
+   }
+   res.status(204).send();
++}));
++
++app.use((error, _req, res, _next) => {
++  console.error("Note storage operation failed:", error.message);
++  res.status(error.status === 400 ? 400 : 500).json({ error: "Could not complete the operation. Existing notes were preserved." });
+ });
++return app;
++}
+ 
+-app.listen(port, () => {
+-  console.log(`Note Vault API listening on http://localhost:${port}`);
+-  console.log(`Notes are persisted to ${DATA_FILE}`);
+-});
++if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
++  const app = await createApp();
++  app.listen(port, () => console.log(`Note Vault API listening on http://localhost:${port}`));
++}
+ 
+ function validateNote(req, res, next) {
+-  const { title, body } = req.body;
+-  if (!title || title.trim().length < 2) {
++  const { title, body } = req.body || {};
++  if (typeof title !== "string" || title.trim().length < 2 || title.length > 255) {
+     return res.status(400).json({ error: "Title must be at least 2 characters." });
+   }
+-  if (typeof body !== "string") {
++  if (typeof body !== "string" || body.length > 100000) {
+     return res.status(400).json({ error: "Body must be a string." });
+   }
+   next();
+ }
+ 
+-// The repository reads and writes a JSON file on disk. Every mutation
+-// rewrites the whole file, so data survives a server restart.
+-async function createNoteRepository(file) {
+-  async function readAll() {
+-    try {
+-      const raw = await readFile(file, "utf8");
+-      return JSON.parse(raw);
+-    } catch (error) {
+-      // First run: the file (or its folder) doesn't exist yet. Seed it.
+-      if (error.code === "ENOENT") {
+-        const seed = [
+-          {
+-            id: crypto.randomUUID(),
+-            title: "Welcome",
+-            body: "This note lives in server/data/notes.json. Restart the server and it will still be here.",
+-            pinned: true,
+-            updatedAt: new Date().toISOString()
+-          }
+-        ];
+-        await writeAll(seed);
+-        return seed;
+-      }
+-      throw error;
+-    }
+-  }
+-
+-  async function writeAll(notes) {
+-    await mkdir(dirname(file), { recursive: true });
+-    await writeFile(file, JSON.stringify(notes, null, 2));
+-  }
+-
+-  function sort(notes) {
+-    return [...notes].sort((a, b) => {
+-      if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+-      return b.updatedAt.localeCompare(a.updatedAt);
+-    });
+-  }
+-
+-  return {
+-    async list({ search }) {
+-      const notes = await readAll();
+-      const needle = search.toLowerCase();
+-      const filtered = notes.filter((note) =>
+-        `${note.title} ${note.body}`.toLowerCase().includes(needle)
+-      );
+-      return sort(filtered);
+-    },
+-    async create(input) {
+-      const notes = await readAll();
+-      const note = {
+-        id: crypto.randomUUID(),
+-        title: input.title.trim(),
+-        body: input.body.trim(),
+-        pinned: false,
+-        updatedAt: new Date().toISOString()
+-      };
+-      notes.push(note);
+-      await writeAll(notes);
+-      return note;
+-    },
+-    async update(id, input) {
+-      const notes = await readAll();
+-      const index = notes.findIndex((note) => note.id === id);
+-      if (index === -1) return null;
+-      notes[index] = {
+-        ...notes[index],
+-        title: input.title.trim(),
+-        body: input.body.trim(),
+-        updatedAt: new Date().toISOString()
+-      };
+-      await writeAll(notes);
+-      return notes[index];
+-    },
+-    async togglePin(id) {
+-      const notes = await readAll();
+-      const index = notes.findIndex((note) => note.id === id);
+-      if (index === -1) return null;
+-      notes[index] = { ...notes[index], pinned: !notes[index].pinned };
+-      await writeAll(notes);
+-      return notes[index];
+-    },
+-    async remove(id) {
+-      const notes = await readAll();
+-      const next = notes.filter((note) => note.id !== id);
+-      if (next.length === notes.length) return false;
+-      await writeAll(next);
+-      return true;
+-    }
+-  };
+-}
+--- JS1/budget-tracker/app.js (before)
++++ JS1/budget-tracker/app.js (after)
+@@ -72,24 +72,20 @@
+     description: descriptionInput.value.trim(),
+     category: categoryInput.value.trim(),
+     type: typeInput.value,
+-    amount: Number(amountInput.value),
++    amount: parseCents(amountInput.value) / 100,
+     date: dateInput.value
+   };
+ 
+-  if (!transaction.description || !transaction.category || !transaction.date || transaction.amount <= 0) {
+-    setMessage("Add a valid description, category, amount, and date.");
++  if (!transaction.description || !transaction.category || !isRealDate(transaction.date) || !Number.isFinite(transaction.amount) || !["income", "expense"].includes(transaction.type)) {
++    setMessage("Use a description, category, real date, and a positive amount with at most two decimal places (maximum 999999999.99).");
+     return;
+   }
+ 
+-  if (editingId) {
+-    transactions = transactions.map((current) => current.id === editingId ? transaction : current);
+-    setMessage("Transaction updated.");
+-  } else {
+-    transactions.unshift(transaction);
+-    setMessage("Transaction added.");
+-  }
+-
+-  persistTransactions();
++  const next = editingId
++    ? transactions.map((current) => current.id === editingId ? { ...transaction, id: editingId } : current)
++    : [transaction, ...transactions];
++  if (!commitTransactions(next)) return;
++  setMessage(editingId ? "Transaction updated." : "Transaction added.");
+   resetForm();
+   renderTransactions();
+ }
+@@ -111,8 +107,7 @@
+ }
+ 
+ function deleteTransaction(id) {
+-  transactions = transactions.filter((transaction) => transaction.id !== id);
+-  persistTransactions();
++  if (!commitTransactions(transactions.filter((transaction) => transaction.id !== id))) return;
+   resetForm();
+   setMessage("Transaction deleted.");
+   renderTransactions();
+@@ -137,13 +132,13 @@
+ function renderTransactions() {
+   const visibleTransactions = getVisibleTransactions();
+   const totals = transactions.reduce((summary, transaction) => {
+-    summary[transaction.type] += transaction.amount;
++    summary[transaction.type] += Math.round(transaction.amount * 100);
+     return summary;
+   }, { income: 0, expense: 0 });
+ 
+-  incomeTotal.textContent = formatCurrency(totals.income);
+-  expenseTotal.textContent = formatCurrency(totals.expense);
+-  balanceTotal.textContent = formatCurrency(totals.income - totals.expense);
++  incomeTotal.textContent = formatCurrency(totals.income / 100);
++  expenseTotal.textContent = formatCurrency(totals.expense / 100);
++  balanceTotal.textContent = formatCurrency((totals.income - totals.expense) / 100);
+   transactionsList.innerHTML = "";
+   empty.hidden = visibleTransactions.length > 0;
+ 
+@@ -177,6 +172,25 @@
+   });
+ }
+ 
++function parseCents(text) {
++  if (!/^(?:0|[1-9]\d*)(?:\.\d{1,2})?$/.test(text)) return NaN;
++  const [whole, fraction = ""] = text.split(".");
++  const cents = Number(whole) * 100 + Number(fraction.padEnd(2, "0"));
++  return Number.isSafeInteger(cents) && cents > 0 && cents <= 99999999999 ? cents : NaN;
++}
++
++function isRealDate(value) {
++  const parsed = new Date(`${value}T00:00:00Z`);
++  return /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
++}
++
++function commitTransactions(next) {
++  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); }
++  catch { setMessage("Could not save. Your transactions are unchanged; try again."); return false; }
++  transactions = next;
++  return true;
++}
++
+ function formatCurrency(value) {
+   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" }).format(value);
+ }
+--- JS1/budget-tracker/package.json (before)
++++ JS1/budget-tracker/package.json (after)
+@@ -0,0 +1,10 @@
++{
++  "name": "astra-browser-exercise-15",
++  "private": true,
++  "scripts": {
++    "test": "node --test test/*.test.cjs"
++  },
++  "devDependencies": {
++    "jsdom": "^25.0.1"
++  }
++}
+--- JS1/pantry-inventory/app.js (before)
++++ JS1/pantry-inventory/app.js (after)
+@@ -75,7 +75,7 @@
+     expires: expiresInput.value
+   };
+ 
+-  if (!item.name || !item.expires || item.quantity < 0 || item.minimum < 0) {
++  if (!item.name || !isRealDate(item.expires) || !Number.isFinite(item.quantity) || !Number.isFinite(item.minimum) || quantityInput.value === "" || minimumInput.value === "" || item.quantity < 0 || item.minimum < 0) {
+     setMessage("Add a valid name, quantities, and expiration date.");
+     return;
+   }
+@@ -131,7 +131,7 @@
+   return items.filter((item) => {
+     const matchesSearch = `${item.name} ${item.category}`.toLowerCase().includes(searchTerm);
+     const isLow = item.quantity <= item.minimum;
+-    const matchesFilter = activeFilter === "All" || (activeFilter === "Low" && isLow) || (activeFilter === "Fresh" && !isLow);
++    const matchesFilter = activeFilter === "All" || (activeFilter === "Low" && isLow) || (activeFilter === "Fresh" && !isLow && !isExpired(item)) || (activeFilter === "Expired" && isExpired(item));
+     return matchesSearch && matchesFilter;
+   });
+ }
+@@ -145,7 +145,9 @@
+ 
+   visibleItems.forEach((item) => {
+     const row = document.createElement("tr");
+-    const statusText = item.quantity <= item.minimum ? "Low" : "Fresh";
++    const low = item.quantity <= item.minimum;
++    const expired = isExpired(item);
++    const statusText = [low ? "Low stock" : "Stock OK", ...(expired ? ["Expired"] : [])].join(" · ");
+     row.innerHTML = `
+       <td>
+         <strong class="name"></strong><br>
+@@ -168,13 +170,27 @@
+     row.querySelector(".expires").textContent = formatDate(item.expires);
+     const status = row.querySelector(".status");
+     status.textContent = statusText;
+-    status.classList.toggle("low", statusText === "Low");
++    status.classList.toggle("low", low || expired);
+     row.querySelector("[data-action='edit']").addEventListener("click", () => editItem(item.id));
+     row.querySelector("[data-action='delete']").addEventListener("click", () => deleteItem(item.id));
+     itemsBody.append(row);
+   });
+ }
+ 
++function localToday() {
++  const date = new Date();
++  return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}-${String(date.getDate()).padStart(2, "0")}`;
++}
++
++function isExpired(item, today = localToday()) { return item.expires < today; }
++
++function isRealDate(value) {
++  const date = new Date(`${value}T00:00:00Z`);
++  return /^\d{4}-\d{2}-\d{2}$/.test(value) && Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
++}
++
++document.addEventListener("visibilitychange", () => { if (!document.hidden) renderItems(); });
++
+ function formatDate(dateValue) {
+   return new Intl.DateTimeFormat("en", { month: "short", day: "numeric", year: "numeric" }).format(new Date(`${dateValue}T00:00:00`));
+ }
+--- JS1/pantry-inventory/index.html (before)
++++ JS1/pantry-inventory/index.html (after)
+@@ -60,8 +60,8 @@
+           <select id="filter">
+             <option value="All">All items</option>
+             <option value="Low">Low stock</option>
+-            <option value="Fresh">Fresh</option>
+-          </select>
++            <option value="Fresh">In stock &amp; not expired</option>
++          <option value="Expired">Expired</option></select>
+         </div>
+         <table>
+           <thead>
+--- JS1/pantry-inventory/package.json (before)
++++ JS1/pantry-inventory/package.json (after)
+@@ -0,0 +1,10 @@
++{
++  "name": "astra-browser-exercise-16",
++  "private": true,
++  "scripts": {
++    "test": "node --test test/*.test.cjs"
++  },
++  "devDependencies": {
++    "jsdom": "^25.0.1"
++  }
++}
+--- JS1/snippet-vault/package.json (before)
++++ JS1/snippet-vault/package.json (after)
+@@ -0,0 +1,8 @@
++{
++  "name": "astra-snippet-vault",
++  "private": true,
++  "type": "module",
++  "scripts": {
++    "test": "node --test test/*.test.js"
++  }
++}
+--- JS1/snippet-vault/src/dom.js (before)
++++ JS1/snippet-vault/src/dom.js (after)
+@@ -57,8 +57,10 @@
+ 
+ export async function copyToClipboard(text) {
+   if (navigator.clipboard?.writeText) {
+-    await navigator.clipboard.writeText(text);
+-    return true;
++    try {
++      await navigator.clipboard.writeText(text);
++      return true;
++    } catch { return false; }
+   }
+   return false;
+ }
+--- JS1/snippet-vault/src/main.js (before)
++++ JS1/snippet-vault/src/main.js (after)
+@@ -41,13 +41,13 @@
+     return;
+   }
+ 
+-  saveSnippet({
++  try { saveSnippet({
+     id: view.editingId,
+     title: titleInput.value,
+     language: languageInput.value,
+     tags: tagsInput.value,
+     code: codeInput.value
+-  });
++  }); } catch { showMessage("Could not save this snippet. Your saved data and form are unchanged."); return; }
+ 
+   showMessage(view.editingId ? "Snippet updated." : "Snippet saved.");
+   resetForm();
+@@ -70,7 +70,7 @@
+ }
+ 
+ function removeSnippet(id) {
+-  deleteSnippet(id);
++  try { deleteSnippet(id); } catch { showMessage("Could not delete this snippet. Try again."); return; }
+   if (view.editingId === id) resetForm();
+   showMessage("Snippet deleted.");
+   render();
+--- JS1/snippet-vault/src/store.js (before)
++++ JS1/snippet-vault/src/store.js (after)
+@@ -1,4 +1,4 @@
+-// store.js — owns the data and every mutation. No DOM access lives here.
++// store.js â€” owns the data and every mutation. No DOM access lives here.
+ 
+ const STORAGE_KEY = "js1-snippet-vault";
+ 
+@@ -28,15 +28,19 @@
+   return saved ? JSON.parse(saved) : starterSnippets;
+ }
+ 
+-function persist() {
+-  localStorage.setItem(STORAGE_KEY, JSON.stringify(snippets));
++function commit(next) {
++  localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
++  snippets = next;
+ }
+ 
+ function parseTags(raw) {
+-  return raw
+-    .split(",")
+-    .map((tag) => tag.trim())
+-    .filter(Boolean);
++  const seen = new Set();
++  return raw.split(",").map((tag) => tag.trim()).filter((tag) => {
++    const key = tag.toLowerCase();
++    if (!key || seen.has(key)) return false;
++    seen.add(key);
++    return true;
++  });
+ }
+ 
+ export function getSnippet(id) {
+@@ -60,17 +64,14 @@
+     code: input.code
+   };
+ 
+-  if (input.id) {
+-    snippets = snippets.map((snippet) =>
+-      snippet.id === input.id ? { ...snippet, ...base } : snippet
+-    );
+-  } else {
+-    snippets.unshift({ id: crypto.randomUUID(), createdAt: new Date().toISOString(), ...base });
+-  }
+-  persist();
++  if (!base.title || !base.code.trim()) throw new Error("Add a title and some code.");
++  if (input.id && !snippets.some((item) => item.id === input.id)) throw new Error("This snippet no longer exists.");
++  const next = input.id
++    ? snippets.map((snippet) => snippet.id === input.id ? { ...snippet, ...base } : snippet)
++    : [{ id: crypto.randomUUID(), createdAt: new Date().toISOString(), ...base }, ...snippets];
++  commit(next);
+ }
+ 
+ export function deleteSnippet(id) {
+-  snippets = snippets.filter((snippet) => snippet.id !== id);
+-  persist();
++  commit(snippets.filter((snippet) => snippet.id !== id));
+ }
+--- JS1/room-booking/package.json (before)
++++ JS1/room-booking/package.json (after)
+@@ -8,7 +8,9 @@
+     "dev:server": "tsx watch server/src/index.ts",
+     "dev:client": "vite",
+     "dev": "concurrently -n server,client \"npm:dev:server\" \"npm:dev:client\"",
+-    "typecheck": "tsc --noEmit"
++    "typecheck": "tsc --noEmit",
++    "test": "tsx --test test/*.test.ts",
++    "build": "vite build"
+   },
+   "dependencies": {
+     "cors": "latest",
+--- JS1/room-booking/client/src/api.ts (before)
++++ JS1/room-booking/client/src/api.ts (after)
+@@ -1,6 +1,6 @@
+ import type { Booking, NewBooking, Room } from "../../shared/types";
+ 
+-const BASE = "http://localhost:4112/api";
++const BASE = import.meta.env.VITE_API_URL || "http://localhost:4112/api";
+ 
+ export function listRooms() {
+   return request<Room[]>("/rooms");
+@@ -9,12 +9,21 @@
+ export function listBookings(filters: { roomId?: string; date?: string }) {
+   const params = new URLSearchParams();
+   if (filters.roomId) params.set("roomId", filters.roomId);
+-  if (filters.date) params.set("date", filters.date);
++  if (filters.date) {
++    const start = new Date(`${filters.date}T00:00`);
++    const end = new Date(start); end.setDate(end.getDate() + 1);
++    params.set("dayStart", start.toISOString());
++    params.set("dayEnd", end.toISOString());
++  }
+   return request<Booking[]>(`/bookings?${params}`);
+ }
+ 
+ export function createBooking(input: NewBooking) {
+   return request<Booking>("/bookings", { method: "POST", body: JSON.stringify(input) });
++}
++
++export function updateBooking(id: string, input: NewBooking) {
++  return request<Booking>(`/bookings/${id}`, { method: "PUT", body: JSON.stringify(input) });
+ }
+ 
+ export function deleteBooking(id: string) {
+--- JS1/room-booking/client/src/App.tsx (before)
++++ JS1/room-booking/client/src/App.tsx (after)
+@@ -1,15 +1,16 @@
+-import { useEffect, useMemo, useState, type FormEvent } from "react";
++import { useEffect, useMemo, useState, useRef, type FormEvent } from "react";
+ import type { Booking, NewBooking, Room } from "../../shared/types";
+-import { createBooking, deleteBooking, listBookings, listRooms } from "./api";
++import { createBooking, updateBooking, deleteBooking, listBookings, listRooms } from "./api";
+ 
+-const today = () => new Date().toISOString().slice(0, 10);
+-
+-// datetime-local gives "YYYY-MM-DDTHH:mm"; default to the next two whole hours.
++function localInput(date: Date) {
++  const pad = (n: number) => String(n).padStart(2, "0");
++  return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}.${String(date.getMilliseconds()).padStart(3,"0")}`;
++}
++const today = () => localInput(new Date()).slice(0,10);
+ function defaultSlot(dateStr: string, hourOffset: number) {
+   const start = new Date(`${dateStr}T00:00`);
+   start.setHours(new Date().getHours() + hourOffset, 0, 0, 0);
+-  const pad = (n: number) => String(n).padStart(2, "0");
+-  return `${dateStr}T${pad(start.getHours())}:00`;
++  return localInput(start);
+ }
+ 
+ export default function App() {
+@@ -20,6 +21,9 @@
+   const [form, setForm] = useState({ title: "", bookedBy: "", startsAt: "", endsAt: "" });
+   const [message, setMessage] = useState("");
+   const [conflict, setConflict] = useState(false);
++  const [editingId, setEditingId] = useState<string | null>(null);
++  const [busy, setBusy] = useState(false);
++  const requestVersion = useRef(0);
+ 
+   useEffect(() => {
+     listRooms().then((data) => {
+@@ -30,6 +34,7 @@
+ 
+   useEffect(() => {
+     if (roomId) refresh();
++    return () => { requestVersion.current += 1; };
+   }, [roomId, date]);
+ 
+   useEffect(() => {
+@@ -43,8 +48,10 @@
+   const selectedRoom = useMemo(() => rooms.find((room) => room.id === roomId) ?? null, [rooms, roomId]);
+ 
+   async function refresh() {
++    const version = ++requestVersion.current;
+     try {
+-      setBookings(await listBookings({ roomId, date }));
++      const data = await listBookings({ roomId, date });
++      if (version === requestVersion.current) setBookings(data);
+     } catch (error) {
+       setMessage((error as Error).message);
+     }
+@@ -54,71 +61,86 @@
+     event.preventDefault();
+     setMessage("");
+     setConflict(false);
++    if (busy) return;
++    setBusy(true);
+     try {
+-      await createBooking({ roomId, ...form } as NewBooking);
++      const input: NewBooking = { roomId, ...form, startsAt: new Date(form.startsAt).toISOString(), endsAt: new Date(form.endsAt).toISOString() };
++      if (editingId) await updateBooking(editingId, input);
++      else await createBooking(input);
++      setEditingId(null);
+       setForm({ title: "", bookedBy: "", startsAt: defaultSlot(date, 1), endsAt: defaultSlot(date, 2) });
+-      setMessage("Booked. The database guaranteed no overlap.");
++      setMessage(editingId ? "Booking updated." : "Room booked.");
+       await refresh();
+     } catch (error) {
+       // A 409 from the exclusion constraint lands here as a normal Error.
+       setConflict(true);
+       setMessage((error as Error).message);
+-    }
++    } finally { setBusy(false); }
+   }
+ 
+   async function remove(id: string) {
+-    await deleteBooking(id);
+-    await refresh();
++    try { await deleteBooking(id); if (editingId === id) cancelEdit(); await refresh(); }
++    catch (error) { setConflict(true); setMessage((error as Error).message); }
+   }
+ 
++  function cancelEdit() {
++    setEditingId(null);
++    setForm({ title: "", bookedBy: "", startsAt: defaultSlot(date,1), endsAt: defaultSlot(date,2) });
++  }
++  function edit(booking: Booking) {
++    setEditingId(booking.id);
++    setForm({ title: booking.title, bookedBy: booking.bookedBy, startsAt: localInput(new Date(booking.startsAt)), endsAt: localInput(new Date(booking.endsAt)) });
++    setMessage("Update the booking details, then save your changes.");
++  }
+   const timeFmt = new Intl.DateTimeFormat("en", { hour: "numeric", minute: "2-digit" });
+ 
+   return (
+     <main className="app-shell">
+       <section className="hero">
+         <div>
+-          <p className="eyebrow">TS · React · Node · Postgres — Project 3</p>
++          <p className="eyebrow">Project 3</p>
+           <h1>Room Booking</h1>
+         </div>
+-        <p className="muted">Overlaps blocked by a GiST exclusion constraint</p>
++        <p className="muted">Reserve a room and manage your bookings</p>
+       </section>
+ 
+       <section className="grid">
+         <form className="panel" onSubmit={handleSubmit}>
+-          <h2>Reserve a slot</h2>
++          <h2>{editingId ? "Edit booking" : "Reserve a slot"}</h2>
+ 
+-          <label>Room</label>
+-          <select value={roomId} onChange={(event) => setRoomId(event.target.value)}>
++          <label htmlFor="room">Room</label>
++          <select id="room" value={roomId} onChange={(event) => { cancelEdit(); setRoomId(event.target.value); }}>
+             {rooms.map((room) => (
+               <option key={room.id} value={room.id}>{room.name}</option>
+             ))}
+           </select>
+ 
+-          <label>Title</label>
+-          <input value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} />
++          <label htmlFor="title">Title</label>
++          <input id="title" value={form.title} onChange={(event) => setForm({ ...form, title: event.target.value })} />
+ 
+-          <label>Booked by</label>
+-          <input value={form.bookedBy} onChange={(event) => setForm({ ...form, bookedBy: event.target.value })} />
++          <label htmlFor="booked-by">Booked by</label>
++          <input id="booked-by" value={form.bookedBy} onChange={(event) => setForm({ ...form, bookedBy: event.target.value })} />
+ 
+           <div className="field-row">
+             <div>
+-              <label>Start</label>
+-              <input type="datetime-local" value={form.startsAt} onChange={(event) => setForm({ ...form, startsAt: event.target.value })} />
++              <label htmlFor="starts-at">Start</label>
++              <input id="starts-at" type="datetime-local" step="0.001" value={form.startsAt} onChange={(event) => setForm({ ...form, startsAt: event.target.value })} />
+             </div>
+             <div>
+-              <label>End</label>
+-              <input type="datetime-local" value={form.endsAt} onChange={(event) => setForm({ ...form, endsAt: event.target.value })} />
++              <label htmlFor="ends-at">End</label>
++              <input id="ends-at" type="datetime-local" step="0.001" value={form.endsAt} onChange={(event) => setForm({ ...form, endsAt: event.target.value })} />
+             </div>
+           </div>
+ 
+-          <button type="submit">Book room</button>
+-          <p className={`message ${conflict ? "error" : ""}`}>{message}</p>
++          <button type="submit" disabled={busy}>{busy ? "Saving…" : editingId ? "Save changes" : "Book room"}</button>
++          {editingId && <button type="button" onClick={cancelEdit} disabled={busy}>Discard edit</button>}
++          <p role="status" className={`message ${conflict ? "error" : ""}`}>{message}</p>
+         </form>
+ 
+         <section className="panel">
+           <div className="toolbar">
+             <h2>{selectedRoom ? selectedRoom.name : "Schedule"}</h2>
+-            <input type="date" value={date} onChange={(event) => setDate(event.target.value)} />
++            <input aria-label="Schedule date" type="date" value={date} onChange={(event) => setDate(event.target.value)} />
+           </div>
+           {selectedRoom && <p className="muted">Capacity {selectedRoom.capacity}</p>}
+ 
+@@ -126,14 +148,15 @@
+             {bookings.map((booking) => (
+               <li key={booking.id}>
+                 <span className="time">
+-                  {timeFmt.format(new Date(booking.startsAt))}–{timeFmt.format(new Date(booking.endsAt))}
++                  {timeFmt.format(new Date(booking.startsAt))} to {timeFmt.format(new Date(booking.endsAt))}
+                 </span>
+                 <span className="title">{booking.title}</span>
+                 <span className="muted small">{booking.bookedBy}</span>
++                <button type="button" className="small-btn" onClick={() => edit(booking)}>Edit</button>
+                 <button type="button" className="danger small-btn" onClick={() => remove(booking.id)}>Cancel</button>
+               </li>
+             ))}
+-            {bookings.length === 0 && <li className="muted empty">No bookings on this day — the room is free.</li>}
++            {bookings.length === 0 && <li className="muted empty">No bookings on this day - the room is free.</li>}
+           </ul>
+         </section>
+       </section>
+--- JS1/room-booking/client/src/styles.css (before)
++++ JS1/room-booking/client/src/styles.css (after)
+@@ -120,3 +120,14 @@
+   .hero, .grid { grid-template-columns: 1fr; flex-direction: column; align-items: stretch; }
+   .schedule li { grid-template-columns: 1fr; }
+ }
++
++/* Full-precision local date inputs need the form width to remain readable. */
++.field-row { grid-template-columns: minmax(0, 1fr); }
++.field-row > div { min-width: 0; }
++input { min-width: 0; }
++.schedule li { grid-template-columns: minmax(140px, auto) minmax(0, 1fr) auto auto auto; }
++.schedule .title, .schedule .small { overflow-wrap: anywhere; }
++.toolbar { flex-wrap: wrap; }
++@media (max-width: 900px) {
++  .schedule li { grid-template-columns: minmax(0, 1fr); }
++}
+--- JS1/room-booking/client/src/vite-env.d.ts (before)
++++ JS1/room-booking/client/src/vite-env.d.ts (after)
+@@ -0,0 +1 @@
++/// <reference types="vite/client" />
+--- JS1/room-booking/server/src/index.ts (before)
++++ JS1/room-booking/server/src/index.ts (after)
+@@ -1,10 +1,13 @@
+ import "dotenv/config";
++import { pathToFileURL } from "node:url";
++import { parseBooking, uuid, realDate, timestamp, ValidationError } from "./validation.js";
+ import express from "express";
+ import cors from "cors";
+ import { pool, query } from "./db.js";
+ import type { Booking, NewBooking, Room } from "../../shared/types.js";
+ 
+-const app = express();
++export const app = express();
++const wrap = (handler: express.RequestHandler): express.RequestHandler => (req, res, next) => { Promise.resolve(handler(req, res, next)).catch(next); };
+ const port = Number(process.env.PORT ?? 4112);
+ 
+ app.use(cors());
+@@ -43,26 +46,29 @@
+     JOIN rooms r ON r.id = b.room_id
+ `;
+ 
+-app.get("/api/rooms", async (_req, res) => {
++app.get("/api/rooms", wrap(async (_req, res) => {
+   res.json(await query<Room>("SELECT id, name, capacity FROM rooms ORDER BY name"));
+-});
++}));
+ 
+ // Optional filters: a specific room, and/or a single calendar day. The day
+ // filter uses range overlap (&&) so a booking spanning midnight still shows.
+-app.get("/api/bookings", async (req, res) => {
+-  const roomId = typeof req.query.roomId === "string" ? req.query.roomId : null;
+-  const date = typeof req.query.date === "string" && req.query.date ? req.query.date : null;
+-
+-  const rows = await query<BookingRow>(
+-    `${BOOKING_SELECT}
+-      WHERE ($1::uuid IS NULL OR b.room_id = $1)
+-        AND ($2::date IS NULL OR tstzrange(b.starts_at, b.ends_at)
+-                                  && tstzrange($2::date, ($2::date + 1)))
+-      ORDER BY b.starts_at`,
+-    [roomId, date]
+-  );
++app.get("/api/bookings", wrap(async (req, res) => {
++  const roomId = req.query.roomId ? uuid(req.query.roomId) : null;
++  let start: string | null = null, end: string | null = null;
++  if (req.query.dayStart !== undefined || req.query.dayEnd !== undefined) {
++    start = timestamp(req.query.dayStart); end = timestamp(req.query.dayEnd);
++    if (end <= start || Date.parse(end) - Date.parse(start) > 26 * 3600000) throw new ValidationError("Supply a forward day window no longer than 26 hours.");
++  } else if (req.query.date !== undefined) {
++    if (!realDate(req.query.date)) throw new ValidationError("Use a real YYYY-MM-DD date.");
++    start = `${req.query.date}T00:00:00.000Z`;
++    end = new Date(Date.parse(start) + 86400000).toISOString();
++  }
++  const rows = await query<BookingRow>(`${BOOKING_SELECT}
++    WHERE ($1::uuid IS NULL OR b.room_id = $1)
++      AND ($2::timestamptz IS NULL OR tstzrange(b.starts_at,b.ends_at,'[)') && tstzrange($2::timestamptz,$3::timestamptz,'[)'))
++    ORDER BY b.starts_at, b.id`, [roomId, start, end]);
+   res.json(rows.map(toBooking));
+-});
++}));
+ 
+ app.post("/api/bookings", async (req, res, next) => {
+   try {
+@@ -95,7 +101,7 @@
+        )
+        SELECT u.id, u.room_id, r.name AS room_name, u.title, u.starts_at, u.ends_at, u.booked_by
+          FROM updated u JOIN rooms r ON r.id = u.room_id`,
+-      [req.params.id, input.roomId, input.title, input.startsAt, input.endsAt, input.bookedBy]
++      [uuid(req.params.id), input.roomId, input.title, input.startsAt, input.endsAt, input.bookedBy]
+     );
+     if (!rows[0]) return res.status(404).json({ error: "Booking not found." });
+     res.json(toBooking(rows[0]));
+@@ -104,11 +110,11 @@
+   }
+ });
+ 
+-app.delete("/api/bookings/:id", async (req, res) => {
+-  const { rowCount } = await pool.query("DELETE FROM bookings WHERE id = $1", [req.params.id]);
++app.delete("/api/bookings/:id", wrap(async (req, res) => {
++  const { rowCount } = await pool.query("DELETE FROM bookings WHERE id = $1", [uuid(req.params.id)]);
+   if (rowCount === 0) return res.status(404).json({ error: "Booking not found." });
+   res.status(204).send();
+-});
++}));
+ 
+ // Turn database constraint violations into friendly HTTP responses.
+ app.use((error: unknown, _req: express.Request, res: express.Response, _next: express.NextFunction) => {
+@@ -119,6 +125,7 @@
+   if (code === EXCLUSION_VIOLATION) {
+     return res.status(409).json({ error: "That room is already booked for an overlapping time." });
+   }
++  if (code === "23503") return res.status(400).json({ error: "Choose an existing room." });
+   if (code === CHECK_VIOLATION) {
+     return res.status(400).json({ error: "End time must be after the start time." });
+   }
+@@ -126,26 +133,6 @@
+   res.status(500).json({ error: "Something went wrong." });
+ });
+ 
+-app.listen(port, () => {
+-  console.log(`Room Booking API on http://localhost:${port}`);
+-});
+-
+-class ValidationError extends Error {}
+-
+-function parseBooking(body: unknown): NewBooking {
+-  const data = body as Partial<NewBooking>;
+-  if (!data.roomId) throw new ValidationError("Choose a room.");
+-  if (!data.title?.trim()) throw new ValidationError("Give the booking a title.");
+-  if (!data.bookedBy?.trim()) throw new ValidationError("Who is booking?");
+-  if (!data.startsAt || !data.endsAt) throw new ValidationError("Pick a start and end time.");
+-  if (new Date(data.endsAt) <= new Date(data.startsAt)) {
+-    throw new ValidationError("End time must be after the start time.");
+-  }
+-  return {
+-    roomId: data.roomId,
+-    title: data.title.trim(),
+-    bookedBy: data.bookedBy.trim(),
+-    startsAt: data.startsAt,
+-    endsAt: data.endsAt
+-  };
++if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
++  app.listen(port, () => console.log(`Room Booking API on http://localhost:${port}`));
+ }
+--- JS1/room-booking/server/src/validation.ts (before)
++++ JS1/room-booking/server/src/validation.ts (after)
+@@ -0,0 +1,27 @@
++import type { NewBooking } from "../../shared/types.js";
++export class ValidationError extends Error {}
++export function uuid(value: unknown): string {
++  if (typeof value !== "string" || !/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(value)) throw new ValidationError("Use a valid room or booking id.");
++  return value;
++}
++export function realDate(value: unknown): value is string {
++  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value) || value.startsWith("0000")) return false;
++  const date = new Date(`${value}T00:00:00Z`);
++  return Number.isFinite(date.getTime()) && date.toISOString().slice(0, 10) === value;
++}
++export function timestamp(value: unknown): string {
++  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}T(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d(?:\.\d{1,3})?)?(?:Z|[+-](?:0\d|1[0-4]):[0-5]\d)$/.test(value) || !realDate(value.slice(0,10)) || !Number.isFinite(Date.parse(value))) throw new ValidationError("Times must be real ISO timestamps with an explicit timezone offset.");
++  return new Date(value).toISOString();
++}
++export function parseBooking(body: unknown): NewBooking {
++  if (!body || typeof body !== "object" || Array.isArray(body)) throw new ValidationError("Supply a booking object.");
++  const data = body as Record<string, unknown>;
++  const text = (key: string) => {
++    const value = data[key];
++    if (typeof value !== "string" || !value.trim() || value.length > 255) throw new ValidationError(`${key} must be nonempty text up to 255 characters.`);
++    return value.trim();
++  };
++  const startsAt = timestamp(data.startsAt), endsAt = timestamp(data.endsAt);
++  if (endsAt <= startsAt) throw new ValidationError("End time must be after the start time.");
++  return { roomId: uuid(data.roomId), title: text("title"), bookedBy: text("bookedBy"), startsAt, endsAt };
++}
+--- newcodexJS/04-notes-app/client/src/App.jsx (before)
++++ newcodexJS/04-notes-app/client/src/App.jsx (after)
+@@ -1,4 +1,4 @@
+-import { useEffect, useMemo, useState } from "react";
++import { useEffect, useRef, useState } from "react";
+ import "./index.css";
+ import styles from "./App.module.css";
+ import { createRecord, deleteRecord, listRecords, loadStats, updateRecord } from "./services/api";
+@@ -23,25 +23,26 @@
+   const [search, setSearch] = useState("");
+   const [error, setError] = useState("");
+ 
+-  const filteredRecords = useMemo(() => {
+-    return records.filter((record) => JSON.stringify(record).toLowerCase().includes(search.toLowerCase()));
+-  }, [records, search]);
+-
+-  /** Refreshes list and stats from the API. */
++  const [searching, setSearching] = useState(false);
++  const requestVersion = useRef(0);
+   async function refresh() {
++    const version = ++requestVersion.current;
++    setSearching(true);
+     try {
+-      const [nextRecords, nextStats] = await Promise.all([listRecords(), loadStats()]);
+-      setRecords(nextRecords);
+-      setStats(nextStats);
+-      setError("");
++      const [nextRecords, nextStats] = await Promise.all([listRecords({ search }), loadStats()]);
++      if (version !== requestVersion.current) return;
++      setRecords(nextRecords); setStats(nextStats); setError("");
+     } catch (requestError) {
+-      setError(requestError instanceof Error ? requestError.message : "Could not load records");
++      if (version === requestVersion.current) setError(requestError instanceof Error ? requestError.message : "Could not load notes");
++    } finally {
++      if (version === requestVersion.current) setSearching(false);
+     }
+   }
+-
+   useEffect(() => {
+-    refresh();
+-  }, []);
++    setSearching(true);
++    const timer = setTimeout(refresh, 250);
++    return () => { clearTimeout(timer); requestVersion.current += 1; };
++  }, [search]);
+ 
+   /** Updates form state for text inputs. */
+   function updateField(field, value) {
+@@ -74,8 +75,8 @@
+   /** Deletes a record after a browser confirmation. */
+   async function removeRecord(id) {
+     if (!window.confirm("Delete this record?")) return;
+-    await deleteRecord(id);
+-    await refresh();
++    try { await deleteRecord(id); await refresh(); }
++    catch (requestError) { setError(requestError instanceof Error ? requestError.message : "Could not delete note"); }
+   }
+ 
+   return (
+@@ -85,9 +86,10 @@
+           <p>{stats?.total ?? records.length} records</p>
+           <h1>Notes App</h1>
+         </div>
+-        <input value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search" />
++        <input value={search} onChange={(event) => setSearch(event.target.value)} aria-label="Search note content" placeholder="Search words in title or body" />
+       </section>
+ 
++      <p role="status">{searching ? "Searching…" : `${records.length} matching notes`}</p>
+       {error && <div className={styles.error}>{error}</div>}
+ 
+       <section className={styles.grid}>
+@@ -117,7 +119,7 @@
+         </form>
+ 
+         <section className={styles.list}>
+-          {filteredRecords.map((record) => (
++          {records.map((record) => (
+             <article className={styles.card} key={record.id}>
+               <div>
+                 <h3>{record.title}</h3>
+--- newcodexJS/04-notes-app/server/package.json (before)
++++ newcodexJS/04-notes-app/server/package.json (after)
+@@ -6,7 +6,8 @@
+     "dev": "node --watch src/server.js",
+     "start": "node src/server.js",
+     "migrate": "knex migrate:latest",
+-    "seed": "knex seed:run"
++    "seed": "knex seed:run",
++    "test": "node --test test/*.test.cjs"
+   },
+   "dependencies": {
+     "express": "^4.21.2",
+--- newcodexJS/04-notes-app/server/src/models/model.js (before)
++++ newcodexJS/04-notes-app/server/src/models/model.js (after)
+@@ -1,13 +1,23 @@
+ const { db } = require("../config/db");
+ 
+ /** Lists records with basic search filters. */
+-function listRecords(query) { const builder = db("notes").select("*").orderBy("created_at", "desc"); if (query.status) builder.where("status", query.status); if (query.search) builder.whereRaw("CAST(notes AS TEXT) ILIKE ?", [`%${query.search}%`]); return builder; }
++function listRecords(query) {
++  const builder = db("notes").select("*").orderBy("created_at", "desc").orderBy("id", "desc");
++  if (query.status) builder.where("status", query.status);
++  if (query.folder) builder.where("folder", query.folder);
++  // Search document content, not ids, timestamps or serialized row metadata.
++  if (query.search) builder.whereRaw("to_tsvector('english', coalesce(title, '') || ' ' || coalesce(body, '')) @@ plainto_tsquery('english', ?)", [query.search]);
++  return builder;
++}
++function databasePayload(payload) {
++  return payload.tags === undefined ? payload : { ...payload, tags: JSON.stringify(payload.tags) };
++}
+ /** Finds one record by id. */
+ function findRecord(id) { return db("notes").where({ id }).first(); }
+ /** Creates one record. */
+-async function createRecord(payload) { const [row] = await db("notes").insert(payload).returning("*"); return row; }
++async function createRecord(payload) { const [row] = await db("notes").insert(databasePayload(payload)).returning("*"); return row; }
+ /** Updates one record. */
+-async function updateRecord(id, payload) { const [row] = await db("notes").where({ id }).update({ ...payload, updated_at: db.fn.now() }).returning("*"); return row; }
++async function updateRecord(id, payload) { const [row] = await db("notes").where({ id }).update({ ...databasePayload(payload), updated_at: db.fn.now() }).returning("*"); return row; }
+ /** Deletes one record. */
+ async function deleteRecord(id) { const [row] = await db("notes").where({ id }).del().returning("*"); return row; }
+ /** Counts records for dashboard stats. */
+--- newcodexJS/04-notes-app/server/src/services/service.js (before)
++++ newcodexJS/04-notes-app/server/src/services/service.js (after)
+@@ -1,17 +1,43 @@
+ const model = require("../models/model");
+ const { NotFoundError, ValidationError } = require("../utils/errors");
+-function parseId(value) { const id = Number(value); if (!Number.isInteger(id) || id < 1) throw new ValidationError("Id must be a positive integer."); return id; }
+-function sanitizePayload(payload) { const allowed = ["title","body","folder","status","tags"]; const clean = {}; for (const key of allowed) if (payload[key] !== undefined) clean[key] = payload[key]; if (Object.keys(clean).length === 0) throw new ValidationError("At least one field is required."); return clean; }
+-/** Lists records using trusted query values. */
+-function list(query) { return model.listRecords(query); }
+-/** Gets one record or throws a 404. */
+-async function get(idValue) { const record = await model.findRecord(parseId(idValue)); if (!record) throw new NotFoundError("note not found."); return record; }
+-/** Creates one record. */
++function parseId(value) {
++  const id = Number(value);
++  if (!Number.isInteger(id) || id < 1 || id > 2147483647) throw new ValidationError("Id must be a positive 32-bit integer.");
++  return id;
++}
++function sanitizePayload(payload, partial = false) {
++  if (!payload || typeof payload !== "object" || Array.isArray(payload)) throw new ValidationError("Supply a note object.");
++  const clean = {};
++  for (const key of ["title", "folder", "status", "body"]) {
++    if (partial && payload[key] === undefined) continue;
++    const value = key === "body" && payload[key] === undefined ? "" : payload[key];
++    if (typeof value !== "string" || (key !== "body" && !value.trim()) || value.length > (key === "body" ? 100000 : 255)) throw new ValidationError(`${key} must be valid bounded text.`);
++    clean[key] = key === "body" ? value : value.trim();
++  }
++  if (!partial || payload.tags !== undefined) {
++    const tags = payload.tags === undefined ? [] : payload.tags;
++    if (!Array.isArray(tags) || tags.length > 30 || tags.some((tag) => typeof tag !== "string" || !tag.trim() || tag.length > 50)) throw new ValidationError("Use up to 30 nonempty text tags, each at most 50 characters.");
++    clean.tags = [...new Set(tags.map((tag) => tag.trim()))];
++  }
++  if (!Object.keys(clean).length) throw new ValidationError("At least one note field is required.");
++  return clean;
++}
++function list(query = {}) {
++  const clean = {};
++  for (const key of ["search", "status", "folder"]) {
++    if (query[key] === undefined) continue;
++    if (typeof query[key] !== "string" || query[key].length > 255) throw new ValidationError(`${key} must be text up to 255 characters.`);
++    clean[key] = query[key].trim();
++  }
++  return model.listRecords(clean);
++}
++async function get(value) {
++  const record = await model.findRecord(parseId(value));
++  if (!record) throw new NotFoundError("note not found.");
++  return record;
++}
+ function create(payload) { return model.createRecord(sanitizePayload(payload)); }
+-/** Updates one record. */
+-async function update(idValue, payload) { await get(idValue); return model.updateRecord(parseId(idValue), sanitizePayload(payload)); }
+-/** Deletes one record. */
+-async function remove(idValue) { await get(idValue); return model.deleteRecord(parseId(idValue)); }
+-/** Returns aggregate stats. */
++async function update(value, payload) { await get(value); return model.updateRecord(parseId(value), sanitizePayload(payload, true)); }
++async function remove(value) { await get(value); return model.deleteRecord(parseId(value)); }
+ function getStats() { return model.stats(); }
+ module.exports = { list, get, create, update, remove, getStats };
+--- newcodexJS/06-bookmark-manager/client/src/App.tsx (before)
++++ newcodexJS/06-bookmark-manager/client/src/App.tsx (after)
+@@ -1,7 +1,7 @@
+ import { useEffect, useMemo, useState } from "react";
+ import "./index.css";
+ import styles from "./App.module.css";
+-import { createRecord, deleteRecord, listRecords, loadStats, updateRecord } from "./services/api";
++import { createRecord, previewMetadata, deleteRecord, listRecords, loadStats, updateRecord } from "./services/api";
+ 
+ const emptyForm = {
+   "title": "Readable title",
+@@ -21,6 +21,7 @@
+   const [editingId, setEditingId] = useState<number | null>(null);
+   const [search, setSearch] = useState("");
+   const [error, setError] = useState("");
++  const [metadataBusy, setMetadataBusy] = useState(false);
+ 
+   const filteredRecords = useMemo(() => {
+     return records.filter((record) => JSON.stringify(record).toLowerCase().includes(search.toLowerCase()));
+@@ -64,6 +65,17 @@
+     }
+   }
+ 
++  async function usePageTitle() {
++    const url = form.url;
++    setMetadataBusy(true); setError("");
++    try {
++      const metadata = await previewMetadata(url);
++      setForm((current) => current.url === url ? { ...current, title: metadata.title, url: metadata.url } : current);
++    } catch (error) {
++      setError(error instanceof Error ? error.message : "Could not load page title");
++    } finally { setMetadataBusy(false); }
++  }
++
+   /** Loads a record into the form for editing. */
+   function editRecord(record) {
+     setEditingId(record.id);
+@@ -73,8 +85,8 @@
+   /** Deletes a record after a browser confirmation. */
+   async function removeRecord(id) {
+     if (!window.confirm("Delete this record?")) return;
+-    await deleteRecord(id);
+-    await refresh();
++    try { await deleteRecord(id); await refresh(); }
++    catch (error) { setError(error instanceof Error ? error.message : "Could not delete bookmark"); }
+   }
+ 
+   return (
+@@ -112,6 +124,7 @@
+             tags
+             <input value={Array.isArray(form.tags) ? form.tags.join(", ") : form.tags ?? ""} onChange={(event) => updateField("tags", event.target.value)} />
+           </label>
++          <button type="button" disabled={metadataBusy} onClick={usePageTitle}>{metadataBusy ? "Loading title…" : "Use page title"}</button>
+           <button>{editingId ? "Update" : "Create"}</button>
+         </form>
+ 
+--- newcodexJS/06-bookmark-manager/client/src/vite-env.d.ts (before)
++++ newcodexJS/06-bookmark-manager/client/src/vite-env.d.ts (after)
+@@ -1,6 +1 @@
+ /// <reference types="vite/client" />
+-
+-declare module "*.module.css" {
+-  const classes: Record<string, string>;
+-  export default classes;
+-}
+--- newcodexJS/06-bookmark-manager/client/src/services/api.ts (before)
++++ newcodexJS/06-bookmark-manager/client/src/services/api.ts (after)
+@@ -1,4 +1,6 @@
+ import axios from "axios";
++
++export interface Bookmark { id: number; title: string; url: string; collection: string; status: string; tags: string[] }
+ 
+ const api = axios.create({
+   baseURL: import.meta.env.VITE_API_URL || "http://localhost:4106/api",
+@@ -17,7 +19,7 @@
+ /** Lists bookmarks for the workspace screen. */
+ export async function listRecords(filters = {}) {
+   const response = await api.get("/bookmarks", { params: filters });
+-  return unwrap(response);
++  return unwrap<Bookmark[]>(response);
+ }
+ 
+ /** Creates a new bookmark. */
+@@ -43,3 +45,7 @@
+   const response = await api.get("/bookmarks/stats");
+   return unwrap(response);
+ }
++
++export async function previewMetadata(url: string): Promise<{ url: string; title: string }> {
++  return unwrap(await api.post("/bookmarks/metadata", { url }));
++}
+--- newcodexJS/06-bookmark-manager/server/knexfile.ts (before)
++++ newcodexJS/06-bookmark-manager/server/knexfile.ts (after)
+@@ -1,12 +1,12 @@
+ import type { Knex } from "knex";
+-import { env } from "./src/config/env";
++import { env } from "./src/config/env.js";
+ 
+ const config: Record<string, Knex.Config> = {
+   development: {
+     client: "pg",
+     connection: env.database,
+-    migrations: { directory: "./db/migrations", extension: "ts" },
+-    seeds: { directory: "./db/seeds", extension: "ts" }
++    migrations: { directory: "./db/migrations", extension: "ts", loadExtensions: [".ts"] },
++    seeds: { directory: "./db/seeds", extension: "ts", loadExtensions: [".ts"] }
+   }
+ };
+ 
+--- newcodexJS/06-bookmark-manager/server/package.json (before)
++++ newcodexJS/06-bookmark-manager/server/package.json (after)
+@@ -5,9 +5,10 @@
+   "scripts": {
+     "dev": "tsx watch src/server.ts",
+     "build": "tsc -p tsconfig.json",
+-    "start": "node dist/server.js",
+-    "migrate": "knex --knexfile knexfile.ts migrate:latest",
+-    "seed": "knex --knexfile knexfile.ts seed:run"
++    "start": "node dist/src/server.js",
++    "migrate": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts migrate:latest",
++    "seed": "node --import tsx ./node_modules/knex/bin/cli.js --knexfile knexfile.ts seed:run",
++    "test": "tsx --test test/*.test.ts"
+   },
+   "dependencies": {
+     "express": "^4.21.2",
+--- newcodexJS/06-bookmark-manager/server/db/seeds/001_seed.ts (before)
++++ newcodexJS/06-bookmark-manager/server/db/seeds/001_seed.ts (after)
+@@ -31,5 +31,5 @@
+       "archive"
+     ]
+   }
+-]);
++].map((bookmark) => ({ ...bookmark, tags: JSON.stringify(bookmark.tags) })));
+ }
+--- newcodexJS/06-bookmark-manager/server/src/app.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/app.ts (after)
+@@ -2,9 +2,9 @@
+ import express from "express";
+ import helmet from "helmet";
+ import morgan from "morgan";
+-import { env } from "./config/env";
+-import routes from "./routes/routes";
+-import { errorMiddleware, notFoundMiddleware } from "./middleware/errorMiddleware";
++import { env } from "./config/env.js";
++import routes from "./routes/routes.js";
++import { errorMiddleware, notFoundMiddleware } from "./middleware/errorMiddleware.js";
+ 
+ const app = express();
+ app.use(helmet());
+--- newcodexJS/06-bookmark-manager/server/src/server.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/server.ts (after)
+@@ -1,5 +1,5 @@
+-import app from "./app";
+-import { env } from "./config/env";
++import app from "./app.js";
++import { env } from "./config/env.js";
+ 
+ /** Starts the HTTP server for local learning. */
+ app.listen(env.port, () => console.log("Bookmark Manager API listening on " + env.port));
+--- newcodexJS/06-bookmark-manager/server/src/config/db.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/config/db.ts (after)
+@@ -1,5 +1,5 @@
+ import knex from "knex";
+-import { env } from "./env";
++import { env } from "./env.js";
+ 
+ /** Shared Knex instance for model functions. */
+ export const db = knex({ client: "pg", connection: env.database, pool: { min: 0, max: 10 } });
+--- newcodexJS/06-bookmark-manager/server/src/controllers/controller.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/controllers/controller.ts (after)
+@@ -1,6 +1,6 @@
+ import type { Request, Response } from "express";
+-import * as service from "../services/service";
+-import { sendSuccess } from "../utils/response";
++import * as service from "../services/service.js";
++import { sendSuccess } from "../utils/response.js";
+ 
+ /** Handles list requests. */
+ export async function list(req: Request, res: Response) { return sendSuccess(res, await service.list(req.query as { search?: string; status?: string })); }
+@@ -14,3 +14,6 @@
+ export async function remove(req: Request, res: Response) { return sendSuccess(res, await service.remove(req.params.id)); }
+ /** Handles stats requests. */
+ export async function stats(req: Request, res: Response) { return sendSuccess(res, await service.getStats()); }
++
++/** Explicit metadata preview; it never saves or changes a bookmark. */
++export async function metadata(req: Request, res: Response) { return sendSuccess(res, await service.metadata(req.body)); }
+--- newcodexJS/06-bookmark-manager/server/src/middleware/errorMiddleware.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/middleware/errorMiddleware.ts (after)
+@@ -1,5 +1,5 @@
+ import type { NextFunction, Request, Response } from "express";
+-import { AppError } from "../utils/errors";
++import { AppError } from "../utils/errors.js";
+ 
+ /** Converts thrown errors into the standard error envelope. */
+ export function errorMiddleware(error: Error, _req: Request, res: Response, _next: NextFunction) { const appError = error instanceof AppError ? error : new AppError(error.message); return res.status(appError.statusCode).json({ success: false, error: { message: appError.message, code: appError.code } }); }
+--- newcodexJS/06-bookmark-manager/server/src/models/model.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/models/model.ts (after)
+@@ -1,13 +1,15 @@
+-import { db } from "../config/db";
++import { db } from "../config/db.js";
+ 
+ /** Lists records with basic search filters. */
+ export function listRecords(query: { search?: string; status?: string }) { const builder = db("bookmarks").select("*").orderBy("created_at", "desc"); if (query.status) builder.where("status", query.status); if (query.search) builder.whereRaw("CAST(bookmarks AS TEXT) ILIKE ?", [`%${query.search}%`]); return builder; }
++function databasePayload(payload: Record<string, unknown>) { return payload.tags === undefined ? payload : { ...payload, tags: JSON.stringify(payload.tags) }; }
++
+ /** Finds one record by id. */
+ export function findRecord(id: number) { return db("bookmarks").where({ id }).first(); }
+ /** Creates one record. */
+-export async function createRecord(payload: Record<string, unknown>) { const [row] = await db("bookmarks").insert(payload).returning("*"); return row; }
++export async function createRecord(payload: Record<string, unknown>) { const [row] = await db("bookmarks").insert(databasePayload(payload)).returning("*"); return row; }
+ /** Updates one record. */
+-export async function updateRecord(id: number, payload: Record<string, unknown>) { const [row] = await db("bookmarks").where({ id }).update({ ...payload, updated_at: db.fn.now() }).returning("*"); return row; }
++export async function updateRecord(id: number, payload: Record<string, unknown>) { const [row] = await db("bookmarks").where({ id }).update({ ...databasePayload(payload), updated_at: db.fn.now() }).returning("*"); return row; }
+ /** Deletes one record. */
+ export async function deleteRecord(id: number) { const [row] = await db("bookmarks").where({ id }).del().returning("*"); return row; }
+ /** Counts records for dashboard stats. */
+--- newcodexJS/06-bookmark-manager/server/src/routes/routes.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/routes/routes.ts (after)
+@@ -1,10 +1,11 @@
+ import { Router } from "express";
+-import * as controller from "../controllers/controller";
++import * as controller from "../controllers/controller.js";
+ 
+ const router = Router();
+ const wrap = (handler: any) => (req: any, res: any, next: any) => Promise.resolve(handler(req, res, next)).catch(next);
+ router.get("/", wrap(controller.list));
+ router.get("/stats", wrap(controller.stats));
++router.post("/metadata", wrap(controller.metadata));
+ router.get("/:id", wrap(controller.get));
+ router.post("/", wrap(controller.create));
+ router.put("/:id", wrap(controller.update));
+--- newcodexJS/06-bookmark-manager/server/src/services/metadata.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/services/metadata.ts (after)
+@@ -0,0 +1,88 @@
++import https from "node:https";
++import { resolve4 } from "node:dns/promises";
++import { isIP } from "node:net";
++import { ValidationError } from "../utils/errors.js";
++
++export function bookmarkUrl(value: unknown): string {
++  if (typeof value !== "string" || value.length > 255) throw new ValidationError("URL must be text up to 255 characters.");
++  let url: URL;
++  try { url = new URL(value.trim()); } catch { throw new ValidationError("Use an absolute http or https URL."); }
++  if (!["http:", "https:"].includes(url.protocol) || url.username || url.password || url.href.length > 255) throw new ValidationError("Use an http or https URL without credentials, up to 255 characters.");
++  return url.href;
++}
++
++/** Conservative IPv4-only metadata policy. Saving a URL does not fetch it. */
++export function isPublicIPv4(address: string): boolean {
++  if (isIP(address) !== 4) return false;
++  const [a,b,c] = address.split(".").map(Number);
++  return !(a === 0 || a === 10 || a === 127 || a >= 224 ||
++    (a === 100 && b >= 64 && b <= 127) || (a === 169 && b === 254) ||
++    (a === 172 && b >= 16 && b <= 31) || (a === 192 && (b === 168 || b === 0 || (b === 88 && c === 99))) ||
++    (a === 198 && (b === 18 || b === 19 || (b === 51 && c === 100))) ||
++    (a === 203 && b === 0 && c === 113));
++}
++interface TransferOptions { signal: AbortSignal; maxBytes: number }
++type Transfer = (url: URL, address: string, options: TransferOptions) => Promise<string>;
++interface MetadataOptions {
++  allowedHosts?: string[];
++  resolve?: (hostname: string) => Promise<string[]>;
++  transfer?: Transfer;
++  timeoutMs?: number;
++  maxBytes?: number;
++}
++
++/** No redirect following. DNS is pinned to a checked address for the connection. */
++export function createHtmlTransfer(get: typeof https.get = https.get): Transfer {
++return (url, address, { signal, maxBytes }) => new Promise((resolve, reject) => {
++  const request = get(url, {
++    signal,
++    family: 4,
++    lookup: ((_hostname: string, _options: unknown, callback: Function) => callback(null, address, 4)) as any,
++    headers: { Accept: "text/html", "Accept-Encoding": "identity", "User-Agent": "BookmarkLearningApp/1.0" },
++    maxHeaderSize: 16384,
++  }, (response) => {
++    const fail = (message: string) => { response.destroy(); request.destroy(); reject(new ValidationError(message)); };
++    if (response.statusCode !== 200) return fail("Metadata requires a direct 200 response; redirects are not followed.");
++    if (!/^text\/html(?:;|$)/i.test(String(response.headers["content-type"] || ""))) return fail("Metadata requires an HTML response.");
++    if (response.headers["content-encoding"] && response.headers["content-encoding"] !== "identity") return fail("Compressed metadata responses are not supported.");
++    if (Number(response.headers["content-length"]) > maxBytes) return fail("Metadata response is too large.");
++    const chunks: Buffer[] = []; let bytes = 0;
++    response.on("data", (chunk: Buffer) => {
++      bytes += chunk.length;
++      if (bytes > maxBytes) return fail("Metadata response is too large.");
++      chunks.push(chunk);
++    });
++    response.on("end", () => resolve(Buffer.concat(chunks).toString("utf8")));
++    response.on("error", reject);
++  });
++  request.on("error", reject);
++});
++}
++export const requestHtml = createHtmlTransfer();
++
++export async function fetchMetadata(input: unknown, options: MetadataOptions = {}) {
++  const url = new URL(bookmarkUrl(input));
++  const allowed = options.allowedHosts ?? (process.env.BOOKMARK_METADATA_HOSTS || "").split(",").map((host) => host.trim().toLowerCase()).filter(Boolean);
++  if (url.protocol !== "https:" || (url.port && url.port !== "443") || isIP(url.hostname) || url.hostname.includes(":") || !allowed.includes(url.hostname.toLowerCase())) throw new ValidationError("Metadata is enabled only for explicitly configured HTTPS hostnames on port 443. Enter a title manually for other links.");
++  const controller = new AbortController();
++  const timeoutMs = options.timeoutMs ?? 5000, maxBytes = options.maxBytes ?? 65536;
++  let timer: ReturnType<typeof setTimeout>;
++  const expired = new Promise<never>((_resolve, reject) => {
++    timer = setTimeout(() => { controller.abort(); reject(new ValidationError("Metadata request timed out.")); }, timeoutMs);
++  });
++  try {
++    return await Promise.race([expired, (async () => {
++      const addresses = await (options.resolve ?? resolve4)(url.hostname);
++      if (controller.signal.aborted) throw new ValidationError("Metadata request timed out.");
++      if (!addresses.length || addresses.some((address) => !isPublicIPv4(address))) throw new ValidationError("Metadata destination must resolve exclusively to public IPv4 addresses.");
++      const html = await (options.transfer ?? requestHtml)(url, addresses[0], { signal: controller.signal, maxBytes });
++      if (Buffer.byteLength(html, "utf8") > maxBytes) throw new ValidationError("Metadata response is too large.");
++      const raw = /<title\b[^>]*>([\s\S]*?)<\/title\s*>/i.exec(html)?.[1] || url.hostname;
++      const title = raw.replace(/<[^>]*>/g, "").replace(/&(amp|lt|gt|quot|apos);/g, (_match, key: string) => ({ amp: "&", lt: "<", gt: ">", quot: '"', apos: "'" }[key] || "")).replace(/\s+/g, " ").trim().slice(0,255);
++      return { url: url.href, title: title || url.hostname };
++    })()]);
++  } catch (error) {
++    if (error instanceof ValidationError) throw error;
++    throw new ValidationError("Could not fetch page metadata. Enter a title manually.");
++  } finally { clearTimeout(timer!); controller.abort(); }
++}
+--- newcodexJS/06-bookmark-manager/server/src/services/service.ts (before)
++++ newcodexJS/06-bookmark-manager/server/src/services/service.ts (after)
+@@ -1,19 +1,43 @@
+-import * as model from "../models/model";
+-import { NotFoundError, ValidationError } from "../utils/errors";
+-
+-/** Parses route ids before they reach the data layer. */
+-function parseId(value: string) { const id = Number(value); if (!Number.isInteger(id) || id < 1) throw new ValidationError("Id must be a positive integer."); return id; }
+-/** Sanitizes incoming payloads to the known domain fields. */
+-function sanitizePayload(payload: Record<string, unknown>) { const allowed = ["title","url","collection","status","tags"]; const clean: Record<string, unknown> = {}; for (const key of allowed) if (payload[key] !== undefined) clean[key] = payload[key]; if (Object.keys(clean).length === 0) throw new ValidationError("At least one field is required."); return clean; }
+-/** Lists records using trusted query values. */
+-export function list(query: { search?: string; status?: string }) { return model.listRecords(query); }
+-/** Gets one record or throws a 404. */
+-export async function get(idValue: string) { const record = await model.findRecord(parseId(idValue)); if (!record) throw new NotFoundError("bookmark not found."); return record; }
+-/** Creates one record. */
+-export function create(payload: Record<string, unknown>) { return model.createRecord(sanitizePayload(payload)); }
+-/** Updates one record. */
+-export async function update(idValue: string, payload: Record<string, unknown>) { await get(idValue); return model.updateRecord(parseId(idValue), sanitizePayload(payload)); }
+-/** Deletes one record. */
+-export async function remove(idValue: string) { await get(idValue); return model.deleteRecord(parseId(idValue)); }
+-/** Returns aggregate stats. */
++import { z } from "zod";
++import * as model from "../models/model.js";
++import { NotFoundError, ValidationError } from "../utils/errors.js";
++import { bookmarkUrl, fetchMetadata } from "./metadata.js";
++const text = z.string().trim().min(1).max(255);
++const schema = z.object({
++  title: text,
++  url: z.string().transform((value, context) => {
++    try { return bookmarkUrl(value); }
++    catch { context.addIssue({ code: z.ZodIssueCode.custom, message: "Use an absolute http or https URL without credentials, up to 255 characters." }); return z.NEVER; }
++  }),
++  collection: text,
++  status: text,
++  tags: z.array(z.string().trim().min(1).max(50)).max(30).default([]),
++});
++function parseId(value: string) {
++  const id = Number(value);
++  if (!Number.isInteger(id) || id < 1 || id > 2147483647) throw new ValidationError("Id must be a positive 32-bit integer.");
++  return id;
++}
++function sanitizePayload(payload: unknown, partial = false): Record<string, unknown> {
++  const result = (partial ? schema.partial() : schema).safeParse(payload);
++  if (!result.success) throw new ValidationError(result.error.issues.map((issue) => `${issue.path.join(".")}: ${issue.message}`).join("; "));
++  if (!Object.keys(result.data).length) throw new ValidationError("Supply at least one bookmark field.");
++  return result.data.tags ? { ...result.data, tags: [...new Set(result.data.tags)] } : result.data;
++}
++export function list(query: { search?: string; status?: string }) {
++  for (const value of [query.search, query.status]) if (value !== undefined && (typeof value !== "string" || value.length > 255)) throw new ValidationError("Filters must be text up to 255 characters.");
++  return model.listRecords(query);
++}
++export async function get(value: string) {
++  const record = await model.findRecord(parseId(value));
++  if (!record) throw new NotFoundError("bookmark not found.");
++  return record;
++}
++export function create(payload: unknown) { return model.createRecord(sanitizePayload(payload)); }
++export async function update(value: string, payload: unknown) { await get(value); return model.updateRecord(parseId(value), sanitizePayload(payload, true)); }
++export async function remove(value: string) { await get(value); return model.deleteRecord(parseId(value)); }
+ export function getStats() { return model.stats(); }
++export function metadata(payload: unknown) {
++  if (!payload || typeof payload !== "object" || Array.isArray(payload)) throw new ValidationError("Supply a URL object.");
++  return fetchMetadata((payload as Record<string, unknown>).url);
++}

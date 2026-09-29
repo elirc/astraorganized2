@@ -1,0 +1,31 @@
+﻿{
+    "id":  "f1f996eeb9e7",
+    "project":  "zz4",
+    "files":  [
+                  "zz4/src/services/approvalService.ts",
+                  "zz4/tests/approval-stage-order.test.mjs",
+                  "zz4/tests/helpers/load-typescript.mjs",
+                  "zz4/astraupskill/snapshots/src/services/approvalService.ts",
+                  "zz4/astraupskill/evidence/approval-stage-order.log",
+                  "zz4/astraupskill/evidence/results-crud-b07.json",
+                  "zz4/astraupskill/README.md",
+                  "zz4/astraupskill/01-CODEBASE-MAP.md",
+                  "zz4/astraupskill/02-CONCEPTS.md",
+                  "zz4/astraupskill/03-WORKED-CHANGE.md",
+                  "zz4/astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "zz4/astraupskill/05-PRACTICE.md",
+                  "zz4/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "zz4/astraupskill/07-TRACE-LAB.md",
+                  "zz4/astraupskill/VERIFICATION.md"
+              ],
+    "finding":  "Approval service previously trusted arbitrary array order when choosing a pending stage; it now selects the lowest sequence before permission and transaction work.",
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/approval-stage-order.test.mjs (2 passed)"
+              ],
+    "limits":  [
+                   "Database, transaction, notification, and permission boundaries are explicit doubles.",
+                   "No real Prisma/Next/concurrency execution.",
+                   "Sequence ordering is fixed; duplicate sequence policy and race safety remain outside scope."
+               ],
+    "spec":  "astra-remaining-improvements/specs/f1f996eeb9e7.json"
+}

@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Filter knowledge-base projections by page visibility before pagination and sanitize nested space pages.",
+    "Reject forged page-space edits and missing explicit page IDs; keep tags inside the save transaction.",
+    "Add source-grounded learning material and preserve the documented demo-auth and concurrency limits."
+  ],
+  "changedFiles": [
+    "src/modules/knowledge-base/queries.ts",
+    "src/modules/knowledge-base/schemas.ts",
+    "src/modules/knowledge-base/service.ts",
+    "src/modules/knowledge-base/service.regressions.test.ts",
+    "astraupskill/source-snapshots/queries.ts.original",
+    "astraupskill/source-snapshots/schemas.ts.original",
+    "astraupskill/source-snapshots/service.ts.original",
+    "astraupskill/source-snapshots/SHA256SUMS.txt"
+  ],
+  "checks": {"format":"json","resultsFile":"checks/5137a9c91d26/z6-test-05.json"},
+  "limits": [
+    "Regression coverage exercises schema parsing, the visibility predicate, and the transaction callback contract with faithful unit doubles; no live database, browser or deployed authentication coverage was run.",
+    "The application still uses its local demo session model and Prisma SQLite setup.",
+    "Cross-process revision and tag-creation races require database integration verification."
+  ]
+}

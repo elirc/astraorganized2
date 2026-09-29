@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildScedulingPYJS",
+  "id": "cb18aae6d81d",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/runtime-appointment-complete.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\cb18aae6d81d",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T00:51:34.899484+00:00",
+  "status": "complete",
+  "log": "crud-b02-astra-runtime.log",
+  "pid": 36056,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T00:51:42.089115+00:00",
+  "elapsedSeconds": 7.18
+}

@@ -1,0 +1,33 @@
+{
+  "id": "e2d8f836b7f9",
+  "project": "_Organized Desktop/08 App And Product Projects/job track/restaurant-kitchen-display-system",
+  "files": {
+    ".gitignore": "d1fa7aafa3925df2b09adf6e913e2ae42c050f2a4f6c47324f568e3fa34db416",
+    "package-lock.json": "cbbc8003c0888679df3052ffbf89c2d397265147f964cd6fb4f8e2186278a9d4",
+    "package.json": "e2d350a5eca0ab46477576bf493c4b580bbd21db41b300c186b2db19c1b6f1e5",
+    "README.md": "7628039692e05955d139bfc35632d6e8596621f3c39cf49a8e61a2defa3dc444",
+    "client/.env.example": "164718dd662f214b7bc42507532c0ef98c6787aa0c39735bae4710c4c9ae6c17",
+    "client/.gitignore": "fe718e7babb14f3cbad2d97f08889b9ce5215ed3fe0e43b2b8cfbfb3b9b844e8",
+    "client/index.html": "332a49e27a2409afd07e7afd8cc0ce66e130cad824564109c19b22c42fce707c",
+    "client/package-lock.json": "f7878feacefaf3364316d2052739c888bbb101ce4b0eae4388c69b4438bbe7bc",
+    "client/package.json": "d9460be076fcb91efdf3880138cd58ee1d10824abf62ff9dce5775037e123cfc",
+    "client/vite.config.js": "a73d5e1739319f12b28a9bfaf076630747a72bd175d663036e967b4079d1ab1d",
+    "client/public/vite.svg": "4a748afd443918bb16591c834c401dae33e87861ab5dbad0811c3a3b4a9214fb",
+    "client/src/App.jsx": "61dd2d71f690c59be45d494acf49f07caf54be5dfe8aaf4fd57f8a4090f40ced",
+    "client/src/main.jsx": "c1a5dadbe1fa1047b859b67b4f89fca31be23eda2744bb5067128f95f73a5a03",
+    "client/src/styles.css": "d4c6309083aa0bd0774fa36bb3cabd59701bfc8b5539b2660382ad841db84d0d",
+    "client/src/lib/api.js": "4806cbc418ca53f570816e083a2109e2e3d3c1aba27c458cdd653d8277f96758",
+    "client/src/lib/socket.js": "da9032cc08b32f5c433f3c6a46620e5abd618a339e1291e26558755c00491dda",
+    "server/.env.example": "fbcef76092db199f281aba744fd04d4d612393a155672ccb9b349c44cbe6dd63",
+    "server/package-lock.json": "72181e117d56570c6037b626ac92426ba1ae5b41cc20f2f2b1c60d0cf6f6ad29",
+    "server/package.json": "38ea5b90e13afb05e8a490ac059ff69ba92240b43a369813d710d261a910ed7c",
+    "server/data/kds.db-shm": "70a4aa970adc1b17d0e030bcce6f68d2d6eb546fbebbfefc067233ce07c0bc65",
+    "server/data/kds.db-wal": "51c50e680d88cbe5e324f1fc152b072a015ac6978622d5e2e91623cc592a9e84",
+    "server/src/server.js": "000323272e961c83b78db2483526863bca42cc979dafafff0dddfd233e057fe3",
+    "server/src/db/database.js": "91a698e9301f46865a3826e2c0fd3175a2e5fdcf0c2b16a738d8d36aea690fe1",
+    "server/src/lib/config.js": "b186b3a8d290eb3811b1a5c3b5a0acef983af0503f56d8e394888688eddd441e",
+    "server/src/lib/kdsService.js": "93e27fb18d58afc4cf745e4a3f7470edcce67c84d92e6cff4aa7c8be83a5279e",
+    "server/src/lib/validation.js": "4207e92e7a5aeab806df6e63baad383fad99926789d2cd07a8965fcf422d6ada",
+    "server/src/routes/api.js": "770668a7d1ea4454b05e4512cfe17b8c655306c21418594220456ebf6424b220"
+  }
+}

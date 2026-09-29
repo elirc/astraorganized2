@@ -1,0 +1,164 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/j2",
+  "id": "1a8f0f6b63c8",
+  "summary": [
+    "Completed immutable versioned book/borrower CRUD, confirmed deletion of unused records, archive/restore, literal search and immediate save-before-memory commits.",
+    "Added retained loan receipts with accepted title/name snapshots, atomic checkout/return, current-loan consistency, date and reference validation, history-protected deletion and durable allocation watermarks.",
+    "Replaced independent file writes with one bounded strict snapshot, cooperative cross-process baseline protection and atomic replacement; legacy-pair conversion preserves both original files unchanged.",
+    "Added 53 passing Java/CLI/process checks, compilation after consistent source formatting, preserved historical notes and nine detailed learning documents connecting aggregate consistency to future CRUD HTTP and SQL design."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/library-tracker/results.json",
+    "expectedTests": 53,
+    "environment": "JDK 17; Python 3.13; disposable files; independent JVM concurrency",
+    "command": "python scripts/verify.py (44 Java tests, 9 CLI/process checks); separate UTF-8 compilation after Java formatting"
+  },
+  "testResults": {
+    "passed": true,
+    "javaTests": 44,
+    "processChecks": 9,
+    "total": 53,
+    "checks": [
+      "create-and-checkout",
+      "restart-current-loans",
+      "return-and-history",
+      "edit-and-archive",
+      "history-blocks-delete",
+      "incomplete-eof",
+      "unused-confirmed-delete",
+      "corrupt-startup",
+      "two-jvm-conflict"
+    ],
+    "environment": "JDK 17; disposable temporary fixtures; no personal library data used",
+    "compiledAfterFormatting": true
+  },
+  "courseWords": 4046,
+  "courseFiles": 9,
+  "courseLinksChecked": 32,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "0cc3b439c5d33bb4a4fc5c6ad72923525973eb9451d892419157ded56949e704"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "1e472c228810810d5e2356d03dd86476b64213edde71688674be97d2ad39e145",
+      "after_sha256": "5b906e97786b2356d7553138416a277afecab7945f6961d4a330c76d0ce4c0ff"
+    },
+    {
+      "file": "docs/HISTORICAL-README.md",
+      "before_sha256": null,
+      "after_sha256": "04648d5faadb4db3d47b3f550beb458af2d619a29ec5af75ef8a3c075c33827e"
+    },
+    {
+      "file": "scripts/verify.py",
+      "before_sha256": null,
+      "after_sha256": "de8fba89b2d00f2371c24e13f7ea0b7a4978b9709e92399553ef67b168d56c09"
+    },
+    {
+      "file": "sources.txt",
+      "before_sha256": null,
+      "after_sha256": "bd0890d432e5157c88f73462a797f22c1e15132068303b2613100ce3caf6eb21"
+    },
+    {
+      "file": "src/librarytracker/App.java",
+      "before_sha256": "d2f3ff900c4c434f5d723d3f8ed673a3a00204677968efb45ea5c5d93ee0785d",
+      "after_sha256": "97c815f5c7a5a39848ed39f724e89fd2d5a0831cec45811084f6ec0664064d15"
+    },
+    {
+      "file": "src/librarytracker/model/Book.java",
+      "before_sha256": "366a021979cd5a2d2647f2936045d94f4a1ce58a0c8e3d79f6ea6bb2868da25e",
+      "after_sha256": "129205709c20d4b9c6ad569206868a6ab791c7c6adbbb8ff06688f4f0af1ccfd"
+    },
+    {
+      "file": "src/librarytracker/model/Borrower.java",
+      "before_sha256": "9af46f3e47e5f78aef3c873a059319601eadb62e4ee9154c69f5c3825c813d32",
+      "after_sha256": "3ce299152daf43a32d73e5e326ca3c86555b433fbe9b771f0058fca2e6ed846d"
+    },
+    {
+      "file": "src/librarytracker/model/Loan.java",
+      "before_sha256": null,
+      "after_sha256": "479dcc920417396c5ee78b88c75004f17b538d31c68f067ee64a3c9fddc86e3a"
+    },
+    {
+      "file": "src/librarytracker/model/Values.java",
+      "before_sha256": null,
+      "after_sha256": "c6c70076fac051922aefd7eaa2558f33625e046ab3beaee7ebc37b5ebc1f58bd"
+    },
+    {
+      "file": "src/librarytracker/service/LibraryManager.java",
+      "before_sha256": "e3529f223a4744a6bab06b4f4ee595a5bceed1803337e098839514b9bbc70e62",
+      "after_sha256": "2b43c037b64f1a16bbdf1f823af80cebee47fa796d7ce3a48807b03b5af974a8"
+    },
+    {
+      "file": "src/librarytracker/storage/FileStorage.java",
+      "before_sha256": "969e59f601fd4d989a1bef5b4be2ed165237698d9b41e8e9b8e07af5e72b14af",
+      "after_sha256": "a8ff5824085376f1f389e625c54a49d7d3e03338d25fe06c6457f99c22d80179"
+    },
+    {
+      "file": "src/librarytracker/storage/LibraryData.java",
+      "before_sha256": null,
+      "after_sha256": "b1840a585e5e76a47a99454071b8d31b154df2cac13ff515d5f972718faffd6c"
+    },
+    {
+      "file": "test/librarytracker/LibraryWorkflowTest.java",
+      "before_sha256": null,
+      "after_sha256": "73d3ad780da096a3526a17c0510831394449f3463b458468e6ab823842a6907e"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a735a1d81e9cf9c9183167cb29818f1d28b0ac73e51eecd1fc61acfe1cf7b73c"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7a40c57eca9854f84f2b5eaf447a5f3a2649eb2e83f087a7c5dac8d789ec5d9b"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "6214be9131068c6e4240d37db67c8d91a15debc0b084a1d00d308368a3f12638"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4aa562f1be7e8345fad50e266a36e283bc0957f279def460b825282e2c818ca6"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "66a26440facbc1872ca0a6a376ad067db5b3d152fe077ee7c857afa28368e5e5"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "f31087db98f1e5fa6a53d83c26da397179234d95f35a68af2f69fbe0a0925e7b"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "371a6da65b188ee338ace41df1bce6a03c67ef8819d5d150d93043b9ddc3ea69"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "039e82be980e9154f4d8fbc751a0ece0fbf3aafa83a2e693fc9c5fb634b8ab7f"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b7e42678587e56d80f26537c8c106e2138d06c4c508b301658d6dacebed96f32"
+    }
+  ],
+  "limits": [
+    "The project remains a Java CLI without HTTP/browser UI, authentication, ownership policy, external notifications, fines, renewals or SQL deployment.",
+    "File locking is cooperative and atomic replacement depends on filesystem support; no power-loss, directory-flush, network-filesystem or multi-machine certification.",
+    "Rejected terminal input is not retained as a draft or automatically merged; reload and deliberate re-entry are required. Snapshots are bounded to 10 MiB and 10,000 records per collection.",
+    "Legacy current loans gain receipts using names available at import; previously discarded returns cannot be reconstructed. ISBN and email checks do not provide external verification."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T14:22:56.171624+00:00"
+}

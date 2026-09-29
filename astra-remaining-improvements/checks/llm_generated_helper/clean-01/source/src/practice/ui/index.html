@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Practice Journal</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div>
+          <p class="eyebrow">Learn through deliberate practice</p>
+          <h1>Practice Journal</h1>
+          <p>
+            Organize questions. Record your reasoning. Review your progress.
+          </p>
+        </div>
+        <div id="session-controls" hidden>
+          <span id="owner"></span
+          ><button id="export" type="button">Export records</button
+          ><button id="sign-out" type="button">Sign out</button>
+        </div>
+      </header>
+      <p id="notice" role="status" aria-live="polite"></p>
+      <main>
+        <section id="login" class="card">
+          <h2>Open your local workspace</h2>
+          <p>
+            Run the practice setup command in the README, then enter its access
+            token. This journal works without recording audio or calling an AI
+            provider.
+          </p>
+          <form id="login-form">
+            <label for="token">Workspace access token</label
+            ><input
+              id="token"
+              type="password"
+              required
+              maxlength="64"
+              autocomplete="off"
+            /><button type="submit">Open journal</button>
+          </form>
+        </section>
+        <div id="workspace" hidden>
+          <section class="route card" aria-label="Suggested learning order">
+            <div>
+              <strong>1 · Profiles</strong
+              ><span>Choose a role and background.</span>
+            </div>
+            <div>
+              <strong>2 · Questions</strong
+              ><span>Build your practice bank.</span>
+            </div>
+            <div>
+              <strong>3 · Sessions</strong
+              ><span>Start a focused rehearsal.</span>
+            </div>
+            <div>
+              <strong>4 · Attempts</strong
+              ><span>Write, score, and reflect.</span>
+            </div>
+          </section>
+          <div class="toolbar card">
+            <label for="resource-kind"
+              >Manage<select id="resource-kind">
+                <option value="profiles">Profiles</option>
+                <option value="questions">Questions</option>
+                <option value="sessions">Sessions</option>
+                <option value="attempts">Attempts</option>
+              </select></label
+            ><label for="profile-filter"
+              >Profile filter<select id="profile-filter"></select></label
+            ><button id="refresh" type="button">Refresh workspace</button
+            ><span id="counts"></span>
+          </div>
+          <div class="columns">
+            <aside class="card">
+              <form id="search-form">
+                <label for="search">Search records</label>
+                <div class="search-row">
+                  <input id="search" type="search" maxlength="100" /><button
+                    type="submit"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
+              <button id="new" type="button" class="primary">New record</button>
+              <div id="records" class="records"></div>
+              <div class="pager">
+                <button id="previous" type="button">Previous</button
+                ><span id="page-label"></span
+                ><button id="next" type="button">Next</button>
+              </div>
+            </aside>
+            <section class="card">
+              <h2 id="editor-title">New profile</h2>
+              <p id="editor-help"></p>
+              <p id="record-meta" class="muted"></p>
+              <div id="question-context"></div>
+              <form id="editor">
+                <div id="fields" class="fields"></div>
+                <div class="actions">
+                  <button id="save" type="submit" class="primary">
+                    Save record</button
+                  ><button id="discard" type="button">Discard draft</button
+                  ><button id="delete" type="button" class="danger">
+                    Delete record
+                  </button>
+                </div>
+              </form>
+              <button id="review" type="button">
+                Review latest while keeping my draft
+              </button>
+              <section id="comparison" hidden>
+                <h3>Review accepted state</h3>
+                <p id="review-help"></p>
+                <div class="compare-grid">
+                  <div>
+                    <h4>Latest accepted state</h4>
+                    <pre id="latest"></pre>
+                  </div>
+                  <div>
+                    <h4>Your changed fields</h4>
+                    <pre id="draft"></pre>
+                  </div>
+                </div>
+                <button id="accept-review" type="button">
+                  Use this version and keep my changes
+                </button>
+              </section>
+            </section>
+          </div>
+          <section class="card activity">
+            <h2>Recent changes</h2>
+            <p class="muted">
+              The workspace retains the latest 1,000 activity entries. Entries
+              record actions and field names, without copying answer or
+              credential content.
+            </p>
+            <div id="activity"></div>
+          </section>
+        </div>
+      </main>
+      <footer>
+        Local learning workspace · Export a copy before recovery exercises.
+      </footer>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

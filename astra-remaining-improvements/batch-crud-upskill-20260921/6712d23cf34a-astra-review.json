@@ -1,0 +1,32 @@
+{
+  "id": "6712d23cf34a",
+  "approved": true,
+  "reviewedAt": "2026-09-22T04:47:56.687508+00:00",
+  "sourceReview": "Read entire invoice service, source unchanged. Persisted state matrix, tenant/actor fields, outbox payload and publish ordering reviewed; stale-read and commit limitations explicit.",
+  "teachingReview": "Rewrote nine template chapters with exact create/status event examples, legal matrix, separate exercises/answers and publisher-versus-repository failure traces.",
+  "testReview": "Six passed actual-service cases cover creation, illegal equal status, all5legal edges and event metadata, terminal/unknown refusal, scoped list/publish failure and DB failure suppression. Explicit repository/publisher adapters, no schema parsing or broker/DB claim.",
+  "specSHA256": "f9cc0199329bcd1cbc24f24df6583ee981f6f4fe8064cfa9f9634189a2a9dfbc",
+  "fileHashes": {
+    "tests/invoice-service-runtime.test.mjs": "d84ecb245e23796cba3731f181c28fd48f24784709dbaf4d24d4ea21e858e189",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/invoice-service.ts.original.txt": "b5ba0910e2121fa9c169aa72e42356d915555a7fb0fab792b827931a305e949e",
+    "astraupskill/evidence/crud-b08-astra-runtime.log": "a279b1fab27bb1330c0ce7623b3971b6ac9d63e24d652a9ad495c558a56e9b05",
+    "astraupskill/evidence/results.json": "61312e2d06bdaa09814ebd6d3d6ae07b3ac70311a1d726f48ee0ed58b3d74b17",
+    "astraupskill/README.md": "fa5b68b1a46f5f4a8cde46c15f29819bee86c6d7114d51c220e34252f7747ad7",
+    "astraupskill/01-CODEBASE-MAP.md": "04adf306341d07e7187efbfc66fd7df646142808aaa9c9c705eb9b0a4ccc157a",
+    "astraupskill/02-CONCEPTS.md": "9e5188d1ff731da81c2cb71588d9e6823731dc0712236345d63da72dfb1c07a0",
+    "astraupskill/03-WORKED-CHANGE.md": "1bf74c4b99e862415db4ebd9f90abb7e81e4ca90ac019bdf2b6238b6a9a1e266",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "61e937ca992de9a1791d6de6ffe8b769cae54885aa6b552f39e0306b804b5d5a",
+    "astraupskill/05-PRACTICE.md": "d3b5744bebffb0932abcf0f3ba9a757f5a7e34d3a01a93f90043a5d31a8d8412",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "df437f2bd76a08869e2013aed20b8e0ddcf2cb5de666b0bdb717c5b9297313d0",
+    "astraupskill/07-TRACE-LAB.md": "4174bec19cdbf4d65c83eaf48055977395f2dd3e136559f88695e2db1211c8de",
+    "astraupskill/VERIFICATION.md": "60b1f6577733bbec3269b2d00597835d83e685d17c5e550d975859c0c69040d3"
+  },
+  "evidenceHashes": {
+    "checks/6712d23cf34a/crud-b08-astra-runtime.json": "f0ffced7f31c3fcfb797713fab08888ff09e1eef583cbe282b3a0abb212bf4b0",
+    "checks/6712d23cf34a/crud-b08-astra-runtime.log": "a279b1fab27bb1330c0ce7623b3971b6ac9d63e24d652a9ad495c558a56e9b05",
+    "checks/6712d23cf34a/crud-ww20-runtime-v1.json": "1c8af541e070bf65f425a0d9eab73e9579e4ad50772c686cea6f52053728353d",
+    "checks/6712d23cf34a/crud-ww20-runtime-v1.log": "a8a1b7d50569cd9b066d560c9741e48a29190ab21d53b4f897002c4b9fc10524",
+    "checks/6712d23cf34a/results-crud-ww20-runtime-v1.json": "61312e2d06bdaa09814ebd6d3d6ae07b3ac70311a1d726f48ee0ed58b3d74b17"
+  }
+}

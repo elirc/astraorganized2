@@ -1,0 +1,51 @@
+{
+  "summary": [
+    "API key services parse strict runtime schemas and preserve omitted versus null configuration values.",
+    "Lifecycle reads and authorization use the transaction client; update and rotation require ACTIVE, and rotation compares the previously read hash before recording history.",
+    "Creation locks the organization row before enforcing the 25-active-key limit, generating material and creating key/audit records.",
+    "Added authorized success, stale-write, tenant/ownership, response secrecy, lock-contract and rollback-fixture regressions.",
+    "Added a reproducible dependency lock, typecheck script and nine source-based learning guides with exact verification evidence."
+  ],
+  "limits": [
+    "Concurrency and rollback tests use fixtures and production-query spies, not a live PostgreSQL race.",
+    "The organization limit relies on cooperating create paths using the same row lock.",
+    "Existing local demonstration authentication is retained; no real external key was created or rotated."
+  ],
+  "changedFiles": [
+    "README.md",
+    "astraupskill/evidence/resume14-build-02.json",
+    "astraupskill/evidence/resume14-build-02.log",
+    "astraupskill/evidence/resume14-generate-01.json",
+    "astraupskill/evidence/resume14-generate-01.log",
+    "astraupskill/evidence/resume14-tests-02.json",
+    "astraupskill/evidence/resume14-tests-02.log",
+    "astraupskill/evidence/resume14-types-01.json",
+    "astraupskill/evidence/resume14-types-01.log",
+    "astraupskill/snapshots/next-env.d.ts.original.txt",
+    "astraupskill/snapshots/next.config.ts.original.txt",
+    "astraupskill/snapshots/package.json.original.txt",
+    "astraupskill/snapshots/src__app__api__orgs__[orgId]__api-keys__[keyId]__route.ts.original.txt",
+    "astraupskill/snapshots/src__lib__validation__apiKeySchemas.ts.original.txt",
+    "astraupskill/snapshots/src__repositories__apiKeyRepository.ts.original.txt",
+    "astraupskill/snapshots/src__services__apiKeyService.ts.original.txt",
+    "astraupskill/snapshots/tests__data-isolation.test.ts.original.txt",
+    "astraupskill/snapshots/tests__state-transition.test.ts.original.txt",
+    "next-env.d.ts",
+    "next.config.ts",
+    "package-lock.json",
+    "package.json",
+    "src/app/api/orgs/[orgId]/api-keys/[keyId]/route.ts",
+    "src/lib/validation/apiKeySchemas.ts",
+    "src/repositories/apiKeyRepository.ts",
+    "src/services/apiKeyService.ts",
+    "tests/data-isolation.test.ts",
+    "tests/service-boundaries.test.ts",
+    "tests/state-transition.test.ts"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/8c8b7f90a8d2/resume14-results.json",
+    "expectedTests": 23,
+    "command": "Recorded complete suite and build/type checks"
+  }
+}

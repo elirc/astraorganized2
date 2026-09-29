@@ -1,0 +1,34 @@
+{
+  "id": "678b11ff9b03",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:17:10.517557+00:00",
+  "sourceReview": "Read TransactionService, actual viewer/offer guards, policies, workflow helper and errors. No production change; submitOffer has sequential repository calls without transaction or workflow-validator invocation.",
+  "teachingReview": "Removed repeated filler from all nine chapters, distinguished viewer/offer gates and repository versus external provider, added graded trace/failure exercises and exact limitations.",
+  "testReview": "Four actual service/guard/policy/error cases passed with only repository adapters. Asserted exact successful payloads, real 403/404, role matrix and create/status/audit error identity/stopping order.",
+  "specSHA256": "669efe783d93e7af48705c458d44018c9add63cdf34d18166e4efe1edf8faeca",
+  "fileHashes": {
+    "tests/transaction-offer-policy.test.mjs": "2743a6feae0898ae19a7125d56f161bc52b03cac3b8dbf7d5fac3a29d35bcee7",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/transaction-service.ts.original.txt": "2193c0b58249ff89e48210d42b34a031a9ef3d7cf2f1b999814e2006811d38c2",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "6657a65aa0c2e3ba71eebeaa1513c625b2511eac546d18eea674b7c8bd37a198",
+    "astraupskill/evidence/results.json": "eadf785afe0ba369f9722ddc7fea1c2f92e3bbcc3016bb3236e4933d598b558b",
+    "astraupskill/README.md": "f5df89e4ed9921551433c501c1a49107ccb0f50d3a91f191ff3f7207f5f6e46c",
+    "astraupskill/01-CODEBASE-MAP.md": "a03a77cca1f86904dbcce0b3929c1e080b453fba9e33356b4cf8a28875062243",
+    "astraupskill/02-CONCEPTS.md": "abe4d4d589a16c82acec3cb2d8a5c665359a18b3478ec716620c4b19170f433e",
+    "astraupskill/03-WORKED-CHANGE.md": "02008b3a4323b06ecb92d29251aebff45151644de4dd5fffc497f49afbe5d7dd",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "876d074f603a9139d5b6c4f0b6b6b399b7da7b248ebf7774463d0a3088890a88",
+    "astraupskill/05-PRACTICE.md": "bf5de029abb2046c52b3d6bb5cb341ad4d1c6c41c3a66a754f1b30c5c0cf6254",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "1883a1fa15bce83a90a7a87796c88f521977cb6c7b58a6f557f656fb926ea9cf",
+    "astraupskill/07-TRACE-LAB.md": "93fa64b6b9fe2e324c6fad447775aec1dc074e50c6fa9d6cd05e805b06fb645e",
+    "astraupskill/VERIFICATION.md": "1b7d94a7d9dbae22049a6be0930970df6b2ccf7695684c9afd834926e7101a3e"
+  },
+  "evidenceHashes": {
+    "checks/678b11ff9b03/crud-b05-astra-runtime.json": "6ac4c49fa822b9e5c3e00c18299cada3152da4e66887f4b8cc26d7261009d82f",
+    "checks/678b11ff9b03/crud-b05-astra-runtime.log": "6657a65aa0c2e3ba71eebeaa1513c625b2511eac546d18eea674b7c8bd37a198",
+    "checks/678b11ff9b03/crud-b05-ww15-runtime1.json": "d329bcdda47993e032035dd1db429aa2aa690535c1db8d4ddf8e99fb93415f1f",
+    "checks/678b11ff9b03/crud-b05-ww15-runtime1.log": "e627f4db5993f6ad8f295bd5095ef4dc596fa81f4181c3d3ca41de6e68633e67",
+    "checks/678b11ff9b03/crud-b05-ww15-runtime2.json": "c48d789649303ad6ab16664b2520a66674d4b4c363149a66f12f555cced9af39",
+    "checks/678b11ff9b03/crud-b05-ww15-runtime2.log": "bb5fdfd16a42da8c12e33a2e6ba76c754619388015a619054f7d31336cdf77ff",
+    "checks/678b11ff9b03/results-crud-b05.json": "eadf785afe0ba369f9722ddc7fea1c2f92e3bbcc3016bb3236e4933d598b558b"
+  }
+}

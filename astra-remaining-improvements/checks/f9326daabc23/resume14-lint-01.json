@@ -1,0 +1,18 @@
+{
+  "project": "gitvg/storefront",
+  "id": "f9326daabc23",
+  "command": [
+    "pnpm.cmd",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-19T17:04:21.585522+00:00",
+  "status": "complete",
+  "log": "resume14-lint-01.log",
+  "pid": 23164,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-19T17:13:43.578701+00:00",
+  "elapsedSeconds": 561.97
+}

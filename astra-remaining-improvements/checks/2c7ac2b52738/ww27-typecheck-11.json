@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww27",
+  "id": "2c7ac2b52738",
+  "command": [
+    "npx.cmd",
+    "tsc",
+    "--noEmit"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2c7ac2b52738",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T13:59:17.899040+00:00",
+  "status": "complete",
+  "log": "ww27-typecheck-11.log",
+  "pid": 16500,
+  "exitCode": 2,
+  "passed": false,
+  "finishedAt": "2026-09-13T14:00:38.793742+00:00",
+  "elapsedSeconds": 80.89
+}

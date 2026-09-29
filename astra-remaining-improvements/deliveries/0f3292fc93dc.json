@@ -1,0 +1,422 @@
+{
+  "project": "buildsql",
+  "id": "0f3292fc93dc",
+  "summary": [
+    "Preserved the six-track, 310-lesson and 2155-mission archive while adding runtime content contracts, bounded loading, real filtering, lazy full-note rendering and actionable errors.",
+    "Replaced unacknowledged localStorage autosaves with explicit IndexedDB workspace saves, transaction-scoped identity/revision checks, retained drafts, reviewed import and exact legacy preservation.",
+    "Added versioned CRUD practice projects with goals, evidence, status rules, search, pagination and deletion; corrected prerequisite checks, repeat XP, UTC recall scheduling and self-review labeling.",
+    "Added nine detailed junior-to-mid-level learning guides, reproducible tests and browser verification, pinned setup and curriculum candidate generation that preserves published content."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/buildsql/results.json",
+    "expectedTests": 69,
+    "environment": "Windows; Node 22.16.0; React 19.2.8; TypeScript 5.9.3; Vite 7.3.6; Vitest 3.2.7; disposable Chromium 148",
+    "command": "npm test; npm run validate; npm run build; python verification/verify_browser.py; python verification/verify_authoring.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 69,
+    "expected": 69,
+    "suites": [
+      {
+        "suite": "domain-component-content",
+        "total": 43,
+        "passed": true,
+        "results": "tests-03.json"
+      },
+      {
+        "suite": "authoring",
+        "total": 7,
+        "passed": true,
+        "results": "authoring-01/results.json"
+      },
+      {
+        "suite": "browser",
+        "total": 19,
+        "passed": true,
+        "results": "browser-02/results.json"
+      }
+    ],
+    "executions": {
+      "install-01": {
+        "command": [
+          "npm.cmd",
+          "ci",
+          "--ignore-scripts",
+          "--no-audit",
+          "--no-fund",
+          "--cache",
+          "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache"
+        ],
+        "exitCode": 0,
+        "seconds": 1140.48
+      },
+      "typecheck-03": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/typescript/bin/tsc",
+          "-b"
+        ],
+        "exitCode": 0,
+        "seconds": 150.14
+      },
+      "tests-03": {
+        "command": [
+          "node",
+          "--max-old-space-size=768",
+          "node_modules/vitest/vitest.mjs",
+          "run",
+          "--maxWorkers=1",
+          "--no-file-parallelism",
+          "--reporter=default",
+          "--reporter=json",
+          "--outputFile=C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\buildsql\\tests-03.json"
+        ],
+        "exitCode": 0,
+        "seconds": 163.88
+      },
+      "content-01": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "scripts/validate-content.mjs"
+        ],
+        "exitCode": 0,
+        "seconds": 17.84
+      },
+      "build-01": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/vite/bin/vite.js",
+          "build"
+        ],
+        "exitCode": 0,
+        "seconds": 399.14
+      },
+      "browser-02": {
+        "command": [
+          "python",
+          "verification/verify_browser.py"
+        ],
+        "exitCode": 0,
+        "seconds": 181.31
+      }
+    },
+    "preservedPublishedContent": {
+      "public/content/csharp.json": true,
+      "public/content/dotnet.json": true,
+      "public/content/index.json": true,
+      "public/content/node.json": true,
+      "public/content/react.json": true,
+      "public/content/resources.json": true,
+      "public/content/sql.json": true,
+      "public/content/typescript.json": true
+    },
+    "reviewedScreenshots": [
+      "01-rejected-practice-form.png",
+      "02-practice-project.png",
+      "03-filtered-projects.png",
+      "04-self-review-workspace.png",
+      "05-reviewed-import.png",
+      "06-practice-form-1440.png",
+      "06-practice-form-390.png",
+      "06-practice-form-800.png",
+      "07-final-practice-list.png"
+    ],
+    "visualReview": "All nine browser-02 images inspected; form captures at 1440/800/390 widths retain clear labels and usable actions, no horizontal overflow. First rejected-form capture corrected sticky-header position by scrolling before capture.",
+    "verificationDate": "2026-09-09"
+  },
+  "courseWords": 6392,
+  "courseFiles": 9,
+  "courseLinksChecked": 32,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "a06626dc921e261788b4b13dfb998aa936b30df7ec95ff910a9808c065e7bac6",
+      "after_sha256": "ad17e3e05ec131a9427f5560aadb8bbdd562e8020bff3ad785a6b034fb636f91"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "cb4a0e314bd899a2aad66c4de556dc1591fb442b68d1f8c49e1f7bafe28d5e10",
+      "after_sha256": "299b3e735512c73560197f39802fefd4b23d1a8e5c7180d8ba41b0be9cdf8747"
+    },
+    {
+      "file": "astraupskill/images/01-rejected-practice-form.png",
+      "before_sha256": null,
+      "after_sha256": "159e537b4da624b9db1bef93799215fcdc0fee1d1df6740b1441883902d304bd"
+    },
+    {
+      "file": "astraupskill/images/02-practice-project.png",
+      "before_sha256": null,
+      "after_sha256": "d6653f43a48b2499776ac590d69ea1d742aad0381b71c4f2374c18ecf97b8b7a"
+    },
+    {
+      "file": "astraupskill/images/03-filtered-projects.png",
+      "before_sha256": null,
+      "after_sha256": "8ad42c4dcca5e5cdf970733e7b691b0f1383d3e5edff00c1797c509fb3e0a59c"
+    },
+    {
+      "file": "astraupskill/images/04-self-review-workspace.png",
+      "before_sha256": null,
+      "after_sha256": "e1df34d8aadba09615b63cafe9d20ba10e694262d619068d9391b71f27bc9efc"
+    },
+    {
+      "file": "astraupskill/images/05-reviewed-import.png",
+      "before_sha256": null,
+      "after_sha256": "d73681a3a575fdffa76dc46237cca2122fcbc39f8edea3061baf8736bd120b2e"
+    },
+    {
+      "file": "astraupskill/images/06-practice-form-1440.png",
+      "before_sha256": null,
+      "after_sha256": "5e0ba3543ed2df57907c43afbb64de11acbd89316c488b6e3fe02f8b3151a445"
+    },
+    {
+      "file": "astraupskill/images/06-practice-form-390.png",
+      "before_sha256": null,
+      "after_sha256": "84b83c4d19681d4ce701581ef60b16c9b000e050f6b86f95532298054528080e"
+    },
+    {
+      "file": "astraupskill/images/06-practice-form-800.png",
+      "before_sha256": null,
+      "after_sha256": "c69d5130430bcab41a689675384a669e38177b0ab9f5d1d020cf78097548bacc"
+    },
+    {
+      "file": "astraupskill/images/07-final-practice-list.png",
+      "before_sha256": null,
+      "after_sha256": "0872a2d53661b64fa883cc13263a314735d40ed1eaaf588f4b5dcee91b3cc409"
+    },
+    {
+      "file": "content-src/vol3/assemble.mjs",
+      "before_sha256": "f0edb88497e0efd61a7a760ebaf49b758f49f3eca286e62ce4d9d67206155f41",
+      "after_sha256": "fa3ad079651cf99084c510e972b431e01f83453b84aa619cb4f0b7e79e9d3c6a"
+    },
+    {
+      "file": "docs/original/README.md.txt",
+      "before_sha256": null,
+      "after_sha256": "cb4a0e314bd899a2aad66c4de556dc1591fb442b68d1f8c49e1f7bafe28d5e10"
+    },
+    {
+      "file": "docs/original/content-src__vol3__assemble.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "f0edb88497e0efd61a7a760ebaf49b758f49f3eca286e62ce4d9d67206155f41"
+    },
+    {
+      "file": "docs/original/scripts__merge-content.mjs.txt",
+      "before_sha256": null,
+      "after_sha256": "8091366e4ab9c39772e9166c74dddb0523122ef792a4c9b20ba4371f43987a76"
+    },
+    {
+      "file": "docs/original/src__App.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "4a89128951250d1bdbbf432e03f081261fb291da4adc11fc78af66abecf22774"
+    },
+    {
+      "file": "docs/original/src__content.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "d03b0c48a42c12e9081f13b0eb214bd76406724b22d95e79c32a54f3cb09764e"
+    },
+    {
+      "file": "docs/original/src__game.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "39253054a4a15525d2fc57b8b88a305135e05b1152a4b0fd9caff19b2aeaf671"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "a59268d3aa8dfe1ff34ef039e9b7175b5976f2d3150b38c76b138967b1416d7f",
+      "after_sha256": "93b76374983936866805252b727585d15801a45250367896e8718170e61999e5"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "c241a9ed076884ea61132530b2a9cac5aa721751349fcd1450e10686a55d453b",
+      "after_sha256": "9176bb854eba30e664fe6d76b7bdbf3c406d3740bf7129bf528a7f6d8af18d19"
+    },
+    {
+      "file": "scripts/merge-content.mjs",
+      "before_sha256": "8091366e4ab9c39772e9166c74dddb0523122ef792a4c9b20ba4371f43987a76",
+      "after_sha256": "5c2db9569f1165b0ebbbc318092c71ef28e9d51bc9cb2a53965f24143aae5be7"
+    },
+    {
+      "file": "scripts/validate-content.mjs",
+      "before_sha256": "a5c7a1abcdbb3fd4f8a6f471fda0239a1e880ace09dcc4fee55b5096054eb448",
+      "after_sha256": "bf6d89ab435d8305523b1936dced0dc5a650fe090caeb40aa9baa9fef8b7db7e"
+    },
+    {
+      "file": "src/App.test.tsx",
+      "before_sha256": "3e4fe2aad386f7dcfc525ab3ef65985c999ad60edf27111ea6f057b8dcd1b5ea",
+      "after_sha256": "668ebb3b1c764c3ccfe71e2fe4dbd8bf09e1362beb5489f2b52a0948fb94685d"
+    },
+    {
+      "file": "src/App.tsx",
+      "before_sha256": "4a89128951250d1bdbbf432e03f081261fb291da4adc11fc78af66abecf22774",
+      "after_sha256": "d21cc5f0c0e093cf5bba93286fb8bd4610d65db1dc1341db9ae25bc442ac32bf"
+    },
+    {
+      "file": "src/LibraryView.tsx",
+      "before_sha256": null,
+      "after_sha256": "ad174955c36015f21115f22c790b365c9e2540fb67d6ef5730bfefa2ccf1cf67"
+    },
+    {
+      "file": "src/Markdown.tsx",
+      "before_sha256": "7aae0422139c1d1a8cab57a0842df2493d5df08acb65647077c05d35979338ef",
+      "after_sha256": "b7f92531ee72bf67022da93ef4d504f9f5c4752867c4ea4ff50eb78ff63a99ec"
+    },
+    {
+      "file": "src/PracticeView.tsx",
+      "before_sha256": null,
+      "after_sha256": "f965869c6ad04fcea8c7e64f90c441742b9779b852ac46682c0b3beba1b517c9"
+    },
+    {
+      "file": "src/WorkspaceSettings.tsx",
+      "before_sha256": null,
+      "after_sha256": "41ae22e2aabf8bdf4fac4544d4a26bd605d5e57e16b83fc13dcd959546e64791"
+    },
+    {
+      "file": "src/catalog.json",
+      "before_sha256": null,
+      "after_sha256": "980a4f4ea802e25cc97c29cabb9abea1acc0fb09546ef99bdac991f05899c173"
+    },
+    {
+      "file": "src/content-loader.ts",
+      "before_sha256": null,
+      "after_sha256": "38efec2826ec0dd2497a4af17c5275728aab5809d7e1f31b02b5186046aab73e"
+    },
+    {
+      "file": "src/content.test.ts",
+      "before_sha256": null,
+      "after_sha256": "5a3fca789e754a21f5537bb6eff0a488662c6810b11b6e18b6122c86a28ef62b"
+    },
+    {
+      "file": "src/content.ts",
+      "before_sha256": "d03b0c48a42c12e9081f13b0eb214bd76406724b22d95e79c32a54f3cb09764e",
+      "after_sha256": "9f33bc1183710b9ee2d0224fc08c925621dd136e428869611021bf80cb0d4520"
+    },
+    {
+      "file": "src/contracts.ts",
+      "before_sha256": null,
+      "after_sha256": "8ddaa7f0b5ea4f223bf354558b5588c0f35cc1db2109cc211b675212de273ad4"
+    },
+    {
+      "file": "src/game.test.ts",
+      "before_sha256": "014b416ad3e77cfd2222457fa8b94611064b3bb0e10717d3f91b3bb1a8fc1e0f",
+      "after_sha256": "92b264a357d7859a0dde135d01154da4cc173c8ca4b0f1d50f43a0000de7ee41"
+    },
+    {
+      "file": "src/game.ts",
+      "before_sha256": "39253054a4a15525d2fc57b8b88a305135e05b1152a4b0fd9caff19b2aeaf671",
+      "after_sha256": "0989c60eeafcca6624ca2eb5e296a9efb3b7b27a882298defccb2df5ed5b3f00"
+    },
+    {
+      "file": "src/main.tsx",
+      "before_sha256": "10ac689b4eb57228d6be39425516819110d59de99ccaff9eba6ab68ae07abcc3",
+      "after_sha256": "ccbefe7be6c69706a1bb01c4c3f20492eb002435af6ba7e5a6d45f7c6aa3a140"
+    },
+    {
+      "file": "src/progression.ts",
+      "before_sha256": null,
+      "after_sha256": "01c01eab5dfdbbd970e9f338ca25130e5b426283cef6da850ca48b7e9baf0fbb"
+    },
+    {
+      "file": "src/storage.ts",
+      "before_sha256": null,
+      "after_sha256": "9dc2858a3ded4ecddd162c408e4904de08893c745d771efb051f79edbd85f4ed"
+    },
+    {
+      "file": "src/styles.css",
+      "before_sha256": "7345cf649a7bc053eb30569d55b4eb2f0b5850f70851863face97efb0b8c1e0f",
+      "after_sha256": "af1cd7359beab48f4f8d7bf13cb22d21316c86d55c30fa6128bb3f552a14e0f3"
+    },
+    {
+      "file": "src/test-setup.ts",
+      "before_sha256": "ac54c110d5f765d5465b453ad3f272e07f3284c29feab201f4d3e3c83d4d5804",
+      "after_sha256": "6c95227c7b2e49d4ae79092cdedc5e055c62b37d971718b698f6808a4b185ee0"
+    },
+    {
+      "file": "src/types.ts",
+      "before_sha256": "9907230e962668eb8a88f53dba54c5f0a7047fbfbd710952706ea974e09b219e",
+      "after_sha256": "92f697523faef9201c531143ff58e782bd8a15a65094197880a89e3303dc1364"
+    },
+    {
+      "file": "src/useWorkspace.ts",
+      "before_sha256": null,
+      "after_sha256": "deaa212dff68f9ea60b35f408d78089245d082a2e1d537187fa9268a0f5085ea"
+    },
+    {
+      "file": "verification/requirements-browser.txt",
+      "before_sha256": null,
+      "after_sha256": "dddf5f05658b39100b8f4f196492049da35b9f39c52832ac83cd2f45f71920b4"
+    },
+    {
+      "file": "verification/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "38aba9a4f357da56535df919783d8d16956847bc2936052762a3da56d3886c4e"
+    },
+    {
+      "file": "vite.config.ts",
+      "before_sha256": "14c202c5fb277db30baaad45ae6137d26b52cb8a972f98e6c463fac4cdad855c",
+      "after_sha256": "1190a9997a4de738ed2d18377508208dd9f3c07564b6ad71d58e45916ef45fcf"
+    },
+    {
+      "file": "verification/verify_authoring.py",
+      "before_sha256": null,
+      "after_sha256": "550f724addeb542ee0320b5c0432cd977c239aa71da712365040c79e1fb35684"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "83e95a0f8df4f81e03a0511e13dc1ca6d5e6c6e3ac4274786fed68901084d5b9"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "b386351f17d37087c02a3de3489a90a059b4ff1f4bb72376a819e29bf2f20894"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b228e3d921f3332f03d53350749a5c5d645bffb4188d4d38d80deedf9dfecc54"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "8274667083ffe987a417477ed943e75077b1abfa9c475a5717e0714f2d056758"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "01d95cb4cce1bcf5c142c090762207ee922c27f140bace74e928105c959b990f"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "370b5b5bf10fbda76f458fe8aa2e886ea91aa3aaf4d8ebfe05da84bfe43f481c"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b72af7d891a6f6a507d99992c750bc29f111a9dface31f158bf85a30f820c34a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f51423a9a4f3c80d63a39b8737c753e0a4f7ceab1bd1fb6a7b423e0fc2123c70"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "968eefb0d9ef1c8844e5c3301f351917d96312bebf74fe0df0d315828d21a262"
+    }
+  ],
+  "limits": [
+    "Local browser application with no server, account system, cloud synchronization, automatic grading or public deployment. Written evidence and self-review do not certify correctness.",
+    "Whole-workspace 8 MiB limit, 100 practice projects, 100000 characters per mission note and ten recovery snapshots. Replacements refuse full snapshot capacity; no automatic pruning, cross-tab merge or row-level persistence.",
+    "Legacy imports validate known identities, rewards, dates and histories; incompatible data requires manual review. The original localStorage text remains unchanged. Corrupt active aggregates are exported for review in a separate profile rather than automatically replaced.",
+    "Preserved curriculum commands and source paths refer to original course workspaces that are not all included here. Structural validation does not constitute a manual correctness audit of all 2155 reference answers.",
+    "Candidate authoring does not publish. A failed generation may leave an incomplete new candidate; packs, index and catalog require coordinated review and promotion.",
+    "One-browser verification does not establish full accessibility, all-browser behavior, guaranteed browser storage retention or arbitrary power-loss durability. Backend/authentication/booking tickets are future exercises."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T22:31:19.573390+00:00"
+}

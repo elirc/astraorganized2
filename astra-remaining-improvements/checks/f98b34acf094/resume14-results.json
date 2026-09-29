@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "total": 34,
+  "passedTests": 34,
+  "failed": 0,
+  "notExecuted": 0,
+  "evidence": [
+    "resume14-tests-02",
+    "resume14-types-01",
+    "resume14-lint-01",
+    "resume14-build-01"
+  ],
+  "scope": "Full Vitest suite plus listed type/build/lint checks; no live database or external provider run."
+}

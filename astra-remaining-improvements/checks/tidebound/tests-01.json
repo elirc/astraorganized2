@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm.cmd",
+    "test",
+    "--",
+    "--reporter=verbose",
+    "--reporter=json",
+    "--outputFile=../../checks/tidebound/tests-01-results.json"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 52.09
+}

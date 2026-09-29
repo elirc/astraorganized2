@@ -1,0 +1,99 @@
+import sys, json, os
+sys.path.insert(0, r'C:\Users\Owner\Desktop\AstraOrganized2\fablereview\_fix')
+import fable_edit as fe, family_express as fx
+S = 'js1-pulse-analytics'; P = fe.REG[S]['abs']; os.chdir(P); done = ['review#1 fixture corrected everywhere (P1 1.1)']
+
+def reorder(t):
+    old = """  if (typeof data.product !== "string" || data.product.length > 200) throw new ValidationError("Use a product name of at most 200 characters.");
+  if (data.name === "purchase" && (typeof data.amount !== "number" && typeof data.amount !== "string" || String(data.amount).trim() === "")) throw new ValidationError("Purchase amount must be a number.");
+  if (!data.name || !EVENT_NAMES.includes(data.name)) {
+    throw new ValidationError("name must be view, add_to_cart, or purchase.");
+  }"""
+    new = """  // Vocabulary first: every later rule depends on which event this is.
+  if (!data.name || !EVENT_NAMES.includes(data.name)) {
+    throw new ValidationError("name must be view, add_to_cart, or purchase.");
+  }
+  if (typeof data.product !== "string" || data.product.length > 200) throw new ValidationError("Use a product name of at most 200 characters.");
+  if (data.name === "purchase" && (typeof data.amount !== "number" && typeof data.amount !== "string" || String(data.amount).trim() === "")) throw new ValidationError("Purchase amount must be a number.");"""
+    assert old in t
+    return t.replace(old, new, 1)
+fe.rw('server/src/index.ts', reorder); done.append('review#3 parseEvent checks the event vocabulary before the product/amount rules')
+def refresh_409(t):
+    old = """app.post("/api/metrics/refresh", asyncRoute(async (_req, res) => {
+  await pool.query("REFRESH MATERIALIZED VIEW CONCURRENTLY daily_metrics");"""
+    new = """app.post("/api/metrics/refresh", asyncRoute(async (_req, res) => {
+  // Two overlapping CONCURRENTLY refreshes queue on the view's lock; bound the wait and
+  // answer 409 instead of hanging the request (55P03 = lock_not_available).
+  const client = await pool.connect();
+  try {
+    await client.query("BEGIN");
+    await client.query("SET LOCAL lock_timeout = '2s'");
+    await client.query("REFRESH MATERIALIZED VIEW CONCURRENTLY daily_metrics");
+    await client.query("COMMIT");
+  } catch (error) {
+    await client.query("ROLLBACK").catch(() => {});
+    if ((error as { code?: string }).code === "55P03") {
+      client.release();
+      return res.status(409).json({ error: "A refresh is already running; try again shortly." });
+    }
+    client.release();
+    throw error;
+  }
+  client.release();"""
+    assert old in t
+    return t.replace(old, new, 1)
+fe.rw('server/src/index.ts', refresh_409); done.append('review#4 POST /api/metrics/refresh bounds the lock wait (SET LOCAL lock_timeout) and answers 409 on 55P03 instead of hanging')
+def patch_test(t):
+    add = '''
+test("a seven-day window returns seven rows even when events exist on two days", async () => {
+  await h.admin.query("TRUNCATE events");
+  await h.admin.query(
+    "INSERT INTO events(name,product,amount,occurred_at) VALUES ('purchase','Fixture',5,CURRENT_DATE-6),('purchase','Fixture',7,CURRENT_DATE)",
+  );
+  assert.equal((await call("/api/metrics/refresh", "POST", {})).status, 200);
+  const daily = (await call("/api/metrics/daily?days=7")).data;
+  assert.equal(daily.length, 7);
+  assert.deepEqual(daily.map((x) => x.revenue), [5, 0, 0, 0, 0, 0, 7]);
+  assert.equal(daily.filter((x) => x.revenue === 0).length, 5);
+});
+test("an event with an unknown name is rejected by the vocabulary rule first", async () => {
+  const r = await call("/api/events", "POST", { name: "refund", product: 5, amount: "x" });
+  assert.equal(r.status, 400);
+  assert.match(r.data.error, /view, add_to_cart, or purchase/);
+});
+'''
+    return t.rstrip('\n') + '\n' + add
+assert fe.rw('test/feature.test.ts', patch_test); done.append('review#2 test: ?days=7 with events on two days returns seven rows with zero revenue on the empty days; test: vocabulary rule fires first')
+fe.append_section(S, '02', '## Freshness and the refresh lock', """`daily_metrics` is a materialized view: reads are cheap because the aggregation happened at the last `REFRESH`, and `GET /api/metrics/freshness` reports how far raw `events` have moved since then. `REFRESH MATERIALIZED VIEW CONCURRENTLY` lets readers keep reading while the view is rebuilt, but two refreshes cannot run at once: the second waits for the first's lock. The route now runs the refresh in a transaction with `SET LOCAL lock_timeout = '2s'`; if the lock is not available in time PostgreSQL raises `55P03` and the route answers 409 rather than holding the request open. Predict what a dashboard should do with a 409 (show the last refresh time and retry), then reproduce it: start a long refresh in `psql` inside a transaction and call the route.""")
+mapping = fx.rename_lesson_fields('client/src/App.tsx'); done.append(f'harness ids renamed: {mapping}')
+fx.pin(P, fx.PINS_TS); done.append('review#6 dependencies pinned; lockfile generated by the verification install')
+fx.exercises(S, {
+ 1: "Starting state: the seven-day moving average divides by the number of days in the window, zero days included. Add `?average=nonzero` that divides by the number of days with revenue. Acceptance: for the fixture 10, 0, 30 the two averages on day 3 are 13.33 and 20; the default is unchanged.",
+ 2: "Starting state: `freshness` reports a count. Add `staleSeconds` computed from the newest raw event and the last refresh time. Acceptance: after inserting a raw event and before refreshing, `staleSeconds` is positive; after refreshing it is 0.",
+ 3: "Starting state: the first test truncates `events`. Add a test that inserts an event at exactly midnight UTC and one a second before. Acceptance: they land on different days in `daily` and the window boundaries are stated in UTC in the response docs.",
+ 4: "Starting state: totals are floats. Return `revenueCents` alongside `revenue` from an integer-cents aggregate. Acceptance: the cumulative totals reconcile exactly in cents without `Math.round` in the test.",
+})
+fe.set_reviews(S, [
+ "the nonzero-day average must be computed in SQL from the same window, and the test must show both numbers for the shipped fixture (13.33 and 20 on day 3).",
+ "`staleSeconds` must come from `MAX(occurred_at)` versus the refresh timestamp stored at refresh time; the test must observe positive then zero.",
+ "the midnight test must use explicit UTC instants and assert two different day buckets; document the timezone of the buckets.",
+ "the cents aggregate must be `ROUND(SUM(amount) * 100)::bigint`, the test must compare integers, and the float `revenue` must remain for the UI.",
+]); done.append('review#5 exercises 1-4 with analytics-specific acceptance; distinct review paragraphs (05, 06)')
+fe.set_boundaries(S, [
+ ("the dashboard decides what to ask", "`client/src/App.tsx`: the window selector sends `?days=N`; the refresh button posts to `/api/metrics/refresh`; the event form posts `{ name, product, amount }`."),
+ ("the request leaves the browser", "`client/src/api.ts`: `GET /api/metrics/daily`, `GET /api/metrics/freshness`, `POST /api/metrics/refresh`, `POST /api/events`."),
+ ("`parseEvent` validates vocabulary, then shape", "`server/src/index.ts:178`: event name against `EVENT_NAMES` first, then the product text, then the purchase amount (finite, non-negative, bounded)."),
+ ("raw events are inserted; the view is refreshed on demand", "`POST /api/events` inserts into `events`; `POST /api/metrics/refresh` (line 150) runs `REFRESH MATERIALIZED VIEW CONCURRENTLY daily_metrics` under a bounded `lock_timeout`."),
+ ("PostgreSQL fills the calendar", "the daily query joins a generated series of days to the view so empty days appear with zero revenue (second delivered test, and the new seven-day test); moving averages and cumulative totals are window functions over that series."),
+ ("the response tells the client what happened", "`daily` rows with `revenue`, `revenueMa7`, `revenueCumulative`, `revenueDelta`; `freshness` with the gap; 409 when a refresh is already running."),
+]); done.append('2.2 six distinct trace-lab boundaries (07)')
+fe.set_variations(S, """**Normal variation — the shipped fixture.** Insert 100 four days ago, 10 two days ago, 30 today; refresh; `?days=3`. Predict revenue `[10, 0, 30]`, cumulative `[10, 10, 40]`, moving average `[10, 5, 13.33]`, delta `[null, -10, 30]` (first test).
+
+**Invalid variation — a purchase with no amount.** `POST /api/events` with `{ name: "purchase", product: "x" }`: predict 400 `Purchase amount must be a number.` and no row (second delivered test). With `name: "refund"`: predict the vocabulary message first (new test).
+
+**Boundary variation — two refreshes.** In `psql`, `BEGIN; REFRESH MATERIALIZED VIEW CONCURRENTLY daily_metrics;` and leave the transaction open; call `POST /api/metrics/refresh`: predict 409 after about two seconds. `COMMIT` and call again: 200."""); done.append('2.4 three concrete variations')
+fe.add_exercise(S, 'ownership and authorization', """Events and metrics are global. Add a tenant: read `X-Tenant` on every request (401 when missing on writes), store `tenant_id` on `events`, and make the daily and freshness queries filter by tenant; the materialized view must be keyed by tenant. Write the test first: two tenants insert purchases, each sees only its own revenue, and a refresh by one tenant does not change the other's numbers.""", """Reference: add `tenant_id text NOT NULL` to `events`, rebuild `daily_metrics` grouped by `(tenant_id, day)`, and add `WHERE tenant_id = $1` to the daily query. `REFRESH` still rebuilds the whole view; say why that is acceptable here and what a per-tenant refresh would need.
+
+Review: the tenant must come from the header, never from the body, and the test must prove isolation in both directions."""); done.append('2.5 ownership/authz exercise 7 (05, 06)')
+fx.bump_verification_count(S, 3, 2, 'test/feature.test.ts')
+json.dump(done, open(os.path.join(os.path.dirname(__file__), S + '.done.json'), 'w')); print('\n'.join(done))

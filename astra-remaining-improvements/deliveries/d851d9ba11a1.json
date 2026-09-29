@@ -1,0 +1,123 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww16",
+  "id": "d851d9ba11a1",
+  "summary": [
+    "Provide a runnable production-source lab for deal state transitions, permission checks, and side-effect ordering.",
+    "Verify permitted approval transition and forbidden transition zero writes."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/d851d9ba11a1/results-crud-b05.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww16",
+        "id": "d851d9ba11a1",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/deal-transition-lab.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\d851d9ba11a1",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:17:24.776052+00:00",
+        "status": "complete",
+        "log": "crud-b05-astra-runtime.log",
+        "pid": 32680,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:17:30.715015+00:00",
+        "elapsedSeconds": 5.94
+      }
+    ],
+    "limits": [
+      "Five cases execute actual service, transition policy, role permissions, error classes and quarter helper. Transaction/repository/audit/job and unused ZodError adapters are explicit.",
+      "No Next, native database, rollback, worker or concurrent transition execution. Current deal is read before transaction and update does not compare prior status; shared client assertions do not prove isolation. No production behavior changed."
+    ]
+  },
+  "courseWords": 1772,
+  "courseFiles": 9,
+  "courseLinksChecked": 5,
+  "files": [
+    {
+      "file": "tests/deal-transition-lab.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "875c6142df7911c7e39cedb3a41fc6f4ef60e77842fa4e3349665d9cad14c2cf"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/dealRegistrationService.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "fb9c9a60913ffc4742c7426a48613f28c3375dcb74f1c8013e6dcc31a9b43eb2"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b05-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "5149ab70a4488ec19aea4275fc0e19741a6cdf71e0f5449f44b6687ed371a2fb"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "ff7764a34119fa802eb2021160d2a515e9157aed24ebafccd47a13ec509ebaa3"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "9a32275a65056ff48b9dc40b01c881e91d041336e0cb52fb2f88b6f94960f6b4"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "e6d75ccb700bdf4802b556a7760058b5e9df7ca5dc701cba961553d63065e8d2"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "482ab54974e0a72c3f8573dff1ebc272f414143ddada1eb44cbc249eae217c73"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "6a3329d5381c3aa7e9cf21588c4fcc9d399e2d979bf45468a7b40bc3cb0c28ee"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "19952d06192c82e7394df69e604686c2cbca06ca34eb0b212c58bb40766ab6ec"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "7af312fa4fd210fa6ce120809affbb5b8596478f6b8c0da965bd9c9274ba1c59"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "41a17b4433142d945bea9cce42abcefcc5fe75e6ac9172d1b3ac4c22772876c5"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "5bc52fb4349ca08e62e40233d4183b61740d77965fd19415101fd4326766c6df"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "8e0442ca9d96ce52f1ac40d2bfb23d3ff7971133f5fd8b523581f81734496690"
+    }
+  ],
+  "limits": [
+    "Five cases execute actual service, transition policy, role permissions, error classes and quarter helper. Transaction/repository/audit/job and unused ZodError adapters are explicit.",
+    "No Next, native database, rollback, worker or concurrent transition execution. Current deal is read before transaction and update does not compare prior status; shared client assertions do not prove isolation. No production behavior changed."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:35:12.607284+00:00"
+}

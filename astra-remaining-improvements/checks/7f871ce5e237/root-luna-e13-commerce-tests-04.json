@@ -1,0 +1,25 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/e13",
+  "id": "7f871ce5e237",
+  "command": [
+    "cmd.exe",
+    "/d",
+    "/c",
+    "npm",
+    "run",
+    "test",
+    "--",
+    "--run",
+    "src/lib/commerce/commerce.test.ts"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7f871ce5e237",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T00:43:44.416025+00:00",
+  "status": "complete",
+  "log": "root-luna-e13-commerce-tests-04.log",
+  "pid": 35880,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-13T00:44:35.000021+00:00",
+  "elapsedSeconds": 50.58
+}

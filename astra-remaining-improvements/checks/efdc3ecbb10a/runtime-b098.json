@@ -1,0 +1,22 @@
+{
+  "project": "_Organized Desktop/09 Grav And VG Projects/graveopenjspy",
+  "id": "efdc3ecbb10a",
+  "command": [
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\batch-crud-upskill-20260921\\toolchains\\go1.27.1\\go\\bin\\go.exe",
+    "test",
+    "./oserror"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\efdc3ecbb10a\\OpenSlides\\lib\\openslides-go",
+  "environmentOverrides": {
+    "GO111MODULE": "off",
+    "GOWORK": "off"
+  },
+  "startedAt": "2026-09-22T04:38:53.303604+00:00",
+  "status": "complete",
+  "log": "runtime-b098.log",
+  "pid": 29736,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T04:40:01.728292+00:00",
+  "elapsedSeconds": 68.33
+}

@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww37",
+  "id": "109a97addd48",
+  "command": [
+    "node",
+    "C:/Program Files/nodejs/node_modules/npm/bin/npm-cli.js",
+    "run",
+    "lint"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\109a97addd48",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:17:00.337551+00:00",
+  "status": "complete",
+  "log": "lint-02.log",
+  "pid": 20428,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T20:18:59.350291+00:00",
+  "elapsedSeconds": 119.01
+}

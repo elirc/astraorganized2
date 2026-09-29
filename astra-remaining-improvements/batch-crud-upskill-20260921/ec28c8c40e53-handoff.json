@@ -1,0 +1,32 @@
+{
+  "id": "ec28c8c40e53",
+  "status": "ready_for_review",
+  "summary": [
+    "Reviewed aggregation worker state policy is explicit; no production patch is claimed.",
+    "Added a production-source state-machine lab covering legal and invalid transitions."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/ec28c8c40e53/tests/runtime-aggregation-state-lab.test.mjs",
+    "astra-remaining-improvements/stage/ec28c8c40e53/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/evidence/astra-crud-b07-ww47.log",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/evidence/results-crud-b07.json",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/README.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/ec28c8c40e53/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-aggregation-state-lab.test.mjs",
+    "passed": 4,
+    "resultsFile": "checks/ec28c8c40e53/results-crud-b07.json"
+  },
+  "limits": [
+    "Actual state module execution with explicit AppError boundary; no live worker or provider run.",
+    "No production fix warranted in reviewed path."
+  ]
+}

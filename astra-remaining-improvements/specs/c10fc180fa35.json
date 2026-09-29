@@ -1,0 +1,28 @@
+{
+  "id": "c10fc180fa35",
+  "project": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+  "summary": [
+    "Add a standalone .NET10 CRUD web companion with create/list/read/replace/delete, title validation and required version preconditions on writes.",
+    "Demonstrate atomic in-process version checks with actual loopback HTTP regressions and nine chapters covering traces, exercises, solutions and database follow-up design."
+  ],
+  "changedFiles": [
+    "README.md",
+    "guides/crud-web-lab/CrudWebLab.csproj",
+    "guides/crud-web-lab/Program.cs",
+    "guides/crud-web-lab/TaskStore.cs",
+    "guides/crud-web-lab/HttpChecks.cs",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/evidence/crud-b02-http-lab.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c10fc180fa35/results-crud-b02.json"
+  },
+  "limits": [
+    "This new teaching companion uses in-memory single-process storage; no authentication, durable database, browser UI or deployment is included.",
+    "The If-Match contract supports one strong numeric tag only, not full HTTP conditional request grammar.",
+    "The original bootcamp exercise suites and scoreboard were not rerun or modified.",
+    "One overlapping HTTP writer case checks observed behavior; exhaustive stress testing and multi-instance concurrency are outside this lab."
+  ]
+}

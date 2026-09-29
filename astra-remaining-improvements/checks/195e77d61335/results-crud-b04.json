@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "executedTests": 4,
+  "checks": [
+    {
+      "project": "_Organized Desktop/05 Numbered Experiments/rn1",
+      "id": "195e77d61335",
+      "command": [
+        "node",
+        "C:/Program Files/nodejs/node_modules/corepack/dist/yarn.js",
+        "--ignore-engines",
+        "run",
+        "test:crud-upskill"
+      ],
+      "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\195e77d61335\\social-app",
+      "environmentOverrides": {},
+      "startedAt": "2026-09-22T02:20:53.598728+00:00",
+      "status": "complete",
+      "log": "crud-b04-astra-runtime3.log",
+      "pid": 5132,
+      "exitCode": 0,
+      "passed": true,
+      "finishedAt": "2026-09-22T02:21:12.769062+00:00",
+      "elapsedSeconds": 19.17
+    }
+  ],
+  "limits": [
+    "Four focused cases execute the exact extracted production unblock hook and actual blocked-query key, using session/agent/query-client/AtUri doubles and an explicitly modeled mutation lifecycle.",
+    "No mounted React, TanStack cache engine, real AT Protocol server, native Jest, lint, typecheck, Expo or mobile/browser rendering was executed.",
+    "Invalidation schedules query refresh; this does not prove immediate removal from every list, successful refetch, rollback, request idempotency or session-switch safety.",
+    "Application requires Node >=24.15.0; the focused Yarn script passed on device Node22.16 with explicit --ignore-engines, not a full native application compatibility check."
+  ]
+}

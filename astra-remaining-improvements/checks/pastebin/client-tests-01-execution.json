@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "--test",
+    "--test-concurrency=1",
+    "tests/client.test.js"
+  ],
+  "exitCode": 0,
+  "seconds": 7.8
+}

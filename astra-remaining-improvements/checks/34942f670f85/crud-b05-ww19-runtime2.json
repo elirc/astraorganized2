@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww19",
+  "id": "34942f670f85",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/workflow-run-idempotency.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\34942f670f85",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:54:05.476303+00:00",
+  "status": "complete",
+  "log": "crud-b05-ww19-runtime2.log",
+  "pid": 1180,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-22T02:54:08.986379+00:00",
+  "elapsedSeconds": 3.51
+}

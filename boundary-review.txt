@@ -1,0 +1,389 @@
+001 | .netarchitectureproject | workspace-with-components | source=1153 docs=33 | workspace=.netarchitectureproject
+002 | .netopen2 | workspace-with-components | source=8006 docs=314 | workspace=.netopen2
+003 | .netramp | workspace-with-components | source=43 docs=48 | workspace=.netramp
+004 | .netstripe | workspace-with-components | source=20 docs=97 | workspace=.netstripe
+005 | .nettodo | workspace-with-components | source=362 docs=57 | workspace=.nettodo
+006 | _Organized Desktop/01 Net Workspaces/.netcalendy | workspace-with-components | source=125 docs=43 | workspace=_Organized Desktop/01 Net Workspaces/.netcalendy
+007 | _Organized Desktop/01 Net Workspaces/.netgum | workspace-with-components | source=43 docs=3 | workspace=_Organized Desktop/01 Net Workspaces/.netgum
+008 | _Organized Desktop/01 Net Workspaces/.nethris | workspace-with-components | source=22 docs=48 | workspace=_Organized Desktop/01 Net Workspaces/.nethris
+009 | _Organized Desktop/01 Net Workspaces/.netpastebin | workspace-with-components | source=14 docs=49 | workspace=_Organized Desktop/01 Net Workspaces/.netpastebin
+010 | _Organized Desktop/01 Net Workspaces/.netslack | workspace-with-components | source=60 docs=50 | workspace=_Organized Desktop/01 Net Workspaces/.netslack
+011 | _Organized Desktop/01 Net Workspaces/.nettrello | workspace-with-components | source=35 docs=49 | workspace=_Organized Desktop/01 Net Workspaces/.nettrello
+012 | _Organized Desktop/01 Net Workspaces/.netvg | workspace-with-components | source=37 docs=57 | workspace=_Organized Desktop/01 Net Workspaces/.netvg
+013 | _Organized Desktop/01 Net Workspaces/.netzen | workspace-with-components | source=39 docs=49 | workspace=_Organized Desktop/01 Net Workspaces/.netzen
+014 | _Organized Desktop/01 Net Workspaces/csbootcamp | workspace-with-components | source=65 docs=17 | workspace=_Organized Desktop/01 Net Workspaces/csbootcamp
+015 | _Organized Desktop/02 Build Projects/buildaffiliate | workspace-with-components | source=266 docs=10 | workspace=_Organized Desktop/02 Build Projects/buildaffiliate
+016 | _Organized Desktop/02 Build Projects/buildagenthelpdesk | workspace-with-components | source=94 docs=92 | workspace=_Organized Desktop/02 Build Projects/buildagenthelpdesk
+017 | _Organized Desktop/02 Build Projects/buildagentteachGEM | workspace-with-components | source=64 docs=23 | workspace=_Organized Desktop/02 Build Projects/buildagentteachGEM
+018 | _Organized Desktop/02 Build Projects/buildagentteaching | workspace-with-components | source=159 docs=18 | workspace=_Organized Desktop/02 Build Projects/buildagentteaching
+019 | _Organized Desktop/02 Build Projects/buildanalytics | workspace-with-components | source=220 docs=76 | workspace=_Organized Desktop/02 Build Projects/buildanalytics
+020 | _Organized Desktop/02 Build Projects/buildantigVG | workspace-with-components | source=12 docs=12 | workspace=_Organized Desktop/02 Build Projects/buildantigVG
+021 | _Organized Desktop/02 Build Projects/buildasana | workspace-with-components | source=34 docs=4 | workspace=_Organized Desktop/02 Build Projects/buildasana
+022 | _Organized Desktop/02 Build Projects/buildCRMPYJS | workspace-with-components | source=34 docs=48 | workspace=_Organized Desktop/02 Build Projects/buildCRMPYJS
+023 | _Organized Desktop/02 Build Projects/buildecom | workspace-with-components | source=70 docs=50 | workspace=_Organized Desktop/02 Build Projects/buildecom
+024 | _Organized Desktop/02 Build Projects/buildgum | workspace-with-components | source=6 docs=48 | workspace=_Organized Desktop/02 Build Projects/buildgum
+025 | _Organized Desktop/02 Build Projects/buildjira | workspace-with-components | source=27 docs=52 | workspace=_Organized Desktop/02 Build Projects/buildjira
+026 | _Organized Desktop/02 Build Projects/buildScedulingPYJS | workspace-with-components | source=156 docs=11 | workspace=_Organized Desktop/02 Build Projects/buildScedulingPYJS
+027 | _Organized Desktop/02 Build Projects/buildsubbox | workspace-with-components | source=6 docs=47 | workspace=_Organized Desktop/02 Build Projects/buildsubbox
+028 | _Organized Desktop/03 Master Projects/master | workspace-with-components | source=83 docs=31 | workspace=_Organized Desktop/03 Master Projects/master
+029 | _Organized Desktop/03 Master Projects/master 6 | workspace-with-components | source=45 docs=26 | workspace=_Organized Desktop/03 Master Projects/master 6
+030 | _Organized Desktop/03 Master Projects/master1 | workspace-with-components | source=162 docs=73 | workspace=_Organized Desktop/03 Master Projects/master1
+031 | _Organized Desktop/03 Master Projects/master2 | workspace-with-components | source=35 docs=19 | workspace=_Organized Desktop/03 Master Projects/master2
+032 | _Organized Desktop/03 Master Projects/master3 | workspace-with-components | source=24 docs=11 | workspace=_Organized Desktop/03 Master Projects/master3
+033 | _Organized Desktop/03 Master Projects/master4 | workspace-with-components | source=26 docs=10 | workspace=_Organized Desktop/03 Master Projects/master4
+034 | _Organized Desktop/03 Master Projects/master7 | workspace-with-components | source=24 docs=24 | workspace=_Organized Desktop/03 Master Projects/master7
+035 | _Organized Desktop/03 Master Projects/mastercal | workspace-with-components | source=5695 docs=460 | workspace=_Organized Desktop/03 Master Projects/mastercal
+036 | _Organized Desktop/03 Master Projects/masterdidy | workspace-with-components | source=9403 docs=234 | workspace=_Organized Desktop/03 Master Projects/masterdidy
+037 | _Organized Desktop/03 Master Projects/masterdub | workspace-with-components | source=3847 docs=98 | workspace=_Organized Desktop/03 Master Projects/masterdub
+038 | _Organized Desktop/03 Master Projects/masterfinisc | workspace-with-components | source=6820 docs=2070 | workspace=_Organized Desktop/03 Master Projects/masterfinisc
+039 | _Organized Desktop/03 Master Projects/masterflag | workspace-with-components | source=2610 docs=250 | workspace=_Organized Desktop/03 Master Projects/masterflag
+040 | _Organized Desktop/03 Master Projects/masterform | workspace-with-components | source=2460 docs=703 | workspace=_Organized Desktop/03 Master Projects/masterform
+041 | _Organized Desktop/03 Master Projects/masterhop | workspace-with-components | source=1598 docs=111 | workspace=_Organized Desktop/03 Master Projects/masterhop
+042 | _Organized Desktop/03 Master Projects/masteridur | workspace-with-components | source=344 docs=125 | workspace=_Organized Desktop/03 Master Projects/masteridur
+043 | _Organized Desktop/03 Master Projects/masterindicoPYJS | workspace-with-components | source=2943 docs=954 | workspace=_Organized Desktop/03 Master Projects/masterindicoPYJS
+044 | _Organized Desktop/03 Master Projects/masterlink | workspace-with-components | source=540 docs=82 | workspace=_Organized Desktop/03 Master Projects/masterlink
+045 | _Organized Desktop/03 Master Projects/mastermatter | workspace-with-components | source=8265 docs=408 | workspace=_Organized Desktop/03 Master Projects/mastermatter
+046 | _Organized Desktop/03 Master Projects/mastermayan | workspace-with-components | source=2321 docs=563 | workspace=_Organized Desktop/03 Master Projects/mastermayan
+047 | _Organized Desktop/03 Master Projects/mastermorphic | workspace-with-components | source=291 docs=85 | workspace=_Organized Desktop/03 Master Projects/mastermorphic
+048 | _Organized Desktop/03 Master Projects/masternext | workspace-with-components | source=1237 docs=181 | workspace=_Organized Desktop/03 Master Projects/masternext
+049 | _Organized Desktop/03 Master Projects/masternovu | workspace-with-components | source=6581 docs=106 | workspace=_Organized Desktop/03 Master Projects/masternovu
+050 | _Organized Desktop/03 Master Projects/masteropen | workspace-with-components | source=1912 docs=479 | workspace=_Organized Desktop/03 Master Projects/masteropen
+051 | _Organized Desktop/03 Master Projects/masteropenedxPYJS | workspace-with-components | source=6623 docs=1168 | workspace=_Organized Desktop/03 Master Projects/masteropenedxPYJS
+052 | _Organized Desktop/03 Master Projects/masterpaper | workspace-with-components | source=941 docs=347 | workspace=_Organized Desktop/03 Master Projects/masterpaper
+053 | _Organized Desktop/03 Master Projects/masterplane | workspace-with-components | source=4375 docs=127 | workspace=_Organized Desktop/03 Master Projects/masterplane
+054 | _Organized Desktop/03 Master Projects/masterpload | workspace-with-components | source=6915 docs=376 | workspace=_Organized Desktop/03 Master Projects/masterpload
+055 | _Organized Desktop/03 Master Projects/masterpostiz | workspace-with-components | source=703 docs=81 | workspace=_Organized Desktop/03 Master Projects/masterpostiz
+056 | _Organized Desktop/03 Master Projects/masterpre | workspace-with-components | source=1540 docs=452 | workspace=_Organized Desktop/03 Master Projects/masterpre
+057 | _Organized Desktop/03 Master Projects/masterrnative | workspace-with-components | source=73 docs=17 | workspace=_Organized Desktop/03 Master Projects/masterrnative
+058 | _Organized Desktop/03 Master Projects/mastersaleorPY | workspace-with-components | source=4278 docs=78 | workspace=_Organized Desktop/03 Master Projects/mastersaleorPY
+059 | _Organized Desktop/03 Master Projects/mastershadcn | workspace-with-components | source=3644 docs=329 | workspace=_Organized Desktop/03 Master Projects/mastershadcn
+060 | _Organized Desktop/03 Master Projects/MasterStore | workspace-with-components | source=200 docs=18 | workspace=_Organized Desktop/03 Master Projects/MasterStore
+061 | _Organized Desktop/03 Master Projects/mastersupa | workspace-with-components | source=7195 docs=1824 | workspace=_Organized Desktop/03 Master Projects/mastersupa
+062 | _Organized Desktop/03 Master Projects/mastertea | workspace-with-components | source=6073 docs=149 | workspace=_Organized Desktop/03 Master Projects/mastertea
+063 | _Organized Desktop/03 Master Projects/mastertool | workspace-with-components | source=4935 docs=1994 | workspace=_Organized Desktop/03 Master Projects/mastertool
+064 | _Organized Desktop/03 Master Projects/mastertwenty | workspace-with-components | source=17289 docs=2921 | workspace=_Organized Desktop/03 Master Projects/mastertwenty
+065 | _Organized Desktop/03 Master Projects/mastertypebot | workspace-with-components | source=2159 docs=326 | workspace=_Organized Desktop/03 Master Projects/mastertypebot
+066 | _Organized Desktop/03 Master Projects/masterumami | workspace-with-components | source=875 docs=74 | workspace=_Organized Desktop/03 Master Projects/masterumami
+067 | _Organized Desktop/03 Master Projects/masterzulipPY | workspace-with-components | source=2997 docs=1221 | workspace=_Organized Desktop/03 Master Projects/masterzulipPY
+068 | _Organized Desktop/04 JavaScript Training | workspace-with-components | source=3671 docs=1163 | workspace=_Organized Desktop/04 JavaScript Training
+069 | _Organized Desktop/04 JavaScript Training/jep vs code | workspace-with-components | source=219 docs=11 | workspace=_Organized Desktop/04 JavaScript Training/jep vs code
+070 | _Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137 | workspace-with-components | source=48 docs=37 | workspace=_Organized Desktop/04 JavaScript Training/jsdrill_sync_20260223_125137
+071 | _Organized Desktop/04 JavaScript Training/jsdrillapp | workspace-with-components | source=49 docs=38 | workspace=_Organized Desktop/04 JavaScript Training/jsdrillapp
+072 | _Organized Desktop/04 JavaScript Training/jstrain1 | workspace-with-components | source=72 docs=2 | workspace=_Organized Desktop/04 JavaScript Training/jstrain1
+073 | _Organized Desktop/04 JavaScript Training/jstrain2 | workspace-with-components | source=106 docs=105 | workspace=_Organized Desktop/04 JavaScript Training/jstrain2
+074 | _Organized Desktop/04 JavaScript Training/jstrain2.2 | workspace-with-components | source=2300 docs=671 | workspace=_Organized Desktop/04 JavaScript Training/jstrain2.2
+075 | _Organized Desktop/04 JavaScript Training/jstrain2.3 | workspace-with-components | source=19 docs=22 | workspace=_Organized Desktop/04 JavaScript Training/jstrain2.3
+076 | _Organized Desktop/04 JavaScript Training/jstrain2.4 | workspace-with-components | source=46 docs=32 | workspace=_Organized Desktop/04 JavaScript Training/jstrain2.4
+077 | _Organized Desktop/04 JavaScript Training/jstrain3 | workspace-with-components | source=71 docs=56 | workspace=_Organized Desktop/04 JavaScript Training/jstrain3
+078 | _Organized Desktop/04 JavaScript Training/jstrain3.0 | workspace-with-components | source=47 docs=1 | workspace=_Organized Desktop/04 JavaScript Training/jstrain3.0
+079 | _Organized Desktop/04 JavaScript Training/jstrain5 | workspace-with-components | source=162 docs=78 | workspace=_Organized Desktop/04 JavaScript Training/jstrain5
+080 | _Organized Desktop/04 JavaScript Training/react | workspace-with-components | source=6 docs=1 | workspace=_Organized Desktop/04 JavaScript Training/react
+081 | _Organized Desktop/04 JavaScript Training/reactbullet | workspace-with-components | source=452 docs=51 | workspace=_Organized Desktop/04 JavaScript Training/reactbullet
+082 | _Organized Desktop/04 JavaScript Training/rewritepy2js | workspace-with-components | source=74 docs=29 | workspace=_Organized Desktop/04 JavaScript Training/rewritepy2js
+083 | _Organized Desktop/04 JavaScript Training/trainjs | workspace-with-components | source=0 docs=29 | workspace=_Organized Desktop/04 JavaScript Training/trainjs
+084 | _Organized Desktop/05 Numbered Experiments/B1 | workspace-with-components | source=29 docs=2 | workspace=_Organized Desktop/05 Numbered Experiments/B1
+085 | _Organized Desktop/05 Numbered Experiments/D1 | workspace-with-components | source=32 docs=15 | workspace=_Organized Desktop/05 Numbered Experiments/D1
+086 | _Organized Desktop/05 Numbered Experiments/D2 | workspace-with-components | source=34 docs=12 | workspace=_Organized Desktop/05 Numbered Experiments/D2
+087 | _Organized Desktop/05 Numbered Experiments/D3 | workspace-with-components | source=66 docs=20 | workspace=_Organized Desktop/05 Numbered Experiments/D3
+088 | _Organized Desktop/05 Numbered Experiments/e1 | workspace-with-components | source=59 docs=24 | workspace=_Organized Desktop/05 Numbered Experiments/e1
+089 | _Organized Desktop/05 Numbered Experiments/e11 | workspace-with-components | source=35 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/e11
+090 | _Organized Desktop/05 Numbered Experiments/e12 | workspace-with-components | source=17 docs=12 | workspace=_Organized Desktop/05 Numbered Experiments/e12
+091 | _Organized Desktop/05 Numbered Experiments/e13 | workspace-with-components | source=41 docs=20 | workspace=_Organized Desktop/05 Numbered Experiments/e13
+092 | _Organized Desktop/05 Numbered Experiments/e14 | workspace-with-components | source=19 docs=14 | workspace=_Organized Desktop/05 Numbered Experiments/e14
+093 | _Organized Desktop/05 Numbered Experiments/e15 | workspace-with-components | source=16 docs=19 | workspace=_Organized Desktop/05 Numbered Experiments/e15
+094 | _Organized Desktop/05 Numbered Experiments/e17 | workspace-with-components | source=109 docs=23 | workspace=_Organized Desktop/05 Numbered Experiments/e17
+095 | _Organized Desktop/05 Numbered Experiments/e2 | workspace-with-components | source=47 docs=22 | workspace=_Organized Desktop/05 Numbered Experiments/e2
+096 | _Organized Desktop/05 Numbered Experiments/e20 | workspace-with-components | source=6 docs=8 | workspace=_Organized Desktop/05 Numbered Experiments/e20
+097 | _Organized Desktop/05 Numbered Experiments/e3 | workspace-with-components | source=71 docs=25 | workspace=_Organized Desktop/05 Numbered Experiments/e3
+098 | _Organized Desktop/05 Numbered Experiments/e4 | workspace-with-components | source=78 docs=32 | workspace=_Organized Desktop/05 Numbered Experiments/e4
+099 | _Organized Desktop/05 Numbered Experiments/e6 | workspace-with-components | source=35 docs=17 | workspace=_Organized Desktop/05 Numbered Experiments/e6
+100 | _Organized Desktop/05 Numbered Experiments/g1 | workspace-with-components | source=42 docs=4 | workspace=_Organized Desktop/05 Numbered Experiments/g1
+101 | _Organized Desktop/05 Numbered Experiments/J1 | workspace-with-components | source=4 docs=8 | workspace=_Organized Desktop/05 Numbered Experiments/J1
+102 | _Organized Desktop/05 Numbered Experiments/j2 | workspace-with-components | source=5 docs=9 | workspace=_Organized Desktop/05 Numbered Experiments/j2
+103 | _Organized Desktop/05 Numbered Experiments/j3 | workspace-with-components | source=6 docs=3 | workspace=_Organized Desktop/05 Numbered Experiments/j3
+104 | _Organized Desktop/05 Numbered Experiments/j4 | workspace-with-components | source=7 docs=2 | workspace=_Organized Desktop/05 Numbered Experiments/j4
+105 | _Organized Desktop/05 Numbered Experiments/j5 | workspace-with-components | source=4 docs=1 | workspace=_Organized Desktop/05 Numbered Experiments/j5
+106 | _Organized Desktop/05 Numbered Experiments/j7 | workspace-with-components | source=12 docs=1 | workspace=_Organized Desktop/05 Numbered Experiments/j7
+107 | _Organized Desktop/05 Numbered Experiments/rn1 | workspace-with-components | source=1751 docs=66 | workspace=_Organized Desktop/05 Numbered Experiments/rn1
+108 | _Organized Desktop/05 Numbered Experiments/w21 | workspace-with-components | source=80 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/w21
+109 | _Organized Desktop/05 Numbered Experiments/w22 | workspace-with-components | source=74 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/w22
+110 | _Organized Desktop/05 Numbered Experiments/w23 | workspace-with-components | source=63 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/w23
+111 | _Organized Desktop/05 Numbered Experiments/w24 | workspace-with-components | source=42 docs=13 | workspace=_Organized Desktop/05 Numbered Experiments/w24
+112 | _Organized Desktop/05 Numbered Experiments/w25 | workspace-with-components | source=44 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/w25
+113 | _Organized Desktop/05 Numbered Experiments/ww1 | workspace-with-components | source=54 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww1
+114 | _Organized Desktop/05 Numbered Experiments/ww10 | workspace-with-components | source=54 docs=13 | workspace=_Organized Desktop/05 Numbered Experiments/ww10
+115 | _Organized Desktop/05 Numbered Experiments/ww11 | workspace-with-components | source=58 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww11
+116 | _Organized Desktop/05 Numbered Experiments/ww12 | workspace-with-components | source=64 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww12
+117 | _Organized Desktop/05 Numbered Experiments/ww13 | workspace-with-components | source=70 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww13
+118 | _Organized Desktop/05 Numbered Experiments/ww14 | workspace-with-components | source=63 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww14
+119 | _Organized Desktop/05 Numbered Experiments/ww15 | workspace-with-components | source=68 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww15
+120 | _Organized Desktop/05 Numbered Experiments/ww16 | workspace-with-components | source=70 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww16
+121 | _Organized Desktop/05 Numbered Experiments/ww17 | workspace-with-components | source=64 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww17
+122 | _Organized Desktop/05 Numbered Experiments/ww18 | workspace-with-components | source=74 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww18
+123 | _Organized Desktop/05 Numbered Experiments/ww19 | workspace-with-components | source=76 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww19
+124 | _Organized Desktop/05 Numbered Experiments/ww26 | workspace-with-components | source=47 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww26
+125 | _Organized Desktop/05 Numbered Experiments/ww27 | workspace-with-components | source=41 docs=12 | workspace=_Organized Desktop/05 Numbered Experiments/ww27
+126 | _Organized Desktop/05 Numbered Experiments/ww28 | workspace-with-components | source=46 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww28
+127 | _Organized Desktop/05 Numbered Experiments/ww29 | workspace-with-components | source=61 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww29
+128 | _Organized Desktop/05 Numbered Experiments/ww3 | workspace-with-components | source=84 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww3
+129 | _Organized Desktop/05 Numbered Experiments/ww30 | workspace-with-components | source=53 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww30
+130 | _Organized Desktop/05 Numbered Experiments/ww31 | workspace-with-components | source=74 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww31
+131 | _Organized Desktop/05 Numbered Experiments/ww32 | workspace-with-components | source=84 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww32
+132 | _Organized Desktop/05 Numbered Experiments/ww34 | workspace-with-components | source=63 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww34
+133 | _Organized Desktop/05 Numbered Experiments/ww35 | workspace-with-components | source=60 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww35
+134 | _Organized Desktop/05 Numbered Experiments/ww36 | workspace-with-components | source=70 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww36
+135 | _Organized Desktop/05 Numbered Experiments/ww37 | workspace-with-components | source=31 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww37
+136 | _Organized Desktop/05 Numbered Experiments/ww39 | workspace-with-components | source=62 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww39
+137 | _Organized Desktop/05 Numbered Experiments/ww4 | workspace-with-components | source=65 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww4
+138 | _Organized Desktop/05 Numbered Experiments/ww40 | workspace-with-components | source=68 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww40
+139 | _Organized Desktop/05 Numbered Experiments/ww43 | workspace-with-components | source=67 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww43
+140 | _Organized Desktop/05 Numbered Experiments/ww45 | workspace-with-components | source=67 docs=33 | workspace=_Organized Desktop/05 Numbered Experiments/ww45
+141 | _Organized Desktop/05 Numbered Experiments/ww46 | workspace-with-components | source=64 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww46
+142 | _Organized Desktop/05 Numbered Experiments/ww47 | workspace-with-components | source=78 docs=26 | workspace=_Organized Desktop/05 Numbered Experiments/ww47
+143 | _Organized Desktop/05 Numbered Experiments/ww48 | workspace-with-components | source=66 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww48
+144 | _Organized Desktop/05 Numbered Experiments/ww49 | workspace-with-components | source=62 docs=26 | workspace=_Organized Desktop/05 Numbered Experiments/ww49
+145 | _Organized Desktop/05 Numbered Experiments/ww5 | workspace-with-components | source=64 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/ww5
+146 | _Organized Desktop/05 Numbered Experiments/ww50 | workspace-with-components | source=58 docs=26 | workspace=_Organized Desktop/05 Numbered Experiments/ww50
+147 | _Organized Desktop/05 Numbered Experiments/ww55 | workspace-with-components | source=55 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww55
+148 | _Organized Desktop/05 Numbered Experiments/ww6 | workspace-with-components | source=59 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww6
+149 | _Organized Desktop/05 Numbered Experiments/ww7 | workspace-with-components | source=67 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww7
+150 | _Organized Desktop/05 Numbered Experiments/ww8 | workspace-with-components | source=62 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/ww8
+151 | _Organized Desktop/05 Numbered Experiments/ww9 | workspace-with-components | source=60 docs=13 | workspace=_Organized Desktop/05 Numbered Experiments/ww9
+152 | _Organized Desktop/05 Numbered Experiments/X1 | workspace-with-components | source=28 docs=24 | workspace=_Organized Desktop/05 Numbered Experiments/X1
+153 | _Organized Desktop/05 Numbered Experiments/z1 | workspace-with-components | source=53 docs=30 | workspace=_Organized Desktop/05 Numbered Experiments/z1
+154 | _Organized Desktop/05 Numbered Experiments/z3 | workspace-with-components | source=58 docs=58 | workspace=_Organized Desktop/05 Numbered Experiments/z3
+155 | _Organized Desktop/05 Numbered Experiments/z6 | workspace-with-components | source=38 docs=28 | workspace=_Organized Desktop/05 Numbered Experiments/z6
+156 | _Organized Desktop/05 Numbered Experiments/z7 | workspace-with-components | source=36 docs=35 | workspace=_Organized Desktop/05 Numbered Experiments/z7
+157 | _Organized Desktop/05 Numbered Experiments/z8 | workspace-with-components | source=66 docs=25 | workspace=_Organized Desktop/05 Numbered Experiments/z8
+158 | _Organized Desktop/05 Numbered Experiments/z9 | workspace-with-components | source=49 docs=28 | workspace=_Organized Desktop/05 Numbered Experiments/z9
+159 | _Organized Desktop/05 Numbered Experiments/zz1 | workspace-with-components | source=102 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/zz1
+160 | _Organized Desktop/05 Numbered Experiments/zz2 | workspace-with-components | source=72 docs=27 | workspace=_Organized Desktop/05 Numbered Experiments/zz2
+161 | _Organized Desktop/05 Numbered Experiments/zz3 | workspace-with-components | source=83 docs=12 | workspace=_Organized Desktop/05 Numbered Experiments/zz3
+162 | _Organized Desktop/05 Numbered Experiments/zz4 | workspace-with-components | source=75 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/zz4
+163 | _Organized Desktop/05 Numbered Experiments/zz55 | workspace-with-components | source=61 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/zz55
+164 | _Organized Desktop/05 Numbered Experiments/zz6 | workspace-with-components | source=60 docs=11 | workspace=_Organized Desktop/05 Numbered Experiments/zz6
+165 | _Organized Desktop/05 Numbered Experiments/zz7 | workspace-with-components | source=85 docs=12 | workspace=_Organized Desktop/05 Numbered Experiments/zz7
+166 | _Organized Desktop/05 Numbered Experiments/zz8 | workspace-with-components | source=63 docs=14 | workspace=_Organized Desktop/05 Numbered Experiments/zz8
+167 | _Organized Desktop/05 Numbered Experiments/zz9 | workspace-with-components | source=75 docs=10 | workspace=_Organized Desktop/05 Numbered Experiments/zz9
+168 | _Organized Desktop/06 AI And Learning/ai-observer-reference | workspace-with-components | source=207 docs=12 | workspace=_Organized Desktop/06 AI And Learning/ai-observer-reference
+169 | _Organized Desktop/06 AI And Learning/aiapplybot | workspace-with-components | source=40 docs=88 | workspace=_Organized Desktop/06 AI And Learning/aiapplybot
+170 | _Organized Desktop/06 AI And Learning/aiapplybotjs | workspace-with-components | source=44 docs=20 | workspace=_Organized Desktop/06 AI And Learning/aiapplybotjs
+171 | _Organized Desktop/06 AI And Learning/claudeailab | workspace-with-components | source=47 docs=1 | workspace=_Organized Desktop/06 AI And Learning/claudeailab
+172 | _Organized Desktop/06 AI And Learning/claudeailab-temp | workspace-with-components | source=7 docs=1 | workspace=_Organized Desktop/06 AI And Learning/claudeailab-temp
+173 | _Organized Desktop/06 AI And Learning/codehelper | workspace-with-components | source=116 docs=63 | workspace=_Organized Desktop/06 AI And Learning/codehelper
+174 | _Organized Desktop/06 AI And Learning/learnpathclaude | workspace-with-components | source=0 docs=1 | workspace=_Organized Desktop/06 AI And Learning/learnpathclaude
+175 | _Organized Desktop/06 AI And Learning/think | workspace-with-components | source=41 docs=3 | workspace=_Organized Desktop/06 AI And Learning/think
+176 | _Organized Desktop/07 Anti Projects/antiemponb | workspace-with-components | source=81 docs=50 | workspace=_Organized Desktop/07 Anti Projects/antiemponb
+177 | _Organized Desktop/07 Anti Projects/antihelpdesk | workspace-with-components | source=65 docs=50 | workspace=_Organized Desktop/07 Anti Projects/antihelpdesk
+178 | _Organized Desktop/07 Anti Projects/antiinv | workspace-with-components | source=40 docs=2 | workspace=_Organized Desktop/07 Anti Projects/antiinv
+179 | _Organized Desktop/07 Anti Projects/antitestbuild | workspace-with-components | source=72 docs=11 | workspace=_Organized Desktop/07 Anti Projects/antitestbuild
+180 | _Organized Desktop/08 App And Product Projects | workspace-with-components | source=547 docs=102 | workspace=_Organized Desktop/08 App And Product Projects
+181 | _Organized Desktop/08 App And Product Projects/appmakertrack | workspace-with-components | source=44 docs=1 | workspace=_Organized Desktop/08 App And Product Projects/appmakertrack
+182 | _Organized Desktop/08 App And Product Projects/eliapplybot | workspace-with-components | source=66 docs=30 | workspace=_Organized Desktop/08 App And Product Projects/eliapplybot
+183 | _Organized Desktop/08 App And Product Projects/eliapplybot-python | workspace-with-components | source=27 docs=4 | workspace=_Organized Desktop/08 App And Product Projects/eliapplybot-python
+184 | _Organized Desktop/08 App And Product Projects/grouphelpdesk | workspace-with-components | source=141 docs=45 | workspace=_Organized Desktop/08 App And Product Projects/grouphelpdesk
+185 | _Organized Desktop/08 App And Product Projects/HNJOBTRACK | workspace-with-components | source=48 docs=2 | workspace=_Organized Desktop/08 App And Product Projects/HNJOBTRACK
+186 | _Organized Desktop/08 App And Product Projects/hnrandom | workspace-with-components | source=90 docs=4 | workspace=_Organized Desktop/08 App And Product Projects/hnrandom
+187 | _Organized Desktop/08 App And Product Projects/job track | workspace-with-components | source=98 docs=14 | workspace=_Organized Desktop/08 App And Product Projects/job track
+188 | _Organized Desktop/08 App And Product Projects/recipegen-app | workspace-with-components | source=26 docs=1 | workspace=_Organized Desktop/08 App And Product Projects/recipegen-app
+189 | _Organized Desktop/08 App And Product Projects/recipegen-temp | workspace-with-components | source=7 docs=1 | workspace=_Organized Desktop/08 App And Product Projects/recipegen-temp
+190 | _Organized Desktop/09 Grav And VG Projects/grav1pretalx | workspace-with-components | source=1540 docs=350 | workspace=_Organized Desktop/09 Grav And VG Projects/grav1pretalx
+191 | _Organized Desktop/09 Grav And VG Projects/graveopenjspy | workspace-with-components | source=4509 docs=662 | workspace=_Organized Desktop/09 Grav And VG Projects/graveopenjspy
+192 | _Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy | workspace-with-components | source=1789 docs=869 | workspace=_Organized Desktop/09 Grav And VG Projects/gravreviewboardjspy
+193 | _Organized Desktop/09 Grav And VG Projects/vg | workspace-with-components | source=105 docs=130 | workspace=_Organized Desktop/09 Grav And VG Projects/vg
+194 | _Organized Desktop/09 Grav And VG Projects/VGdemo | workspace-with-components | source=105 docs=59 | workspace=_Organized Desktop/09 Grav And VG Projects/VGdemo
+195 | _Organized Desktop/11 Loose Files | workspace-with-components | source=0 docs=2 | workspace=_Organized Desktop/11 Loose Files
+196 | _Organized Desktop/12 Other Projects/3buildhyper | workspace-with-components | source=451 docs=15 | workspace=_Organized Desktop/12 Other Projects/3buildhyper
+197 | _Organized Desktop/12 Other Projects/aaa1 | workspace-with-components | source=216 docs=21 | workspace=_Organized Desktop/12 Other Projects/aaa1
+198 | _Organized Desktop/12 Other Projects/andie | workspace-with-components | source=3 docs=0 | workspace=_Organized Desktop/12 Other Projects/andie
+199 | _Organized Desktop/12 Other Projects/appmaketrck | workspace-with-components | source=171 docs=32 | workspace=_Organized Desktop/12 Other Projects/appmaketrck
+200 | _Organized Desktop/12 Other Projects/cc | workspace-with-components | source=127 docs=0 | workspace=_Organized Desktop/12 Other Projects/cc
+201 | _Organized Desktop/12 Other Projects/curse | workspace-with-components | source=98 docs=9 | workspace=_Organized Desktop/12 Other Projects/curse
+202 | _Organized Desktop/12 Other Projects/FinalJep | workspace-with-components | source=42 docs=4 | workspace=_Organized Desktop/12 Other Projects/FinalJep
+203 | _Organized Desktop/12 Other Projects/finaljepgame | workspace-with-components | source=62 docs=60 | workspace=_Organized Desktop/12 Other Projects/finaljepgame
+204 | _Organized Desktop/12 Other Projects/GlobGame | workspace-with-components | source=16 docs=2 | workspace=_Organized Desktop/12 Other Projects/GlobGame
+205 | _Organized Desktop/12 Other Projects/hypernova-inc-main | workspace-with-components | source=415 docs=12 | workspace=_Organized Desktop/12 Other Projects/hypernova-inc-main
+206 | _Organized Desktop/12 Other Projects/jdtrrain2.1 | workspace-with-components | source=36 docs=1 | workspace=_Organized Desktop/12 Other Projects/jdtrrain2.1
+207 | _Organized Desktop/12 Other Projects/Obsidian | workspace-with-components | source=0 docs=2 | workspace=_Organized Desktop/12 Other Projects/Obsidian
+208 | _Organized Desktop/12 Other Projects/pp8 | workspace-with-components | source=74 docs=12 | workspace=_Organized Desktop/12 Other Projects/pp8
+209 | _Organized Desktop/12 Other Projects/pyhealth | workspace-with-components | source=936 docs=273 | workspace=_Organized Desktop/12 Other Projects/pyhealth
+210 | aiapplybot | workspace-with-components | source=8 docs=2 | workspace=aiapplybot
+211 | aicallhelper | workspace-with-components | source=71 docs=34 | workspace=aicallhelper
+212 | aicallhelper2 | workspace-with-components | source=76 docs=19 | workspace=aicallhelper2
+213 | aiheartbeat | workspace-with-components | source=81 docs=9 | workspace=aiheartbeat
+214 | aihelper | workspace-with-components | source=18 docs=9 | workspace=aihelper
+215 | AlanAndEliSoccer | workspace-with-components | source=45 docs=2 | workspace=AlanAndEliSoccer
+216 | ankijs | workspace-with-components | source=97 docs=55 | workspace=ankijs
+217 | antigravupskill | workspace-with-components | source=7 docs=62 | workspace=antigravupskill
+218 | aral | workspace-with-components | source=78 docs=5 | workspace=aral
+219 | astra1 | workspace-with-components | source=105 docs=65 | workspace=astra1
+220 | astra2 | workspace-with-components | source=22 docs=12 | workspace=astra2
+221 | astraspacegameweb | workspace-with-components | source=114 docs=19 | workspace=astraspacegameweb
+222 | borrowbox | workspace-with-components | source=38 docs=30 | workspace=borrowbox
+223 | buildbusinesses | workspace-with-components | source=9 docs=49 | workspace=buildbusinesses
+224 | buildermentor | workspace-with-components | source=80 docs=5 | workspace=buildermentor
+225 | buildevent | workspace-with-components | source=68 docs=47 | workspace=buildevent
+226 | buildreviewer | workspace-with-components | source=77 docs=2 | workspace=buildreviewer
+227 | buildsmallplates | workspace-with-components | source=52 docs=3 | workspace=buildsmallplates
+228 | buildsql | workspace-with-components | source=15 docs=81 | workspace=buildsql
+229 | buildwhiteboard | workspace-with-components | source=10 docs=3 | workspace=buildwhiteboard
+230 | c#interview | workspace-with-components | source=0 docs=43 | workspace=c#interview
+231 | calendar+jobtrack | workspace-with-components | source=61 docs=2 | workspace=calendar+jobtrack
+232 | campusops | workspace-with-components | source=80 docs=31 | workspace=campusops
+233 | claude docs | workspace-with-components | source=0 docs=5 | workspace=claude docs
+234 | csharptut | workspace-with-components | source=0 docs=225 | workspace=csharptut
+235 | devdeck | workspace-with-components | source=35 docs=4 | workspace=devdeck
+236 | fableaihelperv2 | workspace-with-components | source=82 docs=12 | workspace=fableaihelperv2
+237 | fableaihelperv3 | workspace-with-components | source=27 docs=2 | workspace=fableaihelperv3
+238 | finalcallhelp | workspace-with-components | source=105 docs=17 | workspace=finalcallhelp
+239 | finance-dashboard | workspace-with-components | source=3 docs=2 | workspace=finance-dashboard
+240 | formforge | workspace-with-components | source=62 docs=86 | workspace=formforge
+241 | geminiorganized/FableDocs_Projects_Hermes | workspace-with-components | source=0 docs=28 | workspace=geminiorganized/FableDocs_Projects_Hermes
+242 | geminiorganized/General_.Architectureproject | workspace-with-components | source=1153 docs=33 | workspace=geminiorganized/General_.Architectureproject
+243 | geminiorganized/General_.Open2 | workspace-with-components | source=8006 docs=314 | workspace=geminiorganized/General_.Open2
+244 | geminiorganized/General_.Todo | workspace-with-components | source=362 docs=57 | workspace=geminiorganized/General_.Todo
+245 | geminiorganized/General_Alanandelisoccer | workspace-with-components | source=45 docs=2 | workspace=geminiorganized/General_Alanandelisoccer
+246 | geminiorganized/General_Ankijs | workspace-with-components | source=61 docs=52 | workspace=geminiorganized/General_Ankijs
+247 | geminiorganized/General_Aral | workspace-with-components | source=78 docs=5 | workspace=geminiorganized/General_Aral
+248 | geminiorganized/General_Borrowbox | workspace-with-components | source=38 docs=30 | workspace=geminiorganized/General_Borrowbox
+249 | geminiorganized/General_C#Interview | workspace-with-components | source=0 docs=43 | workspace=geminiorganized/General_C#Interview
+250 | geminiorganized/General_Campusops | workspace-with-components | source=80 docs=31 | workspace=geminiorganized/General_Campusops
+251 | geminiorganized/General_Cleanarch | workspace-with-components | source=169 docs=113 | workspace=geminiorganized/General_Cleanarch
+252 | geminiorganized/General_Csharptut | workspace-with-components | source=0 docs=225 | workspace=geminiorganized/General_Csharptut
+253 | geminiorganized/General_Devdeck | workspace-with-components | source=35 docs=4 | workspace=geminiorganized/General_Devdeck
+254 | geminiorganized/General_Finance-Dashboard | workspace-with-components | source=3 docs=2 | workspace=geminiorganized/General_Finance-Dashboard
+255 | geminiorganized/General_Formforge | workspace-with-components | source=62 docs=86 | workspace=geminiorganized/General_Formforge
+256 | geminiorganized/General_Gitjira | workspace-with-components | source=0 docs=19 | workspace=geminiorganized/General_Gitjira
+257 | geminiorganized/General_Gitjira-App | workspace-with-components | source=179 docs=99 | workspace=geminiorganized/General_Gitjira-App
+258 | geminiorganized/General_Gitvg | workspace-with-components | source=2942 docs=988 | workspace=geminiorganized/General_Gitvg
+259 | geminiorganized/General_Globehire | workspace-with-components | source=75 docs=49 | workspace=geminiorganized/General_Globehire
+260 | geminiorganized/General_Jsharness | workspace-with-components | source=2291 docs=328 | workspace=geminiorganized/General_Jsharness
+261 | geminiorganized/General_Jstut | workspace-with-components | source=0 docs=46 | workspace=geminiorganized/General_Jstut
+262 | geminiorganized/General_Masternocu | workspace-with-components | source=10671 docs=11266 | workspace=geminiorganized/General_Masternocu
+263 | geminiorganized/General_Masteroutline | workspace-with-components | source=2334 docs=108 | workspace=geminiorganized/General_Masteroutline
+264 | geminiorganized/General_MasterPlan | workspace-with-components | source=0 docs=4 | workspace=geminiorganized/General_MasterPlan
+265 | geminiorganized/General_Meterforge | workspace-with-components | source=69 docs=30 | workspace=geminiorganized/General_Meterforge
+266 | geminiorganized/General_Missioncontrol | workspace-with-components | source=73 docs=1 | workspace=geminiorganized/General_Missioncontrol
+267 | geminiorganized/General_Mobiletagalog | workspace-with-components | source=35 docs=1 | workspace=geminiorganized/General_Mobiletagalog
+268 | geminiorganized/General_Newcodecjs2 | workspace-with-components | source=87 docs=75 | workspace=geminiorganized/General_Newcodecjs2
+269 | geminiorganized/General_Newcodex3 | workspace-with-components | source=400 docs=152 | workspace=geminiorganized/General_Newcodex3
+270 | geminiorganized/General_Newcodexjs | workspace-with-components | source=592 docs=547 | workspace=geminiorganized/General_Newcodexjs
+271 | geminiorganized/General_Nopsolutions | workspace-with-components | source=5148 docs=131 | workspace=geminiorganized/General_Nopsolutions
+272 | geminiorganized/General_Open1 | workspace-with-components | source=627 docs=62 | workspace=geminiorganized/General_Open1
+273 | geminiorganized/General_Open3 | workspace-with-components | source=16690 docs=117 | workspace=geminiorganized/General_Open3
+274 | geminiorganized/General_Open5 | workspace-with-components | source=2116 docs=30 | workspace=geminiorganized/General_Open5
+275 | geminiorganized/General_Perch | workspace-with-components | source=114 docs=166 | workspace=geminiorganized/General_Perch
+276 | geminiorganized/General_Readme | workspace-with-components | source=0 docs=1 | workspace=geminiorganized/General_Readme
+277 | geminiorganized/General_Recipeview | workspace-with-components | source=27 docs=2 | workspace=geminiorganized/General_Recipeview
+278 | geminiorganized/General_Recipeweb | workspace-with-components | source=15 docs=18 | workspace=geminiorganized/General_Recipeweb
+279 | geminiorganized/General_Resume | workspace-with-components | source=0 docs=32 | workspace=geminiorganized/General_Resume
+280 | geminiorganized/General_Skillforgejs | workspace-with-components | source=1348 docs=48 | workspace=geminiorganized/General_Skillforgejs
+281 | geminiorganized/General_Spacegame | workspace-with-components | source=85 docs=1 | workspace=geminiorganized/General_Spacegame
+282 | geminiorganized/General_Tagalog | workspace-with-components | source=80 docs=58 | workspace=geminiorganized/General_Tagalog
+283 | geminiorganized/LLM_Generated_Applybot | workspace-with-components | source=8 docs=2 | workspace=geminiorganized/LLM_Generated_Applybot
+284 | geminiorganized/LLM_Generated_Buildbusinesses | workspace-with-components | source=9 docs=49 | workspace=geminiorganized/LLM_Generated_Buildbusinesses
+285 | geminiorganized/LLM_Generated_Buildermentor | workspace-with-components | source=80 docs=5 | workspace=geminiorganized/LLM_Generated_Buildermentor
+286 | geminiorganized/LLM_Generated_Buildevent | workspace-with-components | source=68 docs=47 | workspace=geminiorganized/LLM_Generated_Buildevent
+287 | geminiorganized/LLM_Generated_Buildreviewer | workspace-with-components | source=77 docs=2 | workspace=geminiorganized/LLM_Generated_Buildreviewer
+288 | geminiorganized/LLM_Generated_Buildsmallplates | workspace-with-components | source=52 docs=3 | workspace=geminiorganized/LLM_Generated_Buildsmallplates
+289 | geminiorganized/LLM_Generated_Buildsql | workspace-with-components | source=592 docs=216 | workspace=geminiorganized/LLM_Generated_Buildsql
+290 | geminiorganized/LLM_Generated_Buildwhiteboard | workspace-with-components | source=10 docs=3 | workspace=geminiorganized/LLM_Generated_Buildwhiteboard
+291 | geminiorganized/LLM_Generated_ClaudeDocs | workspace-with-components | source=0 docs=5 | workspace=geminiorganized/LLM_Generated_ClaudeDocs
+292 | geminiorganized/LLM_Generated_Ecommerceproject | workspace-with-components | source=25 docs=4 | workspace=geminiorganized/LLM_Generated_Ecommerceproject
+293 | geminiorganized/LLM_Generated_Fablehelperv2 | workspace-with-components | source=82 docs=12 | workspace=geminiorganized/LLM_Generated_Fablehelperv2
+294 | geminiorganized/LLM_Generated_Fablehelperv3 | workspace-with-components | source=27 docs=2 | workspace=geminiorganized/LLM_Generated_Fablehelperv3
+295 | geminiorganized/LLM_Generated_Gptdocs | workspace-with-components | source=0 docs=2 | workspace=geminiorganized/LLM_Generated_Gptdocs
+296 | geminiorganized/LLM_Generated_Grokjs | workspace-with-components | source=2064 docs=48 | workspace=geminiorganized/LLM_Generated_Grokjs
+297 | geminiorganized/LLM_Generated_Groktuts | workspace-with-components | source=214 docs=179 | workspace=geminiorganized/LLM_Generated_Groktuts
+298 | geminiorganized/LLM_Generated_Helper | workspace-with-components | source=18 docs=9 | workspace=geminiorganized/LLM_Generated_Helper
+299 | geminiorganized/LLM_Generated_Hrproject | workspace-with-components | source=22 docs=4 | workspace=geminiorganized/LLM_Generated_Hrproject
+300 | geminiorganized/LLM_Generated_Js1 | workspace-with-components | source=474 docs=309 | workspace=geminiorganized/LLM_Generated_Js1
+301 | geminiorganized/LLM_Generated_Jsprojectlearn | workspace-with-components | source=437 docs=307 | workspace=geminiorganized/LLM_Generated_Jsprojectlearn
+302 | geminiorganized/LLM_Generated_Multitenantproject | workspace-with-components | source=21 docs=4 | workspace=geminiorganized/LLM_Generated_Multitenantproject
+303 | geminiorganized/LLM_Generated_Orderproject | workspace-with-components | source=21 docs=4 | workspace=geminiorganized/LLM_Generated_Orderproject
+304 | geminiorganized/LLM_Generated_Ppmproject | workspace-with-components | source=26 docs=4 | workspace=geminiorganized/LLM_Generated_Ppmproject
+305 | geminiorganized/LLM_Generated_Rag | workspace-with-components | source=86 docs=124 | workspace=geminiorganized/LLM_Generated_Rag
+306 | geminiorganized/LLM_Generated_Supportproject | workspace-with-components | source=0 docs=3 | workspace=geminiorganized/LLM_Generated_Supportproject
+307 | geminiorganized/LLM_Generated_Teamproject | workspace-with-components | source=23 docs=4 | workspace=geminiorganized/LLM_Generated_Teamproject
+308 | geminiorganized/OpenSource_Upskilling_.Ramp | workspace-with-components | source=43 docs=48 | workspace=geminiorganized/OpenSource_Upskilling_.Ramp
+309 | geminiorganized/OpenSource_Upskilling_.Stripe | workspace-with-components | source=20 docs=97 | workspace=geminiorganized/OpenSource_Upskilling_.Stripe
+310 | geminiorganized/OpenSource_Upskilling_Auth | workspace-with-components | source=42 docs=63 | workspace=geminiorganized/OpenSource_Upskilling_Auth
+311 | geminiorganized/OpenSource_Upskilling_Docu | workspace-with-components | source=81 docs=50 | workspace=geminiorganized/OpenSource_Upskilling_Docu
+312 | geminiorganized/OpenSource_Upskilling_Drop | workspace-with-components | source=62 docs=49 | workspace=geminiorganized/OpenSource_Upskilling_Drop
+313 | geminiorganized/OpenSource_Upskilling_Intercom | workspace-with-components | source=80 docs=51 | workspace=geminiorganized/OpenSource_Upskilling_Intercom
+314 | geminiorganized/OpenSource_Upskilling_Linear | workspace-with-components | source=61 docs=49 | workspace=geminiorganized/OpenSource_Upskilling_Linear
+315 | geminiorganized/OpenSource_Upskilling_Notion | workspace-with-components | source=97 docs=58 | workspace=geminiorganized/OpenSource_Upskilling_Notion
+316 | geminiorganized/OpenSource_Upskilling_Shop | workspace-with-components | source=48 docs=49 | workspace=geminiorganized/OpenSource_Upskilling_Shop
+317 | geminiorganized/OpenSource_Upskilling_Snapshot | workspace-with-components | source=698 docs=57 | workspace=geminiorganized/OpenSource_Upskilling_Snapshot
+318 | geminiorganized/OpenSource_Upskilling_Snapshot1 | workspace-with-components | source=602 docs=70 | workspace=geminiorganized/OpenSource_Upskilling_Snapshot1
+319 | gitjira | workspace-with-components | source=0 docs=19 | workspace=gitjira
+320 | gitjira-app | workspace-with-components | source=179 docs=99 | workspace=gitjira-app
+321 | gitvg/agora | independent-nested-git-root | source=264 docs=40 | workspace=gitvg
+322 | gitvg/agora-net | independent-nested-git-root | source=152 docs=18 | workspace=gitvg
+323 | gitvg/atlas | independent-nested-git-root | source=508 docs=74 | workspace=gitvg
+324 | gitvg/atlas-net | independent-nested-git-root | source=93 docs=17 | workspace=gitvg
+325 | gitvg/bazaar | independent-nested-git-root | source=211 docs=211 | workspace=gitvg
+326 | gitvg/bazaar-app | independent-nested-git-root | source=217 docs=53 | workspace=gitvg
+327 | gitvg/folio | independent-nested-git-root | source=124 docs=70 | workspace=gitvg
+328 | gitvg/folio-app | independent-nested-git-root | source=159 docs=52 | workspace=gitvg
+329 | gitvg/harbor | independent-nested-git-root | source=122 docs=66 | workspace=gitvg
+330 | gitvg/harbor-net | independent-nested-git-root | source=143 docs=20 | workspace=gitvg
+331 | gitvg/pulse | independent-nested-git-root | source=220 docs=67 | workspace=gitvg
+332 | gitvg/pulse-net | independent-nested-git-root | source=102 docs=27 | workspace=gitvg
+333 | gitvg/relay | independent-nested-git-root | source=129 docs=75 | workspace=gitvg
+334 | gitvg/relay-app | independent-nested-git-root | source=200 docs=54 | workspace=gitvg
+335 | gitvg/storefront | independent-nested-git-root | source=54 docs=30 | workspace=gitvg
+336 | gitvg/tracer | independent-nested-git-root | source=85 docs=70 | workspace=gitvg
+337 | gitvg/tracer-net | independent-nested-git-root | source=158 docs=22 | workspace=gitvg
+338 | globehire | workspace-with-components | source=75 docs=49 | workspace=globehire
+339 | GPTDocs | workspace-with-components | source=0 docs=2 | workspace=GPTDocs
+340 | grokbuildecommerceproject | workspace-with-components | source=25 docs=4 | workspace=grokbuildecommerceproject
+341 | grokbuildhrproject | workspace-with-components | source=22 docs=4 | workspace=grokbuildhrproject
+342 | grokbuildmultitenantproject | workspace-with-components | source=21 docs=4 | workspace=grokbuildmultitenantproject
+343 | grokbuildorderproject | workspace-with-components | source=21 docs=4 | workspace=grokbuildorderproject
+344 | grokbuildppmproject | workspace-with-components | source=26 docs=4 | workspace=grokbuildppmproject
+345 | grokbuildsupportproject | workspace-with-components | source=0 docs=3 | workspace=grokbuildsupportproject
+346 | grokbuildteamproject | workspace-with-components | source=23 docs=4 | workspace=grokbuildteamproject
+347 | grokjs | workspace-with-components | source=2064 docs=48 | workspace=grokjs
+348 | groktuts | workspace-with-components | source=214 docs=179 | workspace=groktuts
+349 | hermes | workspace-with-components | source=7 docs=31 | workspace=hermes
+350 | jobtrack | workspace-with-components | source=16 docs=56 | workspace=jobtrack
+351 | JS1 | workspace-with-components | source=474 docs=309 | workspace=JS1
+352 | jsharness/ctvodejs | independent-nested-git-root | source=118 docs=19 | workspace=jsharness
+353 | jsharness/VTCode | independent-nested-git-root | source=2173 docs=309 | workspace=jsharness
+354 | JSProjectLearn | workspace-with-components | source=16 docs=14 | workspace=JSProjectLearn
+355 | JSTut | workspace-with-components | source=0 docs=46 | workspace=JSTut
+356 | lucasrouter | workspace-with-components | source=114 docs=6 | workspace=lucasrouter
+357 | master plan | workspace-with-components | source=0 docs=4 | workspace=master plan
+358 | masternocu | workspace-with-components | source=10671 docs=11266 | workspace=masternocu
+359 | masteroutline | workspace-with-components | source=2334 docs=108 | workspace=masteroutline
+360 | meterforge | workspace-with-components | source=69 docs=30 | workspace=meterforge
+361 | missioncontrol | workspace-with-components | source=73 docs=1 | workspace=missioncontrol
+362 | mobiletagalog | workspace-with-components | source=35 docs=1 | workspace=mobiletagalog
+363 | netairag | workspace-with-components | source=86 docs=124 | workspace=netairag
+364 | netauth | workspace-with-components | source=42 docs=63 | workspace=netauth
+365 | netcleanarch | workspace-with-components | source=169 docs=113 | workspace=netcleanarch
+366 | netdocu | workspace-with-components | source=81 docs=50 | workspace=netdocu
+367 | netdrop | workspace-with-components | source=62 docs=49 | workspace=netdrop
+368 | netintercom | workspace-with-components | source=80 docs=51 | workspace=netintercom
+369 | netlinear | workspace-with-components | source=61 docs=49 | workspace=netlinear
+370 | netnotion | workspace-with-components | source=97 docs=58 | workspace=netnotion
+371 | netopen1 | workspace-with-components | source=640 docs=168 | workspace=netopen1
+372 | netopen3 | workspace-with-components | source=16690 docs=117 | workspace=netopen3
+373 | netopen5 | workspace-with-components | source=2116 docs=30 | workspace=netopen5
+374 | netshop | workspace-with-components | source=48 docs=49 | workspace=netshop
+375 | netsnapshot | workspace-with-components | source=698 docs=57 | workspace=netsnapshot
+376 | netsnapshot1 | workspace-with-components | source=602 docs=70 | workspace=netsnapshot1
+377 | newcodecjs2 | workspace-with-components | source=87 docs=75 | workspace=newcodecjs2
+378 | newcodex3 | workspace-with-components | source=400 docs=152 | workspace=newcodex3
+379 | newcodexJS | workspace-with-components | source=592 docs=547 | workspace=newcodexJS
+380 | nopsolutionsnet | workspace-with-components | source=5148 docs=131 | workspace=nopsolutionsnet
+381 | perch | workspace-with-components | source=114 docs=166 | workspace=perch
+382 | readme | workspace-with-components | source=0 docs=1 | workspace=readme
+383 | recipeview | workspace-with-components | source=27 docs=2 | workspace=recipeview
+384 | recipeweb | workspace-with-components | source=15 docs=18 | workspace=recipeweb
+385 | resume | workspace-with-components | source=0 docs=32 | workspace=resume
+386 | skillforgejs | workspace-with-components | source=1348 docs=48 | workspace=skillforgejs
+387 | spacegame | workspace-with-components | source=85 docs=1 | workspace=spacegame
+388 | spacegamev2 | workspace-with-components | source=134 docs=36 | workspace=spacegamev2
+389 | tagalog | workspace-with-components | source=84 docs=59 | workspace=tagalog

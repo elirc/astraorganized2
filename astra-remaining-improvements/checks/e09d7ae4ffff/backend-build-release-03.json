@@ -1,0 +1,24 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildasana",
+  "id": "e09d7ae4ffff",
+  "command": [
+    "dotnet",
+    "build",
+    "BuildAsana.sln",
+    "--configuration",
+    "Release",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\e09d7ae4ffff\\backend",
+  "environmentOverrides": {
+    "DOTNET_ROLL_FORWARD": "Major"
+  },
+  "startedAt": "2026-09-12T21:14:59.671430+00:00",
+  "status": "complete",
+  "log": "backend-build-release-03.log",
+  "pid": 32364,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T21:20:06.845775+00:00",
+  "elapsedSeconds": 307.16
+}

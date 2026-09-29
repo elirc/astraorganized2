@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/MasterStore",
+  "id": "7649d96533a4",
+  "command": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "Set-Location storefront; node --experimental-strip-types --experimental-loader ./tests/alias-loader.mjs --test ./tests/listing-search-params.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7649d96533a4",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T01:37:46.337387+00:00",
+  "status": "complete",
+  "log": "astra-crud-b03-masterstore-runtime-03.log",
+  "pid": 33280,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T01:38:45.373455+00:00",
+  "elapsedSeconds": 58.68
+}

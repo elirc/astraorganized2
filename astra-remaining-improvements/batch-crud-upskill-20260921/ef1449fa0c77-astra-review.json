@@ -1,0 +1,34 @@
+{
+  "id": "ef1449fa0c77",
+  "approved": true,
+  "reviewedAt": "2026-09-22T00:05:02.670252+00:00",
+  "sourceReview": "Reviewed booking and availability handlers, domain identity records and anonymous controllers. Both handlers now require event tenant/owner match before calendar operations; availability agrees on inactive state. Existing valid, conflict and missing-schedule paths preserved.",
+  "teachingReview": "Nine distinct source-linked chapters with actual tuple examples, before/after guard, trace table, graduated exercises, solved answers and .NET10 harness versus .NET9 integration limits.",
+  "testReview": "Compiled actual linked domain/handler source with .NET10 and explicit repository/MediatR contracts. Eleven cases passed: eight rejection paths with no downstream interactions and three legal/neighboring paths. Original framework/xUnit/HTTP/EF/Postgres not executed. Mechanical preflight passed.",
+  "specSHA256": "cefc96815773fdc1c5a5fbb04a2fdfaba508cbd9a3b4fd063ff673ab43bb2511",
+  "fileHashes": {
+    "src/NetCalendy.Application/Bookings/Commands/CreateBooking/CreateBookingHandler.cs": "c0022361b3c1815b5f0d4e4c194bd0594af1ff87dc8040df50cb7d3a80aeff41",
+    "src/NetCalendy.Application/Schedules/Queries/GetAvailableSlots/GetAvailableSlotsHandler.cs": "7c0d1d93023f438f577c4a6c9644fa5cbc10093cf0ece4947d26fc2eba454ecb",
+    "tests/NetCalendy.ScopeHarness/NetCalendy.ScopeHarness.csproj": "10dc65063cfc554941ad8bc8fdcd5296902e072e00e6ea067f63b3abd7772212",
+    "tests/NetCalendy.ScopeHarness/MediatorContracts.cs": "dd8e3cee48649fd8380d50ad2bbb227ad9dbf702099dceb5c53a11d1e8b8e33f",
+    "tests/NetCalendy.ScopeHarness/Program.cs": "95aaff3674ae68705b58dd327ccd306d6da1dc83aeed4453f54c4c2fff072daa",
+    "astraupskill/snapshots/src__NetCalendy.Application__Bookings__Commands__CreateBooking__CreateBookingHandler.cs.original.txt": "3d62969003f14a136c73f13bbffdaaa96e024626bdc912d6980481a17802f750",
+    "astraupskill/snapshots/src__NetCalendy.Application__Schedules__Queries__GetAvailableSlots__GetAvailableSlotsHandler.cs.original.txt": "0ab9b4e36384b68f34182a465aadb55a6cbbec71f4feee54b0488f2f1e49f71b",
+    "astraupskill/evidence/crud-b02-scope-harness.log": "9c2a2a8883cf30dbf5da9d9b209d0af234888cff0815e7507669e6bb70bc610e",
+    "astraupskill/evidence/results.json": "f3f0082242136fe34b97e5a18341832ba887f2eb1e0bf1841c6c52b21215ebc1",
+    "astraupskill/README.md": "40afe04a8ed36d17d47f3977e62f2b2d4c2adf7e5ab7dffa0b198ff6b720f00d",
+    "astraupskill/01-CODEBASE-MAP.md": "5e71a6419bc32c09d31636f1226eadd92159f2926bde79722fe01d97e709ff47",
+    "astraupskill/02-CONCEPTS.md": "a4f19f351362ccfc4df8a02cfa240adbf4da1eef2125bcade2165bf9c68fabac",
+    "astraupskill/03-WORKED-CHANGE.md": "2e0cff74b0374d78598e94f317523bd756e3a1aee4184983a4c7d278222c9127",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "5c992f80054b2c783e7878f8b07568f97185197a8c11fdfc5886aa875c2830bd",
+    "astraupskill/05-PRACTICE.md": "05d2b08de2c9c7cbd706a11dc6ee3348ff79b22926f3455665fa8202df78eb97",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "4b768774e64920f2ee3e8dcaf0245b585302b874ddcd5e240a662020dec71ed0",
+    "astraupskill/07-TRACE-LAB.md": "52a98b9c87eddd997488facf22ad8f127472815009726ce48d2f897dcbdc1f94",
+    "astraupskill/VERIFICATION.md": "2489504a4d600fa0e2f0d816993eedbb3bf80acbaa779c861ca8b04b3b8c846f"
+  },
+  "evidenceHashes": {
+    "checks/ef1449fa0c77/crud-b02-scope-harness.json": "2d42c0fad20211d81c1b5cf69ce3b2cd9c717c0c2d0997d2c2f144db33e55bb6",
+    "checks/ef1449fa0c77/crud-b02-scope-harness.log": "9c2a2a8883cf30dbf5da9d9b209d0af234888cff0815e7507669e6bb70bc610e",
+    "checks/ef1449fa0c77/results-crud-b02.json": "f3f0082242136fe34b97e5a18341832ba887f2eb1e0bf1841c6c52b21215ebc1"
+  }
+}

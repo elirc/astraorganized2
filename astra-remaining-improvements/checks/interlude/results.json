@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "tests": 49,
+  "nodeTests": 39,
+  "browserTests": 10,
+  "additionalLayoutRecheck": 1,
+  "build": "passed",
+  "archiveMembers": 11,
+  "screenshots": 4,
+  "environment": "Node 22.16.0; Playwright 1.60.0; Chromium 148; isolated real unpacked extension and preview"
+}

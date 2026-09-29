@@ -1,0 +1,10 @@
+{
+  "command": [
+    "node",
+    "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\npm-cache\\_npx\\83e71da30ae7cab2\\node_modules\\prettier\\bin\\prettier.cjs",
+    "--write",
+    "src/components/LocalOperationsApp.tsx"
+  ],
+  "exitCode": 0,
+  "seconds": 14.56
+}

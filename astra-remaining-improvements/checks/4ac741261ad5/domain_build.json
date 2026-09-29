@@ -1,0 +1,23 @@
+{
+  "project": "_Organized Desktop/03 Master Projects/master2",
+  "id": "4ac741261ad5",
+  "command": [
+    "--env",
+    "DATABASE_URL=postgresql://dummy:dummy@localhost:5432/dummy",
+    "--",
+    "npm",
+    "run",
+    "build",
+    "--workspace",
+    "@billing/domain"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\4ac741261ad5",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T21:34:28.138502+00:00",
+  "status": "launch-failed",
+  "log": "domain_build.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T21:34:28.234166+00:00",
+  "elapsedSeconds": 0.05
+}

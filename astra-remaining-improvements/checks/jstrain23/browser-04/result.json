@@ -1,0 +1,14 @@
+{
+  "passed": false,
+  "checks": [
+    "fresh CLI setup and repeat-setup refusal preserve database bytes",
+    "actual Next HTTP authorization origin and workspace boundaries",
+    "browser owner sign-in and initial accepted workspace",
+    "page edit accepted through UI and real SQLite",
+    "reload requires token again and reads persisted content"
+  ],
+  "count": 5,
+  "error": "Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"region\", name=\"Database Tasks\", exact=True).get_by_label(\"New property type\", exact=True)\n",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\checks\\jstrain23\\browser_check.py\", line 62, in <module>\n    database.get_by_label('New property name',exact=True).fill('Quantity');database.get_by_label('New property type',exact=True).select_option('number');database.get_by_role('button',name='Add property',exact=True).click()\n                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\sync_api\\_generated.py\", line 18226, in select_option\n    self._sync(\n    ~~~~~~~~~~^\n        self._impl_obj.select_option(\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<7 lines>...\n        )\n        ^\n    )\n    ^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\_impl\\_sync_base.py\", line 115, in _sync\n    return task.result()\n           ~~~~~~~~~~~^^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\_impl\\_locator.py\", line 610, in select_option\n    return await self._frame.select_option(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\_impl\\_frame.py\", line 781, in select_option\n    return await self._channel.send(\"selectOption\", self._timeout, params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\_impl\\_connection.py\", line 69, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<3 lines>...\n    )\n    ^\n  File \"C:\\Users\\Owner\\AppData\\Roaming\\Python\\Python313\\site-packages\\playwright\\_impl\\_connection.py\", line 559, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for get_by_role(\"region\", name=\"Database Tasks\", exact=True).get_by_label(\"New property type\", exact=True)\n\n",
+  "pageErrors": []
+}

@@ -1,0 +1,299 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/GlobGame",
+  "id": "993e7c3b44d7",
+  "summary": [
+    "Adds a connected structured puzzle-authoring studio with create/read/update/delete, title search, state filters and bounded pagination.",
+    "Validates four-category mini puzzles, real calendar dates, unique words, request bodies and query parameters; protects authoring with a local bearer token.",
+    "Uses conditional versions and PostgreSQL transactions for metadata, category replacement and retained audit records; proves one-winner conflicts and rollback.",
+    "Freezes published content, supports archival without reopening edits, and restricts deletion to never-published drafts without results.",
+    "Replaces silent fallback with explicit labeled demo mode and unavailable-store errors; validates hierarchy and fixes deterministic shuffle bounds.",
+    "Validates saved game boards/history and coordinates accepted browser writes, preserving corrupt data and rejected moves for recovery exports.",
+    "Provides a fresh migration, non-overwriting transactional seed, offline-build fonts, loopback defaults, an isolated PostgreSQL/Chromium harness and nine detailed CRUD learning documents.",
+    "Verifies 34 model checks, 10 PostgreSQL scenarios, nine Chromium workflows, production build, lint, repeated seed and two reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/glob/results.json",
+    "expectedTests": 53,
+    "command": "Prisma validate/generate/migrate; 34 Node model tests; 10 PostgreSQL integration cases; seed twice; ESLint; Next production webpack build; nine Chromium workflows",
+    "environment": "Node 22.16.0; Next 16.1.6; React 19.2.3; Prisma 6.19.2; PostgreSQL 18.1; Playwright 1.60.0 / Chromium 148"
+  },
+  "testResults": {
+    "passed": true,
+    "mode": "verify",
+    "database": "PostgreSQL 18; fresh helper-owned loopback cluster",
+    "modelTests": 34,
+    "databaseTests": 10,
+    "browserTests": 9,
+    "build": true,
+    "lint": true,
+    "total": 53,
+    "screenshotsReviewed": 2,
+    "seedRuns": 2,
+    "databaseStopped": true,
+    "evidence": [
+      "checks/glob/final/model-tests.log",
+      "checks/glob/final/database-tests.log",
+      "checks/glob/final/browser.json",
+      "checks/glob/final/build.log",
+      "checks/glob/final/lint.log",
+      "checks/glob/final/seed.log",
+      "checks/glob/final/seed-repeat.log",
+      "checks/glob/final/postgres-stop.log"
+    ],
+    "notes": [
+      "Initial browser run found Next internal-URL origin mismatch; corrected to incoming Host with a regression test.",
+      "Alert selectors were scoped to the app to avoid Next route-announcer ambiguity; all final browser cases passed."
+    ]
+  },
+  "courseWords": 3935,
+  "courseFiles": 9,
+  "courseLinksChecked": 22,
+  "files": [
+    {
+      "file": ".env.example",
+      "before_sha256": "13889dcbd9c0dbcb82756e47f156fec26a5992c79755439e1afeb8b866646121",
+      "after_sha256": "a1b1fa9d4fa2e45ade1133ed073ac3ed6280eb1b52fc34150bcce507a1618d85"
+    },
+    {
+      "file": ".gitignore",
+      "before_sha256": "207e265ff4901f9ad9f96d8ce08530e04f9fc600815472a66d0a446096d654cd",
+      "after_sha256": "420e80063c149908edaad6edc144b4c1b1cac35ab9122d23002d7e0ca63131ed"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "6f578eea959cefc505d888978ef3b194b8b5cf8d3446e242e977e638b0070759",
+      "after_sha256": "80813deeb41ef506159841989392147a6f86ba004e61e2a576e9ba9111645dd7"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "45bfb3f5fcd1155244c82a02bd1ec838c8ff5b707aa6b3d1587b7ce74dc17f33"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "bd0643356dd6b9ef795b45589e2c7daf9de9c5ae0b7cecba3a374ef1fd513017"
+    },
+    {
+      "file": "browser-tests/studio.spec.js",
+      "before_sha256": null,
+      "after_sha256": "2082a30ebbd1d76cd030860ac5aeec90a4a32844a16e6cc58b1bebfadf85d0a8"
+    },
+    {
+      "file": "next.config.mjs",
+      "before_sha256": "2a19430e74dcb8a7b1f16c8675d0fd5cd088fda7290ee9bdb500778b4c71c5ab",
+      "after_sha256": "15bd5cf7bb6544519c659ee702677ebf139e5c9fb5105742f2034d266592cf90"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "fcc3a09fabb92c1c00ae8911582d2810b6441195f51d4b80e9338887db64d926",
+      "after_sha256": "811e1c55311d17174e733e58c5fa6d129b75b20698ffa5359cf816b769028dbd"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "92b4ad95b484a1c30c8afd5c9468caea972521819bdafa2b91b5d4f09c5c1ac9",
+      "after_sha256": "15a7640d5a011b8667a9d52a5159dc2f797b13153d1687ffe023c14ae4bad06d"
+    },
+    {
+      "file": "playwright.config.mjs",
+      "before_sha256": null,
+      "after_sha256": "231d837fddd21513a4e6f095c6e5e96f59d0f8d31418e4804a2128eb3aae5d3d"
+    },
+    {
+      "file": "prisma/migrations/202609090001_puzzle_studio/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "13a961cf34972b958c989b58a475f83525696779c49a3c78e113c44efcb0f710"
+    },
+    {
+      "file": "prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "prisma/schema.prisma",
+      "before_sha256": "721c1c17c01ec5cec3f36b2badd57aaaf0384ef9679d4d792f690f03fcbf3be8",
+      "after_sha256": "b1cc39fe83c0abc38bebfae8bcc37f22c9715a7f0bc9f9e665462c7eb64d46f9"
+    },
+    {
+      "file": "prisma/seed.js",
+      "before_sha256": "37dc0f4700c9e17e622e0a4e29bd1f7eeeaed85e502fcfa22f44b17439192886",
+      "after_sha256": "bfe600d6f82d6290da128ccf00f4951e9b0f9cfbe7b1e68ce16b8db3db4a0fb5"
+    },
+    {
+      "file": "scripts/test-database.mjs",
+      "before_sha256": null,
+      "after_sha256": "e18905558345f0486614b17034e22b1d9806eb5b0972d6bebcd31175a77cee62"
+    },
+    {
+      "file": "src/app/api/puzzles/daily/route.js",
+      "before_sha256": "af258851d5ae9686de9c4647f0b08120053eda532a5fb5299f88dbc8f26d50f2",
+      "after_sha256": "82edb1d473c221e8fc44a62d0f02b92a59d76e01e14697545df9276d5b1a7ec8"
+    },
+    {
+      "file": "src/app/api/studio/puzzles/[id]/publication/route.js",
+      "before_sha256": null,
+      "after_sha256": "0c71fbde1ba65aaee9e81488d2d19621b2300a7bbfef88229c31f145e3625e29"
+    },
+    {
+      "file": "src/app/api/studio/puzzles/[id]/route.js",
+      "before_sha256": null,
+      "after_sha256": "fe25eea6cc5d2a6b6cd4f4ccab1f66d47bf46cd2baebc555c670a610643670e2"
+    },
+    {
+      "file": "src/app/api/studio/puzzles/route.js",
+      "before_sha256": null,
+      "after_sha256": "d3dd7bfad6769111c08e89b76cc9fa4ba19b232c1dda389d520999f8884cf977"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "47d91e21899de3c9d135f408b1b0af4f36a1acb5cc4fd508bb0f16a4899774be",
+      "after_sha256": "04baa195cd700ea7704a8657a5b5c8f30fd3f1a65ae018f011a0351dc25077ae"
+    },
+    {
+      "file": "src/app/layout.js",
+      "before_sha256": "5e62f0bcfcbe0d8393e89ddc59ffb4b7b017574693d535033ffc25d8ca0bc4ec",
+      "after_sha256": "1d02a209673b223ad10bfd5b1cb958a8078a6e9289ea06ad6359bbf1ce9cb017"
+    },
+    {
+      "file": "src/app/page.js",
+      "before_sha256": "919d3477a7f173764b5fbf8a5194503cc38a1fb55e831d1626eb91a2f5033405",
+      "after_sha256": "2991804d1a10cd8cbcf54c29833a6aea025edd94e6e41b750f94ff6bac30890c"
+    },
+    {
+      "file": "src/app/studio/page.js",
+      "before_sha256": null,
+      "after_sha256": "f93fc84d8a7c7309be11dcac00f68801617ad0f49706481f1fc7d547f8ef711f"
+    },
+    {
+      "file": "src/components/globs/GameClient.js",
+      "before_sha256": "36e7c27eab038b6395dd4f58d92a353e34c3376e7ff0f2c6d6c0cf5a49dc592c",
+      "after_sha256": "7cc51c3952f221a29b67fd6945314a1dd436d3f0debf1e8eaf410e285c1d13f0"
+    },
+    {
+      "file": "src/components/globs/PuzzleStudio.js",
+      "before_sha256": null,
+      "after_sha256": "cc28ec6845ed8575d13da0460266187e16adc57587d5e00b24a72526deeb5925"
+    },
+    {
+      "file": "src/lib/game/engine.js",
+      "before_sha256": "1ef5133ed6554036029db646fc58f1539538e17ec7a5cbce72d8cac369057c97",
+      "after_sha256": "91ffcca3b4a5d9b818fa2472f2c9e8840d25804f22be57b54ec11577d6d98a8e"
+    },
+    {
+      "file": "src/lib/game/reducer.js",
+      "before_sha256": "58c49cdf56e31120c2eaebf8dde8ae3b98a10cc25f8e563b83265736e481d505",
+      "after_sha256": "69a1c7623be4ed298555d8870125470096592471a8e3b85626061891f82a1101"
+    },
+    {
+      "file": "src/lib/game/sessionValidation.js",
+      "before_sha256": null,
+      "after_sha256": "1b6b3ab9c0e9217c0f96df5cd3a166f1b9a06e9b7a39deba36a93685dc541f3e"
+    },
+    {
+      "file": "src/lib/game/storage.js",
+      "before_sha256": "8e20e41b64a73cf0fc96d10a1ffea28dbc5c84a72e606dc33da766e95b2347e5",
+      "after_sha256": "2841e3ebf3fa2356dba5351486146c9a7f4833a38080f8b262fba99ac37b3c32"
+    },
+    {
+      "file": "src/lib/http.js",
+      "before_sha256": null,
+      "after_sha256": "7353c9e5f1b9406712199334e5640d36cce432834152db124ba671dca8f85293"
+    },
+    {
+      "file": "src/lib/prisma.js",
+      "before_sha256": "32fbf5066ed524a2041460268efa71ce5016b99f4a3896cef3902cac134f9ff9",
+      "after_sha256": "18a9a08d6d0a9ec7ad1195774fbd13675471ec047c911cbd729467d54bc66f92"
+    },
+    {
+      "file": "src/lib/puzzles/authoring.js",
+      "before_sha256": null,
+      "after_sha256": "dbc230336008b06b699c15e4beb1aec8c229b4504b911361409f20ed0348914e"
+    },
+    {
+      "file": "src/lib/puzzles/payload.js",
+      "before_sha256": "3ec6a0feca361096ba0fdcade95523b5c18c3e953de6cf0515a2619b149300fe",
+      "after_sha256": "8b4040673b0e246a939373599f77885c074b8a7efc22b36bd2cf3fdfd9856ecb"
+    },
+    {
+      "file": "src/lib/puzzles/resolveDailyPuzzle.js",
+      "before_sha256": "068e3c8d1c2ccd6dfdba83da885a41d708fa03d1fc9e628437fc487e0cb12544",
+      "after_sha256": "dca2da019a85f79c0e989b0b453c85a702b0bf4633a98002ecf6396c9868b6c2"
+    },
+    {
+      "file": "src/lib/puzzles/samplePuzzles.js",
+      "before_sha256": "1861256bd1cd351b77ebe412a6254b6501fb9d05ca224c92a1b402080d635d1f",
+      "after_sha256": "718cca843ef3b262c41daabc59da233e812432a7976be0a9f53e30ba03c82aa3"
+    },
+    {
+      "file": "src/lib/puzzles/validation.js",
+      "before_sha256": null,
+      "after_sha256": "e40aa7cbe4f1e643981f53338f246274d3790bce536d0c4ab6e4c8b1693e00ef"
+    },
+    {
+      "file": "tests/database.test.js",
+      "before_sha256": null,
+      "after_sha256": "2035bc4dd48baa78ae9ca25f8da57b565840167c43899e2f9acaed0af6507f77"
+    },
+    {
+      "file": "tests/model.test.js",
+      "before_sha256": null,
+      "after_sha256": "f57108600c878c3de8eeb140671fb792e57d29e96184f88dd79e507f55b0f6a1"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "0222b72a37ca4c3a49eb0fccc6fcf72d5c5e6407bf799d7afb86f3c44cb4ac17"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "102e85d995df6b0bfa68a3fe7df7a2d7b1805ee88e91350060e30a2a8c88e53e"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "650b8bb59fdd53a32e511dde6308a041d50ffa5ab94f571af889b3d143f296fb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "ddd41c16cde60fe48308e98d0cb0bf280fd92730c87e5a7c42d39a7d705f46d5"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "21583d7d0bd2f8d24d7084099a2675a05d1bf1aac62f4e9ee4b797a5306197fe"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "5c6be61c42cd8722bf1c2d67dc22976b4cb71b1d4e63fc52968de99ea7525580"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "0710efc4ab61e275ded84452fb1ee5af85a4c67f54f4c2d077dc3899ec8d5bf8"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ffcf5a4af7cdac36ba0f07da11e3bc4eee8712811c6cd2557c2b6621a30bfc78"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "942be9534afbf66ef4585efbd43c9866cce2e594794d2ebda26c32c70c527c49"
+    }
+  ],
+  "limits": [
+    "Daily mini authoring only; larger puzzle formats remain outside the implemented studio.",
+    "Shared local author token only; no individual accounts, roles, multi-tenant ownership or production authentication/deployment certification.",
+    "Initial migration is for an empty learning database; no personal database was migrated.",
+    "No durable create-idempotency receipts, notification outbox, hosted deployment, crash/power-loss or full accessibility certification.",
+    "Public payloads expose puzzle relationships; no anti-cheating or protected leaderboard claim.",
+    "Browser saves coordinate cooperating tabs on localhost/HTTPS; raw/pending exports support manual recovery, with no session-import UI."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T09:26:23.178750+00:00"
+}

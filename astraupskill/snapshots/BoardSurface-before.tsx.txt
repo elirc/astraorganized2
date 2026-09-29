@@ -1,0 +1,333 @@
+"use client";
+
+import { DndContext, DragEndEvent, closestCenter, PointerSensor, useSensor, useSensors } from "@dnd-kit/core";
+import { useCallback, useMemo, useOptimistic, useState, useTransition, useEffect } from "react";
+import { useBoardSocket } from "@/hooks/useBoardSocket";
+import { BoardColumn } from "./Column";
+import { CardPayload } from "./Card";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useCommandStack } from "@/hooks/useCommandStack";
+import { applyBoardFilters, BoardFilterState } from "@/lib/filter";
+
+type SnapshotCard = CardPayload & { createdAt?: string; updatedAt?: string };
+type SnapshotColumn = {
+  id: string;
+  title: string;
+  orderKey: string;
+  wipLimit: number | null;
+  cards: SnapshotCard[];
+};
+type SnapshotBoard = {
+  id: string;
+  title: string;
+  description: string | null;
+  version: number;
+  isArchived: boolean;
+  columns: SnapshotColumn[];
+};
+
+type BoardAction =
+  | { type: "replace"; board: SnapshotBoard }
+  | {
+      type: "move";
+      cardId: string;
+      fromColumnId: string;
+      toColumnId: string;
+      toAfterCardId: string | null;
+    };
+
+function applyBoardMove(board: SnapshotBoard, action: BoardAction): SnapshotBoard {
+  if (action.type === "replace") return action.board;
+
+  const source = board.columns.find((column) => column.id === action.fromColumnId);
+  const target = board.columns.find((column) => column.id === action.toColumnId);
+  if (!source || !target) return board;
+
+  const card = source.cards.find((item) => item.id === action.cardId);
+  if (!card) return board;
+
+  const without = source.cards.filter((item) => item.id !== action.cardId);
+  const destination = [...target.cards];
+  const insertIndex = action.toAfterCardId
+    ? Math.max(0, destination.findIndex((item) => item.id === action.toAfterCardId) + 1)
+    : destination.length;
+  destination.splice(insertIndex, 0, card);
+
+  return {
+    ...board,
+    columns: board.columns.map((column) => {
+      if (column.id === source.id) return { ...source, cards: without };
+      if (column.id === target.id) return { ...target, cards: destination };
+      return column;
+    })
+  };
+}
+
+function applyRemoteEvent(board: SnapshotBoard, event: any): SnapshotBoard {
+  if (!event || event.boardId !== board.id) return board;
+  if (event.type === "card:moved") {
+    return applyBoardMove(board, {
+      type: "move",
+      cardId: event.cardId,
+      fromColumnId: event.fromColumnId,
+      toColumnId: event.toColumnId,
+      toAfterCardId: null
+    });
+  }
+  return board;
+}
+
+function parseFilterState(search: URLSearchParams): BoardFilterState {
+  return {
+    query: search.get("q") ?? "",
+    assignee: search.get("assignee") ?? "",
+    label: search.get("label") ?? "",
+    status: (search.get("status") as BoardFilterState["status"]) ?? "all"
+  };
+}
+
+export function BoardSurface({ initialBoard, boardId }: { initialBoard: SnapshotBoard; boardId: string }) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [baseBoard, setBaseBoard] = useState<SnapshotBoard>(initialBoard);
+  const [optimisticBoard, addOptimistic] = useOptimistic<SnapshotBoard, BoardAction>(baseBoard, applyBoardMove);
+  const [presence, setPresence] = useState<
+    Array<{ userId: string; name: string; isActive: boolean; columnId: string | null; cursor: { x: number; y: number } | null }>
+  >([]);
+  const [conflictMessage, setConflictMessage] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
+  const [filter, setFilter] = useState<BoardFilterState>(parseFilterState(searchParams));
+  const { push, undo, redo, canUndo, canRedo } = useCommandStack();
+  const [boardVersion, setBoardVersion] = useState<number>(initialBoard.version);
+
+  const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 6 } }));
+
+  useEffect(() => {
+    setFilter(parseFilterState(searchParams));
+  }, [searchParams]);
+
+  const refreshBoard = useCallback(async () => {
+    const response = await fetch(`/api/boards/${boardId}`, { cache: "no-store" });
+    if (!response.ok) return;
+    const state = (await response.json()) as SnapshotBoard;
+    setBaseBoard(state);
+    setBoardVersion(state.version);
+    addOptimistic({ type: "replace", board: state });
+    setConflictMessage(null);
+  }, [boardId, addOptimistic]);
+
+  const socketHandlers = useMemo(
+    () => ({
+      onBoardState: (state: SnapshotBoard) => {
+        startTransition(() => {
+          setBaseBoard(state);
+          setBoardVersion(state.version);
+          addOptimistic({ type: "replace", board: state });
+        });
+      },
+      onPresence: (users: any[]) => {
+        setPresence(users as any);
+      },
+      onEvent: (event: any) => {
+        setBaseBoard((current) => {
+          const next = applyRemoteEvent(current, event);
+          return next;
+        });
+        setBoardVersion((current) => Math.max(current, (event as any)?.version ?? current));
+      },
+      onConflict: (payload: any) => {
+        setConflictMessage(`Conflict: ${payload.error}`);
+        void refreshBoard();
+      }
+    }),
+    [addOptimistic, refreshBoard, startTransition]
+  );
+
+  const { emit, socketReady } = useBoardSocket(boardId, socketHandlers);
+
+  const filteredColumns = useMemo(() => {
+    return optimisticBoard.columns.map((column) => ({
+      ...column,
+      cards: applyBoardFilters(column.cards, filter) as SnapshotCard[]
+    }));
+  }, [optimisticBoard.columns, filter]);
+
+  const locateCard = useCallback((cardId: string) => {
+    for (const column of optimisticBoard.columns) {
+      const index = column.cards.findIndex((card) => card.id === cardId);
+      if (index >= 0) return { columnId: column.id, index };
+    }
+    return null;
+  }, [optimisticBoard.columns]);
+
+  const updateUrlFilter = useCallback(
+    (next: Partial<BoardFilterState>) => {
+      const nextState = { ...filter, ...next };
+      const nextSearch = new URLSearchParams(searchParams);
+      Object.entries(nextState).forEach(([key, value]) => {
+        if (!value) {
+          nextSearch.delete(key);
+          return;
+        }
+        nextSearch.set(key, String(value));
+      });
+      router.replace(`?${nextSearch.toString()}`);
+    },
+    [filter, router, searchParams]
+  );
+
+  const onDragEnd = useCallback(
+    (event: DragEndEvent) => {
+      if (!socketReady || !event.over) return;
+      const cardId = String(event.active.id);
+      const activeLocation = locateCard(cardId);
+      if (!activeLocation) return;
+
+      const overId = String(event.over.id);
+      const targetColumnId = overId.startsWith("column:") ? overId.replace("column:", "") : locateCard(overId)?.columnId;
+      if (!targetColumnId) return;
+
+      const targetAfterCardId = overId.startsWith("column:") ? null : overId;
+      const sourceCard = optimisticBoard.columns
+        .find((column) => column.id === activeLocation.columnId)
+        ?.cards.find((item) => item.id === cardId);
+      if (!sourceCard) return;
+
+      addOptimistic({
+        type: "move",
+        cardId,
+        fromColumnId: activeLocation.columnId,
+        toColumnId: targetColumnId,
+        toAfterCardId: targetAfterCardId
+      });
+
+      push({
+        id: crypto.randomUUID(),
+        type: "moveCard",
+        boardId,
+        actorUserId: "local",
+        payload: {
+          cardId,
+          fromColumnId: activeLocation.columnId,
+          toColumnId: targetColumnId,
+          toAfterCardId: targetAfterCardId
+        },
+        createdAt: Date.now()
+      });
+
+      emit("board:move-card", {
+        boardId,
+        cardId,
+        targetColumnId,
+        targetAfterCardId,
+        expectedCardVersion: sourceCard.version,
+        boardVersion: boardVersion
+      });
+    },
+    [socketReady, locateCard, optimisticBoard.columns, boardId, emit, boardVersion, push]
+  );
+
+  const activeCount = presence.filter((user) => user.isActive).length;
+
+  return (
+    <main className="min-h-screen p-8">
+      <header className="mb-4 flex flex-wrap items-center justify-between gap-4">
+        <div>
+          <h1 className="text-2xl font-bold">{baseBoard.title}</h1>
+          <p className="text-sm text-slate-300">{baseBoard.description ?? "No description"}</p>
+        </div>
+        <div className="flex gap-2">
+          <button
+            onClick={() => {
+              const cmd = undo();
+              if (cmd) {
+                const payload = cmd.payload as {
+                  cardId?: string;
+                  fromColumnId?: string;
+                  toColumnId?: string;
+                  toAfterCardId?: string | null;
+                };
+                if (payload?.cardId && payload.fromColumnId && payload.toColumnId) {
+                  emit("board:move-card", {
+                    boardId,
+                    cardId: payload.cardId,
+                    targetColumnId: payload.fromColumnId,
+                    targetAfterCardId: payload.toAfterCardId ?? null,
+                    boardVersion: boardVersion
+                  });
+                }
+              }
+            }}
+            disabled={!canUndo}
+            className="rounded-lg border border-white/20 px-3 py-1 text-sm disabled:opacity-40"
+          >
+            Undo
+          </button>
+          <button
+            onClick={() => {
+              const cmd = redo();
+              if (cmd) {
+                const payload = cmd.payload as {
+                  cardId?: string;
+                  fromColumnId?: string;
+                  toColumnId?: string;
+                  toAfterCardId?: string | null;
+                };
+                if (payload?.cardId && payload.fromColumnId && payload.toColumnId) {
+                  emit("board:move-card", {
+                    boardId,
+                    cardId: payload.cardId,
+                    targetColumnId: payload.toColumnId,
+                    targetAfterCardId: payload.toAfterCardId ?? null,
+                    boardVersion: boardVersion
+                  });
+                }
+              }
+            }}
+            disabled={!canRedo}
+            className="rounded-lg border border-white/20 px-3 py-1 text-sm disabled:opacity-40"
+          >
+            Redo
+          </button>
+          <span className="rounded-lg border border-white/10 px-3 py-1 text-sm text-slate-300">{activeCount} active</span>
+        </div>
+      </header>
+
+      <section className="mb-4 grid gap-4 md:grid-cols-[220px_1fr]">
+        <input
+          value={filter.query}
+          onChange={(event) => updateUrlFilter({ query: event.target.value })}
+          placeholder="Search board..."
+          className="rounded-lg border border-white/10 bg-white/5 px-3 py-2 outline-none ring-0"
+        />
+        {conflictMessage ? <div className="rounded-lg bg-red-500/15 px-3 py-2 text-sm text-red-200">{conflictMessage}</div> : null}
+      </section>
+
+      <DndContext collisionDetection={closestCenter} onDragEnd={onDragEnd} sensors={sensors}>
+        <section className="kanban-grid flex flex-wrap gap-3 overflow-x-auto pb-12">
+          {filteredColumns.map((column) => (
+            <BoardColumn
+              key={column.id}
+              id={column.id}
+              title={column.title}
+              wipLimit={column.wipLimit}
+              cards={column.cards}
+              onCardOpen={() => {
+                void refreshBoard();
+              }}
+            />
+          ))}
+        </section>
+      </DndContext>
+
+      <section className="mt-6 flex items-center gap-2 text-xs text-slate-300">
+        {presence.map((person) => (
+          <span key={person.userId} className="rounded-full border border-white/15 px-2 py-1">
+            {person.name} {person.isActive ? "🟢" : "⚪"}
+          </span>
+        ))}
+      </section>
+      {isPending ? <p className="text-xs text-slate-400">Syncing...</p> : null}
+    </main>
+  );
+}

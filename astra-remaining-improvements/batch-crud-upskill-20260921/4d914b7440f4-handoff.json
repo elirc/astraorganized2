@@ -1,0 +1,28 @@
+﻿{
+    "id":  "4d914b7440f4",
+    "files":  [
+                  "tests/runtime-job-claim-contract.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/evidence/4d914b7440f4-runtime-job-claim-contract.tap.txt",
+                  "astraupskill/README.md",
+                  "astraupskill/01-CODEBASE-MAP.md",
+                  "astraupskill/02-CONCEPTS.md",
+                  "astraupskill/03-WORKED-CHANGE.md",
+                  "astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "astraupskill/05-PRACTICE.md",
+                  "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "astraupskill/07-TRACE-LAB.md",
+                  "astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "Existing markJobRunning uses a QUEUED status predicate and returns count zero for a competing worker.",
+                     "Learning lab preserves this correct production path and verifies the actual repository contract."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-job-claim-contract.test.mjs: 2 passed"
+              ],
+    "limitations":  [
+                        "Actual repository with explicit Prisma-shaped double only; no worker, DB locks, transaction, audit, or concurrency integration."
+                    ],
+    "project":  "ww8"
+}

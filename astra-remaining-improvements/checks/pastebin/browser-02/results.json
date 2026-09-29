@@ -1,0 +1,23 @@
+{
+  "passed": false,
+  "total": 3,
+  "expected": 14,
+  "checks": [
+    {
+      "name": "Empty landing page does not create sample records or write on read",
+      "passed": true,
+      "seconds": 7.961
+    },
+    {
+      "name": "Create, show receipt and download the exact edit key",
+      "passed": true,
+      "seconds": 13.79
+    },
+    {
+      "name": "Copy, raw read and text download preserve content without writes",
+      "passed": false,
+      "error": "AssertionError('Clipboard content differs.')"
+    }
+  ],
+  "fatal": "AssertionError('Clipboard content differs.')"
+}

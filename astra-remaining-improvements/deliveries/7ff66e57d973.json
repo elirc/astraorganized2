@@ -1,0 +1,131 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww46",
+  "id": "7ff66e57d973",
+  "summary": [
+    "Check the tenant-scoped updateMany count before rereading or auditing a project status change.",
+    "Return HTTP 409 when the status write affects zero rows.",
+    "Execute the real project service and policy through seven runtime cases."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/7ff66e57d973/results-crud-b07.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 7,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww46",
+        "id": "7ff66e57d973",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-project-status-race.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\7ff66e57d973",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:51:48.393962+00:00",
+        "status": "complete",
+        "log": "crud-b07-astra-runtime.log",
+        "pid": 35064,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:52:00.384475+00:00",
+        "elapsedSeconds": 11.99
+      }
+    ],
+    "limits": [
+      "No live Prisma SQL, concurrent database, route, or rollback execution.",
+      "No retry policy or status-policy redesign is included.",
+      "The repository predicate includes organization and id, not expected status; count checking is not optimistic concurrency control. Real HttpError and role/status policy execute with generated enum adapters."
+    ]
+  },
+  "courseWords": 1702,
+  "courseFiles": 9,
+  "courseLinksChecked": 16,
+  "files": [
+    {
+      "file": "src/services/project-service.ts",
+      "before_sha256": "aab9f4380f63eb8f808ec32b788b80cbaea920b5b452f8881e14d4ad2167622e",
+      "after_sha256": "eeb37928bb8a22510e323a8d0e95a04adf92c699fe61c9514e2caa623d7c9138"
+    },
+    {
+      "file": "tests/runtime-project-status-race.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "416162a4f2ca5d3fe18b7b3367a5ed766878f5d53cf70b371b42e344c2b5718f"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src/services/project-service.ts",
+      "before_sha256": null,
+      "after_sha256": "aab9f4380f63eb8f808ec32b788b80cbaea920b5b452f8881e14d4ad2167622e"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b07-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "6f56ab6f83af08a38dd89caef31692d60054563adc788b0c6659452c3a16bb37"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "8fdb3a4287a569a8367bc3018590ab6dc031bbe7bcbc28649d861f5706ce83a6"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "95ced89360a948e900095e3b604b6d155220ec37aecf62732185ea5b8b5512a6"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "632e12f74601fad3776960456e9366d437dd234715a0d55f266413ebfce03292"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "2114353138e909ca543caff9813e3d6e737ba30326df0904128643c8b7374ebe"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "d86570b5c81fd93a92f853c1ec9ad5015a83d5131b9daf183dc5c73645566b8b"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "1fdd8d0168bef803689593d6647194c50581b6da3ddbbcba15ea00e5dd870e1b"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "40ada7f00644a169a124843b6f302f106ef9c621841ef320fc83616bfe116343"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7d14d67928b29bb0f174787356159af36e5733a5da9cc623e5adcfcbd64c461b"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "820f6bdb1a6793cbb1f0f537aa4de2e40c5b59b34b897c2511faf7da8c0e3a11"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "3e2e01bb9aa4e7f5b81d16988b20e44fb11c4c8334e8b3234df41ed501d614ea"
+    }
+  ],
+  "limits": [
+    "No live Prisma SQL, concurrent database, route, or rollback execution.",
+    "No retry policy or status-policy redesign is included.",
+    "The repository predicate includes organization and id, not expected status; count checking is not optimistic concurrency control. Real HttpError and role/status policy execute with generated enum adapters."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:54:51.103714+00:00"
+}

@@ -1,0 +1,175 @@
+{
+  "project": "formforge",
+  "id": "30217cacf1b9",
+  "summary": [
+    "Publication slugs cannot be claimed by another workspace or form; API conflicts return HTTP 409 without changing the original.",
+    "Publication versions advance per form across slug changes, with distinct opaque snapshot IDs and isolated submission histories.",
+    "Draft and publication writes reject route/body form identity mismatches before mutation.",
+    "Autosave keeps a newer queued edit visible when an older request completes during the debounce interval.",
+    "Nine detailed course documents and an executable API trace teach the actual code, regression reasoning, CRUD boundaries and progressive integration exercises."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/formforge/results.json",
+    "expectedTests": 82,
+    "environment": "Node 22.16.0; pnpm 9.15.4; frozen lockfile; isolated copy; Fastify injection and jsdom",
+    "command": "Workspace Vitest suites; lint; typecheck; build; sizecheck; seed; executable publication trace"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 82,
+    "suites": {
+      "core": 34,
+      "data": 11,
+      "api": 9,
+      "web": 28
+    },
+    "checks": [
+      {
+        "command": [
+          "pnpm.cmd",
+          "-r",
+          "--workspace-concurrency=1",
+          "exec",
+          "vitest",
+          "run",
+          "--maxWorkers=2",
+          "--reporter=json",
+          "--outputFile=astra-verification.json"
+        ],
+        "exitCode": 0,
+        "log": "checks/formforge/check-1.log"
+      },
+      {
+        "command": [
+          "pnpm.cmd",
+          "exec",
+          "turbo",
+          "run",
+          "lint",
+          "typecheck",
+          "build",
+          "--concurrency=2"
+        ],
+        "exitCode": 0,
+        "log": "checks/formforge/check-2.log"
+      },
+      {
+        "command": [
+          "pnpm.cmd",
+          "sizecheck"
+        ],
+        "exitCode": 0,
+        "log": "checks/formforge/check-3.log"
+      },
+      {
+        "command": [
+          "pnpm.cmd",
+          "seed"
+        ],
+        "exitCode": 0,
+        "log": "checks/formforge/check-4.log"
+      }
+    ],
+    "scope": "Isolated dependency install, real code tests, jsdom UI tests, lint, typecheck, builds, bundle budget and seed. No live browser or deployed service claimed."
+  },
+  "courseWords": 7432,
+  "courseFiles": 9,
+  "courseLinksChecked": 51,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "5df7a8e0015909553fed9092f340346be143a52935330ece2580a21fe5bb4d7a",
+      "after_sha256": "f6d015f5affd3f3e092564b9c7a1879066f58014b21fa811fea342e7833be7f9"
+    },
+    {
+      "file": "packages/data/src/publications.ts",
+      "before_sha256": "d719de960eafd1a0b492be0eecd85aae2e5b6d7485a7760844613276e8276356",
+      "after_sha256": "9629230cd55a90872f0266e647ebfb05ac4e859bf4f44dcb3e92678ba2904009"
+    },
+    {
+      "file": "packages/data/src/publishing.test.ts",
+      "before_sha256": "9cd2ba69be7ccc135c62c1e4e64d5afefca5558eb409b06474ca4939a60c6e3a",
+      "after_sha256": "3d442cfeb2da55444195440a5afe40887d6272843b5c670cc93185eaffefbb27"
+    },
+    {
+      "file": "apps/api/src/app.ts",
+      "before_sha256": "92e27125a46dba1841fb3d6c23699b9c53b0370dfcb65986b1069da002ee77aa",
+      "after_sha256": "c38aa1553b8bdbd81b72660900ed4c6c1eb8834f7a8acb3fd4d230af1ca4839d"
+    },
+    {
+      "file": "apps/api/src/app.test.ts",
+      "before_sha256": "16e376008858c1dcbcc5acb451235126c19ba61490963bcaf089ce30c9c87141",
+      "after_sha256": "eff080e77882fd73df574f7ab4f16a545faa16a56eeafbfd27e24c4e74bc7a04"
+    },
+    {
+      "file": "apps/web/src/useAutosave.tsx",
+      "before_sha256": "b035401a5adf6aec3bc6702cc29f8e9a18d22ea17d03e977dbace002011e441b",
+      "after_sha256": "5563a735e3a030635ff9632d6b7eca23f6c96f2f60002af3f09b95d819c30303"
+    },
+    {
+      "file": "apps/web/src/useAutosave.test.tsx",
+      "before_sha256": "213bfb801ece503f9248a44950e2a6b8c5f98fd9c0e26f72f876b011cc648d82",
+      "after_sha256": "c1995f3dd73cdbecaa6936c81a00c6c007d39ea0d057db985f4bb992dfef0914"
+    },
+    {
+      "file": "astraupskill/labs/publication-trace.ts",
+      "before_sha256": null,
+      "after_sha256": "6a1aef1147706a8e134467a5d244f1d59df0f45482a6d2d5e242332af2a4107b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "bc18eaa23b88ba3300335d9343218b6fdb0cd31bbf73e0aec0a556d6f5f14303"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "daf4b304c88ca384f784ca3c580c5d39fe959caf32926f663ecd452bb3475c15"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "3572808e2c9c79f232fb70ab7fc3144705d0b87b1ee1e8689e05375845715cdd"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "9793da11606c4914f0e48163d3227a52a312374a1d5eb67585c7fb8ca0ff13ff"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "589b3f9918bdda2964dda2748009bd782f4b7f0716f8b5f9161df099ae2e4b3e"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "149cc844c4ba9bee69a51a1a55ea995821f42415576427f0bdcfbbb1bfb8f5b9"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "ca269a03cfc0b933f7b911eeb90865a074619da2a3b04c10495d27085a0f7e6a"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "eab9d32210f44595de8caa3c4d49c5077aedae07acdeeb8bcec6db0de8a117cc"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "6ef5e10f6676c863137703d5fce41a4fd2513ebc486b6284fbeb02505868eb1a"
+    }
+  ],
+  "limits": [
+    "Browser fixtures and local autosave remain separate from the HTTP API; integration is a documented capstone.",
+    "Repositories remain in memory and are not coordinated across processes.",
+    "Workspace headers are not production authentication or authorization.",
+    "Submission retry handling does not yet compare changed answers for the same snapshot and key.",
+    "No live browser, deployed service, database or production identity provider was verified."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T02:29:08.544959+00:00"
+}

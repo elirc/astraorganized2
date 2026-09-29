@@ -1,0 +1,54 @@
+{
+  "summary": [
+    "Validates typed cart inputs, joined product stock and ownership before mutations; rejects hostile persisted quantities and non-finite totals at checkout.",
+    "Moves checkout reads and all order/stock/cart writes into one immediate SQLite transaction with a conditional stock decrement.",
+    "Adds lazy database and injectable cart/order/app factories, an import-safe listener and safe unexpected-error responses.",
+    "Adds six production-handler SQLite regressions including second-line failure rollback, a passing client build, and nine detailed learning chapters with a complete fixture."
+  ],
+  "changedFiles": [
+    "server/src/index.js",
+    "server/src/db/connection.js",
+    "server/src/routes/cart.js",
+    "server/src/routes/orders.js",
+    "server/src/services/cartValidation.js",
+    "server/src/services/checkout.js",
+    "server/tests/cart-validation.test.mjs",
+    "astraupskill/snapshots/package.json.txt",
+    "astraupskill/snapshots/server__package.json.txt",
+    "astraupskill/snapshots/server__src__db__connection.js.txt",
+    "astraupskill/snapshots/server__src__db__schema.sql.txt",
+    "astraupskill/snapshots/server__src__index.js.txt",
+    "astraupskill/snapshots/server__src__middleware__auth.js.txt",
+    "astraupskill/snapshots/server__src__routes__cart.js.txt",
+    "astraupskill/snapshots/server__src__routes__orders.js.txt",
+    "astraupskill/evidence/install-02.json",
+    "astraupskill/evidence/install-02.log",
+    "astraupskill/evidence/luna-server-final-check-20260912.json",
+    "astraupskill/evidence/luna-server-final-check-20260912.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-client-build-01.json",
+    "astraupskill/evidence/root-client-build-01.log",
+    "astraupskill/evidence/root-client-install-01.json",
+    "astraupskill/evidence/root-client-install-01.log",
+    "astraupskill/evidence/syntax-cart-final-20260912.json",
+    "astraupskill/evidence/syntax-cart-final-20260912.log",
+    "astraupskill/evidence/syntax-checkout-final-20260912.json",
+    "astraupskill/evidence/syntax-checkout-final-20260912.log",
+    "astraupskill/evidence/syntax-index-final-20260912.json",
+    "astraupskill/evidence/syntax-index-final-20260912.log",
+    "astraupskill/evidence/syntax-orders-final-20260912.json",
+    "astraupskill/evidence/syntax-orders-final-20260912.log",
+    "astraupskill/evidence/syntax-validation-final-20260912.json",
+    "astraupskill/evidence/syntax-validation-final-20260912.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/4c54d18d7d97/results.json",
+    "expectedTests": 6
+  },
+  "limits": [
+    "Tests inject identity and call Express handlers directly; no live listener, JWT parser, payment provider or multiprocess contention test.",
+    "REAL dollar schema and demo authentication remain; order idempotency and durable logging are not implemented.",
+    "Database injection applies to cart/order routes, not every route; no canonical database or seed was used."
+  ]
+}

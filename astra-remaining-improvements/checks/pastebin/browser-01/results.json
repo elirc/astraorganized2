@@ -1,0 +1,18 @@
+{
+  "passed": false,
+  "total": 2,
+  "expected": 14,
+  "checks": [
+    {
+      "name": "Empty landing page does not create sample records or write on read",
+      "passed": true,
+      "seconds": 6.517
+    },
+    {
+      "name": "Create, show receipt and download the exact edit key",
+      "passed": false,
+      "error": "TimeoutError('Locator.select_option: Timeout 60000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"form\", name=\"Create paste\").get_by_label(\"Visibility\", exact=True)\\n')"
+    }
+  ],
+  "fatal": "TimeoutError('Locator.select_option: Timeout 60000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"form\", name=\"Create paste\").get_by_label(\"Visibility\", exact=True)\\n')"
+}

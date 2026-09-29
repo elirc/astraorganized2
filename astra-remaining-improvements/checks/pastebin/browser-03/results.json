@@ -1,0 +1,28 @@
+{
+  "passed": false,
+  "total": 4,
+  "expected": 14,
+  "checks": [
+    {
+      "name": "Empty landing page does not create sample records or write on read",
+      "passed": true,
+      "seconds": 4.294
+    },
+    {
+      "name": "Create, show receipt and download the exact edit key",
+      "passed": true,
+      "seconds": 18.767
+    },
+    {
+      "name": "Clipboard text and exact raw/download content are preserved without writes",
+      "passed": true,
+      "seconds": 2.273
+    },
+    {
+      "name": "Versioned edit persists exact text and closes only after acceptance",
+      "passed": false,
+      "error": "TimeoutError('Locator.fill: Timeout 60000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"form\", name=\"Edit paste\").get_by_label(\"Content\", exact=True)\\n')"
+    }
+  ],
+  "fatal": "TimeoutError('Locator.fill: Timeout 60000ms exceeded.\\nCall log:\\n  - waiting for get_by_role(\"form\", name=\"Edit paste\").get_by_label(\"Content\", exact=True)\\n')"
+}

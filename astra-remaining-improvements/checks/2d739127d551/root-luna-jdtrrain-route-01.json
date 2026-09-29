@@ -1,0 +1,21 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "id": "2d739127d551",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/issue-input.test.mjs",
+    "tests/issue-routes.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2d739127d551",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T23:17:19.418234+00:00",
+  "status": "complete",
+  "log": "root-luna-jdtrrain-route-01.log",
+  "pid": 31116,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T23:17:23.880221+00:00",
+  "elapsedSeconds": 4.46
+}

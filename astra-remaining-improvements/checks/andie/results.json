@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "tests": 42,
+  "syntaxChecks": 3,
+  "embeddedTokenScan": "No Shopify token literals in staged source/docs/JSON",
+  "transport": "Controlled fetch boundaries plus one real loopback HTTP server; no live Shopify account requests or mutations",
+  "environment": "Node 22.16.0; dependency-free node:test",
+  "checks": [
+    "Offline CLI and import have no network side effects",
+    "Deterministic plans validate source and target snapshots",
+    "Paged reads, bounded retries, GraphQL/userErrors and unknown mutation outcomes",
+    "Stale/forged plans and conflicts stop before mutation",
+    "Partial create and journal failures preserve receipts and stop later work",
+    "Exclusive output files and local journal replacement",
+    "Source object immutability and explicit reference-field conflicts"
+  ]
+}

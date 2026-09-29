@@ -1,0 +1,927 @@
+[
+  {
+    "stage": 51,
+    "title": "Legal Case Tracker: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. The synchronous in-memory repository changes a record and appends history together within one process.",
+    "model": "The main record represents a case owner, case category, due date and amount. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Intake, Discovery, Negotiation, Closed. Categories are Contract, Employment, Real Estate, Compliance. Activities reference the record ID. Records and activities live in JavaScript arrays and reset when the API process restarts.",
+    "concept": "A status command expresses a desired value. If a legal case tracker record is already Discovery, setting it to Discovery again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. Synchronous array operations cannot interleave midway through an await because there is no await in that boundary. This explanation is specific to one process. Adding disk I/O or multiple API instances requires a new coordination design.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Intake to Discovery, then repeat Discovery: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/server.js",
+    "symbol": "createRepository",
+    "test": "test/workflow.test.js",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ],
+    "setup": "From the project root, use Node.js and npm:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the Vite URL printed in the terminal. The React client and Express API both need to remain running. Run one project at a time if their ports conflict. In another terminal in this project:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe API data is in memory. Refreshing the browser keeps the API process alive; restarting the API rebuilds its initial data. Tests start a separate server on a random loopback port and close it afterward. No PostgreSQL service is required.",
+    "dbguide": "The server memory owns records. Use the Network panel to compare request JSON and response JSON, then restart the API to distinguish process memory from durable storage. The regression helper imports the actual app and calls it through HTTP.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. Synchronous array operations cannot interleave midway through an await because there is no await in that boundary. This explanation is specific to one process. Adding disk I/O or multiple API instances requires a new coordination design."
+  },
+  {
+    "stage": 52,
+    "title": "Subscription Billing: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot. Currency inputs accept cent increments in the browser.",
+    "model": "The main record represents a customer subscription, plan category, renewal date and billing amount. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Trial, Active, Past Due, Cancelled. Categories are Starter, Growth, Enterprise, Internal. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a subscription billing record is already Active, setting it to Active again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Trial to Active, then repeat Active: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/workflow.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ],
+    "setup": "Use Node.js, npm and a local PostgreSQL server with psql on PATH. From this project root:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nCreate that empty learning database first with your local PostgreSQL account. The schema script resets the app tables and adds its sample records, so use a dedicated disposable learning database. The explicit PowerShell command avoids the inherited POSIX-style db:setup variable expansion. psql does not read a Node .env file automatically. Open the URL printed by Vite and keep the API/client running.\n\nFor regression tests, create a different database with an astra_test_ prefix:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe account must be able to create/drop schemas. The helper refuses a non-test database name, creates a unique schema, loads the actual app SQL there, assigns the connection before importing the app and removes its schema on normal completion. Tests use a random local port and never call your manually running API. The app build is a client build; the API still runs separately.",
+    "dbguide": "Read [test/database.ts](../test/database.ts). PostgreSQL owns persistent rows; a unique search_path isolates each test schema. Failure triggers are created only inside that schema. If a process is interrupted, inspect its exact schema name before cleanup. The course never requires personal application data.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client."
+  },
+  {
+    "stage": 53,
+    "title": "Field Service: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot. Currency inputs accept cent increments in the browser.",
+    "model": "The main record represents a field visit, responsible technician, service category and visit cost. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Requested, Scheduled, On Site, Complete, Cancelled. Categories are Install, Repair, Inspection, Training. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a field service record is already Scheduled, setting it to Scheduled again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Requested to Scheduled, then repeat Scheduled: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/workflow.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ],
+    "setup": "Use Node.js, npm and a local PostgreSQL server with psql on PATH. From this project root:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nCreate that empty learning database first with your local PostgreSQL account. The schema script resets the app tables and adds its sample records, so use a dedicated disposable learning database. The explicit PowerShell command avoids the inherited POSIX-style db:setup variable expansion. psql does not read a Node .env file automatically. Open the URL printed by Vite and keep the API/client running.\n\nFor regression tests, create a different database with an astra_test_ prefix:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe account must be able to create/drop schemas. The helper refuses a non-test database name, creates a unique schema, loads the actual app SQL there, assigns the connection before importing the app and removes its schema on normal completion. Tests use a random local port and never call your manually running API. The app build is a client build; the API still runs separately.",
+    "dbguide": "Read [test/database.ts](../test/database.ts). PostgreSQL owns persistent rows; a unique search_path isolates each test schema. Failure triggers are created only inside that schema. If a process is interrupted, inspect its exact schema name before cleanup. The course never requires personal application data.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client."
+  },
+  {
+    "stage": 54,
+    "title": "Research Studies: dependable record editing",
+    "focus": "runtime validation, stable pagination and repeat-safe status history",
+    "before": "Loose values could reach string operations or SQL, page requests could land beyond the result set, and repeated status commands created misleading history.",
+    "after": "Required text, money and calendar dates are validated; list pages have stable ID tie-breaking and clamp to available pages. Repeating a status leaves timestamps and history alone. A row lock and transaction commit the status and activity together; count and page rows use one repeatable-read snapshot. Currency inputs accept cent increments in the browser.",
+    "model": "The main record represents a study, coordinator, research category and review date. Shared fields include id, title, owner, category, status, priority, amount, dueDate and notes. Statuses are Design, Recruiting, Running, Analysis, Complete. Categories are Usability, Market, Clinical, Internal. Activities reference the record ID. PostgreSQL stores records and activities; API mappers convert snake_case columns to camelCase JSON.",
+    "concept": "A status command expresses a desired value. If a research studies record is already Recruiting, setting it to Recruiting again is not another business event. Compare the current value before writing. This makes retries easier to reason about, but it does not mean every create request is idempotent: repeating POST can still create a second record.\n\nA date such as 2028-02-29 is a calendar label. Validate its shape and compare its parsed calendar components; 2027-02-29 has the right shape but is not a real day. Activity timestamps are instants and have different semantics. Amounts are bounded nonnegative currency values; a fractional cent is rejected rather than silently rounded. This scaffold does not perform external billing, legal work, dispatch integration or research compliance checks.\n\nA stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client.",
+    "example": "Create a synthetic record with amount 12.50 and dueDate 2028-02-29. Change Design to Recruiting, then repeat Recruiting: only one status activity should exist. Request page 999 after creating three matching rows with pageSize 2: the last page contains one row. Reject an impossible date and verify the old record is unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "parseItem",
+    "test": "test/workflow.test.ts",
+    "exercises": [
+      "Add a visible due-soon filter with a precisely defined date window.",
+      "Add a reason to an actual status transition.",
+      "Test deletion of the final row on a filtered last page.",
+      "Design conflict detection for two people editing the same full record."
+    ],
+    "answers": [
+      "Compare valid calendar labels against today and a documented inclusive end date; preserve other filters and reset or clamp pagination.",
+      "Validate a bounded reason and save it with the transition event. A same-value command should not invent another transition.",
+      "Create three matching records with size two, delete the last row and request the old page. Assert both the returned page number and matching IDs.",
+      "Return a version number and require the expected version on update. Reject stale writes with a clear conflict response; keep the learner draft available for comparison. Row locking alone does not detect an edit based on an old screen."
+    ],
+    "setup": "Use Node.js, npm and a local PostgreSQL server with psql on PATH. From this project root:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nCreate that empty learning database first with your local PostgreSQL account. The schema script resets the app tables and adds its sample records, so use a dedicated disposable learning database. The explicit PowerShell command avoids the inherited POSIX-style db:setup variable expansion. psql does not read a Node .env file automatically. Open the URL printed by Vite and keep the API/client running.\n\nFor regression tests, create a different database with an astra_test_ prefix:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe account must be able to create/drop schemas. The helper refuses a non-test database name, creates a unique schema, loads the actual app SQL there, assigns the connection before importing the app and removes its schema on normal completion. Tests use a random local port and never call your manually running API. The app build is a client build; the API still runs separately.",
+    "dbguide": "Read [test/database.ts](../test/database.ts). PostgreSQL owns persistent rows; a unique search_path isolates each test schema. Failure triggers are created only inside that schema. If a process is interrupted, inspect its exact schema name before cleanup. The course never requires personal application data.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A stable sort needs a secondary key. With several equal timestamps, ID determines the remaining order. Count matching records after filters, calculate the last page, clamp the request, then fetch that page. A repeatable-read transaction keeps the count and rows from describing different database snapshots. The status transaction acquires a row lock before comparing status: a competing request waits, then sees the newly committed value. Both UPDATE and activity INSERT must use the same transaction client."
+  },
+  {
+    "stage": 55,
+    "title": "Warehouse Ledger: transactions and derived stock",
+    "focus": "protecting a balance under concurrent writes",
+    "before": "Fractional quantities were truncated, and two transactions could both read enough stock before either wrote its debit.",
+    "after": "Movement and transfer payloads require valid UUIDs, bounded whole quantities and text reasons. Every write locks the product before reading balances. Transfers remain two atomic ledger entries.",
+    "model": "Products and warehouses have UUIDs. A movement references one of each and carries signed integer delta, reason and creation time. Stock is SUM(delta) per product/warehouse; there is no separately stored balance to synchronize.",
+    "concept": "An append-only ledger represents corrections with new entries. Receiving 10 adds +10; issuing 3 adds -3; the balance is 7. A transfer adds -q at the source and +q at the destination, so total stock across warehouses is conserved. Deleting a movement to correct a mistake would erase the explanation of how stock arrived at its current value.\n\nA transaction makes multiple writes all-or-nothing, but a transaction alone does not prevent two readers from approving the same stock. This app locks a product row before computing balances. All movement and transfer writers use that same lock. One product lock serializes its warehouses, trading some concurrency for an understandable rule and avoiding inconsistent lock order between opposite transfers. Direct SQL writers that ignore this protocol are outside the application guarantee.\n\nNumber.isInteger checks the quantity rather than truncating it. A request for 1.7 units must not quietly become one unit. The bound matches the SQL integer column. The product lock is taken even for receipts so all writers participate in one ordering. Warehouse existence is checked before inserts; SQL foreign keys still protect stored references.",
+    "example": "The seeded cable stock is 40 at Main. Send two concurrent issues of 30: one succeeds, one is rejected, and the balance is 10. Force the destination credit of a transfer to fail: neither debit nor credit remains. A valid transfer of 3 leaves total stock unchanged.",
+    "source": "server/src/index.ts",
+    "symbol": "lockProduct",
+    "test": "test/ledger.test.ts",
+    "exercises": [
+      "Display a running balance in the ledger.",
+      "Add a reversal command referencing the original movement.",
+      "Reject a transfer when one warehouse is missing and show recovery feedback.",
+      "Compare per-product locking with per-product/warehouse locking."
+    ],
+    "answers": [
+      "Order movements by timestamp and a stable tie-breaker, then accumulate deltas. Explain that the visible 100-row window may require an opening balance.",
+      "Create an opposite signed movement in a transaction and store the original ID. Prevent a repeated reversal from duplicating the effect.",
+      "Assert no new rows on failure, retain the form and explain which reference is missing.",
+      "Finer locks improve concurrency but transfers require both locks in a deterministic order. Include opposing transfers in a deadlock test before adopting that design."
+    ],
+    "setup": "Use Node.js, npm and a local PostgreSQL server with psql on PATH. From this project root:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nCreate that empty learning database first with your local PostgreSQL account. The schema script resets the app tables and adds its sample records, so use a dedicated disposable learning database. The explicit PowerShell command avoids the inherited POSIX-style db:setup variable expansion. psql does not read a Node .env file automatically. Open the URL printed by Vite and keep the API/client running.\n\nFor regression tests, create a different database with an astra_test_ prefix:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe account must be able to create/drop schemas. The helper refuses a non-test database name, creates a unique schema, loads the actual app SQL there, assigns the connection before importing the app and removes its schema on normal completion. Tests use a random local port and never call your manually running API. The app build is a client build; the API still runs separately.",
+    "dbguide": "Read [test/database.ts](../test/database.ts). PostgreSQL owns persistent rows; a unique search_path isolates each test schema. Failure triggers are created only inside that schema. If a process is interrupted, inspect its exact schema name before cleanup. The course never requires personal application data.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "Number.isInteger checks the quantity rather than truncating it. A request for 1.7 units must not quietly become one unit. The bound matches the SQL integer column. The product lock is taken even for receipts so all writers participate in one ordering. Warehouse existence is checked before inserts; SQL foreign keys still protect stored references."
+  },
+  {
+    "stage": 56,
+    "title": "Secure Notes: owned CRUD and runtime boundaries",
+    "focus": "authorizing records and rejecting malformed JSON",
+    "before": "Object-valued credentials and note fields could reach string or password operations. Reading a single owned note had no dedicated endpoint.",
+    "after": "Credentials and note text are typed and bounded, email normalization is consistent, and an owned note detail endpoint completes the read path. Owner checks protect read, update and delete; logout revokes its token.",
+    "model": "Users and tokens are Maps; notes are an array with id, userId, title, body and createdAt. A Bearer token selects a user. Passwords are salted and hashed with scrypt. All data and sessions disappear on server restart.",
+    "concept": "Authentication asks which user the request represents. Authorization asks whether that user may access this note. Finding a note by ID alone is insufficient: the owner predicate must also match. Returning the same 404 for a missing and another user's note keeps the response consistent. The test signs in as two different users and tries each operation rather than merely inspecting the middleware name.\n\nTypeScript is not involved in this JavaScript server, and even TypeScript types would not validate network JSON. A password object must fail before scryptSync. Email normalization trims and lowercases before looking up the same map key for register and login. Passwords are not trimmed, because spaces are part of the user's chosen credential.\n\nThe title has a 2\u2013200 character rule; the body is text up to 20,000 characters. Validation happens before the note mutates. This is a small authentication teaching app, with in-memory sessions, open CORS and synchronous hashing. Persistent accounts, rate limits, session expiration and deployment configuration remain separate improvements.",
+    "example": "User A creates Learning note. User B sees an empty note list and receives 404 for A's detail, edit and delete paths. An invalid body leaves the old note intact. After A logs out, the old token receives 401.",
+    "source": "server/server.js",
+    "symbol": "requireAuth",
+    "test": "test/notes.test.js",
+    "exercises": [
+      "Show an explicit empty-note state after login.",
+      "Add a last-edited timestamp that changes only after a valid update.",
+      "Test a failed login followed by a successful login.",
+      "Move users, tokens and notes into persistent storage."
+    ],
+    "answers": [
+      "Distinguish an empty successful list from a failed request; do not display no notes while authentication is still loading.",
+      "Keep createdAt stable and set updatedAt only at the successful mutation boundary. Test rejected edits do not touch it.",
+      "Keep the generic invalid-credentials response and confirm a malformed input does not terminate the process.",
+      "Create owner foreign keys, use parameterized queries and keep owner predicates on every record operation. Design session expiration and password hashing capacity explicitly."
+    ],
+    "setup": "From the project root, use Node.js and npm:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the Vite URL printed in the terminal. The React client and Express API both need to remain running. Run one project at a time if their ports conflict. In another terminal in this project:\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe API data is in memory. Refreshing the browser keeps the API process alive; restarting the API rebuilds its initial data. Tests start a separate server on a random loopback port and close it afterward. No PostgreSQL service is required.",
+    "dbguide": "The server memory owns records. Use the Network panel to compare request JSON and response JSON, then restart the API to distinguish process memory from durable storage. The regression helper imports the actual app and calls it through HTTP.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The title has a 2\u2013200 character rule; the body is text up to 20,000 characters. Validation happens before the note mutates. This is a small authentication teaching app, with in-memory sessions, open CORS and synchronous hashing. Persistent accounts, rate limits, session expiration and deployment configuration remain separate improvements."
+  },
+  {
+    "stage": 57,
+    "title": "Live Chat: validate before broadcasting",
+    "focus": "HTTP boundaries, WebSocket messages and database notifications",
+    "before": "Malformed socket events could call trim on nonstrings; listener startup occurred during import and asynchronous failures could escape their handlers.",
+    "after": "Room fields and socket messages are validated. Runtime start/stop functions enable isolated tests; malformed messages are ignored, database failures close the affected socket, and the payload size is bounded.",
+    "model": "Rooms have id, slug and name. Messages have id, roomId, author, body and createdAt. WebSockets subscribe to room IDs, while PostgreSQL LISTEN/NOTIFY delivers committed message notifications to the process.",
+    "concept": "A WebSocket remains open across many messages. One bad JSON message should not kill the process or prevent the next valid message. Parsing JSON checks syntax; checking type, author and body checks the protocol shape. A maximum frame payload bounds memory use independently from field-length validation.\n\nThe write path inserts into PostgreSQL. A database trigger produces a notification, the dedicated LISTEN connection receives it, and the process broadcasts to sockets in that room. This is a different path from returning an HTTP response. The integration test waits for a real message broadcast and then reads HTTP history to confirm persistence.\n\nStarting listeners at module import makes tests unexpectedly bind ports and retain database connections. Explicit lifecycle functions put those side effects under caller control. stopRuntime terminates sockets, closes the server and listener, and clears a scheduled retry. The current reconnection attempt is bounded teaching behavior, not a durable delivery guarantee: disconnected clients recover recent history, not an acknowledged message queue. Author names remain free-form demo labels, not authenticated users.",
+    "example": "Connect to study, wait for presence, send malformed JSON, null, and an object-valued author, then send Trace this insert. The valid message broadcasts and appears once in HTTP history. Creating study twice returns 409.",
+    "source": "server/src/index.ts",
+    "symbol": "connectSocket",
+    "test": "test/chat.test.ts",
+    "exercises": [
+      "Show a sending/error state for a message draft.",
+      "Add a room rename endpoint without changing the room ID or slug.",
+      "Test two rooms to ensure broadcasts do not cross subscriptions.",
+      "Design acknowledged delivery and reconnect replay."
+    ],
+    "answers": [
+      "Introduce a client message ID and an acknowledgement protocol; retain the draft until accepted. Do not infer durable storage merely from socket.send returning.",
+      "Validate the new display name and update only that field; existing messages retain their room foreign key.",
+      "Open a socket in each room, send one message and assert only the matching room receives it. Close both sockets in finally.",
+      "Use persistent message IDs and a replay cursor. Explain duplicates, ordering and acknowledgement loss before claiming exactly-once delivery."
+    ],
+    "setup": "Use Node.js, npm and a local PostgreSQL server with psql on PATH. From this project root:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\npsql $env:DATABASE_URL -f server/db/schema.sql\nnpm run dev\n```\n\nCreate that empty learning database first with your local PostgreSQL account. The schema script resets the app tables and adds its sample records, so use a dedicated disposable learning database. The explicit PowerShell command avoids the inherited POSIX-style db:setup variable expansion. psql does not read a Node .env file automatically. Open the URL printed by Vite and keep the API/client running.\n\nFor regression tests, create a different database with an astra_test_ prefix:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run typecheck\nnpm run build\n```\n\nThe account must be able to create/drop schemas. The helper refuses a non-test database name, creates a unique schema, loads the actual app SQL there, assigns the connection before importing the app and removes its schema on normal completion. Tests use a random local port and never call your manually running API. The app build is a client build; the API still runs separately.",
+    "dbguide": "Read [test/database.ts](../test/database.ts). PostgreSQL owns persistent rows; a unique search_path isolates each test schema. Failure triggers are created only inside that schema. If a process is interrupted, inspect its exact schema name before cleanup. The course never requires personal application data.",
+    "testcmd": "npm test\nnpm run typecheck\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request or WebSocket event",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "Starting listeners at module import makes tests unexpectedly bind ports and retain database connections. Explicit lifecycle functions put those side effects under caller control. stopRuntime terminates sockets, closes the server and listener, and clears a scheduled retry. The current reconnection attempt is bounded teaching behavior, not a durable delivery guarantee: disconnected clients recover recent history, not an acknowledged message queue. Author names remain free-form demo labels, not authenticated users."
+  },
+  {
+    "stage": 58,
+    "title": "Blog Platform: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results. Seed tags use the same explicit JSON serialization.",
+    "model": "Blog Platform stores posts with integer IDs and fields title, body, slug, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/posts list/create and GET/PUT/DELETE /api/posts/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"title\": \"Post title\", \"body\": \"Post body\", \"slug\": \"post-title\", \"status\": \"draft\", \"tags\": [\"blog\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for slug while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry."
+  },
+  {
+    "stage": 59,
+    "title": "Kanban Board: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results. Seed tags use the same explicit JSON serialization.",
+    "model": "Kanban Board stores cards with integer IDs and fields title, body, lane, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/cards list/create and GET/PUT/DELETE /api/cards/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting body means retain it, while explicitly sending an empty body means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"title\": \"Card title\", \"body\": \"Card description\", \"lane\": \"todo\", \"status\": \"todo\", \"tags\": [\"product\"]}. Then PUT only {\"title\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric title and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed filter for lane while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry."
+  },
+  {
+    "stage": 60,
+    "title": "Job Application Tracker: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results. Seed tags use the same explicit JSON serialization.",
+    "model": "Job Application Tracker stores applications with integer IDs and fields company, role, stage, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/applications list/create and GET/PUT/DELETE /api/applications/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting role means retain it, while explicitly sending an empty role means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"company\": \"Company\", \"role\": \"Role\", \"stage\": \"applied\", \"status\": \"active\", \"tags\": [\"remote\"]}. Then PUT only {\"company\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric company and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed stage filter while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry."
+  },
+  {
+    "stage": 61,
+    "title": "Inventory Management: a complete typed edit loop",
+    "focus": "partial updates, JSON fields and recoverable forms",
+    "before": "Request bodies reached database writes with weak validation; update forms used broad values, tag arrays were not consistently serialized for JSONB, and search responses could arrive out of order.",
+    "after": "Create and partial-update schemas validate editable fields. Tags are trimmed, bounded and deduplicated; the model serializes JSON arrays explicitly. The typed form offers cancel, saves only editable fields, prevents duplicate submissions, retains failed drafts and ignores stale search results. Seed tags use the same explicit JSON serialization.",
+    "model": "Inventory Management stores products with integer IDs and fields sku, name, category, status, tags. PostgreSQL persists rows; tags are JSONB. GET/POST /api/products list/create and GET/PUT/DELETE /api/products/:id read/change/remove a row. The success envelope wraps the record in data.",
+    "concept": "A create input and a stored record are different types. The database supplies identity and timestamps; the client should not resend those as editable fields. An update is a partial object: omitting name means retain it, while explicitly sending an empty name means clear it. Constructing a full object full of defaults during an edit would erase omitted data.\n\nA PostgreSQL JSONB column is not a PostgreSQL text array. The JavaScript driver can interpret an array parameter as a SQL array representation. JSON.stringify makes the intended JSON representation explicit; read the driver result after insertion to verify the round trip. The deduplication key is lowercase trimmed text, and the last spelling of an equivalent tag is retained. Status and domain-specific lane/stage fields remain bounded free-form strings; no unimplemented workflow engine is implied.\n\nA browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry.",
+    "example": "POST this synthetic input: {\"sku\": \"SKU-001\", \"name\": \"Product\", \"category\": \"General\", \"status\": \"active\", \"tags\": [\"stocked\"]}. Then PUT only {\"sku\":\"Revised lesson\"} to its ID and check the other fields remain. Tags [\"API\",\" api \"] produce one logical tag. Reject a numeric sku and verify the row is unchanged; delete it and check a second delete returns 404.",
+    "source": "server/src/services/service.ts",
+    "symbol": "parsePayload",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Add a typed category filter while preserving search.",
+      "Show a dirty-form indicator and confirm before discarding changes.",
+      "Add a meaningful browser test for a slow old search response.",
+      "Add optimistic concurrency for two editors."
+    ],
+    "answers": [
+      "Add the field to the query type and validate it on the API; combine predicates rather than replacing the search condition.",
+      "Compare editable draft fields with the original record; cancel should reset the draft and exit editing without a request.",
+      "Delay response A, resolve B, then release A and assert B remains visible. Testing only request URL construction cannot prove this behavior.",
+      "Include a record version in reads, update with WHERE id AND version, increment on success and report a conflict when zero rows match. Keep the draft for a merge decision."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A browser search can have A and B in flight. If B finishes first, a later A response must not replace the newer result. The request sequence counter guards that publication step. A separate mutation guard prevents a rapid repeated save from sending another create. This is client request control, not server-side POST idempotency. Error feedback preserves a learner's draft so they can fix the problem and retry."
+  },
+  {
+    "stage": 62,
+    "title": "Survey Builder: valid answers and response capacity",
+    "focus": "nested validation and atomic response submission",
+    "before": "Unknown choices, empty required arrays and invalid ratings could be stored. Opening dates were not checked and the response limit was checked before the transaction.",
+    "after": "Public reads and submissions enforce opening windows and capacity. Submission locks the survey, validates answers against its questions, writes response/answers and increments the counter in one transaction. Optional blank ratings stay null.",
+    "model": "A user owns surveys. A survey has questions, each with a question_type and optional choice rows/config. A response belongs to a survey; response_answers reference that response and its questions. response_count is a stored aggregate that must match accepted submissions.",
+    "concept": "Validation is a relationship problem here. A string can be valid text but an invalid choice for this question. Load the question definitions and check answer keys, requiredness, types and allowed choices before writing. A multi-choice array must contain known labels; deduplicate repeated selections. An optional blank rating means no answer, not zero. A required matrix must include each configured row and only configured columns.\n\nThe response counter is a second mutable fact. Insert the response and all its answers, then increment the counter using the same transaction. A late error must undo the earlier inserts. Capacity adds a concurrency rule: lock the survey row before checking response_count, so two requests cannot both take the last slot. The transaction reads the questions through the same connection.\n\nThe date window compares instants, unlike the domain apps' date-only fields. At the end timestamp the survey is closed. The access code is checked inside the submission transaction. The app still uses a demo owner header for administrative routes. Concurrent editing of question definitions and full administrative authorization deserve their own design; this change focuses on response acceptance.",
+    "example": "A required multi-choice question accepts JavaScript once even if it appears twice in the submitted array. Unknown, object and empty answers return 400 and create no response. Two submissions to max_responses=1 produce one 201 and one 400. Future, expired and closed surveys reject submissions.",
+    "source": "server/src/services/surveyService.ts",
+    "symbol": "submitResponse",
+    "test": "test/responses.test.ts",
+    "exercises": [
+      "Display required-answer errors next to their questions.",
+      "Add an answer-preview table before submission.",
+      "Force the second answer insert to fail and verify the whole response rolls back.",
+      "Define a policy for editing a question after responses exist."
+    ],
+    "answers": [
+      "Map question IDs to errors without replacing the respondent draft; keep the server check authoritative.",
+      "Build a read-only projection of the draft. Do not count a preview as a response or increment the counter.",
+      "Use a disposable-schema trigger and assert response rows, answer rows and counter all equal their pre-request values.",
+      "Consider immutable question revisions. Existing answers should continue referencing the wording/options they answered; changing choices in place can distort results."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The date window compares instants, unlike the domain apps' date-only fields. At the end timestamp the survey is closed. The access code is checked inside the submission transaction. The app still uses a demo owner header for administrative routes. Concurrent editing of question definitions and full administrative authorization deserve their own design; this change focuses on response acceptance."
+  },
+  {
+    "stage": 63,
+    "title": "Polling Chat: scope every conversation operation",
+    "focus": "membership predicates and shared route guards",
+    "before": "History, polling, reactions and group-management routes did not consistently verify membership. A duplicate member ID could break group creation.",
+    "after": "A shared route guard verifies the demo user's membership for conversation/message operations, restricts group management to admins and validates read-receipt references. Group creation deduplicates members.",
+    "model": "Users join conversations through conversation_members, whose role is admin/member. Messages reference a conversation and author. Reactions reference a message and user. Read receipts store last_read_message_id on membership rows; typing indicators also reference conversation/user.",
+    "concept": "A foreign key proves that a referenced row exists, not that the caller is allowed to see it. The route guard resolves a message to its conversation and checks the membership pair (conversation_id,user_id). This covers GET history, GET polling, POST reactions and metadata operations with the same rule. Owner checks still decide who may edit a particular message.\n\nA read receipt is not merely any existing message ID. It must belong to the conversation being marked read, or unread calculations become misleading. An administrator role is likewise scoped to the membership row for that conversation; being an admin in another group grants nothing here. The x-demo-user-id header is still freely chosen in this educational app, so this demonstrates authorization structure without providing real authentication.\n\nPolling retrieves messages after a cursor. Membership must be checked on every poll, not only when the UI first opens a room, because membership can change. This central check is a useful boundary, but it is not a transaction spanning every subsequent read; strict coordination with simultaneous membership removal would need additional policy and locking.",
+    "example": "User 3 cannot read or poll the study room, react to its messages, type there or add members. User 2 can read and react but cannot manage members. A receipt pointing to another room is rejected. The author can edit/delete a message; a deleted message cannot be revived by editing.",
+    "source": "server/src/routes/chatRoutes.ts",
+    "symbol": "chatRouter.use",
+    "test": "test/membership.test.ts",
+    "exercises": [
+      "Add clear UI feedback when access to an open conversation is removed.",
+      "Add a member-role badge that reflects the conversation membership.",
+      "Test polling after removing a user from a group.",
+      "Replace demo headers with signed-in user identity."
+    ],
+    "answers": [
+      "Stop the polling loop after the access error, clear protected content and show a way to choose another conversation.",
+      "Read role from the current conversation's member list, never from a globally cached label.",
+      "Read successfully, remove membership as admin, then poll with the removed user and assert 404 with no private message payload.",
+      "Populate user identity from verified sessions and retain the membership guard. Authentication and authorization remain different responsibilities."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "Polling retrieves messages after a cursor. Membership must be checked on every poll, not only when the UI first opens a room, because membership can change. This central check is a useful boundary, but it is not a transaction spanning every subsequent read; strict coordination with simultaneous membership removal would need additional policy and locking."
+  },
+  {
+    "stage": 64,
+    "title": "Ecommerce Storefront: atomic cart checkout",
+    "focus": "locking shared inventory and preserving a failed checkout",
+    "before": "Repeated cart additions could exceed stock; checkout read stock without locking, allowing overselling or duplicate orders from concurrent requests.",
+    "after": "Cart additions/edits validate the cumulative quantity under a cart/product lock. Checkout locks the cart and products in ID order, rechecks active stock, then writes order/items, decrements stock and clears the cart atomically.",
+    "model": "A cart belongs to a user or guest session. cart_items reference products and store quantity/unit_price. Orders snapshot address and monetary totals; order_items snapshot product details. Products store stock_quantity. Payment is the existing mock payment flow.",
+    "concept": "A cart does not reserve stock. Two users may each put the last item into their cart, but only one should successfully check out. The checkout transaction serializes access to the product and reads its current stock after the lock. The losing request leaves its cart available for correction rather than creating a negative stock balance.\n\nTwo checkouts of one cart also need coordination. Locking the cart means the second request sees an empty cart after the first commits. Locking only product rows would not clearly protect the cart's logical one-order boundary. Products are locked in a consistent ID order to reduce deadlock risk when carts contain the same products in different order.\n\nThe order, line items, stock decrement and cart removal share one transaction. The failure-injection test rejects an order-item insert and observes stock and cart, not just the HTTP 500. The app retains demo user headers, mock payment and existing pricing/shipping policy. It is not connected to a payment provider. Cart merge and administrative operations still need separate review before a production design.",
+    "example": "With stock 3, adding 2 succeeds but adding another 2 or editing to 4 fails and leaves quantity 2. Two buyers checking out the last unit yield one order. Force an order-item failure: stock and cart remain; retrying normally succeeds.",
+    "source": "server/src/services/storeService.ts",
+    "symbol": "checkout",
+    "test": "test/checkout.test.ts",
+    "exercises": [
+      "Show which cart line lost availability after a failed checkout.",
+      "Display a checkout price breakdown from server-returned totals.",
+      "Test two carts whose product order is reversed.",
+      "Design a real payment workflow with idempotency."
+    ],
+    "answers": [
+      "Return structured product identifiers in stock errors and retain the cart; allow users to adjust quantities or remove the item.",
+      "Use the server as the final price authority. UI estimates must not overwrite persisted order totals.",
+      "Include the same two products in opposite order and submit concurrently; assert no oversell and investigate any deadlock response.",
+      "Separate payment authorization from final order state, use stable idempotency keys and reconcile retries/webhooks. A SQL transaction cannot atomically commit an external payment API."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The order, line items, stock decrement and cart removal share one transaction. The failure-injection test rejects an order-item insert and observes stock and cart, not just the HTTP 500. The app retains demo user headers, mock payment and existing pricing/shipping policy. It is not connected to a payment provider. Cart merge and administrative operations still need separate review before a production design."
+  },
+  {
+    "stage": 65,
+    "title": "Appointment Booking: concurrent slot protection",
+    "focus": "half-open time intervals and a shared write lock",
+    "before": "Two bookings could both pass the overlap query before either insert committed. A notification failure could leave a booking saved without its expected confirmation record.",
+    "after": "Appointment creation and confirmed timing/status updates lock the provider before checking overlaps. Booking and its notification commit together. Conflicting reschedules leave the original appointment untouched.",
+    "model": "Provider profiles belong to users and own services. Appointments reference provider, customer and service, with start_time/end_time/status/price. Availability rules supply candidate slots; notification rows describe booking events.",
+    "concept": "Represent an appointment as the half-open interval [start,end). A 10:00\u201310:30 appointment and a 10:30\u201311:00 appointment are adjacent, not overlapping. The overlap predicate is existing.start < proposed.end AND existing.end > proposed.start. Using <= at both boundaries would reject valid back-to-back bookings.\n\nThe preflight conflict query is useful feedback but cannot settle concurrency. The model takes the provider lock, rechecks overlap and writes inside one transaction. Creation and rescheduling use the same provider coordination rule, so they cannot independently approve overlapping confirmed appointments. The provider lock deliberately favors a simple explanation over maximum parallelism.\n\nThe booking notification is a database row, not an email sent by this task. Inserting it inside the booking transaction ensures the two records commit together. Availability windows, booking buffers, advance-booking policy and cancelled-record rescheduling remain separate business rules; the tested guarantee is overlap protection and atomic booking confirmation, not full scheduling policy enforcement.",
+    "example": "Two requests for 2099-01-01T10:00:00Z create one confirmed appointment and one 409 conflict. A 10:30 appointment succeeds. Moving it to 10:15 fails and leaves 10:30 stored. Reject notification inserts in the test schema and verify no booking is added.",
+    "source": "server/src/models/appointmentModel.ts",
+    "symbol": "createAppointment",
+    "test": "test/booking.test.ts",
+    "exercises": [
+      "Explain the overlap predicate with four drawn intervals.",
+      "Add provider-local timezone labels to confirmation feedback.",
+      "Test a booking competing with a reschedule into the same slot.",
+      "Enforce all advertised availability and cancellation policies at the write boundary."
+    ],
+    "answers": [
+      "Cover disjoint, adjacent, partially overlapping and fully contained intervals; evaluate both inequalities for each.",
+      "Keep stored instants unchanged and format in the provider's timezone; include a daylight-saving transition example.",
+      "Start both requests against a known fixture and assert at most one confirmed overlap, regardless of which request wins.",
+      "Use a common policy service under the appropriate lock. Define buffers, closed days, past times and reopening cancelled appointments explicitly rather than assuming the slot picker prevents direct API calls."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The booking notification is a database row, not an email sent by this task. Inserting it inside the booking transaction ensures the two records commit together. Availability windows, booking buffers, advance-booking policy and cancelled-record rescheduling remain separate business rules; the tested guarantee is overlap protection and atomic booking confirmation, not full scheduling policy enforcement."
+  },
+  {
+    "stage": 66,
+    "title": "API Tester: safe environment replacement",
+    "focus": "atomic active selection and validating replacement collections",
+    "before": "Activating a missing or another user's environment cleared the old active flag before failing. Duplicate variable keys could fail late, and writes could compete for active selection.",
+    "after": "Environment create/update/activate serialize on the owner row. The target is verified before clearing active flags. Variable replacement locks its environment, rejects duplicate normalized keys and preserves the prior set on failure. Saved-request headers and parameters are serialized as JSONB arrays in seeds and CRUD writes.",
+    "model": "Users own environments, which own env_variables. Exactly one environment is selected through the application activation paths, unless the user explicitly deactivates all. Variables have key, value, is_secret and sort_order. Saved requests and proxy history are separate domains.",
+    "concept": "A transaction rolls back only if it fails. Returning undefined after clearing flags would commit the earlier update, even if the service later throws outside that transaction. Validate the target inside the transaction and throw there before clearing the old selection. The per-user lock also coordinates activation through metadata edits and creates.\n\nReplacing a list is a common CRUD operation: delete the old children, insert the new children. Validate the complete candidate before deletion. Duplicate keys after trimming are ambiguous because interpolation needs one value per name; reject the candidate instead of silently choosing a winner. The endpoint intentionally accepts a JSON array, unlike most object-based CRUD requests. A blanket object-only middleware would break this valid contract.\n\nEnvironment values may include secrets in normal use. The teaching examples use synthetic localhost URLs, not credentials. This task does not send proxy requests to external services. The project still uses a demo user header and has broader collection/folder ownership and proxy concerns outside this environment-focused change. The new guide separates these limitations from the implemented behavior.",
+    "example": "Activate a nonexistent environment and confirm Local remains active. Concurrently activate Local and Staging: only one ends active for that user. Replacing variables with KEY and spaced KEY returns 400 and preserves BASE_URL. Sending [] explicitly clears the owned environment.",
+    "source": "server/src/models/environmentModel.ts",
+    "symbol": "activateEnvironment",
+    "test": "test/environments.test.ts",
+    "exercises": [
+      "Show an active badge only after the activation request succeeds.",
+      "Add a duplicate-key hint while editing variables.",
+      "Force an insert failure halfway through replacement and check the original variables.",
+      "Add ownership checks to collection/folder/request moves."
+    ],
+    "answers": [
+      "Keep the previous badge until the server returns the committed selection; on failure show the error and retain the old state.",
+      "Use the same trim rule as the server and highlight both conflicting rows, while retaining authoritative server validation.",
+      "Use a disposable trigger and compare ordered key/value pairs before and after failure. A transaction must include delete and every insert.",
+      "Verify that both source and destination belong to the signed-in user and that folder/collection IDs agree. Test cross-owner references before any move writes."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "Environment values may include secrets in normal use. The teaching examples use synthetic localhost URLs, not credentials. This task does not send proxy requests to external services. The project still uses a demo user header and has broader collection/folder ownership and proxy concerns outside this environment-focused change. The new guide separates these limitations from the implemented behavior."
+  },
+  {
+    "stage": 67,
+    "title": "Team Project Management: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records. List refreshes ignore stale responses and use the current filters after a mutation; failed saves retain the draft and show an error.",
+    "model": "tasks belong to the grouping reference workspace_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: todo, in_progress, blocked, done, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a tasks record to its previous workflow state. A legacy archived row without the new saved field falls back to todo; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in in_progress, archive it twice and restore it twice. Only the actual transitions add history, and restore returns in_progress. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name."
+  },
+  {
+    "stage": 68,
+    "title": "Support Ticket System: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records. List refreshes ignore stale responses and use the current filters after a mutation; failed saves retain the draft and show an error. The sample seed uses the actual title column.",
+    "model": "tickets belong to the grouping reference team_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: open, pending, escalated, resolved, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a tickets record to its previous workflow state. A legacy archived row without the new saved field falls back to open; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and team_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in pending, archive it twice and restore it twice. Only the actual transitions add history, and restore returns pending. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and team_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name."
+  },
+  {
+    "stage": 69,
+    "title": "Learning Management System: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records. List refreshes ignore stale responses and use the current filters after a mutation; failed saves retain the draft and show an error.",
+    "model": "courses belong to the grouping reference school_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: draft, review, published, retired, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a courses record to its previous workflow state. A legacy archived row without the new saved field falls back to draft; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and school_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in review, archive it twice and restore it twice. Only the actual transitions add history, and restore returns review. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and school_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name."
+  },
+  {
+    "stage": 70,
+    "title": "Conversation Administration: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records. List refreshes ignore stale responses and use the current filters after a mutation; failed saves retain the draft and show an error.",
+    "model": "conversations belong to the grouping reference workspace_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: active, muted, incident, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a conversations record to its previous workflow state. A legacy archived row without the new saved field falls back to active; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. This project is a conversation administration CRUD scaffold; its name does not establish live message delivery.",
+    "example": "Create a record in muted, archive it twice and restore it twice. Only the actual transitions add history, and restore returns muted. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and workspace_id is a grouping foreign key rather than an enforced tenant boundary. This project is a conversation administration CRUD scaffold; its name does not establish live message delivery."
+  },
+  {
+    "stage": 71,
+    "title": "Marketplace Listing Administration: lifecycle and bulk edits",
+    "focus": "preserving workflow state and atomic multi-record changes",
+    "before": "Restore always assigned active, even when that was not a valid workflow state. Bulk updates could silently ignore missing IDs and audit entries lacked the actual previous record.",
+    "after": "Archive stores the previous status in an additive migration, restore returns to that status, and repeats are no-ops. Ordinary and bulk status changes keep archive flags consistent. Bulk IDs are deduplicated; all targets are locked and checked before any change. Audit rows contain real before/after records. List refreshes ignore stale responses and use the current filters after a mutation; failed saves retain the draft and show an error.",
+    "model": "listings belong to the grouping reference vendor_id. Records have title, owner, priority, status, metadata, due_at, risk_level, version, archived_at and deleted_at. Status vocabulary: draft, active, flagged, paused, archived. The new nullable status_before_archive column remembers the earlier state. Comments, activity_events and audit_log reference records.",
+    "concept": "Archive is a lifecycle operation with two related facts: a status and an archived timestamp. Setting one without the other makes filters disagree with the badge. The statusFields helper synchronizes those fields whether the request came from an archive button, a form or a bulk command. Restoring should return a listings record to its previous workflow state. A legacy archived row without the new saved field falls back to draft; the migration does not invent a historical state it cannot know.\n\nBulk editing should have explicit missing-target semantics. This implementation rejects the whole batch when any requested record is missing or soft-deleted. It deduplicates IDs before comparing lengths, locks targets in ID order and skips rows already at the desired status. Every changed record receives an audit entry with the actual previous and resulting values. A misleading before:null would make it harder to explain what changed.\n\nThe server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and vendor_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name.",
+    "example": "Create a record in active, archive it twice and restore it twice. Only the actual transitions add history, and restore returns active. Bulk-update [existingId,999999]: return 404 and leave the existing row unchanged. A duplicated valid ID changes once and audit.before/status differs from audit.after/status.",
+    "source": "server/src/models/model.ts",
+    "symbol": "lifecycleUpdate",
+    "test": "test/crud.test.ts",
+    "exercises": [
+      "Display the previous status while a record is archived.",
+      "Preview the distinct IDs affected by a bulk action.",
+      "Inject an audit-write failure and verify all bulk changes roll back.",
+      "Add optimistic concurrency and genuine authorization."
+    ],
+    "answers": [
+      "Read status_before_archive and label a missing legacy value honestly; do not infer an earlier state from the current badge.",
+      "Deduplicate selected IDs and show the exact target count. Keep server validation for removed or stale IDs.",
+      "Install a failure trigger in a test schema, submit multiple changes and compare every status, version and audit count with its starting state.",
+      "Require an expected version and verified session identity. Scope grouping membership in server predicates; a demo role header or foreign key alone is insufficient."
+    ],
+    "setup": "The root package.json is an npm workspace joining client and server. Install from the project root so test dependencies and sibling packages resolve consistently:\n\n```powershell\nnpm install\n$env:DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_learning_sandbox'\nnpm run db:migrate\nnpm run db:seed\nnpm run dev\n```\n\nCreate an empty, dedicated learning database before migrating. The seed command replaces sample tables, so use a disposable learning database. The DATABASE_URL environment variable must remain set in the terminal that starts the API. Vite prints the browser URL; the API is a separate process. The source README and server .env.example explain app-specific ports and optional settings. The new TypeScript database command runs through tsx, which loads the actual TypeScript migrations and seeds.\n\nUse a separate pre-created test database for automated checks:\n\n```powershell\n$env:ASTRA_TEST_DATABASE_URL = 'postgres://postgres:YOUR_LOCAL_PASSWORD@localhost:5432/astra_test_learning'\nnpm test\nnpm run build\n```\n\nTests create a random schema, run the real migrations, start the real HTTP API on a random loopback port, then close connections and drop that schema. The test database name must begin astra_test_ and the account needs schema creation rights. npm run build compiles the server and builds the React client. To start compiled API code, use npm run start --workspace server; this still needs DATABASE_URL and migrated tables. Client hosting is separate. Do not run seeds against valuable data.",
+    "dbguide": "The [test/database.ts](../test/database.ts) helper demonstrates migration-based isolation. It sets DATABASE_URL before importing the Knex connection and uses a unique PostgreSQL schema. The root workspace also makes pg and tsx available to the root test directory. A source import ending in .js is intentional: TypeScript resolves its .ts source during development and emitted Node code resolves .js after compilation.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "The server validates partial fields before writing and keeps IDs stable. The version increments on change, but this is not yet optimistic concurrency: a client does not send an expected version. A row lock serializes writes; it does not detect a stale full-form edit. The role header is a demo mechanism, and vendor_id is a grouping foreign key rather than an enforced tenant boundary. The scaffold demonstrates administration, not every operational feature suggested by its product name."
+  },
+  {
+    "stage": 72,
+    "title": "Recipeview: validate a nested edit before replacing children",
+    "focus": "parent-child CRUD, partial edits and SQLite transactions",
+    "before": "Nested recipe payloads could contain malformed ingredient/step values, blank edits were silently ignored, and IDs/dates were accepted by loose conversions.",
+    "after": "A shared request boundary rejects malformed nested values and noncanonical IDs before handlers mutate rows. Recipe edits retain omitted children; valid replacements and search reindexing remain transactional. The app can be imported without binding a development port.",
+    "model": "Dishes own recipes. Recipes own ordered ingredients, steps and cook logs; logs can own photos. Tags and the search_index support discovery. SQLite stores relationships; photo files live separately under RECIPE_LAB_DATA/photos.",
+    "concept": "A recipe editor often submits a complete ingredient list, so replacing children can be easier to understand than diffing each row. That design is safe only when validation and transaction boundaries are clear. Omitting ingredients means preserve them; sending [] means intentionally remove all. Reject a malformed row before deleting the old children, so a typo does not erase an otherwise valid recipe.\n\nSearch is another representation of the same domain data. Renaming a recipe updates its searchable context through reindexRecipeTree. The SQL transaction includes the parent edit, child replacement and search-index writes. Photo files cannot participate in a SQLite transaction, so deletion collects filenames before the database cascade and removes files after commit. A file-removal failure requires separate cleanup policy.\n\nA quantity is a number or a deliberate blank, not an arbitrary object coerced to zero. The browser parses kitchen fractions before sending JSON. The API validates nonnegative ingredient quantities and positive recipe yield. Canonical positive integer IDs reject strings such as 1e2 rather than interpreting them as another record. This remains a local personal recipe app without multi-user authorization.",
+    "example": "Create Pasta with a Weeknight recipe, one ingredient and one step. PATCH only title: both child lists remain. Send title Changed with a negative ingredient quantity: return 400 and preserve parent, children and search data. Deleting the dish cascades its recipes and removes their search entries.",
+    "source": "server/index.ts",
+    "symbol": "validatePayload",
+    "test": "test/recipes.test.ts",
+    "exercises": [
+      "Show ingredient-row validation beside the offending row.",
+      "Add a preview of scaled ingredient quantities without saving the scale.",
+      "Force a search-index write failure and verify the recipe edit rolls back.",
+      "Design stable child IDs if ingredients gain independent history."
+    ],
+    "answers": [
+      "Keep the entered string and display its parse error; do not drop the row silently. Match the API domain rule after fraction parsing.",
+      "Compute quantity times desiredYield/originalYield as derived state. Keep the saved recipe unchanged until a separate edit is confirmed.",
+      "Use a fresh SQLite fixture and trigger failure after the parent update; assert the title and children retain their prior values.",
+      "Replace wholesale deletion with explicit create/update/delete operations keyed by ingredient ID. Explain ordering independently from identity and add conflict handling for concurrent editors."
+    ],
+    "setup": "Use Node.js 22.16 or newer compatible with node:sqlite, and npm. From this project root:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the Vite URL printed by the project. The API uses SQLite and creates its data directory when started; no PostgreSQL server is needed. RECIPE_LAB_DATA can point to a separate learning directory if you want another dataset. Keep the API and client running.\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe regression suite assigns RECIPE_LAB_DATA to a fresh temporary directory before importing the database, runs the actual Express API through HTTP and removes only that temporary directory after closing SQLite. Existing recipe databases and photos are not fixtures.",
+    "dbguide": "Read server/db.ts for DatabaseSync and tx. The relational database and search index commit together, while photo files have their own lifecycle. Read test/recipes.test.ts for a temporary-database example. The delivery evidence uses Node 22.16.0; this app depends on node:sqlite.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A quantity is a number or a deliberate blank, not an arbitrary object coerced to zero. The browser parses kitchen fractions before sending JSON. The API validates nonnegative ingredient quantities and positive recipe yield. Canonical positive integer IDs reject strings such as 1e2 rather than interpreting them as another record. This remains a local personal recipe app without multi-user authorization."
+  },
+  {
+    "stage": 73,
+    "title": "Calendar + Jobtrack: validate the whole backup",
+    "focus": "runtime schemas, nested records and import boundaries",
+    "before": "Backup parsing checked only outer arrays/settings presence, so malformed events, recurrence, application history or duplicate IDs could reach the stores.",
+    "after": "Backup parsing validates supported version, settings, category/event/application IDs, real dates, recurrence bounds, nested history and salary relationships before approving replacement.",
+    "model": "The browser stores calendar events, categories, job applications and settings with Zustand/localStorage. Events can recur and reference job IDs. Applications have a current stage plus StageChange history. A Backup contains all four stores, app marker, version and exportedAt.",
+    "concept": "Casting JSON to Backup tells TypeScript to trust the programmer; it does not inspect the file. A valid outer object can still contain events:[null] or recurrence.interval=0. The latter can break recurrence generation or create excessive work. Validate nested values at the import boundary before passing them to any replaceAll action.\n\nDuplicate IDs are a data-integrity problem even when every individual row is otherwise valid. React keys, store updates and references all rely on identity. The validator checks uniqueness within each record collection and each application history. It validates real calendar dates and increasing local event times without converting local appointments into UTC instants. An unknown category ID remains compatible with the existing display fallback.\n\nThe parser is pure: it returns either a validated backup or an error. Purity makes malformed cases easy to test without touching storage. Actual replacement still spans multiple localStorage-backed stores; validating first prevents malformed input from causing partial replacement, but a quota failure during later writes is a separate atomicity problem. A future redesign could store one versioned document or use one IndexedDB transaction.",
+    "example": "A backup created by buildBackup still imports. Change an event start to 2026-02-30T09:00, set recurrence interval to zero, duplicate an ID, empty required application history or invert salary bounds: parseBackup returns an error before store replacement.",
+    "source": "src/lib/backupValidation.ts",
+    "symbol": "validateBackupRecords",
+    "test": "src/lib/backup.test.ts",
+    "exercises": [
+      "Display an import summary before replacing local data.",
+      "Show a helpful field path in validation errors.",
+      "Simulate storage failure between replacing two stores.",
+      "Move backup replacement to a single transactional persistence boundary."
+    ],
+    "answers": [
+      "Count validated events/applications/categories and show exportedAt. Do not mutate stores until the user chooses the replacement action.",
+      "Carry the collection index and field name through validation, such as events[2].recurrence.interval, while keeping raw file contents out of generic error logs.",
+      "Use disposable storage and throw on the second write. Observe which stores changed and document the gap rather than asserting an unsupported all-or-nothing guarantee.",
+      "Use a single IndexedDB transaction or one versioned localStorage value. Plan migration and publish UI state only after the commit succeeds."
+    ],
+    "setup": "From this project root, install its declared dependencies:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local Vite URL. This app stores its data in the browser, so no API process or PostgreSQL service is required. Keep using the same origin: changing the hostname or port selects a different browser storage area.\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe existing Vitest suite runs alongside the new import regressions. Use synthetic records and a separate browser profile for practice resets. The test fixtures use fresh simulated storage. A browser check separately verifies the built app in Chromium. Export a copy of learning progress before experimenting with restore behavior.",
+    "dbguide": "This app uses Zustand/localStorage. parseBackup is pure and approves records before the calling UI replaces stores. Validation is not a transaction across the later storage writes.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The Settings UI reads an uploaded JSON backup",
+      "JSON parsing yields unknown runtime values",
+      "The import validator checks nested records, identity and numeric/date constraints",
+      "A valid result reaches the existing replacement operation",
+      "The storage layer writes the accepted candidate according to its documented boundary",
+      "The UI reloads or renders the saved result and reports rejected input"
+    ],
+    "limitations": "The parser is pure: it returns either a validated backup or an error. Purity makes malformed cases easy to test without touching storage. Actual replacement still spans multiple localStorage-backed stores; validating first prevents malformed input from causing partial replacement, but a quota failure during later writes is a separate atomicity problem. A future redesign could store one versioned document or use one IndexedDB transaction."
+  },
+  {
+    "stage": 74,
+    "title": "DevDeck: safe progress restore",
+    "focus": "validating persisted state and atomic IndexedDB replacement",
+    "before": "Import validation checked only a few outer fields; malformed scheduler values/settings or duplicate card IDs could enter a restore. Unknown-card logs were retained. One existing learning snippet exceeded its tested mobile length limit.",
+    "after": "A complete import validator runs before the replacement transaction. It checks state/log/settings/meta values and unique card IDs; unknown-card states and logs are omitted consistently, missing known states are recreated, and rejected imports preserve progress. The long worked snippet was shortened without changing its behavior.",
+    "model": "Bundled cards and decks provide learning content. ReviewState tracks cardId, ease, intervalDays, due, status, learningStepIndex, lapses and reps. ReviewLog records a grade/time. Settings and Meta hold study limits and streaks. Dexie wraps IndexedDB transactions.",
+    "concept": "A backup is not trusted merely because it has the right version. A negative due time, impossible grade or duplicate card state can corrupt scheduling even if IndexedDB accepts the value. validateImport checks the full structure before importData opens its write transaction. The transaction then clears old progress and inserts the validated replacement, so an insertion failure rolls back the clear.\n\nContent evolves independently of progress. The chosen policy ignores states and logs for card IDs no longer bundled, and creates new states for known cards absent from the backup. This preserves useful progress while avoiding orphan logs. The returned count means known states restored, not total cards after missing-state recreation.\n\nThe test uses fake-indexeddb to exercise the actual Dexie methods and compares stored state/settings/meta after rejected imports. Chromium is a separate check of actual browser startup and interaction. The existing content QA tests also protect the learning experience: a 15-line nested-conditional example was shortened to fit the existing 12-line rule while retaining the same four input outcomes. This app is a browser persistence study case; it does not contain a server CRUD API.",
+    "example": "Export fresh progress, set one card reps to 7 and restore only that state: the card keeps 7 reps and missing cards receive new states. Include one unknown-card log: it is omitted. A negative due value, duplicate state ID, invalid study limit or impossible metadata date rejects before any stored progress changes.",
+    "source": "src/db.ts",
+    "symbol": "importData",
+    "test": "src/importValidation.test.ts",
+    "exercises": [
+      "Preview how many states will be restored, ignored and recreated.",
+      "Explain one scheduler field with an before/after grade example.",
+      "Force an IndexedDB insert failure after clear and verify rollback.",
+      "Add editable learner-created cards with stable identity."
+    ],
+    "answers": [
+      "Validate first, compare IDs with the bundled content and show all three counts without writing.",
+      "Pick an existing schedule test and trace due/status/intervalDays for Again versus Good using a fixed clock.",
+      "Use a transaction hook or invalid storage operation in an isolated database and compare all affected tables with the original export.",
+      "Separate bundled content from learner-owned content, avoid overwriting custom cards in seedAndLoad and define how exports include card definitions and progress references."
+    ],
+    "setup": "From this project root, install its declared dependencies:\n\n```powershell\nnpm install\nnpm run dev\n```\n\nOpen the local Vite URL. This app stores its data in the browser, so no API process or PostgreSQL service is required. Keep using the same origin: changing the hostname or port selects a different browser storage area.\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe existing Vitest suite runs alongside the new import regressions. Use synthetic records and a separate browser profile for practice resets. The test fixtures use fresh simulated storage. A browser check separately verifies the built app in Chromium. Export a copy of learning progress before experimenting with restore behavior.",
+    "dbguide": "This app uses Dexie/IndexedDB. validateImport checks the whole payload before importData opens a transaction across progress tables. The tests exercise the actual Dexie methods using fake-indexeddb.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "The Settings UI reads an uploaded JSON backup",
+      "JSON parsing yields unknown runtime values",
+      "The import validator checks nested records, identity and numeric/date constraints",
+      "A valid result reaches the existing replacement operation",
+      "The storage layer writes the accepted candidate according to its documented boundary",
+      "The UI reloads or renders the saved result and reports rejected input"
+    ],
+    "limitations": "The test uses fake-indexeddb to exercise the actual Dexie methods and compares stored state/settings/meta after rejected imports. Chromium is a separate check of actual browser startup and interaction. The existing content QA tests also protect the learning experience: a 15-line nested-conditional example was shortened to fit the existing 12-line rule while retaining the same four input outcomes. This app is a browser persistence study case; it does not contain a server CRUD API."
+  },
+  {
+    "stage": 75,
+    "title": "Organized Desktop Job Track: precise optional edits",
+    "focus": "null versus omission, calendar validation and repeat-safe commands",
+    "before": "Blank optional fields transformed to undefined and could not be cleared by partial updates; blank salary coerced to zero. Date shape checks accepted impossible dates and repeated same-status transitions returned an error.",
+    "after": "Blank optional edits explicitly clear nullable fields, omitted fields remain unchanged, blank salaries remain null, and real dates are validated. IDs and sorting are deterministic; a repeated same-status transition returns the existing record without touching its timestamp. Login, registration and protected-route selectors now read stable scalar values, avoiding a Zustand render loop.",
+    "model": "Users authenticate with a JWT and own applications in SQLite. Each application stores company, role, location, URL, salary range, applied/next-step dates, status and notes. ALLOWED_TRANSITIONS defines valid workflow moves. The selected project is the root client/server app, not the other nested projects in this folder.",
+    "concept": "Partial update has three meanings: omitted means keep the old value, null means clear it, and a concrete value means replace it. An empty HTML text input is a string, so the boundary must map it deliberately. Converting blank to undefined removes the caller's intent to clear; Number(\"\") creates zero, which incorrectly claims a known salary.\n\nCross-field validation belongs after merging a partial update with stored data. A request containing only salary_max=50 can violate the saved salary_min=100 even if the request schema sees only one field. The existing merged salary guard is retained and tested. Real YYYY-MM-DD validation compares the parsed label, so February 30 cannot silently roll into March.\n\nA status command sets a desired state. Repeating the current state now returns that same record without updating updated_at. Other transitions still use ALLOWED_TRANSITIONS. This is a narrow retry guarantee; POST creation still needs a separate idempotency design. JWT ownership checks remain on every application path. JOB_TRACK_DATA_DIR lets tests use a fresh temporary database instead of touching the development data directory.",
+    "example": "Create an application with blank salary fields: both are null. PUT notes and next_step_date as empty strings: both clear while company remains. After setting salary 100\u2013200, a partial max=50 edit returns 400. Repeating the current status leaves updated_at unchanged; another signed-in user cannot edit the record.",
+    "source": "server/src/validation.js",
+    "symbol": "optionalDateSchema",
+    "test": "test/applications.test.js",
+    "exercises": [
+      "Show unknown salary distinctly from zero salary.",
+      "Add an explicit Clear next-step date button.",
+      "Test simultaneous sorting ties across pages.",
+      "Add an application stage-history table transactionally."
+    ],
+    "answers": [
+      "Render null as Not provided and zero as a known number if the domain permits it; avoid truthiness tests that merge these cases.",
+      "Send an explicit blank/null contract supported by the API rather than omitting the field, then verify the next read returns null.",
+      "Seed equal sort values and assert stable ID tie-breaking across repeated page reads; document pagination behavior when data changes.",
+      "Write the status change and history event in one SQLite transaction, preserve no-op behavior and test a late history failure leaves the original status unchanged."
+    ],
+    "setup": "Work in this job track folder, using only its root client and server packages. Other projects nested nearby are independent.\n\n```powershell\nnpm install\nnpm run install:all\n$env:JWT_SECRET = 'replace-with-a-long-local-learning-secret'\nnpm run dev\n```\n\nThe Express API uses SQLite and the React client uses Vite. JWT_SECRET must be set for the API to start. JOB_TRACK_DATA_DIR optionally selects another data directory. Open the local URL printed by Vite.\n\n```powershell\nnpm test\nnpm run build\n```\n\nThe test suite creates a temporary database directory and synthetic JWT secret, registers synthetic users, and calls the real API on a random loopback port. It closes SQLite and removes only that temporary directory. The native better-sqlite3 dependency must match the Node version used to run the server; npm install normally handles that binding.",
+    "dbguide": "SQLite stores applications with a user_id ownership predicate. Read server/src/db.js and test/applications.test.js to see the test data-directory override. The root npm test delegates to the server script. No PostgreSQL service or external account is required.",
+    "testcmd": "npm test\nnpm run build",
+    "flow": [
+      "A React form, button or test sends a concrete operation",
+      "The client serializes editable values as an HTTP request",
+      "The server validates runtime input and the relevant record relationships",
+      "The repository or model reads authoritative state and performs the documented change",
+      "The storage boundary commits or rejects the operation",
+      "The response or broadcast gives the client its observed result"
+    ],
+    "limitations": "A status command sets a desired state. Repeating the current state now returns that same record without updating updated_at. Other transitions still use ALLOWED_TRANSITIONS. This is a narrow retry guarantee; POST creation still needs a separate idempotency design. JWT ownership checks remain on every application path. JOB_TRACK_DATA_DIR lets tests use a fresh temporary database instead of touching the development data directory."
+  }
+]

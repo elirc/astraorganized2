@@ -1,0 +1,25 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww39",
+  "id": "1c688787ace6",
+  "command": [
+    "node_modules\\.bin\\vitest.cmd",
+    "run",
+    "src/tests/escalation-service.test.ts",
+    "src/tests/assignment-service.test.ts",
+    "src/tests/dataIsolation.test.ts",
+    "src/tests/permissions.test.ts",
+    "src/tests/status-transition.test.ts",
+    "src/tests/validation.test.ts",
+    "--maxWorkers=1",
+    "--minWorkers=1"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1c688787ace6",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-13T15:11:17.613323+00:00",
+  "status": "launch-failed",
+  "log": "ww39-tests-08.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-13T15:11:17.671040+00:00",
+  "elapsedSeconds": 0.06
+}

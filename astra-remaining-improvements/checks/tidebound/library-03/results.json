@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "checks": [
+    "Create a named checkpoint and render markup-like learning notes as literal text",
+    "Edit metadata with stable identity and an incremented revision",
+    "Reject a duplicate normalized title and retain the editor draft",
+    "Search notes and show an explicit empty result",
+    "Export the exact saved world after a metadata edit",
+    "Retain the library after a full page reload",
+    "Protect a real two-tab edit and retain the losing draft for review",
+    "Reject a stale manual-slot save from a second page",
+    "Confirm snapshot replacement while preserving the title and notes",
+    "Archive and restore without losing the snapshot or allowing archived replacement",
+    "Cancel deletion safely, then permanently delete an archived checkpoint",
+    "Render a usable narrow library and navigate its editor by keyboard",
+    "Load a manual save and then a checkpoint through explicit confirmation",
+    "Reject invalid import, cancel valid import, then commit and reload a confirmed import",
+    "Paginate a collection larger than one page and bound navigation",
+    "Copy valid legacy slots without changing or deleting their original keys",
+    "Preserve malformed legacy autosave bytes and recover through the valid manual slot",
+    "Keep the game and export available when IndexedDB cannot open",
+    "Roll back a real-browser payload failure, retain the draft, and save after recovery"
+  ],
+  "browser": "152.0.7977.76",
+  "errors": [],
+  "url": "http://127.0.0.1:49498/",
+  "date": "2026-09-12T14:58:33.972Z"
+}

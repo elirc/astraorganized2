@@ -1,0 +1,19 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+  "id": "1c908de00eb7",
+  "command": [
+    "cmd",
+    "/c",
+    "npm.cmd run typecheck && npm.cmd test && npm.cmd run lint && npm.cmd run build"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1c908de00eb7",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T20:16:58.531071+00:00",
+  "status": "complete",
+  "log": "verify-01.log",
+  "pid": 29236,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-12T20:20:59.921380+00:00",
+  "elapsedSeconds": 241.39
+}

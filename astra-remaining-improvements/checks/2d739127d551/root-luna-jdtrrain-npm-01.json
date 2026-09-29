@@ -1,0 +1,17 @@
+{
+  "project": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+  "id": "2d739127d551",
+  "command": [
+    "npm",
+    "test"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\2d739127d551",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T23:20:33.293713+00:00",
+  "status": "launch-failed",
+  "log": "root-luna-jdtrrain-npm-01.log",
+  "passed": false,
+  "error": "[WinError 2] The system cannot find the file specified",
+  "finishedAt": "2026-09-12T23:20:33.315581+00:00",
+  "elapsedSeconds": 0.02
+}

@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Use a full UUID suffix for newly created campaign slugs while preserving readable name normalization and the 60-character prefix bound.",
+    "Add three production helper/service runtime tests and nine source-linked chapters on CRUD identity, uniqueness and request idempotency."
+  ],
+  "changedFiles": [
+    "apps/api/src/services/campaign.service.ts",
+    "apps/api/src/services/campaign.service.test.ts",
+    "tests/campaign-slug.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/apps__api__src__services__campaign.service.ts.original.txt",
+    "astraupskill/evidence/astra-crud-b01-identifiers.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/74faaa8b7040/results-crud-b01.json"
+  },
+  "limits": [
+    "Focused Vitest was not run because dependencies were unavailable in the staged workspace.",
+    "Database uniqueness and cross-process behavior remain deployment checks."
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/D3",
+  "id": "43d6b6358f56",
+  "summary": [
+    "Reject API key strings with more than one delimiter before hashing or database access.",
+    "Keep verification consistent with list lifecycle rules by excluding soft-deleted keys while preserving organization and revoked filters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/43d6b6358f56/results-crud-b04.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/D3",
+        "id": "43d6b6358f56",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/api-key-verify-boundary.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\43d6b6358f56",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T02:21:38.569578+00:00",
+        "status": "complete",
+        "log": "crud-b04-astra-runtime.log",
+        "pid": 23800,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T02:21:46.837105+00:00",
+        "elapsedSeconds": 8.26
+      }
+    ],
+    "limits": [
+      "Four runtime cases execute actual apiKeys.ts with real Node SHA-256 and explicit Drizzle/schema/database predicate adapters. No Next.js, native ORM or PostgreSQL is executed.",
+      "The sequential verification read and lastUsedAt write are unchanged; concurrent revocation/deletion between them is not made atomic. Key verification does not establish every caller permission or organization lifecycle rule."
+    ]
+  },
+  "courseWords": 1854,
+  "courseFiles": 9,
+  "courseLinksChecked": 14,
+  "files": [
+    {
+      "file": "lib/services/apiKeys.ts",
+      "before_sha256": "570345c4140c234005a70014c2c6030f11eb5d2aa7de83640e7a32723392a191",
+      "after_sha256": "d683ac7822c8da0d6f639312e1e626904fce7be2665704ac8a88e6171fbf565b"
+    },
+    {
+      "file": "tests/api-key-verify-boundary.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "6585e9991482a6e6659478c03f0a8978e86523777bc9f5c4a3620219b2a10f9c"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/apiKeys.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "570345c4140c234005a70014c2c6030f11eb5d2aa7de83640e7a32723392a191"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b04-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "27178714c08999d83c3d20c73e4078087d2de178a33c74caff32632e6a7bf114"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "bf6dc3a84c7f93837fc461e5a1c62888d560c5c3f233ac00c3134c38d496c84f"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3756abdc75121ff8666ba1b0992c46a44cb99c592e5e4051659043f004799e83"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0d5efcd51d943b9ce5667dd159e8302f1d2b9fedaee0fdadb5ef4591aeeea020"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "64bb0529b0ec305e789dc27cc1d8ecd0310e6add84e007af92d3b19f103d811d"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "29fa19a9f5da6ad2bf9e249089a320c4b26347334807d51276431d9495b59353"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "40a5a0b453164060be0026fb114ac596a0845cac3123c26333f26d052c229445"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "9afcfccbd124a9226a222c76037d4697721b208d82511cd3769d0ce98ec53bb3"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "2c6997f7bf466268c980273833a60bfe88421e713528237afc5df50569be07ae"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "90dfadf1bbffca56aeb263e78dda99153e4b64abc7cfd07402490cc312934a59"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "03087e8f7ae2e2d04ff660db379713ed5ea922e893d6cd48919daf565e56d4ce"
+    }
+  ],
+  "limits": [
+    "Four runtime cases execute actual apiKeys.ts with real Node SHA-256 and explicit Drizzle/schema/database predicate adapters. No Next.js, native ORM or PostgreSQL is executed.",
+    "The sequential verification read and lastUsedAt write are unchanged; concurrent revocation/deletion between them is not made atomic. Key verification does not establish every caller permission or organization lifecycle rule."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T02:27:16.882763+00:00"
+}

@@ -1,0 +1,41 @@
+{
+  "changedFiles": [
+    "README.md",
+    "apps/api/src/modules/publish/publish.service.ts",
+    "apps/api/test/api.e2e.spec.ts",
+    "apps/api/test/fake-provider.ts",
+    "apps/api/test/global-setup.cjs",
+    "astraupskill/evidence/astra-buildreviewer-api-tests-r4.json",
+    "astraupskill/evidence/astra-buildreviewer-api-tests-r4.log",
+    "astraupskill/evidence/astra-buildreviewer-build-r1.json",
+    "astraupskill/evidence/astra-buildreviewer-build-r1.log",
+    "astraupskill/evidence/astra-buildreviewer-shared-tests-r1.json",
+    "astraupskill/evidence/astra-buildreviewer-shared-tests-r1.log",
+    "astraupskill/evidence/astra-buildreviewer-typecheck-r1.json",
+    "astraupskill/evidence/astra-buildreviewer-typecheck-r1.log",
+    "astraupskill/evidence/astra-buildreviewer-web-tests-r1.json",
+    "astraupskill/evidence/astra-buildreviewer-web-tests-r1.log",
+    "astraupskill/snapshots/README.md.original.txt",
+    "astraupskill/snapshots/apps__api__src__modules__publish__publish.service.ts.original.txt",
+    "astraupskill/snapshots/apps__api__test__api.e2e.spec.ts.original.txt",
+    "astraupskill/snapshots/apps__api__test__fake-provider.ts.original.txt",
+    "astraupskill/snapshots/apps__api__test__global-setup.cjs.original.txt",
+    "astraupskill/snapshots/packages__shared__src__enums.ts.original.txt",
+    "packages/shared/src/enums.ts"
+  ],
+  "summary": [
+    "Atomically claimed draft reviews before publication and blocked competing callers.",
+    "Preserved ambiguous provider/local-finalization outcomes as a retry gate; made rejection annotations and release transactional.",
+    "Added controlled provider and SQLite rollback regressions plus nine source-based guide chapters."
+  ],
+  "limits": [
+    "External publication is simulated with a fake provider; no live GitHub review or exactly-once guarantee is established.",
+    "Ambiguous or interrupted publications still require manual reconciliation."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3b9c30ec3ce2/sol15-results.json",
+    "expectedTests": 72,
+    "command": "Recorded test runs and build/type checks"
+  }
+}

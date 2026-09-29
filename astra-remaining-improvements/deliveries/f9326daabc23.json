@@ -1,0 +1,318 @@
+{
+  "project": "gitvg/storefront",
+  "id": "f9326daabc23",
+  "summary": [
+    "Category counts and product lists share the buyable-variant predicate.",
+    "Catalog pages return complete card DTOs with batched relation fields, eliminating two follow-up reads per card in the real listing page.",
+    "Displayed prices use actual variants when stored sort summaries are absent or stale; positive-stock checks and cloned plain-object detail attributes preserve response correctness.",
+    "Pagination accepts only complete positive safe integers and canonicalizes generated links through the same parser.",
+    "Added repository and service regressions and nine source-based guides while preserving the existing architectural lint rules and indexed sort tie-break."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f9326daabc23/resume14-results.json",
+    "expectedTests": 83,
+    "command": "Recorded complete suite and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 83,
+    "passedTests": 83,
+    "failed": 0,
+    "checks": [
+      {
+        "project": "gitvg/storefront",
+        "id": "f9326daabc23",
+        "command": [
+          "pnpm.cmd",
+          "exec",
+          "vitest",
+          "run",
+          "--maxWorkers",
+          "2",
+          "--minWorkers",
+          "1"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:01:14.916335+00:00",
+        "status": "complete",
+        "log": "resume14-tests-02.log",
+        "pid": 18068,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:08:47.274939+00:00",
+        "elapsedSeconds": 452.34
+      },
+      {
+        "project": "gitvg/storefront",
+        "id": "f9326daabc23",
+        "command": [
+          "pnpm.cmd",
+          "typecheck"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:04:26.445201+00:00",
+        "status": "complete",
+        "log": "resume14-types-02.log",
+        "pid": 25896,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:05:52.860425+00:00",
+        "elapsedSeconds": 86.41
+      },
+      {
+        "project": "gitvg/storefront",
+        "id": "f9326daabc23",
+        "command": [
+          "pnpm.cmd",
+          "lint"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-19T17:04:21.585522+00:00",
+        "status": "complete",
+        "log": "resume14-lint-01.log",
+        "pid": 23164,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:13:43.578701+00:00",
+        "elapsedSeconds": 561.97
+      },
+      {
+        "project": "gitvg/storefront",
+        "id": "f9326daabc23",
+        "command": [
+          "pnpm.cmd",
+          "build"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+        },
+        "startedAt": "2026-09-19T17:06:50.139787+00:00",
+        "status": "complete",
+        "log": "resume14-build-01.log",
+        "pid": 25356,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:42:50.524811+00:00",
+        "elapsedSeconds": 2160.33
+      },
+      {
+        "project": "gitvg/storefront",
+        "id": "f9326daabc23",
+        "command": [
+          "pnpm.cmd",
+          "db:generate"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\f9326daabc23",
+        "environmentOverrides": {
+          "DATABASE_URL": "postgresql://unused:unused@127.0.0.1:1/unused"
+        },
+        "startedAt": "2026-09-19T17:01:50.473187+00:00",
+        "status": "complete",
+        "log": "resume14-generate-01.log",
+        "pid": 16416,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T17:03:26.745123+00:00",
+        "elapsedSeconds": 96.22
+      }
+    ]
+  },
+  "courseWords": 3219,
+  "courseFiles": 9,
+  "courseLinksChecked": 95,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "84860a2473992452a4d564cc89a4f5ae8f4eb1880ddcdc522fbdce54ed566d1b",
+      "after_sha256": "978d68771c81fda35ddf13398fb265bd829ba8d9c507f1d6e679e324bdfefadb"
+    },
+    {
+      "file": "app/(storefront)/products/page.tsx",
+      "before_sha256": "e22fce48a9d89a894b6364d5b3ddd897b369dfaf6a2ee39c9d9b699d3837e92d",
+      "after_sha256": "a755656ed3095f73fb37ac6090650e00ee16c6098969930b41aadf3758535661"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.json",
+      "before_sha256": null,
+      "after_sha256": "304b83021b1c794f9d9abe3cf945e1cb22c25960c7652c0cc9524b678470963d"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-build-01.log",
+      "before_sha256": null,
+      "after_sha256": "cf8bdeb20ab042c38d92557f4e35b83a5705b65ec92fd910df355bbb4ce792b0"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.json",
+      "before_sha256": null,
+      "after_sha256": "3b8f39244aecafe89b36238ed8cbedda0fe9f9cb8c64262bff930a70f04535b4"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-generate-01.log",
+      "before_sha256": null,
+      "after_sha256": "0ddab9ec11415dd6bbd292c0623ba3f488c2aaccde1b60406b71f18856305a91"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.json",
+      "before_sha256": null,
+      "after_sha256": "d6abda61581c1c0012678a9804fd11d3b59d9def433e060fa51c408d22b8c69e"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-lint-01.log",
+      "before_sha256": null,
+      "after_sha256": "c5434b4c66713b539ba4d6f78c048b18cd4aad98d838aaefe625e11284df9f2d"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.json",
+      "before_sha256": null,
+      "after_sha256": "b66a993e6ff9efe162b290ed872455fd8957dffcca70bc92f46b353202dee95b"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-tests-02.log",
+      "before_sha256": null,
+      "after_sha256": "d48264645dd318ca6a06d93367b96f65bf413194814d27aa4e0dcd94f568f14d"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.json",
+      "before_sha256": null,
+      "after_sha256": "ff9b099dd09d161ccc6043609082c6065607c78d1956d3606ab10be48c5434a7"
+    },
+    {
+      "file": "astraupskill/evidence/resume14-types-02.log",
+      "before_sha256": null,
+      "after_sha256": "74373125985a3b45bce581a836d5bd15b5fab23ff6ef85f9247a8317211fe4bd"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "84860a2473992452a4d564cc89a4f5ae8f4eb1880ddcdc522fbdce54ed566d1b"
+    },
+    {
+      "file": "astraupskill/snapshots/app__(storefront)__products__page.tsx.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e22fce48a9d89a894b6364d5b3ddd897b369dfaf6a2ee39c9d9b699d3837e92d"
+    },
+    {
+      "file": "astraupskill/snapshots/lib__catalog-params.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "f628f48af2b99806534464e1eb59b5d9521fa4a81c330431e6ef0458b348e8a4"
+    },
+    {
+      "file": "astraupskill/snapshots/lib__catalog-params.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "e94cb8b62c1c606714ec1d0fc7e31c0e480b155dcdc6266e73c13c55bc164290"
+    },
+    {
+      "file": "astraupskill/snapshots/server__data__categories.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "7328db7503ef765896819cc6c8720269d491f1b782f4c2707fc575f542676cb7"
+    },
+    {
+      "file": "astraupskill/snapshots/server__data__products.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "ec158c6fe4c9ad99a900df54c0d4985a73da77fcb9fc3ee2f09db12c028322e4"
+    },
+    {
+      "file": "astraupskill/snapshots/server__services__catalog.test.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "8be44e707fdb67fb0c0358eb226add78513ce272b95e52a1b2d4b0bcf112e048"
+    },
+    {
+      "file": "astraupskill/snapshots/server__services__catalog.ts.original.txt",
+      "before_sha256": null,
+      "after_sha256": "29adbecf7be173f275e43ab514ffff8f2d4c2265118373aa10c54a4bbcbb46f9"
+    },
+    {
+      "file": "lib/catalog-params.test.ts",
+      "before_sha256": "f628f48af2b99806534464e1eb59b5d9521fa4a81c330431e6ef0458b348e8a4",
+      "after_sha256": "b318dc265047352a5e45766f4ac0b1c44fef84339fd0fcee1eb198349ac8df34"
+    },
+    {
+      "file": "lib/catalog-params.ts",
+      "before_sha256": "e94cb8b62c1c606714ec1d0fc7e31c0e480b155dcdc6266e73c13c55bc164290",
+      "after_sha256": "e226587900ac39c65cb84134784ea65e5c4fb30257020a7761560c23f9585418"
+    },
+    {
+      "file": "server/data/catalog-boundaries.test.ts",
+      "before_sha256": null,
+      "after_sha256": "d22e272a5ca450ab046dd58cbc539553d0a1a2d0be5cb8bca0fda0a2bbb42f07"
+    },
+    {
+      "file": "server/data/categories.ts",
+      "before_sha256": "7328db7503ef765896819cc6c8720269d491f1b782f4c2707fc575f542676cb7",
+      "after_sha256": "419ef25e1cffc44c0a32a6ede293aadb272a67bd815b6c9cc253e28b9c426788"
+    },
+    {
+      "file": "server/data/products.ts",
+      "before_sha256": "ec158c6fe4c9ad99a900df54c0d4985a73da77fcb9fc3ee2f09db12c028322e4",
+      "after_sha256": "31f780c6f0793388c1f95b8f5ba4b29c0bdef64e04f21b509ccc10546775a531"
+    },
+    {
+      "file": "server/services/catalog.test.ts",
+      "before_sha256": "8be44e707fdb67fb0c0358eb226add78513ce272b95e52a1b2d4b0bcf112e048",
+      "after_sha256": "f63251836ead9eb593a4089d56b87d921aa0e3d64f4edfecc16d9288a75425a3"
+    },
+    {
+      "file": "server/services/catalog.ts",
+      "before_sha256": "29adbecf7be173f275e43ab514ffff8f2d4c2265118373aa10c54a4bbcbb46f9",
+      "after_sha256": "e5e794379ad084a78718d23d73547b0661ba9f376bd3a5e1f35d717bc6390abe"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "af71cd0b5550635f96610564cba77ce91492263f3e6038b853fe64d8802b6a34"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "18500ec8650c568c5fee7f15198e33307ef2223dd63191900a8c312d9639db16"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "24858418b14fc021eb8cdb3ac0ae839d4da7e14cd2b891b6e00370412f6196cb"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "5d43304019f88a4cdb8bd1947119ff25a9dece4286f649fa0e94c0707d6b1de7"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "7d8660bdb204e554e42b446c5c832e9a0589a44ed8d1948c234fa8070b7c0f40"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "bcef34b612b0eee518b06272120356ba60ac631edf369b1c001e7faf24f4c369"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "7a6627e8a901764cbb1170eb2533065d0d7ec372c60a22bedb57a7955ec503ea"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "ebd10d542b2064cc404a0eb32d96d7602b811225bcaae4b3a0f44eb943ac41e4"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "94065f62b8bfa449eb279f1a872aa1e079cf23a3c6f992f09f142a5453f3cbab"
+    }
+  ],
+  "limits": [
+    "Unit tests inspect production query arguments through spies; no live PostgreSQL catalog benchmark was executed.",
+    "Price sorting still uses denormalized summaries that future writers must maintain; separate count/page reads are not one concurrent snapshot.",
+    "The existing no-database static-parameter fallback remains; a production build does not validate live catalog queries.",
+    "Future cart, checkout and administration curriculum features remain outside this read-path change."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T17:46:08.731866+00:00"
+}

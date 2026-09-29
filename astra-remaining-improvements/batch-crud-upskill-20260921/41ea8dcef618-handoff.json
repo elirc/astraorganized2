@@ -1,0 +1,30 @@
+﻿{
+    "id":  "41ea8dcef618",
+    "files":  [
+                  "src/lib/cache/queryCache.ts",
+                  "tests/runtime-cache-expiry.test.mjs",
+                  "tests/helpers/load-typescript.mjs",
+                  "astraupskill/snapshots/src-lib-cache-queryCache.ts.before",
+                  "astraupskill/evidence/41ea8dcef618-runtime-cache-expiry.tap.txt",
+                  "astraupskill/README.md",
+                  "astraupskill/01-CODEBASE-MAP.md",
+                  "astraupskill/02-CONCEPTS.md",
+                  "astraupskill/03-WORKED-CHANGE.md",
+                  "astraupskill/04-TESTING-AND-DEBUGGING.md",
+                  "astraupskill/05-PRACTICE.md",
+                  "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+                  "astraupskill/07-TRACE-LAB.md",
+                  "astraupskill/VERIFICATION.md"
+              ],
+    "findings":  [
+                     "Cache treated exact expiresAt equality as a valid hit because it used a strict greater-than comparison.",
+                     "Cache now evicts at equality, matching half-open TTL semantics."
+                 ],
+    "tests":  [
+                  "node --experimental-vm-modules --test tests/runtime-cache-expiry.test.mjs: 3 passed"
+              ],
+    "limitations":  [
+                        "Actual cache class with explicit type doubles and deterministic clock; no full service, route, auth, DB, distributed cache, or concurrency."
+                    ],
+    "project":  "ww30"
+}

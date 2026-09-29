@@ -1,0 +1,321 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildantigVG",
+  "id": "56044dcd81ce",
+  "summary": [
+    "Replaces an empty Nest API and static metrics with a connected PostgreSQL worker directory, bounded search/pagination and active company selection.",
+    "Adds salted scrypt sign-in, signed short-lived tokens, request-time account/tenant checks and tenant-scoped access for three operations roles.",
+    "Implements versioned profile CRUD, guarded lifecycle transitions, read-only terminated history and deletion restricted to unlinked drafts.",
+    "Commits worker changes and minimal audit records together, with database email uniqueness and composite company/tenant ownership constraints.",
+    "Preserves failed/stale UI drafts, confirms destructive actions and current-data replacement, clears workspace state on sign-out and renders names literally.",
+    "Provides a fresh migration, repeatable non-overwriting seed, corrected setup and scope documentation, isolated PostgreSQL/Chromium harness and nine detailed CRUD learning documents.",
+    "Validates 29 real-database API tests, eight Chromium workflows, both builds, type checks, frontend lint, two seed runs and two reviewed screenshots."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/workforce/results.json",
+    "expectedTests": 37,
+    "command": "Prisma validate/generate/migrate; API typecheck; 29 Jest/PostgreSQL integration cases; both builds; frontend typecheck/lint; repeated seed; eight Chromium scenarios",
+    "environment": "Node 22.16.0; Prisma 5.22.0; PostgreSQL 18.1; Playwright 1.60.0; Chromium 148; helper-owned databases and browser contexts"
+  },
+  "testResults": {
+    "passed": true,
+    "tests": 37,
+    "apiTests": 29,
+    "browserTests": 8,
+    "apiTypecheck": true,
+    "apiBuild": true,
+    "webTypecheck": true,
+    "webBuild": true,
+    "webLint": true,
+    "freshMigration": true,
+    "seedRuns": 2,
+    "reviewedScreenshots": 2,
+    "database": "PostgreSQL 18.1; helper-owned loopback clusters; shutdown confirmed",
+    "apiEvidence": "fourth/backend.json",
+    "browserEvidence": "browser/browser.json"
+  },
+  "courseWords": 3748,
+  "courseFiles": 9,
+  "courseLinksChecked": 17,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": null,
+      "after_sha256": "f24bbde9a62a0cedc3a8ec5e6b2f573bc6fcb62bca2c2d28d816ebdba9fe7994"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "0abac84f409434bcae99ef1fd2d717c54790771b7a7a2e4c32118cec70ed4307",
+      "after_sha256": "8c3fc53afb2ad4338440f5c53963940dfba392400bf1a179175c86e384857ee0"
+    },
+    {
+      "file": "apps/api/.env.example",
+      "before_sha256": "bac1deb81514d5f1f929149561f8ce9d0d1b41f5dd3536f5537f61c56ff7635a",
+      "after_sha256": "91d3a5b529e29f614848d752394e2fd582d6aaf3e133a11df0da6564138076dd"
+    },
+    {
+      "file": "apps/api/package.json",
+      "before_sha256": "ebc063edbc5bbd0a35e6121b040b6ecf16a0646201869537d9249472a8232fd3",
+      "after_sha256": "24b8d424d33c59f6023bfcb352154146c99c48446744a9a0204210f8092a51b2"
+    },
+    {
+      "file": "apps/api/prisma/migrations/202609090001_worker_directory/migration.sql",
+      "before_sha256": null,
+      "after_sha256": "8e4c9ae5d2c34eab2725db91318df5c1fda02b1fd55be3c42122b73f0a1bebd7"
+    },
+    {
+      "file": "apps/api/prisma/migrations/migration_lock.toml",
+      "before_sha256": null,
+      "after_sha256": "e0f301404b533bea819cafbc56ca2a9d9bcc2cf97d6350473e3a008f0637cc12"
+    },
+    {
+      "file": "apps/api/prisma/schema.prisma",
+      "before_sha256": "81ebf9bbedb8a29105aab3cb73d8b15240c297640e6800e1ed7e01c453e1d23c",
+      "after_sha256": "61697f2e2d86b71ee7986eb5ba0841e0117e5f2f8a37334461b1739588e80016"
+    },
+    {
+      "file": "apps/api/prisma/seed.ts",
+      "before_sha256": "45a49a6da58a73ba4d7c542b9c793b2f59b5ad1d2ed509031a75bb5434b0b53a",
+      "after_sha256": "95053225e51a101430cdc1cf2e574bc2eda77789081910799a6b3c8154b3c065"
+    },
+    {
+      "file": "apps/api/src/app.module.ts",
+      "before_sha256": "1f7eb36e8d987625aba0444a0fbb9147c902d18ed83166b445f6b44f4773ea4b",
+      "after_sha256": "1ccca7cb5bf4ca8a6e173239cde056a2bee1f8540ebc8e46da856f3a94c241ca"
+    },
+    {
+      "file": "apps/api/src/app.ts",
+      "before_sha256": null,
+      "after_sha256": "34b8e18587e0cfc2c53b5e52169535aa6a37c86f73ce851ca3132de481dc0aaf"
+    },
+    {
+      "file": "apps/api/src/auth.ts",
+      "before_sha256": null,
+      "after_sha256": "08d53f60c08459e0c7e44177b6bfa3271537890deecfa3ed035794b22990e1fe"
+    },
+    {
+      "file": "apps/api/src/db.ts",
+      "before_sha256": null,
+      "after_sha256": "f9566f64f4c7587cdac0c4ac6db90c7fa2aba348ed2aa8b2ac3fbe7d998aaa58"
+    },
+    {
+      "file": "apps/api/src/errors.ts",
+      "before_sha256": null,
+      "after_sha256": "88f42fa3dc1ab7f15414c0215364064ddb87b229d3ca4e73b2562d14be84d694"
+    },
+    {
+      "file": "apps/api/src/main.ts",
+      "before_sha256": "30f450c04dca4cdc6bf920128d7415c67a50e69d71dcf0c15a56fa6559feafe6",
+      "after_sha256": "17a57b686b0588583a0b1b7e82150db31d2aae3aae814541c1b8f87aef70aaaa"
+    },
+    {
+      "file": "apps/api/src/password.ts",
+      "before_sha256": null,
+      "after_sha256": "e924bd922255a2d59fcc229a70556f04b76dada542e6c25c948f41fdde05f147"
+    },
+    {
+      "file": "apps/api/src/validation.ts",
+      "before_sha256": null,
+      "after_sha256": "650567e12661dcdf8912697da8f499137c048cd9edbd88446fc20e01d99a3d91"
+    },
+    {
+      "file": "apps/api/src/workers.ts",
+      "before_sha256": null,
+      "after_sha256": "ff9dec0320b4dc83fc10c06b351f1888b835830e8e8e08d673dec9a8b8dd50f9"
+    },
+    {
+      "file": "apps/api/test/workers.spec.ts",
+      "before_sha256": null,
+      "after_sha256": "9a258fc806b6c43206d61c8bf57f6b4efa29496bb073536ebaf68070fc1afd63"
+    },
+    {
+      "file": "apps/api/tsconfig.build.json",
+      "before_sha256": "3a016b4ee9713cd16295128bad42e6077e5ecd8c2ed225caa7d1e0e3f1c7f03f",
+      "after_sha256": "a9d985636f89a6e1f5da92ffff7a3a26c59f199ef8da7be711359cd3f150b994"
+    },
+    {
+      "file": "apps/api/tsconfig.json",
+      "before_sha256": "dd740fe4ea57a0103d5fca422fc47a54b9624297408ffc9dca3cb61fd76c6721",
+      "after_sha256": "160de8586b67531fef23f93d5ca37e2aa922082fe37f715ecddf243bf3464ebc"
+    },
+    {
+      "file": "apps/web/README.md",
+      "before_sha256": "8dc9e0ee2281acb3324624fbe6eb7e1377cc626f616ea4dc90e3a90ae094374d",
+      "after_sha256": "56e43008ed408ec9f22697fe548c9a9426b69f1e020c24471344ddac9e62623b"
+    },
+    {
+      "file": "apps/web/index.html",
+      "before_sha256": "35a1f7492e6123c7528484243faf21e3b64c378d06ac35edf6e083558a308af0",
+      "after_sha256": "b4da487881df67c24249db7f21990565bbd3b67a6fcc4c319f30a99012624591"
+    },
+    {
+      "file": "apps/web/src/App.css",
+      "before_sha256": "6e25a776d3e8102da5bacb3cb99f4a5fc662a2e01e6143140671a556d28c3d5c",
+      "after_sha256": "c1fe374bc9cf4374de08fda67f8d0c6a465c5f85d3f4bfaf79432b261f6b9f27"
+    },
+    {
+      "file": "apps/web/src/App.tsx",
+      "before_sha256": "aa34f264652edbcb1bc465559a2ec76933228478fd4b48c1afe3fdc4497e558a",
+      "after_sha256": "089e4fdd2dfe5ac740e6aed05eada4715720571cd8ff77580f25affcf0439a0a"
+    },
+    {
+      "file": "apps/web/src/api.ts",
+      "before_sha256": null,
+      "after_sha256": "c9f366f7d4477784a57e7e7911aa77ce6a0fa99eaec8bbc55487c420c6398224"
+    },
+    {
+      "file": "apps/web/src/index.css",
+      "before_sha256": "535c25dd1f338486ab3678832fc698011c8b8d1fe4ffd3d0ef5e33181457cc9f",
+      "after_sha256": "f80007a829dabb4d0e5f41e0e24caa510aff2d443b96e26bbeee934ac1b72026"
+    },
+    {
+      "file": "apps/web/src/main.tsx",
+      "before_sha256": "6e9e5807fcbd48b75a96db5cbef36c996262196be42e6d4760dc86babbe61ad2",
+      "after_sha256": "c6713f68e9761117b8e6ec9be2992af70f395b01b4d058d8baac0b6108ecc763"
+    },
+    {
+      "file": "apps/web/vite.config.ts",
+      "before_sha256": "4d36db3522a7b2dd10e0936e1004373c7ee65f10f7cd7920cd76410459c15a45",
+      "after_sha256": "3c82db09b78e83a9f34cfa64f04742dc8311283c3ac9d633e300ea0198651fa8"
+    },
+    {
+      "file": "astraupskill/images/desktop.png",
+      "before_sha256": null,
+      "after_sha256": "4f980ab534774841f4028f950cb0d9c8f8e0045fd109790e445e24b84dfca20c"
+    },
+    {
+      "file": "astraupskill/images/narrow.png",
+      "before_sha256": null,
+      "after_sha256": "6211eacf8db2eaa90db6bd7e2e08b41c598fce83a4641eeed7e4ea14521e3cba"
+    },
+    {
+      "file": "docker-compose.yml",
+      "before_sha256": "98aa4667c0fa42c9ec6cd84b691fc9fde1229ca7773696a634006fc44d6a81ad",
+      "after_sha256": "8ae46b3fc5921740bee98a90dbb44ecf5f16e0b3263a444425a1f2954376c3eb"
+    },
+    {
+      "file": "docs/01-product-overview.md",
+      "before_sha256": "652e4874aef368d135fe63ca00cb99ae8ca0b4fc6560b93c5d6587314dca6d33",
+      "after_sha256": "d92e72f98cc16bcdde4be2aa9c251f55061667140eea65c3352b1e6e566d889a"
+    },
+    {
+      "file": "docs/02-architecture.md",
+      "before_sha256": "1ae7d6c699f70cd34535b8ab6ef50350cf50b658a0b6cefaf2f6468e444af1d7",
+      "after_sha256": "1ad7124428c8cf904d9c9c8efbc10f545a8fda2c7eb1428084af3592d808368c"
+    },
+    {
+      "file": "docs/03-domain-model.md",
+      "before_sha256": "25d10343608bab11093a99029bcca9c84c91cae47e91faba7d280a3f50ac163f",
+      "after_sha256": "88d812d64f3dc3352147029ea24fb39cdca1823046d9a81c783a23ee5886bd8f"
+    },
+    {
+      "file": "docs/04-auth-security-rbac.md",
+      "before_sha256": "385eb6e2473a5eb8022656078162b5f33fdffbd879a11525b8247db454c9dbc6",
+      "after_sha256": "ff5d6134542d40516a3e671838ef1be2c5b771c7a63d8f3253f12031d48dd968"
+    },
+    {
+      "file": "docs/05-api-reference.md",
+      "before_sha256": "8251c74eae5807d77466e683ad16c883acbbd5fc8dca209c7c476ee368675b45",
+      "after_sha256": "c49139aab1c9ddbb155b3c0fcb8639ca0aeacedcc37c9c9222b3ecc91cc3a649"
+    },
+    {
+      "file": "docs/06-testing-strategy.md",
+      "before_sha256": "cb95056987912ed1ff5a45d145b5205ca0250418af876795927be0f16e26f2df",
+      "after_sha256": "b0e798e0cc04b5dd5df2cb2bdabd077cd87ad95f3272eb320e0a34c98d16c6a3"
+    },
+    {
+      "file": "docs/07-local-development.md",
+      "before_sha256": "ac5568eaeb289dfbc997b421e24ae168c2489f156c656f475a312e350918f9c5",
+      "after_sha256": "0b8e8c0d4b9a0726ae8f8a950755608c82b15318984f84fd55f7d6d11bcc718f"
+    },
+    {
+      "file": "docs/08-learning-guide-for-junior-to-mid-level-engineers.md",
+      "before_sha256": "5ce455970287d5b4e4c1d36dc0fbf5379097cef5eb760e176692f1aaab775583",
+      "after_sha256": "667e9c1b9aad4457701e19d9475da03103cf10858e416f59d3cb57681f17f7b7"
+    },
+    {
+      "file": "docs/09-extension-roadmap.md",
+      "before_sha256": "a7406c6ac1deb71117071807916f53fd982778587e32d7a13d23194aeb3b5082",
+      "after_sha256": "f8eef5cf6c3c9b78db73b5a8074f9e3d1dfe18c321d8500cd6cdf2db1957b9f2"
+    },
+    {
+      "file": "e2e/workers.spec.ts",
+      "before_sha256": null,
+      "after_sha256": "141680e7e6c392e1031790fbb0fa74e765f73e245b6383316aeef1f35bd1a50c"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "4159db5a19d002eff6b48a25b46ba5c21b384c4c1231e57bef5557dd919f2f2f",
+      "after_sha256": "c596255dfa02fd68a8fb6cac3626a05bd4622a312f11c36221ccd0dfc86c81bf"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "90bf247bfdbab5df3624d95873e60f12ab77748962d758535ccada3b1d6cd3f4",
+      "after_sha256": "929e5f95bb2bb07bcf331f7de5e0fae7da7a6c57ea00d9baba96a1448e48b8d8"
+    },
+    {
+      "file": "playwright.config.ts",
+      "before_sha256": null,
+      "after_sha256": "f0db63f7ab9e9a8f8d61e79706fa03402417aa1b180b62471ce26195e7eb0093"
+    },
+    {
+      "file": "scripts/test-database.mjs",
+      "before_sha256": null,
+      "after_sha256": "e3e81655f681a0a005f4c133c87ce875035b0f519f6dc79d772a3e606bc031df"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "80fc65f00647a6c9dd96523afb0f6b58f864fb8765f07c64e8fd69bb106ccc4e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "538b0328461a47cd83765467f72a6e511f8cce3c89055f50c874a042daf6a72f"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f08f058a6e9be9dbc45f426481a32b27fa4d9ba44dbd6cfc958d8f7b0b83fada"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "474f66052f0c0db777d0f23afb4cba5d893076aefaed58452ed347687aa5455c"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "4ce88f516f71b2eda21491483b5f06db53017398e19660845f2dba5280893d2c"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "d3058e3a7d9ecf32e9e1e61ba30c69b0e52e50a60b9cc6918b01647da0845e39"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "f046aa1ea7034484eda446963e2cb008fd13a7f45e96da93e94d6b803a54ebac"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "46573bbcc6a3a39d85051d2d3a08d47d2f71db343b813c9e63ec709b35eb486b"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "01ba2da0a16416eeab389af42a43c9ddb0cc166996f23f25246c159778b9afaf"
+    }
+  ],
+  "limits": [
+    "Implemented worker operations slice only; company maintenance, worker self-service, global platform admin access and other EOR workflows remain unimplemented schema/roadmap material.",
+    "Initial migration is for an empty database; no existing personal database was migrated. Legacy bcrypt demo credentials require an explicit migration or fresh learning database.",
+    "Local authentication has no MFA, refresh sessions or distributed throttling; request-time revocation checks do not cancel already executing transactions.",
+    "No create-idempotency receipts, notification outbox, deployment/load/crash/power-loss validation or full accessibility certification. Narrow tables use contained horizontal scrolling.",
+    "Docker configuration was updated for loopback access but could not be run because its daemon was unavailable."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T07:49:11.402640+00:00"
+}

@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "total": 46,
+  "apiTests": 39,
+  "browserScenarios": 7,
+  "visualRechecks": 5,
+  "unitExitCode": 0,
+  "productionBuildPassed": true,
+  "packageLockMatchesPinnedManifest": true,
+  "screenshotsReviewed": 7,
+  "evidence": [
+    "unit-final.json",
+    "unit-execution.json",
+    "unit-final.log",
+    "browser-02/results.json",
+    "browser-03/results.json"
+  ],
+  "buildEvidence": "npm.cmd run build completed with exit code 0 in execution session 39873; only CSS, browser verifier and documentation changed afterward."
+}

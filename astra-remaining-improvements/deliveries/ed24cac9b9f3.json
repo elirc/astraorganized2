@@ -1,0 +1,129 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww31",
+  "id": "ed24cac9b9f3",
+  "summary": [
+    "Added an explicit bounded capacity policy to InMemoryCache with default size, disabled zero-capacity behavior, and oldest-key eviction.",
+    "Added actual cache runtime coverage for disabled storage, capacity eviction, and prefix invalidation.",
+    "Reject non-finite, fractional and unsafe capacity values so configured bounds cannot silently become unbounded."
+  ],
+  "checks": {
+    "resultsFile": "checks/ed24cac9b9f3/results-crud-b06.json",
+    "format": "json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 6,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww31",
+        "id": "ed24cac9b9f3",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-cache-capacity.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ed24cac9b9f3",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:44:08.455965+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 31248,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:44:16.108477+00:00",
+        "elapsedSeconds": 7.64
+      }
+    ],
+    "limits": [
+      "Actual cache class with local VM helper; no flag evaluator, route, database, distributed process, memory profiler, or concurrency run.",
+      "Capacity bound is per process and does not address TTL freshness or authorization key design."
+    ]
+  },
+  "courseWords": 1765,
+  "courseFiles": 9,
+  "courseLinksChecked": 23,
+  "files": [
+    {
+      "file": "src/lib/cache/inMemoryCache.ts",
+      "before_sha256": "36a2adb9b8005602ef205c6c0182b95f96912da13bed3f055fd29f7fc02d2ca5",
+      "after_sha256": "c5adce9a3349bea061e44979e69ea41920a05ff9278b010bf9b7033105965c7e"
+    },
+    {
+      "file": "tests/runtime-cache-capacity.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "f70183eb91ef9117bd237afde31460a2c65b134ddf68b74f2567fa7ef0035e57"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src-lib-cache-inMemoryCache.ts.before",
+      "before_sha256": null,
+      "after_sha256": "36a2adb9b8005602ef205c6c0182b95f96912da13bed3f055fd29f7fc02d2ca5"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "48dcc102d98d8d5127a359bfdd5cdd6679186d040566df2f862470b41d41bf45"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "9653bad67e0f2a046eb708ffa494e59c9fa40ad9d466887c6266b3da38ebd5b7"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a7111cca49ae857d8830dbb443efc918608e643ece7963ba14a9931c8e91410e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "2922e39e8983243fbbb4c105c859a6500dd3425c96a9a40c96d56d85d53c7c44"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "2546e035e1dcd9d862e073cd7f72ae8cd12c46f1c7f5cb2727464c3ddeac9a0b"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "4e19a86f126dee00b4235d023457af2be7bb0153cc5e54a4276dd476e6e322d0"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "57ab4a20ce11cb6366d2423f0c74005e512755eda81c34a62ba84358602d2cd9"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "2dd830b0d865e326221689d3da9c10249e4599f669e1ed3a0c4e090121868c0e"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "49fa22f469825022bd979eec6c67c77db0d79a5e029577f744858faa356498e8"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "866cc713cc9577bd6168f56d9c519e0209c6a1f690187993f48b6800b71ad36c"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "5a876152735905071e70e48ee2c63205e24f7b7f81ddba5d3987259814045e5d"
+    }
+  ],
+  "limits": [
+    "Actual cache class with local VM helper; no flag evaluator, route, database, distributed process, memory profiler, or concurrency run.",
+    "Capacity bound is per process and does not address TTL freshness or authorization key design."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:47:47.831962+00:00"
+}

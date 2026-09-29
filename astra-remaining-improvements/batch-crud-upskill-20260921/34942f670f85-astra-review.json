@@ -1,0 +1,40 @@
+{
+  "id": "34942f670f85",
+  "approved": true,
+  "reviewedAt": "2026-09-22T03:25:44.289834+00:00",
+  "sourceReview": "Read workflow creation service and repository; unchanged production. Scoped replay occurs before version validation; transaction ends before seed.",
+  "teachingReview": "Reviewed all nine distinct chapters; corrected speculative retry claim and text encoding. Exercises separate payload identity, ordering and unverified uniqueness.",
+  "testReview": "Five passing actual-service cases cover scoped replay/create payload, version and parse failures, seed failure then replay, and missing reload. Explicit adapters do not prove database concurrency.",
+  "specSHA256": "ba8a1e12d522713a5f209e34d5dc0995b86e31691057dbb2cd3ba91d16c4b435",
+  "fileHashes": {
+    "tests/workflow-run-idempotency.test.mjs": "eb794d1ebb80341bc8e5ebc95f79e1718ead861e651c65b7610674940855ff10",
+    "tests/helpers/load-typescript.mjs": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561",
+    "astraupskill/snapshots/workflow-run-service.ts.original.txt": "db34bba08d825b4329951302018389e04192fcb6f20c7fff7f96605561aa3d73",
+    "astraupskill/evidence/crud-b05-astra-runtime.log": "4f7398c3d59c3badc16340060e1e350c023ecb0c01662afbafb1bb8d3ff04296",
+    "astraupskill/evidence/results.json": "2d300d1f2ab2985d4056af9a0b3c2c79f56310af42734af326481507d31ec711",
+    "astraupskill/README.md": "c1926b87eff323f618b2267c6849107b1701951fa3d0e1695450200077bdf9f5",
+    "astraupskill/01-CODEBASE-MAP.md": "77f7280359267cdc16c00d36b369fc64ee90a47fce3231f84bcad130ea68a9d0",
+    "astraupskill/02-CONCEPTS.md": "53548545bdbc8d04bf12d50e0eb5968eef91076be67cade8b6d4051972b0e0c2",
+    "astraupskill/03-WORKED-CHANGE.md": "0a85fcaf72cc1b931aeed97de4caff302644f2a12ac69c6e30c785ce967c9b31",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "f2d79581c030acefc1fb06ec1967824f00bdef595a39a8f9155b165799c29ff8",
+    "astraupskill/05-PRACTICE.md": "43fcbcf8b9b069893533b2a1b6f5b232365753d3dad8a3505b0fe89f49a1cf8f",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "46767a5a70a65012481b8b677ae5306dd6d4ac5fbc6d19601efae0a6a4ced6dc",
+    "astraupskill/07-TRACE-LAB.md": "1486544229a8ea231de00ab5ce4ab6a633d3f6cfcd8dc3ecec4c283730037304",
+    "astraupskill/VERIFICATION.md": "26286391bedaa3f3b2238793bef5dbdb65114e080e67415f7244256aa215f564"
+  },
+  "evidenceHashes": {
+    "checks/34942f670f85/crud-b05-astra-runtime.json": "aeb8b2d1963f2cc968e2cc51dfc1306a0cfa428aa60b71c52ddb47d8b0e6997d",
+    "checks/34942f670f85/crud-b05-astra-runtime.log": "4f7398c3d59c3badc16340060e1e350c023ecb0c01662afbafb1bb8d3ff04296",
+    "checks/34942f670f85/crud-b05-ww19-final.json": "35e75ab54ebe3d77869b669727d0bd1fb9149f992b155561630dab6e95301973",
+    "checks/34942f670f85/crud-b05-ww19-final.log": "e709a5e99a3874f2bd842ce068e665145813c194ee1b29795ead875cb93a0016",
+    "checks/34942f670f85/crud-b05-ww19-runtime1.json": "be534ceb8276c8d32f133000fe41817e979ea5688bd70c3b7db15a88d062af81",
+    "checks/34942f670f85/crud-b05-ww19-runtime1.log": "1ed2d65ec312cff5385fcfaa61eab769cdd2791d1d8961fcbaa393f8feb807b7",
+    "checks/34942f670f85/crud-b05-ww19-runtime2.json": "5f8c5df983700346bd6f22887049bf095921b9535a2616a6cfea5726fd1530ba",
+    "checks/34942f670f85/crud-b05-ww19-runtime2.log": "a30d4ca8d7d490838b27f4a7ce0000b9e3265c2c8fa243a2d6b15968cd220a13",
+    "checks/34942f670f85/crud-b05-ww19-runtime3.json": "6ff0a5bf2276277f2bd2772ab7c33254257274914436026f86cdfd81c9a0c08a",
+    "checks/34942f670f85/crud-b05-ww19-runtime3.log": "daeedab202adfa4d52b94ac694e9c11f3666aa3b60c3e210031a2ffdedd5417a",
+    "checks/34942f670f85/crud-b05-ww19-runtime4.json": "2d4cb5b8d408c7970ebffcf535d5c4a4e437a7ea3835414c67ca362d406add6e",
+    "checks/34942f670f85/crud-b05-ww19-runtime4.log": "44c68b79a037c19ae5ee3bd12c6a51895c198f0d8d176e661ea60e2220e80ab2",
+    "checks/34942f670f85/results-crud-b05.json": "2d300d1f2ab2985d4056af9a0b3c2c79f56310af42734af326481507d31ec711"
+  }
+}

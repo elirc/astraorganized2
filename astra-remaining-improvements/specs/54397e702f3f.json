@@ -1,0 +1,23 @@
+{
+  "summary": [
+    "Repair default-peer clearing for dashboard configuration PATCHes with omitted role or default fields.",
+    "Add eight runtime regressions plus nine source-linked CRUD chapters with effective-state exercises and solved traces."
+  ],
+  "changedFiles": [
+    "backend/src/modules/dashboardConfigs/dashboardConfigs.service.ts",
+    "backend/src/modules/dashboardConfigs/dashboardConfigs.service.test.ts",
+    "tests/dashboard-default.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/backend__src__modules__dashboardConfigs__dashboardConfigs.service.ts.original.txt",
+    "astraupskill/evidence/astra-crud-b01-dashboard.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/54397e702f3f/results-crud-b01.json"
+  },
+  "limits": [
+    "Focused Node runtime tests use explicit Prisma transaction spies; real SQL rollback, isolation, HTTP authorization and browser behavior were not executed.",
+    "Normal Vitest suite, full typecheck and build were not run. The existing pre-read and create path mean this PATCH repair does not guarantee global or concurrent default uniqueness."
+  ]
+}

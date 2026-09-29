@@ -1,0 +1,27 @@
+{
+  "id": "5007ac6ecdec",
+  "summary": [
+    "Guard review-item decisions with organization, id, and PENDING at the write boundary.",
+    "Return HTTP 409 on a lost state transition before revocation or audit side effects.",
+    "Verify the real TypeScript service with a dependency-free VM test lab."
+  ],
+  "changedFiles": [
+    "src/repositories/reviewCycleRepository.ts",
+    "src/services/reviewCycleService.ts",
+    "tests/runtime-review-cycle.test.mjs",
+    "tests/helpers/load-typescript.mjs",
+    "astraupskill/snapshots/src/repositories/reviewCycleRepository.ts",
+    "astraupskill/snapshots/src/services/reviewCycleService.ts",
+    "astraupskill/evidence/crud-b05-astra-runtime.log",
+    "astraupskill/evidence/results.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5007ac6ecdec/results-crud-b05.json"
+  },
+  "limits": [
+    "Six runtime cases execute actual review service, HttpError and the changed repository predicate builder. Explicit database/transaction/repository adapters verify arguments and ordering; no native Prisma provider or concurrent database run.",
+    "The conditional write guards organization, item id and PENDING, but does not atomically guard review-cycle OPEN status. Native rollback, route authorization and simultaneous reviewer behavior remain unexecuted.",
+    "Normal application typecheck and provider-backed integration were not run after dependency cleanup."
+  ]
+}

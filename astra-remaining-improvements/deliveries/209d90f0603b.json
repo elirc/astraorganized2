@@ -1,0 +1,171 @@
+{
+  "project": ".netarchitectureproject",
+  "id": "209d90f0603b",
+  "summary": [
+    "Preserved requested meeting end dates in create and change handlers.",
+    "Rejected zero or reversed meeting intervals through a shared domain business rule.",
+    "Added actual handler and value-object regressions; passed 97 unit tests and added nine source-based guide chapters."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/209d90f0603b/sol15-results.json",
+    "expectedTests": 97,
+    "command": "Recorded test runs and build/type checks"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 97,
+    "passedTests": 97,
+    "failed": 0,
+    "checks": [
+      {
+        "project": ".netarchitectureproject",
+        "id": "209d90f0603b",
+        "command": [
+          "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8/dotnet.exe",
+          "test",
+          "Modules/Meetings/Tests/UnitTests/CompanyName.MyMeetings.Modules.Meetings.Domain.UnitTests.csproj",
+          "--no-restore",
+          "--nologo",
+          "--verbosity",
+          "minimal",
+          "/m:1",
+          "--logger",
+          "trx"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\209d90f0603b\\modular-monolith-with-ddd\\src",
+        "environmentOverrides": {
+          "DOTNET_ROOT": "C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/toolchains/dotnet8"
+        },
+        "startedAt": "2026-09-19T22:44:53.284808+00:00",
+        "status": "complete",
+        "log": "astra-meetings-tests-r3.log",
+        "pid": 10052,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-19T22:49:13.838125+00:00",
+        "elapsedSeconds": 260.55
+      }
+    ]
+  },
+  "courseWords": 3294,
+  "courseFiles": 9,
+  "courseLinksChecked": 93,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": null,
+      "after_sha256": "ea25068c70865ba1aecea31499e3ded087715f87a9b83755e66c121008ccb72f"
+    },
+    {
+      "file": "astraupskill/evidence/astra-meetings-tests-r3.json",
+      "before_sha256": null,
+      "after_sha256": "431eb414e38e25f149cda380ebeb22ef03cb2581aa7a76050e0f51514531f419"
+    },
+    {
+      "file": "astraupskill/evidence/astra-meetings-tests-r3.log",
+      "before_sha256": null,
+      "after_sha256": "d0d81bc5a029c7289d8e1271c86be2e7345c3529366fcc4ff4b46319f7cbd666"
+    },
+    {
+      "file": "astraupskill/evidence/regression.trx",
+      "before_sha256": null,
+      "after_sha256": "0563c82ffac9ce899f48e746f4b6d2d098aa80cca31ad91df4dde83ad3d47c26"
+    },
+    {
+      "file": "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Application__Meetings__ChangeMeetingMainAttributes__ChangeMeetingMainAttributesCommandHandler.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "c94a843b6ff94fa6ed2cded01c73041b3e6ef59b1f92eb7fa38d11e4d9719c78"
+    },
+    {
+      "file": "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Application__Meetings__CreateMeeting__CreateMeetingCommandHandler.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "6865e6b1dc109f8d4c898abc3d19970292676b377c58833d816726d7e61f97fb"
+    },
+    {
+      "file": "astraupskill/snapshots/modular-monolith-with-ddd__src__Modules__Meetings__Domain__Meetings__MeetingTerm.cs.original.txt",
+      "before_sha256": null,
+      "after_sha256": "a09c0c097d976484ecfe16daee3383ba5b4e693e09969abf275c4c7053934ef2"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Application/Meetings/ChangeMeetingMainAttributes/ChangeMeetingMainAttributesCommandHandler.cs",
+      "before_sha256": "c94a843b6ff94fa6ed2cded01c73041b3e6ef59b1f92eb7fa38d11e4d9719c78",
+      "after_sha256": "041a2b9d9caa0e0d94867e2a143f34c366658f4b06e7ef8e2d2244adb3c7dbe5"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Application/Meetings/CreateMeeting/CreateMeetingCommandHandler.cs",
+      "before_sha256": "6865e6b1dc109f8d4c898abc3d19970292676b377c58833d816726d7e61f97fb",
+      "after_sha256": "1133ec4af6b7f72deacc25a056e7d5387a7da9b6dd3557c56318ac0d23c3e339"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Domain/Meetings/MeetingTerm.cs",
+      "before_sha256": "a09c0c097d976484ecfe16daee3383ba5b4e693e09969abf275c4c7053934ef2",
+      "after_sha256": "2b4723d49a54a92d033ce5a3acb4980a7b0cda8b71808f1c2e08464ff85802ca"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Domain/Meetings/Rules/MeetingTermMustEndAfterStartRule.cs",
+      "before_sha256": null,
+      "after_sha256": "769478ad10c0ebe0de67bd72f8dafc44add6f470264684fa85d51030068e7002"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Tests/UnitTests/Meetings/MeetingTermCommandHandlerTests.cs",
+      "before_sha256": null,
+      "after_sha256": "8aa21e23317a40759987cd869634c242eef1efdef1c448d1215cc08c1e599b4f"
+    },
+    {
+      "file": "modular-monolith-with-ddd/src/Modules/Meetings/Tests/UnitTests/Meetings/MeetingTermTests.cs",
+      "before_sha256": null,
+      "after_sha256": "59943f1050b86c58640cb8af76753fb825562f96eeeb1b3e4bb86056ae319967"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "90ddf6b491226cb2292e715301617bb33bb7db2c9bd64a46447ecaac93c50ba1"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "0518ec96274ae72101961a95f3f62b60bad8952bbd644a4cafbdeef2b948cae4"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "b2c416041b2807a54f1c47aef2777fdaf6ef751673fa68976a4a7244ca742a09"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "414a52896466f31237f3da9df0f31d77339cc1cabfcfbf10fb6ae37529b97ee3"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "400b59ba91e74457d26804ac77b0904c10ed2e2c1e0b12f2bf31d6aa6dad24a8"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "2c638fd81369b96b7958f4ec7d83257a3ec0cc330cdc92d5c61d1fb68e61915a"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "14512467756a723bbc247a0d1de2440f102e1942201d760bd8da0eb0ea3d7603"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "488d1bbae7e79f245c2d8a256c6b4744e5762c1312848e9113f3eeb03ec8fce3"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "9a049a54c0e42cd392933cfc13313e4fe08c6f68dd571f405f2415f4a63757dc"
+    }
+  ],
+  "limits": [
+    "Repository substitutes establish handler and aggregate behavior, not SQL transaction rollback or HTTP/browser behavior."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-19T23:04:21.854397+00:00"
+}

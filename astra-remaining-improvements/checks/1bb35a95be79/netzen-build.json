@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/.netzen",
+  "id": "1bb35a95be79",
+  "command": [
+    "dotnet",
+    "build",
+    "support-ticketing-app/backend/SupportDesk.Api/SupportDesk.Api.csproj",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\1bb35a95be79",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-12T22:17:28.779329+00:00",
+  "status": "complete",
+  "log": "netzen-build.log",
+  "pid": 14976,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T22:17:42.668716+00:00",
+  "elapsedSeconds": 13.89
+}

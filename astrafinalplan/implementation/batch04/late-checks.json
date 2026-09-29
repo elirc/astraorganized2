@@ -1,0 +1,144 @@
+[
+  {
+    "project": "57",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 16.31,
+    "log": "logs/57-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\57\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "63",
+    "check": "server-typecheck",
+    "exit_code": 2,
+    "seconds": 16.45,
+    "log": "logs/63-server-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\63\\server\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "64",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 14.13,
+    "log": "logs/64-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\64\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "66",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 8.55,
+    "log": "logs/66-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "66",
+    "check": "client-typecheck",
+    "exit_code": 0,
+    "seconds": 20.3,
+    "log": "logs/66-client-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\node_modules\\typescript\\bin\\tsc",
+      "--noEmit",
+      "-p",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\66\\client\\tsconfig.json"
+    ]
+  },
+  {
+    "project": "73",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 10.94,
+    "log": "logs/73-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\73\\node_modules\\vitest\\vitest.mjs",
+      "run"
+    ]
+  },
+  {
+    "project": "73",
+    "check": "build",
+    "exit_code": 1,
+    "seconds": 2.92,
+    "log": "logs/73-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\73\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "73",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 47.25,
+    "log": "logs/73-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\73\\node_modules\\typescript\\bin\\tsc",
+      "-b",
+      "--noEmit"
+    ]
+  },
+  {
+    "project": "74",
+    "check": "tests",
+    "exit_code": 1,
+    "seconds": 27.06,
+    "log": "logs/74-tests.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\74\\node_modules\\vitest\\vitest.mjs",
+      "run"
+    ]
+  },
+  {
+    "project": "74",
+    "check": "build",
+    "exit_code": 0,
+    "seconds": 92.8,
+    "log": "logs/74-build.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\74\\node_modules\\vite\\bin\\vite.js",
+      "build"
+    ]
+  },
+  {
+    "project": "74",
+    "check": "typecheck",
+    "exit_code": 0,
+    "seconds": 20.07,
+    "log": "logs/74-typecheck.log",
+    "command": [
+      "node",
+      "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astrafinalplan\\implementation\\batch04\\stage\\74\\node_modules\\typescript\\bin\\tsc",
+      "-b",
+      "--noEmit"
+    ]
+  }
+]

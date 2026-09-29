@@ -1,0 +1,1424 @@
+[
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "app.js",
+    "sha256": "437e446e8aa54767981eb0e1a4206963840406d5212dae1a7c576e067a67166d"
+  },
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "1a56d06a463369ce3d3c23bbfdb7c6de97c13a373a8af709d60f4353660ac51d"
+  },
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "index.html",
+    "sha256": "82e2886bb0b6625a3ed99ca864b664b80ae7d1dc9b32507893049ca521117240"
+  },
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "README.md",
+    "sha256": "d1ffffcdf995eb546370eb7cfac8d820c746e17184f29afa765b911aed027568"
+  },
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "styles.css",
+    "sha256": "b5e650be806876781b8290551a0e64baa0777a2bfb0cb39b5d4bbb208d023eeb"
+  },
+  {
+    "project": "JS1/task-board",
+    "stage": "01",
+    "file": "USER_STORIES.md",
+    "sha256": "d46571b92c4b5452c6733e54f5e1b7cee1b21fc32879374acb1ae6c2a580e0dc"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "app.js",
+    "sha256": "4d3d49a51af901670951f55feebe25f9c8b5e6ca7c863eb67a50bd21c68ac4b9"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "e5ee11c0efe8ad56ea56f9a8a9eb8d42ad971a173490eb859f5eefab813ab9f1"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "index.html",
+    "sha256": "1d658cf947385d64f709714fe0d36dd03d1ce9afca5bc10417abd767bab5f79a"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "README.md",
+    "sha256": "85e9f64f5a4926619be918bf8483463e3c191a8fbe5a64d095b143fecba88359"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "styles.css",
+    "sha256": "6f232e124d0d080821a6fca7c801f381c802210c31d656c9ba406bb012a0da46"
+  },
+  {
+    "project": "JS1/contact-book",
+    "stage": "02",
+    "file": "USER_STORIES.md",
+    "sha256": "cba33ec3df00716653086faea7ac7f034f2e966f173e164730ffdf4358c95d02"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "app.js",
+    "sha256": "449f220cc17bcdfd10ecc2e092518fd51ba8ed86eca6753b60ed4f2b32c92437"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "CODEBASE_GUIDE.md",
+    "sha256": "8fc531369460ae9d009a247c93715eb3f33b88f7e05e497bf2709e9fc0fd6cba"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "index.html",
+    "sha256": "3965767f99b3d52499669e335dba45ff494d8926c4ab515e5daf6f40aab0d0b0"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "README.md",
+    "sha256": "698c64ce978f4ccfc9bfd72f1d921d711b2cf26c7ef09c1a71f5ccf8e5994f84"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "styles.css",
+    "sha256": "645f01f27826dac92b2ee1e13ecedad46a57f13754da6682e8c6cce98453d7cb"
+  },
+  {
+    "project": "JS1/focus-timer",
+    "stage": "03",
+    "file": "USER_STORIES.md",
+    "sha256": "bb9e32193d108d8964ca715eccebafca81a803345c95b2797bce392e17e19b21"
+  },
+  {
+    "project": "finance-dashboard",
+    "stage": "04",
+    "file": "app.js",
+    "sha256": "4d2fa838bd289d754f3df2e77be3ac5aefead4727b7384b4af5341156fff37c9"
+  },
+  {
+    "project": "finance-dashboard",
+    "stage": "04",
+    "file": "index.html",
+    "sha256": "99ec77f2422559f2f053a1a5f31883c83b1297d3628d91bb36166b35fab6405e"
+  },
+  {
+    "project": "finance-dashboard",
+    "stage": "04",
+    "file": "README.md",
+    "sha256": "7f2163f8a21e06e8a1d16967295454fb4cbe3ce61bbe1a5e2ba85c8071b1210c"
+  },
+  {
+    "project": "finance-dashboard",
+    "stage": "04",
+    "file": "styles.css",
+    "sha256": "7930657e81d82cf10a34aea3ff87d323efdea750c8af14807a3b55ad55b5a7bf"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": ".oxlintrc.json",
+    "sha256": "b4d344818a1e1bf43997e4744a9153c8eef770c98b58229cd86363dabb85ded4"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "index.html",
+    "sha256": "bfddfd7ee9dc3dd547dbe88a5ff027af9db9e9ae0f547d02cf7da8fb25fd69b4"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "package-lock.json",
+    "sha256": "e59724888a6f4112ebd9d1f637a8dc0cca18e8a07ace0d1d9bd3a4f4004f71fb"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "package.json",
+    "sha256": "85f2ca1f95f9a8860c529ba85a6adac48ca6ea3af483ffe282ae53884e79ca79"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "README.md",
+    "sha256": "7cdbc02c6fd3e2b9230454ec8d00d210436b82595eed19d4925c369e0006f04d"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "tsconfig.app.json",
+    "sha256": "8e5d12ba330e7d86409edec74b95451e0db22ee09b9426c94b5bf817571eddb0"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "tsconfig.json",
+    "sha256": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "tsconfig.node.json",
+    "sha256": "d366cc0827139db39c61815f22491bbfda56c654354a42ad7795143d314e45e8"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "vercel.json",
+    "sha256": "2cc7b0dd856db47a2cb2a9dcf648d32734623cb5c0ce14cfb50272dded4a53d6"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "vite.config.ts",
+    "sha256": "5d958981fd9ac81f99afffec5cae7a89d062e0f390a4c9dc2f426a393a951f31"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "scripts/filipino.json",
+    "sha256": "f15e4b39bf222e1c3c082798963f7399d8865b3bd1aeeb99341eb488c915dc9f"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "scripts/spanish.json",
+    "sha256": "fecb13958cf846512157af56ecd976057091f988389349c700c95300f40b7f15"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "scripts/thai.json",
+    "sha256": "e0f852ef36ddb6fef98046b34b1e136d7eeee947f69c6f6ab1cbebeddb025703"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "scripts/vietnamese.json",
+    "sha256": "b8b0ab1554afd065c8e3df1ff564f399704acd04f87e72b04504172700c67c3c"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/App.tsx",
+    "sha256": "798edd933fff69362be16ca122c2937a02c68aac8fd6ffdb840fca96db8f992b"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/index.css",
+    "sha256": "55599b91ee2d82d11306fe8c80112a2b9009fe768c2c9fa4926795e44e1b6f57"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/main.tsx",
+    "sha256": "9215c75c817895f2a1c100e2b7eccbca1b2e4d06ca78388ed5fb1432cbccb8bc"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/types.ts",
+    "sha256": "9ab7a4fc94f2ba8b334ca56c80d0594a404c0d67fb37dfec1a499b525c51a1b3"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/components/IngredientChecklist.tsx",
+    "sha256": "c3217249342531c74884371e09bee1d02fe0059d91951ee5acc1abcde2993df9"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/components/RecipeCard.tsx",
+    "sha256": "a7400615babce850d583013d2c693051c78c7ca48c10291b1a9fe0afbfae261c"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/data/recipes.ts",
+    "sha256": "b1bd65be74af967ac56dce15cef9dfad5ceec293fb2b3411a13706cd8cc4dfac"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/hooks/useCopy.ts",
+    "sha256": "bedde373aa45bfe61f948e1b82b08072c6802658a8a840af57811c5a77b092ec"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/pages/HomePage.tsx",
+    "sha256": "65b5d4a31762e7902cb367a173c9fd70297c5ca1206a6b91e06f15e7003045bc"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/pages/RecipePage.tsx",
+    "sha256": "cd3fe78c832c8b8b5ebe545cd439e660b97d96a9bfb210a1f64155431f80c02c"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/pages/ShoppingListPage.tsx",
+    "sha256": "9d1e76918125fb1e7022c8df28177a11724d50284fe5661baa7afb294eabeea8"
+  },
+  {
+    "project": "recipeweb",
+    "stage": "05",
+    "file": "src/store/ShoppingListContext.tsx",
+    "sha256": "e250de1d1cf525b10ce9208066546b7a9d3cf8a3a25193f542653ca1b9a9b205"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "index.html",
+    "sha256": "197ec3cb7e04446dcf88f2eaa0ad3e1785d7787d63a74437b8f904352d975cc1"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "package-lock.json",
+    "sha256": "5971c1ac7f56bfde7a8ea7d3c9b911f192b23e14e26351e06f787fad101247cd"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "package.json",
+    "sha256": "6079f6f600f5904dd61a0287b8f667892c0a0b3a2cb04045ea2bd02b5f26ffe7"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "README.md",
+    "sha256": "e154a4f5af461c486ac47aec0cfc2e6573bb21eed8b56e1028e9af374b8a3ce1"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "SPEC.md",
+    "sha256": "baf05a89414837a2771521ba616e007aa52a4f0438514568589cfd139c74a2df"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "vite.config.js",
+    "sha256": "7342cb7d251fa26c3c36a96d524b4a750d14335af074f6a3d1c820644f25bcf5"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/App.jsx",
+    "sha256": "7a272c0b620a48b79b4e127c9009844a866079884b1cffe9f7fa41ea8a94cf48"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/dates.js",
+    "sha256": "2e97811eefbf55ca93c59881279dae31f1b02c9869c3c13e1173a13c4430500f"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/JobTracker.jsx",
+    "sha256": "e1c5244c522c51f50dd33d995c0b2599946d9604cea845b480ee849c7836431f"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/main.jsx",
+    "sha256": "22f9d60581fa0cf03a5e383018bd987648df6cf711a3002925b338a7818b501a"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/storage.js",
+    "sha256": "55b975e19e1a66b75d1545d6449c2383a5f43293cd606f584dfbbbc1305f1e9a"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/theme.js",
+    "sha256": "ddd4d0d2235ab2e981ad7e80d5b3c114ae36d0fd79dc1031a30cd887a55bb6f3"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "src/calendar/CalendarHome.jsx",
+    "sha256": "716606c1cbb54c828b75ac8605adbe5c7281054b2d4ec7b4c124a21c07b68a7f"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/App.test.jsx",
+    "sha256": "5f75bc84e6e8adde3574fe45a6ebd814b01d2784ea998f6303b06dabf0ab18a4"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/Calendar.test.jsx",
+    "sha256": "4e1daedd6ba44dd5318d4a0122971e0a6745030b8cc8ca665d1034f22db1f19d"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/dates.test.js",
+    "sha256": "707a118982281502b9aff285b34920ee4f7fb8382eeec76cab9dc4dcfaedaf85"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/JobTracker.test.jsx",
+    "sha256": "7f0618b37f2c35d700bdc6695df416fc9d65438c2a245067104f5ef4d9704cc8"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/setup.js",
+    "sha256": "1cda915322609da5a332edfe583f6d50374f43c199155dae45b3a4c20b338ac6"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/smoke.test.jsx",
+    "sha256": "00cfc1303781daaa56690b2264cd8d7163d26f1c5d9567072de65d6eb5c3d811"
+  },
+  {
+    "project": "jobtrack",
+    "stage": "06",
+    "file": "test/storage.test.js",
+    "sha256": "187888eef7216d5436e9b0905e5a6c68c353f224aca02af5b92ed01405e7a091"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": ".env.example",
+    "sha256": "4f957b13fee7af766f9913f860dc366c0d1d54327c26cf62c514cd76d6e764f4"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "README.md",
+    "sha256": "06175ca65ad564a493ea2fb5b0caac9dc23a1d6df29847702345723a1b71f905"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/index.html",
+    "sha256": "6cbdfcc8c280411a177f0af74e07c59162a19acafa327ac167db9bbba29e7413"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/package-lock.json",
+    "sha256": "73e704bcc272adecd3fb25a30ce1b2a1127337b2a36aef06c5e68835c2957a9e"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/package.json",
+    "sha256": "aad8e40309d0c4677d0aa63f33157c5a8aa286dbbba26c59065e1abebb01b537"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/vite.config.js",
+    "sha256": "b82197b3a62d726684ecd4a6a91118354ebc4c7a5775f3a8c1df8367e0e41670"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/App.jsx",
+    "sha256": "64125d6eed3a2d132c1414d60a9aea0754780310024c9a306921d33334153434"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/index.css",
+    "sha256": "4e4b3a7dc19a8d35efbf9dfc3fc27e28d29effe0f466569ff69ae7317367243a"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/main.jsx",
+    "sha256": "9003fe3acb37dc5e1a2cfa553b533a93b5f8d26b6ce3973faef59fbe3345f007"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Badge.jsx",
+    "sha256": "ffbf820036054a2a38c2ef093e15e8faf7ec4836789c813150951443c53f9fc5"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Badge.module.css",
+    "sha256": "fbd6015b068986d6ff96bfd1812678a8f579b2a74f830fff63d54ed5f97e5e05"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Button.jsx",
+    "sha256": "4080d4895deeefe4571075105fc00aff6b05603735d7eb3277bab15554523d37"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Button.module.css",
+    "sha256": "4a3cfafef14e71287bc3c170baaeba85d14fba2e37dd7108863c772b256bf1e3"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/EmptyState.jsx",
+    "sha256": "d9958d0b9659a2ea5ff1ec58049169b57f1c0c844aa39e710c551898001be09b"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/EmptyState.module.css",
+    "sha256": "3d8d1bd83b9e75a4ed1ea88c7e8bd618ba7f56a26531177f12cd9dd3e4a4ad19"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Input.jsx",
+    "sha256": "0f4a5fb6eaf11456093f29f2cafff2f6264e5102a8c8c91863f670c8d039eff7"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Input.module.css",
+    "sha256": "91d50aa0df660e7d415048588b2b2eb55d05abef90c7e5d6953609cf7ee83253"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Modal.jsx",
+    "sha256": "d24f2100094c826c21284d809d45fd875237696868a6558684ff6da726f69cbf"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Modal.module.css",
+    "sha256": "80899eec8de1cd864ddb7d1496f5a2c4b6a306b491997da6111af19e55a851f3"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Select.jsx",
+    "sha256": "4797f049fc050e705ca614da6865bde63ece542e922385fa9a877e26ec3e6548"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/components/ui/Select.module.css",
+    "sha256": "2febc480d604cd359d810c02cf7a1f81ebfff5be935ea03c12e595677a27b42c"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskCard.jsx",
+    "sha256": "30b1d92ed4ef1fe806cc8a3fba886e5fd178f1b145a5e2cc5d2d9259693c3062"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskCard.module.css",
+    "sha256": "3b9d383a1d5673fc3bd9b5c651823f3e8fccb8925b32d436640a9aee699d9586"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskFilters.jsx",
+    "sha256": "30c03d1c8843a35d09af52c76a5324b6da3b79ef35bb2c3e34071f9026c346b9"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskFilters.module.css",
+    "sha256": "b12b6a672f78968b381836e39e5edb4839b0fedcfda246e7ec3fcd7ee93738cf"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskForm.jsx",
+    "sha256": "580c71414be45f824785b5583775ac08571229aa28f2f908d3b9f7f24fc3cb8b"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskForm.module.css",
+    "sha256": "925004ab56b82a996795627b7f2f527d3bc5edac3a5069cd7477a146c486359a"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskList.jsx",
+    "sha256": "a263f78bb17b4a82a7e6a3f2b073144577fca2bfacc83ddf414e8d206a677d84"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskList.module.css",
+    "sha256": "688aba278adba7817d63d36e5da3a21dc53292b86cc591fbe3bacc83f6681b74"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskStats.jsx",
+    "sha256": "bdfa85a800955ddf87364d41cba377a342826dec23c4f79eb56b842455a182ab"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/components/TaskStats.module.css",
+    "sha256": "7b3bcca26dd2e7aa98eb1350adec7cdcc1ce0336078aa5a3a3ecd2edcb90e126"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/hooks/useTasks.js",
+    "sha256": "d80e213884099e368c525f164e2ce47af73498c681f027722dbb820caf02b36f"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/features/tasks/utils/taskHelpers.js",
+    "sha256": "8e39baa471d8d6eb5f69ac00ab5b70b53d43cf2f1eea24b18e580d5857034015"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/layouts/AppLayout.jsx",
+    "sha256": "2660066f24e567f13b4a6369a6079ce5876571d3f590e28174e08c2897e88063"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/layouts/AppLayout.module.css",
+    "sha256": "49d6ff8f488cc9f0c265da3afcf3198370b75bdffa1aad3d5c9701e9b8645b44"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/pages/TasksPage.jsx",
+    "sha256": "c079dc56e5c207ec616745df02ae2428cc2711fcc308286f98d650cea5a80a47"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/pages/TasksPage.module.css",
+    "sha256": "d0dc1b6eabe4d57e2e88fc594de33d717c5f06051afa170444cbf8bff9399659"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/services/apiClient.js",
+    "sha256": "aafd252c41d99961bd175b4a808db41b0ccf9003eebcead7e502bac00431479b"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/services/tasksApi.js",
+    "sha256": "f417d923857e3450b8ac507b186dd8fca519af00ee6c69f83b8f0bd3918cb76c"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "client/src/utils/classNames.js",
+    "sha256": "2c5f9f0b77f7fcd1d678ba5d9821f8ffdf18c0ed6f666b26298ffb0888ab7672"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/knexfile.js",
+    "sha256": "aa37497e792f0aa0b05fd5c957b6753e5c86926e7b6381305692069f8e584782"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/package-lock.json",
+    "sha256": "02881e85e31556bc1b9061302a81603e64d8fa6681e627480664de4bec265415"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/package.json",
+    "sha256": "cefb8811c29d295be1348c225f261fc5f96a1b61810cffaada571912589e609b"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/db/migrations/20260703000000_create_tasks_table.js",
+    "sha256": "3394cdee81ad457af4586e66f6c80ff3d13846772578f2309eb81b5b63ff246d"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/db/seeds/01_tasks.js",
+    "sha256": "5206fa34a16a4657a773228c06e8e807626994243f49ed0f34d2ca860df2f456"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/app.js",
+    "sha256": "612f2f37a4892ec7a615af6caeb8373145e8a95ff9ab206d8f02d405d8f21312"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/server.js",
+    "sha256": "91009856fa459851b9cf8a119e065ec518045c8dba9b7c223544865804ab6672"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/config/database.js",
+    "sha256": "c05526fdb413be6bee054dc11cf8d43ba7bdefed905a9206b8bf056f5a3a481e"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/config/env.js",
+    "sha256": "9fc199ea9164ce5d0cd6aceea88f27108585af2d59fb9444a46359bb01d203a3"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/controllers/taskController.js",
+    "sha256": "6e930eb87be5b2833ad8811ec75697bffe7a9f8165add1619687bfce012c7d51"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/middleware/errorMiddleware.js",
+    "sha256": "4dfb8cf029a6c9530ead20896fe1235b02a14360435dc9e9b08352d44b204ee2"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/models/taskModel.js",
+    "sha256": "7e0de5d3f41d34f9aa505704b851715abf7f7447b0b31e0eb5d5640c56f818cc"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/routes/taskRoutes.js",
+    "sha256": "846f8e583320ad752c83ca92cb6167ed50b867605ccd81457a79a86f4cafe6bc"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/services/taskService.js",
+    "sha256": "8bbce8e503a7f01fbfb9287f4239aac9b61a9cdc819917a695a0444257f86bc2"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/utils/asyncHandler.js",
+    "sha256": "fc8434dcd573e0a39182de43ef7d10a2b5bb3d6e524d5792642471d6b12569b0"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/utils/errors.js",
+    "sha256": "71e8427eded8e95635fb0a01928c6bfa02166cb3bf45262de6b65dd71b367fcf"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/utils/response.js",
+    "sha256": "bce3bc0a24c3c92563833b940729c462b0d7ac4f0b83dd7d39c499a736be456b"
+  },
+  {
+    "project": "newcodexJS/01-task-manager",
+    "stage": "07",
+    "file": "server/src/utils/sanitize.js",
+    "sha256": "e7118884994bc76435e75f6787b116764641b29b690ddc1059ab60eccc1c4f77"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": ".env.example",
+    "sha256": "80daf4effede37276da776653a29aa288146385ded88e2474b3c6e1881eb01e3"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "README.md",
+    "sha256": "2b65deb0117230ac859b6d560204af73d6efdff317a1e84c8d379eced51a6351"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/index.html",
+    "sha256": "31ac6f34ec0fd77009198622a3ec66bafe1cf81f4f10ef34d01c1d5ee7e6f253"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/package.json",
+    "sha256": "8e40a50ebbfdb4460928f0784aa0e3c092246af7f7e8664472c09614af0ac4d0"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/vite.config.js",
+    "sha256": "036f47430890e9c570e1a1439ae605a3f8a46774f0b1b1b7feedc08a5452391c"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/App.jsx",
+    "sha256": "4861806a86f3c83e3a54d6251ffaf6b2fa9c3c8d5ba618d136a0cba360c0523b"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/App.module.css",
+    "sha256": "05487c6c2f549f89d56f805d3d4a421fd5132c677f32e7c20381167b6f597d85"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/index.css",
+    "sha256": "ac8fcdeb26be27f03bdd7313ad11a1a2736299e3c420b41e9cd7d1ea2e4c31d1"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/main.jsx",
+    "sha256": "6196a8a74f567f400d9d48ce46905d00f737ee3d79f829c18c38a20fcf815104"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/components/ui/Button.jsx",
+    "sha256": "150528e147c156d8d5f648edf5abb9463661d2743d75fce1138fb7bf995014f2"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/components/ui/Button.module.css",
+    "sha256": "2ca5a2d94069a7bcb3b055f19ab691133b3483790b7531423edb296002552c5a"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/features/contacts/useDebounce.js",
+    "sha256": "df90bf1cd9abc5dfef5b56cc1692d5af2417848064624c00aaa16ecc71b23d81"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "client/src/services/api.js",
+    "sha256": "33f65f0b7bd59209d45e02aa69b30d358881d871b956661d56a756480c989d95"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/knexfile.js",
+    "sha256": "fa837265d301edf162b5e90aaa2e246004f4ee28e3d2b6356bb8e8635e2243f7"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/package.json",
+    "sha256": "a0da62911707187d453e99de8b0633ac9331a191ab8b62bff6683c7cc3307346"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/db/migrations/202607030201_create_contacts_tags.js",
+    "sha256": "9e8ce8975308be7f99ae0b56038072e4ffed43980f983d5305f95be3fc661bd1"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/db/seeds/001_contacts.js",
+    "sha256": "e5a84248c929226127ab9fa1a85d9e05eee01326e7fcbb730543e4474b03b233"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/app.js",
+    "sha256": "872620f039b2b2f5ca5509d829aa021e6dbc684692068fd52605b59a51f87784"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/server.js",
+    "sha256": "68cf9ff3306ba5bc6770e814a684ae4c51b323104aea3b32c57ee9d766d411b6"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/config/db.js",
+    "sha256": "41be7ba6244ab7ea630aef0749b41c809089e6af6b8c88d01688d0103dc175c6"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/config/env.js",
+    "sha256": "b3a4b1a60b4e472a09f3127bc05a39ea7de7bf39807a5778b6098a4838d996fd"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/controllers/contactController.js",
+    "sha256": "ebce36c6ed84d1b7e13826f14d8aeeaf27ed6e3180d5a0ff2b04e95d0ab5db1b"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/controllers/tagController.js",
+    "sha256": "3ba6b72fc2c27a151bc0ab770b80b19cd41aabf724bd5ecb8747344559307008"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/middleware/errors.js",
+    "sha256": "15b44e84c1b14e635b57ca165ed125c35df4ee577bd9ba40ff49b12e9b27b51c"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/models/contactModel.js",
+    "sha256": "03f3fd0710d6f16206634313554df99b4c5c465ed40f42730ba518f51a0620e0"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/models/tagModel.js",
+    "sha256": "29d58f8bdbe23eafa5bddb54bcccdf894dcf86c9e0b073a467f6ccfc5dd37691"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/routes/contactRoutes.js",
+    "sha256": "8ea96d39aa8cfb1e7598496df9549e0693f8a42e3647c9445e820330f104f380"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/routes/tagRoutes.js",
+    "sha256": "8fb33b2e282f5f9b98ccedda5bd0eb9415512f998ad824c7561f291586f7cf31"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/services/contactService.js",
+    "sha256": "f3f6048616e682d54a5263cac9f1c38f1121be24649d4c41cacfc4607a6e5990"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/services/tagService.js",
+    "sha256": "84be83e1a4b699e8e5efd6c90dc9b827cc24f5fdc10d285e013b5b4cbbdb6ab2"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/utils/csv.js",
+    "sha256": "3ac576a2e55eee1816cefd75c96ae78c34edf2ed71f570db74eb29fdd7e63ccd"
+  },
+  {
+    "project": "newcodexJS/02-contact-book",
+    "stage": "08",
+    "file": "server/src/utils/responses.js",
+    "sha256": "67ff5619178a719daa9fdf946ddd75d8ca3096785f39aebf1779bc2a637b2d13"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": ".env.example",
+    "sha256": "fcd58820af0432cd7f01ddfefec9196c483ccff20f799ef31ef9a5f23456ad1e"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "README.md",
+    "sha256": "5d3f11d63d74c1c1f6864dc627a22a87603e7de5036ebaf9930e3fd2d6fa2a65"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/index.html",
+    "sha256": "5508e14aa1546c2aa6e265ba1960cb39af124cf3baa809bd8f75c7d3aab1a91f"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/package.json",
+    "sha256": "49e724aef0f5e5173ef972bd3c405e5e8b0d66bf11255ff8e0ab0ed948ae7572"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/vite.config.js",
+    "sha256": "6bc0480cc7a8e3fc981477416492f46068a07c1fc8d9cb62c54153648850c0da"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/App.jsx",
+    "sha256": "fd74658c72f93b742e30866a7b53bb6c56cf12b6d10c59b11c70a240ada97f48"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/App.module.css",
+    "sha256": "d67a2e11fa84641da8f3361bec9ab14239920fb9ffdd31a26eb3d0e7ffe92b8c"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/index.css",
+    "sha256": "580ce6fddcd9e491d6a51745395878a09ab7d6e22aa055056e7dd769eefa410f"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/main.jsx",
+    "sha256": "6196a8a74f567f400d9d48ce46905d00f737ee3d79f829c18c38a20fcf815104"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/components/ui/Button.jsx",
+    "sha256": "5b4fcbfc1ae338a5ff2892e509f0bc33af6e91ac0b9dc70d25206fed01ea6d3e"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/components/ui/Button.module.css",
+    "sha256": "a17b873e502afdb7a4ef6692bd3bb72e4354b6c4373d4c73ff30ffde5f597156"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "client/src/services/api.js",
+    "sha256": "54a38cf2cdc77152f00991df3c63cea3715ca878585578366028d95b4a4ca814"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/knexfile.js",
+    "sha256": "e209ab961fe45f17871e784628a30a7614e505aeed405fd60c86e639449adc20"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/package.json",
+    "sha256": "d17d539ea8127a12a4dc09fc4cedd76da5d52ad911a676e7b61d34e655baf7a4"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/db/migrations/202607030301_create_expense_tracker.js",
+    "sha256": "ea0b2f99770b996ca1655ea221a989ffaf30eaff1ac15100c34996c4ea128763"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/db/seeds/001_expenses.js",
+    "sha256": "6925aac7cf60c060aa427f04e87c4e1872e59db85ff6c21f224c81e65bcb3f7b"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/app.js",
+    "sha256": "9f4a33a25b5905f7755fba8ab6f1099ea4074676685167100e24dc7e4d994d71"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/server.js",
+    "sha256": "6fd7b4ce49144dca300c9ad33c2df17164753dea9563b4c0d3e0bcbbfdf11ad4"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/config/db.js",
+    "sha256": "aeacb0952dd34e978adbaf199a4c6eb2ba945ac48c443c8e4c065c58f8be29d9"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/config/env.js",
+    "sha256": "5bec26ed86433b725370c2c1bbfc12860c606214c09b5a2fc8e097be4392bdd0"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/controllers/budgetController.js",
+    "sha256": "7c47456af54d10c22f46760fa0ff8f8acb015fccbc1a10a50ba9ef405102e2e3"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/controllers/categoryController.js",
+    "sha256": "df6ca1288033a42aaad5efd00e50a89bdf37ef24ccef844629d11229f0772ce7"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/controllers/expenseController.js",
+    "sha256": "0cac26793c74a35a88213608db18b2a374f72e50f4ae207b87eda279229f66ac"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/controllers/statsController.js",
+    "sha256": "91913b75c7cbdf85efea377a01120233873c2b8fbc3a840c5bf7b1476cf2fd36"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/middleware/errors.js",
+    "sha256": "845ca1f75b72a387338e0f184989b490090631038f4e7df6619305ac9720ed41"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/models/expenseModel.js",
+    "sha256": "8b86474bf0dbf7f704fa38f52c98a937474d937b39f6a9616a8693af4989b6e1"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/routes/budgetRoutes.js",
+    "sha256": "fec901f5d811e18dde9205307ce3893f0a3e5526d88f28206ea8ae47215212a2"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/routes/categoryRoutes.js",
+    "sha256": "26b1ec9dbd5e92095d00ce6ed14e19d7126f225ce75cdec2672875263fb7c776"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/routes/expenseRoutes.js",
+    "sha256": "45125bcd6c27d9d3e09969d4e968b3eaaba79c0a728087d7add348c33552db3b"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/routes/statsRoutes.js",
+    "sha256": "b70443eca38e3bae4a29885f528c9936db8297c2cb97c871d2015b6489e90a23"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/services/expenseService.js",
+    "sha256": "497e25e314fcd0f013696b4b081fb70a4c08cea6c2bc7cbc299d347cc5edb95a"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/utils/csv.js",
+    "sha256": "368f8c35e5c450e62d78df810674114281aff6c9f06c5f65b9617504d6befd0e"
+  },
+  {
+    "project": "newcodexJS/03-expense-tracker",
+    "stage": "09",
+    "file": "server/src/utils/responses.js",
+    "sha256": "9577ea48f7e722a8206afe611e3a78928068041459ab0f653ac6ae17c5e2fbc7"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": ".env.example",
+    "sha256": "31d566722be0d7e50a66234b8fc1c8d91a54ab0bda2d173a2e1b36c22d56ad8f"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "README.md",
+    "sha256": "bd1c39b54d7850b06bca1b010e39225b99dce9ae3b5e0b105d401b017190391c"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/index.html",
+    "sha256": "266072ab60c09f594991b80dad22272603e501556195d210d51bc748a9be79f2"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/package.json",
+    "sha256": "79d7497be52e8f6e3bcb9303c2ce7be8518102ce94dc7e3c51be6aeeae56a352"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/tsconfig.json",
+    "sha256": "b4d3415df4e5125f7ae402970d70b7ea129bbb853b49998ac040daa6cb8bc1c7"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/vite.config.ts",
+    "sha256": "de946790df2e949aad8333031e2c3c49904b8498525fb7f4ea279f97df604ff8"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/App.module.css",
+    "sha256": "8b9b8c817750e222c5426670f4aa04fc74c6524950608de9421efd6d88626ff1"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/App.tsx",
+    "sha256": "d8db02957cc255e37130dc2df481487725e09f379402deed06a7e4188235c7c8"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/index.css",
+    "sha256": "e7debac0ee07442f58840257e197ec98c53169f11d2885e60fe0baabad5f16d3"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/main.tsx",
+    "sha256": "119af6e9395d1f64e8cac8b82b594f738e5e6e22b61432cf2221a6579ba19649"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/components/ui/Button.module.css",
+    "sha256": "ffab739cecc3d43e9351f9a025456c9e7e572ecb13cc24f8880760df17622334"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/components/ui/Button.tsx",
+    "sha256": "6de4f2ba235f52e14230adddc6420e09fe1e03dd221866b0b7c77fec72d8d307"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/context/AuthContext.tsx",
+    "sha256": "074502bfdf4c82e4b18408bad85639e938ecb0a969c804287ca454e30173f78f"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/AuthPages.tsx",
+    "sha256": "ddc5dca0d8bb6c54ea6b35d99fe8404906faf15eee56a1a59e315006acee44af"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/CreateRecipePage.tsx",
+    "sha256": "bb7640d5c2298ac90cad8cb4964cb912f966862f09dd2a20ee9de1ec6bab4d54"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/HomePage.tsx",
+    "sha256": "b99c6036a34b88f872b3a9b3e6d901f6ab08e1c6c4f3c5302d6fae3e1f37bced"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/MyRecipesPage.tsx",
+    "sha256": "f7102152289b2a7c8e43f99dc3b7b4c05fe7e58d337533a206fde911ccd9be0f"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/Pages.module.css",
+    "sha256": "1ab7a5bdc742bc8d7bf1edf9ceec4c72491376d982b070069c60734932b532db"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/pages/RecipeDetailPage.tsx",
+    "sha256": "1f9b4f879fe5e41e3caae938ece7be8149081595650b7df1bdbec236086a1db9"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/services/api.ts",
+    "sha256": "2d86c929f70033fa43a09d9e8ea20ff4db4ac2a5c09e95da8935cb405f78b44f"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/services/recipes.ts",
+    "sha256": "bcd595f77f024a088cf1ecbecec7cfcbfb2a246dd3277f5fa1e27455d5aef0f3"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "client/src/types/recipe.ts",
+    "sha256": "57b4e6e4b91d656ae2d19437c3e28a60db9e8c518fb6aac0abd1f44596b308d3"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/knexfile.ts",
+    "sha256": "e12f161277672493dfe0d121ad15ad85c901fe7685cb0384c1726e318ec08b9e"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/package.json",
+    "sha256": "c70f526fae0958fb1c9a428558dda49fa2d96dd34e092c509d78c2cf2eb229af"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/tsconfig.json",
+    "sha256": "edf17593540ace0584c275d8dfae6c0c77880122ec619f9866ad13d24884b555"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/db/migrations/001_initial_schema.ts",
+    "sha256": "c07cd920ae221fa80307bf6dfd5f66b16a8ff632dbbf9f89d025427389adec95"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/db/seeds/001_seed.ts",
+    "sha256": "41a42af810578f2ea4a9205868aa2c460d6211b3e99015d1b89edfbc9ddca2e8"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/app.ts",
+    "sha256": "c6f9e55d802bed058708a6bff2105f76728aa327ff485d94e447c44eb3cd03d4"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/server.ts",
+    "sha256": "aee36494ee866c2c6c4db122b20df36827c6c3d6fd88e805b8a33190529f9704"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/config/db.ts",
+    "sha256": "b0bcb4867db9f3e74693a32bffacfbdd81478cf0eb15fcc574b8843a0164c615"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/config/env.ts",
+    "sha256": "024a20267bcde441cfb3bc39ee227b0d6dedd33e5fc540d3c70bcadfc175cd7b"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/controllers/authController.ts",
+    "sha256": "17accaa636a48040fd818aa954324d0b2847df515ad96977fbeec71e9140a0fd"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/controllers/recipeController.ts",
+    "sha256": "4a5d74323c1a9590a3cca7be50c2d41c06d242b6dabddc3a2f527a55bf5f1dc8"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/middleware/asyncHandler.ts",
+    "sha256": "49ed21ea3fd95586cd15a5f4d10acefebdef2ba9d23184e99556f6ab825f0423"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/middleware/auth.ts",
+    "sha256": "142eb2c355feff547a895a48d0c19bf0cd14e698445afea11050d9e9add07d10"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/middleware/errorHandler.ts",
+    "sha256": "f380700c54285c0845bc1c5d0921b18163d709baf1e00340d6a57dd375315020"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/models/recipeModel.ts",
+    "sha256": "25b09af072cb55d860c83e399d367fec0d9df9bbdc8dbc65d627c51d725e41c4"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/models/userModel.ts",
+    "sha256": "e71b811e8a95cf812b37677d2ca5a013d16c02e783d3a20050918c1b036b6673"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/routes/authRoutes.ts",
+    "sha256": "dd8640ddab1495d587377c1387dbe49e8ca7dabf57fd2c19e3ff886c74ffdf98"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/routes/recipeRoutes.ts",
+    "sha256": "2bb8bd86ad69a0afc3cefabca4048ba2149b7219381c2c3a26a7424315db2832"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/services/authService.ts",
+    "sha256": "c550865d824a3ed66ca31fea50dafc8c120eae65ddabfb2ba398927feafb23c0"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/services/recipeService.ts",
+    "sha256": "f763199d86f4ad03514ea583a71354a32c55ac7a37cd3e9d169e9dc479662347"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/types/domain.ts",
+    "sha256": "e2975be37603bd8018f5adf98bf78b91d0029d44426154b058f25c61315f3c7f"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/types/express.d.ts",
+    "sha256": "ad1736568eaa22568b9bec22facd7f95fa70ddcc4319fe421900d1e024466116"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/utils/errors.ts",
+    "sha256": "465a074dbbc76e284ccca4e68a4a36875d6ea8cfe7468538652e9208801ea0af"
+  },
+  {
+    "project": "newcodexJS/05-recipe-manager",
+    "stage": "10",
+    "file": "server/src/utils/response.ts",
+    "sha256": "8145707461006b9c65980de3849d205f222fa860aa6503becd094401039c9006"
+  }
+]

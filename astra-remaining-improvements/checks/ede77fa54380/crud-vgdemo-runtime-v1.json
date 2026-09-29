@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/09 Grav And VG Projects/VGdemo",
+  "id": "ede77fa54380",
+  "command": [
+    "dotnet",
+    "test",
+    "globalhire-lite/migrated-dotnet/tests/GlobalHireLite.Api.Tests/GlobalHireLite.Api.Tests.csproj",
+    "--no-restore"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\ede77fa54380",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T04:43:53.900524+00:00",
+  "status": "complete",
+  "log": "crud-vgdemo-runtime-v1.log",
+  "pid": 15660,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T04:44:21.800164+00:00",
+  "elapsedSeconds": 27.89
+}

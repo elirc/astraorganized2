@@ -1,0 +1,3 @@
+# e2 independent review — 2026-09-13
+
+Decision: HOLD pending a focused validation regression. `src/lib/cms/store.ts` uses `rawValues[field.name] ?? field.defaultValue ?? null`, conflating explicit null with omission. A null supplied for a required/defaulted field can therefore receive a default instead of being rejected. The current test only calls `coerceFieldValue("not-json", "json")`; it does not call create/update and prove invalid JSON leaves entry version, revisions, and audit log unchanged. Add a route/service/store regression for explicit null, invalid JSON, and false/zero values through the real mutation boundary. Keep public draft/deleted filtering and forged-role protections covered.

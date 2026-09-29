@@ -1,0 +1,8 @@
+{
+  "command": [
+    "C:\\Python313\\python.exe",
+    "verification/verify_browser.py"
+  ],
+  "exitCode": 1,
+  "seconds": 383.59
+}

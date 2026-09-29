@@ -1,0 +1,13 @@
+{
+  "command": [
+    "npm.cmd",
+    "ci",
+    "--ignore-scripts",
+    "--no-audit",
+    "--no-fund",
+    "--cache=C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/tidebound/npm-cache"
+  ],
+  "workingDirectory": ".",
+  "exitCode": 0,
+  "seconds": 148.0
+}

@@ -1,0 +1,55 @@
+[
+  {
+    "stage": "52",
+    "route": "/api/subscriptions",
+    "statuses": [
+      "Trial",
+      "Active",
+      "Past Due",
+      "Cancelled"
+    ],
+    "categories": [
+      "Starter",
+      "Growth",
+      "Enterprise",
+      "Internal"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for customer subscriptions, plan changes, renewal dates, and billing amounts."
+  },
+  {
+    "stage": "53",
+    "route": "/api/visits",
+    "statuses": [
+      "Requested",
+      "Scheduled",
+      "On Site",
+      "Complete",
+      "Cancelled"
+    ],
+    "categories": [
+      "Install",
+      "Repair",
+      "Inspection",
+      "Training"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for field visits, technicians, job status, service cost, and notes."
+  },
+  {
+    "stage": "54",
+    "route": "/api/studies",
+    "statuses": [
+      "Design",
+      "Recruiting",
+      "Running",
+      "Analysis",
+      "Complete"
+    ],
+    "categories": [
+      "Usability",
+      "Market",
+      "Clinical",
+      "Internal"
+    ],
+    "purpose": "A TypeScript + React + Node + Postgres CRUD study scaffold for research studies, coordinators, participant targets, and review workflow."
+  }
+]

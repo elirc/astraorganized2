@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "total": 4,
+  "passedTests": 4,
+  "failed": 0,
+  "notExecuted": 0,
+  "evidence": ["e2_unit_1.json", "e2_typecheck_3.json", "e2_lint_3.json", "e2_build_3.json"]
+}

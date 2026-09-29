@@ -1,0 +1,32 @@
+{
+  "id": "4e19ba5b5028",
+  "status": "ready_for_review",
+  "summary": [
+    "Reviewed notification open path is sound at the service boundary.",
+    "Added a production-source lab for ownership, sent-state transitions, aggregate refresh, and audit."
+  ],
+  "files": [
+    "astra-remaining-improvements/stage/4e19ba5b5028/tests/runtime-notification-open-lab.test.mjs",
+    "astra-remaining-improvements/stage/4e19ba5b5028/tests/helpers/load-typescript.mjs",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/evidence/astra-crud-b06-ww29.log",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/evidence/results-crud-b06.json",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/README.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/01-CODEBASE-MAP.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/02-CONCEPTS.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/03-WORKED-CHANGE.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/05-PRACTICE.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/07-TRACE-LAB.md",
+    "astra-remaining-improvements/stage/4e19ba5b5028/astraupskill/VERIFICATION.md"
+  ],
+  "tests": {
+    "command": "node --experimental-vm-modules --test tests/runtime-notification-open-lab.test.mjs",
+    "passed": 4,
+    "resultsFile": "checks/4e19ba5b5028/results-crud-b06.json"
+  },
+  "limits": [
+    "Actual service and permission module execution with explicit repository doubles; no live provider or worker run.",
+    "No production fix warranted in reviewed path."
+  ]
+}

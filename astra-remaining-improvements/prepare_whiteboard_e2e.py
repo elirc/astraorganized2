@@ -1,0 +1,4 @@
+﻿from pathlib import Path
+P=Path(__file__).resolve().parent/'stage/092c5e5b7052'
+p=P/'playwright.config.ts';s=p.read_text().replace('command: `npm run dev:client -- --port', 'command: `npm run dev --prefix client -- --port');p.write_text(s,encoding='utf-8')
+p=P/'tests/collaboration.spec.ts';s=p.read_text().replace('await editor.selectText();','await editor.press(\'ControlOrMeta+A\');');s=s.replace('  expect(consoleErrors).toEqual([])','  await pageA.screenshot({ path: test.info().outputPath(\'desktop.png\'), fullPage: true })\n  expect(consoleErrors).toEqual([])');s=s.replace("  await expect(page.getByTestId('markdown-preview')).toBeVisible()", "  await expect(page.getByTestId('markdown-preview')).toBeVisible()\n  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true)\n  await page.screenshot({ path: test.info().outputPath('narrow.png'), fullPage: true })",1);p.write_text(s,encoding='utf-8')

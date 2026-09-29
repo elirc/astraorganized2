@@ -1,0 +1,17 @@
+{
+  "command": [
+    "node",
+    "node_modules/next/dist/bin/next",
+    "build",
+    "--webpack"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\52d78d4a92a2",
+  "startedAt": "2026-09-12T16:46:00.732731+00:00",
+  "status": "complete",
+  "log": "build-webpack-01.log",
+  "pid": 952,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T16:56:42.711738+00:00",
+  "elapsedSeconds": 641.98
+}

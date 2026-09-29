@@ -1,0 +1,595 @@
+{
+  "project": "buildbusinesses",
+  "id": "077627a58eae",
+  "summary": [
+    "Separated business rules, schemas, form conversion, migration and browser storage from the UI; completed guarded CRUD for people, money, inventory, assets, daily logs, reminders and budgets.",
+    "Replaced localStorage autosave with validated IndexedDB transactions, post-commit acknowledgement, workspace identity/revision conflicts, retained drafts, reviewed replacements and recovery snapshots.",
+    "Added exact settlement history and cash/receivable/payable calculations, integer-scaled stock movements, reference and history guards, calendar recurrence, daily closing history, literal pagination and formula-safe exports.",
+    "Added reviewed legacy migration with explicit partial-payment reconciliation and preserved source text, nine detailed learning chapters, meaningful domain/storage/browser verification, reproducible setup and historical notices on the earlier curriculum."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/localops/results.json",
+    "expectedTests": 67,
+    "environment": "Node 22.16.0, Next 16.2.6, React 19.2.4, TypeScript 5.9.3, Zod 3.25.76, native IndexedDB; fake-indexeddb 6.2.4 for deterministic storage tests; Chromium 148 disposable profiles",
+    "command": "npm test; npm run typecheck; npm run lint; npm run build; python scripts/verify_browser.py"
+  },
+  "testResults": {
+    "passed": true,
+    "total": 67,
+    "expected": 67,
+    "suites": [
+      {
+        "suite": "domain-storage",
+        "total": 52,
+        "passed": true,
+        "results": "tests-01.log"
+      },
+      {
+        "suite": "browser",
+        "total": 15,
+        "passed": true,
+        "results": "browser-04/results.json"
+      }
+    ],
+    "executions": {
+      "tests-01": {
+        "command": [
+          "node",
+          "node_modules/tsx/dist/cli.mjs",
+          "--test",
+          "--test-reporter=tap",
+          "--test-concurrency=1",
+          "tests/domain.test.ts",
+          "tests/storage.test.ts"
+        ],
+        "exitCode": 0
+      },
+      "typecheck-01": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/typescript/bin/tsc",
+          "--noEmit"
+        ],
+        "exitCode": 0,
+        "seconds": 165.75
+      },
+      "lint-02": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/eslint/bin/eslint.js",
+          "."
+        ],
+        "exitCode": 0,
+        "seconds": 1026.05
+      },
+      "lint-03": {
+        "command": [
+          "node",
+          "--max-old-space-size=512",
+          "node_modules/eslint/bin/eslint.js",
+          "src/components/LocalOperationsApp.tsx"
+        ],
+        "exitCode": 0,
+        "seconds": 1204.19
+      },
+      "build-02": {
+        "command": [
+          "node",
+          "node_modules/next/dist/bin/next",
+          "build",
+          "--webpack"
+        ],
+        "exitCode": 0,
+        "seconds": 2321.75
+      },
+      "browser-04": {
+        "command": [
+          "python",
+          "scripts/verify_browser.py"
+        ],
+        "exitCode": 0,
+        "seconds": 221.99
+      }
+    },
+    "layoutRechecks": {
+      "passed": true,
+      "checks": [
+        {
+          "width": 1440,
+          "passed": true
+        },
+        {
+          "width": 800,
+          "passed": true
+        },
+        {
+          "width": 390,
+          "passed": true
+        }
+      ]
+    },
+    "reviewedScreenshots": [
+      {
+        "name": "01-payment-rejection.png",
+        "source": "browser-04/01-payment-rejection.png"
+      },
+      {
+        "name": "02-inventory.png",
+        "source": "browser-04/02-inventory.png"
+      },
+      {
+        "name": "03-reminders.png",
+        "source": "browser-04/03-reminders.png"
+      },
+      {
+        "name": "04-conflict-draft.png",
+        "source": "browser-04/04-conflict-draft.png"
+      },
+      {
+        "name": "05-overview.png",
+        "source": "browser-04/05-overview.png"
+      },
+      {
+        "name": "06-form-1440.png",
+        "source": "layout-02/06-form-1440.png"
+      },
+      {
+        "name": "06-form-390.png",
+        "source": "layout-02/06-form-390.png"
+      },
+      {
+        "name": "06-form-800.png",
+        "source": "layout-02/06-form-800.png"
+      },
+      {
+        "name": "07-migrated-overview.png",
+        "source": "browser-04/07-migrated-overview.png"
+      }
+    ],
+    "visualReview": "Nine delivered screenshots inspected: readable forms, retained failures, cash and commitments, recurrence and migration; three width rechecks show all fields without clipping or action overlap.",
+    "verificationDate": "2026-09-09"
+  },
+  "courseWords": 5740,
+  "courseFiles": 9,
+  "courseLinksChecked": 37,
+  "files": [
+    {
+      "file": ".gitignore",
+      "before_sha256": "207e265ff4901f9ad9f96d8ce08530e04f9fc600815472a66d0a446096d654cd",
+      "after_sha256": "7e5aeb849afdc55b0c4b355ec820add92c70a7c2126dd89eec95c8d459e59619"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "after_sha256": "cded55f79e898fa68acd0aff08b82ab3aff94fee7d912399a236f20dd1ed2f08"
+    },
+    {
+      "file": "astraupskill/images/01-payment-rejection.png",
+      "before_sha256": null,
+      "after_sha256": "759d25aa95af088436bf1f84e8c6e64fcf70407554ddec3da04b37ac2199db52"
+    },
+    {
+      "file": "astraupskill/images/02-inventory.png",
+      "before_sha256": null,
+      "after_sha256": "9d15aa6b30708e29d21b36e34dd4274b1c975384fe7f31dd849b49b7450c217b"
+    },
+    {
+      "file": "astraupskill/images/03-reminders.png",
+      "before_sha256": null,
+      "after_sha256": "79d681a5b59f6b552fc4237c2cc2055d503ea3c664f1ced42c95ab25cddc3305"
+    },
+    {
+      "file": "astraupskill/images/04-conflict-draft.png",
+      "before_sha256": null,
+      "after_sha256": "5b28d21d23a575c8bb27bd6ba91e45dbf77f3c61d8d60bc3a64ec903a926058d"
+    },
+    {
+      "file": "astraupskill/images/05-overview.png",
+      "before_sha256": null,
+      "after_sha256": "01fa0f1123f83d90659003e8b1d6088abe2845093b54a0c786896697c7ebdf16"
+    },
+    {
+      "file": "astraupskill/images/06-form-1440.png",
+      "before_sha256": null,
+      "after_sha256": "f412e13c68f9c1c401af9aba8481f8d63b8d7b1ab596999c1b689f047e0df5e2"
+    },
+    {
+      "file": "astraupskill/images/06-form-390.png",
+      "before_sha256": null,
+      "after_sha256": "f0467f7f344d9a22a22a5886ba4755d918a6f0d004cbfce4e505e6086d7efe0d"
+    },
+    {
+      "file": "astraupskill/images/06-form-800.png",
+      "before_sha256": null,
+      "after_sha256": "7608ef43d64717fb9c670c34f1db69c6695cb0e31cdf0d3869171b5e8a02ca96"
+    },
+    {
+      "file": "astraupskill/images/07-migrated-overview.png",
+      "before_sha256": null,
+      "after_sha256": "8f00b77c0c29d4b021ba8e488a9650ed053e1f61367556149353a60f2e35c97d"
+    },
+    {
+      "file": "docs/original/LocalOperationsApp.tsx.txt",
+      "before_sha256": null,
+      "after_sha256": "505585b5abb74eabf74efe67fb37d7f9f3b0e28187620a28e69a55c1662eb232"
+    },
+    {
+      "file": "docs/original/README.md",
+      "before_sha256": null,
+      "after_sha256": "f4b56593d2b87d991e142cacbdb849c31c049500dfcf781ac94d51f288a7dfd3"
+    },
+    {
+      "file": "docs/upskill/00-fast-track.md",
+      "before_sha256": "f26fe6104c023320a426728b2f7d7001eb591dc819db473e393769e7f4bfa9b0",
+      "after_sha256": "9537ad298db568b98fc1925d7f5df7e44b889a757a5bd3fce3b4e237709e4ede"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/01-system-map.md",
+      "before_sha256": "4947e9df946774b1557222087e832c87dfe66e52de86f0d3617309f2f5f8998d",
+      "after_sha256": "6f98b606546e32c48470fc556abe1972addeb1eb02a094f72fec45a0d17d4b90"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/02-file-reading-order.md",
+      "before_sha256": "ce6caaec91a5d969792163c85b229731c2ba3de024f0012e37a2fe9813317804",
+      "after_sha256": "3ea1c9aeac40b8b449c14bbe52e2e4487a0d30bf31b3f3e0f42d8256b1160669"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/03-domain-glossary.md",
+      "before_sha256": "be3f62de74bd43266709b48a4e49c598e0f05976e7a332efcccc2321993f6e58",
+      "after_sha256": "29dbfb115636a684c68416308cf83a83404d795ab7acfa0e8ab93d7fa0ad9103"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/04-runtime-and-tooling-map.md",
+      "before_sha256": "737a7ee0064adde46174ee2e56cc921d23b34d09844790f0d186ba914c27de40",
+      "after_sha256": "24538726c1642db492af1608f065b76320eed5e7c6a13cd1d4243069873a3b99"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/05-key-flows.md",
+      "before_sha256": "eb3f373dd2307f7bf44b3631859044678edc172e25e04f0dfa9caf586caee92e",
+      "after_sha256": "da654935e61e4c9d89d5e1c204a58167f78cd70d0b5a6add98ce13fd1d6933de"
+    },
+    {
+      "file": "docs/upskill/01-codebase-cartography/README.md",
+      "before_sha256": "f0dec26b5719b6d1bf0e61b586bd4cc81fa42f37d4d74ed75e7ba9752608bf8c",
+      "after_sha256": "5755567ae1b946e68ee2d94a2248960a7ed46fb37bb9298904276023eec1d94d"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/01-language-runtime-model.md",
+      "before_sha256": "bb59733c42794f836e78eb1516bbb2ec4dc13023a3b6eb17cc04c43484383ef5",
+      "after_sha256": "068f309cab44e1af43cb6925d0b6dbd446f1d0c041b41ac0986a3ab1eb0c1c1d"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/02-framework-mental-models.md",
+      "before_sha256": "5fb3d12606338fac20f37d74c771d034266fb446893c708966afde6623ce8052",
+      "after_sha256": "caf3f56d249baac263ad7fd0cfd4ca6880b81a390c0830d618c0e68d6a8c63f4"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/03-type-system-and-contracts.md",
+      "before_sha256": "194ca6b8b2e40c705776a22775364d8c964af422c52d8186db2f894748aa3ded",
+      "after_sha256": "aef45698c872140146dd922e59c82b735b35d38678879e74aeaf0d99c67b0fc6"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/04-tooling-and-build-system.md",
+      "before_sha256": "289d5111e8a3fc5d7b351aea3f2e8d39fba47176b351455df5ec9f1d127df2c7",
+      "after_sha256": "dd7cea2c9e1e14e9d85fb87c98151db6452e84e74910b473dadbbd374febedaa"
+    },
+    {
+      "file": "docs/upskill/02-stack-and-language-mastery/README.md",
+      "before_sha256": "fbe7642df250a6ed7c421aaf45e51573f552127f0e1022f634869c8a54968ce7",
+      "after_sha256": "88277b82b4809a3f4cf050510929f70aafe8c7c50455d874c0dbfdd672f2c457"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/01-boundaries-and-layers.md",
+      "before_sha256": "d045233b9583a68906582ec971fcfb292b18780433ddd6c97ac039f1734f4690",
+      "after_sha256": "8e433ece609f3c9bb977a77a00efff7b0c430563e2bbb3b729ace0a25b7fb28b"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/02-data-model-and-persistence.md",
+      "before_sha256": "f65f055eee3c8110842910be2f3a28e4e96eaa3f10ee4aefd942af8d364a1472",
+      "after_sha256": "4b4f1945bf0b932c6a9aaad7bae1c90a6bb50a54a04294293614ec2a6dc1c7cc"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/03-validation-auth-and-permissions.md",
+      "before_sha256": "ff813318ba428cdd08a25faf92f9be51d557207d376e487bcdc2128d9980ca17",
+      "after_sha256": "12e9012714c5716c11a44536120fc52f9ad3cc79b354c0f01571be4092315df1"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/04-side-effects-async-and-reliability.md",
+      "before_sha256": "558f4d5cefb77e57f92fab42cf34958c447f02d0539eb6f91e0cb9c23475fcb6",
+      "after_sha256": "b634fe903bcc6d659c7c2cfb2c4bc82807b6ebfeb834f29d68f515d1c1ee85da"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/05-pattern-catalog.md",
+      "before_sha256": "03a7569dcb0dfadcd966e55e12b6c7b5da4e44e0f054e10efa6e3ad5e421c8fe",
+      "after_sha256": "5b6213c7cea5d36f666ca027a5d4335e5f0ab26d17e1956b663fae5bb146925c"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/06-architecture-critique.md",
+      "before_sha256": "943767cc37ef8ea58cc9a702bc2ee78e3d8e7c187dd4d0c93c4d78360c8ae273",
+      "after_sha256": "dd410af6ea765db8a21c4210ff9b3f467960ab5fa45581bde7e6b15f29c119c6"
+    },
+    {
+      "file": "docs/upskill/03-architecture-and-patterns/README.md",
+      "before_sha256": "6ddfc13155f30065353ae09508aeaa1ac8bfafd1e9b4a9a13b98e73b6f50d602",
+      "after_sha256": "0ce583240eab3509511c48b38318365414a0659e336f7fc0c99166bdd7910688"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/01-annotation-drills.md",
+      "before_sha256": "369cea9e38e6504a3e39175ec4728640c99b323877db26a90477ef956b7252fc",
+      "after_sha256": "35ca4ef3917c61145209b8668432e73fb86955aee345c3704dc7de3911b68d35"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/02-trace-tables.md",
+      "before_sha256": "a130d850f427ae96ec36866613badcbbe9d32ec5929ad061927f979df43f28bf",
+      "after_sha256": "bbb4ddf420697c51589cd7e3bf82e8fe61d2c772f5fb88e374115135e9bc882b"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/03-fake-code-contrasts.md",
+      "before_sha256": "e0fe8cc60189b5936381267b7d8eb9039d8b0e1d8f3909a7a9066ffe4ec2731a",
+      "after_sha256": "a2616d7e1567749b50ac1105b90f26f52983feeec5937a6a6eb408ac49875d32"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/04-review-katas.md",
+      "before_sha256": "c69ed83c9b6c78fc63221e9aeb2a2d7bc7c9c82f312efee8ac4a0a725f95372f",
+      "after_sha256": "c630e87775fa81b745c2de0f39dd75a7c66b79becbaa1df45c9ef2293c1ea8ae"
+    },
+    {
+      "file": "docs/upskill/04-code-reading-gym/README.md",
+      "before_sha256": "eaccdb5dbaa78f78f76d9b66cf4db3d96ac3f0eaec1336b45b0723cd6c9958df",
+      "after_sha256": "abf4e01268cc27c124ed267032bd5a045cb9375829413434ea632f18becc6531"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/01-testing-strategy.md",
+      "before_sha256": "72eac460ed0864f61b10b56fa1cd989281fa0ff8aca01386a13e301c343f5ef3",
+      "after_sha256": "e9b670c6c4701a3732c47ca1434f2fc98622cde84b034226cbca887b6701bcfb"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/02-writing-tests-here.md",
+      "before_sha256": "481d83f1eb6efab787ddaba3535e5a79c8feb71f63778b47c8bb31b6a35d244c",
+      "after_sha256": "6b06b54c5c4cd270df51556111ba9f0438e88b28c6d83367523ac113ded2f9e6"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/03-systematic-debugging.md",
+      "before_sha256": "edbec9fe70de95da4f75ecc169a6fcf5731a34ba6dc03588aadc7889ab1f860d",
+      "after_sha256": "abb70dbc4df84ff9c11e5a082ec30b74f086fde81aa03f118f6a29f57f91d53f"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/04-performance-thinking.md",
+      "before_sha256": "047524bec2ccf909f6fea7b88f73b66def3c8523510c61bc3078c76cd881eca9",
+      "after_sha256": "772f75267b21ffd588f32531a4d9453f30fc624496052aa8d43b544c3c94a3d1"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/05-security-checklist.md",
+      "before_sha256": "1549c3e630775e423c47c4de0022de7f602abfd915cd15f5b1b3801a8515b703",
+      "after_sha256": "0418f756639dbeb15f787226b1ab54c82fd04fa7b2d8a06b45993808d52ac28b"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/06-observability-and-operations.md",
+      "before_sha256": "64c0d7e8dfba6f378ad8c6169e174c12979ee2f956f8ba1a84b5cc2f133f804f",
+      "after_sha256": "3626f77806555e528d99be103b2965edda93eaca9ad493732f27962954a76b06"
+    },
+    {
+      "file": "docs/upskill/05-quality-engineering/README.md",
+      "before_sha256": "9773013a05a9df40ddde6b45442fbdbe0dcff5fe5aaf235d154edaed4f52034d",
+      "after_sha256": "59775499177ae64ccf40bbe8ec59b10fb1847c557631ef898c8af378ec3e0381"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/01-good-first-tickets.md",
+      "before_sha256": "96b45e43610a2af17f7959cf52663a47eda6a3474b03bfc51e970342ce0d338a",
+      "after_sha256": "a82aa4438de555ebcbb4a4add51b9d1dc18576a188c4fdd383895bff9721ce8b"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/02-mid-level-feature-tickets.md",
+      "before_sha256": "89b9c88249ab8977e24544232e565bf54db91f7dc97624e48b0db9eb60de7c1d",
+      "after_sha256": "748626ba959bfda21bc740b4f74322e6b1f817898d669e52306db7c08addf2a2"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/03-senior-build-projects.md",
+      "before_sha256": "d12f2995cd8ed5411b533492ffc6c82d3eeeca7d2f05b4b27ae2044b379a19c1",
+      "after_sha256": "5c81913e9d3644bae75ee78ebec4d9d29dbef222dca4673b4fc623069a3a50c7"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/04-refactor-and-design-katas.md",
+      "before_sha256": "867814414af87756df127544c1ede2e269620980a444dc64d74b0b37eb9086d2",
+      "after_sha256": "ed3d6fc29697c2347564ea1a89f718717c2707fb0de84997665631cfc208d31d"
+    },
+    {
+      "file": "docs/upskill/06-contribution-practice/README.md",
+      "before_sha256": "cf306b2700f011aae9c160769950f55c06dce54efc9a614f590a5dc2795ca383",
+      "after_sha256": "c2fc4639ba067a67335e3ded63abf3d3ea4b838c162438568c03b7af8d6643d6"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/01-code-review-mindset.md",
+      "before_sha256": "fa90f29d7ec370552f638a934fe723e4d55d11c43c7c1b461a1f645c244a90cb",
+      "after_sha256": "734c9d6a0e317eba2da20cc03b7d734451cc03d179f9df46d46aa6ee71374d21"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/02-writing-prs-and-rfcs.md",
+      "before_sha256": "c72705922fcfaba2e6dd78357aa74b045b13ad9b12c8b1d94b109f39632a1d63",
+      "after_sha256": "3742421456ae3e2e731f5617cdfdecd63cc0186f210350e7607a93b8384ac99d"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/03-maintainer-communication.md",
+      "before_sha256": "0166a6d17cf05a743c5d8a3d61eb2bff9aa0d05fd2b6b2069cc4f7b82145b55c",
+      "after_sha256": "4ef3228f8cd6f1ed7817764d207ccb9533d85f504f4124871be3890b9c2cb12f"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/04-interview-prep-from-this-repo.md",
+      "before_sha256": "9aa0878427dfc0c5cbf4ffda1ce9ff17446c049c0877ac6463b8a2b3de55198a",
+      "after_sha256": "e4b225c81ce57fcb7365096237fb506e1af8d2c5d64f3e292d24757db5183b66"
+    },
+    {
+      "file": "docs/upskill/07-career-and-collaboration/README.md",
+      "before_sha256": "081e9e81bd3cffcf3d358b82a573af04998309ad9a38b7fe0daa56b6fb7f1c0e",
+      "after_sha256": "8046456e2bcd04c9a6d914d52ec126ffa57bdb786f7a73c21d9c78208e62d51a"
+    },
+    {
+      "file": "docs/upskill/08-reference/command-cheatsheet.md",
+      "before_sha256": "93b65c60ca0629fd7195d3b88ce318a67e5fa3d4f02a8a358c62afe170225dcd",
+      "after_sha256": "9b3dc05a701ada62111852395a6789c26f306edf00bf2c18b7d5f84120bfd028"
+    },
+    {
+      "file": "docs/upskill/08-reference/learning-rubrics.md",
+      "before_sha256": "88bb5ccdbd71abcc9ee60229fd6632e3ce8d64b4168f92da64c3b7cd04ad0404",
+      "after_sha256": "a2a46676496c861510b797468dd5b84185c0013cbe91f9303dc1615409af618f"
+    },
+    {
+      "file": "docs/upskill/08-reference/overengineering-audit.md",
+      "before_sha256": "02c5a5100f3fc5714d4a191baf5b5c0fef020ec8dae9ea46b8a874b7dd33aefc",
+      "after_sha256": "e2b5f1e339fd09720e506a9305dd1a459bd9e8b8d571f864f316118eccf2d678"
+    },
+    {
+      "file": "docs/upskill/08-reference/risk-register.md",
+      "before_sha256": "d348845777f1ecfadd1c5acc6062fe1cd27f6a5e5eac346b1f1aaf258b9796a9",
+      "after_sha256": "e2fcdad54c6246b7a4fb1f2a6390579b7c6e3db252ed2884c08ea6078351d389"
+    },
+    {
+      "file": "docs/upskill/08-reference/verification-log.md",
+      "before_sha256": "1575cb2e21b0f8cf1fea14568ebe706ae9e9a7c3b0f14dcced7e587e588eb367",
+      "after_sha256": "60d17a7a581cc6bf746f5ee67ae333074266422457e9d6db77a714f0ac5dc349"
+    },
+    {
+      "file": "docs/upskill/README.md",
+      "before_sha256": "ef9b2d6eee2822a3b91698669ab20c7cbc42e2e6dcfd25ca72563d6580660972",
+      "after_sha256": "09a2a3a02608a1968e6f0dcef0371a32446db09b54187cb3815115d1c4205015"
+    },
+    {
+      "file": "docs/upskill/junior-onboarding-guide.md",
+      "before_sha256": "1d13af3cff8fe535c3f4fab995a64e75877c29b1af0a5defe5fb70d46b51eb3c",
+      "after_sha256": "0389c02b8413f7d115cc932ba7996adb2d8b9a97340912e1e76b00c1123424f9"
+    },
+    {
+      "file": "next.config.ts",
+      "before_sha256": "614bce25b089c3f19b1e17a6346c74b858034040154c6621e7d35303004767cc",
+      "after_sha256": "73f9536fb82b7e3b29c41e04b28a9a6eedead75538c339f91220760eefe15acd"
+    },
+    {
+      "file": "package-lock.json",
+      "before_sha256": "cafdccf944be6a2ef77f101483681cae6ba982424310730fcc4210f1f0cc21e0",
+      "after_sha256": "93d525a553647e75a7d12e50951a27263203c14729fb6fc779db361e6cdf9426"
+    },
+    {
+      "file": "package.json",
+      "before_sha256": "6cf4f5b8c8cf73de6c8bf667b96465d96a6c16d74e9001c6f5e93309d9e50bb4",
+      "after_sha256": "ecd957afbe5c23888a500330ee690a72a62aedae419fc347ef499950b299fd0e"
+    },
+    {
+      "file": "scripts/verify_browser.py",
+      "before_sha256": null,
+      "after_sha256": "7f4f7f4b30c1153be44969ff8b8d7fdbe2031b95c6feeb70bdb35c3b9b9c1097"
+    },
+    {
+      "file": "src/app/globals.css",
+      "before_sha256": "910fe25ebc3baca915e5d3abd50b1598fce7f6c9d8389c90774185ca4f1fc525",
+      "after_sha256": "5af4fad4a941daa9b844f9e8aa16525abe736a8b95a577dc9677e0d418fc37fa"
+    },
+    {
+      "file": "src/app/layout.tsx",
+      "before_sha256": "f3ebc98b252736f5aa6dc1ee3098d223d80ab3f35f7eaec8dfbc0c2d3ea15716",
+      "after_sha256": "43f5126a756a969f59b87197a4ade5094720aa8ec132905f088b5c0c36c85e26"
+    },
+    {
+      "file": "src/components/LocalOperationsApp.tsx",
+      "before_sha256": "505585b5abb74eabf74efe67fb37d7f9f3b0e28187620a28e69a55c1662eb232",
+      "after_sha256": "4b175d42aef1e13888ba5eae111c9e3ef77f5aea79564d3d8c9dd4cc163b065d"
+    },
+    {
+      "file": "src/lib/ledger-domain.ts",
+      "before_sha256": null,
+      "after_sha256": "607b7989064658868ee9cb509286a13aa228e2e3c871dc5975c073384062d866"
+    },
+    {
+      "file": "src/lib/ledger-fields.ts",
+      "before_sha256": null,
+      "after_sha256": "f191b70561c2765dd60f98e8c24a65033445448c6ffcdd2e47465b21ea323546"
+    },
+    {
+      "file": "src/lib/ledger-migration.ts",
+      "before_sha256": null,
+      "after_sha256": "03b3c5d3ae7d73ac9248993e53b5e88fd6aff80254ba55a0fa7fa81fd3a87c49"
+    },
+    {
+      "file": "src/lib/ledger-schema.ts",
+      "before_sha256": null,
+      "after_sha256": "c588adab2425607001eb56bb8d1dc94b0f78b511efc6fa76e31ce745f1ca9df9"
+    },
+    {
+      "file": "src/lib/ledger-storage.ts",
+      "before_sha256": null,
+      "after_sha256": "73dd2c47cdc758704e8ab40721a2855233c2ac963740f29504ca6f82f1f285e4"
+    },
+    {
+      "file": "src/lib/local-business.ts",
+      "before_sha256": "3d65a9c38cb1b98207f9560d9d99de379844296b917602b475d550788d662839",
+      "after_sha256": "3ec23aec51e0d288d93ee6fd87cf70b25e5fddb2e66bb041a2d65e55376e9ad0"
+    },
+    {
+      "file": "tests/domain.test.ts",
+      "before_sha256": null,
+      "after_sha256": "8d9f369045c4b529c47a933c08daea4322aaa28fe68d4e48c4a646fc44765b03"
+    },
+    {
+      "file": "tests/storage.test.ts",
+      "before_sha256": null,
+      "after_sha256": "b7ddd9043a69fdd99785432809823b03251dc86759d63302d20f2912d8bad817"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "c527ee32c7eda38ff66fcf3caa1f49e5f8c809464547ee3c5a6cae84354ab1ce"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "d1aebcc06eb13dd5f8cf7a69d4d0ec6e59188f9425d3ac9c24ff17fa18f6da39"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "873e55163509cf68dc4ed15bd39078110b00ee5889567ffd84498fdf867caea5"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "0df0a11985540f7a3656f6e24a4bb4067a9ad6f875f1d40bbe630e43e3d152dd"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "512fd0728e86ee22a26f15499f80bf34829940b8da283a30db1cd3244de66e06"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "cb8db7847f2f51044e033dbf730d44f8c598c32c0c1fe065ca18e1f3f1202745"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8da42312c63d9d4deea41510d8876fc86331c8c6cf6a2000b29dc5a5b0eb88df"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "277752429aea3a3687ede7f7eaa1cd62a463ba811b54be2bb582018beebb6aa0"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "b581368ecccdae87a918730d9e29c0c52b33f152022a775bf9b9e7dc3610ba4e"
+    }
+  ],
+  "limits": [
+    "Single-browser local workspace with no authenticated account, shared backend, cross-device synchronization, bank connection or public deployment certification. Browser data can be cleared or evicted; separate exported backups are necessary.",
+    "Validated JSON aggregate in IndexedDB: 8 MiB workspace, 2000 records per ordinary collection, 10000 activity events, 30 checklist labels and 20 recovery snapshots. Capacity rejects writes without silent history truncation. Whole-workspace revision conflicts can include unrelated edits.",
+    "Supports USD, PHP, EUR and GBP with two currency decimal places and three quantity decimal places. Cash has a zero initial baseline and includes migrated opening settlements with unknown historical dates. Inventory value uses current unit cost, capped at 1000000000000 cents; not cost-layer or statutory accounting.",
+    "No payment reversal, tax, bank reconciliation, full general ledger, lot tracking or normalized indexed backend. Current activity actor is a local label, not authenticated identity.",
+    "Migration accepts supported schema2 and validated schema3; unsupported shapes, broken references and excess precision are rejected. Missing partial amounts require reconciliation; prior payment dates and recurrence ancestry cannot be inferred. Malformed persisted data is preserved for export and review, without an automatic reset.",
+    "Draft exports support manual review rather than automatic restoration. Browser and injected storage checks do not establish all-browser compatibility, complete accessibility compliance, hardware power-loss survival or production scale."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-09T22:17:35.539692+00:00"
+}

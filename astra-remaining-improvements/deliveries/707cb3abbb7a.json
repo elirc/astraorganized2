@@ -1,0 +1,143 @@
+{
+  "project": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+  "id": "707cb3abbb7a",
+  "summary": [
+    "Prevent updateTicketAction from overwriting a ticket version read earlier by requiring organization, id, and updatedAt to match in the update where clause.",
+    "Map the known Prisma P2025 compare-and-set conflict to a reload error before audit or notification side effects, while preserving the committed update DTO for existing side-effect logic.",
+    "Add a portable runtime regression that executes the real TypeScript action through a project-local VM loader for stale and successful paths."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/707cb3abbb7a/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 4,
+    "checks": [
+      {
+        "project": "_Organized Desktop/02 Build Projects/buildagenthelpdesk",
+        "id": "707cb3abbb7a",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-ticket-update.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\707cb3abbb7a",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:32:31.340078+00:00",
+        "status": "complete",
+        "log": "crud-b02-astra-runtime.log",
+        "pid": 25520,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:32:42.457271+00:00",
+        "elapsedSeconds": 11.1
+      }
+    ],
+    "limits": [
+      "Vitest, full typecheck, live Prisma/database, HTTP, and production connector timestamp precision were not run.",
+      "The runtime test uses explicit Next, Prisma, audit, and notification doubles while executing the real updateTicketAction source.",
+      "This guard covers the updateTicketAction read-to-write boundary; it does not claim serializable transactions, protection for unrelated unconditional ticket mutations, or detection of edits occurring before the server read.",
+      "Domain capability, transition, normalization and SLA helpers are substituted; status-change notification fan-out is not exercised. Timestamp collisions and edits before the server read are not detected by this guard."
+    ]
+  },
+  "courseWords": 2965,
+  "courseFiles": 9,
+  "courseLinksChecked": 24,
+  "files": [
+    {
+      "file": "apps/web/lib/actions.ts",
+      "before_sha256": "a7a6402e261e01b1e3785a3891d58af3d23987b23c42ed7c265bcd908fa0875b",
+      "after_sha256": "6ab0ae84b91e5593383b13996adf1580a6b6f029799d5f692bc08d6f0656bbc8"
+    },
+    {
+      "file": "tests/runtime-ticket-update.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "d01840a04a3416eb21643e6de36ca989a8a7148a51b5e35cc9c0b659763e91f8"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/apps-web-lib-actions.ts.before",
+      "before_sha256": null,
+      "after_sha256": "a7a6402e261e01b1e3785a3891d58af3d23987b23c42ed7c265bcd908fa0875b"
+    },
+    {
+      "file": "astraupskill/evidence/runtime-ticket-update.log",
+      "before_sha256": null,
+      "after_sha256": "841ed1268062e5b3d2542033d2261732346c7ef899daea08c126cd5b4e6024b3"
+    },
+    {
+      "file": "astraupskill/evidence/results-crud-b02.json",
+      "before_sha256": null,
+      "after_sha256": "c40c21899b830aff190bacc0b02e87f3f7011a65665d6ee81ece063044836925"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "85e98d25b3a72996e5f71e6f4f3da980b68e538b68347d4a32c8850cfdc7f9fe"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "e5943d5a83409d9be99d99798466a5fedd9e657640ab64ec19155624ec67d04b"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "d692de1b04425dc6314bb54493f8afe079d1b76b16c993c9e63ba50e3a2857cf"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "3aa3a2eeedb6e64cb0ea770514fe9fd1d84f37300ffbc64bebd0f6e07914ee17"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "f3ae2941afa56620241ae498df00b0584dcba4b1c371dfcc4a59a5842fcae06f"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "32d5f58c89f999fd97997397295c2e18b477b1706a4f4421be285a5bf2e4952d"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "30eb6fe9fdae697892943989d3fc2d0ea3346a065143ccbd9aa7676af549b5a0"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "cc9e7c3e78893ec447e7922851bb4b95c08546d6c983087078b33e2a659e1133"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8e674ac52d54feb1d0349d05812befdd78043be945711f402dce2fbd31532a45"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "a9d3087446234b0d8bc966f59591c858a4996fd5ffcdae0890aae0a6d1cedbb3"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "35d85319b7ab3ef8b035ac59e15352f21dd2ec64640f87e3bb6b79dfbe2f6126"
+    }
+  ],
+  "limits": [
+    "Vitest, full typecheck, live Prisma/database, HTTP, and production connector timestamp precision were not run.",
+    "The runtime test uses explicit Next, Prisma, audit, and notification doubles while executing the real updateTicketAction source.",
+    "This guard covers the updateTicketAction read-to-write boundary; it does not claim serializable transactions, protection for unrelated unconditional ticket mutations, or detection of edits occurring before the server read.",
+    "Domain capability, transition, normalization and SLA helpers are substituted; status-change notification fan-out is not exercised. Timestamp collisions and edits before the server read are not detected by this guard."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:36:25.010380+00:00"
+}

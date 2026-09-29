@@ -1,0 +1,131 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww28",
+  "id": "5528ac452b91",
+  "summary": [
+    "Reject multipart part numbers below one as well as above expectedParts.",
+    "Prevent malformed chunk storage and metadata writes while preserving valid retry writes.",
+    "Execute the real UploadService through five dependency-free runtime cases."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/5528ac452b91/results-crud-b06.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 5,
+    "checks": [
+      {
+        "project": "_Organized Desktop/05 Numbered Experiments/ww28",
+        "id": "5528ac452b91",
+        "command": [
+          "node",
+          "--experimental-vm-modules",
+          "--test",
+          "tests/runtime-upload-bounds.test.mjs"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\5528ac452b91",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T03:28:51.080542+00:00",
+        "status": "complete",
+        "log": "crud-b06-astra-runtime.log",
+        "pid": 32484,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T03:29:04.942792+00:00",
+        "elapsedSeconds": 13.84
+      }
+    ],
+    "limits": [
+      "No live Next, Prisma, replica filesystem, completion, quota, or concurrent retry execution.",
+      "Historical malformed chunks are not migrated or deleted by this bounded fix.",
+      "Actual guards, permission rules, base64 utility and error classes execute. Repository/storage adapters do not verify durable storage or atomic retry replacement; delete precedes replacement write."
+    ]
+  },
+  "courseWords": 1747,
+  "courseFiles": 9,
+  "courseLinksChecked": 17,
+  "files": [
+    {
+      "file": "src/services/uploadService.ts",
+      "before_sha256": "258dd32cd21533e13ef6bdbfad8f40052ce255193da603419dc85b884043614d",
+      "after_sha256": "030add54b5dff46b2bccd1955aff6c1fc0c497db119ddadc701b55714ed48b9d"
+    },
+    {
+      "file": "tests/runtime-upload-bounds.test.mjs",
+      "before_sha256": null,
+      "after_sha256": "eff591d999011a093f3c3f977d010ec9a849faa97f27bd8ce5ad7c637b70392b"
+    },
+    {
+      "file": "tests/helpers/load-typescript.mjs",
+      "before_sha256": null,
+      "after_sha256": "23571070f3116a892f2b980cb012bfd0efda774b7e22cb4a137382bbab926561"
+    },
+    {
+      "file": "astraupskill/snapshots/src/services/uploadService.ts",
+      "before_sha256": null,
+      "after_sha256": "258dd32cd21533e13ef6bdbfad8f40052ce255193da603419dc85b884043614d"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b06-astra-runtime.log",
+      "before_sha256": null,
+      "after_sha256": "deea7f55569f146d48f3f1edb4a746beecd2070bf9269a46e4ccd50199d2fa24"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "eef58d62a294f1d5d638f9aa4106b5b4de3c81646ddca71ae390cd15b6bd384d"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "a5cd27e1b914877db081d2ebff12458d9c30e409cd430a6a97e66c63e6b5562e"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "43e397cc81019f1d50f0342d3aabd8327eff19bdcb8addfdf6f67451cb0feb14"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "d7d211625dca1d6258f3a2f9447f0a6203eeb6d6a0ae61cc11ba6959cdc75252"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "39a4a171bd0f352c9ecedb6309707dee29028320d308b621c38c81d484dd9e5e"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "aca7893fb31a776e91fd98d6a7f2458dee35dd52fdac28d12326fc2c96505f89"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "86d21a9d9a8bd19d30295bef0b9b126e71417f840b9c64345655932e816746e6"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "c6db4d038955403d91ad77092eb6cea29f7585d699083f921dd1968babd22586"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "f884db39dd91621b65b2edf8c866a0b847be5a66cc6a9aeccd7c95c88a247b69"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "e6f060a1cc23737652f72ce309472095da69ee3d94831ea9be2e2d2516145b6c"
+    }
+  ],
+  "limits": [
+    "No live Next, Prisma, replica filesystem, completion, quota, or concurrent retry execution.",
+    "Historical malformed chunks are not migrated or deleted by this bounded fix.",
+    "Actual guards, permission rules, base64 utility and error classes execute. Repository/storage adapters do not verify durable storage or atomic retry replacement; delete precedes replacement write."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T03:30:17.216145+00:00"
+}

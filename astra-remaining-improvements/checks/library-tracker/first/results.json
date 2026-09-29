@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "javaTests": 44,
+  "processChecks": 9,
+  "total": 53,
+  "checks": [
+    "create-and-checkout",
+    "restart-current-loans",
+    "return-and-history",
+    "edit-and-archive",
+    "history-blocks-delete",
+    "incomplete-eof",
+    "unused-confirmed-delete",
+    "corrupt-startup",
+    "two-jvm-conflict"
+  ],
+  "environment": "JDK 17; disposable temporary fixtures; no personal library data used"
+}

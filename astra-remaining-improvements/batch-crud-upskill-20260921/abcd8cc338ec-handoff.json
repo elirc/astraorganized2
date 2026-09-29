@@ -1,0 +1,26 @@
+{
+  "id": "abcd8cc338ec",
+  "project": "_Organized Desktop/04 JavaScript Training/jstrain2",
+  "finding": "The workflow PUT route now performs the tenant-scoped parent update and optional child replacement through one Drizzle transaction. The course teaches the concrete omitted-versus-empty steps contract, version increment, tenant predicate, callback rejection, and the limits of a transaction double.",
+  "courseFiles": [
+    "astraupskill/README.md",
+    "astraupskill/01-CODEBASE-MAP.md",
+    "astraupskill/02-CONCEPTS.md",
+    "astraupskill/03-WORKED-CHANGE.md",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md",
+    "astraupskill/05-PRACTICE.md",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+    "astraupskill/07-TRACE-LAB.md",
+    "astraupskill/VERIFICATION.md"
+  ],
+  "sourceLinks": [
+    "src/app/api/workflows/[id]/route.ts",
+    "tests/runtime-workflow-transaction.test.mjs",
+    "astraupskill/snapshots/workflow-route.ts.original.txt"
+  ],
+  "evidence": "The staged runtime workflow transaction check passed seven tests; the course records that its Drizzle transaction double proves call scope, ordering, and callback rejection, not PostgreSQL rollback or native validation.",
+  "limitations": [
+    "No source, test, spec, or evidence files were modified.",
+    "Native Next.js, PostgreSQL, browser, and real schema validation suites remain outside the cited evidence."
+  ]
+}

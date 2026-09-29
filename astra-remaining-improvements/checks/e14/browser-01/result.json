@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "checks": [
+    "Bootstrap through the browser creates an authenticated organization",
+    "Session token is absent from browser storage and cookies",
+    "Browser creates a persisted dashboard",
+    "Real two-tab stale update is rejected and draft retained",
+    "Explicit conflict resolution and independent field merge persist",
+    "Invalid JSON leaves the saved record unchanged",
+    "Pagination reads bounded pages and stored markup renders as text",
+    "Telemetry ingestion and search run through the real browser and SQLite",
+    "Desktop and narrow layouts render without horizontal overflow",
+    "Revision-protected browser delete removes the persisted dashboard",
+    "Logout and reload clear the in-memory browser session",
+    "No unhandled browser JavaScript exceptions"
+  ],
+  "browserErrors": [],
+  "serverStopped": true
+}

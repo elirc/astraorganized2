@@ -1,0 +1,20 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/ww15",
+  "id": "678b11ff9b03",
+  "command": [
+    "node",
+    "--experimental-vm-modules",
+    "--test",
+    "tests/transaction-offer-policy.test.mjs"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\678b11ff9b03",
+  "environmentOverrides": {},
+  "startedAt": "2026-09-22T02:37:34.426429+00:00",
+  "status": "complete",
+  "log": "crud-b05-ww15-runtime2.log",
+  "pid": 24648,
+  "exitCode": 0,
+  "passed": true,
+  "finishedAt": "2026-09-22T02:37:41.445908+00:00",
+  "elapsedSeconds": 7.01
+}

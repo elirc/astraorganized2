@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "mode": "api",
+  "database": "PostgreSQL 18; helper-owned temporary loopback cluster",
+  "setupTests": 3,
+  "backendTests": 54
+}

@@ -1,0 +1,18 @@
+{
+  "command": [
+    "node",
+    "node_modules/vitest/vitest.mjs",
+    "run",
+    "--reporter=json",
+    "--outputFile=C:/Users/Owner/Desktop/AstraOrganized2/astra-remaining-improvements/checks/buildsmallplates/test-final-03-results.json"
+  ],
+  "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\676bcb38df2b",
+  "startedAt": "2026-09-12T16:51:34.443048+00:00",
+  "status": "complete",
+  "log": "test-final-03.log",
+  "pid": 39780,
+  "exitCode": 1,
+  "passed": false,
+  "finishedAt": "2026-09-12T16:52:17.554526+00:00",
+  "elapsedSeconds": 43.11
+}

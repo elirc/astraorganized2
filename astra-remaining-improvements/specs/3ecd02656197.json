@@ -1,0 +1,55 @@
+{
+  "summary": [
+    "Secure decision DTO projection omits compensation for unauthorized roles.",
+    "Dashboard and interview pages sort raw instants before formatting, with deterministic invalid-date fallback.",
+    "Job rows count active applications only and render an explicit empty highlighted-job state.",
+    "Pure Vitest regressions verify projection, ordering, active filtering, empty state, and snapshot non-mutation."
+  ],
+  "changedFiles": [
+    "README.md",
+    "package.json",
+    "package-lock.json",
+    "vitest.config.ts",
+    "src/features/dashboard/server/get-dashboard-page-data.ts",
+    "src/features/decisions/server/get-decisions-page-data.ts",
+    "src/features/interviews/server/get-interviews-page-data.ts",
+    "src/features/jobs/server/get-jobs-page-data.ts",
+    "src/features/jobs/components/jobs-screen.tsx",
+    "src/features/shared/lib/formatters.ts",
+    "src/features/shared/server/page-data.test.ts",
+    "astraupskill/snapshots/formatters-before.ts.txt",
+    "astraupskill/snapshots/get-dashboard-page-data-before.ts.txt",
+    "astraupskill/snapshots/get-decisions-page-data-before.ts.txt",
+    "astraupskill/snapshots/get-interviews-page-data-before.ts.txt",
+    "astraupskill/snapshots/get-jobs-page-data-before.ts.txt",
+    "astraupskill/snapshots/jobs-screen-before.tsx.txt",
+    "astraupskill/evidence/root-install-02.json",
+    "astraupskill/evidence/root-install-02.log",
+    "astraupskill/evidence/test-02.json",
+    "astraupskill/evidence/test-02.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/root-build-01.json",
+    "astraupskill/evidence/root-build-01.log",
+    "astraupskill/evidence/root-lint-02.json",
+    "astraupskill/evidence/root-lint-02.log",
+    "astraupskill/evidence/root-test-01.json",
+    "astraupskill/evidence/root-test-01.log",
+    "astraupskill/evidence/root-typecheck-01.json",
+    "astraupskill/evidence/root-typecheck-01.log"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/3ecd02656197/results.json",
+    "expectedTests": 7,
+    "command": "npm test; npm run lint; npm run build",
+    "environment": "Node/npm with Next 16.2.2; no database or external service"
+  },
+  "limits": [
+    "Seeded in-memory read-only repository; no CRUD write or database transaction coverage.",
+    "Fixed demo user user_jordan and explicit role fixtures; no real authentication, tenant isolation, or authorization middleware.",
+    "Compensation policy is enforced at DTO serialization; existing note visibility policy is unchanged.",
+    "Invalid timestamps display Unknown date and sort last; future write validation is unimplemented.",
+    "The proposed optimistic-concurrency stage-change command is teaching material only.",
+    "Build and static checks passed; no browser interaction or real authenticated request was exercised."
+  ]
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "project": "12",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "14",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "15",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "16",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "17",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "19",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "20",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "18",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "11",
+    "check": "browser",
+    "passed": true
+  },
+  {
+    "project": "13",
+    "check": "browser",
+    "passed": true
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "id": "f5bd710b171f",
+  "project": "_Organized Desktop/03 Master Projects/mastermatter",
+  "summary": [
+    "Treat a zero-row channel update as a not-found failure instead of continuing as if the channel was updated.",
+    "Preserve the existing multiple-row defensive failure while returning the production store not-found error for a missing channel."
+  ],
+  "changedFiles": [
+    "mattermost/server/channels/store/sqlstore/channel_store.go",
+    "mattermost/server/channels/store/sqlstore/channel_store_update_test.go",
+    "mattermost/tests/crud-b02/run_channel_store_harness.py",
+    "astraupskill/snapshots/channel_store.go.original.txt",
+    "astraupskill/evidence/crud-b02-go-harness-final.log",
+    "astraupskill/evidence/results.json",
+    "astraupskill/evidence/toolchain-verification.json"
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/f5bd710b171f/results-crud-b02.json"
+  },
+  "limits": [
+    "Six Go subtests execute the exact extracted updateChannelT method and row-count helper with explicit SQL, model and error contracts.",
+    "The native Mattermost package test, PostgreSQL integration, model validation and unique-constraint classification were not executed.",
+    "Outer Update transaction finalization and public-channel propagation were reviewed in source only; the harness does not execute them."
+  ]
+}

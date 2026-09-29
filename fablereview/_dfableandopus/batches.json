@@ -1,0 +1,1735 @@
+{
+ "D01": [
+  {
+   "slug": "aiapplybot",
+   "name": "aiapplybot",
+   "abs": "C:\\Users\\Owner\\Desktop\\aiapplybot",
+   "stack": [
+    "python"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "aiheartbeat",
+   "name": "aiheartbeat",
+   "abs": "C:\\Users\\Owner\\Desktop\\aiheartbeat",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "andie",
+   "name": "_Organized Desktop/12 Other Projects/andie",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\12 Other Projects\\andie",
+   "stack": [
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "appmakertrack",
+   "name": "_Organized Desktop/08 App And Product Projects/appmakertrack",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\appmakertrack",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "astra2",
+   "name": "astra2",
+   "abs": "C:\\Users\\Owner\\Desktop\\astra2",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "astra4-2",
+   "name": "astra4.2",
+   "abs": "C:\\Users\\Owner\\Desktop\\astra4.2",
+   "stack": [
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "b1",
+   "name": "_Organized Desktop/05 Numbered Experiments/B1",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\B1",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "borrowbox",
+   "name": "borrowbox",
+   "abs": "C:\\Users\\Owner\\Desktop\\borrowbox",
+   "stack": [
+    "dotnet"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildantigvg",
+   "name": "_Organized Desktop/02 Build Projects/buildantigVG",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildantigVG",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildasana",
+   "name": "_Organized Desktop/02 Build Projects/buildasana",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildasana",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D02": [
+  {
+   "slug": "buildbusinesses",
+   "name": "buildbusinesses",
+   "abs": "C:\\Users\\Owner\\Desktop\\buildbusinesses",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildcrmpyjs",
+   "name": "_Organized Desktop/02 Build Projects/buildCRMPYJS",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildCRMPYJS",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildgum",
+   "name": "_Organized Desktop/02 Build Projects/buildgum",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildgum",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildjira",
+   "name": "_Organized Desktop/02 Build Projects/buildjira",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildjira",
+   "stack": [
+    "dotnet",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildsmallplates",
+   "name": "buildsmallplates",
+   "abs": "C:\\Users\\Owner\\Desktop\\buildsmallplates",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildsql",
+   "name": "buildsql",
+   "abs": "C:\\Users\\Owner\\Desktop\\buildsql",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildsubbox",
+   "name": "_Organized Desktop/02 Build Projects/buildsubbox",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\02 Build Projects\\buildsubbox",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "buildwhiteboard",
+   "name": "buildwhiteboard",
+   "abs": "C:\\Users\\Owner\\Desktop\\buildwhiteboard",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "campusops",
+   "name": "campusops",
+   "abs": "C:\\Users\\Owner\\Desktop\\campusops",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "d1",
+   "name": "_Organized Desktop/05 Numbered Experiments/D1",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\D1",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D03": [
+  {
+   "slug": "e12",
+   "name": "_Organized Desktop/05 Numbered Experiments/e12",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e12",
+   "stack": [
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "e13",
+   "name": "_Organized Desktop/05 Numbered Experiments/e13",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e13",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "e14",
+   "name": "_Organized Desktop/05 Numbered Experiments/e14",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e14",
+   "stack": [
+    "python"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "e15",
+   "name": "_Organized Desktop/05 Numbered Experiments/e15",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e15",
+   "stack": [
+    "python"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "e20",
+   "name": "_Organized Desktop/05 Numbered Experiments/e20",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e20",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "e6",
+   "name": "_Organized Desktop/05 Numbered Experiments/e6",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\e6",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "formforge",
+   "name": "formforge",
+   "abs": "C:\\Users\\Owner\\Desktop\\formforge",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "geminiorganized-llm-generated-helper",
+   "name": "geminiorganized/LLM_Generated_Helper",
+   "abs": "C:\\Users\\Owner\\Desktop\\geminiorganized\\LLM_Generated_Helper",
+   "stack": [
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "geminiorganized-opensource-upskilling-ramp",
+   "name": "geminiorganized/OpenSource_Upskilling_.Ramp",
+   "abs": "C:\\Users\\Owner\\Desktop\\geminiorganized\\OpenSource_Upskilling_.Ramp",
+   "stack": [
+    "dotnet",
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "geminiorganized-opensource-upskilling-stripe",
+   "name": "geminiorganized/OpenSource_Upskilling_.Stripe",
+   "abs": "C:\\Users\\Owner\\Desktop\\geminiorganized\\OpenSource_Upskilling_.Stripe",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D04": [
+  {
+   "slug": "globgame",
+   "name": "_Organized Desktop/12 Other Projects/GlobGame",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\12 Other Projects\\GlobGame",
+   "stack": [
+    "next",
+    "node",
+    "prisma"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "grokbuildecommerceproject",
+   "name": "grokbuildecommerceproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildecommerceproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "grokbuildhrproject",
+   "name": "grokbuildhrproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildhrproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "grokbuildmultitenantproject",
+   "name": "grokbuildmultitenantproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildmultitenantproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "grokbuildorderproject",
+   "name": "grokbuildorderproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildorderproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "grokbuildppmproject",
+   "name": "grokbuildppmproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildppmproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "grokbuildteamproject",
+   "name": "grokbuildteamproject",
+   "abs": "C:\\Users\\Owner\\Desktop\\grokbuildteamproject",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "j1",
+   "name": "_Organized Desktop/05 Numbered Experiments/J1",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\J1",
+   "stack": [],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "j2",
+   "name": "_Organized Desktop/05 Numbered Experiments/j2",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j2",
+   "stack": [],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "j3",
+   "name": "_Organized Desktop/05 Numbered Experiments/j3",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j3",
+   "stack": [],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D05": [
+  {
+   "slug": "j4",
+   "name": "_Organized Desktop/05 Numbered Experiments/j4",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j4",
+   "stack": [],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "j5",
+   "name": "_Organized Desktop/05 Numbered Experiments/j5",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j5",
+   "stack": [],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "j7",
+   "name": "_Organized Desktop/05 Numbered Experiments/j7",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\j7",
+   "stack": [],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "jdtrrain2-1",
+   "name": "_Organized Desktop/12 Other Projects/jdtrrain2.1",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\12 Other Projects\\jdtrrain2.1",
+   "stack": [
+    "next",
+    "node",
+    "prisma"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "job-track-live-chat-support-platform",
+   "name": "_Organized Desktop/08 App And Product Projects/job track/live-chat-support-platform",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\job track\\live-chat-support-platform",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "job-track-restaurant-kitchen-display-system",
+   "name": "_Organized Desktop/08 App And Product Projects/job track/restaurant-kitchen-display-system",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\job track\\restaurant-kitchen-display-system",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "job-track-task-queue-system",
+   "name": "_Organized Desktop/08 App And Product Projects/job track/task-queue-system",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\job track\\task-queue-system",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "jsprojectlearn",
+   "name": "JSProjectLearn",
+   "abs": "C:\\Users\\Owner\\Desktop\\JSProjectLearn",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "jstrain2-3",
+   "name": "_Organized Desktop/04 JavaScript Training/jstrain2.3",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\jstrain2.3",
+   "stack": [
+    "next",
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "jstrain3-0",
+   "name": "_Organized Desktop/04 JavaScript Training/jstrain3.0",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\jstrain3.0",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D06": [
+  {
+   "slug": "lucasrouter",
+   "name": "lucasrouter",
+   "abs": "C:\\Users\\Owner\\Desktop\\lucasrouter",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "master-6",
+   "name": "_Organized Desktop/03 Master Projects/master 6",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master 6",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "master2",
+   "name": "_Organized Desktop/03 Master Projects/master2",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master2",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "master3",
+   "name": "_Organized Desktop/03 Master Projects/master3",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master3",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "master4",
+   "name": "_Organized Desktop/03 Master Projects/master4",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master4",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "master7",
+   "name": "_Organized Desktop/03 Master Projects/master7",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\03 Master Projects\\master7",
+   "stack": [
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "meterforge",
+   "name": "meterforge",
+   "abs": "C:\\Users\\Owner\\Desktop\\meterforge",
+   "stack": [
+    "dotnet"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "missioncontrol",
+   "name": "missioncontrol",
+   "abs": "C:\\Users\\Owner\\Desktop\\missioncontrol",
+   "stack": [
+    "dotnet"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "netgum",
+   "name": "_Organized Desktop/01 Net Workspaces/.netgum",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netgum",
+   "stack": [
+    "dotnet"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "nethris",
+   "name": "_Organized Desktop/01 Net Workspaces/.nethris",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.nethris",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  }
+ ],
+ "D07": [
+  {
+   "slug": "netpastebin",
+   "name": "_Organized Desktop/01 Net Workspaces/.netpastebin",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netpastebin",
+   "stack": [
+    "dotnet",
+    "node",
+    "react-jsx"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "nettrello",
+   "name": "_Organized Desktop/01 Net Workspaces/.nettrello",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.nettrello",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "netvg",
+   "name": "_Organized Desktop/01 Net Workspaces/.netvg",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netvg",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "netzen",
+   "name": "_Organized Desktop/01 Net Workspaces/.netzen",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\01 Net Workspaces\\.netzen",
+   "stack": [
+    "dotnet",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "react",
+   "name": "_Organized Desktop/04 JavaScript Training/react",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\04 JavaScript Training\\react",
+   "stack": [
+    "node"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "w24",
+   "name": "_Organized Desktop/05 Numbered Experiments/w24",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\w24",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "ww17",
+   "name": "_Organized Desktop/05 Numbered Experiments/ww17",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww17",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "ww27",
+   "name": "_Organized Desktop/05 Numbered Experiments/ww27",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww27",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "ww37",
+   "name": "_Organized Desktop/05 Numbered Experiments/ww37",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww37",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "ww39",
+   "name": "_Organized Desktop/05 Numbered Experiments/ww39",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww39",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D08": [
+  {
+   "slug": "ww5",
+   "name": "_Organized Desktop/05 Numbered Experiments/ww5",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\ww5",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "z1",
+   "name": "_Organized Desktop/05 Numbered Experiments/z1",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z1",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "z3-customer-feedback-board",
+   "name": "_Organized Desktop/05 Numbered Experiments/z3/customer-feedback-board",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z3\\customer-feedback-board",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "z3-founder-crm-lite",
+   "name": "_Organized Desktop/05 Numbered Experiments/z3/founder-crm-lite",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z3\\founder-crm-lite",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "z6",
+   "name": "_Organized Desktop/05 Numbered Experiments/z6",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z6",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "z7",
+   "name": "_Organized Desktop/05 Numbered Experiments/z7",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z7",
+   "stack": [
+    "next",
+    "node",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "z9",
+   "name": "_Organized Desktop/05 Numbered Experiments/z9",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\z9",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "zz8",
+   "name": "_Organized Desktop/05 Numbered Experiments/zz8",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\05 Numbered Experiments\\zz8",
+   "stack": [
+    "next",
+    "node",
+    "prisma",
+    "ts"
+   ],
+   "wave": 2,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "calendar-jobtrack",
+   "name": "calendar+jobtrack",
+   "abs": "C:\\Users\\Owner\\Desktop\\calendar+jobtrack",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "devdeck",
+   "name": "devdeck",
+   "abs": "C:\\Users\\Owner\\Desktop\\devdeck",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D09": [
+  {
+   "slug": "finance-dashboard",
+   "name": "finance-dashboard",
+   "abs": "C:\\Users\\Owner\\Desktop\\finance-dashboard",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "job-track",
+   "name": "_Organized Desktop/08 App And Product Projects/job track",
+   "abs": "C:\\Users\\Owner\\Desktop\\_Organized Desktop\\08 App And Product Projects\\job track",
+   "stack": [
+    "node",
+    "react-jsx",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "jobtrack",
+   "name": "jobtrack",
+   "abs": "C:\\Users\\Owner\\Desktop\\jobtrack",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-asset-checkout",
+   "name": "JS1/asset-checkout",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\asset-checkout",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-budget-tracker",
+   "name": "JS1/budget-tracker",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\budget-tracker",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-campaign-planner",
+   "name": "JS1/campaign-planner",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\campaign-planner",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "js1-contact-book",
+   "name": "JS1/contact-book",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\contact-book",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-course-roster",
+   "name": "JS1/course-roster",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\course-roster",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-equipment-maintenance",
+   "name": "JS1/equipment-maintenance",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\equipment-maintenance",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-event-admin",
+   "name": "JS1/event-admin",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\event-admin",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D10": [
+  {
+   "slug": "js1-field-service",
+   "name": "JS1/field-service",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\field-service",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-flashcards",
+   "name": "JS1/flashcards",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\flashcards",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-focus-timer",
+   "name": "JS1/focus-timer",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\focus-timer",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-forum-search",
+   "name": "JS1/forum-search",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\forum-search",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-grant-manager",
+   "name": "JS1/grant-manager",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\grant-manager",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-gym-membership",
+   "name": "JS1/gym-membership",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\gym-membership",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "js1-habit-tracker",
+   "name": "JS1/habit-tracker",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\habit-tracker",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-incident-response",
+   "name": "JS1/incident-response",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\incident-response",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-invoice-studio",
+   "name": "JS1/invoice-studio",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\invoice-studio",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-issue-desk",
+   "name": "JS1/issue-desk",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\issue-desk",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D11": [
+  {
+   "slug": "js1-job-pipeline",
+   "name": "JS1/job-pipeline",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\job-pipeline",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-kanban-flow",
+   "name": "JS1/kanban-flow",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\kanban-flow",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-learning-paths",
+   "name": "JS1/learning-paths",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\learning-paths",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-legal-case-tracker",
+   "name": "JS1/legal-case-tracker",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\legal-case-tracker",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-library-lending",
+   "name": "JS1/library-lending",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\library-lending",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "js1-live-chat",
+   "name": "JS1/live-chat",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\live-chat",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-mini-blog",
+   "name": "JS1/mini-blog",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\mini-blog",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-note-vault",
+   "name": "JS1/note-vault",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\note-vault",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-org-explorer",
+   "name": "JS1/org-explorer",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\org-explorer",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-pantry-inventory",
+   "name": "JS1/pantry-inventory",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\pantry-inventory",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D12": [
+  {
+   "slug": "js1-patient-intake",
+   "name": "JS1/patient-intake",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\patient-intake",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-poll-studio",
+   "name": "JS1/poll-studio",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\poll-studio",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-procurement-portal",
+   "name": "JS1/procurement-portal",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\procurement-portal",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-project-risks",
+   "name": "JS1/project-risks",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\project-risks",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-property-rentals",
+   "name": "JS1/property-rentals",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\property-rentals",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-pulse-analytics",
+   "name": "JS1/pulse-analytics",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\pulse-analytics",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "js1-quality-audits",
+   "name": "JS1/quality-audits",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\quality-audits",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-reading-list",
+   "name": "JS1/reading-list",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\reading-list",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-recipe-studio",
+   "name": "JS1/recipe-studio",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\recipe-studio",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-research-studies",
+   "name": "JS1/research-studies",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\research-studies",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D13": [
+  {
+   "slug": "js1-room-booking",
+   "name": "JS1/room-booking",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\room-booking",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-secure-notes",
+   "name": "JS1/secure-notes",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\secure-notes",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-snippet-vault",
+   "name": "JS1/snippet-vault",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\snippet-vault",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-stock-catalog",
+   "name": "JS1/stock-catalog",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\stock-catalog",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-subscription-billing",
+   "name": "JS1/subscription-billing",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\subscription-billing",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-support-tickets",
+   "name": "JS1/support-tickets",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\support-tickets",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "js1-task-board",
+   "name": "JS1/task-board",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\task-board",
+   "stack": [
+    "node"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-travel-requests",
+   "name": "JS1/travel-requests",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\travel-requests",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-vendor-contracts",
+   "name": "JS1/vendor-contracts",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\vendor-contracts",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "js1-volunteer-coordinator",
+   "name": "JS1/volunteer-coordinator",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\volunteer-coordinator",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  }
+ ],
+ "D14": [
+  {
+   "slug": "js1-warehouse-ledger",
+   "name": "JS1/warehouse-ledger",
+   "abs": "C:\\Users\\Owner\\Desktop\\JS1\\warehouse-ledger",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-01-task-manager",
+   "name": "newcodexJS/01-task-manager",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\01-task-manager",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-02-contact-book",
+   "name": "newcodexJS/02-contact-book",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\02-contact-book",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-03-expense-tracker",
+   "name": "newcodexJS/03-expense-tracker",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\03-expense-tracker",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-04-notes-app",
+   "name": "newcodexJS/04-notes-app",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\04-notes-app",
+   "stack": [
+    "node",
+    "react-jsx"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-05-recipe-manager",
+   "name": "newcodexJS/05-recipe-manager",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\05-recipe-manager",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-06-bookmark-manager",
+   "name": "newcodexJS/06-bookmark-manager",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\06-bookmark-manager",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-07-blog-platform",
+   "name": "newcodexJS/07-blog-platform",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\07-blog-platform",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-08-kanban-board",
+   "name": "newcodexJS/08-kanban-board",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\08-kanban-board",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "newcodexjs-09-job-application-tracker",
+   "name": "newcodexJS/09-job-application-tracker",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\09-job-application-tracker",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  }
+ ],
+ "D15": [
+  {
+   "slug": "newcodexjs-10-inventory-management",
+   "name": "newcodexJS/10-inventory-management",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\10-inventory-management",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "newcodexjs-11-survey-builder",
+   "name": "newcodexJS/11-survey-builder",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\11-survey-builder",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-12-chat-polling",
+   "name": "newcodexJS/12-chat-polling",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\12-chat-polling",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-13-ecommerce-storefront",
+   "name": "newcodexJS/13-ecommerce-storefront",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\13-ecommerce-storefront",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-14-appointment-booking",
+   "name": "newcodexJS/14-appointment-booking",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\14-appointment-booking",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-15-api-tester",
+   "name": "newcodexJS/15-api-tester",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\15-api-tester",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  },
+  {
+   "slug": "newcodexjs-16-team-project-management",
+   "name": "newcodexJS/16-team-project-management",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\16-team-project-management",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "newcodexjs-17-support-ticket-system",
+   "name": "newcodexJS/17-support-ticket-system",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\17-support-ticket-system",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "newcodexjs-18-learning-management-system",
+   "name": "newcodexJS/18-learning-management-system",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\18-learning-management-system",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  },
+  {
+   "slug": "newcodexjs-19-realtime-chat-platform",
+   "name": "newcodexJS/19-realtime-chat-platform",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\19-realtime-chat-platform",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "REWORK"
+  }
+ ],
+ "D16": [
+  {
+   "slug": "newcodexjs-20-marketplace-platform",
+   "name": "newcodexJS/20-marketplace-platform",
+   "abs": "C:\\Users\\Owner\\Desktop\\newcodexJS\\20-marketplace-platform",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "recipeview",
+   "name": "recipeview",
+   "abs": "C:\\Users\\Owner\\Desktop\\recipeview",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "IMPROVE"
+  },
+  {
+   "slug": "recipeweb",
+   "name": "recipeweb",
+   "abs": "C:\\Users\\Owner\\Desktop\\recipeweb",
+   "stack": [
+    "node",
+    "ts"
+   ],
+   "wave": 1,
+   "verdict": "KEEP"
+  }
+ ]
+}

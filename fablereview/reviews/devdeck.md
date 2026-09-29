@@ -1,0 +1,45 @@
+# devdeck — Fable review
+
+- **Path:** `devdeck`  ·  **Wave:** 1  ·  **Stack:** React/TS, Vite, Dexie over IndexedDB, Vitest + fake-indexeddb  ·  **Batch:** B08
+- **Astra's change (one line):** Adds `src/importValidation.ts` — an assertion-style validator for a whole export payload (schema version, review-state fields and uniqueness, review logs, settings, meta) — and calls it at the top of `importData` in `src/db.ts` so a malformed backup throws before the `rw` transaction opens; plus a one-snippet edit in `src/content/code-quality.ts` to satisfy an existing content-QA line-count rule.
+- **Course size:** 7,465 words across 9 files  ·  **Tests claimed:** 62  ·  **Tests found on disk:** 62 total in the pre-existing suite; **Astra's delta is 2 `it()` blocks** in the new `src/importValidation.test.ts`
+
+## Scores
+
+| D1 Accuracy | D2 Change quality | D3 Pedagogy | D4 CRUD relevance | D5 Reproducibility | D6 Verification honesty | D7 Junior fit | D8 Specificity | Avg |
+|---|---|---|---|---|---|---|---|---|
+| 4 | 4 | 3 | 3 | 4 | 3 | 4 | 3 | 3.5 |
+
+**Verdict:** IMPROVE    **Path role:** elective
+
+## What Astra did well
+- The validator is placed before the transaction, not inside it — `src/db.ts:166` `importData` calls `validateImport(payload)` as its first statement, then opens `db.transaction("rw", [...], ...)`. That ordering is the whole point of the lesson and it is implemented correctly.
+- `validateImport` is declared as `asserts payload is ExportData`, so TypeScript narrows after the call. That is a genuinely useful TS idiom for a junior to meet in real code, and the file explains why in a two-line comment ("JSON has no runtime TypeScript types").
+- The delta test is a rollback test, not a throw test. `src/importValidation.test.ts` takes a real export via `buildExport()`, mutates it four ways (negative `due`, duplicated state, `newCardsPerDay: -1`, `meta.lastReviewDay: "2025-02-30"`), asserts the rejection, and then re-exports and `toEqual`-compares `reviewStates`, `settings` and `meta` against the original. It runs against actual Dexie methods via `fake-indexeddb/auto`, which the project already had in `devDependencies` (`package.json:30`), so setup does not drift.
+- The second test proves the harder half of the contract: unknown-card logs are dropped, a restored state keeps `reps: 7`, and missing known cards are recreated (`expect(await db.reviewStates.count()).toBeGreaterThan(1)`).
+
+## Problems found (evidence required)
+- **[D6]** `astraupskill/VERIFICATION.md` states **"Automated test cases: 62"**. `batch04/logs/74-tests.log` shows `Test Files 4 passed (4) / Tests 62 passed (62)` — that is the whole pre-existing DevDeck suite (`app.integration.test.ts`, `queue.test.ts`, `scheduler.test.ts`) plus Astra's 2. The deliverable's own test contribution is 2 cases, and the page never separates the two.
+- **[D1/D3]** The trace lab points every boundary at the same place. `07-TRACE-LAB.md` "Boundary 1" is *"The Settings UI reads an uploaded JSON backup"*, yet its instruction is *"Find the relevant call in the source for this project, starting with src/db.ts and `importData`"* — and Boundaries 2 through 6 repeat that identical sentence. The actual UI boundary is `src/screens/Settings.tsx:131` (`accept="application/json"`) calling into `src/store.ts:295` (`const restored = await importData(payload, Date.now())`), and neither file is named anywhere in the trace lab. A learner following the instruction literally never sees the file-read or store layer.
+- **[D2]** The `src/content/code-quality.ts` edit is change-for-the-linter, and it slightly damages the content. The only semantic difference in that 211-line file is that the "arrow of doom" worked example lost its braces: `src/content/code-quality.ts:199` now reads `if (user.orders > 10) return 0.2;\n else return 0.05;` inside a braced `else`. It was shortened to fit an existing 12-line content rule, per the batch report, but the result is a mixed-brace snippet inside a deck that teaches code quality, and the other ~205 changed lines in that file are pure quote-style reformatting.
+- **[D4]** This is a browser-persistence study case, not CRUD web development on the target stacks. The course itself says so: *"This app is a browser persistence study case; it does not contain a server CRUD API."* There is no HTTP, no SQL, no authorization, no ownership check, no pagination. Validation and transactional restore transfer conceptually; nothing else in the syllabus does.
+- **[D3/D8]** The usual batch-wide template: 6 identical "Boundary" paragraphs in `07-TRACE-LAB.md` (the largest chapter at 1,858 words) and 4 identical *"Demonstrate an ordinary case and a case that would break a naive implementation…"* paragraphs in `06-SOLUTIONS-AND-REVIEW.md`. `diff recipeview/astraupskill/05-PRACTICE.md devdeck/astraupskill/05-PRACTICE.md` changes only 12 of 47 lines between two unrelated apps — only the exercise titles are project-specific.
+- **[D3]** Typo carried by the template into the exercise list: `05-PRACTICE.md` Exercise 2, *"Explain one scheduler field with an before/after grade example."*
+- **[D6]** `VERIFICATION.md` includes *"PostgreSQL 18.1 where applicable"* for an IndexedDB-only app, while `browser-checks.json` correctly records `"api": "none; browser storage"`.
+
+## Spot-checks performed
+- Course: *"The excerpt below comes from src/db.ts near line 166"* -> `export async function importData(` begins at line 166 of `src/db.ts` and `validateImport(payload);` is its first statement -> **matches**.
+- Course: *"unknown-card states and logs are omitted consistently, missing known states are recreated"* -> `src/db.ts` filters `payload.reviewStates` and `payload.reviewLogs` through `knownIds = new Set(allCards.map(c => c.id))`, then bulk-adds `createNewReviewState` rows for every card not in `restored` -> **matches**, and the second test asserts exactly this.
+- Course: *"rejected imports preserve progress"* -> the validator runs before `db.transaction`, and `importValidation.test.ts` re-reads state/settings/meta after each rejection and compares to the original export -> **matches**.
+- Course/report: *"The long worked snippet was shortened without changing its behavior"* -> normalised diff of `src/content/code-quality.ts` against the backup shows exactly one semantic change, the removal of the inner `{ }` braces in the `discount(user)` snippet (four outcomes preserved) -> **matches the letter of the claim**, but see the D2 finding.
+- `07-TRACE-LAB.md` Boundary 1 claim *"The Settings UI reads an uploaded JSON backup… starting with src/db.ts"* -> `grep -rn importData src` shows the only non-test callers are `src/db.ts` and `src/store.ts:295`, with the file input at `src/screens/Settings.tsx:131` -> **does not match**.
+
+## Improvements needed (ordered, concrete, actionable)
+1. Correct `astraupskill/VERIFICATION.md` to say "2 new test cases in `src/importValidation.test.ts`; the pre-existing 62-case suite was re-run as a regression gate", and fix the same number in the batch report table. (effort: S)
+2. Rewrite the six boundaries in `07-TRACE-LAB.md` to follow the real path: `src/screens/Settings.tsx:131` (file input) -> `FileReader`/`JSON.parse` -> `src/store.ts:295` -> `validateImport` (`src/importValidation.ts`) -> the `rw` transaction in `src/db.ts` -> the re-render from the store. Give each boundary its own instruction instead of repeating one paragraph. (effort: M)
+3. Restore the braces in the `discount(user)` snippet at `src/content/code-quality.ts:199` and instead satisfy the 12-line content rule by trimming the third step's prose, so a code-quality deck does not ship mixed brace style. (effort: S)
+4. Add a third delta test for the `enabledCardTypes` / `enabledDeckIds` settings branch of `validateImport`, which is currently unexercised by either new test. (effort: S)
+5. Re-label the course in the learning path as "runtime validation + client-side transactions", and add one paragraph to `02-CONCEPTS.md` mapping each idea to its server equivalent (Zod at an Express boundary, a SQL transaction, `SELECT ... FOR UPDATE`), so the lesson transfers to the stacks the learner is actually targeting. (effort: S)
+
+## One-paragraph summary for the index
+DevDeck's change is small and correct: validate an entire backup payload — including nested review states, logs, settings and metadata — before opening the Dexie write transaction, so a rejected import leaves every card's progress untouched. The two new tests are good ones, exercising real Dexie through `fake-indexeddb` and comparing the full exported state after each rejection rather than just catching an error. But this is an IndexedDB study case with no server, no SQL and no authorization, the verification page reports the app's whole 62-case suite as if it were the deliverable, and the trace lab sends you to `src/db.ts` for all six "boundaries" including the two that live in `Settings.tsx` and `store.ts`. Take it as a short elective on runtime schema validation and transactional rollback, not as a CRUD web-development chapter.

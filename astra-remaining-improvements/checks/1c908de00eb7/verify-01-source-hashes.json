@@ -1,0 +1,29 @@
+{
+  "project": "1c908de00eb7",
+  "sourceFreeze": "executable source and tests frozen before verify-01; docs finalized after terminal check",
+  "files": {
+    "README.md": "7be688b45941fc065cff9f2fd4826a5057fa551839619197df9ded7aac5a8e8b",
+    "src/modules/crm/service.ts": "743608247ad1d6407c9be5857f40030d290feee46443662039b3da371ded8e67",
+    "src/modules/crm/repository.ts": "69940da74d811b58bb1d026f8e5424017fb1ff3eee0e64f4c20d91824adc59b1",
+    "src/server/json-store.ts": "19512735b556cf3493e03b66648aedd1296e00bfcb3c45737f3f90ddb886ce6b",
+    "src/modules/auth/session.ts": "85743e43dedf83dc8a62d6f59da5700f74ca06888eccc36d4539015b16e959bc",
+    "package.json": "0a8daabadd363c481e8b091760dc40041fce2bd1f54b6bb5c995fc2e419081df",
+    "package-lock.json": "c5407f239a4b2c8c88c0eba68dfb320792fbb7bc3fabe16ce71040f90258d477",
+    "eslint.config.mjs": "05d189e64ca3a78c7282f54e33c322f30471eea4e987ea8a320e452fa9779dfa",
+    "tests/crm.test.ts": "3b111a3b29335eaaf13c24bc8a1c5360ba07c5876868a03efb243a8861d42a96",
+    "astraupskill/README.md": "15ac1676fcb38c28ddbce48c58d9a0b018d94952cebf8d99c10803130a946d3f",
+    "astraupskill/01-CODEBASE-MAP.md": "7712406791a0d0a4af8e5e2db01d914935f6eae833ce32b2237ac71a84c79ef9",
+    "astraupskill/02-CONCEPTS.md": "d51e96c044ea31cbd0b60b7fb4e202bffa07eeb631714540ceca0f1ebccabfae",
+    "astraupskill/03-WORKED-CHANGE.md": "e2b0f1a1021a60c90684f58a1101c9434368ef7f847a4ea6924abe8b6639af14",
+    "astraupskill/04-TESTING-AND-DEBUGGING.md": "665bbeed4080d14c4bf76e03d741f5c83d5185f75baabe8a160605582b259141",
+    "astraupskill/05-PRACTICE.md": "435b205742f9316ff833f4efe8f1e93d884f9a91086921db2de565d0b44df8fa",
+    "astraupskill/06-SOLUTIONS-AND-REVIEW.md": "a871891a631470a3cdc38404e736e855a339c9989321fc80b800df375f025478",
+    "astraupskill/07-TRACE-LAB.md": "913cb482f9ce732f870d055e676d7bcbbd74abefb4df3f896a01cc8c74ec39c0",
+    "astraupskill/VERIFICATION.md": "1d6e579151e95cb432d8983079e4b85f0a98ebda9474011eb55180c535ca87d8",
+    "snapshots/service-before.ts.txt": "44978d35e91b4704114bb1ec25b01479662d43e2738bd32a6b93374cb0f58b9f",
+    "snapshots/repository-before.ts.txt": "2dea575eb45509dd24bc89a6ea184caa095e9981e87c4df01a026e1474614b85",
+    "snapshots/json-store-before.ts.txt": "e633ac597af491675b477958caee7305a2f874f8d405e8ae69a22ec2e230cd73",
+    "snapshots/session-before.ts.txt": "ba13e4bfc7ef6baecb22b23880eeded1d0a332ba6393b275df1956ba956a1b9c",
+    "snapshots/package-before.json": "85fa8882a8ea9e0b2e170f0000cc802f5e83c996bf54e58ec757c5da67d53103"
+  }
+}

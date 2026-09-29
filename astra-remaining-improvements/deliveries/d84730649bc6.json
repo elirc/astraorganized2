@@ -1,0 +1,142 @@
+{
+  "project": "_Organized Desktop/05 Numbered Experiments/B1",
+  "id": "d84730649bc6",
+  "summary": [
+    "Incident detail responses authorize embedded parent and child records with the same existing policy used for direct incident access.",
+    "The service regression tests hidden relationships and retained admin, matched responder and assignee access, with intercepted store reads and fail-on-write mocks in a unique temporary workspace.",
+    "Nine learning guides explain the request flow, projection authorization, exact before/after code, debugging, runnable practice and solutions; original source and actual check logs accompany the course."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/d84730649bc6/results.json",
+    "command": "node checks/incident-detail-regression.mjs",
+    "environment": "Node 22.16.0, npm 10.9.2, Next 16.1.6; mocked store and unique OS temporary compilation"
+  },
+  "testResults": {
+    "passed": true,
+    "harnesses": 1,
+    "records": [
+      "service-regression-07.json",
+      "lint-04.json",
+      "typecheck-01.json",
+      "build-01.json"
+    ],
+    "notes": "One executable service regression harness, plus complete lint, typecheck and Next production build. Harness calls are scenarios, not a unit-test count."
+  },
+  "courseWords": 4074,
+  "courseFiles": 9,
+  "courseLinksChecked": 18,
+  "files": [
+    {
+      "file": "src/lib/platform.ts",
+      "before_sha256": "ae8ac064eaabacf931fc6ff19654c42d243e6d9ca04933a0662ce5934c0076e6",
+      "after_sha256": "1ce08f1afc5d504d4b51a46ac6730dfaabc85f3d4455e9db568bfdda36358796"
+    },
+    {
+      "file": "checks/incident-detail-regression.mjs",
+      "before_sha256": null,
+      "after_sha256": "41625df7be5f00405fc4961c817e2588e4467a303bf58948a4cedbc516a6301e"
+    },
+    {
+      "file": "astraupskill/snapshots/platform-before.ts.txt",
+      "before_sha256": null,
+      "after_sha256": "ae8ac064eaabacf931fc6ff19654c42d243e6d9ca04933a0662ce5934c0076e6"
+    },
+    {
+      "file": "README.md",
+      "before_sha256": "60b55ff7df79af72590f9524208e46642bc32bdc175cdad41349681c0e2f958f",
+      "after_sha256": "eae021e8556471dd072d2dcf743a36dee5655a73a64f8fa642d987ea68f79973"
+    },
+    {
+      "file": "astraupskill/evidence/service-regression-07.json",
+      "before_sha256": null,
+      "after_sha256": "e2984c6826dbd91296244145d989668004d0ae8c643e40f0329ed2799c4ad66d"
+    },
+    {
+      "file": "astraupskill/evidence/service-regression-07.log",
+      "before_sha256": null,
+      "after_sha256": "05a630125d392acf4eaffa6294e7711306f1cd8cfffae5fcc453b6e954612f36"
+    },
+    {
+      "file": "astraupskill/evidence/lint-04.json",
+      "before_sha256": null,
+      "after_sha256": "f38143f706599ae24cf02e0fc512252e931afb381b731b4f86f1a1f9905b6df7"
+    },
+    {
+      "file": "astraupskill/evidence/lint-04.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-01.json",
+      "before_sha256": null,
+      "after_sha256": "2bece21344cf1e1e9b62abfbb97a30eb45198b9a8e6968e991c0957532cc1456"
+    },
+    {
+      "file": "astraupskill/evidence/typecheck-01.log",
+      "before_sha256": null,
+      "after_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "astraupskill/evidence/build-01.json",
+      "before_sha256": null,
+      "after_sha256": "bc7c9dbbfdba80542194e9b54c63069c62e88c6dc393297c719fa03500308c44"
+    },
+    {
+      "file": "astraupskill/evidence/build-01.log",
+      "before_sha256": null,
+      "after_sha256": "5c322a69cb116473a74679ca235999583a4a5ad6895fd105dc7288eb36d7b954"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "3b63cdd2088707e1051208990155b897149cf94b13745eda8b3c4ea58e2dce74"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "437702da3d3aab91ea69e98f3eeb63c916fd88a4ceedee0cdc201426deda80bd"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "529487298ce9f1591c128caffbfc22c66bbb58b03028aff5780ecc43d89bad75"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "93df0ed03e4b43747d69054de8ef4c35839e261a0288ee84877490a0c55d726b"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "39e9ae6a4aa1d34a8da4c767d1c45ded1fc4e3bc7df955bc145a5d0c96bce63a"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "1394073384b4575af7fb97007b4076f62e3f5508dddeed6939dadee959d385a9"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "b127f977cb8023261d950d408f61c1ff7a9b291c86e58e1b8a6bb65b3f1b3d9c"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "11277e2d4b9c9408ddbb2776347c8eb79a72cbdcad4fe0e7ab6882e33e3b201a"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "1992408986c7e35cf2084b6361fd5b590bbe338fe013a768dfc4de65f1136c74"
+    }
+  ],
+  "limits": [
+    "The regression uses a complete mocked StoreData fixture and disposable compilation; it does not touch the canonical project data directory.",
+    "This protects embedded Incident object contents only. It does not redesign demo actor selection, authentication, raw relationship identifiers, escalation semantics, persistence transactions, or external integrations."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-12T19:43:21.903098+00:00"
+}

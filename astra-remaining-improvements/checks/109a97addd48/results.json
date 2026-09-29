@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "total": 13,
+  "passedTests": 13,
+  "failed": 0,
+  "records": [
+    "test-script-01.json",
+    "typecheck-05.json",
+    "lint-03.json",
+    "build-04.json"
+  ]
+}

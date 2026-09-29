@@ -1,0 +1,146 @@
+{
+  "project": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+  "id": "c10fc180fa35",
+  "summary": [
+    "Add a standalone .NET10 CRUD web companion with create/list/read/replace/delete, title validation and required version preconditions on writes.",
+    "Demonstrate atomic in-process version checks with actual loopback HTTP regressions and nine chapters covering traces, exercises, solutions and database follow-up design."
+  ],
+  "checks": {
+    "format": "json",
+    "resultsFile": "checks/c10fc180fa35/results-crud-b02.json"
+  },
+  "testResults": {
+    "passed": true,
+    "executedTests": 13,
+    "checks": [
+      {
+        "project": "_Organized Desktop/01 Net Workspaces/csbootcamp",
+        "id": "c10fc180fa35",
+        "command": [
+          "dotnet",
+          "run",
+          "--project",
+          "guides/crud-web-lab",
+          "--configuration",
+          "Release",
+          "--",
+          "--self-test"
+        ],
+        "cwd": "C:\\Users\\Owner\\Desktop\\AstraOrganized2\\astra-remaining-improvements\\stage\\c10fc180fa35",
+        "environmentOverrides": {},
+        "startedAt": "2026-09-22T00:23:05.959889+00:00",
+        "status": "complete",
+        "log": "crud-b02-http-lab.log",
+        "pid": 36448,
+        "exitCode": 0,
+        "passed": true,
+        "finishedAt": "2026-09-22T00:25:52.743147+00:00",
+        "elapsedSeconds": 166.65
+      }
+    ],
+    "limits": [
+      "This new teaching companion uses in-memory single-process storage; no authentication, durable database, browser UI or deployment is included.",
+      "The If-Match contract supports one strong numeric tag only, not full HTTP conditional request grammar.",
+      "The original bootcamp exercise suites and scoreboard were not rerun or modified.",
+      "One overlapping HTTP writer case checks observed behavior; exhaustive stress testing and multi-instance concurrency are outside this lab."
+    ]
+  },
+  "courseWords": 3103,
+  "courseFiles": 9,
+  "courseLinksChecked": 7,
+  "files": [
+    {
+      "file": "README.md",
+      "before_sha256": "9697bdb7b5798bec62152abf2d8800084e2e0318bbf83b278355c7ee53d6d700",
+      "after_sha256": "20ce7f5b0338642468dff82430288f00aa54cafe5182d4766b06075aa0abb035"
+    },
+    {
+      "file": "guides/crud-web-lab/CrudWebLab.csproj",
+      "before_sha256": null,
+      "after_sha256": "25e9385fa7053264d6b20be455942ad1548a587fc006e017350d193d6a1a36b4"
+    },
+    {
+      "file": "guides/crud-web-lab/Program.cs",
+      "before_sha256": null,
+      "after_sha256": "84a79c05daccbae2b7152548a4361cb1ccd3cfa52defa32fc3bf0de75b75c54b"
+    },
+    {
+      "file": "guides/crud-web-lab/TaskStore.cs",
+      "before_sha256": null,
+      "after_sha256": "294aff4bee0597a7b7b941fa656d99570568146837d89626ad40d2fef499553a"
+    },
+    {
+      "file": "guides/crud-web-lab/HttpChecks.cs",
+      "before_sha256": null,
+      "after_sha256": "5f369dfd590bbcf0c7eab513a2d4febee8432338f2445f52fc29bea05e7fcbd7"
+    },
+    {
+      "file": "astraupskill/snapshots/README.md.original.txt",
+      "before_sha256": null,
+      "after_sha256": "9697bdb7b5798bec62152abf2d8800084e2e0318bbf83b278355c7ee53d6d700"
+    },
+    {
+      "file": "astraupskill/evidence/crud-b02-http-lab.log",
+      "before_sha256": null,
+      "after_sha256": "fcfac778ec1b5ae961588a76361cdd96943c8c5099b3e29895c5ad2be2304df3"
+    },
+    {
+      "file": "astraupskill/evidence/results.json",
+      "before_sha256": null,
+      "after_sha256": "8e0d276babbd98c09950bdc6a2e94fb475a7fafccdab8d60bb40ceadfa01beac"
+    },
+    {
+      "file": "astraupskill/README.md",
+      "before_sha256": null,
+      "after_sha256": "77859af72f82093bb32bbbbea6e8fa1be285b8d5ea6c4dbec98f5d8ff4c1a053"
+    },
+    {
+      "file": "astraupskill/01-CODEBASE-MAP.md",
+      "before_sha256": null,
+      "after_sha256": "7aed65ea083ab069871f87d08df077a43e87af74bda2788942b1c4f3a3ef7de0"
+    },
+    {
+      "file": "astraupskill/02-CONCEPTS.md",
+      "before_sha256": null,
+      "after_sha256": "5dce3b172956b9cc2cf3af551f03c7acc68c8e2190e4fb85cade5fcd554743ee"
+    },
+    {
+      "file": "astraupskill/03-WORKED-CHANGE.md",
+      "before_sha256": null,
+      "after_sha256": "c3e6b45fb94b9d097a4a6306f543e50fb63ade785067bfc505f6ae02e0679f69"
+    },
+    {
+      "file": "astraupskill/04-TESTING-AND-DEBUGGING.md",
+      "before_sha256": null,
+      "after_sha256": "2976aa6c70714f1d89b699b9a544ffb513804abb8dd81065fd246263ef2a679d"
+    },
+    {
+      "file": "astraupskill/05-PRACTICE.md",
+      "before_sha256": null,
+      "after_sha256": "3966cf0eafb77204da8554dadea4147e839ef870c7c4f841d23291ec2287e2b7"
+    },
+    {
+      "file": "astraupskill/06-SOLUTIONS-AND-REVIEW.md",
+      "before_sha256": null,
+      "after_sha256": "8b0846feb9c2de758f54d8bac4f1d71fc30a1007df06a1b688b600728e7b52af"
+    },
+    {
+      "file": "astraupskill/07-TRACE-LAB.md",
+      "before_sha256": null,
+      "after_sha256": "33ffee9e6901f77b05c32c3af651c3a63c791a4f0d3d7a22da2991d3ca023717"
+    },
+    {
+      "file": "astraupskill/VERIFICATION.md",
+      "before_sha256": null,
+      "after_sha256": "c15247cff831295160bdfd41e7bebf09d0cb0ea9670c5ce4cafbe2d94db7635d"
+    }
+  ],
+  "limits": [
+    "This new teaching companion uses in-memory single-process storage; no authentication, durable database, browser UI or deployment is included.",
+    "The If-Match contract supports one strong numeric tag only, not full HTTP conditional request grammar.",
+    "The original bootcamp exercise suites and scoreboard were not rerun or modified.",
+    "One overlapping HTTP writer case checks observed behavior; exhaustive stress testing and multi-instance concurrency are outside this lab."
+  ],
+  "status": "delivered",
+  "deliveredAt": "2026-09-22T00:29:41.446554+00:00"
+}
